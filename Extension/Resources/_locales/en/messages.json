@@ -1,0 +1,254 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "Stops pages from taking your click to open or redirect somewhere you did not ask for.",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "Guard",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "On",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "Off",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_page_heading": {
+    "message": "This page",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "This page has not reached for another site.",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "Nothing to list yet.",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "$COUNT$ stopped.",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "$COUNT$ stopped.",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "$COUNT$ try in all.",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "$COUNT$ tries in all.",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "$COUNT$ try.",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "$COUNT$ tries.",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "Site fix",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "Blocked",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "Allowed",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "on this site",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "everywhere",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "by default",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "Allow here",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "Allow everywhere",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "Block here",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "Block everywhere",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "A destination with no rule",
+    "description": "Heading of the default policy control."
+  },
+  "policy_block": {
+    "message": "Block it",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "Allow it",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "This page blocks extension scripts. Only part of the guard is running.",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "popup_session_one": {
+    "message": "$COUNT$ stopped since the browser started.",
+    "description": "Session count, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_session_other": {
+    "message": "$COUNT$ stopped since the browser started.",
+    "description": "Session count, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "12"
+      }
+    }
+  },
+  "popup_total_one": {
+    "message": "$COUNT$ stopped since you installed this.",
+    "description": "Lifetime count, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_total_other": {
+    "message": "$COUNT$ stopped since you installed this.",
+    "description": "Lifetime count, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "340"
+      }
+    }
+  },
+  "kind_click_catcher": {
+    "message": "Invisible click catcher",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "Transparent layer over the page",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "Click the page made up",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "Pop-up window",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "Hidden form sent",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "Link changed as you clicked",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "Back button sent elsewhere",
+    "description": "A navigation right after the back gesture."
+  },
+  "popup_rules_link": {
+    "message": "All rules",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "This page",
+    "description": "Goes back from the rules list to the current page."
+  },
+  "rules_everywhere_heading": {
+    "message": "Set everywhere",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "Set for one site",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "None set.",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "Allow",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "Block",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "Use default",
+    "description": "Remove a rule so the default applies."
+  }
+}

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>guard tests</title>
+<!-- localhost is a different host from 127.0.0.1, which is what makes this
+     third-party. A second port would not: same host, same site. -->
+<script src="http://localhost:8767/thirdparty.js"></script>
+<script src="site.js"></script>
+<script src="shim.js?v=1788851662"></script>
+<script src="recipes.js?v=1788851662"></script>
+<script src="guard.test.js?v=1788851662"></script>
+</head>
+<body>
+<button id="real" style="position:fixed;left:40px;top:40px;width:160px;height:40px">real button</button>
+<pre id="out">running</pre>
+<script>
+const W = 1280, H = 720;
+const results = [];
+const ok = (name, pass, detail) => results.push({ name, pass, ...(detail ? { detail } : {}) });
+const P = { x: 120, y: 60 };   // over the real button
+
+let realClicks = 0;
+document.getElementById("real").addEventListener("click", () => realClicks++);
+
+function fakePointer(type, x, y) {
+  const e = new PointerEvent(type, { clientX: x, clientY: y, bubbles: true, cancelable: true });
+  Object.defineProperty(e, "__fake", { value: true });
+  (document.elementFromPoint(x, y) || document.body).dispatchEvent(e);
+}
+
+// Sized in pixels, not percentages, so the boxes are real even though the
+// pane reports no viewport.
+function makeCatcher() {
+  const form = document.createElement("form");
+  form.action = "https://pop.example/one";
+  form.target = "_blank";
+  Object.assign(form.style, { position: "fixed", left: "0", top: "0",
+    width: W + "px", height: H + "px", background: "transparent", border: "none",
+    zIndex: "1000", margin: "0", padding: "0" });
+  const submit = document.createElement("input");
+  submit.type = "submit";
+  Object.assign(submit.style, { position: "fixed", left: "0", top: "0",
+    width: W + "px", height: H + "px", background: "transparent", border: "none",
+    opacity: "0" });
+  form.appendChild(submit);
+  document.body.appendChild(form);
+  return form;
+}
+
+async function run() {
+  await new Promise((r) => setTimeout(r, 400));   // let bridge.js land
+
+  ok("viewport override took", innerWidth === W && innerHeight === H,
+     `innerWidth ${innerWidth}`);
+
+  let form = makeCatcher();
+  // The stub ranks by z-index, so it stops at the form where a real hit test
+  // would reach the submit inside it. Either answer is the catcher.
+  ok("hit test finds the catcher",
+     ["INPUT", "FORM"].includes((document.elementFromPoint(P.x, P.y) || {}).tagName),
+     String((document.elementFromPoint(P.x, P.y) || {}).tagName));
+
+  fakePointer("pointermove", P.x, P.y);
+  ok("hover clears the click catcher", !form.isConnected);
+
+  await new Promise((r) => setTimeout(r, 60));
+  form = makeCatcher();
+  const before = realClicks;
+  fakePointer("pointerdown", P.x, P.y);
+  ok("press clears a fresh click catcher", !form.isConnected);
+
+  await new Promise((r) => setTimeout(r, 600));
+  ok("the click reaches the button underneath", realClicks === before + 1,
+     `realClicks ${before} -> ${realClicks}`);
+
+  let navigated = false;
+  const a = document.createElement("a");
+  a.href = "https://pop.example/two";
+  a.target = "_blank";
+  a.addEventListener("click", (e) => { if (!e.defaultPrevented) navigated = true; });
+  document.body.appendChild(a);
+  a.click();
+  ok("synthetic link click is vetoed", !navigated);
+
+  ok("ungestured window.open returns null",
+     window.open("https://pop.example/three") === null);
+
+  const kinds = window.__caught.map((c) => c.kind).filter(Boolean);
+  ok("the catcher was reported with its host",
+     window.__caught.some((c) => c.kind === "click-catcher" && c.host === "pop.example"),
+     kinds.join(","));
+
+  // A plain transparent layer is left alone until the page has shown its hand.
+  const plain = document.createElement("div");
+  Object.assign(plain.style, { position: "fixed", left: "0", top: "0",
+    width: W + "px", height: H + "px", background: "transparent", zIndex: "1200" });
+  document.body.appendChild(plain);
+  fakePointer("pointermove", 600, 400);
+  ok("a plain transparent layer is removed only once armed", !plain.isConnected);
+
+  // A link rewritten between the press and the release.
+  const swap = document.createElement("a");
+  swap.href = "/wanted";
+  document.body.appendChild(swap);
+  let followed = null;
+  swap.addEventListener("click", (e) => {
+    if (!e.defaultPrevented) followed = swap.getAttribute("href");
+    e.preventDefault();
+  });
+  const press = new PointerEvent("pointerdown", { clientX: 5, clientY: 5, bubbles: true });
+  Object.defineProperty(press, "__fake", { value: true });
+  swap.dispatchEvent(press);
+  swap.setAttribute("href", "https://pop.example/five");
+  swap.setAttribute("target", "_blank");
+  const release = new MouseEvent("click", { bubbles: true, cancelable: true });
+  Object.defineProperty(release, "__fake", { value: true });
+  swap.dispatchEvent(release);
+  await new Promise((r) => setTimeout(r, 80));
+  ok("a swapped link is put back", swap.getAttribute("href") === "/wanted",
+     swap.getAttribute("href"));
+  ok("the swap is reported",
+     window.__caught.some((c) => c.kind === "href-swap" && c.host === "pop.example"));
+  ok("the user still goes where they meant", followed === "/wanted", String(followed));
+
+  // window.open called by code that does not belong to this page.
+  const before3 = window.__caught.length;
+  ok("a third-party cross-origin window.open is refused",
+     (await window.__thirdPartyOpen("https://pop.example/six")) === null);
+  await new Promise((r) => setTimeout(r, 80));   // the page-world half posts a message
+  ok("and it is reported",
+     window.__caught.slice(before3).some((c) => c.kind === "window-open"));
+
+  // The page's own destinations are left alone, even when third-party code
+  // is the one clicking. Checked through a link so nothing navigates.
+  const before4 = window.__caught.length;
+  const mine = document.createElement("a");
+  mine.href = "/somewhere";
+  mine.target = "_blank";
+  mine.addEventListener("click", (e) => e.preventDefault());
+  document.body.appendChild(mine);
+  window.__thirdPartyClickAnchor(mine);
+  await new Promise((r) => setTimeout(r, 80));
+  ok("a same-origin destination is not touched",
+     !window.__caught.slice(before4).length);
+
+  // Which hosts count as one site.
+  const S = globalThis.UndirectSite;
+  const sameSiteCases = [
+    ["www.site.com", "cdn.site.com", true],
+    ["site.com", "cdn.site.com", true],
+    ["bbc.co.uk", "static.bbc.co.uk", true],
+    ["shop.web.id", "cdn.shop.web.id", true],
+    ["site.com", "othersite.com", false],
+    ["site.com", "site.com.evil.net", false],
+    ["a.co.uk", "b.co.uk", false],
+    ["one.github.io", "two.github.io", false],
+    ["gogoanime.by", "buildsstate.com", false],
+  ];
+  const wrong = sameSiteCases.filter(([a, b, want]) => S.sameSite(a, b) !== want);
+  ok("same-site rules hold", wrong.length === 0,
+     wrong.map(([a, b, want]) => `${a} vs ${b} wanted ${want}`).join("; "));
+
+  // What the rules say, and in which order.
+  const table = {
+    policy: "block",
+    everywhere: { "ads.example": "allow", "pop.example": "block" },
+    here: { "ads.example": "block" },
+  };
+  const decisions = [
+    ["www.ads.example", "block"],   // the rule for this site wins
+    ["cdn.pop.example", "block"],   // set everywhere
+    ["unknown.example", "block"],   // falls to the default
+  ];
+  const badCalls = decisions.filter(([host, want]) => S.decide(table, host) !== want);
+  ok("rules apply in order", badCalls.length === 0,
+     badCalls.map(([h, w]) => `${h} wanted ${w}`).join("; "));
+  ok("allow by default lets an unknown host through",
+     S.decide({ policy: "allow", everywhere: {}, here: {} }, "unknown.example") === "allow");
+  ok("a block set everywhere survives allow by default",
+     S.decide({ policy: "allow", everywhere: { "pop.example": "block" }, here: {} },
+              "pop.example") === "block");
+
+  document.getElementById("out").textContent = JSON.stringify(results, null, 1);
+  window.__results = results;
+}
+run();
+</script>
+</body></html>

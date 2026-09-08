@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undirect</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header class="bar">
+      <h1 class="wordmark" data-i18n="app_title"></h1>
+      <button type="button" class="link" id="view-toggle"></button>
+      <label class="switch">
+        <span class="switch-label" data-i18n="popup_guard_label"></span>
+        <input type="checkbox" id="guard" />
+        <span class="switch-state" id="guard-state"></span>
+      </label>
+    </header>
+
+    <p class="warning" id="bridge-warning" hidden data-i18n="popup_bridge_warning"></p>
+
+    <section class="panel page-view">
+      <h2 data-i18n="popup_page_heading"></h2>
+      <p class="lead" id="page-count"></p>
+      <p class="note" id="page-recipe" hidden></p>
+      <ul class="rows" id="rows"></ul>
+    </section>
+
+    <section class="panel page-view">
+      <h2 data-i18n="popup_policy_heading"></h2>
+      <div class="choice" role="radiogroup" id="policy">
+        <label>
+          <input type="radio" name="policy" value="block" />
+          <span data-i18n="policy_block"></span>
+        </label>
+        <label>
+          <input type="radio" name="policy" value="allow" />
+          <span data-i18n="policy_allow"></span>
+        </label>
+      </div>
+    </section>
+
+    <section class="panel" id="rules-view" hidden>
+      <h2 data-i18n="rules_everywhere_heading"></h2>
+      <ul class="rows" id="rules-everywhere"></ul>
+      <h2 class="spaced" data-i18n="rules_by_site_heading"></h2>
+      <ul class="rows" id="rules-by-site"></ul>
+    </section>
+
+    <footer class="foot">
+      <p id="session"></p>
+      <p id="total"></p>
+    </footer>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+:root {
+  color-scheme: light dark;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --radius: 8px;
+  --duration: 120ms;
+  --easing: ease-out;
+
+  --ink: #16181c;
+  --ink-soft: #55595f;
+  --ground: #ffffff;
+  --ground-sunk: #f2f3f5;
+  --line: #d8dade;
+  --accent: #0a5ad4;
+  --danger: #a3231c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f0f1f3;
+    --ink-soft: #a9adb4;
+    --ground: #1b1d21;
+    --ground-sunk: #26292e;
+    --line: #3a3e44;
+    --accent: #7fb0ff;
+    --danger: #ff9c93;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: var(--space-3);
+  background: var(--ground);
+  color: var(--ink);
+  font: 13px/1.45 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, sans-serif;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--line);
+}
+
+.wordmark {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+}
+
+.switch-label {
+  color: var(--ink-soft);
+}
+
+.switch-state {
+  min-width: 26px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.switch input {
+  accent-color: var(--accent);
+  margin: 0;
+}
+
+.switch:hover .switch-label {
+  color: var(--ink);
+}
+
+.panel {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.panel h2 {
+  margin: 0 0 var(--space-2);
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+.lead {
+  margin: 0;
+}
+
+.note {
+  margin: var(--space-2) 0 0;
+  color: var(--ink-soft);
+}
+
+.warning {
+  margin: var(--space-3) 0 0;
+  padding: var(--space-2);
+  border-radius: var(--radius);
+  background: var(--ground-sunk);
+  color: var(--danger);
+}
+
+.rows,
+.kinds,
+.hosts {
+  list-style: none;
+  margin: var(--space-2) 0 0;
+  padding: 0;
+}
+
+.kinds li {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.hosts li {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.hosts .host {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+}
+
+.hosts button {
+  flex: none;
+  padding: 2px var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--ground);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  transition: background var(--duration) var(--easing),
+    border-color var(--duration) var(--easing);
+}
+
+.hosts button:hover {
+  background: var(--ground-sunk);
+  border-color: var(--ink-soft);
+}
+
+.hosts button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.empty {
+  color: var(--ink-soft);
+}
+
+.foot {
+  padding-top: var(--space-3);
+  color: var(--ink-soft);
+}
+
+.foot p {
+  margin: 0;
+}
+
+.rows li {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-areas: "name state" "what what" "actions actions";
+  gap: var(--space-1) var(--space-2);
+  align-items: center;
+  padding: var(--space-2) 0;
+  border-top: 1px solid var(--line);
+}
+
+.rows li:first-child {
+  border-top: none;
+}
+
+.rows .name {
+  grid-area: name;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+}
+
+.rows .state {
+  grid-area: state;
+  flex: none;
+  padding: 1px var(--space-2);
+  border-radius: var(--radius);
+  background: var(--ground-sunk);
+  color: var(--ink-soft);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.rows .state[data-verdict="block"] {
+  color: var(--danger);
+}
+
+.rows .actions {
+  grid-area: actions;
+  display: flex;
+  gap: var(--space-2);
+}
+
+.rows button {
+  flex: 1;
+  height: 24px;
+  padding: 0 var(--space-2);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--ground);
+  color: var(--ink);
+  font: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+  transition: background var(--duration) var(--easing),
+    border-color var(--duration) var(--easing);
+}
+
+.rows button:hover {
+  background: var(--ground-sunk);
+  border-color: var(--ink-soft);
+}
+
+.rows button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.choice {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.choice label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  cursor: pointer;
+}
+
+.choice label:hover {
+  color: var(--accent);
+}
+
+.choice input {
+  accent-color: var(--accent);
+  margin: 0;
+}
+
+.rows .what {
+  grid-area: what;
+  color: var(--ink-soft);
+  font-size: 11px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bar {
+  gap: var(--space-2);
+}
+
+.link {
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.link:hover {
+  color: var(--ink);
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.panel h2.spaced {
+  margin-top: var(--space-4);
+}
+
+.rows .site {
+  grid-area: name;
+  color: var(--ink-soft);
+  font-size: 11px;
+}

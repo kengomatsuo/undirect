@@ -1,0 +1,182 @@
+name: Undirect
+options:
+  bundleIdPrefix: com.matsuokengo
+  createIntermediateGroups: true
+  deploymentTarget:
+    macOS: "15.0"
+    iOS: "18.0"
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    MARKETING_VERSION: "1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    GENERATE_INFOPLIST_FILE: YES
+    DEAD_CODE_STRIPPING: YES
+
+targets:
+  Undirect-macOS:
+    type: application
+    platform: macOS
+    sources:
+      - path: App
+      - path: Support/PrivacyInfo.xcprivacy
+        buildPhase: resources
+    dependencies:
+      - target: UndirectExtension-macOS
+        embed: true
+    entitlements:
+      path: Support/Undirect-macOS.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-only: true
+        com.apple.security.application-groups:
+          - 5MPWBL8F42.undirect
+    settings:
+      base:
+        PRODUCT_NAME: Undirect
+        PRODUCT_BUNDLE_IDENTIFIER: com.matsuokengo.undirect
+        INFOPLIST_KEY_CFBundleDisplayName: Undirect
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_NSHumanReadableCopyright: Copyright © 2026 Kenneth Fang. All rights reserved.
+        ENABLE_HARDENED_RUNTIME: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+
+  UndirectExtension-macOS:
+    type: app-extension
+    platform: macOS
+    sources:
+      - path: Extension/SafariWebExtensionHandler.swift
+      - path: App/SharedStore.swift
+      # Safari reads manifest.json from the bundle root, so the pieces are
+      # listed one by one rather than as one folder called Resources.
+      - path: Extension/Resources/manifest.json
+        buildPhase: resources
+      - path: Extension/Resources/background.js
+        buildPhase: resources
+      - path: Extension/Resources/_locales
+        type: folder
+      - path: Extension/Resources/images
+        type: folder
+      - path: Extension/Resources/content
+        type: folder
+      - path: Extension/Resources/lib
+        type: folder
+      - path: Extension/Resources/popup
+        type: folder
+      - path: Extension/Resources/rules
+        type: folder
+      - path: Extension/Resources/sites
+        type: folder
+    entitlements:
+      path: Support/UndirectExtension-macOS.entitlements
+      properties:
+        com.apple.security.app-sandbox: true
+        com.apple.security.files.user-selected.read-only: true
+        com.apple.security.application-groups:
+          - 5MPWBL8F42.undirect
+    info:
+      path: Support/UndirectExtension-macOS-Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.Safari.web-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).SafariWebExtensionHandler
+    settings:
+      base:
+        PRODUCT_NAME: Undirect Extension
+        PRODUCT_BUNDLE_IDENTIFIER: com.matsuokengo.undirect.Extension
+        INFOPLIST_KEY_CFBundleDisplayName: Undirect
+        ENABLE_HARDENED_RUNTIME: YES
+        OTHER_LDFLAGS: -framework SafariServices
+        SKIP_INSTALL: YES
+
+  Undirect-iOS:
+    type: application
+    platform: iOS
+    sources:
+      - path: App
+      - path: Support/PrivacyInfo.xcprivacy
+        buildPhase: resources
+    dependencies:
+      - target: UndirectExtension-iOS
+        embed: true
+    entitlements:
+      path: Support/Undirect-iOS.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.matsuokengo.undirect
+    settings:
+      base:
+        PRODUCT_NAME: Undirect
+        PRODUCT_BUNDLE_IDENTIFIER: com.matsuokengo.undirect
+        INFOPLIST_KEY_CFBundleDisplayName: Undirect
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+
+  UndirectExtension-iOS:
+    type: app-extension
+    platform: iOS
+    entitlements:
+      path: Support/UndirectExtension-iOS.entitlements
+      properties:
+        com.apple.security.application-groups:
+          - group.com.matsuokengo.undirect
+    sources:
+      - path: Extension/SafariWebExtensionHandler.swift
+      - path: App/SharedStore.swift
+      # Safari reads manifest.json from the bundle root, so the pieces are
+      # listed one by one rather than as one folder called Resources.
+      - path: Extension/Resources/manifest.json
+        buildPhase: resources
+      - path: Extension/Resources/background.js
+        buildPhase: resources
+      - path: Extension/Resources/_locales
+        type: folder
+      - path: Extension/Resources/images
+        type: folder
+      - path: Extension/Resources/content
+        type: folder
+      - path: Extension/Resources/lib
+        type: folder
+      - path: Extension/Resources/popup
+        type: folder
+      - path: Extension/Resources/rules
+        type: folder
+      - path: Extension/Resources/sites
+        type: folder
+    info:
+      path: Support/UndirectExtension-iOS-Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.Safari.web-extension
+          NSExtensionPrincipalClass: $(PRODUCT_MODULE_NAME).SafariWebExtensionHandler
+    settings:
+      base:
+        PRODUCT_NAME: Undirect Extension
+        PRODUCT_BUNDLE_IDENTIFIER: com.matsuokengo.undirect.Extension
+        INFOPLIST_KEY_CFBundleDisplayName: Undirect
+        OTHER_LDFLAGS: -framework SafariServices
+        SKIP_INSTALL: YES
+
+schemes:
+  Undirect-macOS:
+    build:
+      targets:
+        Undirect-macOS: all
+    run:
+      config: Debug
+  Undirect-iOS:
+    build:
+      targets:
+        Undirect-iOS: all
+    run:
+      config: Debug

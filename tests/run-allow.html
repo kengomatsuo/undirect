@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>allow by default</title>
+<script src="http://localhost:8767/thirdparty.js"></script>
+<script src="site.js"></script>
+<script src="shim.js?policy=allow"></script>
+<script src="recipes.js"></script>
+<script src="guard.test.js"></script>
+</head>
+<body>
+<pre id="out">running</pre>
+<script>
+// shim.js reads the policy from this page's own query string, so set it there
+// too: the script tag's query is not the page's.
+if (!location.search.includes("policy=allow")) location.search = "?policy=allow";
+
+const results = [];
+const ok = (name, pass, detail) => results.push({ name, pass, ...(detail ? { detail } : {}) });
+
+async function run() {
+  await new Promise((r) => setTimeout(r, 500));   // storage read, then bridge
+
+  const before = window.__caught.length;
+  const opened = await window.__thirdPartyOpen("https://pop.example/allowed");
+  await new Promise((r) => setTimeout(r, 100));
+  const rows = window.__caught.slice(before).filter((c) => c.kind === "window-open");
+
+  // The browser blocks an ungestured popup on its own, so the window being
+  // null proves nothing. What proves it is the row saying we did not block.
+  ok("the attempt is still recorded", rows.length === 1, `rows ${rows.length}`);
+  ok("and it is recorded as allowed", rows[0]?.blocked === false,
+     JSON.stringify(rows[0] ?? null));
+  if (opened) opened.close();
+
+  document.getElementById("out").textContent = JSON.stringify(results, null, 1);
+  window.__results = results;
+}
+run();
+</script>
+</body></html>

@@ -1,0 +1,19 @@
+{
+  "settings": { "enabled": true, "policy": "block" },
+  "counts": { "page": 3, "seen": 5, "session": 12, "lifetime": 340 },
+  "site": "gogoanime.by",
+  "recipe": null,
+  "rows": [
+    { "base": "buildsstate.com", "kinds": ["window-open", "click-catcher"],
+      "count": 4, "blocked": 4, "url": "https://buildsstate.com/e6z5n7nsaf",
+      "here": null, "everywhere": "block" },
+    { "base": "checkout.stripe.com", "kinds": ["window-open"], "count": 1,
+      "blocked": 0, "url": "https://checkout.stripe.com/pay",
+      "here": "allow", "everywhere": null },
+    { "base": "tracker.example.net", "kinds": ["synthetic-click"], "count": 2,
+      "blocked": 2, "url": "https://tracker.example.net/x",
+      "here": null, "everywhere": null }
+  ],
+  "everywhere": { "buildsstate.com": "block", "d2pf0ys5xus6n.cloudfront.net": "block" },
+  "perSite": { "gogoanime.by": { "checkout.stripe.com": "allow" } }
+}
