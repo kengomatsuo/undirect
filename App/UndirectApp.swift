@@ -9,7 +9,7 @@ struct UndirectApp: App {
         #if os(macOS)
         // The rules list grows, so the window has to be resizable rather than
         // pinned to its content.
-        .defaultSize(width: 520, height: 680)
+        .defaultSize(width: 520, height: 620)
         #endif
     }
 }

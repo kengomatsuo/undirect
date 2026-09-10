@@ -36,6 +36,15 @@ JavaScript.
   approximates the Public Suffix List rather than shipping it. Full account:
   [docs/redirect-mechanism.md](docs/redirect-mechanism.md).
 
+## App screens
+
+One screen per state, and the rules are a `List` with sections rather than
+stacks. `LabeledContent` wraps its value onto a second line when the label is a
+hostname, and a `Label` in its value position triples the row height, so
+`RuleRow` is a plain `HStack`. Debug builds take `-UndirectForceState off|on` for
+screenshots. Full account:
+[docs/rules-and-record.md](docs/rules-and-record.md).
+
 ## Rules and the record
 
 Every cross-site destination a page reaches for gets a row in the popup, keyed by

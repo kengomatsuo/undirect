@@ -90,3 +90,28 @@ and works under a local signature: `5MPWBL8F42.undirect` resolves to a container
 on this machine. iOS accepts only the registered `group.<name>` form, so
 `group.com.matsuokengo.undirect` compiles but will not resolve on a device until
 it is registered and a provisioning profile carries it.
+
+## The app's screens
+
+One screen per state, the way Hush does it: nothing while Safari is being asked,
+the setup screen when the extension is off, the rules when it is on. Showing the
+setup steps next to the rules meant the window still said "turn it on" after the
+user already had.
+
+The rules are a `List` with sections, which is the container Apple names for a
+collection of data, and the setup screen is a stack because it is prose and
+buttons rather than data. Row actions live in a `Menu` at the end of the row.
+
+Two layout rules came out of building it:
+
+- `LabeledContent` drops its value onto a second line once the label is wide,
+  and these rows show hostnames. `RuleRow` is an `HStack` instead, which keeps
+  every row one line with the host truncating in the middle.
+- A `Label` in `LabeledContent`'s value position nests two labels and the row
+  grows to roughly three times its height. The verdict is a plain image and text.
+
+List style is per platform: `.inset` on macOS, `.insetGrouped` on iOS. The macOS
+style on iOS stretches rows and collides the section footer with the row above it.
+
+Debug builds accept `-UndirectForceState off|on|checking`, so every screen can be
+captured without switching the extension off in Safari.
