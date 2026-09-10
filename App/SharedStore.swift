@@ -22,7 +22,7 @@ struct Snapshot: Codable, Sendable, Equatable {
 
 enum SharedStore {
     #if os(macOS)
-    static let appGroup = "5MPWBL8F42.undirect"
+    static let appGroup = "PM3K35YS39.undirect"
     #else
     static let appGroup = "group.com.matsuokengo.undirect"
     #endif

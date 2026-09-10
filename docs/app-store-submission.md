@@ -23,7 +23,7 @@ What is done, what needs an Apple account, and one judgement call.
 
 None of these can be done from here.
 
-1. **Sign in to an Xcode account for team `5MPWBL8F42`.** Automatic signing fails
+1. **Sign in to an Xcode account for team `PM3K35YS39`.** Automatic signing fails
    without it, so nothing can be archived or uploaded. Xcode, Settings, Accounts.
 2. **Register the bundle identifiers**: `com.matsuokengo.undirect` and
    `com.matsuokengo.undirect.Extension`.
@@ -51,3 +51,15 @@ latitude here.
 The safe version drops the per-site recipe and keeps the generic guard, which
 already stops the same pops without naming anyone. That costs one site its
 cleanest path and removes the argument entirely.
+
+## Two things found by opening the account
+
+The team is `PM3K35YS39`. The macOS app group had been prefixed `5MPWBL8F42`,
+which is the user identifier printed on the Apple Development certificate rather
+than the Team ID. Ad-hoc signing validates neither, so it resolved locally and
+would have failed the moment the build was signed for real. Corrected, and the
+container resolves under the new prefix.
+
+The Apple Developer Program License Agreement has been updated, and App Store
+Connect states that the Account Holder must accept it before any new app can be
+submitted. Nobody else can accept it.

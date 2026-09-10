@@ -35,7 +35,7 @@ targets:
         com.apple.security.app-sandbox: true
         com.apple.security.files.user-selected.read-only: true
         com.apple.security.application-groups:
-          - 5MPWBL8F42.undirect
+          - PM3K35YS39.undirect
     settings:
       base:
         PRODUCT_NAME: Undirect
@@ -80,7 +80,7 @@ targets:
         com.apple.security.app-sandbox: true
         com.apple.security.files.user-selected.read-only: true
         com.apple.security.application-groups:
-          - 5MPWBL8F42.undirect
+          - PM3K35YS39.undirect
     info:
       path: Support/UndirectExtension-macOS-Info.plist
       properties:
