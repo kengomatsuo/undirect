@@ -14,7 +14,7 @@
   const FORWARD_MS = 350;     // wait for the browser's own click before forwarding
   const BACK_MS = 700;        // popstate to navigation, for the back hijack
 
-  const settings = { enabled: true, sweep: true, veto: true, recipes: true, policy: "block" };
+  const settings = { enabled: true, sweep: true, veto: true, recipes: true, banner: false, policy: "block" };
   const site = location.hostname;
   const siteBase = Site.baseDomain(site);
 
@@ -88,11 +88,59 @@
 
   // ---------------------------------------------------------------- the record
 
+  // A note drawn in the page, off unless asked for. Safari gives extensions no
+  // notifications API, so this is the only way to say something happened while
+  // the reader is looking at the page.
+  let bannerHost = null;
+  let bannerTimer = 0;
+  let bannerText = null;
+
+  function showBanner(host) {
+    if (!settings.banner || window.top !== window || !document.body) return;
+    if (host && host === bannerHost) return;
+    bannerHost = host;
+
+    let root = document.getElementById("undirect-note");
+    if (!root) {
+      root = document.createElement("div");
+      root.id = "undirect-note";
+      root.style.cssText =
+        "all:initial;position:fixed;z-index:2147483647;left:16px;bottom:16px";
+      const shadow = root.attachShadow({ mode: "closed" });
+      shadow.innerHTML =
+        "<style>" +
+        ".n{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;" +
+        "background:#16181c;color:#f7f8fa;font:13px/1.3 -apple-system,system-ui,sans-serif;" +
+        "box-shadow:0 6px 24px rgba(0,0,0,.28);max-width:320px}" +
+        ".h{font-family:ui-monospace,Menlo,monospace;opacity:.75;overflow:hidden;" +
+        "text-overflow:ellipsis;white-space:nowrap}" +
+        "button{all:unset;cursor:pointer;opacity:.6;padding:0 4px}" +
+        "button:hover{opacity:1}" +
+        "</style>" +
+        '<div class="n"><span>Stopped</span><span class="h"></span>' +
+        '<button aria-label="Dismiss">&times;</button></div>';
+      shadow.querySelector("button").addEventListener("click", hideBanner);
+      bannerText = shadow.querySelector(".h");
+      document.body.appendChild(root);
+    }
+    if (bannerText) bannerText.textContent = host || "a pop-up";
+    clearTimeout(bannerTimer);
+    bannerTimer = setTimeout(hideBanner, 4000);
+  }
+
+  function hideBanner() {
+    clearTimeout(bannerTimer);
+    bannerHost = null;
+    bannerText = null;
+    document.getElementById("undirect-note")?.remove();
+  }
+
   // Every cross-site destination the page reached for, whether or not it was
   // stopped. The popup lists these so the user can decide about each one.
   function seen({ kind, host, url, blocked, learn }) {
     if (blocked) armed = true;
     if (isOurs(host)) return;
+    if (blocked) showBanner(Site.baseDomain(host));
     try {
       api.runtime.sendMessage({
         type: "undirect:seen",

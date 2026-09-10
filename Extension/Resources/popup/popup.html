@@ -24,10 +24,17 @@
       <p class="lead" id="page-count"></p>
       <p class="note" id="page-recipe" hidden></p>
       <ul class="rows" id="rows"></ul>
+      <button type="button" class="link" id="report" data-i18n="action_report"></button>
     </section>
 
     <section class="panel page-view">
-      <h2 data-i18n="popup_policy_heading"></h2>
+      <h2 data-i18n="popup_settings_heading"></h2>
+      <label class="switch row-switch">
+        <span class="switch-label" data-i18n="setting_banner"></span>
+        <input type="checkbox" id="banner" />
+        <span class="switch-state" id="banner-state"></span>
+      </label>
+      <p class="sub-label" data-i18n="popup_policy_heading"></p>
       <div class="choice" role="radiogroup" id="policy">
         <label>
           <input type="radio" name="policy" value="block" />

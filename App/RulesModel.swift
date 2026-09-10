@@ -80,6 +80,10 @@ final class RulesModel {
         send(["action": "settings", "settings": ["policy": policy]])
     }
 
+    func setBanner(_ on: Bool) {
+        send(["action": "settings", "settings": ["banner": on]])
+    }
+
     private func send(_ payload: [String: Any]) {
         #if os(macOS)
         SFSafariApplication.dispatchMessage(

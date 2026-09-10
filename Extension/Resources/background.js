@@ -11,6 +11,7 @@ const DEFAULT_SETTINGS = {
   sweep: true,
   veto: true,
   recipes: true,
+  banner: false, // a note in the page when something is stopped
   policy: "block", // what an unknown cross-site destination gets
 };
 
@@ -80,10 +81,12 @@ function tabEntry(tabId) {
   return entry;
 }
 
-function paintBadge(tabId, entry) {
+// The badge counts the whole session, so it is set without a tab id. The
+// per-page number lives in the popup, where there is room to label it.
+function paintBadge() {
   try {
-    api.action.setBadgeText({ tabId, text: entry.blocked ? String(entry.blocked) : "" });
-    api.action.setBadgeBackgroundColor?.({ tabId, color: "#a3231c" });
+    api.action.setBadgeText({ text: sessionBlocked ? String(sessionBlocked) : "" });
+    api.action.setBadgeBackgroundColor?.({ color: "#a3231c" });
   } catch (e) {
     // a window with no toolbar, nothing to paint
   }
@@ -112,7 +115,7 @@ async function note(tabId, msg) {
     entry.rows.delete(entry.rows.keys().next().value);
   }
 
-  paintBadge(tabId, entry);
+  paintBadge();
 
   const state = await readState();
   await api.storage.local.set({ lifetime: state.lifetime + (msg.blocked ? 1 : 0) });
@@ -133,7 +136,7 @@ api.runtime.onMessage.addListener((msg, sender) => {
     perTab.delete(tabId);
     const entry = tabEntry(tabId);
     entry.site = msg.site ?? "";
-    paintBadge(tabId, entry);
+    paintBadge();
     return undefined;
   }
 
@@ -240,6 +243,7 @@ async function pushSnapshot(now = false) {
   const snapshot = {
     policy: state.settings.policy ?? "block",
     enabled: state.settings.enabled !== false,
+    banner: state.settings.banner === true,
     everywhere: state.everywhere,
     perSite: state.perSite,
     counts: { session: sessionBlocked, lifetime: state.lifetime },

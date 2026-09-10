@@ -160,6 +160,31 @@ function renderView() {
   );
 }
 
+function renderBanner(enabled) {
+  document.getElementById("banner").checked = enabled;
+  document.getElementById("banner-state").textContent = t(
+    enabled ? "popup_guard_on" : "popup_guard_off"
+  );
+}
+
+// A prefilled issue on the public repository. It opens in a tab and sends
+// nothing until the person submits it themselves.
+function reportSite() {
+  const site = current?.site || "";
+  const rows = current?.rows ?? [];
+  const seen = rows.length
+    ? rows.map((r) => `- ${r.base} (${r.kinds.join(", ") || "seen"}, x${r.count})`).join("\n")
+    : "- nothing recorded";
+  const url = new URL("https://github.com/kengomatsuo/undirect/issues/new");
+  url.searchParams.set("title", `Missed a pop on ${site}`);
+  url.searchParams.set(
+    "body",
+    `Site: ${site}\n\nWhat the guard recorded:\n${seen}\n\nWhat happened instead:\n`
+  );
+  api.tabs.create({ url: url.href });
+  window.close();
+}
+
 function renderGuard(enabled) {
   document.getElementById("guard").checked = enabled;
   document.getElementById("guard-state").textContent = t(
@@ -176,6 +201,7 @@ async function load() {
   current = state;
 
   renderGuard(state.settings.enabled);
+  renderBanner(state.settings.banner === true);
 
   const count = document.getElementById("page-count");
   if (!state.counts.seen) {
@@ -232,6 +258,14 @@ document.getElementById("view-toggle").addEventListener("click", () => {
   view = view === "rules" ? "page" : "rules";
   renderView();
 });
+
+document.getElementById("banner").addEventListener("change", async (e) => {
+  const banner = e.target.checked;
+  await api.runtime.sendMessage({ type: "undirect:set", settings: { banner } });
+  renderBanner(banner);
+});
+
+document.getElementById("report").addEventListener("click", reportSite);
 
 localizeStatic();
 renderView();

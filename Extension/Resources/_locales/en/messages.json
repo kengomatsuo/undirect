@@ -137,7 +137,7 @@
   },
   "popup_policy_heading": {
     "message": "A destination with no rule",
-    "description": "Heading of the default policy control."
+    "description": "Label above the default policy choice."
   },
   "policy_block": {
     "message": "Block it",
@@ -250,5 +250,17 @@
   "action_clear": {
     "message": "Use default",
     "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "Settings",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "Page note",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "Report a site",
+    "description": "Opens a prefilled issue about a site the guard missed."
   }
 }

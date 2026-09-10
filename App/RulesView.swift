@@ -81,9 +81,10 @@ struct RulesView: View {
         .textCase(nil)
 
         Section {
+            bannerRow
             policyRow
         } header: {
-            Text("Default")
+            Text("Settings")
                 .font(.headline)
                 .foregroundStyle(.primary)
         } footer: {
@@ -112,6 +113,21 @@ struct RulesView: View {
                 .foregroundStyle(.secondary)
         }
         .padding(.bottom, 4)
+    }
+
+    @ViewBuilder
+    private var bannerRow: some View {
+        let on = rules.snapshot?.banner ?? false
+        if rules.canEdit {
+            Toggle("Note in the page", isOn: Binding(
+                get: { on },
+                set: { rules.setBanner($0) }
+            ))
+        } else {
+            LabeledContent("Note in the page") {
+                Text(on ? "On" : "Off")
+            }
+        }
     }
 
     @ViewBuilder

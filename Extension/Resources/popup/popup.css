@@ -322,3 +322,18 @@ body {
   color: var(--ink-soft);
   font-size: 11px;
 }
+
+.row-switch {
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: var(--space-3);
+}
+
+.sub-label {
+  margin: 0 0 var(--space-2);
+  color: var(--ink-soft);
+}
+
+#report {
+  margin: var(--space-3) 0 0;
+}

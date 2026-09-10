@@ -14,6 +14,7 @@ struct Snapshot: Codable, Sendable, Equatable {
 
     var policy: String = "block"
     var enabled: Bool = true
+    var banner: Bool = false
     var everywhere: [String: String] = [:]
     var perSite: [String: [String: String]] = [:]
     var counts = Counts()
