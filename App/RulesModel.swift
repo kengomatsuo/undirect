@@ -33,8 +33,27 @@ final class RulesModel {
     var isEmpty: Bool { everywhere.isEmpty && bySite.isEmpty }
 
     func reload() {
+        seedSampleIfAsked()
         snapshot = SharedStore.read()
         reachedApp = snapshot != nil
+    }
+
+    // The sandbox refuses a file an unsandboxed process wrote into the group
+    // container, so a sample for screenshots has to be written by the app.
+    private func seedSampleIfAsked() {
+        #if DEBUG
+        guard UserDefaults.standard.bool(forKey: "UndirectSeedSample") else { return }
+        var sample = Snapshot()
+        sample.everywhere = [
+            "buildsstate.com": "block",
+            "d2pf0ys5xus6n.cloudfront.net": "block",
+            "propellerads.com": "block",
+        ]
+        sample.perSite = ["gogoanime.by": ["checkout.stripe.com": "allow"]]
+        sample.counts = Snapshot.Counts(session: 12, lifetime: 340)
+        sample.writtenAt = Date().timeIntervalSince1970 * 1000
+        SharedStore.write(sample)
+        #endif
     }
 
     // Only macOS can send to the extension. On iOS this list is a mirror.

@@ -93,6 +93,29 @@ it is registered and a provisioning profile carries it.
 
 ## The app's screens
 
+Shaped after System Settings > Login Items & Extensions, which is the pane that
+lists Safari extensions and so is the nearest thing Apple ships to this app. Its
+arrangement, copied: a sentence-case title in bold, one line of explanation
+under it, a segmented control for the grouping, then one card of rows. Rows lead
+with a symbol, carry a second secondary line where there is one, and put the
+state in a trailing control.
+
+Section headers use `.textCase(nil)` on macOS so they read as titles rather than
+grey small caps. iOS keeps its own grey sentence-case headers, which is that
+platform's convention.
+
+The setup screen is one sentence and the button that opens Safari's Extensions
+pane. It used to be three numbered steps teaching Safari's settings, which the
+HIG rules out directly: onboarding stays "focused on the experience you
+provide", and people "don't need to learn how to use the system or the device."
+
+TipKit carries the one non-obvious thing, that a row's state is a control. The
+HIG points at it in place of an onboarding flow. It is an inline `TipView` in
+the list, following Apple's own example; a `popoverTip` anchored to the row menu
+never displayed. Debug builds accept `-UndirectShowTips YES` to force it.
+
+## The old account of the screens
+
 One screen per state, the way Hush does it: nothing while Safari is being asked,
 the setup screen when the extension is off, the rules when it is on. Showing the
 setup steps next to the rules meant the window still said "turn it on" after the
@@ -115,3 +138,11 @@ style on iOS stretches rows and collides the section footer with the row above i
 
 Debug builds accept `-UndirectForceState off|on|checking`, so every screen can be
 captured without switching the extension off in Safari.
+
+## Seeding the shared file
+
+The app sandbox refuses to read a file in the group container that an
+unsandboxed process wrote: `com.apple.provenance` records who created it, the
+attribute cannot be stripped with `xattr -c`, and the read fails with POSIX 1.
+Screenshot runs therefore ask the app to write its own sample, through
+`-UndirectSeedSample YES`, rather than having a shell write the JSON.

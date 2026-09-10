@@ -3,24 +3,20 @@ import SwiftUI
 import UIKit
 #endif
 
-// Shown until Safari says the extension is on. One screen, one job.
+// Shown until Safari says the extension is on. The HIG asks onboarding to stay
+// on what the app does, so this says what happens next and offers the shortest
+// way there. It does not teach anyone how to use Safari.
 struct SetupView: View {
     let state: ExtensionStatus.State
     let openSettings: () -> Void
     let recheck: () -> Void
 
-    private struct Step: Identifiable {
-        let symbol: String
-        let text: LocalizedStringKey
-        var id: String { symbol }
-    }
-
     var body: some View {
-        VStack(spacing: 28) {
+        VStack(spacing: 24) {
             Spacer(minLength: 0)
 
             Image(systemName: "cursorarrow.slash")
-                .font(.system(size: 72, weight: .light))
+                .font(.system(size: 64, weight: .light))
                 .foregroundStyle(.tint)
                 .accessibilityHidden(true)
 
@@ -32,19 +28,12 @@ struct SetupView: View {
                     .multilineTextAlignment(.center)
             }
 
-            VStack(alignment: .leading, spacing: 16) {
-                ForEach(steps) { step in
-                    Label(step.text, systemImage: step.symbol)
-                        .labelStyle(StepLabelStyle())
-                }
-            }
-
             actions
 
             Spacer(minLength: 0)
         }
         .padding(32)
-        .frame(maxWidth: 400)
+        .frame(maxWidth: 380)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
@@ -55,54 +44,27 @@ struct SetupView: View {
 
     private var subhead: LocalizedStringKey {
         if case .failed(let reason) = state { return "\(reason)" }
-        return "Turn it on once and it works on every page after that."
-    }
-
-    private var steps: [Step] {
         #if os(macOS)
-        [
-            Step(symbol: "safari", text: "Open Safari Settings, then Extensions."),
-            Step(symbol: "checkmark.square", text: "Tick Undirect."),
-            Step(symbol: "globe", text: "Allow it on every website."),
-        ]
+        return "Switch it on once and it guards every page after that."
         #else
-        [
-            Step(symbol: "gearshape", text: "Open Settings, then Apps, then Safari."),
-            Step(symbol: "puzzlepiece.extension", text: "Tap Extensions."),
-            Step(symbol: "switch.2", text: "Turn on Undirect and allow every website."),
-        ]
+        return "Switch it on in Settings, under Apps, Safari, Extensions. It guards every page after that."
         #endif
     }
 
     @ViewBuilder
     private var actions: some View {
-        #if os(macOS)
-        HStack(spacing: 12) {
-            Button("Open Safari Settings", action: openSettings)
+        VStack(spacing: 10) {
+            #if os(macOS)
+            Button("Open Safari Extension Settings", action: openSettings)
                 .buttonStyle(.borderedProminent)
-            Button("Check Again", action: recheck)
-        }
-        #else
-        VStack(spacing: 12) {
+            #else
             if let url = URL(string: UIApplication.openSettingsURLString) {
                 Link("Open Settings", destination: url)
                     .buttonStyle(.borderedProminent)
             }
+            #endif
             Button("Check Again", action: recheck)
-        }
-        #endif
-    }
-}
-
-// Icon and label on one baseline, with the icons in a column of their own.
-private struct StepLabelStyle: LabelStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        HStack(alignment: .firstTextBaseline, spacing: 14) {
-            configuration.icon
-                .font(.body)
-                .foregroundStyle(.tint)
-                .frame(width: 22, alignment: .center)
-            configuration.title
+                .buttonStyle(.borderless)
         }
     }
 }

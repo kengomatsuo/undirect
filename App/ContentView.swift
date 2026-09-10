@@ -1,4 +1,5 @@
 import SwiftUI
+import TipKit
 
 struct ContentView: View {
     @State private var status = ExtensionStatus()
@@ -10,6 +11,13 @@ struct ContentView: View {
                 .navigationTitle("Undirect")
         }
         .task {
+            try? Tips.configure()
+            #if DEBUG
+            // Screenshot runs force the tip; display rules otherwise decide.
+            if UserDefaults.standard.bool(forKey: "UndirectShowTips") {
+                Tips.showAllTipsForTesting()
+            }
+            #endif
             // The file is instant. Safari can take its time.
             rules.reload()
             await status.refresh()

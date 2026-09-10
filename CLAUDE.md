@@ -38,12 +38,17 @@ JavaScript.
 
 ## App screens
 
-One screen per state, and the rules are a `List` with sections rather than
-stacks. `LabeledContent` wraps its value onto a second line when the label is a
-hostname, and a `Label` in its value position triples the row height, so
-`RuleRow` is a plain `HStack`. Debug builds take `-UndirectForceState off|on` for
-screenshots. Full account:
-[docs/rules-and-record.md](docs/rules-and-record.md).
+Shaped after System Settings > Login Items & Extensions, the pane that lists
+Safari extensions. Setup is one sentence and a button, never a tutorial: the HIG
+says onboarding must not teach the system. TipKit carries the one non-obvious
+control, inline rather than as a popover. `RuleRow` is a plain `HStack` because
+`LabeledContent` wraps its value under a wide label. Debug builds take
+`-UndirectForceState`, `-UndirectSeedSample` and `-UndirectShowTips`. Full
+account: [docs/rules-and-record.md](docs/rules-and-record.md).
+
+- **The sandbox will not read a group-container file the app did not write.**
+  `com.apple.provenance` survives `xattr -c`, so a shell-written sample fails
+  with POSIX 1. The app seeds its own. Same doc.
 
 ## Rules and the record
 

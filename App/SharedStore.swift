@@ -49,9 +49,16 @@ enum SharedStore {
 
     @discardableResult
     static func write(_ snapshot: Snapshot) -> Bool {
-        guard let url = fileURL, let data = try? JSONEncoder().encode(snapshot) else {
+        guard let url = fileURL else {
+            log.error("no group container for \(appGroup, privacy: .public)")
             return false
         }
-        return (try? data.write(to: url, options: .atomic)) != nil
+        do {
+            try JSONEncoder().encode(snapshot).write(to: url, options: .atomic)
+            return true
+        } catch {
+            log.error("snapshot not written to \(url.path, privacy: .public): \(error, privacy: .public)")
+            return false
+        }
     }
 }
