@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy · Undirect</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <nav class="site-nav">
+        <a href="/" class="nav-brand">
+            <img src="/icon.png" alt="Undirect" width="28" height="28">
+            Undirect
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span><span></span><span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/support/">Support</a></li>
+            <li><a href="/privacy/" class="active">Privacy</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="page-header">
+            <h1>Privacy</h1>
+            <p class="page-subtitle">Effective 10 September 2026</p>
+        </div>
+
+        <div class="summary-box">
+            <p>Undirect collects nothing. There is no account, no analytics and no server. One button sends something, and only when it is pressed.</p>
+        </div>
+
+        <div class="section">
+            <h2>What the extension sees</h2>
+            <p>To catch a click being taken, the guard has to run on the pages that are open. It reads the shape of the page: the element under the pointer, where a link points, and which site a new window would go to. None of it is stored, and none of it is sent.</p>
+        </div>
+
+        <div class="section">
+            <h2>What is kept on the device</h2>
+            <p>The rules that are set, the hosts that have been blocked, and how many attempts were stopped. These live in Safari's own extension storage. A copy is written to a container that only Undirect and its extension can read, so the app can show the same list.</p>
+        </div>
+
+        <div class="section">
+            <h2>Reporting a site</h2>
+            <p>The Report button opens a prefilled issue on Undirect's public repository at GitHub. It carries the address of the site and what the guard saw there. It opens in the browser and sends nothing until it is submitted by hand, and anything in it can be edited or the tab closed first. Once submitted it is public, and GitHub's privacy policy governs it.</p>
+        </div>
+
+        <div class="section">
+            <h2>No third parties</h2>
+            <p>Undirect contains no analytics, no advertising code, no crash reporting and no third-party libraries. Blocking uses Safari's own content blocking rules, so the extension never sees the traffic it stops.</p>
+        </div>
+
+        <div class="section">
+            <h2>Children</h2>
+            <p>Undirect collects nothing from anyone, of any age.</p>
+        </div>
+
+        <div class="section">
+            <h2>Changes</h2>
+            <p>Any change to this page is published here with a new effective date.</p>
+        </div>
+
+        <div class="section">
+            <h2>Contact</h2>
+            <p>Questions go to <a href="mailto:kenneth@matsuokengo.com">kenneth@matsuokengo.com</a>.</p>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/support/">Support</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="https://github.com/kengomatsuo/undirect">Source</a>
+        </div>
+        <p class="copyright">© 2026 Kenneth Fang</p>
+    </footer>
+</body>
+</html>
