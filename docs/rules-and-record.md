@@ -172,3 +172,26 @@ itself in its first section header instead, which reads the same on all three.
 The HIG adds a constraint worth keeping in mind: iPad windows resize fluidly, so
 the layout has to hold at narrow, compact and intermediate widths, not only at
 full screen.
+
+## The Mac card, and where a tip belongs
+
+`List` with `.listStyle(.inset)` draws bare hairline rows on macOS, which looks
+nothing like a Mac pane. System Settings draws one rounded card holding the rows
+with hairlines between them, and `Form` with `.formStyle(.grouped)` is what
+produces that: "leading aligned labels and trailing aligned controls within
+visually grouped sections". So the container is a grouped `Form` on macOS and an
+inset-grouped `List` on iOS, which already draws cards.
+
+TipKit came back out. The HIG names three tip types and when each applies: a
+popover to preserve content flow, an annotation-style inline tip when pointing at
+a specific element, and a hint-style inline tip when it points at nothing. The
+tip here pointed at the row's state control, and it shipped as the type meant for
+pointing at nothing, wedged into the content it should have preserved.
+
+The control it explained exists only on macOS, since iOS is read-only, and the
+macOS guidance for describing a control is a tooltip through `help(_:)`. That is
+what the state menu carries now, and no tip framework is needed for it.
+
+The screen's name lives in `navigationTitle` on macOS, where it also names the
+window, and in the first section header on iOS, where a collapsed split view
+leaves the bar empty. Showing both says it twice.

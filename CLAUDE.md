@@ -43,12 +43,17 @@ JavaScript.
 
 One `NavigationSplitView` for all three: sidebar on iPad and Mac, collapsing to
 a stack on iPhone with `preferredCompactColumn` set to `.detail`. Rows follow
-System Settings > Login Items & Extensions, the pane that lists Safari
-extensions. Setup is one sentence and a button, never a tutorial: the HIG says
-onboarding must not teach the system. TipKit carries the one non-obvious control,
-inline rather than as a popover. Debug builds take `-UndirectForceState`,
-`-UndirectSeedSample` and `-UndirectShowTips`. Full account:
+System Settings, the app this one sits beside. Setup is one sentence and a
+button, never a tutorial: the HIG says onboarding must not teach the system.
+Debug builds take `-UndirectForceState` and `-UndirectSeedSample`. Full account:
 [docs/rules-and-record.md](docs/rules-and-record.md).
+
+- **macOS needs a grouped `Form`, not an inset `List`.** `.listStyle(.inset)`
+  draws bare hairlines; `.formStyle(.grouped)` draws the rounded card System
+  Settings uses. iOS keeps `.insetGrouped`, which already draws cards. Same doc.
+- **A tip that points at one control is a popover or an annotation, never a hint
+  card in the list.** The control here is macOS-only, and macOS describes a
+  control with `help(_:)`, so there is no tip framework in this project.
 
 - **A collapsed split view discards the detail column's title**, so each screen
   names itself in its first section header. `.navigationTitle` is macOS only,
