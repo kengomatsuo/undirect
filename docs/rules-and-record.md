@@ -195,3 +195,27 @@ what the state menu carries now, and no tip framework is needed for it.
 The screen's name lives in `navigationTitle` on macOS, where it also names the
 window, and in the first section header on iOS, where a collapsed split view
 leaves the bar empty. Showing both says it twice.
+
+## First run
+
+Two screens, where there used to be one status message doing neither job.
+
+**Welcome** is a sheet on first launch, shaped like the one Reminders shows: a
+bold title, four rows of symbol, bold line and grey sentence, and a full-width
+button pinned at the bottom. No API ships for this, so it is hand-built.
+`presentationSizing` gives it the right box: `.fitted` on macOS, because `.form`
+is a fixed size that clips the fourth row, and `.form` on iOS and iPadOS where it
+lands as the centred card. The button opens Safari's Extensions pane directly, so
+first launch ends with the extension on rather than with a description of it.
+
+The sheet shows once, remembered in `@AppStorage`. That is `UserDefaults`, which
+is a required-reason API, so `PrivacyInfo.xcprivacy` now declares it under
+`CA92.1`. Debug builds take `-UndirectShowWelcome YES` to force it and
+`-welcomeShown YES` to suppress it.
+
+**Not on yet** is `ContentUnavailableView` with its `actions:` slot carrying the
+buttons. It is the system's own screen for nothing-here-yet, and it replaced a
+hand-rolled stack of centred text.
+
+The copy went through `ui-copy` first: one sentence per row, nothing addressing
+the reader, and the button naming what it does rather than saying Continue.

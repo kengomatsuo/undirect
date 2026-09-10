@@ -7,13 +7,30 @@ struct ContentView: View {
     // iPhone and Slide Over collapse the columns. Open on the rules, not on a
     // two-item menu in front of them.
     @State private var compactColumn = NavigationSplitViewColumn.detail
+    @AppStorage("welcomeShown") private var welcomeShown = false
+    @State private var showWelcome = false
 
     var body: some View {
         screen
             .task {
+                showWelcome = !welcomeShown || forcedWelcome
                 // The file is instant. Safari can take its time.
                 rules.reload()
                 await status.refresh()
+            }
+            .sheet(isPresented: $showWelcome) {
+                WelcomeView {
+                    welcomeShown = true
+                    showWelcome = false
+                    status.openSafariSettings()
+                }
+                // .form is a fixed size and clips the fourth row on macOS.
+                #if os(macOS)
+                .presentationSizing(.fitted)
+                #else
+                .presentationSizing(.form)
+                #endif
+                .interactiveDismissDisabled()
             }
             #if os(macOS)
             .frame(minWidth: 640, minHeight: 440)
@@ -61,6 +78,14 @@ struct ContentView: View {
         }
         #endif
         return status.state
+    }
+
+    private var forcedWelcome: Bool {
+        #if DEBUG
+        return UserDefaults.standard.bool(forKey: "UndirectShowWelcome")
+        #else
+        return false
+        #endif
     }
 
     private func recheck() {

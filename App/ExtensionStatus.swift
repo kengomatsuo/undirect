@@ -1,5 +1,8 @@
 import Foundation
 import SafariServices
+#if os(iOS)
+import UIKit
+#endif
 
 let extensionBundleIdentifier = "com.matsuokengo.undirect.Extension"
 
@@ -33,6 +36,11 @@ final class ExtensionStatus {
         SFSafariApplication.showPreferencesForExtension(
             withIdentifier: extensionBundleIdentifier
         ) { _ in }
+        #else
+        // iOS has no link to the Extensions pane, so this lands in Settings.
+        if let url = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(url)
+        }
         #endif
     }
 

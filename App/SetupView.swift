@@ -1,71 +1,36 @@
 import SwiftUI
-#if os(iOS)
-import UIKit
-#endif
 
-// Shown until Safari says the extension is on. The HIG asks onboarding to stay
-// on what the app does, so this says what happens next and offers the shortest
-// way there. It does not teach anyone how to use Safari.
+// The extension is off. ContentUnavailableView is the system's own screen for
+// nothing-here-yet, and it takes the action button in its own slot.
 struct SetupView: View {
     let state: ExtensionStatus.State
     let openSettings: () -> Void
     let recheck: () -> Void
 
     var body: some View {
-        VStack(spacing: 24) {
-            Spacer(minLength: 0)
-
-            Image(systemName: "cursorarrow.slash")
-                .font(.system(size: 64, weight: .light))
-                .foregroundStyle(.tint)
-                .accessibilityHidden(true)
-
-            VStack(spacing: 8) {
-                Text(headline)
-                    .font(.title2.weight(.semibold))
-                Text(subhead)
-                    .foregroundStyle(.secondary)
-                    .multilineTextAlignment(.center)
-            }
-
-            actions
-
-            Spacer(minLength: 0)
+        ContentUnavailableView {
+            Label(title, systemImage: "cursorarrow.slash")
+        } description: {
+            Text(detail)
+        } actions: {
+            Button("Open Safari Settings", action: openSettings)
+                .buttonStyle(.borderedProminent)
+            Button("Check Again", action: recheck)
         }
-        .padding(32)
-        .frame(maxWidth: 380)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 
-    private var headline: LocalizedStringKey {
+    private var title: LocalizedStringKey {
         if case .failed = state { return "Safari did not answer" }
-        return "Undirect is not on yet"
+        return "Undirect is not on"
     }
 
-    private var subhead: LocalizedStringKey {
+    private var detail: LocalizedStringKey {
         if case .failed(let reason) = state { return "\(reason)" }
         #if os(macOS)
-        return "Switch it on once and it guards every page after that."
+        return "Safari has not switched it on."
         #else
-        return "Switch it on in Settings, under Apps, Safari, Extensions. It guards every page after that."
+        return "Settings, then Apps, then Safari, then Extensions."
         #endif
-    }
-
-    @ViewBuilder
-    private var actions: some View {
-        VStack(spacing: 10) {
-            #if os(macOS)
-            Button("Open Safari Extension Settings", action: openSettings)
-                .buttonStyle(.borderedProminent)
-            #else
-            if let url = URL(string: UIApplication.openSettingsURLString) {
-                Link("Open Settings", destination: url)
-                    .buttonStyle(.borderedProminent)
-            }
-            #endif
-            Button("Check Again", action: recheck)
-                .buttonStyle(.borderless)
-        }
     }
 }
 

@@ -54,6 +54,10 @@ Debug builds take `-UndirectForceState` and `-UndirectSeedSample`. Full account:
 - **A tip that points at one control is a popover or an annotation, never a hint
   card in the list.** The control here is macOS-only, and macOS describes a
   control with `help(_:)`, so there is no tip framework in this project.
+- **First run is two screens, not one.** A welcome sheet says what the app does
+  and its button switches the extension on; the not-on-yet screen is
+  `ContentUnavailableView` with its `actions:` slot. `presentationSizing(.form)`
+  clips on macOS, so that one uses `.fitted`. Same doc.
 
 - **A collapsed split view discards the detail column's title**, so each screen
   names itself in its first section header. `.navigationTitle` is macOS only,
