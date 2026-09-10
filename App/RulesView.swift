@@ -1,18 +1,30 @@
 import SwiftUI
 import TipKit
 
-// Shaped after System Settings > Login Items & Extensions, which is the pane
-// that lists Safari extensions: a sentence-case title, one line of explanation,
-// a segmented control for the grouping, then one card of rows.
-struct RulesView: View {
-    let rules: RulesModel
-    let recheck: () -> Void
+// Which slice of the rules a column is showing. The sidebar picks it on iPad
+// and Mac; on iPhone the split view collapses and the back button does.
+enum Grouping: String, CaseIterable, Identifiable, Hashable {
+    case everywhere, bySite
 
-    private enum Grouping: String, CaseIterable {
-        case everywhere, bySite
+    var id: String { rawValue }
+
+    var title: LocalizedStringKey {
+        self == .everywhere ? "Everywhere" : "By site"
     }
 
-    @State private var grouping: Grouping = .everywhere
+    var symbol: String {
+        self == .everywhere ? "globe" : "list.bullet"
+    }
+}
+
+// The detail column. Shaped after System Settings > Login Items & Extensions,
+// which is the pane that lists Safari extensions: one line of explanation, then
+// a single card of rows.
+struct RulesView: View {
+    let rules: RulesModel
+    let grouping: Grouping
+    let recheck: () -> Void
+
     private let changeRuleTip = ChangeRuleTip()
 
     private var shown: [Rule] {
@@ -62,6 +74,11 @@ struct RulesView: View {
             }
             .textCase(nil)
         }
+        // macOS only: this names the window, which is a platform requirement
+        // rather than decoration. On iOS the header above carries the name.
+        #if os(macOS)
+        .navigationTitle(grouping.title)
+        #endif
         #if os(macOS)
         .listStyle(.inset)
         #else
@@ -74,22 +91,21 @@ struct RulesView: View {
         }
     }
 
+    // The screen names itself here rather than in the navigation bar: a
+    // collapsed split view discards the detail column's title, so the bar is
+    // empty on iPhone.
     private var header: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Text("Rules")
+        VStack(alignment: .leading, spacing: 4) {
+            Text(grouping.title)
                 .font(.headline)
                 .foregroundStyle(.primary)
-            Text("Where a page may send you, and where it may not.")
+            Text(grouping == .everywhere
+                 ? "Rules that apply on every site."
+                 : "Rules that apply to one site only.")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)
-            Picker("Grouping", selection: $grouping) {
-                Text("Everywhere").tag(Grouping.everywhere)
-                Text("By site").tag(Grouping.bySite)
-            }
-            .pickerStyle(.segmented)
-            .labelsHidden()
         }
-        .padding(.bottom, 6)
+        .padding(.bottom, 4)
     }
 
     @ViewBuilder

@@ -4,27 +4,28 @@ import TipKit
 struct ContentView: View {
     @State private var status = ExtensionStatus()
     @State private var rules = RulesModel()
+    @State private var grouping: Grouping? = .everywhere
+    // iPhone and Slide Over collapse the columns. Open on the rules, not on a
+    // two-item menu in front of them.
+    @State private var compactColumn = NavigationSplitViewColumn.detail
 
     var body: some View {
-        NavigationStack {
-            screen
-                .navigationTitle("Undirect")
-        }
-        .task {
-            try? Tips.configure()
-            #if DEBUG
-            // Screenshot runs force the tip; display rules otherwise decide.
-            if UserDefaults.standard.bool(forKey: "UndirectShowTips") {
-                Tips.showAllTipsForTesting()
+        screen
+            .task {
+                try? Tips.configure()
+                #if DEBUG
+                // Screenshot runs force the tip; display rules otherwise decide.
+                if UserDefaults.standard.bool(forKey: "UndirectShowTips") {
+                    Tips.showAllTipsForTesting()
+                }
+                #endif
+                // The file is instant. Safari can take its time.
+                rules.reload()
+                await status.refresh()
             }
+            #if os(macOS)
+            .frame(minWidth: 640, minHeight: 440)
             #endif
-            // The file is instant. Safari can take its time.
-            rules.reload()
-            await status.refresh()
-        }
-        #if os(macOS)
-        .frame(minWidth: 460, minHeight: 420)
-        #endif
     }
 
     @ViewBuilder
@@ -35,9 +36,24 @@ struct ContentView: View {
             // would be a guess, and it is usually wrong.
             Color.clear
         case .on:
-            RulesView(rules: rules, recheck: recheck)
+            split
         case .off, .unavailable, .failed:
             SetupView(state: status.state, openSettings: status.openSafariSettings, recheck: recheck)
+        }
+    }
+
+    private var split: some View {
+        NavigationSplitView(preferredCompactColumn: $compactColumn) {
+            List(Grouping.allCases, selection: $grouping) { item in
+                Label(item.title, systemImage: item.symbol)
+                    .tag(item)
+            }
+            .navigationTitle("Undirect")
+            #if os(macOS)
+            .navigationSplitViewColumnWidth(min: 170, ideal: 190, max: 240)
+            #endif
+        } detail: {
+            RulesView(rules: rules, grouping: grouping ?? .everywhere, recheck: recheck)
         }
     }
 

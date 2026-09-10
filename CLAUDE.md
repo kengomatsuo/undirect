@@ -12,6 +12,9 @@ JavaScript.
   shared by both platforms.
 - Four targets: an app and an extension per platform. Schemes `Undirect-macOS`
   and `Undirect-iOS`.
+- **Every icon regenerates from `python3 Support/icon/build.py`, and the package
+  must stay named `AppIcon.icon` to match `ASSETCATALOG_COMPILER_APPICON_NAME`.**
+  Full account: [docs/app-icon.md](docs/app-icon.md).
 
 ## Rules paid for with a bug
 
@@ -38,13 +41,20 @@ JavaScript.
 
 ## App screens
 
-Shaped after System Settings > Login Items & Extensions, the pane that lists
-Safari extensions. Setup is one sentence and a button, never a tutorial: the HIG
-says onboarding must not teach the system. TipKit carries the one non-obvious
-control, inline rather than as a popover. `RuleRow` is a plain `HStack` because
-`LabeledContent` wraps its value under a wide label. Debug builds take
-`-UndirectForceState`, `-UndirectSeedSample` and `-UndirectShowTips`. Full
-account: [docs/rules-and-record.md](docs/rules-and-record.md).
+One `NavigationSplitView` for all three: sidebar on iPad and Mac, collapsing to
+a stack on iPhone with `preferredCompactColumn` set to `.detail`. Rows follow
+System Settings > Login Items & Extensions, the pane that lists Safari
+extensions. Setup is one sentence and a button, never a tutorial: the HIG says
+onboarding must not teach the system. TipKit carries the one non-obvious control,
+inline rather than as a popover. Debug builds take `-UndirectForceState`,
+`-UndirectSeedSample` and `-UndirectShowTips`. Full account:
+[docs/rules-and-record.md](docs/rules-and-record.md).
+
+- **A collapsed split view discards the detail column's title**, so each screen
+  names itself in its first section header. `.navigationTitle` is macOS only,
+  where it names the window. Same doc.
+- **`RuleRow` is a plain `HStack`**, because `LabeledContent` wraps its value
+  under a wide label and a `Label` in its value position triples row height.
 
 - **The sandbox will not read a group-container file the app did not write.**
   `com.apple.provenance` survives `xattr -c`, so a shell-written sample fails

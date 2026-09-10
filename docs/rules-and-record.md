@@ -146,3 +146,29 @@ unsandboxed process wrote: `com.apple.provenance` records who created it, the
 attribute cannot be stripped with `xattr -c`, and the read fails with POSIX 1.
 Screenshot runs therefore ask the app to write its own sample, through
 `-UndirectSeedSample YES`, rather than having a shell write the JSON.
+
+## Three platforms, one split view
+
+The first pass at these screens looked at one Mac pane and applied its answer to
+iPhone and iPad too. iPad Settings is a two-column split view: a sidebar of
+destinations, and a detail carrying its own title, explanation and grouped
+cards. The iPad build was the iPhone column stretched across thirteen inches.
+
+`NavigationSplitView` covers all three from one implementation. It shows columns
+on iPad and Mac and collapses to a stack at narrow widths, which includes iPhone
+and iPad in Slide Over. `preferredCompactColumn` set to `.detail` opens the
+collapsed form on the rules rather than on a two-item menu in front of them.
+
+The grouping moved from a segmented control into the sidebar, which is where
+iPad puts that choice.
+
+A collapsed split view discards the detail column's navigation title. Setting
+`.navigationBarTitleDisplayMode(.large)`, wrapping the detail in its own
+`NavigationStack`, and passing a verbatim `Text` all leave the bar empty, so the
+column is dropping the title rather than failing to resolve it. The screen names
+itself in its first section header instead, which reads the same on all three.
+`.navigationTitle` stays on macOS alone, where it names the window.
+
+The HIG adds a constraint worth keeping in mind: iPad windows resize fluidly, so
+the layout has to hold at narrow, compact and intermediate widths, not only at
+full screen.
