@@ -31,7 +31,7 @@ Everywhere a page tried to send you is listed, whether or not it was stopped. Ea
 What is blocked everywhere becomes a content blocking rule, so the request never leaves your device.
 
 PRIVATE BY BUILD
-No account. No analytics. No server. Nothing leaves the device. The list of destinations lives in your browser, and the app reads it through a container on the same machine.
+No account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.
 
 REQUIREMENTS
 Undirect is a Safari extension. Switch it on in Safari, and allow it on the sites you want guarded.
@@ -80,4 +80,9 @@ the welcome screen was shown.
 
 ## URLs
 
-Support URL and Privacy Policy URL are both required and must resolve. Neither exists yet.
+Support URL: https://undirect.matsuokengo.com/support/
+Privacy Policy URL: https://undirect.matsuokengo.com/privacy/
+
+Both pages are written and published to the gh-pages branch, and GitHub Pages has
+built them against that custom domain. They resolve once a CNAME record for
+`undirect` points at `kengomatsuo.github.io`, the way `cutling` already does.
