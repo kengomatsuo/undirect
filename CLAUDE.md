@@ -96,6 +96,14 @@ retry never loads. Per-site shortcuts live in
 `Extension/Resources/sites/recipes.js`. Full account:
 [docs/redirect-mechanism.md](docs/redirect-mechanism.md).
 
+## Shipping
+
+Store copy, review notes and the App Privacy answers live in
+`Support/AppStore/metadata.md`, each counted against Apple's limit. Screenshots
+sit beside them at accepted sizes. What still needs the Apple account, and the
+one judgement call about the site named in `sites/recipes.js`, are in
+[docs/app-store-submission.md](docs/app-store-submission.md).
+
 ## Tests
 
 `python3 tests/build.py && python3 tests/serve.py`, then open
