@@ -40,19 +40,6 @@
       "type": "block"
     },
     "condition": {
-      "urlFilter": "||lunarx.to/px/q",
-      "resourceTypes": [
-        "xmlhttprequest"
-      ]
-    }
-  },
-  {
-    "id": 4,
-    "priority": 1,
-    "action": {
-      "type": "block"
-    },
-    "condition": {
       "urlFilter": "||buildsstate.com",
       "resourceTypes": [
         "script",

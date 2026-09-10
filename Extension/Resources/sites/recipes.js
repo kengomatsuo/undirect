@@ -1,19 +1,8 @@
-// Per-site fixes that are cheaper than fighting the page.
-// Each recipe runs once, at document_start, before any page script.
-globalThis.UNDIRECT_RECIPES = [
-  {
-    id: "lunarx",
-    hosts: ["lunarx.to"],
-    // Their own arming script checks this flag and never requests the pop tag.
-    label: "Turned on the site's own ad opt-out",
-    apply() {
-      try {
-        localStorage.setItem("lunar_ads_optout", "true");
-      } catch (e) {}
-      try {
-        document.cookie =
-          "lunar_ads_optout=true; path=/; max-age=31536000; samesite=lax";
-      } catch (e) {}
-    },
-  },
-];
+// Per-site fixes for sites that offer their own way to turn ads off, which is
+// cheaper than fighting the page. Each recipe runs once, at document_start,
+// before any page script.
+//
+// Empty on purpose. The only entry named a site that distributes work without
+// licence, and shipping a rule for it invited an argument at review that the
+// generic guard makes unnecessary: it stops the same pops without naming anyone.
+globalThis.UNDIRECT_RECIPES = [];
