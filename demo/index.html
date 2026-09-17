@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try it · Undirect</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://cdn.jsdelivr.net/gh/kengomatsuo/undirect@964ed96ae185a39b454c0b0873b1f3f0badf5eee/web/demo/pop.js"></script>
+</head>
+<body>
+    <nav class="site-nav">
+        <a href="/" class="nav-brand">
+            <img src="/icon.png" alt="Undirect" width="28" height="28">
+            Undirect
+        </a>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span><span></span><span></span>
+        </label>
+        <ul class="nav-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/support/">Support</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="page-header">
+            <h1>Try it</h1>
+            <p class="page-subtitle">This page misbehaves on purpose.</p>
+        </div>
+
+        <div class="support-section">
+            <h2>How to test</h2>
+            <p>Press the Undirect button in Safari to turn it on for this site. Then tap anywhere below.</p>
+            <p>With Undirect off, a tap here opens tabs to made-up addresses.</p>
+        </div>
+
+        <div class="support-section">
+            <h2>What the page does</h2>
+            <h3>An invisible form over everything</h3>
+            <p>Your tap lands on it and it opens clicktrack.example in a new tab.</p>
+            <h3>A clear layer with no link</h3>
+            <p>It sits over the article and takes the tap for itself.</p>
+            <h3>A pop-up from third-party code</h3>
+            <p>A script from another server opens adserver.example.</p>
+            <h3>A click nobody made</h3>
+            <p>The same script clicks a link to tabunder.example.</p>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/support/">Support</a>
+            <a href="/privacy/">Privacy</a>
+            <a href="https://github.com/kengomatsuo/undirect">Source</a>
+        </div>
+        <p class="copyright">© 2026 Kenneth Fang</p>
+    </footer>
+</body>
+</html>
