@@ -19,38 +19,31 @@ What is done, what needs an Apple account, and one judgement call.
   `Support/AppStore/metadata.md`, each field counted against its limit.
 - Release configuration builds on both platforms.
 
-## Blocked without the Apple account
+## Done on the account (checked 2026-09-17)
 
-None of these can be done from here.
+- Xcode is signed in to team `PM3K35YS39`: provisioning profiles exist for
+  `com.matsuokengo.undirect` and `com.matsuokengo.undirect.Extension`, iOS and
+  Mac, store and development.
+- The iOS app group `group.com.matsuokengo.undirect` is registered; both iOS
+  profiles carry it.
+- Support and privacy pages resolve: `undirect.matsuokengo.com/support/` and
+  `/privacy/` both return 200.
 
-1. **Sign in to an Xcode account for team `PM3K35YS39`.** Automatic signing fails
-   without it, so nothing can be archived or uploaded. Xcode, Settings, Accounts.
-2. **Register the bundle identifiers**: `com.matsuokengo.undirect` and
-   `com.matsuokengo.undirect.Extension`.
-3. **Register the iOS app group** `group.com.matsuokengo.undirect` and enable the
-   App Groups capability on both iOS identifiers. macOS uses the team-prefixed
-   form, which needs no registration; iOS accepts only the registered form, so
-   the app and its extension cannot share data on a device until this is done.
-4. **Create the App Store Connect record.** The name is checked for global
-   uniqueness at that moment, and "Undirect" cannot be verified from here.
-5. **Host a Support URL and a Privacy Policy URL.** Both are required and must
-   resolve. Neither exists. The privacy policy has to match what the app does,
-   which is collect nothing.
+## Still needs the Account Holder
 
-## The judgement call
+1. **Accept the updated Apple Developer Program License Agreement** in App Store
+   Connect. Nothing new can be submitted until it is accepted.
+2. **Create the App Store Connect record**: name Undirect, primary language
+   English, bundle ID `com.matsuokengo.undirect`, iOS and macOS. The name is
+   checked for uniqueness at that moment.
+3. **Upload the builds and fill the listing** from `Support/AppStore/metadata.md`.
+   This needs a signed-in App Store Connect session or an API key for this app.
 
-`Extension/Resources/sites/recipes.js` ships a rule naming `lunarx.to`, and the
-static blocklist names a host that site loads. lunarx.to distributes anime and
-manga without licence.
+## The judgement call, settled
 
-The rule itself only sets that site's own advertising opt-out, and the app does
-nothing to help anyone reach the site. A reviewer reading the bundle will still
-find a named piece of special handling for a piracy site, and App Review has
-latitude here.
-
-The safe version drops the per-site recipe and keeps the generic guard, which
-already stops the same pops without naming anyone. That costs one site its
-cleanest path and removes the argument entirely.
+The per-site recipe naming lunarx.to was dropped (2026-09-10) and the shipped
+block list, which named a host lunarx.to loads, was deleted (2026-09-17). The
+bundle names no site.
 
 ## Two things found by opening the account
 
