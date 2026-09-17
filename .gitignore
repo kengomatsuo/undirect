@@ -25,3 +25,5 @@ tests/popup.html
 tests/popup.css
 tests/popup.js
 tests/site.js
+.ads/
+tests/navigation.js

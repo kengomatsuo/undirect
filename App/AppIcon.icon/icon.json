@@ -1,47 +1,47 @@
 {
-  "fill-specializations": [
+  "fill-specializations" : [
     {
-      "value": {
-        "linear-gradient": [
-          "extended-srgb:0.063,0.063,0.075,1.0",
-          "extended-srgb:0.000,0.000,0.000,1.0"
+      "value" : {
+        "linear-gradient" : [
+          "extended-srgb:0.06300,0.06300,0.07500,1.00000",
+          "extended-srgb:0.00000,0.00000,0.00000,1.00000"
         ]
       }
     },
     {
-      "appearance": "dark",
-      "value": {
-        "linear-gradient": [
-          "extended-srgb:0.055,0.055,0.063,1.0",
-          "extended-srgb:0.000,0.000,0.000,1.0"
+      "appearance" : "dark",
+      "value" : {
+        "linear-gradient" : [
+          "extended-srgb:0.05500,0.05500,0.06300,1.00000",
+          "extended-srgb:0.00000,0.00000,0.00000,1.00000"
         ]
       }
     }
   ],
-  "groups": [
+  "groups" : [
     {
-      "layers": [
+      "layers" : [
         {
-          "fill": {
-            "solid": "extended-srgb:0.898,0.196,0.169,1.0"
+          "fill" : {
+            "solid" : "extended-srgb:0.89800,0.19600,0.16900,1.00000"
           },
-          "glass": false,
-          "image-name": "mark.png",
-          "name": "mark"
+          "glass" : true,
+          "image-name" : "mark.png",
+          "name" : "mark"
         }
       ],
-      "shadow": {
-        "kind": "neutral",
-        "opacity": 0.5
+      "shadow" : {
+        "kind" : "neutral",
+        "opacity" : 0.5
       },
-      "specular": true,
-      "translucency": {
-        "enabled": true,
-        "value": 0.5
+      "specular" : true,
+      "translucency" : {
+        "enabled" : true,
+        "value" : 0.5
       }
     }
   ],
-  "supported-platforms": {
-    "squares": "shared"
+  "supported-platforms" : {
+    "squares" : "shared"
   }
 }

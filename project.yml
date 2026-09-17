@@ -14,6 +14,11 @@ settings:
     MARKETING_VERSION: "1.0"
     CURRENT_PROJECT_VERSION: "1"
     CODE_SIGN_STYLE: Automatic
+    # Without a team, xcodebuild signs ad hoc: Safari then hides the extension
+    # unless "Allow unsigned extensions" is set again on every launch, the app
+    # cannot ask Safari about an extension it does not own, and the sandbox
+    # refuses the group container, so no snapshot reaches the app.
+    DEVELOPMENT_TEAM: PM3K35YS39
     ENABLE_USER_SCRIPT_SANDBOXING: YES
     GENERATE_INFOPLIST_FILE: YES
     DEAD_CODE_STRIPPING: YES
@@ -33,7 +38,6 @@ targets:
       path: Support/Undirect-macOS.entitlements
       properties:
         com.apple.security.app-sandbox: true
-        com.apple.security.files.user-selected.read-only: true
         com.apple.security.application-groups:
           - PM3K35YS39.undirect
     settings:
@@ -70,15 +74,12 @@ targets:
         type: folder
       - path: Extension/Resources/popup
         type: folder
-      - path: Extension/Resources/rules
-        type: folder
       - path: Extension/Resources/sites
         type: folder
     entitlements:
       path: Support/UndirectExtension-macOS.entitlements
       properties:
         com.apple.security.app-sandbox: true
-        com.apple.security.files.user-selected.read-only: true
         com.apple.security.application-groups:
           - PM3K35YS39.undirect
     info:
@@ -119,7 +120,8 @@ targets:
         INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.utilities
         INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: false
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
-        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone: UIInterfaceOrientationPortrait
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
         TARGETED_DEVICE_FAMILY: "1,2"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
@@ -150,8 +152,6 @@ targets:
       - path: Extension/Resources/lib
         type: folder
       - path: Extension/Resources/popup
-        type: folder
-      - path: Extension/Resources/rules
         type: folder
       - path: Extension/Resources/sites
         type: folder

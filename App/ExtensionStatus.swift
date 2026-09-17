@@ -31,6 +31,17 @@ final class ExtensionStatus {
         #endif
     }
 
+    // Safari gives no notification when the user flips the toggle in
+    // Settings, so this is the only way the screen finds out on its own. A
+    // manual button asking the reader to tell the app what it could have
+    // found out itself is not a real recovery path.
+    func watch() async {
+        while !Task.isCancelled {
+            try? await Task.sleep(for: .seconds(2))
+            await refresh()
+        }
+    }
+
     func openSafariSettings() {
         #if os(macOS)
         SFSafariApplication.showPreferencesForExtension(

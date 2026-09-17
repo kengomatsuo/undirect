@@ -16,13 +16,11 @@ enum Grouping: String, CaseIterable, Identifiable, Hashable {
     }
 }
 
-// The detail column. Shaped after System Settings > Login Items & Extensions,
-// which is the pane that lists Safari extensions: one line of explanation, then
-// a single card of rows.
+// The detail column: one card of rules under the grouping's title. Settings
+// live in SettingsView, never in this list.
 struct RulesView: View {
     let rules: RulesModel
     let grouping: Grouping
-    let recheck: () -> Void
 
     private var shown: [Rule] {
         grouping == .everywhere ? rules.everywhere : rules.bySite
@@ -30,16 +28,7 @@ struct RulesView: View {
 
     var body: some View {
         container
-            .toolbar {
-                ToolbarItem {
-                    Button("Check Again", systemImage: "arrow.clockwise", action: recheck)
-                }
-            }
-            // macOS only: this names the window, which is a platform requirement
-            // rather than decoration. On iOS the header below carries the name.
-            #if os(macOS)
             .navigationTitle(grouping.title)
-            #endif
     }
 
     // A grouped Form draws the rounded card that System Settings uses. A plain
@@ -75,75 +64,9 @@ struct RulesView: View {
                     RuleRow(rule: rule, canEdit: rules.canEdit, apply: applied)
                 }
             }
-        } header: {
-            header
-        }
-        .textCase(nil)
-
-        Section {
-            bannerRow
-            policyRow
-        } header: {
-            Text("Settings")
-                .font(.headline)
-                .foregroundStyle(.primary)
         } footer: {
-            if let counts = rules.snapshot?.counts {
+            if grouping == .everywhere, let counts = rules.snapshot?.counts, counts.lifetime > 0 {
                 Text("\(counts.lifetime) stopped in all, \(counts.session) since the browser started.")
-            }
-        }
-        .textCase(nil)
-    }
-
-    // The screen names itself here rather than in the navigation bar: a
-    // collapsed split view discards the detail column's title, so the bar is
-    // empty on iPhone.
-    private var header: some View {
-        VStack(alignment: .leading, spacing: 4) {
-            // macOS names the window, so repeating it here would say it twice.
-            #if !os(macOS)
-            Text(grouping.title)
-                .font(.headline)
-                .foregroundStyle(.primary)
-            #endif
-            Text(grouping == .everywhere
-                 ? "Rules that apply on every site."
-                 : "Rules that apply to one site only.")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-        }
-        .padding(.bottom, 4)
-    }
-
-    @ViewBuilder
-    private var bannerRow: some View {
-        let on = rules.snapshot?.banner ?? false
-        if rules.canEdit {
-            Toggle("Note in the page", isOn: Binding(
-                get: { on },
-                set: { rules.setBanner($0) }
-            ))
-        } else {
-            LabeledContent("Note in the page") {
-                Text(on ? "On" : "Off")
-            }
-        }
-    }
-
-    @ViewBuilder
-    private var policyRow: some View {
-        let policy = rules.snapshot?.policy ?? "block"
-        if rules.canEdit {
-            Picker("A destination with no rule", selection: Binding(
-                get: { policy },
-                set: { rules.setPolicy($0) }
-            )) {
-                Text("Block it").tag("block")
-                Text("Allow it").tag("allow")
-            }
-        } else {
-            LabeledContent("A destination with no rule") {
-                Text(policy == "block" ? "Block it" : "Allow it")
             }
         }
     }

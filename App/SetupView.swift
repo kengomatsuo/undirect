@@ -5,7 +5,6 @@ import SwiftUI
 struct SetupView: View {
     let state: ExtensionStatus.State
     let openSettings: () -> Void
-    let recheck: () -> Void
 
     var body: some View {
         ContentUnavailableView {
@@ -15,17 +14,21 @@ struct SetupView: View {
         } actions: {
             Button("Open Safari Settings", action: openSettings)
                 .buttonStyle(.borderedProminent)
-            Button("Check Again", action: recheck)
         }
     }
 
     private var title: LocalizedStringKey {
-        if case .failed = state { return "Safari did not answer" }
+        if case .failed = state { return "Undirect may not be on" }
         return "Undirect is not on"
     }
 
+    // A failed check says nothing the reader can act on differently, so it asks
+    // for the same thing in plainer words. The reason it gave belongs in the
+    // log, not on screen: "SFErrorDomain error 1" is not a sentence.
     private var detail: LocalizedStringKey {
-        if case .failed(let reason) = state { return "\(reason)" }
+        if case .failed = state {
+            return "Safari did not answer. Switching it on there is picked up automatically."
+        }
         #if os(macOS)
         return "Safari has not switched it on."
         #else
@@ -35,5 +38,5 @@ struct SetupView: View {
 }
 
 #Preview {
-    SetupView(state: .off, openSettings: {}, recheck: {})
+    SetupView(state: .off, openSettings: {})
 }
