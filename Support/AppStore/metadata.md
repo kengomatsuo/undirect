@@ -83,6 +83,5 @@ the welcome screen was shown.
 Support URL: https://undirect.matsuokengo.com/support/
 Privacy Policy URL: https://undirect.matsuokengo.com/privacy/
 
-Both pages are written and published to the gh-pages branch, and GitHub Pages has
-built them against that custom domain. They resolve once a CNAME record for
-`undirect` points at `kengomatsuo.github.io`, the way `cutling` already does.
+Both pages are live. The CNAME record for `undirect` points at
+`kengomatsuo.github.io`, GitHub has issued the certificate, and Enforce HTTPS is on.
