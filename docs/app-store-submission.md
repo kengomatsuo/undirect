@@ -12,9 +12,9 @@ What is done, what needs an Apple account, and one judgement call.
   required-reason API the app touches: `UserDefaults` under `CA92.1`, which backs
   the flag remembering the welcome screen was shown.
 - App icon is a square, unmasked 1024 in the asset catalog, plus the macOS sizes.
-- Nine screenshots, three per platform, at sizes Apple accepts: iPhone 6.9"
-  1320x2868, iPad 13" 2064x2752, Mac 2880x1800. All sRGB with no alpha, and each
-  is around 190 KB against an 8 MB ceiling.
+- Screenshots from real Safari on the demo page (`undirect.matsuokengo.com/demo/`):
+  three iPhone 6.9" 1320x2868, three iPad 13" 2064x2752, two Mac 2880x1800,
+  framed from `.shots/` (untracked) and checked by the hypershots validator.
 - Store copy, review notes and the App Privacy answers are written in
   `Support/AppStore/metadata.md`, each field counted against its limit.
 - Release configuration builds on both platforms.
