@@ -9,9 +9,14 @@ window.chrome = {
   },
   storage: {
     local: {
+      // mode: "everywhere" - the shipping default guards nothing until a site
+      // is switched on, and this harness has no toolbar button to do that with.
       get: () =>
         Promise.resolve({
-          settings: { policy: new URLSearchParams(location.search).get("policy") ?? "block" },
+          settings: {
+            policy: new URLSearchParams(location.search).get("policy") ?? "block",
+            mode: "everywhere",
+          },
           everywhere: JSON.parse(new URLSearchParams(location.search).get("everywhere") ?? "{}"),
           perSite: JSON.parse(new URLSearchParams(location.search).get("perSite") ?? "{}"),
         }),
@@ -19,6 +24,13 @@ window.chrome = {
     onChanged: { addListener() {} },
   },
 };
+
+// Safari hands a real `browser.runtime` to ordinary page scripts, so a page can
+// message an extension. The guard reaches for `browser` before `chrome`, so in
+// here that object wins and every report goes to Safari instead of the stub,
+// silently. The shipping content script runs in an isolated world where
+// `browser` is the extension API and this does not arise.
+Object.defineProperty(window, "browser", { value: window.chrome, configurable: true });
 
 Object.defineProperty(window, "innerWidth", { value: 1280, configurable: true });
 Object.defineProperty(window, "innerHeight", { value: 720, configurable: true });

@@ -34,8 +34,28 @@
     return t === "_blank" || t === "blank";
   };
 
-  function tell(kind, host, url, blocked) {
-    const msg = { __undirect: 1, kind, host: host || "", url: url || "", blocked };
+  // A window asked for at a size is one the page means the user to work in: a
+  // sign-in, a share sheet. A pop asks for a tab and nothing else, because a
+  // small window in front of the reader is no use to it. The background page
+  // takes this as the page vouching for the window; nothing else does.
+  const sized = (features) => {
+    const f = String(features ?? "");
+    return (
+      /\b(width|height|innerwidth|innerheight)\s*=\s*[1-9]/i.test(f) ||
+      /\bpopup\s*=\s*(1|yes|true)\b/i.test(f)
+    );
+  };
+
+  function tell(kind, host, url, blocked, deliberate, because) {
+    const msg = {
+      __undirect: 1,
+      kind,
+      host: host || "",
+      url: url || "",
+      blocked,
+      sized: !!deliberate,
+      because: because || "",
+    };
     try {
       postMessage(msg, location.origin);
     } catch (e) {
@@ -66,29 +86,71 @@
     return false;
   }
 
+  // A sign-in or a checkout carries a way back to this site in its own query
+  // string almost every time - an ad has no reason to. This is the same
+  // reading background.js's lib/navigation.js does for a same-tab redirect,
+  // kept here too since a window this call is deciding whether to even open
+  // never reaches the background in time for that check to matter.
+  function carriesAWayBack(url) {
+    let params;
+    try {
+      params = new URL(url, location.href).searchParams;
+    } catch (e) {
+      return false;
+    }
+    for (const raw of params.values()) {
+      let decoded = null;
+      try {
+        decoded = decodeURIComponent(raw);
+      } catch (e) {}
+      for (const candidate of [raw, decoded]) {
+        if (!candidate || !/^https?:\/\//i.test(candidate)) continue;
+        try {
+          if (withinSite(new URL(candidate).hostname)) return true;
+        } catch (e) {}
+      }
+    }
+    return false;
+  }
+
   // A press invites nothing on its own: these networks pick a real click and
   // ride it. What decides is the destination, what the user said about it, and
-  // whose code is asking.
-  function ruling(url) {
+  // whose code is asking - caller, size, or a way back all count as asking.
+  function ruling(url, features) {
     const host = hostOf(url);
-    if (!host || withinSite(host)) return { host, verdict: "allow", quiet: true };
+    const deliberate = sized(features);
+    if (!host || withinSite(host)) return { host, verdict: "allow", quiet: true, sized: deliberate };
 
     const base = Site.baseDomain(host);
     const explicit = table.here?.[base] ?? table.everywhere?.[base];
-    if (explicit) return { host, verdict: explicit };
-    if (callerBelongsToPage()) return { host, verdict: "allow" };
-    return { host, verdict: table.policy === "allow" ? "allow" : "block" };
+    if (explicit) {
+      return { host, verdict: explicit, sized: deliberate, because: "a rule says so" };
+    }
+
+    if (deliberate) return { host, verdict: "allow", sized: deliberate, because: "asked for at a size" };
+    if (carriesAWayBack(url)) {
+      return { host, verdict: "allow", sized: deliberate, because: "carries a way back here" };
+    }
+    if (callerBelongsToPage()) {
+      return { host, verdict: "allow", sized: deliberate, because: "the page's own code" };
+    }
+    return {
+      host,
+      sized: deliberate,
+      verdict: table.policy === "allow" ? "allow" : "block",
+      because: table.policy === "allow" ? "allowed by default" : "took the press",
+    };
   }
 
-  function refuses(kind, url) {
-    const { host, verdict, quiet } = ruling(url);
+  function refuses(kind, url, features) {
+    const { host, verdict, quiet, sized: deliberate, because } = ruling(url, features);
     if (quiet) return false;
-    tell(kind, host, String(url ?? ""), verdict === "block");
+    tell(kind, host, String(url ?? ""), verdict === "block", deliberate, because);
     return verdict === "block";
   }
 
   window.open = function (url, ...rest) {
-    if (refuses("window-open", url)) return null;
+    if (refuses("window-open", url, rest[1])) return null;
     return nativeOpen.call(window, url, ...rest);
   };
 

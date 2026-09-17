@@ -4,6 +4,7 @@
      third-party. A second port would not: same host, same site. -->
 <script src="http://localhost:8767/thirdparty.js"></script>
 <script src="site.js"></script>
+<script src="navigation.js"></script>
 <script src="shim.js?v=1788851662"></script>
 <script src="recipes.js?v=1788851662"></script>
 <script src="guard.test.js?v=1788851662"></script>
@@ -13,6 +14,11 @@
 <pre id="out">running</pre>
 <script>
 const W = 1280, H = 720;
+// Taken before bridge.js lands. The browser delivers a real click without
+// going through dispatchEvent, so a test about the release the user made has
+// to reach past the page-world hook, which is right to refuse a click the page
+// dispatches itself.
+const nativeDispatch = EventTarget.prototype.dispatchEvent;
 const results = [];
 const ok = (name, pass, detail) => results.push({ name, pass, ...(detail ? { detail } : {}) });
 const P = { x: 120, y: 60 };   // over the real button
@@ -107,12 +113,12 @@ async function run() {
   });
   const press = new PointerEvent("pointerdown", { clientX: 5, clientY: 5, bubbles: true });
   Object.defineProperty(press, "__fake", { value: true });
-  swap.dispatchEvent(press);
+  nativeDispatch.call(swap, press);
   swap.setAttribute("href", "https://pop.example/five");
   swap.setAttribute("target", "_blank");
   const release = new MouseEvent("click", { bubbles: true, cancelable: true });
   Object.defineProperty(release, "__fake", { value: true });
-  swap.dispatchEvent(release);
+  nativeDispatch.call(swap, release);
   await new Promise((r) => setTimeout(r, 80));
   ok("a swapped link is put back", swap.getAttribute("href") === "/wanted",
      swap.getAttribute("href"));
@@ -127,6 +133,25 @@ async function run() {
   await new Promise((r) => setTimeout(r, 80));   // the page-world half posts a message
   ok("and it is reported",
      window.__caught.slice(before3).some((c) => c.kind === "window-open"));
+
+  // The same third-party call, asked for at a size: a real "Sign in with
+  // Google" popup is opened by Google's own script, not the page's, and this
+  // is the only signal telling it apart from a pop network riding the press.
+  //
+  // The report, not the return value, is what is checked: Safari's own
+  // popup blocker can refuse a window.open that runs inside a setTimeout
+  // regardless of what this extension decided, since the call is no longer
+  // directly inside a user gesture's own stack. `blocked` in the report is
+  // this extension's verdict alone.
+  const before3b = window.__caught.length;
+  const sizedWindow = await window.__thirdPartyOpenSized("https://pop.example/seven");
+  sizedWindow?.close?.();
+  await new Promise((r) => setTimeout(r, 80));
+  const sizedReport = window.__caught.slice(before3b).find((c) => c.kind === "window-open");
+  ok("a third-party window.open asked for at a size is allowed",
+     sizedReport?.blocked === false, JSON.stringify(sizedReport));
+  ok("and it is reported as asked for at a size", sizedReport?.sized === true);
+  ok("and why", sizedReport?.because === "asked for at a size", String(sizedReport?.because));
 
   // The page's own destinations are left alone, even when third-party code
   // is the one clicking. Checked through a link so nothing navigates.
@@ -177,6 +202,114 @@ async function run() {
   ok("a block set everywhere survives allow by default",
      S.decide({ policy: "allow", everywhere: { "pop.example": "block" }, here: {} },
               "pop.example") === "block");
+
+  // A trip off-site, judged from the background page. `location.href` cannot
+  // be hooked, so what decides is whether a press was in flight and where it
+  // pointed.
+  const N = globalThis.UndirectNavigation;
+  const plainTable = { policy: "block", everywhere: {}, here: {} };
+  const at = 1_000_000;
+  const tab = (over) => ({
+    site: "site.com", tapAt: at, expected: new Set(), sizedExpected: new Set(), ...over,
+  });
+
+  const navCases = [
+    ["a press taken off-site is a theft",
+     { now: at + 200, tab: tab(), url: "https://pop.example/x", table: plainTable }, "steal"],
+    ["a press aimed off-site is the user's",
+     { now: at + 200, tab: tab({ expected: new Set(["pop.example"]) }),
+       url: "https://pop.example/x", table: plainTable }, "allow"],
+    ["the same site is never a theft",
+     { now: at + 200, tab: tab(), url: "https://cdn.site.com/x", table: plainTable }, "allow"],
+    ["a typed address has no press behind it",
+     { now: at + 9000, tab: tab(), url: "https://elsewhere.example/x", table: plainTable }, "allow"],
+    ["an allowed destination goes through",
+     { now: at + 200, tab: tab(), url: "https://pop.example/x",
+       table: { ...plainTable, everywhere: { "pop.example": "allow" } } }, "allow"],
+    ["a block for this site beats allow everywhere",
+     { now: at + 200, tab: tab(), url: "https://pop.example/x",
+       table: { policy: "block", everywhere: { "pop.example": "allow" },
+                here: { "pop.example": "block" } } }, "steal"],
+    ["allow by default lets an unknown destination through",
+     { now: at + 200, tab: tab(), url: "https://pop.example/x",
+       table: { policy: "allow", everywhere: {}, here: {} } }, "allow"],
+    ["a tab whose page is unknown is left alone",
+     { now: at + 200, tab: tab({ site: "" }), url: "https://pop.example/x", table: plainTable }, "allow"],
+    ["a scheme that is not the web is left alone",
+     { now: at + 200, tab: tab(), url: "mailto:someone@pop.example", table: plainTable }, "allow"],
+    // A sign-in or a checkout looks identical to a theft by the press-timing
+    // test alone: a press, then a cross-site address the press did not name.
+    // What tells them apart is a way back to this site in the query string.
+    ["a sign-in redirect that names this site as the way back is not a theft",
+     { now: at + 200, tab: tab(),
+       url: "https://accounts.google.com/o/oauth2/v2/auth?redirect_uri=" +
+         encodeURIComponent("https://site.com/callback"),
+       table: plainTable }, "allow"],
+    ["the same, with the callback given in plain, unencoded form",
+     { now: at + 200, tab: tab(),
+       url: "https://appleid.apple.com/auth/authorize?redirect_uri=https://site.com/cb",
+       table: plainTable }, "allow"],
+    ["a callback naming a DIFFERENT site is still a theft",
+     { now: at + 200, tab: tab(),
+       url: "https://pop.example/x?redirect_uri=" + encodeURIComponent("https://other.example/cb"),
+       table: plainTable }, "steal"],
+    ["an ad redirect with no callback at all is still a theft",
+     { now: at + 200, tab: tab(), url: "https://pop.example/x?ref=abc&zone=999", table: plainTable }, "steal"],
+    ["a callback on a subdomain of this site still counts as home",
+     { now: at + 200, tab: tab(),
+       url: "https://accounts.google.com/auth?redirect_uri=" +
+         encodeURIComponent("https://cdn.site.com/back"),
+       table: plainTable }, "allow"],
+  ];
+  const misjudged = navCases.filter(([, args, want]) => N.judge(args).ruling !== want);
+  ok("a taken navigation is told from an asked-for one", misjudged.length === 0,
+     misjudged.map(([name, args, want]) =>
+       `${name}: wanted ${want}, got ${N.judge(args).ruling}`).join("; "));
+
+  // Whether a moment is worth a row in the popup. Ordinary browsing - the
+  // same site, no press, a click landing where it was aimed - stays quiet. A
+  // rule firing, a sign-in read as one, a sized popup, and a press actually
+  // taken all changed what would otherwise have happened, so each is loud.
+  const quietCases = [
+    ["a bare popup asked for behind a press is loud",
+     { now: at + 200, tab: tab(), url: "https://pop.example/x", table: plainTable }, false],
+    ["a popup asked for at a size is loud",
+     { now: at + 200, tab: tab({ sizedExpected: new Set(["pop.example"]) }),
+       url: "https://pop.example/x", table: plainTable }, false],
+    ["a redirect naming a way back home is loud",
+     { now: at + 200, tab: tab(),
+       url: "https://accounts.google.com/auth?redirect_uri=" +
+         encodeURIComponent("https://site.com/cb"),
+       table: plainTable }, false],
+    ["an explicit rule firing is loud",
+     { now: at + 200, tab: tab(), url: "https://pop.example/x",
+       table: { ...plainTable, everywhere: { "pop.example": "allow" } } }, false],
+    ["allowed by default with a press in flight is loud",
+     { now: at + 200, tab: tab(), url: "https://pop.example/x",
+       table: { policy: "allow", everywhere: {}, here: {} } }, false],
+    ["the same site is quiet", { now: at + 200, tab: tab(),
+       url: "https://cdn.site.com/x", table: plainTable }, true],
+    ["no press at all is quiet", { now: at + 9000, tab: tab(),
+       url: "https://elsewhere.example/x", table: plainTable }, true],
+    ["an ordinary click landing where it was aimed is quiet",
+     { now: at + 200, tab: tab({ expected: new Set(["elsewhere.example"]) }),
+       url: "https://elsewhere.example/x", table: plainTable }, true],
+  ];
+  const misquieted = quietCases.filter(([, args, want]) => N.judge(args).quiet !== want);
+  ok("a moment worth a row is told from ordinary browsing", misquieted.length === 0,
+     misquieted.map(([name, args, want]) =>
+       `${name}: wanted quiet=${want}, got ${N.judge(args).quiet}`).join("; "));
+
+  ok("a tab the user opened themselves is left alone",
+     N.judgeOpened({ now: at, opener: null, url: "https://pop.example/x", table: plainTable })
+       .ruling === "allow");
+  ok("a tab opened on the press is a theft",
+     N.judgeOpened({ now: at, opener: tab(), url: "https://pop.example/x", table: plainTable })
+       .ruling === "steal");
+  ok("a pop tab naming this site as a way back is still a theft",
+     N.judgeOpened({ now: at, opener: tab(),
+       url: "https://pop.example/x?ref=" + encodeURIComponent("https://site.com/watch"),
+       table: plainTable }).ruling === "steal");
 
   document.getElementById("out").textContent = JSON.stringify(results, null, 1);
   window.__results = results;

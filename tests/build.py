@@ -6,7 +6,7 @@ import pathlib
 here = pathlib.Path(__file__).parent
 src = here.parent / "Extension" / "Resources"
 
-for name in ("content/bridge.js", "sites/recipes.js", "lib/site.js"):
+for name in ("content/bridge.js", "sites/recipes.js", "lib/site.js", "lib/navigation.js"):
     (here / pathlib.Path(name).name).write_text((src / name).read_text())
 
 guard = (src / "content" / "guard.js").read_text()

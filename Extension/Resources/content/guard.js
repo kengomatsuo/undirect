@@ -14,7 +14,13 @@
   const FORWARD_MS = 350;     // wait for the browser's own click before forwarding
   const BACK_MS = 700;        // popstate to navigation, for the back hijack
 
-  const settings = { enabled: true, sweep: true, veto: true, recipes: true, banner: false, policy: "block" };
+  // Kept in sync with DEFAULT_SETTINGS in background.js by hand - two copies
+  // because a page reads its own settings once, at document_start, rather
+  // than asking the background and waiting.
+  const settings = {
+    enabled: true, sweep: true, veto: true, recipes: true, banner: false,
+    policy: "block", mode: "watched",
+  };
   const site = location.hostname;
   const siteBase = Site.baseDomain(site);
 
@@ -22,6 +28,11 @@
   let armed = false;          // this document has already tried something
   let lastPopstate = 0;
   let bridgeLoaded = false;
+
+  // Unknown means inert. Read only after the storage lookup in start()
+  // resolves, so a page never gets a live window before its own watch state
+  // is known - every check below reads this instead of `settings.enabled`.
+  let active = false;
 
   // ---------------------------------------------------------------- helpers
 
@@ -137,19 +148,27 @@
 
   // Every cross-site destination the page reached for, whether or not it was
   // stopped. The popup lists these so the user can decide about each one.
-  function seen({ kind, host, url, blocked, learn }) {
+  const TRAPS = new Set(["click-catcher", "overlay"]);
+
+  function seen({ kind, host, url, blocked, learn, sized, because }) {
+    if (!active) return;
     if (blocked) armed = true;
-    if (isOurs(host)) return;
-    if (blocked) showBanner(Site.baseDomain(host));
+    // A trap leading nowhere else is still a trap: listed under this site.
+    const local = isOurs(host);
+    if (local && !(blocked && TRAPS.has(kind))) return;
+    if (blocked && !local) showBanner(Site.baseDomain(host));
     try {
       api.runtime.sendMessage({
         type: "undirect:seen",
         kind,
-        base: Site.baseDomain(host),
+        base: local ? siteBase : Site.baseDomain(host),
+        local,
         host,
         url: url ?? "",
         blocked: !!blocked,
-        learn: !!learn,
+        learn: !!learn && !local,
+        sized: !!sized,
+        because: because || undefined,
         site: siteBase,
       });
     } catch (e) {
@@ -158,6 +177,46 @@
   }
 
   // ---------------------------------------------------------------- detectors
+
+  // Every real press, with wherever the thing under it honestly leads. The
+  // background page cannot see a press, and it is the only half that can see a
+  // navigation, so the two have to be put side by side there: a press aimed at
+  // this site followed by a trip to another one is the press being taken.
+  function pressed(target) {
+    const link = target?.closest?.("a[href], area[href]");
+    const form = target?.closest?.("form[action]");
+    const where = link?.href || form?.action || "";
+    try {
+      api.runtime.sendMessage({
+        type: "undirect:tap",
+        site: siteBase,
+        expect: where ? hostOf(where) : "",
+      });
+    } catch (e) {
+      // the background page is gone; it will judge the next one
+    }
+  }
+
+  addEventListener(
+    "pointerdown",
+    (e) => {
+      if (!active || !e.isTrusted) return;
+      pressed(e.target);
+    },
+    true
+  );
+
+  // A press is the usual way in, but not the only one: a keyboard or a switch
+  // reaches a control without ever touching the screen.
+  addEventListener(
+    "keydown",
+    (e) => {
+      if (!active || !e.isTrusted) return;
+      if (e.key !== "Enter" && e.key !== " ") return;
+      pressed(e.target);
+    },
+    true
+  );
 
   // A. The click catcher: a transparent screen over the page whose job is to
   // receive the click you meant for something underneath. This is deception
@@ -213,7 +272,7 @@
   addEventListener(
     "pointermove",
     (e) => {
-      if (!settings.enabled || !settings.sweep || !e.isTrusted) return;
+      if (!active || !settings.sweep || !e.isTrusted) return;
       const now = performance.now();
       if (now - hoverCheckedAt < HOVER_MS) return;
       hoverCheckedAt = now;
@@ -254,21 +313,44 @@
   addEventListener(
     "pointerdown",
     (e) => {
-      if (!settings.enabled || !settings.sweep || !e.isTrusted) return;
+      if (!active || !settings.sweep || !e.isTrusted) return;
       if (sweep(e.clientX, e.clientY)) forwardClick(e.clientX, e.clientY);
     },
     true
   );
 
-  // B. A click the page dispatched itself, on a link to somewhere else.
+  // The last trusted press: what was under the finger, and where it honestly
+  // pointed. B and B2 both read this - one to tell a replayed click from a
+  // hijack, the other to catch the href changing underneath the press.
+  let pressedAnchor = null;
+  let pressedHref = "";
+  let pressedTarget = "";
+
+  addEventListener(
+    "pointerdown",
+    (e) => {
+      if (!e.isTrusted) return;
+      const a = e.target?.closest?.("a");
+      pressedAnchor = a ?? null;
+      pressedHref = a?.getAttribute("href") ?? "";
+      pressedTarget = a?.getAttribute("target") ?? "";
+    },
+    true
+  );
+
+  // B. A click the page dispatched itself, on a link to somewhere else. Search
+  // results do this for their own click-through logging, replaying the very
+  // link just pressed - nothing swapped, so that is not a hijack. Only a
+  // synthetic click landing away from the last real press is one.
   addEventListener(
     "click",
     (e) => {
-      if (!settings.enabled || !settings.veto || e.isTrusted || forwarding) return;
+      if (!active || !settings.veto || e.isTrusted || forwarding) return;
       const a = e.target?.closest?.("a");
       if (!a || !blankTarget(a) || a.hasAttribute("download")) return;
       const url = parse(a.href);
       if (!url || isOurs(url.hostname)) return;
+      if (a === pressedAnchor && hostOf(pressedHref) === url.hostname) return;
 
       const verdict = verdictFor(url.hostname);
       seen({
@@ -289,26 +371,10 @@
   // an anchor on mousedown and put it back after, so the press and the release
   // disagree about where you were going. Deception again, so the rules do not
   // get a say in whether it is undone.
-  let pressedAnchor = null;
-  let pressedHref = "";
-  let pressedTarget = "";
-
-  addEventListener(
-    "pointerdown",
-    (e) => {
-      if (!e.isTrusted) return;
-      const a = e.target?.closest?.("a");
-      pressedAnchor = a ?? null;
-      pressedHref = a?.getAttribute("href") ?? "";
-      pressedTarget = a?.getAttribute("target") ?? "";
-    },
-    true
-  );
-
   addEventListener(
     "click",
     (e) => {
-      if (!settings.enabled || !settings.veto || !e.isTrusted) return;
+      if (!active || !settings.veto || !e.isTrusted) return;
       const a = e.target?.closest?.("a");
       if (!a || a !== pressedAnchor) return;
 
@@ -352,7 +418,7 @@
   addEventListener(
     "submit",
     (e) => {
-      if (!settings.enabled || !settings.veto) return;
+      if (!active || !settings.veto) return;
       const form = e.target;
       if (!blankTarget(form)) return;
       if (coverage(form.getBoundingClientRect()) < COVERAGE) return;
@@ -396,6 +462,8 @@
       url: msg.url,
       blocked: !!msg.blocked,
       learn: !!msg.blocked,
+      because: msg.because,
+      sized: !!msg.sized,
     });
   });
 
@@ -448,7 +516,8 @@
   });
 
   async function start() {
-    if (window.top === window) {
+    const isTop = window.top === window;
+    if (isTop) {
       try {
         api.runtime.sendMessage({ type: "undirect:hello", site: siteBase });
       } catch (e) {
@@ -456,11 +525,9 @@
       }
     }
 
-    applyRecipes();
-
     let stored = {};
     try {
-      stored = await api.storage.local.get(["settings", "everywhere", "perSite"]);
+      stored = await api.storage.local.get(["settings", "everywhere", "perSite", "watched"]);
     } catch (e) {
       stored = {};
     }
@@ -471,6 +538,27 @@
       here: stored.perSite?.[siteBase] ?? {},
     };
 
+    if (settings.enabled === false) {
+      active = false;
+    } else if (settings.mode === "everywhere") {
+      active = true;
+    } else if (isTop) {
+      active = stored.watched?.[siteBase] === true;
+    } else {
+      // A subframe cannot read its own top-level site - a cross-origin frame
+      // cannot see `top.location` - so it asks the background, which already
+      // knows the tab's real address. Slower than the top frame's storage
+      // read, and the frame stays inert until the answer lands.
+      try {
+        const answer = await api.runtime.sendMessage({ type: "undirect:active" });
+        active = !!answer?.active;
+      } catch (e) {
+        active = false;
+      }
+    }
+
+    if (!active) return;
+    applyRecipes();
     injectBridge();
   }
 

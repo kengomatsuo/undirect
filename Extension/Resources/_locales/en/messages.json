@@ -23,12 +23,44 @@
     "message": "Off",
     "description": "State of the master switch when the guard is paused."
   },
+  "popup_watch_label": {
+    "message": "Guard this site",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_watch_unknown": {
+    "message": "No page to guard here.",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "The guard runs on every site.",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "The guard is switched off.",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "Where the guard runs",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "Sites you turn on",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "Every site",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "The guard is off on this site.",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
   "popup_page_heading": {
     "message": "This page",
     "description": "Heading of the section about the current tab."
   },
   "popup_page_quiet": {
-    "message": "This page has not reached for another site.",
+    "message": "Nothing here has reached for another site.",
     "description": "Shown when no cross-site destination was recorded."
   },
   "popup_page_empty": {
@@ -36,7 +68,7 @@
     "description": "Shown when the destination list is empty."
   },
   "popup_stopped_one": {
-    "message": "$COUNT$ stopped.",
+    "message": "$COUNT$ stopped",
     "description": "How many attempts were blocked on this page, singular.",
     "placeholders": {
       "count": {
@@ -46,7 +78,7 @@
     }
   },
   "popup_stopped_other": {
-    "message": "$COUNT$ stopped.",
+    "message": "$COUNT$ stopped",
     "description": "How many attempts were blocked on this page, plural.",
     "placeholders": {
       "count": {
@@ -151,46 +183,6 @@
     "message": "This page blocks extension scripts. Only part of the guard is running.",
     "description": "Shown when the page CSP stopped the page-world script."
   },
-  "popup_session_one": {
-    "message": "$COUNT$ stopped since the browser started.",
-    "description": "Session count, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_session_other": {
-    "message": "$COUNT$ stopped since the browser started.",
-    "description": "Session count, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "12"
-      }
-    }
-  },
-  "popup_total_one": {
-    "message": "$COUNT$ stopped since you installed this.",
-    "description": "Lifetime count, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_total_other": {
-    "message": "$COUNT$ stopped since you installed this.",
-    "description": "Lifetime count, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "340"
-      }
-    }
-  },
   "kind_click_catcher": {
     "message": "Invisible click catcher",
     "description": "A transparent form or link laid over the page."
@@ -219,13 +211,45 @@
     "message": "Back button sent elsewhere",
     "description": "A navigation right after the back gesture."
   },
+  "kind_redirect": {
+    "message": "Sent off this site as you pressed",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "Tab opened behind your press",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "Stopped at the request",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "It named a way back to this site.",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "It opened at a deliberate size.",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "It took the press.",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "Nothing said otherwise.",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "It was the site's own code asking.",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
   "popup_rules_link": {
-    "message": "All rules",
+    "message": "Rules",
     "description": "Opens the list of every rule the user has set."
   },
   "popup_page_link": {
-    "message": "This page",
-    "description": "Goes back from the rules list to the current page."
+    "message": "Back",
+    "description": "Goes back from the rules list to the current tab."
   },
   "rules_everywhere_heading": {
     "message": "Set everywhere",
@@ -262,5 +286,25 @@
   "action_report": {
     "message": "Report a site",
     "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "Turn on Undirect for this site",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_on": {
+    "message": "Undirect is on for this site",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "On. Turning it off reloads the page.",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "Off. Turning it on reloads the page.",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "Removed",
+    "description": "A trap on the page itself, taken off before it could catch a click."
   }
 }

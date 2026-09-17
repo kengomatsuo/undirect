@@ -2,62 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
     <title>Undirect</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <header class="bar">
-      <h1 class="wordmark" data-i18n="app_title"></h1>
-      <button type="button" class="link" id="view-toggle"></button>
-      <label class="switch">
-        <span class="switch-label" data-i18n="popup_guard_label"></span>
-        <input type="checkbox" id="guard" />
-        <span class="switch-state" id="guard-state"></span>
-      </label>
-    </header>
+    <!-- This tab: the site, its switch, what it reached for. -->
+    <main class="view" id="page-view">
+      <section class="group">
+        <div class="row">
+          <div class="text">
+            <span class="title site" id="site"></span>
+            <span class="subtitle" id="watch-note"></span>
+          </div>
+          <label class="switch">
+            <input type="checkbox" id="watch" role="switch" />
+            <span class="sr-only" data-i18n="popup_watch_label"></span>
+          </label>
+        </div>
+      </section>
 
-    <p class="warning" id="bridge-warning" hidden data-i18n="popup_bridge_warning"></p>
+      <p class="warning" id="bridge-warning" hidden data-i18n="popup_bridge_warning"></p>
 
-    <section class="panel page-view">
-      <h2 data-i18n="popup_page_heading"></h2>
-      <p class="lead" id="page-count"></p>
-      <p class="note" id="page-recipe" hidden></p>
-      <ul class="rows" id="rows"></ul>
-      <button type="button" class="link" id="report" data-i18n="action_report"></button>
-    </section>
+      <section id="page-section">
+        <h2 class="header">
+          <span data-i18n="popup_page_heading"></span>
+          <span class="header-trailing" id="page-count"></span>
+        </h2>
+        <ul class="group" id="rows"></ul>
+        <p class="note" id="page-quiet" hidden data-i18n="popup_page_quiet"></p>
+        <p class="footer" id="page-recipe" hidden></p>
+      </section>
 
-    <section class="panel page-view">
-      <h2 data-i18n="popup_settings_heading"></h2>
-      <label class="switch row-switch">
-        <span class="switch-label" data-i18n="setting_banner"></span>
-        <input type="checkbox" id="banner" />
-        <span class="switch-state" id="banner-state"></span>
-      </label>
-      <p class="sub-label" data-i18n="popup_policy_heading"></p>
-      <div class="choice" role="radiogroup" id="policy">
-        <label>
-          <input type="radio" name="policy" value="block" />
-          <span data-i18n="policy_block"></span>
-        </label>
-        <label>
-          <input type="radio" name="policy" value="allow" />
-          <span data-i18n="policy_allow"></span>
-        </label>
-      </div>
-    </section>
+      <ul class="group">
+        <li class="row nav" data-go="rules-view">
+          <span class="title" data-i18n="popup_rules_link"></span>
+          <span class="chevron" aria-hidden="true"></span>
+        </li>
+        <li class="row nav" data-go="settings-view">
+          <span class="title" data-i18n="popup_settings_heading"></span>
+          <span class="chevron" aria-hidden="true"></span>
+        </li>
+        <li class="row nav" id="report">
+          <span class="title" data-i18n="action_report"></span>
+        </li>
+      </ul>
+    </main>
 
-    <section class="panel" id="rules-view" hidden>
-      <h2 data-i18n="rules_everywhere_heading"></h2>
-      <ul class="rows" id="rules-everywhere"></ul>
-      <h2 class="spaced" data-i18n="rules_by_site_heading"></h2>
-      <ul class="rows" id="rules-by-site"></ul>
-    </section>
+    <main class="view" id="rules-view" hidden>
+      <header class="navbar">
+        <button type="button" class="back" data-go="page-view" data-i18n-label="popup_page_link">
+          <span class="back-chevron" aria-hidden="true"></span>
+        </button>
+        <h1 data-i18n="popup_rules_link"></h1>
+      </header>
+      <h2 class="header" data-i18n="rules_everywhere_heading"></h2>
+      <ul class="group" id="rules-everywhere"></ul>
+      <h2 class="header" data-i18n="rules_by_site_heading"></h2>
+      <ul class="group" id="rules-by-site"></ul>
+    </main>
 
-    <footer class="foot">
-      <p id="session"></p>
-      <p id="total"></p>
-    </footer>
+    <main class="view" id="settings-view" hidden>
+      <header class="navbar">
+        <button type="button" class="back" data-go="page-view" data-i18n-label="popup_page_link">
+          <span class="back-chevron" aria-hidden="true"></span>
+        </button>
+        <h1 data-i18n="popup_settings_heading"></h1>
+      </header>
+      <ul class="group">
+        <li class="row">
+          <span class="title" data-i18n="popup_guard_label"></span>
+          <label class="switch">
+            <input type="checkbox" id="guard" role="switch" />
+            <span class="sr-only" data-i18n="popup_guard_label"></span>
+          </label>
+        </li>
+        <li class="row">
+          <span class="title" data-i18n="setting_banner"></span>
+          <label class="switch">
+            <input type="checkbox" id="banner" role="switch" />
+            <span class="sr-only" data-i18n="setting_banner"></span>
+          </label>
+        </li>
+      </ul>
+
+      <h2 class="header" data-i18n="popup_mode_heading"></h2>
+      <ul class="group" role="radiogroup">
+        <li class="row choice">
+          <label>
+            <input type="radio" name="mode" value="watched" />
+            <span class="title" data-i18n="mode_watched"></span>
+            <span class="check" aria-hidden="true"></span>
+          </label>
+        </li>
+        <li class="row choice">
+          <label>
+            <input type="radio" name="mode" value="everywhere" />
+            <span class="title" data-i18n="mode_everywhere"></span>
+            <span class="check" aria-hidden="true"></span>
+          </label>
+        </li>
+      </ul>
+
+      <h2 class="header" data-i18n="popup_policy_heading"></h2>
+      <ul class="group" role="radiogroup">
+        <li class="row choice">
+          <label>
+            <input type="radio" name="policy" value="block" />
+            <span class="title" data-i18n="policy_block"></span>
+            <span class="check" aria-hidden="true"></span>
+          </label>
+        </li>
+        <li class="row choice">
+          <label>
+            <input type="radio" name="policy" value="allow" />
+            <span class="title" data-i18n="policy_allow"></span>
+            <span class="check" aria-hidden="true"></span>
+          </label>
+        </li>
+      </ul>
+    </main>
 
     <script src="popup.js"></script>
   </body>
