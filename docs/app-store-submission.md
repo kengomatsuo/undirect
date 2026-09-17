@@ -29,15 +29,11 @@ What is done, what needs an Apple account, and one judgement call.
 - Support and privacy pages resolve: `undirect.matsuokengo.com/support/` and
   `/privacy/` both return 200.
 
-## Still needs the Account Holder
+## Submitted (2026-09-18)
 
-1. **Accept the updated Apple Developer Program License Agreement** in App Store
-   Connect. Nothing new can be submitted until it is accepted.
-2. **Create the App Store Connect record**: name Undirect, primary language
-   English, bundle ID `com.matsuokengo.undirect`, iOS and macOS. The name is
-   checked for uniqueness at that moment.
-3. **Upload the builds and fill the listing** from `Support/AppStore/metadata.md`.
-   This needs a signed-in App Store Connect session or an API key for this app.
+iOS 1.0 and macOS 1.0, both build 3, are Waiting for Review. Screenshots were
+replaced with the demo-page set, and the review notes describe the press-to-turn-on
+flow. App Review can reproduce every stop at `undirect.matsuokengo.com/demo/`.
 
 ## The judgement call, settled
 
