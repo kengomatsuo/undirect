@@ -66,7 +66,7 @@ struct RulesView: View {
             }
         } footer: {
             if grouping == .everywhere, let counts = rules.snapshot?.counts, counts.lifetime > 0 {
-                Text("\(counts.lifetime) stopped in all, \(counts.session) since the browser started.")
+                Text("\(counts.lifetime) stopped in all.")
             }
         }
     }
