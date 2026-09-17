@@ -87,7 +87,9 @@ body {
 @media (pointer: coarse) {
   body {
     width: auto;
-    min-width: 100%;
+    /* iPad sizes its popover to the content, so a floor is needed;
+       375pt is the narrowest supported iPhone. */
+    min-width: 375px;
     padding: var(--inset) max(var(--inset), env(safe-area-inset-right)) calc(var(--inset) + env(safe-area-inset-bottom))
       max(var(--inset), env(safe-area-inset-left));
   }
