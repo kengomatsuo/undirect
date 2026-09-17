@@ -25,7 +25,7 @@ struct WelcomeView: View {
         Feature(
             symbol: "macwindow",
             title: "Uninvited windows",
-            detail: "A window opens only when the site's own code asks for it."
+            detail: "A new tab opens only where your press pointed."
         ),
         Feature(
             symbol: "checklist",

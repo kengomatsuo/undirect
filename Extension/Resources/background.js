@@ -825,6 +825,7 @@ async function pushSnapshot(now = false) {
   }
 
   pushedAt = Date.now();
+  await restored; // the session count comes back from storage.session
   const state = await readState();
   const snapshot = {
     policy: state.settings.policy ?? "block",

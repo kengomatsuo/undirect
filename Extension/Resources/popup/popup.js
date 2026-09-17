@@ -122,7 +122,7 @@ function renderRows(state) {
     const kinds = row.kinds.map((k) => t(`kind_${k.replace(/-/g, "_")}`) || k);
     const reason = REASONS[row.lastBecause] ? t(REASONS[row.lastBecause]) : "";
     const scope = row.local ? "" : `${capital(scopeOf(row))}.`;
-    const detail = [scope, plural(row.count, "popup_tries"), kinds.join(", "), reason]
+    const detail = [scope, plural(row.count, "popup_tries"), kinds.length ? `${kinds.join(", ")}.` : "", reason]
       .filter(Boolean)
       .join(" ");
     const sub = el("span", "subtitle title", detail);
