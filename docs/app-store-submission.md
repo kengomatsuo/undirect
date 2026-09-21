@@ -44,6 +44,8 @@ there: a tab with no site was painted popup-less, so the press went to
 build. Build 4 sets `default_popup` in the manifest and keeps the popup on a
 tab with no site, where it says the button works on websites; the popup is
 cleared only on a real site that is off, so one press still turns it on.
+Build 4 was checked on the Start Page through TestFlight and resubmitted the
+same day, with the review notes' step 4 rewritten to match.
 
 Two leads were ruled out first. Signing: the exported extension carries no
 provisioning profile, but neither do the Mac App Store Safari extensions from
