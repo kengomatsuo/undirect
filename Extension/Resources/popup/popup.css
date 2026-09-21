@@ -209,6 +209,27 @@ body {
   color: var(--ink-2);
 }
 
+.no-site {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 14px var(--pad) 16px;
+  text-align: center;
+}
+
+.no-site svg {
+  width: 26px;
+  height: 26px;
+  margin-bottom: 2px;
+  color: var(--ink-3);
+}
+
+.no-site .title {
+  flex: none;
+  white-space: normal;
+}
+
 .warning {
   margin: 0 0 var(--gap);
   padding: 8px var(--pad);

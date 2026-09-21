@@ -35,6 +35,21 @@ iOS 1.0 and macOS 1.0, both build 3, are Waiting for Review. Screenshots were
 replaced with the demo-page set, and the review notes describe the press-to-turn-on
 flow. App Review can reproduce every stop at `undirect.matsuokengo.com/demo/`.
 
+## macOS rejected, 2.1(a) (2026-09-21)
+
+The reviewer found the toolbar button "greyed out and unresponsive". Safari
+greys every extension's button on the Start Page, and build 3 set no popup
+there: a tab with no site was painted popup-less, so the press went to
+`onClicked`, which returns when there is no site. Reproduced on the TestFlight
+build. Build 4 sets `default_popup` in the manifest and keeps the popup on a
+tab with no site, where it says the button works on websites; the popup is
+cleared only on a real site that is off, so one press still turns it on.
+
+Two leads were ruled out first. Signing: the exported extension carries no
+provisioning profile, but neither do the Mac App Store Safari extensions from
+Fonts Ninja and Mendeley. Website access: with every site set to Ask, the press
+brings up Safari's permission prompt as it should.
+
 ## The judgement call, settled
 
 The per-site recipe naming lunarx.to was dropped (2026-09-10) and the shipped

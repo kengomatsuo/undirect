@@ -27,6 +27,14 @@
     "message": "Guard this site",
     "description": "Label of the per-site switch, the popup's first row."
   },
+  "popup_no_site_title": {
+    "message": "Undirect works on websites",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "Open a website, then press here to guard it.",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
   "popup_watch_unknown": {
     "message": "No page to guard here.",
     "description": "Shown when the current tab has no site to watch."

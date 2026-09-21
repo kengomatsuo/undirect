@@ -207,6 +207,11 @@ async function load() {
 
   renderWatch(state);
 
+  // The Start Page: say where the button works instead of a dead switch.
+  document.getElementById("no-site").hidden = !!state.site;
+  document.getElementById("watch-group").hidden = !state.site;
+  document.getElementById("report").hidden = !state.site;
+
   document.getElementById("page-section").hidden = !state.guarding;
   document.getElementById("page-count").textContent = state.counts.page
     ? plural(state.counts.page, "popup_stopped")

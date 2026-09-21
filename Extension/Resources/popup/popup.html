@@ -10,7 +10,18 @@
   <body>
     <!-- This tab: the site, its switch, what it reached for. -->
     <main class="view" id="page-view">
-      <section class="group">
+      <!-- A tab with no website, like the Start Page. -->
+      <section class="group" id="no-site" hidden>
+        <div class="no-site">
+          <svg viewBox="160 152 634 694" aria-hidden="true">
+            <path d="M 737.00 803.60 L 647.00 803.60 A 15.00 15.00 0 0 1 632.00 788.60 L 632.00 434.00 A 120.00 120.00 0 0 0 392.00 434.00 L 392.00 563.00 A 15.00 15.00 0 0 0 407.00 578.00 L 435.68 578.00 A 15.00 15.00 0 0 1 448.69 600.47 L 345.01 780.96 A 15.00 15.00 0 0 1 318.99 780.96 L 215.31 600.47 A 15.00 15.00 0 0 1 228.32 578.00 L 257.00 578.00 A 15.00 15.00 0 0 0 272.00 563.00 L 272.00 434.00 A 240.00 240.00 0 0 1 752.00 434.00 L 752.00 788.60 A 15.00 15.00 0 0 1 737.00 803.60 Z" fill="none" stroke="currentColor" stroke-width="36" stroke-linejoin="round" />
+          </svg>
+          <span class="title site" data-i18n="popup_no_site_title"></span>
+          <span class="subtitle" data-i18n="popup_no_site_body"></span>
+        </div>
+      </section>
+
+      <section class="group" id="watch-group">
         <div class="row">
           <div class="text">
             <span class="title site" id="site"></span>

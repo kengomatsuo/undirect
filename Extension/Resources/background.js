@@ -203,6 +203,8 @@ function startOver(entry, site) {
 //
 // Off on a site: a dimmed icon, no count and no popup, so a press lands in
 // onClicked and turns it on. On: the full icon, and a press opens the popup.
+// No site (the Start Page): the popup says where the button works. Without
+// it the press did nothing, which App Review rejected (2026-09-21).
 async function paintBadge(tabId) {
   if (tabId === undefined || !api.action) return;
   try {
@@ -214,7 +216,7 @@ async function paintBadge(tabId) {
     await Promise.all([
       api.action.setBadgeText({ tabId, text: count ? String(count) : "" }),
       api.action.setBadgeBackgroundColor?.({ tabId, color: "#a3231c" }),
-      api.action.setPopup({ tabId, popup: on ? "popup/popup.html" : "" }),
+      api.action.setPopup({ tabId, popup: on || !site ? "popup/popup.html" : "" }),
       api.action.setIcon({
         tabId,
         path: on ? "images/toolbar-icon.svg" : "images/toolbar-icon-off.svg",
@@ -234,7 +236,7 @@ async function paintAllTabs() {
   }
 }
 
-// Only fires while the popup is unset, which is exactly when the site is off.
+// Only fires while the popup is unset, which is exactly when a site is off.
 api.action?.onClicked?.addListener?.(async (tab) => {
   const site = perTab.get(tab?.id)?.site || Nav.destination(tab?.url ?? "");
   if (!site) return;
