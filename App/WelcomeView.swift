@@ -32,6 +32,11 @@ struct WelcomeView: View {
             title: "Every destination",
             detail: "Each one is listed, to allow or block per site or everywhere."
         ),
+        Feature(
+            symbol: "checkmark.shield",
+            title: "One site at a time",
+            detail: "It guards a site once you press Undirect in Safari there."
+        ),
     ]
 
     var body: some View {
@@ -53,15 +58,10 @@ struct WelcomeView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
 
-            Button(action: start) {
-                Text("Open Safari Settings")
-                    .frame(maxWidth: .infinity)
-            }
-            .buttonStyle(.borderedProminent)
-            .controlSize(.large)
-            .padding(.horizontal, 34)
-            .padding(.bottom, 28)
-            .padding(.top, 12)
+            OpenExtensionsButton(action: start)
+                .padding(.horizontal, 34)
+                .padding(.bottom, 28)
+                .padding(.top, 12)
         }
     }
 

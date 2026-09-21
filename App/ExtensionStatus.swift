@@ -20,15 +20,7 @@ final class ExtensionStatus {
     private(set) var state: State = .checking
 
     func refresh() async {
-        #if os(macOS)
         state = await Self.read()
-        #else
-        if #available(iOS 26.2, *) {
-            state = await Self.read()
-        } else {
-            state = .unavailable
-        }
-        #endif
     }
 
     // Safari gives no notification when the user flips the toggle in
@@ -48,14 +40,13 @@ final class ExtensionStatus {
             withIdentifier: extensionBundleIdentifier
         ) { _ in }
         #else
-        // iOS has no link to the Extensions pane, so this lands in Settings.
-        if let url = URL(string: UIApplication.openSettingsURLString) {
-            UIApplication.shared.open(url)
-        }
+        // One identifier opens that extension's own page under Safari
+        // Extensions. It arrived in iOS 26.2, which is also the first version
+        // that will say whether the extension is on, so the app asks for both.
+        SFSafariSettings.openExtensionsSettings(forIdentifiers: [extensionBundleIdentifier]) { _ in }
         #endif
     }
 
-    @available(macOS 10.12, iOS 26.2, *)
     private static func read() async -> State {
         await withCheckedContinuation { continuation in
             let answer: @Sendable (SFSafariExtensionState?, (any Error)?) -> Void = { state, error in
