@@ -1,7 +1,8 @@
 # Demo video for App Review (iOS)
 
-App Review rejected iOS 1.0 (3); record on 1.0 (5) on 2026-09-21 under 2.1, Information Needed,
-and asked for a video of the app on a physical device. The reviewer, on an
+App Review rejected iOS 1.0 (3) on 2026-09-21 under 2.1, Information Needed,
+and asked for a video of the app on a physical device. Record on 1.0 (5),
+which is the build that answers them. The reviewer, on an
 iPad Pro 11-inch (M4), stopped at "Undirect is not on" (their screenshot).
 The video has to show every step from that screen to a stopped pop.
 
@@ -18,8 +19,8 @@ then Extensions, so the video starts where the reviewer did.
    then press Open.
 2. The app shows "Turn on Undirect in Safari". Press Open Safari Extensions.
 3. Settings opens on Undirect's page under Safari Extensions. Turn it on. If
-   it opens somewhere else, take the path in the app: Apps, then Safari, then
-   Extensions, then Undirect.
+   it opens somewhere else, go to Apps, then Safari, then Extensions, then
+   Undirect.
 4. On the same screen, set All Websites to Allow, and hold on that screen
    long enough to read its permission text.
 5. Switch back to Undirect. The setup screen is gone and the rules list shows.
