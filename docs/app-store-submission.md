@@ -47,6 +47,10 @@ cleared only on a real site that is off, so one press still turns it on.
 Build 4 was checked on the Start Page through TestFlight and resubmitted the
 same day, with the review notes' step 4 rewritten to match.
 
+iOS build 3 was left in review. On the iOS Simulator (2026-09-21) Safari's Start
+Page shows no page-menu button and the address field opens only the keyboard,
+so no press reaches the extension on a tab without a site.
+
 Two leads were ruled out first. Signing: the exported extension carries no
 provisioning profile, but neither do the Mac App Store Safari extensions from
 Fonts Ninja and Mendeley. Website access: with every site set to Ask, the press
