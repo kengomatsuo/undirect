@@ -40,7 +40,7 @@ Undirect is a Safari extension. Switch it on in Safari, then press its toolbar b
 
 First release.
 
-## Review Notes (1982)
+## Review Notes (2065)
 
 Undirect is a Safari web extension. The app itself shows setup and the rules; the guarding happens in Safari.
 
@@ -58,6 +58,7 @@ iOS and iPadOS
 3. Open a site as above. The Undirect button sits in the page menu at the left of the address bar. The app shows the same list, read only, because iOS gives no way for a containing app to message its extension.
 
 NOTES FOR REVIEW
+Demo video of 1.0 (5) on a physical device: https://youtube.com/shorts/fuBTItSKRRk
 No account, no sign-in, no demo credentials needed.
 The app makes no network requests. The extension blocks requests using declarativeNetRequest and never sends data anywhere.
 The Report button opens a prefilled issue on the public GitHub repository in a browser tab. It sends nothing until the person submits it themselves.
