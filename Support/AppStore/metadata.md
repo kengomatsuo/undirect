@@ -40,7 +40,7 @@ Undirect is a Safari extension. Switch it on in Safari, then press its toolbar b
 
 First release.
 
-## Review Notes (1831)
+## Review Notes (1982)
 
 Undirect is a Safari web extension. The app itself shows setup and the rules; the guarding happens in Safari.
 
@@ -53,8 +53,8 @@ macOS
 4. Open a website, for example undirect.matsuokengo.com/demo/, and press the Undirect toolbar button once. The guard is off on every site until then; the button turns it on for that site and the page reloads. From then on, a click that opens an unrequested tab is stopped, and the destination appears in the button's popup and in the app. On the Start Page Safari greys out every extension's button, and Undirect's opens a note saying it works on websites.
 
 iOS and iPadOS
-1. Launch Undirect, press Open Safari Settings.
-2. Settings, then Apps, then Safari, then Extensions. Turn on Undirect and allow all websites.
+1. Launch Undirect, press Open Safari Extensions. Settings opens on Undirect under Safari Extensions. If it opens elsewhere, go to Apps, then Safari, then Extensions, then Undirect.
+2. Turn on Undirect and set All Websites to Allow. The app notices within two seconds and shows its rules list.
 3. Open a site as above. The Undirect button sits in the page menu at the left of the address bar. The app shows the same list, read only, because iOS gives no way for a containing app to message its extension.
 
 NOTES FOR REVIEW
