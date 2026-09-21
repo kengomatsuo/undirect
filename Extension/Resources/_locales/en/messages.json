@@ -299,6 +299,10 @@
     "message": "Turn on Undirect for this site",
     "description": "Toolbar button tooltip while the guard is off on the site."
   },
+  "action_title_no_site": {
+    "message": "Undirect works on websites",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
   "action_title_on": {
     "message": "Undirect is on for this site",
     "description": "Toolbar button tooltip while the guard is on."

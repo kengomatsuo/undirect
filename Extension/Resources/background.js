@@ -221,7 +221,10 @@ async function paintBadge(tabId) {
         tabId,
         path: on ? "images/toolbar-icon.svg" : "images/toolbar-icon-off.svg",
       }),
-      api.action.setTitle({ tabId, title: api.i18n.getMessage(on ? "action_title_on" : "action_title_off") }),
+      api.action.setTitle({
+        tabId,
+        title: api.i18n.getMessage(on ? "action_title_on" : site ? "action_title_off" : "action_title_no_site"),
+      }),
     ]);
   } catch (e) {
     // the tab closed, or a window with no toolbar
