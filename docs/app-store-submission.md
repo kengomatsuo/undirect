@@ -56,6 +56,21 @@ provisioning profile, but neither do the Mac App Store Safari extensions from
 Fonts Ninja and Mendeley. Website access: with every site set to Ask, the press
 brings up Safari's permission prompt as it should.
 
+## iOS rejected, 2.1 Information Needed (2026-09-21)
+
+The reviewer, on an iPad Pro 11-inch, stopped at the setup screen and asked for
+a demo video. Their screenshot showed why: the button said Open Safari Settings
+and called `UIApplication.openSettingsURLString`, which opens the app's own
+page in Settings, nowhere near Safari's Extensions pane.
+
+Build 5 calls `SFSafariSettings.openExtensionsSettings(forIdentifiers:)`, which
+the SDK header says opens that extension's page, and drops the old path. That
+call and the state read both arrived in iOS 26.2, so the minimum is now 26.2.
+The setup screen and the welcome sheet share one button, bottom-anchored and
+`.glassProminent`. In the iOS 27 Simulator the call reports no error and still
+opens Settings at its top level, on both iPhone and iPad; nobody has pressed it
+on a physical device yet. Resubmitted without the video on 2026-09-22.
+
 ## The judgement call, settled
 
 The per-site recipe naming lunarx.to was dropped (2026-09-10) and the shipped
