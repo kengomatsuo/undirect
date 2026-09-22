@@ -1,0 +1,600 @@
+{
+  "locale": "de-DE",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Erweiterung nicht aktiviert",
+      "back": "Extension not activated",
+      "why": "Terse ContentUnavailableView title, Apple's own verb for extensions in Safari; Sie-register held throughout."
+    },
+    "app.setup.title_failed": {
+      "s": "Status nicht ermittelbar",
+      "back": "Status not determinable",
+      "why": "Hedged, distinct from the plain not-yet-on title above; does not claim the extension is off."
+    },
+    "app.setup.detail_default": {
+      "s": "Geschützte Websites können Ihre Klicks nicht mehr umleiten.",
+      "back": "Protected websites can no longer redirect your clicks.",
+      "why": "One-sentence payoff, plain declarative, well under the character budget."
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari antwortete nicht. Wird die Erweiterung aktiviert, erkennt Undirect das von selbst.",
+      "back": "Safari did not respond. If the extension is activated, Undirect notices that by itself.",
+      "why": "Two clauses joined by a real subordinate construction, not a dash; no raw error code, reassures."
+    },
+    "app.setup.open_button": {
+      "s": "Safari-Erweiterungen öffnen",
+      "back": "Open Safari extensions",
+      "why": "Noun-plus-infinitive button style like System Settings; uses Apple's own term 'Erweiterungen'."
+    },
+    "app.welcome.heading": {
+      "s": "Willkommen bei Undirect",
+      "back": "Welcome to Undirect",
+      "why": "Matches Apple's own onboarding pattern 'Willkommen bei X'; the one warmer register allowed."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Unsichtbare Ebene",
+      "back": "Invisible layer",
+      "why": "Concrete two-word noun phrase naming the trick, no marketing language."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Eine unsichtbare Ebene liegt über der Seite und fängt den Klick ab.",
+      "back": "An invisible layer lies over the page and intercepts the click.",
+      "why": "Describes what the person would see, not the mechanism; fits the sentence budget."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Vertauschter Link",
+      "back": "Swapped link",
+      "why": "Two-word noun phrase matching the sibling feature headlines."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Manche Seiten tauschen das Linkziel im Moment des Klicks aus.",
+      "back": "Some pages swap the link target in the moment of the click.",
+      "why": "Plain, concrete, names the timing without technical jargon."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Ungebetene Fenster",
+      "back": "Uninvited windows",
+      "why": "Direct two-word noun phrase, consistent register with the other feature titles."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Ein neuer Tab öffnet nur das Ziel, das Sie tatsächlich angeklickt haben.",
+      "back": "A new tab opens only the destination that you actually clicked.",
+      "why": "Written as a promise per the brief; comma-plus-relative-clause instead of a dash."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Alle Ziele erfasst",
+      "back": "All destinations recorded",
+      "why": "Three-word headline naming the rule-list feature, uses vocabulary term 'Ziel'."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Jedes Ziel wird aufgeführt, und Sie entscheiden: hier oder überall.",
+      "back": "Every destination gets listed, and you decide: here or everywhere.",
+      "why": "Conjunction 'und' carries the clause instead of a dash; keeps both the listing and the scope choice within budget."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Einzeln aktivieren",
+      "back": "Activate individually",
+      "why": "Two-word verb phrase naming the per-site activation mechanism."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Ein Tipp auf das Undirect-Symbol schaltet den Schutz für diese Website ein.",
+      "back": "One tap on the Undirect icon switches protection on for this site.",
+      "why": "Names the concrete mechanism (icon, tap) at the edge of the character budget."
+    },
+    "app.nav.guarded_sites": {
+      "s": "Geschützte Websites",
+      "back": "Guarded sites",
+      "why": "Direct vocabulary term for guarded/watched sites, works as sidebar label and nav title."
+    },
+    "app.nav.settings": {
+      "s": "Einstellungen",
+      "back": "Settings",
+      "why": "Apple's own standard German term for this screen on both platforms."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated as instructed."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Überall",
+      "back": "Everywhere",
+      "why": "One-word scope term, reused consistently for the 'everywhere' concept throughout."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Nach Website",
+      "back": "By site",
+      "why": "Two-word contrast to 'Überall', reads clearly as the opposing filter."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Noch keine Verbindung zur Erweiterung",
+      "back": "No connection to the extension yet",
+      "why": "Names the first-contact/wiring state, distinct from the empty-list state below."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Öffnen Sie einmal eine Seite in Safari.",
+      "back": "Open a page in Safari once.",
+      "why": "One plain instruction, kept well under the tight character budget."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Keine Regeln",
+      "back": "No rules",
+      "why": "Short content-empty state, contrasts with the wiring state above."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Eine Regel entsteht erst, wenn Sie entscheiden.",
+      "back": "A rule appears only once you decide.",
+      "why": "States the mechanism (a decision creates the rule) plainly, within budget."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "%lld gestoppte Versuche insgesamt",
+      "back": "%lld stopped attempts total",
+      "why": "Uses 'gestoppt' for attempts stopped, kept distinct from the rule-verdict word 'blockiert'."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Blockiert",
+      "back": "Blocked",
+      "why": "Predicate-adjective state word, pairs with 'Zugelassen' below."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Zugelassen",
+      "back": "Allowed",
+      "why": "Apple's own Screen Time term for 'allow' as a state, held consistently across the whole file."
+    },
+    "app.rules.row.action_allow": {
+      "s": "Zulassen",
+      "back": "Allow",
+      "why": "Imperative-infinitive menu-item verb, contrasts with the noun/state form 'Zugelassen'."
+    },
+    "app.rules.row.action_block": {
+      "s": "Blockieren",
+      "back": "Block",
+      "why": "Verb form pairs with 'Zulassen' as the action opposite."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Legt fest: zugelassen oder blockiert",
+      "back": "Sets: allowed or blocked",
+      "why": "Terse hover tooltip, within the 30-40 character budget."
+    },
+    "app.rules.row.use_default": {
+      "s": "Standard verwenden",
+      "back": "Use default",
+      "why": "Names clearing the rule back to the default policy, distinct from the Allow/Block verbs."
+    },
+    "app.watched.empty.title": {
+      "s": "Noch keine Website geschützt",
+      "back": "No site protected yet",
+      "why": "Plain factual empty-state title within the 3-5 word budget."
+    },
+    "app.watched.empty.detail": {
+      "s": "Klicken Sie auf das Undirect-Symbol in Safari, um die Website zu schützen.",
+      "back": "Click the Undirect icon in Safari to protect the site.",
+      "why": "Concrete instruction naming the icon and Safari, trimmed to fit the character budget."
+    },
+    "app.watched.footer": {
+      "s": "Neue Websites fügen Sie über Safaris Symbolleiste hinzu.",
+      "back": "You add new sites via Safari's toolbar.",
+      "why": "States the only add-path plainly, within the sentence budget."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Geschützt",
+      "back": "Protected",
+      "why": "Matches the guard/protect vocabulary root used throughout the app."
+    },
+    "app.watched.row.stop_button": {
+      "s": "Entfernen",
+      "back": "Remove",
+      "why": "Apple's standard word for removing a row from an editable list, matching what the button does."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Schaltet den Schutz für die Website aus.",
+      "back": "Switches protection off for the site.",
+      "why": "Mirrors the button's action, within the 30-40 character budget."
+    },
+    "app.settings.guard_toggle": {
+      "s": "Schutz",
+      "back": "Protection",
+      "why": "One-word noun root for the master switch, reused consistently as the 'guard' concept elsewhere."
+    },
+    "app.settings.state_on": {
+      "s": "Ein",
+      "back": "On",
+      "why": "Apple's own standard toggle-state word in German System Settings."
+    },
+    "app.settings.state_off": {
+      "s": "Aus",
+      "back": "Off",
+      "why": "Standard Apple pairing with 'Ein'."
+    },
+    "app.settings.mode_heading": {
+      "s": "Wo der Schutz läuft",
+      "back": "Where protection runs",
+      "why": "Names the run-mode choice directly, within the 3-5 word budget."
+    },
+    "app.settings.mode_watched": {
+      "s": "Einzeln aktivierte Websites",
+      "back": "Individually activated sites",
+      "why": "Phrased from the person's own point of view, as the brief asks, within the 3-word budget."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Überall automatisch",
+      "back": "Everywhere automatically",
+      "why": "Two words, contrasts cleanly with the mode above, reuses the 'überall' scope term."
+    },
+    "app.settings.banner_toggle": {
+      "s": "Hinweis auf Seiten",
+      "back": "Note on pages",
+      "why": "Compact toggle label naming the page-note concept, within the 3-word budget."
+    },
+    "app.settings.policy_heading": {
+      "s": "Standardregel für unbekannte Ziele",
+      "back": "Default rule for unknown destinations",
+      "why": "Names the default-policy concept with one consistent term, 'Standardregel'."
+    },
+    "app.settings.policy_block": {
+      "s": "Standardmäßig blockieren",
+      "back": "Block by default",
+      "why": "Adverb-plus-verb picker option, pairs with the allow option below."
+    },
+    "app.settings.policy_allow": {
+      "s": "Standardmäßig zulassen",
+      "back": "Allow by default",
+      "why": "Same adverb structure as the block option, uses the consistent verb 'zulassen'."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated."
+    },
+    "ext.meta.description": {
+      "s": "Verhindert, dass Websites Ihre Klicks kapern und Sie ungewollt umleiten.",
+      "back": "Prevents websites from hijacking your clicks and redirecting you unintentionally.",
+      "why": "Slightly more explanatory register for a first-time reader in the Extensions list or App Store."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name is the product's own name."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Schutz für diese Website aktiv",
+      "back": "Protection for this site active",
+      "why": "States the current on-state plainly, within the 4-6 word budget."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Schutz aus, hier aktivieren",
+      "back": "Protection off, activate here",
+      "why": "Comma instead of a dash; doubles as the call to action the tooltip is meant to carry."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Keine Website zum Schützen",
+      "back": "No site to protect",
+      "why": "Brief, explains there is nothing here to guard, within the 3-5 word budget."
+    },
+    "ext.popup.no_site_title": {
+      "s": "Keine Website geöffnet",
+      "back": "No site open",
+      "why": "Concise popup headline for the no-website empty state."
+    },
+    "ext.popup.no_site_body": {
+      "s": "Öffnen Sie eine Website, dann hier antippen.",
+      "back": "Open a website, then tap here.",
+      "why": "Keeps 'hier' as a self-reference to the button the popup hangs off, per the brief's note."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Schutz für diese Website ein- oder ausschalten",
+      "back": "Switch protection for this site on or off",
+      "why": "Screen-reader-only label spells out the switch's function fully, since no visual context is available."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Hier gibt es nichts zu schützen.",
+      "back": "There is nothing to protect here.",
+      "why": "Brief reason for the disabled switch, within the 25-35 character budget."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Der Schutz läuft bereits überall.",
+      "back": "Protection already runs everywhere.",
+      "why": "Explains the switch is redundant, reuses the 'überall' scope term."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Der Schutz ist ganz ausgeschaltet.",
+      "back": "Protection is switched off entirely.",
+      "why": "Attributes the disabled state to the master switch, not the site, within budget."
+    },
+    "ext.popup.watch_on": {
+      "s": "Schutz ist an. Ausschalten lädt die Seite neu.",
+      "back": "Protection is on. Turning it off reloads the page.",
+      "why": "State plus warning as two short clauses, no dash, within the 35-50 character budget."
+    },
+    "ext.popup.watch_off": {
+      "s": "Schutz ist aus. Einschalten lädt die Seite neu.",
+      "back": "Protection is off. Turning it on reloads the page.",
+      "why": "Mirrors watch_on's exact sentence shape, as the brief asks for the before/after pair."
+    },
+    "ext.popup.page_heading": {
+      "s": "Diese Seite",
+      "back": "This page",
+      "why": "Two-word heading, matches the 'page' vs 'site' vocabulary distinction."
+    },
+    "ext.popup.page_off": {
+      "s": "Für diese Seite wird nichts erfasst.",
+      "back": "Nothing is being recorded for this page.",
+      "why": "Dead key as of 2026-09-22; written speculatively in the same voice as the sibling states."
+    },
+    "ext.popup.page_quiet": {
+      "s": "Diese Seite war bisher unauffällig.",
+      "back": "This page has been unremarkable so far.",
+      "why": "Plain, calm statement that nothing has happened yet, within the 35-45 character budget."
+    },
+    "ext.popup.page_empty": {
+      "s": "Hier gibt es noch nichts zu sehen.",
+      "back": "There is nothing to see here yet.",
+      "why": "Dead key, near-synonym of page_quiet as the brief notes; not given distinct effort."
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld gestoppt",
+      "back": "%lld stopped",
+      "why": "Terse badge using 'gestoppt' for the blocked-attempts count, distinct from the rule-verdict word."
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld gestoppt",
+      "back": "%lld stopped",
+      "why": "German predicate adjective is invariant by number in this badge context; same text serves both forms correctly."
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld Versuch erkannt",
+      "back": "%lld attempt detected",
+      "why": "Singular noun 'Versuch' for the broader seen-count, distinct from 'stopped'."
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld Versuche erkannt",
+      "back": "%lld attempts detected",
+      "why": "Correct German plural of 'Versuch', pairs with the singular form above."
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld Mal",
+      "back": "%lld time",
+      "why": "Terse per-destination fragment; German 'Mal' does not inflect for count."
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld Mal",
+      "back": "%lld times",
+      "why": "Same invariant form as the singular, which is correct German for this word."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Lösung",
+      "back": "Fix",
+      "why": "One-word prefix that reads naturally before the colon and the fix's own name."
+    },
+    "ext.state.blocked": {
+      "s": "Blockiert",
+      "back": "Blocked",
+      "why": "Consistent with the app-side state word for the same concept."
+    },
+    "ext.state.allowed": {
+      "s": "Zugelassen",
+      "back": "Allowed",
+      "why": "Consistent with the app-side 'Zugelassen', Apple's own Screen Time term."
+    },
+    "ext.state.removed": {
+      "s": "Entfernt",
+      "back": "Removed",
+      "why": "Distinct third state word for a local trap with no destination to rule on."
+    },
+    "ext.scope.here": {
+      "s": "auf dieser Website",
+      "back": "on this site",
+      "why": "Composes naturally after a predicate verdict word, e.g. 'Blockiert auf dieser Website'."
+    },
+    "ext.scope.everywhere": {
+      "s": "überall",
+      "back": "everywhere",
+      "why": "Single adverb composes directly after the verdict word, e.g. 'Blockiert überall'."
+    },
+    "ext.scope.default": {
+      "s": "standardmäßig",
+      "back": "by default",
+      "why": "Single adverb, consistent with the 'standardmäßig' used in the settings picker options."
+    },
+    "ext.action.allow_here": {
+      "s": "Hier zulassen",
+      "back": "Allow here",
+      "why": "Two-word menu option combining scope and the consistent verb 'zulassen'."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Überall zulassen",
+      "back": "Allow everywhere",
+      "why": "Parallel structure to 'Hier zulassen', reuses the 'überall' scope term."
+    },
+    "ext.action.block_here": {
+      "s": "Hier blockieren",
+      "back": "Block here",
+      "why": "Parallel structure with the allow options above."
+    },
+    "ext.action.block_everywhere": {
+      "s": "Überall blockieren",
+      "back": "Block everywhere",
+      "why": "Parallel structure, completes the four-option menu set."
+    },
+    "ext.popup.policy_heading": {
+      "s": "Standardregel für unbekannte Ziele",
+      "back": "Default rule for unknown destinations",
+      "why": "Identical wording to the app-side counterpart, per the brief's note that they should read the same."
+    },
+    "ext.policy.block": {
+      "s": "Standardmäßig blockieren",
+      "back": "Block by default",
+      "why": "Consistent phrasing with the app-side equivalent option."
+    },
+    "ext.policy.allow": {
+      "s": "Standardmäßig zulassen",
+      "back": "Allow by default",
+      "why": "Consistent phrasing with the app-side equivalent option."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Diese Seite blockiert einen Teil des Schutzes, nicht Undirect selbst.",
+      "back": "This page blocks part of the protection, not Undirect itself.",
+      "why": "Names the page's own responsibility without CSP jargon, reassures it is not a bug, within budget."
+    },
+    "ext.kind.click_catcher": {
+      "s": "Unsichtbarer Klickfänger",
+      "back": "Invisible click catcher",
+      "why": "Compact compound noun matching the terse comma-joined tag list."
+    },
+    "ext.kind.overlay": {
+      "s": "Transparente Ebene",
+      "back": "Transparent layer",
+      "why": "Broader than the click-catcher tag, names any see-through overlay."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Simulierter Klick",
+      "back": "Simulated click",
+      "why": "Names a script-dispatched click distinctly from a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "Pop-up-Fenster",
+      "back": "Pop-up window",
+      "why": "Standard German compound, one tag, within the 2-word budget."
+    },
+    "ext.kind.form_submit": {
+      "s": "Verstecktes Formular",
+      "back": "Hidden form",
+      "why": "Names the hidden-form mechanism concisely."
+    },
+    "ext.kind.href_swap": {
+      "s": "Linkziel im Klick vertauscht",
+      "back": "Link target swapped during the click",
+      "why": "Names the timing-based trick within the 3-4 word budget."
+    },
+    "ext.kind.back_hijack": {
+      "s": "Umleitung nach Zurück",
+      "back": "Redirect after back",
+      "why": "Names the back-gesture hijack distinctly from the plain redirect tag."
+    },
+    "ext.kind.redirect": {
+      "s": "Umleitung im selben Tab",
+      "back": "Redirect in the same tab",
+      "why": "Names the core same-tab redirect trick, distinct from back_hijack and pop_tab."
+    },
+    "ext.kind.pop_tab": {
+      "s": "Tab im Hintergrund geöffnet",
+      "back": "Tab opened in the background",
+      "why": "Names the tab-under mechanism distinctly from a plain pop-up window."
+    },
+    "ext.kind.network_rule": {
+      "s": "Direkt im Netzwerk gestoppt",
+      "back": "Stopped directly at the network",
+      "why": "Uses 'gestoppt' to tie into the attempt vocabulary, names the earliest block point."
+    },
+    "ext.reason.way_back": {
+      "s": "Führt zurück zur Ausgangsseite.",
+      "back": "Leads back to the starting page.",
+      "why": "Brief reason fragment within the 30-40 character budget."
+    },
+    "ext.reason.sized": {
+      "s": "Fenster mit fester Größe.",
+      "back": "Window with a fixed size.",
+      "why": "Concise reason within the 25-35 character budget."
+    },
+    "ext.reason.took_press": {
+      "s": "Kaperte den Klick.",
+      "back": "Hijacked the click.",
+      "why": "Extremely terse to fit the 15-25 character budget; uses 'kapern', the same verb as the extension's own description."
+    },
+    "ext.reason.default_allow": {
+      "s": "Keine Regel vorhanden.",
+      "back": "No rule in place.",
+      "why": "Terse, ties to the 'Regel' vocabulary term, within the 15-25 character budget."
+    },
+    "ext.reason.own_code": {
+      "s": "Kommt von der Website selbst.",
+      "back": "Comes from the site itself.",
+      "why": "Concise reason within the 25-35 character budget."
+    },
+    "ext.popup.rules_link": {
+      "s": "Regeln",
+      "back": "Rules",
+      "why": "One word, matches the 'Regel' vocabulary term, plural for the list screen."
+    },
+    "ext.popup.back_link": {
+      "s": "Übersicht",
+      "back": "Overview",
+      "why": "Names the popup's main per-page view for a screen reader user with no visual context."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Überall",
+      "back": "Everywhere",
+      "why": "Consistent with the app-side grouping term."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Nach Website",
+      "back": "By site",
+      "why": "Consistent with the app-side grouping term."
+    },
+    "ext.rules.empty": {
+      "s": "Keine Regeln",
+      "back": "No rules",
+      "why": "Consistent terse placeholder, matching the app-side wording."
+    },
+    "ext.action.allow": {
+      "s": "Zulassen",
+      "back": "Allow",
+      "why": "Same verb as elsewhere, scope already fixed by the section the row is in."
+    },
+    "ext.action.block": {
+      "s": "Blockieren",
+      "back": "Block",
+      "why": "Same verb as elsewhere, pairs with the allow option above."
+    },
+    "ext.action.clear": {
+      "s": "Standard verwenden",
+      "back": "Use default",
+      "why": "Same phrasing as the app-side 'use_default' action, so it reads as the same action across surfaces."
+    },
+    "ext.popup.settings_heading": {
+      "s": "Einstellungen",
+      "back": "Settings",
+      "why": "Matches Apple's standard term, consistent with the container app's own Settings screen."
+    },
+    "ext.settings.guard_label": {
+      "s": "Schutz",
+      "back": "Protection",
+      "why": "Consistent with the app-side term for the same master switch."
+    },
+    "ext.settings.guard_on": {
+      "s": "Ein",
+      "back": "On",
+      "why": "Matches the standard Apple toggle-state word used consistently across the app."
+    },
+    "ext.settings.guard_off": {
+      "s": "Aus",
+      "back": "Off",
+      "why": "Matches the standard pairing with 'Ein'."
+    },
+    "ext.settings.mode_heading": {
+      "s": "Wo der Schutz läuft",
+      "back": "Where protection runs",
+      "why": "Consistent phrasing with the app-side equivalent heading."
+    },
+    "ext.settings.mode_watched": {
+      "s": "Einzeln aktivierte Websites",
+      "back": "Individually activated sites",
+      "why": "Consistent with the app-side mode option."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Überall automatisch",
+      "back": "Everywhere automatically",
+      "why": "Consistent with the app-side mode option."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Hinweis anzeigen",
+      "back": "Show note",
+      "why": "Tighter 2-word budget than the app-side toggle, keeps the recognizable 'Hinweis' vocabulary term."
+    },
+    "ext.action.report": {
+      "s": "Problem melden",
+      "back": "Report problem",
+      "why": "Concise two-word action label naming the external report action."
+    }
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "locale": "ar-SA",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "الإضافة غير مفعّلة",
+      "back": "The extension not enabled",
+      "why": "States the current state plainly, using the same enabled/disabled adjective the app uses elsewhere."
+    },
+    "app.setup.title_failed": {
+      "s": "تعذّر التحقق من الإضافة",
+      "back": "Verifying the extension failed",
+      "why": "“تعذّر” is the standard Arabic hedge verb for a failed check (as in تعذّر الاتصال), keeping this distinct from a definite off-state."
+    },
+    "app.setup.detail_default": {
+      "s": "عند تفعيلها، لا يخطف أي موقع محمي ضغطاتك بعد الآن.",
+      "back": "Once enabled, no protected site hijacks your taps anymore.",
+      "why": "States the payoff plainly with a concrete verb (يخطف, hijacks) rather than a slogan."
+    },
+    "app.setup.detail_failed": {
+      "s": "تعذّر التأكد الآن، وسيلاحظ التطبيق تفعيل الإضافة في Safari بمجرد حدوثه.",
+      "back": "Confirming failed now, and the app will notice enabling the extension in Safari once it happens.",
+      "why": "Plain, no jargon or error code; promises automatic detection so the person never needs to come back and refresh."
+    },
+    "app.setup.open_button": {
+      "s": "فتح إعدادات الإضافات في Safari",
+      "back": "Open Extensions settings in Safari",
+      "why": "Names the exact action generically enough to work verbatim on both the setup screen and the welcome sheet."
+    },
+    "app.welcome.heading": {
+      "s": "مرحبًا بك في Undirect",
+      "back": "Welcome to Undirect",
+      "why": "The standard Arabic welcome formula (مرحبًا بك في X); the one place in the product allowed a warmer register."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "طبقات خفية",
+      "back": "Hidden layers",
+      "why": "Concrete two-word noun phrase naming the trick, parallel in shape to the other four feature titles."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "قد تُخفي الصفحة طبقة فوقها، فتصل ضغطتك إلى شيء آخر غير الذي تراه.",
+      "back": "The page may hide a layer over itself, so your tap reaches something other than what you see.",
+      "why": "Describes what the person experiences (the tap lands elsewhere), not the underlying script mechanism."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "روابط مُبدَّلة",
+      "back": "Swapped links",
+      "why": "Concrete noun phrase naming the trick, parallel to the sibling titles."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "تُغيّر بعض الصفحات وجهة الرابط بين ضغطك وإفلاته، فلا تصل حيث توقعت.",
+      "back": "Some pages change the link's destination between your press and its release, so you don't arrive where you expected.",
+      "why": "Plain description of the experienced effect, matching the sibling detail sentences' register and length."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "نوافذ غير مرغوبة",
+      "back": "Unwanted windows",
+      "why": "Concrete noun phrase for the trick, parallel to the sibling titles."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "مع الحماية، لا يفتح تبويب جديد إلا فيما ضغطت عليه فعلًا، بلا إضافات خفية.",
+      "back": "With protection, no new tab opens except to what you actually pressed, without hidden additions.",
+      "why": "Framed as a promise per the brief, rather than a description of the trick itself."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "سجل الوجهات",
+      "back": "Destinations log",
+      "why": "Names the feature as a noun (a log of destinations), matching the checklist icon and sibling title shape."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "لكل وجهة سجل خاص، تختار فيه السماح أو الحظر هنا أو في كل مكان.",
+      "back": "Every destination has its own record, in which you choose allow or block, here or everywhere.",
+      "why": "Concrete description of the review-and-choose mechanic, kept within the short detail budget."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "موقع في كل مرة",
+      "back": "One site at a time",
+      "why": "Mirrors the concept directly as a short noun phrase, parallel to the sibling titles."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "اضغط زر Undirect في شريط أدوات Safari لتفعيل الحماية على ذلك الموقع فقط.",
+      "back": "Press the Undirect button in Safari's toolbar to enable protection on that site only.",
+      "why": "States the exact mechanism (the toolbar button) concretely, matching sibling detail register."
+    },
+    "app.nav.guarded_sites": {
+      "s": "المواقع المحمية",
+      "back": "The protected sites",
+      "why": "Short two-word noun phrase using the established “protected” adjective; works as both sidebar label and nav title."
+    },
+    "app.nav.settings": {
+      "s": "الإعدادات",
+      "back": "The Settings",
+      "why": "Apple's own Arabic term for Settings, which wins over any invented synonym."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Brand name, left untranslated per the product's own proper-noun convention."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "الكل",
+      "back": "All",
+      "why": "The idiomatic Arabic filter-tab word contrasting with “by X”, matching how Apple's own Settings pairs “الكل” against “حسب التطبيق”."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "حسب الموقع",
+      "back": "By the site",
+      "why": "Direct opposite of “الكل”, standard “by X” filter phrasing, reading as a clear contrasting pair beside it."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "لم تتواصل الإضافة بعد",
+      "back": "The extension hasn't communicated yet",
+      "why": "Frames this as a first-contact/wiring state (the extension hasn't reported anything), distinct from an empty-content state."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "افتح أي صفحة في Safari مرة، وستظهر البيانات هنا.",
+      "back": "Open any page in Safari once, and the data will appear here.",
+      "why": "Simple imperative fix with no setting to change, shared verbatim between the two screens as specified."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "لا قواعد هنا",
+      "back": "No rules here",
+      "why": "Plain, short statement contrasting with the wiring-state title above it."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "تظهر الوجهة هنا فقط بعد أن تسمح بها أو تحظرها.",
+      "back": "The destination appears here only after you allow or block it.",
+      "why": "States precisely when a row is created: only after an explicit decision, not merely being seen."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "أوقفت الحماية %lld محاولة إجمالًا",
+      "back": "Protection stopped %lld attempt(s) total",
+      "why": "Placeholder placed where Arabic puts the counted noun after the numeral; this single string stands in for the “other” form of the full CLDR plural set a String Catalog would carry (zero/one/two/few/many/other), since only one string slot exists here."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "محظور",
+      "back": "Blocked",
+      "why": "Invariant one-word status chip, masculine default per Arabic UI convention, pairing cleanly with state_allowed."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "مسموح",
+      "back": "Allowed",
+      "why": "Clear one-word opposite of state_blocked."
+    },
+    "app.rules.row.action_allow": {
+      "s": "السماح",
+      "back": "Allow",
+      "why": "Apple's own Arabic term for the “Allow” action (as used in iOS permission prompts), reused as a verbal-noun menu item."
+    },
+    "app.rules.row.action_block": {
+      "s": "الحظر",
+      "back": "Block",
+      "why": "Matching verbal-noun counterpart to action_allow, pairing as Apple's own Allow/Block idiom."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "اختيار السماح بهذه الوجهة أو حظرها",
+      "back": "Choosing to allow this destination or block it",
+      "why": "Concise verbal-noun tooltip phrase, matching macOS's own terse .help style."
+    },
+    "app.rules.row.use_default": {
+      "s": "استخدام الافتراضي",
+      "back": "Use the default",
+      "why": "Names clearing the explicit rule as reverting to the default policy, not setting a new verdict."
+    },
+    "app.watched.empty.title": {
+      "s": "لا مواقع محمية بعد",
+      "back": "No protected sites yet",
+      "why": "Plain statement that no site has been switched on, matching the sibling empty-state title shape."
+    },
+    "app.watched.empty.detail": {
+      "s": "اضغط زر Undirect في شريط أدوات Safari عند زيارة موقع يسيء التصرف.",
+      "back": "Press the Undirect button in Safari's toolbar when visiting a site that misbehaves.",
+      "why": "Concrete first-use instruction naming the exact button and the moment to use it."
+    },
+    "app.watched.footer": {
+      "s": "تُضاف المواقع من زر Undirect في Safari فقط، لا من هنا.",
+      "back": "Sites are added only from the Undirect button in Safari, not from here.",
+      "why": "States the one-way limitation plainly: this screen removes sites but cannot add them."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "محمي",
+      "back": "Protected",
+      "why": "One-word read-only status, matching the “protected” adjective used throughout the vocabulary."
+    },
+    "app.watched.row.stop_button": {
+      "s": "إيقاف",
+      "back": "Stop",
+      "why": "Short imperative verb suitable for a small trailing row button."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "إيقاف الحماية عن هذا الموقع",
+      "back": "Stopping protection for this site",
+      "why": "Concise verbal-noun tooltip describing exactly what the button under the pointer does."
+    },
+    "app.settings.guard_toggle": {
+      "s": "الحماية",
+      "back": "Protection",
+      "why": "The vocabulary's core noun (“guard”) as the master toggle's one-word label."
+    },
+    "app.settings.state_on": {
+      "s": "تشغيل",
+      "back": "On",
+      "why": "Apple's own system word for a toggle's on state, generic enough for both the Guard row and the page-note row."
+    },
+    "app.settings.state_off": {
+      "s": "إيقاف",
+      "back": "Off",
+      "why": "Apple's own system word for a toggle's off state, clear opposite of state_on."
+    },
+    "app.settings.mode_heading": {
+      "s": "أين تعمل الحماية",
+      "back": "Where protection operates",
+      "why": "Introduces the choice of which sites the guard runs on, as a short picker/section header."
+    },
+    "app.settings.mode_watched": {
+      "s": "المواقع التي تُفعّلها",
+      "back": "The sites you enable",
+      "why": "Framed from the person's own action (“you enable”) rather than a technical mode name, per the brief."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "كل المواقع",
+      "back": "All sites",
+      "why": "Short two-word option meaning the guard runs automatically on every site."
+    },
+    "app.settings.banner_toggle": {
+      "s": "ملاحظة على الصفحة",
+      "back": "A note on the page",
+      "why": "Names exactly what the toggle draws (an on-page note), matching the “page note” vocabulary concept."
+    },
+    "app.settings.policy_heading": {
+      "s": "السياسة الافتراضية للوجهات الجديدة",
+      "back": "The default policy for new destinations",
+      "why": "Introduces the default-policy choice using the vocabulary's own “default policy” term, framing an unrated destination as “new”."
+    },
+    "app.settings.policy_block": {
+      "s": "الحظر افتراضيًا",
+      "back": "Block by default",
+      "why": "Short imperative-phrase option meaning an unrated destination is stopped by default."
+    },
+    "app.settings.policy_allow": {
+      "s": "السماح افتراضيًا",
+      "back": "Allow by default",
+      "why": "Clear opposite of policy_block, same two-word shape."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Brand name, left untranslated, matching app.nav.app_title."
+    },
+    "ext.meta.description": {
+      "s": "يمنع Undirect المواقع من استغلال ضغطاتك لفتح صفحات أو إعادة توجيهك دون إذنك.",
+      "back": "Undirect prevents sites from exploiting your taps to open pages or redirect you without your permission.",
+      "why": "Slightly more explanatory than the in-app copy, since this is often the first thing a prospective user reads, per the brief's register note."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback stand-in for the site name; since it is the product's own name, it stays the brand word."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "الحماية مفعّلة على هذا الموقع",
+      "back": "Protection is enabled on this site",
+      "why": "States the current state plainly as the toolbar icon's tooltip/accessible name."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "الحماية متوقفة، اضغط للتفعيل",
+      "back": "Protection is off, press to enable",
+      "why": "Combines the state with the implied call to action in one tooltip, since a press here is the one-tap way to start guarding."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "لا صفحة لحمايتها هنا",
+      "back": "No page to protect here",
+      "why": "Brief explanation that there is nothing to guard on a tab with no website loaded."
+    },
+    "ext.popup.no_site_title": {
+      "s": "لا موقع هنا",
+      "back": "No site here",
+      "why": "Terse empty-state headline beside a small icon, matching sibling empty-state title lengths."
+    },
+    "ext.popup.no_site_body": {
+      "s": "افتح موقعًا، ثم اضغط هنا لحمايته.",
+      "back": "Open a site, then press here to protect it.",
+      "why": "Keeps “here” as a self-reference to the button the popup hangs off, per the brief's note, rather than translating it as a place."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "تفعيل الحماية أو إيقافها لهذا الموقع",
+      "back": "Turning protection on or off for this site",
+      "why": "Screen-reader-only label spelling out the switch's function, since the visible row shows only the site name."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "لا صفحة هنا لحمايتها",
+      "back": "No page here to protect",
+      "why": "Brief reason the switch is disabled: there is no actual page to guard."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "الحماية مفعّلة على كل موقع من الإعدادات.",
+      "back": "Protection is enabled on every site from Settings.",
+      "why": "Explains the switch is redundant because the everywhere-mode setting already covers this site."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "الحماية متوقفة تمامًا من الإعدادات",
+      "back": "Protection is completely off from Settings",
+      "why": "Attributes the disabled switch to the master switch, not to anything about this particular site."
+    },
+    "ext.popup.watch_on": {
+      "s": "الحماية مفعّلة هنا، إيقافها يعيد تحميل الصفحة.",
+      "back": "Protection is enabled here, turning it off reloads the page.",
+      "why": "States the current state, then the reload warning as one clause, mirroring watch_off's shape."
+    },
+    "ext.popup.watch_off": {
+      "s": "الحماية متوقفة هنا، تفعيلها يعيد تحميل الصفحة.",
+      "back": "Protection is off here, turning it on reloads the page.",
+      "why": "Mirrors watch_on's exact sentence shape, swapping state and action, so the pair reads as before/after."
+    },
+    "ext.popup.page_heading": {
+      "s": "هذه الصفحة",
+      "back": "This page",
+      "why": "Short two-word heading, matching the vocabulary's site-vs-page distinction."
+    },
+    "ext.popup.page_off": {
+      "s": "لا شيء يُرصد هنا، فالحماية متوقفة على هذا الموقع.",
+      "back": "Nothing is tracked here, since protection is off on this site.",
+      "why": "Dead key as of 2026-09-22 per the brief; written to match the voice of the sibling page-section states in case it is ever wired up."
+    },
+    "ext.popup.page_quiet": {
+      "s": "لم تحاول هذه الصفحة الوصول إلى موقع آخر.",
+      "back": "This page hasn't tried to reach another site.",
+      "why": "Plain statement that nothing on this page has reached outward so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "لا شيء لعرضه هنا بعد.",
+      "back": "Nothing to show here yet.",
+      "why": "Dead key per the brief, treated as a near-synonym of page_quiet rather than a distinct phrasing."
+    },
+    "ext.popup.stopped_one": {
+      "s": "توقفت محاولة واحدة",
+      "back": "One attempt was stopped",
+      "why": "Arabic's “one” category names the item without a digit; paired with stopped_other's $COUNT$ + plural noun for every other count."
+    },
+    "ext.popup.stopped_other": {
+      "s": "توقفت $COUNT$ محاولات",
+      "back": "$COUNT$ attempts were stopped",
+      "why": "General/plural form covering 0, 2-10 and 11+ with the plural noun محاولات; a full six-category CLDR set isn't available in this two-slot i18n scheme, so this single form approximates all non-one counts."
+    },
+    "ext.popup.seen_one": {
+      "s": "سُجّلت محاولة واحدة",
+      "back": "One attempt was recorded",
+      "why": "Mirrors stopped_one's no-digit “one” phrasing, but with the broader verb “رُصدت/سُجّلت” since ‘seen’ covers both blocked and allowed attempts."
+    },
+    "ext.popup.seen_other": {
+      "s": "سُجّلت $COUNT$ محاولات",
+      "back": "$COUNT$ attempts were recorded",
+      "why": "Plural counterpart to seen_one, same $COUNT$ + plural-noun approximation as stopped_other."
+    },
+    "ext.popup.tries_one": {
+      "s": "مرة واحدة",
+      "back": "One time",
+      "why": "Terse inline fragment (no full sentence) to sit alongside the scope/kind/reason fragments in the same detail line."
+    },
+    "ext.popup.tries_other": {
+      "s": "$COUNT$ مرات",
+      "back": "$COUNT$ times",
+      "why": "Plural inline fragment counterpart to tries_one, same terse shape."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "إصلاح مخصص",
+      "back": "Custom fix",
+      "why": "Short lead-in fragment reading naturally before the colon and the fix's own name, as “${heading}: ${text}” in code."
+    },
+    "ext.state.blocked": {
+      "s": "محظور",
+      "back": "Blocked",
+      "why": "Invariant one-word status chip (masculine default), the most-reused word in the extension; combines cleanly with the following scope fragment."
+    },
+    "ext.state.allowed": {
+      "s": "مسموح",
+      "back": "Allowed",
+      "why": "Clear opposite of state.blocked, same invariant chip shape."
+    },
+    "ext.state.removed": {
+      "s": "أُزيل",
+      "back": "Removed",
+      "why": "Passive-verb status chip for a trap taken off the page directly, parallel in shape to Blocked/Allowed but with no destination to rule on."
+    },
+    "ext.scope.here": {
+      "s": "على هذا الموقع",
+      "back": "on this site",
+      "why": "Composed as ‘${verdict} ${scope}’ in code; Arabic reads naturally in the same order as English (محظور على هذا الموقع), so no reordering is needed."
+    },
+    "ext.scope.everywhere": {
+      "s": "عالميًا",
+      "back": "globally",
+      "why": "One-word adverb fills the single-word budget where the literal “everywhere” would need three Arabic words; composes as ‘${verdict} عالميًا’."
+    },
+    "ext.scope.default": {
+      "s": "افتراضيًا",
+      "back": "by default",
+      "why": "Single Arabic adverb natively expressing “by default”, composing as ‘${verdict} افتراضيًا’ (e.g. محظور افتراضيًا)."
+    },
+    "ext.action.allow_here": {
+      "s": "السماح لهذا الموقع",
+      "back": "Allow for this site",
+      "why": "Complete, unambiguous menu option scoped to the current site."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "السماح عالميًا",
+      "back": "Allow globally",
+      "why": "Reuses “عالميًا” (globally) from ext.scope.everywhere for terminology consistency across the popup."
+    },
+    "ext.action.block_here": {
+      "s": "الحظر لهذا الموقع",
+      "back": "Block for this site",
+      "why": "Counterpart to allow_here, same scoped shape."
+    },
+    "ext.action.block_everywhere": {
+      "s": "الحظر عالميًا",
+      "back": "Block globally",
+      "why": "Counterpart to allow_everywhere, reusing “عالميًا” for consistency."
+    },
+    "ext.popup.policy_heading": {
+      "s": "السياسة الافتراضية للوجهات غير المُقيَّمة",
+      "back": "The default policy for unrated destinations",
+      "why": "Same concept as app.settings.policy_heading, phrased consistently so the two read as the same idea across app and extension."
+    },
+    "ext.policy.block": {
+      "s": "الحظر افتراضيًا",
+      "back": "Block by default",
+      "why": "Same wording as app.settings.policy_block for consistency across surfaces."
+    },
+    "ext.policy.allow": {
+      "s": "السماح افتراضيًا",
+      "back": "Allow by default",
+      "why": "Same wording as app.settings.policy_allow for consistency across surfaces."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "تمنع سياسة الأمان في هذه الصفحة جزءًا من الحماية، فتبقى الحماية هنا جزئية فقط.",
+      "back": "This page's security policy prevents part of protection, so protection here stays only partial.",
+      "why": "Frames the limitation as belonging to this one page's own settings, not a bug or a setting to fix, per the brief."
+    },
+    "ext.kind.click_catcher": {
+      "s": "مِصيدة ضغط خفية",
+      "back": "Hidden press trap",
+      "why": "Names the invisible clickable element concretely; terse noun phrase for the comma-joined tag list."
+    },
+    "ext.kind.overlay": {
+      "s": "طبقة شفافة",
+      "back": "Transparent layer",
+      "why": "Broader than click_catcher: any see-through element over the page, not specifically something clickable."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "ضغطة مُصطنَعة",
+      "back": "Fabricated press",
+      "why": "Names a click the page's own script dispatched itself, not a real press from the person."
+    },
+    "ext.kind.window_open": {
+      "s": "نافذة منبثقة",
+      "back": "Pop-up window",
+      "why": "Standard Arabic term for a script-opened pop-up window."
+    },
+    "ext.kind.form_submit": {
+      "s": "نموذج مخفي",
+      "back": "Hidden form",
+      "why": "Names the hidden-form-submission trick tersely, matching sibling tag length."
+    },
+    "ext.kind.href_swap": {
+      "s": "تبديل وجهة الرابط",
+      "back": "Link destination swap",
+      "why": "Names the link-retargeting trick, three words matching its budget."
+    },
+    "ext.kind.back_hijack": {
+      "s": "خطف زر الرجوع",
+      "back": "Back button hijack",
+      "why": "Names the navigation-after-back trick tersely."
+    },
+    "ext.kind.redirect": {
+      "s": "إعادة توجيه خاطفة",
+      "back": "Hijacking redirect",
+      "why": "Names the core same-tab redirect trick as a noun phrase, distinct from the generic “redirect” word."
+    },
+    "ext.kind.pop_tab": {
+      "s": "تبويب خفي جديد",
+      "back": "Hidden new tab",
+      "why": "Names the tab-under trick, distinct from window_open's explicit window call."
+    },
+    "ext.kind.network_rule": {
+      "s": "حظر على مستوى الشبكة",
+      "back": "Block at the network level",
+      "why": "Names the strongest, earliest kind of block: stopped before the request ever reached the page."
+    },
+    "ext.reason.way_back": {
+      "s": "يتضمن طريق عودة إلى الموقع",
+      "back": "It includes a way back to the site",
+      "why": "Brief footnote explaining the round-trip signal that let this redirect through."
+    },
+    "ext.reason.sized": {
+      "s": "فُتحت بحجم مقصود",
+      "back": "It opened at a deliberate size",
+      "why": "Short passive-verb footnote naming the specific-size signal that let this window through."
+    },
+    "ext.reason.took_press": {
+      "s": "أخذ ضغطة لغيره",
+      "back": "It took a press meant for something else",
+      "why": "Very short footnote (15-25 char budget) naming the core hijack pattern tersely."
+    },
+    "ext.reason.default_allow": {
+      "s": "لا قاعدة تمنعه",
+      "back": "No rule forbids it",
+      "why": "Very short footnote stating there was simply no rule against this destination."
+    },
+    "ext.reason.own_code": {
+      "s": "فتحه كود الموقع نفسه",
+      "back": "The site's own code opened it",
+      "why": "Short footnote naming the site's own script as the one vouching for the window."
+    },
+    "ext.popup.rules_link": {
+      "s": "القواعد",
+      "back": "The rules",
+      "why": "One-word section name reused as nav row, header title, and back-button accessibility label."
+    },
+    "ext.popup.back_link": {
+      "s": "الرئيسية",
+      "back": "The main [screen]",
+      "why": "One-word accessible label naming the destination (the popup's main view) rather than the generic verb “back”, read aloud with no visual context."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "القواعد العامة",
+      "back": "The general rules",
+      "why": "Section heading for rules that apply to every guarded site, a separate translation unit from app.rules.grouping.everywhere but the same concept."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "قواعد كل موقع",
+      "back": "Rules of each site",
+      "why": "Clear counterpart to everywhere_heading, naming per-site rules."
+    },
+    "ext.rules.empty": {
+      "s": "لا قواعد",
+      "back": "No rules",
+      "why": "Terse one-to-two-word list placeholder."
+    },
+    "ext.action.allow": {
+      "s": "السماح",
+      "back": "Allow",
+      "why": "Same word as action_allow_here/everywhere but without a scope suffix, since scope is already fixed by which section list the row sits in."
+    },
+    "ext.action.block": {
+      "s": "الحظر",
+      "back": "Block",
+      "why": "Counterpart to action.allow, same simplified context."
+    },
+    "ext.action.clear": {
+      "s": "إعادة للافتراضي",
+      "back": "Revert to default",
+      "why": "Same underlying action as app.rules.row.use_default (clearing the explicit rule), phrased compactly for the tighter popup menu."
+    },
+    "ext.popup.settings_heading": {
+      "s": "الإعدادات",
+      "back": "Settings",
+      "why": "Same Apple system term used for the extension's own Settings section, a separate translation unit from the container app's Settings screen but reading identically to the user."
+    },
+    "ext.settings.guard_label": {
+      "s": "الحماية",
+      "back": "Protection",
+      "why": "Same one-word term as app.settings.guard_toggle, reused for both the visible row label and the sr-only switch label."
+    },
+    "ext.settings.guard_on": {
+      "s": "تشغيل",
+      "back": "On",
+      "why": "Same Apple toggle term as app.settings.state_on, kept consistent across app and extension."
+    },
+    "ext.settings.guard_off": {
+      "s": "إيقاف",
+      "back": "Off",
+      "why": "Same Apple toggle term as app.settings.state_off."
+    },
+    "ext.settings.mode_heading": {
+      "s": "أين تعمل الحماية",
+      "back": "Where protection operates",
+      "why": "Same wording as app.settings.mode_heading for cross-surface consistency."
+    },
+    "ext.settings.mode_watched": {
+      "s": "المواقع التي تُفعّلها",
+      "back": "The sites you enable",
+      "why": "Same wording as app.settings.mode_watched for cross-surface consistency."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "كل المواقع",
+      "back": "All sites",
+      "why": "Same wording as app.settings.mode_everywhere for cross-surface consistency."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "ملاحظة الصفحة",
+      "back": "Page note",
+      "why": "Same concept as app.settings.banner_toggle, compressed to two words to fit the popup's tighter toggle row."
+    },
+    "ext.action.report": {
+      "s": "الإبلاغ عن مشكلة",
+      "back": "Report a problem",
+      "why": "Slightly over the two-word budget to keep the nav row unambiguous; a bare “إبلاغ” alone reads as incomplete in Arabic."
+    }
+  }
+}

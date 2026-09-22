@@ -1,0 +1,600 @@
+{
+  "locale": "pl",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Rozszerzenie wyłączone",
+      "back": "Extension disabled",
+      "why": "Plain adjectival status, matches Apple's terse ContentUnavailableView titles; no verb needed."
+    },
+    "app.setup.title_failed": {
+      "s": "Stan nieznany",
+      "back": "State unknown",
+      "why": "Hedged, distinct from the plain 'disabled' title; says the check failed, not that it's off."
+    },
+    "app.setup.detail_default": {
+      "s": "Po włączeniu ochrony strona przestaje przejmować kliknięcia.",
+      "back": "After turning-on of-protection the-page stops hijacking clicks.",
+      "why": "Impersonal subordinate clause (po włączeniu) instead of addressing the reader with a command."
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari nie potwierdziło stanu rozszerzenia. Aplikacja sama to zauważy.",
+      "back": "Safari did-not confirm state of-the-extension. The-app itself this will-notice.",
+      "why": "Two plain clauses, no error code, reassures without an apology."
+    },
+    "app.setup.open_button": {
+      "s": "Otwórz ustawienia rozszerzeń",
+      "back": "Open settings of-extensions",
+      "why": "Short imperative button label, standard Polish Apple button convention."
+    },
+    "app.welcome.heading": {
+      "s": "Witaj w Undirect",
+      "back": "Welcome in Undirect",
+      "why": "Warmer register allowed only here; product name kept as-is."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Niewidoczne warstwy",
+      "back": "Invisible layers",
+      "why": "Plain noun phrase naming the trick."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Niewidoczna warstwa na stronie potrafi przejąć kliknięcie w coś innego.",
+      "back": "An-invisible layer on the-page can seize a-click into something else.",
+      "why": "One plain sentence, concrete, no jargon."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Podmienione linki",
+      "back": "Swapped links",
+      "why": "Two-word noun phrase, matches sibling rows."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Cel linku może się zmienić w chwili między naciśnięciem a puszczeniem.",
+      "back": "The-target of-link can itself change in the-moment between the-press and the-release.",
+      "why": "Reflexive 'może się zmienić' keeps it impersonal; fits the 50-75 char budget."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Nieproszone okna",
+      "back": "Uninvited windows",
+      "why": "Direct equivalent of the English name."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Z włączoną ochroną nowa karta otwiera tylko to, co naciśnięto.",
+      "back": "With turned-on protection a-new tab opens only that which was-pressed.",
+      "why": "Framed as a promise, as the brief asks, not a description of the trick."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Pełna lista celów",
+      "back": "Full list of-destinations",
+      "why": "Names the rule-list feature plainly."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Każdy cel ma własny wpis do zablokowania lub zezwolenia tu albo wszędzie.",
+      "back": "Every destination has its-own entry for blocking or allowing here or everywhere.",
+      "why": "Fits budget while keeping both scopes (here/everywhere) explicit."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Jedna witryna naraz",
+      "back": "One site at-a-time",
+      "why": "Matches the mechanism: guarding is switched on per site."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Ochronę włącza się przyciskiem Undirect na pasku Safari.",
+      "back": "The-protection one-turns-on with-the-button Undirect on the-bar of-Safari.",
+      "why": "Reflexive 'włącza się' is the impersonal construction, not a command to the reader."
+    },
+    "app.nav.guarded_sites": {
+      "s": "Chronione witryny",
+      "back": "Guarded sites",
+      "why": "Short, won't wrap in a narrow sidebar column."
+    },
+    "app.nav.settings": {
+      "s": "Ustawienia",
+      "back": "Settings",
+      "why": "Apple's own Polish term for this screen."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Wszędzie",
+      "back": "Everywhere",
+      "why": "One word, reused across app and extension for the same concept."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Wg witryny",
+      "back": "By site",
+      "why": "Reads as the clear opposite of 'Wszędzie' beside it."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Brak połączenia z rozszerzeniem",
+      "back": "Lack of-connection with the-extension",
+      "why": "A wiring/first-contact state, distinct from 'no rules yet'."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Wystarczy otworzyć stronę w Safari, by się uzupełniła.",
+      "back": "It-suffices to-open a-page in Safari, for it itself to-fill.",
+      "why": "'Wystarczy + infinitive' is the impersonal instruction form, not a command verb."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Brak reguł",
+      "back": "Lack of-rules",
+      "why": "Terse, distinct from the connection-missing title."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Wpis pojawia się dopiero po podjęciu decyzji o celu.",
+      "back": "An-entry appears itself only after the-making of-a-decision about a-destination.",
+      "why": "States how a rule is created, impersonally."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Zatrzymano %lld prób ogółem.",
+      "back": "Stopped %lld attempts in-total.",
+      "why": "Impersonal past ('zatrzymano'); genitive plural 'prób' is the compromise form — Polish really wants three plural forms (próbę/próby/prób), but only one slot exists here, so the 'many' form is used since it also covers zero correctly."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Zablokowane",
+      "back": "Blocked",
+      "why": "Neutral adjectival status word, pairs with 'Dozwolone'."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Dozwolone",
+      "back": "Allowed",
+      "why": "Clear opposite of 'Zablokowane'."
+    },
+    "app.rules.row.action_allow": {
+      "s": "Zezwól",
+      "back": "Allow",
+      "why": "One-word imperative menu action, only shown on a Blocked row."
+    },
+    "app.rules.row.action_block": {
+      "s": "Zablokuj",
+      "back": "Block",
+      "why": "One-word imperative menu action, only shown on an Allowed row."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Wybierz, czy zezwolić, czy zablokować.",
+      "back": "Choose, whether to-allow, or to-block.",
+      "why": "Short hover tooltip describing the control's function."
+    },
+    "app.rules.row.use_default": {
+      "s": "Użyj domyślnych",
+      "back": "Use defaults",
+      "why": "Names clearing the explicit rule, not setting a new verdict."
+    },
+    "app.watched.empty.title": {
+      "s": "Brak chronionych witryn",
+      "back": "Lack of-guarded sites",
+      "why": "States plainly that no site is switched on yet."
+    },
+    "app.watched.empty.detail": {
+      "s": "Wystarczy nacisnąć przycisk Undirect na pasku Safari, by włączyć ochronę.",
+      "back": "It-suffices to-press the-button Undirect on the-bar of-Safari, to turn-on protection.",
+      "why": "Same impersonal 'wystarczy' pattern as the rules empty state."
+    },
+    "app.watched.footer": {
+      "s": "Nowe witryny dodaje przycisk Undirect w pasku Safari.",
+      "back": "New sites adds the-button Undirect in the-bar of-Safari.",
+      "why": "States the only way the list grows, without addressing the reader directly."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Chroniona",
+      "back": "Guarded",
+      "why": "Feminine singular, agrees with 'witryna' (site); read-only status word."
+    },
+    "app.watched.row.stop_button": {
+      "s": "Zatrzymaj",
+      "back": "Stop",
+      "why": "One-word imperative button, standard Apple convention."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Wyłącza ochronę na tej witrynie.",
+      "back": "Turns-off protection on this site.",
+      "why": "Describes the button's effect for the hover tooltip."
+    },
+    "app.settings.guard_toggle": {
+      "s": "Ochrona",
+      "back": "Protection",
+      "why": "The master switch label; same noun used throughout for the concept 'guard'."
+    },
+    "app.settings.state_on": {
+      "s": "Włączone",
+      "back": "Turned-on",
+      "why": "Generic on-state word, reused for more than one setting."
+    },
+    "app.settings.state_off": {
+      "s": "Wyłączone",
+      "back": "Turned-off",
+      "why": "Clear opposite of 'Włączone'."
+    },
+    "app.settings.mode_heading": {
+      "s": "Gdzie działa ochrona",
+      "back": "Where operates protection",
+      "why": "Introduces the choice of which sites the guard runs on."
+    },
+    "app.settings.mode_watched": {
+      "s": "Wybrane witryny",
+      "back": "Selected sites",
+      "why": "Person's-eye view: the sites they themselves turned on, not a technical mode name."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Wszystkie witryny",
+      "back": "All sites",
+      "why": "Automatic, always-on mode."
+    },
+    "app.settings.banner_toggle": {
+      "s": "Baner na stronie",
+      "back": "Banner on the-page",
+      "why": "Names the optional on-page note, separate from the popup's own record."
+    },
+    "app.settings.policy_heading": {
+      "s": "Domyślne działanie dla nowych celów",
+      "back": "Default action for new destinations",
+      "why": "Introduces the default-policy choice for a destination with no rule yet."
+    },
+    "app.settings.policy_block": {
+      "s": "Blokuj domyślnie",
+      "back": "Block by-default",
+      "why": "Short imperative picker option, opposite of 'Zezwalaj domyślnie'."
+    },
+    "app.settings.policy_allow": {
+      "s": "Zezwalaj domyślnie",
+      "back": "Allow by-default",
+      "why": "Clear opposite of 'Blokuj domyślnie'."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, extension's listed name."
+    },
+    "ext.meta.description": {
+      "s": "Blokuje sztuczki, które przejmują kliknięcie i otwierają inny adres.",
+      "back": "Blocks tricks, which hijack a-click and open a-different address.",
+      "why": "One sentence for someone who has never used the extension; slightly more explanatory register."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name, same proper noun."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Ochrona włączona na tej witrynie",
+      "back": "Protection turned-on on this site",
+      "why": "States the current on-state as the icon's accessible name."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Włącz ochronę na tej witrynie",
+      "back": "Turn-on protection on this site",
+      "why": "Doubles as the call to action, since pressing the icon here is what turns guarding on."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Brak witryny do ochrony",
+      "back": "Lack of-site for protection",
+      "why": "Explains there's nothing to guard on a tab with no website."
+    },
+    "ext.popup.no_site_title": {
+      "s": "Tu nie ma witryny",
+      "back": "Here not there-is site",
+      "why": "Explains, as the popup's own headline, that this tab has no website."
+    },
+    "ext.popup.no_site_body": {
+      "s": "By chronić witrynę, naciska się tu przycisk.",
+      "back": "To guard a-site, one-presses here the-button.",
+      "why": "Reflexive 'naciska się' keeps the instruction impersonal while still pointing at the button ('tu')."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Przełącznik ochrony dla tej witryny",
+      "back": "Switch of-protection for this site",
+      "why": "Names what the switch controls, for a screen-reader user with no visual context."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Nie ma tu strony do ochrony.",
+      "back": "Not there-is here a-page for protection.",
+      "why": "Explains why the switch is disabled: no page to guard."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Ochrona jest już włączona wszędzie.",
+      "back": "Protection is already turned-on everywhere.",
+      "why": "Explains the per-site switch is redundant because the global mode is already on."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Ochrona jest całkiem wyłączona.",
+      "back": "Protection is entirely turned-off.",
+      "why": "Explains the switch is disabled by the master setting, not this site."
+    },
+    "ext.popup.watch_on": {
+      "s": "Ochrona włączona. Wyłączenie odświeży stronę.",
+      "back": "Protection turned-on. The-turning-off will-refresh the-page.",
+      "why": "Confirms state and warns of the reload, nominalized subject instead of addressing the reader."
+    },
+    "ext.popup.watch_off": {
+      "s": "Ochrona wyłączona. Włączenie odświeży stronę.",
+      "back": "Protection turned-off. The-turning-on will-refresh the-page.",
+      "why": "Direct before/after pair with watch_on, same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "Ta strona",
+      "back": "This page",
+      "why": "Heading for the current tab's own list of attempts."
+    },
+    "ext.popup.page_off": {
+      "s": "Ochrona jest tu wyłączona.",
+      "back": "Protection is here turned-off.",
+      "why": "Dead key as of 2026-09-22 — no code reads it; kept consistent with the other page-section states in case it's wired up later."
+    },
+    "ext.popup.page_quiet": {
+      "s": "Ta strona jeszcze nigdzie nie sięgnęła.",
+      "back": "This page yet nowhere not reached.",
+      "why": "States plainly that nothing on this page has tried to reach another site."
+    },
+    "ext.popup.page_empty": {
+      "s": "Lista jest na razie pusta.",
+      "back": "The-list is for now empty.",
+      "why": "Dead key, near-duplicate of page_quiet as the brief notes; a deliberately close near-synonym."
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld zatrzymana",
+      "back": "%lld stopped",
+      "why": "Feminine singular adjective, agrees with the implied 'próba' (attempt), for count exactly 1."
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld zatrzymanych",
+      "back": "%lld of-stopped",
+      "why": "Genitive plural, the 'many' form; the compromise noted below covers this pair."
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld próba łącznie",
+      "back": "%lld attempt in-total",
+      "why": "Singular case for the running total of every recorded attempt (blocked and allowed)."
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld prób łącznie",
+      "back": "%lld of-attempts in-total",
+      "why": "Plural/many case, counterpart to seen_one; same compromise as stopped_other."
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld raz",
+      "back": "%lld time",
+      "why": "Terse per-destination count fragment, singular."
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld razy",
+      "back": "%lld times",
+      "why": "Polish 'razy' is invariant for both the few (2-4) and many (5+) cases, so no compromise is needed here."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Poprawka",
+      "back": "Fix",
+      "why": "Short lead-in fragment forming 'Poprawka: <fix name>'."
+    },
+    "ext.state.blocked": {
+      "s": "Zablokowane",
+      "back": "Blocked",
+      "why": "Same status word as app.rules.row.state_blocked, must combine with a following scope word."
+    },
+    "ext.state.allowed": {
+      "s": "Dozwolone",
+      "back": "Allowed",
+      "why": "Same status word as app.rules.row.state_allowed."
+    },
+    "ext.state.removed": {
+      "s": "Usunięto",
+      "back": "Removed(impersonal)",
+      "why": "Impersonal past tense, safe standalone status word with no destination to agree with."
+    },
+    "ext.scope.here": {
+      "s": "na tej witrynie",
+      "back": "on this site",
+      "why": "Follows a verdict word, e.g. 'Zablokowane na tej witrynie'."
+    },
+    "ext.scope.everywhere": {
+      "s": "wszędzie",
+      "back": "everywhere",
+      "why": "Follows a verdict word, e.g. 'Zablokowane wszędzie'."
+    },
+    "ext.scope.default": {
+      "s": "domyślnie",
+      "back": "by-default",
+      "why": "Follows a verdict word, e.g. 'Zablokowane domyślnie'."
+    },
+    "ext.action.allow_here": {
+      "s": "Zezwól tutaj",
+      "back": "Allow here",
+      "why": "Scoped verdict-menu option, current site only."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Zezwól wszędzie",
+      "back": "Allow everywhere",
+      "why": "Scoped verdict-menu option, every guarded site."
+    },
+    "ext.action.block_here": {
+      "s": "Zablokuj tutaj",
+      "back": "Block here",
+      "why": "Scoped verdict-menu option, current site only."
+    },
+    "ext.action.block_everywhere": {
+      "s": "Zablokuj wszędzie",
+      "back": "Block everywhere",
+      "why": "Scoped verdict-menu option, every guarded site."
+    },
+    "ext.popup.policy_heading": {
+      "s": "Domyślne działanie dla nowych celów",
+      "back": "Default action for new destinations",
+      "why": "Same phrasing as the app's equivalent heading, for consistency across surfaces."
+    },
+    "ext.policy.block": {
+      "s": "Blokuj domyślnie",
+      "back": "Block by-default",
+      "why": "Matches app.settings.policy_block."
+    },
+    "ext.policy.allow": {
+      "s": "Zezwalaj domyślnie",
+      "back": "Allow by-default",
+      "why": "Matches app.settings.policy_allow."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Zasady bezpieczeństwa tej strony blokują część skryptu, więc ochrona jest tu częściowa.",
+      "back": "The-rules of-security of-this page block a-part of-the-script, so protection is here partial.",
+      "why": "Names it as this page's own limitation, not a bug — matches the brief's framing."
+    },
+    "ext.kind.click_catcher": {
+      "s": "Niewidoczna pułapka",
+      "back": "Invisible trap",
+      "why": "Short tag for an invisible clickable element placed over the page."
+    },
+    "ext.kind.overlay": {
+      "s": "Przezroczysta warstwa",
+      "back": "Transparent layer",
+      "why": "Broader than the click-catcher tag: any see-through overlay."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Sztuczne kliknięcie",
+      "back": "Fake click",
+      "why": "A click the page's own script generated, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "Wyskakujące okno",
+      "back": "Popping-out window",
+      "why": "Pop-up window opened via the page's own script."
+    },
+    "ext.kind.form_submit": {
+      "s": "Ukryty formularz",
+      "back": "Hidden form",
+      "why": "Hidden form submitted to open a new tab."
+    },
+    "ext.kind.href_swap": {
+      "s": "Podmieniony cel linku",
+      "back": "Swapped target of-link",
+      "why": "Link destination rewritten between press and release."
+    },
+    "ext.kind.back_hijack": {
+      "s": "Przejęcie po cofnięciu",
+      "back": "Hijack after going-back",
+      "why": "Navigation fired right after the browser's back gesture."
+    },
+    "ext.kind.redirect": {
+      "s": "Przekierowanie zamiast kliknięcia",
+      "back": "Redirect instead of-the-click",
+      "why": "The core same-tab redirect trick, kept terse to match sibling tags."
+    },
+    "ext.kind.pop_tab": {
+      "s": "Karta otwarta w tle",
+      "back": "Tab opened in the-background",
+      "why": "A new tab opened behind the person's press, tab-under style."
+    },
+    "ext.kind.network_rule": {
+      "s": "Zablokowane na poziomie sieci",
+      "back": "Blocked at the-level of-network",
+      "why": "The strongest, earliest kind of block — stopped before it reached the page."
+    },
+    "ext.reason.way_back": {
+      "s": "Adres prowadzi z powrotem do tej strony.",
+      "back": "The-address leads back to this page.",
+      "why": "Explains why a redirect was allowed: it carried its own way back."
+    },
+    "ext.reason.sized": {
+      "s": "Okno miało ustalony rozmiar.",
+      "back": "The-window had a-set size.",
+      "why": "Explains why a window was allowed: it asked for a deliberate size."
+    },
+    "ext.reason.took_press": {
+      "s": "Przejęło kliknięcie.",
+      "back": "It-seized the-click.",
+      "why": "Very short: explains why a destination was blocked."
+    },
+    "ext.reason.default_allow": {
+      "s": "Domyślnie dozwolone.",
+      "back": "By-default allowed.",
+      "why": "Explains why an unrated destination went through: the default policy."
+    },
+    "ext.reason.own_code": {
+      "s": "Okno otworzył kod tej strony.",
+      "back": "The-window opened the-code of-this page.",
+      "why": "Explains why a window was allowed: the site's own code opened it."
+    },
+    "ext.popup.rules_link": {
+      "s": "Reguły",
+      "back": "Rules",
+      "why": "Reused as nav row, screen header, and the back button's accessible label."
+    },
+    "ext.popup.back_link": {
+      "s": "Wstecz",
+      "back": "Back",
+      "why": "Conventional Polish label for a chevron-only back button, used by Apple's own products."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Wszędzie",
+      "back": "Everywhere",
+      "why": "Same word as app.rules.grouping.everywhere for the same concept."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Wg witryny",
+      "back": "By site",
+      "why": "Same word as app.rules.grouping.by_site."
+    },
+    "ext.rules.empty": {
+      "s": "Brak reguł",
+      "back": "Lack of-rules",
+      "why": "Terse single-row placeholder."
+    },
+    "ext.action.allow": {
+      "s": "Zezwól",
+      "back": "Allow",
+      "why": "Row menu option, scope already fixed by the section."
+    },
+    "ext.action.block": {
+      "s": "Zablokuj",
+      "back": "Block",
+      "why": "Row menu option, scope already fixed by the section."
+    },
+    "ext.action.clear": {
+      "s": "Usuń regułę",
+      "back": "Remove the-rule",
+      "why": "Removes the explicit rule so the default policy applies again."
+    },
+    "ext.popup.settings_heading": {
+      "s": "Ustawienia",
+      "back": "Settings",
+      "why": "Reused as nav row and screen header, matching Apple's own term."
+    },
+    "ext.settings.guard_label": {
+      "s": "Ochrona",
+      "back": "Protection",
+      "why": "Same master-switch noun as app.settings.guard_toggle, used both as visible text and sr-only label."
+    },
+    "ext.settings.guard_on": {
+      "s": "Włączona",
+      "back": "Turned-on(fem)",
+      "why": "Feminine singular, agrees with 'Ochrona'."
+    },
+    "ext.settings.guard_off": {
+      "s": "Wyłączona",
+      "back": "Turned-off(fem)",
+      "why": "Clear opposite of 'Włączona'."
+    },
+    "ext.settings.mode_heading": {
+      "s": "Gdzie działa ochrona",
+      "back": "Where operates protection",
+      "why": "Same heading as app.settings.mode_heading."
+    },
+    "ext.settings.mode_watched": {
+      "s": "Wybrane witryny",
+      "back": "Selected sites",
+      "why": "Same option as app.settings.mode_watched."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Wszystkie witryny",
+      "back": "All sites",
+      "why": "Same option as app.settings.mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Baner na stronie",
+      "back": "Banner on the-page",
+      "why": "Same setting as app.settings.banner_toggle."
+    },
+    "ext.action.report": {
+      "s": "Zgłoś problem",
+      "back": "Report a-problem",
+      "why": "Opens a pre-filled issue in a new tab; nothing sends automatically."
+    }
+  }
+}

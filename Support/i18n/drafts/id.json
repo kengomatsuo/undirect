@@ -1,0 +1,600 @@
+{
+  "locale": "id",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Ekstensi Belum Aktif",
+      "back": "Extension not yet active",
+      "why": "Terse status line, no verb needed, matches System Settings register."
+    },
+    "app.setup.title_failed": {
+      "s": "Status Ekstensi Tidak Pasti",
+      "back": "Extension status uncertain",
+      "why": "Hedged wording distinct from the plain not-yet-on state above."
+    },
+    "app.setup.detail_default": {
+      "s": "Setelah aktif, situs tak bisa lagi membajak klikmu.",
+      "back": "Once active, sites can no longer hijack your click.",
+      "why": "One active-verb sentence; -mu carries the kamu address without a bare pronoun."
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari tak bisa memastikan status ekstensi. Aktifkan saja, aplikasi ini akan tahu sendiri.",
+      "back": "Safari can't confirm the extension's status. Just turn it on, this app will know by itself.",
+      "why": "No error code, two plain clauses, reassures without technical detail."
+    },
+    "app.setup.open_button": {
+      "s": "Buka Pengaturan Ekstensi",
+      "back": "Open Extension Settings",
+      "why": "Fits the width budget; Safari is dropped since both screens are already about Safari."
+    },
+    "app.welcome.heading": {
+      "s": "Selamat Datang di Undirect",
+      "back": "Welcome to Undirect",
+      "why": "The one place allowed a warmer register; keeps the product name untranslated."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Lapisan Tak Terlihat",
+      "back": "Invisible layer",
+      "why": "Plain noun phrase naming the trick, no marketing flourish."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Lapisan tak terlihat bisa menutupi halaman dan mengubah arah klikmu.",
+      "back": "An invisible layer can cover the page and change the direction of your click.",
+      "why": "Two verbs joined with dan instead of a participle tail."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Tautan Tertukar",
+      "back": "Swapped link",
+      "why": "Two-word noun label, stative adjective is fine outside a full sentence."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Sebagian situs mengganti tujuan tautan tepat saat kamu menekannya.",
+      "back": "Some sites change a link's destination right as you press it.",
+      "why": "Active verb mengganti, explicit kamu for the moment of pressing."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Jendela Tak Diundang",
+      "back": "Uninvited window",
+      "why": "Direct equivalent, three words."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Tab baru hanya terbuka ke tujuan yang kamu tekan, tidak ada yang menyelinap.",
+      "back": "A new tab only opens to the destination you pressed, nothing sneaks in.",
+      "why": "Stated as a promise about what the guard guarantees, comma instead of a dash."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Semua Tujuan Tercatat",
+      "back": "Every destination recorded",
+      "why": "Names the feature: tracked, not only the ones caught."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Tiap tujuan tercatat, dan kamu bisa mengizinkannya atau memblokirnya, di sini atau di semua situs.",
+      "back": "Every destination is recorded, and you can allow or block it, here or on every site.",
+      "why": "Reuses the scope pair di sini / di semua situs used throughout the extension copy."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Aktif per Situs",
+      "back": "Active per site",
+      "why": "Names the on-mechanism: per site, not automatic."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Tekan tombol Undirect di bilah alat Safari untuk mengaktifkan pelindung di situs itu.",
+      "back": "Press the Undirect button in Safari's toolbar to activate the guard on that site.",
+      "why": "bilah alat is Apple's own Indonesian for toolbar; Pelindung is the fixed term for the guard."
+    },
+    "app.nav.guarded_sites": {
+      "s": "Situs Dijaga",
+      "back": "Guarded sites",
+      "why": "Two words, fits a narrow sidebar column and works as a nav title."
+    },
+    "app.nav.settings": {
+      "s": "Pengaturan",
+      "back": "Settings",
+      "why": "Apple's own Indonesian term for this screen, not a synonym."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Semua",
+      "back": "All",
+      "why": "Short form of the everywhere concept (semua situs), one word to pair against Per Situs."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Per Situs",
+      "back": "Per site",
+      "why": "Reads as the clear opposite of Semua beside it."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Belum Ada Data dari Ekstensi",
+      "back": "No data yet from the extension",
+      "why": "Names this as a first-contact state, not a content-is-empty state."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Buka satu halaman di Safari, layar ini akan terisi sendiri.",
+      "back": "Open one page in Safari, this screen will fill itself.",
+      "why": "Names the simple fix; shared verbatim with the Guarded Sites screen."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Belum Ada Aturan",
+      "back": "No rules yet",
+      "why": "Distinct wording from the no-data-yet title above."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Tujuan muncul di sini begitu kamu mengizinkan atau memblokirnya.",
+      "back": "A destination appears here once you allow or block it.",
+      "why": "Explains that seeing alone does not create a rule, deciding does."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Pelindung telah menghentikan %lld percobaan.",
+      "back": "The guard has stopped %lld attempts.",
+      "why": "Placeholder kept literal; Indonesian has no plural agreement, so this one form covers every count."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Diblokir",
+      "back": "Blocked",
+      "why": "Fixed state word for the blocked verdict, used across app and extension rows."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Diizinkan",
+      "back": "Allowed",
+      "why": "Clear opposite of Diblokir."
+    },
+    "app.rules.row.action_allow": {
+      "s": "Izinkan",
+      "back": "Allow",
+      "why": "Imperative verb form, distinct from the state word Diizinkan shown elsewhere."
+    },
+    "app.rules.row.action_block": {
+      "s": "Blokir",
+      "back": "Block",
+      "why": "Imperative counterpart to Izinkan."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Pilih izinkan atau blokir tujuan ini.",
+      "back": "Choose allow or block for this destination.",
+      "why": "Short hover phrase naming what the control does."
+    },
+    "app.rules.row.use_default": {
+      "s": "Pakai Bawaan",
+      "back": "Use default",
+      "why": "bawaan is the fixed term for default policy throughout; this clears the rule rather than setting a new verdict."
+    },
+    "app.watched.empty.title": {
+      "s": "Belum Ada Situs Dijaga",
+      "back": "No site guarded yet",
+      "why": "Plain statement that no site has been switched on."
+    },
+    "app.watched.empty.detail": {
+      "s": "Tekan tombol Undirect di bilah alat Safari pada situs yang bermasalah.",
+      "back": "Press the Undirect button in Safari's toolbar on a problem site.",
+      "why": "Concrete instruction for the very first guarded site."
+    },
+    "app.watched.footer": {
+      "s": "Situs baru masuk daftar ini hanya lewat tombol Undirect di Safari.",
+      "back": "New sites enter this list only through the Undirect button in Safari.",
+      "why": "Active subject (situs baru masuk) instead of a passive ditambahkan."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Dijaga",
+      "back": "Guarded",
+      "why": "Read-only status word, one word."
+    },
+    "app.watched.row.stop_button": {
+      "s": "Hentikan",
+      "back": "Stop",
+      "why": "Short imperative verb for the trailing row button."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Matikan pelindung untuk situs ini.",
+      "back": "Turn off the guard for this site.",
+      "why": "Names the action the Stop button performs."
+    },
+    "app.settings.guard_toggle": {
+      "s": "Pelindung",
+      "back": "Guard",
+      "why": "Fixed noun for the guard concept, used as the master switch's own name."
+    },
+    "app.settings.state_on": {
+      "s": "Aktif",
+      "back": "On",
+      "why": "Generic on-state word reused for more than one setting on this screen."
+    },
+    "app.settings.state_off": {
+      "s": "Nonaktif",
+      "back": "Off",
+      "why": "EYD one-word form, generic off-state word."
+    },
+    "app.settings.mode_heading": {
+      "s": "Tempat Pelindung Berjalan",
+      "back": "Where the guard runs",
+      "why": "Introduces the choice of which sites the guard actually runs on."
+    },
+    "app.settings.mode_watched": {
+      "s": "Situs Pilihanmu",
+      "back": "Your chosen sites",
+      "why": "Described from the person's own point of view, -mu carries the kamu address."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Semua Situs",
+      "back": "Every site",
+      "why": "Fixed everywhere-scope phrase, contrasts cleanly with Situs Pilihanmu."
+    },
+    "app.settings.banner_toggle": {
+      "s": "Catatan di Halaman",
+      "back": "Note on the page",
+      "why": "Names the on-page banner, separate from the popup's own record."
+    },
+    "app.settings.policy_heading": {
+      "s": "Kebijakan untuk Tujuan Baru",
+      "back": "Policy for new destinations",
+      "why": "Introduces the default-policy choice for a destination with no rule yet."
+    },
+    "app.settings.policy_block": {
+      "s": "Blokir",
+      "back": "Block",
+      "why": "Picker option; the heading above already frames this as the default."
+    },
+    "app.settings.policy_allow": {
+      "s": "Izinkan",
+      "back": "Allow",
+      "why": "Clear opposite of Blokir."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated."
+    },
+    "ext.meta.description": {
+      "s": "Menghentikan halaman yang membajak klikmu untuk membuka situs lain tanpa izin.",
+      "back": "Stops pages that hijack your click to open another site without permission.",
+      "why": "One sentence for someone who has never used the extension; active verb, no jargon."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name, same proper noun."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Pelindung Aktif di Situs Ini",
+      "back": "Guard active on this site",
+      "why": "States the current tab's guard state as the tooltip."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Pelindung Nonaktif, Tekan untuk Mengaktifkan",
+      "back": "Guard off, press to activate",
+      "why": "Doubles as a call to action; comma instead of a dash."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Tak Ada Situs untuk Dijaga",
+      "back": "No site to guard",
+      "why": "Explains there is nothing to guard on this tab."
+    },
+    "ext.popup.no_site_title": {
+      "s": "Hanya untuk Situs Web",
+      "back": "Only for websites",
+      "why": "Headline for the no-site empty state."
+    },
+    "ext.popup.no_site_body": {
+      "s": "Buka situs web, lalu tekan di sini untuk menjaganya.",
+      "back": "Open a website, then press here to guard it.",
+      "why": "Keeps 'here' as a self-reference to the button the popup hangs off, per the brief's note."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Aktifkan atau matikan pelindung di situs ini",
+      "back": "Turn the guard on or off on this site",
+      "why": "Screen-reader-only label naming what the switch controls."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Tak ada halaman untuk dijaga di sini.",
+      "back": "There's no page to guard here.",
+      "why": "Explains why the switch is disabled: nothing to guard."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Pelindung sudah aktif di semua situs.",
+      "back": "The guard is already active on every site.",
+      "why": "Explains the switch is redundant because everywhere-mode is already on."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Pelindung sedang dimatikan.",
+      "back": "The guard is currently turned off.",
+      "why": "Attributes the disabled switch to the master toggle, not this site."
+    },
+    "ext.popup.watch_on": {
+      "s": "Aktif di sini. Mematikannya memuat ulang halaman.",
+      "back": "Active here. Turning it off reloads the page.",
+      "why": "Confirms state and warns of the reload in one short pair of clauses."
+    },
+    "ext.popup.watch_off": {
+      "s": "Nonaktif di sini. Mengaktifkannya memuat ulang halaman.",
+      "back": "Off here. Turning it on reloads the page.",
+      "why": "Direct before/after counterpart to watch_on, same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "Halaman Ini",
+      "back": "This page",
+      "why": "Heads the list of what the current tab specifically reached for."
+    },
+    "ext.popup.page_off": {
+      "s": "Tak ada yang dipantau, pelindung mati di sini.",
+      "back": "Nothing being monitored, guard is off here.",
+      "why": "Dead key as of 2026-09-22, not called from any code; kept speculative and thin."
+    },
+    "ext.popup.page_quiet": {
+      "s": "Belum ada yang mencoba keluar dari halaman ini.",
+      "back": "Nothing has tried to leave this page yet.",
+      "why": "States plainly that nothing has reached outside this page so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "Belum ada yang tercatat di sini.",
+      "back": "Nothing recorded here yet.",
+      "why": "Dead key as of 2026-09-22; treated as a near-synonym of page_quiet, not code-driven."
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld dihentikan",
+      "back": "%lld stopped",
+      "why": "Singular unit of a plural pair; Indonesian has no plural agreement so this text is identical to stopped_other."
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld dihentikan",
+      "back": "%lld stopped",
+      "why": "Plural unit of the same pair; kept as a separate translation unit but reads identically, since Indonesian marks plurality by number word, not word form."
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld percobaan tercatat",
+      "back": "%lld attempts recorded",
+      "why": "Singular unit; broader than stopped, counts everything recorded regardless of verdict."
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld percobaan tercatat",
+      "back": "%lld attempts recorded",
+      "why": "Plural unit, same text as seen_one for the same no-plural-agreement reason."
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld kali",
+      "back": "%lld times",
+      "why": "Terse per-destination fragment meant to sit among other short fragments in one detail line."
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld kali",
+      "back": "%lld times",
+      "why": "Plural unit, same text as tries_one for the same no-plural-agreement reason."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Perbaikan",
+      "back": "Fix",
+      "why": "Prefix fragment: 'Perbaikan: <nama perbaikan>' reads naturally as a lead-in."
+    },
+    "ext.state.blocked": {
+      "s": "Diblokir",
+      "back": "Blocked",
+      "why": "Same fixed word as app.rules.row.state_blocked; combines with scope fragments below (Diblokir di sini, Diblokir di semua situs)."
+    },
+    "ext.state.allowed": {
+      "s": "Diizinkan",
+      "back": "Allowed",
+      "why": "Clear opposite of Diblokir, same combination rule."
+    },
+    "ext.state.removed": {
+      "s": "Disingkirkan",
+      "back": "Removed",
+      "why": "For a local trap with no destination to rule on, distinct from the allow/block pair."
+    },
+    "ext.scope.here": {
+      "s": "di sini",
+      "back": "here",
+      "why": "Fragment following a verdict word: Diblokir di sini."
+    },
+    "ext.scope.everywhere": {
+      "s": "di semua situs",
+      "back": "everywhere",
+      "why": "Fragment following a verdict word: Diblokir di semua situs."
+    },
+    "ext.scope.default": {
+      "s": "secara bawaan",
+      "back": "by default",
+      "why": "Fragment following a verdict word: Diblokir secara bawaan; bawaan is the fixed default term."
+    },
+    "ext.action.allow_here": {
+      "s": "Izinkan di Sini",
+      "back": "Allow here",
+      "why": "Complete menu option, scoped to the current site."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Izinkan di Semua Situs",
+      "back": "Allow everywhere",
+      "why": "Everywhere-scoped counterpart to allow_here."
+    },
+    "ext.action.block_here": {
+      "s": "Blokir di Sini",
+      "back": "Block here",
+      "why": "Complete menu option, scoped to the current site."
+    },
+    "ext.action.block_everywhere": {
+      "s": "Blokir di Semua Situs",
+      "back": "Block everywhere",
+      "why": "Everywhere-scoped counterpart to block_here."
+    },
+    "ext.popup.policy_heading": {
+      "s": "Kebijakan untuk Tujuan Baru",
+      "back": "Policy for new destinations",
+      "why": "Same heading as the app's equivalent screen, separate translation unit."
+    },
+    "ext.policy.block": {
+      "s": "Blokir",
+      "back": "Block",
+      "why": "Radio option, consistent with the app's policy_block."
+    },
+    "ext.policy.allow": {
+      "s": "Izinkan",
+      "back": "Allow",
+      "why": "Radio option, consistent with the app's policy_allow."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Keamanan halaman ini memblokir sebagian pelindung; perlindungan di sini tak lengkap.",
+      "back": "This page's security blocks part of the guard; protection here isn't complete.",
+      "why": "Names it as a limitation of this one page, not a bug or a setting to fix."
+    },
+    "ext.kind.click_catcher": {
+      "s": "Penangkap Klik Tersembunyi",
+      "back": "Hidden click catcher",
+      "why": "Short noun-phrase tag for the invisible clickable element trick."
+    },
+    "ext.kind.overlay": {
+      "s": "Lapisan Transparan",
+      "back": "Transparent layer",
+      "why": "Broader than click_catcher: any see-through element over the page."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Klik Buatan Skrip",
+      "back": "Script-made click",
+      "why": "Names a click the page's own code dispatched, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "Jendela Pop-up",
+      "back": "Pop-up window",
+      "why": "pop-up kept as the common loan term for this trick."
+    },
+    "ext.kind.form_submit": {
+      "s": "Formulir Tersembunyi",
+      "back": "Hidden form",
+      "why": "Names the hidden-form-submit trick tersely."
+    },
+    "ext.kind.href_swap": {
+      "s": "Tautan Ditukar Saat Klik",
+      "back": "Link swapped during click",
+      "why": "Names the link-target-rewritten-mid-press trick."
+    },
+    "ext.kind.back_hijack": {
+      "s": "Pembajakan Setelah Kembali",
+      "back": "Hijack after going back",
+      "why": "Names a navigation fired right after the browser back gesture."
+    },
+    "ext.kind.redirect": {
+      "s": "Pengalihan yang Membajak Klik",
+      "back": "Redirect that hijacks the click",
+      "why": "Names the core same-tab-redirect trick this whole extension exists to stop."
+    },
+    "ext.kind.pop_tab": {
+      "s": "Tab Baru di Balik Klik",
+      "back": "New tab behind the click",
+      "why": "Names a tab-under style new tab opened behind the person's press."
+    },
+    "ext.kind.network_rule": {
+      "s": "Diblokir di Level Jaringan",
+      "back": "Blocked at the network level",
+      "why": "Names the strongest, earliest kind of block, before the page ever loaded it."
+    },
+    "ext.reason.way_back": {
+      "s": "Alamatnya membawa jalan kembali.",
+      "back": "Its address carries a way back.",
+      "why": "Explains the redirect's own address included a path back to the starting site."
+    },
+    "ext.reason.sized": {
+      "s": "Jendela dibuka dengan ukuran tertentu.",
+      "back": "The window opened at a specific size.",
+      "why": "Explains the window read as an intentional secondary window, not a hijack."
+    },
+    "ext.reason.took_press": {
+      "s": "Menumpang klikmu.",
+      "back": "Rode your click.",
+      "why": "Names the core hijack pattern: it rode a press aimed elsewhere, distinct from generic membajak."
+    },
+    "ext.reason.default_allow": {
+      "s": "Diizinkan bawaan.",
+      "back": "Default allowed.",
+      "why": "bawaan is the fixed default term; explains it went through with no rule against it."
+    },
+    "ext.reason.own_code": {
+      "s": "Dibuka oleh kode situs sendiri.",
+      "back": "Opened by the site's own code.",
+      "why": "Explains the site's own script vouched for the window."
+    },
+    "ext.popup.rules_link": {
+      "s": "Aturan",
+      "back": "Rules",
+      "why": "One word, reused as nav row, header title, and back-button accessibility label."
+    },
+    "ext.popup.back_link": {
+      "s": "Utama",
+      "back": "Main",
+      "why": "Names the destination (the popup's main per-page view) a chevron-only back button returns to."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Semua Situs",
+      "back": "Every site",
+      "why": "Fixed everywhere-scope phrase used consistently across the extension."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Per Situs",
+      "back": "Per site",
+      "why": "Clear counterpart to Semua Situs above it."
+    },
+    "ext.rules.empty": {
+      "s": "Kosong",
+      "back": "Empty",
+      "why": "One-word placeholder row for an empty rule section."
+    },
+    "ext.action.allow": {
+      "s": "Izinkan",
+      "back": "Allow",
+      "why": "Scope is already fixed by the section this row sits in."
+    },
+    "ext.action.block": {
+      "s": "Blokir",
+      "back": "Block",
+      "why": "Scope is already fixed by the section this row sits in."
+    },
+    "ext.action.clear": {
+      "s": "Hapus Aturan",
+      "back": "Delete rule",
+      "why": "Removes the explicit rule entirely, reads as the same action as app.rules.row.use_default."
+    },
+    "ext.popup.settings_heading": {
+      "s": "Pengaturan",
+      "back": "Settings",
+      "why": "Apple's own Indonesian term; separate translation unit from the app's Settings screen but the same word."
+    },
+    "ext.settings.guard_label": {
+      "s": "Pelindung",
+      "back": "Guard",
+      "why": "Fixed noun for the master guard switch, used both visibly and as the sr-only label."
+    },
+    "ext.settings.guard_on": {
+      "s": "Aktif",
+      "back": "On",
+      "why": "State word specific to the guard switch."
+    },
+    "ext.settings.guard_off": {
+      "s": "Nonaktif",
+      "back": "Off",
+      "why": "Clear opposite of Aktif."
+    },
+    "ext.settings.mode_heading": {
+      "s": "Tempat Pelindung Berjalan",
+      "back": "Where the guard runs",
+      "why": "Same heading as the app's equivalent, separate translation unit."
+    },
+    "ext.settings.mode_watched": {
+      "s": "Situs Pilihanmu",
+      "back": "Your chosen sites",
+      "why": "Consistent with the app's mode_watched, -mu keeps the kamu address."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Semua Situs",
+      "back": "Every site",
+      "why": "Fixed everywhere-scope phrase, consistent with the app's mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Catatan Halaman",
+      "back": "Page note",
+      "why": "Shorter form of the app's Catatan di Halaman to fit the tighter popup budget."
+    },
+    "ext.action.report": {
+      "s": "Laporkan Masalah",
+      "back": "Report a problem",
+      "why": "Names the action of opening a pre-filled issue report; nothing is sent until the person submits it themselves."
+    }
+  }
+}

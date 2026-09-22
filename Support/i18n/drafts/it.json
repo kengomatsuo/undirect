@@ -1,0 +1,600 @@
+{
+  "locale": "it",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Estensione non attivata",
+      "back": "Extension not activated",
+      "why": "Terse ContentUnavailableView title, Apple System Settings register, states the missing condition rather than an instruction."
+    },
+    "app.setup.title_failed": {
+      "s": "Stato non verificato",
+      "back": "State not verified",
+      "why": "Hedged rather than certain, reads clearly distinct from the plain not-yet-on title."
+    },
+    "app.setup.detail_default": {
+      "s": "Con la protezione attiva, i siti non possono più dirottare i clic.",
+      "back": "With protection active, sites can no longer hijack clicks.",
+      "why": "One-sentence payoff, impersonal (no explicit tu), fits the two-line wrap budget."
+    },
+    "app.setup.detail_failed": {
+      "s": "Non è stato possibile verificare Safari. Se attivi l'estensione, verrà rilevata da sola.",
+      "back": "Could not verify with Safari. If you turn on the extension, it will be detected on its own.",
+      "why": "Two clauses, no raw error code, reassures without technical jargon."
+    },
+    "app.setup.open_button": {
+      "s": "Apri le estensioni di Safari",
+      "back": "Open Safari's extensions",
+      "why": "Imperative-style Apple button verb + object, works verbatim on both the setup screen and the welcome sheet."
+    },
+    "app.welcome.heading": {
+      "s": "Benvenuto in Undirect",
+      "back": "Welcome to Undirect",
+      "why": "The one place allowed a warmer register; a first hello naming the product."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Livelli invisibili",
+      "back": "Invisible layers",
+      "why": "Plain concrete noun phrase naming the trick, not marketing language."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Uno strato invisibile può coprire la pagina e intercettare la pressione.",
+      "back": "An invisible layer can cover the page and intercept the press.",
+      "why": "Describes what the person would see, using 'pressione' consistently for the 'press' concept."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Link scambiati",
+      "back": "Swapped links",
+      "why": "Short concrete tag naming the trick."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Alcuni link cambiano destinazione nell'istante tra pressione e rilascio.",
+      "back": "Some links change destination in the instant between press and release.",
+      "why": "Plain description of the mid-press swap, without naming the underlying mechanism."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Finestre indesiderate",
+      "back": "Unwanted windows",
+      "why": "Concrete noun phrase naming the trick."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Con la protezione attiva, si apre solo la scheda che hai scelto.",
+      "back": "With protection active, only the tab you chose opens.",
+      "why": "Stated as a promise about the outcome, not a description of the trick itself."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Ogni destinazione",
+      "back": "Every destination",
+      "why": "Names the rule-list feature: every destination gets tracked, not just the caught ones."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Ogni destinazione diventa una riga che puoi consentire o bloccare.",
+      "back": "Every destination becomes a row you can allow or block.",
+      "why": "Explains the review-and-decide mechanism in one plain sentence."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Un sito alla volta",
+      "back": "One site at a time",
+      "why": "Idiomatic Italian phrase for the per-site activation model."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Premi il pulsante Undirect nella barra di Safari su quel sito.",
+      "back": "Press the Undirect button in Safari's toolbar on that site.",
+      "why": "States the exact mechanism: the toolbar button, on the site in question."
+    },
+    "app.nav.guarded_sites": {
+      "s": "Siti protetti",
+      "back": "Protected sites",
+      "why": "Short enough for the sidebar column and identical as the screen's nav title."
+    },
+    "app.nav.settings": {
+      "s": "Impostazioni",
+      "back": "Settings",
+      "why": "Apple's own term for this screen on both iOS and macOS."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated like any other app's own name."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Ovunque",
+      "back": "Everywhere",
+      "why": "One word, reads as a clear opposite of 'Per sito' beside it."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Per sito",
+      "back": "By site",
+      "why": "Two words, clear counterpart to 'Ovunque'."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Nessun dato dall'estensione",
+      "back": "No data from the extension",
+      "why": "Names the wiring/first-contact state, distinct from an empty rules list."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Apri una pagina in Safari e i dati appariranno.",
+      "back": "Open a page in Safari and the data will appear.",
+      "why": "States the simple fix: one ordinary use of Safari, no setting to change."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Nessuna regola",
+      "back": "No rules",
+      "why": "Plain statement that this particular list is empty, contrasted with the first-contact state above."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Una regola compare solo dopo una decisione.",
+      "back": "A rule appears only after a decision.",
+      "why": "Explains that a rule needs an explicit allow/block choice, not merely being seen."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Tentativi bloccati finora: %lld",
+      "back": "Attempts blocked so far: %lld",
+      "why": "Placeholder kept as %lld; plural agreement of the surrounding number is handled by the platform's own plural rule."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Bloccato",
+      "back": "Blocked",
+      "why": "One word, opposite of 'Consentito' when the two sit in the same list."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Consentito",
+      "back": "Allowed",
+      "why": "One word, clear opposite of 'Bloccato'."
+    },
+    "app.rules.row.action_allow": {
+      "s": "Consenti",
+      "back": "Allow",
+      "why": "Imperative action verb, distinct from the state noun/adjective 'Consentito'."
+    },
+    "app.rules.row.action_block": {
+      "s": "Blocca",
+      "back": "Block",
+      "why": "Imperative action verb, shown only when the row is currently Allowed."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Scegli se consentire o bloccare.",
+      "back": "Choose whether to allow or block.",
+      "why": "Short hover tooltip describing the control under the pointer."
+    },
+    "app.rules.row.use_default": {
+      "s": "Usa predefinito",
+      "back": "Use default",
+      "why": "Names clearing the explicit rule so the default policy applies again."
+    },
+    "app.watched.empty.title": {
+      "s": "Nessun sito protetto",
+      "back": "No protected site",
+      "why": "States plainly that no site has been switched on yet."
+    },
+    "app.watched.empty.detail": {
+      "s": "Premi il pulsante Undirect nella barra di Safari su un sito problematico.",
+      "back": "Press the Undirect button in Safari's toolbar on a problem site.",
+      "why": "Tells the person exactly how to guard their first site."
+    },
+    "app.watched.footer": {
+      "s": "Aggiungi altri siti dal pulsante Undirect in Safari.",
+      "back": "Add more sites from the Undirect button in Safari.",
+      "why": "Reminds where new entries come from, since this screen cannot add one itself."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Protetto",
+      "back": "Protected",
+      "why": "Read-only status word, not a button."
+    },
+    "app.watched.row.stop_button": {
+      "s": "Interrompi",
+      "back": "Stop",
+      "why": "Short imperative verb for the trailing row button that switches guarding off."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Disattiva la protezione su questo sito.",
+      "back": "Deactivate protection on this site.",
+      "why": "Describes what the Stop button under the pointer does."
+    },
+    "app.settings.guard_toggle": {
+      "s": "Protezione",
+      "back": "Protection",
+      "why": "The one-word noun used as the master switch label and as the recurring 'guard' concept."
+    },
+    "app.settings.state_on": {
+      "s": "Attiva",
+      "back": "Active",
+      "why": "Generic on-state adjective, reused for more than one setting on this screen."
+    },
+    "app.settings.state_off": {
+      "s": "Disattivata",
+      "back": "Deactivated",
+      "why": "Feminine adjective agreeing with 'Protezione'/'Nota', clear opposite of 'Attiva'."
+    },
+    "app.settings.mode_heading": {
+      "s": "Dove agisce la protezione",
+      "back": "Where protection acts",
+      "why": "Introduces the choice of which sites the guard runs on."
+    },
+    "app.settings.mode_watched": {
+      "s": "Solo siti attivati",
+      "back": "Only activated sites",
+      "why": "Described from the person's point of view: sites they switched on themselves."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Ovunque automaticamente",
+      "back": "Everywhere automatically",
+      "why": "Names the always-on mode with no per-site switching needed."
+    },
+    "app.settings.banner_toggle": {
+      "s": "Nota nella pagina",
+      "back": "Note in the page",
+      "why": "Matches the vocabulary term for the on-page banner, kept consistent with the extension's own setting."
+    },
+    "app.settings.policy_heading": {
+      "s": "Criterio per le destinazioni senza regola",
+      "back": "Policy for destinations without a rule",
+      "why": "Introduces the default-policy choice for any unrated destination."
+    },
+    "app.settings.policy_block": {
+      "s": "Blocca",
+      "back": "Block",
+      "why": "Short imperative picker option, clear opposite of 'Consenti'."
+    },
+    "app.settings.policy_allow": {
+      "s": "Consenti",
+      "back": "Allow",
+      "why": "Short imperative picker option, clear opposite of 'Blocca'."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun in the Extensions list and App Store, left untranslated."
+    },
+    "ext.meta.description": {
+      "s": "Impedisce alle pagine di usare i tuoi clic per aprire o reindirizzare altrove.",
+      "back": "Stops pages from using your clicks to open or redirect elsewhere.",
+      "why": "One plain sentence for someone who has never used the extension, no jargon."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name for the product itself when no site name is available."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Protezione attiva su questo sito",
+      "back": "Protection active on this site",
+      "why": "States that guarding is currently on for the tab's site."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Protezione disattivata: premi per attivarla",
+      "back": "Protection off: press to activate it",
+      "why": "Doubles as the call to action, since pressing the icon is how guarding turns on."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Nessun sito da proteggere",
+      "back": "No site to protect",
+      "why": "Explains there is nothing for the extension to do on this tab."
+    },
+    "ext.popup.no_site_title": {
+      "s": "Nessun sito web",
+      "back": "No website",
+      "why": "Short headline for the empty state on a tab with no website open."
+    },
+    "ext.popup.no_site_body": {
+      "s": "Apri un sito e premi qui per proteggerlo.",
+      "back": "Open a site and press here to protect it.",
+      "why": "'Qui' keeps the self-reference to the toolbar button the popup hangs off, rather than translating 'here' as a place."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Attiva o disattiva la protezione per questo sito",
+      "back": "Turn protection for this site on or off",
+      "why": "Screen-reader-only label naming what the switch controls, since the visible row already shows the site name."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Nessuna pagina da proteggere qui.",
+      "back": "No page to protect here.",
+      "why": "Explains why the per-site switch is disabled: there is no real page."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Già attiva ovunque nelle impostazioni.",
+      "back": "Already active everywhere in settings.",
+      "why": "Explains the switch is redundant because 'everywhere' mode is already on."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Protezione spenta nelle impostazioni.",
+      "back": "Protection off in settings.",
+      "why": "Explains the switch is disabled because the master guard is off, not because of this site."
+    },
+    "ext.popup.watch_on": {
+      "s": "Attiva qui: disattivarla ricarica la pagina.",
+      "back": "Active here: turning it off reloads the page.",
+      "why": "Confirms the current state and warns about the reload, mirroring watch_off's shape."
+    },
+    "ext.popup.watch_off": {
+      "s": "Disattivata qui: attivarla ricarica la pagina.",
+      "back": "Off here: turning it on reloads the page.",
+      "why": "Direct before/after counterpart to watch_on, same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "Questa pagina",
+      "back": "This page",
+      "why": "Names the section listing what the current tab specifically reached for."
+    },
+    "ext.popup.page_off": {
+      "s": "Protezione disattivata per questa pagina.",
+      "back": "Protection off for this page.",
+      "why": "Speculative wording for a currently-unused key, matching the voice of the other page-section states."
+    },
+    "ext.popup.page_quiet": {
+      "s": "Nessun tentativo su questa pagina finora.",
+      "back": "No attempt on this page so far.",
+      "why": "States plainly that nothing has reached outside this page yet."
+    },
+    "ext.popup.page_empty": {
+      "s": "Ancora niente da mostrare qui.",
+      "back": "Still nothing to show here.",
+      "why": "Near-synonym of page_quiet, for a currently-unused, near-duplicate key."
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld bloccato",
+      "back": "%lld blocked (singular)",
+      "why": "Singular form paired with stopped_other; placeholder kept as given."
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld bloccati",
+      "back": "%lld blocked (plural)",
+      "why": "Plural form, agrees in number with the destinations counted."
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld tentativo rilevato",
+      "back": "%lld attempt recorded",
+      "why": "Broader than 'stopped': counts every recorded attempt, blocked and allowed together."
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld tentativi rilevati",
+      "back": "%lld attempts recorded",
+      "why": "Plural counterpart to seen_one."
+    },
+    "ext.popup.tries_one": {
+      "s": "volta",
+      "back": "time",
+      "why": "Terse per-destination fragment meant to sit among other short tags in one detail line."
+    },
+    "ext.popup.tries_other": {
+      "s": "volte",
+      "back": "times",
+      "why": "Plural counterpart to tries_one."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Correzione",
+      "back": "Fix",
+      "why": "One-word lead-in fragment for 'Correzione: <name>', naming the applied per-site fix."
+    },
+    "ext.state.blocked": {
+      "s": "Bloccato",
+      "back": "Blocked",
+      "why": "Reused status word; combines with a following scope fragment, e.g. 'Bloccato ovunque'."
+    },
+    "ext.state.allowed": {
+      "s": "Consentito",
+      "back": "Allowed",
+      "why": "Reused status word, clear opposite of 'Bloccato', same combination rule."
+    },
+    "ext.state.removed": {
+      "s": "Rimosso",
+      "back": "Removed",
+      "why": "Names a trap taken off the page itself, where there is no destination to rule on."
+    },
+    "ext.scope.here": {
+      "s": "su questo sito",
+      "back": "on this site",
+      "why": "Fragment composed after a verdict word, e.g. 'Bloccato su questo sito'."
+    },
+    "ext.scope.everywhere": {
+      "s": "ovunque",
+      "back": "everywhere",
+      "why": "Fragment composed after a verdict word, e.g. 'Bloccato ovunque'."
+    },
+    "ext.scope.default": {
+      "s": "per impostazione predefinita",
+      "back": "by default",
+      "why": "Fragment composed after a verdict word, e.g. 'Bloccato per impostazione predefinita', avoiding the English loanword 'default'."
+    },
+    "ext.action.allow_here": {
+      "s": "Consenti qui",
+      "back": "Allow here",
+      "why": "Menu option scoped to the current site only."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Consenti ovunque",
+      "back": "Allow everywhere",
+      "why": "Menu option scoped to every guarded site."
+    },
+    "ext.action.block_here": {
+      "s": "Blocca qui",
+      "back": "Block here",
+      "why": "Menu option scoped to the current site only."
+    },
+    "ext.action.block_everywhere": {
+      "s": "Blocca ovunque",
+      "back": "Block everywhere",
+      "why": "Menu option scoped to every guarded site."
+    },
+    "ext.popup.policy_heading": {
+      "s": "Criterio per le destinazioni senza regola",
+      "back": "Policy for destinations without a rule",
+      "why": "Same concept and wording as the app's settings equivalent, for a user moving between the two."
+    },
+    "ext.policy.block": {
+      "s": "Blocca",
+      "back": "Block",
+      "why": "Short imperative radio option."
+    },
+    "ext.policy.allow": {
+      "s": "Consenti",
+      "back": "Allow",
+      "why": "Short imperative radio option."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Le impostazioni di sicurezza di questa pagina bloccano parte della protezione.",
+      "back": "This page's security settings block part of protection.",
+      "why": "Names the page's own CSP as the limitation, not a bug or a setting to fix."
+    },
+    "ext.kind.click_catcher": {
+      "s": "Trappola invisibile",
+      "back": "Invisible trap",
+      "why": "Terse tag distinguishing the clickable catcher from the broader overlay case below."
+    },
+    "ext.kind.overlay": {
+      "s": "Livello trasparente",
+      "back": "Transparent layer",
+      "why": "Broader than the click-catcher tag: any see-through element over the page."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Clic simulato",
+      "back": "Simulated click",
+      "why": "Names a click the page's own script dispatched, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "Finestra popup",
+      "back": "Popup window",
+      "why": "Names a window the page opened through its own code."
+    },
+    "ext.kind.form_submit": {
+      "s": "Modulo nascosto",
+      "back": "Hidden form",
+      "why": "Names the hidden-form-submit trick used to open a new tab."
+    },
+    "ext.kind.href_swap": {
+      "s": "Destinazione del link cambiata",
+      "back": "Link's destination changed",
+      "why": "Names the mid-press link-swap trick plainly."
+    },
+    "ext.kind.back_hijack": {
+      "s": "Reindirizzo dopo il ritorno",
+      "back": "Redirect after going back",
+      "why": "Names a navigation fired right after the browser's back gesture."
+    },
+    "ext.kind.redirect": {
+      "s": "Reindirizzamento improvviso",
+      "back": "Sudden redirect",
+      "why": "Names the core same-tab-redirect trick concisely, chosen shorter over the longer literal phrasing."
+    },
+    "ext.kind.pop_tab": {
+      "s": "Scheda aperta di nascosto",
+      "back": "Tab opened secretly",
+      "why": "Names a tab-under style new tab opened behind the press."
+    },
+    "ext.kind.network_rule": {
+      "s": "Bloccato dalla rete",
+      "back": "Blocked by the network",
+      "why": "Names the earliest, strongest kind of block: refused at the request itself."
+    },
+    "ext.reason.way_back": {
+      "s": "L'indirizzo include un ritorno al sito.",
+      "back": "The address includes a way back to the site.",
+      "why": "Explains the redirect was allowed because its own address carried a path back."
+    },
+    "ext.reason.sized": {
+      "s": "Ha una dimensione precisa.",
+      "back": "It has a precise size.",
+      "why": "Explains the window was allowed because it asked for a deliberate size, not a bare tab."
+    },
+    "ext.reason.took_press": {
+      "s": "Ha rubato la pressione.",
+      "back": "It stole the press.",
+      "why": "Very short footnote using the consistent 'pressione' term for the core hijack pattern."
+    },
+    "ext.reason.default_allow": {
+      "s": "Consentito per default.",
+      "back": "Allowed by default.",
+      "why": "Very short footnote explaining the destination went through with no rule against it."
+    },
+    "ext.reason.own_code": {
+      "s": "Aperta dal codice del sito stesso.",
+      "back": "Opened by the site's own code.",
+      "why": "Explains the window was allowed because the site itself vouched for it."
+    },
+    "ext.popup.rules_link": {
+      "s": "Regole",
+      "back": "Rules",
+      "why": "Reused as the nav row, the screen's own header, and the back-button's accessible label."
+    },
+    "ext.popup.back_link": {
+      "s": "Indietro",
+      "back": "Back",
+      "why": "Apple's own idiom for a chevron-only back button's accessible label."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Ovunque",
+      "back": "Everywhere",
+      "why": "Matches app.rules.grouping.everywhere for the same concept across surfaces."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Per sito",
+      "back": "By site",
+      "why": "Matches app.rules.grouping.by_site for the same concept across surfaces."
+    },
+    "ext.rules.empty": {
+      "s": "Nessuna regola",
+      "back": "No rules",
+      "why": "Terse list placeholder, matches app.rules.empty_no_rules.title."
+    },
+    "ext.action.allow": {
+      "s": "Consenti",
+      "back": "Allow",
+      "why": "Simple menu option; scope is already fixed by the section the row sits in."
+    },
+    "ext.action.block": {
+      "s": "Blocca",
+      "back": "Block",
+      "why": "Simple menu option; scope is already fixed by the section the row sits in."
+    },
+    "ext.action.clear": {
+      "s": "Usa predefinito",
+      "back": "Use default",
+      "why": "Same underlying action as app.rules.row.use_default, phrased for the tighter popup menu."
+    },
+    "ext.popup.settings_heading": {
+      "s": "Impostazioni",
+      "back": "Settings",
+      "why": "Reused as both the nav row and the sub-screen's own header title."
+    },
+    "ext.settings.guard_label": {
+      "s": "Protezione",
+      "back": "Protection",
+      "why": "Extension-side counterpart to app.settings.guard_toggle, same word for the master switch."
+    },
+    "ext.settings.guard_on": {
+      "s": "Attiva",
+      "back": "Active",
+      "why": "State label for the master guard switch when it is on."
+    },
+    "ext.settings.guard_off": {
+      "s": "Disattivata",
+      "back": "Deactivated",
+      "why": "State label for the master guard switch when it is off."
+    },
+    "ext.settings.mode_heading": {
+      "s": "Dove agisce la protezione",
+      "back": "Where protection acts",
+      "why": "Extension-side counterpart to app.settings.mode_heading."
+    },
+    "ext.settings.mode_watched": {
+      "s": "Solo siti attivati",
+      "back": "Only activated sites",
+      "why": "Extension-side counterpart to app.settings.mode_watched."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Ovunque automaticamente",
+      "back": "Everywhere automatically",
+      "why": "Extension-side counterpart to app.settings.mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Nota in pagina",
+      "back": "Note in page",
+      "why": "Extension-side counterpart to app.settings.banner_toggle, trimmed for the tighter popup row."
+    },
+    "ext.action.report": {
+      "s": "Segnala problema",
+      "back": "Report problem",
+      "why": "Names opening a pre-filled issue report; nothing is sent until the person submits it themselves."
+    }
+  }
+}

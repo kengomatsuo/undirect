@@ -1,0 +1,208 @@
+{
+  "source": "https://developer.apple.com/documentation/appstoreconnectapi/managing-metadata-in-your-app-by-using-locale-shortcodes",
+  "fetched": "2026-09-22",
+  "note": "App Store metadata localizations and their App Store Connect API locale shortcodes. The App Store is available in 175 regions and 50 languages.",
+  "count": 50,
+  "locales": [
+    {
+      "name": "Arabic",
+      "code": "ar-SA"
+    },
+    {
+      "name": "Bengali",
+      "code": "bn-BD"
+    },
+    {
+      "name": "Catalan",
+      "code": "ca"
+    },
+    {
+      "name": "Chinese (Simplified)",
+      "code": "zh-Hans"
+    },
+    {
+      "name": "Chinese (Traditional)",
+      "code": "zh-Hant"
+    },
+    {
+      "name": "Croatian",
+      "code": "hr"
+    },
+    {
+      "name": "Czech",
+      "code": "cs"
+    },
+    {
+      "name": "Danish",
+      "code": "da"
+    },
+    {
+      "name": "Dutch",
+      "code": "nl-NL"
+    },
+    {
+      "name": "English (Australia)",
+      "code": "en-AU"
+    },
+    {
+      "name": "English (Canada)",
+      "code": "en-CA"
+    },
+    {
+      "name": "English (U.K.)",
+      "code": "en-GB"
+    },
+    {
+      "name": "English (U.S.)",
+      "code": "en-US"
+    },
+    {
+      "name": "Finnish",
+      "code": "fi"
+    },
+    {
+      "name": "French",
+      "code": "fr-FR"
+    },
+    {
+      "name": "French (Canada)",
+      "code": "fr-CA"
+    },
+    {
+      "name": "German",
+      "code": "de-DE"
+    },
+    {
+      "name": "Greek",
+      "code": "el"
+    },
+    {
+      "name": "Gujarati",
+      "code": "gu-IN"
+    },
+    {
+      "name": "Hebrew",
+      "code": "he"
+    },
+    {
+      "name": "Hindi",
+      "code": "hi"
+    },
+    {
+      "name": "Hungarian",
+      "code": "hu"
+    },
+    {
+      "name": "Indonesian",
+      "code": "id"
+    },
+    {
+      "name": "Italian",
+      "code": "it"
+    },
+    {
+      "name": "Japanese",
+      "code": "ja"
+    },
+    {
+      "name": "Kannada",
+      "code": "kn-IN"
+    },
+    {
+      "name": "Korean",
+      "code": "ko"
+    },
+    {
+      "name": "Malay",
+      "code": "ms"
+    },
+    {
+      "name": "Malayalam",
+      "code": "ml-IN"
+    },
+    {
+      "name": "Marathi",
+      "code": "mr-IN"
+    },
+    {
+      "name": "Norwegian",
+      "code": "no"
+    },
+    {
+      "name": "Oriya",
+      "code": "or-IN"
+    },
+    {
+      "name": "Polish",
+      "code": "pl"
+    },
+    {
+      "name": "Portuguese (Brazil)",
+      "code": "pt-BR"
+    },
+    {
+      "name": "Portuguese (Portugal)",
+      "code": "pt-PT"
+    },
+    {
+      "name": "Punjabi",
+      "code": "pa-IN"
+    },
+    {
+      "name": "Romanian",
+      "code": "ro"
+    },
+    {
+      "name": "Russian",
+      "code": "ru"
+    },
+    {
+      "name": "Slovak",
+      "code": "sk"
+    },
+    {
+      "name": "Slovenian",
+      "code": "sl-SI"
+    },
+    {
+      "name": "Spanish (Mexico)",
+      "code": "es-MX"
+    },
+    {
+      "name": "Spanish (Spain)",
+      "code": "es-ES"
+    },
+    {
+      "name": "Swedish",
+      "code": "sv"
+    },
+    {
+      "name": "Tamil",
+      "code": "ta-IN"
+    },
+    {
+      "name": "Telugu",
+      "code": "te-IN"
+    },
+    {
+      "name": "Thai",
+      "code": "th"
+    },
+    {
+      "name": "Turkish",
+      "code": "tr"
+    },
+    {
+      "name": "Ukrainian",
+      "code": "uk"
+    },
+    {
+      "name": "Urdu",
+      "code": "ur-PK"
+    },
+    {
+      "name": "Vietnamese",
+      "code": "vi"
+    }
+  ]
+}

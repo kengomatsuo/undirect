@@ -1,0 +1,600 @@
+{
+  "locale": "fr-FR",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Extension désactivée",
+      "back": "Extension disabled",
+      "why": "Plain factual state, no instruction, holds the ContentUnavailableView title register."
+    },
+    "app.setup.title_failed": {
+      "s": "Vérification impossible",
+      "back": "Verification impossible",
+      "why": "Hedged phrasing distinct from the plain off-state title above it."
+    },
+    "app.setup.detail_default": {
+      "s": "Une fois un site protégé, il ne peut plus détourner vos appuis.",
+      "back": "Once a site is protected, it can no longer hijack your presses.",
+      "why": "\"Appui\" covers tap and click as the vocabulary defines \"press\"."
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari n'a pas répondu cette fois. Si vous l'activez, l'app le remarquera seule.",
+      "back": "Safari didn't answer this time. If you enable it, the app will notice on its own.",
+      "why": "No raw error code, reassures no manual refresh is needed."
+    },
+    "app.setup.open_button": {
+      "s": "Ouvrir les extensions Safari",
+      "back": "Open Safari extensions",
+      "why": "Names the real destination (Extensions pane) and works verbatim on both screens."
+    },
+    "app.welcome.heading": {
+      "s": "Bienvenue dans Undirect",
+      "back": "Welcome to Undirect",
+      "why": "Warmer register allowed only here; brand name kept untranslated."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Couches invisibles",
+      "back": "Invisible layers",
+      "why": "Plain noun phrase matching the vocabulary's own term for the trick."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Une couche invisible peut intercepter un appui destiné à autre chose.",
+      "back": "An invisible layer can intercept a press meant for something else.",
+      "why": "Describes what the person would experience, not the mechanism."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Liens substitués",
+      "back": "Swapped links",
+      "why": "Concrete noun phrase, not marketing language."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Certains liens changent de destination entre l'appui et le relâchement.",
+      "back": "Some links change destination between the press and the release.",
+      "why": "Names both moments of the gesture plainly."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Fenêtres indésirables",
+      "back": "Unwanted windows",
+      "why": "Concrete term for the trick without marketing gloss."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Un nouvel onglet ne s'ouvre que là où vous avez vraiment appuyé.",
+      "back": "A new tab only opens where you actually pressed.",
+      "why": "Phrased as a promise, as the brief asks, rather than a description of the trick."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Chaque destination",
+      "back": "Every destination",
+      "why": "Matches the vocabulary's own word \"destination\"."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Chaque destination devient une ligne à autoriser ou bloquer, ici ou partout.",
+      "back": "Every destination becomes a row to allow or block, here or everywhere.",
+      "why": "Fits both the review action and the here/everywhere scope choice in one sentence."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Site par site",
+      "back": "Site by site",
+      "why": "Names the per-individual-site model plainly."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Le bouton Undirect de Safari active la protection sur le site affiché.",
+      "back": "Safari's Undirect button turns on protection for the displayed site.",
+      "why": "Names the exact mechanism, the toolbar button."
+    },
+    "app.nav.guarded_sites": {
+      "s": "Sites protégés",
+      "back": "Protected sites",
+      "why": "Short enough for a narrow sidebar column, works as nav title too."
+    },
+    "app.nav.settings": {
+      "s": "Réglages",
+      "back": "Settings",
+      "why": "Apple's own French term for this screen on both iOS and macOS."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated like any other app's own name."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Partout",
+      "back": "Everywhere",
+      "why": "One word, reads as the clear opposite of \"Par site\" beside it."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Par site",
+      "back": "By site",
+      "why": "Clear counterpart to \"Partout\"."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "En attente de Safari",
+      "back": "Waiting for Safari",
+      "why": "A wiring/first-contact state, distinct from a genuinely empty content list."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Ouvrez une page dans Safari : la liste apparaîtra.",
+      "back": "Open a page in Safari: the list will appear.",
+      "why": "States the simple fix, French spacing before the colon."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Aucune règle",
+      "back": "No rule",
+      "why": "Plain content-empty state, contrasts with the wiring state above."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Une règle apparaît après votre premier choix.",
+      "back": "A rule appears after your first choice.",
+      "why": "Explains a rule is created by a decision, not by merely being seen."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Tentatives bloquées au total : %lld",
+      "back": "Attempts blocked in total: %lld",
+      "why": "Number placed at the end avoids French singular/plural noun agreement issues."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Bloqué",
+      "back": "Blocked",
+      "why": "One word, clear opposite of \"Autorisé\" in the same list."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Autorisé",
+      "back": "Allowed",
+      "why": "Clear opposite of \"Bloqué\"."
+    },
+    "app.rules.row.action_allow": {
+      "s": "Autoriser",
+      "back": "Allow",
+      "why": "Infinitive imperative, Apple's own convention for a menu action."
+    },
+    "app.rules.row.action_block": {
+      "s": "Bloquer",
+      "back": "Block",
+      "why": "Infinitive imperative, parallel to \"Autoriser\"."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Autoriser ou bloquer cette destination.",
+      "back": "Allow or block this destination.",
+      "why": "Fits the tight tooltip budget while naming the control's action."
+    },
+    "app.rules.row.use_default": {
+      "s": "Revenir au défaut",
+      "back": "Return to default",
+      "why": "Names clearing the explicit rule, not setting a new verdict."
+    },
+    "app.watched.empty.title": {
+      "s": "Aucun site protégé",
+      "back": "No site protected",
+      "why": "Plain statement, no site has been switched on yet."
+    },
+    "app.watched.empty.detail": {
+      "s": "Appuyez sur le bouton Undirect dans Safari pour protéger un site.",
+      "back": "Tap the Undirect button in Safari to protect a site.",
+      "why": "Names the exact toolbar mechanism to get the first entry."
+    },
+    "app.watched.footer": {
+      "s": "Cette liste s'allonge depuis le bouton Undirect de Safari.",
+      "back": "This list grows from Safari's Undirect button.",
+      "why": "Reminds where new entries come from, this screen cannot add one."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Protégé",
+      "back": "Protected",
+      "why": "Plain read-only status word, no button implied."
+    },
+    "app.watched.row.stop_button": {
+      "s": "Arrêter",
+      "back": "Stop",
+      "why": "Short imperative verb for a small trailing row button."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Désactive la protection pour ce site.",
+      "back": "Turns off protection for this site.",
+      "why": "Fits the tooltip budget while describing the button's effect."
+    },
+    "app.settings.guard_toggle": {
+      "s": "Protection",
+      "back": "Protection",
+      "why": "The master switch's noun label; feminine, kept consistent with the popup's own Protection toggle."
+    },
+    "app.settings.state_on": {
+      "s": "Activée",
+      "back": "On",
+      "why": "Feminine agreement, reused generically for Protection and the page-note toggle."
+    },
+    "app.settings.state_off": {
+      "s": "Désactivée",
+      "back": "Off",
+      "why": "Opposite of \"Activée\", same feminine agreement."
+    },
+    "app.settings.mode_heading": {
+      "s": "Portée de la protection",
+      "back": "Scope of protection",
+      "why": "Names the choice of which sites the guard runs on."
+    },
+    "app.settings.mode_watched": {
+      "s": "Sites que vous choisissez",
+      "back": "Sites you choose",
+      "why": "Keeps the person's point of view the brief asks for, over the default mode."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Tous les sites",
+      "back": "All sites",
+      "why": "Names the automatic, always-on mode plainly."
+    },
+    "app.settings.banner_toggle": {
+      "s": "Note sur la page",
+      "back": "Note on the page",
+      "why": "Matches the vocabulary's \"note in the page\" concept, feminine for state agreement."
+    },
+    "app.settings.policy_heading": {
+      "s": "Politique par défaut",
+      "back": "Default policy",
+      "why": "The vocabulary's own term for this concept, concise."
+    },
+    "app.settings.policy_block": {
+      "s": "Bloquer par défaut",
+      "back": "Block by default",
+      "why": "Short imperative phrase, parallel to \"Autoriser par défaut\"."
+    },
+    "app.settings.policy_allow": {
+      "s": "Autoriser par défaut",
+      "back": "Allow by default",
+      "why": "Parallel to \"Bloquer par défaut\"."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, kept untranslated in Safari's Extensions list."
+    },
+    "ext.meta.description": {
+      "s": "Empêche les pages de détourner vos clics vers un lien ou un site indésirable.",
+      "back": "Stops pages from hijacking your clicks toward an unwanted link or site.",
+      "why": "Explanatory register for a reader who has never used the extension."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name for the product itself, brand kept."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Protection activée sur ce site",
+      "back": "Protection turned on for this site",
+      "why": "States the active state for the tab's site, within the tooltip word budget."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Protection désactivée : appuyez pour l'activer",
+      "back": "Protection off: tap to turn it on",
+      "why": "Doubles as the call to action, French spacing before the colon."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Rien à protéger ici",
+      "back": "Nothing to protect here",
+      "why": "Brief explanation that no website is open on this tab."
+    },
+    "ext.popup.no_site_title": {
+      "s": "Aucun site ici",
+      "back": "No site here",
+      "why": "Concise headline for the empty-tab state, sits beside a small icon."
+    },
+    "ext.popup.no_site_body": {
+      "s": "Ouvrez un site, puis appuyez ici.",
+      "back": "Open a site, then tap here.",
+      "why": "\"Ici\" keeps the self-reference to the toolbar button the popup hangs off of."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Activer la protection sur ce site",
+      "back": "Turn on protection for this site",
+      "why": "Sr-only label naming what the switch controls, since the row already shows the site name."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Aucune page à protéger ici.",
+      "back": "No page to protect here.",
+      "why": "Brief reason the per-site switch is disabled, fits the tight subtitle budget."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Déjà actif partout, via les réglages.",
+      "back": "Already active everywhere, via Settings.",
+      "why": "Points to the everywhere mode elsewhere in Settings that makes this switch redundant."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Désactivée dans les réglages.",
+      "back": "Turned off in Settings.",
+      "why": "Names the global master switch as the reason, distinct from the two other disabled reasons."
+    },
+    "ext.popup.watch_on": {
+      "s": "Activée : la désactiver recharge la page.",
+      "back": "On: turning it off reloads the page.",
+      "why": "Confirms state and warns of the reload, French spacing before the colon."
+    },
+    "ext.popup.watch_off": {
+      "s": "Désactivée : l'activer recharge la page.",
+      "back": "Off: turning it on reloads the page.",
+      "why": "Mirrors \"watch_on\" as a clear before/after pair sharing the same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "Cette page",
+      "back": "This page",
+      "why": "Matches the vocabulary's \"page\" concept, distinct from the site-wide rule lists."
+    },
+    "ext.popup.page_off": {
+      "s": "Rien n'est suivi : la protection est désactivée ici.",
+      "back": "Nothing is tracked: protection is off here.",
+      "why": "Dead key as of 2026-09-22; translated speculatively to match its sibling states' voice."
+    },
+    "ext.popup.page_quiet": {
+      "s": "Rien n'a tenté de sortir de cette page.",
+      "back": "Nothing has tried to leave this page.",
+      "why": "Plain statement that the page has been quiet so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "Rien à afficher pour l'instant.",
+      "back": "Nothing to show for now.",
+      "why": "Dead key, kept as a near-synonym of \"page_quiet\" per its own notes."
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld bloquée",
+      "back": "%lld blocked",
+      "why": "Elliptical feminine form (\"tentative\" implied) for the singular badge."
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld bloquées",
+      "back": "%lld blocked",
+      "why": "Plural pair to \"stopped_one\", feminine plural agreement."
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld tentative repérée",
+      "back": "%lld attempt spotted",
+      "why": "\"Repérée\" covers both blocked and allowed, broader than \"bloquée\"."
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld tentatives repérées",
+      "back": "%lld attempts spotted",
+      "why": "Plural pair to \"seen_one\"."
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld fois",
+      "back": "%lld time(s)",
+      "why": "\"Fois\" is invariant in French between singular and plural."
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld fois",
+      "back": "%lld times",
+      "why": "Same invariant word as \"tries_one\", per French grammar."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Correctif",
+      "back": "Fix",
+      "why": "Short prefix that reads naturally before the colon-joined fix name."
+    },
+    "ext.state.blocked": {
+      "s": "Bloqué",
+      "back": "Blocked",
+      "why": "Short form combining with a following scope word, e.g. \"Bloqué partout\"."
+    },
+    "ext.state.allowed": {
+      "s": "Autorisé",
+      "back": "Allowed",
+      "why": "Opposite of \"Bloqué\", same combination requirement."
+    },
+    "ext.state.removed": {
+      "s": "Retiré",
+      "back": "Removed",
+      "why": "Distinct from allow/block since a local trap has no destination to rule on."
+    },
+    "ext.scope.here": {
+      "s": "sur ce site",
+      "back": "on this site",
+      "why": "Composes after a verdict word as \"Bloqué sur ce site\"."
+    },
+    "ext.scope.everywhere": {
+      "s": "partout",
+      "back": "everywhere",
+      "why": "Composes as \"Bloqué partout\"."
+    },
+    "ext.scope.default": {
+      "s": "par défaut",
+      "back": "by default",
+      "why": "Composes as \"Bloqué par défaut\"."
+    },
+    "ext.action.allow_here": {
+      "s": "Autoriser ici",
+      "back": "Allow here",
+      "why": "Unambiguous, distinct from the everywhere variant."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Autoriser partout",
+      "back": "Allow everywhere",
+      "why": "Counterpart to \"Autoriser ici\"."
+    },
+    "ext.action.block_here": {
+      "s": "Bloquer ici",
+      "back": "Block here",
+      "why": "Parallel to \"Autoriser ici\"."
+    },
+    "ext.action.block_everywhere": {
+      "s": "Bloquer partout",
+      "back": "Block everywhere",
+      "why": "Parallel to \"Autoriser partout\"."
+    },
+    "ext.popup.policy_heading": {
+      "s": "Politique par défaut",
+      "back": "Default policy",
+      "why": "Consistent with the container app's equivalent heading."
+    },
+    "ext.policy.block": {
+      "s": "Bloquer par défaut",
+      "back": "Block by default",
+      "why": "Matches the app-side phrasing for the same choice."
+    },
+    "ext.policy.allow": {
+      "s": "Autoriser par défaut",
+      "back": "Allow by default",
+      "why": "Matches the app-side phrasing for the same choice."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Les réglages de sécurité de cette page bloquent une partie de la protection.",
+      "back": "This page's own security settings block part of the protection.",
+      "why": "Names it as a limitation of this one page, not a bug."
+    },
+    "ext.kind.click_catcher": {
+      "s": "Capteur invisible",
+      "back": "Invisible catcher",
+      "why": "Short tag for the comma-joined list, names a clickable invisible element."
+    },
+    "ext.kind.overlay": {
+      "s": "Couche transparente",
+      "back": "Transparent layer",
+      "why": "Broader than the click-catcher tag, any see-through element."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Clic simulé",
+      "back": "Simulated click",
+      "why": "Names a script-dispatched click, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "Fenêtre pop-up",
+      "back": "Pop-up window",
+      "why": "\"Pop-up\" is standard French tech vocabulary, kept short."
+    },
+    "ext.kind.form_submit": {
+      "s": "Formulaire caché",
+      "back": "Hidden form",
+      "why": "Names the hidden-form mechanism concisely."
+    },
+    "ext.kind.href_swap": {
+      "s": "Destination modifiée en direct",
+      "back": "Destination changed live",
+      "why": "Names the mid-press swap within the tag's word budget."
+    },
+    "ext.kind.back_hijack": {
+      "s": "Retour détourné",
+      "back": "Back hijacked",
+      "why": "Short tag naming the trick, ties to the product's own \"détourner\" vocabulary."
+    },
+    "ext.kind.redirect": {
+      "s": "Redirection sur la page",
+      "back": "Redirect on the page",
+      "why": "Names the core same-tab redirect trick concretely."
+    },
+    "ext.kind.pop_tab": {
+      "s": "Onglet ouvert en arrière-plan",
+      "back": "Tab opened in the background",
+      "why": "Names the tab-under trick concretely within budget."
+    },
+    "ext.kind.network_rule": {
+      "s": "Bloqué au réseau",
+      "back": "Blocked at the network",
+      "why": "Names the earliest, strongest kind of block concisely."
+    },
+    "ext.reason.way_back": {
+      "s": "Son adresse prévoyait un retour.",
+      "back": "Its address planned for a return.",
+      "why": "Brief reason fitting the tight footnote budget."
+    },
+    "ext.reason.sized": {
+      "s": "Fenêtre à taille définie.",
+      "back": "Window with a defined size.",
+      "why": "Names the deliberate window size as the reason it was allowed."
+    },
+    "ext.reason.took_press": {
+      "s": "A pris votre appui.",
+      "back": "Took your press.",
+      "why": "Extremely terse per the very tight budget, matches the core hijack framing."
+    },
+    "ext.reason.default_allow": {
+      "s": "Aucune règle définie.",
+      "back": "No rule set.",
+      "why": "Terse, plain reason within the tight budget."
+    },
+    "ext.reason.own_code": {
+      "s": "Ouverte par le site lui-même.",
+      "back": "Opened by the site itself.",
+      "why": "Names the site's own code as vouching for the window."
+    },
+    "ext.popup.rules_link": {
+      "s": "Règles",
+      "back": "Rules",
+      "why": "One word, matches the vocabulary's \"rule\" concept, reused as nav row and header title."
+    },
+    "ext.popup.back_link": {
+      "s": "Retour",
+      "back": "Back",
+      "why": "Apple's own accessibility-label convention for a chevron-only back button."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Partout",
+      "back": "Everywhere",
+      "why": "Consistent with the app-side \"Everywhere\" grouping term."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Par site",
+      "back": "By site",
+      "why": "Clear counterpart to \"Partout\", consistent with the app side."
+    },
+    "ext.rules.empty": {
+      "s": "Aucune règle",
+      "back": "No rule",
+      "why": "Terse placeholder, consistent with the app-side empty-rules wording."
+    },
+    "ext.action.allow": {
+      "s": "Autoriser",
+      "back": "Allow",
+      "why": "Single infinitive, scope already fixed by the section the row sits in."
+    },
+    "ext.action.block": {
+      "s": "Bloquer",
+      "back": "Block",
+      "why": "Parallel infinitive to \"Autoriser\"."
+    },
+    "ext.action.clear": {
+      "s": "Suivre le défaut",
+      "back": "Follow the default",
+      "why": "Names removing the explicit rule so the default policy applies, same action as the app-side \"Revenir au défaut\"."
+    },
+    "ext.popup.settings_heading": {
+      "s": "Réglages",
+      "back": "Settings",
+      "why": "Consistent with the app-side Settings term."
+    },
+    "ext.settings.guard_label": {
+      "s": "Protection",
+      "back": "Protection",
+      "why": "Consistent with the app-side master switch label, used both visibly and as the sr-only label."
+    },
+    "ext.settings.guard_on": {
+      "s": "Activée",
+      "back": "On",
+      "why": "Feminine agreement with \"Protection\", consistent state word."
+    },
+    "ext.settings.guard_off": {
+      "s": "Désactivée",
+      "back": "Off",
+      "why": "Opposite of \"Activée\"."
+    },
+    "ext.settings.mode_heading": {
+      "s": "Portée de la protection",
+      "back": "Scope of protection",
+      "why": "Consistent with the app-side mode heading."
+    },
+    "ext.settings.mode_watched": {
+      "s": "Sites que vous choisissez",
+      "back": "Sites you choose",
+      "why": "Consistent phrasing with the app-side mode option."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Tous les sites",
+      "back": "All sites",
+      "why": "Consistent with the app-side everywhere mode."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Note visible",
+      "back": "Visible note",
+      "why": "Tighter two-word budget than the app side, keeps \"Note\" consistent between the two."
+    },
+    "ext.action.report": {
+      "s": "Signaler un problème",
+      "back": "Report a problem",
+      "why": "Names the external issue-report action plainly."
+    }
+  }
+}

@@ -1,0 +1,600 @@
+{
+  "locale": "vi",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Tiện ích chưa bật",
+      "back": "Extension not yet on",
+      "why": "Plain statement of the missing state, matches Apple Settings register."
+    },
+    "app.setup.title_failed": {
+      "s": "Không rõ trạng thái tiện ích",
+      "back": "Extension status unclear",
+      "why": "Hedged wording distinct from the plain not-yet-on state above."
+    },
+    "app.setup.detail_default": {
+      "s": "Khi trang được bảo vệ, không thao tác nhấn nào bị cướp nữa.",
+      "back": "When a site is guarded, no press gets hijacked anymore.",
+      "why": "States the payoff impersonally, no reader pronoun needed."
+    },
+    "app.setup.detail_failed": {
+      "s": "Không thể hỏi được Safari lần này. Nếu tiện ích đã bật, ứng dụng sẽ tự nhận ra.",
+      "back": "Could not ask Safari this time. If the extension is on, the app will notice on its own.",
+      "why": "Two plain clauses, no error code, reassures no refresh is needed."
+    },
+    "app.setup.open_button": {
+      "s": "Mở Cài đặt Tiện ích Safari",
+      "back": "Open Safari Extensions Settings",
+      "why": "Names the one action; works on both the setup screen and the welcome sheet."
+    },
+    "app.welcome.heading": {
+      "s": "Chào mừng đến với Undirect",
+      "back": "Welcome to Undirect",
+      "why": "Warmer first-launch register, Apple's own onboarding phrasing pattern."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Lớp phủ vô hình",
+      "back": "Invisible overlay layer",
+      "why": "Concrete noun phrase naming the trick, no marketing language."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Một lớp vô hình có thể phủ lên trang, khiến cú nhấn trúng nhầm chỗ khác.",
+      "back": "An invisible layer can cover the page, making a press land on the wrong spot.",
+      "why": "Describes what the person would see, not the mechanism."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Liên kết bị đổi",
+      "back": "Link gets swapped",
+      "why": "Short concrete noun phrase matching sibling feature titles."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Một số trang đổi đích liên kết ngay giữa lúc nhấn và lúc thả tay.",
+      "back": "Some sites change the link's destination right between pressing and releasing.",
+      "why": "Plain description of the timing trick from the user's side."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Cửa sổ không mời",
+      "back": "Uninvited window",
+      "why": "Concrete noun phrase, matches the feature-row title pattern."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Khi bật bảo vệ, tab mới chỉ mở đúng nơi cú nhấn nhắm tới.",
+      "back": "With guard on, a new tab only opens exactly where the press aimed.",
+      "why": "Phrased as a promise, not a description of the trick itself; no reader pronoun."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Mọi đích đến",
+      "back": "Every destination",
+      "why": "Two words, names the rule-list feature plainly."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Mỗi đích đến có mục riêng để chọn cho phép hay chặn, tại đây hoặc mọi nơi.",
+      "back": "Each destination has its own entry to choose allow or block, here or everywhere.",
+      "why": "Explains the review-and-scope mechanism without addressing the reader directly."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Bật từng trang",
+      "back": "Turn on each site",
+      "why": "Names the per-site opt-in mechanism concisely."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Nhấn nút Undirect trên thanh công cụ Safari để bảo vệ trang đang mở.",
+      "back": "Press the Undirect button on Safari's toolbar to guard the site currently open.",
+      "why": "States the exact mechanism, matches other detail sentences' concreteness."
+    },
+    "app.nav.guarded_sites": {
+      "s": "Trang đã bảo vệ",
+      "back": "Guarded sites",
+      "why": "Short enough for a narrow sidebar column, doubles as nav title."
+    },
+    "app.nav.settings": {
+      "s": "Cài đặt",
+      "back": "Settings",
+      "why": "Apple's own Vietnamese term for this screen, not a synonym."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated like any other app's own name."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Mọi nơi",
+      "back": "Everywhere",
+      "why": "Pairs as the clear opposite of app.rules.grouping.by_site."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Theo trang",
+      "back": "By site",
+      "why": "Reads as the contrasting counterpart to 'Mọi nơi' beside it."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Chưa kết nối được tiện ích",
+      "back": "Not yet connected to the extension",
+      "why": "A wiring/first-contact state, distinct from 'no rules yet'."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Mở một trang bất kỳ trong Safari, danh sách sẽ tự hiện.",
+      "back": "Open any page in Safari, the list will appear on its own.",
+      "why": "States the simple fix, no setting to change."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Chưa có quy tắc",
+      "back": "No rules yet",
+      "why": "Plainly states this particular list is empty, contrasts with the first-contact title."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Đích đến chỉ hiện ở đây khi đã được cho phép hoặc chặn.",
+      "back": "A destination only shows up here once it has been allowed or blocked.",
+      "why": "Explains that a decision, not just being seen, creates an entry."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Đã chặn %lld lần trên mọi trang.",
+      "back": "Blocked %lld times across every site.",
+      "why": "Vietnamese has no plural inflection, one form covers every count value."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Đã chặn",
+      "back": "Blocked",
+      "why": "Reused state word, pairs opposite app.rules.row.state_allowed."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Đã cho phép",
+      "back": "Allowed",
+      "why": "Clear opposite of 'Đã chặn'."
+    },
+    "app.rules.row.action_allow": {
+      "s": "Cho phép",
+      "back": "Allow",
+      "why": "Imperative verb, only shown on a currently blocked row."
+    },
+    "app.rules.row.action_block": {
+      "s": "Chặn",
+      "back": "Block",
+      "why": "Imperative verb, opposite of action_allow."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Chọn cho phép hay chặn đích đến này",
+      "back": "Choose to allow or block this destination",
+      "why": "Describes what the hovered control does."
+    },
+    "app.rules.row.use_default": {
+      "s": "Dùng mặc định",
+      "back": "Use default",
+      "why": "Names clearing the explicit rule, not setting a new verdict."
+    },
+    "app.watched.empty.title": {
+      "s": "Chưa bảo vệ trang nào",
+      "back": "No site guarded yet",
+      "why": "Plainly states no site has been switched on."
+    },
+    "app.watched.empty.detail": {
+      "s": "Nhấn nút Undirect trên thanh công cụ khi đang ở trang hay gây phiền.",
+      "back": "Press the Undirect button on the toolbar while on a site that keeps causing trouble.",
+      "why": "Tells exactly how to guard the first site, plain register."
+    },
+    "app.watched.footer": {
+      "s": "Muốn thêm trang, dùng nút Undirect trên thanh công cụ Safari.",
+      "back": "To add a site, use the Undirect button on Safari's toolbar.",
+      "why": "Reminds that the list only grows from the toolbar button."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Đang bảo vệ",
+      "back": "Guarding",
+      "why": "Read-only ongoing-state word, not a button on this platform."
+    },
+    "app.watched.row.stop_button": {
+      "s": "Dừng",
+      "back": "Stop",
+      "why": "Short imperative verb fitting a small trailing row button."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Tắt bảo vệ cho trang này",
+      "back": "Turn off guard for this site",
+      "why": "Describes what the Stop button under the pointer does."
+    },
+    "app.settings.guard_toggle": {
+      "s": "Bảo vệ",
+      "back": "Guard",
+      "why": "The master switch label, same word used as the concept name throughout."
+    },
+    "app.settings.state_on": {
+      "s": "Bật",
+      "back": "On",
+      "why": "Generic on-state word, reused for more than one setting."
+    },
+    "app.settings.state_off": {
+      "s": "Tắt",
+      "back": "Off",
+      "why": "Clear opposite of 'Bật'."
+    },
+    "app.settings.mode_heading": {
+      "s": "Nơi áp dụng bảo vệ",
+      "back": "Where guard applies",
+      "why": "Introduces the choice of which sites the guard runs on."
+    },
+    "app.settings.mode_watched": {
+      "s": "Chỉ trang đã bật",
+      "back": "Only sites turned on",
+      "why": "Described from the person's own point of view, the conservative default."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Mọi trang",
+      "back": "Every site",
+      "why": "Names the automatic always-on mode plainly."
+    },
+    "app.settings.banner_toggle": {
+      "s": "Ghi chú trên trang",
+      "back": "Note on the page",
+      "why": "Labels the on-page banner toggle, distinct from the popup's own record."
+    },
+    "app.settings.policy_heading": {
+      "s": "Xử lý đích đến chưa có quy tắc",
+      "back": "Handling for a destination with no rule",
+      "why": "Introduces the default-policy choice for an unrated destination."
+    },
+    "app.settings.policy_block": {
+      "s": "Chặn mặc định",
+      "back": "Block by default",
+      "why": "Short picker option, unrated destination stopped by default."
+    },
+    "app.settings.policy_allow": {
+      "s": "Cho phép mặc định",
+      "back": "Allow by default",
+      "why": "Clear opposite of 'Chặn mặc định'."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, same brand name as app.nav.app_title, left untranslated."
+    },
+    "ext.meta.description": {
+      "s": "Ngăn trang web lợi dụng cú nhấn để mở hoặc chuyển hướng sang nơi không mong muốn.",
+      "back": "Stops sites exploiting a press to open or redirect to an unwanted place.",
+      "why": "One sentence for someone who has never used the extension, slightly explanatory."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name, same brand name kept untranslated."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Đang bảo vệ trang này",
+      "back": "Guarding this site now",
+      "why": "States the icon's current on-state as its accessible tooltip."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Chưa bảo vệ, nhấn để bật",
+      "back": "Not guarded, press to turn on",
+      "why": "Tooltip doubles as the call to action; comma instead of a dash connector."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Không có trang để bảo vệ",
+      "back": "No site to guard",
+      "why": "Explains there is nothing to guard on this tab."
+    },
+    "ext.popup.no_site_title": {
+      "s": "Chỉ hoạt động trên trang web",
+      "back": "Only works on a website",
+      "why": "Popup headline explaining Undirect needs an actual website."
+    },
+    "ext.popup.no_site_body": {
+      "s": "Mở một trang web, rồi nhấn vào đây để bảo vệ.",
+      "back": "Open a website, then press here to guard it.",
+      "why": "'Đây' keeps the self-reference to the button the popup hangs off of."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Bật hoặc tắt bảo vệ cho trang này",
+      "back": "Turn guard on or off for this site",
+      "why": "Screen-reader label naming what the switch controls, no visual context needed."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Không có trang nào để bảo vệ ở đây.",
+      "back": "There is no page here to guard.",
+      "why": "Explains why the per-site switch is disabled."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Đang bật chế độ bảo vệ mọi trang.",
+      "back": "The guard-every-site mode is already on.",
+      "why": "Explains the switch is redundant because the everywhere mode already covers it."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Bảo vệ đang tắt trong Cài đặt.",
+      "back": "Guard is off in Settings.",
+      "why": "Explains the disabled switch is about the master toggle, not this site."
+    },
+    "ext.popup.watch_on": {
+      "s": "Đang bảo vệ trang này. Tắt sẽ tải lại trang.",
+      "back": "Guarding this site now. Turning off will reload the page.",
+      "why": "Confirms state and warns of the reload, matching watch_off's shape."
+    },
+    "ext.popup.watch_off": {
+      "s": "Chưa bảo vệ trang này. Bật sẽ tải lại trang.",
+      "back": "Not guarding this site. Turning on will reload the page.",
+      "why": "Direct counterpart to watch_on, same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "Trang này",
+      "back": "This page",
+      "why": "Heads the current-tab section, sits beside the trailing count."
+    },
+    "ext.popup.page_off": {
+      "s": "Không theo dõi vì đang tắt bảo vệ.",
+      "back": "Not tracked because guard is off.",
+      "why": "Dead key as of 2026-09-22, no code reads it; written speculatively to match the voice of sibling states."
+    },
+    "ext.popup.page_quiet": {
+      "s": "Trang này chưa cố mở đến nơi nào khác.",
+      "back": "This page hasn't tried to reach anywhere else yet.",
+      "why": "States plainly nothing has reached out from this page so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "Chưa có gì để hiển thị.",
+      "back": "Nothing to show yet.",
+      "why": "Dead key, near-synonym of page_quiet; kept as a plain equivalent rather than inventing new phrasing."
+    },
+    "ext.popup.stopped_one": {
+      "s": "$COUNT$ lần chặn",
+      "back": "$COUNT$ times blocked",
+      "why": "Vietnamese has no plural form; identical text to stopped_other, which is the pair's 'other' case."
+    },
+    "ext.popup.stopped_other": {
+      "s": "$COUNT$ lần chặn",
+      "back": "$COUNT$ times blocked",
+      "why": "Same string as stopped_one; Vietnamese collapses the singular/plural pair."
+    },
+    "ext.popup.seen_one": {
+      "s": "$COUNT$ lần được ghi nhận",
+      "back": "$COUNT$ times recorded",
+      "why": "Broader than 'stopped': every recorded attempt, blocked and allowed together."
+    },
+    "ext.popup.seen_other": {
+      "s": "$COUNT$ lần được ghi nhận",
+      "back": "$COUNT$ times recorded",
+      "why": "Same string as seen_one; no plural inflection in Vietnamese."
+    },
+    "ext.popup.tries_one": {
+      "s": "$COUNT$ lần",
+      "back": "$COUNT$ times",
+      "why": "Terse fragment meant to sit among other short tags in one detail line."
+    },
+    "ext.popup.tries_other": {
+      "s": "$COUNT$ lần",
+      "back": "$COUNT$ times",
+      "why": "Same string as tries_one; Vietnamese does not distinguish the count grammatically."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Bản sửa",
+      "back": "Fix",
+      "why": "Short prefix that reads naturally before ': <recipe name>'."
+    },
+    "ext.state.blocked": {
+      "s": "Đã chặn",
+      "back": "Blocked",
+      "why": "Most-reused status word; combines with a following scope fragment."
+    },
+    "ext.state.allowed": {
+      "s": "Đã cho phép",
+      "back": "Allowed",
+      "why": "Clear opposite of 'Đã chặn', same combination rule with scope words."
+    },
+    "ext.state.removed": {
+      "s": "Đã gỡ",
+      "back": "Removed",
+      "why": "Names a trap taken off the page directly, no destination to rule on."
+    },
+    "ext.scope.here": {
+      "s": "trên trang này",
+      "back": "on this site",
+      "why": "Composed as '${verdict} ${scope}', e.g. 'Đã chặn trên trang này'."
+    },
+    "ext.scope.everywhere": {
+      "s": "ở mọi nơi",
+      "back": "everywhere",
+      "why": "Composed after a verdict word, e.g. 'Đã chặn ở mọi nơi'."
+    },
+    "ext.scope.default": {
+      "s": "theo mặc định",
+      "back": "by default",
+      "why": "Composed after a verdict word, e.g. 'Đã chặn theo mặc định'."
+    },
+    "ext.action.allow_here": {
+      "s": "Cho phép ở đây",
+      "back": "Allow here",
+      "why": "Menu option scoped to the current site, distinct from the everywhere variant."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Cho phép mọi nơi",
+      "back": "Allow everywhere",
+      "why": "Menu option scoped to every guarded site."
+    },
+    "ext.action.block_here": {
+      "s": "Chặn ở đây",
+      "back": "Block here",
+      "why": "Menu option scoped to the current site."
+    },
+    "ext.action.block_everywhere": {
+      "s": "Chặn mọi nơi",
+      "back": "Block everywhere",
+      "why": "Menu option scoped to every guarded site."
+    },
+    "ext.popup.policy_heading": {
+      "s": "Xử lý đích đến chưa có quy tắc",
+      "back": "Handling for a destination with no rule",
+      "why": "Same concept as the app's settings equivalent, separate translation unit."
+    },
+    "ext.policy.block": {
+      "s": "Chặn mặc định",
+      "back": "Block by default",
+      "why": "Radio option, matches the container app's phrasing."
+    },
+    "ext.policy.allow": {
+      "s": "Cho phép mặc định",
+      "back": "Allow by default",
+      "why": "Radio option, matches the container app's phrasing."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Cài đặt bảo mật của trang này chặn một phần tiện ích, nên bảo vệ chỉ hoạt động một phần.",
+      "back": "This page's own security settings block part of the extension, so guard only works partially.",
+      "why": "Frames it as a limitation of this one page, not a bug."
+    },
+    "ext.kind.click_catcher": {
+      "s": "Bẫy nhấn vô hình",
+      "back": "Invisible click trap",
+      "why": "Names the invisible clickable-element trick as a terse noun phrase."
+    },
+    "ext.kind.overlay": {
+      "s": "Lớp phủ trong suốt",
+      "back": "Transparent overlay",
+      "why": "Broader than the click trap: any see-through element over the page."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Cú nhấn giả",
+      "back": "Fake click",
+      "why": "Names a click the page's own script dispatched, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "Cửa sổ bật lên",
+      "back": "Pop-up window",
+      "why": "Standard Vietnamese term for a script-opened pop-up window."
+    },
+    "ext.kind.form_submit": {
+      "s": "Biểu mẫu ẩn",
+      "back": "Hidden form",
+      "why": "Names the hidden-form-submission trick tersely."
+    },
+    "ext.kind.href_swap": {
+      "s": "Đổi liên kết giữa chừng",
+      "back": "Link swapped midway",
+      "why": "Names the link-rewritten-mid-press trick, terse tag shape."
+    },
+    "ext.kind.back_hijack": {
+      "s": "Chiếm quyền nút Lùi",
+      "back": "Hijack of the back button",
+      "why": "Names a navigation fired right after the back gesture."
+    },
+    "ext.kind.redirect": {
+      "s": "Chuyển hướng chiếm cú nhấn",
+      "back": "Redirect hijacking the press",
+      "why": "Names the core same-tab redirect trick as a short tag."
+    },
+    "ext.kind.pop_tab": {
+      "s": "Tab mới mở lén phía sau",
+      "back": "New tab sneaking open behind",
+      "why": "Names a tab-under style new tab opened behind the press."
+    },
+    "ext.kind.network_rule": {
+      "s": "Chặn ngay từ mạng",
+      "back": "Blocked right at the network",
+      "why": "Names the earliest, strongest kind of block, before the page ever saw it."
+    },
+    "ext.reason.way_back": {
+      "s": "Địa chỉ có đường quay lại trang gốc.",
+      "back": "The address has a path back to the origin site.",
+      "why": "Explains why a redirect with a round-trip path was allowed."
+    },
+    "ext.reason.sized": {
+      "s": "Cửa sổ mở đúng kích thước riêng.",
+      "back": "The window opened at its own set size.",
+      "why": "Explains why a deliberately sized window was allowed."
+    },
+    "ext.reason.took_press": {
+      "s": "Đã cướp cú nhấn",
+      "back": "Took the press",
+      "why": "Very short reason for a block: the destination rode a press aimed elsewhere."
+    },
+    "ext.reason.default_allow": {
+      "s": "Theo mặc định",
+      "back": "By default",
+      "why": "Very short reason: nothing flagged it, so the default policy let it through."
+    },
+    "ext.reason.own_code": {
+      "s": "Do chính trang này mở.",
+      "back": "Opened by the site itself.",
+      "why": "Explains a window was allowed because the site's own code opened it."
+    },
+    "ext.popup.rules_link": {
+      "s": "Quy tắc",
+      "back": "Rules",
+      "why": "Reused as the nav row, the Rules screen's header, and the back-button label."
+    },
+    "ext.popup.back_link": {
+      "s": "Trang chính",
+      "back": "Main screen",
+      "why": "Names the destination a chevron-only back button returns to, for screen readers."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Mọi nơi",
+      "back": "Everywhere",
+      "why": "Matches app.rules.grouping.everywhere so the two surfaces read the same."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Theo trang",
+      "back": "By site",
+      "why": "Matches app.rules.grouping.by_site, clear counterpart to 'Mọi nơi'."
+    },
+    "ext.rules.empty": {
+      "s": "Chưa có quy tắc",
+      "back": "No rules yet",
+      "why": "Terse single-row placeholder for an empty rules section."
+    },
+    "ext.action.allow": {
+      "s": "Cho phép",
+      "back": "Allow",
+      "why": "Row menu option, scope already fixed by which section the row sits in."
+    },
+    "ext.action.block": {
+      "s": "Chặn",
+      "back": "Block",
+      "why": "Row menu option, opposite of 'Cho phép'."
+    },
+    "ext.action.clear": {
+      "s": "Dùng mặc định",
+      "back": "Use default",
+      "why": "Same wording as app.rules.row.use_default, since it is the same action seen from two surfaces."
+    },
+    "ext.popup.settings_heading": {
+      "s": "Cài đặt",
+      "back": "Settings",
+      "why": "Reused as the nav row and that screen's own header title."
+    },
+    "ext.settings.guard_label": {
+      "s": "Bảo vệ",
+      "back": "Guard",
+      "why": "Master switch label, matches app.settings.guard_toggle."
+    },
+    "ext.settings.guard_on": {
+      "s": "Bật",
+      "back": "On",
+      "why": "State label for the master switch, matches the generic on-state word."
+    },
+    "ext.settings.guard_off": {
+      "s": "Tắt",
+      "back": "Off",
+      "why": "Clear opposite of 'Bật'."
+    },
+    "ext.settings.mode_heading": {
+      "s": "Nơi áp dụng bảo vệ",
+      "back": "Where guard applies",
+      "why": "Matches app.settings.mode_heading, separate translation unit."
+    },
+    "ext.settings.mode_watched": {
+      "s": "Chỉ trang đã bật",
+      "back": "Only sites turned on",
+      "why": "Matches app.settings.mode_watched."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Mọi trang",
+      "back": "Every site",
+      "why": "Matches app.settings.mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Ghi chú trang",
+      "back": "Page note",
+      "why": "Tighter than the app-side label to fit the popup's smaller layout."
+    },
+    "ext.action.report": {
+      "s": "Báo lỗi",
+      "back": "Report bug",
+      "why": "Names opening a pre-filled report; nothing is sent until the person submits it."
+    }
+  }
+}

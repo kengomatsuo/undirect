@@ -1,0 +1,600 @@
+{
+  "locale": "zh-Hant",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "延伸功能尚未啟用",
+      "back": "extension not-yet enabled",
+      "why": "States the missing precondition plainly, matching the Apple term 延伸功能 rather than a synonym."
+    },
+    "app.setup.title_failed": {
+      "s": "無法確認防護狀態",
+      "back": "unable confirm guard status",
+      "why": "Hedges on the check itself, not the extension's state, so it reads distinct from the plain not-yet-on title."
+    },
+    "app.setup.detail_default": {
+      "s": "網站一旦受到防護，就無法再劫持你的點按。",
+      "back": "site once receives guard, then cannot again hijack your press",
+      "why": "One plain sentence with the app's whole payoff; 點按 covers tap and click on both platforms."
+    },
+    "app.setup.detail_failed": {
+      "s": "這次暫時問不到 Safari 的狀態，只要延伸功能開啟，這裡就會自動更新。",
+      "back": "this-time temporarily can't-ask Safari's status, as-long-as extension opens, here then will automatically update",
+      "why": "No error code, and reassures the person nothing further needs doing."
+    },
+    "app.setup.open_button": {
+      "s": "開啟延伸功能設定",
+      "back": "open extension settings",
+      "why": "Names the single action only, so it works unchanged on both the setup screen and the welcome sheet."
+    },
+    "app.welcome.heading": {
+      "s": "歡迎使用 Undirect",
+      "back": "welcome use Undirect",
+      "why": "The one warm line in the product; keeps the brand name untranslated."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "隱形覆蓋層",
+      "back": "invisible overlay layer",
+      "why": "Concrete noun for the trick, no marketing language."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "看不見的覆蓋層可能蓋住頁面，讓點按落在別的東西上。",
+      "back": "invisible overlay might cover page, let press land on other thing",
+      "why": "Describes what the person would experience, not the DOM mechanism."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "連結中途調包",
+      "back": "link midway swapped",
+      "why": "Short noun phrase naming the specific trick."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "有些網站會在按下與放開之間，偷偷換掉連結的目的地。",
+      "back": "some sites will between press and release, secretly swap link's destination",
+      "why": "States the press/release timing plainly, matching the vocabulary term 目的地."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "不請自來的視窗",
+      "back": "uninvited-self-come window",
+      "why": "Names a pop-up or tab opening somewhere the person did not press toward."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "防護開啟後，新分頁只會開向你點按的目的地，不會多開別的。",
+      "back": "guard on after, new tab only will open-toward your pressed destination, won't extra-open other",
+      "why": "Written as the promise the brief asks for, not a description of the trick."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "記錄每個目的地",
+      "back": "record every destination",
+      "why": "Names the rule-list feature, tracking every destination not just the caught ones."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "每個目的地都會列出來，你可以選擇在這個網站或所有網站允許或封鎖。",
+      "back": "every destination all will be-listed, you can choose at this site or all sites allow or block",
+      "why": "Uses 這個網站/所有網站 as the fixed scope pair kept consistent across the whole app."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "逐一開啟防護",
+      "back": "one-by-one open guard",
+      "why": "Names the per-site opt-in mechanism, not an always-on default."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "在 Safari 工具列按下 Undirect 按鈕，就能為這個網站開啟防護。",
+      "back": "at Safari toolbar press Undirect button, then can for this site open guard",
+      "why": "Names the exact mechanism: the toolbar button, plain and concrete."
+    },
+    "app.nav.guarded_sites": {
+      "s": "防護中的網站",
+      "back": "guarding-in-progress sites",
+      "why": "Short enough for a narrow sidebar column and doubles as the screen's own title."
+    },
+    "app.nav.settings": {
+      "s": "設定",
+      "back": "settings",
+      "why": "Apple's own term for this screen on both iOS and macOS; no synonym invented."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated like any other app's own name."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "所有網站",
+      "back": "all sites",
+      "why": "Fixed scope term, paired against 個別網站 below."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "個別網站",
+      "back": "individual sites",
+      "why": "Reads as the clear opposite of 所有網站 sitting beside it in the sidebar."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "尚未連上延伸功能",
+      "back": "not-yet connected-to extension",
+      "why": "A wiring state, distinct in wording from the content-empty title below it."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "在 Safari 開啟任一網站，這裡就會顯示資料。",
+      "back": "at Safari open any-one site, here then will show data",
+      "why": "One plain fix, no setting to change; shared verbatim with the Guarded Sites screen."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "目前沒有規則",
+      "back": "currently no rules",
+      "why": "States the content-empty case, contrasting with the wiring-empty title above."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "允許或封鎖過目的地後，才會出現在這裡。",
+      "back": "allowed or blocked destination after, only-then will appear here",
+      "why": "Explains a row is created by a decision, not merely by the guard noticing something."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "累計封鎖 %lld 次",
+      "back": "cumulative blocked %lld times",
+      "why": "%lld kept exactly as the brief's placeholder; Chinese has no plural form, so one string serves every count."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "已封鎖",
+      "back": "already blocked",
+      "why": "Pairs cleanly as the opposite of 已允許 in the same row list."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "已允許",
+      "back": "already allowed",
+      "why": "Clear opposite of 已封鎖."
+    },
+    "app.rules.row.action_allow": {
+      "s": "允許",
+      "back": "allow",
+      "why": "Bare imperative verb, distinct from the state label 已允許 shown elsewhere."
+    },
+    "app.rules.row.action_block": {
+      "s": "封鎖",
+      "back": "block",
+      "why": "Bare imperative verb, only shown on a row currently Allowed."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "選擇要允許還是封鎖這個目的地",
+      "back": "choose want allow or-else block this destination",
+      "why": "Describes what the hovered control does, in one short phrase."
+    },
+    "app.rules.row.use_default": {
+      "s": "恢復預設",
+      "back": "restore default",
+      "why": "Names clearing the rule, not setting a new verdict; kept identical to the extension's ext.action.clear in meaning."
+    },
+    "app.watched.empty.title": {
+      "s": "尚未防護任何網站",
+      "back": "not-yet guard any site",
+      "why": "States plainly that no site has been switched on."
+    },
+    "app.watched.empty.detail": {
+      "s": "在 Safari 工具列按下 Undirect 按鈕，就能防護目前的網站。",
+      "back": "at Safari toolbar press Undirect button, then can guard current site",
+      "why": "Gives the exact first action, matching the toolbar-button vocabulary term."
+    },
+    "app.watched.footer": {
+      "s": "只能透過 Safari 工具列的按鈕新增網站。",
+      "back": "only can through Safari toolbar's button add site",
+      "why": "Reminds the person this screen has no add control of its own."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "防護中",
+      "back": "guarding-in-progress",
+      "why": "Read-only status word, not a button, for the iOS row."
+    },
+    "app.watched.row.stop_button": {
+      "s": "停止",
+      "back": "stop",
+      "why": "Short imperative verb sized for a trailing row button."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "停止防護這個網站",
+      "back": "stop guard this site",
+      "why": "Describes what the Stop button under the pointer does."
+    },
+    "app.settings.guard_toggle": {
+      "s": "防護",
+      "back": "guard",
+      "why": "One word, the same root term used for the guard concept throughout the app and extension."
+    },
+    "app.settings.state_on": {
+      "s": "開啟",
+      "back": "on",
+      "why": "Generic on/off word, reused for more than one setting on this screen."
+    },
+    "app.settings.state_off": {
+      "s": "關閉",
+      "back": "off",
+      "why": "Clear opposite of 開啟."
+    },
+    "app.settings.mode_heading": {
+      "s": "防護範圍",
+      "back": "guard scope",
+      "why": "Introduces the choice of which sites the guard runs on."
+    },
+    "app.settings.mode_watched": {
+      "s": "只防護你開啟的網站",
+      "back": "only guard you-opened sites",
+      "why": "Described from the person's own point of view, as the brief asks, not as a technical mode name."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "自動防護所有網站",
+      "back": "automatically guard all sites",
+      "why": "Names the automatic always-on mode plainly."
+    },
+    "app.settings.banner_toggle": {
+      "s": "頁面提示",
+      "back": "page note",
+      "why": "Matches the vocabulary concept 'note in the page', kept identical to the extension's own toggle."
+    },
+    "app.settings.policy_heading": {
+      "s": "沒有規則時的預設動作",
+      "back": "no rule when's default action",
+      "why": "Introduces the choice for a destination with no rule set at all."
+    },
+    "app.settings.policy_block": {
+      "s": "預設封鎖",
+      "back": "default block",
+      "why": "Short picker option, using the fixed 封鎖 term."
+    },
+    "app.settings.policy_allow": {
+      "s": "預設允許",
+      "back": "default allow",
+      "why": "Clear opposite of 預設封鎖."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated in the Extensions list and the App Store."
+    },
+    "ext.meta.description": {
+      "s": "防止網站劫持你的點按，把你偷偷開啟新視窗或跳轉到別的網址。",
+      "back": "prevent site hijack your press, put you secretly open new window or redirect to other address",
+      "why": "Written for someone who has never used it, spelling out the click-hijack and redirect cases plainly."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name, used only when no actual site name is available."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "此網站防護中",
+      "back": "this site guarding-in-progress",
+      "why": "States that guarding is currently on for the active tab's site."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "點一下防護此網站",
+      "back": "press once guard this site",
+      "why": "Doubles as state and call to action, since a press here is the one-tap way to start guarding."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "沒有網站可以防護",
+      "back": "no site can guard",
+      "why": "Explains briefly there is nothing to guard on a tab with no website loaded."
+    },
+    "ext.popup.no_site_title": {
+      "s": "沒有網站可防護",
+      "back": "no site can-guard",
+      "why": "Headline for the empty-state layout when the tab has no website."
+    },
+    "ext.popup.no_site_body": {
+      "s": "開啟網站後，點這裡即可防護。",
+      "back": "open site after, press here then-can guard",
+      "why": "'這裡' keeps the brief's self-reference to the toolbar button the popup hangs off."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "開啟或關閉這個網站的防護",
+      "back": "open or close this site's guard",
+      "why": "Screen-reader-only label naming what the switch controls, since the visible row already shows the site name."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "沒有頁面可以防護",
+      "back": "no page can guard",
+      "why": "Explains briefly why the switch is disabled: there is no page here."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "所有網站的防護已在設定中開啟",
+      "back": "all sites' guard already at Settings opened",
+      "why": "Points to Settings as the reason this one switch is now redundant."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "防護已在設定中關閉",
+      "back": "guard already at Settings closed",
+      "why": "Points to the master switch, not to anything about this particular site."
+    },
+    "ext.popup.watch_on": {
+      "s": "此網站防護已開啟，關閉後頁面會重新載入。",
+      "back": "this site guard already opened, close after page will reload",
+      "why": "Confirms the state and warns of the reload, sharing one sentence shape with watch_off."
+    },
+    "ext.popup.watch_off": {
+      "s": "此網站防護已關閉，開啟後頁面會重新載入。",
+      "back": "this site guard already closed, open after page will reload",
+      "why": "Direct before/after counterpart to watch_on, same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "本頁面",
+      "back": "this page",
+      "why": "Heads the tab-specific list, distinct from the site-wide Rules list."
+    },
+    "ext.popup.page_off": {
+      "s": "防護關閉中，本頁面沒有記錄",
+      "back": "guard closing-in-progress, this page has-no record",
+      "why": "Dead key as of 2026-09-22 per the brief; written speculatively to match the sibling page-section states, not verified against any live screen."
+    },
+    "ext.popup.page_quiet": {
+      "s": "本頁面目前沒有偵測到任何嘗試",
+      "back": "this page currently has-no detected any attempt",
+      "why": "States plainly that nothing has tried to reach outside so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "目前沒有項目",
+      "back": "currently has-no item",
+      "why": "Dead key per the brief, treated as a near-synonym of page_quiet rather than a distinct phrasing, as instructed."
+    },
+    "ext.popup.stopped_one": {
+      "s": "封鎖 $COUNT$ 次",
+      "back": "blocked $COUNT$ times",
+      "why": "Chinese carries no singular/plural split, so this and stopped_other share one string; $COUNT$ kept as named."
+    },
+    "ext.popup.stopped_other": {
+      "s": "封鎖 $COUNT$ 次",
+      "back": "blocked $COUNT$ times",
+      "why": "Same string as stopped_one; the language has one plural pair, not two, per the brief's own note to use the target language's own rule."
+    },
+    "ext.popup.seen_one": {
+      "s": "共記錄 $COUNT$ 次",
+      "back": "in-total recorded $COUNT$ times",
+      "why": "Broader than 封鎖: counts every recorded attempt, blocked and allowed together."
+    },
+    "ext.popup.seen_other": {
+      "s": "共記錄 $COUNT$ 次",
+      "back": "in-total recorded $COUNT$ times",
+      "why": "Same string as seen_one; no plural split in Chinese."
+    },
+    "ext.popup.tries_one": {
+      "s": "出現 $COUNT$ 次",
+      "back": "appeared $COUNT$ times",
+      "why": "Terse fragment sized to sit among other comma-joined details in one row."
+    },
+    "ext.popup.tries_other": {
+      "s": "出現 $COUNT$ 次",
+      "back": "appeared $COUNT$ times",
+      "why": "Same string as tries_one; no plural split in Chinese."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "內建修正",
+      "back": "built-in fix",
+      "why": "Two-word lead-in fragment meant to prefix the fix's own name after a colon."
+    },
+    "ext.state.blocked": {
+      "s": "已封鎖",
+      "back": "already blocked",
+      "why": "Most-reused status word; short enough to combine with a following scope fragment."
+    },
+    "ext.state.allowed": {
+      "s": "已允許",
+      "back": "already allowed",
+      "why": "Clear opposite of 已封鎖, same combination requirement."
+    },
+    "ext.state.removed": {
+      "s": "已移除",
+      "back": "already removed",
+      "why": "Distinct word for a trap taken off the page itself, since there is no destination here to allow or block."
+    },
+    "ext.scope.here": {
+      "s": "（僅此網站）",
+      "back": "(only this site)",
+      "why": "Written as a parenthetical so it reads naturally when the code appends it after a verdict word, e.g. 已封鎖（僅此網站）."
+    },
+    "ext.scope.everywhere": {
+      "s": "（所有網站）",
+      "back": "(all sites)",
+      "why": "Same parenthetical composition as scope.here, e.g. 已允許（所有網站）."
+    },
+    "ext.scope.default": {
+      "s": "（依預設）",
+      "back": "(per default)",
+      "why": "Same parenthetical composition, e.g. 已封鎖（依預設）ships without an explicit rule."
+    },
+    "ext.action.allow_here": {
+      "s": "允許此網站",
+      "back": "allow this site",
+      "why": "Complete standalone menu option, distinct from the everywhere variant."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "允許所有網站",
+      "back": "allow all sites",
+      "why": "Everywhere-scoped counterpart to allow_here."
+    },
+    "ext.action.block_here": {
+      "s": "封鎖此網站",
+      "back": "block this site",
+      "why": "Complete standalone option scoped to the current site."
+    },
+    "ext.action.block_everywhere": {
+      "s": "封鎖所有網站",
+      "back": "block all sites",
+      "why": "Everywhere-scoped counterpart to block_here."
+    },
+    "ext.popup.policy_heading": {
+      "s": "沒有規則時的預設動作",
+      "back": "no rule when's default action",
+      "why": "Same concept and wording as the app's settings screen equivalent, kept consistent across surfaces."
+    },
+    "ext.policy.block": {
+      "s": "預設封鎖",
+      "back": "default block",
+      "why": "Short radio option label, same wording as the app-side equivalent."
+    },
+    "ext.policy.allow": {
+      "s": "預設允許",
+      "back": "default allow",
+      "why": "Clear opposite of 預設封鎖."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "這個網站的安全性設定擋下部分防護程式，此頁面的保護並不完整。",
+      "back": "this site's security settings blocked part-of guard script, this page's protection is not complete",
+      "why": "Frames it as a limitation of this one page, not a bug to fix."
+    },
+    "ext.kind.click_catcher": {
+      "s": "隱形點擊層",
+      "back": "invisible click layer",
+      "why": "Short tag for an invisible clickable link or form placed over the page."
+    },
+    "ext.kind.overlay": {
+      "s": "透明覆蓋層",
+      "back": "transparent overlay layer",
+      "why": "Broader than click_catcher: any see-through element, not specifically a clickable one."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "假造點擊",
+      "back": "fabricated click",
+      "why": "Names a click the page's own script dispatched, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "快顯視窗",
+      "back": "quick-appear window",
+      "why": "Taiwan's standard term for a pop-up window."
+    },
+    "ext.kind.form_submit": {
+      "s": "隱藏表單送出",
+      "back": "hidden form submitted",
+      "why": "Names a hidden form submitted to open a new tab, distinct from window_open."
+    },
+    "ext.kind.href_swap": {
+      "s": "連結中途調包",
+      "back": "link midway swapped",
+      "why": "Same tag as the welcome sheet's swapped_links title, kept consistent."
+    },
+    "ext.kind.back_hijack": {
+      "s": "返回後遭劫持",
+      "back": "back-navigation after suffered hijack",
+      "why": "Names a navigation fired right after the person's own back gesture."
+    },
+    "ext.kind.redirect": {
+      "s": "同頁跨站導向",
+      "back": "same-page cross-site redirect",
+      "why": "Names the core same-tab redirect trick, distinct from a genuine new-tab or window case."
+    },
+    "ext.kind.pop_tab": {
+      "s": "偷開新分頁",
+      "back": "secretly-opened new tab",
+      "why": "Names a tab opened behind the press, distinct from window_open's explicit window.open call."
+    },
+    "ext.kind.network_rule": {
+      "s": "已在網路層攔截",
+      "back": "already at network-layer intercepted",
+      "why": "Names the strongest, earliest kind of block, before the request ever reached the page."
+    },
+    "ext.reason.way_back": {
+      "s": "網址本身含返回路徑",
+      "back": "address itself contains return path",
+      "why": "Explains the redirect's own destination carried a path back to the original site."
+    },
+    "ext.reason.sized": {
+      "s": "視窗有指定尺寸",
+      "back": "window has specified size",
+      "why": "Explains the window asked for a deliberate size rather than opening as a bare tab."
+    },
+    "ext.reason.took_press": {
+      "s": "假借了這次點按",
+      "back": "borrowed-under-pretense this press",
+      "why": "Very short footnote naming the core hijack pattern: riding another press rather than being pressed toward directly."
+    },
+    "ext.reason.default_allow": {
+      "s": "沒有規則，依預設放行",
+      "back": "no rule, per default let-through",
+      "why": "Explains it went through only because nothing said to stop it."
+    },
+    "ext.reason.own_code": {
+      "s": "由網站自身程式開啟",
+      "back": "by site's own code opened",
+      "why": "Explains the window was vouched for because the opening code belonged to the site itself."
+    },
+    "ext.popup.rules_link": {
+      "s": "規則",
+      "back": "rules",
+      "why": "Reused unchanged as the nav row, the screen's own heading, and the back button's accessible label."
+    },
+    "ext.popup.back_link": {
+      "s": "主畫面",
+      "back": "main screen",
+      "why": "Names the destination a chevron-only back button returns to, so it reads sensibly heard aloud with no visual context."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "所有網站",
+      "back": "all sites",
+      "why": "Same fixed scope term as app.rules.grouping.everywhere, kept consistent across surfaces."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "個別網站",
+      "back": "individual sites",
+      "why": "Same fixed scope term as app.rules.grouping.by_site."
+    },
+    "ext.rules.empty": {
+      "s": "沒有規則",
+      "back": "no rules",
+      "why": "Terse single-row placeholder for either section."
+    },
+    "ext.action.allow": {
+      "s": "允許",
+      "back": "allow",
+      "why": "Simpler context than allow_here/allow_everywhere since scope is already fixed by the section the row sits in."
+    },
+    "ext.action.block": {
+      "s": "封鎖",
+      "back": "block",
+      "why": "Same simplification as action.allow."
+    },
+    "ext.action.clear": {
+      "s": "恢復預設",
+      "back": "restore default",
+      "why": "Same action and wording as app.rules.row.use_default, phrased for the popup's tighter menu."
+    },
+    "ext.popup.settings_heading": {
+      "s": "設定",
+      "back": "settings",
+      "why": "Matches Apple's own term, reused as the popup's nav row and that screen's own header."
+    },
+    "ext.settings.guard_label": {
+      "s": "防護",
+      "back": "guard",
+      "why": "Same one-word root term as app.settings.guard_toggle, used for both the visible row and its sr-only switch label."
+    },
+    "ext.settings.guard_on": {
+      "s": "開啟",
+      "back": "on",
+      "why": "Short state word sized to sit as a switch's own state name."
+    },
+    "ext.settings.guard_off": {
+      "s": "關閉",
+      "back": "off",
+      "why": "Clear opposite of 開啟."
+    },
+    "ext.settings.mode_heading": {
+      "s": "防護範圍",
+      "back": "guard scope",
+      "why": "Same wording as app.settings.mode_heading for the same underlying setting."
+    },
+    "ext.settings.mode_watched": {
+      "s": "只防護你開啟的網站",
+      "back": "only guard you-opened sites",
+      "why": "Same wording as app.settings.mode_watched, kept consistent across the popup and the app."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "自動防護所有網站",
+      "back": "automatically guard all sites",
+      "why": "Same wording as app.settings.mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "頁面提示",
+      "back": "page note",
+      "why": "Same term as app.settings.banner_toggle for the same underlying feature."
+    },
+    "ext.action.report": {
+      "s": "回報問題",
+      "back": "report problem",
+      "why": "Names opening a pre-filled issue report; nothing is sent until the person submits it themselves."
+    }
+  }
+}

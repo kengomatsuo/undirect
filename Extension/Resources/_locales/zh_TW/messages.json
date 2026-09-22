@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "防止網站劫持你的點按，把你偷偷開啟新視窗或跳轉到別的網址。",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "防護",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "開啟",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "關閉",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "開啟或關閉這個網站的防護",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "沒有網站可防護",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "開啟網站後，點這裡即可防護。",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "沒有頁面可以防護",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "所有網站的防護已在設定中開啟",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "防護已在設定中關閉",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "防護範圍",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "只防護你開啟的網站",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "自動防護所有網站",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "防護關閉中，本頁面沒有記錄",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "本頁面",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "本頁面目前沒有偵測到任何嘗試",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "目前沒有項目",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "封鎖 $COUNT$ 次",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "封鎖 $COUNT$ 次",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "共記錄 $COUNT$ 次",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "共記錄 $COUNT$ 次",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "出現 $COUNT$ 次",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "出現 $COUNT$ 次",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "內建修正",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "已封鎖",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "已允許",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "（僅此網站）",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "（所有網站）",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "（依預設）",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "允許此網站",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "允許所有網站",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "封鎖此網站",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "封鎖所有網站",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "沒有規則時的預設動作",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "預設封鎖",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "預設允許",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "這個網站的安全性設定擋下部分防護程式，此頁面的保護並不完整。",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "隱形點擊層",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "透明覆蓋層",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "假造點擊",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "快顯視窗",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "隱藏表單送出",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "連結中途調包",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "返回後遭劫持",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "同頁跨站導向",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "偷開新分頁",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "已在網路層攔截",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "網址本身含返回路徑",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "視窗有指定尺寸",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "假借了這次點按",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "沒有規則，依預設放行",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "由網站自身程式開啟",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "規則",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "主畫面",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "所有網站",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "個別網站",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "沒有規則",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "允許",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "封鎖",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "恢復預設",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "設定",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "頁面提示",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "回報問題",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "點一下防護此網站",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "沒有網站可以防護",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "此網站防護中",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "此網站防護已開啟，關閉後頁面會重新載入。",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "此網站防護已關閉，開啟後頁面會重新載入。",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "已移除",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}

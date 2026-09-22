@@ -1,0 +1,600 @@
+{
+  "locale": "hi",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "एक्सटेंशन बंद है",
+      "back": "Extension is off",
+      "why": "Plain state, matches Apple's on/off phrasing, no instruction leaking in from the button below."
+    },
+    "app.setup.title_failed": {
+      "s": "स्थिति की जांच नहीं हो सकी",
+      "back": "Status's check could-not happen",
+      "why": "Hedged, not 'it is off' — reads as a failed check, distinct from the default title."
+    },
+    "app.setup.detail_default": {
+      "s": "सुरक्षा चालू होते ही कोई साइट आपके क्लिक पर कब्ज़ा नहीं कर पाएगी।",
+      "back": "Protection turning-on as-soon-as, no site your click on hijack not will-be-able-to-do.",
+      "why": "One sentence, the whole pitch — verb-final, no slogan register."
+    },
+    "app.setup.detail_failed": {
+      "s": "इस बार Safari से जवाब नहीं मिला। एक्सटेंशन चालू करते ही ऐप खुद जान जाएगा।",
+      "back": "This time Safari from answer not got. Extension turning-on as-soon-as app itself will-know.",
+      "why": "Two plain clauses, no error code, reassures without asking the person to come back and check."
+    },
+    "app.setup.open_button": {
+      "s": "एक्सटेंशन सेटिंग्स खोलें",
+      "back": "Extension settings open",
+      "why": "One verb, works verbatim on both the setup screen and the welcome sheet."
+    },
+    "app.welcome.heading": {
+      "s": "Undirect में स्वागत है",
+      "back": "Undirect in welcome is",
+      "why": "Warmer register, the one place allowed it — a first hello, not a status line."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "अदृश्य परत",
+      "back": "Invisible layer",
+      "why": "Two concrete nouns, no marketing gloss."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "कोई अदृश्य परत असली बटन पर बिछकर आपका टैप कहीं और भेज सकती है।",
+      "back": "Some invisible layer real button on lying-over your tap somewhere else can-send.",
+      "why": "Describes what the person would see happen, not the DOM mechanism."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "बदलता लिंक",
+      "back": "Changing link",
+      "why": "Names the trick in two words, mirrors the invisible-layer title's shape."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "दबाने और छोड़ने के बीच कुछ पेज लिंक का पता बदल देते हैं।",
+      "back": "Pressing and releasing between, some pages link's address change give.",
+      "why": "States the press/release gap plainly, no dash needed in Hindi."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "अनचाही विंडो",
+      "back": "Uninvited window",
+      "why": "Two words, matches the row's other titles."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "सुरक्षा के साथ नया टैब सिर्फ़ वहीं खुलेगा, जहां आपने टैप किया।",
+      "back": "Protection with, new tab only there-only will-open, where you tapped.",
+      "why": "Written as a positive promise, not a description of the trick — matches the brief's says field."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "हर गंतव्य पर नज़र",
+      "back": "Every destination on eye",
+      "why": "Names the rule-list feature: everything is tracked, not only what got caught."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "हर गंतव्य की अलग एंट्री बनती है, जिसे आप यहां या हर जगह के लिए तय कर सकते हैं।",
+      "back": "Every destination's separate entry forms, which you here or everywhere for decide can.",
+      "why": "Names both scopes (here / everywhere) in one clause, kept under budget."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "एक टैप, एक साइट",
+      "back": "One tap, one site",
+      "why": "Catchy two-part phrase naming the per-site mechanism, matches the row's tone rather than a technical mode name."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Safari के टूलबार में Undirect बटन दबाकर उस साइट की सुरक्षा चालू करें।",
+      "back": "Safari's toolbar in Undirect button pressing that site's protection turn-on.",
+      "why": "States the exact mechanism: the toolbar button, this site only."
+    },
+    "app.nav.guarded_sites": {
+      "s": "सुरक्षित साइटें",
+      "back": "Protected sites",
+      "why": "Two words, fits a narrow sidebar column and works equally as a nav title."
+    },
+    "app.nav.settings": {
+      "s": "सेटिंग्स",
+      "back": "Settings",
+      "why": "Apple's own Hindi term for this screen, not a synonym."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated like any other app's own name."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "हर जगह",
+      "back": "Every place",
+      "why": "Reads naturally both as a short sidebar item and as that pane's own title."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "साइट अनुसार",
+      "back": "Site according-to",
+      "why": "Clear opposite of 'हर जगह' when the two sit side by side."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "एक्सटेंशन से अभी संपर्क नहीं",
+      "back": "Extension from yet contact not",
+      "why": "A wiring/first-contact state, kept distinct from the 'list is genuinely empty' title below."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Safari में कोई भी पेज खोलें, सूची अपने आप भर जाएगी।",
+      "back": "Safari in any page open, list on-its-own will-fill.",
+      "why": "One simple fix, no setting to change."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "कोई नियम नहीं",
+      "back": "No rule not",
+      "why": "Plain, short — the list is connected but genuinely empty."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "नियम तभी बनता है जब आप कोई फ़ैसला लेते हैं।",
+      "back": "Rule only-then forms when you some decision take.",
+      "why": "Explains a rule is created by a decision, not merely by the guard seeing something."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "अब तक %lld कोशिशें रोकी गईं",
+      "back": "So far %lld attempts stopped were",
+      "why": "One cumulative lifetime figure; %lld kept exactly as named."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "ब्लॉक",
+      "back": "Block",
+      "why": "Kept as the common borrowed tech term, the way Hindi UI usually keeps it."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "स्वीकृत",
+      "back": "Approved",
+      "why": "Clear opposite of 'ब्लॉक', common in Hindi UI for a granted state."
+    },
+    "app.rules.row.action_allow": {
+      "s": "अनुमति दें",
+      "back": "Permission give",
+      "why": "Imperative verb form, distinct from the noun/state word 'स्वीकृत' shown as current state."
+    },
+    "app.rules.row.action_block": {
+      "s": "ब्लॉक करें",
+      "back": "Block do",
+      "why": "Imperative counterpart to 'अनुमति दें', shown only when the row is currently allowed."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "यहां से ब्लॉक या अनुमति चुनें",
+      "back": "Here from block or permission choose",
+      "why": "Describes the control under the pointer in one short phrase."
+    },
+    "app.rules.row.use_default": {
+      "s": "नियम हटाएं",
+      "back": "Rule remove",
+      "why": "Names what actually happens — deleting the explicit rule — rather than a vaguer 'reset'."
+    },
+    "app.watched.empty.title": {
+      "s": "कोई साइट सुरक्षित नहीं",
+      "back": "No site protected not",
+      "why": "States plainly that nothing has been switched on yet."
+    },
+    "app.watched.empty.detail": {
+      "s": "जो साइट परेशान करे, वहां Safari के टूलबार में Undirect बटन दबाएं।",
+      "back": "Which site bothers, there Safari's toolbar in Undirect button press.",
+      "why": "Tells exactly how to guard the first site, tied to the actual trigger (a misbehaving site)."
+    },
+    "app.watched.footer": {
+      "s": "नई साइट जोड़ने का तरीका सिर्फ़ Safari का टूलबार बटन है।",
+      "back": "New site adding's way only Safari's toolbar button is.",
+      "why": "Reminds the person this screen itself cannot add a site."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "सुरक्षित",
+      "back": "Protected",
+      "why": "Read-only status word, iOS has no Stop button here."
+    },
+    "app.watched.row.stop_button": {
+      "s": "रोकें",
+      "back": "Stop",
+      "why": "One short imperative verb for a small trailing row button."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "इस साइट की सुरक्षा बंद करें",
+      "back": "This site's protection off do",
+      "why": "Describes exactly what the button under the pointer does."
+    },
+    "app.settings.guard_toggle": {
+      "s": "सुरक्षा",
+      "back": "Protection",
+      "why": "The master switch's own name, also the vocabulary's 'guard' concept used consistently throughout the app."
+    },
+    "app.settings.state_on": {
+      "s": "चालू",
+      "back": "On",
+      "why": "Generic on-state word, reused for more than one setting on this screen."
+    },
+    "app.settings.state_off": {
+      "s": "बंद",
+      "back": "Off",
+      "why": "Clear opposite of 'चालू'."
+    },
+    "app.settings.mode_heading": {
+      "s": "सुरक्षा का दायरा",
+      "back": "Protection's scope",
+      "why": "Section heading introducing the watched-sites-vs-everywhere choice."
+    },
+    "app.settings.mode_watched": {
+      "s": "आपकी चुनी साइटें",
+      "back": "Your chosen sites",
+      "why": "Described from the person's own point of view, not as a technical mode name."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "हर साइट",
+      "back": "Every site",
+      "why": "Short opposite of 'आपकी चुनी साइटें'."
+    },
+    "app.settings.banner_toggle": {
+      "s": "पेज पर नोट दिखाएं",
+      "back": "Page on note show",
+      "why": "Names the on-page banner, separate from the popup's own record."
+    },
+    "app.settings.policy_heading": {
+      "s": "बिना नियम वाले गंतव्यों की डिफ़ॉल्ट नीति",
+      "back": "Without-rule destinations' default policy",
+      "why": "Introduces the choice for a destination that has no rule at all yet."
+    },
+    "app.settings.policy_block": {
+      "s": "ब्लॉक करें",
+      "back": "Block do",
+      "why": "Short imperative picker option, matches the row-menu action wording elsewhere."
+    },
+    "app.settings.policy_allow": {
+      "s": "अनुमति दें",
+      "back": "Permission give",
+      "why": "Clear opposite of 'ब्लॉक करें'."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, listed as-is in Safari's Extensions settings and the App Store."
+    },
+    "ext.meta.description": {
+      "s": "Undirect उन पेजों को रोकता है जो आपका क्लिक इस्तेमाल कर आपको कहीं और भेज देते हैं।",
+      "back": "Undirect those pages stops which your click using you somewhere else send give.",
+      "why": "One sentence for a first-time reader, plain and concrete, slightly more explanatory register."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name, used only when no actual site name is available."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "यह साइट अभी सुरक्षित है",
+      "back": "This site right-now protected is",
+      "why": "Tooltip confirming guarding is active on the tab in front of the person."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "सुरक्षा चालू करने के लिए दबाएं",
+      "back": "Protection turn-on for-purpose-of press",
+      "why": "Doubles as the call to action — pressing the icon is how guarding starts here."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "यहां सुरक्षित करने को कुछ नहीं",
+      "back": "Here protect to-do something not",
+      "why": "Explains briefly there is nothing to guard on this tab."
+    },
+    "ext.popup.no_site_title": {
+      "s": "कोई वेबसाइट नहीं खुली",
+      "back": "No website not open",
+      "why": "Popup headline for the no-website state."
+    },
+    "ext.popup.no_site_body": {
+      "s": "कोई वेबसाइट खोलें, फिर यहां दबाकर सुरक्षित करें।",
+      "back": "Some website open, then here pressing protect do.",
+      "why": "'यहां' keeps the self-reference to the toolbar button the popup hangs off, same as the source's 'here'."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "इस साइट के लिए सुरक्षा स्विच",
+      "back": "This site for protection switch",
+      "why": "Screen-reader-only label naming what the switch controls, since the visible row already shows the site name."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "यहां कोई पेज नहीं है",
+      "back": "Here no page not is",
+      "why": "Short reason the per-site switch is disabled: nothing here to guard."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "सेटिंग्स में पहले से हर जगह सुरक्षा चालू है",
+      "back": "Settings in already every place protection on is",
+      "why": "Explains the switch is redundant because everywhere-mode is already on elsewhere."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "सुरक्षा पूरी तरह बंद है",
+      "back": "Protection completely off is",
+      "why": "Explains the switch is disabled by the master switch, not by anything about this site."
+    },
+    "ext.popup.watch_on": {
+      "s": "सुरक्षा चालू है, बंद करने पर पेज रीलोड होगा।",
+      "back": "Protection on is, off doing on page reload will-happen.",
+      "why": "Confirms current state and warns of the reload, matching the off variant's shape."
+    },
+    "ext.popup.watch_off": {
+      "s": "सुरक्षा बंद है, चालू करने पर पेज रीलोड होगा।",
+      "back": "Protection off is, on doing on page reload will-happen.",
+      "why": "Direct before/after counterpart to watch_on, same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "यह पेज",
+      "back": "This page",
+      "why": "Heads the section listing what the current tab specifically reached for."
+    },
+    "ext.popup.page_off": {
+      "s": "सुरक्षा बंद है, इसलिए कुछ दर्ज नहीं हो रहा।",
+      "back": "Protection off is, therefore something recorded not happening.",
+      "why": "Dead key as of 2026-09-22 per the brief; written speculatively in the same voice as the other page-section states."
+    },
+    "ext.popup.page_quiet": {
+      "s": "इस पेज ने अब तक कहीं और पहुंचने की कोशिश नहीं की।",
+      "back": "This page has so-far somewhere else reach's attempt not made.",
+      "why": "States plainly that nothing on this page has reached outside so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "अभी सूची में कुछ नहीं है।",
+      "back": "Right-now list in something not is.",
+      "why": "Dead key per the brief; treated as a near-synonym of page_quiet, worded around an empty list rather than a quiet page."
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld रोकी गई",
+      "back": "%lld stopped was",
+      "why": "Singular form (count is always 1); pairs with stopped_other for a natural set."
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld रोकी गईं",
+      "back": "%lld stopped were",
+      "why": "Plural agreement (कोशिशें) for 0 or 2+; pairs with stopped_one."
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld मिली",
+      "back": "%lld found",
+      "why": "Singular total-recorded count, broader than 'stopped' — covers blocked and allowed together."
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld मिलीं",
+      "back": "%lld found",
+      "why": "Plural form of seen_one."
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld बार",
+      "back": "%lld time",
+      "why": "'बार' (times) doesn't inflect for count in Hindi, so this reads naturally for the singular case too."
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld बार",
+      "back": "%lld times",
+      "why": "Same word as tries_one — Hindi's counter word is invariant, unlike English's times/time split."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "स्वचालित सुधार",
+      "back": "Automatic fix",
+      "why": "Reads as the first half of 'स्वचालित सुधार: <fix name>', matching the code's colon-joined composition."
+    },
+    "ext.state.blocked": {
+      "s": "ब्लॉक",
+      "back": "Block",
+      "why": "Same reused word as app.rules.row.state_blocked; combines with a following scope fragment written to lead with a comma (see ext.scope.*), since Hindi would otherwise put the scope word first."
+    },
+    "ext.state.allowed": {
+      "s": "अनुमति",
+      "back": "Permission",
+      "why": "Kept as a single word so it combines the same way as 'ब्लॉक' with the scope fragments."
+    },
+    "ext.state.removed": {
+      "s": "हटाया गया",
+      "back": "Removed was",
+      "why": "One-word status for a trap taken off the page directly — no destination to rule on here."
+    },
+    "ext.scope.here": {
+      "s": ", इस साइट पर",
+      "back": ", this site on",
+      "why": "Leads with a comma because Hindi normally puts the location before the verb ('इस साइट पर ब्लॉक'); the code concatenates verdict-then-scope, so the comma bridges the reversed order into a readable telegraphic badge rather than a grammatical sentence."
+    },
+    "ext.scope.everywhere": {
+      "s": ", हर जगह",
+      "back": ", every place",
+      "why": "Same comma-bridge compromise as scope.here, for the everywhere case."
+    },
+    "ext.scope.default": {
+      "s": ", डिफ़ॉल्ट से",
+      "back": ", default from",
+      "why": "Same comma-bridge pattern; 'डिफ़ॉल्ट से' reads as 'by default' following the verdict word."
+    },
+    "ext.action.allow_here": {
+      "s": "यहां अनुमति दें",
+      "back": "Here permission give",
+      "why": "'यहां' (here) reads naturally as the current site in this already-open popup, matching the app's own action_allow verb."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "हर जगह अनुमति दें",
+      "back": "Every place permission give",
+      "why": "Direct everywhere-scoped counterpart to allow_here."
+    },
+    "ext.action.block_here": {
+      "s": "यहां ब्लॉक करें",
+      "back": "Here block do",
+      "why": "Here-scoped block option, mirrors allow_here's shape."
+    },
+    "ext.action.block_everywhere": {
+      "s": "हर जगह ब्लॉक करें",
+      "back": "Every place block do",
+      "why": "Everywhere-scoped block option, mirrors allow_everywhere's shape."
+    },
+    "ext.popup.policy_heading": {
+      "s": "बिना नियम वाले गंतव्यों की डिफ़ॉल्ट नीति",
+      "back": "Without-rule destinations' default policy",
+      "why": "Same concept as the app's settings screen equivalent, written fresh for this separate translation unit."
+    },
+    "ext.policy.block": {
+      "s": "ब्लॉक करें",
+      "back": "Block do",
+      "why": "Matches the app-side policy_block wording for a consistent reading across both."
+    },
+    "ext.policy.allow": {
+      "s": "अनुमति दें",
+      "back": "Permission give",
+      "why": "Matches the app-side policy_allow wording."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "इस पेज की सुरक्षा सेटिंग्स के कारण सुरक्षा का एक हिस्सा यहां काम नहीं कर रहा।",
+      "back": "This page's security settings because-of protection's one part here work not doing.",
+      "why": "Names the page's own policy as the cause, not a bug or a setting the person needs to fix."
+    },
+    "ext.kind.click_catcher": {
+      "s": "अदृश्य क्लिक-जाल",
+      "back": "Invisible click-trap",
+      "why": "Short tag naming the specific trick: an invisible clickable trap."
+    },
+    "ext.kind.overlay": {
+      "s": "पारदर्शी परत",
+      "back": "Transparent layer",
+      "why": "Broader than the click-trap tag — any see-through element over the page."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "नकली क्लिक",
+      "back": "Fake click",
+      "why": "Names a click the page's own script made up, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "पॉप-अप विंडो",
+      "back": "Pop-up window",
+      "why": "Kept as the common borrowed term, matches window_open in every app that ships Hindi."
+    },
+    "ext.kind.form_submit": {
+      "s": "छिपा फ़ॉर्म सबमिट",
+      "back": "Hidden form submit",
+      "why": "Names the hidden-form mechanism distinctly from a normal link or window call."
+    },
+    "ext.kind.href_swap": {
+      "s": "लिंक का बदला पता",
+      "back": "Link's changed address",
+      "why": "Names the mid-press address swap specifically."
+    },
+    "ext.kind.back_hijack": {
+      "s": "बैक के बाद रीडायरेक्ट",
+      "back": "Back after redirect",
+      "why": "Names a navigation fired right after the person's own back gesture."
+    },
+    "ext.kind.redirect": {
+      "s": "क्लिक हाईजैक करने वाला रीडायरेक्ट",
+      "back": "Click hijack doing redirect",
+      "why": "Names the core same-tab redirect trick that rides the person's own press."
+    },
+    "ext.kind.pop_tab": {
+      "s": "छिपकर खुला नया टैब",
+      "back": "Hiding-and opened new tab",
+      "why": "Names a tab-under style new tab, distinct from a plain pop-up window."
+    },
+    "ext.kind.network_rule": {
+      "s": "नेटवर्क स्तर पर रोक",
+      "back": "Network level on block",
+      "why": "Names the earliest, strongest kind of block — stopped before it ever reached the page."
+    },
+    "ext.reason.way_back": {
+      "s": "पता वापसी का रास्ता दिखाता है",
+      "back": "Address return's path shows",
+      "why": "Explains the redirect's own address carried a way back to the original site."
+    },
+    "ext.reason.sized": {
+      "s": "तय साइज़ में खुली विंडो",
+      "back": "Set size in opened window",
+      "why": "Explains the window asked for a deliberate size, not a bare full tab."
+    },
+    "ext.reason.took_press": {
+      "s": "आपका क्लिक हड़प लिया",
+      "back": "Your click seized took",
+      "why": "Names the core hijack pattern in one vivid, short phrase, within the tight character budget."
+    },
+    "ext.reason.default_allow": {
+      "s": "कोई नियम नहीं था",
+      "back": "No rule not was",
+      "why": "Explains the destination went through only because nothing said to stop it."
+    },
+    "ext.reason.own_code": {
+      "s": "साइट के अपने कोड ने खोली",
+      "back": "Site's own code opened",
+      "why": "Explains the window was opened by the site's own script, which counts as the site vouching for it."
+    },
+    "ext.popup.rules_link": {
+      "s": "नियम",
+      "back": "Rules",
+      "why": "One word, reused as the nav row, the screen's own header, and the back button's accessible label."
+    },
+    "ext.popup.back_link": {
+      "s": "वापस",
+      "back": "Back",
+      "why": "Standard back-button accessibility label, understood with no visual context."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "हर जगह",
+      "back": "Every place",
+      "why": "Matches app.rules.grouping.everywhere for a consistent reading between app and popup."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "साइट अनुसार",
+      "back": "Site according-to",
+      "why": "Matches app.rules.grouping.by_site."
+    },
+    "ext.rules.empty": {
+      "s": "कुछ नहीं",
+      "back": "Something not",
+      "why": "Terse single-row placeholder, shorter than the app-side empty title since this sits inside a compact list."
+    },
+    "ext.action.allow": {
+      "s": "अनुमति दें",
+      "back": "Permission give",
+      "why": "Simpler context than the here/everywhere variants — scope is already fixed by which section the row sits in."
+    },
+    "ext.action.block": {
+      "s": "ब्लॉक करें",
+      "back": "Block do",
+      "why": "Counterpart to action_allow within the same row menu."
+    },
+    "ext.action.clear": {
+      "s": "नियम हटाएं",
+      "back": "Rule remove",
+      "why": "Same underlying action as app.rules.row.use_default, phrased the same way for a consistent reading."
+    },
+    "ext.popup.settings_heading": {
+      "s": "सेटिंग्स",
+      "back": "Settings",
+      "why": "Matches app.nav.settings; reused as both the nav row and this sub-screen's own header."
+    },
+    "ext.settings.guard_label": {
+      "s": "सुरक्षा",
+      "back": "Protection",
+      "why": "Matches app.settings.guard_toggle; used both as the visible row text and the switch's sr-only label."
+    },
+    "ext.settings.guard_on": {
+      "s": "चालू",
+      "back": "On",
+      "why": "Generic on-word, specific to the guard switch in this context."
+    },
+    "ext.settings.guard_off": {
+      "s": "बंद",
+      "back": "Off",
+      "why": "Clear opposite of guard_on."
+    },
+    "ext.settings.mode_heading": {
+      "s": "सुरक्षा का दायरा",
+      "back": "Protection's scope",
+      "why": "Matches app.settings.mode_heading for a consistent reading across app and popup."
+    },
+    "ext.settings.mode_watched": {
+      "s": "आपकी चुनी साइटें",
+      "back": "Your chosen sites",
+      "why": "Matches app.settings.mode_watched."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "हर साइट",
+      "back": "Every site",
+      "why": "Matches app.settings.mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "पेज नोट",
+      "back": "Page note",
+      "why": "Tighter than the app-side version (same setting) to fit the popup's smaller toggle row."
+    },
+    "ext.action.report": {
+      "s": "समस्या बताएं",
+      "back": "Problem tell",
+      "why": "Names the action plainly: opens a pre-filled report the person still has to submit themselves."
+    }
+  }
+}

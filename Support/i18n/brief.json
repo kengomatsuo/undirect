@@ -1,0 +1,1495 @@
+{
+  "product": "Undirect is a Safari web extension for Mac, iPhone and iPad, with a small\ncompanion app. It stops the tricks pages use to take a click that was not meant\nfor them: an invisible layer laid over the page, a link whose destination\nchanges between the press and the release, a pop-up window or new tab opened to\nsomewhere else, and a same-tab redirect fired the moment a press lands. The\nguard only watches sites the person has switched it on for, one at a time, from\nthe Undirect button in Safari's toolbar. Every outside destination a watched\npage reaches for becomes a row the person can allow or block, for that one site\nor for every site. The Mac app lets them review and edit those rows; the\niPhone/iPad app can only show them and turn a site's watching off, because iOS\ngives a container app no way to message its own extension. The audience is\nordinary Safari users protecting their own browsing, not IT admins, so the tone\nthroughout is plain, calm and matter-of-fact: it reports what happened and what\nthe person can do next, never alarms them or explains how the trick works\ntechnically.",
+  "vocabulary": [
+    {
+      "concept": "guard",
+      "meaning": "the extension's protection itself, as a thing that can be on or off (master switch), and as the ongoing act of watching a page"
+    },
+    {
+      "concept": "guarded site / watched site",
+      "meaning": "a website the person has individually switched the guard on for, from the Undirect toolbar button; the guard only runs there (unless the 'every site' mode is chosen)"
+    },
+    {
+      "concept": "destination",
+      "meaning": "the other website a link, window or redirect was trying to send the person to; identified by its base domain, not the full URL"
+    },
+    {
+      "concept": "rule",
+      "meaning": "a stored decision (allow or block) for one destination, scoped either to a single site or to every site; a destination with no rule falls back to the default policy"
+    },
+    {
+      "concept": "scope: here vs. everywhere",
+      "meaning": "whether a rule applies only on the current site ('here') or on every guarded site ('everywhere'); a rule set for one site wins over one set everywhere, which wins over the default"
+    },
+    {
+      "concept": "block / allow",
+      "meaning": "the two verdicts a rule (or the default policy) can hold for a destination: block stops it, allow lets it through"
+    },
+    {
+      "concept": "default policy",
+      "meaning": "what happens to a destination that has no rule at all yet; a global setting, itself either 'block' or 'allow'"
+    },
+    {
+      "concept": "press",
+      "meaning": "the user's own tap or click; the guard's job is making sure a press only ever does what the person aimed it at, never something a page substituted afterward"
+    },
+    {
+      "concept": "site vs. page",
+      "meaning": "'site' is the whole domain the guard is switched on or off for; 'page' is the one tab currently open, whose specific attempts are listed separately from the site-wide rule list"
+    },
+    {
+      "concept": "attempt / stopped",
+      "meaning": "one instance of a page trying to hijack a press (of any kind - overlay, swapped link, popup, redirect); 'stopped' counts how many were blocked, distinct from how many were merely seen"
+    },
+    {
+      "concept": "kind",
+      "meaning": "which specific trick was used for one attempt - e.g. an invisible click-catcher, a link swapped mid-press, a pop-up window, a redirect - shown as a short label per row"
+    },
+    {
+      "concept": "note in the page / page note",
+      "meaning": "an optional small on-page banner the guard can draw when it stops something, separate from the popup; off by default"
+    },
+    {
+      "concept": "session",
+      "meaning": "the extension background page's own lifetime in memory; on iOS it can be unloaded at any time, so anything that must survive is written to disk rather than kept only in memory"
+    },
+    {
+      "concept": "toolbar button",
+      "meaning": "the Undirect icon in Safari's toolbar; pressing it on an off site turns guarding on for that site (and reloads it); its icon and tooltip reflect on/off/no-site state"
+    }
+  ],
+  "entries": [
+    {
+      "id": "app.setup.title_default",
+      "surface": "app",
+      "en_key": "Turn on Undirect in Safari",
+      "file": "App/SetupView.swift",
+      "role": "title",
+      "screen": "Setup screen (ContentUnavailableView), shown before the extension is on",
+      "moment": "The person opened the app and the extension is not yet switched on in Safari; the screen is the very first thing they see.",
+      "says": "Name, as the screen's headline, the one thing missing before the app can do anything: the extension is not yet switched on in Safari. Not an instruction to act (the button below already says that) - a plain statement of the current state.",
+      "budget": "ContentUnavailableView title, ~2-4 words, one line at large system title size",
+      "register": "The app's own voice describing its own state to the person who owns the device, in the same register macOS System Settings and iOS Settings use: plain, factual, second person implied rather than stated.",
+      "notes": "Paired below with app.setup.open_button, which is the actual call to action; this title should not duplicate that button's wording."
+    },
+    {
+      "id": "app.setup.title_failed",
+      "surface": "app",
+      "en_key": "Undirect may not be on",
+      "file": "App/SetupView.swift",
+      "role": "title",
+      "screen": "Setup screen, shown when Safari would not confirm the extension's state",
+      "moment": "The app asked Safari whether the extension is enabled and got an error back instead of a yes/no answer, rather than a normal not-yet-enabled state.",
+      "says": "State, hedged rather than certain, that the app could not confirm the extension is running - it may be off, or the check itself may just have failed. Must read as distinct from the plain not-yet-on state, without sounding alarming.",
+      "budget": "ContentUnavailableView title, ~2-5 words, one line",
+      "register": "The app's own voice describing its own state to the person who owns the device, in the same register macOS System Settings and iOS Settings use: plain, factual, second person implied rather than stated.",
+      "notes": "Distinguish sharply from app.setup.title_default: this is 'we could not tell', not 'it is off'."
+    },
+    {
+      "id": "app.setup.detail_default",
+      "surface": "app",
+      "en_key": "Guarded sites no longer steal your clicks.",
+      "file": "App/SetupView.swift",
+      "role": "body",
+      "screen": "Setup screen, description under the default title",
+      "moment": "Same first-launch moment as the default title; this is the one supporting sentence under it, the app's entire pitch before the person has done anything.",
+      "says": "State the payoff of turning the extension on, in one sentence: once a site is guarded, it can no longer hijack the person's clicks/taps. This is the app's whole value proposition condensed to one line - plain and concrete, not a slogan.",
+      "budget": "ContentUnavailableView description, one short sentence, ~50-70 chars, wraps to at most 2 lines on iPhone width",
+      "register": "The app's own voice describing its own state to the person who owns the device, in the same register macOS System Settings and iOS Settings use: plain, factual, second person implied rather than stated."
+    },
+    {
+      "id": "app.setup.detail_failed",
+      "surface": "app",
+      "en_key": "Safari did not answer. Switching it on there is picked up automatically.",
+      "file": "App/SetupView.swift",
+      "role": "body",
+      "screen": "Setup screen, description under the failed title",
+      "moment": "The extension-status check errored out; the person is looking at a screen that cannot say for certain whether they need to do anything, right after they may have already turned the extension on in Safari's own settings.",
+      "says": "Explain, without technical jargon or an error code, that the app simply could not get an answer from Safari this one time, and reassure that if they do switch the extension on in Safari, the app will notice on its own - no need to come back and refresh anything.",
+      "budget": "ContentUnavailableView description, two clauses, ~70-90 chars, wraps to at most 2 lines on iPhone width",
+      "register": "The app's own voice describing its own state to the person who owns the device, in the same register macOS System Settings and iOS Settings use: plain, factual, second person implied rather than stated.",
+      "notes": "Must not mention any raw system error (e.g. an SFErrorDomain code) - the app deliberately hides that and speaks in plain terms instead."
+    },
+    {
+      "id": "app.setup.open_button",
+      "surface": "app",
+      "en_key": "Open Safari Extensions",
+      "file": "App/SetupView.swift",
+      "role": "button",
+      "screen": "Setup screen and Welcome sheet, the one prominent action button",
+      "moment": "The person is looking at either the pre-launch setup screen or the first-run welcome sheet, and this full-width button is the only thing to press; it opens Safari's own Extensions settings pane.",
+      "says": "Name the single action this button performs: open Safari's Extensions preferences/settings, where the person switches Undirect on. Must work verbatim as a button on both the setup screen and the welcome sheet - do not tie the wording to either screen's specific framing.",
+      "budget": "Prominent full-width button, ~24-30 chars, one line, no wrapping",
+      "register": "The app's own voice describing its own state to the person who owns the device, in the same register macOS System Settings and iOS Settings use: plain, factual, second person implied rather than stated.",
+      "notes": "Shared component (OpenExtensionsButton) used from two screens (SetupView and WelcomeView) - one string must fit both contexts."
+    },
+    {
+      "id": "app.welcome.heading",
+      "surface": "app",
+      "en_key": "Welcome to Undirect",
+      "file": "App/WelcomeView.swift",
+      "role": "title",
+      "screen": "Welcome sheet, very first screen on first launch",
+      "moment": "This is the literal first thing a brand-new user sees after installing the app and opening it for the first time, before anything else has loaded.",
+      "says": "A short, warm first-launch heading that welcomes the person to the app by its own name. This is the one place in the whole product allowed a slightly warmer, more welcoming register than the rest, which stays plain and factual.",
+      "budget": "Large title text, ~2-4 words, one line",
+      "register": "Warmer than the rest of the app - a first hello, not a status line."
+    },
+    {
+      "id": "app.welcome.feature.invisible_layers.title",
+      "surface": "app",
+      "en_key": "Invisible layers",
+      "file": "App/WelcomeView.swift",
+      "role": "title",
+      "screen": "Welcome sheet, one row of a 5-item feature list explaining what the app catches",
+      "moment": "The person is scanning a short list of the specific tricks the app defends against, each row an icon + short headline + one-sentence detail, before switching the extension on.",
+      "says": "Name the trick where a page places something transparent over itself to intercept a press aimed at what the person can actually see underneath.",
+      "budget": "Feature-row headline, ~2-3 words, one line",
+      "register": "Plain, concrete nouns naming a specific trick - not marketing language.",
+      "notes": "Paired with the detail sentence below it in the same row; icon: rectangle.on.rectangle.slash."
+    },
+    {
+      "id": "app.welcome.feature.invisible_layers.detail",
+      "surface": "app",
+      "en_key": "A page can cover itself to catch a press meant for something else.",
+      "file": "App/WelcomeView.swift",
+      "role": "body",
+      "screen": "Welcome sheet, same feature row, the explanatory sentence under the headline",
+      "moment": "Same row as the headline above it; this sentence is the only explanation the person gets of what that specific trick looks like from their side.",
+      "says": "Describe, in one plain sentence, that an invisible layer can sit over a page so a press meant for one thing on screen actually lands on something else entirely.",
+      "budget": "Feature-row detail, one sentence, ~50-75 chars, may wrap to 2 lines",
+      "register": "Plain, concrete, describes what the person would experience or see, not the underlying mechanism."
+    },
+    {
+      "id": "app.welcome.feature.swapped_links.title",
+      "surface": "app",
+      "en_key": "Swapped links",
+      "file": "App/WelcomeView.swift",
+      "role": "title",
+      "screen": "Welcome sheet, one row of a 5-item feature list explaining what the app catches",
+      "moment": "The person is scanning a short list of the specific tricks the app defends against, each row an icon + short headline + one-sentence detail, before switching the extension on.",
+      "says": "Name the trick where a link's destination is changed in the instant between the person pressing down and releasing.",
+      "budget": "Feature-row headline, ~2-3 words, one line",
+      "register": "Plain, concrete nouns naming a specific trick - not marketing language.",
+      "notes": "Paired with the detail sentence below it in the same row; icon: link."
+    },
+    {
+      "id": "app.welcome.feature.swapped_links.detail",
+      "surface": "app",
+      "en_key": "Some pages rewrite a link between the press and the release.",
+      "file": "App/WelcomeView.swift",
+      "role": "body",
+      "screen": "Welcome sheet, same feature row, the explanatory sentence under the headline",
+      "moment": "Same row as the headline above it; this sentence is the only explanation the person gets of what that specific trick looks like from their side.",
+      "says": "Describe, in one plain sentence, that some pages change what a link points to in the brief moment between the press starting and it being released, so the click does not go where it looked like it would.",
+      "budget": "Feature-row detail, one sentence, ~50-75 chars, may wrap to 2 lines",
+      "register": "Plain, concrete, describes what the person would experience or see, not the underlying mechanism."
+    },
+    {
+      "id": "app.welcome.feature.uninvited_windows.title",
+      "surface": "app",
+      "en_key": "Uninvited windows",
+      "file": "App/WelcomeView.swift",
+      "role": "title",
+      "screen": "Welcome sheet, one row of a 5-item feature list explaining what the app catches",
+      "moment": "The person is scanning a short list of the specific tricks the app defends against, each row an icon + short headline + one-sentence detail, before switching the extension on.",
+      "says": "Name the trick of an unwanted pop-up window or new tab opening to a different destination than the one the person actually pressed.",
+      "budget": "Feature-row headline, ~2-3 words, one line",
+      "register": "Plain, concrete nouns naming a specific trick - not marketing language.",
+      "notes": "Paired with the detail sentence below it in the same row; icon: macwindow."
+    },
+    {
+      "id": "app.welcome.feature.uninvited_windows.detail",
+      "surface": "app",
+      "en_key": "A new tab opens only where your press pointed.",
+      "file": "App/WelcomeView.swift",
+      "role": "body",
+      "screen": "Welcome sheet, same feature row, the explanatory sentence under the headline",
+      "moment": "Same row as the headline above it; this sentence is the only explanation the person gets of what that specific trick looks like from their side.",
+      "says": "State, as a promise rather than a description of the trick itself, that with the guard on, a new tab only ever opens to the destination the person's own press was actually aimed at - nothing extra sneaks in alongside it.",
+      "budget": "Feature-row detail, one sentence, ~50-75 chars, may wrap to 2 lines",
+      "register": "Plain, concrete, describes what the person would experience or see, not the underlying mechanism."
+    },
+    {
+      "id": "app.welcome.feature.every_destination.title",
+      "surface": "app",
+      "en_key": "Every destination",
+      "file": "App/WelcomeView.swift",
+      "role": "title",
+      "screen": "Welcome sheet, one row of a 5-item feature list explaining what the app catches",
+      "moment": "The person is scanning a short list of the specific tricks the app defends against, each row an icon + short headline + one-sentence detail, before switching the extension on.",
+      "says": "Name the app's own rule-list feature: every outside destination a guarded page reaches for gets tracked, not just the ones it happens to catch and stop.",
+      "budget": "Feature-row headline, ~2-3 words, one line",
+      "register": "Plain, concrete nouns naming a specific trick - not marketing language.",
+      "notes": "Paired with the detail sentence below it in the same row; icon: checklist."
+    },
+    {
+      "id": "app.welcome.feature.every_destination.detail",
+      "surface": "app",
+      "en_key": "Each one is listed, to allow or block per site or everywhere.",
+      "file": "App/WelcomeView.swift",
+      "role": "body",
+      "screen": "Welcome sheet, same feature row, the explanatory sentence under the headline",
+      "moment": "Same row as the headline above it; this sentence is the only explanation the person gets of what that specific trick looks like from their side.",
+      "says": "Explain that every destination the guard sees gets its own entry the person can review, and that they can choose to allow or block it either just for the current site or for every site.",
+      "budget": "Feature-row detail, one sentence, ~50-75 chars, may wrap to 2 lines",
+      "register": "Plain, concrete, describes what the person would experience or see, not the underlying mechanism."
+    },
+    {
+      "id": "app.welcome.feature.one_site_at_a_time.title",
+      "surface": "app",
+      "en_key": "One site at a time",
+      "file": "App/WelcomeView.swift",
+      "role": "title",
+      "screen": "Welcome sheet, one row of a 5-item feature list explaining what the app catches",
+      "moment": "The person is scanning a short list of the specific tricks the app defends against, each row an icon + short headline + one-sentence detail, before switching the extension on.",
+      "says": "Name how guarding is turned on: per individual site, from a button in Safari, rather than automatically everywhere.",
+      "budget": "Feature-row headline, ~2-3 words, one line",
+      "register": "Plain, concrete nouns naming a specific trick - not marketing language.",
+      "notes": "Paired with the detail sentence below it in the same row; icon: checkmark.shield."
+    },
+    {
+      "id": "app.welcome.feature.one_site_at_a_time.detail",
+      "surface": "app",
+      "en_key": "It guards a site once you press Undirect in Safari there.",
+      "file": "App/WelcomeView.swift",
+      "role": "body",
+      "screen": "Welcome sheet, same feature row, the explanatory sentence under the headline",
+      "moment": "Same row as the headline above it; this sentence is the only explanation the person gets of what that specific trick looks like from their side.",
+      "says": "Explain the mechanism for turning guarding on: pressing the Undirect button in Safari's toolbar while on that specific site switches guarding on for that site.",
+      "budget": "Feature-row detail, one sentence, ~50-75 chars, may wrap to 2 lines",
+      "register": "Plain, concrete, describes what the person would experience or see, not the underlying mechanism."
+    },
+    {
+      "id": "app.nav.guarded_sites",
+      "surface": "app",
+      "en_key": "Guarded sites",
+      "file": "App/ContentView.swift, App/WatchedView.swift",
+      "role": "label",
+      "screen": "Two places: the sidebar row that opens the guarded-sites list (iPad/Mac sidebar, or the iPhone list), and that same screen's own navigation title",
+      "moment": "The person is either scanning the app's sidebar to pick a section, or has already opened the section and is reading its title at the top.",
+      "says": "Name the screen that lists every site currently switched on for guarding. Must work identically as a short sidebar row label (next to a shield icon) and as a page's own navigation title.",
+      "budget": "Sidebar label / nav title, ~2-3 words, one line, must not wrap in a ~190px sidebar column"
+    },
+    {
+      "id": "app.nav.settings",
+      "surface": "app",
+      "en_key": "Settings",
+      "file": "App/ContentView.swift, App/SettingsView.swift",
+      "role": "label",
+      "screen": "Two places: the iOS-only sidebar row for the settings section, and that screen's own navigation title (macOS reaches the same screen from the app's own Settings/Preferences window instead of the sidebar)",
+      "moment": "The person is scanning the sidebar (iOS) or has just opened the settings screen, looking for the app's general options separate from any individual site's rules.",
+      "says": "Name the section that holds the app's general options (the master guard switch, run-everywhere mode, page note, default policy) - the word the platform itself uses for this concept.",
+      "budget": "Sidebar label / nav title, one word, one line",
+      "notes": "Must match Apple's own term for this concept ('Settings' on iOS, 'Settings'/Preferences on macOS) rather than a synonym."
+    },
+    {
+      "id": "app.nav.app_title",
+      "surface": "app",
+      "en_key": "Undirect",
+      "file": "App/ContentView.swift",
+      "role": "title",
+      "screen": "Sidebar column's own navigation title, shown above the section list on iPad/Mac",
+      "moment": "The person sees this at the very top of the sidebar column, above the list of sections (Everywhere, By site, Guarded sites, Settings).",
+      "says": "This is the product's own proper name, used as the sidebar column's title. It is a name, not a phrase to translate for meaning - most languages should keep it as-is unless the product itself is being renamed for that market.",
+      "budget": "Column navigation title, one word",
+      "notes": "Proper noun / brand name. Flag to the writer that this is very likely left untranslated in every locale, same as any other app's own name."
+    },
+    {
+      "id": "app.rules.grouping.everywhere",
+      "surface": "app",
+      "en_key": "Everywhere",
+      "file": "App/RulesModel.swift, App/RulesView.swift",
+      "role": "menu item",
+      "screen": "Sidebar row (and, once selected, that pane's own navigation title) for the list of rules that apply to every guarded site at once",
+      "moment": "The person is choosing between two views of their rule list: rules that apply globally, versus rules scoped to one specific site.",
+      "says": "Name the view/filter showing only the rules that apply on every guarded site at once, as opposed to rules scoped to a single site. Should read naturally both as a short sidebar item and as a page title.",
+      "budget": "Sidebar label / nav title, one word, one line",
+      "notes": "Companion to app.rules.grouping.by_site - the two must read clearly as a contrasting pair when they sit next to each other in the sidebar."
+    },
+    {
+      "id": "app.rules.grouping.by_site",
+      "surface": "app",
+      "en_key": "By site",
+      "file": "App/RulesModel.swift, App/RulesView.swift",
+      "role": "menu item",
+      "screen": "Sidebar row (and nav title) for the list of rules scoped to individual sites, the counterpart to 'Everywhere'",
+      "moment": "Same moment as app.rules.grouping.everywhere - the person is choosing which slice of their rule list to look at.",
+      "says": "Name the view/filter showing only the rules that were scoped to one particular site, as opposed to rules that apply everywhere. Must read as the clear opposite of the 'Everywhere' item beside it.",
+      "budget": "Sidebar label / nav title, ~2 words, one line"
+    },
+    {
+      "id": "app.rules.empty_no_app.title",
+      "surface": "app",
+      "en_key": "Nothing from the extension yet",
+      "file": "App/RulesView.swift, App/WatchedView.swift",
+      "role": "empty state",
+      "screen": "The rules list or the guarded-sites list, shown before the app has ever heard from the Safari extension at all (a fresh install, or the extension has never run)",
+      "moment": "The person opened a list screen (rules, or guarded sites) but the app has no data at all yet, because the extension side has not written anything for it to read.",
+      "says": "State plainly that the app has not heard anything from the extension yet - a wiring/first-contact state, not a claim that there is no content to show.",
+      "budget": "ContentUnavailableView title, ~3-5 words, one line",
+      "notes": "Distinct from app.rules.empty_no_rules.title, which is for 'we heard from the extension, and there simply are no rules'. This one is a wiring/first-contact state, not a content state. Shared verbatim between the Rules screen and the Guarded Sites screen."
+    },
+    {
+      "id": "app.rules.empty_no_app.detail",
+      "surface": "app",
+      "en_key": "Open a page in Safari once and this fills in.",
+      "file": "App/RulesView.swift, App/WatchedView.swift",
+      "role": "empty state",
+      "screen": "Same first-contact-not-made moment as app.rules.empty_no_app.title, this is the one line of guidance under it.",
+      "moment": "The screen has no data because the app has not heard from the extension yet.",
+      "says": "Tell the person the simple fix: open any page in Safari once, and this screen will populate on its own - no setting to change, just a normal use of Safari.",
+      "budget": "ContentUnavailableView description, one short sentence, ~45-55 chars",
+      "notes": "Shared verbatim between the Rules screen and the Guarded Sites screen."
+    },
+    {
+      "id": "app.rules.empty_no_rules.title",
+      "surface": "app",
+      "en_key": "No rules here",
+      "file": "App/RulesView.swift",
+      "role": "empty state",
+      "screen": "Rules screen, either grouping, once the app has heard from the extension but this particular list is empty",
+      "moment": "The app has real data from the extension, but the specific slice the person is looking at (everywhere, or by-site) genuinely has no rules in it yet.",
+      "says": "State plainly that this particular list of rules is empty right now - contrast with app.rules.empty_no_app.title, which is about not having heard from the extension at all.",
+      "budget": "ContentUnavailableView title, ~2-3 words, one line"
+    },
+    {
+      "id": "app.rules.empty_no_rules.detail",
+      "surface": "app",
+      "en_key": "A destination shows up once you allow or block it.",
+      "file": "App/RulesView.swift",
+      "role": "empty state",
+      "screen": "Rules screen, description under 'No rules here'",
+      "moment": "Same empty-but-connected moment as app.rules.empty_no_rules.title; this is the one line explaining how a rule ever gets created.",
+      "says": "Explain how an entry would ever appear in this list: a destination shows up here only once the person has actually made a decision (allowed or blocked it) about it - not merely because the guard saw it.",
+      "budget": "ContentUnavailableView description, one sentence, ~45-55 chars"
+    },
+    {
+      "id": "app.rules.footer.lifetime_count",
+      "surface": "app",
+      "en_key": "%lld stopped in all.",
+      "file": "App/RulesView.swift",
+      "role": "footnote",
+      "screen": "Rules screen, 'Everywhere' grouping only, footer under the list",
+      "moment": "The person is looking at the everywhere-rules list and, if any attempts have ever been stopped across all guarded sites, sees this one running total under the list.",
+      "says": "Report the running lifetime total of how many hijack attempts the guard has stopped across every guarded site, ever - a single big cumulative number, not a per-page or per-session count.",
+      "budget": "List section footer, one short sentence, ~25-35 chars excluding the number",
+      "variables": [
+        {
+          "name": "count",
+          "example": "128",
+          "meaning": "total attempts blocked across every guarded site over the app's whole lifetime"
+        }
+      ],
+      "notes": "Uses SwiftUI/ICU plural formatting (%lld) - the target language's own plural rule applies to the count, not English's singular/plural split. Only shown when the count is greater than zero."
+    },
+    {
+      "id": "app.rules.row.state_blocked",
+      "surface": "app",
+      "en_key": "Blocked",
+      "file": "App/RulesView.swift",
+      "role": "label",
+      "screen": "Rules screen, each row's trailing state label (read-only, e.g. iOS)",
+      "moment": "The person is scanning a list of destinations, each with a plain-text state word at the end of its row showing the current verdict, on a platform where they can look but not edit.",
+      "says": "State that this destination's current rule is to stop/refuse it. Must pair as a clear opposite with app.rules.row.state_allowed when the two sit in the same list of rows.",
+      "budget": "Trailing row label, one word",
+      "notes": "Same word/concept reused across the app's rule rows and is a general recurring state; keep consistent with the extension's own state_blocked if this were the same string (it is not - separate translation unit - but should read the same to the user)."
+    },
+    {
+      "id": "app.rules.row.state_allowed",
+      "surface": "app",
+      "en_key": "Allowed",
+      "file": "App/RulesView.swift",
+      "role": "label",
+      "screen": "Rules screen, each row's trailing state label (read-only)",
+      "moment": "Same list-scanning moment as app.rules.row.state_blocked, for a destination whose current rule is to let it through.",
+      "says": "State that this destination's current rule is to let it through. Clear opposite of app.rules.row.state_blocked.",
+      "budget": "Trailing row label, one word"
+    },
+    {
+      "id": "app.rules.row.action_allow",
+      "surface": "app",
+      "en_key": "Allow",
+      "file": "App/RulesView.swift",
+      "role": "menu item",
+      "screen": "Rules screen, each editable row's trailing menu (Mac only) - the button/menu item that flips a currently-blocked rule",
+      "moment": "On the Mac, the person opens a small menu on a row currently showing 'Blocked' and sees one item that would switch it to allowed instead.",
+      "says": "Name the action, as a verb, of switching this destination's rule from blocked to allowed. This is an imperative action label, not a state description - contrast with app.rules.row.state_allowed which is the noun/adjective form shown as the current state.",
+      "budget": "Menu item, one word",
+      "notes": "Only ever shown when the row is currently Blocked (the menu offers the opposite of the current state) - see App/RulesView.swift line ~114, `Button(rule.blocked ? \"Allow\" : \"Block\")`."
+    },
+    {
+      "id": "app.rules.row.action_block",
+      "surface": "app",
+      "en_key": "Block",
+      "file": "App/RulesView.swift",
+      "role": "menu item",
+      "screen": "Rules screen, each editable row's trailing menu (Mac only) - the item that flips a currently-allowed rule",
+      "moment": "On the Mac, the person opens a small menu on a row currently showing 'Allowed' and sees one item that would switch it to blocked instead.",
+      "says": "Name the action, as a verb, of switching this destination's rule from allowed to blocked. Imperative action label - only shown when the row is currently Allowed.",
+      "budget": "Menu item, one word"
+    },
+    {
+      "id": "app.rules.row.help_tooltip",
+      "surface": "app",
+      "en_key": "Allow or block this destination",
+      "file": "App/RulesView.swift",
+      "role": "tooltip",
+      "screen": "Rules screen, macOS-only hover tooltip (.help) on each row's state control",
+      "moment": "A Mac user is hovering their pointer over the small blocked/allowed control at the end of a rule row, before clicking it.",
+      "says": "Describe, as a hover tooltip, what the control under the pointer does: it lets the person choose whether this destination is allowed or blocked.",
+      "budget": "macOS help tooltip, one short phrase, ~30-40 chars"
+    },
+    {
+      "id": "app.rules.row.use_default",
+      "surface": "app",
+      "en_key": "Use Default",
+      "file": "App/RulesView.swift",
+      "role": "menu item",
+      "screen": "Rules screen, each editable row's menu, second item, below Allow/Block",
+      "moment": "The person has the row's menu open and sees a second option below the allow/block toggle: one that removes the explicit rule entirely.",
+      "says": "Name the action of clearing this row's explicit rule so the destination goes back to whatever the app's general default policy decides. This deletes the specific rule, it does not set a new explicit verdict.",
+      "budget": "Menu item, ~2 words"
+    },
+    {
+      "id": "app.watched.empty.title",
+      "surface": "app",
+      "en_key": "No sites guarded yet",
+      "file": "App/WatchedView.swift",
+      "role": "empty state",
+      "screen": "Guarded Sites screen, shown once connected to the extension but no site has been switched on",
+      "moment": "The app has heard from the extension, but the person has never pressed the Undirect button on any site, so this list is genuinely empty.",
+      "says": "State plainly that no site has been switched on for guarding yet.",
+      "budget": "ContentUnavailableView title, ~3-5 words, one line"
+    },
+    {
+      "id": "app.watched.empty.detail",
+      "surface": "app",
+      "en_key": "Press the Undirect button in Safari on a site that keeps redirecting.",
+      "file": "App/WatchedView.swift",
+      "role": "empty state",
+      "screen": "Guarded Sites screen, description under the empty-list title",
+      "moment": "Same no-sites-yet moment; this is the one line telling the person how to get their first entry into this list.",
+      "says": "Tell the person exactly how to guard their first site: press the Undirect button in Safari's toolbar while on a site that has been redirecting or misbehaving.",
+      "budget": "ContentUnavailableView description, one sentence, ~65-75 chars"
+    },
+    {
+      "id": "app.watched.footer",
+      "surface": "app",
+      "en_key": "Sites are added from the Undirect button in Safari.",
+      "file": "App/WatchedView.swift",
+      "role": "footnote",
+      "screen": "Guarded Sites screen, footer under a non-empty list of sites",
+      "moment": "The person is looking at a populated list of guarded sites and, at the bottom, sees a one-line reminder of where new entries come from - since this screen itself has no way to add one.",
+      "says": "Remind the person that this list can only grow from Safari's own toolbar button - this screen itself has no way to add a site, only to remove one.",
+      "budget": "List section footer, one sentence, ~50-60 chars"
+    },
+    {
+      "id": "app.watched.row.guarded_badge",
+      "surface": "app",
+      "en_key": "Guarded",
+      "file": "App/WatchedView.swift",
+      "role": "label",
+      "screen": "Guarded Sites screen, each row's trailing label on iOS (read-only - no Stop button there)",
+      "moment": "On iPhone/iPad, the person is looking at a row for one site and, since this platform cannot edit the list, sees a plain state word instead of a button.",
+      "says": "State, as a read-only status word, that this site currently has guarding switched on. Not a button - purely informational on this platform.",
+      "budget": "Trailing row label, one word"
+    },
+    {
+      "id": "app.watched.row.stop_button",
+      "surface": "app",
+      "en_key": "Stop",
+      "file": "App/WatchedView.swift",
+      "role": "button",
+      "screen": "Guarded Sites screen, each row's trailing button on Mac (editable - removes the site from the guarded list)",
+      "moment": "On Mac, the person is looking at a row for one guarded site and sees a small button that, if pressed, switches guarding off for that site.",
+      "says": "Name the action of switching guarding off for this one site, as a short imperative verb suitable for a small trailing row button.",
+      "budget": "Trailing row button, one word"
+    },
+    {
+      "id": "app.watched.row.stop_tooltip",
+      "surface": "app",
+      "en_key": "Stop guarding this site",
+      "file": "App/WatchedView.swift",
+      "role": "tooltip",
+      "screen": "Guarded Sites screen, macOS-only hover tooltip on the Stop button",
+      "moment": "A Mac user is hovering over the small Stop button on a guarded-site row before clicking it.",
+      "says": "Describe, as a hover tooltip, what the button under the pointer does: switches guarding off for this specific site.",
+      "budget": "macOS help tooltip, one short phrase, ~30-40 chars"
+    },
+    {
+      "id": "app.settings.guard_toggle",
+      "surface": "app",
+      "en_key": "Guard",
+      "file": "App/SettingsView.swift",
+      "role": "toggle label",
+      "screen": "Settings screen, first row - the master on/off switch for the whole extension",
+      "moment": "The person is on the settings screen looking at the very first row: the one switch that turns the entire guard off everywhere, overriding every per-site setting.",
+      "says": "Label the master on/off switch for the whole guard - the one setting that, when off, disables protection everywhere regardless of any individual site's own guarded state. Short enough to sit beside a toggle.",
+      "budget": "Toggle row label, one word",
+      "notes": "This exact word ('Guard') is also the concept name used throughout the vocabulary; keep it consistent with how 'guard' is translated as a noun/verb elsewhere in the app if the language needs to disambiguate part of speech."
+    },
+    {
+      "id": "app.settings.state_on",
+      "surface": "app",
+      "en_key": "On",
+      "file": "App/SettingsView.swift",
+      "role": "label",
+      "screen": "Settings screen, read-only state text next to Guard and Note-in-the-page rows (iOS, where these are LabeledContent, not editable toggles)",
+      "moment": "On a platform where this particular row cannot be edited, the person sees the current state spelled out as a plain word instead of a switch.",
+      "says": "State that a given on/off setting is currently switched on. Generic - used for more than one setting on this screen.",
+      "budget": "Trailing row value, one word",
+      "notes": "Reused for both the master Guard state and the page-note state; keep it fully generic on/off, not tied to either setting's specific meaning."
+    },
+    {
+      "id": "app.settings.state_off",
+      "surface": "app",
+      "en_key": "Off",
+      "file": "App/SettingsView.swift",
+      "role": "label",
+      "screen": "Settings screen, read-only state text (counterpart to app.settings.state_on)",
+      "moment": "Same read-only moment as app.settings.state_on, for a setting that is currently switched off.",
+      "says": "State that a given on/off setting is currently switched off. Clear opposite of app.settings.state_on.",
+      "budget": "Trailing row value, one word"
+    },
+    {
+      "id": "app.settings.mode_heading",
+      "surface": "app",
+      "en_key": "Where the guard runs",
+      "file": "App/SettingsView.swift",
+      "role": "section header",
+      "screen": "Settings screen, heading above the two-option mode picker",
+      "moment": "The person is scrolling the settings screen and reaches a labeled choice between guarding only switched-on sites versus guarding every site automatically.",
+      "says": "Introduce, as a section heading / picker label, the choice of which sites the guard actually runs on: only the ones individually switched on, or every site automatically.",
+      "budget": "Picker label / section header, ~3-5 words, one line",
+      "notes": "Same concept as the extension's popup_mode_heading, but a separate translation unit for this platform - should read the same to a user moving between the app and the Safari popup."
+    },
+    {
+      "id": "app.settings.mode_watched",
+      "surface": "app",
+      "en_key": "Sites you turn on",
+      "file": "App/SettingsView.swift",
+      "role": "label",
+      "screen": "Settings screen, first option of the 'Where the guard runs' picker - the default, safer mode",
+      "moment": "The person is choosing between the two run-mode options; this is the option meaning the guard only watches sites individually switched on via the toolbar button.",
+      "says": "Name the mode where the guard only runs on sites the person has individually switched on themselves - the default, more conservative choice, described from the person's point of view ('sites you turn on') rather than as a technical mode name.",
+      "budget": "Picker option label, ~3 words, one line"
+    },
+    {
+      "id": "app.settings.mode_everywhere",
+      "surface": "app",
+      "en_key": "Every site",
+      "file": "App/SettingsView.swift",
+      "role": "label",
+      "screen": "Settings screen, second option of the 'Where the guard runs' picker - the automatic, always-on mode",
+      "moment": "Same picker moment as app.settings.mode_watched; this is the option meaning the guard runs automatically on every site without the person switching anything on individually.",
+      "says": "Name the mode where the guard runs automatically on every site, with no need to switch anything on per-site.",
+      "budget": "Picker option label, ~2 words, one line"
+    },
+    {
+      "id": "app.settings.banner_toggle",
+      "surface": "app",
+      "en_key": "Note in the page",
+      "file": "App/SettingsView.swift",
+      "role": "toggle label",
+      "screen": "Settings screen, toggle for whether the guard draws a small banner on the page itself when it stops something",
+      "moment": "The person is on the settings screen, past the master switch and mode, and reaches an optional toggle for whether a small visible note appears on the page when the guard intervenes.",
+      "says": "Label the toggle that controls whether a small banner/note is drawn directly on a web page itself when the guard stops something there - separate from and in addition to the popup's own record of it.",
+      "budget": "Toggle row label, ~3 words, one line",
+      "notes": "This is the app-side counterpart to the extension's setting_banner; both control the same underlying feature and should read consistently to the user, though they are separate translation units."
+    },
+    {
+      "id": "app.settings.policy_heading",
+      "surface": "app",
+      "en_key": "A destination with no rule",
+      "file": "App/SettingsView.swift",
+      "role": "section header",
+      "screen": "Settings screen, heading above the two-option default-policy picker",
+      "moment": "The person reaches the last section of the settings screen: a choice for what happens to any destination that has never had an explicit allow/block decision made about it.",
+      "says": "Introduce, as a section heading / picker label, the choice of what the guard should do by default with a destination that has no rule set for it at all yet.",
+      "budget": "Picker label / section header, ~4-6 words, one line",
+      "notes": "Same concept as the extension's popup_policy_heading, separate translation unit."
+    },
+    {
+      "id": "app.settings.policy_block",
+      "surface": "app",
+      "en_key": "Block it",
+      "file": "App/SettingsView.swift",
+      "role": "label",
+      "screen": "Settings screen, first option of the default-policy picker",
+      "moment": "The person is choosing the default policy; this option means an unrated destination is stopped by default.",
+      "says": "Name the default-policy choice where a destination with no rule is stopped/refused by default. Short imperative phrase suitable as a picker option.",
+      "budget": "Picker option label, ~2 words, one line"
+    },
+    {
+      "id": "app.settings.policy_allow",
+      "surface": "app",
+      "en_key": "Allow it",
+      "file": "App/SettingsView.swift",
+      "role": "label",
+      "screen": "Settings screen, second option of the default-policy picker",
+      "moment": "Same picker moment as app.settings.policy_block; this option means an unrated destination is let through by default.",
+      "says": "Name the default-policy choice where a destination with no rule is let through by default. Short imperative phrase, clear opposite of app.settings.policy_block.",
+      "budget": "Picker option label, ~2 words, one line"
+    },
+    {
+      "id": "ext.meta.name",
+      "surface": "extension",
+      "en_key": "extension_name",
+      "file": "Extension/Resources/manifest.json",
+      "role": "label",
+      "screen": "Not user-facing inside the extension itself - this is the extension's listed name in Safari's Extensions settings and the App Store",
+      "moment": "Safari and the App Store list this as the extension's own name wherever extensions are listed or managed, outside of the popup UI entirely.",
+      "says": "This is the product's own proper name. Treat like a brand name, not a phrase to translate for meaning.",
+      "budget": "Extension list name, one word",
+      "notes": "Same proper noun as app.nav.app_title; very likely left untranslated in most locales."
+    },
+    {
+      "id": "ext.meta.description",
+      "surface": "extension",
+      "en_key": "extension_description",
+      "file": "Extension/Resources/manifest.json",
+      "role": "body",
+      "screen": "Safari's Extensions settings list and the App Store listing, the one-line description shown next to the extension's name",
+      "moment": "The person is browsing their list of installed Safari extensions, or looking at the App Store page, and sees this one sentence under the extension's icon and name before deciding whether to enable or install it.",
+      "says": "Describe, in one sentence and to someone who has never used the extension, what it stops: pages taking a person's click to open or redirect somewhere they did not intend to go.",
+      "budget": "Extension list description, one sentence, ~70-90 chars",
+      "register": "Slightly more explanatory than the in-app copy, since this is often the very first thing a prospective user reads."
+    },
+    {
+      "id": "ext.meta.app_title",
+      "surface": "extension",
+      "en_key": "app_title",
+      "file": "Extension/Resources/popup/popup.js (fallback for the site name), and used as the container app's title",
+      "role": "label",
+      "screen": "Fallback text used in the popup wherever the current site's own name/hostname would normally appear but is unavailable",
+      "moment": "The popup wants to show the current site name in its header, but there is no site to show (rare fallback path); this string stands in for it.",
+      "says": "Fallback display name for the product itself, used only when there is no actual site name available to show in its place.",
+      "budget": "Popup header text, one word"
+    },
+    {
+      "id": "ext.toolbar.tooltip_on",
+      "surface": "extension",
+      "en_key": "action_title_on",
+      "file": "Extension/Resources/background.js, Extension/Resources/manifest.json (default_title)",
+      "role": "tooltip",
+      "screen": "The macOS/iOS system tooltip shown on hovering or long-pressing the Undirect toolbar icon, while the guard is actively running on the current site",
+      "moment": "The person hovers the toolbar icon on a site that is currently being guarded, and the system shows this text as the icon's accessible name/tooltip.",
+      "says": "State, as the toolbar icon's tooltip/accessible name, that guarding is currently on for the site in the active tab.",
+      "budget": "System tooltip, ~4-6 words, one line"
+    },
+    {
+      "id": "ext.toolbar.tooltip_off",
+      "surface": "extension",
+      "en_key": "action_title_off",
+      "file": "Extension/Resources/background.js, Extension/Resources/manifest.json (default_title)",
+      "role": "tooltip",
+      "screen": "The toolbar icon's tooltip on a real site where guarding is currently off; pressing the icon in this state turns guarding on for that site",
+      "moment": "The person hovers the dimmed toolbar icon on a site that is not currently guarded.",
+      "says": "State, as the tooltip, that guarding is off for this site and imply that pressing the button is how the person turns it on (the tooltip doubles as the icon's call to action, since a press here is the one-tap way to start guarding this site).",
+      "budget": "System tooltip, ~4-6 words, one line",
+      "notes": "manifest.json's default_title uses this same key as the extension's baseline/fallback tooltip before any tab-specific state is known."
+    },
+    {
+      "id": "ext.toolbar.tooltip_no_site",
+      "surface": "extension",
+      "en_key": "action_title_no_site",
+      "file": "Extension/Resources/background.js",
+      "role": "tooltip",
+      "screen": "Toolbar icon tooltip on a tab with no actual website open (e.g. Safari's Start Page, or a blank tab)",
+      "moment": "The person hovers the toolbar icon while on a tab that has no website loaded at all, where guarding has no meaning.",
+      "says": "Explain, briefly, that this extension only has something to do on an actual website - there is nothing to guard on the current tab.",
+      "budget": "System tooltip, ~3-5 words, one line",
+      "notes": "Same underlying string as ext.popup.no_site_title - see notes there."
+    },
+    {
+      "id": "ext.popup.no_site_title",
+      "surface": "extension",
+      "en_key": "popup_no_site_title",
+      "file": "Extension/Resources/popup/popup.html, popup.js",
+      "role": "title",
+      "screen": "Popup's main view, shown instead of the usual site row when the current tab has no website (e.g. Start Page)",
+      "moment": "The person clicked the toolbar button while on a tab with no website open, and the popup shows this heading instead of the normal per-site controls.",
+      "says": "Explain, as the popup's own headline in this state, that Undirect only has something to do on actual websites - not on a blank tab or the Start Page.",
+      "budget": "Popup title, ~3-4 words, one line, sits beside a small icon in an empty-state layout"
+    },
+    {
+      "id": "ext.popup.no_site_body",
+      "surface": "extension",
+      "en_key": "popup_no_site_body",
+      "file": "Extension/Resources/popup/popup.html, popup.js",
+      "role": "body",
+      "screen": "Popup's no-site empty state, one line under the title",
+      "moment": "Same no-website moment as ext.popup.no_site_title; this line tells the person what to actually do instead.",
+      "says": "Tell the person what to do: open an actual website, then press the toolbar button (referred to as 'here', meaning the button itself, since the person is already looking at the popup that button opened) to guard it.",
+      "budget": "Popup subtitle, one sentence, ~35-45 chars",
+      "notes": "Source description notes 'here' refers to the toolbar button the popup hangs off of - keep that same self-reference (or an equivalent that still makes sense once the popup is open) rather than literally translating 'here' as a place."
+    },
+    {
+      "id": "ext.popup.watch_switch_label",
+      "surface": "extension",
+      "en_key": "popup_watch_label",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "toggle label",
+      "screen": "Popup's main view, first row - the screen-reader-only label for the per-site on/off switch",
+      "moment": "A screen-reader user has focused the switch that turns guarding on/off for the current site; this text is read aloud, since visually the row already shows the site name.",
+      "says": "Name what this switch controls, for someone who cannot see the row's visual context: switching guarding on or off for the current site.",
+      "budget": "Accessibility label (not visible on screen), short phrase",
+      "notes": "Visually hidden (sr-only); the visible row already shows the site's own name, so this label exists purely for VoiceOver/screen readers."
+    },
+    {
+      "id": "ext.popup.watch_unknown",
+      "surface": "extension",
+      "en_key": "popup_watch_unknown",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "body",
+      "screen": "Popup's main view, subtitle line under the site name, when there is genuinely no page to guard",
+      "moment": "The switch that would normally turn guarding on for the current site is shown disabled, and this line explains why: there is no actual page here to guard.",
+      "says": "Explain briefly why the per-site switch is disabled: there is no page here that could be guarded.",
+      "budget": "Popup subtitle, one short sentence, ~25-35 chars"
+    },
+    {
+      "id": "ext.popup.watch_everywhere_mode",
+      "surface": "extension",
+      "en_key": "popup_watch_everywhere",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "body",
+      "screen": "Popup's main view, subtitle line under the site name, when the 'every site' mode setting is already on",
+      "moment": "The per-site switch is disabled because the person has already chosen, in Settings, to have the guard run automatically on every site - so this individual toggle would be redundant.",
+      "says": "Explain that the per-site switch is disabled because the guard is already set, elsewhere in Settings, to run on every site automatically - this one switch has nothing left to control.",
+      "budget": "Popup subtitle, one short sentence, ~30-40 chars"
+    },
+    {
+      "id": "ext.popup.watch_master_off",
+      "surface": "extension",
+      "en_key": "popup_watch_master_off",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "body",
+      "screen": "Popup's main view, subtitle line under the site name, when the master Guard switch (in Settings) is off",
+      "moment": "The per-site switch is disabled because the whole guard has been switched off entirely from the Settings screen, overriding any per-site state.",
+      "says": "Explain that the per-site switch is disabled because the guard itself is switched off entirely (the master switch in Settings), not because of anything about this particular site.",
+      "budget": "Popup subtitle, one short sentence, ~25-35 chars"
+    },
+    {
+      "id": "ext.popup.watch_on",
+      "surface": "extension",
+      "en_key": "popup_watch_on",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "body",
+      "screen": "Popup's main view, subtitle line under the site name, when guarding is currently on for this site and the switch is enabled",
+      "moment": "The person sees the per-site switch turned on for the current site, and this line under the site name confirms the state and warns them what happens if they turn it off.",
+      "says": "Confirm that guarding is currently on for this site, and warn that switching it off will reload the page (since the guard's protections only take effect at the moment a page loads).",
+      "budget": "Popup subtitle, one short sentence with a warning clause, ~35-50 chars"
+    },
+    {
+      "id": "ext.popup.watch_off",
+      "surface": "extension",
+      "en_key": "popup_watch_off",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "body",
+      "screen": "Popup's main view, subtitle line under the site name, when guarding is off for this site but the switch is still enabled (pressable)",
+      "moment": "The person sees the per-site switch turned off for the current site, and this line confirms the state and warns them what happens if they turn it on.",
+      "says": "Confirm that guarding is currently off for this site, and warn that switching it on will reload the page.",
+      "budget": "Popup subtitle, one short sentence with a warning clause, ~35-50 chars",
+      "notes": "Direct counterpart to ext.popup.watch_on - the two should read as a clear before/after pair sharing the same sentence shape."
+    },
+    {
+      "id": "ext.popup.page_heading",
+      "surface": "extension",
+      "en_key": "popup_page_heading",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "section header",
+      "screen": "Popup's main view, heading above the list of destinations this specific page has reached for",
+      "moment": "Below the site's on/off switch, the person sees a small section labeled with this heading, listing what has actually happened on the current tab so far.",
+      "says": "Head the section that lists, specifically, what the current open page (this one tab) has tried to reach outside itself - distinct from the site-wide/everywhere rule lists reached via the Rules link.",
+      "budget": "Section heading, ~2 words, one line, sits beside a trailing count (see ext.popup.stopped_one/other)"
+    },
+    {
+      "id": "ext.popup.page_off",
+      "surface": "extension",
+      "en_key": "popup_page_off",
+      "file": "Extension/Resources/_locales/en/messages.json (description only - not currently called from any code)",
+      "role": "body",
+      "screen": "Described as: shown in the tab section when the site is not being guarded",
+      "moment": "According to its own description this string was meant to appear in the 'This page' section when the current site is not being guarded - but no code in the extension currently reads this key (verified against background.js and popup.js as of 2026-09-22).",
+      "says": "State, if and when this is wired up, that nothing is being tracked for this page because guarding is off here - matching the voice of the other page-section states.",
+      "budget": "Section body text, one short sentence",
+      "notes": "DEAD KEY as of 2026-09-22: not referenced by getMessage() or data-i18n anywhere in the extension. Flag to the writer/orchestrator that translating it is speculative; do not spend special effort matching it against a screen no code shows it on."
+    },
+    {
+      "id": "ext.popup.page_quiet",
+      "surface": "extension",
+      "en_key": "popup_page_quiet",
+      "file": "Extension/Resources/popup/popup.html, popup.js",
+      "role": "body",
+      "screen": "Popup's 'This page' section, shown in place of the destination list when nothing has happened on this page yet",
+      "moment": "The current tab is being guarded but has not, so far, had any page try to reach outside itself - so the row list is empty and this line is shown instead.",
+      "says": "State plainly that nothing on this page has tried to reach another site so far.",
+      "budget": "Section body text, one short sentence, ~35-45 chars"
+    },
+    {
+      "id": "ext.popup.page_empty",
+      "surface": "extension",
+      "en_key": "popup_page_empty",
+      "file": "Extension/Resources/_locales/en/messages.json (description only - not currently called from any code)",
+      "role": "body",
+      "screen": "Described as: shown when the destination list is empty",
+      "moment": "Its description overlaps with ext.popup.page_quiet ('nothing has reached for another site') but is worded around an empty list rather than a quiet page; no code currently reads this key (verified against background.js and popup.js as of 2026-09-22).",
+      "says": "If wired up, state that there is nothing to list yet - functionally identical in effect to ext.popup.page_quiet, so the writer should feel free to treat it as a near-synonym rather than inventing a meaningfully different phrasing.",
+      "budget": "Section body text, one short sentence",
+      "notes": "DEAD KEY as of 2026-09-22: not referenced anywhere in current code. Near-duplicate in meaning to ext.popup.page_quiet; likely leftover from an earlier version of the popup."
+    },
+    {
+      "id": "ext.popup.stopped_one",
+      "surface": "extension",
+      "en_key": "popup_stopped_one",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "badge",
+      "screen": "Popup's 'This page' section heading, trailing count, singular case (exactly 1)",
+      "moment": "Next to the 'This page' heading, the person sees a small trailing count of how many hijack attempts were actually stopped (blocked) on this specific tab, when that count is exactly one.",
+      "says": "Report the count of attempts blocked on this specific page, for the singular case (the count is always exactly 1 for this variant - the surrounding UI supplies the number).",
+      "budget": "Trailing badge/count text, very short, a few characters plus the number",
+      "variables": [
+        {
+          "name": "count",
+          "example": "1",
+          "meaning": "number of hijack attempts blocked (not merely seen) on this one page"
+        }
+      ],
+      "notes": "Chrome/WebExtension i18n plural convention: this is the singular-form message for the same underlying concept as popup_stopped_other; the two together must form one natural plural pair in the target language, which may need more than two forms (use the language's own plural rule count, not just singular/plural)."
+    },
+    {
+      "id": "ext.popup.stopped_other",
+      "surface": "extension",
+      "en_key": "popup_stopped_other",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "badge",
+      "screen": "Popup's 'This page' section heading, trailing count, plural case (0 or 2+)",
+      "moment": "Same trailing-count position as ext.popup.stopped_one, for any count other than exactly one.",
+      "says": "Report the count of attempts blocked on this specific page, for the plural case.",
+      "budget": "Trailing badge/count text, very short, a few characters plus the number",
+      "variables": [
+        {
+          "name": "count",
+          "example": "3",
+          "meaning": "number of hijack attempts blocked (not merely seen) on this one page"
+        }
+      ],
+      "notes": "Paired with ext.popup.stopped_one as one plural set - see its notes on plural-form handling."
+    },
+    {
+      "id": "ext.popup.seen_one",
+      "surface": "extension",
+      "en_key": "popup_seen_one",
+      "file": "Extension/Resources/popup/popup.js (via the `plural()` helper, called from a spot not directly quoted above but reachable through the same row-summary code path)",
+      "role": "body",
+      "screen": "Popup, used in a row/summary line reporting how many cross-site attempts were recorded overall (as opposed to specifically blocked), singular case",
+      "moment": "Somewhere the popup summarizes not just what was stopped but everything that was even attempted/recorded, and this is the singular wording for exactly one such attempt.",
+      "says": "Report the total count of cross-site attempts recorded (whether blocked or allowed), for the singular case - broader than 'stopped', which only counts the blocked subset.",
+      "budget": "Inline count text, short, a few words plus the number",
+      "variables": [
+        {
+          "name": "count",
+          "example": "1",
+          "meaning": "total cross-site attempts recorded, blocked and allowed together"
+        }
+      ],
+      "notes": "Distinct from popup_stopped_*: 'seen' is every recorded attempt, 'stopped' is only the ones actually blocked. Paired with ext.popup.seen_other as one plural set."
+    },
+    {
+      "id": "ext.popup.seen_other",
+      "surface": "extension",
+      "en_key": "popup_seen_other",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "body",
+      "screen": "Same total-attempts-recorded line as ext.popup.seen_one, plural case",
+      "moment": "Same as ext.popup.seen_one, for any count other than exactly one.",
+      "says": "Report the total count of cross-site attempts recorded (blocked and allowed together), for the plural case.",
+      "budget": "Inline count text, short, a few words plus the number",
+      "variables": [
+        {
+          "name": "count",
+          "example": "5",
+          "meaning": "total cross-site attempts recorded, blocked and allowed together"
+        }
+      ],
+      "notes": "Paired with ext.popup.seen_one - see its notes."
+    },
+    {
+      "id": "ext.popup.tries_one",
+      "surface": "extension",
+      "en_key": "popup_tries_one",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "body",
+      "screen": "Popup's per-destination row, part of the detail line describing how many times that one destination specifically came up, singular case",
+      "moment": "The person is reading one row for one destination in the 'This page' list, and part of its small detail text reports how many times that particular destination has come up, when the count is exactly one.",
+      "says": "Report how many times this one specific destination has come up on this page, for the singular case. This is a per-destination count, narrower than the page-wide totals above.",
+      "budget": "Inline fragment within a row's detail line, very short, a word plus the number",
+      "variables": [
+        {
+          "name": "count",
+          "example": "1",
+          "meaning": "how many times this one destination specifically was reached for on this page"
+        }
+      ],
+      "notes": "Paired with ext.popup.tries_other. Appears concatenated with other short fragments (scope, kind labels, reason) into one detail line - keep it terse enough to sit among them."
+    },
+    {
+      "id": "ext.popup.tries_other",
+      "surface": "extension",
+      "en_key": "popup_tries_other",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "body",
+      "screen": "Same per-destination try-count fragment as ext.popup.tries_one, plural case",
+      "moment": "Same as ext.popup.tries_one, for any count other than exactly one.",
+      "says": "Report how many times this one specific destination has come up on this page, for the plural case.",
+      "budget": "Inline fragment within a row's detail line, very short, a word plus the number",
+      "variables": [
+        {
+          "name": "count",
+          "example": "4",
+          "meaning": "how many times this one destination specifically was reached for on this page"
+        }
+      ],
+      "notes": "Paired with ext.popup.tries_one - see its notes on where it sits in the row."
+    },
+    {
+      "id": "ext.popup.recipe_heading",
+      "surface": "extension",
+      "en_key": "popup_recipe_heading",
+      "file": "Extension/Resources/popup/popup.html, popup.js",
+      "role": "label",
+      "screen": "Popup's 'This page' section, footer line shown only when a built-in per-site fix (a 'recipe') was applied on this page",
+      "moment": "For certain known sites, the extension applies a pre-built fix automatically; when that happened on the current page, this label introduces a short note naming which fix ran, formatted as 'Label: <fix name>'.",
+      "says": "Label, as a short heading fragment, the note that names which built-in per-site fix was applied on this page. It prefixes the fix's own name/description, joined with a colon in code - so it should read naturally as the first half of a 'Heading: detail' sentence.",
+      "budget": "Inline label prefix, one or two words",
+      "notes": "Concatenated in code as `${heading}: ${recipe text}` - must work grammatically as a lead-in fragment, not a standalone sentence."
+    },
+    {
+      "id": "ext.state.blocked",
+      "surface": "extension",
+      "en_key": "state_blocked",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, used wherever a destination's current verdict is shown: page rows, rules list rows, and inside the verdict-choice menu's option labels",
+      "moment": "The person sees this word wherever a destination is currently being stopped - as a row's current-state chip, and as option text inside the small verdict menu.",
+      "says": "State that a destination is currently being stopped/refused. The single most-reused status word in the whole extension - must stay short enough to work as a menu option, a row label, and combined with a scope word (e.g. 'Blocked everywhere').",
+      "budget": "Reused label, one word, must combine grammatically with a following scope phrase (e.g. '<this> everywhere' / '<this> on this site')",
+      "notes": "Combined in code with scope words (scope_here/scope_everywhere/scope_default) to form phrases like 'Blocked everywhere' or 'Blocked on this site' - the word order and grammar of that combination must work in the target language, not just each word alone."
+    },
+    {
+      "id": "ext.state.allowed",
+      "surface": "extension",
+      "en_key": "state_allowed",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, same reused positions as ext.state.blocked, for destinations currently being let through",
+      "moment": "Same reused positions as ext.state.blocked, for a destination currently being allowed through.",
+      "says": "State that a destination is currently being let through. Clear opposite of ext.state.blocked, with the same combination-with-scope requirement.",
+      "budget": "Reused label, one word, must combine grammatically with a following scope phrase",
+      "notes": "Same scope-combination requirement as ext.state.blocked - see its notes."
+    },
+    {
+      "id": "ext.state.removed",
+      "surface": "extension",
+      "en_key": "state_removed",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "badge",
+      "screen": "Popup's 'This page' row list, shown in place of the verdict menu for a row representing a trap removed directly on the page (no destination to rule on)",
+      "moment": "One specific kind of row - a click-trap caught and removed on the page itself, rather than a navigation to another site - has no destination to allow or block, so instead of the usual verdict control it shows this one word.",
+      "says": "State that this particular trap was found on the page and taken off before it could catch a press - distinct from the usual allow/block rows, since there is no outside destination here to make a rule about.",
+      "budget": "Row trailing label, one word",
+      "notes": "Only shown for 'local' rows (a trap caught directly on the page, e.g. a click-catcher) which have no destination and thus no allow/block menu at all."
+    },
+    {
+      "id": "ext.scope.here",
+      "surface": "extension",
+      "en_key": "scope_here",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, combined into phrases describing a rule's scope, e.g. 'Blocked on this site'",
+      "moment": "This fragment is combined with a verdict word (see ext.state.blocked/allowed) to describe a rule that only applies to the current site.",
+      "says": "Say that a rule's scope is limited to the current site only, as a fragment meant to be read right after a verdict word (e.g. after 'Blocked').",
+      "budget": "Inline fragment following a verdict word, a few words",
+      "notes": "Grammar note: composed in code as `${verdict} ${scope}`, e.g. 'Blocked' + 'on this site' -> 'Blocked on this site'. The translated fragment must read naturally directly after the translated verdict word in that word order, or the writer should flag if the target language needs the composition reordered."
+    },
+    {
+      "id": "ext.scope.everywhere",
+      "surface": "extension",
+      "en_key": "scope_everywhere",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, combined into phrases like 'Blocked everywhere', the counterpart to scope_here",
+      "moment": "Same combined-phrase position as ext.scope.here, for a rule that applies to every guarded site rather than just the current one.",
+      "says": "Say that a rule's scope covers every guarded site, as a fragment following a verdict word (e.g. 'Blocked' + this -> 'Blocked everywhere').",
+      "budget": "Inline fragment following a verdict word, one word",
+      "notes": "Same composition rule as ext.scope.here: `${verdict} ${scope}`."
+    },
+    {
+      "id": "ext.scope.default",
+      "surface": "extension",
+      "en_key": "scope_default",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, combined into phrases like 'Blocked by default', shown for a destination with no explicit rule, following the app's default policy",
+      "moment": "Same combined-phrase position as the other scope fragments, for a destination that has no explicit rule at all and is only being handled according to the general default policy.",
+      "says": "Say that no explicit rule was set and the current verdict comes only from the general default policy, as a fragment following a verdict word (e.g. 'Blocked' + this -> 'Blocked by default').",
+      "budget": "Inline fragment following a verdict word, a couple of words",
+      "notes": "Same composition rule: `${verdict} ${scope}`."
+    },
+    {
+      "id": "ext.action.allow_here",
+      "surface": "extension",
+      "en_key": "action_allow_here",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "menu item",
+      "screen": "Popup, one option inside a destination row's verdict-choice menu (select element)",
+      "moment": "The person opens the verdict menu for one destination row and sees this as one of five options: set this destination to allowed, scoped to the current site only.",
+      "says": "Name the menu option that sets this destination's rule to allowed, scoped to the current site only. Must read as a complete, unambiguous option distinct from the 'everywhere' variant.",
+      "budget": "Select/menu option text, short phrase, ~2-3 words"
+    },
+    {
+      "id": "ext.action.allow_everywhere",
+      "surface": "extension",
+      "en_key": "action_allow_everywhere",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "menu item",
+      "screen": "Popup, verdict-choice menu, the everywhere-scoped counterpart to action_allow_here",
+      "moment": "Same verdict menu, the option that sets this destination to allowed for every guarded site rather than just the current one.",
+      "says": "Name the menu option that sets this destination's rule to allowed for every guarded site.",
+      "budget": "Select/menu option text, short phrase, ~2-3 words"
+    },
+    {
+      "id": "ext.action.block_here",
+      "surface": "extension",
+      "en_key": "action_block_here",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "menu item",
+      "screen": "Popup, verdict-choice menu, the block/here option",
+      "moment": "Same verdict menu, the option that sets this destination to blocked, scoped to the current site only.",
+      "says": "Name the menu option that sets this destination's rule to blocked, scoped to the current site only.",
+      "budget": "Select/menu option text, short phrase, ~2-3 words"
+    },
+    {
+      "id": "ext.action.block_everywhere",
+      "surface": "extension",
+      "en_key": "action_block_everywhere",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "menu item",
+      "screen": "Popup, verdict-choice menu, the block/everywhere option",
+      "moment": "Same verdict menu, the option that sets this destination to blocked for every guarded site.",
+      "says": "Name the menu option that sets this destination's rule to blocked for every guarded site.",
+      "budget": "Select/menu option text, short phrase, ~2-3 words"
+    },
+    {
+      "id": "ext.popup.policy_heading",
+      "surface": "extension",
+      "en_key": "popup_policy_heading",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "section header",
+      "screen": "Popup's Settings sub-view, heading above the two-option default-policy radio group",
+      "moment": "The person has navigated into the popup's settings screen and reaches a heading above a choice of what happens to a destination with no explicit rule.",
+      "says": "Head the choice of default policy: what happens to a destination that has no rule set for it yet at all. Same concept as the app's settings screen equivalent.",
+      "budget": "Radiogroup section heading, ~4-6 words, one line"
+    },
+    {
+      "id": "ext.policy.block",
+      "surface": "extension",
+      "en_key": "policy_block",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "label",
+      "screen": "Popup Settings sub-view, first radio option under the default-policy heading",
+      "moment": "The person is choosing the default policy in the popup's settings screen; this option means an unrated destination is stopped by default.",
+      "says": "Name the default-policy choice where a destination with no rule is stopped by default. Short imperative phrase for a radio option.",
+      "budget": "Radio option label, ~2 words"
+    },
+    {
+      "id": "ext.policy.allow",
+      "surface": "extension",
+      "en_key": "policy_allow",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "label",
+      "screen": "Popup Settings sub-view, second radio option under the default-policy heading",
+      "moment": "Same policy choice, this option means an unrated destination is let through by default.",
+      "says": "Name the default-policy choice where a destination with no rule is let through by default.",
+      "budget": "Radio option label, ~2 words"
+    },
+    {
+      "id": "ext.popup.bridge_warning",
+      "surface": "extension",
+      "en_key": "popup_bridge_warning",
+      "file": "Extension/Resources/popup/popup.html, popup.js",
+      "role": "error",
+      "screen": "Popup's main view, a warning banner shown when the current page's own content-security-policy blocked part of the guard from loading",
+      "moment": "The person opened the popup on a page whose own security policy prevented one half of the guard's script from running, so protection on this page is only partial; this banner tells them.",
+      "says": "Warn that this particular page's own security settings are blocking part of the extension's script, so only part of the guard's protection is actually active here - a limitation of this one page, not a bug or a setting to fix.",
+      "budget": "Warning banner text, one to two sentences, ~70-90 chars"
+    },
+    {
+      "id": "ext.kind.click_catcher",
+      "surface": "extension",
+      "en_key": "kind_click_catcher",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, one of several short 'kind' tags shown inside a destination row's detail line, describing which specific trick was used",
+      "moment": "The person reads a row's small detail text and sees, among other fragments, a short label naming the specific trick that was caught - in this case, an invisible clickable element placed over the page.",
+      "says": "Name, as a short tag, the specific trick of an invisible clickable element (a link or a form) placed over the page to catch a press aimed at something else.",
+      "budget": "Inline tag within a comma-joined list, ~2-3 words",
+      "notes": "Appears comma-joined with other kind_* tags in one detail line, e.g. 'Invisible click catcher, Pop-up window.' - keep it terse and noun-phrase shaped like its siblings."
+    },
+    {
+      "id": "ext.kind.overlay",
+      "surface": "extension",
+      "en_key": "kind_overlay",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a transparent element covering the page more generally (not specifically a clickable catcher)",
+      "moment": "Same detail-line position as ext.kind.click_catcher, for the broader case of any see-through element laid over the page.",
+      "says": "Name, as a short tag, a see-through element covering the page - broader than the click-catcher case, which is specifically something clickable.",
+      "budget": "Inline tag within a comma-joined list, ~2-3 words",
+      "notes": "Distinguish from ext.kind.click_catcher: this is any transparent overlay, that one is specifically a clickable trap."
+    },
+    {
+      "id": "ext.kind.synthetic_click",
+      "surface": "extension",
+      "en_key": "kind_synthetic_click",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a click the page generated itself in script rather than a real press",
+      "moment": "Same detail-line position, for an attempt where the page's own code dispatched a fake click event rather than the person actually pressing anything.",
+      "says": "Name, as a short tag, a click the page's own script made up and dispatched itself - not a real press from the person.",
+      "budget": "Inline tag within a comma-joined list, ~2-3 words"
+    },
+    {
+      "id": "ext.kind.window_open",
+      "surface": "extension",
+      "en_key": "kind_window_open",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a pop-up window opened via the page's own script",
+      "moment": "Same detail-line position, for an attempt where the page called its own window.open to spawn a new window.",
+      "says": "Name, as a short tag, a pop-up window the page opened through its own code.",
+      "budget": "Inline tag within a comma-joined list, ~2 words"
+    },
+    {
+      "id": "ext.kind.form_submit",
+      "surface": "extension",
+      "en_key": "kind_form_submit",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a hidden form submitted to open a new tab",
+      "moment": "Same detail-line position, for an attempt using a hidden HTML form submitted with a target of a new tab, rather than a normal link or window call.",
+      "says": "Name, as a short tag, a hidden form the page submitted in order to open a new tab.",
+      "budget": "Inline tag within a comma-joined list, ~2-3 words"
+    },
+    {
+      "id": "ext.kind.href_swap",
+      "surface": "extension",
+      "en_key": "kind_href_swap",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a link whose target was rewritten in the moment between the person's press and release",
+      "moment": "Same detail-line position, for the specific trick of a link's own destination attribute being changed after the press started but before it was released.",
+      "says": "Name, as a short tag, a link whose destination was changed in the moment between the person's press and its release.",
+      "budget": "Inline tag within a comma-joined list, ~3-4 words"
+    },
+    {
+      "id": "ext.kind.back_hijack",
+      "surface": "extension",
+      "en_key": "kind_back_hijack",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a navigation fired right after the person used the browser's back gesture/button",
+      "moment": "Same detail-line position, for a case where a navigation happened immediately following the person going back, redirecting them somewhere other than back to where they came from.",
+      "says": "Name, as a short tag, a navigation the page fired right after the person's own back gesture, sending them somewhere other than back.",
+      "budget": "Inline tag within a comma-joined list, ~3-4 words"
+    },
+    {
+      "id": "ext.kind.redirect",
+      "surface": "extension",
+      "en_key": "kind_redirect",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a same-tab cross-site navigation that hijacked the person's press",
+      "moment": "Same detail-line position, for the core same-tab-redirect trick: the page sent the tab to another site the instant the person pressed something, instead of wherever the press was aimed.",
+      "says": "Name, as a short tag, a cross-site redirect that took over a press the person aimed at something else on the same page.",
+      "budget": "Inline tag within a comma-joined list, ~4-5 words"
+    },
+    {
+      "id": "ext.kind.pop_tab",
+      "surface": "extension",
+      "en_key": "kind_pop_tab",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a brand-new tab opened somewhere the person did not press toward",
+      "moment": "Same detail-line position, for a new tab the page opened - not via a normal window.open call but tab-under style, behind the person's press.",
+      "says": "Name, as a short tag, a new tab the page opened behind the person's own press, going somewhere else entirely.",
+      "budget": "Inline tag within a comma-joined list, ~4-5 words"
+    },
+    {
+      "id": "ext.kind.network_rule",
+      "surface": "extension",
+      "en_key": "kind_network_rule",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a known pop network stopped at the network-request level rather than caught in the page's own script",
+      "moment": "Same detail-line position, for the case where a known bad actor's own request was refused outright by a network-level rule, before it could even try any of the other tricks.",
+      "says": "Name, as a short tag, a destination stopped at the network request itself, before it ever reached the page - the strongest, earliest kind of block.",
+      "budget": "Inline tag within a comma-joined list, ~3-4 words"
+    },
+    {
+      "id": "ext.reason.way_back",
+      "surface": "extension",
+      "en_key": "reason_way_back",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "footnote",
+      "screen": "Popup, one-line reason shown under a destination row explaining why a same-tab redirect was allowed through",
+      "moment": "The person reads why a particular redirect was let through rather than blocked: because its own destination address carried a way to get back to the original site.",
+      "says": "Explain, briefly, why this redirect was allowed: its own address included a path back to the site the person started on, which is treated as a sign of a legitimate round-trip rather than a hijack.",
+      "budget": "Row footnote, one short sentence, ~30-40 chars"
+    },
+    {
+      "id": "ext.reason.sized",
+      "surface": "extension",
+      "en_key": "reason_sized",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "footnote",
+      "screen": "Popup, reason shown under a row explaining why a pop-up window was allowed",
+      "moment": "The person reads why a particular pop-up was let through: it asked for a specific window size, rather than opening as a plain new tab, which reads as an intentional secondary window (e.g. a sign-in popup) rather than a hijack.",
+      "says": "Explain, briefly, why this window was allowed: it opened at a deliberate size the page asked for, rather than as a bare full tab.",
+      "budget": "Row footnote, one short sentence, ~25-35 chars"
+    },
+    {
+      "id": "ext.reason.took_press",
+      "surface": "extension",
+      "en_key": "reason_took_press",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "footnote",
+      "screen": "Popup, reason shown under a row explaining why a destination was blocked",
+      "moment": "The person reads why a particular destination was blocked: it arrived riding a press the person aimed at something else entirely, the core hijack pattern this whole extension exists to stop.",
+      "says": "Explain, briefly, why this destination was blocked: it rode along with a press the person made toward something else - it took the press rather than being pressed toward directly.",
+      "budget": "Row footnote, one short sentence, ~15-25 chars"
+    },
+    {
+      "id": "ext.reason.default_allow",
+      "surface": "extension",
+      "en_key": "reason_default_allow",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "footnote",
+      "screen": "Popup, reason shown under a row explaining why a destination was allowed with no explicit rule",
+      "moment": "The person reads why an unrated destination went through anyway: because there was no rule against it, and the general default policy is to allow.",
+      "says": "Explain, briefly, why this destination was allowed: nothing (no rule, no red flag) said it should be stopped, so it went through by the app's own default.",
+      "budget": "Row footnote, one short sentence, ~15-25 chars"
+    },
+    {
+      "id": "ext.reason.own_code",
+      "surface": "extension",
+      "en_key": "reason_own_code",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "footnote",
+      "screen": "Popup, reason shown under a row explaining why a window was allowed because it came from the site's own script, not a third party",
+      "moment": "The person reads why a window was let through: the code that opened it belongs to the site itself, sitting on the call stack right where the window was opened, which counts as the site vouching for it.",
+      "says": "Explain, briefly, why this window was allowed: the code asking for it belonged to the site itself, not to some other party riding along on the page.",
+      "budget": "Row footnote, one short sentence, ~25-35 chars"
+    },
+    {
+      "id": "ext.popup.rules_link",
+      "surface": "extension",
+      "en_key": "popup_rules_link",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "menu item",
+      "screen": "Popup's main view, a row that navigates to the full rules list; also the header title of that rules screen and the sr-only label on the popup's back button when returning from it",
+      "moment": "The person is at the bottom of the main popup view and sees a row that, when pressed, opens the full list of every rule they've ever set.",
+      "says": "Name the screen/section that lists every rule the person has ever set, across every site. Reused as both the nav row that opens it and that screen's own header title.",
+      "budget": "Nav row / header title, one word",
+      "notes": "Reused in three spots: the main view's navigation row, the Rules screen's own <h1>, and the accessible label for the back button used when leaving that screen (data-i18n-label on the same string)."
+    },
+    {
+      "id": "ext.popup.back_link",
+      "surface": "extension",
+      "en_key": "popup_page_link",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "menu item",
+      "screen": "Rules screen and Settings screen (popup), the back button's accessible label, and the visible destination it returns to conceptually",
+      "moment": "A screen-reader user on the Rules or Settings sub-screen focuses the back button (which shows only a chevron, no visible text) and hears this as its name.",
+      "says": "Name the destination a back button returns to: the popup's main per-page view. Used as an accessibility label on a visually chevron-only back button, so it should name where 'back' goes, in a way that makes sense heard aloud with no visual context.",
+      "budget": "Accessibility label (not visible on screen), one word",
+      "notes": "The visible button is just a chevron icon - this string exists only for screen readers, on both the Rules screen and the Settings screen's identical back buttons."
+    },
+    {
+      "id": "ext.rules.everywhere_heading",
+      "surface": "extension",
+      "en_key": "rules_everywhere_heading",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "section header",
+      "screen": "Popup's Rules screen, heading above the list of rules that apply to every site",
+      "moment": "The person has opened the full rules list and sees it split into two sections; this heads the first one, for rules scoped to every site at once.",
+      "says": "Head the section of the rules list containing rules that were set to apply to every guarded site, not just one.",
+      "budget": "Section heading, ~2 words, one line"
+    },
+    {
+      "id": "ext.rules.by_site_heading",
+      "surface": "extension",
+      "en_key": "rules_by_site_heading",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "section header",
+      "screen": "Popup's Rules screen, heading above the list of rules scoped to individual sites",
+      "moment": "Same rules list, second section, for rules that were set for one particular site only.",
+      "says": "Head the section of the rules list containing rules that were set for one specific site, as opposed to every site. Clear counterpart to ext.rules.everywhere_heading.",
+      "budget": "Section heading, ~3 words, one line"
+    },
+    {
+      "id": "ext.rules.empty",
+      "surface": "extension",
+      "en_key": "rules_empty",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "empty state",
+      "screen": "Popup's Rules screen, shown inside either section (everywhere or by-site) when that particular list has no rules in it",
+      "moment": "The person opened one of the two rule-list sections and it happens to have no entries at all, so this single-line placeholder appears instead of any rows.",
+      "says": "State plainly that no rules exist in this particular list - as terse as a single-row list placeholder needs to be.",
+      "budget": "List placeholder row, ~1-2 words"
+    },
+    {
+      "id": "ext.action.allow",
+      "surface": "extension",
+      "en_key": "action_allow",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "menu item",
+      "screen": "Popup's Rules screen, each row's own small menu - the option that sets an existing rule to allow",
+      "moment": "The person is editing one rule directly in the Rules screen and opens its menu, which offers three states this rule could be set to; this is the 'allow' one.",
+      "says": "Name the menu option that changes this existing rule to allow. Simpler/shorter context than ext.action.allow_here/everywhere since scope is already fixed by which section the row is in.",
+      "budget": "Menu/select option, one word"
+    },
+    {
+      "id": "ext.action.block",
+      "surface": "extension",
+      "en_key": "action_block",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "menu item",
+      "screen": "Popup's Rules screen, same row menu, the option that sets an existing rule to block",
+      "moment": "Same rules-screen row menu, the option that changes this rule to block.",
+      "says": "Name the menu option that changes this existing rule to block.",
+      "budget": "Menu/select option, one word"
+    },
+    {
+      "id": "ext.action.clear",
+      "surface": "extension",
+      "en_key": "action_clear",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "menu item",
+      "screen": "Popup's Rules screen, same row menu, the option that deletes the rule entirely so the default policy applies again",
+      "moment": "Same rules-screen row menu, the third option: removing this specific rule altogether rather than setting it to a different verdict.",
+      "says": "Name the menu option that removes this rule entirely, so the destination goes back to being governed by the general default policy rather than an explicit rule.",
+      "budget": "Menu/select option, ~2 words",
+      "notes": "Same underlying action as app.rules.row.use_default in the container app, phrased for the popup's tighter menu context - the two are separate translation units but should read as the same action to a user moving between them."
+    },
+    {
+      "id": "ext.popup.settings_heading",
+      "surface": "extension",
+      "en_key": "popup_settings_heading",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "section header",
+      "screen": "Popup's main view, a row that navigates to the popup's own Settings sub-screen; also that screen's own header title",
+      "moment": "The person is at the bottom of the main popup view, below the Rules row, and sees a row that opens the popup's own small settings screen.",
+      "says": "Name the section holding the extension's general settings (master guard switch, page note toggle, run-mode, default policy) inside the popup itself. Reused as both the nav row and that screen's header title.",
+      "budget": "Nav row / header title, one word",
+      "notes": "This is the extension popup's own Settings, a separate screen from the container app's Settings screen (app.nav.settings) - same underlying concept, different surface, separate translation unit."
+    },
+    {
+      "id": "ext.settings.guard_label",
+      "surface": "extension",
+      "en_key": "popup_guard_label",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "toggle label",
+      "screen": "Popup's Settings sub-screen, first row - the master on/off switch for the whole guard, plus the screen-reader-only label on its switch",
+      "moment": "The person is in the popup's own settings screen and sees the very first row: the master switch that turns the whole guard off everywhere, overriding every per-site setting.",
+      "says": "Label the master on/off switch for the whole guard - the one setting that, when off, disables protection everywhere regardless of any individual site's own state. Used both as the visible row label and as the screen-reader-only label on the switch itself.",
+      "budget": "Toggle row label, one word",
+      "notes": "Extension-side counterpart to app.settings.guard_toggle - same underlying setting, separate translation unit; should read consistently to a user who sees both. Used twice in the markup: once as the visible row text, once as the sr-only label on the switch input."
+    },
+    {
+      "id": "ext.settings.guard_on",
+      "surface": "extension",
+      "en_key": "popup_guard_on",
+      "file": "Extension/Resources/popup/popup.js (via `t()`, referenced in the popup's settings rendering logic)",
+      "role": "label",
+      "screen": "Popup's Settings sub-screen, describing the current state of the master Guard switch when it is on (parallel to app.settings.state_on for the same concept in the container app)",
+      "moment": "The person is looking at the master Guard switch in the popup's settings and it is currently on; this word is the state's own name, used wherever that state needs to be named as text.",
+      "says": "State that the master guard switch is currently on/running.",
+      "budget": "State label, one word",
+      "notes": "Parallel to app.settings.state_on but this key is specific to the guard switch (rather than the container app's generic on/off pair) - keep short enough to work as a switch's state name."
+    },
+    {
+      "id": "ext.settings.guard_off",
+      "surface": "extension",
+      "en_key": "popup_guard_off",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup's Settings sub-screen, describing the current state of the master Guard switch when it is off",
+      "moment": "Same position as ext.settings.guard_on, for when the master guard switch is currently off/paused.",
+      "says": "State that the master guard switch is currently off/paused.",
+      "budget": "State label, one word",
+      "notes": "Clear opposite of ext.settings.guard_on."
+    },
+    {
+      "id": "ext.settings.mode_heading",
+      "surface": "extension",
+      "en_key": "popup_mode_heading",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "section header",
+      "screen": "Popup's Settings sub-screen, heading above the two-option mode choice (watched sites vs. every site)",
+      "moment": "The person is in the popup's settings screen and reaches a heading above the choice of which sites the guard actually runs on.",
+      "says": "Introduce, as a section heading, the choice of which sites the guard runs on: only sites individually switched on, or every site automatically. Same concept as the container app's equivalent heading.",
+      "budget": "Section heading, ~3-5 words, one line",
+      "notes": "Extension-side counterpart to app.settings.mode_heading - same underlying setting, separate translation unit."
+    },
+    {
+      "id": "ext.settings.mode_watched",
+      "surface": "extension",
+      "en_key": "mode_watched",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "label",
+      "screen": "Popup's Settings sub-screen, first option of the mode choice",
+      "moment": "The person is choosing between the two run-mode options in the popup; this is the option meaning the guard only watches individually-switched-on sites.",
+      "says": "Name the mode where the guard only runs on sites the person has individually switched on, described from the person's own point of view rather than as a technical mode name.",
+      "budget": "Radio option label, ~3 words, one line",
+      "notes": "Extension-side counterpart to app.settings.mode_watched - keep consistent in meaning, separate translation unit."
+    },
+    {
+      "id": "ext.settings.mode_everywhere",
+      "surface": "extension",
+      "en_key": "mode_everywhere",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "label",
+      "screen": "Popup's Settings sub-screen, second option of the mode choice",
+      "moment": "Same mode choice, the option meaning the guard runs automatically on every site.",
+      "says": "Name the mode where the guard runs automatically on every site, with nothing to switch on per-site.",
+      "budget": "Radio option label, ~2 words, one line",
+      "notes": "Extension-side counterpart to app.settings.mode_everywhere."
+    },
+    {
+      "id": "ext.settings.banner_toggle",
+      "surface": "extension",
+      "en_key": "setting_banner",
+      "file": "Extension/Resources/popup/popup.html",
+      "role": "toggle label",
+      "screen": "Popup's Settings sub-screen, toggle for whether a small note is drawn directly on the page when the guard stops something",
+      "moment": "The person is in the popup's own settings screen and sees a toggle controlling whether a small visible banner appears on the page itself, separate from the popup's own record of what happened.",
+      "says": "Label the toggle for whether a small note/banner is drawn on the web page itself when the guard stops something there.",
+      "budget": "Toggle row label, ~2 words",
+      "notes": "Extension-side counterpart to app.settings.banner_toggle - same underlying setting, separate translation unit; should read consistently to a user who sees both."
+    },
+    {
+      "id": "ext.action.report",
+      "surface": "extension",
+      "en_key": "action_report",
+      "file": "Extension/Resources/popup/popup.html, popup.js",
+      "role": "menu item",
+      "screen": "Popup's main view, last row of the nav list, opens a pre-filled bug report for a site the guard missed something on",
+      "moment": "The person is at the bottom of the main popup, below Rules and Settings, and sees a row that, when pressed, opens a new browser tab with a pre-filled issue report about the current site.",
+      "says": "Name the action of opening a pre-filled report about this site, for something the guard missed or got wrong. This opens an external issue tracker in a new tab; nothing is sent automatically until the person submits it themselves.",
+      "budget": "Nav row label, ~2 words",
+      "notes": "Opens github.com/kengomatsuo/undirect/issues/new in a new tab with prefilled title/body; the person still has to submit it themselves."
+    }
+  ]
+}

@@ -1,0 +1,600 @@
+{
+  "locale": "tr",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Uzantı Henüz Açık Değil",
+      "back": "Extension yet open not",
+      "why": "Turkish suffix 'henüz' carries the 'not yet' nuance without a separate word for 'yet'; states the missing fact, not an instruction."
+    },
+    "app.setup.title_failed": {
+      "s": "Uzantı Durumu Belirsiz",
+      "back": "Extension status unclear",
+      "why": "'Belirsiz' (unclear) reads as hedged rather than 'off', keeping it distinct from the default title."
+    },
+    "app.setup.detail_default": {
+      "s": "Bir site korumaya alındığında, tıklamalarınızı artık ele geçiremez.",
+      "back": "A site protection-to when-taken, your-clicks anymore cannot seize.",
+      "why": "'Korumaya almak' (take under protection) is the natural Turkish verb for switching guarding on; 'artık' carries the 'no longer' without an antithesis frame."
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari'den yanıt alınamadı. Uzantıyı açarsanız uygulama bunu kendiliğinden fark eder.",
+      "back": "From-Safari answer could-not-be-received. Extension-the if-you-open app this by-itself notices.",
+      "why": "'Yanıt alınamadı' names the failure without an error code; 'kendiliğinden' reassures the app notices automatically."
+    },
+    "app.setup.open_button": {
+      "s": "Safari Uzantı Ayarlarını Aç",
+      "back": "Safari Extension Settings-its Open",
+      "why": "Names the exact destination the button opens; imperative verb, matches Apple's own button convention."
+    },
+    "app.welcome.heading": {
+      "s": "Undirect'e Hoş Geldiniz",
+      "back": "To-Undirect Welcome Came-you(plural/formal)",
+      "why": "Standard Turkish welcome formula; the one place allowed the warmer register."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Görünmez Katman",
+      "back": "Invisible Layer",
+      "why": "Plain concrete noun phrase, no marketing language."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Görünmez bir katman dokunuşunuzu başka yere kaydırabilir.",
+      "back": "Invisible a layer your-tap other place-to can-shift.",
+      "why": "Kept under budget by naming the effect (shifts your tap) rather than describing the layer's position in full."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Değişen Bağlantılar",
+      "back": "Changing Links",
+      "why": "Present-participle-as-adjective is native Turkish here, not a translated tail."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Bazı sayfalar bağlantıyı basışla bırakış arasında değiştirir.",
+      "back": "Some pages the-link press-with release between changes.",
+      "why": "'Basışla bırakış arasında' names the exact moment without a subordinate clause."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "İstenmeyen Pencereler",
+      "back": "Unwanted Windows",
+      "why": "Direct noun phrase matching the trick's name."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Koruma açıkken yeni sekme yalnızca bastığınız yere açılır.",
+      "back": "Protection on-while new tab only you-pressed place-to opens.",
+      "why": "Stated as the promise the brief asks for, not as a description of the trick."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Tüm Hedefler",
+      "back": "All Destinations",
+      "why": "Uses the fixed vocabulary term 'hedef' for destination."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Gördüğü her hedefi listeler; sitede ya da her yerde izin verin ya da engelleyin.",
+      "back": "It-saw every destination lists; site-in or everywhere-in allow or block.",
+      "why": "Semicolon splits the tracking claim from the allow/block choice without an English-style connector at the joint."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Site Bazında Koruma",
+      "back": "Site Basis-on Protection",
+      "why": "'Site bazında' is the standard Turkish phrase for a per-item setting."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Safari araç çubuğundaki Undirect düğmesine basmak o siteyi korumaya alır.",
+      "back": "Safari toolbar-its-in Undirect button-to pressing that site-the protection-to takes.",
+      "why": "One subject-verb sentence names the exact mechanism, no separate clause for the outcome."
+    },
+    "app.nav.guarded_sites": {
+      "s": "Korunan Siteler",
+      "back": "Guarded Sites",
+      "why": "Two short words fit a narrow sidebar column and double as the nav title."
+    },
+    "app.nav.settings": {
+      "s": "Ayarlar",
+      "back": "Settings",
+      "why": "Apple's own Turkish term for this screen on both platforms."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated as the brief instructs."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Genel",
+      "back": "General",
+      "why": "Turkish has no single word for 'everywhere'; 'genel' (general) gives a true one-word label that still contrasts cleanly with 'Siteye Özel'."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Siteye Özel",
+      "back": "Site-to Specific",
+      "why": "Reads as the clear opposite of 'Genel' when the two sit side by side."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Uzantıdan Henüz Veri Yok",
+      "back": "From-extension Yet Data None",
+      "why": "Names this as a no-contact-yet state, distinct from an empty content list."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Safari'de bir sayfa açın, liste kendiliğinden dolar.",
+      "back": "In-Safari a page open, list by-itself fills.",
+      "why": "Imperative plus consequence in one short sentence, no setting to change."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Kural Yok",
+      "back": "Rule None",
+      "why": "Short and distinct in wording from the no-contact title above it."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Bir hedef, ancak siz karar verince listeye girer.",
+      "back": "A destination, only you decision when-you-make list-to enters.",
+      "why": "'Siz karar verince' (once you decide) makes clear a rule needs an actual decision, not just being seen."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Şimdiye kadar %lld girişim durduruldu.",
+      "back": "Until-now %lld attempt was-stopped.",
+      "why": "Turkish has a single plural category (CLDR 'other'); the noun 'girişim' does not change form after the numeral."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Engellendi",
+      "back": "Was-blocked",
+      "why": "One-word passive verb form, the reused status word across the app."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "İzinli",
+      "back": "Permitted",
+      "why": "Single-word adjective, the clearest one-word opposite of 'Engellendi'."
+    },
+    "app.rules.row.action_allow": {
+      "s": "İzin ver",
+      "back": "Permission give",
+      "why": "Turkish has no single-word verb for 'allow'; 'izin ver' is the closest natural imperative and is used consistently for this action everywhere."
+    },
+    "app.rules.row.action_block": {
+      "s": "Engelle",
+      "back": "Block",
+      "why": "Single imperative verb, fits the one-word budget exactly."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Hedefi engelleyin ya da izin verin.",
+      "back": "Destination-the block or permission give.",
+      "why": "States the two available choices plainly, matching a hover tooltip's role."
+    },
+    "app.rules.row.use_default": {
+      "s": "Varsayılana Dön",
+      "back": "To-default Return",
+      "why": "Names clearing the rule as returning to default, not as a new verdict."
+    },
+    "app.watched.empty.title": {
+      "s": "Henüz Korunan Site Yok",
+      "back": "Yet Guarded Site None",
+      "why": "States plainly that no site has been switched on yet."
+    },
+    "app.watched.empty.detail": {
+      "s": "Sorun çıkaran bir sitede Safari araç çubuğundaki Undirect düğmesine basın.",
+      "back": "Trouble causing a site-on Safari toolbar-its-in Undirect button-to press.",
+      "why": "Names the exact first action to take, matching the misbehaving-site framing in the brief."
+    },
+    "app.watched.footer": {
+      "s": "Yeni site yalnızca Safari'deki düğmeyle eklenir.",
+      "back": "New site only in-Safari button-with is-added.",
+      "why": "States the one path to adding a site, since this screen has none of its own."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Korunuyor",
+      "back": "Is-being-guarded",
+      "why": "One-word present-passive status, read-only on iOS."
+    },
+    "app.watched.row.stop_button": {
+      "s": "Durdur",
+      "back": "Stop",
+      "why": "Short imperative verb for a small trailing row button."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Bu sitede korumayı kapatır.",
+      "back": "This site-on protection-the turns-off.",
+      "why": "Describes the button's effect plainly, matching a hover tooltip."
+    },
+    "app.settings.guard_toggle": {
+      "s": "Koruma",
+      "back": "Protection",
+      "why": "One-word noun, the master switch's own name, kept consistent with the vocabulary's 'guard' concept."
+    },
+    "app.settings.state_on": {
+      "s": "Açık",
+      "back": "On",
+      "why": "Generic one-word on-state, reused for more than one setting."
+    },
+    "app.settings.state_off": {
+      "s": "Kapalı",
+      "back": "Off",
+      "why": "Clear one-word opposite of 'Açık'."
+    },
+    "app.settings.mode_heading": {
+      "s": "Korumanın Çalıştığı Yer",
+      "back": "Protection-its Runs Place",
+      "why": "Names the choice as a place (where it runs), matching the picker's actual options."
+    },
+    "app.settings.mode_watched": {
+      "s": "Seçtiğiniz Siteler",
+      "back": "You-chose Sites",
+      "why": "The '-iniz' possessive suffix carries 'you' without stating a pronoun, matching the implied-second-person register."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Tüm Siteler",
+      "back": "All Sites",
+      "why": "Short two-word option naming automatic, everywhere coverage."
+    },
+    "app.settings.banner_toggle": {
+      "s": "Sayfada Not",
+      "back": "On-page Note",
+      "why": "Uses the fixed vocabulary term 'not' for the page-note feature."
+    },
+    "app.settings.policy_heading": {
+      "s": "Kuralsız Hedefler İçin Varsayılan",
+      "back": "Ruleless Destinations For Default",
+      "why": "Names exactly what the default governs: destinations with no rule at all."
+    },
+    "app.settings.policy_block": {
+      "s": "Engelle",
+      "back": "Block",
+      "why": "Matches the imperative verb used for the same policy elsewhere in the app."
+    },
+    "app.settings.policy_allow": {
+      "s": "İzin Ver",
+      "back": "Permission Give",
+      "why": "Matches the paired imperative used for the allow policy elsewhere."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated."
+    },
+    "ext.meta.description": {
+      "s": "Sayfaların tıklamanızı ele geçirip istemediğiniz yere yönlendirmesini engeller.",
+      "back": "Pages-of your-click seizing-and you-didn't-want place-to their-redirecting blocks.",
+      "why": "One sentence for a reader who has never used the extension, naming both the seizure and the unwanted redirect."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name is the product's own name."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Bu Sitede Koruma Açık",
+      "back": "This Site-on Protection On",
+      "why": "States the current on-state for the active tab's site."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Korumayı Açmak İçin Tıklayın",
+      "back": "Protection-the To-Turn-On For Click",
+      "why": "Doubles as the call to action, since pressing this icon is how guarding starts."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Korunacak Bir Site Yok",
+      "back": "To-be-guarded A Site None",
+      "why": "Explains briefly that there is nothing here to guard."
+    },
+    "ext.popup.no_site_title": {
+      "s": "Burada Site Yok",
+      "back": "Here Site None",
+      "why": "Short headline for the empty-tab state, sits beside a small icon."
+    },
+    "ext.popup.no_site_body": {
+      "s": "Bir site açın, ardından buraya basın.",
+      "back": "A site open, then here-to press.",
+      "why": "'Buraya' keeps the brief's instruction to self-reference the button as 'here' rather than a place."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Bu site için korumayı aç/kapat",
+      "back": "This site for protection-the turn-on/turn-off",
+      "why": "Screen-reader-only label naming exactly what the switch controls."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Burada korunacak bir sayfa yok.",
+      "back": "Here to-be-guarded a page none.",
+      "why": "States plainly why the switch is disabled: nothing to guard."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Koruma zaten her sitede açık.",
+      "back": "Protection already every site-on on.",
+      "why": "Explains the switch is redundant because everywhere mode already covers it."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Koruma tamamen kapalı.",
+      "back": "Protection entirely off.",
+      "why": "Attributes the disabled switch to the master setting, not this site."
+    },
+    "ext.popup.watch_on": {
+      "s": "Koruma açık. Kapatırsanız sayfa yenilenir.",
+      "back": "Protection on. If-you-turn-off page is-renewed.",
+      "why": "States current state then the reload warning as a separate short sentence."
+    },
+    "ext.popup.watch_off": {
+      "s": "Koruma kapalı. Açarsanız sayfa yenilenir.",
+      "back": "Protection off. If-you-turn-on page is-renewed.",
+      "why": "Direct counterpart to watch_on, same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "Bu Sayfa",
+      "back": "This Page",
+      "why": "Two-word heading sitting beside the trailing stopped-count badge."
+    },
+    "ext.popup.page_off": {
+      "s": "Koruma kapalı olduğu için burada bir şey izlenmiyor.",
+      "back": "Protection off being because here a thing is-not-tracked.",
+      "why": "Dead key as of 2026-09-22; wording matches the voice of the other page-section states in case it is wired up later."
+    },
+    "ext.popup.page_quiet": {
+      "s": "Bu sayfa henüz başka bir yere uzanmadı.",
+      "back": "This page yet other a place-to hasn't-reached.",
+      "why": "States plainly that nothing has tried to reach outside this page so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "Listelenecek bir şey yok.",
+      "back": "To-be-listed a thing none.",
+      "why": "Dead key; treated as a near-synonym of page_quiet per the brief, worded around the empty list itself."
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld engellendi",
+      "back": "%lld was-blocked",
+      "why": "Turkish has one plural category; the same phrase serves the count of 1 and any other count."
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld engellendi",
+      "back": "%lld was-blocked",
+      "why": "Identical to stopped_one: Turkish nouns do not change after a numeral, so both forms of this plural pair read the same."
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld girişim",
+      "back": "%lld attempt",
+      "why": "Broader than 'stopped': counts every recorded attempt, blocked and allowed."
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld girişim",
+      "back": "%lld attempt",
+      "why": "Same phrase as seen_one; no Turkish plural inflection applies after the number."
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld kez",
+      "back": "%lld time(s)",
+      "why": "Terse fragment meant to sit among other short tags in one detail line."
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld kez",
+      "back": "%lld time(s)",
+      "why": "Same phrase as tries_one; Turkish's single plural category needs no second form."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Uygulanan düzeltme",
+      "back": "Applied fix",
+      "why": "Reads naturally as the lead-in half of 'Uygulanan düzeltme: <isim>'."
+    },
+    "ext.state.blocked": {
+      "s": "Engellendi",
+      "back": "Was-blocked",
+      "why": "Same one-word status as app.rules.row.state_blocked, kept consistent across surfaces."
+    },
+    "ext.state.allowed": {
+      "s": "İzinli",
+      "back": "Permitted",
+      "why": "Same word as app.rules.row.state_allowed."
+    },
+    "ext.state.removed": {
+      "s": "Kaldırıldı",
+      "back": "Was-removed",
+      "why": "Names the trap as taken off the page, distinct from an allow/block verdict."
+    },
+    "ext.scope.here": {
+      "s": "bu sitede",
+      "back": "this site-on",
+      "why": "Fragment meant to follow a verdict word; the fixed `${verdict} ${scope}` concatenation puts it after, not before, which is not the most natural Turkish order but is unavoidable given the hardcoded composition."
+    },
+    "ext.scope.everywhere": {
+      "s": "her yerde",
+      "back": "every place-in",
+      "why": "Same composition caveat as scope.here applies."
+    },
+    "ext.scope.default": {
+      "s": "varsayılan olarak",
+      "back": "default as",
+      "why": "Names 'no explicit rule, only the general default' as a trailing fragment."
+    },
+    "ext.action.allow_here": {
+      "s": "Burada İzin Ver",
+      "back": "Here Permission Give",
+      "why": "Location before verb is the natural Turkish order, unlike the scope fragments above which are fixed by code."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Her Yerde İzin Ver",
+      "back": "Every Place-in Permission Give",
+      "why": "Same natural order as allow_here, scope word placed first."
+    },
+    "ext.action.block_here": {
+      "s": "Burada Engelle",
+      "back": "Here Block",
+      "why": "Natural Turkish order, distinct menu option from the everywhere variant."
+    },
+    "ext.action.block_everywhere": {
+      "s": "Her Yerde Engelle",
+      "back": "Every Place-in Block",
+      "why": "Natural Turkish order, paired with block_here."
+    },
+    "ext.popup.policy_heading": {
+      "s": "Kuralsız Hedefler İçin Varsayılan",
+      "back": "Ruleless Destinations For Default",
+      "why": "Same wording as app.settings.policy_heading, kept consistent across the two surfaces."
+    },
+    "ext.policy.block": {
+      "s": "Engelle",
+      "back": "Block",
+      "why": "Matches the block imperative used consistently elsewhere."
+    },
+    "ext.policy.allow": {
+      "s": "İzin Ver",
+      "back": "Permission Give",
+      "why": "Matches the allow imperative used consistently elsewhere."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Bu sayfa uzantının bir kısmını engelliyor, koruma burada eksik kalıyor.",
+      "back": "This page extension-of a part-its is-blocking, protection here incomplete stays.",
+      "why": "Attributes the block to the page's own settings, names the result as partial protection, not a bug."
+    },
+    "ext.kind.click_catcher": {
+      "s": "Görünmez Tuzak",
+      "back": "Invisible Trap",
+      "why": "Short noun-phrase tag matching its siblings' shape."
+    },
+    "ext.kind.overlay": {
+      "s": "Saydam Katman",
+      "back": "Transparent Layer",
+      "why": "Broader than click_catcher: any see-through element, not specifically a clickable one."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Sahte Tıklama",
+      "back": "Fake Click",
+      "why": "Names a click the page's own script made up, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "Yeni Pencere",
+      "back": "New Window",
+      "why": "Short tag for a window the page's own script opened."
+    },
+    "ext.kind.form_submit": {
+      "s": "Gizli Form",
+      "back": "Hidden Form",
+      "why": "Names the hidden-form-submission trick tersely."
+    },
+    "ext.kind.href_swap": {
+      "s": "Anlık Değişen Bağlantı",
+      "back": "Instant Changing Link",
+      "why": "Adds 'anlık' (instant) to distinguish this from the general 'Değişen Bağlantılar' welcome-screen title."
+    },
+    "ext.kind.back_hijack": {
+      "s": "Geri Tuşunda Yönlendirme",
+      "back": "Back Button-on Redirect",
+      "why": "Names the redirect as tied to the back gesture specifically."
+    },
+    "ext.kind.redirect": {
+      "s": "Tıklamayı Kaçıran Yönlendirme",
+      "back": "The-Click Hijacking Redirect",
+      "why": "Names the core same-tab-redirect trick as one that hijacks the click."
+    },
+    "ext.kind.pop_tab": {
+      "s": "Arkadan Açılan Sekme",
+      "back": "From-Behind Opened Tab",
+      "why": "Distinguishes a tab-under from a normal window.open pop-up."
+    },
+    "ext.kind.network_rule": {
+      "s": "Ağ Düzeyinde Engelleme",
+      "back": "Network Level-on Blocking",
+      "why": "Names this as the earliest, strongest kind of block."
+    },
+    "ext.reason.way_back": {
+      "s": "Adres, geldiğiniz siteye dönüş içeriyor.",
+      "back": "Address, you-came site-to return contains.",
+      "why": "States the specific sign treated as legitimate: a return path in the address itself."
+    },
+    "ext.reason.sized": {
+      "s": "Belirli bir boyut istendi.",
+      "back": "Specific a size was-requested.",
+      "why": "Names the deliberate-size signal that reads as an intentional secondary window."
+    },
+    "ext.reason.took_press": {
+      "s": "Tıklamanızı kaçırdı.",
+      "back": "Your-click it-hijacked.",
+      "why": "Very short footnote naming the core hijack pattern the extension exists to stop."
+    },
+    "ext.reason.default_allow": {
+      "s": "Varsayılan izin verdi.",
+      "back": "Default permission gave.",
+      "why": "Attributes the allow to the general default policy, not a specific rule."
+    },
+    "ext.reason.own_code": {
+      "s": "Pencereyi site kendi açtı.",
+      "back": "The-window site itself opened.",
+      "why": "Names the site's own code as the one vouching for the window."
+    },
+    "ext.popup.rules_link": {
+      "s": "Kurallar",
+      "back": "Rules",
+      "why": "One word, reused as the nav row, the screen's own header, and the back-button label."
+    },
+    "ext.popup.back_link": {
+      "s": "Site",
+      "back": "Site",
+      "why": "Names the popup's main per-site view as the back-button's destination, since the visible button shows only a chevron."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Her Yerde",
+      "back": "Every Place-in",
+      "why": "Two-word budget allows the direct phrase, unlike the one-word grouping filter elsewhere."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Siteye Özel Kurallar",
+      "back": "Site-to Specific Rules",
+      "why": "Clear counterpart to 'Her Yerde' in the same list."
+    },
+    "ext.rules.empty": {
+      "s": "Kural Yok",
+      "back": "Rule None",
+      "why": "Terse single-row placeholder, matches app.rules.empty_no_rules.title."
+    },
+    "ext.action.allow": {
+      "s": "İzin Ver",
+      "back": "Permission Give",
+      "why": "Scope is already fixed by the section, so this is the plain allow verb."
+    },
+    "ext.action.block": {
+      "s": "Engelle",
+      "back": "Block",
+      "why": "Plain block verb, scope fixed by section."
+    },
+    "ext.action.clear": {
+      "s": "Varsayılana Dön",
+      "back": "To-Default Return",
+      "why": "Same action and wording as app.rules.row.use_default."
+    },
+    "ext.popup.settings_heading": {
+      "s": "Ayarlar",
+      "back": "Settings",
+      "why": "One word, matches Apple's term; reused as nav row and header title."
+    },
+    "ext.settings.guard_label": {
+      "s": "Koruma",
+      "back": "Protection",
+      "why": "Same word as app.settings.guard_toggle, used both as visible label and sr-only label."
+    },
+    "ext.settings.guard_on": {
+      "s": "Açık",
+      "back": "On",
+      "why": "Matches app.settings.state_on for the same concept."
+    },
+    "ext.settings.guard_off": {
+      "s": "Kapalı",
+      "back": "Off",
+      "why": "Matches app.settings.state_off."
+    },
+    "ext.settings.mode_heading": {
+      "s": "Korumanın Çalıştığı Yer",
+      "back": "Protection-its Runs Place",
+      "why": "Same wording as app.settings.mode_heading."
+    },
+    "ext.settings.mode_watched": {
+      "s": "Seçtiğiniz Siteler",
+      "back": "You-chose Sites",
+      "why": "Same wording as app.settings.mode_watched."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Tüm Siteler",
+      "back": "All Sites",
+      "why": "Same wording as app.settings.mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Sayfada Not",
+      "back": "On-page Note",
+      "why": "Same wording as app.settings.banner_toggle."
+    },
+    "ext.action.report": {
+      "s": "Sorun Bildir",
+      "back": "Problem Report",
+      "why": "Names the action of opening a pre-filled issue report, submission still left to the person."
+    }
+  }
+}

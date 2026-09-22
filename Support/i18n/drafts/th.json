@@ -1,0 +1,600 @@
+{
+  "locale": "th",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "ส่วนขยายยังไม่เปิดใช้งาน",
+      "back": "Extension not yet turned on",
+      "why": "Plain statement of current state, not an instruction; ส่วนขยาย is Apple's own Thai term for extension."
+    },
+    "app.setup.title_failed": {
+      "s": "ตรวจสอบส่วนขยายไม่สำเร็จ",
+      "back": "Checking extension unsuccessful",
+      "why": "Names the failed check itself, not the off-state, so it reads distinct from title_default without sounding alarming."
+    },
+    "app.setup.detail_default": {
+      "s": "เมื่อเปิดการป้องกันให้ไซต์แล้ว หน้าเว็บจะแย่งการกดของคุณไม่ได้อีก",
+      "back": "Once protection is turned on for a site, the page can no longer steal your press.",
+      "why": "States the payoff plainly, in the app's own voice about its own state."
+    },
+    "app.setup.detail_failed": {
+      "s": "แอปตรวจสอบกับ Safari ไม่สำเร็จในครั้งนี้ แต่ถ้าเปิดส่วนขยายใน Safari แอปจะทราบเองโดยไม่ต้องรีเฟรช",
+      "back": "The app's check with Safari failed this time, but if the extension is turned on in Safari, the app will find out on its own without needing a refresh.",
+      "why": "Two plain clauses, no error code, reassures without technical jargon."
+    },
+    "app.setup.open_button": {
+      "s": "เปิดการตั้งค่าส่วนขยายของ Safari",
+      "back": "Open Safari's extension settings",
+      "why": "Neutral action wording that fits both the setup screen and the welcome sheet."
+    },
+    "app.welcome.heading": {
+      "s": "ยินดีต้อนรับสู่ Undirect",
+      "back": "Welcome to Undirect",
+      "why": "The one place allowed a warmer register; app name kept as a proper noun."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "เลเยอร์ล่องหน",
+      "back": "Invisible layer",
+      "why": "Concrete noun for the trick, no marketing language; เลเยอร์ is the standard Thai tech loanword for layer."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "เลเยอร์ที่มองไม่เห็นอาจซ้อนอยู่บนหน้าเว็บ ทำให้การกดสิ่งหนึ่งไปโดนอีกสิ่งหนึ่งแทน",
+      "back": "An invisible layer may sit over the page, making a press on one thing land on something else instead.",
+      "why": "Describes what the person would experience, not the mechanism."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "ลิงก์สลับกลางคัน",
+      "back": "Link swapped midway",
+      "why": "Short noun phrase naming the trick; กลางคัน carries the mid-press timing."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "บางหน้าเว็บเปลี่ยนปลายทางลิงก์ระหว่างกดกับปล่อย ทำให้คลิกไม่ไปตามที่ตั้งใจ",
+      "back": "Some pages change a link's destination between the press and the release, so the click doesn't go where it was meant to.",
+      "why": "Plain description of the observable effect."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "หน้าต่างที่ไม่ได้เชิญ",
+      "back": "Uninvited window",
+      "why": "Direct equivalent of 'uninvited', covers both pop-up window and new tab."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "เมื่อเปิดการป้องกัน แท็บใหม่จะเปิดไปยังปลายทางที่คุณกดเท่านั้น ไม่มีอะไรแอบตามมา",
+      "back": "When protection is on, a new tab opens only to the destination you pressed, nothing sneaks in along with it.",
+      "why": "Phrased as a promise about the guarded outcome, per the brief."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "บันทึกทุกปลายทาง",
+      "back": "Log every destination",
+      "why": "Names the rule-list feature: tracked, not just the caught ones."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "ทุกปลายทางที่พบจะมีรายการให้ตรวจสอบ เลือกอนุญาตหรือบล็อกได้ทั้งที่นี่หรือทุกไซต์",
+      "back": "Every destination found gets an entry to review; choose to allow or block it either here or on every site.",
+      "why": "Covers both scopes (site / everywhere) named in the vocabulary list."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "เปิดทีละไซต์",
+      "back": "Turn on site by site",
+      "why": "Names the per-site mechanism, contrasting with automatic everywhere mode."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "กดปุ่ม Undirect บนแถบเครื่องมือ Safari ขณะอยู่ในไซต์นั้น เพื่อเปิดการป้องกันให้ไซต์นั้น",
+      "back": "Press the Undirect button on Safari's toolbar while on that site, to turn on protection for that site.",
+      "why": "States the concrete mechanism: toolbar button, one site at a time."
+    },
+    "app.nav.guarded_sites": {
+      "s": "ไซต์ที่ป้องกัน",
+      "back": "Protected sites",
+      "why": "Short enough for a narrow sidebar column, doubles as the nav title."
+    },
+    "app.nav.settings": {
+      "s": "การตั้งค่า",
+      "back": "Settings",
+      "why": "Apple's own Thai term for Settings, used verbatim rather than a synonym."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated like the product's own name in every locale."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "ทุกไซต์",
+      "back": "Every site",
+      "why": "Reads clearly against 'By site' beside it in the sidebar."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "แยกตามไซต์",
+      "back": "Separated by site",
+      "why": "Clear opposite of 'Every site' when the two sit side by side."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "ยังไม่ได้รับข้อมูลจากส่วนขยาย",
+      "back": "Haven't received data from the extension yet",
+      "why": "A first-contact/wiring state, not a claim that content is empty."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "เปิดหน้าเว็บใดก็ได้ใน Safari สักครั้ง แล้วหน้านี้จะมีข้อมูลเอง",
+      "back": "Open any page in Safari once, then this screen will get data on its own.",
+      "why": "States the simple fix with no setting to change."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "ยังไม่มีกฎ",
+      "back": "No rules yet",
+      "why": "Plainly states this specific list is empty, contrasting with the no-app-data state."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "รายการจะปรากฏก็ต่อเมื่อคุณอนุญาตหรือบล็อกปลายทางนั้นแล้ว",
+      "back": "An entry appears only once you have allowed or blocked that destination.",
+      "why": "Explains that seeing a destination is not enough to create a rule."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "ป้องกันการแย่งกดไปแล้ว %lld ครั้ง",
+      "back": "Has already stopped %lld hijack attempts",
+      "why": "Thai doesn't inflect for number, so one form covers the ICU plural range; ครั้ง is the classifier for a count of occurrences."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "ถูกบล็อก",
+      "back": "Is blocked",
+      "why": "Passive state form, pairs against 'ได้รับอนุญาต' as a clear opposite."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "ได้รับอนุญาต",
+      "back": "Has been allowed",
+      "why": "Passive state form built on 'granted', the natural Thai opposite of 'ถูกบล็อก'."
+    },
+    "app.rules.row.action_allow": {
+      "s": "อนุญาต",
+      "back": "Allow",
+      "why": "Bare imperative verb, only shown when the row is currently blocked."
+    },
+    "app.rules.row.action_block": {
+      "s": "บล็อก",
+      "back": "Block",
+      "why": "Bare imperative verb, only shown when the row is currently allowed."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "เลือกว่าจะอนุญาตหรือบล็อกปลายทางนี้",
+      "back": "Choose whether to allow or block this destination",
+      "why": "Describes the control under the pointer, as a hover tooltip should."
+    },
+    "app.rules.row.use_default": {
+      "s": "ใช้ค่าเริ่มต้น",
+      "back": "Use the default value",
+      "why": "Names clearing the rule, not setting a new verdict."
+    },
+    "app.watched.empty.title": {
+      "s": "ยังไม่ได้เปิดการป้องกันไซต์ใด",
+      "back": "Haven't turned on protection for any site yet",
+      "why": "States plainly that no site has been switched on."
+    },
+    "app.watched.empty.detail": {
+      "s": "กดปุ่ม Undirect บนแถบเครื่องมือของ Safari ขณะอยู่ในไซต์ที่มีปัญหา เพื่อเริ่มป้องกัน",
+      "back": "Press the Undirect button on Safari's toolbar while on a site that has trouble, to start protecting it.",
+      "why": "Concrete instruction for the first entry, matching the welcome screen's same mechanism."
+    },
+    "app.watched.footer": {
+      "s": "เพิ่มไซต์ใหม่ได้จากปุ่ม Undirect ใน Safari เท่านั้น หน้านี้ลบไซต์ได้อย่างเดียว",
+      "back": "New sites can only be added from the Undirect button in Safari; this screen can only remove sites.",
+      "why": "Reminds where entries come from, since this screen itself has no add control."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "ป้องกันอยู่",
+      "back": "Currently protected",
+      "why": "Read-only status word, purely informational on this platform."
+    },
+    "app.watched.row.stop_button": {
+      "s": "หยุด",
+      "back": "Stop",
+      "why": "Short imperative verb suited to a small trailing row button."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "ปิดการป้องกันสำหรับไซต์นี้",
+      "back": "Turn off protection for this site",
+      "why": "Describes what the Stop button under the pointer does."
+    },
+    "app.settings.guard_toggle": {
+      "s": "การป้องกัน",
+      "back": "Protection",
+      "why": "Establishes the noun used for 'guard' throughout the app and extension; the master switch label."
+    },
+    "app.settings.state_on": {
+      "s": "เปิด",
+      "back": "On",
+      "why": "Generic on/off state, reused for more than one setting on this screen."
+    },
+    "app.settings.state_off": {
+      "s": "ปิด",
+      "back": "Off",
+      "why": "Clear opposite of 'เปิด', kept fully generic."
+    },
+    "app.settings.mode_heading": {
+      "s": "ขอบเขตการป้องกัน",
+      "back": "Scope of protection",
+      "why": "Heading for the choice of which sites protection actually runs on."
+    },
+    "app.settings.mode_watched": {
+      "s": "เฉพาะไซต์ที่เปิดไว้",
+      "back": "Only sites you've turned on",
+      "why": "Described from the person's own point of view, per the brief, not as a technical mode name."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "ทุกไซต์อัตโนมัติ",
+      "back": "Every site automatically",
+      "why": "Names the automatic always-on mode, contrasting with the per-site option above."
+    },
+    "app.settings.banner_toggle": {
+      "s": "ข้อความแจ้งในหน้า",
+      "back": "Note in the page",
+      "why": "Matches the 'note in the page' vocabulary concept, distinct from the popup's own record."
+    },
+    "app.settings.policy_heading": {
+      "s": "ค่าเริ่มต้นสำหรับปลายทางที่ไม่มีกฎ",
+      "back": "Default for a destination with no rule",
+      "why": "Introduces the choice for a destination with no explicit rule set yet."
+    },
+    "app.settings.policy_block": {
+      "s": "บล็อกไว้ก่อน",
+      "back": "Block by default",
+      "why": "Short phrase for the option where an unrated destination is stopped."
+    },
+    "app.settings.policy_allow": {
+      "s": "อนุญาตไว้ก่อน",
+      "back": "Allow by default",
+      "why": "Clear opposite of 'บล็อกไว้ก่อน'."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, listed name in Safari's Extensions settings and the App Store."
+    },
+    "ext.meta.description": {
+      "s": "หยุดหน้าเว็บที่แย่งคลิกของคุณไปเปิดหรือเปลี่ยนหน้าไปยังที่ที่คุณไม่ได้ตั้งใจจะไป",
+      "back": "Stops pages that steal your click to open or change the page to somewhere you didn't mean to go.",
+      "why": "One sentence for someone who has never used the extension, slightly more explanatory register."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name for the product itself, used when no site name is available."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "กำลังป้องกันไซต์นี้อยู่",
+      "back": "Currently protecting this site",
+      "why": "States that guarding is on for the active tab's site."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "ไม่ได้ป้องกันไซต์นี้ กดเพื่อเปิด",
+      "back": "Not protecting this site, press to turn on",
+      "why": "Tooltip doubles as the call to action, per the brief."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "ไม่มีเว็บไซต์ให้ป้องกันที่นี่",
+      "back": "No website to protect here",
+      "why": "Explains briefly that there is nothing to guard on this tab."
+    },
+    "ext.popup.no_site_title": {
+      "s": "ไม่มีเว็บไซต์ที่นี่",
+      "back": "No website here",
+      "why": "Headline for the popup's empty state on a tab with no website."
+    },
+    "ext.popup.no_site_body": {
+      "s": "เปิดเว็บไซต์ก่อน แล้วกดที่นี่เพื่อเริ่มป้องกัน",
+      "back": "Open a website first, then press here to start protecting it.",
+      "why": "'ที่นี่' keeps the brief's self-reference to the button the popup hangs off of."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "เปิดหรือปิดการป้องกันสำหรับไซต์นี้",
+      "back": "Turn protection on or off for this site",
+      "why": "Screen-reader-only label naming what the switch controls, with no visual context."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "ไม่มีหน้าที่จะป้องกันได้",
+      "back": "No page that can be protected",
+      "why": "Explains why the disabled switch has nothing to control."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "ปิดใช้งานเพราะเปิดป้องกันทุกไซต์ไว้แล้ว",
+      "back": "Disabled because protection for every site is already on",
+      "why": "Names the elsewhere-set mode as the reason this one switch is redundant."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "ปิดใช้งานเพราะปิดการป้องกันไว้ทั้งหมด",
+      "back": "Disabled because protection is turned off entirely",
+      "why": "Attributes the disabled state to the master switch, not this site."
+    },
+    "ext.popup.watch_on": {
+      "s": "กำลังป้องกันไซต์นี้อยู่ ปิดแล้วหน้าจะโหลดใหม่",
+      "back": "Currently protecting this site, turning it off will reload the page",
+      "why": "Confirms the state and warns of the reload, as a before/after pair with watch_off."
+    },
+    "ext.popup.watch_off": {
+      "s": "ไม่ได้ป้องกันไซต์นี้ เปิดแล้วหน้าจะโหลดใหม่",
+      "back": "Not protecting this site, turning it on will reload the page",
+      "why": "Same sentence shape as watch_on, the clear before/after counterpart."
+    },
+    "ext.popup.page_heading": {
+      "s": "หน้านี้",
+      "back": "This page",
+      "why": "Heads the list of what the current tab specifically reached for."
+    },
+    "ext.popup.page_off": {
+      "s": "ไม่มีการติดตามเพราะปิดการป้องกันไว้ที่นี่",
+      "back": "Nothing is tracked because protection is off here",
+      "why": "Dead key as of 2026-09-22, not called from any code; written speculatively to match the voice of the other page-section states."
+    },
+    "ext.popup.page_quiet": {
+      "s": "ยังไม่มีอะไรพยายามออกนอกหน้านี้",
+      "back": "Nothing has tried to go outside this page yet",
+      "why": "Plainly states no cross-site attempt has happened on this page so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "ยังไม่มีรายการ",
+      "back": "No entries yet",
+      "why": "Dead key as of 2026-09-22; treated as a near-synonym of page_quiet per the brief, worded around an empty list rather than a quiet page."
+    },
+    "ext.popup.stopped_one": {
+      "s": "บล็อก %lld ครั้ง",
+      "back": "Blocked %lld times",
+      "why": "Thai has no singular/plural split, so this form also serves the plural case ext.popup.stopped_other."
+    },
+    "ext.popup.stopped_other": {
+      "s": "บล็อก %lld ครั้ง",
+      "back": "Blocked %lld times",
+      "why": "Identical text to stopped_one; Thai doesn't inflect for count, ครั้ง is the occurrence classifier."
+    },
+    "ext.popup.seen_one": {
+      "s": "พบ %lld ครั้ง",
+      "back": "Seen %lld times",
+      "why": "Broader than 'stopped': every recorded attempt, blocked and allowed together."
+    },
+    "ext.popup.seen_other": {
+      "s": "พบ %lld ครั้ง",
+      "back": "Seen %lld times",
+      "why": "Identical text to seen_one; Thai plural is unmarked."
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld ครั้ง",
+      "back": "%lld times",
+      "why": "Terse fragment meant to sit among scope/kind/reason fragments in one detail line."
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld ครั้ง",
+      "back": "%lld times",
+      "why": "Identical text to tries_one; Thai count words don't change with plurality."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "การแก้ไข",
+      "back": "Fix",
+      "why": "Prefix fragment joined with a colon and the fix's own name in code, e.g. 'การแก้ไข: <name>'."
+    },
+    "ext.state.blocked": {
+      "s": "บล็อก",
+      "back": "Block(ed)",
+      "why": "Bare verb form composes cleanly with the scope fragments (บล็อกทุกไซต์, บล็อกที่ไซต์นี้, บล็อกตามค่าเริ่มต้น)."
+    },
+    "ext.state.allowed": {
+      "s": "อนุญาต",
+      "back": "Allow(ed)",
+      "why": "Bare verb form, same composition rule as ext.state.blocked, clear opposite of it."
+    },
+    "ext.state.removed": {
+      "s": "ลบออกแล้ว",
+      "back": "Removed already",
+      "why": "Distinct one-word badge for a trap taken off the page, with no destination to rule on."
+    },
+    "ext.scope.here": {
+      "s": "ที่ไซต์นี้",
+      "back": "at this site",
+      "why": "Follows a verdict word to read e.g. 'บล็อกที่ไซต์นี้' = Blocked at this site."
+    },
+    "ext.scope.everywhere": {
+      "s": "ทุกไซต์",
+      "back": "every site",
+      "why": "Follows a verdict word to read e.g. 'บล็อกทุกไซต์' = Blocked every site."
+    },
+    "ext.scope.default": {
+      "s": "ตามค่าเริ่มต้น",
+      "back": "by default",
+      "why": "Follows a verdict word to read e.g. 'บล็อกตามค่าเริ่มต้น' = Blocked by default."
+    },
+    "ext.action.allow_here": {
+      "s": "อนุญาตที่ไซต์นี้",
+      "back": "Allow at this site",
+      "why": "Full menu option distinct from the everywhere-scoped variant below it."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "อนุญาตทุกไซต์",
+      "back": "Allow every site",
+      "why": "Everywhere-scoped counterpart to allow_here."
+    },
+    "ext.action.block_here": {
+      "s": "บล็อกที่ไซต์นี้",
+      "back": "Block at this site",
+      "why": "Full menu option distinct from the everywhere-scoped variant below it."
+    },
+    "ext.action.block_everywhere": {
+      "s": "บล็อกทุกไซต์",
+      "back": "Block every site",
+      "why": "Everywhere-scoped counterpart to block_here."
+    },
+    "ext.popup.policy_heading": {
+      "s": "ค่าเริ่มต้นสำหรับปลายทางที่ไม่มีกฎ",
+      "back": "Default for a destination with no rule",
+      "why": "Same concept and wording as the app's settings-screen equivalent, kept consistent across surfaces."
+    },
+    "ext.policy.block": {
+      "s": "บล็อกไว้ก่อน",
+      "back": "Block by default",
+      "why": "Radio option for stopping an unrated destination by default."
+    },
+    "ext.policy.allow": {
+      "s": "อนุญาตไว้ก่อน",
+      "back": "Allow by default",
+      "why": "Radio option for letting an unrated destination through by default."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "นโยบายความปลอดภัยของหน้านี้บล็อกสคริปต์บางส่วนของส่วนขยาย การป้องกันที่นี่จึงทำงานได้เพียงบางส่วน",
+      "back": "This page's security policy blocks part of the extension's script, so protection here works only partially.",
+      "why": "Attributes the limitation to this one page's own policy, not a bug."
+    },
+    "ext.kind.click_catcher": {
+      "s": "กับดักคลิกล่องหน",
+      "back": "Invisible click trap",
+      "why": "Short noun-phrase tag for the specific clickable-element trick."
+    },
+    "ext.kind.overlay": {
+      "s": "เลเยอร์โปร่งใส",
+      "back": "Transparent layer",
+      "why": "Broader than the click-catcher tag; any see-through element over the page, not specifically clickable."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "คลิกปลอมจากสคริปต์",
+      "back": "Fake click from script",
+      "why": "Names a click the page's own code dispatched, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "หน้าต่างป็อปอัป",
+      "back": "Pop-up window",
+      "why": "Standard Thai tech loanword for a window the page's own script opened."
+    },
+    "ext.kind.form_submit": {
+      "s": "ฟอร์มซ่อนเปิดแท็บ",
+      "back": "Hidden form opens tab",
+      "why": "Names the hidden-form-submit trick distinct from a normal link or window call."
+    },
+    "ext.kind.href_swap": {
+      "s": "ลิงก์สลับปลายทางกลางคัน",
+      "back": "Link destination swapped midway",
+      "why": "Consistent with the welcome screen's 'ลิงก์สลับกลางคัน', slightly more descriptive as a tag."
+    },
+    "ext.kind.back_hijack": {
+      "s": "แย่งปุ่มย้อนกลับ",
+      "back": "Hijacked the back button",
+      "why": "Names the navigation fired right after the browser's back gesture."
+    },
+    "ext.kind.redirect": {
+      "s": "เปลี่ยนหน้าแย่งการกด",
+      "back": "Redirect stealing the press",
+      "why": "Names the core same-tab-redirect trick the extension exists to stop."
+    },
+    "ext.kind.pop_tab": {
+      "s": "แท็บใหม่แอบเปิดหลังการกด",
+      "back": "New tab secretly opened behind the press",
+      "why": "Distinguishes tab-under behavior from a normal window.open call."
+    },
+    "ext.kind.network_rule": {
+      "s": "บล็อกตั้งแต่ระดับเครือข่าย",
+      "back": "Blocked from the network level",
+      "why": "Names the earliest, strongest kind of block, before the page ever loaded the request."
+    },
+    "ext.reason.way_back": {
+      "s": "ปลายทางมีทางกลับมาไซต์เดิม",
+      "back": "The destination has a way back to the original site",
+      "why": "Explains the allow as a sign of a legitimate round-trip."
+    },
+    "ext.reason.sized": {
+      "s": "เปิดตามขนาดที่กำหนดไว้",
+      "back": "Opened at a set size",
+      "why": "Explains the allow: a deliberate window size, not a bare new tab."
+    },
+    "ext.reason.took_press": {
+      "s": "แย่งการกดไป",
+      "back": "Took the press",
+      "why": "Very short reason for a block: it rode a press aimed elsewhere."
+    },
+    "ext.reason.default_allow": {
+      "s": "ไม่มีกฎ จึงปล่อยผ่าน",
+      "back": "No rule, so let through",
+      "why": "Very short reason for an allow with no explicit rule."
+    },
+    "ext.reason.own_code": {
+      "s": "มาจากโค้ดของไซต์เอง",
+      "back": "Came from the site's own code",
+      "why": "Explains the allow: the site's own code vouches for the window."
+    },
+    "ext.popup.rules_link": {
+      "s": "กฎ",
+      "back": "Rules",
+      "why": "Reused verbatim as the nav row, the screen's own header, and the back-button's accessible label."
+    },
+    "ext.popup.back_link": {
+      "s": "หน้าหลัก",
+      "back": "Main screen",
+      "why": "Names where the chevron-only back button returns to, sensible heard aloud with no visual context."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "ทุกไซต์",
+      "back": "Every site",
+      "why": "Same term as app.rules.grouping.everywhere, kept consistent."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "แยกตามไซต์",
+      "back": "Separated by site",
+      "why": "Same term as app.rules.grouping.by_site, clear counterpart to the heading above."
+    },
+    "ext.rules.empty": {
+      "s": "ไม่มีกฎ",
+      "back": "No rules",
+      "why": "Terse single-row list placeholder."
+    },
+    "ext.action.allow": {
+      "s": "อนุญาต",
+      "back": "Allow",
+      "why": "Simple option; scope is already fixed by which section the row sits in."
+    },
+    "ext.action.block": {
+      "s": "บล็อก",
+      "back": "Block",
+      "why": "Simple option, counterpart to ext.action.allow."
+    },
+    "ext.action.clear": {
+      "s": "ใช้ค่าเริ่มต้น",
+      "back": "Use the default value",
+      "why": "Same action as app.rules.row.use_default, phrased for the popup's tighter menu."
+    },
+    "ext.popup.settings_heading": {
+      "s": "การตั้งค่า",
+      "back": "Settings",
+      "why": "Same term as app.nav.settings, reused as both the nav row and the screen's own header."
+    },
+    "ext.settings.guard_label": {
+      "s": "การป้องกัน",
+      "back": "Protection",
+      "why": "Same noun as app.settings.guard_toggle, used both as the visible row text and the switch's sr-only label."
+    },
+    "ext.settings.guard_on": {
+      "s": "เปิด",
+      "back": "On",
+      "why": "Short state label for the master switch when running."
+    },
+    "ext.settings.guard_off": {
+      "s": "ปิด",
+      "back": "Off",
+      "why": "Clear opposite of ext.settings.guard_on."
+    },
+    "ext.settings.mode_heading": {
+      "s": "ขอบเขตการป้องกัน",
+      "back": "Scope of protection",
+      "why": "Same term as app.settings.mode_heading, kept consistent across surfaces."
+    },
+    "ext.settings.mode_watched": {
+      "s": "เฉพาะไซต์ที่เปิดไว้",
+      "back": "Only sites you've turned on",
+      "why": "Same phrasing as app.settings.mode_watched."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "ทุกไซต์อัตโนมัติ",
+      "back": "Every site automatically",
+      "why": "Same phrasing as app.settings.mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "ข้อความในหน้า",
+      "back": "Note in the page",
+      "why": "Same concept as app.settings.banner_toggle, trimmed to the tighter toggle-row budget here."
+    },
+    "ext.action.report": {
+      "s": "แจ้งปัญหา",
+      "back": "Report a problem",
+      "why": "Names opening a pre-filled issue report; nothing sends until the person submits it themselves."
+    }
+  }
+}

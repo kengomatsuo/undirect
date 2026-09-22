@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "Empêche les pages de détourner vos clics vers un lien ou un site indésirable.",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "Protection",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "Activée",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "Désactivée",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "Activer la protection sur ce site",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "Aucun site ici",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "Ouvrez un site, puis appuyez ici.",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "Aucune page à protéger ici.",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "Déjà actif partout, via les réglages.",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "Désactivée dans les réglages.",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "Portée de la protection",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "Sites que vous choisissez",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "Tous les sites",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "Rien n'est suivi : la protection est désactivée ici.",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "Cette page",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "Rien n'a tenté de sortir de cette page.",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "Rien à afficher pour l'instant.",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "%lld bloquée",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "%lld bloquées",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "%lld tentative repérée",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "%lld tentatives repérées",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "%lld fois",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "%lld fois",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "Correctif",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "Bloqué",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "Autorisé",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "sur ce site",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "partout",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "par défaut",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "Autoriser ici",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "Autoriser partout",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "Bloquer ici",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "Bloquer partout",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "Politique par défaut",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "Bloquer par défaut",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "Autoriser par défaut",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "Les réglages de sécurité de cette page bloquent une partie de la protection.",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "Capteur invisible",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "Couche transparente",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "Clic simulé",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "Fenêtre pop-up",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "Formulaire caché",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "Destination modifiée en direct",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "Retour détourné",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "Redirection sur la page",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "Onglet ouvert en arrière-plan",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "Bloqué au réseau",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "Son adresse prévoyait un retour.",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "Fenêtre à taille définie.",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "A pris votre appui.",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "Aucune règle définie.",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "Ouverte par le site lui-même.",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "Règles",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "Retour",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "Partout",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "Par site",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "Aucune règle",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "Autoriser",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "Bloquer",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "Suivre le défaut",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "Réglages",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "Note visible",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "Signaler un problème",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "Protection désactivée : appuyez pour l'activer",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "Rien à protéger ici",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "Protection activée sur ce site",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "Activée : la désactiver recharge la page.",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "Désactivée : l'activer recharge la page.",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "Retiré",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}

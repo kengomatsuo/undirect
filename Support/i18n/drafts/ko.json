@@ -1,0 +1,600 @@
+{
+  "locale": "ko",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "확장 프로그램 꺼짐",
+      "back": "extension off",
+      "why": "System-settings-style status title, same shape as Apple's own 'Wi-Fi 꺼짐'; plain state, no instruction (button below carries that)."
+    },
+    "app.setup.title_failed": {
+      "s": "상태를 확인할 수 없음",
+      "back": "status could-not-check",
+      "why": "Hedged toward 'could not confirm' rather than 'is off', reads clearly distinct from title_default."
+    },
+    "app.setup.detail_default": {
+      "s": "가드를 켜면 페이지가 탭과 클릭을 가로채지 못합니다.",
+      "back": "guard turn-on-if page tap-and-click hijack cannot",
+      "why": "Conditional -면 carries the logic instead of a connector word; one plain declarative sentence, the app's whole pitch."
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari에서 상태를 확인하지 못했습니다. 확장 프로그램을 켜면 앱이 스스로 알아챕니다.",
+      "back": "Safari-in status could-not-confirm. extension turn-on-if app itself notices.",
+      "why": "Two plain sentences instead of a 하지만-joined one; no error code named, matches the note against surfacing raw system errors."
+    },
+    "app.setup.open_button": {
+      "s": "확장 프로그램 설정 열기",
+      "back": "extension settings open",
+      "why": "Verb-plus-object button label; '확장 프로그램' is Apple's own term for Safari's Extensions pane, works verbatim on both screens."
+    },
+    "app.welcome.heading": {
+      "s": "Undirect에 오신 것을 환영합니다!",
+      "back": "Undirect-to came-you welcome!",
+      "why": "Warmth carried by the exclamation, not a register switch — kept in 합니다체 like every other string in the file."
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "보이지 않는 막",
+      "back": "not-visible layer",
+      "why": "Native word 막 (thin layer) instead of the loanword 레이어, matching the plain, concrete-noun register the brief asks for."
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "보이지 않는 막이 화면을 덮어 다른 곳이 대신 눌립니다.",
+      "back": "not-visible layer screen covers, other spot instead gets-pressed",
+      "why": "Describes the experience (something else gets pressed) rather than the mechanism, as the brief asks."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "뒤바뀐 링크",
+      "back": "swapped-around link",
+      "why": "Short, concrete noun phrase naming the trick, no marketing language."
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "누르는 순간과 떼는 순간 사이에 링크 주소가 바뀝니다.",
+      "back": "press moment-and release moment between-in link address changes",
+      "why": "States the timing plainly; no hedge, no 그래서."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "불청객 창",
+      "back": "uninvited-guest window",
+      "why": "불청객 (uninvited guest) is idiomatic Korean and lands the same tone as 'uninvited windows' without sounding like a translated compound."
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "가드를 켜면 누른 곳으로만 새 탭이 열리고, 다른 것은 끼어들지 않습니다.",
+      "back": "guard turn-on-if pressed-place-only-to new tab opens, other thing does-not-butt-in",
+      "why": "Written as the promise the brief asks for, not a description of the trick; one comma joining two clauses of the same event, not a 그리고-chain."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "전체 기록",
+      "back": "whole record",
+      "why": "Names the rule-list feature: everything gets tracked, not only what got caught."
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "발견된 대상마다 목록에 남아, 이 사이트나 전체에서 허용할지 차단할지 정합니다.",
+      "back": "found destination-each list-in remains, this site-or whole-in allow-whether block-whether decide",
+      "why": "One sentence carries both facts (every destination logged, scope choice) without a padded three-item list."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "한 번에 한 사이트",
+      "back": "one time-at one site",
+      "why": "Literal, concrete match for how guarding is switched on — per site, not automatically."
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Safari 도구 막대의 Undirect 버튼을 누르면 그 사이트의 가드가 켜집니다.",
+      "back": "Safari toolbar-of Undirect button press-if that site-of guard turns-on",
+      "why": "-면 conditional carries the mechanism; '도구 막대' is Apple's own Korean term for toolbar."
+    },
+    "app.nav.guarded_sites": {
+      "s": "가드 사이트",
+      "back": "guard sites",
+      "why": "Compact compound that fits a ~190px sidebar column and reads the same as a nav title; canonical term for 'guarded site' used everywhere in this file."
+    },
+    "app.nav.settings": {
+      "s": "설정",
+      "back": "Settings",
+      "why": "Apple's own term for this screen on both iOS and macOS."
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun, left untranslated as the brief expects."
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "모든 사이트",
+      "back": "every site",
+      "why": "Canonical 'everywhere' scope phrase, reused across app and extension so the two contexts read the same."
+    },
+    "app.rules.grouping.by_site": {
+      "s": "사이트별",
+      "back": "site-by",
+      "why": "Reads as the clear opposite of 모든 사이트 sitting beside it in the sidebar."
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "확장 프로그램 정보 없음",
+      "back": "extension info none",
+      "why": "States a wiring/first-contact gap, not 'there is no content' — kept distinct from empty_no_rules.title."
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Safari에서 아무 페이지나 한 번 열면 자동으로 채워집니다.",
+      "back": "Safari-in any page-whichever one-time open-if automatically gets-filled",
+      "why": "One sentence, no setting to change — matches the brief's 'no setting, just normal use of Safari'."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "규칙 없음",
+      "back": "rule none",
+      "why": "Plain two-word contrast to empty_no_app.title: connected to the extension, this particular list is just empty."
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "대상을 직접 허용하거나 차단해야 목록에 나타납니다.",
+      "back": "destination directly allow-or block-must-do list-in appears",
+      "why": "Explains a rule is created only by an explicit decision, not merely by the guard noticing something."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "지금까지 %lld건을 차단했습니다.",
+      "back": "so-far %lld-cases blocked",
+      "why": "Korean carries no plural agreement, so one form covers every count; %lld kept exactly as the SwiftUI placeholder per the notes."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "차단됨",
+      "back": "blocked",
+      "why": "One-word state label, clear opposite of state_allowed."
+    },
+    "app.rules.row.state_allowed": {
+      "s": "허용됨",
+      "back": "allowed",
+      "why": "One-word state label paired with state_blocked."
+    },
+    "app.rules.row.action_allow": {
+      "s": "허용",
+      "back": "Allow",
+      "why": "Bare verb-stem menu item, shown only when the row currently reads Blocked."
+    },
+    "app.rules.row.action_block": {
+      "s": "차단",
+      "back": "Block",
+      "why": "Bare verb-stem menu item, shown only when the row currently reads Allowed."
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "대상을 허용할지 차단할지 선택합니다.",
+      "back": "destination allow-whether block-whether chooses",
+      "why": "Describes what the control under the pointer does, in one short declarative sentence."
+    },
+    "app.rules.row.use_default": {
+      "s": "기본값 사용",
+      "back": "default-value use",
+      "why": "Names clearing the explicit rule so the destination falls back to the default policy — deletion, not a new verdict."
+    },
+    "app.watched.empty.title": {
+      "s": "가드 사이트 없음",
+      "back": "guard sites none",
+      "why": "Uses the canonical 가드 사이트 term; states plainly that no site has been switched on."
+    },
+    "app.watched.empty.detail": {
+      "s": "문제가 있는 사이트에서 Safari 도구 막대의 Undirect 버튼을 누르세요.",
+      "back": "problem-having site-on Safari toolbar-of Undirect button press",
+      "why": "Names the exact mechanism for guarding a first site, in one sentence."
+    },
+    "app.watched.footer": {
+      "s": "새 사이트는 Safari 도구 막대의 버튼으로만 추가됩니다.",
+      "back": "new site-topic Safari toolbar-of button-only-with gets-added",
+      "why": "Reminds the person this screen only removes, never adds — the toolbar button is the sole source."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "가드 중",
+      "back": "guard in-progress",
+      "why": "Read-only status word for iOS, parallel to the 가드 사이트 / 가드 중인 사이트 phrasing used elsewhere."
+    },
+    "app.watched.row.stop_button": {
+      "s": "중지",
+      "back": "Stop",
+      "why": "Short imperative-shaped verb noun for a trailing row button, matching 'Stop' exactly."
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "이 사이트의 가드를 끕니다.",
+      "back": "this site-of guard turns-off",
+      "why": "States plainly what the Stop button under the pointer does."
+    },
+    "app.settings.guard_toggle": {
+      "s": "가드",
+      "back": "Guard",
+      "why": "Canonical one-word term for the master switch, reused as the noun throughout the file."
+    },
+    "app.settings.state_on": {
+      "s": "켜짐",
+      "back": "on",
+      "why": "Generic on-state word, reused for both the Guard and page-note rows."
+    },
+    "app.settings.state_off": {
+      "s": "꺼짐",
+      "back": "off",
+      "why": "Generic off-state word, opposite of state_on."
+    },
+    "app.settings.mode_heading": {
+      "s": "가드 작동 범위",
+      "back": "guard operating scope",
+      "why": "Section heading introducing the choice of which sites the guard actually runs on."
+    },
+    "app.settings.mode_watched": {
+      "s": "직접 켠 사이트만",
+      "back": "directly turned-on sites-only",
+      "why": "Phrased from the person's own action ('sites you turned on yourself'), as the brief asks, not as a technical mode name."
+    },
+    "app.settings.mode_everywhere": {
+      "s": "모든 사이트",
+      "back": "every site",
+      "why": "Contrasts cleanly with mode_watched as the automatic, always-on option."
+    },
+    "app.settings.banner_toggle": {
+      "s": "페이지에 알림 표시",
+      "back": "page-on notice display",
+      "why": "Names the on-page banner toggle, separate from the popup's own record of what happened."
+    },
+    "app.settings.policy_heading": {
+      "s": "규칙이 없는 대상의 기본 처리",
+      "back": "rule-lacking destination-of default handling",
+      "why": "Introduces the last section: what happens to a destination with no explicit rule at all yet."
+    },
+    "app.settings.policy_block": {
+      "s": "기본으로 차단",
+      "back": "by-default block",
+      "why": "Picker option for the stricter default policy."
+    },
+    "app.settings.policy_allow": {
+      "s": "기본으로 허용",
+      "back": "by-default allow",
+      "why": "Picker option opposite of policy_block."
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Proper noun shown in Safari's extension list; left as-is like any app's own name."
+    },
+    "ext.meta.description": {
+      "s": "페이지가 클릭이나 탭을 가로채 엉뚱한 곳으로 이동시키지 못하게 막습니다.",
+      "back": "page click-or tap hijack wrong place-to move-cause cannot-do blocks",
+      "why": "One explanatory sentence for a first-time reader browsing the extension list, slightly more descriptive than in-app copy as the brief asks."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "Fallback display name standing in for a missing site name; same brand word."
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "이 사이트에서 가드 켜짐",
+      "back": "this site-on guard on",
+      "why": "States plainly that guarding is currently on for the active tab's site."
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "이 사이트에서 가드 꺼짐 · 눌러서 켜기",
+      "back": "this site-on guard off · pressing turn-on",
+      "why": "Middle dot joins state and call-to-action as two noun-form fragments, avoiding a dash and avoiding a register-breaking imperative ending."
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "가드할 사이트 없음",
+      "back": "guard-to site none",
+      "why": "Brief fragment explaining there is nothing to guard on this tab."
+    },
+    "ext.popup.no_site_title": {
+      "s": "실제 웹사이트에서만 작동",
+      "back": "real website-on-only operates",
+      "why": "Heading fragment: Undirect only has something to do on an actual website."
+    },
+    "ext.popup.no_site_body": {
+      "s": "실제 웹사이트를 연 뒤 여기를 누르면 가드가 켜집니다.",
+      "back": "real website opened after here press-if guard turns-on",
+      "why": "Conditional -면 replaces an imperative, keeping the declarative register; '여기' keeps the brief's self-reference to the toolbar button the popup hangs off."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "이 사이트의 가드 켜기/끄기",
+      "back": "this site-of guard turning-on/turning-off",
+      "why": "Screen-reader-only label naming exactly what the switch controls, since the visible row already shows the site name."
+    },
+    "ext.popup.watch_unknown": {
+      "s": "가드할 페이지가 없습니다.",
+      "back": "guard-to page does-not-exist",
+      "why": "Explains why the switch is disabled: there is genuinely no page here to guard."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "이미 설정에서 모든 사이트를 가드하도록 되어 있습니다.",
+      "back": "already settings-in every site guard-to set is",
+      "why": "Explains the switch is redundant because Settings already runs the guard everywhere; ordinary resultative -어 있다, not the banned double passive."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "가드 자체가 꺼져 있습니다.",
+      "back": "guard itself is-off",
+      "why": "자체 (itself) makes clear the master switch is off, not this particular site."
+    },
+    "ext.popup.watch_on": {
+      "s": "가드가 켜져 있습니다. 끄면 페이지가 다시 로드됩니다.",
+      "back": "guard is-on. turn-off-if page again loads",
+      "why": "Confirms state then warns of the reload with a -면 conditional, no dash."
+    },
+    "ext.popup.watch_off": {
+      "s": "가드가 꺼져 있습니다. 켜면 페이지가 다시 로드됩니다.",
+      "back": "guard is-off. turn-on-if page again loads",
+      "why": "Direct before/after pair with watch_on, same sentence shape."
+    },
+    "ext.popup.page_heading": {
+      "s": "이 페이지",
+      "back": "this page",
+      "why": "Names the section listing what the current tab specifically reached for, distinct from the site-wide rule lists."
+    },
+    "ext.popup.page_off": {
+      "s": "가드가 꺼져 있어 기록이 없습니다.",
+      "back": "guard is-off-because record none",
+      "why": "Dead key as of 2026-09-22 per the brief; written speculatively in the same voice as the other page-section states, using -어 causal ending instead of a connector word."
+    },
+    "ext.popup.page_quiet": {
+      "s": "이 페이지에서 다른 사이트로 가려던 시도가 없습니다.",
+      "back": "this page-on other site-to going-tried attempt none",
+      "why": "States plainly that nothing on this page has reached for another site so far."
+    },
+    "ext.popup.page_empty": {
+      "s": "아직 기록된 시도가 없습니다.",
+      "back": "yet recorded attempt none",
+      "why": "Dead key, worded around the empty list rather than a quiet page, per the brief's note that it is a near-synonym of page_quiet."
+    },
+    "ext.popup.stopped_one": {
+      "s": "차단 $COUNT$건",
+      "back": "block $COUNT$-cases",
+      "why": "Korean carries no singular/plural split, so this and stopped_other share one form; $COUNT$ kept as the extension's own placeholder."
+    },
+    "ext.popup.stopped_other": {
+      "s": "차단 $COUNT$건",
+      "back": "block $COUNT$-cases",
+      "why": "Same form as stopped_one — see its note on Korean's lack of plural agreement."
+    },
+    "ext.popup.seen_one": {
+      "s": "전체 $COUNT$건",
+      "back": "whole $COUNT$-cases",
+      "why": "'Seen' is broader than 'stopped' (blocked and allowed together); 전체 marks that breadth. Shares one form with seen_other."
+    },
+    "ext.popup.seen_other": {
+      "s": "전체 $COUNT$건",
+      "back": "whole $COUNT$-cases",
+      "why": "Same form as seen_one — no plural distinction in Korean."
+    },
+    "ext.popup.tries_one": {
+      "s": "$COUNT$회",
+      "back": "$COUNT$-times",
+      "why": "Per-destination try count, terse enough to sit among the row's other short fragments; identical to tries_other."
+    },
+    "ext.popup.tries_other": {
+      "s": "$COUNT$회",
+      "back": "$COUNT$-times",
+      "why": "Same form as tries_one — Korean's counter 회 needs no plural variant."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "적용된 조치",
+      "back": "applied measure",
+      "why": "Lead-in fragment meant to read as 'Applied fix: <recipe name>' once concatenated with a colon in code."
+    },
+    "ext.state.blocked": {
+      "s": "차단됨",
+      "back": "blocked",
+      "why": "Same reused word as app.rules.row.state_blocked, so it reads consistently across app and extension."
+    },
+    "ext.state.allowed": {
+      "s": "허용됨",
+      "back": "allowed",
+      "why": "Opposite of state.blocked, reused across rows, menu options and scope phrases."
+    },
+    "ext.state.removed": {
+      "s": "제거됨",
+      "back": "removed",
+      "why": "Distinct word for a trap taken off the page itself, since there is no destination here to allow or block."
+    },
+    "ext.scope.here": {
+      "s": "· 이 사이트",
+      "back": "· this site",
+      "why": "Leading middle dot lets `${verdict} ${scope}` compose as '차단됨 · 이 사이트' using the template's existing space, without reordering the code."
+    },
+    "ext.scope.everywhere": {
+      "s": "· 모든 사이트",
+      "back": "· every site",
+      "why": "Same middle-dot composition as scope.here; canonical 모든 사이트 phrase."
+    },
+    "ext.scope.default": {
+      "s": "· 기본값에 따름",
+      "back": "· default-value-to following",
+      "why": "Composes as '차단됨 · 기본값에 따름' (blocked, following the default), same middle-dot pattern."
+    },
+    "ext.action.allow_here": {
+      "s": "이 사이트에서 허용",
+      "back": "this site-on allow",
+      "why": "Standalone menu option, unambiguous about scope since it is not composed with a separate verdict word."
+    },
+    "ext.action.allow_everywhere": {
+      "s": "모든 사이트에서 허용",
+      "back": "every site-on allow",
+      "why": "Everywhere-scoped counterpart to allow_here."
+    },
+    "ext.action.block_here": {
+      "s": "이 사이트에서 차단",
+      "back": "this site-on block",
+      "why": "Standalone menu option, here-scoped block."
+    },
+    "ext.action.block_everywhere": {
+      "s": "모든 사이트에서 차단",
+      "back": "every site-on block",
+      "why": "Everywhere-scoped counterpart to block_here."
+    },
+    "ext.popup.policy_heading": {
+      "s": "규칙이 없는 대상의 기본 처리",
+      "back": "rule-lacking destination-of default handling",
+      "why": "Same phrasing as app.settings.policy_heading so the concept reads identically between app and popup."
+    },
+    "ext.policy.block": {
+      "s": "기본으로 차단",
+      "back": "by-default block",
+      "why": "Same wording as app.settings.policy_block, separate translation unit."
+    },
+    "ext.policy.allow": {
+      "s": "기본으로 허용",
+      "back": "by-default allow",
+      "why": "Same wording as app.settings.policy_allow."
+    },
+    "ext.popup.bridge_warning": {
+      "s": "이 페이지의 보안 설정 때문에 가드 일부가 작동하지 않아, 보호가 완전하지 않습니다.",
+      "back": "this page-of security settings because-of guard part-not operate, protection complete-not",
+      "why": "때문에 carries the causation as a single grammatical link, not a discourse connector; names the limitation as belonging to this page, not the extension."
+    },
+    "ext.kind.click_catcher": {
+      "s": "숨은 클릭 함정",
+      "back": "hidden click trap",
+      "why": "함정 (trap) is the native word, avoiding an extra loanword; sits naturally in a comma-joined list of kind tags."
+    },
+    "ext.kind.overlay": {
+      "s": "투명 덮개",
+      "back": "transparent cover",
+      "why": "덮개 (cover) instead of the loanword 오버레이, distinguishing this broader case from the click-catcher tag."
+    },
+    "ext.kind.synthetic_click": {
+      "s": "가짜 클릭",
+      "back": "fake click",
+      "why": "Names a click the page's own script made up, not a real press."
+    },
+    "ext.kind.window_open": {
+      "s": "팝업 창",
+      "back": "pop-up window",
+      "why": "팝업 is an established, non-inflated loanword for this concept in Korean."
+    },
+    "ext.kind.form_submit": {
+      "s": "숨은 양식 전송",
+      "back": "hidden form submission",
+      "why": "Names the specific hidden-form-submit trick, distinct from a normal link or window call."
+    },
+    "ext.kind.href_swap": {
+      "s": "누르는 중 바뀐 링크",
+      "back": "pressing during changed link",
+      "why": "Names the mid-press destination swap concretely."
+    },
+    "ext.kind.back_hijack": {
+      "s": "뒤로 가기 가로채기",
+      "back": "back going hijacking",
+      "why": "Names a navigation fired right after the person's own back gesture."
+    },
+    "ext.kind.redirect": {
+      "s": "같은 탭에서 강제 이동",
+      "back": "same tab-on forced move",
+      "why": "Names the core same-tab-redirect trick this extension exists to stop."
+    },
+    "ext.kind.pop_tab": {
+      "s": "몰래 열린 새 탭",
+      "back": "secretly opened new tab",
+      "why": "Distinguishes a tab-under-style new tab from a normal window.open pop-up."
+    },
+    "ext.kind.network_rule": {
+      "s": "네트워크 단계 차단",
+      "back": "network stage block",
+      "why": "Names the earliest, strongest kind of block — stopped before it ever reached the page."
+    },
+    "ext.reason.way_back": {
+      "s": "돌아오는 경로가 포함되어 있음",
+      "back": "returning path is-included",
+      "why": "Explains why a redirect was allowed: its own address carries a path back to the original site."
+    },
+    "ext.reason.sized": {
+      "s": "정해진 크기로 열림",
+      "back": "set size-to-with opened",
+      "why": "Explains why a window was allowed: it asked for a deliberate size, not a bare full tab."
+    },
+    "ext.reason.took_press": {
+      "s": "다른 누름을 가로챔",
+      "back": "other press hijacked",
+      "why": "Explains why a destination was blocked: it rode a press aimed at something else."
+    },
+    "ext.reason.default_allow": {
+      "s": "규칙 없어 기본 허용",
+      "back": "rule absent-so default allow",
+      "why": "Explains an unrated destination went through because nothing said to stop it, so the default policy applied."
+    },
+    "ext.reason.own_code": {
+      "s": "사이트 자체 코드로 열림",
+      "back": "site itself code-with opened",
+      "why": "Explains a window was allowed because the code opening it belonged to the site itself, not a third party."
+    },
+    "ext.popup.rules_link": {
+      "s": "규칙",
+      "back": "Rules",
+      "why": "Reused verbatim as the nav row, the Rules screen's own header, and the back-button's accessible label when leaving it."
+    },
+    "ext.popup.back_link": {
+      "s": "이 페이지",
+      "back": "this page",
+      "why": "Accessibility label naming where a chevron-only back button returns to — the popup's main per-page view — reusing the page_heading term for consistency."
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "모든 사이트",
+      "back": "every site",
+      "why": "Section heading for rules scoped to every guarded site, same canonical phrase used throughout."
+    },
+    "ext.rules.by_site_heading": {
+      "s": "사이트별 규칙",
+      "back": "site-by rule",
+      "why": "Clear counterpart to everywhere_heading, spelled out with 규칙 since this entry's budget allows a third word."
+    },
+    "ext.rules.empty": {
+      "s": "규칙 없음",
+      "back": "rule none",
+      "why": "Terse single-row placeholder, same wording as app.rules.empty_no_rules.title."
+    },
+    "ext.action.allow": {
+      "s": "허용",
+      "back": "Allow",
+      "why": "Bare menu-item word; scope is already fixed by which section the row sits in."
+    },
+    "ext.action.block": {
+      "s": "차단",
+      "back": "Block",
+      "why": "Bare menu-item word, opposite of allow."
+    },
+    "ext.action.clear": {
+      "s": "기본값 사용",
+      "back": "default-value use",
+      "why": "Same underlying action and wording as app.rules.row.use_default, phrased for the popup's tighter menu."
+    },
+    "ext.popup.settings_heading": {
+      "s": "설정",
+      "back": "Settings",
+      "why": "Reused as both the nav row and the settings sub-screen's own header title."
+    },
+    "ext.settings.guard_label": {
+      "s": "가드",
+      "back": "Guard",
+      "why": "Same one-word term as app.settings.guard_toggle, used both as the visible row text and the switch's screen-reader label."
+    },
+    "ext.settings.guard_on": {
+      "s": "켜짐",
+      "back": "on",
+      "why": "State label for the master switch when on, parallel to app.settings.state_on."
+    },
+    "ext.settings.guard_off": {
+      "s": "꺼짐",
+      "back": "off",
+      "why": "Opposite of guard_on."
+    },
+    "ext.settings.mode_heading": {
+      "s": "가드 작동 범위",
+      "back": "guard operating scope",
+      "why": "Same phrasing as app.settings.mode_heading for the identical concept in the popup."
+    },
+    "ext.settings.mode_watched": {
+      "s": "직접 켠 사이트만",
+      "back": "directly turned-on sites-only",
+      "why": "Same wording as app.settings.mode_watched, kept consistent across surfaces."
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "모든 사이트",
+      "back": "every site",
+      "why": "Same wording as app.settings.mode_everywhere."
+    },
+    "ext.settings.banner_toggle": {
+      "s": "페이지 알림",
+      "back": "page notice",
+      "why": "Shorter than the app-side label to fit the popup's tighter budget, same underlying page-note concept."
+    },
+    "ext.action.report": {
+      "s": "문제 신고",
+      "back": "problem report",
+      "why": "Names opening a pre-filled report; the person still has to submit it themselves, so no promise of anything sent automatically."
+    }
+  }
+}

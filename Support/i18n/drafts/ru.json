@@ -1,0 +1,600 @@
+{
+  "locale": "ru",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Расширение не включено",
+      "back": "Extension not turned on",
+      "why": "plain factual statement of current state, matching System Settings register; avoids duplicating the button below"
+    },
+    "app.setup.title_failed": {
+      "s": "Не удалось проверить расширение",
+      "back": "Failed to check the extension",
+      "why": "hedged toward 'we could not tell', distinct from the plain not-on state above"
+    },
+    "app.setup.detail_default": {
+      "s": "Под защитой сайт больше не сможет перехватывать нажатия.",
+      "back": "Under protection a site will no longer be able to intercept presses.",
+      "why": "one plain sentence stating the payoff, concrete rather than a slogan"
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari не ответил сейчас, но при включении расширения приложение заметит это само.",
+      "back": "Safari didn't respond now, but when the extension is turned on, the app will notice it itself.",
+      "why": "joined with 'но' rather than a dash; hides the raw system error and reassures no manual refresh is needed"
+    },
+    "app.setup.open_button": {
+      "s": "Открыть настройки расширений",
+      "back": "Open extensions settings",
+      "why": "Apple's own term for the pane ('Расширения'); works verbatim on both the setup screen and the welcome sheet"
+    },
+    "app.welcome.heading": {
+      "s": "Добро пожаловать в Undirect",
+      "back": "Welcome to Undirect",
+      "why": "the one place allowed a warmer register; product name kept untranslated as a proper noun"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Невидимые слои",
+      "back": "Invisible layers",
+      "why": "plain concrete noun phrase naming the trick, no marketing language"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Невидимый слой может перехватить нажатие, предназначенное для другого.",
+      "back": "An invisible layer can intercept a press meant for something else.",
+      "why": "describes what the person would experience, not the mechanism"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Подмена ссылок",
+      "back": "Substitution of links",
+      "why": "short concrete noun phrase for the trick"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Некоторые страницы меняют адрес ссылки в момент нажатия.",
+      "back": "Some pages change the link's address at the moment of the press.",
+      "why": "plain, concrete, describes the visible effect"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Незваные окна",
+      "back": "Uninvited windows",
+      "why": "short noun phrase naming the trick"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "С защитой новая вкладка откроет только то, что вы нажали.",
+      "back": "With protection, the new tab will open only what you pressed.",
+      "why": "phrased as a promise rather than a description of the trick, as the brief asks"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Каждый адрес",
+      "back": "Every address",
+      "why": "names the rule-list feature: every address is tracked, not only the ones the guard stops"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Каждый адрес попадает в список, где вы разрешаете или блокируете его.",
+      "back": "Every address ends up in a list, where you allow or block it.",
+      "why": "covers both scopes (site/everywhere) in one plain sentence without naming them explicitly, to stay under budget"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "По одному сайту",
+      "back": "One site at a time",
+      "why": "names the per-site, non-automatic mechanism"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Кнопка Undirect на панели Safari включает защиту для этого сайта.",
+      "back": "The Undirect button on Safari's toolbar turns on protection for this site.",
+      "why": "names the actual mechanism (the toolbar button), concrete rather than abstract"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Защищённые сайты",
+      "back": "Guarded sites",
+      "why": "vocabulary term for 'guarded site'; short enough for both a sidebar row and a nav title"
+    },
+    "app.nav.settings": {
+      "s": "Настройки",
+      "back": "Settings",
+      "why": "Apple's own term for this screen on iOS and macOS"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "proper noun, left untranslated like any other app's own name"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Везде",
+      "back": "Everywhere",
+      "why": "one word, reused consistently for the 'everywhere' scope concept across the product"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "По сайтам",
+      "back": "By sites",
+      "why": "clear opposite of 'Везде' when the two sit side by side"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Нет данных от расширения",
+      "back": "No data from the extension",
+      "why": "names the wiring/first-contact state, distinct from 'no rules exist yet'"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Откройте страницу в Safari, и список заполнится сам.",
+      "back": "Open a page in Safari, and the list will fill itself.",
+      "why": "states the simple fix, no setting to change"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Правил пока нет",
+      "back": "No rules yet",
+      "why": "contrasts with the first-contact empty state above: the app is connected, this list is just empty"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Правило появится здесь, когда вы примете решение.",
+      "back": "A rule will appear here once you make a decision.",
+      "why": "explains a rule is created only by an explicit decision, not merely by the guard seeing something"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "%lld попыток заблокировано",
+      "back": "%lld attempts blocked",
+      "why": "shown here is the 'many' plural form; Russian needs three forms for %lld — one: '%lld попытка заблокирована', few (2-4): '%lld попытки заблокированы', many (0, 5+): '%lld попытки заблокировано' — implement via a stringsdict with those three keys rather than a single string"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Заблокировано",
+      "back": "Blocked",
+      "why": "impersonal passive, pairs cleanly as the opposite of 'Разрешено'"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Разрешено",
+      "back": "Allowed",
+      "why": "clear opposite of state_blocked"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Разрешить",
+      "back": "Allow",
+      "why": "infinitive verb, Apple's convention for a menu action, distinct from the adjective form used for the current state"
+    },
+    "app.rules.row.action_block": {
+      "s": "Заблокировать",
+      "back": "Block",
+      "why": "infinitive verb, only shown when the row is currently Allowed"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Разрешить или заблокировать этот адрес",
+      "back": "Allow or block this address",
+      "why": "describes what the hovered control does, using the same verbs as the menu items it governs"
+    },
+    "app.rules.row.use_default": {
+      "s": "По умолчанию",
+      "back": "By default",
+      "why": "names clearing the explicit rule so the destination falls back to the default policy, not a new verdict"
+    },
+    "app.watched.empty.title": {
+      "s": "Нет защищённых сайтов",
+      "back": "No guarded sites",
+      "why": "plain statement that no site has been switched on yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Нажмите Undirect на панели Safari, когда сайт начинает мешать.",
+      "back": "Press Undirect on Safari's toolbar when a site starts to bother you.",
+      "why": "tells the person exactly how to guard their first site"
+    },
+    "app.watched.footer": {
+      "s": "Новые сайты добавляются только кнопкой в Safari.",
+      "back": "New sites are added only through the button in Safari.",
+      "why": "reminds this screen has no way to add a site itself"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Защищено",
+      "back": "Guarded",
+      "why": "read-only status word, purely informational on iOS"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Отключить",
+      "back": "Turn off",
+      "why": "short imperative verb suitable for a small trailing row button"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Отключает защиту для этого сайта",
+      "back": "Turns off protection for this site",
+      "why": "describes what the Stop button under the pointer does"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Защита",
+      "back": "Protection",
+      "why": "the vocabulary noun for 'guard', kept consistent as the label of the master switch"
+    },
+    "app.settings.state_on": {
+      "s": "Включено",
+      "back": "On",
+      "why": "generic neuter form, reused for more than one setting on this screen"
+    },
+    "app.settings.state_off": {
+      "s": "Выключено",
+      "back": "Off",
+      "why": "clear opposite of state_on, equally generic"
+    },
+    "app.settings.mode_heading": {
+      "s": "Где работает защита",
+      "back": "Where protection works",
+      "why": "introduces the choice between watched-only and every-site running"
+    },
+    "app.settings.mode_watched": {
+      "s": "Только включённые сайты",
+      "back": "Only turned-on sites",
+      "why": "described from the person's own point of view, the default conservative choice"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Везде",
+      "back": "Everywhere",
+      "why": "reused consistently with the other 'everywhere' scope labels in the product"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Заметка на странице",
+      "back": "Note on the page",
+      "why": "vocabulary term for the on-page banner, separate from the popup's own record"
+    },
+    "app.settings.policy_heading": {
+      "s": "Политика по умолчанию",
+      "back": "Default policy",
+      "why": "introduces the choice for an unrated destination; kept short rather than padded to hit a word count"
+    },
+    "app.settings.policy_block": {
+      "s": "Блокировать",
+      "back": "Block",
+      "why": "imperfective infinitive describing an ongoing default policy, not a one-off action"
+    },
+    "app.settings.policy_allow": {
+      "s": "Разрешать",
+      "back": "Allow",
+      "why": "imperfective infinitive, paired in aspect with 'Блокировать'"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "proper noun, the extension's own listed name"
+    },
+    "ext.meta.description": {
+      "s": "Undirect не даёт страницам открывать или перенаправлять по клику не туда, куда вы хотели.",
+      "back": "Undirect doesn't let pages open or redirect by click somewhere other than where you wanted.",
+      "why": "one sentence for someone who has never used the extension, slightly more explanatory than in-app copy"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect",
+      "why": "fallback display name, the product's own name"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Защита включена для этого сайта",
+      "back": "Protection turned-on for this site",
+      "why": "states guarding is currently on for the active tab"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Защита выключена, нажмите для включения",
+      "back": "Protection off, press to turn on",
+      "why": "tooltip doubles as the call to action, since pressing the icon is how guarding starts"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Здесь нечего защищать",
+      "back": "There's nothing to protect here",
+      "why": "brief: same underlying string as ext.popup.no_site_title, so phrased identically there"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Здесь нечего защищать",
+      "back": "There's nothing to protect here",
+      "why": "brief notes this shares its underlying string with ext.toolbar.tooltip_no_site; kept identical"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Откройте сайт и нажмите сюда для защиты.",
+      "back": "Open a site and press here for protection.",
+      "why": "'сюда' keeps the self-reference to the toolbar button the popup hangs off, rather than translating 'here' as a place"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Переключатель защиты для этого сайта",
+      "back": "Switch of protection for this site",
+      "why": "screen-reader-only label naming what the switch controls, since the visible row already shows the site name"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Здесь нечего защищать.",
+      "back": "There's nothing to protect here.",
+      "why": "explains the disabled switch: no actual page here to guard"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Защита уже включена для всех сайтов.",
+      "back": "Protection is already on for all sites.",
+      "why": "explains the switch is redundant because 'everywhere' mode is already set in Settings"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Защита полностью выключена.",
+      "back": "Protection is entirely off.",
+      "why": "explains the switch is disabled because of the master toggle, not this particular site"
+    },
+    "ext.popup.watch_on": {
+      "s": "Защита включена, выключение перезагрузит страницу.",
+      "back": "Protection is on, turning it off will reload the page.",
+      "why": "confirms current state and warns of the reload; shares sentence shape with watch_off"
+    },
+    "ext.popup.watch_off": {
+      "s": "Защита выключена, включение перезагрузит страницу.",
+      "back": "Protection is off, turning it on will reload the page.",
+      "why": "direct before/after counterpart to watch_on, same sentence shape"
+    },
+    "ext.popup.page_heading": {
+      "s": "Эта страница",
+      "back": "This page",
+      "why": "heads the list of what the current tab specifically has reached for"
+    },
+    "ext.popup.page_off": {
+      "s": "Защита здесь выключена, поэтому ничего не отслеживается.",
+      "back": "Protection is off here, so nothing is being tracked.",
+      "why": "dead key as of 2026-09-22 (no code reads it); written speculatively to match the voice of the other page-section states, per the brief's own note"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Эта страница пока ничего не запрашивала.",
+      "back": "This page hasn't requested anything yet.",
+      "why": "plain statement that nothing has tried to reach outside this page so far"
+    },
+    "ext.popup.page_empty": {
+      "s": "Список пока пуст.",
+      "back": "The list is empty for now.",
+      "why": "dead key as of 2026-09-22; per the brief's note, treated as a near-synonym of page_quiet, worded around the empty list rather than a quiet page"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Заблокировано: %lld",
+      "back": "Blocked: %lld",
+      "why": "the impersonal passive 'Заблокировано' does not inflect by number, sidestepping the one/few/many mismatch since the source code only branches on 'one' vs 'other' but Russian needs three forms"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Заблокировано: %lld",
+      "back": "Blocked: %lld",
+      "why": "same invariant construction as stopped_one, for the same reason — see its note"
+    },
+    "ext.popup.seen_one": {
+      "s": "Всего попыток: %lld",
+      "back": "Total attempts: %lld",
+      "why": "the fixed 'Всего X:' label pattern uses a genitive-plural noun that does not change with the count, again sidestepping the two-bucket source's inability to express Russian's three plural forms"
+    },
+    "ext.popup.seen_other": {
+      "s": "Всего попыток: %lld",
+      "back": "Total attempts: %lld",
+      "why": "same invariant construction as seen_one — see its note"
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld раз",
+      "back": "%lld times",
+      "why": "'раз' shares its form between the one-count and the many-count case; the 2-4 case grammatically wants 'раза', but the two-bucket source can't express three forms, so this stays terse at a small cost of precision for that range"
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld раз",
+      "back": "%lld times",
+      "why": "same fragment and tradeoff as tries_one — see its note"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Исправление",
+      "back": "Fix",
+      "why": "one-word lead-in fragment, reads naturally before 'Исправление: <текст>' when concatenated in code"
+    },
+    "ext.state.blocked": {
+      "s": "Заблокировано",
+      "back": "Blocked",
+      "why": "kept identical to app.rules.row.state_blocked so the two read the same to a user moving between surfaces; combines with a following scope word"
+    },
+    "ext.state.allowed": {
+      "s": "Разрешено",
+      "back": "Allowed",
+      "why": "kept identical to app.rules.row.state_allowed; combines with a following scope word"
+    },
+    "ext.state.removed": {
+      "s": "Удалено",
+      "back": "Removed",
+      "why": "neuter impersonal form for a row with no destination to allow or block, since a trap was simply taken off the page"
+    },
+    "ext.scope.here": {
+      "s": "на этом сайте",
+      "back": "on this site",
+      "why": "follows a verdict word without reordering, e.g. 'Заблокировано' + 'на этом сайте'"
+    },
+    "ext.scope.everywhere": {
+      "s": "везде",
+      "back": "everywhere",
+      "why": "follows a verdict word, e.g. 'Заблокировано везде'; reuses the same word as the everywhere-scope concept elsewhere"
+    },
+    "ext.scope.default": {
+      "s": "по умолчанию",
+      "back": "by default",
+      "why": "follows a verdict word, e.g. 'Заблокировано по умолчанию'"
+    },
+    "ext.action.allow_here": {
+      "s": "Разрешить здесь",
+      "back": "Allow here",
+      "why": "menu option scoped to the current site, distinct from the everywhere variant"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Разрешить везде",
+      "back": "Allow everywhere",
+      "why": "menu option scoped to every guarded site"
+    },
+    "ext.action.block_here": {
+      "s": "Заблокировать здесь",
+      "back": "Block here",
+      "why": "menu option scoped to the current site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Заблокировать везде",
+      "back": "Block everywhere",
+      "why": "menu option scoped to every guarded site"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Политика по умолчанию",
+      "back": "Default policy",
+      "why": "same concept as the app's settings screen equivalent, kept identical in wording"
+    },
+    "ext.policy.block": {
+      "s": "Блокировать",
+      "back": "Block",
+      "why": "imperfective infinitive, consistent with app.settings.policy_block"
+    },
+    "ext.policy.allow": {
+      "s": "Разрешать",
+      "back": "Allow",
+      "why": "imperfective infinitive, consistent with app.settings.policy_allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Настройки безопасности этой страницы блокируют часть защиты Undirect.",
+      "back": "This page's security settings block part of Undirect's protection.",
+      "why": "names this as a limitation of the one page, not a bug or a setting to fix"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Невидимая ловушка",
+      "back": "Invisible trap",
+      "why": "terse noun-phrase tag, reads naturally in a comma-joined list of kind tags"
+    },
+    "ext.kind.overlay": {
+      "s": "Прозрачный слой",
+      "back": "Transparent layer",
+      "why": "broader than the click-catcher tag: any see-through element, not specifically something clickable"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Поддельный клик",
+      "back": "Fake click",
+      "why": "names a click the page's own script dispatched, not a real press"
+    },
+    "ext.kind.window_open": {
+      "s": "Всплывающее окно",
+      "back": "Pop-up window",
+      "why": "names a window the page opened through its own code"
+    },
+    "ext.kind.form_submit": {
+      "s": "Скрытая форма",
+      "back": "Hidden form",
+      "why": "names the hidden-form-submission trick"
+    },
+    "ext.kind.href_swap": {
+      "s": "Ссылка изменена при нажатии",
+      "back": "Link changed during the press",
+      "why": "names the destination-swap-mid-press trick concretely"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Перехват кнопки «Назад»",
+      "back": "Interception of the \"Back\" button",
+      "why": "names a navigation fired right after the person's own back gesture"
+    },
+    "ext.kind.redirect": {
+      "s": "Перенаправление вместо нажатия",
+      "back": "Redirect instead of the press",
+      "why": "names the core same-tab-redirect hijack, kept short"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Скрытая новая вкладка",
+      "back": "Hidden new tab",
+      "why": "names a tab-under-style new tab opened behind the press"
+    },
+    "ext.kind.network_rule": {
+      "s": "Заблокировано на уровне сети",
+      "back": "Blocked at network level",
+      "why": "names the strongest, earliest kind of block, stopped before it reached the page"
+    },
+    "ext.reason.way_back": {
+      "s": "В адресе есть путь обратно.",
+      "back": "The address has a way back.",
+      "why": "explains why the redirect was allowed: its own address carries a way back to the starting site"
+    },
+    "ext.reason.sized": {
+      "s": "Окно открыто заданного размера.",
+      "back": "The window opened at a set size.",
+      "why": "explains why the window was allowed: a deliberate size rather than a bare tab"
+    },
+    "ext.reason.took_press": {
+      "s": "Перехватило нажатие.",
+      "back": "It intercepted the press.",
+      "why": "explains the block in the fewest words the row's tight footnote budget allows"
+    },
+    "ext.reason.default_allow": {
+      "s": "Правило не задано.",
+      "back": "No rule is set.",
+      "why": "explains the destination went through by the general default, not an explicit rule"
+    },
+    "ext.reason.own_code": {
+      "s": "Окно открыл сам сайт.",
+      "back": "The site itself opened the window.",
+      "why": "explains the site's own code, not a third party, asked for the window"
+    },
+    "ext.popup.rules_link": {
+      "s": "Правила",
+      "back": "Rules",
+      "why": "one word, reused as the nav row, the screen's header title, and the back button's accessibility label"
+    },
+    "ext.popup.back_link": {
+      "s": "Сайт",
+      "back": "Site",
+      "why": "names the destination the chevron-only back button returns to (the popup's main per-site view), rather than the literal word 'back', matching how a VoiceOver label should name where it goes"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Везде",
+      "back": "Everywhere",
+      "why": "reused consistently with the other 'everywhere' scope labels"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "По сайтам",
+      "back": "By sites",
+      "why": "reused consistently with app.rules.grouping.by_site"
+    },
+    "ext.rules.empty": {
+      "s": "Пусто",
+      "back": "Empty",
+      "why": "terse single-row placeholder"
+    },
+    "ext.action.allow": {
+      "s": "Разрешить",
+      "back": "Allow",
+      "why": "infinitive menu action, scope already fixed by which section the row is in"
+    },
+    "ext.action.block": {
+      "s": "Заблокировать",
+      "back": "Block",
+      "why": "infinitive menu action, counterpart to Allow"
+    },
+    "ext.action.clear": {
+      "s": "По умолчанию",
+      "back": "By default",
+      "why": "same underlying action as app.rules.row.use_default, phrased identically for the tighter popup menu"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Настройки",
+      "back": "Settings",
+      "why": "the popup's own settings screen, reused as both the nav row and the header title"
+    },
+    "ext.settings.guard_label": {
+      "s": "Защита",
+      "back": "Protection",
+      "why": "kept identical to app.settings.guard_toggle for the same master switch, used both as the visible label and the sr-only switch label"
+    },
+    "ext.settings.guard_on": {
+      "s": "Включена",
+      "back": "Turned on",
+      "why": "feminine form agreeing with 'Защита', specific to the guard switch's own state name"
+    },
+    "ext.settings.guard_off": {
+      "s": "Выключена",
+      "back": "Turned off",
+      "why": "feminine form agreeing with 'Защита', clear opposite of guard_on"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Где работает защита",
+      "back": "Where protection works",
+      "why": "kept identical to app.settings.mode_heading for the same setting"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Только включённые сайты",
+      "back": "Only turned-on sites",
+      "why": "kept identical to app.settings.mode_watched"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Везде",
+      "back": "Everywhere",
+      "why": "kept identical to app.settings.mode_everywhere"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Заметка на странице",
+      "back": "Note on the page",
+      "why": "kept the three-word phrase matching the app-side counterpart; Russian has no natural two-word way to say it, and it still fits a toggle row"
+    },
+    "ext.action.report": {
+      "s": "Сообщить об ошибке",
+      "back": "Report an error",
+      "why": "names opening a pre-filled report; nothing is sent automatically, matching the brief's note that the person still submits it themselves"
+    }
+  }
+}

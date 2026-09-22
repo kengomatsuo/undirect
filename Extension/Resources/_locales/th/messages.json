@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "หยุดหน้าเว็บที่แย่งคลิกของคุณไปเปิดหรือเปลี่ยนหน้าไปยังที่ที่คุณไม่ได้ตั้งใจจะไป",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "การป้องกัน",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "เปิด",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "ปิด",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "เปิดหรือปิดการป้องกันสำหรับไซต์นี้",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "ไม่มีเว็บไซต์ที่นี่",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "เปิดเว็บไซต์ก่อน แล้วกดที่นี่เพื่อเริ่มป้องกัน",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "ไม่มีหน้าที่จะป้องกันได้",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "ปิดใช้งานเพราะเปิดป้องกันทุกไซต์ไว้แล้ว",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "ปิดใช้งานเพราะปิดการป้องกันไว้ทั้งหมด",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "ขอบเขตการป้องกัน",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "เฉพาะไซต์ที่เปิดไว้",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "ทุกไซต์อัตโนมัติ",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "ไม่มีการติดตามเพราะปิดการป้องกันไว้ที่นี่",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "หน้านี้",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "ยังไม่มีอะไรพยายามออกนอกหน้านี้",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "ยังไม่มีรายการ",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "บล็อก %lld ครั้ง",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "บล็อก %lld ครั้ง",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "พบ %lld ครั้ง",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "พบ %lld ครั้ง",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "%lld ครั้ง",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "%lld ครั้ง",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "การแก้ไข",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "บล็อก",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "อนุญาต",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "ที่ไซต์นี้",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "ทุกไซต์",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "ตามค่าเริ่มต้น",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "อนุญาตที่ไซต์นี้",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "อนุญาตทุกไซต์",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "บล็อกที่ไซต์นี้",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "บล็อกทุกไซต์",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "ค่าเริ่มต้นสำหรับปลายทางที่ไม่มีกฎ",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "บล็อกไว้ก่อน",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "อนุญาตไว้ก่อน",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "นโยบายความปลอดภัยของหน้านี้บล็อกสคริปต์บางส่วนของส่วนขยาย การป้องกันที่นี่จึงทำงานได้เพียงบางส่วน",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "กับดักคลิกล่องหน",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "เลเยอร์โปร่งใส",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "คลิกปลอมจากสคริปต์",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "หน้าต่างป็อปอัป",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "ฟอร์มซ่อนเปิดแท็บ",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "ลิงก์สลับปลายทางกลางคัน",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "แย่งปุ่มย้อนกลับ",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "เปลี่ยนหน้าแย่งการกด",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "แท็บใหม่แอบเปิดหลังการกด",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "บล็อกตั้งแต่ระดับเครือข่าย",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "ปลายทางมีทางกลับมาไซต์เดิม",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "เปิดตามขนาดที่กำหนดไว้",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "แย่งการกดไป",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "ไม่มีกฎ จึงปล่อยผ่าน",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "มาจากโค้ดของไซต์เอง",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "กฎ",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "หน้าหลัก",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "ทุกไซต์",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "แยกตามไซต์",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "ไม่มีกฎ",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "อนุญาต",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "บล็อก",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "ใช้ค่าเริ่มต้น",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "การตั้งค่า",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "ข้อความในหน้า",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "แจ้งปัญหา",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "ไม่ได้ป้องกันไซต์นี้ กดเพื่อเปิด",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "ไม่มีเว็บไซต์ให้ป้องกันที่นี่",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "กำลังป้องกันไซต์นี้อยู่",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "กำลังป้องกันไซต์นี้อยู่ ปิดแล้วหน้าจะโหลดใหม่",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "ไม่ได้ป้องกันไซต์นี้ เปิดแล้วหน้าจะโหลดใหม่",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "ลบออกแล้ว",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}
