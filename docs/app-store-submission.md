@@ -68,8 +68,9 @@ the SDK header says opens that extension's page, and drops the old path. That
 call and the state read both arrived in iOS 26.2, so the minimum is now 26.2.
 The setup screen and the welcome sheet share one button, bottom-anchored and
 `.glassProminent`. In the iOS 27 Simulator the call reports no error and still
-opens Settings at its top level, on both iPhone and iPad; nobody has pressed it
-on a physical device yet. Resubmitted without the video on 2026-09-22.
+opens Settings at its top level, on both iPhone and iPad. On a physical device
+the owner confirmed it lands on Safari's extension page, so the Simulator is
+the thing that cannot follow the link. Resubmitted without the video on 2026-09-22.
 
 ## The judgement call, settled
 
