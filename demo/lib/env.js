@@ -12,7 +12,8 @@
   window.DEMO = {
     local,
     site: (name) => (local ? origin(name) : `https://${name}.example`),
-    landed: () => (local ? origin(landedName) + "/demo/landed/" : `https://${landedName}.example/win`),
+    // ?landed=here sends the redirect to this site's own stand-in page, so a recording can show the page it ends on.
+    landed: () => (local ? origin(landedName) + "/demo/landed/" : landedName === "here" ? `${location.origin}/demo/landed/` : `https://${landedName}.example/win`),
     loadAd(name, dest) {
       const s = document.createElement("script");
       s.src = local
