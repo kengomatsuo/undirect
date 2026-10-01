@@ -51,8 +51,8 @@ picks the visitor's language by script.
 
 ## Assets
 
-- `media/film.mp4` is `Film-v2.mp4` from `undirect-promo/out`, scaled to 1280 wide,
-  H.264 CRF 30 with 64 kbit/s audio, about 1 MB. Its captions are English.
+- `media/film.mp4` is `Film-v3.mp4` from `undirect-promo/out`, scaled to 1280 wide,
+  H.264 CRF 30 with 64 kbit/s audio, about 1.7 MB. Its captions are English.
 - `media/film-poster.webp` is the frame at 14 s.
 - `img/*.webp` come from `.shots/captures`. The captures are English UI.
 - The favicon, `icon*.png` and `og.png` derive from the extension's icon and
