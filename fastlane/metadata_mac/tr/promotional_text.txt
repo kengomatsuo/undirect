@@ -1,1 +1,1 @@
-Bazı sayfalar, başka bir şey için yaptığınız tıklamayı yakalamak üzere görünmez bir katman serer. Undirect onu kaldırır ve nereye yönlendirildiğinizi listeler.
+Siteye göre araç çubuğundan açın. Undirect görünmez katmanları, pop-under'ları ve tıklarken değiştirilen bağlantıları durdurur, denenen her adresi listeler.

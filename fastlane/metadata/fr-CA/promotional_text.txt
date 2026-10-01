@@ -1,1 +1,1 @@
-Certaines pages se couvrent d'une couche invisible pour attraper le clic destiné à autre chose. Undirect la retire et dresse la liste des destinations visées.
+Activez-le site par site depuis la barre. Il bloque couches invisibles, pop-unders et liens réécrits en plein clic, et liste chaque adresse qu'une page a voulu ouvrir.

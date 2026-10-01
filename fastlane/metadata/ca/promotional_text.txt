@@ -1,1 +1,1 @@
-Algunes pàgines es cobreixen amb una capa invisible per atrapar el toc que anava a una altra cosa. L'Undirect la treu i llista cada destí on volien portar-te.
+Activa'l lloc per lloc amb el botó de la barra. Atura capes invisibles, pop-unders i enllaços reescrits en ple clic, i llista cada adreça que una pàgina volia obrir.

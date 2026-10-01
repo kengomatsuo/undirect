@@ -1,1 +1,1 @@
-popup,redirect,blocker,extension,hijack,click,tab,ads,tracker,privacy,browser,popunder
+pop up,advert,ads,block,iphone,ipad,mac,extension,hijack,popunder,window

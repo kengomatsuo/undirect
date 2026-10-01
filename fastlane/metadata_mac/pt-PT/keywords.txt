@@ -1,1 +1,1 @@
-popup,redirecionamento,bloqueador,extensão,clique,separador,anúncios,rastreador,privacidade
+popup,anúncios,bloquear,publicidade,extensão,iphone,mac,sequestro,janela,separadores

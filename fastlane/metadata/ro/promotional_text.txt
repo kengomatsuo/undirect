@@ -1,1 +1,1 @@
-Unele pagini se acoperă cu un strat invizibil ca să prindă clicul destinat altceva. Undirect îl scoate și listează destinațiile spre care au încercat să te trimită.
+Îl pornești pe fiecare site din bară. Undirect oprește straturile invizibile, pop-under-urile și linkurile rescrise în timpul clicului și listează fiecare adresă.

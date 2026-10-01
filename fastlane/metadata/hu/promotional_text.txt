@@ -1,1 +1,1 @@
-Egyes oldalak láthatatlan réteget terítenek magukra, hogy elkapják a máshová szánt kattintást. Az Undirect leveszi, és felsorolja, hová akartak küldeni.
+Oldalanként kapcsolható be az eszköztár gombjával. Megállítja a láthatatlan kattintásrétegeket, a háttérablakokat és az átírt linkeket, és felsorolja a próbált címeket.

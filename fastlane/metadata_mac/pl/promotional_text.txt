@@ -1,1 +1,1 @@
-Niektóre strony nakładają na siebie niewidzialną warstwę, by przechwycić kliknięcie przeznaczone dla czegoś innego. Undirect ją usuwa i wylicza, dokąd chciano cię wysłać.
+Przycisk na pasku włącza go dla strony. Zatrzymuje ukryte nakładki, pop-undery i linki podmieniane podczas klikania i wylicza adresy, które strona chciała otworzyć.

@@ -1,1 +1,1 @@
-Niektoré stránky sa prikryjú neviditeľnou vrstvou, aby zachytili ťuknutie určené inam. Undirect ju odstráni a vypíše každý cieľ, kam vás stránka chcela poslať.
+Zapnite ho pre web tlačidlom na paneli. Undirect zastaví neviditeľné vrstvy, pop-undery a odkazy prepísané počas ťuknutia a vypíše každú adresu, ktorú chcela otvoriť.

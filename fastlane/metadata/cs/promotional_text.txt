@@ -1,1 +1,1 @@
-Některé stránky se přikryjí neviditelnou vrstvou, aby zachytily klepnutí určené jinam. Undirect ji odstraní a vypíše každý cíl, kam vás stránka chtěla poslat.
+Zapněte ho pro každý web tlačítkem na liště. Zastaví neviditelné vrstvy, okna pod stránkou a odkazy přepsané při klepnutí; vypíše každou adresu, kterou stránka otevírala.

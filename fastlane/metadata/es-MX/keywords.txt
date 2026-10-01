@@ -1,1 +1,1 @@
-ventana emergente,redirección,bloqueador,extensión,clic,pestaña,anuncios,rastreador,privacidad
+popup,anuncios,publicidad,bloquear,bloqueador,extensión,quitar,pop up,secuestro,Bloqueo,pestañas

@@ -1,1 +1,1 @@
-Nogle sider lægger et usynligt lag over sig selv for at fange et klik, der var ment til noget andet. Undirect fjerner det og viser, hvor siden ville sende dig hen.
+Slå det til pr. websted med værktøjslinjens knap. Stopper usynlige lag, pop-unders og links, der skiftes midt i klikket, og viser hver adresse, siden prøvede at åbne.

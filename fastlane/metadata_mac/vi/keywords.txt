@@ -1,1 +1,1 @@
-popup,chuyển hướng,chặn,tiện ích mở rộng,nhấp,tab,quảng cáo,theo dõi
+chặn,quảng cáo,tiện ích,iphone,mac,cửa sổ,chiếm quyền,tab

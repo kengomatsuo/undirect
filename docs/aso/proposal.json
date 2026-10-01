@@ -51,7 +51,7 @@
   "keywordBytes": 78
  },
  "bn-BD": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -118,7 +118,7 @@
   "keywordBytes": 84
  },
  "cs": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -152,7 +152,7 @@
   "keywordBytes": 68
  },
  "da": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -186,7 +186,7 @@
   "keywordBytes": 63
  },
  "de-DE": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -224,7 +224,7 @@
   "keywordBytes": 67
  },
  "el": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -259,7 +259,7 @@
   "keywordBytes": 94
  },
  "en-AU": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": "Stop Safari redirects & tabs",
   "keywords": "browser,website,page,malicious,unwanted,annoying,secure,clean,scam",
   "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
@@ -281,7 +281,7 @@
   "keywordBytes": 66
  },
  "en-CA": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": "Stop Safari redirects & tabs",
   "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
   "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
@@ -302,7 +302,7 @@
   "keywordBytes": 65
  },
  "en-GB": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": "Stop Safari redirects & tabs",
   "keywords": "pop up,advert,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
   "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
@@ -495,7 +495,7 @@
   "keywordBytes": 72
  },
  "en-US": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": "Stop Safari redirects & tabs",
   "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
   "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
@@ -518,7 +518,7 @@
   "keywordBytes": 65
  },
  "es-ES": {
-  "name": "Undirect: Ventanas emergentes",
+  "name": "Undirect - Ventanas emergentes",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -553,7 +553,7 @@
   "keywordBytes": 89
  },
  "es-MX": {
-  "name": "Undirect: Ventanas emergentes",
+  "name": "Undirect - Ventanas emergentes",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -607,7 +607,7 @@
   "keywordBytes": 91
  },
  "fi": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -641,7 +641,7 @@
   "keywordBytes": 70
  },
  "fr-CA": {
-  "name": "Undirect: Bloqueur de pop-up",
+  "name": "Undirect - Bloqueur de pop-up",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -675,7 +675,7 @@
   "keywordBytes": 85
  },
  "fr-FR": {
-  "name": "Undirect: Bloqueur de pop-up",
+  "name": "Undirect - Bloqueur de pop-up",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -741,7 +741,7 @@
   "keywordBytes": 81
  },
  "gu-IN": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -808,7 +808,7 @@
   "keywordBytes": 62
  },
  "hi": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -840,7 +840,7 @@
   "keywordBytes": 100
  },
  "hr": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -877,7 +877,7 @@
   "keywordBytes": 70
  },
  "hu": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -911,7 +911,7 @@
   "keywordBytes": 69
  },
  "id": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -945,7 +945,7 @@
   "keywordBytes": 73
  },
  "it": {
-  "name": "Undirect: Blocca Popup",
+  "name": "Undirect - Blocca Popup",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -981,7 +981,7 @@
   "keywordBytes": 79
  },
  "ja": {
-  "name": "Undirect: ポップアップブロック",
+  "name": "Undirect - ポップアップブロック",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1015,7 +1015,7 @@
   "keywordBytes": 79
  },
  "kn-IN": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -1047,7 +1047,7 @@
   "keywordBytes": 84
  },
  "ko": {
-  "name": "Undirect: 팝업 차단",
+  "name": "Undirect - 팝업 차단",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1083,7 +1083,7 @@
   "keywordBytes": 89
  },
  "ml-IN": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -1115,7 +1115,7 @@
   "keywordBytes": 93
  },
  "mr-IN": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -1147,7 +1147,7 @@
   "keywordBytes": 100
  },
  "ms": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1181,7 +1181,7 @@
   "keywordBytes": 55
  },
  "nl-NL": {
-  "name": "Undirect: Pop-up blokkeren",
+  "name": "Undirect - Pop-up blokkeren",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1218,7 +1218,7 @@
   "keywordBytes": 59
  },
  "no": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1252,7 +1252,7 @@
   "keywordBytes": 64
  },
  "or-IN": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -1284,7 +1284,7 @@
   "keywordBytes": 80
  },
  "pa-IN": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -1316,7 +1316,7 @@
   "keywordBytes": 83
  },
  "pl": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1350,7 +1350,7 @@
   "keywordBytes": 79
  },
  "pt-BR": {
-  "name": "Undirect: Bloqueador de Pop Up",
+  "name": "Undirect - Bloqueador de Pop Up",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1383,10 +1383,11 @@
     "USA"
    ]
   },
-  "keywordBytes": 81
+  "keywordBytes": 81,
+  "nameNote": "Dash form is over 30 characters; the native writer composes the descriptor to fit."
  },
  "pt-PT": {
-  "name": "Undirect: Bloqueador de Pop Up",
+  "name": "Undirect - Bloqueador de Pop Up",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1417,10 +1418,11 @@
    ],
    "additional": []
   },
-  "keywordBytes": 74
+  "keywordBytes": 74,
+  "nameNote": "Dash form is over 30 characters; the native writer composes the descriptor to fit."
  },
  "ro": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1454,7 +1456,7 @@
   "keywordBytes": 63
  },
  "ru": {
-  "name": "Undirect: Блокировщик",
+  "name": "Undirect - Блокировщик",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1492,7 +1494,7 @@
   "keywordBytes": 95
  },
  "sk": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1526,7 +1528,7 @@
   "keywordBytes": 66
  },
  "sl-SI": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1560,7 +1562,7 @@
   "keywordBytes": 71
  },
  "sv": {
-  "name": "Undirect: Pop up blockerare",
+  "name": "Undirect - Pop up blockerare",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1594,7 +1596,7 @@
   "keywordBytes": 65
  },
  "ta-IN": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -1626,7 +1628,7 @@
   "keywordBytes": 90
  },
  "te-IN": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -1693,7 +1695,7 @@
   "keywordBytes": 83
  },
  "tr": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1728,7 +1730,7 @@
   "keywordBytes": 73
  },
  "uk": {
-  "name": "Undirect: Блокувальник",
+  "name": "Undirect - Блокувальник",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1764,7 +1766,7 @@
   "keywordBytes": 83
  },
  "ur-PK": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
    "mustContain": [
@@ -1797,7 +1799,7 @@
   "keywordBytes": 74
  },
  "vi": {
-  "name": "Undirect: Popup Blocker",
+  "name": "Undirect - Popup Blocker",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1832,7 +1834,7 @@
   "keywordBytes": 69
  },
  "zh-Hans": {
-  "name": "Undirect: 弹窗拦截",
+  "name": "Undirect - 弹窗拦截",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [
@@ -1869,7 +1871,7 @@
   "keywordBytes": 58
  },
  "zh-Hant": {
-  "name": "Undirect: 彈出視窗攔截",
+  "name": "Undirect - 彈出視窗攔截",
   "subtitle": {
    "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
    "mustContain": [

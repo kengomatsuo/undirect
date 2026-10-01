@@ -1,1 +1,1 @@
-Algumas páginas cobrem-se com uma camada invisível para apanhar o clique que era para outra coisa. O Undirect remove-a e lista para onde tentaram levá-lo.
+Ative por site no botão da barra. O Undirect trava camadas invisíveis, pop-unders e ligações reescritas a meio do clique, e lista cada endereço que a página tentou abrir.

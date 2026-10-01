@@ -1,1 +1,1 @@
-popup,reindirizzamento,blocco,estensione,clic,scheda,pubblicità,tracker,privacy,browser,popunder
+pubblicità,bloccare,pop up,annunci,estensione,mac,dirottamento,finestra,reindirizzamento,scheda

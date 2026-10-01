@@ -1,1 +1,1 @@
-finestra emergent,redirecció,bloquejador,extensió,toc,pestanya,anuncis,rastrejador,privadesa
+anuncis,bloquejador,finestra emergent,extensió,mac,popup,redirecció,segrest,bloqueig,pestanyes

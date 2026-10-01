@@ -1,1 +1,1 @@
-popup,redirección,bloqueador,extensión,clic,pestaña,anuncios,rastreador,privacidad,navegador
+popup,anuncios,publicidad,bloquear,bloqueador,extensión,mac,quitar,anti,secuestro,Bloqueo,pestañas

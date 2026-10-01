@@ -1,1 +1,1 @@
-Neke se stranice prekriju nevidljivim slojem da uhvate klik namijenjen nečemu drugom. Undirect ga uklanja i popisuje kamo vas je stranica pokušala poslati.
+Uključite ga po stranici s trake. Zaustavlja nevidljive slojeve, pop-undere i poveznice prepisane usred klika te popisuje svaku adresu koju je stranica htjela otvoriti.

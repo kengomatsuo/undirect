@@ -1,1 +1,1 @@
-Sebagian halaman menutupi diri dengan lapisan tak terlihat untuk menangkap klik yang ditujukan ke hal lain. Undirect menyingkirkannya dan mendaftar tujuan yang dicoba.
+Aktifkan per situs lewat tombol bilah alat. Menghentikan lapisan klik tak terlihat, pop-under, dan tautan yang diubah saat klik, serta mendaftar alamat yang coba dibuka.

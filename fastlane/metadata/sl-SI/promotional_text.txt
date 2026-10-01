@@ -1,1 +1,1 @@
-Nekatere strani se prekrijejo z nevidno plastjo, da prestrežejo klik, namenjen nečemu drugemu. Undirect jo odstrani in našteje, kam so vas poskušale poslati.
+Vklopite ga za stran z gumbom orodne vrstice. Undirect ustavi nevidne plasti, pop-under in povezave, prepisane med klikom, in našteje vse naslove, ki jih je stran odprla.

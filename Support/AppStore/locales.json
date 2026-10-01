@@ -9,9 +9,9 @@
       "code": "ar-SA",
       "copy": {
         "name": "Undirect",
-        "subtitle": "نقرتك تبقى لك",
-        "promo": "بعض الصفحات تغطي نفسها بطبقة غير مرئية لتلتقط النقرة التي كانت موجهة إلى شيء آخر. يزيلها Undirect ويسرد كل وجهة حاولت صفحة إرسالك إليها.",
-        "keywords": "نافذة منبثقة,إعادة توجيه,حاجب,إضافة,نقرة,علامة تبويب",
+        "subtitle": "حجب نوافذ منبثقة في Safari",
+        "promo": "فعّله لكل موقع من زر شريط الأدوات. يوقف الطبقات الخفية فوق الصفحة والنوافذ الخلفية والروابط التي تتبدل أثناء النقر، ويسرد كل عنوان حاولت الصفحة فتحه.",
+        "keywords": "اعلانات,حجب,مانع,حاجب,اضافة,popup,سفاري,إعادة,توجيه",
         "description": "يمنع Undirect الصفحة من خطف نقرتك.\n\nشبكات النوافذ المنبثقة لا تنتظر أن يُنقر عليها. فهي تضع طبقة شفافة فوق الصفحة وتأخذ لمستك التالية. وتبني رابطًا وتنقر عليه بنفسها. وتغيّر رابطًا تحت إصبعك بين الضغط والرفع. وتفتح علامة تبويب فارغة وتعيد كتابة عنوان العلامة التي كنت تقرؤها.\n\nيراقب Undirect هذه الحيل ويتراجع عنها. تزول الطبقة غير المرئية قبل أن تصل لمستك، فتصيب النقرة ما كنت تقصده. والرابط الذي تغيّر في منتصف النقرة يعود إلى حاله، فتصل إلى حيث أردت. ولا تُفتح نافذة جديدة إلا إذا طلبها الموقع بحجم محدد، كما يفعل تسجيل الدخول.\n\nكل وجهة حاولت صفحة إرسالك إليها تظهر في قائمة، سواء أُوقفت أم لا. ويمكنك السماح بكل وجهة أو حظرها، في ذلك الموقع وحده أو في كل مكان. والوجهة التي لا قاعدة لها تتبع الإعداد الافتراضي الذي تختاره.\n\nما يُحظر في كل مكان يصبح قاعدة لحظر المحتوى، فلا يغادر الطلب جهازك أصلًا.\n\nخصوصية من الأساس\nلا حساب ولا تحليلات ولا خادم. قائمة الوجهات تبقى في متصفحك، ويقرؤها التطبيق عبر حاوية على الجهاز نفسه. لا يغادر شيء الجهاز إلا إذا ضغطت «إبلاغ»، فيُفتح بلاغ معبأ مسبقًا ترسله أنت بنفسك.\n\nالمتطلبات\nUndirect إضافة لمتصفح Safari. فعّلها في Safari ثم اضغط زرها في شريط الأدوات على كل موقع تريد حمايته.",
         "whatsNew": "يتحدث التطبيق وإضافة Safari الآن 31 لغة إضافية، وبذلك تُغطّى كل لغات App Store.\nعلى الـ Mac، زر إيقاف بجانب موقع محمي يزيل الموقع الآن. كان Safari سابقًا قد يُسقط الطلب فلا يحدث شيء. يسري التغيير عند فتح Safari الصفحة التالية.\nالموقع الذي يُفعَّل من نافذة خاصة يبقى خاصًا: لا يعرضه التطبيق، ويُنسى عند إغلاق آخر تبويب خاص. تعمل الحماية الآن بالكامل في النوافذ الخاصة.\nصار لون التطبيق يطابق أيقونته الحمراء."
       }
@@ -20,10 +20,10 @@
       "name": "Bengali",
       "code": "bn-BD",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "আপনার ক্লিক আপনারই থাকুক",
-        "promo": "কিছু পাতা অদৃশ্য স্তর বিছিয়ে অন্য কিছুর জন্য করা ক্লিক ধরে ফেলে। Undirect সেটি সরায় এবং পাতা আপনাকে যেসব গন্তব্যে পাঠাতে চেয়েছে তার তালিকা দেখায়।",
-        "keywords": "পপআপ,রিডাইরেক্ট,ব্লকার,ক্লিক,সাফারি",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari: অযাচিত রিডাইরেক্ট বন্ধ",
+        "promo": "প্রতিটি সাইটের জন্য টুলবারের বোতামে একবার চেপে চালু করুন। অদৃশ্য ক্লিক-স্তর, পপ-আন্ডার ও ক্লিকের মাঝে বদলে যাওয়া লিংক আটকায়, আর পাতা যত ঠিকানা খুলতে চেয়েছে সব দেখায়।",
+        "keywords": "বিজ্ঞাপন,ব্লক,পপআপ,সাফারি,এক্সটেনশন",
         "description": "Undirect কোনো পাতাকে আপনার ক্লিক কেড়ে নিতে দেয় না।\n\nপপআপ নেটওয়ার্ক কেউ ক্লিক করার অপেক্ষা করে না। তারা পাতার ওপর স্বচ্ছ একটি স্তর বিছিয়ে আপনার পরের ট্যাপটি নিয়ে নেয়। তারা একটি লিংক বানিয়ে নিজেরাই তাতে ক্লিক করে। চাপ দেওয়া আর ছাড়ার মাঝে আপনার আঙুলের নিচে লিংক বদলে দেয়। তারা একটি ফাঁকা ট্যাব খুলে আপনার পড়া ট্যাবটির ঠিকানা নতুন করে লিখে দেয়।\n\nUndirect এই কৌশলগুলোর ওপর নজর রাখে এবং সেগুলো ফিরিয়ে দেয়। আপনার ট্যাপ পৌঁছানোর আগেই অদৃশ্য স্তর সরে যায়, তাই ক্লিক ঠিক সেখানেই লাগে যেখানে আপনি লক্ষ্য করেছিলেন। ক্লিকের মাঝপথে বদলে যাওয়া লিংক আগের অবস্থায় ফিরে আসে, আর আপনি যেখানে যেতে চেয়েছিলেন সেখানেই পৌঁছান। নতুন উইন্ডো তখনই খোলে যখন সাইট নির্দিষ্ট মাপে তা চায়, যেমন সাইন-ইন উইন্ডো।\n\nপাতা আপনাকে যেসব গন্তব্যে পাঠাতে চেয়েছে, থামানো হোক বা না হোক, সবই একটি তালিকায় থাকে। প্রতিটি গন্তব্য আপনি শুধু সেই সাইটে বা সর্বত্র অনুমতি দিতে বা আটকাতে পারেন। যে গন্তব্যের কোনো নিয়ম নেই, সেটি আপনার ঠিক করা ডিফল্ট মেনে চলে।\n\nসর্বত্র যা আটকানো হয় তা কনটেন্ট ব্লকিং নিয়ম হয়ে যায়, ফলে অনুরোধ আপনার ডিভাইস ছেড়ে বেরোয়ই না।\n\nশুরু থেকেই গোপনীয়\nকোনো অ্যাকাউন্ট নেই, অ্যানালিটিক্স নেই, সার্ভার নেই। গন্তব্যের তালিকা থাকে আপনার ব্রাউজারে, আর অ্যাপ সেটি একই ডিভাইসের একটি কন্টেইনারের মাধ্যমে পড়ে। আপনি রিপোর্ট না চাপলে ডিভাইস থেকে কিছুই বেরোয় না; চাপলে আগে থেকে ভরা একটি রিপোর্ট খোলে, যা আপনি নিজে পাঠান।\n\nপ্রয়োজনীয়তা\nUndirect একটি Safari এক্সটেনশন। Safari-তে এটি চালু করুন, তারপর যে সাইট সুরক্ষিত রাখতে চান সেখানে টুলবারের বোতামে চাপ দিন।",
         "whatsNew": "অ্যাপ এবং Safari এক্সটেনশন এখন আরও ৩১টি ভাষায় চলে, App Store-এর সব ভাষা এখন কভার করা হয়েছে।\nMac-এ সুরক্ষিত সাইটের পাশে বন্ধ করুন চাপলে এখন সাইটটি সরে যায়। আগে Safari অনুরোধ ফেলে দিতে পারত, আর কিছুই হতো না। Safari পরের পাতা খুললে পরিবর্তনটি কার্যকর হয়।\nপ্রাইভেট উইন্ডো থেকে চালু করা সাইট প্রাইভেটই থাকে: অ্যাপ সেটি তালিকায় দেখায় না, আর শেষ প্রাইভেট ট্যাব বন্ধ হলে সেটি ভুলে যাওয়া হয়। সুরক্ষা এখন প্রাইভেট উইন্ডোতে পুরোপুরি কাজ করে।\nঅ্যাপের রঙ এখন তার লাল আইকনের সঙ্গে মিলেছে।"
       }
@@ -33,9 +33,9 @@
       "code": "ca",
       "copy": {
         "name": "Undirect",
-        "subtitle": "El teu toc segueix sent teu",
-        "promo": "Algunes pàgines es cobreixen amb una capa invisible per atrapar el toc que anava a una altra cosa. L'Undirect la treu i llista cada destí on volien portar-te.",
-        "keywords": "finestra emergent,redirecció,bloquejador,extensió,toc,pestanya,anuncis,rastrejador,privadesa",
+        "subtitle": "Safari sense redireccions",
+        "promo": "Activa'l lloc per lloc amb el botó de la barra. Atura capes invisibles, pop-unders i enllaços reescrits en ple clic, i llista cada adreça que una pàgina volia obrir.",
+        "keywords": "anuncis,bloquejador,finestra emergent,extensió,mac,popup,redirecció,segrest,bloqueig,pestanyes",
         "description": "L'Undirect evita que una pàgina es quedi el teu toc.\n\nLes xarxes de finestres emergents no esperen que les toquin. Posen una capa transparent sobre la pàgina i s'emporten la teva propera pulsació. Fabriquen un enllaç i hi fan clic elles mateixes. Canvien un enllaç sota el teu dit, entre que prems i deixes anar. Obren una pestanya en blanc i reescriuen l'adreça de la que estaves llegint.\n\nL'Undirect vigila aquestes maniobres i les desfà. La capa invisible desapareix abans que arribi la teva pulsació, i el toc arriba allà on apuntaves. Un enllaç reescrit enmig del toc es restaura i arribes on volies anar. Una finestra nova només s'obre quan el lloc la demana amb una mida concreta, com fa un inici de sessió.\n\nCada destí al qual una pàgina ha intentat portar-te apareix en una llista, tant si s'ha aturat com si no. Pots permetre o bloquejar cada destí, només en aquell lloc o a tot arreu. Un destí sense regla segueix el valor per defecte que triïs.\n\nEl que es bloqueja a tot arreu esdevé una regla de bloqueig de contingut, de manera que la petició no surt mai del teu dispositiu.\n\nPRIVAT DE SÈRIE\nSense compte, sense analítiques, sense servidor. La llista de destins viu al teu navegador i l'app la llegeix a través d'un contenidor del mateix dispositiu. Res no surt del dispositiu tret que premis Informa, que obre una incidència emplenada perquè l'enviïs tu.\n\nREQUISITS\nL'Undirect és una extensió del Safari. Activa-la al Safari i prem-ne el botó de la barra d'eines a cada lloc que vulguis protegir.",
         "whatsNew": "L'app i l'extensió de Safari ara parlen 31 idiomes més, així que tots els idiomes de l'App Store queden coberts.\nAl Mac, Atura al costat d'un lloc protegit ara el treu. Abans Safari podia descartar la petició i no passava res. El canvi s'aplica la propera vegada que Safari obri una pàgina.\nUn lloc activat des d'una finestra privada continua sent privat: l'app no el llista, i s'oblida quan es tanca l'última pestanya privada. La protecció ara funciona del tot en finestres privades.\nEl color de l'app ara combina amb la seva icona vermella."
       }
@@ -44,10 +44,10 @@
       "name": "Chinese (Simplified)",
       "code": "zh-Hans",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "不让网页抢走你的点击",
-        "promo": "有些网页会在自己身上盖一层看不见的东西，截下本该点向别处的那一下。Undirect 把它清除，并列出网页试图把你带去的每个目的地。",
-        "keywords": "弹窗,重定向,拦截,扩展,点击,标签页,广告,跟踪,隐私,浏览器",
+        "name": "Undirect - 弹窗拦截",
+        "subtitle": "拦住 Safari 重定向和乱开标签页",
+        "promo": "在工具栏按钮上为单个网站开启。Undirect 拦住盖在点击之上的隐形层、弹出的后台窗口，以及点击途中被改写的链接，并列出网页试图打开的每个地址。",
+        "keywords": "广告,屏蔽,扩展,iphone,mac,浏览器,劫持,去广告",
         "description": "Undirect 不让网页抢走你的点击。\n\n弹窗广告网络不会等你去点它。它们在页面上盖一层透明的东西，截走你的下一次触碰。它们造一个链接，自己点开。它们在你按下和松开之间，把手指下的链接改掉。它们打开一个空白标签页，把你正在读的那个标签页的地址改写掉。\n\nUndirect 盯着这些手法，并把它们撤销。看不见的那一层在你的触碰到达之前就消失，所以点击落在你瞄准的地方。点击途中被改写的链接会被还原，你会到达原本要去的地方。只有网站以指定大小请求新窗口时，才会打开，登录窗口就是这样。\n\n网页试图把你带去的每个目的地都会列在清单里，不论有没有被拦下。每个目的地都可以放行或拦截，只对该网站生效，或对所有网站生效。没有规则的目的地按你设定的默认方式处理。\n\n在所有网站拦截的内容会变成内容拦截规则，请求根本不会离开你的设备。\n\n从设计上就是私密的\n没有账户，没有分析，没有服务器。目的地清单保存在你的浏览器里，App 通过同一设备上的容器读取它。除非你点按“报告”，否则不会有任何内容离开设备；点按后会打开一份已填好的报告，由你自己发送。\n\n使用要求\nUndirect 是 Safari 扩展。在 Safari 中打开它，然后在每个想保护的网站上点按工具栏里的按钮。",
         "whatsNew": "App 和 Safari 扩展新增 31 种语言，App Store 的所有语言都已覆盖。\n在 Mac 上，点击已防护网站旁的“停用”，现在会移除该网站。此前 Safari 可能丢掉这个请求，什么也不会发生。该改动在 Safari 下次打开页面时生效。\n在无痕浏览窗口中开启的网站会保持私密：App 不会列出它，最后一个无痕标签页关闭时它就被忘掉。防护现在在无痕浏览窗口中完整运行。\nApp 的颜色现在与红色图标一致。"
       }
@@ -56,10 +56,10 @@
       "name": "Chinese (Traditional)",
       "code": "zh-Hant",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "不讓網頁搶走你的點按",
-        "promo": "有些網頁會在自己身上蓋一層看不見的東西，攔下本該點向別處的那一下。Undirect 把它清除，並列出網頁試圖帶你前往的每個目的地。",
-        "keywords": "彈出視窗,重新導向,阻擋,延伸功能,點按,分頁,廣告,追蹤,隱私,瀏覽器",
+        "name": "Undirect - 彈出視窗攔截",
+        "subtitle": "攔住 Safari 重新導向和亂開分頁",
+        "promo": "在工具列按鈕上為單一網站開啟。Undirect 攔住蓋在點按之上的隱形層、彈出的背景視窗，以及點按途中被改寫的連結，並列出網頁試圖開啟的每個位址。",
+        "keywords": "廣告,封鎖,擴充功能,iphone,mac,瀏覽器,劫持,彈跳,阻擋",
         "description": "Undirect 不讓網頁搶走你的點按。\n\n彈出式廣告網路不會等你去點它。它們在頁面上蓋一層透明的東西，攔走你的下一次觸碰。它們造一個連結，自己點開。它們在你按下和放開之間，把手指下的連結改掉。它們開啟一個空白分頁，把你正在讀的那個分頁的網址改寫掉。\n\nUndirect 盯著這些手法，並將它們復原。看不見的那一層在你的觸碰抵達之前就消失，所以點按會落在你瞄準的地方。點按途中被改寫的連結會被還原，你會抵達原本要去的地方。只有網站以指定大小要求新視窗時，才會開啟，登入視窗就是這樣。\n\n網頁試圖帶你前往的每個目的地都會列在清單裡，不論有沒有被擋下。每個目的地都可以允許或封鎖，只對該網站生效，或對所有網站生效。沒有規則的目的地會依你設定的預設方式處理。\n\n在所有網站封鎖的內容會變成內容阻擋規則，要求根本不會離開你的裝置。\n\n從設計上就是私密的\n沒有帳號，沒有分析，沒有伺服器。目的地清單存放在你的瀏覽器裡，App 透過同一部裝置上的容器讀取。除非你點按「回報」，否則不會有任何內容離開裝置；點按後會開啟一份已填好的回報，由你自己送出。\n\n使用需求\nUndirect 是 Safari 延伸功能。在 Safari 中開啟它，然後在每個想保護的網站上點按工具列裡的按鈕。",
         "whatsNew": "App 與 Safari 擴充功能新增 31 種語言，App Store 的所有語言都已涵蓋。\n在 Mac 上，按一下已防護網站旁的「停止」，現在會移除該網站。先前 Safari 可能丟掉這個請求，什麼也不會發生。這項變更會在 Safari 下次開啟頁面時生效。\n在「私密瀏覽」視窗中開啟的網站會維持私密：App 不會列出它，最後一個私密標籤頁關閉時就會被忘記。防護現在在私密瀏覽視窗中完整運作。\nApp 的顏色現在與紅色圖示一致。"
       }
@@ -68,10 +68,10 @@
       "name": "Croatian",
       "code": "hr",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Vaš klik ostaje vaš",
-        "promo": "Neke se stranice prekriju nevidljivim slojem da uhvate klik namijenjen nečemu drugom. Undirect ga uklanja i popisuje kamo vas je stranica pokušala poslati.",
-        "keywords": "skočni prozor,preusmjeravanje,blokator,proširenje,klik,kartica,oglasi,praćenje,privatnost",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari bez preusmjeravanja",
+        "promo": "Uključite ga po stranici s trake. Zaustavlja nevidljive slojeve, pop-undere i poveznice prepisane usred klika te popisuje svaku adresu koju je stranica htjela otvoriti.",
+        "keywords": "reklame,oglasi,blokiranje,proširenje,iphone,mac,skočni,prozor,otmica,preusmjeravanje,kartice",
         "description": "Undirect ne dopušta stranici da vam preuzme klik.\n\nMreže skočnih oglasa ne čekaju da netko klikne na njih. Prekriju stranicu prozirnim slojem i uzmu vaš sljedeći dodir. Naprave poveznicu i sami je kliknu. Promijene poveznicu pod vašim prstom, između pritiska i otpuštanja. Otvore praznu karticu i prepišu adresu one koju ste čitali.\n\nUndirect prepoznaje te trikove i poništava ih. Nevidljivi sloj nestane prije nego što dodir stigne, pa klik pogodi ono u što ste ciljali. Poveznica promijenjena usred klika vraća se na mjesto i stižete kamo ste htjeli. Novi se prozor otvara samo kad ga web-mjesto traži u određenoj veličini, kao prozor za prijavu.\n\nSvako odredište na koje vas je stranica pokušala poslati završava na popisu, bilo da je zaustavljeno ili ne. Svako možete dopustiti ili blokirati, samo na tom mjestu ili svugdje. Odredište bez pravila slijedi zadanu postavku koju odaberete.\n\nOno što je blokirano svugdje postaje pravilo za blokiranje sadržaja, pa zahtjev nikad ne napušta vaš uređaj.\n\nPRIVATNOST U TEMELJU\nBez računa, bez analitike, bez poslužitelja. Popis odredišta ostaje u vašem pregledniku, a aplikacija ga čita preko spremnika na istom uređaju. Ništa ne napušta uređaj osim ako ne dodirnete Prijavi problem: otvara se unaprijed ispunjen obrazac koji šaljete sami.\n\nZAHTJEVI\nUndirect je proširenje za Safari. Uključite ga u Safariju, a zatim na svakom mjestu koje želite zaštititi pritisnite njegov gumb na alatnoj traci.",
         "whatsNew": "Aplikacija i proširenje za Safari sada govore još 31 jezik, pa su pokriveni svi jezici App Storea.\nNa Macu gumb Zaustavi uz zaštićeno mjesto sada to mjesto uklanja. Prije je Safari mogao odbaciti zahtjev i ništa se nije događalo. Promjena vrijedi od sljedeće stranice koju Safari otvori.\nMjesto uključeno iz privatnog prozora ostaje privatno: aplikacija ga ne navodi, a zaboravlja se kad se zatvori posljednja privatna kartica. Zaštita sada u privatnim prozorima radi u potpunosti.\nBoja aplikacije sada odgovara crvenoj ikoni."
       }
@@ -80,10 +80,10 @@
       "name": "Czech",
       "code": "cs",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Vaše klepnutí zůstane vaše",
-        "promo": "Některé stránky se přikryjí neviditelnou vrstvou, aby zachytily klepnutí určené jinam. Undirect ji odstraní a vypíše každý cíl, kam vás stránka chtěla poslat.",
-        "keywords": "vyskakovací okno,přesměrování,blokování,rozšíření,klepnutí,panel,reklamy,sledování",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari: přesměrování a panely",
+        "promo": "Zapněte ho pro každý web tlačítkem na liště. Zastaví neviditelné vrstvy, okna pod stránkou a odkazy přepsané při klepnutí; vypíše každou adresu, kterou stránka otevírala.",
+        "keywords": "reklamy,blokování,rozšíření,iphone,mac,vyskakovací,okno,únos",
         "description": "Undirect nedovolí stránce, aby vám sebrala klepnutí.\n\nSítě vyskakovacích oken nečekají, až na ně někdo klepne. Přehodí přes stránku průhlednou vrstvu a seberou vám další stisk. Vytvoří odkaz a sami na něj kliknou. Změní odkaz pod vaším prstem, mezi stisknutím a puštěním. Otevřou prázdný panel a přepíšou adresu toho, který právě čtete.\n\nUndirect tyhle triky pozná a vrátí je zpět. Neviditelná vrstva zmizí dřív, než stisk dorazí, a klepnutí zasáhne zamýšlený cíl. Odkaz změněný uprostřed klepnutí se vrátí a skončíte tam, kam klepnutí mířilo. Nové okno se otevře jen tehdy, když si ho web vyžádá v určité velikosti, jako třeba přihlášení.\n\nKaždý cíl, kam vás stránka chtěla poslat, skončí v seznamu, ať už byl zastaven, nebo ne. Každý cíl můžete povolit nebo zablokovat, jen na tom webu, nebo všude. Cíl bez pravidla se řídí výchozím nastavením, které zvolíte.\n\nCo je zablokované všude, se změní v pravidlo blokování obsahu, takže požadavek vaše zařízení vůbec neopustí.\n\nSOUKROMÍ JAKO ZÁKLAD\nŽádný účet, žádná analytika, žádný server. Seznam cílů zůstává ve vašem prohlížeči a aplikace ho čte přes kontejner na stejném zařízení. Nic neopustí zařízení, pokud neklepnete na Nahlásit problém: otevře se předvyplněné hlášení, které odešlete sami.\n\nPOŽADAVKY\nUndirect je rozšíření Safari. Zapněte ho v Safari a na každém webu, který chcete chránit, stiskněte jeho tlačítko na panelu nástrojů.",
         "whatsNew": "Aplikace i rozšíření pro Safari nově mluví dalšími 31 jazyky, takže jsou pokryté všechny jazyky App Storu.\nNa Macu tlačítko Zastavit vedle chráněného webu ten web nově odebere. Dříve mohl Safari požadavek zahodit a nestalo se nic. Změna platí od další stránky, kterou Safari otevře.\nWeb zapnutý z anonymního okna zůstane anonymní: aplikace ho nevypíše a zapomene se, jakmile se zavře poslední anonymní panel. Ochrana teď v anonymních oknech běží naplno.\nBarva aplikace teď ladí s červenou ikonou."
       }
@@ -92,10 +92,10 @@
       "name": "Danish",
       "code": "da",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Dit klik forbliver dit",
-        "promo": "Nogle sider lægger et usynligt lag over sig selv for at fange et klik, der var ment til noget andet. Undirect fjerner det og viser, hvor siden ville sende dig hen.",
-        "keywords": "popup,pop op,omdirigering,blokering,udvidelse,klik,fane,websted,link,safari",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari: omdirigering og faner",
+        "promo": "Slå det til pr. websted med værktøjslinjens knap. Stopper usynlige lag, pop-unders og links, der skiftes midt i klikket, og viser hver adresse, siden prøvede at åbne.",
+        "keywords": "reklame,reklamer,blokering,udvidelse,iphone,mac,kapring,blokere",
         "description": "Undirect sørger for, at en side ikke tager dit klik.\n\nPopup-netværk venter ikke på, at nogen klikker på dem. De lægger et gennemsigtigt lag over siden og tager dit næste tryk. De bygger et link og klikker selv på det. De ændrer et link under din finger, mellem tryk og slip. De åbner en tom fane og omskriver adressen på den, du læste.\n\nUndirect holder øje med de tricks og fortryder dem. Det usynlige lag forsvinder, før dit tryk lander, så klikket rammer det, du sigtede efter. Et link, der er ændret midt i klikket, sættes tilbage, og du ender, hvor du ville hen. Et nyt vindue åbner kun, når siden beder om det i en bestemt størrelse, som en login-dialog gør.\n\nHvert mål, en side prøvede at sende dig hen til, står på en liste, uanset om det blev stoppet. Du kan tillade eller blokere hvert mål, kun på det websted eller overalt. Et mål uden regel følger den standard, du vælger.\n\nDet, der blokeres overalt, bliver til en regel for indholdsblokering, så forespørgslen aldrig forlader din enhed.\n\nPRIVAT FRA GRUNDEN\nIngen konto, ingen analyse, ingen server. Listen over mål ligger i din browser, og appen læser den gennem en container på den samme enhed. Intet forlader enheden, medmindre du trykker på Rapportér: så åbnes en udfyldt rapport, som du selv sender.\n\nKRAV\nUndirect er en Safari-udvidelse. Slå den til i Safari, og tryk på dens knap i værktøjslinjen på hvert websted, du vil beskytte.",
         "whatsNew": "Appen og Safari-udvidelsen taler nu 31 sprog mere, så alle App Store-sprog er dækket.\nPå Mac fjerner Stop ved siden af et beskyttet websted det nu. Før kunne Safari droppe anmodningen, og der skete ingenting. Ændringen gælder, næste gang Safari åbner en side.\nEt websted, der slås til fra et privat vindue, forbliver privat: appen viser det ikke, og det glemmes, når den sidste private fane lukkes. Beskyttelsen kører nu fuldt ud i private vinduer.\nAppens farve passer nu til det røde ikon."
       }
@@ -104,10 +104,10 @@
       "name": "Dutch",
       "code": "nl-NL",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Jouw klik blijft van jou",
-        "promo": "Sommige pagina's leggen een onzichtbare laag over zichzelf om een klik op te vangen die voor iets anders was. Undirect haalt die weg en toont waarheen je werd gestuurd.",
-        "keywords": "pop-up,omleiding,blokkeerder,extensie,klik,tabblad,advertenties,tracker,privacy,browser,popunder",
+        "name": "Undirect - Pop-up blokkeren",
+        "subtitle": "Stop omleidingen in Safari",
+        "promo": "Zet per site aan met de werkbalkknop. Stopt onzichtbare kliklagen, pop-unders en links die tijdens het klikken veranderen. Toont elk adres dat de pagina wilde openen.",
+        "keywords": "advertentie,reclame,extensie,iphone,mac,tabblad,kapen,popup,tabbladen",
         "description": "Undirect zorgt dat een pagina jouw klik niet inpikt.\n\nPop-upnetwerken wachten niet tot je ze aanklikt. Ze leggen een doorzichtige laag over de pagina en pakken je volgende tik. Ze maken een link en klikken er zelf op. Ze veranderen een link onder je vinger, tussen indrukken en loslaten. Ze openen een leeg tabblad en schrijven het adres van het tabblad dat je las om.\n\nUndirect herkent die trucs en maakt ze ongedaan. De onzichtbare laag verdwijnt voordat je tik aankomt, zodat de klik raakt wat je bedoelde. Een link die midden in de klik is veranderd, wordt teruggezet en je komt waar je wilde zijn. Een nieuw venster opent alleen als de site het in een bepaald formaat vraagt, zoals bij inloggen.\n\nElke bestemming waar een pagina je heen wilde sturen, komt in een lijst, of hij nu is tegengehouden of niet. Je kunt elke bestemming toestaan of blokkeren, alleen op die site of overal. Een bestemming zonder regel volgt de standaardinstelling die je kiest.\n\nWat overal geblokkeerd wordt, wordt een regel voor contentblokkering, zodat het verzoek je apparaat nooit verlaat.\n\nPRIVÉ VAN BINNENUIT\nGeen account, geen analyse, geen server. De lijst met bestemmingen staat in je browser en de app leest hem via een container op hetzelfde apparaat. Er verlaat niets het apparaat, tenzij je op Melden tikt: dan opent een ingevulde melding die je zelf verstuurt.\n\nVEREISTEN\nUndirect is een Safari-extensie. Zet hem aan in Safari en tik op elke site die je wilt beschermen op de knop in de werkbalk.",
         "whatsNew": "De app en de Safari-extensie ondersteunen nu 31 talen extra, dus alle talen van de App Store zijn gedekt.\nOp de Mac verwijdert de knop Stoppen naast een beveiligde site die site nu. Eerder kon Safari het verzoek laten vallen en gebeurde er niets. De wijziging geldt vanaf de volgende pagina die Safari opent.\nEen site die je in een privévenster inschakelt, blijft privé: de app toont hem niet en hij wordt vergeten zodra het laatste privétabblad sluit. De bescherming werkt nu volledig in privévensters.\nDe kleur van de app past nu bij het rode icoon."
       }
@@ -116,10 +116,10 @@
       "name": "English (Australia)",
       "code": "en-AU",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Stop pages taking your click",
-        "promo": "Some pages lay an invisible layer over themselves to catch the click you meant for something else. Undirect clears it, and lists everywhere a page tried to send you.",
-        "keywords": "popup,redirect,blocker,extension,hijack,click,tab,ads,tracker,privacy,browser,popunder",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Stop Safari redirects & tabs",
+        "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
+        "keywords": "browser,website,page,malicious,unwanted,annoying,secure,clean,scam",
         "description": "Undirect stops a page taking your click.\n\nPop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.\n\nUndirect watches for those shapes and undoes them. The invisible layer goes before your press lands, so the click reaches what you aimed at. A link rewritten mid-click is put back, and you arrive where you meant to. A new window opens only when a site asks for one at a size, the way a sign-in does.\n\nEverywhere a page tried to send you is listed, whether or not it was stopped. Each destination can be allowed or blocked, on that site alone or everywhere. A destination with no rule follows a default you set.\n\nWhat is blocked everywhere becomes a content blocking rule, so the request never leaves your device.\n\nPRIVATE BY BUILD\nNo account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.\n\nREQUIREMENTS\nUndirect is a Safari extension. Switch it on in Safari, then press its toolbar button on each site you want guarded.",
         "whatsNew": "The app and the Safari extension now speak 31 more languages, so every App Store language is covered.\nOn Mac, pressing Stop beside a guarded site now removes it. Before, Safari could drop the request and nothing happened. The change applies the next time Safari opens a page.\nA site switched on from a private window stays private: the app does not list it, and it is forgotten when the last private tab closes. The guard now runs fully in private windows.\nThe app's colour now matches its red icon."
       }
@@ -128,10 +128,10 @@
       "name": "English (Canada)",
       "code": "en-CA",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Stop pages taking your click",
-        "promo": "Some pages lay an invisible layer over themselves to catch the click you meant for something else. Undirect clears it, and lists everywhere a page tried to send you.",
-        "keywords": "popup,redirect,blocker,extension,hijack,click,tab,ads,tracker,privacy,browser,popunder",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Stop Safari redirects & tabs",
+        "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
+        "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
         "description": "Undirect stops a page taking your click.\n\nPop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.\n\nUndirect watches for those shapes and undoes them. The invisible layer goes before your press lands, so the click reaches what you aimed at. A link rewritten mid-click is put back, and you arrive where you meant to. A new window opens only when a site asks for one at a size, the way a sign-in does.\n\nEverywhere a page tried to send you is listed, whether or not it was stopped. Each destination can be allowed or blocked, on that site alone or everywhere. A destination with no rule follows a default you set.\n\nWhat is blocked everywhere becomes a content blocking rule, so the request never leaves your device.\n\nPRIVATE BY BUILD\nNo account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.\n\nREQUIREMENTS\nUndirect is a Safari extension. Switch it on in Safari, then press its toolbar button on each site you want guarded.",
         "whatsNew": "The app and the Safari extension now speak 31 more languages, so every App Store language is covered.\nOn Mac, pressing Stop beside a guarded site now removes it. Before, Safari could drop the request and nothing happened. The change applies the next time Safari opens a page.\nA site switched on from a private window stays private: the app does not list it, and it is forgotten when the last private tab closes. The guard now runs fully in private windows.\nThe app's colour now matches its red icon."
       }
@@ -140,10 +140,10 @@
       "name": "English (U.K.)",
       "code": "en-GB",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Stop pages taking your click",
-        "promo": "Some pages lay an invisible layer over themselves to catch the click you meant for something else. Undirect clears it, and lists everywhere a page tried to send you.",
-        "keywords": "popup,redirect,blocker,extension,hijack,click,tab,ads,tracker,privacy,browser,popunder",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Stop Safari redirects & tabs",
+        "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
+        "keywords": "pop up,advert,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
         "description": "Undirect stops a page taking your click.\n\nPop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.\n\nUndirect watches for those shapes and undoes them. The invisible layer goes before your press lands, so the click reaches what you aimed at. A link rewritten mid-click is put back, and you arrive where you meant to. A new window opens only when a site asks for one at a size, the way a sign-in does.\n\nEverywhere a page tried to send you is listed, whether or not it was stopped. Each destination can be allowed or blocked, on that site alone or everywhere. A destination with no rule follows a default you set.\n\nWhat is blocked everywhere becomes a content blocking rule, so the request never leaves your device.\n\nPRIVATE BY BUILD\nNo account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.\n\nREQUIREMENTS\nUndirect is a Safari extension. Switch it on in Safari, then press its toolbar button on each site you want guarded.",
         "whatsNew": "The app and the Safari extension now speak 31 more languages, so every App Store language is covered.\nOn Mac, pressing Stop beside a guarded site now removes it. Before, Safari could drop the request and nothing happened. The change applies the next time Safari opens a page.\nA site switched on from a private window stays private: the app does not list it, and it is forgotten when the last private tab closes. The guard now runs fully in private windows.\nThe app's colour now matches its red icon."
       }
@@ -152,10 +152,10 @@
       "name": "English (U.S.)",
       "code": "en-US",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Stop pages taking your click",
-        "promo": "Some pages lay an invisible layer over themselves to catch the click you meant for something else. Undirect clears it, and lists everywhere a page tried to send you.",
-        "keywords": "popup,redirect,blocker,extension,hijack,click,tab,ads,tracker,privacy,browser,popunder",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Stop Safari redirects & tabs",
+        "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
+        "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
         "description": "Undirect stops a page taking your click.\n\nPop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.\n\nUndirect watches for those shapes and undoes them. The invisible layer goes before your press lands, so the click reaches what you aimed at. A link rewritten mid-click is put back, and you arrive where you meant to. A new window opens only when a site asks for one at a size, the way a sign-in does.\n\nEverywhere a page tried to send you is listed, whether or not it was stopped. Each destination can be allowed or blocked, on that site alone or everywhere. A destination with no rule follows a default you set.\n\nWhat is blocked everywhere becomes a content blocking rule, so the request never leaves your device.\n\nPRIVATE BY BUILD\nNo account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.\n\nREQUIREMENTS\nUndirect is a Safari extension. Switch it on in Safari, then press its toolbar button on each site you want guarded.",
         "whatsNew": "The app and the Safari extension now speak 31 more languages, so every App Store language is covered.\nOn Mac, pressing Stop beside a guarded site now removes it. Before, Safari could drop the request and nothing happened. The change applies the next time Safari opens a page.\nA site switched on from a private window stays private: the app does not list it, and it is forgotten when the last private tab closes. The guard now runs fully in private windows.\nThe app's color now matches its red icon."
       }
@@ -164,10 +164,10 @@
       "name": "Finnish",
       "code": "fi",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Sivu ei vie napsautustasi",
-        "promo": "Jotkin sivut peittävät itsensä näkymättömällä kerroksella napatakseen muualle tarkoitetun napsautuksen. Undirect poistaa sen ja listaa kohteet, joihin yritettiin ohjata.",
-        "keywords": "ponnahdusikkuna,uudelleenohjaus,esto,laajennus,napsautus,välilehti,linkki,sivusto,safari",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari: uudelleenohjaus pois",
+        "promo": "Ota käyttöön sivu kerrallaan työkalupalkista. Pysäyttää näkymättömät kerrokset, pop-under-ikkunat ja kesken napsautuksen vaihtuvat linkit ja listaa jokaisen osoitteen.",
+        "keywords": "mainos,mainokset,esto,laajennus,iphone,mac,kaappaus,ponnahdus,estäjä,välilehdet",
         "description": "Undirect estää sivua nappaamasta napsautustasi.\n\nPonnahdusverkot eivät odota, että niitä napsautetaan. Ne laittavat sivun päälle läpinäkyvän kerroksen ja ottavat seuraavan painalluksesi. Ne rakentavat linkin ja napsauttavat sitä itse. Ne vaihtavat linkin sormesi alla painalluksen ja irrotuksen välillä. Ne avaavat tyhjän välilehden ja kirjoittavat uudelleen lukemasi välilehden osoitteen.\n\nUndirect tunnistaa nämä temput ja kumoaa ne. Näkymätön kerros poistuu ennen kuin painallus ehtii perille, joten napsautus osuu siihen, mihin tähtäsit. Kesken napsautuksen vaihdettu linkki palautetaan, ja päädyt sinne, minne olit menossa. Uusi ikkuna avautuu vain, kun sivu pyytää sitä tietyssä koossa, kuten kirjautuminen tekee.\n\nJokainen kohde, johon sivu yritti ohjata sinut, päätyy listaan riippumatta siitä, pysäytettiinkö se. Voit sallia tai estää jokaisen kohteen vain kyseisellä sivustolla tai kaikkialla. Kohde, jolle ei ole sääntöä, noudattaa valitsemaasi oletusta.\n\nSe, mikä estetään kaikkialla, muuttuu sisällönestosäännöksi, joten pyyntö ei koskaan poistu laitteeltasi.\n\nYKSITYISYYS LÄHTÖKOHTANA\nEi tiliä, ei analytiikkaa, ei palvelinta. Kohteiden lista pysyy selaimessasi, ja appi lukee sen samalla laitteella olevan säilön kautta. Mikään ei poistu laitteelta, ellet paina Ilmoita: silloin aukeaa esitäytetty ilmoitus, jonka lähetät itse.\n\nVAATIMUKSET\nUndirect on Safari-laajennus. Kytke se päälle Safarissa ja paina sen painiketta työkalupalkissa jokaisella sivustolla, jota haluat suojata.",
         "whatsNew": "Sovellus ja Safari-laajennus puhuvat nyt 31 kieltä lisää, joten kaikki App Storen kielet on katettu.\nMacilla Lopeta suojatun sivuston vieressä poistaa sivuston nyt. Aiemmin Safari saattoi pudottaa pyynnön, eikä mitään tapahtunut. Muutos tulee voimaan, kun Safari avaa seuraavan sivun.\nYksityisessä ikkunassa päälle kytketty sivusto pysyy yksityisenä: sovellus ei listaa sitä, ja se unohtuu, kun viimeinen yksityinen välilehti suljetaan. Suojaus toimii nyt täysin yksityisissä ikkunoissa.\nSovelluksen väri sopii nyt punaiseen kuvakkeeseen."
       }
@@ -176,10 +176,10 @@
       "name": "French",
       "code": "fr-FR",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Gardez le contrôle du clic",
-        "promo": "Certaines pages se couvrent d'une couche invisible pour attraper le clic destiné à autre chose. Undirect la retire et liste où elles ont tenté de vous envoyer.",
-        "keywords": "pop-up,redirection,bloqueur,extension,clic,onglet,pubs,traceur,confidentialité,navigateur,popunder",
+        "name": "Undirect - Bloqueur de pop-up",
+        "subtitle": "Redirections et onglets Safari",
+        "promo": "Activez-le site par site depuis la barre. Il bloque couches invisibles, pop-unders et liens réécrits en plein clic, et liste chaque adresse qu'une page a tenté d'ouvrir.",
+        "keywords": "popup,publicité,pub,bloquer,anti pub,extension,iphone,mac,détournement,fenêtre",
         "description": "Undirect empêche une page de s'approprier votre clic.\n\nLes réseaux de pop-up n'attendent pas qu'on clique sur eux. Ils posent une couche transparente sur la page et prennent votre prochain appui. Ils fabriquent un lien et cliquent dessus eux-mêmes. Ils modifient un lien sous votre doigt, entre l'appui et le relâchement. Ils ouvrent un onglet vide et réécrivent l'adresse de celui que vous lisiez.\n\nUndirect repère ces manœuvres et les défait. La couche invisible disparaît avant que votre appui n'arrive, et le clic atteint ce que vous visiez. Un lien réécrit en plein clic est remis en place, et vous arrivez là où vous vouliez aller. Une nouvelle fenêtre ne s'ouvre que si le site la demande à une taille précise, comme le fait une fenêtre de connexion.\n\nChaque destination vers laquelle une page a tenté de vous envoyer figure dans une liste, qu'elle ait été arrêtée ou non. Vous pouvez autoriser ou bloquer chacune, sur ce site seulement ou partout. Une destination sans règle suit le réglage par défaut que vous avez choisi.\n\nCe qui est bloqué partout devient une règle de blocage de contenu : la requête ne quitte jamais votre appareil.\n\nCONFIDENTIEL PAR CONSTRUCTION\nPas de compte, pas de statistiques, pas de serveur. La liste des destinations reste dans votre navigateur, et l'app la lit grâce à un conteneur sur le même appareil. Rien ne sort de l'appareil, sauf si vous touchez Signaler : un ticket prérempli s'ouvre, et c'est vous qui l'envoyez.\n\nCONFIGURATION REQUISE\nUndirect est une extension Safari. Activez-la dans Safari, puis touchez son bouton dans la barre d'outils sur chaque site à protéger.",
         "whatsNew": "L'app et l'extension Safari parlent maintenant 31 langues de plus : toutes les langues de l'App Store sont couvertes.\nSur Mac, Arrêter à côté d'un site protégé le retire désormais. Avant, Safari pouvait abandonner la demande et rien ne se passait. Le changement s'applique dès la prochaine page que Safari ouvre.\nUn site activé depuis une fenêtre de navigation privée reste privé : l'app ne le liste pas, et il est oublié quand le dernier onglet privé se ferme. La protection agit maintenant pleinement dans les fenêtres privées.\nLa couleur de l'app s'accorde maintenant à son icône rouge."
       }
@@ -188,10 +188,10 @@
       "name": "French (Canada)",
       "code": "fr-CA",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Votre clic reste le vôtre",
-        "promo": "Certaines pages se couvrent d'une couche invisible pour attraper le clic destiné à autre chose. Undirect la retire et dresse la liste des destinations visées.",
-        "keywords": "fenêtre contextuelle,redirection,bloqueur,extension,clic,onglet,pub,traqueur,confidentialité",
+        "name": "Undirect - Bloqueur de pop-up",
+        "subtitle": "Redirections et onglets Safari",
+        "promo": "Activez-le site par site depuis la barre. Il bloque couches invisibles, pop-unders et liens réécrits en plein clic, et liste chaque adresse qu'une page a voulu ouvrir.",
+        "keywords": "popup,publicité,pub,bloquer,fenêtre,contextuelle,extension,iphone,mac,détournement",
         "description": "Undirect empêche une page de s'emparer de votre clic.\n\nLes réseaux de fenêtres publicitaires n'attendent pas qu'on clique sur eux. Ils posent une couche transparente sur la page et prennent votre prochain clic. Ils fabriquent un lien et cliquent dessus eux-mêmes. Ils modifient un lien sous votre doigt, entre le moment où vous appuyez et celui où vous relâchez. Ils ouvrent un onglet vide et réécrivent l'adresse de celui que vous lisiez.\n\nUndirect repère ces manœuvres et les défait. La couche invisible disparaît avant que votre clic n'arrive, et il atteint ce que vous visiez. Un lien réécrit en plein clic est remis en place, et vous arrivez là où vous vouliez aller. Une nouvelle fenêtre ne s'ouvre que si le site la demande à une taille précise, comme le fait une fenêtre de connexion.\n\nChaque destination vers laquelle une page a tenté de vous envoyer figure dans une liste, qu'elle ait été arrêtée ou non. Vous pouvez autoriser ou bloquer chacune, sur ce site seulement ou partout. Une destination sans règle suit le réglage par défaut que vous avez choisi.\n\nCe qui est bloqué partout devient une règle de blocage de contenu : la requête ne quitte jamais votre appareil.\n\nCONFIDENTIEL PAR CONCEPTION\nAucun compte, aucune analyse, aucun serveur. La liste des destinations reste dans votre navigateur, et l'app la lit grâce à un conteneur sur le même appareil. Rien ne sort de l'appareil, sauf si vous touchez Signaler : un signalement prérempli s'ouvre, et c'est vous qui l'envoyez.\n\nCONFIGURATION REQUISE\nUndirect est une extension Safari. Activez-la dans Safari, puis appuyez sur son bouton de la barre d'outils sur chaque site à protéger.",
         "whatsNew": "L'app et l'extension Safari parlent maintenant 31 langues de plus : toutes les langues de l'App Store sont couvertes.\nSur Mac, Arrêter à côté d'un site protégé le retire désormais. Avant, Safari pouvait abandonner la demande et rien ne se produisait. Le changement s'applique dès la prochaine page que Safari ouvre.\nUn site activé depuis une fenêtre de navigation privée reste privé : l'app ne le liste pas, et il est oublié quand le dernier onglet privé se ferme. La protection agit maintenant pleinement dans les fenêtres privées.\nLa couleur de l'app s'harmonise maintenant avec son icône rouge."
       }
@@ -200,10 +200,10 @@
       "name": "German",
       "code": "de-DE",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Gegen gekaperte Klicks",
-        "promo": "Manche Seiten legen eine unsichtbare Schicht über sich, um einen fremden Klick abzufangen. Undirect räumt sie weg und listet jedes Ziel, an das man Sie schicken wollte.",
-        "keywords": "Popup,Weiterleitung,Blocker,Erweiterung,Klick,Tab,Werbung,Tracker,Datenschutz,Browser,Popunder",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari ohne Weiterleitungen",
+        "promo": "Pro Website per Symbolleiste einschalten. Stoppt unsichtbare Ebenen, Pop-unders und mitten im Klick umgeschriebene Links, listet jede Adresse, die sich öffnen sollte.",
+        "keywords": "pop-up,blockieren,umleitung,erweiterung,tab,klick,iphone,mac,kapern,Werbung",
         "description": "Undirect sorgt dafür, dass eine Seite Ihren Klick nicht an sich reißt.\n\nPop-up-Netzwerke warten nicht darauf, angeklickt zu werden. Sie legen eine durchsichtige Schicht über die Seite und schnappen sich den nächsten Klick. Sie bauen einen Link und klicken ihn selbst an. Sie ändern einen Link unter Ihrem Finger, zwischen Drücken und Loslassen. Sie öffnen einen leeren Tab und schreiben die Adresse des Tabs um, den Sie gerade lesen.\n\nUndirect erkennt diese Muster und macht sie rückgängig. Die unsichtbare Schicht verschwindet, bevor Ihr Klick ankommt, sodass er das trifft, worauf Sie gezielt haben. Ein mitten im Klick geänderter Link wird zurückgesetzt, und Sie landen dort, wo Sie hinwollten. Ein neues Fenster öffnet sich nur, wenn die Seite es in einer bestimmten Größe verlangt, so wie bei einer Anmeldung.\n\nJedes Ziel, an das eine Seite Sie schicken wollte, steht in einer Liste, ob es gestoppt wurde oder nicht. Jedes Ziel lässt sich erlauben oder blockieren, nur auf dieser Website oder überall. Für ein Ziel ohne Regel gilt die Voreinstellung, die Sie festlegen.\n\nWas überall blockiert wird, wird zu einer Inhaltsblocker-Regel. Die Anfrage verlässt Ihr Gerät dann gar nicht erst.\n\nPRIVAT VON GRUND AUF\nKein Konto, keine Analyse, kein Server. Die Liste der Ziele liegt in Ihrem Browser, und die App liest sie über einen Container auf demselben Gerät. Nichts verlässt das Gerät, außer Sie tippen auf „Melden“. Dann öffnet sich ein vorbereitetes Issue, das Sie selbst absenden.\n\nVORAUSSETZUNG\nUndirect ist eine Safari-Erweiterung. Schalten Sie sie in Safari ein und tippen Sie auf jeder Website, die geschützt werden soll, auf die Symbolleisten-Taste.",
         "whatsNew": "Die App und die Safari-Erweiterung sprechen jetzt 31 weitere Sprachen, damit sind alle Sprachen des App Store abgedeckt.\nAuf dem Mac entfernt die Taste „Entfernen“ neben einer geschützten Website diese jetzt wirklich. Zuvor konnte Safari die Anfrage verwerfen, und es passierte nichts. Die Änderung gilt, sobald Safari die nächste Seite öffnet.\nEine Website, die Sie in einem privaten Fenster einschalten, bleibt privat: Die App listet sie nicht auf, und sie wird vergessen, sobald der letzte private Tab geschlossen wird. Der Schutz läuft in privaten Fenstern jetzt vollständig.\nDie Farbe der App passt jetzt zu ihrem roten Symbol."
       }
@@ -212,10 +212,10 @@
       "name": "Greek",
       "code": "el",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Το κλικ σας μένει δικό σας",
-        "promo": "Κάποιες σελίδες απλώνουν πάνω τους ένα αόρατο επίπεδο για να πιάσουν το κλικ που προοριζόταν αλλού. Το Undirect το αφαιρεί και καταγράφει πού προσπάθησαν να σας στείλουν.",
-        "keywords": "αναδυόμενο,ανακατεύθυνση,αποκλεισμός,επέκταση,κλικ",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari χωρίς ανακατευθύνσεις",
+        "promo": "Ενεργοποιήστε το ανά ιστότοπο από το κουμπί της γραμμής. Σταματά αόρατα επίπεδα, pop-under και συνδέσμους που αλλάζουν στο κλικ, και καταγράφει κάθε διεύθυνση.",
+        "keywords": "διαφημίσεις,αποκλεισμός,επέκταση,αναδυόμενα,καρτέλες",
         "description": "Το Undirect εμποδίζει μια σελίδα να πάρει το κλικ σας.\n\nΤα δίκτυα αναδυόμενων παραθύρων δεν περιμένουν να τα πατήσετε. Απλώνουν ένα διάφανο επίπεδο πάνω στη σελίδα και παίρνουν το επόμενο πάτημά σας. Φτιάχνουν έναν σύνδεσμο και τον πατούν μόνα τους. Αλλάζουν έναν σύνδεσμο κάτω από το δάχτυλό σας, ανάμεσα στο πάτημα και την άφεση. Ανοίγουν μια κενή καρτέλα και ξαναγράφουν τη διεύθυνση εκείνης που διαβάζατε.\n\nΤο Undirect παρακολουθεί αυτά τα κόλπα και τα αναιρεί. Το αόρατο επίπεδο φεύγει πριν φτάσει το πάτημά σας, και το κλικ πέφτει σε αυτό που στοχεύσατε. Ένας σύνδεσμος που άλλαξε εν μέσω του κλικ επαναφέρεται και φτάνεις εκεί που θέλατε. Ένα νέο παράθυρο ανοίγει μόνο όταν η σελίδα το ζητά με συγκεκριμένο μέγεθος, όπως μια σύνδεση.\n\nΚάθε προορισμός όπου προσπάθησε να σε στείλει μια σελίδα μπαίνει σε μια λίστα, είτε σταμάτησε είτε όχι. Μπορείτε να επιτρέψετε ή να αποκλείσετε τον καθένα, μόνο σε αυτόν τον ιστότοπο ή παντού. Ένας προορισμός χωρίς κανόνα ακολουθεί την προεπιλογή που ορίζετε.\n\nΌ,τι αποκλείεται παντού γίνεται κανόνας αποκλεισμού περιεχομένου, οπότε το αίτημα δεν φεύγει ποτέ από τη συσκευή σας.\n\nΑΠΟΡΡΗΤΟ ΑΠΟ ΤΗ ΣΧΕΔΙΑΣΗ\nΧωρίς λογαριασμό, χωρίς αναλύσεις, χωρίς διακομιστή. Η λίστα των προορισμών μένει στο πρόγραμμα περιήγησής σας και η εφαρμογή τη διαβάζει μέσω ενός κοινόχρηστου χώρου στην ίδια συσκευή. Τίποτα δεν φεύγει από τη συσκευή, εκτός αν πατήσετε Αναφορά: ανοίγει μια προσυμπληρωμένη αναφορά που στέλνετε εσείς.\n\nΑΠΑΙΤΗΣΕΙΣ\nΤο Undirect είναι επέκταση του Safari. Ενεργοποιήστε το στο Safari και πατήστε το κουμπί του στη γραμμή εργαλείων σε κάθε ιστότοπο που θέλετε να προστατεύσετε.",
         "whatsNew": "Η εφαρμογή και η επέκταση του Safari μιλούν τώρα 31 ακόμη γλώσσες, οπότε καλύπτονται όλες οι γλώσσες του App Store.\nΣτο Mac, το Διακοπή δίπλα σε έναν προστατευμένο ιστότοπο πλέον τον αφαιρεί. Πριν, το Safari μπορούσε να απορρίψει το αίτημα και δεν γινόταν τίποτα. Η αλλαγή ισχύει από την επόμενη σελίδα που ανοίγει το Safari.\nΈνας ιστότοπος που ενεργοποιείται από ιδιωτικό παράθυρο παραμένει ιδιωτικός: η εφαρμογή δεν τον εμφανίζει στη λίστα και ξεχνιέται όταν κλείσει η τελευταία ιδιωτική καρτέλα. Η προστασία λειτουργεί πλέον πλήρως στα ιδιωτικά παράθυρα.\nΤο χρώμα της εφαρμογής ταιριάζει πλέον με το κόκκινο εικονίδιό της."
       }
@@ -224,10 +224,10 @@
       "name": "Gujarati",
       "code": "gu-IN",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "તમારું ક્લિક તમારું જ રહે",
-        "promo": "કેટલાંક પાનાં અદૃશ્ય સ્તર પાથરીને બીજા માટેનું ક્લિક પકડે છે. Undirect તે હટાવે છે અને પાનાએ તમને જ્યાં મોકલવા ચાહ્યા તે દરેક ગંતવ્ય બતાવે છે.",
-        "keywords": "પૉપઅપ,રીડાયરેક્ટ,બ્લૉકર,ક્લિક,સફારી",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari: અણગમતા રીડાયરેક્ટ બંધ",
+        "promo": "દરેક સાઇટ માટે ટૂલબારના બટનથી ચાલુ કરો. અદૃશ્ય ક્લિક-સ્તર, પૉપ-અંડર અને ક્લિક દરમિયાન બદલાતી લિંક અટકાવે છે, અને પાનાએ ખોલવા ચાહેલા દરેક સરનામાની યાદી આપે છે.",
+        "keywords": "જાહેરાત,બ્લૉક,પૉપઅપ,સફારી",
         "description": "Undirect કોઈ પાનાને તમારું ક્લિક પડાવી લેવા દેતું નથી.\n\nપૉપઅપ નેટવર્ક કોઈ ક્લિક કરે તેની રાહ જોતાં નથી. તેઓ પાના પર પારદર્શક સ્તર પાથરીને તમારો આગામી ટૅપ લઈ લે છે. તેઓ લિંક બનાવીને જાતે જ તેના પર ક્લિક કરે છે. દબાવવા અને છોડવા વચ્ચે તમારી આંગળી નીચે લિંક બદલી નાખે છે. તેઓ ખાલી ટૅબ ખોલીને તમે વાંચતા હતા તે ટૅબનું સરનામું ફરી લખી નાખે છે.\n\nUndirect આ યુક્તિઓ પર નજર રાખે છે અને તેને પાછી વાળે છે. તમારો ટૅપ પહોંચે તે પહેલાં અદૃશ્ય સ્તર હટી જાય છે, તેથી ક્લિક તમે જેના પર નિશાન સાધ્યું હતું ત્યાં જ લાગે છે. ક્લિક દરમિયાન બદલાયેલી લિંક પાછી મૂળ સ્થિતિમાં આવે છે, અને તમે જ્યાં જવા માગતા હતા ત્યાં પહોંચો છો. નવી વિન્ડો ત્યારે જ ખૂલે છે જ્યારે સાઇટ નિશ્ચિત કદમાં તે માગે, જેમ સાઇન-ઇન વિન્ડો.\n\nપાનાએ તમને જ્યાં મોકલવા ચાહ્યા તે દરેક ગંતવ્ય યાદીમાં આવે છે, પછી ભલે તેને અટકાવાયું હોય કે નહીં. દરેક ગંતવ્યને ફક્ત તે સાઇટ પર અથવા બધે મંજૂરી આપી શકો અથવા બ્લૉક કરી શકો. જે ગંતવ્ય માટે નિયમ નથી તે તમે નક્કી કરેલા ડિફૉલ્ટને અનુસરે છે.\n\nજે બધે બ્લૉક થાય છે તે કન્ટેન્ટ બ્લૉકિંગ નિયમ બની જાય છે, એટલે વિનંતી તમારા ડિવાઇસની બહાર જતી જ નથી.\n\nશરૂઆતથી જ ખાનગી\nકોઈ એકાઉન્ટ નથી, કોઈ ઍનલિટિક્સ નથી, કોઈ સર્વર નથી. ગંતવ્યોની યાદી તમારા બ્રાઉઝરમાં રહે છે, અને ઍપ તેને એ જ ડિવાઇસ પરના કન્ટેનર દ્વારા વાંચે છે. તમે રિપોર્ટ ન દબાવો ત્યાં સુધી ડિવાઇસમાંથી કંઈ બહાર જતું નથી; દબાવો ત્યારે અગાઉથી ભરેલો રિપોર્ટ ખૂલે છે, જે તમે જાતે મોકલો છો.\n\nજરૂરિયાતો\nUndirect એક Safari એક્સ્ટેંશન છે. Safari માં તેને ચાલુ કરો, પછી જે સાઇટનું રક્ષણ કરવું હોય ત્યાં ટૂલબારમાં તેનું બટન દબાવો.",
         "whatsNew": "ઍપ અને Safari એક્સટેન્શન હવે વધુ 31 ભાષાઓમાં છે, અને App Storeની બધી ભાષાઓ આવરી લેવાઈ છે.\nMac પર સુરક્ષિત સાઇટની બાજુમાં બંધ કરો દબાવવાથી હવે તે સાઇટ દૂર થાય છે. પહેલાં Safari વિનંતી છોડી દઈ શકતું અને કંઈ થતું નહીં. ફેરફાર Safari હવે પછી પાનું ખોલે ત્યારે લાગુ પડે છે.\nપ્રાઇવેટ વિન્ડોમાંથી ચાલુ કરેલી સાઇટ પ્રાઇવેટ જ રહે છે: ઍપ તેને યાદીમાં બતાવતી નથી, અને છેલ્લું પ્રાઇવેટ ટૅબ બંધ થતાં તે ભુલાઈ જાય છે. સુરક્ષા હવે પ્રાઇવેટ વિન્ડોમાં પૂરેપૂરી ચાલે છે.\nઍપનો રંગ હવે તેના લાલ આઇકન સાથે મેળ ખાય છે."
       }
@@ -237,9 +237,9 @@
       "code": "he",
       "copy": {
         "name": "Undirect",
-        "subtitle": "הלחיצה שלכם נשארת שלכם",
-        "promo": "חלק מהדפים מניחים על עצמם שכבה בלתי נראית כדי ללכוד את הלחיצה שנועדה למשהו אחר. Undirect מסיר אותה ורושם כל יעד שדף ניסה לשלוח אתכם אליו.",
-        "keywords": "חלון קופץ,הפניה,חוסם,הרחבה,לחיצה,לשונית,קישור,אתר,safari",
+        "subtitle": "Safari: חלונות קופצים והפניה",
+        "promo": "הפעילו אותו לכל אתר מכפתור סרגל הכלים. הוא עוצר שכבות בלתי נראות, חלונות שנפתחים מאחורי הדף וקישורים שמשתנים באמצע הלחיצה, ורושם כל כתובת שדף ניסה לפתוח.",
+        "keywords": "פרסומות,חוסם,הרחבה,iphone,mac,popup,חטיפה,לשוניות",
         "description": "Undirect מונע מדף לחטוף את הלחיצה שלכם.\n\nרשתות של חלונות קופצים לא מחכות שילחצו עליהן. הן מניחות שכבה שקופה על הדף ולוקחות את ההקשה הבאה שלכם. הן בונות קישור ולוחצות עליו בעצמן. הן משנות קישור מתחת לאצבע שלכם, בין הלחיצה לשחרור. הן פותחות לשונית ריקה וכותבות מחדש את הכתובת של זו שקראתם.\n\nUndirect מזהה את התרגילים האלה ומבטל אותם. השכבה הבלתי נראית נעלמת לפני שההקשה מגיעה, והלחיצה פוגעת במה שכיוונתם אליו. קישור ששונה באמצע הלחיצה מוחזר למקומו, ואתם מגיעים לאן שרציתם. חלון חדש נפתח רק כשהאתר מבקש אותו בגודל מסוים, כמו בחלון התחברות.\n\nכל יעד שדף ניסה לשלוח אתכם אליו מופיע ברשימה, בין אם נעצר ובין אם לא. אפשר להתיר או לחסום כל יעד, באתר הזה בלבד או בכל מקום. יעד ללא כלל פועל לפי ברירת המחדל שבחרתם.\n\nמה שנחסם בכל מקום הופך לכלל לחסימת תוכן, כך שהבקשה אינה עוזבת את המכשיר שלכם בכלל.\n\nפרטיות מובנית\nבלי חשבון, בלי ניתוח נתונים, בלי שרת. רשימת היעדים נשמרת בדפדפן שלכם, והאפליקציה קוראת אותה דרך תיקייה משותפת באותו מכשיר. שום דבר לא עוזב את המכשיר אלא אם לוחצים על דיווח: אז נפתח דיווח ממולא מראש, והשליחה נעשית ידנית.\n\nדרישות\nUndirect הוא הרחבה של Safari. יש להפעיל אותו ב-Safari וללחוץ על הלחצן שלו בסרגל הכלים בכל אתר שרוצים להגן עליו.",
         "whatsNew": "האפליקציה וההרחבה של Safari מדברות עכשיו עוד 31 שפות, וכל שפות ה-App Store מכוסות.\nב-Mac, לחיצה על עצירה ליד אתר מוגן מסירה אותו עכשיו. קודם Safari יכול היה להשמיט את הבקשה ושום דבר לא קרה. השינוי חל בפעם הבאה ש-Safari פותח דף.\nאתר שהופעל מחלון פרטי נשאר פרטי: האפליקציה לא מציגה אותו ברשימה, והוא נשכח כשהכרטיסייה הפרטית האחרונה נסגרת. ההגנה פועלת עכשיו במלואה בחלונות פרטיים.\nצבע האפליקציה תואם עכשיו את הסמל האדום שלה."
       }
@@ -248,10 +248,10 @@
       "name": "Hindi",
       "code": "hi",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "आपका क्लिक आपका ही रहे",
-        "promo": "कुछ पेज अदृश्य परत बिछाकर किसी और चीज़ के लिए किया क्लिक पकड़ लेते हैं। Undirect उसे हटाता है और बताता है कि पेज ने आपको कहाँ भेजना चाहा।",
-        "keywords": "पॉपअप,रीडायरेक्ट,ब्लॉकर,एक्सटेंशन",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari: अनचाहे रीडायरेक्ट बंद",
+        "promo": "हर साइट के लिए टूलबार के बटन से चालू करें। अदृश्य क्लिक-परत, पॉप-अंडर और क्लिक के बीच बदलते लिंक रोकता है, और पेज ने जितने पते खोलने चाहे, सबकी सूची देता है।",
+        "keywords": "विज्ञापन,ब्लॉक,पॉपअप,सफारी,एक्सटेंशन",
         "description": "Undirect किसी पेज को आपका क्लिक छीनने से रोकता है।\n\nपॉपअप नेटवर्क इंतज़ार नहीं करते कि कोई उन पर क्लिक करे। वे पेज पर एक पारदर्शी परत बिछा देते हैं और आपका अगला टैप ले लेते हैं। वे एक लिंक बनाते हैं और खुद उस पर क्लिक कर देते हैं। वे दबाने और छोड़ने के बीच आपकी उँगली के नीचे लिंक बदल देते हैं। वे एक खाली टैब खोलते हैं और जो टैब आप पढ़ रहे थे उसका पता बदल देते हैं।\n\nUndirect इन चालों पर नज़र रखता है और इन्हें पलट देता है। अदृश्य परत आपके टैप के पहुँचने से पहले हट जाती है, इसलिए क्लिक वहीं लगता है जहाँ आपने निशाना साधा था। क्लिक के बीच में बदला गया लिंक वापस ठीक कर दिया जाता है, और आप वहीं पहुँचते हैं जहाँ जाना चाहते थे। नई विंडो तभी खुलती है जब साइट उसे किसी तय आकार में माँगे, जैसे साइन-इन विंडो।\n\nजिस भी ठिकाने पर पेज ने आपको भेजना चाहा, वह एक सूची में दर्ज होता है, चाहे उसे रोका गया हो या नहीं। हर ठिकाने को आप सिर्फ़ उसी साइट पर या हर जगह अनुमति दे सकते हैं या ब्लॉक कर सकते हैं। जिस ठिकाने का कोई नियम नहीं, वह आपके चुने डिफ़ॉल्ट के हिसाब से चलता है।\n\nजो हर जगह ब्लॉक होता है वह कंटेंट ब्लॉकिंग नियम बन जाता है, इसलिए अनुरोध आपके डिवाइस से बाहर जाता ही नहीं।\n\nबनावट से ही निजी\nन कोई खाता, न विश्लेषण, न सर्वर। ठिकानों की सूची आपके ब्राउज़र में रहती है, और ऐप उसे उसी डिवाइस के एक कंटेनर के ज़रिये पढ़ता है। डिवाइस से कुछ बाहर नहीं जाता, जब तक आप रिपोर्ट नहीं दबाते; तब पहले से भरी हुई रिपोर्ट खुलती है, जिसे आप खुद भेजते हैं।\n\nआवश्यकताएँ\nUndirect एक Safari एक्सटेंशन है। इसे Safari में चालू करें, फिर जिस भी साइट की रक्षा करनी हो वहाँ टूलबार में इसका बटन दबाएँ।",
         "whatsNew": "ऐप और Safari एक्सटेंशन अब 31 और भाषाओं में हैं, और App Store की सभी भाषाएँ शामिल हो गई हैं।\nMac पर सुरक्षित साइट के बगल में रोकें दबाने से अब वह साइट हट जाती है। पहले Safari अनुरोध छोड़ सकता था और कुछ नहीं होता था। बदलाव Safari के अगला पेज खोलने पर लागू होता है।\nगोपनीय विंडो से चालू की गई साइट गोपनीय रहती है: ऐप उसे सूची में नहीं दिखाता, और आख़िरी गोपनीय टैब बंद होते ही उसे भुला दिया जाता है। सुरक्षा अब गोपनीय विंडो में पूरी तरह चलती है।\nऐप का रंग अब उसके लाल आइकॉन से मेल खाता है।"
       }
@@ -260,10 +260,10 @@
       "name": "Hungarian",
       "code": "hu",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "A kattintás az Öné marad",
-        "promo": "Egyes oldalak láthatatlan réteget terítenek magukra, hogy elkapják a máshová szánt kattintást. Az Undirect leveszi, és felsorolja, hová akartak küldeni.",
-        "keywords": "felugró,átirányítás,blokkoló,bővítmény,kattintás,lap,hivatkozás,weboldal,safari",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari lapok átirányítás ellen",
+        "promo": "Oldalanként kapcsolható be az eszköztár gombjával. Megállítja a láthatatlan kattintásrétegeket, a háttérablakokat és az átírt linkeket, és felsorolja a próbált címeket.",
+        "keywords": "reklám,blokkoló,bővítmény,iphone,mac,felugró,ablak,eltérítés",
         "description": "Az Undirect megakadályozza, hogy egy oldal elvegye a kattintását.\n\nA felugró ablakok hálózatai nem várják meg, hogy rájuk kattintson. Átlátszó réteget fektetnek az oldalra, és elviszik a következő érintését. Linket építenek, és maguk kattintanak rá. Átírnak egy linket az ujja alatt, a lenyomás és az elengedés között. Üres lapot nyitnak, és átírják annak a lapnak a címét, amelyet éppen olvasott.\n\nAz Undirect figyeli ezeket a trükköket, és visszacsinálja őket. A láthatatlan réteg eltűnik, mielőtt az érintése odaérne, így a kattintás oda talál, ahová célzott. A kattintás közben átírt link visszakerül, és oda jut, ahová menni akart. Új ablak csak akkor nyílik, ha az oldal meghatározott méretben kéri, ahogy egy bejelentkezés teszi.\n\nMinden cél, ahová egy oldal el akart küldeni, felkerül egy listára, akár megállították, akár nem. Bármelyiket engedélyezheti vagy blokkolhatja, csak az adott oldalon vagy mindenhol. A szabály nélküli cél az Ön által választott alapértelmezést követi.\n\nAmi mindenhol blokkolt, tartalomblokkoló szabállyá válik, így a kérés soha nem hagyja el az eszközét.\n\nADATVÉDELEM ALAPOKTÓL FOGVA\nNincs fiók, nincs elemzés, nincs szerver. A célok listája a böngészőjében van, az app pedig ugyanazon az eszközön lévő tárolón át olvassa. Semmi nem hagyja el az eszközt, hacsak nem érinti meg a Jelentés gombot: ekkor előre kitöltött bejelentés nyílik, amelyet Ön küld el.\n\nKÖVETELMÉNYEK\nAz Undirect Safari-bővítmény. Kapcsolja be a Safariban, majd minden védeni kívánt oldalon nyomja meg az eszköztáron lévő gombját.",
         "whatsNew": "Az alkalmazás és a Safari-bővítmény mostantól további 31 nyelven érhető el, így az App Store minden nyelvét lefedi.\nMacen a védett oldal melletti Leállítás gomb mostantól eltávolítja az oldalt. Korábban a Safari eldobhatta a kérést, és nem történt semmi. A változás attól az oldaltól él, amelyet a Safari legközelebb megnyit.\nA privát ablakból bekapcsolt oldal privát marad: az alkalmazás nem sorolja fel, és az utolsó privát lap bezárásakor elfelejtődik. A védelem mostantól teljes egészében működik a privát ablakokban.\nAz alkalmazás színe mostantól illeszkedik a piros ikonjához."
       }
@@ -272,10 +272,10 @@
       "name": "Indonesian",
       "code": "id",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Kliknya tetap milik Anda",
-        "promo": "Sebagian halaman menutupi diri dengan lapisan tak terlihat untuk menangkap klik yang ditujukan ke hal lain. Undirect menyingkirkannya dan mendaftar tujuan yang dicoba.",
-        "keywords": "popup,pengalihan,pemblokir,ekstensi,klik,tab,iklan,pelacak,privasi,peramban",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Cegah pengalihan tab di Safari",
+        "promo": "Aktifkan per situs lewat tombol bilah alat. Menghentikan lapisan klik tak terlihat, pop-under, dan tautan yang diubah saat klik, serta mendaftar alamat yang coba dibuka.",
+        "keywords": "iklan,blokir,pemblokir,ekstensi,iphone,mac,peramban,pembajakan,anti iklan",
         "description": "Undirect mencegah halaman merebut klik Anda.\n\nJaringan popup tidak menunggu untuk diklik. Mereka memasang lapisan transparan di atas halaman dan mengambil ketukan Anda berikutnya. Mereka membuat tautan lalu mengkliknya sendiri. Mereka mengubah tautan di bawah jari Anda, di antara tekan dan lepas. Mereka membuka tab kosong dan menulis ulang alamat tab yang sedang Anda baca.\n\nUndirect mengawasi akal-akalan itu dan membatalkannya. Lapisan tak terlihat hilang sebelum ketukan Anda sampai, sehingga klik mengenai apa yang Anda tuju. Tautan yang diubah di tengah klik dikembalikan, dan Anda tiba di tempat yang dimaksud. Jendela baru hanya terbuka bila situs memintanya dengan ukuran tertentu, seperti halaman masuk.\n\nSetiap tujuan yang coba dituju halaman tercatat dalam daftar, baik dihentikan maupun tidak. Anda bisa mengizinkan atau memblokir masing-masing, hanya di situs itu atau di mana saja. Tujuan tanpa aturan mengikuti bawaan yang Anda pilih.\n\nYang diblokir di mana saja menjadi aturan pemblokir konten, sehingga permintaan tidak pernah meninggalkan perangkat Anda.\n\nPRIVAT SEJAK AWAL\nTanpa akun, tanpa analitik, tanpa server. Daftar tujuan tersimpan di peramban Anda, dan app membacanya lewat wadah di perangkat yang sama. Tidak ada yang keluar dari perangkat kecuali Anda menekan Laporkan, yang membuka laporan terisi awal untuk Anda kirim sendiri.\n\nPERSYARATAN\nUndirect adalah ekstensi Safari. Aktifkan di Safari, lalu tekan tombolnya di bilah alat pada setiap situs yang ingin dilindungi.",
         "whatsNew": "Aplikasi dan ekstensi Safari kini tersedia dalam 31 bahasa lagi, sehingga semua bahasa App Store tercakup.\nDi Mac, tombol Hentikan di samping situs yang dilindungi kini menghapus situs itu. Sebelumnya Safari bisa membuang permintaan sehingga tidak ada yang terjadi. Perubahan berlaku mulai halaman berikutnya yang dibuka Safari.\nSitus yang diaktifkan dari jendela pribadi tetap pribadi: aplikasi tidak menampilkannya dalam daftar, dan situs itu dilupakan saat tab pribadi terakhir ditutup. Perlindungan kini berjalan penuh di jendela pribadi.\nWarna aplikasi kini sesuai dengan ikon merahnya."
       }
@@ -284,10 +284,10 @@
       "name": "Italian",
       "code": "it",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Il tuo tocco resta tuo",
-        "promo": "Alcune pagine si coprono con uno strato invisibile per catturare il tocco destinato ad altro. Undirect lo toglie e elenca dove hanno provato a portarti.",
-        "keywords": "popup,reindirizzamento,blocco,estensione,clic,scheda,pubblicità,tracker,privacy,browser,popunder",
+        "name": "Undirect - Blocca Popup",
+        "subtitle": "Safari senza reindirizzamenti",
+        "promo": "Si attiva per sito dal pulsante in barra. Ferma strati invisibili sul tocco, pop-under e link riscritti al tocco, ed elenca gli indirizzi che la pagina voleva aprire.",
+        "keywords": "pubblicità,bloccare,pop up,annunci,estensione,mac,dirottamento,finestra,reindirizzamento,scheda",
         "description": "Undirect impedisce a una pagina di prendersi il tuo clic.\n\nLe reti di pop-up non aspettano di essere cliccate. Stendono uno strato trasparente sulla pagina e prendono la pressione successiva. Costruiscono un link e lo cliccano da sole. Riscrivono un link sotto il tuo dito, tra la pressione e il rilascio. Aprono una scheda vuota e cambiano l'indirizzo di quella che stavi leggendo.\n\nUndirect riconosce questi schemi e li annulla. Lo strato invisibile sparisce prima che la pressione arrivi, così il clic raggiunge ciò che avevi puntato. Un link riscritto a metà clic viene rimesso a posto e arrivi dove volevi. Una nuova finestra si apre solo se il sito la chiede con una dimensione precisa, come fa un accesso.\n\nOgni destinazione verso cui una pagina ha provato a portarti finisce in un elenco, che sia stata fermata o no. Puoi consentire o bloccare ciascuna, solo su quel sito o ovunque. Una destinazione senza regola segue l'impostazione predefinita che scegli.\n\nCiò che viene bloccato ovunque diventa una regola di blocco dei contenuti, quindi la richiesta non lascia mai il tuo dispositivo.\n\nPRIVATA PER COSTRUZIONE\nNessun account, nessuna analisi, nessun server. L'elenco delle destinazioni resta nel tuo browser e l'app lo legge tramite un contenitore sullo stesso dispositivo. Niente esce dal dispositivo, a meno che tu non tocchi Segnala: si apre una segnalazione precompilata, e sei tu a inviarla.\n\nREQUISITI\nUndirect è un'estensione di Safari. Attivala in Safari, poi tocca il suo pulsante nella barra degli strumenti su ogni sito da proteggere.",
         "whatsNew": "L'app e l'estensione di Safari sono ora disponibili in altre 31 lingue, quindi sono coperte tutte le lingue dell'App Store.\nSu Mac, il pulsante Interrompi accanto a un sito protetto ora lo rimuove. Prima Safari poteva scartare la richiesta e non succedeva nulla. La modifica ha effetto dalla prossima pagina aperta da Safari.\nUn sito attivato da una finestra privata resta privato: l'app non lo elenca e viene dimenticato quando si chiude l'ultima scheda privata. La protezione ora funziona per intero nelle finestre private.\nIl colore dell'app ora si abbina all'icona rossa."
       }
@@ -296,10 +296,10 @@
       "name": "Japanese",
       "code": "ja",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "ページにクリックを奪わせない",
-        "promo": "ページによっては、別のものに向けたクリックを捕まえるため、見えない層を自分の上に重ねます。Undirectはその層を取り除き、ページが移動させようとした行き先をすべて一覧にします。",
-        "keywords": "ポップアップ,リダイレクト,ブロック,拡張機能,クリック,タブ,広告",
+        "name": "Undirect - ポップアップブロック",
+        "subtitle": "Safariのリダイレクトやタブの乗っ取りを防ぐ",
+        "promo": "サイトごとにツールバーのボタンで有効にします。見えないクリック層、ポップアンダー、クリックの途中で書き換えられるリンクを止め、ページが開こうとしたアドレスをすべて一覧にします。",
+        "keywords": "広告,ブロッカー,拡張機能,iphone,mac,迷惑,乗っ取り,クリック",
         "description": "Undirectは、ページがあなたのクリックを奪うのを防ぎます。\n\nポップアップ広告のネットワークは、クリックされるのを待ちません。透明な層をページに重ねて、次のタップを横取りします。リンクを作って自分でクリックします。押してから離すまでの間に、指の下でリンクを書き換えます。空白のタブを開き、読んでいたタブのアドレスを書き換えます。\n\nUndirectはこうした手口を見つけて元に戻します。見えない層はタップが届く前に消えるので、クリックは狙った場所に届きます。クリックの途中で書き換えられたリンクは元に戻り、行きたかった場所に着きます。新しいウインドウは、ログインのようにサイズを指定して開くようサイトが求めた場合にだけ開きます。\n\nページが移動させようとした行き先はすべて、止めたかどうかにかかわらず一覧に載ります。行き先ごとに、そのサイトだけ、またはすべてのサイトで、許可するかブロックするかを選べます。ルールのない行き先は、あなたが決めた初期設定に従います。\n\nすべてのサイトでブロックしたものはコンテンツブロックのルールになり、リクエストはデバイスの外に出ません。\n\n作りからプライベート\nアカウントも、解析も、サーバーもありません。行き先のリストはブラウザ内にあり、Appは同じデバイス上のコンテナ経由でそれを読みます。「報告」を押さない限り、デバイスの外には何も出ません。押すと入力済みの報告が開き、送るのはあなた自身です。\n\n必要なもの\nUndirectはSafariの拡張機能です。Safariでオンにして、守りたいサイトごとにツールバーのボタンを押してください。",
         "whatsNew": "アプリとSafari機能拡張が、新たに31の言語に対応しました。App Storeのすべての言語がそろっています。\nMacでは、保護中のサイトの横にある「停止」を押すと、そのサイトが外れるようになりました。以前はSafariがリクエストを落とし、何も起きないことがありました。この変更は、Safariが次にページを開いたときから反映されます。\nプライベートウインドウでオンにしたサイトはプライベートのままです。アプリには一覧表示されず、最後のプライベートタブを閉じると忘れられます。プライベートウインドウでも保護がすべて働くようになりました。\nアプリの色が、赤いアイコンに合うようになりました。"
       }
@@ -308,10 +308,10 @@
       "name": "Kannada",
       "code": "kn-IN",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "ನಿಮ್ಮ ಕ್ಲಿಕ್ ನಿಮ್ಮದೇ ಇರಲಿ",
-        "promo": "ಕೆಲವು ಪುಟಗಳು ಅದೃಶ್ಯ ಪದರ ಹಾಕಿ ಬೇರೆಯದಕ್ಕೆ ಮಾಡಿದ ಕ್ಲಿಕ್ ಹಿಡಿಯುತ್ತವೆ. Undirect ಅದನ್ನು ತೆಗೆದು, ಪುಟ ನಿಮ್ಮನ್ನು ಕಳುಹಿಸಲು ಯತ್ನಿಸಿದ ಗಮ್ಯಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.",
-        "keywords": "ಪಾಪ್‌ಅಪ್,ರೀಡೈರೆಕ್ಟ್,ಬ್ಲಾಕರ್,ಕ್ಲಿಕ್",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari: ನಿಮ್ಮ ಕ್ಲಿಕ್ ನಿಮ್ಮದೇ",
+        "promo": "ಟೂಲ್‌ಬಾರ್ ಬಟನ್‌ನಿಂದ ಪ್ರತಿ ಸೈಟ್‌ಗೆ ಆನ್ ಮಾಡಿ. ಅದೃಶ್ಯ ಕ್ಲಿಕ್ ಪದರ, ಪಾಪ್‌ಅಂಡರ್, ಕ್ಲಿಕ್ ನಡುವೆ ಬದಲಾಗುವ ಲಿಂಕ್ ತಡೆಯುತ್ತದೆ. ಪುಟ ತೆರೆಯಲು ಯತ್ನಿಸಿದ ವಿಳಾಸಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.",
+        "keywords": "ಜಾಹೀರಾತು,ಬ್ಲಾಕ್,ಪಾಪ್‌ಅಪ್,ಸಫಾರಿ",
         "description": "Undirect ಯಾವುದೇ ಪುಟ ನಿಮ್ಮ ಕ್ಲಿಕ್ ಅನ್ನು ಕಸಿದುಕೊಳ್ಳದಂತೆ ತಡೆಯುತ್ತದೆ.\n\nಪಾಪ್‌ಅಪ್ ನೆಟ್‌ವರ್ಕ್‌ಗಳು ಯಾರಾದರೂ ಕ್ಲಿಕ್ ಮಾಡಲಿ ಎಂದು ಕಾಯುವುದಿಲ್ಲ. ಅವು ಪುಟದ ಮೇಲೆ ಪಾರದರ್ಶಕ ಪದರ ಹಾಕಿ ನಿಮ್ಮ ಮುಂದಿನ ಟ್ಯಾಪ್ ಅನ್ನು ತೆಗೆದುಕೊಳ್ಳುತ್ತವೆ. ಲಿಂಕ್ ಮಾಡಿ ತಾವೇ ಅದರ ಮೇಲೆ ಕ್ಲಿಕ್ ಮಾಡುತ್ತವೆ. ಒತ್ತುವುದಕ್ಕೂ ಬಿಡುವುದಕ್ಕೂ ನಡುವೆ ನಿಮ್ಮ ಬೆರಳಿನ ಕೆಳಗಿರುವ ಲಿಂಕ್ ಅನ್ನು ಬದಲಿಸುತ್ತವೆ. ಖಾಲಿ ಟ್ಯಾಬ್ ತೆರೆದು ನೀವು ಓದುತ್ತಿದ್ದ ಟ್ಯಾಬ್‌ನ ವಿಳಾಸವನ್ನು ಮತ್ತೆ ಬರೆಯುತ್ತವೆ.\n\nUndirect ಈ ತಂತ್ರಗಳ ಮೇಲೆ ಕಣ್ಣಿಟ್ಟು ಅವನ್ನು ಹಿಂತಿರುಗಿಸುತ್ತದೆ. ನಿಮ್ಮ ಟ್ಯಾಪ್ ತಲುಪುವ ಮೊದಲೇ ಅದೃಶ್ಯ ಪದರ ಮಾಯವಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕ್ಲಿಕ್ ನೀವು ಗುರಿಯಿಟ್ಟಲ್ಲಿಗೇ ತಲುಪುತ್ತದೆ. ಕ್ಲಿಕ್ ನಡುವೆ ಬದಲಾದ ಲಿಂಕ್ ಮೊದಲಿನಂತಾಗುತ್ತದೆ, ನೀವು ಹೋಗಬೇಕಿದ್ದಲ್ಲಿಗೇ ತಲುಪುತ್ತೀರಿ. ಸೈನ್-ಇನ್ ವಿಂಡೋದಂತೆ, ಸೈಟ್ ನಿರ್ದಿಷ್ಟ ಗಾತ್ರದಲ್ಲಿ ಕೇಳಿದಾಗ ಮಾತ್ರ ಹೊಸ ವಿಂಡೋ ತೆರೆಯುತ್ತದೆ.\n\nಪುಟ ನಿಮ್ಮನ್ನು ಕಳುಹಿಸಲು ಯತ್ನಿಸಿದ ಪ್ರತಿ ಗಮ್ಯಸ್ಥಾನವೂ ಪಟ್ಟಿಯಲ್ಲಿ ಬರುತ್ತದೆ, ಅದನ್ನು ತಡೆದಿರಲಿ ಇಲ್ಲದಿರಲಿ. ಪ್ರತಿಯೊಂದನ್ನೂ ಆ ಸೈಟ್‌ನಲ್ಲಿ ಮಾತ್ರ ಅಥವಾ ಎಲ್ಲೆಡೆ ಅನುಮತಿಸಬಹುದು ಅಥವಾ ನಿರ್ಬಂಧಿಸಬಹುದು. ನಿಯಮವಿಲ್ಲದ ಗಮ್ಯಸ್ಥಾನವು ನೀವು ಆರಿಸಿದ ಡೀಫಾಲ್ಟ್ ಅನ್ನು ಅನುಸರಿಸುತ್ತದೆ.\n\nಎಲ್ಲೆಡೆ ನಿರ್ಬಂಧಿಸಿದ್ದು ಕಂಟೆಂಟ್ ಬ್ಲಾಕಿಂಗ್ ನಿಯಮವಾಗುತ್ತದೆ, ಆದ್ದರಿಂದ ವಿನಂತಿ ನಿಮ್ಮ ಸಾಧನವನ್ನು ಬಿಟ್ಟು ಹೊರಹೋಗುವುದೇ ಇಲ್ಲ.\n\nಮೊದಲಿನಿಂದಲೇ ಖಾಸಗಿ\nಖಾತೆ ಇಲ್ಲ, ಅನಾಲಿಟಿಕ್ಸ್ ಇಲ್ಲ, ಸರ್ವರ್ ಇಲ್ಲ. ಗಮ್ಯಸ್ಥಾನಗಳ ಪಟ್ಟಿ ನಿಮ್ಮ ಬ್ರೌಸರ್‌ನಲ್ಲಿರುತ್ತದೆ, ಮತ್ತು ಆ್ಯಪ್ ಅದನ್ನು ಅದೇ ಸಾಧನದ ಕಂಟೇನರ್ ಮೂಲಕ ಓದುತ್ತದೆ. ನೀವು ವರದಿ ಒತ್ತದ ಹೊರತು ಸಾಧನದಿಂದ ಏನೂ ಹೊರಹೋಗುವುದಿಲ್ಲ; ಒತ್ತಿದರೆ ಮೊದಲೇ ತುಂಬಿದ ವರದಿ ತೆರೆಯುತ್ತದೆ, ಅದನ್ನು ನೀವೇ ಕಳುಹಿಸುತ್ತೀರಿ.\n\nಅಗತ್ಯಗಳು\nUndirect ಒಂದು Safari ಎಕ್ಸ್‌ಟೆನ್ಶನ್. Safari ಯಲ್ಲಿ ಅದನ್ನು ಆನ್ ಮಾಡಿ, ನೀವು ರಕ್ಷಿಸಲು ಬಯಸುವ ಪ್ರತಿ ಸೈಟ್‌ನಲ್ಲಿ ಟೂಲ್‌ಬಾರ್‌ನ ಬಟನ್ ಒತ್ತಿ.",
         "whatsNew": "ಆ್ಯಪ್ ಮತ್ತು Safari ವಿಸ್ತರಣೆ ಈಗ ಇನ್ನೂ 31 ಭಾಷೆಗಳಲ್ಲಿ ಇವೆ, App Storeನ ಎಲ್ಲ ಭಾಷೆಗಳೂ ಒಳಗೊಂಡಿವೆ.\nMacನಲ್ಲಿ ರಕ್ಷಿತ ಸೈಟ್ ಪಕ್ಕದ ಆಫ್ ಮಾಡಿ ಒತ್ತಿದರೆ ಈಗ ಆ ಸೈಟ್ ತೆಗೆದುಹಾಕಲ್ಪಡುತ್ತದೆ. ಹಿಂದೆ Safari ವಿನಂತಿಯನ್ನು ಬಿಟ್ಟುಬಿಡಬಹುದಿತ್ತು, ಏನೂ ಆಗುತ್ತಿರಲಿಲ್ಲ. Safari ಮುಂದಿನ ಪುಟ ತೆರೆದಾಗ ಬದಲಾವಣೆ ಜಾರಿಯಾಗುತ್ತದೆ.\nಖಾಸಗಿ ವಿಂಡೋದಿಂದ ಆನ್ ಮಾಡಿದ ಸೈಟ್ ಖಾಸಗಿಯಾಗಿಯೇ ಉಳಿಯುತ್ತದೆ: ಆ್ಯಪ್ ಅದನ್ನು ಪಟ್ಟಿ ಮಾಡುವುದಿಲ್ಲ, ಕೊನೆಯ ಖಾಸಗಿ ಟ್ಯಾಬ್ ಮುಚ್ಚಿದಾಗ ಅದು ಮರೆತುಹೋಗುತ್ತದೆ. ರಕ್ಷಣೆ ಈಗ ಖಾಸಗಿ ವಿಂಡೋಗಳಲ್ಲಿ ಪೂರ್ತಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ.\nಆ್ಯಪ್‌ನ ಬಣ್ಣ ಈಗ ಅದರ ಕೆಂಪು ಐಕಾನ್‌ಗೆ ಹೊಂದುತ್ತದೆ."
       }
@@ -320,10 +320,10 @@
       "name": "Korean",
       "code": "ko",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "내 클릭을 가로채지 못하게",
-        "promo": "어떤 페이지는 다른 곳을 향한 클릭을 붙잡으려고 보이지 않는 층을 덮어씌웁니다. Undirect가 그 층을 걷어 내고, 페이지가 보내려던 모든 목적지를 목록으로 보여 줍니다.",
-        "keywords": "팝업,리디렉션,차단,확장 프로그램,클릭,탭,광고,추적,개인정보,브라우저",
+        "name": "Undirect - 팝업 차단",
+        "subtitle": "Safari 리디렉션, 탭 가로채기 차단",
+        "promo": "사이트마다 도구 막대 버튼으로 켭니다. 보이지 않는 클릭 층, 팝언더, 클릭하는 사이 바뀌는 링크를 막고, 페이지가 열려던 모든 주소를 목록으로 보여 줍니다.",
+        "keywords": "광고,광고차단,사파리,확장 프로그램,iphone,mac,리다이렉트,가로채기",
         "description": "Undirect는 페이지가 내 클릭을 가로채지 못하게 합니다.\n\n팝업 광고 네트워크는 누가 클릭해 주기를 기다리지 않습니다. 페이지 위에 투명한 층을 깔고 다음 터치를 가져갑니다. 링크를 만들어 스스로 클릭합니다. 누르는 순간과 떼는 순간 사이에 손가락 아래의 링크를 바꿉니다. 빈 탭을 열고 읽던 탭의 주소를 덮어씁니다.\n\nUndirect는 이런 수법을 알아채고 되돌립니다. 보이지 않는 층은 터치가 닿기 전에 사라지므로 클릭은 겨냥한 곳에 닿습니다. 클릭 도중에 바뀐 링크는 원래대로 돌아가고, 가려던 곳에 도착합니다. 새 창은 로그인 창처럼 사이트가 크기를 지정해 요청할 때만 열립니다.\n\n페이지가 보내려던 모든 목적지는 막았든 아니든 목록에 오릅니다. 목적지마다 그 사이트에서만, 또는 모든 곳에서 허용하거나 차단할 수 있습니다. 규칙이 없는 목적지는 직접 정한 기본값을 따릅니다.\n\n모든 곳에서 차단한 항목은 콘텐츠 차단 규칙이 되므로, 요청은 기기 밖으로 나가지 않습니다.\n\n설계부터 비공개\n계정도, 분석도, 서버도 없습니다. 목적지 목록은 브라우저 안에 있고, 앱은 같은 기기의 컨테이너를 통해 읽습니다. 신고를 누르지 않는 한 아무것도 기기를 떠나지 않으며, 누르면 미리 채워진 신고가 열리고 보내는 것은 직접 합니다.\n\n요구 사항\nUndirect는 Safari 확장 프로그램입니다. Safari에서 켜고, 보호하려는 사이트마다 도구 막대의 버튼을 누르세요.",
         "whatsNew": "앱과 Safari 확장 프로그램이 31개 언어를 더 지원하며, App Store의 모든 언어가 포함됩니다.\nMac에서 보호 중인 사이트 옆의 ‘중지’를 누르면 이제 그 사이트가 제거됩니다. 이전에는 Safari가 요청을 버려 아무 일도 일어나지 않을 수 있었습니다. 이 변경은 Safari가 다음에 여는 페이지부터 적용됩니다.\n개인정보 보호 윈도우에서 켠 사이트는 비공개로 남습니다. 앱 목록에 나타나지 않고, 마지막 개인정보 보호 탭을 닫으면 잊힙니다. 이제 보호 기능이 개인정보 보호 윈도우에서도 온전히 작동합니다.\n앱 색상을 빨간 아이콘에 맞췄습니다."
       }
@@ -332,10 +332,10 @@
       "name": "Malay",
       "code": "ms",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Klik anda kekal milik anda",
-        "promo": "Ada halaman yang menutup diri dengan lapisan tak kelihatan untuk menangkap klik anda. Undirect membuangnya dan menyenaraikan destinasi yang cuba dituju.",
-        "keywords": "timbul,ubah hala,penyekat,sambungan,klik,tab,pautan,tapak web,safari",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Henti ubah hala dan tab Safari",
+        "promo": "Hidupkan per laman dengan butang bar alat. Menghentikan lapisan klik tak kelihatan, pop-under dan pautan diubah semasa klik, dan menyenaraikan alamat yang cuba dibuka.",
+        "keywords": "iklan,sekat,penyekat,sambungan,iphone,mac,timbul,rampas",
         "description": "Undirect menghalang halaman daripada merampas klik anda.\n\nRangkaian tetingkap timbul tidak menunggu untuk diklik. Ia meletakkan lapisan lutsinar di atas halaman dan mengambil sentuhan anda yang seterusnya. Ia membina pautan dan mengkliknya sendiri. Ia menukar pautan di bawah jari anda, antara tekan dan lepas. Ia membuka tab kosong dan menulis semula alamat tab yang sedang anda baca.\n\nUndirect memerhati helah ini dan membatalkannya. Lapisan tidak kelihatan itu hilang sebelum sentuhan anda tiba, jadi klik mengenai apa yang anda tuju. Pautan yang ditukar di tengah klik dikembalikan, dan anda sampai ke tempat yang dimahukan. Tetingkap baharu hanya dibuka apabila tapak meminta saiz tertentu, seperti log masuk.\n\nSetiap destinasi yang cuba dituju oleh sesuatu halaman disenaraikan, sama ada ia dihentikan atau tidak. Anda boleh membenarkan atau menyekat setiap satu, pada tapak itu sahaja atau di mana-mana. Destinasi tanpa peraturan mengikut lalai yang anda pilih.\n\nApa yang disekat di mana-mana menjadi peraturan penyekat kandungan, jadi permintaan tidak pernah meninggalkan peranti anda.\n\nPRIVASI DARI AWAL\nTiada akaun, tiada analitik, tiada pelayan. Senarai destinasi berada dalam pelayar anda, dan aplikasi membacanya melalui folder kongsi pada peranti yang sama. Tiada apa meninggalkan peranti kecuali anda menekan Laporkan, yang membuka laporan terisi awal untuk anda hantar sendiri.\n\nKEPERLUAN\nUndirect ialah sambungan Safari. Hidupkannya dalam Safari dan tekan butangnya pada bar alat di setiap tapak yang anda mahu lindungi.",
         "whatsNew": "Apl dan sambungan Safari kini tersedia dalam 31 bahasa lagi, jadi semua bahasa App Store diliputi.\nPada Mac, butang Henti di sebelah tapak yang dilindungi kini membuang tapak itu. Sebelum ini Safari boleh menggugurkan permintaan dan tiada apa-apa berlaku. Perubahan berkuat kuasa apabila Safari membuka halaman seterusnya.\nTapak yang dihidupkan dari tetingkap peribadi kekal peribadi: apl tidak menyenaraikannya, dan ia dilupakan apabila tab peribadi terakhir ditutup. Perlindungan kini berjalan sepenuhnya dalam tetingkap peribadi.\nWarna apl kini serasi dengan ikon merahnya."
       }
@@ -344,10 +344,10 @@
       "name": "Malayalam",
       "code": "ml-IN",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "ക്ലിക്ക് നിങ്ങളുടേത്",
-        "promo": "ചില പേജുകൾ അദൃശ്യ പാളി വിരിച്ച് മറ്റൊന്നിനായുള്ള ക്ലിക്ക് പിടിക്കും. Undirect അത് നീക്കി, പേജ് നിങ്ങളെ അയയ്ക്കാൻ ശ്രമിച്ച ഇടങ്ങൾ പട്ടികപ്പെടുത്തുന്നു.",
-        "keywords": "പോപ്പ്അപ്പ്,റീഡയറക്ട്,ബ്ലോക്കർ",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari: ക്ലിക്ക് നിങ്ങളുടേത്",
+        "promo": "ടൂൾബാർ ബട്ടൺ അമർത്തി ഓരോ സൈറ്റിനും ഓണാക്കാം. അദൃശ്യ ക്ലിക്ക് പാളി, പോപ്പ്-അണ്ടർ, ക്ലിക്കിനിടെ മാറുന്ന ലിങ്ക് എന്നിവ തടയും. പേജ് തുറക്കാൻ ശ്രമിച്ച ഓരോ വിലാസവും പട്ടികയിൽ.",
+        "keywords": "പരസ്യം,ബ്ലോക്ക്,പോപ്പ്അപ്പ്,സഫാരി",
         "description": "ഒരു പേജും നിങ്ങളുടെ ക്ലിക്ക് തട്ടിയെടുക്കാതിരിക്കാൻ Undirect സഹായിക്കുന്നു.\n\nപോപ്പ്അപ്പ് നെറ്റ്‌വർക്കുകൾ ആരെങ്കിലും ക്ലിക്ക് ചെയ്യാൻ കാത്തിരിക്കില്ല. അവ പേജിനു മുകളിൽ സുതാര്യമായ ഒരു പാളി വിരിച്ച് നിങ്ങളുടെ അടുത്ത ടാപ്പ് എടുക്കും. ഒരു ലിങ്ക് ഉണ്ടാക്കി സ്വയം ക്ലിക്ക് ചെയ്യും. അമർത്തുന്നതിനും വിടുന്നതിനും ഇടയിൽ നിങ്ങളുടെ വിരലിനടിയിലെ ലിങ്ക് മാറ്റും. ഒരു ഒഴിഞ്ഞ ടാബ് തുറന്ന്, നിങ്ങൾ വായിച്ചുകൊണ്ടിരുന്ന ടാബിന്റെ വിലാസം തിരുത്തിയെഴുതും.\n\nUndirect ഈ തന്ത്രങ്ങൾ നിരീക്ഷിച്ച് അവ തിരികെയാക്കുന്നു. നിങ്ങളുടെ ടാപ്പ് എത്തുംമുമ്പേ അദൃശ്യ പാളി മാറും, അതിനാൽ ക്ലിക്ക് നിങ്ങൾ ലക്ഷ്യമിട്ടിടത്തു തന്നെ എത്തും. ക്ലിക്കിനിടയിൽ മാറ്റിയ ലിങ്ക് പഴയതുപോലെയാകും, നിങ്ങൾ പോകാനുദ്ദേശിച്ചിടത്ത് എത്തും. സൈൻ-ഇൻ വിൻഡോ പോലെ, സൈറ്റ് നിശ്ചിത വലുപ്പത്തിൽ ചോദിക്കുമ്പോൾ മാത്രമേ പുതിയ വിൻഡോ തുറക്കൂ.\n\nപേജ് നിങ്ങളെ അയയ്ക്കാൻ ശ്രമിച്ച ഓരോ ലക്ഷ്യസ്ഥാനവും, തടഞ്ഞാലും ഇല്ലെങ്കിലും, ഒരു പട്ടികയിൽ വരും. ഓരോന്നും ആ സൈറ്റിൽ മാത്രമോ എല്ലായിടത്തുമോ അനുവദിക്കുകയോ തടയുകയോ ചെയ്യാം. നിയമമില്ലാത്ത ലക്ഷ്യസ്ഥാനം നിങ്ങൾ തിരഞ്ഞെടുത്ത ഡിഫോൾട്ട് പിന്തുടരും.\n\nഎല്ലായിടത്തും തടയുന്നത് ഒരു കണ്ടന്റ് ബ്ലോക്കിംഗ് നിയമമായി മാറും, അതിനാൽ അഭ്യർത്ഥന നിങ്ങളുടെ ഉപകരണം വിട്ടുപോകുകയേ ഇല്ല.\n\nതുടക്കം മുതലേ സ്വകാര്യം\nഅക്കൗണ്ടില്ല, അനലിറ്റിക്സില്ല, സെർവറില്ല. ലക്ഷ്യസ്ഥാനങ്ങളുടെ പട്ടിക നിങ്ങളുടെ ബ്രൗസറിലാണ്, ആപ്പ് അത് അതേ ഉപകരണത്തിലെ ഒരു കണ്ടെയ്നർ വഴി വായിക്കുന്നു. റിപ്പോർട്ട് അമർത്തിയാലല്ലാതെ ഉപകരണത്തിൽ നിന്ന് ഒന്നും പുറത്തുപോകില്ല; അമർത്തിയാൽ മുൻകൂട്ടി പൂരിപ്പിച്ച ഒരു റിപ്പോർട്ട് തുറക്കും, അത് നിങ്ങൾ തന്നെ അയയ്ക്കണം.\n\nആവശ്യമായത്\nUndirect ഒരു Safari എക്സ്റ്റൻഷനാണ്. Safari-യിൽ ഇത് ഓണാക്കി, സംരക്ഷിക്കേണ്ട ഓരോ സൈറ്റിലും ടൂൾബാറിലെ അതിന്റെ ബട്ടൺ അമർത്തുക.",
         "whatsNew": "ആപ്പും Safari എക്സ്റ്റൻഷനും ഇപ്പോൾ 31 ഭാഷകളിൽക്കൂടി ലഭ്യമാണ്; App Storeലെ എല്ലാ ഭാഷകളും ഉൾപ്പെടുന്നു.\nMacൽ സംരക്ഷിത സൈറ്റിന് അടുത്തുള്ള ഓഫാക്കുക അമർത്തിയാൽ ഇപ്പോൾ ആ സൈറ്റ് നീക്കം ചെയ്യപ്പെടും. മുമ്പ് Safari അഭ്യർഥന ഉപേക്ഷിക്കാമായിരുന്നു, ഒന്നും സംഭവിക്കില്ലായിരുന്നു. Safari അടുത്ത പേജ് തുറക്കുമ്പോൾ മാറ്റം പ്രാബല്യത്തിലാകും.\nസ്വകാര്യ വിൻഡോയിൽനിന്ന് ഓണാക്കിയ സൈറ്റ് സ്വകാര്യമായി തുടരും: ആപ്പ് അത് പട്ടികപ്പെടുത്തില്ല, അവസാനത്തെ സ്വകാര്യ ടാബ് അടയുമ്പോൾ അത് മറക്കപ്പെടും. സംരക്ഷണം ഇപ്പോൾ സ്വകാര്യ വിൻഡോകളിൽ പൂർണമായി പ്രവർത്തിക്കുന്നു.\nആപ്പിന്റെ നിറം ഇപ്പോൾ അതിന്റെ ചുവപ്പ് ഐക്കണുമായി ചേരുന്നു."
       }
@@ -356,10 +356,10 @@
       "name": "Marathi",
       "code": "mr-IN",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "तुमचा क्लिक तुमचाच राहो",
-        "promo": "काही पाने अदृश्य थर पसरवून दुसऱ्या गोष्टीसाठीचा क्लिक पकडतात. Undirect तो काढतो आणि पानाने तुम्हाला कुठे पाठवायचा प्रयत्न केला ते यादीत दाखवतो.",
-        "keywords": "पॉपअप,रीडायरेक्ट,ब्लॉकर,क्लिक,सफारी",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari मध्ये क्लिक तुमचाच",
+        "promo": "टूलबार बटणाने प्रत्येक साइटसाठी चालू करा. अदृश्य क्लिक थर, पॉप-अंडर आणि क्लिकमध्येच बदलणाऱ्या लिंक थांबवतो. पानाने उघडायचा प्रयत्न केलेला प्रत्येक पत्ता यादीत दाखवतो.",
+        "keywords": "जाहिरात,ब्लॉक,पॉपअप,सफारी,एक्स्टेंशन",
         "description": "Undirect कोणत्याही पानाला तुमचा क्लिक हिरावू देत नाही.\n\nपॉपअप नेटवर्क कुणी क्लिक करण्याची वाट पाहत नाहीत. ते पानावर पारदर्शक थर पसरवून तुमचा पुढचा टॅप घेतात. ते लिंक तयार करून स्वतःच तिच्यावर क्लिक करतात. दाबणे आणि सोडणे यांच्यादरम्यान तुमच्या बोटाखालची लिंक बदलतात. ते रिकामा टॅब उघडून तुम्ही वाचत असलेल्या टॅबचा पत्ता पुन्हा लिहितात.\n\nUndirect या युक्त्यांवर लक्ष ठेवतो आणि त्या उलट्या करतो. तुमचा टॅप पोहोचण्यापूर्वीच अदृश्य थर निघून जातो, त्यामुळे क्लिक तुम्ही नेम धरलेल्या ठिकाणीच लागतो. क्लिकदरम्यान बदललेली लिंक पुन्हा मूळ होते, आणि तुम्ही जिथे जायचे होते तिथेच पोहोचता. साइन-इन विंडोप्रमाणे, साइटने ठरावीक आकारात मागितली तरच नवीन विंडो उघडते.\n\nपानाने तुम्हाला ज्या गंतव्यांकडे पाठवण्याचा प्रयत्न केला ते प्रत्येक यादीत येते, थांबवले असो वा नसो. प्रत्येकाला फक्त त्या साइटवर किंवा सर्वत्र परवानगी देता येते किंवा ब्लॉक करता येते. ज्या गंतव्याचा नियम नाही ते तुम्ही निवडलेल्या डीफॉल्टनुसार चालते.\n\nसर्वत्र ब्लॉक केलेले कंटेंट ब्लॉकिंग नियम बनते, त्यामुळे विनंती तुमचे डिव्हाइस सोडतच नाही.\n\nसुरुवातीपासूनच खाजगी\nखाते नाही, अॅनालिटिक्स नाही, सर्व्हर नाही. गंतव्यांची यादी तुमच्या ब्राउझरमध्ये राहते, आणि अॅप ती त्याच डिव्हाइसवरील कंटेनरमार्फत वाचते. तुम्ही रिपोर्ट दाबल्याशिवाय डिव्हाइसमधून काहीही बाहेर जात नाही; दाबल्यावर आधीच भरलेला रिपोर्ट उघडतो, जो तुम्ही स्वतः पाठवता.\n\nआवश्यकता\nUndirect हे Safari एक्स्टेन्शन आहे. Safari मध्ये ते सुरू करा, मग ज्या साइटचे संरक्षण करायचे आहे तिथे टूलबारमधील त्याचे बटण दाबा.",
         "whatsNew": "ॲप आणि Safari एक्स्टेंशन आता आणखी 31 भाषांमध्ये आहेत, आणि App Store च्या सर्व भाषा समाविष्ट झाल्या आहेत.\nMac वर संरक्षित साइटच्या शेजारी बंद करा दाबल्यावर आता ती साइट काढली जाते. आधी Safari विनंती सोडून देऊ शकत होते आणि काहीच होत नव्हते. Safari पुढचे पान उघडते तेव्हा बदल लागू होतो.\nखाजगी विंडोमधून चालू केलेली साइट खाजगीच राहते: ॲप तिची यादी दाखवत नाही, आणि शेवटचा खाजगी टॅब बंद झाल्यावर ती विसरली जाते. संरक्षण आता खाजगी विंडोमध्ये पूर्णपणे चालते.\nॲपचा रंग आता त्याच्या लाल आयकॉनशी जुळतो."
       }
@@ -368,10 +368,10 @@
       "name": "Norwegian",
       "code": "no",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Klikket ditt forblir ditt",
-        "promo": "Noen sider legger et usynlig lag over seg selv for å fange klikket som var ment for noe annet. Undirect fjerner det og viser hvert mål en side prøvde å sende deg til.",
-        "keywords": "popup,omdirigering,blokkering,utvidelse,klikk,fane,nettsted,lenke,safari",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari-faner uten omdirigering",
+        "promo": "Slå på per nettsted med verktøylinjeknappen. Stopper usynlige klikklag, pop-unders og lenker som skrives om midt i klikket, og lister hver adresse en side prøvde å åpne.",
+        "keywords": "annonse,reklame,blokkering,utvidelse,iphone,mac,kapring,blokkere",
         "description": "Undirect hindrer en side i å ta klikket ditt.\n\nPopup-nettverk venter ikke på at noen skal klikke på dem. De legger et gjennomsiktig lag over siden og tar neste trykk. De bygger en lenke og klikker på den selv. De endrer en lenke under fingeren din, mellom trykk og slipp. De åpner en tom fane og skriver om adressen til den du leste.\n\nUndirect holder øye med disse triksene og gjør dem ugjort. Det usynlige laget forsvinner før trykket treffer, så klikket havner på det du siktet mot. En lenke som er endret midt i klikket, settes tilbake, og du lander der du ville. Et nytt vindu åpnes bare når siden ber om det i en bestemt størrelse, slik en innlogging gjør.\n\nHvert mål en side prøvde å sende deg til, står i en liste, enten det ble stoppet eller ikke. Du kan tillate eller blokkere hvert mål, bare på det nettstedet eller overalt. Et mål uten regel følger standarden du velger.\n\nDet som blokkeres overalt, blir til en regel for innholdsblokkering, så forespørselen aldri forlater enheten din.\n\nPRIVAT FRA GRUNNEN AV\nIngen konto, ingen analyse, ingen server. Listen over mål ligger i nettleseren din, og appen leser den gjennom en beholder på samme enhet. Ingenting forlater enheten med mindre du trykker på Rapportér: da åpnes en utfylt rapport som du sender selv.\n\nKRAV\nUndirect er en Safari-utvidelse. Slå den på i Safari, og trykk på knappen i verktøylinjen på hvert nettsted du vil beskytte.",
         "whatsNew": "Appen og Safari-utvidelsen støtter nå 31 språk til, så alle språk i App Store er dekket.\nPå Mac fjerner knappen Stopp ved siden av et beskyttet nettsted nå nettstedet. Før kunne Safari droppe forespørselen, og ingenting skjedde. Endringen gjelder neste gang Safari åpner en side.\nEt nettsted som slås på fra et privat vindu, forblir privat: appen viser det ikke, og det glemmes når den siste private fanen lukkes. Beskyttelsen virker nå fullt ut i private vinduer.\nAppens farge passer nå til det røde ikonet."
       }
@@ -380,10 +380,10 @@
       "name": "Oriya",
       "code": "or-IN",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "ଆପଣଙ୍କ କ୍ଲିକ ଆପଣଙ୍କର ହିଁ ରହୁ",
-        "promo": "କିଛି ପୃଷ୍ଠା ନିଜ ଉପରେ ଏକ ଅଦୃଶ୍ୟ ସ୍ତର ବିଛାଇ ଅନ୍ୟ କିଛି ପାଇଁ ହୋଇଥିବା କ୍ଲିକ ଧରିନିଏ। Undirect ତାହା ହଟାଏ ଏବଂ ପୃଷ୍ଠା ଆପଣଙ୍କୁ ଯେଉଁ ଗନ୍ତବ୍ୟକୁ ପଠାଇବାକୁ ଚାହିଁଲା ସେସବୁର ତାଲିକା ଦେଖାଏ।",
-        "keywords": "ପପଅପ,ରିଡାଇରେକ୍ଟ,ବ୍ଲକର,କ୍ଲିକ,ସାଫାରି",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safariରେ ଆପଣଙ୍କ କ୍ଲିକ ଆପଣଙ୍କର",
+        "promo": "ଟୁଲବାର ବଟନରୁ ପ୍ରତି ସାଇଟ ପାଇଁ ଚାଲୁ କରନ୍ତୁ। ଅଦୃଶ୍ୟ କ୍ଲିକ ସ୍ତର, ପପ-ଅଣ୍ଡର ଓ କ୍ଲିକ ବେଳେ ବଦଳୁଥିବା ଲିଙ୍କକୁ ଅଟକାଏ। ପୃଷ୍ଠା ଖୋଲିବାକୁ ଚେଷ୍ଟା କରିଥିବା ପ୍ରତ୍ୟେକ ଠିକଣା ତାଲିକାରେ ଦେଖାଏ।",
+        "keywords": "ବିଜ୍ଞାପନ,ବ୍ଲକ,ପପଅପ,ସାଫାରି,iphone,mac",
         "description": "Undirect କୌଣସି ପୃଷ୍ଠାକୁ ଆପଣଙ୍କ କ୍ଲିକ ଛଡ଼ାଇ ନେବାକୁ ଦିଏ ନାହିଁ।\n\nପପଅପ ନେଟୱାର୍କ କେହି କ୍ଲିକ କରିବାକୁ ଅପେକ୍ଷା କରେ ନାହିଁ। ସେମାନେ ପୃଷ୍ଠା ଉପରେ ସ୍ୱଚ୍ଛ ସ୍ତର ବିଛାଇ ଆପଣଙ୍କ ପରବର୍ତ୍ତୀ ଟ୍ୟାପ ନେଇଯାଆନ୍ତି। ସେମାନେ ଏକ ଲିଙ୍କ ତିଆରି କରି ନିଜେ କ୍ଲିକ କରନ୍ତି। ଦବାଇବା ଓ ଛାଡ଼ିବା ମଝିରେ ଆପଣଙ୍କ ଆଙ୍ଗୁଠି ତଳେ ଲିଙ୍କ ବଦଳାଇ ଦିଅନ୍ତି। ସେମାନେ ଏକ ଖାଲି ଟ୍ୟାବ ଖୋଲି ଆପଣ ପଢ଼ୁଥିବା ଟ୍ୟାବର ଠିକଣା ପୁଣି ଲେଖିଦିଅନ୍ତି।\n\nUndirect ଏହି କୌଶଳଗୁଡ଼ିକ ଉପରେ ନଜର ରଖେ ଏବଂ ସେଗୁଡ଼ିକୁ ଫେରାଇ ଦିଏ। ଆପଣଙ୍କ ଟ୍ୟାପ ପହଞ୍ଚିବା ପୂର୍ବରୁ ଅଦୃଶ୍ୟ ସ୍ତର ହଟିଯାଏ, ତେଣୁ କ୍ଲିକ ଆପଣ ଲକ୍ଷ୍ୟ କରିଥିବା ସ୍ଥାନରେ ହିଁ ଲାଗେ। କ୍ଲିକ ମଝିରେ ବଦଳିଥିବା ଲିଙ୍କ ପୂର୍ବ ଅବସ୍ଥାକୁ ଫେରେ, ଆଉ ଆପଣ ଯେଉଁଠିକି ଯିବାକୁ ଚାହୁଁଥିଲେ ସେଠିକି ପହଞ୍ଚନ୍ତି। ସାଇନ-ଇନ ୱିଣ୍ଡୋ ପରି, ସାଇଟ ନିର୍ଦ୍ଦିଷ୍ଟ ଆକାରରେ ମାଗିଲେ ହିଁ ନୂଆ ୱିଣ୍ଡୋ ଖୋଲେ।\n\nପୃଷ୍ଠା ଆପଣଙ୍କୁ ଯେଉଁ ଗନ୍ତବ୍ୟକୁ ପଠାଇବାକୁ ଚାହିଁଲା ପ୍ରତ୍ୟେକଟି ତାଲିକାରେ ଆସେ, ତାହା ବନ୍ଦ ହୋଇଥାଉ କି ନହେଉ। ପ୍ରତ୍ୟେକକୁ କେବଳ ସେହି ସାଇଟରେ କିମ୍ବା ସବୁଠି ଅନୁମତି ଦେଇପାରିବେ ବା ବ୍ଲକ କରିପାରିବେ। ନିୟମ ନଥିବା ଗନ୍ତବ୍ୟ ଆପଣ ବାଛିଥିବା ଡିଫଲ୍ଟକୁ ଅନୁସରଣ କରେ।\n\nସବୁଠି ବ୍ଲକ ହୋଇଥିବା କଣ୍ଟେଣ୍ଟ ବ୍ଲକିଂ ନିୟମ ହୋଇଯାଏ, ତେଣୁ ଅନୁରୋଧ ଆପଣଙ୍କ ଡିଭାଇସ ଛାଡ଼ି ବାହାରକୁ ଯାଏ ହିଁ ନାହିଁ।\n\nଆରମ୍ଭରୁ ହିଁ ବ୍ୟକ୍ତିଗତ\nକୌଣସି ଆକାଉଣ୍ଟ ନାହିଁ, ଆନାଲିଟିକ୍ସ ନାହିଁ, ସର୍ଭର ନାହିଁ। ଗନ୍ତବ୍ୟର ତାଲିକା ଆପଣଙ୍କ ବ୍ରାଉଜରରେ ରହେ, ଆଉ ଆପ୍ ତାହା ସେହି ଡିଭାଇସର ଏକ କଣ୍ଟେନର ଦ୍ୱାରା ପଢ଼େ। ଆପଣ ରିପୋର୍ଟ ନଦବାଇଲେ ଡିଭାଇସରୁ କିଛି ବାହାରେ ନାହିଁ; ଦବାଇଲେ ପୂର୍ବରୁ ଭରାଯାଇଥିବା ଏକ ରିପୋର୍ଟ ଖୋଲେ, ଯାହା ଆପଣ ନିଜେ ପଠାନ୍ତି।\n\nଆବଶ୍ୟକତା\nUndirect ଏକ Safari ଏକ୍ସଟେନସନ। Safari ରେ ଏହାକୁ ଚାଲୁ କରନ୍ତୁ, ତା'ପରେ ଆପଣ ସୁରକ୍ଷିତ କରିବାକୁ ଚାହୁଁଥିବା ପ୍ରତ୍ୟେକ ସାଇଟରେ ଟୁଲବାରର ଏହାର ବଟନ ଦବାନ୍ତୁ।",
         "whatsNew": "ଆପ୍ ଏବଂ Safari ଏକ୍ସଟେନସନ୍ ଏବେ ଆହୁରି 31ଟି ଭାଷାରେ ଅଛି, App Storeର ସବୁ ଭାଷା ଅନ୍ତର୍ଭୁକ୍ତ।\nMacରେ ସୁରକ୍ଷିତ ସାଇଟ ପାଖରେ ବନ୍ଦ କରନ୍ତୁ ଦବାଇଲେ ଏବେ ସେହି ସାଇଟ ହଟିଯାଏ। ଆଗରୁ Safari ଅନୁରୋଧ ଛାଡ଼ିଦେଇପାରୁଥିଲା ଓ କିଛି ହେଉନଥିଲା। Safari ପରବର୍ତ୍ତୀ ପୃଷ୍ଠା ଖୋଲିଲେ ପରିବର୍ତ୍ତନ ଲାଗୁ ହୁଏ।\nବ୍ଯକ୍ତିଗତ ୱିଣ୍ଡୋରୁ ଚାଲୁ କରାଯାଇଥିବା ସାଇଟ ବ୍ଯକ୍ତିଗତ ହିଁ ରହେ: ଆପ୍ ତାହାକୁ ତାଲିକାରେ ଦେଖାଏ ନାହିଁ, ଆଉ ଶେଷ ବ୍ଯକ୍ତିଗତ ଟ୍ୟାବ୍ ବନ୍ଦ ହେଲେ ତାହା ଭୁଲିଯାଏ। ସୁରକ୍ଷା ଏବେ ବ୍ଯକ୍ତିଗତ ୱିଣ୍ଡୋରେ ପୂର୍ଣ୍ଣ ଭାବେ ଚାଲେ।\nଆପ୍‌ର ରଙ୍ଗ ଏବେ ତାର ଲାଲ ଆଇକନ୍ ସହ ମେଳ ଖାଏ।"
       }
@@ -392,10 +392,10 @@
       "name": "Polish",
       "code": "pl",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Twoje kliknięcie zostaje twoje",
-        "promo": "Niektóre strony nakładają na siebie niewidzialną warstwę, by przechwycić kliknięcie przeznaczone dla czegoś innego. Undirect ją usuwa i wylicza, dokąd chciano cię wysłać.",
-        "keywords": "popup,przekierowanie,bloker,rozszerzenie,kliknięcie,karta,reklamy,śledzenie,prywatność,okno",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Blokuj przekierowania w Safari",
+        "promo": "Przycisk na pasku włącza go dla strony. Zatrzymuje ukryte nakładki, pop-undery i linki podmieniane podczas klikania i wylicza adresy, które strona chciała otworzyć.",
+        "keywords": "reklamy,blokada,blokowanie,rozszerzenie,iphone,mac,wyskakujące,okno,przejęcie,karty",
         "description": "Undirect nie pozwala stronie przejąć twojego kliknięcia.\n\nSieci reklam wyskakujących nie czekają, aż ktoś w nie kliknie. Kładą na stronie przezroczystą warstwę i biorą twoje następne naciśnięcie. Budują link i same go klikają. Zmieniają link pod twoim palcem, między naciśnięciem a puszczeniem. Otwierają pustą kartę i podmieniają adres tej, którą właśnie czytasz.\n\nUndirect wypatruje takich zagrywek i je cofa. Niewidzialna warstwa znika, zanim dotrze twoje naciśnięcie, więc kliknięcie trafia tam, gdzie miało. Link zmieniony w trakcie kliknięcia wraca na miejsce, a ty trafiasz we właściwe miejsce. Nowe okno otwiera się tylko wtedy, gdy strona prosi o nie w określonym rozmiarze, jak okno logowania.\n\nKażdy cel, do którego strona próbowała cię wysłać, trafia na listę, niezależnie od tego, czy go zatrzymano. Na każdy cel możesz zezwolić albo go zablokować: tylko na tej witrynie lub wszędzie. Cel bez reguły podlega ustawieniu domyślnemu, które wybierasz.\n\nTo, co zablokowane wszędzie, staje się regułą blokowania treści, więc żądanie nigdy nie opuszcza urządzenia.\n\nPRYWATNOŚĆ W ZAŁOŻENIACH\nBez konta, bez analityki, bez serwera. Lista celów leży w twojej przeglądarce, a aplikacja czyta ją przez kontener na tym samym urządzeniu. Nic nie opuszcza urządzenia, chyba że naciśniesz Zgłoś problem: otworzy się wypełniony formularz zgłoszenia, a wysłanie zależy od ciebie.\n\nWYMAGANIA\nUndirect to rozszerzenie Safari. Włącz je w Safari, a potem na każdej stronie, którą chcesz chronić, naciśnij jego przycisk na pasku narzędzi.",
         "whatsNew": "Aplikacja i rozszerzenie Safari są teraz dostępne w 31 kolejnych językach, więc obsługiwane są wszystkie języki App Store.\nNa Macu przycisk Zatrzymaj obok chronionej witryny usuwa ją teraz. Wcześniej Safari mogło porzucić żądanie i nic się nie działo. Zmiana działa od następnej strony, którą otworzy Safari.\nWitryna włączona z okna prywatnego pozostaje prywatna: aplikacja jej nie wyświetla, a po zamknięciu ostatniej karty prywatnej zostaje zapomniana. Ochrona działa teraz w pełni w oknach prywatnych.\nKolor aplikacji pasuje teraz do czerwonej ikony."
       }
@@ -404,10 +404,10 @@
       "name": "Portuguese (Brazil)",
       "code": "pt-BR",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Seu clique continua seu",
-        "promo": "Algumas páginas se cobrem com uma camada invisível para pegar o clique que era de outra coisa. O Undirect a remove e lista para onde tentaram levar você.",
-        "keywords": "popup,redirecionamento,bloqueador,extensão,clique,aba,anúncios,rastreador,privacidade,navegador",
+        "name": "Undirect - Bloqueador de Popup",
+        "subtitle": "Sem redirecionamento no Safari",
+        "promo": "Ative por site no botão da barra. Barra camadas invisíveis de clique, pop-unders e links reescritos no clique, e lista cada endereço que a página tentou abrir.",
+        "keywords": "popup,anúncios,bloquear,propaganda,extensão,iphone,mac,sequestro,janela,remover,abas",
         "description": "O Undirect impede que uma página fique com o seu clique.\n\nRedes de pop-up não esperam ser clicadas. Elas colocam uma camada transparente sobre a página e ficam com o seu próximo toque. Montam um link e clicam nele sozinhas. Trocam um link debaixo do seu dedo, entre o toque e a soltura. Abrem uma aba em branco e reescrevem o endereço da que você estava lendo.\n\nO Undirect reconhece esses golpes e os desfaz. A camada invisível some antes de o seu toque chegar, e o clique alcança o que você mirou. Um link trocado no meio do clique volta ao que era, e você chega aonde queria. Uma janela nova só abre quando o site a pede com um tamanho definido, como faz um login.\n\nTodo destino para onde uma página tentou levar você entra numa lista, tenha sido barrado ou não. Cada um pode ser permitido ou bloqueado, só naquele site ou em todos. Um destino sem regra segue o padrão que você definir.\n\nO que é bloqueado em todos os sites vira uma regra de bloqueio de conteúdo, então a requisição nunca sai do seu aparelho.\n\nPRIVADO DE FÁBRICA\nSem conta, sem análise de uso, sem servidor. A lista de destinos fica no seu navegador, e o app a lê por um contêiner no mesmo aparelho. Nada sai do aparelho, a menos que você toque em Relatar, que abre um relato preenchido para você mesmo enviar.\n\nREQUISITOS\nO Undirect é uma extensão do Safari. Ative-a no Safari e toque no botão dela na barra de ferramentas em cada site que quiser proteger.",
         "whatsNew": "O app e a extensão do Safari agora estão disponíveis em mais 31 idiomas, então todos os idiomas da App Store estão cobertos.\nNo Mac, o botão Parar ao lado de um site protegido agora remove o site. Antes, o Safari podia descartar o pedido e nada acontecia. A mudança vale a partir da próxima página que o Safari abrir.\nUm site ativado em uma janela privada continua privado: o app não o lista, e ele é esquecido quando a última aba privada fecha. A proteção agora funciona por completo em janelas privadas.\nA cor do app agora combina com o ícone vermelho."
       }
@@ -416,10 +416,10 @@
       "name": "Portuguese (Portugal)",
       "code": "pt-PT",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "O seu clique é seu",
-        "promo": "Algumas páginas cobrem-se com uma camada invisível para apanhar o clique que era para outra coisa. O Undirect remove-a e lista para onde tentaram levá-lo.",
-        "keywords": "popup,redirecionamento,bloqueador,extensão,clique,separador,anúncios,rastreador,privacidade",
+        "name": "Undirect - Bloqueador Pop Up",
+        "subtitle": "Safari sem redirecionamentos",
+        "promo": "Ative por site no botão da barra. O Undirect trava camadas invisíveis, pop-unders e ligações reescritas a meio do clique, e lista cada endereço que a página tentou abrir.",
+        "keywords": "popup,anúncios,bloquear,publicidade,extensão,iphone,mac,sequestro,janela,separadores",
         "description": "O Undirect impede que uma página fique com o seu clique.\n\nAs redes de pop-ups não esperam que cliquem nelas. Colocam uma camada transparente sobre a página e ficam com o seu próximo toque. Fabricam uma ligação e clicam nela sozinhas. Trocam uma ligação debaixo do seu dedo, entre o premir e o largar. Abrem um separador em branco e reescrevem o endereço daquele que estava a ler.\n\nO Undirect reconhece estes golpes e desfaz-os. A camada invisível desaparece antes de o seu toque chegar, e o clique atinge aquilo que apontou. Uma ligação trocada a meio do clique volta ao que era e chega onde queria. Uma janela nova só abre quando o site a pede com um tamanho definido, como acontece num início de sessão.\n\nCada destino para onde uma página tentou levá-lo entra numa lista, tenha sido travado ou não. Pode permitir ou bloquear cada um, só nesse site ou em todos. Um destino sem regra segue a predefinição que escolher.\n\nO que é bloqueado em todo o lado torna-se uma regra de bloqueio de conteúdo, por isso o pedido nunca sai do seu dispositivo.\n\nPRIVADO POR CONCEÇÃO\nSem conta, sem análises, sem servidor. A lista de destinos fica no seu navegador, e a app lê-a através de um contentor no mesmo dispositivo. Nada sai do dispositivo, a não ser que toque em Comunicar, que abre um relatório preenchido para enviar por si.\n\nREQUISITOS\nO Undirect é uma extensão do Safari. Ative-a no Safari e toque no respetivo botão da barra de ferramentas em cada site que queira proteger.",
         "whatsNew": "A app e a extensão do Safari passam a falar mais 31 idiomas, e todos os idiomas da App Store ficam cobertos.\nNo Mac, Parar junto a um site protegido passa a removê-lo. Antes, o Safari podia descartar o pedido e nada acontecia. A alteração aplica-se na próxima vez que o Safari abrir uma página.\nUm site ativado numa janela privada continua privado: a app não o lista e ele é esquecido quando o último separador privado se fecha. A proteção passa a funcionar por completo em janelas privadas.\nA cor da app passa a condizer com o ícone vermelho."
       }
@@ -428,10 +428,10 @@
       "name": "Punjabi",
       "code": "pa-IN",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "ਤੁਹਾਡਾ ਕਲਿੱਕ ਤੁਹਾਡਾ ਹੀ ਰਹੇ",
-        "promo": "ਕੁਝ ਪੰਨੇ ਅਦਿੱਖ ਪਰਤ ਵਿਛਾ ਕੇ ਕਿਸੇ ਹੋਰ ਲਈ ਕੀਤਾ ਕਲਿੱਕ ਫੜ ਲੈਂਦੇ ਹਨ। Undirect ਉਸ ਨੂੰ ਹਟਾਉਂਦਾ ਹੈ ਅਤੇ ਪੰਨੇ ਨੇ ਤੁਹਾਨੂੰ ਜਿੱਥੇ ਭੇਜਣਾ ਚਾਹਿਆ ਉਹ ਦਿਖਾਉਂਦਾ ਹੈ।",
-        "keywords": "ਪੌਪਅੱਪ,ਰੀਡਾਇਰੈਕਟ,ਬਲੌਕਰ,ਕਲਿੱਕ,popup,redirect",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari ਵਿੱਚ ਕਲਿੱਕ ਤੁਹਾਡਾ ਹੀ",
+        "promo": "ਟੂਲਬਾਰ ਬਟਨ ਨਾਲ ਹਰ ਸਾਈਟ ਲਈ ਚਾਲੂ ਕਰੋ। ਅਦਿੱਖ ਕਲਿੱਕ ਪਰਤਾਂ, ਪੌਪ-ਅੰਡਰ ਅਤੇ ਕਲਿੱਕ ਦੌਰਾਨ ਬਦਲੇ ਲਿੰਕ ਰੋਕਦਾ ਹੈ। ਪੰਨੇ ਨੇ ਖੋਲ੍ਹਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਹਰ ਪਤਾ ਸੂਚੀ ਵਿੱਚ ਦਿਖਾਉਂਦਾ ਹੈ।",
+        "keywords": "ਇਸ਼ਤਿਹਾਰ,ਬਲੌਕ,ਪੌਪਅੱਪ,ਸਫਾਰੀ,iphone,mac",
         "description": "Undirect ਕਿਸੇ ਵੀ ਪੰਨੇ ਨੂੰ ਤੁਹਾਡਾ ਕਲਿੱਕ ਖੋਹਣ ਨਹੀਂ ਦਿੰਦਾ।\n\nਪੌਪਅੱਪ ਨੈੱਟਵਰਕ ਇਸ ਦੀ ਉਡੀਕ ਨਹੀਂ ਕਰਦੇ ਕਿ ਕੋਈ ਉਨ੍ਹਾਂ 'ਤੇ ਕਲਿੱਕ ਕਰੇ। ਉਹ ਪੰਨੇ ਉੱਪਰ ਪਾਰਦਰਸ਼ੀ ਪਰਤ ਵਿਛਾ ਕੇ ਤੁਹਾਡਾ ਅਗਲਾ ਟੈਪ ਲੈ ਲੈਂਦੇ ਹਨ। ਉਹ ਲਿੰਕ ਬਣਾ ਕੇ ਆਪ ਹੀ ਉਸ 'ਤੇ ਕਲਿੱਕ ਕਰ ਦਿੰਦੇ ਹਨ। ਦਬਾਉਣ ਅਤੇ ਛੱਡਣ ਦੇ ਵਿਚਕਾਰ ਤੁਹਾਡੀ ਉਂਗਲ ਹੇਠਲਾ ਲਿੰਕ ਬਦਲ ਦਿੰਦੇ ਹਨ। ਉਹ ਖਾਲੀ ਟੈਬ ਖੋਲ੍ਹ ਕੇ ਉਸ ਟੈਬ ਦਾ ਪਤਾ ਦੁਬਾਰਾ ਲਿਖ ਦਿੰਦੇ ਹਨ ਜੋ ਤੁਸੀਂ ਪੜ੍ਹ ਰਹੇ ਸੀ।\n\nUndirect ਇਨ੍ਹਾਂ ਚਾਲਾਂ 'ਤੇ ਨਜ਼ਰ ਰੱਖਦਾ ਹੈ ਅਤੇ ਇਨ੍ਹਾਂ ਨੂੰ ਪਲਟ ਦਿੰਦਾ ਹੈ। ਤੁਹਾਡੇ ਟੈਪ ਦੇ ਪਹੁੰਚਣ ਤੋਂ ਪਹਿਲਾਂ ਅਦਿੱਖ ਪਰਤ ਹਟ ਜਾਂਦੀ ਹੈ, ਇਸ ਲਈ ਕਲਿੱਕ ਉੱਥੇ ਹੀ ਲੱਗਦਾ ਹੈ ਜਿੱਥੇ ਤੁਸੀਂ ਨਿਸ਼ਾਨਾ ਲਾਇਆ ਸੀ। ਕਲਿੱਕ ਦੌਰਾਨ ਬਦਲਿਆ ਲਿੰਕ ਪਹਿਲਾਂ ਵਾਂਗ ਹੋ ਜਾਂਦਾ ਹੈ, ਅਤੇ ਤੁਸੀਂ ਉੱਥੇ ਹੀ ਪਹੁੰਚਦੇ ਹੋ ਜਿੱਥੇ ਜਾਣਾ ਚਾਹੁੰਦੇ ਸੀ। ਨਵੀਂ ਵਿੰਡੋ ਸਿਰਫ਼ ਓਦੋਂ ਖੁੱਲ੍ਹਦੀ ਹੈ ਜਦੋਂ ਸਾਈਟ ਕਿਸੇ ਤੈਅ ਆਕਾਰ ਵਿੱਚ ਮੰਗੇ, ਜਿਵੇਂ ਸਾਈਨ-ਇਨ ਵਿੰਡੋ।\n\nਪੰਨੇ ਨੇ ਤੁਹਾਨੂੰ ਜਿੱਥੇ ਵੀ ਭੇਜਣਾ ਚਾਹਿਆ, ਉਹ ਹਰ ਮੰਜ਼ਿਲ ਇੱਕ ਸੂਚੀ ਵਿੱਚ ਆਉਂਦੀ ਹੈ, ਭਾਵੇਂ ਉਸ ਨੂੰ ਰੋਕਿਆ ਗਿਆ ਹੋਵੇ ਜਾਂ ਨਾ। ਹਰ ਮੰਜ਼ਿਲ ਨੂੰ ਸਿਰਫ਼ ਉਸੇ ਸਾਈਟ 'ਤੇ ਜਾਂ ਹਰ ਥਾਂ ਇਜਾਜ਼ਤ ਦਿੱਤੀ ਜਾ ਸਕਦੀ ਹੈ ਜਾਂ ਰੋਕਿਆ ਜਾ ਸਕਦਾ ਹੈ। ਜਿਸ ਮੰਜ਼ਿਲ ਦਾ ਕੋਈ ਨਿਯਮ ਨਹੀਂ, ਉਹ ਤੁਹਾਡੇ ਚੁਣੇ ਡਿਫੌਲਟ ਮੁਤਾਬਕ ਚੱਲਦੀ ਹੈ।\n\nਜੋ ਹਰ ਥਾਂ ਰੋਕਿਆ ਜਾਂਦਾ ਹੈ ਉਹ ਕੰਟੈਂਟ ਬਲੌਕਿੰਗ ਨਿਯਮ ਬਣ ਜਾਂਦਾ ਹੈ, ਇਸ ਲਈ ਬੇਨਤੀ ਤੁਹਾਡੀ ਡਿਵਾਈਸ ਤੋਂ ਬਾਹਰ ਜਾਂਦੀ ਹੀ ਨਹੀਂ।\n\nਬਣਤਰ ਤੋਂ ਹੀ ਨਿੱਜੀ\nਕੋਈ ਖਾਤਾ ਨਹੀਂ, ਕੋਈ ਵਿਸ਼ਲੇਸ਼ਣ ਨਹੀਂ, ਕੋਈ ਸਰਵਰ ਨਹੀਂ। ਮੰਜ਼ਿਲਾਂ ਦੀ ਸੂਚੀ ਤੁਹਾਡੇ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ ਰਹਿੰਦੀ ਹੈ, ਅਤੇ ਐਪ ਉਸ ਨੂੰ ਉਸੇ ਡਿਵਾਈਸ ਦੇ ਇੱਕ ਕੰਟੇਨਰ ਰਾਹੀਂ ਪੜ੍ਹਦੀ ਹੈ। ਜਦੋਂ ਤੱਕ ਤੁਸੀਂ ਰਿਪੋਰਟ ਨਹੀਂ ਦਬਾਉਂਦੇ, ਡਿਵਾਈਸ ਤੋਂ ਕੁਝ ਬਾਹਰ ਨਹੀਂ ਜਾਂਦਾ; ਦਬਾਉਣ 'ਤੇ ਪਹਿਲਾਂ ਤੋਂ ਭਰੀ ਰਿਪੋਰਟ ਖੁੱਲ੍ਹਦੀ ਹੈ, ਜੋ ਤੁਸੀਂ ਆਪ ਭੇਜਦੇ ਹੋ।\n\nਲੋੜਾਂ\nUndirect ਇੱਕ Safari ਐਕਸਟੈਂਸ਼ਨ ਹੈ। Safari ਵਿੱਚ ਇਸ ਨੂੰ ਚਾਲੂ ਕਰੋ, ਫਿਰ ਜਿਸ ਵੀ ਸਾਈਟ ਦੀ ਸੁਰੱਖਿਆ ਕਰਨੀ ਹੋਵੇ, ਉੱਥੇ ਟੂਲਬਾਰ ਵਿੱਚ ਇਸ ਦਾ ਬਟਨ ਦਬਾਓ।",
         "whatsNew": "ਐਪ ਅਤੇ Safari ਐਕਸਟੈਂਸ਼ਨ ਹੁਣ 31 ਹੋਰ ਭਾਸ਼ਾਵਾਂ ਵਿੱਚ ਹਨ, ਅਤੇ App Store ਦੀਆਂ ਸਾਰੀਆਂ ਭਾਸ਼ਾਵਾਂ ਸ਼ਾਮਲ ਹਨ।\nMac ਉੱਤੇ ਸੁਰੱਖਿਅਤ ਸਾਈਟ ਦੇ ਕੋਲ ਬੰਦ ਕਰੋ ਦਬਾਉਣ ਨਾਲ ਹੁਣ ਉਹ ਸਾਈਟ ਹਟ ਜਾਂਦੀ ਹੈ। ਪਹਿਲਾਂ Safari ਬੇਨਤੀ ਛੱਡ ਸਕਦਾ ਸੀ ਅਤੇ ਕੁਝ ਨਹੀਂ ਹੁੰਦਾ ਸੀ। ਇਹ ਬਦਲਾਅ Safari ਦੇ ਅਗਲਾ ਪੰਨਾ ਖੋਲ੍ਹਣ ਉੱਤੇ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।\nਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਤੋਂ ਚਾਲੂ ਕੀਤੀ ਸਾਈਟ ਪ੍ਰਾਈਵੇਟ ਹੀ ਰਹਿੰਦੀ ਹੈ: ਐਪ ਉਸ ਨੂੰ ਸੂਚੀ ਵਿੱਚ ਨਹੀਂ ਦਿਖਾਉਂਦੀ, ਅਤੇ ਆਖ਼ਰੀ ਪ੍ਰਾਈਵੇਟ ਟੈਬ ਬੰਦ ਹੋਣ ਉੱਤੇ ਉਹ ਭੁਲਾ ਦਿੱਤੀ ਜਾਂਦੀ ਹੈ। ਸੁਰੱਖਿਆ ਹੁਣ ਪ੍ਰਾਈਵੇਟ ਵਿੰਡੋ ਵਿੱਚ ਪੂਰੀ ਤਰ੍ਹਾਂ ਚੱਲਦੀ ਹੈ।\nਐਪ ਦਾ ਰੰਗ ਹੁਣ ਇਸ ਦੇ ਲਾਲ ਆਈਕਨ ਨਾਲ ਮਿਲਦਾ ਹੈ।"
       }
@@ -440,10 +440,10 @@
       "name": "Romanian",
       "code": "ro",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Clicul tău rămâne al tău",
-        "promo": "Unele pagini se acoperă cu un strat invizibil ca să prindă clicul destinat altceva. Undirect îl scoate și listează destinațiile spre care au încercat să te trimită.",
-        "keywords": "pop-up,redirecționare,blocare,extensie,clic,filă,reclame,tracker,confidențialitate,browser",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Fără redirecționări în Safari",
+        "promo": "Îl pornești pe fiecare site din bară. Undirect oprește straturile invizibile, pop-under-urile și linkurile rescrise în timpul clicului și listează fiecare adresă.",
+        "keywords": "reclame,blocare,extensie,iphone,mac,pop-up,fereastră,deturnare,file",
         "description": "Undirect împiedică o pagină să-ți ia clicul.\n\nRețelele de pop-up nu așteaptă să fie atinse. Pun un strat transparent peste pagină și iau următoarea ta apăsare. Construiesc un link și dau singure clic pe el. Schimbă un link sub degetul tău, între apăsare și eliberare. Deschid o filă goală și rescriu adresa celei pe care o citeai.\n\nUndirect urmărește aceste trucuri și le anulează. Stratul invizibil dispare înainte ca apăsarea să ajungă, iar clicul nimerește ce ai țintit. Un link schimbat în mijlocul clicului este pus la loc și ajungi unde voiai. O fereastră nouă se deschide doar când site-ul o cere la o dimensiune anume, cum face o autentificare.\n\nFiecare destinație spre care o pagină a încercat să te trimită apare într-o listă, indiferent dacă a fost oprită. Poți permite sau bloca fiecare destinație, doar pe acel site sau peste tot. O destinație fără regulă urmează valoarea implicită pe care o alegi.\n\nCe este blocat peste tot devine o regulă de blocare a conținutului, așa că cererea nu iese niciodată din dispozitiv.\n\nCONFIDENȚIAL DE LA BAZĂ\nFără cont, fără analiză, fără server. Lista destinațiilor stă în browserul tău, iar aplicația o citește printr-un container de pe același dispozitiv. Nimic nu părăsește dispozitivul decât dacă apeși Raportează: se deschide un raport completat în prealabil, pe care îl trimiți tu.\n\nCERINȚE\nUndirect este o extensie Safari. Activeaz-o în Safari și apasă butonul ei din bara de instrumente pe fiecare site pe care vrei să-l protejezi.",
         "whatsNew": "Aplicația și extensia Safari vorbesc acum încă 31 de limbi, așa că sunt acoperite toate limbile din App Store.\nPe Mac, butonul Oprește de lângă un site protejat îl elimină acum. Înainte, Safari putea renunța la cerere și nu se întâmpla nimic. Schimbarea se aplică de la următoarea pagină pe care o deschide Safari.\nUn site activat dintr-o fereastră privată rămâne privat: aplicația nu îl listează, iar el este uitat când se închide ultima filă privată. Protecția rulează acum complet în ferestrele private.\nCuloarea aplicației se potrivește acum cu pictograma roșie."
       }
@@ -452,10 +452,10 @@
       "name": "Russian",
       "code": "ru",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Ваш клик остаётся вашим",
-        "promo": "Некоторые страницы накрывают себя невидимым слоем, чтобы перехватить клик, предназначенный другому. Undirect убирает его и показывает, куда вас пытались отправить.",
-        "keywords": "попап,редирект,блокировщик,расширение,клик,вкладка",
+        "name": "Undirect - Блокировщик",
+        "subtitle": "Стоп перенаправления в Safari",
+        "promo": "Включается для сайта кнопкой на панели. Undirect останавливает невидимые слои, попандеры и ссылки, подменённые на лету, и перечисляет каждый адрес, куда вела страница.",
+        "keywords": "реклама,попап,блокировка,редирект,всплывающих,окон",
         "description": "Undirect не даёт странице забрать ваш клик.\n\nСети всплывающей рекламы не ждут, пока на них нажмут. Они накрывают страницу прозрачным слоем и забирают следующее нажатие. Они создают ссылку и сами по ней кликают. Они подменяют ссылку под пальцем, между нажатием и отпусканием. Они открывают пустую вкладку и переписывают адрес той, которую вы читали.\n\nUndirect замечает такие приёмы и отменяет их. Невидимый слой исчезает до того, как нажатие дойдёт, и клик попадает туда, куда вы целились. Ссылка, подменённая посреди клика, возвращается на место, и вы попадаете туда, куда хотели. Новое окно открывается, только если сайт просит его с заданным размером, как окно входа.\n\nКаждый адрес, куда страница пыталась вас отправить, попадает в список, остановлена попытка или нет. Любой адрес можно разрешить или заблокировать: только на этом сайте или везде. Адрес без правила подчиняется настройке по умолчанию, которую вы выбираете.\n\nЗаблокированное везде становится правилом блокировки контента, так что запрос не покидает ваше устройство.\n\nПРИВАТНОСТЬ ЗАЛОЖЕНА В УСТРОЙСТВЕ\nБез аккаунта, без аналитики, без сервера. Список адресов хранится в вашем браузере, а приложение читает его через контейнер на том же устройстве. Ничто не покидает устройство, пока вы не нажмёте «Сообщить»: откроется заполненное обращение, и отправляете его вы сами.\n\nТРЕБОВАНИЯ\nUndirect: расширение Safari. Включите его в Safari, затем на каждом сайте, который нужно защитить, нажмите его кнопку на панели инструментов.",
         "whatsNew": "Приложение и расширение Safari теперь говорят ещё на 31 языке, так что охвачены все языки App Store.\nНа Mac кнопка «Отключить» рядом с защищённым сайтом теперь убирает его. Раньше Safari мог потерять запрос, и ничего не происходило. Изменение вступает в силу при следующем открытии страницы в Safari.\nСайт, включённый из частного окна, остаётся частным: приложение его не показывает, а когда закрывается последняя частная вкладка, он забывается. Защита теперь полностью работает в частных окнах.\nЦвет приложения теперь совпадает с красным значком."
       }
@@ -464,10 +464,10 @@
       "name": "Slovak",
       "code": "sk",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Vaše ťuknutie zostane vaše",
-        "promo": "Niektoré stránky sa prikryjú neviditeľnou vrstvou, aby zachytili ťuknutie určené inam. Undirect ju odstráni a vypíše každý cieľ, kam vás stránka chcela poslať.",
-        "keywords": "vyskakovacie okno,presmerovanie,blokovanie,rozšírenie,ťuknutie,karta,reklamy,sledovanie,súkromie",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Zastaví presmerovanie v Safari",
+        "promo": "Zapnite ho pre web tlačidlom na paneli. Undirect zastaví neviditeľné vrstvy, pop-undery a odkazy prepísané počas ťuknutia a vypíše každú adresu, ktorú chcela otvoriť.",
+        "keywords": "reklamy,blokovanie,rozšírenie,iphone,mac,vyskakovacie,okno,únos,karty",
         "description": "Undirect nedovolí stránke, aby vám zobrala ťuknutie.\n\nSiete vyskakovacích okien nečakajú, kým na ne niekto ťukne. Prehodia cez stránku priehľadnú vrstvu a vezmú vám ďalšie stlačenie. Vytvoria odkaz a sami naň kliknú. Zmenia odkaz pod vaším prstom, medzi stlačením a pustením. Otvoria prázdnu kartu a prepíšu adresu tej, ktorú práve čítate.\n\nUndirect tieto triky spozná a vráti ich späť. Neviditeľná vrstva zmizne skôr, než stlačenie dorazí, a ťuknutie zasiahne zamýšľaný cieľ. Odkaz zmenený uprostred ťuknutia sa vráti a skončíte tam, kam ťuknutie mierilo. Nové okno sa otvorí len vtedy, keď si ho web vyžiada v určitej veľkosti, ako napríklad prihlásenie.\n\nKaždý cieľ, kam vás stránka chcela poslať, skončí v zozname, či už bol zastavený, alebo nie. Každý cieľ môžete povoliť alebo zablokovať, len na tom webe, alebo všade. Cieľ bez pravidla sa riadi predvoleným nastavením, ktoré zvolíte.\n\nČo je zablokované všade, sa zmení na pravidlo blokovania obsahu, takže požiadavka vaše zariadenie vôbec neopustí.\n\nSÚKROMIE AKO ZÁKLAD\nŽiadny účet, žiadna analytika, žiadny server. Zoznam cieľov zostáva vo vašom prehliadači a aplikácia ho číta cez kontajner na rovnakom zariadení. Nič neopustí zariadenie, ak neťuknete na Nahlásiť problém: otvorí sa predvyplnené hlásenie, ktoré odošlete sami.\n\nPOŽIADAVKY\nUndirect je rozšírenie Safari. Zapnite ho v Safari a na každom webe, ktorý chcete chrániť, stlačte jeho tlačidlo na paneli nástrojov.",
         "whatsNew": "Aplikácia aj rozšírenie pre Safari teraz hovoria ďalšími 31 jazykmi, takže sú pokryté všetky jazyky App Storu.\nNa Macu tlačidlo Zastaviť vedľa chráneného webu ten web teraz odstráni. Predtým mohol Safari požiadavku zahodiť a nič sa nestalo. Zmena platí od ďalšej stránky, ktorú Safari otvorí.\nWeb zapnutý z okna súkromného prezerania zostane súkromný: aplikácia ho nevypíše a zabudne sa, keď sa zatvorí posledný súkromný panel. Ochrana teraz v oknách súkromného prezerania beží naplno.\nFarba aplikácie teraz ladí s červenou ikonou."
       }
@@ -476,10 +476,10 @@
       "name": "Slovenian",
       "code": "sl-SI",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Vaš klik ostane vaš",
-        "promo": "Nekatere strani se prekrijejo z nevidno plastjo, da prestrežejo klik, namenjen nečemu drugemu. Undirect jo odstrani in našteje, kam so vas poskušale poslati.",
-        "keywords": "pojavno okno,preusmeritev,blokator,razširitev,klik,zavihek,oglasi,sledilnik,zasebnost,brskalnik",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Ustavi preusmeritve v Safari",
+        "promo": "Vklopite ga za stran z gumbom orodne vrstice. Undirect ustavi nevidne plasti, pop-under in povezave, prepisane med klikom, in našteje vse naslove, ki jih je stran odprla.",
+        "keywords": "oglasi,reklame,blokiranje,razširitev,iphone,mac,pojavno,okno,ugrabitev,zavihki",
         "description": "Undirect ne pusti, da bi vam stran vzela klik.\n\nOmrežja pojavnih oglasov ne čakajo, da bi kdo kliknil nanje. Čez stran položijo prosojno plast in vzamejo vaš naslednji dotik. Naredijo povezavo in jo sami kliknejo. Povezavo spremenijo pod vašim prstom, med pritiskom in spustom. Odprejo prazen zavihek in prepišejo naslov tistega, ki ga berete.\n\nUndirect take trike prepozna in jih razveljavi. Nevidna plast izgine, preden dotik prispe, zato klik zadene pravi cilj. Povezava, spremenjena sredi klika, se vrne in pristanete na pravem mestu. Novo okno se odpre samo, kadar ga spletno mesto zahteva v določeni velikosti, kot prijavno okno.\n\nVsak cilj, kamor vas je stran poskušala poslati, se znajde na seznamu, ne glede na to, ali je bil ustavljen. Vsakega lahko dovolite ali blokirate, samo na tistem mestu ali povsod. Cilj brez pravila sledi privzeti nastavitvi, ki jo izberete.\n\nKar je blokirano povsod, postane pravilo za blokiranje vsebine, zato zahteva nikoli ne zapusti vaše naprave.\n\nZASEBNOST V TEMELJU\nBrez računa, brez analitike, brez strežnika. Seznam ciljev ostane v vašem brskalniku, aplikacija pa ga bere prek vsebnika na isti napravi. Nič ne zapusti naprave, razen če tapnete Sporoči težavo: odpre se vnaprej izpolnjeno poročilo, ki ga pošljete sami.\n\nZAHTEVE\nUndirect je razširitev za Safari. Vklopite jo v Safariju, nato pa na vsakem mestu, ki ga želite zaščititi, pritisnite njen gumb v orodni vrstici.",
         "whatsNew": "Aplikacija in razširitev za Safari zdaj govorita še 31 jezikov, zato so zajeti vsi jeziki trgovine App Store.\nNa Macu gumb Ustavi ob zaščitenem spletnem mestu ga zdaj odstrani. Prej je Safari lahko zavrgel zahtevo in se ni zgodilo nič. Sprememba velja od naslednje strani, ki jo odpre Safari.\nSpletno mesto, vklopljeno iz zasebnega okna, ostane zasebno: aplikacija ga ne navaja, in se pozabi, ko se zapre zadnji zasebni zavihek. Zaščita zdaj v zasebnih oknih deluje v celoti.\nBarva aplikacije se zdaj ujema z rdečo ikono."
       }
@@ -488,10 +488,10 @@
       "name": "Spanish (Mexico)",
       "code": "es-MX",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Que nadie se robe tu clic",
-        "promo": "Algunas páginas se cubren con una capa invisible para atrapar el clic que ibas a dar a otra cosa. Undirect la quita y lista a dónde quisieron llevarte.",
-        "keywords": "ventana emergente,redirección,bloqueador,extensión,clic,pestaña,anuncios,rastreador,privacidad",
+        "name": "Undirect - Ventanas emergentes",
+        "subtitle": "Evita redirecciones en Safari",
+        "promo": "Actívalo sitio por sitio desde el botón de la barra. Frena capas invisibles, pop-unders y ligas reescritas en pleno clic, y lista cada dirección que se quiso abrir.",
+        "keywords": "popup,anuncios,publicidad,bloquear,bloqueador,extensión,quitar,pop up,secuestro,Bloqueo,pestañas",
         "description": "Undirect evita que una página se quede con tu clic.\n\nLas redes de ventanas emergentes no esperan a que las toquen. Ponen una capa transparente sobre la página y se llevan tu siguiente clic. Fabrican un enlace y hacen clic en él ellas mismas. Cambian un enlace bajo tu dedo, entre que presionas y sueltas. Abren una pestaña en blanco y reescriben la dirección de la que estabas leyendo.\n\nUndirect vigila esas jugadas y las deshace. La capa invisible desaparece antes de que llegue tu clic, y este llega a lo que apuntabas. Un enlace cambiado a mitad del clic se restablece y llegas adonde querías ir. Una ventana nueva solo se abre cuando el sitio la pide con un tamaño concreto, como lo hace un inicio de sesión.\n\nCada destino al que una página intentó llevarte aparece en una lista, se haya detenido o no. Puedes permitir o bloquear cada uno, solo en ese sitio o en todos. Un destino sin regla sigue el ajuste predeterminado que elijas.\n\nLo que se bloquea en todos los sitios se convierte en una regla de bloqueo de contenido, así que la solicitud nunca sale de tu dispositivo.\n\nPRIVADA POR DISEÑO\nSin cuenta, sin analíticas, sin servidor. La lista de destinos vive en tu navegador y la app la lee a través de un contenedor en el mismo dispositivo. Nada sale del dispositivo a menos que presiones Reportar, que abre un reporte prellenado y tú lo envías.\n\nREQUISITOS\nUndirect es una extensión de Safari. Actívala en Safari y presiona su botón de la barra de herramientas en cada sitio que quieras proteger.",
         "whatsNew": "La app y la extensión de Safari ahora hablan 31 idiomas más, así que quedan cubiertos todos los idiomas del App Store.\nEn la Mac, Detener junto a un sitio protegido ahora lo quita. Antes, Safari podía descartar la solicitud y no pasaba nada. El cambio se aplica la próxima vez que Safari abra una página.\nUn sitio activado desde una ventana privada sigue siendo privado: la app no lo lista y se olvida cuando se cierra la última pestaña privada. La protección ahora funciona por completo en las ventanas privadas.\nEl color de la app ahora combina con su ícono rojo."
       }
@@ -500,10 +500,10 @@
       "name": "Spanish (Spain)",
       "code": "es-ES",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Que nadie se lleve tu clic",
-        "promo": "Algunas páginas se cubren con una capa invisible para atrapar el clic que ibas a dar a otra cosa. Undirect la quita y lista a dónde intentaron llevarte.",
-        "keywords": "popup,redirección,bloqueador,extensión,clic,pestaña,anuncios,rastreador,privacidad,navegador",
+        "name": "Undirect - Ventanas emergentes",
+        "subtitle": "Sin redirecciones en Safari",
+        "promo": "Actívalo sitio por sitio desde el botón de la barra. Frena capas invisibles, pop-unders y enlaces reescritos en pleno clic, y lista cada dirección que se intentó abrir.",
+        "keywords": "popup,anuncios,publicidad,bloquear,bloqueador,extensión,mac,quitar,anti,secuestro,Bloqueo,pestañas",
         "description": "Undirect evita que una página se quede con tu clic.\n\nLas redes de ventanas emergentes no esperan a que las pulsen. Colocan una capa transparente sobre la página y se llevan tu siguiente pulsación. Fabrican un enlace y lo pulsan ellas mismas. Reescriben un enlace bajo tu dedo, entre que pulsas y sueltas. Abren una pestaña en blanco y cambian la dirección de la que estabas leyendo.\n\nUndirect vigila esas maniobras y las deshace. La capa invisible desaparece antes de que llegue tu pulsación, y el clic alcanza lo que apuntabas. Un enlace reescrito a mitad del clic se restituye y llegas adonde querías ir. Una ventana nueva solo se abre cuando el sitio la pide con un tamaño concreto, como hace un inicio de sesión.\n\nCada destino al que una página intentó llevarte aparece en una lista, se haya detenido o no. Puedes permitir o bloquear cada uno, solo en ese sitio o en todos. Un destino sin regla sigue el ajuste predeterminado que elijas.\n\nLo que se bloquea en todas partes se convierte en una regla de bloqueo de contenido, así que la petición nunca sale de tu dispositivo.\n\nPRIVADA POR DISEÑO\nSin cuenta, sin analíticas, sin servidor. La lista de destinos vive en tu navegador y la app la lee a través de un contenedor del mismo dispositivo. Nada sale del dispositivo salvo que pulses Informar, que abre una incidencia rellenada de antemano y la envías tú.\n\nREQUISITOS\nUndirect es una extensión de Safari. Actívala en Safari y pulsa su botón de la barra de herramientas en cada sitio que quieras proteger.",
         "whatsNew": "La app y la extensión de Safari ya hablan 31 idiomas más, así que están cubiertos todos los idiomas del App Store.\nEn el Mac, Detener junto a un sitio protegido ahora lo quita. Antes, Safari podía descartar la petición y no pasaba nada. El cambio se aplica la próxima vez que Safari abra una página.\nUn sitio activado desde una ventana privada sigue siendo privado: la app no lo lista y se olvida cuando se cierra la última pestaña privada. La protección ya funciona por completo en las ventanas privadas.\nEl color de la app ya coincide con su icono rojo."
       }
@@ -512,10 +512,10 @@
       "name": "Swedish",
       "code": "sv",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Ditt klick förblir ditt",
-        "promo": "Vissa sidor lägger ett osynligt lager över sig själva för att fånga klicket som var tänkt för något annat. Undirect tar bort det och listar vart de försökte skicka dig.",
-        "keywords": "popup,omdirigering,blockerare,tillägg,klick,flik,webbplats,länk,safari",
+        "name": "Undirect - Pop up blockerare",
+        "subtitle": "Stoppar omdirigering i Safari",
+        "promo": "Slå på per webbplats via verktygsfältet. Undirect stoppar osynliga lager, pop-unders och länkar som skrivs om under klicket och listar varje adress sidan försökte öppna.",
+        "keywords": "annonser,annons,blockera,tillägg,iphone,mac,kapning,popup,reklam,flikar",
         "description": "Undirect hindrar en sida från att ta ditt klick.\n\nPopup-nätverk väntar inte på att någon ska klicka på dem. De lägger ett genomskinligt lager över sidan och tar ditt nästa tryck. De bygger en länk och klickar på den själva. De ändrar en länk under ditt finger, mellan tryck och släpp. De öppnar en tom flik och skriver om adressen till den du läste.\n\nUndirect håller utkik efter de knepen och backar dem. Det osynliga lagret försvinner innan ditt tryck landar, så klicket träffar det du siktade på. En länk som ändrats mitt i klicket sätts tillbaka, och du hamnar där du ville. Ett nytt fönster öppnas bara när sidan ber om det i en viss storlek, som en inloggning gör.\n\nVarje mål som en sida försökte skicka dig till hamnar i en lista, oavsett om det stoppades. Du kan tillåta eller blockera varje mål, bara på den webbplatsen eller överallt. Ett mål utan regel följer den standard du väljer.\n\nDet som blockeras överallt blir en regel för innehållsblockering, så förfrågan lämnar aldrig din enhet.\n\nPRIVAT FRÅN GRUNDEN\nInget konto, ingen analys, ingen server. Listan över mål finns i din webbläsare, och appen läser den via en behållare på samma enhet. Inget lämnar enheten om du inte trycker på Rapportera: då öppnas en ifylld rapport som du skickar själv.\n\nKRAV\nUndirect är ett Safari-tillägg. Slå på det i Safari och tryck på dess knapp i verktygsfältet på varje webbplats du vill skydda.",
         "whatsNew": "Appen och Safari-tillägget talar nu 31 språk till, så alla språk i App Store täcks.\nPå Mac tar knappen Stoppa bredvid en skyddad webbplats nu bort den. Förut kunde Safari släppa begäran och inget hände. Ändringen gäller nästa gång Safari öppnar en sida.\nEn webbplats som slås på från ett privat fönster förblir privat: appen listar den inte, och den glöms bort när den sista privata fliken stängs. Skyddet körs nu fullt ut i privata fönster.\nAppens färg matchar nu den röda ikonen."
       }
@@ -524,10 +524,10 @@
       "name": "Tamil",
       "code": "ta-IN",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "உங்கள் கிளிக் உங்களுடையதே",
-        "promo": "சில பக்கங்கள் கண்ணுக்குத் தெரியாத அடுக்கை விரித்து வேறொன்றுக்கான கிளிக்கைப் பிடிக்கின்றன. Undirect அதை நீக்கி, பக்கம் உங்களை அனுப்ப முயன்ற இலக்குகளைப் பட்டியலிடுகிறது.",
-        "keywords": "பாப்அப்,வழிமாற்று,தடுப்பான்,popup,redirect",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari வழிமாற்றம் வேண்டாம்",
+        "promo": "தளம்தோறும் பொத்தானில் இயக்குங்கள். மறைந்த அடுக்குகள், பாப்-அண்டர்கள், கிளிக்கின் நடுவே மாறும் இணைப்புகளை Undirect தடுத்து, திறக்க முயன்ற முகவரிகளைப் பட்டியலிடும்.",
+        "keywords": "விளம்பரம்,தடுப்பு,பாப்அப்,சஃபாரி",
         "description": "எந்தப் பக்கமும் உங்கள் கிளிக்கைப் பறித்துக்கொள்ளாமல் Undirect பார்த்துக்கொள்கிறது.\n\nபாப்அப் வலையமைப்புகள் யாராவது கிளிக் செய்ய வேண்டும் என்று காத்திருப்பதில்லை. அவை பக்கத்தின் மேல் வெளிப்படையான அடுக்கை விரித்து உங்கள் அடுத்த தட்டலை எடுத்துக்கொள்கின்றன. ஓர் இணைப்பை உருவாக்கி தாமே கிளிக் செய்கின்றன. அழுத்துவதற்கும் விடுவதற்கும் இடையில் உங்கள் விரலுக்குக் கீழுள்ள இணைப்பை மாற்றுகின்றன. வெற்றுத் தாவலைத் திறந்து, நீங்கள் படித்துக்கொண்டிருந்த தாவலின் முகவரியை மாற்றி எழுதுகின்றன.\n\nUndirect இந்தத் தந்திரங்களைக் கண்காணித்து அவற்றைத் திரும்பப் பெறுகிறது. உங்கள் தட்டல் சேரும் முன்பே கண்ணுக்குத் தெரியாத அடுக்கு அகன்றுவிடும்; அதனால் கிளிக் நீங்கள் குறிவைத்த இடத்திலேயே விழுகிறது. கிளிக்கின் நடுவில் மாற்றப்பட்ட இணைப்பு பழைய நிலைக்குத் திரும்பும்; நீங்கள் போக நினைத்த இடத்திற்கே சேர்வீர்கள். உள்நுழைவுச் சாளரம் போல, தளம் குறிப்பிட்ட அளவில் கேட்கும்போது மட்டுமே புதிய சாளரம் திறக்கும்.\n\nபக்கம் உங்களை அனுப்ப முயன்ற ஒவ்வொரு இலக்கும், தடுக்கப்பட்டதா இல்லையா என்பதைப் பொருட்படுத்தாமல், ஒரு பட்டியலில் இடம்பெறும். ஒவ்வொன்றையும் அந்தத் தளத்தில் மட்டுமோ எங்கும் அனுமதிக்கலாம் அல்லது தடுக்கலாம். விதி இல்லாத இலக்கு நீங்கள் தேர்ந்த இயல்புநிலையைப் பின்பற்றும்.\n\nஎங்கும் தடுக்கப்படுவது உள்ளடக்கத் தடுப்பு விதியாக மாறும்; அதனால் கோரிக்கை உங்கள் சாதனத்தை விட்டு வெளியேறவே வெளியேறாது.\n\nவடிவமைப்பிலேயே தனிப்பட்டது\nகணக்கு இல்லை, பகுப்பாய்வு இல்லை, சேவையகம் இல்லை. இலக்குகளின் பட்டியல் உங்கள் உலாவியில் இருக்கும்; செயலி அதை அதே சாதனத்திலுள்ள ஒரு கொள்கலன் வழியாகப் படிக்கிறது. நீங்கள் “சிக்கலைப் புகாரளி” என்பதை அழுத்தாதவரை சாதனத்திலிருந்து எதுவும் வெளியேறாது; அழுத்தினால் முன்கூட்டியே நிரப்பிய புகார் திறக்கும், அதை நீங்களே அனுப்புவீர்கள்.\n\nதேவைகள்\nUndirect ஒரு Safari நீட்டிப்பு. Safari-யில் அதை இயக்கி, பாதுகாக்க விரும்பும் ஒவ்வொரு தளத்திலும் கருவிப்பட்டியில் உள்ள அதன் பொத்தானை அழுத்துங்கள்.",
         "whatsNew": "ஆப்ஸும் Safari நீட்டிப்பும் இப்போது மேலும் 31 மொழிகளில் உள்ளன; App Store-இன் எல்லா மொழிகளும் உள்ளடங்குகின்றன.\nMac-இல் பாதுகாக்கப்பட்ட தளத்தின் அருகிலுள்ள நிறுத்து அழுத்தினால் இப்போது அந்தத் தளம் நீக்கப்படும். முன்பு Safari கோரிக்கையைக் கைவிடக்கூடும், எதுவும் நடக்காது. Safari அடுத்த பக்கத்தைத் திறக்கும்போது மாற்றம் அமலாகும்.\nதனிப்பட்ட சாளரத்திலிருந்து இயக்கிய தளம் தனிப்பட்டதாகவே இருக்கும்: ஆப்ஸ் அதைப் பட்டியலிடாது, கடைசித் தனிப்பட்ட தாவல் மூடியதும் அது மறக்கப்படும். பாதுகாப்பு இப்போது தனிப்பட்ட சாளரங்களில் முழுமையாக இயங்குகிறது.\nஆப்ஸின் நிறம் இப்போது அதன் சிவப்பு ஐகானுடன் பொருந்துகிறது."
       }
@@ -536,10 +536,10 @@
       "name": "Telugu",
       "code": "te-IN",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "మీ క్లిక్ మీదే ఉండాలి",
-        "promo": "కొన్ని పేజీలు కనిపించని పొరను పరిచి వేరొకదానికి ఉద్దేశించిన క్లిక్‌ను పట్టుకుంటాయి. Undirect దాన్ని తొలగించి, పేజీ మిమ్మల్ని పంపాలని చూసిన గమ్యాలను జాబితా చేస్తుంది.",
-        "keywords": "పాప్అప్,రీడైరెక్ట్,బ్లాకర్,popup,redirect",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safariలో దారిమళ్లింపులను ఆపండి",
+        "promo": "సైట్‌ వారీగా టూల్‌బార్ బటన్‌తో ఆన్ చేయండి. కనిపించని పొరలు, పాప్-అండర్లు, క్లిక్ మధ్యలో మారే లింక్‌లను Undirect ఆపి, పేజీ తెరవాలనుకున్న ప్రతి చిరునామాను జాబితా చేస్తుంది.",
+        "keywords": "ప్రకటన,బ్లాకర్,పాప్అప్,సఫారి",
         "description": "ఏ పేజీ కూడా మీ క్లిక్‌ను లాగేసుకోకుండా Undirect చూస్తుంది.\n\nపాప్అప్ నెట్‌వర్క్‌లు ఎవరైనా క్లిక్ చేయాలని ఎదురుచూడవు. అవి పేజీ మీద పారదర్శక పొరను పరిచి మీ తర్వాతి ట్యాప్‌ను తీసుకుంటాయి. ఒక లింక్‌ను తయారుచేసి తామే క్లిక్ చేస్తాయి. నొక్కడానికీ వదలడానికీ మధ్య మీ వేలి కింద ఉన్న లింక్‌ను మార్చేస్తాయి. ఖాళీ ట్యాబ్‌ను తెరిచి, మీరు చదువుతున్న ట్యాబ్ చిరునామాను తిరిగి రాస్తాయి.\n\nUndirect ఈ ఎత్తుగడలను గమనిస్తూ వాటిని వెనక్కి తిప్పుతుంది. మీ ట్యాప్ చేరకముందే కనిపించని పొర తొలగిపోతుంది, కాబట్టి క్లిక్ మీరు గురిపెట్టిన చోటే పడుతుంది. క్లిక్ మధ్యలో మార్చిన లింక్ యథాస్థితికి వస్తుంది, మీరు వెళ్లాలనుకున్న చోటికే చేరతారు. సైన్-ఇన్ విండో లాగా, సైట్ నిర్దిష్ట పరిమాణంలో అడిగినప్పుడే కొత్త విండో తెరుచుకుంటుంది.\n\nపేజీ మిమ్మల్ని పంపాలని చూసిన ప్రతి గమ్యం, ఆపినా ఆపకపోయినా, ఒక జాబితాలో ఉంటుంది. ప్రతిదాన్నీ ఆ సైట్‌లో మాత్రమే లేదా ప్రతిచోటా అనుమతించవచ్చు లేదా బ్లాక్ చేయవచ్చు. నియమం లేని గమ్యం మీరు ఎంచుకున్న డిఫాల్ట్‌ను అనుసరిస్తుంది.\n\nప్రతిచోటా బ్లాక్ చేసినది కంటెంట్ బ్లాకింగ్ నియమంగా మారుతుంది, కాబట్టి అభ్యర్థన మీ పరికరం దాటి బయటకు వెళ్లదు.\n\nనిర్మాణంలోనే ప్రైవేట్\nఖాతా లేదు, విశ్లేషణ లేదు, సర్వర్ లేదు. గమ్యాల జాబితా మీ బ్రౌజర్‌లో ఉంటుంది, యాప్ దాన్ని అదే పరికరంలోని ఒక కంటైనర్ ద్వారా చదువుతుంది. మీరు “సమస్యను నివేదించండి” నొక్కితే తప్ప పరికరం నుండి ఏదీ బయటకు వెళ్లదు; నొక్కితే ముందే నింపిన నివేదిక తెరుచుకుంటుంది, దాన్ని మీరే పంపుతారు.\n\nఅవసరాలు\nUndirect ఒక Safari ఎక్స్‌టెన్షన్. Safari లో దాన్ని ఆన్ చేసి, రక్షించాలనుకున్న ప్రతి సైట్‌లో టూల్‌బార్‌లోని దాని బటన్‌ను నొక్కండి.",
         "whatsNew": "యాప్, Safari ఎక్స్‌టెన్షన్ ఇప్పుడు మరో 31 భాషల్లో ఉన్నాయి, App Store భాషలన్నీ కవర్ అయ్యాయి.\nMacలో రక్షిత సైట్ పక్కన ఆపు నొక్కితే ఇప్పుడు ఆ సైట్ తొలగిపోతుంది. ఇంతకుముందు Safari అభ్యర్థనను వదిలేయవచ్చు, ఏమీ జరిగేది కాదు. Safari తర్వాతి పేజీని తెరిచినప్పుడు మార్పు అమలవుతుంది.\nప్రైవేట్ విండో నుంచి ఆన్ చేసిన సైట్ ప్రైవేట్‌గానే ఉంటుంది: యాప్ దాన్ని జాబితా చేయదు, చివరి ప్రైవేట్ ట్యాబ్ మూసివేయగానే అది గుర్తుండదు. రక్షణ ఇప్పుడు ప్రైవేట్ విండోలలో పూర్తిగా పనిచేస్తుంది.\nయాప్ రంగు ఇప్పుడు దాని ఎరుపు ఐకాన్‌కు సరిపోతుంది."
       }
@@ -549,9 +549,9 @@
       "code": "th",
       "copy": {
         "name": "Undirect",
-        "subtitle": "คลิกของคุณ ยังเป็นของคุณ",
-        "promo": "บางหน้าเว็บวางชั้นล่องหนทับตัวเองเพื่อดักคลิกที่ตั้งใจไว้กับอย่างอื่น Undirect เอาชั้นนั้นออก และแสดงรายการปลายทางทุกแห่งที่หน้าเว็บพยายามพาคุณไป",
-        "keywords": "ป๊อปอัป,เปลี่ยนเส้นทาง,ตัวบล็อก",
+        "subtitle": "หยุดเปลี่ยนเส้นทางใน Safari",
+        "promo": "เปิดใช้ทีละเว็บไซต์ด้วยปุ่มบนแถบเครื่องมือ Undirect หยุดชั้นล่องหนที่ทับคลิก ป๊อปอันเดอร์ และลิงก์ที่ถูกเขียนทับกลางคลิก พร้อมแสดงรายการทุกที่อยู่ที่หน้าเว็บพยายามเปิด",
+        "keywords": "โฆษณา,บล็อก,บล็อค,ส่วนขยาย,ป๊อปอัป",
         "description": "Undirect ไม่ให้หน้าเว็บแย่งคลิกของคุณไป\n\nเครือข่ายป๊อปอัปไม่รอให้ใครคลิก พวกมันวางชั้นโปร่งใสทับหน้าเว็บแล้วเอาการแตะครั้งถัดไปของคุณไป สร้างลิงก์ขึ้นมาแล้วคลิกเอง เปลี่ยนลิงก์ใต้นิ้วของคุณระหว่างกดกับปล่อย เปิดแท็บเปล่าแล้วเขียนที่อยู่ของแท็บที่คุณกำลังอ่านใหม่\n\nUndirect คอยจับตาเล่ห์กลเหล่านี้และย้อนกลับให้ ชั้นล่องหนหายไปก่อนที่การแตะของคุณจะไปถึง คลิกจึงโดนสิ่งที่คุณเล็งไว้ ลิงก์ที่ถูกเปลี่ยนกลางคลิกจะถูกคืนค่า แล้วคุณก็ไปถึงที่ที่ตั้งใจ หน้าต่างใหม่จะเปิดก็ต่อเมื่อเว็บขอด้วยขนาดที่กำหนด เหมือนหน้าต่างเข้าสู่ระบบ\n\nปลายทางทุกแห่งที่หน้าเว็บพยายามพาคุณไปจะอยู่ในรายการ ไม่ว่าจะถูกหยุดไว้หรือไม่ คุณอนุญาตหรือบล็อกแต่ละปลายทางได้ เฉพาะเว็บนั้นหรือทุกเว็บ ปลายทางที่ไม่มีกฎจะเป็นไปตามค่าเริ่มต้นที่คุณเลือก\n\nสิ่งที่ถูกบล็อกทุกที่จะกลายเป็นกฎบล็อกเนื้อหา คำขอจึงไม่ออกจากอุปกรณ์ของคุณเลย\n\nเป็นส่วนตัวตั้งแต่การออกแบบ\nไม่มีบัญชี ไม่มีการวิเคราะห์ ไม่มีเซิร์ฟเวอร์ รายการปลายทางอยู่ในเบราว์เซอร์ของคุณ และแอปอ่านผ่านคอนเทนเนอร์บนอุปกรณ์เครื่องเดียวกัน ไม่มีสิ่งใดออกจากอุปกรณ์ เว้นแต่คุณกดรายงาน ซึ่งจะเปิดรายงานที่กรอกไว้ล่วงหน้าให้คุณส่งเอง\n\nข้อกำหนด\nUndirect เป็นส่วนขยายของ Safari เปิดใช้ใน Safari แล้วกดปุ่มของมันบนแถบเครื่องมือในทุกเว็บที่ต้องการปกป้อง",
         "whatsNew": "แอปและส่วนขยาย Safari รองรับเพิ่มอีก 31 ภาษา ครอบคลุมทุกภาษาของ App Store แล้ว\nบน Mac การกดหยุดข้างไซต์ที่ป้องกันจะนำไซต์นั้นออกแล้ว ก่อนหน้านี้ Safari อาจทิ้งคำขอและไม่มีอะไรเกิดขึ้น การเปลี่ยนแปลงนี้มีผลเมื่อ Safari เปิดหน้าถัดไป\nไซต์ที่เปิดใช้จากหน้าต่างส่วนตัวจะยังเป็นส่วนตัว แอปจะไม่แสดงไซต์นั้นในรายการ และระบบจะลืมไซต์เมื่อปิดแท็บส่วนตัวแท็บสุดท้าย การป้องกันทำงานเต็มที่ในหน้าต่างส่วนตัวแล้ว\nสีของแอปตรงกับไอคอนสีแดงแล้ว"
       }
@@ -560,10 +560,10 @@
       "name": "Turkish",
       "code": "tr",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Tıklamanız sizin kalsın",
-        "promo": "Bazı sayfalar, başka bir şey için yaptığınız tıklamayı yakalamak üzere görünmez bir katman serer. Undirect onu kaldırır ve nereye yönlendirildiğinizi listeler.",
-        "keywords": "açılır pencere,yönlendirme,engelleyici,uzantı,tıklama,sekme,reklam,izleyici,gizlilik",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari yönlendirmelerine engel",
+        "promo": "Siteye göre araç çubuğundan açın. Undirect görünmez katmanları, pop-under'ları ve tıklarken değiştirilen bağlantıları durdurur, denenen her adresi listeler.",
+        "keywords": "reklam,engelleyici,açılır,pencere,uzantı,iphone,mac,engelle,kaçırma,sekme",
         "description": "Undirect, bir sayfanın tıklamanızı kapmasını engeller.\n\nAçılır pencere ağları tıklanmayı beklemez. Sayfanın üstüne saydam bir katman koyar ve bir sonraki dokunuşunuzu alır. Bir bağlantı kurar ve kendisi tıklar. Parmağınızın altında, basmanızla bırakmanız arasında bir bağlantıyı değiştirir. Boş bir sekme açar ve okuduğunuz sekmenin adresini yeniden yazar.\n\nUndirect bu numaraları izler ve geri alır. Görünmez katman, dokunuşunuz ulaşmadan kalkar; böylece tıklama hedeflediğiniz şeye gider. Tıklamanın ortasında değiştirilen bağlantı eski haline döner ve gitmek istediğiniz yere varırsınız. Yeni bir pencere yalnızca site belirli bir boyutta istediğinde açılır, tıpkı bir oturum açma penceresi gibi.\n\nBir sayfanın sizi yönlendirmeye çalıştığı her hedef, durdurulsun ya da durdurulmasın, bir listede yer alır. Her birine, yalnızca o sitede veya her yerde izin verebilir ya da onu engelleyebilirsiniz. Kuralı olmayan bir hedef, seçtiğiniz varsayılana uyar.\n\nHer yerde engellenen, bir içerik engelleme kuralına dönüşür; böylece istek cihazınızdan hiç çıkmaz.\n\nTASARIMIYLA GİZLİ\nHesap yok, analiz yok, sunucu yok. Hedef listesi tarayıcınızda durur ve uygulama onu aynı cihazdaki bir kapsayıcı üzerinden okur. Bildir'e basmadıkça hiçbir şey cihazdan çıkmaz; basarsanız önceden doldurulmuş bir bildirim açılır ve onu siz gönderirsiniz.\n\nGEREKSİNİMLER\nUndirect bir Safari uzantısıdır. Safari'de açın ve korumak istediğiniz her sitede araç çubuğundaki düğmesine basın.",
         "whatsNew": "Uygulama ve Safari uzantısı artık 31 dil daha konuşuyor; App Store'daki tüm diller kapsanıyor.\nMac'te korunan bir sitenin yanındaki Durdur artık o siteyi kaldırıyor. Önceden Safari isteği düşürebiliyordu ve hiçbir şey olmuyordu. Değişiklik, Safari bir sonraki sayfayı açtığında geçerli olur.\nÖzel pencerede etkinleştirilen bir site özel kalır: uygulama onu listelemez ve son özel sekme kapanınca unutulur. Koruma artık özel pencerelerde tam çalışır.\nUygulamanın rengi artık kırmızı simgesiyle uyumlu."
       }
@@ -572,10 +572,10 @@
       "name": "Ukrainian",
       "code": "uk",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Ваш клік залишається вашим",
-        "promo": "Деякі сторінки накладають невидимий шар, щоб перехопити клік, призначений для іншого. Undirect прибирає його й показує, куди вас намагалися відправити.",
-        "keywords": "спливне вікно,редирект,блокувальник,розширення,клік",
+        "name": "Undirect - Блокувальник",
+        "subtitle": "Стоп перенаправлення в Safari",
+        "promo": "Вмикається для сайту кнопкою на панелі. Undirect зупиняє невидимі шари, попандери та посилання, підмінені на льоту, і показує кожну адресу, яку сторінка хотіла відкрити.",
+        "keywords": "реклама,блок,редирект,попап,спливаючих,вікон",
         "description": "Undirect не дає сторінці забрати ваш клік.\n\nРекламні мережі зі спливними вікнами не чекають, поки на них натиснуть. Вони накривають сторінку прозорим шаром і забирають наступне натискання, створюють посилання й самі клікають по ньому, підміняють посилання під пальцем між натисканням і відпусканням, відкривають порожню вкладку й переписують адресу тієї, яку ви читаєте.\n\nUndirect помічає такі прийоми й скасовує їх. Невидимий шар зникає до того, як натискання дійде, і клік потрапляє туди, куди ви цілилися. Посилання, підмінене посеред кліку, повертається на місце, і ви потрапляєте туди, куди хотіли. Нове вікно відкривається, лише коли сайт просить його із заданим розміром, як вікно входу.\n\nКожна адреса, куди сторінка намагалася вас відправити, потрапляє до списку, чи зупинено спробу, чи ні. Будь-яку адресу можна дозволити або заблокувати: лише на цьому сайті чи всюди. Адреса без правила підпорядковується типовому налаштуванню, яке ви обираєте.\n\nЗаблоковане всюди стає правилом блокування вмісту, тож запит не залишає ваш пристрій.\n\nПРИВАТНІСТЬ ЗАКЛАДЕНО В ОСНОВУ\nБез облікового запису, без аналітики, без сервера. Список адрес зберігається у вашому браузері, а застосунок читає його через контейнер на тому ж пристрої. Нічого не залишає пристрій, доки ви не натиснете «Повідомити про проблему»: відкриється заповнене звернення, яке ви надсилаєте самі.\n\nВИМОГИ\nUndirect працює як розширення Safari. Увімкніть його в Safari, а потім на кожному сайті, який потрібно захистити, натисніть його кнопку на панелі інструментів.",
         "whatsNew": "Застосунок і розширення Safari тепер говорять ще 31 мовою, тож охоплено всі мови App Store.\nНа Mac кнопка «Зупинити» біля захищеного сайту тепер прибирає його. Раніше Safari міг загубити запит, і нічого не відбувалося. Зміна діє, коли Safari відкриє наступну сторінку.\nСайт, увімкнений із приватного вікна, лишається приватним: застосунок його не показує, а коли закривається остання приватна вкладка, він забувається. Захист тепер повністю працює в приватних вікнах.\nКолір застосунку тепер збігається з червоним значком."
       }
@@ -584,10 +584,10 @@
       "name": "Urdu",
       "code": "ur-PK",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "آپ کا کلک آپ ہی کا رہے",
-        "promo": "کچھ صفحے نادیدہ پرت بچھا کر کسی اور کے لیے کیا گیا کلک پکڑ لیتے ہیں۔ Undirect اسے ہٹاتا ہے اور بتاتا ہے کہ صفحے نے آپ کو کہاں بھیجنا چاہا۔",
-        "keywords": "پاپ اپ,ری ڈائریکٹ,بلاکر,کلک,popup,redirect,adblock",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Safari میں ری ڈائریکٹ روکیں",
+        "promo": "ہر سائٹ کے لیے ٹول بار کے بٹن سے آن کریں۔ Undirect نادیدہ پرتوں، پاپ انڈر اور کلک کے دوران بدلتے لنکس کو روکتا ہے اور صفحے کے کھولے ہر پتے کی فہرست دکھاتا ہے۔",
+        "keywords": "اشتہار,بلاک,پاپ اپ,سفاری,ایکسٹینشن,iphone,mac",
         "description": "Undirect کسی صفحے کو آپ کا کلک چھیننے نہیں دیتا۔\n\nپاپ اپ نیٹ ورک اس کا انتظار نہیں کرتے کہ کوئی ان پر کلک کرے۔ وہ صفحے پر ایک شفاف پرت بچھا کر آپ کا اگلا ٹیپ لے لیتے ہیں۔ وہ ایک لنک بناتے ہیں اور خود ہی اس پر کلک کر دیتے ہیں۔ وہ دبانے اور چھوڑنے کے درمیان آپ کی انگلی کے نیچے لنک بدل دیتے ہیں۔ وہ ایک خالی ٹیب کھولتے ہیں اور جو ٹیب آپ پڑھ رہے تھے اس کا پتا دوبارہ لکھ دیتے ہیں۔\n\nUndirect ان چالوں پر نظر رکھتا ہے اور انہیں الٹ دیتا ہے۔ آپ کے ٹیپ کے پہنچنے سے پہلے نادیدہ پرت ہٹ جاتی ہے، اس لیے کلک وہیں لگتا ہے جہاں آپ نے نشانہ لیا تھا۔ کلک کے دوران بدلا ہوا لنک پہلے جیسا ہو جاتا ہے، اور آپ وہیں پہنچتے ہیں جہاں جانا چاہتے تھے۔ نئی ونڈو صرف تب کھلتی ہے جب سائٹ کسی مقررہ سائز میں مانگے، جیسے سائن اِن ونڈو۔\n\nصفحے نے آپ کو جہاں بھی بھیجنا چاہا، وہ ہر منزل ایک فہرست میں آتی ہے، چاہے اسے روکا گیا ہو یا نہیں۔ ہر منزل کو صرف اسی سائٹ پر یا ہر جگہ اجازت دی جا سکتی ہے یا بلاک کیا جا سکتا ہے۔ جس منزل کا کوئی اصول نہیں وہ آپ کے چنے ہوئے ڈیفالٹ کے مطابق چلتی ہے۔\n\nجو ہر جگہ بلاک ہوتا ہے وہ کنٹینٹ بلاکنگ اصول بن جاتا ہے، اس لیے درخواست آپ کے آلے سے باہر جاتی ہی نہیں۔\n\nبناوٹ ہی سے نجی\nنہ کوئی اکاؤنٹ، نہ تجزیہ، نہ سرور۔ منزلوں کی فہرست آپ کے براؤزر میں رہتی ہے، اور ایپ اسے اسی آلے کے ایک کنٹینر کے ذریعے پڑھتی ہے۔ جب تک آپ «مسئلے کی اطلاع دیں» نہ دبائیں آلے سے کچھ باہر نہیں جاتا؛ دبانے پر پہلے سے بھری ہوئی رپورٹ کھلتی ہے، جسے آپ خود بھیجتے ہیں۔\n\nضروریات\nUndirect ایک Safari ایکسٹینشن ہے۔ Safari میں اسے آن کریں، پھر جس بھی سائٹ کو محفوظ رکھنا ہو وہاں ٹول بار میں اس کا بٹن دبائیں۔",
         "whatsNew": "ایپ اور Safari ایکسٹینشن اب 31 مزید زبانوں میں ہیں، اور App Store کی تمام زبانیں شامل ہیں۔\nMac پر محفوظ سائٹ کے ساتھ موجود بند کریں بٹن دبانے سے اب وہ سائٹ ہٹ جاتی ہے۔ پہلے Safari درخواست چھوڑ سکتا تھا اور کچھ نہیں ہوتا تھا۔ یہ تبدیلی Safari کے اگلا صفحہ کھولنے پر لاگو ہوتی ہے۔\nپرائیویٹ ونڈو سے آن کی گئی سائٹ پرائیویٹ ہی رہتی ہے: ایپ اسے فہرست میں نہیں دکھاتی، اور آخری پرائیویٹ ٹیب بند ہوتے ہی وہ بھلا دی جاتی ہے۔ تحفظ اب پرائیویٹ ونڈو میں پوری طرح چلتا ہے۔\nایپ کا رنگ اب اس کے سرخ آئیکن سے میل کھاتا ہے۔"
       }
@@ -596,10 +596,10 @@
       "name": "Vietnamese",
       "code": "vi",
       "copy": {
-        "name": "Undirect",
-        "subtitle": "Cú nhấp vẫn là của bạn",
-        "promo": "Một số trang tự phủ lên mình một lớp vô hình để bắt cú nhấp vốn dành cho việc khác. Undirect gỡ lớp đó đi và liệt kê mọi đích đến mà trang đã tìm cách đưa bạn tới.",
-        "keywords": "popup,chuyển hướng,chặn,tiện ích mở rộng,nhấp,tab,quảng cáo,theo dõi",
+        "name": "Undirect - Popup Blocker",
+        "subtitle": "Chặn chuyển hướng trên Safari",
+        "promo": "Bật cho từng trang bằng nút trên thanh công cụ. Undirect chặn lớp vô hình, cửa sổ pop-under và liên kết bị đổi giữa chừng, đồng thời liệt kê mọi địa chỉ trang muốn mở.",
+        "keywords": "chặn,quảng cáo,tiện ích,iphone,mac,cửa sổ,chiếm quyền,tab",
         "description": "Undirect ngăn một trang cướp cú nhấp của bạn.\n\nCác mạng quảng cáo popup không chờ bạn nhấp vào. Chúng phủ một lớp trong suốt lên trang và lấy cú chạm kế tiếp của bạn. Chúng dựng một liên kết rồi tự nhấp vào. Chúng đổi liên kết ngay dưới ngón tay bạn, giữa lúc nhấn và lúc nhả. Chúng mở một tab trống và ghi đè địa chỉ của tab bạn đang đọc.\n\nUndirect để mắt đến những chiêu đó và hoàn tác chúng. Lớp vô hình biến mất trước khi cú chạm của bạn đến nơi, nên cú nhấp trúng đúng thứ bạn nhắm tới. Liên kết bị đổi giữa chừng được trả về như cũ, và bạn đến đúng nơi muốn đến. Cửa sổ mới chỉ mở khi trang yêu cầu với một kích thước cụ thể, như khung đăng nhập.\n\nMọi đích đến mà một trang đã tìm cách đưa bạn tới đều nằm trong một danh sách, dù đã bị chặn hay chưa. Bạn có thể cho phép hoặc chặn từng đích, chỉ trên trang đó hoặc ở mọi nơi. Đích chưa có quy tắc sẽ theo mặc định bạn chọn.\n\nThứ bị chặn ở mọi nơi trở thành quy tắc chặn nội dung, nên yêu cầu không bao giờ rời khỏi thiết bị của bạn.\n\nRIÊNG TƯ TỪ GỐC\nKhông tài khoản, không phân tích, không máy chủ. Danh sách đích đến nằm trong trình duyệt của bạn, và ứng dụng đọc nó qua một vùng chứa trên cùng thiết bị. Không có gì rời khỏi thiết bị trừ khi bạn nhấn Báo cáo, thao tác này mở một báo cáo điền sẵn để bạn tự gửi.\n\nYÊU CẦU\nUndirect là tiện ích mở rộng của Safari. Hãy bật nó trong Safari rồi nhấn nút của nó trên thanh công cụ ở mỗi trang bạn muốn bảo vệ.",
         "whatsNew": "Ứng dụng và tiện ích mở rộng của Safari nay nói thêm 31 ngôn ngữ, nên mọi ngôn ngữ của App Store đều được phủ.\nTrên Mac, nhấp Dừng bên cạnh một trang web đã bảo vệ giờ sẽ gỡ trang web đó. Trước đây Safari có thể bỏ yêu cầu và không có gì xảy ra. Thay đổi có hiệu lực khi Safari mở trang tiếp theo.\nTrang web bật từ cửa sổ riêng tư vẫn riêng tư: ứng dụng không liệt kê nó, và nó bị quên khi tab riêng tư cuối cùng đóng lại. Phần bảo vệ giờ chạy đầy đủ trong cửa sổ riêng tư.\nMàu của ứng dụng giờ hợp với biểu tượng màu đỏ."
       }

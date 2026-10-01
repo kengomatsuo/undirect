@@ -1,1 +1,1 @@
-pop-up,redirection,bloqueur,extension,clic,onglet,pubs,traceur,confidentialité,navigateur,popunder
+popup,publicité,pub,bloquer,anti pub,extension,iphone,mac,détournement,fenêtre

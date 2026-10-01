@@ -1,1 +1,1 @@
-Manche Seiten legen eine unsichtbare Schicht über sich, um einen fremden Klick abzufangen. Undirect räumt sie weg und listet jedes Ziel, an das man Sie schicken wollte.
+Pro Website per Symbolleiste einschalten. Stoppt unsichtbare Ebenen, Pop-unders und mitten im Klick umgeschriebene Links, listet jede Adresse, die sich öffnen sollte.
