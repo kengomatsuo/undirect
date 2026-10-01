@@ -44,6 +44,19 @@ arrow and the switch knob flip under `:root[dir="rtl"]`. SwiftUI mirrors the app
 
 ## Review status
 
-Written by one model pass without a native reviewer. Hindi, Bengali, Gujarati,
-Kannada, Malayalam, Marathi, Odia, Punjabi, Tamil, Telugu and Urdu in particular
-want a native read before they ship as the store listing.
+The 31 languages added on 2026-10-01 were first written in one pass that could
+see the English. A second pass then gave each language to a reviewer who saw
+only the screen brief and the current string, never the English, and 318
+strings were rewritten (commits 13e83f4 and the one after it). The common
+faults were Sanskritised words where Apple uses the loanword (Gujarati and Odia
+"block"), gendered address (Polish, Czech, Slovak, Hebrew), plurals that broke
+between 2-4 and 5+ (Polish), and an informal register where Apple's own
+Greek and Hungarian guides are formal. Terms in dispute were checked against
+Apple's localized support pages; Apple publishes none in Urdu, so the Urdu
+terms rest on the reviewer alone.
+
+`Support/i18n/store/<ASC code>.json` is the source of the store copy;
+`merge.py` rebuilds `Support/AppStore/locales.json` from it, so an edit made
+straight to `locales.json` is overwritten.
+
+No native speaker has read any of it yet.
