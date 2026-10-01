@@ -89,7 +89,9 @@ pressed while the page was awake landed on the next load. A debug build takes
 tested without pressing Safari's button: computer use can only look at Safari.
 To test a debug build beside the App Store copy, unregister the App Store
 appex with `pluginkit -r` and register it again afterwards; pluginkit elects
-one copy per bundle id, and the debug copy keeps its own extension storage.
+one copy per bundle id. The swap wipes that bundle id's extension storage:
+the App Store copy came back with no guarded sites and no rules, so save
+`snapshot.json` first and expect to switch sites on again afterwards.
 
 ## Private windows share the extension (2026-10-01)
 
