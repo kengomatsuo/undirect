@@ -50,9 +50,23 @@ struct ContentView: View {
                 #endif
                 .interactiveDismissDisabled()
             }
+            .reviewPrompt(when: reviewReady)
             #if os(macOS)
             .frame(minWidth: 640, minHeight: 440)
             #endif
+    }
+
+    // The rules list is showing, the welcome sheet is gone, and the
+    // extension has stopped something: a natural stopping point.
+    private var reviewReady: Bool {
+        guard welcomeShown, !showWelcome else { return false }
+        switch shownState {
+        case .on: break
+        case .failed, .unavailable: if !rules.reachedApp { return false }
+        case .checking, .off: return false
+        }
+        if case .rules = pane { return rules.hasBlockedSomething }
+        return false
     }
 
     @ViewBuilder

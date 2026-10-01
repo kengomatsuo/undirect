@@ -107,3 +107,7 @@ run by another command. Localized sets (headlines from `Support/AppStore/headlin
 the few rebroken ones in `rebreaks.json`) come from `Support/AppStore/render_screenshots.py`
 and land in `Support/AppStore/<code>/<kind>`; staging uses them and falls back to the English set. After `mas`, unregister the build products (see the
 one-Safari-copy rule).
+
+## Rating prompt (build 8)
+
+Build 8 adds Apple's standard review request: the app asks once per version, a few seconds after the rules list is on screen and the extension has stopped at least one thing. TestFlight builds never show the sheet, so there is nothing to test there; the first prompts appear in App Store installs. It adds no App Privacy answers (`UserDefaults` is already declared under CA92.1). Full account: [docs/review-prompt.md](review-prompt.md).
