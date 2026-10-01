@@ -1,0 +1,1 @@
+Some pages lay an invisible layer over themselves to catch the click you meant for something else. Undirect clears it, and lists everywhere a page tried to send you.

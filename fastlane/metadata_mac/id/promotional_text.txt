@@ -1,0 +1,1 @@
+Sebagian halaman menutupi diri dengan lapisan tak terlihat untuk menangkap klik yang ditujukan ke hal lain. Undirect menyingkirkannya dan mendaftar tujuan yang dicoba.

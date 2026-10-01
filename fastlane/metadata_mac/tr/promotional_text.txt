@@ -1,0 +1,1 @@
+Bazı sayfalar, başka bir şey için yaptığınız tıklamayı yakalamak üzere görünmez bir katman serer. Undirect onu kaldırır ve nereye yönlendirildiğinizi listeler.

@@ -198,7 +198,7 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "Împiedică paginile să-ți folosească clicul ca să deschidă sau să redirecționeze spre un loc pe care nu l-ai cerut.",
+      "s": "Împiedică paginile să-ți folosească clicul ca să deschidă sau să redirecționeze spre ceva ce nu ai cerut.",
       "back": "Prevents pages using your click to open or redirect to a place you did not ask for"
     },
     "ext.meta.app_title": {

@@ -1,0 +1,15 @@
+Undirect nie pozwala stronie przejąć twojego kliknięcia.
+
+Sieci reklam wyskakujących nie czekają, aż ktoś w nie kliknie. Kładą na stronie przezroczystą warstwę i biorą twoje następne naciśnięcie. Budują link i same go klikają. Zmieniają link pod twoim palcem, między naciśnięciem a puszczeniem. Otwierają pustą kartę i podmieniają adres tej, którą właśnie czytasz.
+
+Undirect wypatruje takich zagrywek i je cofa. Niewidzialna warstwa znika, zanim dotrze twoje naciśnięcie, więc kliknięcie trafia tam, gdzie miało. Link zmieniony w trakcie kliknięcia wraca na miejsce, a ty trafiasz we właściwe miejsce. Nowe okno otwiera się tylko wtedy, gdy strona prosi o nie w określonym rozmiarze, jak okno logowania.
+
+Każdy cel, do którego strona próbowała cię wysłać, trafia na listę, niezależnie od tego, czy go zatrzymano. Na każdy cel możesz zezwolić albo go zablokować: tylko na tej witrynie lub wszędzie. Cel bez reguły podlega ustawieniu domyślnemu, które wybierasz.
+
+To, co zablokowane wszędzie, staje się regułą blokowania treści, więc żądanie nigdy nie opuszcza urządzenia.
+
+PRYWATNOŚĆ W ZAŁOŻENIACH
+Bez konta, bez analityki, bez serwera. Lista celów leży w twojej przeglądarce, a aplikacja czyta ją przez kontener na tym samym urządzeniu. Nic nie opuszcza urządzenia, chyba że naciśniesz Zgłoś problem: otworzy się wypełniony formularz zgłoszenia, a wysłanie zależy od ciebie.
+
+WYMAGANIA
+Undirect to rozszerzenie Safari. Włącz je w Safari, a potem na każdej stronie, którą chcesz chronić, naciśnij jego przycisk na pasku narzędzi.

@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Megakadályozza, hogy az oldalak a kattintással olyat nyissanak meg, vagy olyan helyre irányítsanak át, amit nem kért.",
+    "message": "Megakadályozza, hogy az oldalak a kattintással olyat nyissanak, vagy olyan helyre irányítsanak, amit nem kért.",
     "description": "Description of the extension."
   },
   "app_title": {

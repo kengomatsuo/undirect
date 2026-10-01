@@ -1,0 +1,15 @@
+Undirect, bir sayfanın tıklamanızı kapmasını engeller.
+
+Açılır pencere ağları tıklanmayı beklemez. Sayfanın üstüne saydam bir katman koyar ve bir sonraki dokunuşunuzu alır. Bir bağlantı kurar ve kendisi tıklar. Parmağınızın altında, basmanızla bırakmanız arasında bir bağlantıyı değiştirir. Boş bir sekme açar ve okuduğunuz sekmenin adresini yeniden yazar.
+
+Undirect bu numaraları izler ve geri alır. Görünmez katman, dokunuşunuz ulaşmadan kalkar; böylece tıklama hedeflediğiniz şeye gider. Tıklamanın ortasında değiştirilen bağlantı eski haline döner ve gitmek istediğiniz yere varırsınız. Yeni bir pencere yalnızca site belirli bir boyutta istediğinde açılır, tıpkı bir oturum açma penceresi gibi.
+
+Bir sayfanın sizi yönlendirmeye çalıştığı her hedef, durdurulsun ya da durdurulmasın, bir listede yer alır. Her birine, yalnızca o sitede veya her yerde izin verebilir ya da onu engelleyebilirsiniz. Kuralı olmayan bir hedef, seçtiğiniz varsayılana uyar.
+
+Her yerde engellenen, bir içerik engelleme kuralına dönüşür; böylece istek cihazınızdan hiç çıkmaz.
+
+TASARIMIYLA GİZLİ
+Hesap yok, analiz yok, sunucu yok. Hedef listesi tarayıcınızda durur ve uygulama onu aynı cihazdaki bir kapsayıcı üzerinden okur. Bildir'e basmadıkça hiçbir şey cihazdan çıkmaz; basarsanız önceden doldurulmuş bir bildirim açılır ve onu siz gönderirsiniz.
+
+GEREKSİNİMLER
+Undirect bir Safari uzantısıdır. Safari'de açın ve korumak istediğiniz her sitede araç çubuğundaki düğmesine basın.

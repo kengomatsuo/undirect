@@ -1,0 +1,1 @@
+Egyes oldalak láthatatlan réteget terítenek magukra, hogy elkapják a máshová szánt kattintást. Az Undirect leveszi, és felsorolja, hová akartak küldeni.

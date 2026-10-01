@@ -1,0 +1,1 @@
+popup,omdirigering,blokkering,utvidelse,klikk,fane,nettsted,lenke,safari

@@ -27,3 +27,9 @@ tests/popup.js
 tests/site.js
 .ads/
 tests/navigation.js
+
+# App Store Connect keys and fastlane output (the key lives outside this repo)
+*.p8
+fastlane/asc_api_key.json
+fastlane/report.xml
+fastlane/README.md

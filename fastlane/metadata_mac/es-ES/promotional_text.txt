@@ -1,0 +1,1 @@
+Algunas páginas se cubren con una capa invisible para atrapar el clic que ibas a dar a otra cosa. Undirect la quita y lista a dónde intentaron llevarte.

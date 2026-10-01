@@ -1,0 +1,243 @@
+ENV["PATH"] = "/opt/homebrew/bin:#{ENV['PATH']}"
+ENV["LANG"]   = "en_US.UTF-8"
+ENV["LC_ALL"] = "en_US.UTF-8"
+
+require 'json'
+require 'tmpdir'
+require 'fileutils'
+require 'fastlane_core/languages'
+
+REPO = File.expand_path("..", __dir__)
+BUNDLE_ID = "com.matsuokengo.undirect"
+
+# The locale codes in locales.json are App Store Connect's own codes, and a few
+# (bn-BD, ta-IN, no, ...) are outside fastlane's built-in list, so register them
+# or deliver refuses the folders.
+def locale_codes
+  @locale_codes ||= JSON.parse(File.read(File.join(REPO, "Support/AppStore/locales.json"), encoding: 'UTF-8'))
+    .fetch("locales").map { |l| l.fetch("code") }
+end
+locale_codes.each do |c|
+  FastlaneCore::Languages::ALL_LANGUAGES << c unless FastlaneCore::Languages::ALL_LANGUAGES.include?(c)
+end
+
+# --- App Store Connect API key ----------------------------------------------
+# One key serves metadata (Spaceship) and binaries. It is never copied into this
+# repo. Point UNDIRECT_ASC_KEY_FILE at a json of the shape
+#   { "key_id": "...", "issuer_id": "...", "key": "-----BEGIN PRIVATE KEY-----\n..." }
+# The default is Cutling's, which belongs to the same team (PM3K35YS39).
+ASC_KEY_FILE = ENV["UNDIRECT_ASC_KEY_FILE"] || "/Users/hafang/Repositories/Cutling/fastlane/asc_api_key.json"
+
+def asc_key_config
+  @asc_key_config ||= begin
+    UI.user_error!("No App Store Connect key at #{ASC_KEY_FILE}; set UNDIRECT_ASC_KEY_FILE") unless File.exist?(ASC_KEY_FILE)
+    JSON.parse(File.read(ASC_KEY_FILE, encoding: 'UTF-8'))
+  end
+end
+
+def asc_api_key
+  cfg = asc_key_config
+  @asc_api_key ||= app_store_connect_api_key(
+    key_id: cfg.fetch("key_id"),
+    issuer_id: cfg.fetch("issuer_id"),
+    key_content: cfg.fetch("key"),
+    in_house: false
+  )
+end
+
+# With the key, xcodebuild needs it as a file to create cloud-managed
+# distribution certificates and profiles during archive and export. Written to
+# a temp dir with 0600 and removed on exit.
+#
+# That needs a key whose role may use cloud-managed distribution certificates
+# (Admin). The Cutling key may not ("Cloud signing permission error"), so by
+# default xcodebuild uses the Apple ID Xcode is signed in with, as earlier
+# Undirect builds did. Set UNDIRECT_XCODEBUILD_KEY=1 to pass the key instead.
+def xcodebuild_auth_args
+  return "-allowProvisioningUpdates" unless ENV["UNDIRECT_XCODEBUILD_KEY"] == "1"
+  @xcodebuild_auth_args ||= begin
+    cfg = asc_key_config
+    dir = Dir.mktmpdir("undirect_asc")
+    path = File.join(dir, "AuthKey_#{cfg.fetch('key_id')}.p8")
+    # xcodebuild's PEM parser rejects a body that is not wrapped at 64 columns,
+    # and the json holds it on one line.
+    body = cfg.fetch("key").gsub(/-----[A-Z ]+-----|\s/, "")
+    File.write(path, "-----BEGIN PRIVATE KEY-----\n#{body.scan(/.{1,64}/).join("\n")}\n-----END PRIVATE KEY-----\n")
+    File.chmod(0600, path)
+    at_exit { FileUtils.rm_rf(dir) }
+    "-allowProvisioningUpdates -authenticationKeyPath #{path} " \
+    "-authenticationKeyID #{cfg.fetch('key_id')} -authenticationKeyIssuerID #{cfg.fetch('issuer_id')}"
+  end
+end
+
+def marketing_version
+  File.read(File.join(REPO, "project.yml"))[/MARKETING_VERSION:\s*"?([\d.]+)"?/, 1] or UI.user_error!("MARKETING_VERSION not found in project.yml")
+end
+
+# xcodebuild on recent Xcode emits bytes that crash fastlane's PTY loop under a
+# non-UTF-8 locale; force every line to valid UTF-8.
+require 'fastlane_core/fastlane_pty'
+class UTF8SafeIO
+  def initialize(io); @io = io; @io.set_encoding('BINARY') if @io.respond_to?(:set_encoding); end
+  def each
+    @io.each { |raw| yield raw.force_encoding('BINARY').encode('UTF-8', invalid: :replace, undef: :replace, replace: '') }
+  rescue Encoding::InvalidByteSequenceError
+  end
+  def close; @io.close unless @io.closed?; end
+  def method_missing(m, *a, &b); @io.send(m, *a, &b); end
+  def respond_to_missing?(m, p = false); @io.respond_to?(m, p) || super; end
+end
+::FastlaneCore::FastlanePty.class_eval do
+  class << self
+    alias_method :__orig_spawn_pty, :spawn_with_pty
+    alias_method :__orig_spawn_popen, :spawn_with_popen
+    def spawn_with_pty(command, &block); __orig_spawn_pty(command) { |o, i, p| yield(UTF8SafeIO.new(o), i, p) }; end
+    def spawn_with_popen(command, &block); __orig_spawn_popen(command) { |o, i, p| yield(UTF8SafeIO.new(o), i, p) }; end
+  end
+end
+
+# Copy the unframed store screenshots into a deliver layout, one folder per
+# locale. Undirect ships one set of English screenshots for every locale.
+def screenshot_staging(kinds)
+  tmp = Dir.mktmpdir("undirect_screenshots")
+  locale_codes.each do |code|
+    dest = File.join(tmp, code)
+    FileUtils.mkdir_p(dest)
+    kinds.each do |kind|
+      Dir.glob(File.join(REPO, "Support/AppStore", kind, "*.png")).sort.each do |png|
+        FileUtils.cp(png, File.join(dest, "#{kind}_#{File.basename(png)}"))
+      end
+    end
+  end
+  tmp
+end
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Upload text metadata for every locale to the editable iOS version (creates the version when none is editable). No screenshots, no binary."
+  lane :upload_metadata do
+    deliver(
+      api_key: asc_api_key,
+      app_identifier: BUNDLE_ID,
+      app_version: marketing_version,
+      metadata_path: "./fastlane/metadata",
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      precheck_include_in_app_purchases: false,
+      run_precheck_before_submit: false,
+      submit_for_review: false,
+      force: true,
+      ignore_language_directory_validation: true
+    )
+  end
+
+  desc "Upload store screenshots (iPhone and iPad sets, every locale). Not part of upload; run only on purpose."
+  lane :upload_screenshots do
+    tmp = screenshot_staging(%w[iphone ipad])
+    deliver(
+      api_key: asc_api_key,
+      app_identifier: BUNDLE_ID,
+      app_version: marketing_version,
+      screenshots_path: tmp,
+      skip_metadata: true,
+      skip_binary_upload: true,
+      overwrite_screenshots: true,
+      run_precheck_before_submit: false,
+      force: true,
+      ignore_language_directory_validation: true
+    )
+    FileUtils.rm_rf(tmp)
+  end
+
+  desc "Archive and export the iOS app for the App Store into ./build/Undirect.ipa"
+  lane :build do
+    gym(
+      project: "Undirect.xcodeproj",
+      scheme: "Undirect-iOS",
+      export_method: "app-store",
+      output_directory: "./build/ios",
+      output_name: "Undirect",
+      derived_data_path: "./build/DerivedData",
+      archive_path: "./build/ios/Undirect.xcarchive",
+      xcargs: xcodebuild_auth_args,
+      clean: true
+    )
+  end
+
+  desc "Upload the built IPA to App Store Connect (TestFlight processing). Does not submit for review."
+  lane :upload_binary do
+    ipa = File.join(REPO, "build/ios/Undirect.ipa")
+    UI.user_error!("No IPA at #{ipa}; run ./deploy.sh build first") unless File.exist?(ipa)
+    upload_to_testflight(
+      api_key: asc_api_key,
+      ipa: ipa,
+      skip_waiting_for_build_processing: true,
+      skip_submission: true
+    )
+  end
+end
+
+platform :mac do
+  desc "Upload text metadata for every locale to the editable macOS version (creates it when none is editable)"
+  lane :upload_metadata_mac do
+    deliver(
+      api_key: asc_api_key,
+      app_identifier: BUNDLE_ID,
+      app_version: marketing_version,
+      platform: "osx",
+      metadata_path: "./fastlane/metadata_mac",
+      skip_binary_upload: true,
+      skip_screenshots: true,
+      precheck_include_in_app_purchases: false,
+      run_precheck_before_submit: false,
+      submit_for_review: false,
+      force: true,
+      ignore_language_directory_validation: true
+    )
+  end
+
+  desc "Upload the Mac screenshots (every locale). Not part of upload; run only on purpose."
+  lane :upload_screenshots_mac do
+    tmp = screenshot_staging(%w[mac])
+    deliver(
+      api_key: asc_api_key,
+      app_identifier: BUNDLE_ID,
+      app_version: marketing_version,
+      platform: "osx",
+      screenshots_path: tmp,
+      skip_metadata: true,
+      skip_binary_upload: true,
+      overwrite_screenshots: true,
+      run_precheck_before_submit: false,
+      force: true,
+      ignore_language_directory_validation: true
+    )
+    FileUtils.rm_rf(tmp)
+  end
+
+  desc "Archive the Mac App Store pkg and upload it to App Store Connect (TestFlight). Does not submit for review."
+  lane :upload_mas do
+    # sdk: "macosx" is mandatory on a multiplatform scheme or gym looks for an .ipa.
+    build_mac_app(
+      project: "Undirect.xcodeproj",
+      scheme: "Undirect-macOS",
+      sdk: "macosx",
+      destination: "generic/platform=macOS",
+      export_method: "app-store",
+      output_directory: "./build/mas",
+      output_name: "Undirect",
+      derived_data_path: "./build/DerivedData",
+      archive_path: "./build/mas/Undirect.xcarchive",
+      xcargs: xcodebuild_auth_args,
+      clean: true
+    )
+    upload_to_testflight(
+      api_key: asc_api_key,
+      pkg: "./build/mas/Undirect.pkg",
+      app_platform: "osx",
+      skip_waiting_for_build_processing: true,
+      skip_submission: true
+    )
+  end
+end

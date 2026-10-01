@@ -1,0 +1,1 @@
+Ada halaman yang menutup diri dengan lapisan tak kelihatan untuk menangkap klik anda. Undirect membuangnya dan menyenaraikan destinasi yang cuba dituju.

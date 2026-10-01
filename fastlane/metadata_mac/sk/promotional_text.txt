@@ -1,0 +1,1 @@
+Niektoré stránky sa prikryjú neviditeľnou vrstvou, aby zachytili ťuknutie určené inam. Undirect ju odstráni a vypíše každý cieľ, kam vás stránka chcela poslať.

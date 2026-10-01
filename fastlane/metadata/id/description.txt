@@ -1,0 +1,15 @@
+Undirect mencegah halaman merebut klik Anda.
+
+Jaringan popup tidak menunggu untuk diklik. Mereka memasang lapisan transparan di atas halaman dan mengambil ketukan Anda berikutnya. Mereka membuat tautan lalu mengkliknya sendiri. Mereka mengubah tautan di bawah jari Anda, di antara tekan dan lepas. Mereka membuka tab kosong dan menulis ulang alamat tab yang sedang Anda baca.
+
+Undirect mengawasi akal-akalan itu dan membatalkannya. Lapisan tak terlihat hilang sebelum ketukan Anda sampai, sehingga klik mengenai apa yang Anda tuju. Tautan yang diubah di tengah klik dikembalikan, dan Anda tiba di tempat yang dimaksud. Jendela baru hanya terbuka bila situs memintanya dengan ukuran tertentu, seperti halaman masuk.
+
+Setiap tujuan yang coba dituju halaman tercatat dalam daftar, baik dihentikan maupun tidak. Anda bisa mengizinkan atau memblokir masing-masing, hanya di situs itu atau di mana saja. Tujuan tanpa aturan mengikuti bawaan yang Anda pilih.
+
+Yang diblokir di mana saja menjadi aturan pemblokir konten, sehingga permintaan tidak pernah meninggalkan perangkat Anda.
+
+PRIVAT SEJAK AWAL
+Tanpa akun, tanpa analitik, tanpa server. Daftar tujuan tersimpan di peramban Anda, dan app membacanya lewat wadah di perangkat yang sama. Tidak ada yang keluar dari perangkat kecuali Anda menekan Laporkan, yang membuka laporan terisi awal untuk Anda kirim sendiri.
+
+PERSYARATAN
+Undirect adalah ekstensi Safari. Aktifkan di Safari, lalu tekan tombolnya di bilah alat pada setiap situs yang ingin dilindungi.

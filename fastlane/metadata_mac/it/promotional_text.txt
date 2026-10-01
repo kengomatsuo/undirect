@@ -1,0 +1,1 @@
+Alcune pagine si coprono con uno strato invisibile per catturare il tocco destinato ad altro. Undirect lo toglie e elenca dove hanno provato a portarti.

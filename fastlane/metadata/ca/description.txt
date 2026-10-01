@@ -1,0 +1,15 @@
+L'Undirect evita que una pàgina es quedi el teu toc.
+
+Les xarxes de finestres emergents no esperen que les toquin. Posen una capa transparent sobre la pàgina i s'emporten la teva propera pulsació. Fabriquen un enllaç i hi fan clic elles mateixes. Canvien un enllaç sota el teu dit, entre que prems i deixes anar. Obren una pestanya en blanc i reescriuen l'adreça de la que estaves llegint.
+
+L'Undirect vigila aquestes maniobres i les desfà. La capa invisible desapareix abans que arribi la teva pulsació, i el toc arriba allà on apuntaves. Un enllaç reescrit enmig del toc es restaura i arribes on volies anar. Una finestra nova només s'obre quan el lloc la demana amb una mida concreta, com fa un inici de sessió.
+
+Cada destí al qual una pàgina ha intentat portar-te apareix en una llista, tant si s'ha aturat com si no. Pots permetre o bloquejar cada destí, només en aquell lloc o a tot arreu. Un destí sense regla segueix el valor per defecte que triïs.
+
+El que es bloqueja a tot arreu esdevé una regla de bloqueig de contingut, de manera que la petició no surt mai del teu dispositiu.
+
+PRIVAT DE SÈRIE
+Sense compte, sense analítiques, sense servidor. La llista de destins viu al teu navegador i l'app la llegeix a través d'un contenidor del mateix dispositiu. Res no surt del dispositiu tret que premis Informa, que obre una incidència emplenada perquè l'enviïs tu.
+
+REQUISITS
+L'Undirect és una extensió del Safari. Activa-la al Safari i prem-ne el botó de la barra d'eines a cada lloc que vulguis protegir.

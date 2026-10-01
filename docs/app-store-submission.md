@@ -89,3 +89,19 @@ container resolves under the new prefix.
 The Apple Developer Program License Agreement has been updated, and App Store
 Connect states that the Account Holder must accept it before any new app can be
 submitted. Nobody else can accept it.
+
+## The pipeline (2026-10-01)
+
+`./deploy.sh help` lists it. Fastlane under `fastlane/` drives App Store Connect with
+the Cutling API key, read by absolute path (`UNDIRECT_ASC_KEY_FILE` overrides) and
+never copied here; it belongs to team `PM3K35YS39`. Text for all 50 storefronts is
+generated from `Support/AppStore/locales.json` by `fastlane/generate_metadata.py`
+and checked by `fastlane/verify_metadata.sh`. `bump` raises both numbers in
+`project.yml`; a live version's train is closed, so the next upload needs a new
+marketing version (1.0.1), and the build number must beat the highest on either
+platform. The key cannot make cloud-managed distribution certificates, so
+xcodebuild signs with the Apple ID Xcode is signed in with. App Store Connect
+also refuses an extension `extension_description` over 112 characters
+(`check.py` now says so). `screenshots` and `screenshots_mac` exist and are never
+run by another command. After `mas`, unregister the build products (see the
+one-Safari-copy rule).

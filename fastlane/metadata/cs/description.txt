@@ -1,0 +1,15 @@
+Undirect nedovolí stránce, aby vám sebrala klepnutí.
+
+Sítě vyskakovacích oken nečekají, až na ně někdo klepne. Přehodí přes stránku průhlednou vrstvu a seberou vám další stisk. Vytvoří odkaz a sami na něj kliknou. Změní odkaz pod vaším prstem, mezi stisknutím a puštěním. Otevřou prázdný panel a přepíšou adresu toho, který právě čtete.
+
+Undirect tyhle triky pozná a vrátí je zpět. Neviditelná vrstva zmizí dřív, než stisk dorazí, a klepnutí zasáhne zamýšlený cíl. Odkaz změněný uprostřed klepnutí se vrátí a skončíte tam, kam klepnutí mířilo. Nové okno se otevře jen tehdy, když si ho web vyžádá v určité velikosti, jako třeba přihlášení.
+
+Každý cíl, kam vás stránka chtěla poslat, skončí v seznamu, ať už byl zastaven, nebo ne. Každý cíl můžete povolit nebo zablokovat, jen na tom webu, nebo všude. Cíl bez pravidla se řídí výchozím nastavením, které zvolíte.
+
+Co je zablokované všude, se změní v pravidlo blokování obsahu, takže požadavek vaše zařízení vůbec neopustí.
+
+SOUKROMÍ JAKO ZÁKLAD
+Žádný účet, žádná analytika, žádný server. Seznam cílů zůstává ve vašem prohlížeči a aplikace ho čte přes kontejner na stejném zařízení. Nic neopustí zařízení, pokud neklepnete na Nahlásit problém: otevře se předvyplněné hlášení, které odešlete sami.
+
+POŽADAVKY
+Undirect je rozšíření Safari. Zapněte ho v Safari a na každém webu, který chcete chránit, stiskněte jeho tlačítko na panelu nástrojů.

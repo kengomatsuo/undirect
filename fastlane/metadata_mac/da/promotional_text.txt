@@ -1,0 +1,1 @@
+Nogle sider lægger et usynligt lag over sig selv for at fange et klik, der var ment til noget andet. Undirect fjerner det og viser, hvor siden ville sende dig hen.

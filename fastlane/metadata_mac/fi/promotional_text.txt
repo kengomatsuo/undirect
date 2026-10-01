@@ -1,0 +1,1 @@
+Jotkin sivut peittävät itsensä näkymättömällä kerroksella napatakseen muualle tarkoitetun napsautuksen. Undirect poistaa sen ja listaa kohteet, joihin yritettiin ohjata.

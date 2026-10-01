@@ -1,0 +1,15 @@
+Az Undirect megakadályozza, hogy egy oldal elvegye a kattintását.
+
+A felugró ablakok hálózatai nem várják meg, hogy rájuk kattintson. Átlátszó réteget fektetnek az oldalra, és elviszik a következő érintését. Linket építenek, és maguk kattintanak rá. Átírnak egy linket az ujja alatt, a lenyomás és az elengedés között. Üres lapot nyitnak, és átírják annak a lapnak a címét, amelyet éppen olvasott.
+
+Az Undirect figyeli ezeket a trükköket, és visszacsinálja őket. A láthatatlan réteg eltűnik, mielőtt az érintése odaérne, így a kattintás oda talál, ahová célzott. A kattintás közben átírt link visszakerül, és oda jut, ahová menni akart. Új ablak csak akkor nyílik, ha az oldal meghatározott méretben kéri, ahogy egy bejelentkezés teszi.
+
+Minden cél, ahová egy oldal el akart küldeni, felkerül egy listára, akár megállították, akár nem. Bármelyiket engedélyezheti vagy blokkolhatja, csak az adott oldalon vagy mindenhol. A szabály nélküli cél az Ön által választott alapértelmezést követi.
+
+Ami mindenhol blokkolt, tartalomblokkoló szabállyá válik, így a kérés soha nem hagyja el az eszközét.
+
+ADATVÉDELEM ALAPOKTÓL FOGVA
+Nincs fiók, nincs elemzés, nincs szerver. A célok listája a böngészőjében van, az app pedig ugyanazon az eszközön lévő tárolón át olvassa. Semmi nem hagyja el az eszközt, hacsak nem érinti meg a Jelentés gombot: ekkor előre kitöltött bejelentés nyílik, amelyet Ön küld el.
+
+KÖVETELMÉNYEK
+Az Undirect Safari-bővítmény. Kapcsolja be a Safariban, majd minden védeni kívánt oldalon nyomja meg az eszköztáron lévő gombját.

@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Menghalang halaman daripada menggunakan klik anda untuk membuka atau mengubah hala ke tempat yang anda tidak minta.",
+    "message": "Menghalang halaman menggunakan klik anda untuk membuka atau mengubah hala ke tempat yang tidak anda minta.",
     "description": "Description of the extension."
   },
   "app_title": {

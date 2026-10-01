@@ -1,0 +1,1 @@
+Popup,Weiterleitung,Blocker,Erweiterung,Klick,Tab,Werbung,Tracker,Datenschutz,Browser,Popunder

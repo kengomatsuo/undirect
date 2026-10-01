@@ -1,0 +1,1 @@
+Certaines pages se couvrent d'une couche invisible pour attraper le clic destiné à autre chose. Undirect la retire et dresse la liste des destinations visées.

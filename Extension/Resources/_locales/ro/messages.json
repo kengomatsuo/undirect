@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Împiedică paginile să-ți folosească clicul ca să deschidă sau să redirecționeze spre un loc pe care nu l-ai cerut.",
+    "message": "Împiedică paginile să-ți folosească clicul ca să deschidă sau să redirecționeze spre ceva ce nu ai cerut.",
     "description": "Description of the extension."
   },
   "app_title": {

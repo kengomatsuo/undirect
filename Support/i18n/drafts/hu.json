@@ -198,7 +198,7 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "Megakadályozza, hogy az oldalak a kattintással olyat nyissanak meg, vagy olyan helyre irányítsanak át, amit nem kért.",
+      "s": "Megakadályozza, hogy az oldalak a kattintással olyat nyissanak, vagy olyan helyre irányítsanak, amit nem kért.",
       "back": "Stops pages from using the click to open something, or redirect to a place, that you did not ask for."
     },
     "ext.meta.app_title": {

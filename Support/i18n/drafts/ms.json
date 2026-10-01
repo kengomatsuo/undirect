@@ -198,7 +198,7 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "Menghalang halaman daripada menggunakan klik anda untuk membuka atau mengubah hala ke tempat yang anda tidak minta.",
+      "s": "Menghalang halaman menggunakan klik anda untuk membuka atau mengubah hala ke tempat yang tidak anda minta.",
       "back": "Prevents pages using your click to open or redirect to a place you did not ask for"
     },
     "ext.meta.app_title": {

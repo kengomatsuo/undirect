@@ -1,0 +1,1 @@
+Algumas páginas cobrem-se com uma camada invisível para apanhar o clique que era para outra coisa. O Undirect remove-a e lista para onde tentaram levá-lo.

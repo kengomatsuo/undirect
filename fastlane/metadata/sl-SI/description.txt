@@ -1,0 +1,15 @@
+Undirect ne pusti, da bi vam stran vzela klik.
+
+Omrežja pojavnih oglasov ne čakajo, da bi kdo kliknil nanje. Čez stran položijo prosojno plast in vzamejo vaš naslednji dotik. Naredijo povezavo in jo sami kliknejo. Povezavo spremenijo pod vašim prstom, med pritiskom in spustom. Odprejo prazen zavihek in prepišejo naslov tistega, ki ga berete.
+
+Undirect take trike prepozna in jih razveljavi. Nevidna plast izgine, preden dotik prispe, zato klik zadene pravi cilj. Povezava, spremenjena sredi klika, se vrne in pristanete na pravem mestu. Novo okno se odpre samo, kadar ga spletno mesto zahteva v določeni velikosti, kot prijavno okno.
+
+Vsak cilj, kamor vas je stran poskušala poslati, se znajde na seznamu, ne glede na to, ali je bil ustavljen. Vsakega lahko dovolite ali blokirate, samo na tistem mestu ali povsod. Cilj brez pravila sledi privzeti nastavitvi, ki jo izberete.
+
+Kar je blokirano povsod, postane pravilo za blokiranje vsebine, zato zahteva nikoli ne zapusti vaše naprave.
+
+ZASEBNOST V TEMELJU
+Brez računa, brez analitike, brez strežnika. Seznam ciljev ostane v vašem brskalniku, aplikacija pa ga bere prek vsebnika na isti napravi. Nič ne zapusti naprave, razen če tapnete Sporoči težavo: odpre se vnaprej izpolnjeno poročilo, ki ga pošljete sami.
+
+ZAHTEVE
+Undirect je razširitev za Safari. Vklopite jo v Safariju, nato pa na vsakem mestu, ki ga želite zaščititi, pritisnite njen gumb v orodni vrstici.

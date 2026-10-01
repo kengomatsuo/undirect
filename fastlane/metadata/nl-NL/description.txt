@@ -1,0 +1,15 @@
+Undirect zorgt dat een pagina jouw klik niet inpikt.
+
+Pop-upnetwerken wachten niet tot je ze aanklikt. Ze leggen een doorzichtige laag over de pagina en pakken je volgende tik. Ze maken een link en klikken er zelf op. Ze veranderen een link onder je vinger, tussen indrukken en loslaten. Ze openen een leeg tabblad en schrijven het adres van het tabblad dat je las om.
+
+Undirect herkent die trucs en maakt ze ongedaan. De onzichtbare laag verdwijnt voordat je tik aankomt, zodat de klik raakt wat je bedoelde. Een link die midden in de klik is veranderd, wordt teruggezet en je komt waar je wilde zijn. Een nieuw venster opent alleen als de site het in een bepaald formaat vraagt, zoals bij inloggen.
+
+Elke bestemming waar een pagina je heen wilde sturen, komt in een lijst, of hij nu is tegengehouden of niet. Je kunt elke bestemming toestaan of blokkeren, alleen op die site of overal. Een bestemming zonder regel volgt de standaardinstelling die je kiest.
+
+Wat overal geblokkeerd wordt, wordt een regel voor contentblokkering, zodat het verzoek je apparaat nooit verlaat.
+
+PRIVÉ VAN BINNENUIT
+Geen account, geen analyse, geen server. De lijst met bestemmingen staat in je browser en de app leest hem via een container op hetzelfde apparaat. Er verlaat niets het apparaat, tenzij je op Melden tikt: dan opent een ingevulde melding die je zelf verstuurt.
+
+VEREISTEN
+Undirect is een Safari-extensie. Zet hem aan in Safari en tik op elke site die je wilt beschermen op de knop in de werkbalk.

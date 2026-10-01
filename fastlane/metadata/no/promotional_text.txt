@@ -1,0 +1,1 @@
+Noen sider legger et usynlig lag over seg selv for å fange klikket som var ment for noe annet. Undirect fjerner det og viser hvert mål en side prøvde å sende deg til.

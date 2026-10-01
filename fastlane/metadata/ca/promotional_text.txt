@@ -1,0 +1,1 @@
+Algunes pàgines es cobreixen amb una capa invisible per atrapar el toc que anava a una altra cosa. L'Undirect la treu i llista cada destí on volien portar-te.

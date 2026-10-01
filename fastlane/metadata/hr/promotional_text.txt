@@ -1,0 +1,1 @@
+Neke se stranice prekriju nevidljivim slojem da uhvate klik namijenjen nečemu drugom. Undirect ga uklanja i popisuje kamo vas je stranica pokušala poslati.

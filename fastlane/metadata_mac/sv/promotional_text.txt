@@ -1,0 +1,1 @@
+Vissa sidor lägger ett osynligt lager över sig själva för att fånga klicket som var tänkt för något annat. Undirect tar bort det och listar vart de försökte skicka dig.

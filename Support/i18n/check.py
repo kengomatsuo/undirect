@@ -94,6 +94,9 @@ def main():
                 bad(f"{code}: {key} lost $COUNT$")
             if any(d in got["message"] for d in DASHES):
                 bad(f"{code}: dash in {key}")
+            # App Store Connect refuses the upload past 112 characters (build 6, 2026-10-01)
+            if key == "extension_description" and len(got["message"]) > 112:
+                bad(f"{code}: extension_description is {len(got['message'])} chars (limit 112)")
 
     # store copy
     listing = load(ROOT / "Support/AppStore/locales.json")

@@ -1,0 +1,15 @@
+O Undirect impede que uma página fique com o seu clique.
+
+As redes de pop-ups não esperam que cliquem nelas. Colocam uma camada transparente sobre a página e ficam com o seu próximo toque. Fabricam uma ligação e clicam nela sozinhas. Trocam uma ligação debaixo do seu dedo, entre o premir e o largar. Abrem um separador em branco e reescrevem o endereço daquele que estava a ler.
+
+O Undirect reconhece estes golpes e desfaz-os. A camada invisível desaparece antes de o seu toque chegar, e o clique atinge aquilo que apontou. Uma ligação trocada a meio do clique volta ao que era e chega onde queria. Uma janela nova só abre quando o site a pede com um tamanho definido, como acontece num início de sessão.
+
+Cada destino para onde uma página tentou levá-lo entra numa lista, tenha sido travado ou não. Pode permitir ou bloquear cada um, só nesse site ou em todos. Um destino sem regra segue a predefinição que escolher.
+
+O que é bloqueado em todo o lado torna-se uma regra de bloqueio de conteúdo, por isso o pedido nunca sai do seu dispositivo.
+
+PRIVADO POR CONCEÇÃO
+Sem conta, sem análises, sem servidor. A lista de destinos fica no seu navegador, e a app lê-a através de um contentor no mesmo dispositivo. Nada sai do dispositivo, a não ser que toque em Comunicar, que abre um relatório preenchido para enviar por si.
+
+REQUISITOS
+O Undirect é uma extensão do Safari. Ative-a no Safari e toque no respetivo botão da barra de ferramentas em cada site que queira proteger.

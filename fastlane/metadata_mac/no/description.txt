@@ -1,0 +1,15 @@
+Undirect hindrer en side i å ta klikket ditt.
+
+Popup-nettverk venter ikke på at noen skal klikke på dem. De legger et gjennomsiktig lag over siden og tar neste trykk. De bygger en lenke og klikker på den selv. De endrer en lenke under fingeren din, mellom trykk og slipp. De åpner en tom fane og skriver om adressen til den du leste.
+
+Undirect holder øye med disse triksene og gjør dem ugjort. Det usynlige laget forsvinner før trykket treffer, så klikket havner på det du siktet mot. En lenke som er endret midt i klikket, settes tilbake, og du lander der du ville. Et nytt vindu åpnes bare når siden ber om det i en bestemt størrelse, slik en innlogging gjør.
+
+Hvert mål en side prøvde å sende deg til, står i en liste, enten det ble stoppet eller ikke. Du kan tillate eller blokkere hvert mål, bare på det nettstedet eller overalt. Et mål uten regel følger standarden du velger.
+
+Det som blokkeres overalt, blir til en regel for innholdsblokkering, så forespørselen aldri forlater enheten din.
+
+PRIVAT FRA GRUNNEN AV
+Ingen konto, ingen analyse, ingen server. Listen over mål ligger i nettleseren din, og appen leser den gjennom en beholder på samme enhet. Ingenting forlater enheten med mindre du trykker på Rapportér: da åpnes en utfylt rapport som du sender selv.
+
+KRAV
+Undirect er en Safari-utvidelse. Slå den på i Safari, og trykk på knappen i verktøylinjen på hvert nettsted du vil beskytte.

@@ -1,0 +1,1 @@
+Sommige pagina's leggen een onzichtbare laag over zichzelf om een klik op te vangen die voor iets anders was. Undirect haalt die weg en toont waarheen je werd gestuurd.
