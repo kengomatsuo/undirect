@@ -87,7 +87,16 @@ case "${1:-help}" in
   upload)           gen_metadata && $FASTLANE ios upload_metadata && $FASTLANE mac upload_metadata_mac ;;
   build)            xcodegen generate && $FASTLANE ios build ;;
   binary)           $FASTLANE ios upload_binary ;;
-  mas)              xcodegen generate && $FASTLANE mac upload_mas ;;
+  mas)
+    xcodegen generate && $FASTLANE mac upload_mas
+    # The archive registers its own Safari extension. A second copy can make
+    # Safari swap extensions and wipe the owner's storage (2026-10-01).
+    find build -name "Undirect.app" -maxdepth 6 2>/dev/null | while read -r app; do
+      pluginkit -r "$app/Contents/PlugIns/Undirect Extension.appex" 2>/dev/null
+      /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u "$app"
+    done
+    rm -rf build/mas
+    pluginkit -mAvvv -D -i com.matsuokengo.undirect.Extension | grep "Path" ;;
   screenshots)      $FASTLANE ios upload_screenshots ;;
   screenshots_mac)  $FASTLANE mac upload_screenshots_mac ;;
   previews)
