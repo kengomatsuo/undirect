@@ -103,5 +103,7 @@ platform. The key cannot make cloud-managed distribution certificates, so
 xcodebuild signs with the Apple ID Xcode is signed in with. App Store Connect
 also refuses an extension `extension_description` over 112 characters
 (`check.py` now says so). `screenshots` and `screenshots_mac` exist and are never
-run by another command. After `mas`, unregister the build products (see the
+run by another command. Localized sets (headlines from `Support/AppStore/headlines.json`,
+the few rebroken ones in `rebreaks.json`) come from `Support/AppStore/render_screenshots.py`
+and land in `Support/AppStore/<code>/<kind>`; staging uses them and falls back to the English set. After `mas`, unregister the build products (see the
 one-Safari-copy rule).

@@ -1,0 +1,232 @@
+{
+ "ar-SA": {
+  "h1": "نقراتك تصل\nإلى ما تريد",
+  "h2": "ضغطة واحدة تفعّل\nالحماية للموقع",
+  "h3": "كل ما حُجب\nفي قائمة واحدة"
+ },
+ "bn-BD": {
+  "h1": "আপনার ক্লিক যায়\nআপনার গন্তব্যে",
+  "h2": "এক চাপেই সাইটের\nসুরক্ষা চালু",
+  "h3": "যা আটকানো হলো\nসব এক তালিকায়"
+ },
+ "ca": {
+  "h1": "El teu toc va\non tu vols",
+  "h2": "Una pulsació\nprotegeix el lloc",
+  "h3": "Tot el bloquejat\nen una sola llista"
+ },
+ "cs": {
+  "h1": "Klepnutí míří\nkam chcete",
+  "h2": "Jeden stisk zapne\nochranu webu",
+  "h3": "Vše zablokované\nv jednom seznamu"
+ },
+ "da": {
+  "h1": "Dit klik går\nder, hvor du vil",
+  "h2": "Ét tryk beskytter\nsiden",
+  "h3": "Alt blokeret\ni én liste"
+ },
+ "de-DE": {
+  "h1": "Jeder Klick landet\nam richtigen Ort",
+  "h2": "Ein Klick schützt\ndie Website",
+  "h3": "Alles Blockierte\nin einer Liste"
+ },
+ "el": {
+  "h1": "Το κλικ πηγαίνει\nόπου θέλετε",
+  "h2": "Ένα πάτημα\nπροστατεύει τον ιστότοπο",
+  "h3": "Όλα τα μπλοκαρισμένα\nσε μία λίστα"
+ },
+ "es-ES": {
+  "h1": "Tu clic va\ndonde tú quieres",
+  "h2": "Una pulsación\nprotege el sitio",
+  "h3": "Todo lo bloqueado\nen una lista"
+ },
+ "es-MX": {
+  "h1": "Tu clic llega\ndonde tú quieres",
+  "h2": "Un clic y el sitio\nqueda protegido",
+  "h3": "Todo lo bloqueado\njunto en una lista"
+ },
+ "fi": {
+  "h1": "Napsautus menee\nsinne minne haluat",
+  "h2": "Yksi painallus\nsuojaa sivun",
+  "h3": "Kaikki estetty\nyhdessä listassa"
+ },
+ "fr-CA": {
+  "h1": "Votre clic va\noù vous voulez",
+  "h2": "Un seul appui\nprotège le site",
+  "h3": "Chaque blocage\ndans une seule liste"
+ },
+ "fr-FR": {
+  "h1": "Vos clics vont\noù vous voulez",
+  "h2": "Une pression active\nla protection du site",
+  "h3": "Tous les blocages\nréunis en une liste"
+ },
+ "gu-IN": {
+  "h1": "તમારું ક્લિક ત્યાં જ\nજાય જ્યાં તમે ચાહો",
+  "h2": "એક પ્રેસથી સાઇટનું\nરક્ષણ ચાલુ",
+  "h3": "બધું રોકાયેલું\nએક જ યાદીમાં"
+ },
+ "he": {
+  "h1": "הלחיצה שלכם הולכת\nלמקום שרציתם",
+  "h2": "לחיצה אחת מפעילה\nהגנה באתר",
+  "h3": "כל מה שנחסם\nברשימה אחת"
+ },
+ "hi": {
+  "h1": "क्लिक वहीं जाए\nजहाँ आप चाहें",
+  "h2": "एक प्रेस से साइट की\nसुरक्षा चालू",
+  "h3": "जो भी रोका गया\nएक सूची में"
+ },
+ "hr": {
+  "h1": "Klik ide tamo\ngdje ga želite",
+  "h2": "Jedan pritisak\nštiti stranicu",
+  "h3": "Sve blokirano\nu jednom popisu"
+ },
+ "hu": {
+  "h1": "Oda kattint,\nahová akar",
+  "h2": "Egy gombnyomás\nvédi az oldalt",
+  "h3": "Minden blokkolt cél\negy listában"
+ },
+ "id": {
+  "h1": "Klik Anda tiba\ndi tujuan Anda",
+  "h2": "Sekali tekan,\nsitus terlindungi",
+  "h3": "Semua yang diblokir\nada dalam satu daftar"
+ },
+ "it": {
+  "h1": "Il tocco va dove\nvuoi tu",
+  "h2": "Un solo tocco\nprotegge il sito",
+  "h3": "Tutto ciò che è bloccato\nin un solo elenco"
+ },
+ "ja": {
+  "h1": "クリックは\n行きたい先へ",
+  "h2": "ボタン1つで\nそのサイトを保護",
+  "h3": "ブロックした先を\n1つの一覧に"
+ },
+ "kn-IN": {
+  "h1": "ನಿಮ್ಮ ಕ್ಲಿಕ್ ನೀವು\nಬಯಸಿದ ಕಡೆಗೇ",
+  "h2": "ಒಂದು ಒತ್ತಿದರೆ\nಸೈಟ್‌ಗೆ ರಕ್ಷಣೆ",
+  "h3": "ತಡೆದದ್ದೆಲ್ಲ\nಒಂದೇ ಪಟ್ಟಿಯಲ್ಲಿ"
+ },
+ "ko": {
+  "h1": "클릭은 내가 원한\n곳으로만",
+  "h2": "버튼 한 번으로\n이 사이트 보호",
+  "h3": "차단한 곳을\n한 목록에서"
+ },
+ "ml-IN": {
+  "h1": "ക്ലിക്ക് നിങ്ങൾ\nഉദ്ദേശിച്ചിടത്തേക്ക്",
+  "h2": "ഒരു അമർത്തലിൽ\nസൈറ്റിന് സുരക്ഷ",
+  "h3": "തടഞ്ഞതെല്ലാം\nഒറ്റ പട്ടികയിൽ"
+ },
+ "mr-IN": {
+  "h1": "क्लिक तुम्हाला हवे\nतिथेच जातो",
+  "h2": "एका दाबाने\nसाइटला संरक्षण",
+  "h3": "रोखलेले सगळे\nएकाच यादीत"
+ },
+ "ms": {
+  "h1": "Klik anda ke\ntempat yang dituju",
+  "h2": "Sekali tekan,\nlaman dilindungi",
+  "h3": "Semua yang disekat\ndalam satu senarai"
+ },
+ "nl-NL": {
+  "h1": "Je klik gaat waar\njij hem wilt",
+  "h2": "Eén druk en de site\nis beschermd",
+  "h3": "Alles wat is geblokkeerd,\nin één lijst"
+ },
+ "no": {
+  "h1": "Klikket går dit\ndu ville",
+  "h2": "Ett trykk beskytter\nnettstedet",
+  "h3": "Alt som er blokkert,\nsamlet i én liste"
+ },
+ "or-IN": {
+  "h1": "କ୍ଲିକ ଆପଣ ଚାହିଁଥିବା\nସ୍ଥାନକୁ ଯାଏ",
+  "h2": "ଥରେ ଦବାଇଲେ\nସାଇଟ ସୁରକ୍ଷିତ",
+  "h3": "ଅବରୋଧିତ ସବୁ\nଗୋଟିଏ ତାଲିକାରେ"
+ },
+ "pa-IN": {
+  "h1": "ਕਲਿੱਕ ਓਥੇ ਜਾਵੇ\nਜਿੱਥੇ ਤੁਸੀਂ ਚਾਹੋ",
+  "h2": "ਇੱਕ ਦਬਾਅ ਨਾਲ\nਸਾਈਟ ਸੁਰੱਖਿਅਤ",
+  "h3": "ਰੋਕਿਆ ਸਭ ਕੁਝ\nਇੱਕ ਸੂਚੀ ਵਿੱਚ"
+ },
+ "pl": {
+  "h1": "Kliknięcie trafia\ntam, gdzie miało",
+  "h2": "Jedno naciśnięcie\nchroni stronę",
+  "h3": "Wszystko, co zablokowane,\nw jednej liście"
+ },
+ "pt-BR": {
+  "h1": "O clique vai para\nonde deveria",
+  "h2": "Um toque protege\no site",
+  "h3": "Tudo que foi bloqueado\nfica em uma lista"
+ },
+ "pt-PT": {
+  "h1": "O seu clique\nvai onde quer",
+  "h2": "Um toque protege\neste site",
+  "h3": "Os bloqueios\nnuma só lista"
+ },
+ "ro": {
+  "h1": "Clicul ajunge\nunde vrei tu",
+  "h2": "O apăsare\nprotejează site-ul",
+  "h3": "Tot ce s-a blocat\nîntr-o listă"
+ },
+ "ru": {
+  "h1": "Клик попадает\nкуда нужно",
+  "h2": "Одно нажатие\nзащищает сайт",
+  "h3": "Все блокировки\nв одном списке"
+ },
+ "sk": {
+  "h1": "Ťuknutie ide\nkam chcete",
+  "h2": "Jedno ťuknutie\nchráni stránku",
+  "h3": "Všetko blokované\nv jednom zozname"
+ },
+ "sl-SI": {
+  "h1": "Klik gre tja,\nkamor želite",
+  "h2": "En pritisk\nzaščiti stran",
+  "h3": "Vse blokirano\nna enem seznamu"
+ },
+ "sv": {
+  "h1": "Ditt klick går\ndit du ville",
+  "h2": "Ett tryck skyddar\nsidan",
+  "h3": "Allt blockerat\ni en lista"
+ },
+ "ta-IN": {
+  "h1": "உங்கள் கிளிக்\nநினைத்த இடத்துக்கே",
+  "h2": "ஒரு அழுத்தம்\nதளத்தைப் பாதுகாக்கும்",
+  "h3": "தடுத்தவை எல்லாம்\nஒரே பட்டியலில்"
+ },
+ "te-IN": {
+  "h1": "మీ క్లిక్\nమీరు అనుకున్న చోటికే",
+  "h2": "ఒక్క నొక్కుతో\nసైట్‌కు రక్షణ",
+  "h3": "ఆపినవన్నీ\nఒకే జాబితాలో"
+ },
+ "th": {
+  "h1": "คลิกของคุณ\nไปตามที่ตั้งใจ",
+  "h2": "กดครั้งเดียว\nป้องกันเว็บไซต์นี้",
+  "h3": "ทุกอย่างที่ถูกบล็อก\nอยู่ในรายการเดียว"
+ },
+ "tr": {
+  "h1": "Tıklamanız tam\nistediğiniz yere",
+  "h2": "Tek basışla\nsite korunur",
+  "h3": "Engellenen her şey\ntek listede"
+ },
+ "uk": {
+  "h1": "Клік іде туди,\nкуди ви хотіли",
+  "h2": "Одне натискання\nзахищає сайт",
+  "h3": "Усі блокування\nв одному списку"
+ },
+ "ur-PK": {
+  "h1": "آپ کا کلک وہیں جائے\nجہاں آپ چاہیں",
+  "h2": "ایک بار دبائیں\nاور سائٹ محفوظ",
+  "h3": "روکی گئی ہر چیز\nایک ہی فہرست میں"
+ },
+ "vi": {
+  "h1": "Cú nhấp đến đúng\nnơi bạn muốn",
+  "h2": "Nhấn một lần,\ntrang được bảo vệ",
+  "h3": "Mọi mục bị chặn\ntrong một danh sách"
+ },
+ "zh-Hans": {
+  "h1": "点击去向\n由你决定",
+  "h2": "按一下按钮\n就保护这个网站",
+  "h3": "拦截的内容\n都在一张列表里"
+ },
+ "zh-Hant": {
+  "h1": "點按去向\n由你決定",
+  "h2": "按一下按鈕\n就保護這個網站",
+  "h3": "攔截的項目\n都在同一份列表"
+ }
+}

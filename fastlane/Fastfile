@@ -97,14 +97,18 @@ end
 end
 
 # Copy the unframed store screenshots into a deliver layout, one folder per
-# locale. Undirect ships one set of English screenshots for every locale.
+# locale. A locale with its own set (Support/AppStore/<code>/<kind>, rendered by
+# Support/AppStore/render_screenshots.py) uses it; every other locale gets the
+# English set in Support/AppStore/<kind>.
 def screenshot_staging(kinds)
   tmp = Dir.mktmpdir("undirect_screenshots")
   locale_codes.each do |code|
     dest = File.join(tmp, code)
     FileUtils.mkdir_p(dest)
     kinds.each do |kind|
-      Dir.glob(File.join(REPO, "Support/AppStore", kind, "*.png")).sort.each do |png|
+      localized = File.join(REPO, "Support/AppStore", code, kind)
+      source = Dir.exist?(localized) ? localized : File.join(REPO, "Support/AppStore", kind)
+      Dir.glob(File.join(source, "*.png")).sort.each do |png|
         FileUtils.cp(png, File.join(dest, "#{kind}_#{File.basename(png)}"))
       end
     end

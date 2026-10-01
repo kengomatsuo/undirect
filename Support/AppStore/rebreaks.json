@@ -1,0 +1,58 @@
+{
+ "el": {
+  "iphone": {
+   "h2": "Ένα πάτημα\nπροστατεύει\nτον ιστότοπο",
+   "h3": "Όλα τα\nμπλοκαρισμένα\nσε μία λίστα"
+  },
+  "mac": {
+   "h3": "Όλα τα\nμπλοκαρισμένα\nσε μία λίστα"
+  }
+ },
+ "nl-NL": {
+  "iphone": {
+   "h3": "Alles wat\nis geblokkeerd,\nin één lijst"
+  },
+  "mac": {
+   "h3": "Alles wat\nis geblokkeerd,\nin één lijst"
+  }
+ },
+ "pl": {
+  "iphone": {
+   "h3": "Wszystko,\nco zablokowane,\nw jednej liście"
+  },
+  "mac": {
+   "h3": "Wszystko,\nco zablokowane,\nw jednej liście"
+  }
+ },
+ "ta-IN": {
+  "iphone": {
+   "h1": "உங்கள் கிளிக்\nநினைத்த\nஇடத்துக்கே",
+   "h2": "ஒரு அழுத்தம்\nதளத்தைப்\nபாதுகாக்கும்",
+   "h3": "தடுத்தவை\nஎல்லாம்\nஒரே பட்டியலில்"
+  },
+  "mac": {
+   "h1": "உங்கள் கிளிக்\nநினைத்த\nஇடத்துக்கே",
+   "h3": "தடுத்தவை\nஎல்லாம்\nஒரே பட்டியலில்"
+  }
+ },
+ "it": {
+  "mac": {
+   "h3": "Tutto ciò\nche è bloccato\nin un solo elenco"
+  }
+ },
+ "pt-BR": {
+  "mac": {
+   "h3": "Tudo que\nfoi bloqueado\nfica em uma lista"
+  }
+ },
+ "vi": {
+  "mac": {
+   "h3": "Mọi mục bị chặn\ntrong một\ndanh sách"
+  }
+ },
+ "ml-IN": {
+  "mac": {
+   "h1": "ക്ലിക്ക്\nനിങ്ങൾ\nഉദ്ദേശിച്ചിടത്തേക്ക്"
+  }
+ }
+}
