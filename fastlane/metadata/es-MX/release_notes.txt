@@ -1,1 +1,4 @@
-Primera versión.
+La app y la extensión de Safari ahora hablan 31 idiomas más, así que quedan cubiertos todos los idiomas del App Store.
+En la Mac, Detener junto a un sitio protegido ahora lo quita. Antes, Safari podía descartar la solicitud y no pasaba nada. El cambio se aplica la próxima vez que Safari abra una página.
+Un sitio activado desde una ventana privada sigue siendo privado: la app no lo lista y se olvida cuando se cierra la última pestaña privada. La protección ahora funciona por completo en las ventanas privadas.
+El color de la app ahora combina con su ícono rojo.

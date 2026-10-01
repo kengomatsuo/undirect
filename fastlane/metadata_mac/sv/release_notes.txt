@@ -1,1 +1,4 @@
-Första versionen.
+Appen och Safari-tillägget talar nu 31 språk till, så alla språk i App Store täcks.
+På Mac tar knappen Stoppa bredvid en skyddad webbplats nu bort den. Förut kunde Safari släppa begäran och inget hände. Ändringen gäller nästa gång Safari öppnar en sida.
+En webbplats som slås på från ett privat fönster förblir privat: appen listar den inte, och den glöms bort när den sista privata fliken stängs. Skyddet körs nu fullt ut i privata fönster.
+Appens färg matchar nu den röda ikonen.

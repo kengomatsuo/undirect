@@ -1,1 +1,4 @@
-Versi pertama.
+Apl dan sambungan Safari kini tersedia dalam 31 bahasa lagi, jadi semua bahasa App Store diliputi.
+Pada Mac, butang Henti di sebelah tapak yang dilindungi kini membuang tapak itu. Sebelum ini Safari boleh menggugurkan permintaan dan tiada apa-apa berlaku. Perubahan berkuat kuasa apabila Safari membuka halaman seterusnya.
+Tapak yang dihidupkan dari tetingkap peribadi kekal peribadi: apl tidak menyenaraikannya, dan ia dilupakan apabila tab peribadi terakhir ditutup. Perlindungan kini berjalan sepenuhnya dalam tetingkap peribadi.
+Warna apl kini serasi dengan ikon merahnya.

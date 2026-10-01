@@ -1,1 +1,4 @@
-Phiên bản đầu tiên.
+Ứng dụng và tiện ích mở rộng của Safari nay nói thêm 31 ngôn ngữ, nên mọi ngôn ngữ của App Store đều được phủ.
+Trên Mac, nhấp Dừng bên cạnh một trang web đã bảo vệ giờ sẽ gỡ trang web đó. Trước đây Safari có thể bỏ yêu cầu và không có gì xảy ra. Thay đổi có hiệu lực khi Safari mở trang tiếp theo.
+Trang web bật từ cửa sổ riêng tư vẫn riêng tư: ứng dụng không liệt kê nó, và nó bị quên khi tab riêng tư cuối cùng đóng lại. Phần bảo vệ giờ chạy đầy đủ trong cửa sổ riêng tư.
+Màu của ứng dụng giờ hợp với biểu tượng màu đỏ.

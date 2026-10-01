@@ -1,1 +1,4 @@
-Prva različica.
+Aplikacija in razširitev za Safari zdaj govorita še 31 jezikov, zato so zajeti vsi jeziki trgovine App Store.
+Na Macu gumb Ustavi ob zaščitenem spletnem mestu ga zdaj odstrani. Prej je Safari lahko zavrgel zahtevo in se ni zgodilo nič. Sprememba velja od naslednje strani, ki jo odpre Safari.
+Spletno mesto, vklopljeno iz zasebnega okna, ostane zasebno: aplikacija ga ne navaja, in se pozabi, ko se zapre zadnji zasebni zavihek. Zaščita zdaj v zasebnih oknih deluje v celoti.
+Barva aplikacije se zdaj ujema z rdečo ikono.

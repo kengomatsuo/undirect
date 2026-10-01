@@ -1,1 +1,4 @@
-Első verzió.
+Az alkalmazás és a Safari-bővítmény mostantól további 31 nyelven érhető el, így az App Store minden nyelvét lefedi.
+Macen a védett oldal melletti Leállítás gomb mostantól eltávolítja az oldalt. Korábban a Safari eldobhatta a kérést, és nem történt semmi. A változás attól az oldaltól él, amelyet a Safari legközelebb megnyit.
+A privát ablakból bekapcsolt oldal privát marad: az alkalmazás nem sorolja fel, és az utolsó privát lap bezárásakor elfelejtődik. A védelem mostantól teljes egészében működik a privát ablakokban.
+Az alkalmazás színe mostantól illeszkedik a piros ikonjához.

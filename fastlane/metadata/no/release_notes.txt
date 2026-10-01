@@ -1,1 +1,4 @@
-Første versjon.
+Appen og Safari-utvidelsen støtter nå 31 språk til, så alle språk i App Store er dekket.
+På Mac fjerner knappen Stopp ved siden av et beskyttet nettsted nå nettstedet. Før kunne Safari droppe forespørselen, og ingenting skjedde. Endringen gjelder neste gang Safari åpner en side.
+Et nettsted som slås på fra et privat vindu, forblir privat: appen viser det ikke, og det glemmes når den siste private fanen lukkes. Beskyttelsen virker nå fullt ut i private vinduer.
+Appens farge passer nå til det røde ikonet.

@@ -1,1 +1,4 @@
-Prima versiune.
+Aplicația și extensia Safari vorbesc acum încă 31 de limbi, așa că sunt acoperite toate limbile din App Store.
+Pe Mac, butonul Oprește de lângă un site protejat îl elimină acum. Înainte, Safari putea renunța la cerere și nu se întâmpla nimic. Schimbarea se aplică de la următoarea pagină pe care o deschide Safari.
+Un site activat dintr-o fereastră privată rămâne privat: aplicația nu îl listează, iar el este uitat când se închide ultima filă privată. Protecția rulează acum complet în ferestrele private.
+Culoarea aplicației se potrivește acum cu pictograma roșie.

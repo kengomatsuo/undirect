@@ -1,1 +1,4 @@
-Primera versió.
+L'app i l'extensió de Safari ara parlen 31 idiomes més, així que tots els idiomes de l'App Store queden coberts.
+Al Mac, Atura al costat d'un lloc protegit ara el treu. Abans Safari podia descartar la petició i no passava res. El canvi s'aplica la propera vegada que Safari obri una pàgina.
+Un lloc activat des d'una finestra privada continua sent privat: l'app no el llista, i s'oblida quan es tanca l'última pestanya privada. La protecció ara funciona del tot en finestres privades.
+El color de l'app ara combina amb la seva icona vermella.

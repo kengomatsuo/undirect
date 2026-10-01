@@ -1,1 +1,4 @@
-Prima versione.
+L'app e l'estensione di Safari sono ora disponibili in altre 31 lingue, quindi sono coperte tutte le lingue dell'App Store.
+Su Mac, il pulsante Interrompi accanto a un sito protetto ora lo rimuove. Prima Safari poteva scartare la richiesta e non succedeva nulla. La modifica ha effetto dalla prossima pagina aperta da Safari.
+Un sito attivato da una finestra privata resta privato: l'app non lo elenca e viene dimenticato quando si chiude l'ultima scheda privata. La protezione ora funziona per intero nelle finestre private.
+Il colore dell'app ora si abbina all'icona rossa.

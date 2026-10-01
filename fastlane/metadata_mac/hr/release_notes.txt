@@ -1,1 +1,4 @@
-Prva verzija.
+Aplikacija i proširenje za Safari sada govore još 31 jezik, pa su pokriveni svi jezici App Storea.
+Na Macu gumb Zaustavi uz zaštićeno mjesto sada to mjesto uklanja. Prije je Safari mogao odbaciti zahtjev i ništa se nije događalo. Promjena vrijedi od sljedeće stranice koju Safari otvori.
+Mjesto uključeno iz privatnog prozora ostaje privatno: aplikacija ga ne navodi, a zaboravlja se kad se zatvori posljednja privatna kartica. Zaštita sada u privatnim prozorima radi u potpunosti.
+Boja aplikacije sada odgovara crvenoj ikoni.
