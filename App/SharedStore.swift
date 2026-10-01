@@ -85,6 +85,49 @@ enum SharedStore {
         }
     }
 
+    // Changes the Mac app made, waiting for the extension's background page.
+    // Safari does not wake that page for an app message, so each change also
+    // waits here until the page next talks to the native handler.
+    static var queueURL: URL? {
+        FileManager.default
+            .containerURL(forSecurityApplicationGroupIdentifier: appGroup)?
+            .appendingPathComponent("from-app.json")
+    }
+
+    // Applying a change twice is harmless, so a race here only repeats one.
+    @discardableResult
+    static func enqueue(_ change: [String: Any]) -> Bool {
+        guard let url = queueURL else { return false }
+        var changes = queued(at: url)
+        changes.append(change)
+        do {
+            let data = try JSONSerialization.data(withJSONObject: Array(changes.suffix(100)))
+            try data.write(to: url, options: .atomic)
+            return true
+        } catch {
+            log.error("change not queued: \(error, privacy: .public)")
+            return false
+        }
+    }
+
+    // Moved aside before reading, so a change queued meanwhile starts a new file.
+    static func takeQueued() -> [[String: Any]] {
+        guard let url = queueURL else { return [] }
+        let taken = url.deletingLastPathComponent()
+            .appendingPathComponent("from-app-\(UUID().uuidString).json")
+        guard (try? FileManager.default.moveItem(at: url, to: taken)) != nil else { return [] }
+        defer { try? FileManager.default.removeItem(at: taken) }
+        return queued(at: taken)
+    }
+
+    private static func queued(at url: URL) -> [[String: Any]] {
+        guard
+            let data = try? Data(contentsOf: url),
+            let changes = try? JSONSerialization.jsonObject(with: data) as? [[String: Any]]
+        else { return [] }
+        return changes
+    }
+
     // When the extension last wrote. The app watches this: a snapshot that
     // arrives after launch is the normal case, since the extension only has
     // something to say once a page has tried something.

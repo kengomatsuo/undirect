@@ -24,7 +24,8 @@ const ok = (name, pass, detail) => {
 // It defaults to watching site.com, which is what every check below judges
 // against, so the guard being off by default costs no existing check a line.
 function world({ slowStorage = false, matchedRules = null,
-                 watched = { "site.com": true }, settings = {}, stored = {} } = {}) {
+                 watched = { "site.com": true }, settings = {}, stored = {},
+                 privateTabs = [], fromApp = [] } = {}) {
   const local = {
     settings: { enabled: true, policy: "block", mode: "watched", ...settings },
     watched,
@@ -38,13 +39,22 @@ function world({ slowStorage = false, matchedRules = null,
       })
     : Promise.resolve();
 
-  const calls = { goBack: [], removed: [], rules: [], badge: [], reloaded: [] };
+  const calls = { goBack: [], removed: [], rules: [], badge: [], reloaded: [], native: [] };
+  // Tabs that exist, by id; the private ones carry Safari's incognito flag.
+  const tabs = new Map([7, 8, 9, ...privateTabs].map((id) => [id, { id, url: "https://www.site.com/", incognito: privateTabs.includes(id) }]));
+  // The Mac app's queue, handed over once, the way the native handler does.
+  let queued = [...fromApp];
   const listeners = { message: [], before: [], committed: [], created: [], updated: [], gone: [] };
 
   const api = {
     runtime: {
       onMessage: { addListener: (fn) => listeners.message.push(fn) },
-      sendNativeMessage: () => Promise.resolve(),
+      sendNativeMessage: async (_, msg) => {
+        calls.native.push(msg);
+        const changes = queued;
+        queued = [];
+        return { stored: true, changes };
+      },
       connectNative: () => ({
         onMessage: { addListener() {} },
         onDisconnect: { addListener() {} },
@@ -89,6 +99,8 @@ function world({ slowStorage = false, matchedRules = null,
       remove: async (id) => calls.removed.push(id),
       update: async () => {},
       reload: async (id) => calls.reloaded.push(id),
+      get: async (id) => tabs.get(id),
+      query: async () => [...tabs.values()],
       onRemoved: { addListener: (fn) => listeners.gone.push(fn) },
       onCreated: { addListener: (fn) => listeners.created.push(fn) },
       onUpdated: { addListener: (fn) => listeners.updated.push(fn) },
@@ -124,11 +136,16 @@ function world({ slowStorage = false, matchedRules = null,
   load(scope, api);
 
   const send = (msg, tabId) =>
-    listeners.message.map((fn) => fn(msg, tabId === undefined ? {} : { tab: { id: tabId } }));
+    listeners.message.map((fn) => fn(msg, tabId === undefined ? {} : { tab: tabs.get(tabId) ?? { id: tabId } }));
   const emit = (which, ...args) => listeners[which].forEach((fn) => fn(...args));
   const settle = () => new Promise((resolve) => setTimeout(resolve, 5));
 
-  return { api, calls, local, send, emit, settle, releaseStorage };
+  const close = (id) => {
+    tabs.delete(id);
+    listeners.gone.forEach((fn) => fn(id));
+  };
+
+  return { api, calls, local, session, send, emit, settle, close, releaseStorage };
 }
 
 const main = (tabId, url) => ({ frameId: 0, tabId, url });
@@ -447,6 +464,50 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   await w.settle();
   ok("turning watch off deletes the key", !("site.com" in (w.local.watched ?? {})),
      JSON.stringify(w.local.watched));
+}
+
+{
+  // A site switched on from a private window is guarded there, and the
+  // app's snapshot never names it (the owner's report, 2026-10-01).
+  const w = world({ watched: {}, privateTabs: [9] });
+  await w.settle();
+  await Promise.all(w.send({ type: "undirect:watch", site: "secret.com", on: true, tabId: 9 }));
+  await w.settle();
+  const pushed = w.calls.native.filter((m) => m.snapshot).at(-1)?.snapshot;
+  ok("a private-window guard stays out of the snapshot", pushed && !("secret.com" in pushed.watched),
+     JSON.stringify(pushed?.watched));
+  ok("and out of local storage", !("secret.com" in (w.local.watched ?? {})), JSON.stringify(w.local.watched));
+  const inPrivate = await w.send({ type: "undirect:popup", tabId: 9, url: "https://secret.com/" }).find(Boolean);
+  ok("the private tab is guarded", inPrivate.guarding === true, String(inPrivate.guarding));
+  const ordinary = await w.send({ type: "undirect:popup", tabId: 7, url: "https://secret.com/" }).find(Boolean);
+  ok("an ordinary tab on the same site is not", ordinary.guarding === false, String(ordinary.guarding));
+
+  await Promise.all(w.send({ type: "undirect:rule", base: "ad.example", verdict: "allow",
+                             scope: "here", site: "secret.com", tabId: 9 }));
+  await w.settle();
+  const after = w.calls.native.filter((m) => m.snapshot).at(-1)?.snapshot;
+  ok("a private-window rule for the site stays out of the snapshot", !("secret.com" in after.perSite),
+     JSON.stringify(after.perSite));
+
+  w.close(9);
+  await w.settle();
+  ok("the last private tab closing forgets the site",
+     !("secret.com" in (w.session.privateWatched ?? {})), JSON.stringify(w.session.privateWatched));
+}
+
+{
+  // Safari does not wake the background page for the app's message, so a
+  // Stop pressed in the app waits in the queue. Collected on waking, it has
+  // to land before the site's first page asks whether it is guarded.
+  const w = world({ watched: { "site.com": true },
+                    fromApp: [{ action: "watch", site: "site.com", on: false }] });
+  const control = world({ watched: { "site.com": true } });
+  const before = await control.send({ type: "undirect:active" }, 7).find(Boolean);
+  ok("with nothing queued the site is guarded", before?.active === true, JSON.stringify(before));
+  const answer = await w.send({ type: "undirect:active" }, 7).find(Boolean);
+  ok("a queued Stop is applied before the first page is judged", answer?.active === false,
+     JSON.stringify(answer));
+  ok("and the site leaves storage", !("site.com" in (w.local.watched ?? {})), JSON.stringify(w.local.watched));
 }
 
 {

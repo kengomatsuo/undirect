@@ -4,7 +4,8 @@ import os.log
 private let log = Logger(subsystem: "com.matsuokengo.undirect", category: "extension")
 
 // The extension's JavaScript sends its state here, and this writes it into the
-// group container so the app can show it. Nothing else crosses.
+// group container so the app can show it. The reply carries back whatever the
+// Mac app queued, since the app's own message cannot wake the background page.
 final class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
     func beginRequest(with context: NSExtensionContext) {
         let item = context.inputItems.first as? NSExtensionItem
@@ -16,7 +17,7 @@ final class SafariWebExtensionHandler: NSObject, NSExtensionRequestHandling {
         }
 
         let response = NSExtensionItem()
-        response.userInfo = [SFExtensionMessageKey: ["stored": ok]]
+        response.userInfo = [SFExtensionMessageKey: ["stored": ok, "changes": SharedStore.takeQueued()]]
         context.completeRequest(returningItems: [response], completionHandler: nil)
     }
 

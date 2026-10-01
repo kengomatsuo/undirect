@@ -16,8 +16,22 @@ struct Rule: Identifiable, Sendable, Equatable {
 @MainActor
 @Observable
 final class RulesModel {
-    private(set) var snapshot: Snapshot?
     private(set) var reachedApp = false
+
+    // What the extension last wrote, with the app's own changes laid over it
+    // until the extension writes something newer. Safari leaves the
+    // background page asleep when the app sends to it, so a change can wait
+    // in the queue until Safari next opens a page.
+    var snapshot: Snapshot? {
+        guard var shown = stored else { return nil }
+        for change in pending where change.at > shown.writtenAt {
+            Self.apply(change.payload, to: &shown)
+        }
+        return shown
+    }
+
+    private var stored: Snapshot?
+    private var pending: [(payload: [String: Any], at: Double)] = []
 
     var everywhere: [Rule] {
         (snapshot?.everywhere ?? [:])
@@ -45,9 +59,13 @@ final class RulesModel {
     private var lastSeenWrite: Date?
 
     func reload() {
-        snapshot = sampleIfAsked() ?? SharedStore.read()
-        reachedApp = snapshot != nil
+        stored = sampleIfAsked() ?? SharedStore.read()
+        reachedApp = stored != nil
         lastSeenWrite = SharedStore.writtenAt()
+        // A snapshot written after a change already answers for it.
+        if let written = stored?.writtenAt {
+            pending.removeAll { $0.at <= written }
+        }
     }
 
     // The extension writes the snapshot when a page tries something, which is
@@ -131,8 +149,39 @@ final class RulesModel {
         send(["action": "watch", "site": site, "on": false])
     }
 
+    // The extension's own reading of each change, mirrored so the window
+    // shows it before the extension has collected it.
+    private static func apply(_ payload: [String: Any], to shown: inout Snapshot) {
+        switch payload["action"] as? String {
+        case "watch":
+            guard let site = payload["site"] as? String else { return }
+            if payload["on"] as? Bool == true { shown.watched[site] = true }
+            else { shown.watched.removeValue(forKey: site) }
+        case "rule":
+            guard let base = payload["base"] as? String else { return }
+            let verdict = (payload["verdict"] as? String).flatMap { $0.isEmpty ? nil : $0 }
+            if payload["scope"] as? String == "everywhere" {
+                shown.everywhere[base] = verdict
+            } else if let site = payload["site"] as? String {
+                var forSite = shown.perSite[site] ?? [:]
+                forSite[base] = verdict
+                shown.perSite[site] = forSite.isEmpty ? nil : forSite
+            }
+        case "settings":
+            let settings = payload["settings"] as? [String: Any] ?? [:]
+            if let policy = settings["policy"] as? String { shown.policy = policy }
+            if let mode = settings["mode"] as? String { shown.mode = mode }
+            if let banner = settings["banner"] as? Bool { shown.banner = banner }
+            if let enabled = settings["enabled"] as? Bool { shown.enabled = enabled }
+        default:
+            break
+        }
+    }
+
     private func send(_ payload: [String: Any]) {
         #if os(macOS)
+        pending.append((payload, Date().timeIntervalSince1970 * 1000))
+        SharedStore.enqueue(payload)
         // Safari accepting the dispatch says nothing about whether the
         // background page - unloaded whenever idle - has read it yet. A single
         // reload after a fixed wait showed stale state whenever that round trip
@@ -167,7 +216,8 @@ final class RulesModel {
                 return
             }
         }
-        log.error("no snapshot arrived after a rule change; the extension may not have received it")
+        // The background page is asleep; the change waits in the queue and
+        // stays shown until the extension writes again.
         reload()
     }
 }

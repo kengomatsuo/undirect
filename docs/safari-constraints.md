@@ -58,6 +58,37 @@ extension settings.
 platform: macOS has `getStateOfSafariExtension`, iOS has `getStateOfExtension`,
 and iOS only got the class in 26.2. `App/ExtensionStatus.swift` splits on that.
 
+## The app's message does not wake the background page (2026-10-01)
+
+The owner reported that Stop beside a guarded site in the Mac app did nothing.
+`SFSafariApplication.dispatchMessage` starts the native handler and reports
+success, but an unloaded background page never receives the message: its
+`connectNative` port went with it. Apple's own sample never says otherwise,
+and developers report the same on the forums
+([thread 790310](https://developer.apple.com/forums/thread/790310)). The
+manifest sets `"persistent": false` on both platforms, so the page is usually
+asleep when the app window is open.
+
+So every change from the app is also written to `from-app.json` in the group
+container (`SharedStore.enqueue`). The native handler moves that file aside and
+returns its changes in the reply to whatever the background page sends next.
+On waking, the page asks first (`collectFromApp`), and `readState()` waits for
+that, so a site stopped from the app is off before its next page is judged.
+Applying a change twice does no harm, which covers one arriving both live and
+from the queue. The app shows each change at once and keeps showing it until
+the extension writes a snapshot newer than it (`RulesModel.pending`).
+
+## Private windows share the extension (2026-10-01)
+
+Safari runs one copy of the extension across private and ordinary windows
+(MDN compatibility data: "When allowed, operates in spanning mode"), so a site
+switched on in a private window landed in `watched` and the app listed it.
+`tab.incognito` tells the two apart. A site switched on, or a one-site rule
+set, from a private tab goes to `privateWatched` or `privatePerSite` in
+`storage.session`. The snapshot never carries either, they apply only in
+private tabs, and they are cleared when the last private tab closes. Off clears
+both lists, wherever it was pressed.
+
 ## The background page is not persistent on iOS
 
 App Store Connect rejected the first iOS upload on 2026-09-10: when the manifest

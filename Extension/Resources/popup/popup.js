@@ -95,13 +95,13 @@ function verdictMenu(row, policy) {
     const site = current.site;
     // The narrower rule wins, so it goes whenever the choice is wider.
     if ((choice === "default" || scope === "everywhere") && row.here) {
-      await send({ type: "undirect:rule", base: row.base, verdict: null, scope: "here", site });
+      await send({ type: "undirect:rule", base: row.base, verdict: null, scope: "here", site, tabId });
     }
     if (choice === "default" && row.everywhere) {
-      await send({ type: "undirect:rule", base: row.base, verdict: null, scope: "everywhere", site });
+      await send({ type: "undirect:rule", base: row.base, verdict: null, scope: "everywhere", site, tabId });
     }
     if (choice !== "default") {
-      await send({ type: "undirect:rule", base: row.base, verdict: choice, scope, site });
+      await send({ type: "undirect:rule", base: row.base, verdict: choice, scope, site, tabId });
     }
     load();
   });
@@ -142,7 +142,7 @@ function ruleRow(base, verdict, scope, site) {
 
   const options = [["block", t("action_block")], ["allow", t("action_allow")], ["", t("action_clear")]];
   const control = menu(verdict, options, verdict, base, async (value) => {
-    await send({ type: "undirect:rule", base, verdict: value || null, scope, site });
+    await send({ type: "undirect:rule", base, verdict: value || null, scope, site, tabId });
     load();
   });
   li.append(text, control);

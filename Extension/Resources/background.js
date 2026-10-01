@@ -87,10 +87,22 @@ const restored = (async () => {
 // instead and the next read refreshes it.
 let cached = null;
 
+// Changes the app left in the group container while this page was unloaded.
+// Everything that reads the rules waits for them, so a site stopped from the
+// app is already stopped when it next loads. See applyFromApp().
+let fromAppApplied = Promise.resolve();
+
 async function readState() {
+  await fromAppApplied;
+  return loadState();
+}
+
+// readState() without the wait, for the writers that apply the app's changes.
+async function loadState() {
   const stored = await api.storage.local.get([
     "settings", "everywhere", "perSite", "watched", "learned", "ruleIds", "nextRuleId", "lifetime",
   ]);
+  const session = await sessionGet(["privateWatched", "privatePerSite"]);
   cached = {
     settings: { ...DEFAULT_SETTINGS, ...(stored.settings ?? {}) },
     everywhere: stored.everywhere ?? {},   // base -> "allow" | "block"
@@ -100,16 +112,62 @@ async function readState() {
     ruleIds: stored.ruleIds ?? {},         // base -> dynamic rule id
     nextRuleId: stored.nextRuleId ?? FIRST_DYNAMIC_RULE_ID,
     lifetime: stored.lifetime ?? 0,
+    // The same two, set from a private window. Kept in storage.session so
+    // they never reach the app's snapshot or outlive the browser session.
+    privateWatched: session.privateWatched ?? {},
+    privatePerSite: session.privatePerSite ?? {},
   };
   return cached;
 }
 
+async function sessionGet(keys) {
+  try {
+    return (await api.storage.session?.get(keys)) ?? {};
+  } catch (e) {
+    return {};
+  }
+}
+
+// ------------------------------------------------------- private windows
+
+// Safari runs one copy of this page for private and ordinary windows alike,
+// so a private tab has to be told apart by its own `incognito` flag. Kept as
+// a set because a navigation is judged before any promise could settle.
+const privateTabs = new Set();
+
+function noteTab(tab) {
+  if (tab?.id === undefined) return;
+  if (tab.incognito) privateTabs.add(tab.id);
+  else privateTabs.delete(tab.id);
+}
+
+async function isPrivate(tabId) {
+  if (tabId === undefined) return false;
+  if (privateTabs.has(tabId)) return true;
+  try {
+    const tab = await api.tabs.get(tabId);
+    noteTab(tab);
+    return tab?.incognito === true;
+  } catch (e) {
+    return false;
+  }
+}
+
+(async () => {
+  try {
+    for (const tab of await api.tabs.query({})) noteTab(tab);
+  } catch (e) {
+    // no tabs to read
+  }
+})();
+
 // The rules as they apply on one site, in the shape lib/site.js expects.
-function tableFor(state, site) {
+function tableFor(state, site, tabId) {
+  const here = state.perSite[site] ?? {};
   return {
     policy: state.settings.policy ?? "block",
     everywhere: state.everywhere,
-    here: state.perSite[site] ?? {},
+    here: privateTabs.has(tabId) ? { ...here, ...(state.privatePerSite[site] ?? {}) } : here,
   };
 }
 
@@ -119,10 +177,12 @@ function tableFor(state, site) {
 // Gated here, before judge() is ever called - not inside tableFor(), since an
 // emptied table reads as "allowed by default" and fills the popup with rows
 // instead of going quiet.
-function guarding(state, site) {
+function guarding(state, site, tabId) {
   if (!state || state.settings.enabled === false) return false;
   if (state.settings.mode === "everywhere") return true;
-  return !!site && state.watched?.[site] === true;
+  if (!site) return false;
+  if (state.watched?.[site] === true) return true;
+  return privateTabs.has(tabId) && state.privateWatched?.[site] === true;
 }
 
 function blockRule(id, base) {
@@ -143,7 +203,7 @@ function blockRule(id, base) {
 // The network layer can only express "block this everywhere", so that is the
 // only verdict it carries. A block for one site is held in JavaScript.
 async function syncRule(base, verdict) {
-  const state = await readState();
+  const state = await loadState();
   const existing = state.ruleIds[base];
 
   if (verdict === "block" && existing === undefined) {
@@ -211,7 +271,7 @@ async function paintBadge(tabId) {
     const state = cached ?? (await readState());
     let site = perTab.get(tabId)?.site || "";
     if (!site) site = Nav.destination((await api.tabs.get(tabId))?.url ?? "");
-    const on = guarding(state, site);
+    const on = guarding(state, site, tabId);
     const count = on ? perTab.get(tabId)?.blocked ?? 0 : 0;
     await Promise.all([
       api.action.setBadgeText({ tabId, text: count ? String(count) : "" }),
@@ -245,7 +305,7 @@ api.action?.onClicked?.addListener?.(async (tab) => {
   if (!site) return;
   const state = await readState();
   // Already on, and only the paint was missed: show the popup instead.
-  if (guarding(state, site)) {
+  if (guarding(state, site, tab.id)) {
     await paintBadge(tab.id);
     return api.action.openPopup?.().catch(() => {});
   }
@@ -263,7 +323,7 @@ async function note(tabId, msg) {
   // A stop at the network layer happens whether or not the site is watched,
   // and it is the only diagnostic for a domain gone silently dead, so it is
   // exempt (msg.always). Everything else trusts nobody but a watched site.
-  if (!msg.always && !guarding(state, msg.site || perTab.get(tabId)?.site || "")) return;
+  if (!msg.always && !guarding(state, msg.site || perTab.get(tabId)?.site || "", tabId)) return;
 
   const entry = tabEntry(tabId);
 
@@ -304,7 +364,7 @@ async function note(tabId, msg) {
   // A destination the guard had to stop, and no rule yet: block it everywhere
   // so the retry dies at the request. Recorded in `learned` too, separately
   // from a block the user set by hand, so a future cleanup can tell them apart.
-  if (msg.blocked && msg.learn && !msg.local && !state.everywhere[base] && !state.perSite[msg.site]?.[base]) {
+  if (msg.blocked && msg.learn && !msg.local && !state.everywhere[base] && !tableFor(state, msg.site, tabId).here[base]) {
     await api.storage.local.set({
       everywhere: { ...state.everywhere, [base]: "block" },
       learned: { ...state.learned, [base]: true },
@@ -315,6 +375,7 @@ async function note(tabId, msg) {
 
 api.runtime.onMessage.addListener((msg, sender) => {
   const tabId = sender?.tab?.id;
+  if (sender?.tab) noteTab(sender.tab);
 
   if (msg?.type === "undirect:hello") {
     hello(tabId, msg.site ?? "");
@@ -345,6 +406,7 @@ api.runtime.onMessage.addListener((msg, sender) => {
     // page, and the blank entry it created then shut the real one out.
     return restored
       .then(() => noteNetworkBlocks(msg.tabId))
+      .then(() => isPrivate(msg.tabId))
       .then(readState)
       .then((state) => {
       const entry = perTab.get(msg.tabId) ?? tabEntry(msg.tabId);
@@ -359,11 +421,11 @@ api.runtime.onMessage.addListener((msg, sender) => {
         // to ask, which is "what has THIS page done."
         counts: { page: entry.blocked, seen: entry.seen },
         site,
-        guarding: guarding(state, site),
+        guarding: guarding(state, site, msg.tabId),
         recipe: entry.recipe,
         rows: [...entry.rows.values()].map((row) => ({
           ...row,
-          here: state.perSite[entry.site]?.[row.base] ?? null,
+          here: tableFor(state, entry.site, msg.tabId).here[row.base] ?? null,
           everywhere: state.everywhere[row.base] ?? null,
         })),
         everywhere: state.everywhere,
@@ -390,7 +452,7 @@ api.runtime.onMessage.addListener((msg, sender) => {
   // regardless of which frame sent the message.
   if (msg?.type === "undirect:active") {
     return readState().then((state) => ({
-      active: guarding(state, Nav.destination(sender?.tab?.url ?? "")),
+      active: guarding(state, Nav.destination(sender?.tab?.url ?? ""), sender?.tab?.id),
     }));
   }
 
@@ -527,12 +589,12 @@ function announced(details) {
   }
 
   const tab = tabView(details.tabId);
-  if (!guarding(state, tab.site)) return;
+  if (!guarding(state, tab.site, details.tabId)) return;
   const ruling = Nav.judge({
     now: Date.now(),
     tab,
     url: details.url,
-    table: tableFor(state, tab.site),
+    table: tableFor(state, tab.site, details.tabId),
   });
   pendings.set(details.tabId, {
     base: ruling.base,
@@ -560,12 +622,12 @@ async function arrived(details) {
   if (!pending && late) {
     const state = cached ?? (await readState());
     const tab = tabView(details.tabId);
-    if (guarding(state, tab.site)) {
+    if (guarding(state, tab.site, details.tabId)) {
       const ruling = Nav.judge({
         now: late.at,
         tab,
         url: late.url,
-        table: tableFor(state, tab.site),
+        table: tableFor(state, tab.site, details.tabId),
       });
       pending = {
         base: ruling.base,
@@ -688,12 +750,12 @@ async function judgeOpened(tabId, url) {
 
   const opener = tabView(watch.opener);
   const state = cached ?? (await readState());
-  if (!guarding(state, opener.site)) return;
+  if (!guarding(state, opener.site, watch.opener)) return;
   const ruling = Nav.judgeOpened({
     now: watch.at, // the press that opened it, not the address arriving late
     opener: opener.site ? opener : null,
     url,
-    table: tableFor(state, opener.site),
+    table: tableFor(state, opener.site, watch.opener),
   });
 
   if (ruling.ruling !== "steal") {
@@ -734,9 +796,13 @@ async function judgeOpened(tabId, url) {
 
 api.webNavigation?.onBeforeNavigate?.addListener?.(announced);
 api.webNavigation?.onCommitted?.addListener?.(arrived);
-api.tabs?.onCreated?.addListener?.(opened);
+api.tabs?.onCreated?.addListener?.((tab) => {
+  noteTab(tab);
+  opened(tab);
+});
 api.tabs?.onActivated?.addListener?.(({ tabId }) => paintBadge(tabId));
-api.tabs?.onUpdated?.addListener?.((tabId, changeInfo) => {
+api.tabs?.onUpdated?.addListener?.((tabId, changeInfo, tab) => {
+  noteTab(tab);
   if (changeInfo?.url) judgeOpened(tabId, changeInfo.url);
   if (changeInfo?.url || changeInfo?.status) paintBadge(tabId);
   // Once the page has settled, whatever the network layer refused is countable.
@@ -745,9 +811,11 @@ api.tabs?.onUpdated?.addListener?.((tabId, changeInfo) => {
 
 // ------------------------------------------------------------------ writes
 
-// { base, verdict: "allow" | "block" | null, scope: "here" | "everywhere", site }
+// { base, verdict: "allow" | "block" | null, scope: "here" | "everywhere", site, tabId }
+// A rule for one site set from a private window stays in storage.session,
+// so the app never learns the site was visited.
 async function applyRule(change) {
-  const state = await readState();
+  const state = await loadState();
 
   if (change.scope === "everywhere") {
     const everywhere = { ...state.everywhere };
@@ -756,12 +824,15 @@ async function applyRule(change) {
     await api.storage.local.set({ everywhere });
     await syncRule(change.base, change.verdict);
   } else {
-    const forSite = { ...(state.perSite[change.site] ?? {}) };
+    const key = (await isPrivate(change.tabId)) ? "privatePerSite" : "perSite";
+    const table = state[key];
+    const forSite = { ...(table[change.site] ?? {}) };
     if (change.verdict) forSite[change.base] = change.verdict;
     else delete forSite[change.base];
-    const perSite = { ...state.perSite, [change.site]: forSite };
-    if (!Object.keys(forSite).length) delete perSite[change.site];
-    await api.storage.local.set({ perSite });
+    const next = { ...table, [change.site]: forSite };
+    if (!Object.keys(forSite).length) delete next[change.site];
+    if (key === "perSite") await api.storage.local.set({ perSite: next });
+    else await api.storage.session.set({ privatePerSite: next });
     // A rule for one site cannot live in the network layer, so a block set
     // everywhere has to step aside and let the page decide in JavaScript.
     if (change.verdict === "allow" && state.everywhere[change.base] === "block") {
@@ -769,14 +840,15 @@ async function applyRule(change) {
     }
   }
 
+  await loadState();
   pushSnapshot(true);
 }
 
 async function applySettings(patch) {
-  const state = await readState();
+  const state = await loadState();
   const settings = { ...state.settings, ...patch };
   await api.storage.local.set({ settings });
-  await readState(); // refresh `cached` before the next navigation is judged
+  await loadState(); // refresh `cached` before the next navigation is judged
   pushSnapshot(true);
   paintAllTabs();
   return settings;
@@ -785,16 +857,30 @@ async function applySettings(patch) {
 // { site, on, tabId }. The site is normalised to a base domain, the same key
 // perSite uses. Off deletes the key rather than storing false, so a watched
 // list is exactly its own keys.
+//
+// On from a private window goes to privateWatched, which the snapshot never
+// carries. Off clears both lists: the site is off wherever it was pressed.
 async function applyWatch(change) {
-  const state = await readState();
+  const state = await loadState();
   const site = Site.baseDomain(change.site || "");
   if (!site) return state;
 
+  const priv = await isPrivate(change.tabId);
   const watched = { ...state.watched };
-  if (change.on) watched[site] = true;
-  else delete watched[site];
+  const privateWatched = { ...state.privateWatched };
+  if (change.on && priv) privateWatched[site] = true;
+  else if (change.on) watched[site] = true;
+  else {
+    delete watched[site];
+    delete privateWatched[site];
+  }
   await api.storage.local.set({ watched });
-  const fresh = await readState(); // refresh `cached` before the reload lands
+  try {
+    await api.storage.session?.set({ privateWatched });
+  } catch (e) {
+    // no session storage, so nothing private was ever kept
+  }
+  const fresh = await loadState(); // refresh `cached` before the reload lands
   pushSnapshot(true);
   paintAllTabs();
 
@@ -809,6 +895,20 @@ async function applyWatch(change) {
     }
   }
   return fresh;
+}
+
+// What the private window set is forgotten with its last tab, the way
+// Safari forgets the rest of a private session.
+async function forgetPrivateIfLast() {
+  try {
+    const tabs = await api.tabs.query({});
+    tabs.forEach(noteTab);
+    if (tabs.some((tab) => tab.incognito)) return;
+    await api.storage.session?.set({ privateWatched: {}, privatePerSite: {} });
+    await loadState();
+  } catch (e) {
+    // no tab list, so nothing to compare against
+  }
 }
 
 // ------------------------------------------------------------------ the app
@@ -831,7 +931,7 @@ async function pushSnapshot(now = false) {
 
   pushedAt = Date.now();
   await restored; // the session count comes back from storage.session
-  const state = await readState();
+  const state = await loadState();
   const snapshot = {
     policy: state.settings.policy ?? "block",
     enabled: state.settings.enabled !== false,
@@ -844,9 +944,45 @@ async function pushSnapshot(now = false) {
     writtenAt: Date.now(),
   };
   try {
-    await api.runtime.sendNativeMessage("com.matsuokengo.undirect", { snapshot });
+    const reply = await api.runtime.sendNativeMessage("com.matsuokengo.undirect", { snapshot });
+    if (reply?.changes?.length) fromAppApplied = applyFromApp(reply.changes);
   } catch (e) {
     // no container app listening, which is fine
+  }
+}
+
+// One change from the app, in the shape the Mac app sends it.
+function applyAppChange(msg) {
+  if (msg?.action === "rule") return applyRule(msg);
+  if (msg?.action === "settings") return applySettings(msg.settings ?? {});
+  if (msg?.action === "watch") return applyWatch(msg); // no tabId: lands next load
+  if (msg?.action === "sync") return pushSnapshot(true);
+  return Promise.resolve();
+}
+
+// Safari does not wake this page for a message from the app: the app is told
+// it was delivered and the page, unloaded, never hears it. So the app also
+// leaves each change in the group container, and the native handler hands
+// them over in its reply to the next message from here. A change that also
+// arrived live is applied twice, which every one of them survives.
+async function applyFromApp(changes) {
+  for (const change of changes) {
+    try {
+      await applyAppChange(change);
+    } catch (e) {
+      // one bad change must not hold back the rest
+    }
+  }
+}
+
+// Asked once on waking, before any rule is read, so a site stopped from the
+// app while this page was unloaded is already off when it next loads.
+async function collectFromApp() {
+  try {
+    const reply = await api.runtime.sendNativeMessage("com.matsuokengo.undirect", { collect: true });
+    if (reply?.changes?.length) await applyFromApp(reply.changes);
+  } catch (e) {
+    // no container app listening
   }
 }
 
@@ -863,15 +999,13 @@ function listenToApp() {
     // Safari's shape for this is not documented, so take the payload from
     // either the message itself or a userInfo wrapper around it.
     const msg = raw?.action ? raw : raw?.userInfo ?? raw;
-    if (msg?.action === "rule") applyRule(msg);
-    else if (msg?.action === "settings") applySettings(msg.settings ?? {});
-    else if (msg?.action === "watch") applyWatch(msg); // no tabId from the app: lands next load
-    else if (msg?.action === "sync") pushSnapshot(true);
+    applyAppChange(msg);
   });
   port.onDisconnect?.addListener?.(() => setTimeout(listenToApp, 5000));
 }
 
 listenToApp();
+fromAppApplied = collectFromApp();
 pushSnapshot(true);
 paintAllTabs();
 
@@ -882,4 +1016,5 @@ api.tabs?.onRemoved?.addListener((tabId) => {
   pendings.delete(tabId);
   unjudged.delete(tabId);
   saveSession();
+  if (privateTabs.delete(tabId)) forgetPrivateIfLast();
 });
