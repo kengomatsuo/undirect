@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trailpress · Ridge route report</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #f3f6f2; color: #1b2a22; font: 17px/1.6 -apple-system, "SF Pro Text", sans-serif; }
+  header { background: #1f4d3a; color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 14px 28px; }
+  .logo { font-weight: 800; font-size: 20px; letter-spacing: -.01em; }
+  button.signin { font: 600 14px -apple-system, sans-serif; background: #fff; color: #1f4d3a; border: 0; border-radius: 8px; padding: 8px 14px; cursor: pointer; }
+  main { max-width: 700px; margin: 0 auto; padding: 36px 20px 60px; }
+  h1 { font-size: 34px; line-height: 1.12; letter-spacing: -.02em; margin-bottom: 8px; }
+  .by { color: #5b6e63; font-size: 14px; margin-bottom: 22px; }
+  .hero { height: 220px; border-radius: 14px; margin-bottom: 22px; background: linear-gradient(180deg, #a9d3ec 0 45%, transparent 45%), linear-gradient(135deg, transparent 0 30%, #5f8f73 30% 55%, transparent 55%), linear-gradient(225deg, transparent 0 25%, #3f6b53 25% 60%, transparent 60%), #7fb08d; }
+  p { margin-bottom: 14px; }
+  a { color: #1f6b4a; font-weight: 600; }
+  .actions { display: flex; gap: 10px; margin-top: 24px; flex-wrap: wrap; }
+  .actions button { font: 600 15px -apple-system, sans-serif; background: #fff; border: 1px solid #cfdad2; border-radius: 10px; padding: 10px 16px; cursor: pointer; color: #1b2a22; }
+  #who { font-size: 14px; color: #dff0e6; }
+  footer { text-align: center; color: #7b8c82; font-size: 12px; padding: 30px 20px; }
+</style>
+</head>
+<body>
+<header><div class="logo">trailpress</div><div><span id="who"></span> <button class="signin" id="signin">Sign in</button></div></header>
+<main>
+  <h1>The ridge route is open again after the spring washout</h1>
+  <div class="by">By Dae-jung Park · 6 min read</div>
+  <div class="hero"></div>
+  <p>Volunteers rebuilt the lower stairs over three weekends, and the footbridge at the second stream is back. Expect mud above the tree line until the end of the month.</p>
+  <p>Conditions are reported by walkers each morning. For the full forecast, read the <a id="outbound" href="OUTBOUND">mountain forecast from Highcol Weather</a>, which publishes it separately.</p>
+  <div class="actions"><button id="share">Share this report</button></div>
+</main>
+<footer>Trailpress is a fictional site made for the Undirect demo.</footer>
+<script src="/demo/lib/env.js"></script>
+<script>
+  // Nothing here is hostile. The page asks for a sized sign-in window itself,
+  // and the forecast link goes to another site because the reader pressed it.
+  document.getElementById("outbound").href = DEMO.site("highcol") + "/demo/fine/outbound/";
+  document.getElementById("signin").addEventListener("click", () => {
+    window.open(DEMO.site("accounts-demo") + "/demo/fine/signin/", "signin", "popup,width=460,height=620");
+  });
+  document.getElementById("share").addEventListener("click", () => {
+    window.open(DEMO.site("accounts-demo") + "/demo/fine/signin/?share=1", "share", "popup,width=520,height=420");
+  });
+  addEventListener("message", (e) => {
+    if (e.data && e.data.signedIn) document.getElementById("who").textContent = "Signed in as Dae";
+  });
+</script>
+</body>
+</html>

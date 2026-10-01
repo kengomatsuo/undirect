@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en-GB"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sign in</title>
+<style>*{box-sizing:border-box}body{margin:0;font:16px/1.5 -apple-system,sans-serif;background:#fff;color:#1b2a22;display:grid;place-items:center;min-height:100vh;padding:24px}
+form{width:100%;max-width:340px}h1{font-size:24px;margin:0 0 4px}p{color:#5b6e63;margin:0 0 18px}input{width:100%;padding:11px 12px;border:1px solid #cfdad2;border-radius:10px;font:inherit;margin-bottom:10px}
+button{width:100%;padding:12px;border:0;border-radius:10px;background:#1f4d3a;color:#fff;font:600 16px -apple-system,sans-serif;cursor:pointer}</style></head>
+<body><form id="f"><h1 id="h">Sign in to Trailpress</h1><p id="p">A made-up account service. Any entry works.</p><input placeholder="Email" value="dae@example.com" aria-label="Email"><input type="password" placeholder="Password" value="demo" aria-label="Password"><button>Continue</button></form>
+<script>
+if (new URLSearchParams(location.search).has("share")) { h.textContent = "Share this report"; p.textContent = "A made-up share sheet."; f.querySelectorAll("input").forEach(i => i.remove()); f.querySelector("button").textContent = "Copy link"; }
+f.addEventListener("submit", e => { e.preventDefault(); if (window.opener) opener.postMessage({signedIn:true}, "*"); close(); });
+</script></body></html>

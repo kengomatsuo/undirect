@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quickpatch · Get the update</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { background: linear-gradient(180deg, #eaf2ff, #fff 60%); color: #12213f; font: 16px/1.5 -apple-system, "SF Pro Text", sans-serif; min-height: 100vh; }
+  header { display: flex; justify-content: space-between; max-width: 920px; margin: 0 auto; padding: 20px; font-weight: 800; font-size: 20px; }
+  header span { color: #2a6df4; }
+  header nav { font-weight: 500; font-size: 14px; color: #5a6a8a; display: flex; gap: 20px; align-items: center; }
+  main { max-width: 640px; margin: 40px auto; padding: 0 20px; text-align: center; }
+  .app { width: 96px; height: 96px; border-radius: 24px; margin: 0 auto 20px; background: linear-gradient(135deg, #2a6df4, #6fa3ff); display: grid; place-items: center; color: #fff; font-size: 44px; font-weight: 800; box-shadow: 0 16px 40px rgba(42,109,244,.35); }
+  h1 { font-size: 38px; letter-spacing: -.03em; line-height: 1.1; margin-bottom: 10px; }
+  p.lead { color: #4a5a7a; margin-bottom: 28px; }
+  a.dl { display: inline-block; background: #2a6df4; color: #fff; padding: 16px 40px; border-radius: 14px; font-weight: 700; font-size: 19px; text-decoration: none; box-shadow: 0 10px 30px rgba(42,109,244,.35); }
+  a.dl:hover { text-decoration: none; background: #1f5ee0; }
+  .facts { margin-top: 28px; display: flex; justify-content: center; gap: 28px; color: #6a7a9a; font-size: 14px; }
+  .thanks { margin-top: 20px; color: #2f7d4f; font-weight: 600; }
+  footer { text-align: center; color: #8a97b3; font-size: 12px; padding: 40px 20px; }
+</style>
+</head>
+<body>
+<header><div>quick<span>patch</span></div><nav><span>Features</span><span>Pricing</span><span>Help</span></nav></header>
+<main>
+  <div class="app">Q</div>
+  <h1>Quickpatch 4.2 is ready</h1>
+  <p class="lead">A free tool that keeps your fonts tidy. Version 4.2 · 12 MB · Mac and Windows</p>
+  <a class="dl" id="dl" href="/demo/download/thanks.html">Download now</a>
+  <div class="facts"><span>Free</span><span>No sign-up</span><span>Updated 28 Sep</span></div>
+</main>
+<footer>Quickpatch is a fictional product made for the Undirect demo. Nothing here downloads.</footer>
+<script src="/demo/lib/env.js"></script>
+<script>
+  // The button promises a thank-you page, then sends this same tab to another site.
+  document.getElementById("dl").addEventListener("click", (event) => {
+    event.preventDefault();
+    setTimeout(() => { location.href = DEMO.landed(); }, 250);
+  });
+</script>
+</body>
+</html>
