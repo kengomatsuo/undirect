@@ -1,0 +1,52 @@
+ 
+ My App Store Optimization Strategy - by Sebastian Röhl 
+ Building A Profitable App Business 
+ Subscribe Sign in 
+ My App Store Optimization Strategy
+ How I managed to reach the Top-5 for one of the most difficult keywords on the App Store.
+ Sebastian Röhl 
+ Oct 20, 2024 
+ 16
+ 1
+ Share
+ As an indie developer, one of the most important aspects of your app's success is visibility. Over the last 10 months, I've managed to climb the App Store rankings in multiple countries for the term "habit tracker" with my app, HabitKit. Being in the top 3 for certain keywords - instead of the top 10 - is really a game changer and allowed me to keep my revenue high and stable after the New Year's hype at the start of 2024.
+ Here are some strategies that I've used to achieve this success.
+ Keyword Research 
+ Before I released HabitKit in November 2022, I spent a lot of time researching which keywords to target. I spent countless hours in various keyword research tools (I highly recommend using Astro nowadays), trying to find the right balance between search volume and competition. Because I couln't find a keyword with a good ratio between popularity and difficulty, I decided to follow the following strategy: 
+ I picked the most important keyword for my niche ("habit tracker") and decided to go all in on it. I incorporated it first things first into the app name, that's why HabitKit is called "Habit Tracker - HabitKit" on the App Store and Google Play. For the subtitle, I picked the second and third most important keywords ("Streaks & Accountability"). This way I made sure that I had the best possible chance of ranking for "habit tracker" and related search queries after a while.
+ After releasing HabitKit and it's first successful updates, I continued to research new keywords but never found something good to focus on. After just a month on the App Store, I reached the top 10 in the UK and this continued to generate a lot of organic installs and therefore revenue.
+ User Reviews 
+ Ratings and reviews are super important for App Store Optimization. They not only help with visibility but also give you great indicators on what's important to your users and what they like/dislike. I always make sure to reply to everyone who leaves a review and do my best to help them out. This helps with customer retention and also helps changing bad reviews into good ones.
+ When it comes to collecting reviews, I have the following approach: I show the native review dialog after the user created his first completion for a habit. This has proven to be a super effective way to collect reviews. I also thought about showing a rating dialog right after the onboarding, but I'm still a little bit worried that it might be a bit too much for some users.
+ Another important thing is to ask for a review whenever you get an email from a user. People are usually super happy and surprised when they receive a friendly reply from the developer/founder of the app they use daily. Most of them are super generous and leave a review after that. I just apply this phrase at the end of the email: "PS: If you’re enjoying the app, I’d be grateful if you could leave a review on the App Store. It helps others discover the app and gives it a boost!". This has worked really well for me so far.
+ App Store Search Ads 
+ I read somewhere on X that running Apple Search Ads can boost your ranking on the App Store. I don't know if this is an urban legend or not, but I run a campaign for HabitKit with a budget of $100 per month. I don't measure the results and I don't know if it has a direct impact on the rankings, but maybe it's still better than wasting the money on other ad networks. 
+ As you can see, I spent €2.50 each on 40 installs, which sounds pretty horrible. Writing this out made me realize that this is pretty dumb and I should probably cut it.
+ Building In Public 
+ I shared my journey on social media, particularly on X (formerly Twitter). This helped create some form of community around HabitKit (or my personal brand) and I strongly believe that this often led to organic mentions and links, which indirectly boosted the app's authority in the App Store's eyes.
+ By doing this - especially in the beginning when the native one-week ASO boost is over - you can prove to Apple that your app is still relevant and popular and that it deserves to be ranked higher in the App Store. I try to be as authentic and transparent as possible while sharing my journey as an independent app developer and my story seem to resonate with a lot of people. I get a ton of messages that people like my app and think it’s really motivating for them to see that an indie developer like me can be that successful on the App Store.
+ Time 
+ Time in the market is an important factor that shouldn't be overlooked. While initial optimization is important, consistently improving your app and patiently waiting can lead to significant ranking improvements over time. By actively improving your app's features, addressing user feedback, and maintaining a steady presence in the store, you can gradually climb the rankings, even if you didn't start at the top.
+ Remember, ASO is not just about quick wins but also about long-term dedication to your app's quality and user satisfaction. Persistence and continuous improvement can eventually lead to better visibility and higher rankings, proving that it's never too late to start climbing the App Store ladder.
+ Luck 
+ Luck is also a crucial factor in the App Store. Sometimes you just need to be at the right place at the right time. This is something that can't be planned and is simply luck. Some apps will never rank for a certain keyword, no matter what you do. It can depend on the app itself, the competition, the search query, etc. If something doesn't work out, don't worry, and just try something else (or even start a new app, as I did with HabitKit after my first one didn't work out).
+ Summary 
+ So, let’s summarize: 
+ Do your ASO homework (read everything here , and you’re good to go) and pick the best keyword subset. Stuff it into your app name and subtitle. 
+ Ask for reviews wherever you can (inside and outside your app).
+ Start building in public. This is even more important when your app can be used by a really broad audience (like habit tracking in my case).
+ Give it time. Sometimes the algorithm needs some time to discover your app.
+ I hope this is helpful for some people. See you in the next issue of my indie log 👋
+ 16
+ 1
+ Share
+ Discussion about this post
+ Comments Restacks 
+ Top Latest Discussions 
+ No posts
+ Ready for more?
+ Subscribe 
+ © 2026 Sebastian Röhl · Privacy ∙ Terms ∙ Collection notice 
+ Start your Substack Get the app 
+ Substack is the home for great culture
+ This site requires JavaScript to run correctly. Please turn on JavaScript or unblock scripts

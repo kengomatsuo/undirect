@@ -1,0 +1,83 @@
+ App Store Metadata Reference: Character Limits + Indexing 
+ Skip to main content 
+ AppScreenshotStudio 
+ AppScreenshotStudio 
+ Free ASO Tool
+ App Store Indexed Fields Map
+ Every iOS App Store and Google Play metadata field, with character limits, indexing status, and 2026 changes. Decide where keywords belong, where they don't.
+ Last updated: April 28, 2026
+ iOS App Store Google Play Both Platforms 
+ Only show indexed fields 10 indexed 1 partial 4 not indexed 
+ Field Limit Indexed Visible Notes 
+ App Name (Title)
+ 30 chars Yes Visible Most heavily weighted ranking field. Highly visible in search results.
+ Subtitle
+ 30 chars Yes Visible Roughly equal ranking weight to title. Use for secondary keyword cluster.
+ Keyword Field
+ 100 chars Yes Hidden Hidden from users, fully indexed. Comma-separated, no spaces.
+ Description
+ 4,000 chars No Visible NOT indexed for search on iOS. Affects conversion only.
+ Promotional Text
+ 170 chars No Visible Updateable without app review. Conversion only, not indexed.
+ In-App Purchase Display Name
+ 30 chars Yes Visible Indexed since iOS 11. Surface high-intent IAPs.
+ In-App Event Title
+ 30 chars Yes Visible Indexed since iOS 15. Title Case, no call-to-action wording.
+ In-App Event Short Description
+ 50 chars Yes Visible Indexed alongside the event title.
+ Screenshot Caption Text
+ Image text Yes Visible NEW June 2025: Apple extracts caption text via OCR and indexes it.
+ App Preview Video
+ 15 to 30 sec No Visible Visual signal only. NOT indexed by the search algorithm.
+ Developer Name
+ ~50 chars Yes Visible Indexed for branded queries.
+ Primary Category
+ Picklist Yes Visible Determines category-level search and chart eligibility.
+ Secondary Category
+ Picklist Yes Visible Adds a second category eligibility for browse traffic.
+ Custom Product Page Variant
+ 70 max CPPs Partial Conditional Variant metadata is indexed only for traffic routed via deep link.
+ Bundle ID
+ ~155 chars No Hidden System identifier. Never indexed for search.
+ Indexing status reflects Apple and Google's published behavior as of April 2026.
+ Every Field Mapped
+ iOS and Google Play metadata fields, character limits, and whether each is indexed for search ranking.
+ 2026 OCR Update
+ Includes Apple's June 2025 screenshot caption indexing change and the iOS 15 in-app event surfaces.
+ Skip the Wrong Fields
+ Stop putting keywords in the iOS description (not indexed). The map shows you where they actually count.
+ How it works
+ 1 Pick your platform Filter to iOS App Store, Google Play, or both. The table updates instantly.
+ 2 Find each field Look up character limits, indexing status, visibility, and behavioral notes for every metadata surface.
+ 3 Place keywords accordingly Use indexed fields for keywords. Use non-indexed fields like the iOS description for conversion copy instead.
+ The App Store Indexed Fields Map is a free reference showing which iOS App Store and Google Play metadata fields Apple and Google index for search. It covers every metadata surface, character limits, indexing status (yes, no, or partial), visibility to users, and 2026 changes including the new screenshot caption OCR indexing that began June 2025. Use it to decide where to place keywords and where to skip them.
+ What changed for App Store indexing in 2025 and 2026?
+ Three changes reshaped where ASO keywords belong. In June 2025, Apple began extracting screenshot caption text via OCR and treating it as ranking signal metadata. Captions in your first three screenshots now compete with your title, subtitle, and keyword field for indexing weight. In iOS 15, Apple added in-app event titles (30 chars) and short descriptions (50 chars) as fully indexed surfaces. And in March 2026, App Store Connect Analytics added peer group benchmarks, so you can finally measure conversion against direct category competitors instead of guessing.
+ What did not change: the iOS description still is not indexed for search. Stuffing keywords into a 4,000-character description on iOS does nothing for ranking. On Google Play, the long description IS indexed, so the same copy works for two completely different jobs depending on the platform.
+ Explore More Tools
+ Everything you need to optimize your app store presence
+ Character Counter
+ Track character usage across all five iOS metadata fields in real time
+ Try it 
+ Keyword Field Optimizer
+ Pack the 100-char iOS keyword field without wasting characters on title or subtitle duplicates
+ Try it 
+ App Preview Video Specs
+ Apple App Preview video requirements: length, resolution per device, format, frame rate, and audio rules.
+ Try it 
+ No account required • Your data is not stored
+ Frequently Asked Questions
+ What App Store fields are indexed for search?
+ On iOS, six fields are indexed: app name (30 chars), subtitle (30 chars), keyword field (100 chars), in-app purchase display names, in-app event titles, and screenshot caption text (added June 2025 via OCR). The description and promotional text are NOT indexed on iOS. On Google Play, the long description IS indexed.
+ Is the App Store description indexed for search?
+ On iOS, the description is NOT indexed for search. Apple's algorithm reads the title, subtitle, keyword field, in-app purchase names, in-app event titles, and screenshot caption text only. The description affects conversion (users read it before installing) but does not feed ranking. On Google Play, the long description IS indexed.
+ Are screenshot captions indexed for App Store search?
+ Yes, since June 2025. Apple's algorithm extracts text from screenshot captions via OCR and treats it as ranking signal metadata. This is a 2026 ASO opportunity most indie devs have not adapted to. Caption text in your first three screenshots carries the most weight.
+ What is the difference between iOS and Google Play search indexing?
+ Three big differences. First, iOS does NOT index the long description; Google Play does. Second, iOS extracts and indexes screenshot caption text via OCR (since June 2025); Google Play does not. Third, iOS has a hidden 100-char keyword field; Google Play uses category tags instead.
+ Should I repeat keywords across multiple App Store fields?
+ No. Apple already indexes every word in your app name and subtitle, so repeating them in the keyword field wastes characters. Use the keyword field for terms NOT in your title or subtitle. The Keyword Field Optimizer flags duplicates automatically.
+ Indexed Fields Sorted?
+ Now generate screenshots whose caption text reinforces your title and subtitle keywords. Apple indexes screenshot captions via OCR in 2026.
+ Generate Screenshots Free 
+ 

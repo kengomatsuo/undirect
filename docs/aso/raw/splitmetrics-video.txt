@@ -1,0 +1,246 @@
+ 
+ Updated App Preview Analytics: Advanced Video Metrics for A/B Tests 
+Login
+ Acquire 
+ App Radar 
+ Optimize 
+Talk to an expert
+ How we help 
+ Products & Services 
+ Pricing 
+ Resources 
+Login
+ Acquire 
+ App Radar 
+ Optimize 
+Talk to an expert
+Products & Services 
+ Acquire 
+ Iris 
+ App Radar 
+ Optimize 
+ Growth Services 
+ Integrations 
+ AppsFlyer 
+ Adjust 
+ Singular 
+ Branch.io 
+ RevenueCat 
+ Tenjin 
+ Qonversion 
+ App Hud 
+ Talk to an expert 
+Resources 
+ Learn
+ Latest Article 
+ Best app marketing conferences for 2027 (and the rest of 2026)
+ See all Blog articles 
+ Latest Event 
+ Custom product pages: a playbook for scaling Apple Ads performance
+ See all Events & Webinars 
+ Latest Case Study 
+ How BetterSleep Improved ROAS by 40.5% Using CPP Experiments in SplitMetrics Acquire
+ See all Customer Stories 
+ Latest Report 
+ Games in 2026:  SplitMetrics’ Ultimate Apple Ads Playbook (+Benchmarks)
+ See all Benchmarks & Reports 
+ Talk to an expert 
+How we help 
+ Technology
+ ROAS & CPA Optimization 
+ Scaling & Share of Voice Optimization 
+ App Store Optimization 
+ Competitor Intelligence 
+ A/B Testing & Experiments 
+ Growth Services
+ Services Overview 
+ Fully Managed ASO 
+ Fully Managed Apple Ads 
+ Multichannel Advertising 
+ Creative Production 
+ Our AI & Data
+ Iris AI Agents 
+ Samba AI Models 
+ Market Intelligence 
+ Talk to an expert 
+ Main A/B Testing Article 
+ A/B Testing , Product Updates  — 23 May 2018 
+ SplitMetrics Update: Advanced Video Analytics for App Preview A/B Tests
+SplitMetrics 
+ Video content is conquering the world. According to Hubspot , 90% of users state that product videos facilitate the decision-making process. However, when it comes to app previews in the App Store, one shouldn’t rush to pack their product pages with three 30-second long videos. 
+ There are a lot of cases when a clumsy app preview doomed app’s conversion giving the impression that the publisher doesn’t really care. Nevertheless, smart app previews work their video magic and boost downloads . According to our study, optimization of video previews triggers the average conversion increase of around 16% . 
+ A/B testing is one of the best ways to reduce the risk factor of app previews. To take your video experiments to the next level making them even more impactful , the SplitMetrics team prepared brand new advanced analytics for app previews in the App Store. 
+ Updated App Preview A/B Tests: Advanced Video Metrics 
+ Our extended analytics presents a complete picture of how users interact with the app preview on your product page. The advanced metrics are available not only for video experiments but also for all product page A/B tests that feature app previews. 
+ All metrics are represented in the way that smoothes comparison process making it really convenient to: 
+ correlate videos from different variations; 
+ oppose up to 3 app previews of the same variation. 
+ The analytics page now includes the following video metrics : 
+ Visitors who Watched the Video 
+ This metric indicates the number of your product page visitors that watched at least one video on the variation for more than 3 seconds . Mind that time in the autoplay mode is included. 
+ View Rate 
+ This metric indicates the percentage of visitors that watched at least one video on the variation for more than 3 seconds, it also includes autoplay. 
+ Installs after Watching the Video 
+ Here you can find the number of taps to install that happen when the video is being watched or after watching more than first 3 seconds of it. Once again, autoplay is included. 
+ Install Rate after Watching the Video 
+ This metric shows the percentage of taps to install that happens when the video is being watched or after watching more than first 3 seconds of it (including autoplay). 
+ Average View Duration 
+ This metric lets you know the average view duration of your video preview. To make results as precise as possible, we consider only video views that last for more than 3 seconds including autoplay. 
+ Average View Duration before Install 
+ Thanks to this metric you can find the average view duration before users tap the ‘Install’ button. For the sake of experiments integrity, we take into consideration only video views that last for more than 3 seconds . The time in the autoplay mode is taken into consideration as well. 
+ Graph on Average View Duration 
+ The graph depicts the average view duration among visitors of the product page of your app (including autoplay). The coolest thing about this graph is that it is synchronized with the video player. It means that you can find out the very frames of your app preview that make users stop watching your video. 
+ Graph on Average View Duration before Install 
+ The graph indicates the average view duration before tapping the ‘Install’ button (including autoplay). This graph is synchronized with the video player as well. Thus, now you can identify the episodes of your app preview that triggered installs . 
+ Insights that Updated App Preview A/B Tests Provide 
+ When we started working on extending our video analytics, our main focus was on pains related to app previews that app publishers currently face with. The advanced insights we now provide should turn all these problems into things of the past. 
+ Above all, SplitMetrics video analytics answers the most important question : 
+ Do you need an app preview on your product page? 
+ As it was mentioned above, a poor video may doom app’s performance at times. There are also cases when target audience just prefers a screenshot over an app preview no matter how skillful and awesome the latter is. You can finally find out if your users are interested in app previews at all. 
+ To answer this question you should: 
+ correlate the number of your product page visitors and users who actually watch your app preview; 
+ identify how app previews affect installs finding out how many installs happen when users are watching a video and which app preview episodes are the most impactful. 
+ If you confirm the necessity of app previews on your product page, advanced metrics will help to resolve other burning issues such as: 
+ How many app previews you need? 
+ In which order should you put your app previews to maximize results? 
+ The latest update of SplitMetrics A/B testing platform also assists in nailing a perfect video length as our advanced analytics informs which exact app preview episodes make users leave your product page. 
+ You are also able to identify for how long your app previews can hold users attention . These insights will help you use video time wisely putting the most important content when users are as engaged as possible . 
+ Data-driven approach always makes sense and crafting of app preview is no exception. SplitMetrics provides you with the platform which helps to change your approach to creating videos for the App Store. Now you can find out what your users really need and enjoy conversion increase which will follow for sure. 
+ Share this article
+ Copied
+ SplitMetrics
+ Read all articles 
+ Apple Ads Optimization
+ Cut CPA by 50% and double campaign ROAS with our free AI-powered automation solution.
+ Create Free Account 
+ Get valuable insights in your inbox
+ Choose the topic you are interested in and get the latest and most up-to-date news
+ Share this article
+ Copied
+ Recommended
+Article 
+Best app marketing conferences for 2027 (and the rest of 2026) 
+1 Oct 2026 
+Custom product pages: a playbook for scaling Apple Ads performance 
+22 Sep 2026 
+Custom product page testing at scale: introducing a Switch method for CPP Experiments 
+18 Sep 2026 
+App Store Creative Assets: How the New App Store Feature Impacts App Visibility 
+18 Sep 2026 
+ Read next
+Downloads 
+Shopping Apps 2025 Report: Apple Ads Search Results Campaigns & ASO Benchmarks by SplitMetrics 
+16 Dec 2025 
+How SplitMetrics Agency Improved Monetization Performance With Paywall Optimization 
+12 Jun 2025 
+How SplitMetrics Optimize Helped Episode Boost Conversion Rates by Refreshing Creative Assets 
+19 Mar 2025 
+Bitcoin.com: Driving Organic Growth Through Strategic ASO 
+11 Dec 2024 
+ Featured posts
+Article 
+Apple Ads Guide: From Beginner to Expert (2025) 
+14 Sep 2026 
+Apple Ads Optimization Checklist & Troubleshooting 
+29 Oct 2024 
+Apple Ads Cost: Evaluation and SplitMetrics' CPA, CPT, CR, TTR Benchmarks for 2026  
+14 Sep 2026 
+10+1 Apple Ads Best Practices: Ultimate Guide 
+3 Sep 2026 
+ 1/4 
+ Talk with our mobile marketing experts
+ Which solutions are you interested in?
+ Choose a solution 
+ SaaS Products 
+ Suite of products for Apple Ads, ASO, market intelligence and AI. 
+ Growth Services 
+ Team of experts for your UA, ASO, creative optimization and more. 
+ Select all that apply:
+ Select SaaS products 
+ Scale Apple Ads profitably with Samba AI 
+ Delegate tasks to our AI Agent for Apple Ads 
+ Improve ASO and drive organic installs worldwide 
+ Run mobile A/B tests and validate hypothesis 
+ Select growth services 
+ Fully-managed Apple Ads 
+ Ongoing Apple Ads optimization incl. CPP design and testing. 
+ Fully-managed ASO 
+ Complete ASO cycle incl. CVR optimization and A/B testing. 
+ Multichannel Ad Service 
+ Scaling ad campaigns on 15+ UA channels incl. programmatic. 
+ Creative Production 
+ End-to-end asset creation for every ad platform you need. 
+ Product Optimization 
+ Activation, retention and monetisation improvements. 
+ Next 
+ 2/4 
+ Help us customize your experience
+ First name 
+ * 
+ Last name 
+ * 
+ Work email 
+ * 
+ Job title 
+ * 
+ What challenges can we help you solve? 
+ How did you hear about us? 
+ * 
+By clicking on "Next" you agree to our Privacy Policy and allow SplitMetrics Inc. to store and process your personal data in accordance with it.
+Back
+ Next 
+ 3/4 
+ Tell us about your business
+ Company name 
+ * 
+ App category 
+ (select) 
+ * 
+ Select 
+ Business 
+ Education 
+ Entertainment 
+ Finance 
+ Games 
+ Health&Fitness 
+ Photo&Video 
+ Productivity 
+ Social Networking 
+ Sports 
+ Utilities 
+ Other 
+ Link to your app 
+ Monthly mobile ad spend 
+ * 
+ up to $25,000 
+ $25,000 - $50,000 
+ $50,000 - $100,000 
+ $100,000 - $200,000 
+ $200,000 - $500,000 
+ over $500,000 
+ I don't know 
+ Monthly app downloads 
+ * 
+ < 10 000 
+ 10 001 - 30 000 
+ 30 001 - 50 000 
+ 50 001 - 100 000 
+ 100 001 - 500 000 
+ > 500 000 
+ I don't know 
+Back
+ Next 
+ 4/4 
+ Meet your SplitMetrics expert!
+We've found the right person to help you reach your growth goals. Schedule a 30-minutes call to discuss your needs and get personalized support.
+ Loading calendar
+ Available meeting times will appear here in a moment.
+ Calendar unavailable
+ Please try again later or contact us directly to book your demo.
+ Your call is booked.
+We're looking forward to learning more about your business. Speak soon!
+Trusted by category leaders
+ “While evaluating available vendors, SplitMetrics offered the most advanced feature set and extensive support on the market.” 
+ “SplitMetrics has been instrumental in managing our Apple Ads, as well as paid social campaigns across Meta, Google, and TikTok.” 
+ “The biggest improvement is the confidence that our campaigns are running at their full potential.” 
+ 

@@ -1,0 +1,109 @@
+# The Indie Developer's Guide to App Store Optimization
+> 65-70% of app installs come from search. Target keywords with SP 35-55 and difficulty under 35 — the sweet spot where indie apps can rank without a marketing budget.
+- **Author:** Peter Sutarik
+- **Published:** March 4, 2026
+- **Updated:** July 29, 2026
+- **Tags:** aso, indie-developer, guide, keyword-research, strategy
+- **Reading time:** 8 min
+- **Canonical:** https://trysonar.app/blog/indie-developer-aso-guide
+---
+## ASO Is the Indie Developer's Best Marketing Channel
+If you're a solo developer or small team shipping apps, you don't have a marketing budget. You don't have a PR team. You probably don't have a social media following large enough to move the needle.
+What you do have is the App Store search bar, which is how the majority of users discover apps. Studies consistently show that **65-70% of app installs on iOS come from App Store search**. On Google Play, the number is similar when including Play Store browse recommendations.
+ASO — App Store Optimization — is the process of making your app visible in those searches. It's free, it compounds over time, and it's the single highest-ROI marketing activity for indie developers.
+## The Basics: How App Store Search Works
+When a user searches "habit tracker" on the App Store, Apple's algorithm decides which apps to show and in what order. The ranking is determined by:
+1. **Keyword relevance** — does your metadata contain the search term?
+2. **App quality signals** — ratings, reviews, download velocity, retention
+3. **Recency** — recently updated apps get a slight ranking boost
+Google Play works similarly but also indexes your full description and weights total install count more heavily.
+The key insight: **relevance gets you into the results; quality determines your position.** If "habit tracker" isn't in your metadata, you won't appear no matter how good your app is. If it is in your metadata but your app has 3 reviews and a 3.5 rating, you'll appear on page 5 where nobody scrolls.
+## Step 1: Keyword Research
+Start by finding keywords that are worth targeting. A good keyword has:
+- **Sufficient search volume** — enough people search for it to drive downloads
+- **Achievable difficulty** — you can realistically rank in the top 10
+- **Relevance** — it matches what your app does
+### Finding Keywords
+**Autocomplete:** Open the App Store or Google Play and start typing. The suggestions that appear are real search queries with significant volume. Type "habit," "track," "daily," "routine" and note every suggestion.
+**Competitor metadata:** Look at the top 5 apps in your category. What keywords appear in their titles and subtitles? These are proven, high-value terms.
+**Related terms:** Use a thesaurus approach. If your primary keyword is "[habit tracker](https://trysonar.app/keyword-difficulty/habit-tracker/ios/us)," related terms include "routine builder," "streak counter," "daily goals," "self improvement," "habit journal."
+**Keyword tools:** Tools like ours show you search popularity, difficulty, and suggestions for any keyword. They save hours compared to manual research.
+### Evaluating Keywords
+For each keyword candidate, you need two numbers:
+- **[Search Popularity (SP)](https://trysonar.app/blog/apple-search-popularity)** on iOS, or estimated volume on Google Play
+- **[Keyword Difficulty](https://trysonar.app/blog/keyword-difficulty-explained)** — how competitive the top results are
+The sweet spot for indie apps: **SP 35-55 with difficulty under 35.** These keywords have 2,300-7,600 daily impressions (enough to drive meaningful downloads) and competition that's beatable with a good app and optimized metadata.
+## Step 2: Optimize Your Metadata
+Once you have your keyword list, place them strategically:
+### iOS
+Your three indexed fields, in order of importance:
+1. **Title (30 chars):** `YourApp - Best Keyword` — put your single best keyword here
+2. **Subtitle (30 chars):** second-best keyword, no word overlap with title
+3. **Keyword field (100 chars):** all remaining keywords, comma-separated, no spaces, no word repetition
+**Total indexed characters: 160.** Make every one count. Don't repeat words across fields — Apple deduplicates automatically.
+### Google Play
+1. **Title (30 chars):** same strategy as iOS
+2. **Short description (80 chars):** 2-3 keywords in a readable sentence
+3. **Long description (4,000 chars):** weave keywords naturally into feature descriptions, aim for 3-5 mentions of primary keywords
+### The Combination Effect (iOS)
+On iOS, Apple matches keyword combinations across fields. If your title says "Focus" and your keyword field contains "music," you can rank for "focus music" even though those words are in different fields. This means each keyword you add creates multiple searchable combinations with your other keywords.
+This is why non-repetition matters so much — every unique word added to your metadata exponentially increases your keyword coverage.
+## Step 3: Your App Store Listing
+Keywords get users to your page. Your listing converts them to downloads. For indie developers, these elements matter most:
+### Icon
+Your icon is the first thing users see in search results. It needs to be:
+- Visually distinctive (stands out in a grid of icons)
+- Communicative (suggests what the app does)
+- Simple (readable at 60x60 pixels on a phone screen)
+Don't try to cram text or complex imagery into your icon. A single recognizable symbol works best.
+### Screenshots
+Screenshots are the second-highest conversion factor after ratings. Best practices:
+- **First screenshot is critical** — it's the only one most users see without scrolling
+- Show the actual app UI, not just marketing graphics
+- Add brief captions highlighting key features
+- Show the app solving the user's problem, not just the interface
+- For portrait screenshots: 3-5 total; landscape: 2-3 total
+### Ratings and Reviews
+This is the quality signal you can't fake. Strategies for building ratings as an indie developer:
+- **Use Apple's SKStoreReviewController / Google's In-App Review API** — these are the native review prompts that don't annoy users
+- **Trigger at positive moments** — after the user completes a task, hits a milestone, or has used the app for 3+ sessions
+- **Don't prompt too early** — users who haven't experienced your app's value will either skip or leave low ratings
+- **Respond to negative reviews** — on both stores, developer responses are visible. A thoughtful response shows you care and can convince fence-sitters
+- **Fix bugs before asking for reviews** — nothing tanks ratings faster than a crash-prone app version prompting for reviews
+## Step 4: Track Your Rankings
+After updating your metadata, you need to monitor whether it's working. [Track your rankings](https://trysonar.app/blog/keyword-rank-tracking) for target keywords at least weekly.
+What to look for:
+- **Ranking appeared** — you weren't ranking for a keyword before, now you're at position 30. Good. It means the metadata indexing is working.
+- **Ranking improving** — you moved from position 20 to position 8 over 3 weeks. Your app's quality signals are catching up to your keyword relevance.
+- **Ranking stalled** — you've been at position 15 for 6+ weeks. You may need more reviews/downloads, or the keyword difficulty may be too high for your current app quality signals.
+- **Ranking dropped** — investigate. Did a new competitor enter? Did you change metadata? Did your latest update hurt ratings?
+## Step 5: Iterate
+ASO is never done. The keyword landscape changes, competitors update their strategies, and your app evolves. A sustainable cadence:
+**Weekly:** Check rankings for your top 10-15 keywords. Note any significant changes.
+**Monthly:** Run competitor analysis. Look for new gap keywords. Check if any of your tracked keywords have changed in difficulty.
+**Every 4-6 weeks:** Update your metadata based on findings. Drop keywords that aren't gaining traction after 2+ cycles. Add new opportunities from competitor analysis or autocomplete research.
+**Quarterly:** Full keyword research refresh. Start from scratch with brainstorming and autocomplete, compare against your current keyword set, make larger strategic adjustments if needed.
+## Common Mistakes Indie Developers Make
+**Only optimizing once.** Many developers set their metadata at launch and never touch it again. The keyword landscape changes monthly.
+**Targeting keywords that are too competitive.** "[Photo editor](https://trysonar.app/keyword-difficulty/photo-editor/ios/us)" (SP 80, difficulty 90) is not a viable keyword for a new app. "Batch photo resize" (SP 35, difficulty 20) might be. Learn how to [find low-competition keywords](https://trysonar.app/blog/low-competition-keywords) that are actually winnable.
+**Ignoring Google Play.** Many iOS-first developers copy their iOS metadata to Google Play and call it done. Google Play has different fields, different indexing, and different competitive dynamics. It deserves [its own strategy](https://trysonar.app/blog/ios-vs-google-play-aso).
+**Not tracking rankings.** If you don't measure, you don't know what's working. You might be accidentally ranking well for keywords you didn't target (and could optimize further) or wasting metadata space on keywords where you're not moving.
+**Chasing volume over relevance.** A high-volume keyword that doesn't match your app will drive impressions but not installs. Low conversion rates can actually hurt your rankings because the algorithm interprets low tap-through rates as a signal your app isn't relevant.
+**Copying competitor titles.** "Best Habit Tracker 2026 - Daily Routine & Goals" is a real title someone is probably using. It's keyword-stuffed, has no brand identity, and Apple/Google may reject it. Build a real brand name and add keywords alongside it.
+## The Portfolio Advantage
+If you manage multiple apps, ASO compounds:
+- Each app can target different keywords in the same niche, covering more of the search landscape — one app might go after [step counter](https://trysonar.app/keyword-difficulty/step-counter/ios/us) while another targets [fasting app](https://trysonar.app/keyword-difficulty/fasting-app/ios/us)
+- Cross-promotion between your apps (through "More by this developer" and smart linking) creates a network effect
+- Learnings from one app's keyword performance directly inform strategy for your other apps
+- Diversification protects against algorithm changes — if one app drops for a keyword, another might hold
+This is why many successful indie developers operate portfolios of 5-15 focused utility apps rather than one large app. Each additional app is another chance to capture search traffic.
+## Key Takeaways
+- 65-70% of app installs come from search — ASO is the highest ROI channel for indie developers
+- Target keywords with SP 35-55 and difficulty under 35 for the best effort-to-reward ratio
+- Use all 160 indexed characters on iOS (title + subtitle + keyword field) without repeating words
+- Track rankings weekly and update metadata every 4-6 weeks
+- Fix your icon, screenshots, and rating before obsessing over keywords — conversion matters as much as visibility
+- ASO compounds over time — each iteration builds on the last
+For tool recommendations, see our [best ASO tools comparison](https://trysonar.app/blog/best-aso-tools) or [free ASO tools](https://trysonar.app/blog/best-free-aso-tools). If you prefer working from the terminal, check out our [ASO API and CLI workflows](https://trysonar.app/blog/aso-api-cli-workflows).
+---
+Source: https://trysonar.app/blog/indie-developer-aso-guide — published by [Sonar](https://trysonar.app), an App Store Optimization platform for keyword research, difficulty analysis, and rank tracking.

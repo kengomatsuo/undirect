@@ -1,0 +1,501 @@
+ 
+ App Store Localization: Primary and Secondary Languages 
+ Skip to content 
+ App Store Localization: Primary and Secondary Languages
+ by  Ian Pernia 
+ Senior App Growth Consultant at AppTweak 
+ Last updated on November 21 2025 
+ — 10 min read 
+ Summarize with AI 
+ Subscribe to our monthly newsletter
+ Never miss an update. Discover our latest app marketing articles, tips, news and interviews.
+ Subscribe 
+ close 
+ Subscribe to our monthly newsletter
+ Never miss an update. Discover our latest app marketing articles, tips, news and interviews.
+ Subscribe 
+ close 
+ Localization is as important as ever for users around the world to discover and download your app. Traditional localization includes localizing your app for a specific market, but what is interesting for ASO is the added layer of cross-localization where keywords in at least two locales can be indexed (shown in keyword search results) in each App Store territory .
+ In this blog, we describe the benefits and examples of cross-localization on the App Store, provide a list of countries with their primary and secondary languages, and highlight tips for optimizing your App Store metadata to maximize keyword indexation.
+ What is cross-localization on the App Store?
+ If you are reading this blog, you probably already know the basics of keyword optimization in ASO:
+ Use commas to separate keywords in the keyword field instead of spaces
+ Use singular keywords over long-tail keywords and phrases
+ Don’t repeat keywords
+ Avoid special characters
+ Discover our expert tips to optimize your product page on the App Store & Google Play 
+ With limited characters allowed in each metadata space, we often wish we could add just one more keyword to our app store listing. This is possible by taking advantage of cross-localization and the fact that keywords in at least two locales can be indexed in each App Store territory . For example, in the United States, the Apple algorithm will consider the keywords added to the English (US) and Spanish (MX) app metadata when indexing your app. This means you can actually increase your character space by utilizing your app’s metadata in different languages!
+ Important ASO & localization terms to know
+ Before we move on to more detailed examples of how you can benefit from cross-localization on the App Store, let’s start with some important term definitions:
+ App Store territory: The country in which your app is available, sometimes called a “region.” Today, the App Store is available in 175 territories/regions (e.g. the United States, Brazil, Sweden).
+ Language: The language spoken in a specific country (e.g. English, French, German).
+ Locale: The unique combination of language and App Store territory . Some countries have multiple languages such as Canada, which includes both English and French. Therefore, Canada can be considered to have two separate locales – English (Canada) and French (Canada). These locales are also considered to be separate from the ones in the United States – English (U.S) and in France – French.
+ Get the latest app store trends and learn how top apps localize! 
+ Complete list of primary & secondary locales for iOS
+ Today, the App Store supports 40 different locales . While writing the Advanced App Store Optimization book (2022) , AppTweak and Phiture ran a few tests using fake keywords, such as “enuk1201,” for an English (UK) localization and tracked these keywords across the different App Store territories to better understand which locales are indexed in which territory.
+ COUNTRY 
+ PRIMARY LANGUAGE 
+ LANGUAGES INDEXED 
+ United States 
+ English (US) 
+ Spanish (Mexico), Russian, Chinese (Simplified), Arabic, French, Portuguese (Brazil), Chinese (Traditional), Vietnamese, Korean 
+ United Kingdom 
+ English (UK) 
+ English (Australia) 
+ Algeria 
+ Arabic 
+ French, English (UK) 
+ Angola 
+ English (UK) 
+ Anguilla 
+ English (UK) 
+ Antigua and Barbuda 
+ English (UK) 
+ Argentina 
+ Spanish (Mexico) 
+ English (UK) 
+ Armenia 
+ English (UK) 
+ Australia 
+ English (Australia) 
+ English (UK) 
+ Austria 
+ German 
+ English (UK) 
+ Azerbaijan 
+ English (UK) 
+ Bahamas 
+ English (UK) 
+ Bahrain 
+ Arabic 
+ English (UK) 
+ Barbados 
+ English (UK) 
+ Belarus 
+ English (UK) 
+ Belgium 
+ English (UK) 
+ French, Dutch 
+ Belize 
+ Spanish (Mexico) 
+ English (UK) 
+ Benin 
+ English (UK) 
+ French 
+ Bermuda 
+ English (UK) 
+ Bhutan 
+ English (UK) 
+ Bolivia 
+ Spanish (Mexico) 
+ English (UK) 
+ Botswana 
+ English (UK) 
+ Brazil 
+ Portuguese (Brazil) 
+ English (UK) 
+ Brunei Darussalam 
+ English (UK) 
+ Bulgaria 
+ English (UK) 
+ Burkina Faso 
+ English (UK) 
+ French 
+ Cambodia 
+ English (UK) 
+ French 
+ Canada 
+ English (Canada) 
+ French (Canada) 
+ Cape Verde 
+ English (UK) 
+ Cayman Islands 
+ English (UK) 
+ Chad 
+ English (UK) 
+ French, Arabic 
+ Chile 
+ Spanish (Mexico) 
+ English (UK) 
+ China 
+ Chinese (Simplified) 
+ English (UK) 
+ Colombia 
+ Spanish (Mexico) 
+ English (UK) 
+ Costa Rica 
+ Spanish (Mexico) 
+ English (UK) 
+ Croatia 
+ Croatian 
+ English (UK) 
+ Cyprus 
+ English (UK) 
+ Greek, Turkish 
+ Czech Republic 
+ Czech 
+ English (UK) 
+ Denmark 
+ English (UK) 
+ Danish 
+ Dominica 
+ English (UK) 
+ Dominican Republic 
+ Spanish (Mexico) 
+ English (UK) 
+ Ecuador 
+ Spanish (Mexico) 
+ English (UK) 
+ Egypt 
+ Arabic 
+ French, English (UK) 
+ El Salvador 
+ Spanish (Mexico) 
+ English (UK) 
+ Estonia 
+ English (UK) 
+ Federated States of Micronesia 
+ English (UK) 
+ Fiji 
+ English (UK) 
+ Finland 
+ English (UK) 
+ Finnish 
+ France 
+ French 
+ English (UK) 
+ Gambia 
+ English (UK) 
+ Germany 
+ German 
+ English (UK) 
+ Ghana 
+ English (UK) 
+ Greece 
+ Greek 
+ English (UK) 
+ Grenada 
+ English (UK) 
+ Guatemala 
+ Spanish (Mexico) 
+ English (UK) 
+ Guinea-Bissau 
+ English (UK) 
+ French 
+ Guyana 
+ English (UK) 
+ French 
+ Honduras 
+ Spanish (Mexico) 
+ English (UK) 
+ Hong Kong 
+ Chinese (Traditional) 
+ English (UK), Cantonese 
+ Hungary 
+ Hungarian 
+ English (UK) 
+ Iceland 
+ English (UK) 
+ India 
+ Hindi 
+ English (UK) 
+ Indonesia 
+ Indonesian 
+ English (UK) 
+ Ireland 
+ English (UK) 
+ Israel 
+ Hebrew 
+ English (UK) 
+ Italy 
+ Italian 
+ English (UK) 
+ Jamaica 
+ English (UK) 
+ Japan 
+ Japanese 
+ English (US) 
+ Jordan 
+ Arabic 
+ English (UK) 
+ Kazakhstan 
+ English (UK) 
+ Kenya 
+ English (UK) 
+ Kuwait 
+ Arabic 
+ English (UK) 
+ Kyrgyzstan 
+ English (UK) 
+ Lao People’s Democratic Republic 
+ English (UK) 
+ French 
+ Latvia 
+ English (UK) 
+ lbania 
+ English (UK) 
+ Lebanon 
+ Arabic 
+ French, English (UK) 
+ Liberia 
+ English (UK) 
+ Lithuania 
+ English (UK) 
+ Luxembourg 
+ English (UK) 
+ French, German 
+ Macau 
+ Cantonese 
+ English (UK), Chinese (Traditional) 
+ Madagascar 
+ English (UK) 
+ French 
+ Malawi 
+ English (UK) 
+ Malaysia 
+ Malay 
+ English (UK) 
+ Mali 
+ English (UK) 
+ French 
+ Malta 
+ English (UK) 
+ Mauritania 
+ Arabic 
+ French, English (UK) 
+ Mauritius 
+ English (UK) 
+ French 
+ Mexico 
+ Spanish (Mexico) 
+ English (UK) 
+ Moldova 
+ English (UK) 
+ Mongolia 
+ English (UK) 
+ Montserrat 
+ English (UK) 
+ Mozambique 
+ English (UK) 
+ Namibia 
+ English (UK) 
+ Nepal 
+ English (UK) 
+ Netherlands 
+ Dutch 
+ English (UK) 
+ New Zealand 
+ English (Australia) 
+ English (UK) 
+ Nicaragua 
+ Spanish (Mexico) 
+ English (UK) 
+ Niger 
+ English (UK) 
+ French 
+ Nigeria 
+ English (UK) 
+ North Macedonia 
+ English (UK) 
+ Norway 
+ Norwegian 
+ English (UK) 
+ Oman 
+ English (UK) 
+ Pakistan 
+ English (UK) 
+ Palau 
+ English (UK) 
+ Panama 
+ Spanish (Mexico) 
+ English (UK) 
+ Papua New Guinea 
+ English (UK) 
+ Paraguay 
+ Spanish (Mexico) 
+ English (UK) 
+ Peru 
+ Spanish (Mexico) 
+ English (UK) 
+ Philippines 
+ English (UK) 
+ Poland 
+ Polish 
+ English (UK) 
+ Portugal 
+ Portuguese (Portugal) 
+ English (UK) 
+ Qatar 
+ English (UK) 
+ Republic Of Korea 
+ Korean 
+ English (UK) 
+ Republic of the Congo 
+ English (UK) 
+ French 
+ Romania 
+ Romanian 
+ English (UK) 
+ Russia 
+ Russian 
+ English (UK), Ukrainian 
+ Saint Lucia 
+ English (UK) 
+ São Tomé and Príncipe 
+ English (UK) 
+ Saudi Arabia 
+ Arabic 
+ English (UK) 
+ Senegal 
+ English (UK) 
+ French 
+ Seychelles 
+ English (UK) 
+ French 
+ Sierra Leone 
+ English (UK) 
+ Singapore 
+ Chinese (Simplified) 
+ English (UK) 
+ Slovakia 
+ Slovak 
+ English (UK) 
+ Slovenia 
+ English (UK) 
+ Solomon Islands 
+ English (UK) 
+ South Africa 
+ English (UK) 
+ Spain 
+ Spanish (Spain) 
+ English (U.K.), Catalan 
+ Sri Lanka 
+ English (UK) 
+ St. Kitts and Nevis 
+ English (UK) 
+ St. Vincent and The Grenadines 
+ English (UK) 
+ Suriname 
+ Dutch 
+ English (UK) 
+ Swaziland 
+ English (UK) 
+ Sweden 
+ Swedish 
+ English (UK) 
+ Switzerland 
+ German 
+ English (UK), French, Italian 
+ Taiwan 
+ Chinese (Traditional) 
+ English (UK) 
+ Tajikistan 
+ English (UK) 
+ Thailand 
+ Thai 
+ English (UK) 
+ Trinidad and Tobago 
+ English (UK) 
+ French 
+ Tunisia 
+ Arabic 
+ French, English (UK) 
+ Turkey 
+ Turkish 
+ English (UK), French 
+ Turkmenistan 
+ English (UK) 
+ Turks and Caicos 
+ English (UK) 
+ Uganda 
+ English (UK) 
+ Ukraine 
+ Ukrainian 
+ Russian, English (UK) 
+ United Arab Emirates 
+ Arabic 
+ English (UK) 
+ United Republic Of Tanzania, 
+ English (UK) 
+ Uruguay 
+ Spanish (Mexico) 
+ English (UK) 
+ Uzbekistan 
+ English (UK) 
+ Venezuela 
+ Spanish (Mexico) 
+ English (UK) 
+ Vietnam 
+ Vietnamese 
+ English (UK) 
+ Virgin Islands 
+ English (UK) 
+ Yemen 
+ Arabic 
+ English (UK) 
+ Zimbabwe 
+ English (UK) 
+ Expert Tip
+Keep in mind that some localizations are exchangeable. For example, in Canada, if French (Canada) is not open but you have a localization enabled for French (France), keywords in the French (France) metadata can index in French (Canada) until an official French (Canada) localization is enabled.
+ How to use cross-localization to maximize keyword indexation
+ ASO experts can take advantage of cross-localization and indexation of multiple locales to have their app rank for a wider variety of keywords . For example, an app that has a strong presence and user base in the United States but low brand recognition in Mexico could forgo translating its app listing into Spanish. Instead, it could include English keywords in the Spanish (MX) metadata localization. The app would then rank in the US App Store for the keywords added to both the English (US) and Spanish (MX) localization.
+ To learn more about app localization, read this chapter dedicated to app store localization in the 2022 edition of the Advanced App Store Optimization book 
+ Let’s imagine that you develop a transit app that allows users to purchase tickets and track arrivals for all types of transit options. The app is in English and serves users across the United States. Incorporating so many transit and location-related keywords makes it difficult to add every relevant keyword to your app’s 30-character title, 30-character subtitle, and 100-character keyword field. This is where your cross-localization and multi-territory indexation strategy comes into play.
+ The first step is adding the most relevant and searched for keywords to the app’s English (US) metadata:
+ English (US) 
+ Title: MyTransit – Bus and Train [25 characters]
+ Subtitle: Book tickets & track arrivals [29 characters]
+ Keyword field [97 characters]:
+ transit,subway,times,route,public,transport,interstate,nyc,new,york,la,los,angeles,boston,seattle 
+ Next, although our public transit app does not offer its services in Mexico, we can still add other relevant English keywords to the app’s Spanish (MX) keyword field as the Spanish (MX) metadata is also indexed in the US. You could even include English keywords in the Spanish (MX) title and/or subtitle to target even more English keywords, but for now we will leave the title and subtitle in Spanish in order to appeal to Spanish-speaking users in the US:
+ Spanish (Mexico) 
+ Title: MyTransit – Autobús y tren [26 characters]
+ Subtitle: Reserva de pasajes [18 characters]
+ Keyword field [97 characters]:
+ bus,metro,alabama,colorado,florida,nevada,california,washington,massachusetts,virginia,new,jersey 
+ Above, we see that the most relevant Spanish keywords have been added to the title and subtitle. However, the different locations that the US users might look for have also been added to the keyword field, in English.
+ We also see that the keyword “bus” was repeated in the Spanish (MX) keyword field despite already being included in the US metadata. This allows the app to target the long-tail keywords such as “washington bus” and “metro bus,” as keyword combinations are restricted to singular locales .
+ As such, if the keyword “bus” had only been added to the English (US) metadata and “metro” only to the Spanish (MX) metadata, the app would only rank for the individual keywords “bus” and “metro,” but not the for the combination “metro bus.”
+ While this practice is frowned upon by Apple, so far, no rejections from Apple have been publicized. 
+ However, localize the title and subtitle to appeal to local users . Even if your app is not available in Mexico, keep in mind that the large Spanish-speaking population in the US may be more likely to search for your app using Spanish keywords. Nonetheless, if Spanish speakers are not your main target audience, this methodology can help you rank for more English keywords in the US.
+ Expert Tip
+ Keywords are not combined across localizations. If you have “bus” only in the English (US) metadata and “metro” only in the Spanish (MX) metadata, you will rank for “bus” and “metro” in the US, but will most likely not be indexed for “metro bus.”
+ Conclusion
+ To benefit from cross-localization and increase your metadata’s character space on the App Store, you have to keep the following things in mind:
+ Other than in Canada and the US, apps globally rank for keywords included in the English (UK) or English (US) metadata, depending on which one is set as the primary locale.
+ Try not to repeat keywords across a territory’s primary and secondary locales to maximize the amount of keywords you can rank for. Repetition may be required in some cases to target specific combinations as keywords are not combined across locales.
+ To try to at least localize your app’s visible metadata (title and subtitle) to appeal to local users and mix languages only in the keyword field.
+ Start free trial 
+ by Ian Pernia , Senior App Growth Consultant at AppTweak 
+ Ian is a Senior App Growth Consultant at AppTweak helping apps improve their store presence. He is passionate about movies, traveling, and spending time with his dog. 
+ Your Essential Toolkit for ASO Keyword Research
+ A deep-dive into ASO keyword research. Learn how to find and prioritize your target keywords, localization and ASO best practices.
+ Download now 
+ More articles in App Localization 
+ App Localization 
+ May 22, 2025 
+ The complete guide to app store localization (Google Play and the App Store)
+ Boost your app downloads with proven app localization best practices.
+ Lina Danilchik 
+ App Localization Product Updates 
+ May 21, 2025 
+ Translate app screenshots for new localization insights
+ Translate text on competitor screenshots to analyze how top apps adapt messaging by market - only available in AppTweak.
+ Elizabeth Devine 
+ App Localization 
+ January 23, 2023 
+ How to Localize Your App for Singapore
+ Discover how to localize your app/game for Singapore.
+ Justin Duckers 
+ See all posts 
+ AppTweak SA
+ info(Replace this parenthesis with the @ sign)apptweak.com 
+ avenue Louise 235
+ Brussels 
+ , 
+ , 1050 
+ Belgium 
+ https://www.apptweak.com 
+ https://www.apptweak.com/img/2023/04/apptweak-logo-o.svg 
+ app store marketing, aso 
+ 

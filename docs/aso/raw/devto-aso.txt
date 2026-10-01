@@ -1,0 +1,186 @@
+ 
+ Apple App Store Optimization (ASO) - DEV Community 
+ Skip to content 
+ Navigation menu 
+ Search 
+ Powered by Algolia
+ Search 
+ Log in
+ Create account
+ DEV Community
+ Close 
+ Add reaction
+ Like
+ Unicorn
+ Exploding Head
+ Raised Hands
+ Fire
+ Jump to Comments
+ Save
+ Boost
+ Pick as gem 
+ More... 
+ Copy link 
+ Copy link 
+ Copied to Clipboard
+ Share to X
+ Share to LinkedIn
+ Share to Facebook
+ Share to Mastodon
+ Share Post via... 
+ Report Abuse 
+ junyu fang 
+ Posted on Sep 1, 2025 
+ Apple App Store Optimization (ASO)
+ # aso 
+ # developer 
+ # devops 
+ # programming 
+ ASO (App Store Optimization), also known as "App Store SEO," is similar to search engine optimization (SEO), but with its own rules and priorities. The goals of optimization are:
+ Improve your app's search ranking in the App Store, increase its visibility, and boost download conversion rates.
+ I. Search Ranking Optimization (Keywords + Algorithm)
+ Apple Store search results are primarily determined by keyword matching and user behavior. To optimize, focus on the following aspects:
+ 1. App Title
+ This has the highest weight and directly impacts search results.
+ Recommended format: Brand name + core function words. 
+ For example: Lightly compress images – Image compression & format conversion.
+ Keep the title within 30 characters to avoid truncation.
+ 2. Subtitle
+ This subtitle has the second highest weight and appears below the app title.
+ It is used to include secondary keywords, selling points, or highlight differentiating features.
+ 1. Incorrect example : "A free, open-source image compression and image format conversion tool."
+ In this incorrect subtitle example, "a" takes up valuable characters and is meaningless. "Tool" could also be omitted; users will know it's a tool.
+ The subtitle carries a higher weight and should include as many keywords as possible, rather than simply providing an introduction.
+ 2. Correct example : "Open-source tool, batch image compression, saves space."
+ 3. Keywords Field
+ 100-character limit, separated by commas.
+ Do not repeat keywords in the title, as the system will automatically overwrite them.
+ 1. Avoid Waste :
+ 1) Avoid plural forms (Apple will automatically recognize this).
+ 2) Do not use spaces.
+ 3) Avoid common words (app, free, best).
+ 2. Keyword selection should consider both search volume and relevance: 
+ 1) Core Function Keywords: These are the most intuitive keywords users search for, such as image compression, photo compressor, and resize image.
+ 2) Long Tail Keywords: These have low competition and high conversion rates, such as compress jpeg and reduce png size.
+ 3) Pain Point Keywords: These are user motivations, such as save storage and optimize photos.
+ 4) Regionalization: Keywords used vary significantly across regions. Americans tend to use "photo," Japanese use "portrait," and Europeans might use "optimize."
+ 3. Practical Methods :
+ 1) Go to the App Store and enter a keyword directly to see the automatically generated keywords (these are the keywords users actually search for).
+ 2) Look at the titles and subtitles of competitors’ products, which often contain their core keywords.
+ Their titles all include "Compress," "Photo," "Resize," and "Format Conversion."
+ Subtitles often include pain-point keywords like "Save storage."
+ 3) Use ASO tools (AppTweak, Sensor Tower, App Radar, ASOdesk) to check search volume and difficulty.
+ How to write keywords?
+ 1. Apple's official rules :
+ 1) 100-character limit, separated by commas (,).
+ 2) No spaces allowed, as they are treated as invalid characters by the system, wasting valuable space.
+ Correct : 
+ image compression, photo compressor, resize image
+ Enter fullscreen mode 
+ Exit fullscreen mode 
+ Incorrect : 
+ image compression, photo compressor, resize image
+ Enter fullscreen mode 
+ Exit fullscreen mode 
+ 3) Do not repeat words already in the title or subtitle. Apple will automatically merge these fields.
+ 4) Apple's search is case-insensitive; searching for "jpeg" will match both JPEG and jpeg.
+ 2. The system automatically combines words :
+ If you write "image, compression, format, conversion," users searching for "image compression" and "format conversion" will also match, so there's no need to repeat the entire phrase.
+ Correct word combination: compression, slimming, lossless, batch, conversion, format, resize, photo, optimization, storage, jpeg, jpg, png, avif, webp, heic, reduce, resize, compressor, convert, picture
+ 3. English Keywords :
+ Even if you're listed in the Chinese and Japanese regions, many people will search in English. Therefore, we recommend adding English keywords.
+ 4. Keyword Parsing :
+ Apple's keyword field parsing rules are:
+ 1) Only English half-width commas (,) are recognized as delimiters.
+ 2) If you use the Chinese semicolon (comma), the full-width comma (comma), or the Arabic comma (،), the system will interpret it as a continuous string rather than multiple keywords. This wastes search terms that could have been combined.
+ English commas are altered in Google Translate. For example, in Japanese, they are translated as semicolons (commas), and in Arabic, they are translated as ،. Therefore, you need to change the commas in Google Translate to English commas. 
+ الصورة، الضغط، التحويل  // Incorrect spelling: spaces and Arabic commas are present.
+الصورة,الضغط,التحويل    // Correct spelling: remove spaces and replace with English commas
+ Enter fullscreen mode 
+ Exit fullscreen mode 
+ 4. App Description
+ This description has little direct impact on search ranking, but is crucial for conversion rate.
+ Recommendation: Clearly outline the core features and user value in the first few lines, then provide detailed explanations later.
+ 5. App Update Log (What's New)
+ Although this has a low weight, frequent updates give users and algorithms a sense of activity.
+ It's recommended to optimize the content when updating.
+ 6. User Behavior Weighting
+ Apple's search rankings also consider:
+ 1) Download volume and growth rate (the cold start period is crucial);
+ 2) Retention rate (users who continue to use the app after downloading indicate its value);
+ 3) Ratings and number of reviews (influence ranking and conversion rate);
+ II. Conversion Rate Optimization (Download Decision Level)
+ Being searched for doesn't necessarily mean downloading. To get users to click "Get," focus on:
+ 1. App Icon
+ Make it simple, high-contrast, and highly recognizable.
+ Try to avoid being too similar to competing products.
+ 2. Screenshots & Videos (Preview)
+ Screenshots are the first thing users see when they click on your app.
+ Recommendation: Use the first two screenshots to highlight the core features and include a brief caption.
+ For complex features, consider using a preview video (15–30 seconds).
+ 3. Ratings & Reviews
+ A rating of 4.5 stars or higher significantly impacts conversion rates.
+ Encourage users to leave positive reviews (e.g., prompts after a feature is completed).
+ Reply promptly to negative reviews to demonstrate developer commitment to product maintenance.
+ 4. Localization
+ Optimize titles, subtitles, keywords, and screenshot copy for different countries/regions.
+ For example, if you use "image compression" in the US, you might use "画像圧縮" in Japan.
+ III. Data Analysis & Continuous Optimization
+ ASO isn't a one-time effort; it requires continuous testing and iteration:
+ Analyze keywords using tools such as AppTweak, Sensor Tower, App Radar, and ASOdesk.
+ Continuously monitor downloads, rankings, and keyword coverage.
+ Observe the titles, screenshots, and keywords of competing products.
+ Try A/B testing different titles or screenshots with each update.
+ Summary
+ ASO Optimization Priorities:
+ Title (most critical)
+ Subtitle & Keyword Fields
+ Screenshots & Icons (increase conversion rates)
+ Localization (expand market share)
+ Review Maintenance & Continuous Updates
+ Further Knowledge
+ Can keywords use brand terms, such as TinyPNG?
+Apple's review rules: You cannot overuse competing or trademarked terms.
+ If you use well-known tool names like TinyPNG or Photoshop, your application may be rejected, especially if there's clear infringement.
+ However, there's a gray area:
+ If it's a generic, non-trademarked term (such as png or tiny), it's allowed.
+ If users are genuinely searching for TinyPNG and you want to attract traffic, try using function terms (in the title, subtitle, or keywords) that are closer, for example: 
+ tiny photo compressor
+png optimizer
+ Enter fullscreen mode 
+ Exit fullscreen mode 
+ This avoids directly violating the trademark and can also help divert some traffic.
+ Recommendation: Avoid using brand terms like TinyPNG directly; instead, use similar expressions to mitigate risks.
+ Top comments (0) 
+ Subscribe 
+ Personal 
+ Trusted User 
+ Create template
+ Templates let you quickly answer FAQs or store snippets for re-use.
+ Submit 
+ Preview 
+ Dismiss 
+ Are you sure you want to hide this comment? It will become hidden in your post, but will still be visible via the comment's permalink .
+ Hide child comments as well
+ Confirm
+ For further actions, you may consider blocking this person and/or reporting abuse 
+ junyu fang
+ Follow 
+ Apple Independent Developer Personal
+iOS Apps: Piglet、Faock、ERdepot
+macOS Apps: ImageSlim, SnapSlim (in development)
+ Joined
+ Aug 12, 2025 
+ More from junyu fang 
+ Independent development of side hustles
+ # programming 
+ # developers 
+ Chatbase + Rag: Quickly build your knowledge base question-answering robot
+ # chatgpt 
+ # programming 
+ From implementation to closing: communication skills that independent developers must learn
+ # programming 
+ # devops 
+ We're a place where coders share, stay up-to-date and grow their careers.
+ Log in
+ Create account

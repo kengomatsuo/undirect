@@ -1,0 +1,203 @@
+ 
+ Prequel gets 75% improvement with A/B testing of video with SplitMetrics Optimize 
+Login
+ Acquire 
+ App Radar 
+ Optimize 
+Talk to an expert
+ How we help 
+ Products & Services 
+ Pricing 
+ Resources 
+Login
+ Acquire 
+ App Radar 
+ Optimize 
+Talk to an expert
+Products & Services 
+ Acquire 
+ Iris 
+ App Radar 
+ Optimize 
+ Growth Services 
+ Integrations 
+ AppsFlyer 
+ Adjust 
+ Singular 
+ Branch.io 
+ RevenueCat 
+ Tenjin 
+ Qonversion 
+ App Hud 
+ Talk to an expert 
+Resources 
+ Learn
+ Latest Article 
+ Best app marketing conferences for 2027 (and the rest of 2026)
+ See all Blog articles 
+ Latest Event 
+ Custom product pages: a playbook for scaling Apple Ads performance
+ See all Events & Webinars 
+ Latest Case Study 
+ How BetterSleep Improved ROAS by 40.5% Using CPP Experiments in SplitMetrics Acquire
+ See all Customer Stories 
+ Latest Report 
+ Games in 2026:  SplitMetrics’ Ultimate Apple Ads Playbook (+Benchmarks)
+ See all Benchmarks & Reports 
+ Talk to an expert 
+How we help 
+ Technology
+ ROAS & CPA Optimization 
+ Scaling & Share of Voice Optimization 
+ App Store Optimization 
+ Competitor Intelligence 
+ A/B Testing & Experiments 
+ Growth Services
+ Services Overview 
+ Fully Managed ASO 
+ Fully Managed Apple Ads 
+ Multichannel Advertising 
+ Creative Production 
+ Our AI & Data
+ Iris AI Agents 
+ Samba AI Models 
+ Market Intelligence 
+ Talk to an expert 
+ Back to cases 
+ Category 
+Photo & Video 
+Prequel: How to get 75% improvement with A/B testing of video 
+ Product used
+ Share
+ Copied
+ Challenge
+ Prequel is a world-famous photo and video editing app with multiple presets used by hundreds of thousands of users, including celebrities.
+ When the app was just launched and the Prequel team had the first user base, they realized that they needed to move on and run mobile A/B tests to check various concepts. Prequel started working with ad traffic, validating different hypotheses and approaches to the app store product page design. It quickly became clear that it is rather tough to conduct tests and analyze the results without additional tools.
+ Solution
+ “The Prequel app is closely related to photo and video editing, where nothing stands still and we do our utmost to always be at the forefront of the latest trends. Through mobile A/B testing of visual assets, we validate our hypotheses about potential user reactions to our ideas and values. We discovered that the SplitMetrics platform is the best possible option. This is an important tool for out-of-store A/B testing experiments that helps us optimize our app listing on the App Store and Google Play without risking to drop the conversion rate.”
+ Stas Levshin, Growth Product Manager at Prequel
+ Conversion rate increase is by far the most important indicator the Prequel team look at in terms of A/B testing. But apart from that, the smallest detail and cause-and-effect relationships are also important. For example, has conversion increased because Prequel balanced the product and the marketing, or this is because the team chose the right visuals or delivered value? SplitMetrics, with in-depth analytics it provides, helps Prequel find answers to these and many other questions.
+ Result
+ Prequel mainly works on the optimization of screenshots and video previews, since the app itself is inextricably linked with the visuals. Prequel provides users with a large number of effects and filters, as well as internal tools that the team can market in different ways and thus find valuable insights. 
+ Once the Client had a hypothesis that video may not always have a good effect on conversion, and that it should be replaced with screenshots. Prequel ran a test on SplitMetrics and found out that without a video, the product page performance decreases: users are more reluctant to stay on the app’s listing page, scroll through screenshots less and interact with the app after viewing them. So it became obvious that video is an essential element for the Prequel’s product page, and the company turned to SplitMetrics Customer Success Team for further advice.
+ In addition to the insight about the importance of video in our case, the Prequel team had another idea for A/B testing: they noticed that users do not watch the video for too long, they spend literally 5-7 seconds on watching, and also do not scroll through screenshots much. And since the first position on the app store product page is taken by a freeze frame from the video, the team decided to optimize it. 
+ Before running an experiment, Prequel used just a screenshot from the app without any additional captions, so as not to cover the content and in order to better showcase the interface. But then the Client decided to add a caption to this still frame, explaining that Prequel is a photo & video editing app. In subsequent iterations, the team again conducted an experiment, which unambiguously confirmed the need to replace the old video cover with a new one. It hasn’t been very long since the team updated the format, but the first results are already encouraging – improvement is around 75% .
+ We, as a photo and video editing app, often release many new effects and filters for processing the content of our users. Advertising of new features and top retouched photos in terms of frequency does not lag behind the releases. We test different positioning of all of this with SplitMetrics. Sometimes there are situations for the product and the marketing, different things perform well. That’s why for us a page in the app store becomes an important point of contact between the product and marketing, where we try to keep the user in a kind of averaged compromise context. SplitMetrics helps us to find the points of convergence between product and marketing parts.
+ Stas Levshin , Growth Product Manager at Prequel
+ Want to achieve similar results?
+ Schedule a demo call with one of our optimization experts
+ Book a Demo 
+ Keep reading
+All case studies
+Health & Fitness 
+Acquire 
+How BetterSleep Improved ROAS by 40.5% Using CPP Experiments in SplitMetrics Acquire 
+Games 
+Services 
+How SplitMetrics Drove +399% Store Visitors and +335% Acquisitions for Farm Jam on Google Play 
+Games 
+Optimize 
+How Hidden City Increased Installs by 10% Worldwide with SplitMetrics Optimize 
+Utilities 
+Acquire 
+How Leadtech Group Used AI Agent Iris for Competitive Intelligence and Market Expansion in Apple Ads 
+ Ready to scale your Apple Ads?
+ Book time with the team that delivers +25% revenue growth for Fortune 100 brands.
+ Talk to an expert 
+ 1/4 
+ Talk with our mobile marketing experts
+ Which solutions are you interested in?
+ Choose a solution 
+ SaaS Products 
+ Suite of products for Apple Ads, ASO, market intelligence and AI. 
+ Growth Services 
+ Team of experts for your UA, ASO, creative optimization and more. 
+ Select all that apply:
+ Select SaaS products 
+ Scale Apple Ads profitably with Samba AI 
+ Delegate tasks to our AI Agent for Apple Ads 
+ Improve ASO and drive organic installs worldwide 
+ Run mobile A/B tests and validate hypothesis 
+ Select growth services 
+ Fully-managed Apple Ads 
+ Ongoing Apple Ads optimization incl. CPP design and testing. 
+ Fully-managed ASO 
+ Complete ASO cycle incl. CVR optimization and A/B testing. 
+ Multichannel Ad Service 
+ Scaling ad campaigns on 15+ UA channels incl. programmatic. 
+ Creative Production 
+ End-to-end asset creation for every ad platform you need. 
+ Product Optimization 
+ Activation, retention and monetisation improvements. 
+ Next 
+ 2/4 
+ Help us customize your experience
+ First name 
+ * 
+ Last name 
+ * 
+ Work email 
+ * 
+ Job title 
+ * 
+ What challenges can we help you solve? 
+ How did you hear about us? 
+ * 
+By clicking on "Next" you agree to our Privacy Policy and allow SplitMetrics Inc. to store and process your personal data in accordance with it.
+Back
+ Next 
+ 3/4 
+ Tell us about your business
+ Company name 
+ * 
+ App category 
+ (select) 
+ * 
+ Select 
+ Business 
+ Education 
+ Entertainment 
+ Finance 
+ Games 
+ Health&Fitness 
+ Photo&Video 
+ Productivity 
+ Social Networking 
+ Sports 
+ Utilities 
+ Other 
+ Link to your app 
+ Monthly mobile ad spend 
+ * 
+ up to $25,000 
+ $25,000 - $50,000 
+ $50,000 - $100,000 
+ $100,000 - $200,000 
+ $200,000 - $500,000 
+ over $500,000 
+ I don't know 
+ Monthly app downloads 
+ * 
+ < 10 000 
+ 10 001 - 30 000 
+ 30 001 - 50 000 
+ 50 001 - 100 000 
+ 100 001 - 500 000 
+ > 500 000 
+ I don't know 
+Back
+ Next 
+ 4/4 
+ Meet your SplitMetrics expert!
+We've found the right person to help you reach your growth goals. Schedule a 30-minutes call to discuss your needs and get personalized support.
+ Loading calendar
+ Available meeting times will appear here in a moment.
+ Calendar unavailable
+ Please try again later or contact us directly to book your demo.
+ Your call is booked.
+We're looking forward to learning more about your business. Speak soon!
+Trusted by category leaders
+ “While evaluating available vendors, SplitMetrics offered the most advanced feature set and extensive support on the market.” 
+ “SplitMetrics has been instrumental in managing our Apple Ads, as well as paid social campaigns across Meta, Google, and TikTok.” 
+ “The biggest improvement is the confidence that our campaigns are running at their full potential.” 
+ 

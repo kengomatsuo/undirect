@@ -1,0 +1,731 @@
+ App Store Cross-Localization Guide: Double Your Keywords Skip to content ASO.dev 
+ Search Ctrl K Cancel 
+ EN EN English RU Русский ZH 中文 
+ EN EN English RU Русский ZH 中文 
+ Cross Localization
+ Cross-localization is a strategy that uses one localization (for example, AR for US) to index an app in other countries and regions where this localization is available but not primary. This allows you to significantly expand your app’s reach and visibility without having to create unique content for every locale.
+ For each territory, the App Store defines a “primary” language. However, each territory also has several “additional” supported languages.
+ Complete list of locales 
+ Useful Tips for Cross-Localization
+ Section titled “Useful Tips for Cross-Localization” 
+ Use only relevant keywords to avoid reduced conversion rates. Our goal is to get installs, not just impressions. Do not add empty localizations. You can fill any localization with another language; you do not have to use the localization’s native language.
+ Maximizing Cross-Localization
+ Section titled “Maximizing Cross-Localization” 
+ The primary localization of the app is currently indexed in all countries. Increase your app’s reach in the US by up to 10% by selecting a non-target localization as the primary localization, but filling it with your target language (English).
+ For example : 🇨🇦 English (Canada): EN_CA, 🇫🇮 Finnish: FI, 🇸🇰 Slovak: SK, and others.
+ For example, let’s take the US, which has 10 localizations:
+ Primary localization: 🇺🇸 English (US): EN_US Also indexed as cross-localizations: 🇦🇪 Arabic: AR 🇨🇳 Chinese (Simplified): ZH_HANS 🇭🇰 Chinese (Traditional): ZH_HANT 🇫🇷 French: FR 🇰🇷 Korean: KO 🇧🇷 Portuguese (Brazil): PT_BR 🇷🇺 Russian: RU 🇲🇽 Spanish (Mexico): ES_MX 🇻🇳 Vietnamese: VI
+ If your app uses a different primary localization by default, you get additional fields (Title, Subtitle, and Keywords) for the current App Store indexing in the US from that localization.
+ Do Not Duplicate Keywords
+ Section titled “Do Not Duplicate Keywords” 
+ The App Store does not boost indexing by repetition. Each word is counted only once-even if it appears in multiple fields (Title, Subtitle, Keywords) or in different localizations.
+ Do Not Duplicate Keywords Across Fields in Different Localizations
+ Section titled “Do Not Duplicate Keywords Across Fields in Different Localizations” 
+ It is not recommended to use the same word in different metadata fields, such as Title, Subtitle, and Keywords, even across different localizations. If you use the same word in the Title and in the Subtitle of another localization, it may be indexed with less weight (Subtitle has lower weight).
+ Separators
+ Section titled “Separators” 
+ The App Store does not index phrases as-is-it combines words from the Title, Subtitle, and Keywords fields.
+ Do not write long phrases like best photo editor for iPhone . Instead, use as many unique words as possible, separated by commas: best,photo,editor,iPhone -this way you get more combinations: best photo , photo editor , editor for iPhone , etc.
+ Compound Words in the Title Are Indexed by Parts
+ Section titled “Compound Words in the Title Are Indexed by Parts” 
+ The App Store automatically splits compound words in the title, even without spaces.
+ Example: AppStoreConnect is indexed as: app , store , connect , appstoreconnect 
+ Use camelCase and PascalCase for maximum reach.
+ Word Order Affects Phrases
+ Section titled “Word Order Affects Phrases” 
+ Words at the beginning of the Title get the highest priority. Use your most important keywords there.
+ Keyword Phrases Are Combined Only Within a Single Localization
+ Section titled “Keyword Phrases Are Combined Only Within a Single Localization” 
+ In general, duplicating keywords is not recommended, but for the most important phrases, it is acceptable.
+ The App Store does not combine words between locales; all phrases are formed within a single localization. For example:
+ EN-US Title: Apple 
+ EN-GB Subtitle: Music 
+ ❌ The phrase Apple Music will not be indexed.
+ Do not add words that are automatically indexed for all apps
+ Section titled “Do not add words that are automatically indexed for all apps” 
+ There is a list of free words that are automatically indexed for all apps. For example, app , game , for , etc.
+ Tip
+ These words are shown as not recommended during validation in the Metadata Editor and Bulk Editor .
+ Keywords Without Spaces
+ Section titled “Keywords Without Spaces” 
+ Keywords written without spaces are split by capital letters during ranking. Works only for the Title field.
+ For example , HelloWorld in the app name is split by capital letters into the words hello and world during ranking.
+ Do not mention AI in your metadata for mainland China
+ Section titled “Do not mention AI in your metadata for mainland China” 
+ In mainland China, mentioning AI in metadata is prohibited unless you have certification. If you want to use cross-localization in mainland China, do not mention AI in your metadata. This may result in your app being removed from the App Store for this region.
+ If you are not publishing in mainland China, or you have received accreditation, you can use cross-localization with AI mentions.
+ Tip
+ Some names are already shown in validation for Chinese in the Metadata Editor and Bulk Editor .
+ 100% 
+ Cross Localization
+ 100% 
+ Cross Localization
+ Localization Overview
+ Section titled “Localization Overview” 
+ Select a country Search countries 
+ 🇦🇫 Afghanistan : AF 
+ 🇦🇱 Albania : AL 
+ 🇩🇿 Algeria : DZ 
+ 🇦🇴 Angola : AO 
+ 🇦🇮 Anguilla : AI 
+ 🇦🇬 Antigua and Barbuda : AG 
+ 🇦🇷 Argentina : AR 
+ 🇦🇲 Armenia : AM 
+ 🇦🇺 Australia : AU 
+ 🇦🇹 Austria : AT 
+ 🇦🇿 Azerbaijan : AZ 
+ 🇧🇸 Bahamas : BS 
+ 🇧🇭 Bahrain : BH 
+ 🇧🇧 Barbados : BB 
+ 🇧🇾 Belarus : BY 
+ 🇧🇪 Belgium : BE 
+ 🇧🇿 Belize : BZ 
+ 🇧🇯 Benin : BJ 
+ 🇧🇲 Bermuda : BM 
+ 🇧🇹 Bhutan : BT 
+ 🇧🇴 Bolivia : BO 
+ 🇧🇦 Bosnia and Herzegovina : BA 
+ 🇧🇼 Botswana : BW 
+ 🇧🇷 Brazil : BR 
+ 🇻🇬 British Virgin Islands : VG 
+ 🇧🇳 Brunei : BN 
+ 🇧🇬 Bulgaria : BG 
+ 🇧🇫 Burkina Faso : BF 
+ 🇰🇭 Cambodia : KH 
+ 🇨🇲 Cameroon : CM 
+ 🇨🇦 Canada : CA 
+ 🇨🇻 Cape Verde : CV 
+ 🇰🇾 Cayman Islands : KY 
+ 🇹🇩 Chad : TD 
+ 🇨🇱 Chile : CL 
+ 🇨🇳 China mainland : CN 
+ 🇨🇴 Colombia : CO 
+ 🇨🇩 Congo Democratic Republic : CD 
+ 🇨🇬 Congo Republic : CG 
+ 🇨🇷 Costa Rica : CR 
+ 🇨🇮 Cote d'Ivoire : CI 
+ 🇭🇷 Croatia : HR 
+ 🇨🇾 Cyprus : CY 
+ 🇨🇿 Czech Republic : CZ 
+ 🇩🇰 Denmark : DK 
+ 🇩🇲 Dominica : DM 
+ 🇩🇴 Dominican Republic : DO 
+ 🇪🇨 Ecuador : EC 
+ 🇪🇬 Egypt : EG 
+ 🇸🇻 El Salvador : SV 
+ 🇪🇪 Estonia : EE 
+ 🇸🇿 Eswatini : SZ 
+ 🇫🇯 Fiji : FJ 
+ 🇫🇮 Finland : FI 
+ 🇫🇷 France : FR 
+ 🇬🇦 Gabon : GA 
+ 🇬🇲 Gambia : GM 
+ 🇬🇪 Georgia : GE 
+ 🇩🇪 Germany : DE 
+ 🇬🇭 Ghana : GH 
+ 🇬🇷 Greece : GR 
+ 🇬🇩 Grenada : GD 
+ 🇬🇹 Guatemala : GT 
+ 🇬🇼 Guinea-Bissau : GW 
+ 🇬🇾 Guyana : GY 
+ 🇭🇳 Honduras : HN 
+ 🇭🇰 Hong Kong : HK 
+ 🇭🇺 Hungary : HU 
+ 🇮🇸 Iceland : IS 
+ 🇮🇳 India : IN 
+ 🇮🇩 Indonesia : ID 
+ 🇮🇶 Iraq : IQ 
+ 🇮🇪 Ireland : IE 
+ 🇮🇱 Israel : IL 
+ 🇮🇹 Italy : IT 
+ 🇯🇲 Jamaica : JM 
+ 🇯🇵 Japan : JP 
+ 🇯🇴 Jordan : JO 
+ 🇰🇿 Kazakhstan : KZ 
+ 🇰🇪 Kenya : KE 
+ 🇽🇰 Kosovo : XK 
+ 🇰🇼 Kuwait : KW 
+ 🇰🇬 Kyrgyzstan : KG 
+ 🇱🇦 Laos : LA 
+ 🇱🇻 Latvia : LV 
+ 🇱🇧 Lebanon : LB 
+ 🇱🇷 Liberia : LR 
+ 🇱🇾 Libya : LY 
+ 🇱🇹 Lithuania : LT 
+ 🇱🇺 Luxembourg : LU 
+ 🇲🇴 Macau : MO 
+ 🇲🇬 Madagascar : MG 
+ 🇲🇼 Malawi : MW 
+ 🇲🇾 Malaysia : MY 
+ 🇲🇻 Maldives : MV 
+ 🇲🇱 Mali : ML 
+ 🇲🇹 Malta : MT 
+ 🇲🇷 Mauritania : MR 
+ 🇲🇺 Mauritius : MU 
+ 🇲🇽 Mexico : MX 
+ 🇫🇲 Micronesia : FM 
+ 🇲🇩 Moldova : MD 
+ 🇲🇳 Mongolia : MN 
+ 🇲🇪 Montenegro : ME 
+ 🇲🇸 Montserrat : MS 
+ 🇲🇦 Morocco : MA 
+ 🇲🇿 Mozambique : MZ 
+ 🇲🇲 Myanmar : MM 
+ 🇳🇦 Namibia : NA 
+ 🇳🇷 Nauru : NR 
+ 🇳🇵 Nepal : NP 
+ 🇳🇱 Netherlands : NL 
+ 🇳🇿 New Zealand : NZ 
+ 🇳🇮 Nicaragua : NI 
+ 🇳🇪 Niger : NE 
+ 🇳🇬 Nigeria : NG 
+ 🇰🇵 North Korea : KP 
+ 🇲🇰 North Macedonia : MK 
+ 🇳🇴 Norway : NO 
+ 🇴🇲 Oman : OM 
+ 🇵🇰 Pakistan : PK 
+ 🇵🇼 Palau : PW 
+ 🇵🇦 Panama : PA 
+ 🇵🇬 Papua New Guinea : PG 
+ 🇵🇾 Paraguay : PY 
+ 🇵🇪 Peru : PE 
+ 🇵🇭 Philippines : PH 
+ 🇵🇱 Poland : PL 
+ 🇵🇹 Portugal : PT 
+ 🇶🇦 Qatar : QA 
+ 🇰🇷 Republic of Korea : KR 
+ 🇷🇴 Romania : RO 
+ 🇷🇺 Russia : RU 
+ 🇷🇼 Rwanda : RW 
+ 🇸🇹 Sao Tome and Principe : ST 
+ 🇸🇦 Saudi Arabia : SA 
+ 🇸🇳 Senegal : SN 
+ 🇷🇸 Serbia : RS 
+ 🇸🇨 Seychelles : SC 
+ 🇸🇱 Sierra Leone : SL 
+ 🇸🇬 Singapore : SG 
+ 🇸🇰 Slovakia : SK 
+ 🇸🇮 Slovenia : SI 
+ 🇸🇧 Solomon Islands : SB 
+ 🇿🇦 South Africa : ZA 
+ 🇪🇸 Spain : ES 
+ 🇱🇰 Sri Lanka : LK 
+ 🇰🇳 St. Kitts and Nevis : KN 
+ 🇱🇨 St. Lucia : LC 
+ 🇻🇨 St. Vincent and the Grenadines : VC 
+ 🇸🇷 Suriname : SR 
+ 🇸🇪 Sweden : SE 
+ 🇨🇭 Switzerland : CH 
+ 🇹🇼 Taiwan : TW 
+ 🇹🇯 Tajikistan : TJ 
+ 🇹🇿 Tanzania : TZ 
+ 🇹🇭 Thailand : TH 
+ 🇹🇴 Tonga : TO 
+ 🇹🇹 Trinidad and Tobago : TT 
+ 🇹🇳 Tunisia : TN 
+ 🇹🇷 Turkey : TR 
+ 🇹🇲 Turkmenistan : TM 
+ 🇹🇨 Turks and Caicos Islands : TC 
+ 🇺🇬 Uganda : UG 
+ 🇺🇦 Ukraine : UA 
+ 🇦🇪 United Arab Emirates : AE 
+ 🇬🇧 United Kingdom : GB 
+ 🇺🇸 United States : US 
+ 🇺🇾 Uruguay : UY 
+ 🇺🇿 Uzbekistan : UZ 
+ 🇻🇺 Vanuatu : VU 
+ 🇻🇪 Venezuela : VE 
+ 🇻🇳 Vietnam : VN 
+ 🇾🇪 Yemen : YE 
+ 🇿🇲 Zambia : ZM 
+ 🇿🇼 Zimbabwe : ZW 
+ Primary language
+ -
+ $Secondary languages
+ $Show all 
+ -
+ Select a language Search languages 
+ 🇸🇦 Arabic : AR_SA: (Saudi Arabia) 
+ 🇮🇳 Bengali : BN: (India) 
+ 🇪🇸 Catalan : CA: (Spain) 
+ 🇭🇷 Croatian : HR: (Croatia) 
+ 🇨🇿 Czech : CS: (Czech Republic) 
+ 🇩🇰 Danish : DA: (Denmark) 
+ 🇳🇱 Dutch : NL_NL: (Netherlands) 
+ 🇬🇧 English : EN_GB: (United Kingdom) 
+ 🇨🇦 English : EN_CA: (Canada) 
+ 🇺🇸 English : EN_US: (United States) 
+ 🇦🇺 English : EN_AU: (Australia) 
+ 🇫🇮 Finnish : FI: (Finland) 
+ 🇨🇦 French : FR_CA: (Canada) 
+ 🇫🇷 French : FR_FR: (France) 
+ 🇩🇪 German : DE_DE: (Germany) 
+ 🇬🇷 Greek : EL: (Greece) 
+ 🇮🇳 Gujarati : GU: (India) 
+ 🇮🇱 Hebrew : HE: (Israel) 
+ 🇮🇳 Hindi : HI: (India) 
+ 🇭🇺 Hungarian : HU: (Hungary) 
+ 🇮🇩 Indonesian : ID: (Indonesia) 
+ 🇮🇹 Italian : IT: (Italy) 
+ 🇯🇵 Japanese : JA: (Japan) 
+ 🇮🇳 Kannada : KN: (India) 
+ 🇰🇷 Korean : KO: (Republic of Korea) 
+ 🇲🇾 Malay : MS: (Malaysia) 
+ 🇮🇳 Malayalam : ML: (India) 
+ 🇮🇳 Marathi : MR: (India) 
+ 🇳🇴 Norwegian : NO: (Norway) 
+ 🇮🇳 Oriya : OR: (India) 
+ 🇵🇱 Polish : PL: (Poland) 
+ 🇧🇷 Portuguese : PT_BR: (Brazil) 
+ 🇵🇹 Portuguese : PT_PT: (Portugal) 
+ 🇮🇳 Punjabi : PA: (India) 
+ 🇷🇴 Romanian : RO: (Romania) 
+ 🇷🇺 Russian : RU: (Russia) 
+ 🇨🇳 Simplified Chinese : ZH_HANS: (China mainland) 
+ 🇸🇰 Slovak : SK: (Slovakia) 
+ 🇸🇮 Slovenian : SL: (Slovenia) 
+ 🇪🇸 Spanish : ES_ES: (Spain) 
+ 🇲🇽 Spanish : ES_MX: (Mexico) 
+ 🇸🇪 Swedish : SV: (Sweden) 
+ 🇮🇳 Tamil : TA: (India) 
+ 🇮🇳 Telugu : TE: (India) 
+ 🇹🇭 Thai : TH: (Thailand) 
+ 🇭🇰 Traditional Chinese : ZH_HANT: (Hong Kong) 
+ 🇹🇷 Turkish : TR: (Turkey) 
+ 🇺🇦 Ukrainian : UK: (Ukraine) 
+ 🇮🇳 Urdu : UR: (India) 
+ 🇻🇳 Vietnamese : VI: (Vietnam) 
+ Is primary language in
+ -
+ Is secondary language in
+ -
+ App Store Language Usage Statistics
+ One of the fastest ways to scale your ASO results is by choosing languages that work across several countries - but in our cross-localization article we’ll show you a few hacks to make it even more powerful.
+ Cross-Localization 
+ ASO Locale Switcher 
+ Language & Primary Country 
+ Primary 
+ Secondary 
+ Total 
+ Complete list of all variations:
+ Section titled “Complete list of all variations:” 
+ ISO code ISO code Country or region Default Language Additional Supported Language(s) Applications Primary Locale 🇬🇧 English: EN_GB (United Kingdom) 
+ AF AFG 🇦🇫 Afghanistan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ AL ALB 🇦🇱 Albania 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ DZ DZA 🇩🇿 Algeria 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ AO AGO 🇦🇴 Angola 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ AI AIA 🇦🇮 Anguilla 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ AG ATG 🇦🇬 Antigua and Barbuda 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ AR ARG 🇦🇷 Argentina 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ AM ARM 🇦🇲 Armenia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ AU AUS 🇦🇺 Australia 🇦🇺 English: EN_AU (Australia) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ AT AUT 🇦🇹 Austria 🇩🇪 German: DE_DE (Germany) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ AZ AZE 🇦🇿 Azerbaijan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BS BHS 🇧🇸 Bahamas 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BH BHR 🇧🇭 Bahrain 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ BB BRB 🇧🇧 Barbados 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BY BLR 🇧🇾 Belarus 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BE BEL 🇧🇪 Belgium 🇬🇧 English: EN_GB (United Kingdom) 🇳🇱 Dutch: NL_NL (Netherlands) 
+ 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ BZ BLZ 🇧🇿 Belize 🇬🇧 English: EN_GB (United Kingdom) 🇲🇽 Spanish: ES_MX (Mexico) 
+ ✅ ✅ 
+ BJ BEN 🇧🇯 Benin 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ BM BMU 🇧🇲 Bermuda 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BT BTN 🇧🇹 Bhutan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BO BOL 🇧🇴 Bolivia 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ BA BIH 🇧🇦 Bosnia and Herzegovina 🇬🇧 English: EN_GB (United Kingdom) 🇭🇷 Croatian: HR (Croatia) 
+ ✅ ✅ 
+ BW BWA 🇧🇼 Botswana 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BR BRA 🇧🇷 Brazil 🇧🇷 Portuguese: PT_BR (Brazil) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ VG VGB 🇻🇬 British Virgin Islands 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BN BRN 🇧🇳 Brunei 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BG BGR 🇧🇬 Bulgaria 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ BF BFA 🇧🇫 Burkina Faso 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ KH KHM 🇰🇭 Cambodia 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ CM CMR 🇨🇲 Cameroon 🇫🇷 French: FR_FR (France) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ CA CAN 🇨🇦 Canada 🇨🇦 English: EN_CA (Canada) 🇨🇦 French: FR_CA (Canada) 
+ ✅ ❌ 
+ CV CPV 🇨🇻 Cape Verde 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ KY CYM 🇰🇾 Cayman Islands 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ TD TCD 🇹🇩 Chad 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ CL CHL 🇨🇱 Chile 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ CN CHN 🇨🇳 China mainland 🇨🇳 Simplified Chinese: ZH_HANS (China mainland) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ CO COL 🇨🇴 Colombia 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ CD COD 🇨🇩 Congo Democratic Republic 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ CG COG 🇨🇬 Congo Republic 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ CR CRI 🇨🇷 Costa Rica 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ CI CIV 🇨🇮 Cote d'Ivoire 🇫🇷 French: FR_FR (France) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ HR HRV 🇭🇷 Croatia 🇬🇧 English: EN_GB (United Kingdom) 🇭🇷 Croatian: HR (Croatia) 
+ ✅ ✅ 
+ CY CYP 🇨🇾 Cyprus 🇬🇧 English: EN_GB (United Kingdom) 🇬🇷 Greek: EL (Greece) 
+ 🇹🇷 Turkish: TR (Turkey) 
+ ✅ ✅ 
+ CZ CZE 🇨🇿 Czech Republic 🇬🇧 English: EN_GB (United Kingdom) 🇨🇿 Czech: CS (Czech Republic) 
+ ✅ ✅ 
+ DK DNK 🇩🇰 Denmark 🇬🇧 English: EN_GB (United Kingdom) 🇩🇰 Danish: DA (Denmark) 
+ ✅ ✅ 
+ DM DMA 🇩🇲 Dominica 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ DO DOM 🇩🇴 Dominican Republic 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ EC ECU 🇪🇨 Ecuador 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ EG EGY 🇪🇬 Egypt 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ SV SLV 🇸🇻 El Salvador 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ EE EST 🇪🇪 Estonia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ SZ SWZ 🇸🇿 Eswatini 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ FJ FJI 🇫🇯 Fiji 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ FI FIN 🇫🇮 Finland 🇬🇧 English: EN_GB (United Kingdom) 🇫🇮 Finnish: FI (Finland) 
+ ✅ ✅ 
+ FR FRA 🇫🇷 France 🇫🇷 French: FR_FR (France) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ GA GAB 🇬🇦 Gabon 🇫🇷 French: FR_FR (France) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ GM GMB 🇬🇲 Gambia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ GE GEO 🇬🇪 Georgia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ DE DEU 🇩🇪 Germany 🇩🇪 German: DE_DE (Germany) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ GH GHA 🇬🇭 Ghana 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ GR GRC 🇬🇷 Greece 🇬🇷 Greek: EL (Greece) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ GD GRD 🇬🇩 Grenada 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ GT GTM 🇬🇹 Guatemala 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ GW GNB 🇬🇼 Guinea-Bissau 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ GY GUY 🇬🇾 Guyana 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ HN HND 🇭🇳 Honduras 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ HK HKG 🇭🇰 Hong Kong 🇭🇰 Traditional Chinese: ZH_HANT (Hong Kong) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ HU HUN 🇭🇺 Hungary 🇬🇧 English: EN_GB (United Kingdom) 🇭🇺 Hungarian: HU (Hungary) 
+ ✅ ✅ 
+ IS ISL 🇮🇸 Iceland 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ IN IND 🇮🇳 India 🇬🇧 English: EN_GB (United Kingdom) 🇮🇳 Bengali: BN (India) 
+ 🇮🇳 Gujarati: GU (India) 
+ 🇮🇳 Hindi: HI (India) 
+ 🇮🇳 Kannada: KN (India) 
+ 🇮🇳 Malayalam: ML (India) 
+ 🇮🇳 Marathi: MR (India) 
+ 🇮🇳 Oriya: OR (India) 
+ 🇮🇳 Punjabi: PA (India) 
+ 🇮🇳 Tamil: TA (India) 
+ 🇮🇳 Telugu: TE (India) 
+ 🇮🇳 Urdu: UR (India) 
+ ✅ ✅ 
+ ID IDN 🇮🇩 Indonesia 🇬🇧 English: EN_GB (United Kingdom) 🇮🇩 Indonesian: ID (Indonesia) 
+ ✅ ✅ 
+ IQ IRQ 🇮🇶 Iraq 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ IE IRL 🇮🇪 Ireland 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ IL ISR 🇮🇱 Israel 🇬🇧 English: EN_GB (United Kingdom) 🇮🇱 Hebrew: HE (Israel) 
+ ✅ ✅ 
+ IT ITA 🇮🇹 Italy 🇮🇹 Italian: IT (Italy) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ JM JAM 🇯🇲 Jamaica 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ JP JPN 🇯🇵 Japan 🇯🇵 Japanese: JA (Japan) 🇺🇸 English: EN_US (United States) 
+ ✅ ❌ 
+ JO JOR 🇯🇴 Jordan 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ KZ KAZ 🇰🇿 Kazakhstan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ KE KEN 🇰🇪 Kenya 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ XK XKS 🇽🇰 Kosovo 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ KW KWT 🇰🇼 Kuwait 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ KG KGZ 🇰🇬 Kyrgyzstan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ LA LAO 🇱🇦 Laos 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ LV LVA 🇱🇻 Latvia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ LB LBN 🇱🇧 Lebanon 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ LR LBR 🇱🇷 Liberia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ LY LBY 🇱🇾 Libya 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ LT LTU 🇱🇹 Lithuania 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ LU LUX 🇱🇺 Luxembourg 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ 🇩🇪 German: DE_DE (Germany) 
+ ✅ ✅ 
+ MO MAC 🇲🇴 Macau 🇭🇰 Traditional Chinese: ZH_HANT (Hong Kong) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ MG MDG 🇲🇬 Madagascar 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ MW MWI 🇲🇼 Malawi 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ MY MYS 🇲🇾 Malaysia 🇬🇧 English: EN_GB (United Kingdom) 🇲🇾 Malay: MS (Malaysia) 
+ ✅ ✅ 
+ MV MDV 🇲🇻 Maldives 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ ML MLI 🇲🇱 Mali 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ MT MLT 🇲🇹 Malta 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ MR MRT 🇲🇷 Mauritania 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ MU MUS 🇲🇺 Mauritius 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ MX MEX 🇲🇽 Mexico 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ FM FSM 🇫🇲 Micronesia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ MD MDA 🇲🇩 Moldova 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ MN MNG 🇲🇳 Mongolia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ ME MNE 🇲🇪 Montenegro 🇬🇧 English: EN_GB (United Kingdom) 🇭🇷 Croatian: HR (Croatia) 
+ ✅ ✅ 
+ MS MSR 🇲🇸 Montserrat 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ MA MAR 🇲🇦 Morocco 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ MZ MOZ 🇲🇿 Mozambique 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ MM MMR 🇲🇲 Myanmar 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ NA NAM 🇳🇦 Namibia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ NR NRU 🇳🇷 Nauru 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ NP NPL 🇳🇵 Nepal 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ NL NLD 🇳🇱 Netherlands 🇳🇱 Dutch: NL_NL (Netherlands) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ NZ NZL 🇳🇿 New Zealand 🇬🇧 English: EN_GB (United Kingdom) 🇦🇺 English: EN_AU (Australia) 
+ ✅ ✅ 
+ NI NIC 🇳🇮 Nicaragua 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ NE NER 🇳🇪 Niger 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ NG NGA 🇳🇬 Nigeria 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ MK MKD 🇲🇰 North Macedonia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ NO NOR 🇳🇴 Norway 🇬🇧 English: EN_GB (United Kingdom) 🇳🇴 Norwegian: NO (Norway) 
+ ✅ ✅ 
+ OM OMN 🇴🇲 Oman 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ PK PAK 🇵🇰 Pakistan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ PW PLW 🇵🇼 Palau 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ PA PAN 🇵🇦 Panama 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ PG PNG 🇵🇬 Papua New Guinea 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ PY PRY 🇵🇾 Paraguay 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ PE PER 🇵🇪 Peru 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ PH PHL 🇵🇭 Philippines 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ PL POL 🇵🇱 Poland 🇬🇧 English: EN_GB (United Kingdom) 🇵🇱 Polish: PL (Poland) 
+ ✅ ✅ 
+ PT PRT 🇵🇹 Portugal 🇵🇹 Portuguese: PT_PT (Portugal) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ QA QAT 🇶🇦 Qatar 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ KR KOR 🇰🇷 Republic of Korea 🇰🇷 Korean: KO (Republic of Korea) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ RO ROU 🇷🇴 Romania 🇬🇧 English: EN_GB (United Kingdom) 🇷🇴 Romanian: RO (Romania) 
+ ✅ ✅ 
+ RU RUS 🇷🇺 Russia 🇷🇺 Russian: RU (Russia) 🇬🇧 English: EN_GB (United Kingdom) 
+ 🇺🇦 Ukrainian: UK (Ukraine) 
+ ✅ ✅ 
+ RW RWA 🇷🇼 Rwanda 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ ST STP 🇸🇹 Sao Tome and Principe 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ SA SAU 🇸🇦 Saudi Arabia 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ SN SEN 🇸🇳 Senegal 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ RS SRB 🇷🇸 Serbia 🇬🇧 English: EN_GB (United Kingdom) 🇭🇷 Croatian: HR (Croatia) 
+ ✅ ✅ 
+ SC SYC 🇸🇨 Seychelles 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ SL SLE 🇸🇱 Sierra Leone 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ SG SGP 🇸🇬 Singapore 🇬🇧 English: EN_GB (United Kingdom) 🇨🇳 Simplified Chinese: ZH_HANS (China mainland) 
+ ✅ ✅ 
+ SK SVK 🇸🇰 Slovakia 🇬🇧 English: EN_GB (United Kingdom) 🇸🇰 Slovak: SK (Slovakia) 
+ ✅ ✅ 
+ SI SVN 🇸🇮 Slovenia 🇬🇧 English: EN_GB (United Kingdom) 🇸🇮 Slovenian: SL (Slovenia) 
+ ✅ ✅ 
+ SB SLB 🇸🇧 Solomon Islands 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ ZA ZAF 🇿🇦 South Africa 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ ES ESP 🇪🇸 Spain 🇪🇸 Spanish: ES_ES (Spain) 🇪🇸 Catalan: CA (Spain) 
+ 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ LK LKA 🇱🇰 Sri Lanka 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ KN KNA 🇰🇳 St. Kitts and Nevis 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ LC LCA 🇱🇨 St. Lucia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ VC VCT 🇻🇨 St. Vincent and the Grenadines 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ SR SUR 🇸🇷 Suriname 🇬🇧 English: EN_GB (United Kingdom) 🇳🇱 Dutch: NL_NL (Netherlands) 
+ ✅ ✅ 
+ SE SWE 🇸🇪 Sweden 🇸🇪 Swedish: SV (Sweden) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ CH CHE 🇨🇭 Switzerland 🇩🇪 German: DE_DE (Germany) 🇬🇧 English: EN_GB (United Kingdom) 
+ 🇫🇷 French: FR_FR (France) 
+ 🇮🇹 Italian: IT (Italy) 
+ ✅ ✅ 
+ TW TWN 🇹🇼 Taiwan 🇭🇰 Traditional Chinese: ZH_HANT (Hong Kong) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ TJ TJK 🇹🇯 Tajikistan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ TZ TZA 🇹🇿 Tanzania 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ TH THA 🇹🇭 Thailand 🇬🇧 English: EN_GB (United Kingdom) 🇹🇭 Thai: TH (Thailand) 
+ ✅ ✅ 
+ TO TON 🇹🇴 Tonga 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ TT TTO 🇹🇹 Trinidad and Tobago 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ TN TUN 🇹🇳 Tunisia 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ TR TUR 🇹🇷 Turkey 🇬🇧 English: EN_GB (United Kingdom) 🇹🇷 Turkish: TR (Turkey) 
+ ✅ ✅ 
+ TM TKM 🇹🇲 Turkmenistan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ TC TCA 🇹🇨 Turks and Caicos Islands 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ UG UGA 🇺🇬 Uganda 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ UA UKR 🇺🇦 Ukraine 🇬🇧 English: EN_GB (United Kingdom) 🇺🇦 Ukrainian: UK (Ukraine) 
+ 🇷🇺 Russian: RU (Russia) 
+ ✅ ✅ 
+ AE ARE 🇦🇪 United Arab Emirates 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ GB GBR 🇬🇧 United Kingdom 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ US USA 🇺🇸 United States 🇺🇸 English: EN_US (United States) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ 🇨🇳 Simplified Chinese: ZH_HANS (China mainland) 
+ 🇭🇰 Traditional Chinese: ZH_HANT (Hong Kong) 
+ 🇫🇷 French: FR_FR (France) 
+ 🇰🇷 Korean: KO (Republic of Korea) 
+ 🇧🇷 Portuguese: PT_BR (Brazil) 
+ 🇷🇺 Russian: RU (Russia) 
+ 🇲🇽 Spanish: ES_MX (Mexico) 
+ 🇻🇳 Vietnamese: VI (Vietnam) 
+ ✅ ❌ 
+ UY URY 🇺🇾 Uruguay 🇬🇧 English: EN_GB (United Kingdom) 🇲🇽 Spanish: ES_MX (Mexico) 
+ ✅ ✅ 
+ UZ UZB 🇺🇿 Uzbekistan 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ VU VUT 🇻🇺 Vanuatu 🇬🇧 English: EN_GB (United Kingdom) 🇫🇷 French: FR_FR (France) 
+ ✅ ✅ 
+ VE VEN 🇻🇪 Venezuela 🇲🇽 Spanish: ES_MX (Mexico) 🇬🇧 English: EN_GB (United Kingdom) 
+ ✅ ✅ 
+ VN VNM 🇻🇳 Vietnam 🇬🇧 English: EN_GB (United Kingdom) 🇻🇳 Vietnamese: VI (Vietnam) 
+ ✅ ✅ 
+ YE YEM 🇾🇪 Yemen 🇬🇧 English: EN_GB (United Kingdom) 🇸🇦 Arabic: AR_SA (Saudi Arabia) 
+ ✅ ✅ 
+ ZM ZMB 🇿🇲 Zambia 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ ZW ZWE 🇿🇼 Zimbabwe 🇬🇧 English: EN_GB (United Kingdom) ✅ ✅ 
+ Cross-localization Interface
+ Section titled “Cross-localization Interface” 
+ Sort countries Save changes to App Store Refresh information Settings Go to documentation
+ Country sorting options :
+ By name
+ By population
+ By GDP (nominal) per capita
+ Creating a New Version
+ Section titled “Creating a New Version” 
+ Metadata editing is available when the app status is “Ready for Submission” in the App Store. If you haven’t created a new app version after an update that can be edited, the interface will prompt you to Create a new app version .
+ Country Card
+ Section titled “Country Card” 
+ Each country displays a card showing:
+ Country code
+ Country name
+ Population
+ GDP (nominal) per capita
+ List of languages for cross-localization
+ Clicking a country card opens the localization editor with metadata.
+ Localization Card
+ Section titled “Localization Card” 
+ Each localization displays a card showing:
+ Localization code
+ Localization name
+ List of countries using this localization – clicking a country opens its card
+ 3 input fields affecting cross-localization: Title
+ Subtitle
+ Keywords
+ Editor Input
+ Section titled “Editor Input” 
+ 100% 
+ Editor input
+ 100% 
+ Editor input
+ Each input field contains several buttons:
+ Metadata Editor : Quick access to the metadata editor .
+ Bulk Metadata Editor : Quick access to the bulk metadata editor .
+ Translate : Translates text from the primary localization to the current language.
+ Reverse Translate : Translates the current text in the input field back to the base language set in settings screen.
+ Copy from Previous Version : Copies content from the last modified version.
+ Show Differences : If the value differs from the last saved version, this button will show the difference.
+ Add to tracking list : Only for fields that support keywords. Adds all keywords from the input field to your tracked keywords list .
+ Clear button : Clears all entered data in the input field.
+ For memberships with access to the ASO analysis: Indie , Pro and Marketing 
+ For fields that affect search results in the App Store, such as Title , Subtitle , and Keywords , additional keyword analysis features are available:
+ Keyword Breakdown : The entered text is automatically split into individual keywords.
+ Display Metrics : Relevant metrics for each keyword are shown, including: Current App Rating : The current rating of your app for this keyword.
+ Search Ads Popularity (SAP) : The popularity of the keyword in Apple Search Ads-hovering over it shows the date of the last update.
+ Difficulty : The competitiveness of the keyword.
+ Total Number of Apps : The number of apps using this keyword.
+ Suggestions : The number of suggestions for this keyword in the App Store.
+ Keyword Management : Buttons to add or remove keywords from your keyword list .
+ Edit Field : Options to remove or add this keyword directly in the current input field.
+ For memberships with access to the ASO analysis: Indie , Pro and Marketing 
+ For the Keywords field, Keyword Recommendations are also available, based on:
+ Current App Keywords : Keywords for which your app already has search queries.
+ User’s Keyword List : Keywords from your personalized keyword list .
+ Competitor Apps : Keywords used by competitor apps .
+ Each input field has a dynamic border that reflects the current state, unless disabled in the page Settings :
+ Blue : Indicates that the field has been changed.
+ Red : Displays when there is no data in the field.
+ Gray : Shows when the field has no changes and is filled.
+ Additionally, each input field displays the character count and maximum field length, helping to ensure compliance with App Store requirements.
+ Settings
+ Section titled “Settings” 
+ Changes indicator
+ Section titled “Changes indicator” 
+ Before each input field, a vertical colored stripe is displayed as a status indicator.
+ By default, the indicators are visible, but they can be turned off using the “Hide change indicators” setting.
+ Color scheme:
+ Red : field is not filled
+ Blue : field has been changed
+ Gray : field has not been changed
+ Localization Providers
+ Section titled “Localization Providers” 
+ 100% 
+ Localization Providers Settings
+ 100% 
+ Localization Providers Settings
+ You can configure the translation provider of your choice (Google Translate, DeepL, Chat GPT, Claude AI) in the ASO.dev settings and also set stop words for translations.
+ Google Translate
+ Google Translate is available by default as a free translation provider in ASO.dev.
+ If you don’t have API keys for other providers, Google Translate will be used automatically.
+ DeepL, Chat GPT, Claude AI, DeepSeek, Gemini, OpenRouter
+ DeepL, Chat GPT, Claude AI, DeepSeek, Gemini, OpenRouter are paid translation providers that offer more accurate and high-quality translations compared to Google Translate.
+ These providers use advanced technologies and AI models to ensure a high level of translation accuracy.
+ To use these providers, you need to obtain an API key, enter it in the settings, and, if necessary, select a model or specify additional parameters.
+ Comparison of Translation Providers 
+ How to Set the Priority of Translation Providers
+ You can change the priority of translation providers by dragging their cards in the list.
+ The order determines which provider will be used first when translating content.
+ Disabling a Translation Provider
+ To disable a specific translation provider, simply toggle the switch to the “Off” position.
+ This provider will no longer be used for content translation.
+ You can also change the order of providers to adjust their priority.
+ Excluding Specific Keywords or Phrases from Translation
+ Section titled “Excluding Specific Keywords or Phrases from Translation” 
+ 100% 
+ Settings: Brand Names
+ 100% 
+ Settings: Brand Names
+ If you need to exclude certain words or phrases from translation, such as brand names, follow these steps:
+ Enter the keyword or phrase you want to exclude from translation.
+ After entering a word, press Enter or .
+ Comma-Separated List: You can enter multiple keywords or phrases, separating them with commas. Case Sensitivity : The list is case-sensitive, so make sure to enter keywords exactly as they are written.
+ Excluded words or phrases will remain in their original language and will not be altered during translation. This is especially useful for maintaining consistency with brand names, technical terms, and other important phrases.
+ Using both primary and additional languages in ASO, as well as optimizing keyword metadata, can increase your app’s visibility in the App Store.
+ Cross-localization provides an interactive table displaying metadata for different localizations, allowing you to assess their performance and optimize your app for various regions and languages.
+ 

@@ -1,0 +1,61 @@
+ [Answered] How Do I Rank Higher For A Specific iOS App Store Optimization (ASO) Keyword? 
+ Solutions Solutions
+ Products Products
+ Blog 
+ Resources Resources
+ Company Company
+ Contact Sales 
+ Log In 
+ Sensor Tower’s MCP Server is Live!
+ Explore MCP Integrations
+ Blog
+ Mobile App Insights · Hugh Kimura · April 2014
+ [Answered] How Do I Rank Higher For A Specific iOS App Store Optimization (ASO) Keyword?
+ If you are wondering how to get your iOS app to rank higher for certain keywords, you have to read the answer in this post.
+ This is a question that we get a lot and we want to address it because misunderstanding this concept will lead to a lot of wasted time and frustration. In this post, you will learn why this is actually the wrong question to be asking and how you should really be approaching keyword rankings. 
+ Resist The Temptation
+ First of all, we get it. 
+ There are some juicy keywords out there and to rank in the top 10 for the elite keywords in your category would mean an instant stream of free organic traffic. A firehose may come to mind when imagining the traffic you will get. Therefore, it is very easy to get caught up in trying to "tune" for these particular keywords. 
+ But resist the temptation to chase these keywords. Fixating your attention on how your app is ranking for a specific keyword is the wrong way to go about App Store Optimization. Why? 
+ Three words...the black box. 
+ The Apple Black Box And ASO
+ Plain and simple, the Apple search algorithm is a black box. You put in a search term and out pops the search results. But nobody knows exactly how the algorithm chooses these apps, except for a few select people at Apple. 
+ Your search visibility is at the mercy of the algorithm. 
+ It is like trying to get a webpage on the first page of a Google web search. You can follow all of the best practices when it comes to Search Engine Optimization (SEO), and you will usually be able to improve your results. But at the end of the day, there is no guarantee that you will rank well. 
+ But therein may also lie the biggest misconception as to why you can improve your search rank for a particular iOS App Store keyword. Comparing Google web SEO and Apple ASO is not, well...comparing apples to apples. 
+ In web SEO you can improve your search rank by doing things like: add schema elements, use alt tags, do on page link optimization and get backlinks to improve your search rankings. Nothing like that is available in iOS App Store Optimization. There are only two places that determine your keywords, the title of your app and the 100 character keyword field . 
+ The Apple search algorithm will determine your keywords solely on these two fields. This may seem like a disadvantage, but it all depends on how you look at it.
+ The Advantage Of The Apple Black Box
+ With every disadvantage, there is usually an inherit advantage. In the case of Apple App Store search, it is simplicity. 
+ In Google web search or Google Play keyword optimization (to a certain degree), there are several keyword factors that you have to try to optimize and test. With iOS, there are only two: keywords in the title and keywords in the keyword field . 
+ Simple. 
+ Since you can only list a keyword once in each field (duplicates don't count), there is really no way to optimize for a specific keyword. So the key to getting more downloads through organic search is to keep testing keywords that are relevant to your app and keep the ones that you actually rank well for and replacing the ones that your app doesn't rank well for. 
+ To put it another way, you don't control how the black box determines your rank, but you do control the keywords you use. So the only way to get higher keyword rankings is the keep changing what you put into the box, until you get the result you are looking for on the other side. 
+ Now that you understand that keyword optimization on the Apple App Store is more about finding keywords that your app can rank for, instead of trying to get your app ranked for a particular keyword, the question then becomes: How do you find keywords that your app could rank well for? 
+ How To Find The Right Keywords
+ This is where our Difficulty Score comes in. 
+ It is simply our numeric estimate of how hard it will be to rank in the top 10 for a keyword, based on the vast amount of data that we collect. Newer apps will have to target lower Difficulty Scores, while more established apps can target keywords with higher difficulty scores (which usually have more traffic). 
+ This is because newer apps won't have the metrics that the Apple algorithm considers important in determining an app's rank. Again, nobody knows exactly what that formula is, but things like downloads, ratings and engagement certainly factor into the rank of an app. 
+ So while this ASO data will give you a huge advantage over your competitors who don't have the same information, the bottom line is that you are still at the mercy of the black box. It's not 100% guaranteed to get you to the top. In a previous post, we wrote about how even the biggest mega apps in the world still won't rank #1 for all their keywords. 
+ You will have to be diligent about staying on top of your keyword rankings and optimize as often as necessary. The process is simple, but not easy.
+ For more detailed information on how to choose iOS keywords, check out this post . 
+ Conclusion
+ Conditions on the App Store change constantly and using this process will allow you to make sure your keywords are getting you the best search rankings possible. Your competition will change and the search algorithm will change, but through some hard work and proper use of the data we provide , focusing on your results will keep you way ahead of competitors who are still trying to "tune" a specific keyword...or just crossing their fingers that a keyword will magically start working. 
+ Do you have any other keyword optimization questions? 
+ Sensor Tower's platform is an enterprise-level offering. Interested in learning more? 
+ Request Demo 
+ Written by: Hugh Kimura, Head of Content
+ Date: April 2014
+ About 
+ Careers 
+ Support 
+ Status 
+ Terms of Service 
+ Privacy 
+ Press 
+ Cookies 
+ Security 
+ Copyright © 2026 Sensor Tower. All rights reserved.
+ Manage Cookies 
+ Copyright © 2026 Sensor Tower. All rights reserved.
+ Manage Cookies 

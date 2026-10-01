@@ -1,0 +1,100 @@
+ 
+ Optimizing Your App Title: Keywords vs. Brand Name 
+ Skip to content 
+ Optimizing Your App Title: Keywords vs. Brand Name
+ by  Galy Haleblian 
+ Former Account Manager at AppTweak 
+ Last updated on July 22 2024 
+ — 8 min read 
+ Summarize with AI 
+ Subscribe to our monthly newsletter
+ Never miss an update. Discover our latest app marketing articles, tips, news and interviews.
+ Subscribe 
+ close 
+ Subscribe to our monthly newsletter
+ Never miss an update. Discover our latest app marketing articles, tips, news and interviews.
+ Subscribe 
+ close 
+ An app title represents space to showcase your app’s name and branding; however, it also has far more potential than just this. App titles on the App Store and Google Play carry the strongest weight in terms of keyword indexation ! Therefore, to maximize your search visibility and keyword optimization strategy, app titles must be written after thorough research and analysis.
+ In this blog, we take a deep dive into the benefits and risks of adding additional generic keywords to the app title and highlight the criteria you should consider before making these decisions.
+ Using data from the App Store and Google Play top charts , we found that many top apps utilize the app title space for important generic keywords to help boost app rankings and visibility in search results.
+ Many app developers wonder whether they should only add their brand name to their title, or whether they should include additional keywords to fully optimize the character space (30 characters on both the App Store and Google Play).
+ Expert Tip
+ Taking a look at the top 100 free apps in all categories in Brazil, France, Germany, India, Spain, the United Kingdom, and the United States, we see that, on average, 41% of apps on the App Store and 47% of apps on Google Play include additional generic keywords in their titles . However, this trend is stronger in some categories than others.
+ To get this data, we took a look at the top 100 free apps in each category on the stores and computed the ratio of app titles with additional generic keywords next to brand names, separated by a symbol.
+ Which Android apps optimize titles with generic keywords?
+ Categories with the biggest to smallest shares of apps with generic keywords in titles on Google Play. 
+ On Android, apps in the Dating, Social, and Photography categories mainly tend to add generic keywords next to their brand names in app titles .
+ We see that the majority of these dating, social, and photography apps have short brand names that are not self-explanatory and might leave store visitors confused if they have not heard of the brand before (e.g., “badoo,” “toonapp,” and “prequel”). In these cases, adding generic keywords next to the brand name provides users with a better understanding of the apps’ functionalities and facilitates their choice to select the app that best fits their needs.
+ Learn how to conduct effective keyword research on AppTweak. 
+ On the other hand, the Sports and Casual game subcategories (as well as the Events category) have the lowest share of apps that add generic keywords to titles. Taking a look at the top charts here, we notice that casual games typically have very self-explanatory icons and brand names such as “money rush” and “color match.”
+ The same is true for sports games which generally specify the type of game within the brand name itself , such as “pool,” “soccer,” and “ufc,” or have very strong brand notoriety, such as “ea” or “fifa.” As a result, generic keywords in the title are less essential to highlight the apps’ functionalities or encourage downloads.
+ Which iOS apps optimize titles with generic keywords?
+ Categories with the biggest to smallest shares of apps with generic keywords in titles on the App Store. 
+ Similar to Android, utility categories on the App Store, like Graphics & Design, Photo & Video, and Productivity, have high shares of apps with additional generic keywords in titles . The same is also true for casino, strategy, word, card, and board games which usually mention the specific type of game next to their brand.
+ The categories that are mostly dominated by apps with brand-focused titles are games . As on Google Play, racing, sports, simulation, and casual game titles tend to only populate their titles with brand names.
+ So, is there a correlation between the app/game category and tendencies to optimize the app title with generic keywords? What criteria should you look into before deciding whether to add generic keywords to your title?
+ Benefits of adding your brand name to your app title
+ When choosing an app title, some app developers are happy to only add their brand name, as this saves time and resources. App developers’ main concern around app title optimization is conversion . Some app marketers argue that adding generic keywords next to the brand name may have a negative impact on the brand image and exclusivity because users may associate keyword-stuffed titles with lower-quality apps.
+ Another benefit of brand-only app titles is consistency . It can reduce the risk of user confusion and result in a more consistent and smooth funnel across every marketing channel that your app appears on, such as the journey from Facebook App Install Campaigns to the app stores.
+ Benefits of targeting generic keywords to your app title
+ Increase search traffic and visibility
+ From an ASO point of view, adding high-volume, relevant keywords to your app title can increase your search traffic and reach , especially as the title holds the most weight for the indexing algorithm on both stores.
+ Read our practical ASO guide to discover best practices when optimizing your app page on iOS and Android. 
+ Improve app’s conversion rate
+ Adding extra keywords to specify your app’s features/functionalities might also improve your app’s conversion rate, as store visitors will have a clearer understanding of your unique selling proposition . This is especially true for Google Play, where the short description and screenshots do not appear in search results (for generic keyword searches), meaning that the title and icon have to be more self-explanatory.
+ Below is an example of the search results for the keyword “dating” on Google Play (US). Some users may not be familiar with all these brands; therefore, including generic keywords might also help conversion in this case.
+ Search result for “dating” on Google Play US. 
+ Help users understand your app’s functionalities
+ Generic keywords in the app title can improve the overall perception of your app both in terms of potential users and the store algorithms. By fully optimizing your metadata, you help the app stores gain a better understanding of your app, allowing the algorithms to reclassify your app in more relevant search and Browse sections.
+ What to consider when creating an effective app title?
+ Brand notoriety
+ The first element to consider when crafting an app title is your brand notoriety : How recognizable and popular is your app name to store visitors? The more recognizable and standalone your brand name is, the less you might need generic keywords. Here, you should use our ASO tool to measure the performance of your current app name and estimate the number of downloads each keyword brings to your app.
+ Character space
+ The second element to evaluate is whether you actually have enough character space left in your app title to target generic keywords. If so, you can create a list of potential keywords to add to your title and compare their metrics to one another.
+ The key metrics that will help you prioritize the keywords with the most potential include the volume, chance, and relevancy score (only available for apps on the US stores). Once you have your first selection, you can then use our Optimize Metadata feature to calculate the potential traffic gains your app would experience if you targeted these keywords in your metadata.
+ Our Optimize Metadata feature displays unique metrics to help you target the best keywords in your metadata. Learn more! 
+ Your app’s branding
+ At this stage, you can enter into discussions with your brand marketing team around your brand guidelines . This will allow you to agree on the keywords that are the most aligned with the messaging you want to target, and those that are simultaneously able to drive traffic to your app.
+ Once you have a version of your new/updated app title, it’s time to test and update your metadata on the store. Following this, we recommend waiting at least two weeks to measure the impact of your work. Don’t forget to integrate your console to AppTweak to have a clearer vision of the impact on downloads and category ranking!
+ Guidelines for app titles
+ App Store
+ The App Store allows a maximum of 30 characters for the app title. Once your brand name has been included in the app title, use all the remaining space for as many relevant keywords as possible.
+ Google Play
+ Similar to the App Store, Google Play also limits app titles to 30 characters . Use a clear and precise title and brand name for your app on Google Play. Remember that updated Google metadata policies (2021) no longer allow the use of keywords indicating store performance, ranking, awards, or calls-to-action in app titles.
+ TLDR
+ Your app title is a crucial element of your app metadata. Using data from the iOS and Google Play top charts, we found that many of the top apps utilize the app title for important keywords to help boost app ranking and visibility in search results.
+ Start free trial 
+ by Galy Haleblian , Former Account Manager at AppTweak 
+ Galy is a former Account Manager at AppTweak. She has a passion for discovering different cultures and her spirit animal is octopus. 
+ Your Essential Toolkit for ASO Keyword Research
+ A deep-dive into ASO keyword research. Learn how to find and prioritize your target keywords, localization and ASO best practices.
+ Download now 
+ More articles in App Keyword Research 
+ App Keyword Research App Market Insights 
+ July 10, 2026 
+ Which platforms offer an API for app store data?
+ Get the breakdown of native and third-party API tools. Learn what data you can access, use cases, limits, and how …
+ Micah Motta 
+ App Keyword Research Start ASO 
+ April 2, 2026 
+ The best app keyword research tools in 2026
+ Discover the best ASO keyword research tools to boost your ASO, find high-value keywords, analyze competitors, and grow your app …
+ Oriane Ineza 
+ App Keyword Research App Marketing Artificial Intelligence (AI) 
+ January 19, 2026 
+ How AI is changing relevance in app store search
+ How AI is reshaping app store relevance and what it means for ASO
+ Micah Motta 
+ See all posts 
+ AppTweak SA
+ info(Replace this parenthesis with the @ sign)apptweak.com 
+ avenue Louise 235
+ Brussels 
+ , 
+ , 1050 
+ Belgium 
+ https://www.apptweak.com 
+ https://www.apptweak.com/img/2023/04/apptweak-logo-o.svg 
+ app store marketing, aso 
+ 

@@ -1,0 +1,153 @@
+ 
+ ASO Trends in 2026: What’s Changing in App Store Optimization? 
+ Join us at Growth Phestival in Berlin – Sep 15, 2026 – Register now → 
+ Company 
+ Who We Are 
+ Careers 
+ Social Responsibility 
+ Services 
+ App Store Optimization 
+ Performance Marketing 
+ Retention / CRM 
+ Art and Creative 
+ Attribution & MMP Integration 
+ Tools 
+ ASO 
+ AI agent for autonomous A/B testing, directly on the app stores. 
+ Apple Search Ads 
+ Catchbase is an AI-first Bid Optimization and Campaign Management tool, designed to save you money on Apple Ads. 
+ CRM 
+ Build advanced In-App Messages for Braze. 
+ Case Studies 
+ Blog 
+ ASO Stack Blog 
+ Mobile Growth Stack Blog 
+ Phiture Blog 
+ Resources 
+ Frameworks 
+ Slack Communities 
+ ASO Stack Slack 
+ Mobile Growth Stack Slack 
+ Free tools 
+ CPP Playbook 
+ Taxonomy Spreadsheet Template 
+ Product Page Analysis Cheat Sheet 
+ → More Free Tools & Resources 
+ Newsletters 
+ ASO Monthly Newsletter 
+ Mobile Growth Stories Newsletter 
+ Learning 
+ The Advanced ASO ebook 
+ Brave New Digital World Podcast 
+ Get in touch 
+ Home 
+ ASO Stack 
+ ASO Trends 2026: What’s Changing in App Store Optimization
+ ASO Trends 2026: What’s Changing in App Store Optimization 
+ Phiture | March 19, 2026 
+ Follow @phiture on social media to stay up to date:
+ There was a time when ASO meant doing some keyword research, uploading some screenshots for your app, and seeing the magic happen, hopefully. That era is long gone. App Store Optimization in 2026 has evolved into a discipline that sits at the intersection of data science, marketing, creative strategy, and constant experimentation. For anyone asking what ASO (App Store Optimization) is, the short answer is that it’s a systematic process for increasing visibility and conversion in the App Store and on Google Play. The longer answer involves far more sophistication than it did even two years ago. 
+ 2025 changed things, too. Both Apple and Google rolled out platform updates that fundamentally altered how apps get discovered and how users engage after the download. For one, screenshot text became a critical ranking factor, while Custom Product Pages went organic. And Google doubled down on re-engagement with Collections, the You tab, and Engage SDK integrations across the Play Store. On the whole, it felt like the playbooks we relied on needed to be rewritten. 
+ At Phiture, we’ve spent years refining our ASO Stack framework and working with apps across every category imaginable. What follows is what we’ve learned about what actually works heading into 2026, and where the discipline is going next. 
+ We thought it’d be an interesting idea to round up a few of the recommendations of podcast’s mainstays,  whether that includes books, papers, or blog articles.  Below, you’ll find a few recommendations from some of the true titans of the industry, a few of which may come as a surprise.  
+ The Quick Read 
+ Screenshot text now affects rankings: Apple’s June 2025 algorithm update began indexing caption text. Treat visuals as keyword-aware content. 
+ CPPs went organic: Apple’s keyword-linking update lets Custom Product Pages appear in organic search, not just paid. This changes their strategic role entirely. 
+ Apple doubled CPP limits: You can now publish up to 70 CPPs per app, up from 35. 
+ Google prioritizes engagement over discovery: The Engage SDK, Collections, and You tab reward apps that keep users coming back, not just those that acquire them. 
+ Redownloads outpace new downloads 2:1: Apple’s Transparency Report confirms retention and re-engagement matter more than ever. 
+ Platform divergence keeps widening: App Store and Google Play require fully separate optimization strategies. What works on one may fail on the other. 
+ AI tools accelerate execution: But strategy remains human. The quality of your hypotheses determines the value of your tests. 
+ What 2025 Taught Us 
+ Before looking ahead, it’s worth looking at the shifts that defined 2025. In many ways, they represented a philosophical change in how both platforms approach app discovery. 
+ On the Apple side, WWDC 2025 delivered several significant updates. Custom Product Pages expanded from 35 to 70 per app , and more importantly, Apple introduced keyword linking for CPPs in July, which allowed them to appear in organic search results for the first time . This moved CPPs from a paid acquisition tool into genuine ASO territory. Apple also began indexing screenshot text as a ranking factor, a change detected through algorithm anomalies in early June that sent ranking shifts across English-speaking markets. 
+ Meanwhile, Google’s updates focused heavily on engagement over pure discovery. The Engage SDK expanded to the Play Store, and included additions such as  Collections (a full-screen content experience on Android homescreens) and the new You tab for personalized re-engagement.  
+ Meanwhile, hero content carousels and YouTube playlist carousels arrived for store listings, and portrait video orientation drove 7% higher watch time and 5% better conversion in early tests . Lastly, Google also rolled out Guided Search with AI-organized results. In other words, if you type a goal like “find a home” instead of keywords, the algorithm sorts relevant apps into categories. 
+ The message from both platforms: the fact that acquisition matters, but engagement and retention matter more. 
+ ASO Fundamentals Still Apply 
+ Before diving into advanced tactics, it’s worth stating something obvious that often gets overlooked: the core principles of ASO optimization remain unchanged. In essence, you still need keywords that match user intent, visuals that convert, and ratings that inspire confidence. 
+ What has changed, though, is the margin for error. When competition was thinner, mediocre optimization could still yield decent results. That’s no longer the case. AppTweak’s 2025 ASO Trends & Benchmarks Report showed that apps using Custom Product Pages see an average CVR boost of 5.9%, with generic campaigns reaching +8.6% , but that advantage only comes to fruition with strategic implementation.  
+ As we emphasize in the ASO Stack , ASO is a process, not a project. The most successful apps treat it as an ongoing discipline, with dedicated resources, regular testing cycles, and clear feedback loops between organic and paid efforts. 
+ Beyond the Keyword Field in 2026 
+ Keyword optimization remains the foundation of organic visibility, but in 2025, its application has expanded. In particular, metadata strategy now extends to screenshot captions, CPP promotional text, and even in-app event titles. 
+ As we wrote last summer, the June 2025 algorithm shift led some to speculate that Apple had begun indexing screenshot text using OCR technology. This has since been denied by Apple, and Apptweak echoed that position in a recent seminar session. The practical advice we like to give remains the same: treat screenshot captions as keyword-aware content. That means keyword-stuffed screenshots look desperate and convert poorly, and the copy you overlay on visuals should reflect the language your users actually search. 
+ Effective ASO app search optimization requires understanding how users phrase their queries, as ASO optimization tools have transformed this research from guesswork into science. Platforms like AppTweak, Sensor Tower, and Mobile Action now analyze search patterns, competitor rankings, and user behavior to surface opportunities that manual research would miss.  
+ In 2026, we believe that long-tail keywords deserve renewed attention. Considering that competition in head terms keeps intensifying, this is an area worth watching. For example, specific phrases like “remove background from photo” attract users with clearer intent than generic “photo editor” queries, and those users convert better. 
+ Separate Strategies for the App Store and Google Play 
+ A persistent mistake we see is treating the App Store and Google Play as interchangeable platforms. Given that each has different ranking mechanics, user behaviors, and optimization levers, they require distinct approaches, and 2025 widened that gap. 
+ On the App Store, only specific fields are indexed for search: Title, Subtitle, and the Keywords Field (plus, now, screenshot captions and CPP-linked keywords). Remember that your description doesn’t affect ranking, but plays a critical role in conversion. The new App Store Tags feature auto-generates labels from your metadata using AI, which can potentially influence browse placement. 
+ However, Google Play ASO optimization operates differently. The long description is fully indexed, which gives you more space to work with. Also, user engagement metrics like retention and in-app behavior factor explicitly into rankings. The Engage SDK integration means your content can now surface across Collections, the You tab, and Apps Home, but only if you’ve implemented the SDK. 
+ Google’s Guided Search and topic browse pages signal a move toward intent-based discovery. Users increasingly describe goals rather than typing app names. Optimizing for these conversational queries requires thinking beyond traditional keywords toward the jobs your app actually does. 
+ Screenshots as Ranking Factors 
+ While keywords drive discovery and visuals drive conversions, 2025 blurred this distinction by making screenshot text a factor in search relevance, thus allowing visuals to serve both functions. 
+ On iOS, the first three screenshots appear directly in search results. For many users, these are the only visuals they’ll see before deciding whether to tap or scroll past. This makes the first frame essentially the most valuable piece of real estate in your entire marketing funnel, as it needs to communicate your core value proposition instantly without requiring any effort from the user. 
+ The screenshot-text-as-ranking-factor development also adds a layer. We recommend that captions be clear, readable on mobile, and reflect the terminology users actually search for. That means avoiding vague phrases like “All-in-One Solution,” for example. Think about phrases such as “Track Your Run” or “Edit 4K Video”, which perform better for both algorithms and humans. 
+ AppTweak’s 2025 benchmark data revealed that 57% of top games on Google Play A/B tested screenshots at least twice that year, yet most app categories still averaged under four screenshot updates per year on the App Store. This gap represents a competitive opportunity for teams willing to test more aggressively. 
+ Video has grown in importance, too. Google’s portrait video format showed strong early results (7% more watch time, 5% better conversion) , and YouTube playlist carousels let you showcase multiple videos directly on your listing. Meanwhile, Apple’s 30-second limit and muted autoplay remain constraints, which is designed for silent viewing with captions and motion that communicates without audio. 
+ Custom Product Pages as The Biggest Shift of 2025 
+ If one development defined ASO in 2025, it was Custom Product Pages going organic. One of the biggest changes is that Apple now supports up to 70 CPPs per app, doubled from the original 35 . More significantly, the July 2025 keyword-linking update allows CPPs to appear in organic search results , not just through Apple Search Ads or direct links, thus changing their strategic role entirely. In other words, CPPs have moved from paid acquisition into core ASO territory. 
+ The mechanics are like this: you assign keywords from your keyword field to specific CPPs, and when users search those terms, your CPP can replace the default product page in results. This enables intent-matching at a level previously impossible. One example: a fitness app can no-show running-focused screenshots for “run tracker” searches and strength-focused visuals for “workout log” queries automatically. 
+ Meanwhile, Google’s Custom Store Listings offer similar segmentation capabilities, given that CSLs showed a median 10% conversion lift when used in Google Ad campaigns. Combined with the Engage SDK’s ability to surface personalized content across Play surfaces, the personalization toolkit on Android has also expandedconsiderably. 
+ Questions remain about how Apple handles keyword overlap between CPPs, whether combinations work or only single terms, and how CPPs compete with main listings for the same queries. We recommend that early experimentation is essential. Our approach at Phiture involves structured testing: baseline performance measurement, incremental modifications, and careful traffic monitoring to understand redistribution effects. 
+ Retention’s Growing Influence on Organic Visibility 
+ A significant but under-discussed shift is the growing influence of user engagement on store rankings. While downloads remain important, retention and post-install behavior are now critical factors in determining your app’s organic visibility. 
+ Apple’s 2024 Transparency Report highlighted a striking statistic: the App Store saw an average of 839 million downloads per week, alongside 1.9 billion redownloads weekly . Weekly redownloads also outpaced new downloads by more than 2 to 1, and both data points signal the growing importance of re-engagement alongside acquisition.  
+ Google has made engagement central to its 2025 strategy: the You tab showcases content from installed apps, while Collections surfaces personalized recommendations on the Android homescreen. The Level Up program for games rewards titles that meet engagement benchmarks with enhanced visibility across the store . All of this signals that Google Play wants to be a destination for ongoing engagement, not a one-time download shop. 
+ The implication for the ASO app store search optimization strategy is that acquisition and retention can’t work in silos. In-App Events on iOS and promotional content on Google Play are also increasingly valuable for both attracting new users and bringing existing ones back. That means that a well-executed seasonal event can surface your app in browse placements and remind churned users why they downloaded it in the first place. 
+ AI’s Role in ASO 
+ From keyword research to creative testing to performance prediction, It’s no secret that AI has transformed what’s possible in ASO app search optimization. Tools that would have required entire teams to build a few years ago are now accessible through platforms like AppTweak (with their Ad Agent for Apple Ads), Sensor Tower, and others. 
+ Both platforms integrated AI more deeply in 2025. Apple is leveraging AI to create App Store Tags from metadata, enabling it to surface apps in new contexts. Simultaneously, Google is using AI to organize search results by intent with Guided Search and to automate translations via Gemini in Play Console. 
+ However, it’s important to maintain perspective here. AI is a powerful tool for pattern recognition, scale, and speed, but strategic work requires a human touch. The real risk is overestimating AI’s independent capabilities while underestimating the need for human oversight in areas like strategic context, brand positioning, and knowing when to challenge the status quo. 
+ One development now firmly on the radar: conversational AI interfaces like ChatGPT are influencing how users discover apps. People research apps via AI assistants before heading to the stores, creating a layer of optimization where traditional ASO metadata may not be the primary touchpoint. We’re watching this closely through 2026. 
+ The Bottom Line 
+ ASO in 2026 rewards systematic thinking. The apps that succeed treat optimization as a discipline rather than a checklist. That means investing in continuous testing, maintaining platform-specific strategies, and building feedback loops between organic and paid efforts. 
+ Start with fundamentals: keywords that match intent, visuals that convert, ratings that inspire trust. Build a testing program with clear hypotheses and statistical rigor. Break down the walls between organic and paid. Track what the platforms are signaling about where discovery is heading. 
+ At Phiture, we’re investing in tools like PressPlay and Catchbase that harness AI for scalable optimization. But the frameworks we’ve developed, the ASO Stack, Mobile Growth Stack, and Subscription Stack, remain relevant because they provide strategic scaffolding for tactical excellence. 
+ Start working with an ASO agency. 
+ Resources 
+ For more on ASO strategy and implementation, explore: 
+ The ASO Stack Framework – Our comprehensive framework for App Store Optimization strategy 
+ The CPP Playbook – Everything you need to know about Custom Product Pages 
+ The ASA Stack – A strategic framework for Apple Search Ads 
+ ASO Monthly Newsletter – Stay current with the latest developments in app store optimization 
+ WANT TO GROW YOUR APP? 
+ Phiture 
+ All posts from this author 
+ Explore recent articles 
+ ASO Stack 
+ ASO Monthly #122: App Store’s new creative assets, Larger Screenshots on Store Listings, Broader CSL Capabilities and more… 
+ by Talha Mumtaz 
+ Phiture Blog 
+ EU Digital Services Act: ChatGPT, Reddit and Roblox Face Strict New Rules 
+ by Claudia Trujillo 
+ Mobile Growth Stack 
+ Why Acquisition, Paywall, and Lifecycle Are One Funnel (and What Breaks When You Treat Them Separately) 
+ by Pierre Neau 
+ ASO Stack 
+ Why is your ASO Marketing Strategy being impacted by the EU AI Act? 
+ by Claudia Trujillo 
+ ASO Stack 
+ How to Adapt your ASO and UA strategy to the new European Digital Laws (DSA & DMA) 
+ by Claudia Trujillo 
+ Mobile Growth Stack 
+ A Practical Guide to Signal Engineering for App Growth Teams 
+ by Merlin Penny 
+ Mobile Growth Stack 
+ Why Producing More Creatives Won’t Save Your Growth Strategy 
+ by Stuart Miller 
+ Phiture Blog 
+ Apple’s new App Store terms for the EU: 2026 changes explained 
+ by Claudia Trujillo 
+ Mobile Growth Stack 
+ Braze for Enterprise Apps: When You Need a Partner Beyond the Platform 
+ by Phiture 
+ ASO Stack 
+ ASO Competitor Analysis for Enterprise: What to Track When You’re Already in the Top Charts 
+ by Phiture 
+ ASO Stack 
+ ASO Monthly #121: Significant Algorithm Change, Updated Play Console Navigation, Fewer Variants in A/B Testing, New Metrics and more… 
+ by Talha Mumtaz 
+ ASO Stack 
+ How the Best App Teams Structure Their Agency Partnership 
+ by Phiture 
+ Shares 

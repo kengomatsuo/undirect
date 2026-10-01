@@ -1,0 +1,85 @@
+ 
+ Phiture, Sensor Tower & AppFollow on App Store localization: a roundup - AppsOps 
+ All posts
+ INDUSTRY VOICES
+ Phiture, Sensor Tower & AppFollow on App Store localization: a roundup
+ What the major ASO consultancies and market-intelligence firms have actually published about App Store localization's effect on impressions, conversion, and downloads — with links to every original source.
+ By the AppsOps team 
+ · 
+ May 1, 2026 
+ · 
+ 9 min read 
+ The case for App Store localization isn't an argument we made up — it's been quantified, repeatedly, by the largest ASO consultancies and market-intelligence firms in the world. Phiture, Sensor Tower, AppFollow, Storemaven, App Radar, and the now-rebranded data.ai (formerly App Annie) have all published research over the past decade documenting what happens when you localize a listing properly versus when you don't.
+ This post is a curated digest of what those firms have actually published — what their data shows, what they recommend, and how it should shape an indie iOS developer's thinking. We are not affiliated with any of them, and we'd encourage you to read each source directly.
+ Phiture — the consultancy view from the inside
+ Phiture is one of the most respected mobile-growth consultancies in the world. They work with major subscription apps and indie shops alike, and their Insights blog is unusually candid about what actually moves metrics — including localization.
+ Recurring themes across their published case studies:
+ Localized keywords drive most of the impressions lift. The keywords field in App Store Connect is locale-specific, and Phiture has repeatedly documented that translating English keywords directly into another language usually fails — local users don't search the way English users search. Native ASO keyword research per locale is what actually moves rankings.
+ Localized screenshots typically outperform translated metadata + English screenshots. In their case studies, the conversion lift from localized screenshots is often as large as the lift from localized text — sometimes larger.
+ The first three or four locales matter the most. Phiture's view is that "localize everything" is not the right approach for most indie apps. Pick the markets where you already have impressions or where category demand is high, do those well, then expand.
+ ASO is operational, not one-shot. Their case studies repeatedly emphasize that ASO localization is an ongoing practice — keyword fields need to be re-tested, screenshot creatives rotated, "What's new" updated per release. Apps that "localize once and forget" lose ground over time.
+ Sensor Tower — the macro market view
+ Sensor Tower is the most-cited mobile market-intelligence firm. Their quarterly Mobile Market Outlook reports analyze billions of downloads and revenue across both App Store and Google Play. The recurring findings relevant to localization:
+ Asia dominates non-US iOS revenue. Japan, China, and South Korea consistently rank as top non-US iOS markets by consumer spend. None of them search or convert well on English-only listings.
+ Latin America is the fastest-growing iOS region by downloads. Brazil and Mexico have been highlighted multiple times in their reports as breakout growth markets for paid apps and IAPs once developers localize listings and price for purchasing power.
+ Subscription revenue concentration is shifting. Recent reports note that the share of consumer subscription revenue from non-US markets is steadily increasing — meaning developers who only localize for the US market are competing for a shrinking slice.
+ Category dynamics differ wildly. Mobile gaming has different localization priorities than productivity apps or finance apps. Their per-category breakdowns are worth reading if your category isn't generic productivity.
+ AppFollow — the practitioners' tool
+ AppFollow is an ASO and app-monitoring platform widely used by indie shops. Their blog publishes regular benchmark reports and how-to guides, often with concrete numbers from their network. Patterns they consistently report:
+ App Store impressions in non-English markets grow significantly after a quality keyword localization — they often quote ranges like 2-5× impression growth in the target locale within the first 30-60 days
+ Click-through rate (CTR) on Apple's search results responds heavily to localized titles and subtitles — small text changes can move CTR materially
+ Rating responses in the local language are correlated with future rating quality — appearing to engage in the user's language matters operationally
+ 39 
+ Languages Apple supports for App Store metadata. Your keyword field is locale-specific in each of them — meaning you have 39 separate ASO opportunities, not just one. 
+ Storemaven — the conversion-creative specialists
+ Storemaven specializes in store-listing creative testing. Their case studies — many of which are public — are some of the cleanest evidence available on how creative changes (icons, screenshots, app preview videos) affect conversion in different markets.
+ Their recurring conclusions:
+ The first two screenshots account for the vast majority of conversion impact
+ Localized screenshots — text-overlay translated into the local language — consistently outperform English-only screenshots in non-English markets, often by 10-25%
+ App preview videos can lift conversion in some markets but actively hurt it in others — testing per-locale is mandatory
+ The conventions of "what looks trustworthy" differ by market in subtle ways that aren't obvious from outside the country
+ data.ai (formerly App Annie) — the longest-running data set
+ data.ai publishes the longest continuous data set on global app-market behavior. Their State of Mobile reports — annual and quarterly — are the canonical reference for headline numbers: total downloads, total consumer spend, market-share by country, category trends.
+ The pattern across years of these reports is unambiguous: the global iOS market is becoming more diverse, not less. Growth in Brazil, Indonesia, Vietnam, Egypt, and the Middle East is consistently outpacing growth in the US. Apps that don't localize are betting against a multi-year trend.
+ What the consensus actually says
+ Reading across all of these sources — Phiture's qualitative consultancy view, Sensor Tower's macro market data, AppFollow's tool-network benchmarks, Storemaven's creative-test studies, data.ai's long-run trends — a consistent picture emerges:
+ Localization is not optional for serious global growth. No major firm in the ASO space disagrees with this. The discussion is about how , not whether .
+ Six languages capture most of the upside : Japanese, Chinese (Simplified), German, French, Spanish, and Brazilian Portuguese, with Korean as an unusually high-ROI seventh. We covered this in detail in our top-markets guide .
+ Operational discipline beats creative effort. Apps that succeed at international ASO are usually those who treat it as an ongoing practice — testing, iterating, keeping locales in sync — not those who do a single big-bang localization push and stop.
+ The tooling is the binding constraint for most indie devs. Doing this in App Store Connect's web UI is so painful that most teams don't sustain it. The growth-team consultancies all assume their clients have proper tooling; indie devs without it usually lapse.
+ What's underrepresented in public ASO research
+ Two things worth flagging that all of these sources tend to under -cover:
+ Pricing localization, not just metadata. Most ASO research focuses on keywords, screenshots, and copy. Few firms publicly analyze the interaction between localized listings and locally-adjusted pricing — but the two effects multiply. A localized listing that still charges $9.99 in India captures a fraction of the upside it would with a PPP-adjusted price. We wrote about this in our PPP pricing post .
+ The cost of doing nothing. ASO firms publish "we lifted downloads X%" case studies; they rarely publish the counterfactual of what happens to apps that don't localize at all. The competitive cost — losing organic share to localized competitors over years — is real but harder to quantify in a single case study.
+ Recommended further reading
+ If you only read one source from this post, make it Phiture's Insights blog. They write at the level of a serious practitioner without watering content down for marketing. Sensor Tower and data.ai are essential for category-level macro context. AppFollow is good for hands-on operational detail. Storemaven is the place to go before you redesign screenshots.
+ Phiture Insights 
+ Sensor Tower blog and Mobile Market Outlook reports 
+ AppFollow blog 
+ Storemaven blog (case studies on creative testing) 
+ data.ai State of Mobile 
+ App Radar blog 
+ This post is an editorial roundup by AppsOps. We are not affiliated with Phiture, Sensor Tower, AppFollow, Storemaven, App Radar, or data.ai. All claims attributed to those firms are summaries of their publicly available research; for specific numbers and methodology, please refer to their original publications. 
+ Share this post
+ Share on X
+ LinkedIn
+ Hacker News
+ Reddit
+ { this.textContent = '✓ Copied'; setTimeout(() => { this.innerHTML = ' Copy link'; }, 1500); });"
+ class="inline-flex items-center gap-2 px-3.5 py-2 bg-[#F5F5F7] hover:bg-gray-200 transition-colors rounded-full text-sm text-[#1D1D1F] cursor-pointer border-0">
+ Copy link
+ Ready to put this into practice?
+ AppsOps is the first App Store ops dashboard —
+ PPP-fair pricing for 175 App Store territories ,
+ AI metadata localization in 39 languages, AI screenshot localization for 14 Apple device classes, and
+ one-click App Store Connect API push —
+ all from one dashboard, all for $19/month.
+ Try AppsOps free — no card → 
+ Related reading
+ INDUSTRY VOICES
+ Marco Arment, David Smith, and the indie iOS view on global pricing
+ PRICING
+ App Store subscription pricing for watchOS apps in 2026: Apple Watch mechanics, tier strategy, and companion app economics
+ PRICING
+ App Store subscription pricing for password manager and security apps in 2026: benchmarks, family plans, and competing on trust
+ 

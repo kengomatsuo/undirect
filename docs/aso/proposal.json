@@ -1,0 +1,1909 @@
+{
+ "ar-SA": {
+  "name": "Undirect",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "نوافذ منبثقة",
+    "إعادة توجيه",
+    "علامات التبويب"
+   ],
+   "maxChars": 30,
+   "note": "Name descriptor: use 'حاجب' or 'مانع' plus 'النوافذ المنبثقة' only if the native writer finds a natural noun phrase under 20 characters."
+  },
+  "keywords": "اعلانات,حجب,مانع,حاجب,اضافة,iphone,mac,popup,سفاري",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": false,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "SA type-ahead 'حاجب اعلانات', 'مانع الاعلانات', 'حجب الاعلانات'; 'نوافذ منبثقة' returns 11 apps. Arabic is additional in 17 storefronts and in the US.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "DZA",
+    "BHR",
+    "EGY",
+    "IRQ",
+    "JOR",
+    "KWT",
+    "LBN",
+    "LBY",
+    "MRT",
+    "MAR",
+    "OMN",
+    "QAT",
+    "SAU",
+    "TUN",
+    "ARE",
+    "USA",
+    "YEM"
+   ]
+  },
+  "keywordBytes": 78
+ },
+ "bn-BD": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "বিজ্ঞাপন,ব্লক,পপআপ,সাফারি,এক্সটেনশন",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This bangla field adds native-script terms only; type-ahead returned no bangla query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 97
+ },
+ "ca": {
+  "name": "Undirect",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "bloqueig",
+    "redireccions",
+    "pestanyes"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "anuncis,bloquejador,finestra emergent,extensió,iphone,mac,popup,redirecció,segrest",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": false,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "Catalan is additional only in Spain; no type-ahead exists in Catalan, so this field mirrors the Spanish terms. Name keeps the brand.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "ESP"
+   ]
+  },
+  "keywordBytes": 84
+ },
+ "cs": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "přesměrování",
+    "panely"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "reklamy,blokování,rozšíření,iphone,mac,vyskakovací,okno,únos",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "CZ 'blokování reklam' returns 29 apps, 'blokování reklam safari' 13; the Latin 'popup blocker' is typed.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "CZE"
+   ]
+  },
+  "keywordBytes": 68
+ },
+ "da": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "omdirigering",
+    "faner"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "reklame,reklamer,blokering,udvidelse,iphone,mac,kapring,blokere",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "DK type-ahead gives 'popup blocker'; 'reklameblokering' returns 12 apps.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "DNK"
+   ]
+  },
+  "keywordBytes": 63
+ },
+ "de-DE": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "Weiterleitung",
+    "Werbung"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "pop-up,blockieren,umleitung,erweiterung,tab,klick,iphone,mac,kapern",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "DE type-ahead: 'popup blocker', 'pop up blocker'; 'werbung blockieren' returns only 65 apps, 'weiterleitung' 42 (SMS apps), so both are open.",
+  "storefronts": {
+   "primary": [
+    "AUT",
+    "DEU",
+    "CHE"
+   ],
+   "additional": [
+    "LUX"
+   ]
+  },
+  "keywordBytes": 67
+ },
+ "el": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "ανακατεύθυνση",
+    "καρτέλες"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "διαφημίσεις,αποκλεισμός,επέκταση,iphone,mac,αναδυόμενα",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "GR 'αποκλεισμός διαφημίσεων' returns 21 apps; the Latin 'pop up blocker' is typed.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "CYP",
+    "GRC"
+   ]
+  },
+  "keywordBytes": 94
+ },
+ "en-AU": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": "Stop Safari redirects & tabs",
+  "keywords": "browser,website,page,malicious,unwanted,annoying,secure,clean,scam",
+  "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "AU and NZ index en-AU and en-GB together, so this field holds words en-GB does not. Terms are plausible but have no type-ahead evidence; replace after a month of rank data.",
+  "storefronts": {
+   "primary": [
+    "AUS",
+    "NZL"
+   ],
+   "additional": []
+  },
+  "keywordBytes": 66
+ },
+ "en-CA": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": "Stop Safari redirects & tabs",
+  "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
+  "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "Canada indexes en-CA and fr-CA only, not en-US, so name, subtitle and keywords are repeated here.",
+  "storefronts": {
+   "primary": [
+    "CAN"
+   ],
+   "additional": []
+  },
+  "keywordBytes": 65
+ },
+ "en-GB": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": "Stop Safari redirects & tabs",
+  "keywords": "pop up,advert,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
+  "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "en-GB is the default language of 135 of 175 storefronts and additional in 37 more, so it is the most widely indexed field set Undirect owns. Same name/subtitle as en-US (combos form only inside one locale); 'advert' added because GB type-ahead returns 'advert blocker'.",
+  "storefronts": {
+   "primary": [
+    "AFG",
+    "ALB",
+    "DZA",
+    "AGO",
+    "AIA",
+    "ATG",
+    "ARM",
+    "AZE",
+    "BHS",
+    "BHR",
+    "BRB",
+    "BLR",
+    "BEL",
+    "BLZ",
+    "BEN",
+    "BMU",
+    "BTN",
+    "BIH",
+    "BWA",
+    "VGB",
+    "BRN",
+    "BGR",
+    "BFA",
+    "KHM",
+    "CPV",
+    "CYM",
+    "TCD",
+    "COD",
+    "COG",
+    "HRV",
+    "CYP",
+    "CZE",
+    "DNK",
+    "DMA",
+    "EGY",
+    "EST",
+    "SWZ",
+    "FJI",
+    "FIN",
+    "GMB",
+    "GEO",
+    "GHA",
+    "GRC",
+    "GRD",
+    "GNB",
+    "GUY",
+    "HUN",
+    "ISL",
+    "IND",
+    "IDN",
+    "IRQ",
+    "IRL",
+    "ISR",
+    "JAM",
+    "JOR",
+    "KAZ",
+    "KEN",
+    "XKS",
+    "KWT",
+    "KGZ",
+    "LAO",
+    "LVA",
+    "LBN",
+    "LBR",
+    "LBY",
+    "LTU",
+    "LUX",
+    "MDG",
+    "MWI",
+    "MYS",
+    "MDV",
+    "MLI",
+    "MLT",
+    "MRT",
+    "MUS",
+    "FSM",
+    "MDA",
+    "MNG",
+    "MNE",
+    "MSR",
+    "MAR",
+    "MOZ",
+    "MMR",
+    "NAM",
+    "NRU",
+    "NPL",
+    "NER",
+    "NGA",
+    "MKD",
+    "NOR",
+    "OMN",
+    "PAK",
+    "PLW",
+    "PNG",
+    "PHL",
+    "POL",
+    "QAT",
+    "ROU",
+    "RWA",
+    "STP",
+    "SAU",
+    "SEN",
+    "SRB",
+    "SYC",
+    "SLE",
+    "SGP",
+    "SVK",
+    "SVN",
+    "SLB",
+    "ZAF",
+    "LKA",
+    "KNA",
+    "LCA",
+    "VCT",
+    "SUR",
+    "TJK",
+    "TZA",
+    "THA",
+    "TON",
+    "TTO",
+    "TUN",
+    "TUR",
+    "TKM",
+    "TCA",
+    "UGA",
+    "UKR",
+    "ARE",
+    "GBR",
+    "URY",
+    "UZB",
+    "VUT",
+    "VNM",
+    "YEM",
+    "ZMB",
+    "ZWE"
+   ],
+   "additional": [
+    "ARG",
+    "AUS",
+    "AUT",
+    "BOL",
+    "BRA",
+    "CMR",
+    "CHL",
+    "CHN",
+    "COL",
+    "CRI",
+    "CIV",
+    "DOM",
+    "ECU",
+    "SLV",
+    "FRA",
+    "GAB",
+    "DEU",
+    "GTM",
+    "HND",
+    "HKG",
+    "ITA",
+    "MAC",
+    "MEX",
+    "NLD",
+    "NZL",
+    "NIC",
+    "PAN",
+    "PRY",
+    "PER",
+    "PRT",
+    "KOR",
+    "RUS",
+    "ESP",
+    "SWE",
+    "CHE",
+    "TWN",
+    "VEN"
+   ]
+  },
+  "keywordBytes": 72
+ },
+ "en-US": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": "Stop Safari redirects & tabs",
+  "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
+  "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "Primary for US, additional for Japan. Name gets the top typed query 'pop up blocker' ('popup blocker' returns the same top 6); subtitle carries 'Safari', 'redirects', 'tabs'. Keyword field drops generic words (tracker, privacy, browser) and adds 'pop up', 'ads', 'block', device words.",
+  "storefronts": {
+   "primary": [
+    "USA"
+   ],
+   "additional": [
+    "JPN"
+   ]
+  },
+  "keywordBytes": 65
+ },
+ "es-ES": {
+  "name": "Undirect: Ventanas emergentes",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "Bloqueo",
+    "redirecciones",
+    "pestañas"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "popup,anuncios,publicidad,bloquear,bloqueador,extensión,iphone,mac,quitar,anti,secuestro",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "ES type-ahead 'bloqueo de ventanas emergentes'; that exact query returns 1 app, 'bloquear ventanas emergentes' 3. Name+subtitle together form it.",
+  "storefronts": {
+   "primary": [
+    "ESP"
+   ],
+   "additional": []
+  },
+  "keywordBytes": 89
+ },
+ "es-MX": {
+  "name": "Undirect: Ventanas emergentes",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "Bloqueo",
+    "redirecciones",
+    "pestañas"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "popup,anuncios,publicidad,bloquear,bloqueador,extensión,iphone,mac,quitar,pop up,secuestro",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "es-MX is the default language of 16 storefronts and additional in 3 (incl. US). MX: same type-ahead, 2 apps for the exact query.",
+  "storefronts": {
+   "primary": [
+    "ARG",
+    "BOL",
+    "CHL",
+    "COL",
+    "CRI",
+    "DOM",
+    "ECU",
+    "SLV",
+    "GTM",
+    "HND",
+    "MEX",
+    "NIC",
+    "PAN",
+    "PRY",
+    "PER",
+    "VEN"
+   ],
+   "additional": [
+    "BLZ",
+    "USA",
+    "URY"
+   ]
+  },
+  "keywordBytes": 91
+ },
+ "fi": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "uudelleenohjaus",
+    "välilehdet"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "mainos,mainokset,esto,laajennus,iphone,mac,kaappaus,ponnahdus,estäjä",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "FI type-ahead gives 'popup blocker'; 'mainosten esto' returns 27 apps, 'mainosesto' 17.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "FIN"
+   ]
+  },
+  "keywordBytes": 70
+ },
+ "fr-CA": {
+  "name": "Undirect: Bloqueur de pop-up",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "redirection",
+    "onglet"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "popup,publicité,pub,bloquer,fenêtre,contextuelle,extension,iphone,mac,détournement",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "Canada indexes en-CA and fr-CA only. No separate CA type-ahead data for French; reuse FR terms, add 'contextuelle' (existing blind-written copy).",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "CAN"
+   ]
+  },
+  "keywordBytes": 85
+ },
+ "fr-FR": {
+  "name": "Undirect: Bloqueur de pop-up",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "redirection",
+    "onglet"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "popup,publicité,pub,bloquer,anti pub,extension,iphone,mac,détournement,fenêtre",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "FR 'bloqueur de pop-up' returns 39 apps, top has 1 rating; 'bloquer publicité safari' 27 apps; type-ahead has 'anti pub', 'bloqueur safari'.",
+  "storefronts": {
+   "primary": [
+    "CMR",
+    "CIV",
+    "FRA",
+    "GAB"
+   ],
+   "additional": [
+    "DZA",
+    "BEL",
+    "BEN",
+    "BFA",
+    "KHM",
+    "TCD",
+    "COD",
+    "COG",
+    "EGY",
+    "GNB",
+    "GUY",
+    "LAO",
+    "LBN",
+    "LUX",
+    "MDG",
+    "MLI",
+    "MRT",
+    "MUS",
+    "MAR",
+    "NER",
+    "RWA",
+    "SEN",
+    "SYC",
+    "CHE",
+    "TTO",
+    "TUN",
+    "USA",
+    "VUT"
+   ]
+  },
+  "keywordBytes": 81
+ },
+ "gu-IN": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "જાહેરાત,બ્લૉક,પૉપઅપ,સફારી",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This gujarati field adds native-script terms only; type-ahead returned no gujarati query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 69
+ },
+ "he": {
+  "name": "Undirect",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "חלונות קופצים",
+    "הפניה",
+    "לשוניות"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "פרסומות,חוסם,הרחבה,iphone,mac,popup,חטיפה",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": false,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "IL type-ahead 'חוסם פרסומות' (44 apps). No type-ahead for pop-ups.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "ISR"
+   ]
+  },
+  "keywordBytes": 62
+ },
+ "hi": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "विज्ञापन,ब्लॉक,पॉपअप,सफारी,एक्सटेंशन",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This hindi field adds native-script terms only; type-ahead returned no hindi query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 100
+ },
+ "hr": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "preusmjeravanje",
+    "kartice"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "reklame,oglasi,blokiranje,proširenje,iphone,mac,skočni,prozor,otmica",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "HR 'blokiranje reklama' returns 0 apps; nobody indexes it. Users type 'adblock' (242 apps).",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "BIH",
+    "HRV",
+    "MNE",
+    "SRB"
+   ]
+  },
+  "keywordBytes": 70
+ },
+ "hu": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "átirányítás",
+    "lapok"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "reklám,blokkoló,bővítmény,iphone,mac,felugró,ablak,eltérítés",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "HU type-ahead returns 'reklám blokkoló' (41 apps); 'felugró ablak blokkoló' returns 1 app.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "HUN"
+   ]
+  },
+  "keywordBytes": 69
+ },
+ "id": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "pengalihan",
+    "tab"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "iklan,blokir,pemblokir,ekstensi,iphone,mac,peramban,pembajakan,anti iklan",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "ID type-ahead has 'blokir iklan' (76 apps), 'popup blocker' (Latin) and 'anti iklan'; Undirect already ranks #100 for 'pop up blocker' on the strength of its keyword field alone.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IDN"
+   ]
+  },
+  "keywordBytes": 73
+ },
+ "it": {
+  "name": "Undirect: Blocca Popup",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "reindirizzamento",
+    "scheda"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "pubblicità,bloccare,pop up,annunci,estensione,iphone,mac,dirottamento,finestra",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "IT 'blocca popup' 43 apps, 'blocca pubblicità' 112; type-ahead 'blocca popup', 'bloccare pubblicità safari'; 'reindirizzamento' returns 1 app.",
+  "storefronts": {
+   "primary": [
+    "ITA"
+   ],
+   "additional": [
+    "CHE"
+   ]
+  },
+  "keywordBytes": 79
+ },
+ "ja": {
+  "name": "Undirect: ポップアップブロック",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "リダイレクト",
+    "タブ"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "広告,ブロッカー,拡張機能,iphone,mac,迷惑,乗っ取り,クリック",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "JP type-ahead 'ポップアップ ブロック', 'ポップアップブロッカー', 'safari 広告ブロック'; 'リダイレクト' returns only 21 apps. Japan also indexes en-US as additional.",
+  "storefronts": {
+   "primary": [
+    "JPN"
+   ],
+   "additional": []
+  },
+  "keywordBytes": 79
+ },
+ "kn-IN": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "ಜಾಹೀರಾತು,ಬ್ಲಾಕ್,ಪಾಪ್‌ಅಪ್,ಸಫಾರಿ",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This kannada field adds native-script terms only; type-ahead returned no kannada query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 84
+ },
+ "ko": {
+  "name": "Undirect: 팝업 차단",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "리디렉션",
+    "탭"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "광고,광고차단,사파리,확장 프로그램,iphone,mac,리다이렉트,가로채기",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "KR type-ahead '팝업차단', '사파리 광고차단'; '팝업 차단' returns 56 apps, '리다이렉트' 11. ko is also additional in the US.",
+  "storefronts": {
+   "primary": [
+    "KOR"
+   ],
+   "additional": [
+    "USA"
+   ]
+  },
+  "keywordBytes": 89
+ },
+ "ml-IN": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "പരസ്യം,ബ്ലോക്ക്,പോപ്പ്അപ്പ്,സഫാരി",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This malayalam field adds native-script terms only; type-ahead returned no malayalam query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 93
+ },
+ "mr-IN": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "जाहिरात,ब्लॉक,पॉपअप,सफारी,एक्स्टेंशन",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This marathi field adds native-script terms only; type-ahead returned no marathi query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 100
+ },
+ "ms": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "ubah hala",
+    "tab"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "iklan,sekat,penyekat,sambungan,iphone,mac,timbul,rampas",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "MY type-ahead has 'pop up blocker'; 'sekat iklan' returns 35 apps.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "MYS"
+   ]
+  },
+  "keywordBytes": 55
+ },
+ "nl-NL": {
+  "name": "Undirect: Pop-up blokkeren",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "omleiding",
+    "tabbladen"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "advertentie,reclame,extensie,iphone,mac,tabblad,kapen,popup",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "NL 'pop-up blokkeren' 24 apps (top has 0 ratings); 'advertentieblokkering' 25 apps. 'adblocker safari' is the big query, 215 apps.",
+  "storefronts": {
+   "primary": [
+    "NLD"
+   ],
+   "additional": [
+    "BEL",
+    "SUR"
+   ]
+  },
+  "keywordBytes": 59
+ },
+ "no": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "omdirigering",
+    "faner"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "annonse,reklame,blokkering,utvidelse,iphone,mac,kapring,blokkere",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "NO type-ahead gives 'popup blocker'; 'annonseblokkering' returns 33 apps.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "NOR"
+   ]
+  },
+  "keywordBytes": 64
+ },
+ "or-IN": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "ବିଜ୍ଞାପନ,ବ୍ଲକ,ପପଅପ,ସାଫାରି,iphone,mac",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This odia field adds native-script terms only; type-ahead returned no odia query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 80
+ },
+ "pa-IN": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "ਇਸ਼ਤਿਹਾਰ,ਬਲੌਕ,ਪੌਪਅੱਪ,ਸਫਾਰੀ,iphone,mac",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This punjabi field adds native-script terms only; type-ahead returned no punjabi query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 83
+ },
+ "pl": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "przekierowania",
+    "karty"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "reklamy,blokada,blokowanie,rozszerzenie,iphone,mac,wyskakujące,okno,przejęcie",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "PL type-ahead has 'blokada reklam' (64 apps) and 'blokowanie reklam' (34); the Latin 'pop up blocker' is typed too.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "POL"
+   ]
+  },
+  "keywordBytes": 79
+ },
+ "pt-BR": {
+  "name": "Undirect: Bloqueador de Pop Up",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "redirecionamento",
+    "abas"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "popup,anúncios,bloquear,propaganda,extensão,iphone,mac,sequestro,janela,remover",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "BR 'bloqueador de pop ups' returns 23 apps (top has 0 ratings); type-ahead 'bloquear anúncios', 'bloquear anúncios no safari'.",
+  "storefronts": {
+   "primary": [
+    "BRA"
+   ],
+   "additional": [
+    "USA"
+   ]
+  },
+  "keywordBytes": 81
+ },
+ "pt-PT": {
+  "name": "Undirect: Bloqueador de Pop Up",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "redirecionamento",
+    "separadores"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "popup,anúncios,bloquear,publicidade,extensão,iphone,mac,sequestro,janela",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "PT 'bloquear pop ups' returns 10 apps; type-ahead 'bloqueador de pop ups'.",
+  "storefronts": {
+   "primary": [
+    "PRT"
+   ],
+   "additional": []
+  },
+  "keywordBytes": 74
+ },
+ "ro": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "redirecționări",
+    "file"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "reclame,blocare,extensie,iphone,mac,pop-up,fereastră,deturnare",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "RO 'blocare reclame' 32 apps; 'pop-up blocker' 220 apps, top is AdGuard (416 ratings), so the Latin form is the crowded one; the name carries it anyway.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "ROU"
+   ]
+  },
+  "keywordBytes": 63
+ },
+ "ru": {
+  "name": "Undirect: Блокировщик",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "перенаправления",
+    "вкладки",
+    "всплывающие окна"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "реклама,попап,блокировка,расширение,iphone,mac,редирект",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "RU 'блокировщик всплывающих окон' returns 2 apps; 'блокировщик рекламы' 72. Type-ahead has 'блокировка рекламы в safari', 'антиреклама'. ru is also additional in the US.",
+  "storefronts": {
+   "primary": [
+    "RUS"
+   ],
+   "additional": [
+    "UKR",
+    "USA"
+   ]
+  },
+  "keywordBytes": 95
+ },
+ "sk": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "presmerovanie",
+    "karty"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "reklamy,blokovanie,rozšírenie,iphone,mac,vyskakovacie,okno,únos",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "SK 'blokovanie reklám' returns 23 apps; same pattern as CZ.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "SVK"
+   ]
+  },
+  "keywordBytes": 66
+ },
+ "sl-SI": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "preusmeritve",
+    "zavihki"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "oglasi,reklame,blokiranje,razširitev,iphone,mac,pojavno,okno,ugrabitev",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "SI 'blokiranje oglasov' returns 0 apps; users type 'adblock' (244 apps).",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "SVN"
+   ]
+  },
+  "keywordBytes": 71
+ },
+ "sv": {
+  "name": "Undirect: Pop up blockerare",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "omdirigering",
+    "flikar"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "annonser,annons,blockera,tillägg,iphone,mac,kapning,popup,reklam",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "SE type-ahead returns 'pop up blockerare' (15 apps) and 'blockera annonser'.",
+  "storefronts": {
+   "primary": [
+    "SWE"
+   ],
+   "additional": []
+  },
+  "keywordBytes": 65
+ },
+ "ta-IN": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "விளம்பரம்,தடுப்பு,பாப்அப்,சஃபாரி",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This tamil field adds native-script terms only; type-ahead returned no tamil query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 90
+ },
+ "te-IN": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "ప్రకటన,బ్లాకర్,పాప్అప్,సఫారి",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This telugu field adds native-script terms only; type-ahead returned no telugu query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND"
+   ]
+  },
+  "keywordBytes": 78
+ },
+ "th": {
+  "name": "Undirect",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "ป๊อปอัป",
+    "เปลี่ยนเส้นทาง",
+    "แท็บ"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "โฆษณา,บล็อก,บล็อค,ส่วนขยาย,iphone,mac",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": false,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "TH type-ahead 'บล็อคโฆษณา'; 'บล็อกโฆษณา' returns 111 apps, 'ป้องกันโฆษณา' 14. Spelling varies (บล็อก and บล็อค), so both are listed.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "THA"
+   ]
+  },
+  "keywordBytes": 83
+ },
+ "tr": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "yönlendirme",
+    "sekme"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "reklam,engelleyici,açılır,pencere,uzantı,iphone,mac,engelle,kaçırma",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "TR type-ahead has 'reklam engelleyici' (128 apps); 'açılır pencere engelleyici' returns 8 apps; the Latin 'pop up blocker' is typed.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "CYP",
+    "TUR"
+   ]
+  },
+  "keywordBytes": 73
+ },
+ "uk": {
+  "name": "Undirect: Блокувальник",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "перенаправлення",
+    "вкладки",
+    "спливаючі вікна"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "реклама,блок,розширення,iphone,mac,редирект,попап",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "UA 'блокувальник спливаючих вікон' returns 3 apps; type-ahead 'блок реклами', 'анти реклама'.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "RUS",
+    "UKR"
+   ]
+  },
+  "keywordBytes": 83
+ },
+ "ur-PK": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Your click stays yours: stops pages redirecting or opening tabs you did not ask for, in Safari.",
+   "mustContain": [
+    "Safari"
+   ],
+   "maxChars": 30,
+   "note": "No Indic-script query appeared in Apple's type-ahead (India shows only Latin 'adblock', 'pop up blocker'), so the visible lines can follow the current slogan style; keep 'Safari' in Latin."
+  },
+  "keywords": "اشتہار,بلاک,پاپ اپ,سفاری,ایکسٹینشن,iphone,mac",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": false,
+   "keywords": true,
+   "promo": false,
+   "kind": "keywords+name"
+  },
+  "why": "India and Pakistan default to en-GB, which already carries every Latin term. This urdu field adds native-script terms only; type-ahead returned no urdu query, so confidence is low.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "IND",
+    "PAK"
+   ]
+  },
+  "keywordBytes": 74
+ },
+ "vi": {
+  "name": "Undirect: Popup Blocker",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "chuyển hướng",
+    "tab"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "chặn,quảng cáo,tiện ích,iphone,mac,cửa sổ,chiếm quyền",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "VN type-ahead: 'chặn quảng cáo safari', 'chặn quảng cáo'; 'chặn popup' returns 42 apps. vi is also additional in the US.",
+  "storefronts": {
+   "primary": [],
+   "additional": [
+    "USA",
+    "VNM"
+   ]
+  },
+  "keywordBytes": 69
+ },
+ "zh-Hans": {
+  "name": "Undirect: 弹窗拦截",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "重定向",
+    "标签页"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "广告,屏蔽,扩展,iphone,mac,浏览器,劫持,去广告",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "CN type-ahead '弹窗拦截', '去除广告', 'safari 广告拦截器'; '弹窗拦截' returns 185 apps but the top is a script manager, so intent is loose.",
+  "storefronts": {
+   "primary": [
+    "CHN"
+   ],
+   "additional": [
+    "SGP",
+    "USA"
+   ]
+  },
+  "keywordBytes": 58
+ },
+ "zh-Hant": {
+  "name": "Undirect: 彈出視窗攔截",
+  "subtitle": {
+   "meaning": "Stops redirects and hijacked tabs in Safari (the English line is 'Stop Safari redirects & tabs'). Compose from the screen, not from the English.",
+   "mustContain": [
+    "Safari",
+    "重新導向",
+    "分頁"
+   ],
+   "maxChars": 30,
+   "note": "Every term in mustContain should appear in the subtitle or name; the keyword field below deliberately omits them."
+  },
+  "keywords": "廣告,封鎖,擴充功能,iphone,mac,瀏覽器,劫持,彈跳,阻擋",
+  "promo": {
+   "meaning": "Conversion copy only (promo text is not searchable). Say: switch it on per site from the toolbar button; it stops invisible click layers, pop-unders and links rewritten mid-click; it lists every address a page tried to open. No claim of general ad blocking.",
+   "maxChars": 170,
+   "indexed": false
+  },
+  "change": {
+   "name": true,
+   "subtitle": true,
+   "keywords": true,
+   "promo": true,
+   "kind": "visible+keywords"
+  },
+  "why": "TW type-ahead '彈出視窗攔截器' returns 16 apps; '廣告攔截' 179; HK default is also zh-Hant.",
+  "storefronts": {
+   "primary": [
+    "HKG",
+    "MAC",
+    "TWN"
+   ],
+   "additional": [
+    "USA"
+   ]
+  },
+  "keywordBytes": 68
+ }
+}

@@ -1,0 +1,285 @@
+{
+ "US": [
+  "pop up blocker",
+  "popup blocker",
+  "pop up",
+  "popup",
+  "redirect blocker",
+  "redirect",
+  "ad blocker",
+  "adblock",
+  "safari extension",
+  "block pop ups",
+  "stop redirects",
+  "popunder",
+  "pop under",
+  "new tab",
+  "malicious redirect",
+  "safari blocker",
+  "block ads",
+  "block ads safari",
+  "tab hijack",
+  "undirect",
+  "hijack",
+  "click hijack",
+  "privacy safari",
+  "tracker blocker",
+  "clickjacking"
+ ],
+ "GB": [
+  "pop up blocker",
+  "popup blocker",
+  "redirect blocker",
+  "ad blocker",
+  "adblock",
+  "safari extension",
+  "block pop ups"
+ ],
+ "AU": [
+  "pop up blocker",
+  "ad blocker",
+  "safari extension"
+ ],
+ "CA": [
+  "pop up blocker",
+  "ad blocker",
+  "safari extension"
+ ],
+ "DE": [
+  "popup blocker",
+  "pop up blocker",
+  "werbeblocker",
+  "werbung blockieren",
+  "safari erweiterung",
+  "weiterleitung",
+  "adblock",
+  "popup"
+ ],
+ "FR": [
+  "bloqueur de pub",
+  "bloquer publicité safari",
+  "popup blocker",
+  "bloqueur de pop-up",
+  "extension safari",
+  "redirection",
+  "adblock"
+ ],
+ "IT": [
+  "blocco pubblicità",
+  "blocca pubblicità",
+  "popup blocker",
+  "blocca popup",
+  "estensione safari",
+  "reindirizzamento",
+  "adblock"
+ ],
+ "ES": [
+  "bloqueador de anuncios",
+  "bloqueo de ventanas emergentes",
+  "bloquear ventanas emergentes",
+  "extension safari",
+  "redireccion",
+  "adblock"
+ ],
+ "MX": [
+  "bloqueo de ventanas emergentes",
+  "bloquear anuncios en safari",
+  "bloqueador de anuncios",
+  "extension safari",
+  "adblock"
+ ],
+ "NL": [
+  "adblocker safari",
+  "advertentieblokkering",
+  "popup blocker",
+  "pop-up blokkeren",
+  "safari extensie",
+  "adblock"
+ ],
+ "JP": [
+  "ポップアップ ブロック",
+  "ポップアップブロック",
+  "広告ブロック",
+  "広告ブロック safari",
+  "safari 拡張機能",
+  "リダイレクト",
+  "adblock"
+ ],
+ "KR": [
+  "팝업차단",
+  "팝업 차단",
+  "광고 차단",
+  "광고차단",
+  "사파리 확장 프로그램",
+  "리다이렉트",
+  "adblock"
+ ],
+ "CN": [
+  "弹窗拦截",
+  "弹窗",
+  "广告拦截",
+  "广告屏蔽",
+  "safari 扩展",
+  "重定向",
+  "adblock"
+ ],
+ "TW": [
+  "彈出視窗攔截器",
+  "彈出視窗",
+  "廣告攔截",
+  "廣告封鎖",
+  "safari 擴充功能",
+  "重新導向",
+  "adblock"
+ ],
+ "HK": [
+  "廣告封鎖",
+  "彈出視窗"
+ ],
+ "RU": [
+  "блокировщик всплывающих окон",
+  "блокировщик рекламы",
+  "блокировщик рекламы safari",
+  "всплывающие окна",
+  "перенаправление",
+  "расширение safari",
+  "adblock"
+ ],
+ "BR": [
+  "bloqueador de pop ups",
+  "bloquear anúncios",
+  "bloquear anúncios no safari",
+  "pop up",
+  "redirecionamento",
+  "extensão safari",
+  "adblock"
+ ],
+ "PT": [
+  "bloqueador de anúncios",
+  "bloquear pop ups"
+ ],
+ "ID": [
+  "blokir iklan",
+  "pop up blocker",
+  "pemblokir iklan",
+  "adblock safari",
+  "pengalihan",
+  "ekstensi safari",
+  "adblock"
+ ],
+ "IN": [
+  "pop up blocker",
+  "ad blocker for safari",
+  "block ads",
+  "adblock"
+ ],
+ "TR": [
+  "reklam engelleyici",
+  "pop up blocker",
+  "açılır pencere engelleyici",
+  "adblock safari",
+  "yönlendirme",
+  "adblock"
+ ],
+ "PL": [
+  "blokowanie reklam",
+  "blokada reklam",
+  "pop up blocker",
+  "blokada wyskakujących okien",
+  "adblock"
+ ],
+ "SA": [
+  "مانع الاعلانات",
+  "حجب الاعلانات",
+  "حظر الاعلانات",
+  "نوافذ منبثقة",
+  "adblock"
+ ],
+ "AE": [
+  "مانع الاعلانات",
+  "adblock"
+ ],
+ "VN": [
+  "chặn quảng cáo safari",
+  "chặn quảng cáo",
+  "popup blocker",
+  "chặn popup",
+  "adblock"
+ ],
+ "TH": [
+  "บล็อกโฆษณา",
+  "ป้องกันโฆษณา",
+  "ป๊อปอัพ",
+  "adblock safari"
+ ],
+ "SE": [
+  "pop up blockerare",
+  "annonsblockerare",
+  "annonsblockering",
+  "adblock safari"
+ ],
+ "NO": [
+  "annonseblokkering",
+  "popup blocker",
+  "adblock"
+ ],
+ "DK": [
+  "reklameblokering",
+  "popup blocker",
+  "adblock"
+ ],
+ "FI": [
+  "mainosten esto",
+  "mainosesto",
+  "adblock"
+ ],
+ "CZ": [
+  "blokování reklam",
+  "blokování reklam safari",
+  "adblock"
+ ],
+ "SK": [
+  "blokovanie reklám",
+  "adblock"
+ ],
+ "HU": [
+  "reklámblokkoló",
+  "felugró ablak blokkoló",
+  "adblock"
+ ],
+ "RO": [
+  "blocare reclame",
+  "adblock",
+  "pop-up blocker"
+ ],
+ "GR": [
+  "αποκλεισμός διαφημίσεων",
+  "adblock"
+ ],
+ "HR": [
+  "blokiranje reklama",
+  "adblock"
+ ],
+ "SI": [
+  "blokiranje oglasov",
+  "adblock"
+ ],
+ "UA": [
+  "блокувальник реклами",
+  "блокувальник спливаючих вікон",
+  "adblock"
+ ],
+ "IL": [
+  "חוסם פרסומות",
+  "adblock"
+ ],
+ "MY": [
+  "sekat iklan",
+  "adblock",
+  "pop up blocker"
+ ],
+ "PK": [
+  "adblock",
+  "pop up blocker"
+ ]
+}
