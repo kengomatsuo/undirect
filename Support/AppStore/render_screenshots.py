@@ -11,8 +11,9 @@ hypershots render.sh does. Output goes to Support/AppStore/<code>/<kind>/NN.png.
 Needs the Noto fonts: Support/AppStore/fetch_noto_fonts.sh (writes .shots/noto).
 English locales keep the English sets in Support/AppStore/{iphone,ipad,mac}.
 rebreaks.json holds the few headlines that did not fit at the panel floor and were
-re-broken at word boundaries (words untouched). Headline h1/h2/h3 map to iPhone and iPad panels 1-3; the Mac set has two panels
-that carry h1 and h3.
+re-broken at word boundaries (words untouched). Frames 1-5 carry c1a..c5 (c1b is the smaller second line under c1a), the same five on
+every device. The "en" entry in headlines.json renders into the English default sets
+Support/AppStore/{iphone,ipad,mac}, which the four English locales use.
 """
 import argparse, html, json, os, re, shutil, subprocess, sys
 from concurrent.futures import ThreadPoolExecutor
@@ -22,12 +23,14 @@ SHOTS = os.path.join(ROOT, ".shots")
 APPSTORE = os.path.join(ROOT, "Support", "AppStore")
 CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 
+FRAMES = {1: "c1a", 2: "c2", 3: "c3", 4: "c4", 5: "c5"}
 # kind -> (profile, css w, css h, scale, panel number -> headline key)
 KINDS = {
-    "iphone": ("iphone-6.9-alt", 440, 956, 3, {1: "h1", 2: "h2", 3: "h3"}),
-    "ipad": ("ipad-13", 1032, 1376, 2, {1: "h1", 2: "h2", 3: "h3"}),
-    "mac": ("mac-2880", 1440, 900, 2, {1: "h1", 2: "h3"}),
+    "iphone": ("iphone-6.9-alt", 440, 956, 3, FRAMES),
+    "ipad": ("ipad-13", 1032, 1376, 2, FRAMES),
+    "mac": ("mac-2880", 1440, 900, 2, FRAMES),
 }
+SUBS = {1: "c1b"}  # frame -> key of the smaller line under the headline
 
 # code -> (font family, weight, letter-spacing override, line-height, rtl). None = keep the theme.
 LATIN = None
@@ -58,20 +61,23 @@ FACES = {  # family -> file in .shots/noto
     "Noto Sans JP": "NotoSansJP", "Noto Sans KR": "NotoSansKR", "Noto Sans SC": "NotoSansSC", "Noto Sans TC": "NotoSansTC",
 }
 
+WORD_BREAK = {"ja": "auto-phrase", "ko": "keep-all"}
+
 # Mac copy column width; ml-IN's one-word second line needs more at the panel floor.
-MAC_WIDTH = {"ml-IN": 456}
+MAC_WIDTH = {"ml-IN": 470, "ta-IN": 480}
+MAC_WIDTH_FRAME = {("ml-IN", 4): 520}  # the dark popup frame leaves room for a wider column
 
 # Shrinks any "\n"-broken headline until its widest line fits the box, down to the
 # panel's own floor. fit.js (loaded after) then does the height. A failure is
 # recorded on <html data-wfail> for the renderer to read out of the DOM dump.
 FIT_JS = """(async()=>{await document.fonts.ready;const fails=[];
-for(const el of document.querySelectorAll('[data-fit]')){
- if(el.dataset.nowrap!=='1')continue;
- const floor=el.dataset.fitFloor?parseFloat(el.dataset.fitFloor):26;
+const wide=el=>{if(el.dataset.nowrap==='1'){const r=document.createRange();r.selectNodeContents(el);return r.getBoundingClientRect().width>el.clientWidth+0.5}
+ return el.scrollWidth>el.clientWidth+0.5};
+for(const el of document.querySelectorAll('[data-fit],.sub')){
+ const floor=el.dataset.fitFloor?parseFloat(el.dataset.fitFloor):16;
  let size=parseFloat(getComputedStyle(el).fontSize);
- const wide=()=>{const r=document.createRange();r.selectNodeContents(el);return r.getBoundingClientRect().width>el.clientWidth+0.5};
- while(wide()&&size>floor){size-=1;el.style.fontSize=size+'px'}
- if(wide())fails.push(el.dataset.i18n);}
+ while(wide(el)&&size>floor){size-=1;el.style.fontSize=size+'px'}
+ if(wide(el))fails.push(el.dataset.i18n);}
 document.documentElement.dataset.wfail=fails.join(',');})();"""
 
 
@@ -90,13 +96,10 @@ def build_noto_css():
         fh.write(FIT_JS)
 
 
-def make_panel(src, code, text, kind):
-    s = open(src, encoding="utf-8").read()
-    cfg = FONTS.get(code)
+def swap_text(s, key, text, code, rtl):
     lines = [html.escape(l.strip(), quote=False) for l in text.split("\n")]
     inner = "<br>".join(lines)
     nowrap = len(lines) > 1
-    rtl = bool(cfg and cfg[4])
 
     def swap(m):
         tag = m.group(1)
@@ -106,8 +109,19 @@ def make_panel(src, code, text, kind):
         if nowrap:
             extra += ' data-nowrap="1"'
         return tag[:-1] + extra + ">" + inner + m.group(3)
-    s, n = re.subn(r'(<div class="headline"[^>]*data-i18n="p\d\.headline"[^>]*>)(.*?)(</div>)', swap, s, count=1, flags=re.S)
-    assert n == 1, src
+    pat = r'(<div class="%s"[^>]*data-i18n="p\d\.%s"[^>]*>)(.*?)(</div>)' % key
+    s, n = re.subn(pat, swap, s, count=1, flags=re.S)
+    assert n == 1, key
+    return s, nowrap
+
+
+def make_panel(src, code, text, kind, sub=None):
+    s = open(src, encoding="utf-8").read()
+    cfg = FONTS.get(code)
+    rtl = bool(cfg and cfg[4])
+    s, nowrap = swap_text(s, ("headline", "headline"), text, code, rtl)
+    if sub:
+        s, _ = swap_text(s, ("sub", "sub"), sub, code, rtl)
     css = ""
     if cfg:
         fam, w, ls, lh, _ = cfg
@@ -117,6 +131,8 @@ def make_panel(src, code, text, kind):
         if lh:
             css += "line-height:%s;" % lh
         css += "}\n"
+        css += ".panel .sub{font-family:'%s','Noto Sans',sans-serif;font-weight:%s;letter-spacing:0;line-height:%s}\n" % (
+            fam, min(w, 600), (lh or 1.3))
         extra_link = '<link rel="stylesheet" href="../../noto/noto-faces.css">\n'
     else:
         extra_link = ""
@@ -124,10 +140,14 @@ def make_panel(src, code, text, kind):
         css += ".panel .headline{white-space:nowrap}\n"
     else:
         css += ".panel .headline{text-wrap:balance}\n"
-    css += ".panel .headline{overflow-wrap:normal}\n"
+    css += ".panel .sub{text-wrap:balance}\n"
+    if code in WORD_BREAK:  # Japanese breaks at phrases, Korean at spaces, not inside a word
+        css += ".panel .headline,.panel .sub{word-break:%s}\n" % WORD_BREAK[code]
+    css += ".panel .headline,.panel .sub{overflow-wrap:normal}\n"
     if kind == "mac":
         # the 470px column ends 7px from the window; a longer line must shrink, not touch it
-        css += ".mac .wrap{width:%dpx}\n" % MAC_WIDTH.get(code, 430)
+        frame = int(re.search(r"panel-(\d)", src).group(1))
+        css += ".mac .wrap{width:%dpx}\n" % MAC_WIDTH_FRAME.get((code, frame), MAC_WIDTH.get(code, 430))
     head_add = extra_link + "<style>" + css + "</style>"
     s = s.replace("</head>", head_add + "</head>", 1)
     s = s.replace('<script src="../fit.js"></script>',
@@ -142,49 +162,25 @@ def chrome(args, out=None):
     return subprocess.run(flags, capture_output=True, text=True, timeout=180)
 
 
-def render_one(job):
-    kind, code, n, key, text = job
+def build_page(job):
+    kind, code, n, key, text, sub = job
     profile, w, h, scale, _ = KINDS[kind]
     ws = os.path.join(SHOTS, kind)
     pdir = os.path.join(ws, "panels-" + code)
     os.makedirs(pdir, exist_ok=True)
     page = os.path.join(pdir, "panel-%d.html" % n)
     src = os.path.join(ws, "panels", "panel-%d.html" % n)
-    open(page, "w", encoding="utf-8").write(make_panel(src, code, text, kind))
+    open(page, "w", encoding="utf-8").write(make_panel(src, code, text, kind, sub))
     out = os.path.join(ws, "out", profile, code)
     os.makedirs(out, exist_ok=True)
-    png = os.path.join(out, "panel-%d.png" % n)
-    common = ["--force-device-scale-factor=%d" % scale, "--window-size=%d,%d" % (w, h)]
-    url = "file://" + page
-    r = chrome(common + ["--dump-dom", url])
-    dom = r.stdout
-    m = re.search(r'<script[^>]*\bid="hypershots-boxes"[^>]*>(.*?)</script>', dom, re.S)
-    if not m:
-        return (kind, code, n, "FAIL", "no boxes dump")
-    j = json.loads(m.group(1))
-    wf = re.search(r'data-wfail="([^"]*)"', dom)
-    problems = []
-    if j["panelW"] != w or j["panelH"] != h:
-        problems.append("panel %sx%s" % (j["panelW"], j["panelH"]))
-    if j["fitFailures"]:
-        problems.append("fit (height) at floor: " + ",".join(j["fitFailures"]))
-    if wf and wf.group(1):
-        problems.append("fit (width) at floor: " + wf.group(1))
-    px = [c["px"] for c in j["copy"]]
-    if problems:
-        return (kind, code, n, "FAIL", "; ".join(problems), px)
-    r = chrome(common + ["--screenshot=" + png, url])
-    if not os.path.exists(png):
-        return (kind, code, n, "FAIL", "no screenshot")
-    json.dump(j, open(os.path.join(out, "panel-%d.boxes.json" % n), "w"))
-    return (kind, code, n, "OK", "", px)
+    return {"page": page, "png": os.path.join(out, "panel-%d.png" % n), "w": w, "h": h, "scale": scale}
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--kinds", default="iphone,ipad,mac")
     ap.add_argument("--locales", default="")
-    ap.add_argument("--jobs", type=int, default=6)
+    ap.add_argument("--jobs", type=int, default=4)
     a = ap.parse_args()
     heads = json.load(open(os.path.join(APPSTORE, "headlines.json"), encoding="utf-8"))
     rebreaks = json.load(open(os.path.join(APPSTORE, "rebreaks.json"), encoding="utf-8"))
@@ -199,23 +195,55 @@ def main():
             # fresh profile.css per kind
             for n, key in panels.items():
                 text = rebreaks.get(code, {}).get(kind, {}).get(key, heads[code][key])
-                jobs.append((kind, code, n, key, text))
+                sub = SUBS.get(n)
+                sub = rebreaks.get(code, {}).get(kind, {}).get(sub, heads[code][sub]) if sub else None
+                jobs.append((kind, code, n, key, text, sub))
     for kind in a.kinds.split(","):
         _, w, h, _, _ = KINDS[kind]
         open(os.path.join(SHOTS, kind, "profile.css"), "w").write(
             "/* generated by render_screenshots.py */\n:root{ --panel-w:%dpx; --panel-h:%dpx; }\n" % (w, h))
+    cdp_jobs = [build_page(j) for j in jobs]
+    # One page at a time per browser: pages rendered side by side in one Chrome came out
+    # with tiled, clipped text. Several browsers in parallel instead.
+    shards = [list(range(i, len(cdp_jobs), a.jobs)) for i in range(a.jobs)]
+    procs = []
+    for i, idx in enumerate(shards):
+        if not idx:
+            continue
+        jp = os.path.join(SHOTS, "cdp-jobs-%d.json" % i)
+        json.dump([cdp_jobs[k] for k in idx], open(jp, "w"))
+        procs.append((idx, os.path.join(SHOTS, "cdp-results-%d.json" % i),
+                      subprocess.Popen(["node", os.path.join(APPSTORE, "render_cdp.mjs"), jp,
+                                        os.path.join(SHOTS, "cdp-results-%d.json" % i), "1"],
+                                       stdout=subprocess.DEVNULL)))
+    raw = [None] * len(cdp_jobs)
+    for idx, rp, pr in procs:
+        pr.wait()
+        for k, r in zip(idx, json.load(open(rp))):
+            raw[k] = r
     results = []
-    with ThreadPoolExecutor(a.jobs) as ex:
-        for res in ex.map(render_one, jobs):
-            results.append(res)
-            print(*res[:5], res[5] if len(res) > 5 else "", flush=True)
+    for job, cj, r in zip(jobs, cdp_jobs, raw):
+        kind, code, n = job[0], job[1], job[2]
+        if r["ok"]:
+            json.dump(r["boxes"], open(cj["png"].replace(".png", ".boxes.json"), "w"))
+            results.append((kind, code, n, "OK", "", [c["px"] for c in r["boxes"]["copy"]]))
+        else:
+            px = [c["px"] for c in r["boxes"]["copy"]] if r.get("boxes") else []
+            why = r.get("error", "")
+            if r.get("boxes") and r["boxes"]["fitFailures"]:
+                why += " height at floor: " + ",".join(r["boxes"]["fitFailures"])
+            if r.get("wfail"):
+                why += " width at floor: " + r["wfail"]
+            results.append((kind, code, n, "FAIL", why, px))
+    for res in results:
+        print(*res[:5], res[5] if len(res) > 5 else "", flush=True)
     bad = [r for r in results if r[3] != "OK"]
     # copy to the store layout
     for kind, code, n, status, *_ in results:
         if status != "OK":
             continue
         profile = KINDS[kind][0]
-        dst = os.path.join(APPSTORE, code, kind)
+        dst = os.path.join(APPSTORE, kind if code == "en" else os.path.join(code, kind))
         os.makedirs(dst, exist_ok=True)
         shutil.copy(os.path.join(SHOTS, kind, "out", profile, code, "panel-%d.png" % n),
                     os.path.join(dst, "%02d.png" % n))

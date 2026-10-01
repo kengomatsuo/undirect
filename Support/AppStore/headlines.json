@@ -1,232 +1,378 @@
 {
+ "en": {
+  "c1a": "Popup blocker for Safari",
+  "c1b": "Your tap lands where you aim",
+  "c2": "One press guards a site",
+  "c3": "Every blocked address, listed",
+  "c4": "Works beside your ad blocker",
+  "c5": "Nothing leaves your device"
+ },
  "ar-SA": {
-  "h1": "نقراتك تصل\nإلى ما تريد",
-  "h2": "ضغطة واحدة تفعّل\nالحماية للموقع",
-  "h3": "كل ما حُجب\nفي قائمة واحدة"
+  "c1a": "حجب النوافذ في Safari",
+  "c1b": "نقرتك تصل حيث قصدت",
+  "c2": "ضغطة واحدة تحمي الموقع",
+  "c3": "كل عنوان محجوب في قائمة",
+  "c4": "يعمل مع مانع الإعلانات لديك",
+  "c5": "كل شيء يبقى على جهازك"
  },
  "bn-BD": {
-  "h1": "আপনার ক্লিক যায়\nআপনার গন্তব্যে",
-  "h2": "এক চাপেই সাইটের\nসুরক্ষা চালু",
-  "h3": "যা আটকানো হলো\nসব এক তালিকায়"
+  "c1a": "Safari পপআপ ব্লকার",
+  "c1b": "ক্লিক যেখানে চান সেখানেই যাক",
+  "c2": "এক চাপে এই সাইটে চালু",
+  "c3": "আটকানো ঠিকানা সব তালিকায়",
+  "c4": "আপনার অ্যাড ব্লকারের পাশে",
+  "c5": "সবকিছু থাকে আপনার ডিভাইসে"
  },
  "ca": {
-  "h1": "El teu toc va\non tu vols",
-  "h2": "Una pulsació\nprotegeix el lloc",
-  "h3": "Tot el bloquejat\nen una sola llista"
+  "c1a": "Bloqueig de pop-ups",
+  "c1b": "El teu toc va on volies",
+  "c2": "Un toc protegeix el lloc",
+  "c3": "Cada adreça bloquejada",
+  "c4": "Va amb el teu bloquejador",
+  "c5": "Tot queda al teu dispositiu"
  },
  "cs": {
-  "h1": "Klepnutí míří\nkam chcete",
-  "h2": "Jeden stisk zapne\nochranu webu",
-  "h3": "Vše zablokované\nv jednom seznamu"
+  "c1a": "Popup blocker pro Safari",
+  "c1b": "Klepnutí skončí, kam chcete",
+  "c2": "Zapnuto jedním klepnutím",
+  "c3": "Všechny zablokované adresy",
+  "c4": "Funguje s blokátorem reklam",
+  "c5": "Vše zůstane v zařízení"
  },
  "da": {
-  "h1": "Dit klik går\nder, hvor du vil",
-  "h2": "Ét tryk beskytter\nsiden",
-  "h3": "Alt blokeret\ni én liste"
+  "c1a": "Popup-blokering i Safari",
+  "c1b": "Dit klik lander, hvor du mente",
+  "c2": "Ét tryk slår siden til",
+  "c3": "Se hver blokeret adresse",
+  "c4": "Virker med din adblocker",
+  "c5": "Alt bliver på din enhed"
  },
  "de-DE": {
-  "h1": "Jeder Klick landet\nam richtigen Ort",
-  "h2": "Ein Klick schützt\ndie Website",
-  "h3": "Alles Blockierte\nin einer Liste"
+  "c1a": "Popup-Blocker für Safari",
+  "c1b": "Ihr Klick landet, wo er soll",
+  "c2": "Ein Druck schützt die Seite",
+  "c3": "Alle blockierten Adressen",
+  "c4": "Neben Ihrem Werbeblocker",
+  "c5": "Alles bleibt auf Ihrem Gerät"
  },
  "el": {
-  "h1": "Το κλικ πηγαίνει\nόπου θέλετε",
-  "h2": "Ένα πάτημα\nπροστατεύει τον ιστότοπο",
-  "h3": "Όλα τα μπλοκαρισμένα\nσε μία λίστα"
+  "c1a": "Pop up blocker Safari",
+  "c1b": "Το κλικ πάει όπου ήθελες",
+  "c2": "Ένα πάτημα προστατεύει",
+  "c3": "Κάθε αποκλεισμένη διεύθυνση",
+  "c4": "Δουλεύει με το adblocker σου",
+  "c5": "Όλα μένουν στη συσκευή σου"
  },
  "es-ES": {
-  "h1": "Tu clic va\ndonde tú quieres",
-  "h2": "Una pulsación\nprotege el sitio",
-  "h3": "Todo lo bloqueado\nen una lista"
+  "c1a": "Pop-ups fuera de Safari",
+  "c1b": "Tu clic llega adonde querías",
+  "c2": "Un toque protege esta web",
+  "c3": "Cada dirección bloqueada",
+  "c4": "Convive con tu bloqueador",
+  "c5": "Todo queda en tu dispositivo"
  },
  "es-MX": {
-  "h1": "Tu clic llega\ndonde tú quieres",
-  "h2": "Un clic y el sitio\nqueda protegido",
-  "h3": "Todo lo bloqueado\njunto en una lista"
+  "c1a": "Pop-ups fuera de Safari",
+  "c1b": "Tu clic va adonde querías",
+  "c2": "Un toque protege este sitio",
+  "c3": "Cada dirección bloqueada",
+  "c4": "Funciona con tu bloqueador",
+  "c5": "Todo queda en tu dispositivo"
  },
  "fi": {
-  "h1": "Napsautus menee\nsinne minne haluat",
-  "h2": "Yksi painallus\nsuojaa sivun",
-  "h3": "Kaikki estetty\nyhdessä listassa"
+  "c1a": "Popup-esto Safarille",
+  "c1b": "Napsautus osuu minne tähtäsit",
+  "c2": "Yksi painallus suojaa sivun",
+  "c3": "Estetyt osoitteet listassa",
+  "c4": "Toimii mainosestosi kanssa",
+  "c5": "Kaikki pysyy laitteellasi"
  },
  "fr-CA": {
-  "h1": "Votre clic va\noù vous voulez",
-  "h2": "Un seul appui\nprotège le site",
-  "h3": "Chaque blocage\ndans une seule liste"
+  "c1a": "Bloqueur pop-up Safari",
+  "c1b": "Votre clic va où vous voulez",
+  "c2": "Un appui protège le site",
+  "c3": "Chaque adresse bloquée",
+  "c4": "Avec votre bloqueur de pub",
+  "c5": "Tout reste sur l'appareil"
  },
  "fr-FR": {
-  "h1": "Vos clics vont\noù vous voulez",
-  "h2": "Une pression active\nla protection du site",
-  "h3": "Tous les blocages\nréunis en une liste"
+  "c1a": "Bloqueur pop-up Safari",
+  "c1b": "Votre clic arrive où il faut",
+  "c2": "Un appui protège le site",
+  "c3": "Chaque adresse bloquée",
+  "c4": "S'ajoute à votre anti-pub",
+  "c5": "Tout reste sur l'appareil"
  },
  "gu-IN": {
-  "h1": "તમારું ક્લિક ત્યાં જ\nજાય જ્યાં તમે ચાહો",
-  "h2": "એક પ્રેસથી સાઇટનું\nરક્ષણ ચાલુ",
-  "h3": "બધું રોકાયેલું\nએક જ યાદીમાં"
+  "c1a": "Safari માટે પૉપઅપ બ્લૉકર",
+  "c1b": "ક્લિક જ્યાં ધાર્યું ત્યાં જ જાય",
+  "c2": "એક દબાણથી આ સાઇટ સુરક્ષિત",
+  "c3": "દરેક બ્લૉક સરનામું યાદીમાં",
+  "c4": "તમારા એડ બ્લૉકર સાથે ચાલે",
+  "c5": "બધું તમારા ડિવાઇસ પર રહે"
  },
  "he": {
-  "h1": "הלחיצה שלכם הולכת\nלמקום שרציתם",
-  "h2": "לחיצה אחת מפעילה\nהגנה באתר",
-  "h3": "כל מה שנחסם\nברשימה אחת"
+  "c1a": "חוסם חלונות ל-Safari",
+  "c1b": "הלחיצה מגיעה למקום שרציתם",
+  "c2": "לחיצה אחת מגנה על האתר",
+  "c3": "כל כתובת שנחסמה ברשימה",
+  "c4": "פועל לצד חוסם הפרסומות",
+  "c5": "הכול נשאר על המכשיר שלכם"
  },
  "hi": {
-  "h1": "क्लिक वहीं जाए\nजहाँ आप चाहें",
-  "h2": "एक प्रेस से साइट की\nसुरक्षा चालू",
-  "h3": "जो भी रोका गया\nएक सूची में"
+  "c1a": "Safari पॉपअप ब्लॉकर",
+  "c1b": "क्लिक वहीं जाए जहाँ आपने चाहा",
+  "c2": "एक दबाव से साइट सुरक्षित",
+  "c3": "हर ब्लॉक पता सूची में",
+  "c4": "आपके ऐड ब्लॉकर के साथ",
+  "c5": "सब कुछ आपके डिवाइस पर"
  },
  "hr": {
-  "h1": "Klik ide tamo\ngdje ga želite",
-  "h2": "Jedan pritisak\nštiti stranicu",
-  "h3": "Sve blokirano\nu jednom popisu"
+  "c1a": "Popup blocker za Safari",
+  "c1b": "Klik završi gdje ste ciljali",
+  "c2": "Jedan dodir štiti stranicu",
+  "c3": "Sve blokirane adrese",
+  "c4": "Radi uz vaš adblock",
+  "c5": "Sve ostaje na vašem uređaju"
  },
  "hu": {
-  "h1": "Oda kattint,\nahová akar",
-  "h2": "Egy gombnyomás\nvédi az oldalt",
-  "h3": "Minden blokkolt cél\negy listában"
+  "c1a": "Popup blokkoló Safarihoz",
+  "c1b": "Oda visz, ahová kattintasz",
+  "c2": "Egy gomb, és védett az oldal",
+  "c3": "Minden blokkolt cím listán",
+  "c4": "Reklámblokkolóval is működik",
+  "c5": "Minden az eszközön marad"
  },
  "id": {
-  "h1": "Klik Anda tiba\ndi tujuan Anda",
-  "h2": "Sekali tekan,\nsitus terlindungi",
-  "h3": "Semua yang diblokir\nada dalam satu daftar"
+  "c1a": "Pemblokir Popup Safari",
+  "c1b": "Klik sampai ke tujuan yang benar",
+  "c2": "Satu tombol untuk satu situs",
+  "c3": "Daftar alamat yang diblokir",
+  "c4": "Cocok dengan pemblokir iklan",
+  "c5": "Semua tetap di perangkat"
  },
  "it": {
-  "h1": "Il tocco va dove\nvuoi tu",
-  "h2": "Un solo tocco\nprotegge il sito",
-  "h3": "Tutto ciò che è bloccato\nin un solo elenco"
+  "c1a": "Blocca popup per Safari",
+  "c1b": "Ogni tocco arriva dove vuoi",
+  "c2": "Un tocco protegge il sito",
+  "c3": "Tutti gli indirizzi bloccati",
+  "c4": "Funziona con il tuo adblock",
+  "c5": "Tutto resta sul dispositivo"
  },
  "ja": {
-  "h1": "クリックは\n行きたい先へ",
-  "h2": "ボタン1つで\nそのサイトを保護",
-  "h3": "ブロックした先を\n1つの一覧に"
+  "c1a": "ポップアップブロック",
+  "c1b": "Safariで、クリックは思った先へ",
+  "c2": "ボタン一つでサイトを保護",
+  "c3": "ブロックした先を一覧表示",
+  "c4": "広告ブロッカーと併用可",
+  "c5": "データは端末の外に出ない"
  },
  "kn-IN": {
-  "h1": "ನಿಮ್ಮ ಕ್ಲಿಕ್ ನೀವು\nಬಯಸಿದ ಕಡೆಗೇ",
-  "h2": "ಒಂದು ಒತ್ತಿದರೆ\nಸೈಟ್‌ಗೆ ರಕ್ಷಣೆ",
-  "h3": "ತಡೆದದ್ದೆಲ್ಲ\nಒಂದೇ ಪಟ್ಟಿಯಲ್ಲಿ"
+  "c1a": "Safari ಪಾಪ್‌ಅಪ್ ತಡೆ",
+  "c1b": "ಕ್ಲಿಕ್ ಹೋಗಬೇಕಾದಲ್ಲೇ ಹೋಗುತ್ತದೆ",
+  "c2": "ಒಂದೇ ಒತ್ತಿಗೆ ಸೈಟ್ ಸುರಕ್ಷಿತ",
+  "c3": "ತಡೆದ ಪ್ರತಿ ವಿಳಾಸ ಪಟ್ಟಿಯಲ್ಲಿ",
+  "c4": "ಜಾಹೀರಾತು ಬ್ಲಾಕರ್ ಜೊತೆಗೂ",
+  "c5": "ಎಲ್ಲವೂ ಸಾಧನದಲ್ಲೇ ಉಳಿಯುತ್ತದೆ"
  },
  "ko": {
-  "h1": "클릭은 내가 원한\n곳으로만",
-  "h2": "버튼 한 번으로\n이 사이트 보호",
-  "h3": "차단한 곳을\n한 목록에서"
+  "c1a": "Safari 팝업 차단",
+  "c1b": "클릭은 내가 누른 곳으로",
+  "c2": "버튼 한 번에 사이트 보호",
+  "c3": "차단한 주소를 모두 목록으로",
+  "c4": "광고 차단기와 함께 사용",
+  "c5": "모든 것이 기기 안에만"
  },
  "ml-IN": {
-  "h1": "ക്ലിക്ക് നിങ്ങൾ\nഉദ്ദേശിച്ചിടത്തേക്ക്",
-  "h2": "ഒരു അമർത്തലിൽ\nസൈറ്റിന് സുരക്ഷ",
-  "h3": "തടഞ്ഞതെല്ലാം\nഒറ്റ പട്ടികയിൽ"
+  "c1a": "Safari പോപ്പ്അപ്പ് തടയൽ",
+  "c1b": "ക്ലിക്ക് ഉദ്ദേശിച്ചിടത്തേ എത്തൂ",
+  "c2": "ഒറ്റ അമർത്തലിൽ സൈറ്റ് സുരക്ഷ",
+  "c3": "തടഞ്ഞ ഓരോ വിലാസവും പട്ടികയിൽ",
+  "c4": "പരസ്യ ബ്ലോക്കറിനൊപ്പവും",
+  "c5": "എല്ലാം ഉപകരണത്തിൽ തന്നെ"
  },
  "mr-IN": {
-  "h1": "क्लिक तुम्हाला हवे\nतिथेच जातो",
-  "h2": "एका दाबाने\nसाइटला संरक्षण",
-  "h3": "रोखलेले सगळे\nएकाच यादीत"
+  "c1a": "Safari पॉपअप ब्लॉकर",
+  "c1b": "क्लिक हवे तिथेच पोहोचतो",
+  "c2": "एका दाबाने साइट सुरक्षित",
+  "c3": "ब्लॉक केलेले पत्ते यादीत",
+  "c4": "जाहिरात ब्लॉकरसोबतही चालतो",
+  "c5": "सर्व काही डिव्हाइसवरच राहते"
  },
  "ms": {
-  "h1": "Klik anda ke\ntempat yang dituju",
-  "h2": "Sekali tekan,\nlaman dilindungi",
-  "h3": "Semua yang disekat\ndalam satu senarai"
+  "c1a": "Penyekat Popup Safari",
+  "c1b": "Klik tiba di tempat yang dituju",
+  "c2": "Satu tekan, laman dilindungi",
+  "c3": "Senarai semua alamat disekat",
+  "c4": "Serasi dengan penyekat iklan",
+  "c5": "Semua kekal pada peranti"
  },
  "nl-NL": {
-  "h1": "Je klik gaat waar\njij hem wilt",
-  "h2": "Eén druk en de site\nis beschermd",
-  "h3": "Alles wat is geblokkeerd,\nin één lijst"
+  "c1a": "Pop-up blokkeren Safari",
+  "c1b": "Je klik komt aan waar je wilde",
+  "c2": "Eén knop beschermt de site",
+  "c3": "Alle geblokkeerde adressen",
+  "c4": "Werkt naast je adblocker",
+  "c5": "Alles blijft op je apparaat"
  },
  "no": {
-  "h1": "Klikket går dit\ndu ville",
-  "h2": "Ett trykk beskytter\nnettstedet",
-  "h3": "Alt som er blokkert,\nsamlet i én liste"
+  "c1a": "Popup-blokker for Safari",
+  "c1b": "Klikket havner der du mente",
+  "c2": "Ett trykk beskytter siden",
+  "c3": "Alle blokkerte adresser",
+  "c4": "Virker med annonseblokkeren",
+  "c5": "Alt blir på enheten din"
  },
  "or-IN": {
-  "h1": "କ୍ଲିକ ଆପଣ ଚାହିଁଥିବା\nସ୍ଥାନକୁ ଯାଏ",
-  "h2": "ଥରେ ଦବାଇଲେ\nସାଇଟ ସୁରକ୍ଷିତ",
-  "h3": "ଅବରୋଧିତ ସବୁ\nଗୋଟିଏ ତାଲିକାରେ"
+  "c1a": "Safari ପପଅପ ବ୍ଲକର",
+  "c1b": "କ୍ଲିକ ଯେଉଁଠି ଚାହିଁଲେ ସେଠିକି",
+  "c2": "ଏକ ଦବାରେ ସାଇଟ ସୁରକ୍ଷିତ",
+  "c3": "ଅଟକିଥିବା ଠିକଣା ତାଲିକାରେ",
+  "c4": "ବିଜ୍ଞାପନ ବ୍ଲକର ସହ ମଧ୍ୟ",
+  "c5": "ସବୁ କିଛି ଡିଭାଇସରେ ରହେ"
  },
  "pa-IN": {
-  "h1": "ਕਲਿੱਕ ਓਥੇ ਜਾਵੇ\nਜਿੱਥੇ ਤੁਸੀਂ ਚਾਹੋ",
-  "h2": "ਇੱਕ ਦਬਾਅ ਨਾਲ\nਸਾਈਟ ਸੁਰੱਖਿਅਤ",
-  "h3": "ਰੋਕਿਆ ਸਭ ਕੁਝ\nਇੱਕ ਸੂਚੀ ਵਿੱਚ"
+  "c1a": "Safari ਪੌਪਅੱਪ ਬਲੌਕਰ",
+  "c1b": "ਕਲਿੱਕ ਉੱਥੇ ਹੀ ਜਾਵੇ ਜਿੱਥੇ ਚਾਹਿਆ",
+  "c2": "ਇੱਕ ਦਬਾਅ ਨਾਲ ਸਾਈਟ ਸੁਰੱਖਿਅਤ",
+  "c3": "ਰੋਕੇ ਹਰ ਪਤੇ ਦੀ ਸੂਚੀ",
+  "c4": "ਇਸ਼ਤਿਹਾਰ ਬਲੌਕਰ ਨਾਲ ਵੀ",
+  "c5": "ਸਭ ਕੁਝ ਡਿਵਾਈਸ ਉੱਤੇ ਰਹਿੰਦਾ"
  },
  "pl": {
-  "h1": "Kliknięcie trafia\ntam, gdzie miało",
-  "h2": "Jedno naciśnięcie\nchroni stronę",
-  "h3": "Wszystko, co zablokowane,\nw jednej liście"
+  "c1a": "Blokada popup dla Safari",
+  "c1b": "Kliknięcie trafia, gdzie miało",
+  "c2": "Jeden przycisk chroni stronę",
+  "c3": "Zablokowane adresy na liście",
+  "c4": "Działa obok blokera reklam",
+  "c5": "Dane zostają na urządzeniu"
  },
  "pt-BR": {
-  "h1": "O clique vai para\nonde deveria",
-  "h2": "Um toque protege\no site",
-  "h3": "Tudo que foi bloqueado\nfica em uma lista"
+  "c1a": "Bloquear popup no Safari",
+  "c1b": "O clique vai aonde você quer",
+  "c2": "Um toque protege o site",
+  "c3": "Veja cada endereço bloqueado",
+  "c4": "Funciona com seu adblock",
+  "c5": "Tudo fica no seu aparelho"
  },
  "pt-PT": {
-  "h1": "O seu clique\nvai onde quer",
-  "h2": "Um toque protege\neste site",
-  "h3": "Os bloqueios\nnuma só lista"
+  "c1a": "Bloqueador de pop-ups",
+  "c1b": "O clique vai para onde quis",
+  "c2": "Um toque, site protegido",
+  "c3": "Veja cada endereço bloqueado",
+  "c4": "Complementa o seu bloqueador",
+  "c5": "Nada sai do dispositivo"
  },
  "ro": {
-  "h1": "Clicul ajunge\nunde vrei tu",
-  "h2": "O apăsare\nprotejează site-ul",
-  "h3": "Tot ce s-a blocat\nîntr-o listă"
+  "c1a": "Popup Blocker pe Safari",
+  "c1b": "Clicul tău ajunge unde ai vrut",
+  "c2": "O apăsare pornește protecția",
+  "c3": "Vezi fiecare adresă blocată",
+  "c4": "Merge alături de adblocker",
+  "c5": "Datele rămân pe dispozitiv"
  },
  "ru": {
-  "h1": "Клик попадает\nкуда нужно",
-  "h2": "Одно нажатие\nзащищает сайт",
-  "h3": "Все блокировки\nв одном списке"
+  "c1a": "Блокировщик окон Safari",
+  "c1b": "Клик ведёт туда, куда нужно",
+  "c2": "Одно нажатие включает защиту",
+  "c3": "Все заблокированные адреса",
+  "c4": "Дополняет ваш блокировщик",
+  "c5": "Всё остаётся на устройстве"
  },
  "sk": {
-  "h1": "Ťuknutie ide\nkam chcete",
-  "h2": "Jedno ťuknutie\nchráni stránku",
-  "h3": "Všetko blokované\nv jednom zozname"
+  "c1a": "Popup Blocker pre Safari",
+  "c1b": "Ťuknutie skončí tam, kam chcete",
+  "c2": "Jedno ťuknutie zapne ochranu",
+  "c3": "Všetky blokované adresy",
+  "c4": "Dopĺňa váš blokátor reklám",
+  "c5": "Nič neopustí vaše zariadenie"
  },
  "sl-SI": {
-  "h1": "Klik gre tja,\nkamor želite",
-  "h2": "En pritisk\nzaščiti stran",
-  "h3": "Vse blokirano\nna enem seznamu"
+  "c1a": "Popup Blocker za Safari",
+  "c1b": "Klik pristane, kamor ste ciljali",
+  "c2": "En dotik vklopi zaščito",
+  "c3": "Vsi blokirani naslovi",
+  "c4": "Dopolnjuje vaš blokator",
+  "c5": "Nič ne zapusti naprave"
  },
  "sv": {
-  "h1": "Ditt klick går\ndit du ville",
-  "h2": "Ett tryck skyddar\nsidan",
-  "h3": "Allt blockerat\ni en lista"
+  "c1a": "Pop up blockerare Safari",
+  "c1b": "Klicket hamnar där du ville",
+  "c2": "Ett tryck slår på skyddet",
+  "c3": "Varje blockerad adress syns",
+  "c4": "Funkar med annonsblockerare",
+  "c5": "Inget lämnar din enhet"
  },
  "ta-IN": {
-  "h1": "உங்கள் கிளிக்\nநினைத்த இடத்துக்கே",
-  "h2": "ஒரு அழுத்தம்\nதளத்தைப் பாதுகாக்கும்",
-  "h3": "தடுத்தவை எல்லாம்\nஒரே பட்டியலில்"
+  "c1a": "Safari பாப்அப் தடுப்பான்",
+  "c1b": "கிளிக் நினைத்த இடத்துக்கே",
+  "c2": "ஒரு அழுத்தம், பாதுகாப்பு",
+  "c3": "தடுத்த முகவரிகள் பட்டியலில்",
+  "c4": "விளம்பரத் தடுப்பானுடனும்",
+  "c5": "தரவு சாதனத்திலேயே இருக்கும்"
  },
  "te-IN": {
-  "h1": "మీ క్లిక్\nమీరు అనుకున్న చోటికే",
-  "h2": "ఒక్క నొక్కుతో\nసైట్‌కు రక్షణ",
-  "h3": "ఆపినవన్నీ\nఒకే జాబితాలో"
+  "c1a": "Safari పాప్అప్ బ్లాకర్",
+  "c1b": "క్లిక్ మీరు అనుకున్న చోటికే",
+  "c2": "ఒక్క నొక్కుతో సైట్‌కు రక్షణ",
+  "c3": "ఆపిన ప్రతి చిరునామా జాబితాలో",
+  "c4": "యాడ్ బ్లాకర్‌తో కలిసి",
+  "c5": "డేటా పరికరంలోనే ఉంటుంది"
  },
  "th": {
-  "h1": "คลิกของคุณ\nไปตามที่ตั้งใจ",
-  "h2": "กดครั้งเดียว\nป้องกันเว็บไซต์นี้",
-  "h3": "ทุกอย่างที่ถูกบล็อก\nอยู่ในรายการเดียว"
+  "c1a": "บล็อกป๊อปอัปใน Safari",
+  "c1b": "คลิกพาไปที่ที่ตั้งใจ",
+  "c2": "กดปุ่มเดียว เปิดป้องกัน",
+  "c3": "ที่อยู่ที่บล็อกอยู่ในรายการ",
+  "c4": "ใช้ร่วมกับตัวบล็อกโฆษณาได้",
+  "c5": "ข้อมูลอยู่บนอุปกรณ์เท่านั้น"
  },
  "tr": {
-  "h1": "Tıklamanız tam\nistediğiniz yere",
-  "h2": "Tek basışla\nsite korunur",
-  "h3": "Engellenen her şey\ntek listede"
+  "c1a": "Safari Popup Blocker",
+  "c1b": "Tıklamanız doğru yere gider",
+  "c2": "Tek dokunuşla site korunur",
+  "c3": "Engellenen her adres listede",
+  "c4": "Reklam engelleyiciyle uyumlu",
+  "c5": "Veriler cihazdan çıkmaz"
  },
  "uk": {
-  "h1": "Клік іде туди,\nкуди ви хотіли",
-  "h2": "Одне натискання\nзахищає сайт",
-  "h3": "Усі блокування\nв одному списку"
+  "c1a": "Блокувальник для Safari",
+  "c1b": "Клік веде туди, куди треба",
+  "c2": "Один дотик вмикає захист",
+  "c3": "Усі заблоковані адреси",
+  "c4": "Доповнює ваш блокувальник",
+  "c5": "Дані не залишають пристрій"
  },
  "ur-PK": {
-  "h1": "آپ کا کلک وہیں جائے\nجہاں آپ چاہیں",
-  "h2": "ایک بار دبائیں\nاور سائٹ محفوظ",
-  "h3": "روکی گئی ہر چیز\nایک ہی فہرست میں"
+  "c1a": "Safari پاپ اپ بلاکر",
+  "c1b": "کلک وہیں جائے جہاں آپ چاہیں",
+  "c2": "ایک دبانے پر سائٹ محفوظ",
+  "c3": "بلاک ہوا ہر پتہ فہرست میں",
+  "c4": "ایڈ بلاکر کے ساتھ چلتا ہے",
+  "c5": "ڈیٹا ڈیوائس ہی میں رہتا ہے"
  },
  "vi": {
-  "h1": "Cú nhấp đến đúng\nnơi bạn muốn",
-  "h2": "Nhấn một lần,\ntrang được bảo vệ",
-  "h3": "Mọi mục bị chặn\ntrong một danh sách"
+  "c1a": "Chặn popup cho Safari",
+  "c1b": "Cú nhấp đến đúng nơi bạn muốn",
+  "c2": "Một lần nhấn bật bảo vệ",
+  "c3": "Liệt kê mọi địa chỉ bị chặn",
+  "c4": "Đi cùng trình chặn quảng cáo",
+  "c5": "Dữ liệu ở lại trên thiết bị"
  },
  "zh-Hans": {
-  "h1": "点击去向\n由你决定",
-  "h2": "按一下按钮\n就保护这个网站",
-  "h3": "拦截的内容\n都在一张列表里"
+  "c1a": "Safari 弹窗拦截",
+  "c1b": "点击去向由你决定",
+  "c2": "按一下，该网站即受保护",
+  "c3": "拦截过的地址逐条列出",
+  "c4": "与广告拦截器并用",
+  "c5": "数据不离开设备"
  },
  "zh-Hant": {
-  "h1": "點按去向\n由你決定",
-  "h2": "按一下按鈕\n就保護這個網站",
-  "h3": "攔截的項目\n都在同一份列表"
+  "c1a": "Safari 彈窗攔截",
+  "c1b": "點按去向由你決定",
+  "c2": "按一下，該網站即受保護",
+  "c3": "攔截過的位址逐條列出",
+  "c4": "可與廣告攔截器並用",
+  "c5": "資料不離開裝置"
  }
 }
