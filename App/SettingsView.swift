@@ -2,18 +2,32 @@ import SwiftUI
 
 // App-wide settings, kept out of the rules list. macOS opens this from the
 // App menu (Command-Comma), as the HIG asks; iOS reaches it from the sidebar.
+// Each row is a control where the app can edit and a plain value where it
+// only mirrors the extension (iOS).
 struct SettingsView: View {
     let rules: RulesModel
+
+    private struct Choice: Identifiable {
+        let tag: String
+        let label: LocalizedStringKey
+        var id: String { tag }
+    }
 
     var body: some View {
         Form {
             Section {
-                guardRow
-                modeRow
+                toggle("Guard", Binding(get: { rules.snapshot?.enabled ?? true }, set: { rules.setEnabled($0) }))
+                choice("Where the guard runs", Binding(get: { rules.snapshot?.mode ?? "watched" }, set: { rules.setMode($0) }), [
+                    Choice(tag: "watched", label: "Sites you turn on"),
+                    Choice(tag: "everywhere", label: "Every site"),
+                ])
             }
             Section {
-                bannerRow
-                policyRow
+                toggle("Note in the page", Binding(get: { rules.snapshot?.banner ?? false }, set: { rules.setBanner($0) }))
+                choice("A destination with no rule", Binding(get: { rules.snapshot?.policy ?? "block" }, set: { rules.setPolicy($0) }), [
+                    Choice(tag: "block", label: "Block it"),
+                    Choice(tag: "allow", label: "Allow it"),
+                ])
             }
         }
         .formStyle(.grouped)
@@ -22,67 +36,23 @@ struct SettingsView: View {
     }
 
     @ViewBuilder
-    private var guardRow: some View {
-        let on = rules.snapshot?.enabled ?? true
+    private func toggle(_ title: LocalizedStringKey, _ value: Binding<Bool>) -> some View {
         if rules.canEdit {
-            Toggle("Guard", isOn: Binding(
-                get: { on },
-                set: { rules.setEnabled($0) }
-            ))
+            Toggle(title, isOn: value)
         } else {
-            LabeledContent("Guard") {
-                Text(on ? "On" : "Off")
-            }
+            LabeledContent(title) { Text(value.wrappedValue ? "On" : "Off") }
         }
     }
 
     @ViewBuilder
-    private var modeRow: some View {
-        let mode = rules.snapshot?.mode ?? "watched"
+    private func choice(_ title: LocalizedStringKey, _ value: Binding<String>, _ choices: [Choice]) -> some View {
         if rules.canEdit {
-            Picker("Where the guard runs", selection: Binding(
-                get: { mode },
-                set: { rules.setMode($0) }
-            )) {
-                Text("Sites you turn on").tag("watched")
-                Text("Every site").tag("everywhere")
+            Picker(title, selection: value) {
+                ForEach(choices) { Text($0.label).tag($0.tag) }
             }
         } else {
-            LabeledContent("Where the guard runs") {
-                Text(mode == "everywhere" ? "Every site" : "Sites you turn on")
-            }
-        }
-    }
-
-    @ViewBuilder
-    private var bannerRow: some View {
-        let on = rules.snapshot?.banner ?? false
-        if rules.canEdit {
-            Toggle("Note in the page", isOn: Binding(
-                get: { on },
-                set: { rules.setBanner($0) }
-            ))
-        } else {
-            LabeledContent("Note in the page") {
-                Text(on ? "On" : "Off")
-            }
-        }
-    }
-
-    @ViewBuilder
-    private var policyRow: some View {
-        let policy = rules.snapshot?.policy ?? "block"
-        if rules.canEdit {
-            Picker("A destination with no rule", selection: Binding(
-                get: { policy },
-                set: { rules.setPolicy($0) }
-            )) {
-                Text("Block it").tag("block")
-                Text("Allow it").tag("allow")
-            }
-        } else {
-            LabeledContent("A destination with no rule") {
-                Text(policy == "block" ? "Block it" : "Allow it")
+            LabeledContent(title) {
+                Text((choices.first { $0.tag == value.wrappedValue } ?? choices[0]).label)
             }
         }
     }

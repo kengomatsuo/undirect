@@ -27,48 +27,22 @@ struct RulesView: View {
     }
 
     var body: some View {
-        container
-            .navigationTitle(grouping.title)
-    }
-
-    // A grouped Form draws the rounded card that System Settings uses. A plain
-    // inset List draws bare hairlines, which is not what a Mac pane looks like.
-    @ViewBuilder
-    private var container: some View {
-        #if os(macOS)
-        Form { sections }
-            .formStyle(.grouped)
-        #else
-        List { sections }
-            .listStyle(.insetGrouped)
-        #endif
-    }
-
-    @ViewBuilder
-    private var sections: some View {
-        Section {
-            if !rules.reachedApp {
-                ContentUnavailableView(
-                    "Nothing from the extension yet",
-                    systemImage: "arrow.triangle.2.circlepath",
-                    description: Text("Open a page in Safari once and this fills in.")
-                )
-            } else if shown.isEmpty {
-                ContentUnavailableView(
-                    "No rules here",
-                    systemImage: "checklist",
-                    description: Text("A destination shows up once you allow or block it.")
-                )
-            } else {
-                ForEach(shown) { rule in
-                    RuleRow(rule: rule, canEdit: rules.canEdit, apply: applied)
-                }
+        RecordList(
+            reachedApp: rules.reachedApp,
+            isEmpty: shown.isEmpty,
+            emptyTitle: "No rules here",
+            emptySymbol: "checklist",
+            emptyDetail: "A destination shows up once you allow or block it."
+        ) {
+            ForEach(shown) { rule in
+                RuleRow(rule: rule, canEdit: rules.canEdit, apply: applied)
             }
         } footer: {
             if grouping == .everywhere, let counts = rules.snapshot?.counts, counts.lifetime > 0 {
                 Text("\(counts.lifetime) stopped in all.")
             }
         }
+        .navigationTitle(grouping.title)
     }
 
     private func applied(_ rule: Rule, _ verdict: String?) {
@@ -85,10 +59,7 @@ struct RuleRow: View {
     // line once the label is wide, and these labels are hostnames.
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: "globe")
-                .foregroundStyle(.tint)
-                .frame(width: 20)
-                .accessibilityHidden(true)
+            HostIcon()
 
             VStack(alignment: .leading, spacing: 1) {
                 Text(rule.base)
