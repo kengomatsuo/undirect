@@ -374,8 +374,8 @@
       "back": "Link swapped mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "Omdirigerad bakåtgång",
-      "back": "Back diverted"
+      "s": "Bakåt tog dig någon annanstans",
+      "back": "Back took you somewhere else"
     },
     "ext.kind.redirect": {
       "s": "Omdirigering som tog klicket",

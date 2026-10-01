@@ -118,12 +118,12 @@
       "back": "Allow"
     },
     "app.rules.row.action_block": {
-      "s": "Blokkér",
+      "s": "Blokker",
       "back": "Block"
     },
     "app.rules.row.help_tooltip": {
-      "s": "Tillat eller blokkér dette målet",
-      "back": "Allow or block this destination"
+      "s": "Tillat eller blokker dette målet",
+      "back": "(same as before, without the accent)"
     },
     "app.rules.row.use_default": {
       "s": "Bruk standard",
@@ -186,7 +186,7 @@
       "back": "Destinations without a rule"
     },
     "app.settings.policy_block": {
-      "s": "Blokkér",
+      "s": "Blokker",
       "back": "Block"
     },
     "app.settings.policy_allow": {
@@ -290,7 +290,7 @@
       "back": "Attempts: N"
     },
     "ext.popup.recipe_heading": {
-      "s": "Utbedring",
+      "s": "Løsning",
       "back": "Fix"
     },
     "ext.state.blocked": {
@@ -326,19 +326,19 @@
       "back": "Allow everywhere"
     },
     "ext.action.block_here": {
-      "s": "Blokkér på dette nettstedet",
-      "back": "Block on this site"
+      "s": "Blokker på dette nettstedet",
+      "back": "(same as before, without the accent)"
     },
     "ext.action.block_everywhere": {
-      "s": "Blokkér overalt",
-      "back": "Block everywhere"
+      "s": "Blokker overalt",
+      "back": "(same as before, without the accent)"
     },
     "ext.popup.policy_heading": {
       "s": "Mål uten regel",
       "back": "Destinations without a rule"
     },
     "ext.policy.block": {
-      "s": "Blokkér",
+      "s": "Blokker",
       "back": "Block"
     },
     "ext.policy.allow": {
@@ -362,7 +362,7 @@
       "back": "Simulated click"
     },
     "ext.kind.window_open": {
-      "s": "Forgrunnsvindu",
+      "s": "Popup-vindu",
       "back": "Pop-up window"
     },
     "ext.kind.form_submit": {
@@ -374,8 +374,8 @@
       "back": "Link swapped mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "Omdirigert tilbake",
-      "back": "Back diverted"
+      "s": "Tilbake førte et annet sted",
+      "back": "Back led somewhere else"
     },
     "ext.kind.redirect": {
       "s": "Omdirigering som tok klikket",
@@ -434,7 +434,7 @@
       "back": "Allow"
     },
     "ext.action.block": {
-      "s": "Blokkér",
+      "s": "Blokker",
       "back": "Block"
     },
     "ext.action.clear": {

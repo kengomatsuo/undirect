@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Bráni stránkam, aby vaše kliknutie využili na otvorenie alebo presmerovanie tam, kam ste nechceli.",
+    "message": "Bráni stránkam zneužiť vaše ťuknutie na otvorenie alebo presmerovanie inam.",
     "description": "Description of the extension."
   },
   "app_title": {

@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Blokuje sztuczki, które przejmują kliknięcie i otwierają inny adres.",
+    "message": "Nie pozwala stronom wykorzystać kliknięcia do otwarcia innego adresu lub przekierowania.",
     "description": "Description of the extension."
   },
   "app_title": {
@@ -28,11 +28,11 @@
     "description": "Label of the per-site switch, the popup's first row."
   },
   "popup_no_site_title": {
-    "message": "Tu nie ma witryny",
+    "message": "Działa tylko na witrynach",
     "description": "Popup title on a tab with no website, such as the Start Page."
   },
   "popup_no_site_body": {
-    "message": "By chronić witrynę, naciska się tu przycisk.",
+    "message": "Otwórz witrynę i naciśnij tutaj.",
     "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
   },
   "popup_watch_unknown": {
@@ -44,7 +44,7 @@
     "description": "Shown when the mode setting already covers every site."
   },
   "popup_watch_master_off": {
-    "message": "Ochrona jest całkiem wyłączona.",
+    "message": "Ochrona jest wyłączona w ustawieniach.",
     "description": "Shown when the master Guard switch in Settings is off."
   },
   "popup_mode_heading": {
@@ -60,7 +60,7 @@
     "description": "Mode: the guard runs automatically on every site."
   },
   "popup_page_off": {
-    "message": "Ochrona jest tu wyłączona.",
+    "message": "Ochrona jest tu wyłączona, więc nic nie jest rejestrowane.",
     "description": "Shown in the tab section when the site is not being guarded."
   },
   "popup_page_heading": {
@@ -68,7 +68,7 @@
     "description": "Heading of the section about the current tab."
   },
   "popup_page_quiet": {
-    "message": "Ta strona jeszcze nigdzie nie sięgnęła.",
+    "message": "Ta strona nie próbowała jeszcze łączyć się z innymi witrynami.",
     "description": "Shown when no cross-site destination was recorded."
   },
   "popup_page_empty": {
@@ -76,7 +76,7 @@
     "description": "Shown when the destination list is empty."
   },
   "popup_stopped_one": {
-    "message": "$COUNT$ zatrzymana",
+    "message": "Zatrzymano: $COUNT$",
     "description": "How many attempts were blocked on this page, singular.",
     "placeholders": {
       "count": {
@@ -86,7 +86,7 @@
     }
   },
   "popup_stopped_other": {
-    "message": "$COUNT$ zatrzymanych",
+    "message": "Zatrzymano: $COUNT$",
     "description": "How many attempts were blocked on this page, plural.",
     "placeholders": {
       "count": {
@@ -96,7 +96,7 @@
     }
   },
   "popup_seen_one": {
-    "message": "$COUNT$ próba łącznie",
+    "message": "Zarejestrowane próby: $COUNT$",
     "description": "How many cross-site attempts were recorded, singular.",
     "placeholders": {
       "count": {
@@ -106,7 +106,7 @@
     }
   },
   "popup_seen_other": {
-    "message": "$COUNT$ prób łącznie",
+    "message": "Zarejestrowane próby: $COUNT$",
     "description": "How many cross-site attempts were recorded, plural.",
     "placeholders": {
       "count": {
@@ -116,7 +116,7 @@
     }
   },
   "popup_tries_one": {
-    "message": "$COUNT$ raz",
+    "message": "Próby: $COUNT$",
     "description": "How many times one destination came up, singular.",
     "placeholders": {
       "count": {
@@ -126,7 +126,7 @@
     }
   },
   "popup_tries_other": {
-    "message": "$COUNT$ razy",
+    "message": "Próby: $COUNT$",
     "description": "How many times one destination came up, plural.",
     "placeholders": {
       "count": {
@@ -160,7 +160,7 @@
     "description": "No rule was set, so the default applies."
   },
   "action_allow_here": {
-    "message": "Zezwól tutaj",
+    "message": "Zezwól na tej witrynie",
     "description": "Let this destination through on the current site."
   },
   "action_allow_everywhere": {
@@ -168,7 +168,7 @@
     "description": "Let this destination through on every site."
   },
   "action_block_here": {
-    "message": "Zablokuj tutaj",
+    "message": "Zablokuj na tej witrynie",
     "description": "Stop this destination on the current site."
   },
   "action_block_everywhere": {
@@ -176,15 +176,15 @@
     "description": "Stop this destination on every site."
   },
   "popup_policy_heading": {
-    "message": "Domyślne działanie dla nowych celów",
+    "message": "Domyślnie dla celów bez reguły",
     "description": "Label above the default policy choice."
   },
   "policy_block": {
-    "message": "Blokuj domyślnie",
+    "message": "Blokuj",
     "description": "Default policy: stop unknown cross-site destinations."
   },
   "policy_allow": {
-    "message": "Zezwalaj domyślnie",
+    "message": "Zezwalaj",
     "description": "Default policy: let unknown cross-site destinations through."
   },
   "popup_bridge_warning": {
@@ -192,7 +192,7 @@
     "description": "Shown when the page CSP stopped the page-world script."
   },
   "kind_click_catcher": {
-    "message": "Niewidoczna pułapka",
+    "message": "Niewidoczna pułapka na kliknięcie",
     "description": "A transparent form or link laid over the page."
   },
   "kind_overlay": {
@@ -212,7 +212,7 @@
     "description": "A form submitted to a new tab."
   },
   "kind_href_swap": {
-    "message": "Podmieniony cel linku",
+    "message": "Cel linku zmieniony w trakcie kliknięcia",
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
@@ -220,7 +220,7 @@
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
-    "message": "Przekierowanie zamiast kliknięcia",
+    "message": "Przekierowanie przejmujące kliknięcie",
     "description": "A cross-site navigation that took the user's press."
   },
   "kind_pop_tab": {
@@ -244,7 +244,7 @@
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "Domyślnie dozwolone.",
+    "message": "Brak reguły; dozwolone.",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {
@@ -264,7 +264,7 @@
     "description": "Heading for rules that apply on every site."
   },
   "rules_by_site_heading": {
-    "message": "Wg witryny",
+    "message": "Według witryny",
     "description": "Heading for rules that apply to a single site."
   },
   "rules_empty": {
@@ -288,7 +288,7 @@
     "description": "Heading of the settings section."
   },
   "setting_banner": {
-    "message": "Baner na stronie",
+    "message": "Komunikat na stronie",
     "description": "Toggle for the note drawn in the page when something is stopped."
   },
   "action_report": {

@@ -46,8 +46,8 @@
       "back": "Unrequested windows"
     },
     "app.welcome.feature.uninvited_windows.detail": {
-      "s": "Pri zapnutej ochrane sa nová karta otvorí len tam, kam ste ťukli.",
-      "back": "With protection on a new tab opens only where you tapped"
+      "s": "Pri zapnutej ochrane sa nová karta otvorí len tam, kam mieri vaše ťuknutie.",
+      "back": "With protection on, a new tab opens only where your tap is aimed."
     },
     "app.welcome.feature.every_destination.title": {
       "s": "Každý cieľ",
@@ -198,8 +198,8 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "Bráni stránkam, aby vaše kliknutie využili na otvorenie alebo presmerovanie tam, kam ste nechceli.",
-      "back": "Stops pages using your click to open or redirect where you did not want"
+      "s": "Bráni stránkam zneužiť vaše ťuknutie na otvorenie alebo presmerovanie inam.",
+      "back": "Stops pages from abusing your tap to open or redirect elsewhere."
     },
     "ext.meta.app_title": {
       "s": "Undirect",

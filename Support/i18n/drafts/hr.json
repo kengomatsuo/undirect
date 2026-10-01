@@ -46,8 +46,8 @@
       "back": "Unwanted windows"
     },
     "app.welcome.feature.uninvited_windows.detail": {
-      "s": "Kad je zaštita uključena, nova kartica otvara se samo tamo gdje ste dodirnuli.",
-      "back": "With protection on, a new tab opens only where you tapped"
+      "s": "Uz uključenu zaštitu nova se kartica otvara samo ondje kamo vodi vaš pritisak.",
+      "back": "With protection on, a new tab opens only where your press leads."
     },
     "app.welcome.feature.every_destination.title": {
       "s": "Svako odredište",
@@ -62,8 +62,8 @@
       "back": "Site by site"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Na web-mjestu pritisnite gumb Undirect na alatnoj traci Safarija da ga uključite.",
-      "back": "On a site press the Undirect button on Safari's toolbar to turn it on"
+      "s": "Na web-mjestu pritisnite gumb Undirect na alatnoj traci Safarija da zaštitite to mjesto.",
+      "back": "On a site, press the Undirect button on Safari's toolbar to protect that site."
     },
     "app.nav.guarded_sites": {
       "s": "Zaštićena mjesta",
@@ -86,8 +86,8 @@
       "back": "By site"
     },
     "app.rules.empty_no_app.title": {
-      "s": "Još nema glasa od proširenja",
-      "back": "No word yet from the extension"
+      "s": "Proširenje se još nije javilo",
+      "back": "The extension has not reported in yet"
     },
     "app.rules.empty_no_app.detail": {
       "s": "Otvorite bilo koju stranicu u Safariju i popis će se sam popuniti.",
@@ -386,12 +386,12 @@
       "back": "Tab opened in the background"
     },
     "ext.kind.network_rule": {
-      "s": "Blokirano na mreži",
-      "back": "Blocked at the network"
+      "s": "Blokirano na razini mreže",
+      "back": "Blocked at network level"
     },
     "ext.reason.way_back": {
-      "s": "Njegova adresa sadrži povratak na ovo mjesto.",
-      "back": "Its address contains a return to this site"
+      "s": "Adresa sadrži put natrag na ovo mjesto.",
+      "back": "The address contains a path back to this site."
     },
     "ext.reason.sized": {
       "s": "Prozor zadane veličine.",

@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "Omdirigerad bakåtgång",
+    "message": "Bakåt tog dig någon annanstans",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {

@@ -228,11 +228,11 @@
     "description": "A new tab the page opened on somewhere else."
   },
   "kind_network_rule": {
-    "message": "Blokirano na mreži",
+    "message": "Blokirano na razini mreže",
     "description": "A known pop network refused by a network rule."
   },
   "reason_way_back": {
-    "message": "Njegova adresa sadrži povratak na ovo mjesto.",
+    "message": "Adresa sadrži put natrag na ovo mjesto.",
     "description": "Why a redirect was allowed: its address carried a same-site callback."
   },
   "reason_sized": {

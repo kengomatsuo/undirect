@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Preprečuje, da bi strani uporabile vaš klik za odpiranje ali preusmeritev tja, kamor niste želeli.",
+    "message": "Preprečuje, da bi strani vaš klik izrabile za odpiranje ali preusmerjanje na neželena mesta.",
     "description": "Description of the extension."
   },
   "app_title": {
@@ -292,7 +292,7 @@
     "description": "Toggle for the note drawn in the page when something is stopped."
   },
   "action_report": {
-    "message": "Prijavi težavo",
+    "message": "Sporoči težavo",
     "description": "Opens a prefilled issue about a site the guard missed."
   },
   "action_title_off": {

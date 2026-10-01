@@ -6,8 +6,8 @@
       "back": "Extension is not on"
     },
     "app.setup.title_failed": {
-      "s": "Tilaa ei voitu tarkistaa",
-      "back": "Status could not be checked"
+      "s": "Tilan tarkistus ei onnistunut",
+      "back": "Checking the status did not succeed"
     },
     "app.setup.detail_default": {
       "s": "Suojattu sivusto ei voi enää kaapata napautuksiasi.",
@@ -210,8 +210,8 @@
       "back": "Protection is on for this site"
     },
     "ext.toolbar.tooltip_off": {
-      "s": "Suojaus pois; kytke päälle painamalla",
-      "back": "Protection off; press to switch on"
+      "s": "Suojaus pois päältä. Kytke päälle painamalla",
+      "back": "Protection off. Switch on by pressing"
     },
     "ext.toolbar.tooltip_no_site": {
       "s": "Täällä ei ole mitään suojattavaa",
@@ -374,8 +374,8 @@
       "back": "Link swapped mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "Ohjattu takaisin muualle",
-      "back": "Back diverted"
+      "s": "Takaisin vei muualle",
+      "back": "Back went elsewhere"
     },
     "ext.kind.redirect": {
       "s": "Uudelleenohjaus, joka vei napsautuksen",
@@ -394,16 +394,16 @@
       "back": "Its address included a return to this site"
     },
     "ext.reason.sized": {
-      "s": "Ikkuna annetussa koossa.",
-      "back": "Window of a given size"
+      "s": "Ikkunalle oli annettu koko.",
+      "back": "The window had been given a size."
     },
     "ext.reason.took_press": {
       "s": "Vei napsautuksesi.",
       "back": "Took your click"
     },
     "ext.reason.default_allow": {
-      "s": "Ei sääntöä; sallittu.",
-      "back": "No rule; allowed"
+      "s": "Ei sääntöä. Sallittu.",
+      "back": "No rule. Allowed."
     },
     "ext.reason.own_code": {
       "s": "Sivusto avasi sen itse.",

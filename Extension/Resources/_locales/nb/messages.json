@@ -136,7 +136,7 @@
     }
   },
   "popup_recipe_heading": {
-    "message": "Utbedring",
+    "message": "Løsning",
     "description": "Heading for a per-site fix that was applied."
   },
   "state_blocked": {
@@ -168,11 +168,11 @@
     "description": "Let this destination through on every site."
   },
   "action_block_here": {
-    "message": "Blokkér på dette nettstedet",
+    "message": "Blokker på dette nettstedet",
     "description": "Stop this destination on the current site."
   },
   "action_block_everywhere": {
-    "message": "Blokkér overalt",
+    "message": "Blokker overalt",
     "description": "Stop this destination on every site."
   },
   "popup_policy_heading": {
@@ -180,7 +180,7 @@
     "description": "Label above the default policy choice."
   },
   "policy_block": {
-    "message": "Blokkér",
+    "message": "Blokker",
     "description": "Default policy: stop unknown cross-site destinations."
   },
   "policy_allow": {
@@ -204,7 +204,7 @@
     "description": "A click the page dispatched itself."
   },
   "kind_window_open": {
-    "message": "Forgrunnsvindu",
+    "message": "Popup-vindu",
     "description": "A window.open call."
   },
   "kind_form_submit": {
@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "Omdirigert tilbake",
+    "message": "Tilbake førte et annet sted",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
@@ -276,7 +276,7 @@
     "description": "Change a rule to allow."
   },
   "action_block": {
-    "message": "Blokkér",
+    "message": "Blokker",
     "description": "Change a rule to block."
   },
   "action_clear": {

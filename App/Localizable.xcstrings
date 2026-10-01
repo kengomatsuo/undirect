@@ -97,7 +97,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zatrzymano %lld prób ogółem."
+            "value": "Zatrzymane próby łącznie: %lld"
           }
         },
         "nl-NL": {
@@ -199,7 +199,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Összesen megállított kísérletek: %lld"
+            "value": "Megállított kísérletek összesen: %lld"
           }
         },
         "kn": {
@@ -223,7 +223,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Jumlah percubaan dihentikan: %lld"
+            "value": "Jumlah percubaan yang dihentikan: %lld"
           }
         },
         "nb": {
@@ -396,7 +396,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wpis pojawia się dopiero po podjęciu decyzji o celu."
+            "value": "Cel pojawi się tu po zezwoleniu na niego lub zablokowaniu."
           }
         },
         "nl-NL": {
@@ -438,7 +438,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ένας προορισμός εμφανίζεται εδώ όταν τον επιτρέψεις ή τον αποκλείσεις."
+            "value": "Ένας προορισμός εμφανίζεται εδώ όταν τον επιτρέψετε ή τον αποκλείσετε."
           }
         },
         "en-AU": {
@@ -486,7 +486,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "יעד מופיע כאן אחרי שאישרתם או חסמתם אותו."
+            "value": "יעד מופיע כאן אחרי שהותר או נחסם."
           }
         },
         "hr": {
@@ -498,7 +498,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "A cél itt jelenik meg, miután engedélyezted vagy letiltottad."
+            "value": "A cél itt jelenik meg, miután engedélyezte vagy blokkolta."
           }
         },
         "kn": {
@@ -588,7 +588,7 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Пункт призначення з'являється тут, коли ви дозволите або заблокуєте його."
+            "value": "Адреса з'являється тут, коли ви дозволите або заблокуєте її."
           }
         },
         "ur": {
@@ -695,7 +695,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Domyślne działanie dla nowych celów"
+            "value": "Domyślnie dla celów bez reguły"
           }
         },
         "nl-NL": {
@@ -887,7 +887,7 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Пункти призначення без правила"
+            "value": "Адреси без правила"
           }
         },
         "ur": {
@@ -994,7 +994,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Z włączoną ochroną nowa karta otwiera tylko to, co naciśnięto."
+            "value": "Z włączoną ochroną nowa karta otwiera się tylko tam, dokąd prowadzi twoje kliknięcie."
           }
         },
         "nl-NL": {
@@ -1024,7 +1024,7 @@
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Při zapnuté ochraně se nový panel otevře jen tam, kam jste klepli."
+            "value": "Při zapnuté ochraně se nový panel otevře jen tam, kam míří vaše klepnutí."
           }
         },
         "da": {
@@ -1036,7 +1036,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Με ενεργή προστασία, μια νέα καρτέλα ανοίγει μόνο εκεί που πάτησες."
+            "value": "Με ενεργή προστασία, μια νέα καρτέλα ανοίγει μόνο εκεί που πατήσατε."
           }
         },
         "en-AU": {
@@ -1084,19 +1084,19 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "כשההגנה פעילה, לשונית חדשה נפתחת רק למקום שאליו הקשת."
+            "value": "כשההגנה פעילה, לשונית חדשה נפתחת רק ליעד שההקשה כוונה אליו."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Kad je zaštita uključena, nova kartica otvara se samo tamo gdje ste dodirnuli."
+            "value": "Uz uključenu zaštitu nova se kartica otvara samo ondje kamo vodi vaš pritisak."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bekapcsolt védelemnél új lap csak oda nyílik, ahová koppintottál."
+            "value": "Bekapcsolt védelemnél új lap csak oda nyílik, ahová koppintott."
           }
         },
         "kn": {
@@ -1156,13 +1156,13 @@
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pri zapnutej ochrane sa nová karta otvorí len tam, kam ste ťukli."
+            "value": "Pri zapnutej ochrane sa nová karta otvorí len tam, kam mieri vaše ťuknutie."
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ko je zaščita vklopljena, se nov zavihek odpre samo tja, kamor ste se dotaknili."
+            "value": "Ko je zaščita vklopljena, se nov zavihek odpre samo tja, kamor cilja vaš dotik."
           }
         },
         "sv": {
@@ -1293,7 +1293,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Niewidoczna warstwa na stronie potrafi przejąć kliknięcie w coś innego."
+            "value": "Niewidoczna warstwa nad stroną sprawia, że kliknięcie trafia gdzie indziej."
           }
         },
         "nl-NL": {
@@ -1419,7 +1419,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Lapisan lutsinar boleh menutupi halaman dan menangkap ketikan yang ditujukan kepada benda lain."
+            "value": "Lapisan lutsinar boleh menutupi halaman dan menangkap ketikan yang ditujukan ke tempat lain."
           }
         },
         "nb": {
@@ -1682,7 +1682,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "אישור"
+            "value": "התרה"
           }
         },
         "hr": {
@@ -1694,7 +1694,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Engedélyez"
+            "value": "Engedélyezés"
           }
         },
         "kn": {
@@ -1891,7 +1891,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Zezwalaj domyślnie"
+            "value": "Zezwalaj"
           }
         },
         "nl-NL": {
@@ -1981,7 +1981,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "אישור"
+            "value": "התרה"
           }
         },
         "hr": {
@@ -1993,7 +1993,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Engedélyez"
+            "value": "Engedélyezés"
           }
         },
         "kn": {
@@ -2190,7 +2190,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wybierz, czy zezwolić, czy zablokować."
+            "value": "Zezwól na ten cel lub zablokuj go"
           }
         },
         "nl-NL": {
@@ -2232,7 +2232,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Επιτρέπεται ή αποκλείεται αυτός ο προορισμός"
+            "value": "Να επιτρέπεται ή να αποκλείεται αυτός ο προορισμός"
           }
         },
         "en-AU": {
@@ -2280,7 +2280,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "לאשר או לחסום את היעד הזה"
+            "value": "להתיר או לחסום את היעד הזה"
           }
         },
         "hr": {
@@ -2292,7 +2292,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "A cél engedélyezése vagy letiltása"
+            "value": "A cél engedélyezése vagy blokkolása"
           }
         },
         "kn": {
@@ -2322,7 +2322,7 @@
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tillat eller blokkér dette målet"
+            "value": "Tillat eller blokker dette målet"
           }
         },
         "or": {
@@ -2382,7 +2382,7 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Дозволити або заблокувати цей пункт призначення"
+            "value": "Дозволити або заблокувати цю адресу"
           }
         },
         "ur": {
@@ -2579,7 +2579,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "מאושר"
+            "value": "מותר"
           }
         },
         "hr": {
@@ -2890,7 +2890,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Letilt"
+            "value": "Blokkolás"
           }
         },
         "kn": {
@@ -2920,7 +2920,7 @@
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Blokkér"
+            "value": "Blokker"
           }
         },
         "or": {
@@ -3087,7 +3087,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Blokuj domyślnie"
+            "value": "Blokuj"
           }
         },
         "nl-NL": {
@@ -3189,7 +3189,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Letilt"
+            "value": "Blokkolás"
           }
         },
         "kn": {
@@ -3219,7 +3219,7 @@
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Blokkér"
+            "value": "Blokker"
           }
         },
         "or": {
@@ -3428,7 +3428,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Αποκλείστηκε"
+            "value": "Αποκλείεται"
           }
         },
         "en-AU": {
@@ -3488,7 +3488,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Letiltva"
+            "value": "Blokkolva"
           }
         },
         "kn": {
@@ -3685,7 +3685,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wg witryny"
+            "value": "Według witryny"
           }
         },
         "nl-NL": {
@@ -3811,7 +3811,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Mengikut laman"
+            "value": "Mengikut tapak"
           }
         },
         "nb": {
@@ -3877,7 +3877,7 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "За сайтом"
+            "value": "Окремі сайти"
           }
         },
         "ur": {
@@ -3984,7 +3984,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Każdy cel ma własny wpis do zablokowania lub zezwolenia tu albo wszędzie."
+            "value": "Każdy cel ma wiersz: zezwól na niego lub zablokuj, na jednej witrynie albo wszędzie."
           }
         },
         "nl-NL": {
@@ -4026,7 +4026,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Κάθε προορισμός παίρνει τη δική του γραμμή: τον επιτρέπεις ή τον αποκλείεις σε έναν ιστότοπο ή σε όλους."
+            "value": "Κάθε προορισμός παίρνει τη δική του γραμμή: μπορείτε να τον επιτρέψετε ή να τον αποκλείσετε σε έναν ιστότοπο ή σε όλους."
           }
         },
         "en-AU": {
@@ -4074,7 +4074,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "כל יעד מקבל שורה משלו, ואפשר לאשר או לחסום אותו באתר אחד או בכל האתרים."
+            "value": "כל יעד מקבל שורה משלו, ואפשר להתיר או לחסום אותו באתר אחד או בכל האתרים."
           }
         },
         "hr": {
@@ -4086,7 +4086,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Minden cél külön sort kap, és egy oldalon vagy mindenhol engedélyezheted vagy letilthatod."
+            "value": "Minden cél külön sort kap, és engedélyezheti vagy blokkolhatja egy oldalon vagy mindenhol."
           }
         },
         "kn": {
@@ -4110,7 +4110,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Setiap destinasi mendapat barisnya sendiri. Anda boleh membenarkan atau menyekatnya pada satu laman atau semua laman."
+            "value": "Setiap destinasi mendapat barisnya sendiri. Anda boleh membenarkan atau menyekatnya pada satu tapak atau semua tapak."
           }
         },
         "nb": {
@@ -4176,7 +4176,7 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Кожен пункт призначення має свій рядок: його можна дозволити або заблокувати на одному сайті чи на всіх."
+            "value": "Кожна адреса має свій рядок: її можна дозволити або заблокувати на одному сайті чи на всіх."
           }
         },
         "ur": {
@@ -4283,7 +4283,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pełna lista celów"
+            "value": "Każdy cel"
           }
         },
         "nl-NL": {
@@ -4475,7 +4475,7 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Кожен пункт призначення"
+            "value": "Кожна адреса"
           }
         },
         "ur": {
@@ -4708,7 +4708,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Semua laman"
+            "value": "Semua tapak"
           }
         },
         "nb": {
@@ -5904,7 +5904,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Laman dilindungi"
+            "value": "Tapak dilindungi"
           }
         },
         "nb": {
@@ -6119,7 +6119,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Οι προστατευμένοι ιστότοποι δεν μπορούν πια να σου κλέβουν τα πατήματα."
+            "value": "Οι προστατευμένοι ιστότοποι δεν μπορούν πια να σας κλέβουν τα πατήματα."
           }
         },
         "en-AU": {
@@ -6167,7 +6167,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "אתרים מוגנים כבר לא יכולים לחטוף לכם את ההקשות."
+            "value": "אתרים מוגנים כבר לא יכולים לחטוף הקשות."
           }
         },
         "hr": {
@@ -6179,7 +6179,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "A védett oldalak már nem tudják elvenni a koppintásaidat."
+            "value": "A védett oldalak már nem vehetik el a koppintásokat."
           }
         },
         "kn": {
@@ -6203,7 +6203,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Laman web yang dilindungi tidak lagi dapat merampas ketikan anda."
+            "value": "Tapak web yang dilindungi tidak lagi dapat merampas ketikan anda."
           }
         },
         "nb": {
@@ -6675,7 +6675,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Ochronę włącza się przyciskiem Undirect na pasku Safari."
+            "value": "Naciśnij przycisk Undirect na pasku narzędzi Safari, by chronić daną witrynę."
           }
         },
         "nl-NL": {
@@ -6717,7 +6717,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Σε έναν ιστότοπο, πάτα το κουμπί Undirect στη γραμμή εργαλείων του Safari για να τον προστατέψεις."
+            "value": "Σε έναν ιστότοπο, πατήστε το κουμπί Undirect στη γραμμή εργαλείων του Safari για να τον προστατέψετε."
           }
         },
         "en-AU": {
@@ -6765,19 +6765,19 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "באתר, לחצו על הלחצן של Undirect בסרגל הכלים של Safari כדי להגן עליו."
+            "value": "כדי להגן על אתר, יש ללחוץ באתר על הלחצן של Undirect בסרגל הכלים של Safari."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Na web-mjestu pritisnite gumb Undirect na alatnoj traci Safarija da ga uključite."
+            "value": "Na web-mjestu pritisnite gumb Undirect na alatnoj traci Safarija da zaštitite to mjesto."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Egy oldalon nyomd meg az Undirect gombját a Safari eszköztárán, és bekapcsol rá a védelem."
+            "value": "Nyomja meg az Undirect gombját a Safari eszköztárán az adott oldalon, és bekapcsol a védelem."
           }
         },
         "kn": {
@@ -6801,7 +6801,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pada sesuatu laman, tekan butang Undirect pada bar alat Safari untuk melindunginya."
+            "value": "Pada sesuatu tapak, tekan butang Undirect pada bar alat Safari untuk melindunginya."
           }
         },
         "nb": {
@@ -6843,7 +6843,7 @@
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Na spletnem mestu pritisnite gumb Undirect v orodni vrstici Safarija, da ga zaščitite."
+            "value": "Na spletnem mestu pritisnite gumb Undirect v orodni vrstici Safarija, da zaščitite to mesto."
           }
         },
         "sv": {
@@ -7399,7 +7399,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Belum ada laman dilindungi"
+            "value": "Belum ada tapak dilindungi"
           }
         },
         "nb": {
@@ -7572,7 +7572,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Baner na stronie"
+            "value": "Komunikat na stronie"
           }
         },
         "nl-NL": {
@@ -7698,7 +7698,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Notis dalam halaman"
+            "value": "Notis pada halaman"
           }
         },
         "nb": {
@@ -7871,7 +7871,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Brak połączenia z rozszerzeniem"
+            "value": "Brak danych od rozszerzenia"
           }
         },
         "nl-NL": {
@@ -7913,7 +7913,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Καμία ειδοποίηση από την επέκταση ακόμη"
+            "value": "Η επέκταση δεν έχει απαντήσει ακόμη"
           }
         },
         "en-AU": {
@@ -7967,7 +7967,7 @@
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Još nema glasa od proširenja"
+            "value": "Proširenje se još nije javilo"
           }
         },
         "hu": {
@@ -8063,7 +8063,7 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Від розширення ще нічого немає"
+            "value": "Розширення ще не озвалося"
           }
         },
         "ur": {
@@ -8870,7 +8870,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Oldalanként"
+            "value": "Egyszerre egy oldal"
           }
         },
         "kn": {
@@ -8894,7 +8894,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Satu laman pada satu masa"
+            "value": "Satu tapak pada satu masa"
           }
         },
         "nb": {
@@ -9366,7 +9366,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wystarczy otworzyć stronę w Safari, by się uzupełniła."
+            "value": "Otwórz dowolną stronę w Safari, a lista wypełni się sama."
           }
         },
         "nl-NL": {
@@ -9408,7 +9408,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Άνοιξε μια σελίδα στο Safari και η λίστα θα γεμίσει μόνη της."
+            "value": "Ανοίξτε μια σελίδα στο Safari και η λίστα θα γεμίσει μόνη της."
           }
         },
         "en-AU": {
@@ -9456,7 +9456,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "פתחו דף כלשהו ב-Safari והרשימה תתמלא מעצמה."
+            "value": "פתיחת דף כלשהו ב-Safari תמלא את הרשימה מעצמה."
           }
         },
         "hr": {
@@ -9468,7 +9468,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nyiss meg egy oldalt a Safariban, és a lista magától feltöltődik."
+            "value": "Nyisson meg egy oldalt a Safariban, és a lista magától feltöltődik."
           }
         },
         "kn": {
@@ -9665,7 +9665,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wystarczy nacisnąć przycisk Undirect na pasku Safari, by włączyć ochronę."
+            "value": "Na witrynie, która przekierowuje, naciśnij przycisk Undirect na pasku narzędzi Safari."
           }
         },
         "nl-NL": {
@@ -9707,7 +9707,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Σε έναν ιστότοπο που σε ανακατευθύνει, πάτα το κουμπί Undirect στη γραμμή εργαλείων του Safari."
+            "value": "Σε έναν ιστότοπο που σας ανακατευθύνει, πατήστε το κουμπί Undirect στη γραμμή εργαλείων του Safari."
           }
         },
         "en-AU": {
@@ -9755,7 +9755,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "באתר שמפנה אתכם הלאה, לחצו על הלחצן של Undirect בסרגל הכלים של Safari."
+            "value": "באתר שמפנה למקום אחר, יש ללחוץ על הלחצן של Undirect בסרגל הכלים של Safari."
           }
         },
         "hr": {
@@ -9767,7 +9767,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Egy átirányító oldalon nyomd meg az Undirect gombját a Safari eszköztárán."
+            "value": "Egy átirányító oldalon nyomja meg az Undirect gombját a Safari eszköztárán."
           }
         },
         "kn": {
@@ -9791,7 +9791,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pada laman yang mengubah hala anda, tekan butang Undirect pada bar alat Safari."
+            "value": "Pada tapak yang mengubah hala anda, tekan butang Undirect pada bar alat Safari."
           }
         },
         "nb": {
@@ -9964,7 +9964,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari nie potwierdziło stanu rozszerzenia. Aplikacja sama to zauważy."
+            "value": "Safari tym razem nie odpowiedziało. Po włączeniu rozszerzenia aplikacja sama to wykryje."
           }
         },
         "nl-NL": {
@@ -10006,7 +10006,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Το Safari δεν απάντησε αυτή τη φορά. Αν ενεργοποιήσεις την επέκταση, η εφαρμογή θα το καταλάβει μόνη της."
+            "value": "Το Safari δεν απάντησε αυτή τη φορά. Αν ενεργοποιήσετε την επέκταση, η εφαρμογή θα το καταλάβει μόνη της."
           }
         },
         "en-AU": {
@@ -10054,7 +10054,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari לא הגיב הפעם. אם תפעיל את ההרחבה, האפליקציה תזהה את זה בעצמה."
+            "value": "Safari לא הגיב הפעם. אם ההרחבה תופעל, האפליקציה תזהה זאת בעצמה."
           }
         },
         "hr": {
@@ -10066,7 +10066,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "A Safari ezúttal nem válaszolt. Ha bekapcsolod a bővítményt, az app magától észreveszi."
+            "value": "A Safari ezúttal nem válaszolt. Ha bekapcsolja a bővítményt, az app magától észreveszi."
           }
         },
         "kn": {
@@ -10090,7 +10090,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari tidak menjawab kali ini. Jika anda menghidupkan sambungan itu, app akan menyedarinya sendiri."
+            "value": "Safari tidak menjawab kali ini. Jika anda menghidupkan sambungan itu, aplikasi akan menyedarinya sendiri."
           }
         },
         "nb": {
@@ -10389,7 +10389,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tetapan"
+            "value": "Seting"
           }
         },
         "nb": {
@@ -10562,7 +10562,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nowe witryny dodaje przycisk Undirect w pasku Safari."
+            "value": "Witryny dodasz przyciskiem Undirect w Safari; tu możesz je tylko usunąć."
           }
         },
         "nl-NL": {
@@ -10604,7 +10604,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Οι ιστότοποι προστίθενται από το κουμπί Undirect στο Safari· εδώ μπορείς μόνο να τους αφαιρέσεις."
+            "value": "Οι ιστότοποι προστίθενται από το κουμπί Undirect στο Safari. Εδώ μπορείτε μόνο να τους αφαιρέσετε."
           }
         },
         "en-AU": {
@@ -10664,7 +10664,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Az oldalak a Safari Undirect gombjával kerülnek ide; itt csak eltávolítani lehet őket."
+            "value": "Az oldalak a Safari Undirect gombjával kerülnek ide. Itt csak eltávolítani lehet őket."
           }
         },
         "kn": {
@@ -10688,7 +10688,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Laman ditambah daripada butang Undirect dalam Safari. Di sini anda hanya boleh mengalih keluarnya."
+            "value": "Tapak ditambah daripada butang Undirect dalam Safari. Di sini anda hanya boleh mengalih keluarnya."
           }
         },
         "nb": {
@@ -10951,7 +10951,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "אתרים שאפעיל"
+            "value": "אתרים שהפעלתי"
           }
         },
         "hr": {
@@ -10987,7 +10987,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Laman yang saya hidupkan"
+            "value": "Tapak yang saya hidupkan"
           }
         },
         "nb": {
@@ -11160,7 +11160,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Cel linku może się zmienić w chwili między naciśnięciem a puszczeniem."
+            "value": "Niektóre strony zmieniają cel linku między naciśnięciem a puszczeniem."
           }
         },
         "nl-NL": {
@@ -11190,7 +11190,7 @@
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Některé stránky změní cíl odkazu mezi stisknutím a pustím."
+            "value": "Některé stránky změní cíl odkazu mezi stisknutím a puštěním."
           }
         },
         "da": {
@@ -11286,7 +11286,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sesetengah halaman menukar destinasi pautan antara tekanan dan lepasan."
+            "value": "Sesetengah halaman menukar destinasi pautan antara tekan dan lepas."
           }
         },
         "nb": {
@@ -11561,7 +11561,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Leállít"
+            "value": "Leállítás"
           }
         },
         "kn": {
@@ -11758,7 +11758,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Wyłącza ochronę na tej witrynie."
+            "value": "Wyłącza ochronę dla tej witryny"
           }
         },
         "nl-NL": {
@@ -11884,7 +11884,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Matikan perlindungan untuk laman ini"
+            "value": "Matikan perlindungan untuk tapak ini"
           }
         },
         "nb": {
@@ -12099,7 +12099,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Αλλαγμένοι σύνδεσμοι"
+            "value": "Σύνδεσμοι που αλλάζουν"
           }
         },
         "en-AU": {
@@ -12147,7 +12147,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "קישורים שהוחלפו"
+            "value": "קישורים שמוחלפים"
           }
         },
         "hr": {
@@ -12954,7 +12954,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Stan nieznany"
+            "value": "Nie udało się sprawdzić stanu"
           }
         },
         "nl-NL": {
@@ -13026,7 +13026,7 @@
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tilaa ei voitu tarkistaa"
+            "value": "Tilan tarkistus ei onnistunut"
           }
         },
         "fr-CA": {
@@ -13253,7 +13253,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nieproszone okna"
+            "value": "Niechciane okna"
           }
         },
         "nl-NL": {
@@ -13295,7 +13295,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Παράθυρα που δεν ζήτησες"
+            "value": "Παράθυρα που δεν ζητήσατε"
           }
         },
         "en-AU": {
@@ -13343,7 +13343,7 @@
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "חלונות שלא ביקשת"
+            "value": "חלונות שלא התבקשו"
           }
         },
         "hr": {
@@ -13379,7 +13379,7 @@
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tetingkap tanpa diminta"
+            "value": "Tetingkap yang tidak diminta"
           }
         },
         "nb": {
@@ -13552,7 +13552,7 @@
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Użyj domyślnych"
+            "value": "Użyj ustawienia domyślnego"
           }
         },
         "nl-NL": {
@@ -13893,7 +13893,7 @@
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Καλώς ήρθες στο Undirect"
+            "value": "Καλώς ήρθατε στο Undirect"
           }
         },
         "en-AU": {
@@ -13953,7 +13953,7 @@
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Üdvözlünk az Undirectben"
+            "value": "Üdvözli az Undirect"
           }
         },
         "kn": {

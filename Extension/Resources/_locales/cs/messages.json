@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Brání stránkám, aby vaše klepnutí využily k otevření nebo přesměrování tam, kam jste nechtěli.",
+    "message": "Brání stránkám zneužít vaše klepnutí k otevření nebo přesměrování jinam.",
     "description": "Description of the extension."
   },
   "app_title": {

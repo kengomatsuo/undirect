@@ -414,8 +414,8 @@
       "back": "Rules"
     },
     "ext.popup.back_link": {
-      "s": "Tilbage",
-      "back": "Back"
+      "s": "Tilbage til siden",
+      "back": "Back to the page"
     },
     "ext.rules.everywhere_heading": {
       "s": "Overalt",

@@ -10,12 +10,12 @@
       "back": "Cannot check the status"
     },
     "app.setup.detail_default": {
-      "s": "אתרים מוגנים כבר לא יכולים לחטוף לכם את ההקשות.",
-      "back": "Protected sites can no longer hijack your taps"
+      "s": "אתרים מוגנים כבר לא יכולים לחטוף הקשות.",
+      "back": "Protected sites can no longer hijack presses."
     },
     "app.setup.detail_failed": {
-      "s": "Safari לא הגיב הפעם. אם תפעיל את ההרחבה, האפליקציה תזהה את זה בעצמה.",
-      "back": "Safari did not respond this time; if you enable it the app will detect itself"
+      "s": "Safari לא הגיב הפעם. אם ההרחבה תופעל, האפליקציה תזהה זאת בעצמה.",
+      "back": "Safari did not respond this time. If the extension is turned on, the app will notice by itself."
     },
     "app.setup.open_button": {
       "s": "פתיחת הרחבות Safari",
@@ -34,36 +34,36 @@
       "back": "A transparent layer can cover the page and catch a tap meant for something else"
     },
     "app.welcome.feature.swapped_links.title": {
-      "s": "קישורים שהוחלפו",
-      "back": "Swapped links"
+      "s": "קישורים שמוחלפים",
+      "back": "Links that get swapped"
     },
     "app.welcome.feature.swapped_links.detail": {
       "s": "חלק מהדפים משנים את היעד של קישור בין הלחיצה לשחרור.",
       "back": "Some pages change a link's destination between press and release"
     },
     "app.welcome.feature.uninvited_windows.title": {
-      "s": "חלונות שלא ביקשת",
-      "back": "Windows you did not ask for"
+      "s": "חלונות שלא התבקשו",
+      "back": "Windows nobody asked for"
     },
     "app.welcome.feature.uninvited_windows.detail": {
-      "s": "כשההגנה פעילה, לשונית חדשה נפתחת רק למקום שאליו הקשת.",
-      "back": "With protection on a new tab opens only to where you tapped"
+      "s": "כשההגנה פעילה, לשונית חדשה נפתחת רק ליעד שההקשה כוונה אליו.",
+      "back": "With protection on, a new tab opens only to the destination the press was aimed at."
     },
     "app.welcome.feature.every_destination.title": {
       "s": "כל יעד",
       "back": "Every destination"
     },
     "app.welcome.feature.every_destination.detail": {
-      "s": "כל יעד מקבל שורה משלו, ואפשר לאשר או לחסום אותו באתר אחד או בכל האתרים.",
-      "back": "Each destination gets its own row; allow or block on one site or all"
+      "s": "כל יעד מקבל שורה משלו, ואפשר להתיר או לחסום אותו באתר אחד או בכל האתרים.",
+      "back": "Every destination gets its own row, and it can be allowed or blocked on one site or on all."
     },
     "app.welcome.feature.one_site_at_a_time.title": {
       "s": "אתר אחר אתר",
       "back": "Site by site"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "באתר, לחצו על הלחצן של Undirect בסרגל הכלים של Safari כדי להגן עליו.",
-      "back": "On a site, press Undirect's button in Safari's toolbar to protect it"
+      "s": "כדי להגן על אתר, יש ללחוץ באתר על הלחצן של Undirect בסרגל הכלים של Safari.",
+      "back": "To protect a site, press the Undirect button in Safari's toolbar while on it."
     },
     "app.nav.guarded_sites": {
       "s": "אתרים מוגנים",
@@ -90,16 +90,16 @@
       "back": "Nothing heard yet from the extension"
     },
     "app.rules.empty_no_app.detail": {
-      "s": "פתחו דף כלשהו ב-Safari והרשימה תתמלא מעצמה.",
-      "back": "Open any page in Safari and the list fills itself"
+      "s": "פתיחת דף כלשהו ב-Safari תמלא את הרשימה מעצמה.",
+      "back": "Opening any page in Safari will fill the list by itself."
     },
     "app.rules.empty_no_rules.title": {
       "s": "אין כללים",
       "back": "No rules"
     },
     "app.rules.empty_no_rules.detail": {
-      "s": "יעד מופיע כאן אחרי שאישרתם או חסמתם אותו.",
-      "back": "A destination appears here after you allow or block it"
+      "s": "יעד מופיע כאן אחרי שהותר או נחסם.",
+      "back": "A destination appears here after it has been allowed or blocked."
     },
     "app.rules.footer.lifetime_count": {
       "s": "סך הניסיונות שנעצרו: %lld",
@@ -110,11 +110,11 @@
       "back": "Blocked"
     },
     "app.rules.row.state_allowed": {
-      "s": "מאושר",
+      "s": "מותר",
       "back": "Allowed"
     },
     "app.rules.row.action_allow": {
-      "s": "אישור",
+      "s": "התרה",
       "back": "Allow"
     },
     "app.rules.row.action_block": {
@@ -122,7 +122,7 @@
       "back": "Block"
     },
     "app.rules.row.help_tooltip": {
-      "s": "לאשר או לחסום את היעד הזה",
+      "s": "להתיר או לחסום את היעד הזה",
       "back": "Allow or block this destination"
     },
     "app.rules.row.use_default": {
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "באתר שמפנה אתכם הלאה, לחצו על הלחצן של Undirect בסרגל הכלים של Safari.",
-      "back": "On a site that redirects you, press Undirect's button in Safari's toolbar"
+      "s": "באתר שמפנה למקום אחר, יש ללחוץ על הלחצן של Undirect בסרגל הכלים של Safari.",
+      "back": "On a site that redirects elsewhere, press the Undirect button in Safari's toolbar."
     },
     "app.watched.footer": {
       "s": "אתרים מתווספים מהלחצן של Undirect ב-Safari. כאן אפשר רק להסיר אותם.",
@@ -170,8 +170,8 @@
       "back": "Where protection works"
     },
     "app.settings.mode_watched": {
-      "s": "אתרים שאפעיל",
-      "back": "Sites I turn on"
+      "s": "אתרים שהפעלתי",
+      "back": "Sites I turned on"
     },
     "app.settings.mode_everywhere": {
       "s": "כל האתרים",
@@ -190,7 +190,7 @@
       "back": "Block"
     },
     "app.settings.policy_allow": {
-      "s": "אישור",
+      "s": "התרה",
       "back": "Allow"
     },
     "ext.meta.name": {
@@ -198,8 +198,8 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "מונע מדפים לנצל את הלחיצה שלכם כדי לפתוח או להפנות למקום שלא ביקשת.",
-      "back": "Prevents pages from using your click to open or redirect to a place you did not ask"
+      "s": "מונע מדפים לנצל את הלחיצה כדי לפתוח או להפנות למקום שלא התבקש.",
+      "back": "Stops pages from using the click to open or redirect somewhere that was not requested."
     },
     "ext.meta.app_title": {
       "s": "Undirect",
@@ -210,8 +210,8 @@
       "back": "Protection active on this site"
     },
     "ext.toolbar.tooltip_off": {
-      "s": "ההגנה כבויה. לחצו כדי להפעיל",
-      "back": "Protection off; press to turn on"
+      "s": "ההגנה כבויה. לחיצה תפעיל אותה",
+      "back": "Protection is off. A press will turn it on"
     },
     "ext.toolbar.tooltip_no_site": {
       "s": "אין כאן מה להגן עליו",
@@ -222,8 +222,8 @@
       "back": "Undirect works on websites"
     },
     "ext.popup.no_site_body": {
-      "s": "פתחו אתר ולחצו כאן.",
-      "back": "Open a site and press here"
+      "s": "יש לפתוח אתר וללחוץ כאן.",
+      "back": "Open a site and press here."
     },
     "ext.popup.watch_switch_label": {
       "s": "הגנה על האתר הזה",
@@ -266,24 +266,24 @@
       "back": "Nothing to show yet"
     },
     "ext.popup.stopped_one": {
-      "s": "נעצרו: %lld",
-      "back": "Stopped: N"
+      "s": "נעצר: %lld",
+      "back": "Stopped: %lld"
     },
     "ext.popup.stopped_other": {
       "s": "נעצרו: %lld",
       "back": "Stopped: N"
     },
     "ext.popup.seen_one": {
-      "s": "ניסיונות שנרשמו: %lld",
-      "back": "Recorded attempts: N"
+      "s": "ניסיון שנרשם: %lld",
+      "back": "Recorded attempt: %lld"
     },
     "ext.popup.seen_other": {
       "s": "ניסיונות שנרשמו: %lld",
       "back": "Recorded attempts: N"
     },
     "ext.popup.tries_one": {
-      "s": "ניסיונות: %lld",
-      "back": "Attempts: N"
+      "s": "ניסיון: %lld",
+      "back": "Attempt: %lld"
     },
     "ext.popup.tries_other": {
       "s": "ניסיונות: %lld",
@@ -294,11 +294,11 @@
       "back": "Fix"
     },
     "ext.state.blocked": {
-      "s": "נחסם",
+      "s": "חסום",
       "back": "Blocked"
     },
     "ext.state.allowed": {
-      "s": "אושר",
+      "s": "מותר",
       "back": "Allowed"
     },
     "ext.state.removed": {
@@ -318,11 +318,11 @@
       "back": "by default"
     },
     "ext.action.allow_here": {
-      "s": "אישור באתר זה",
+      "s": "התרה באתר זה",
       "back": "Allow on this site"
     },
     "ext.action.allow_everywhere": {
-      "s": "אישור בכל מקום",
+      "s": "התרה בכל מקום",
       "back": "Allow everywhere"
     },
     "ext.action.block_here": {
@@ -342,7 +342,7 @@
       "back": "Block"
     },
     "ext.policy.allow": {
-      "s": "אישור",
+      "s": "התרה",
       "back": "Allow"
     },
     "ext.popup.bridge_warning": {
@@ -374,8 +374,8 @@
       "back": "Link swapped mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "חזרה שהוסטה",
-      "back": "Back diverted"
+      "s": "חזרה שהובילה למקום אחר",
+      "back": "A back that led elsewhere"
     },
     "ext.kind.redirect": {
       "s": "הפניה שלקחה את הלחיצה",
@@ -398,12 +398,12 @@
       "back": "Window of a defined size"
     },
     "ext.reason.took_press": {
-      "s": "לקח את הלחיצה שלכם.",
-      "back": "Took your click"
+      "s": "לקח את הלחיצה.",
+      "back": "Took the click."
     },
     "ext.reason.default_allow": {
-      "s": "אין כלל; אושר.",
-      "back": "No rule; allowed"
+      "s": "אין כלל. מותר.",
+      "back": "No rule. Allowed."
     },
     "ext.reason.own_code": {
       "s": "האתר עצמו פתח אותו.",
@@ -430,7 +430,7 @@
       "back": "No rules"
     },
     "ext.action.allow": {
-      "s": "אישור",
+      "s": "התרה",
       "back": "Allow"
     },
     "ext.action.block": {
@@ -462,8 +462,8 @@
       "back": "Where protection works"
     },
     "ext.settings.mode_watched": {
-      "s": "אתרים שאפעיל",
-      "back": "Sites I turn on"
+      "s": "אתרים שהפעלתי",
+      "back": "Sites I turned on"
     },
     "ext.settings.mode_everywhere": {
       "s": "כל האתרים",

@@ -256,7 +256,7 @@
     "description": "Opens the list of every rule the user has set."
   },
   "popup_page_link": {
-    "message": "Tilbage",
+    "message": "Tilbage til siden",
     "description": "Goes back from the rules list to the current tab."
   },
   "rules_everywhere_heading": {

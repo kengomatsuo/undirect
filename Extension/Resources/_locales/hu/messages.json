@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Megakadályozza, hogy az oldalak a kattintásodat felhasználva olyan helyre nyissanak vagy irányítsanak, amit nem kértél.",
+    "message": "Megakadályozza, hogy az oldalak a kattintással olyat nyissanak meg, vagy olyan helyre irányítsanak át, amit nem kért.",
     "description": "Description of the extension."
   },
   "app_title": {
@@ -32,7 +32,7 @@
     "description": "Popup title on a tab with no website, such as the Start Page."
   },
   "popup_no_site_body": {
-    "message": "Nyiss meg egy weboldalt, és nyomd meg itt.",
+    "message": "Nyisson meg egy weboldalt, és nyomja meg itt.",
     "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
   },
   "popup_watch_unknown": {
@@ -140,7 +140,7 @@
     "description": "Heading for a per-site fix that was applied."
   },
   "state_blocked": {
-    "message": "Letiltva",
+    "message": "Blokkolva",
     "description": "A destination that is being stopped."
   },
   "state_allowed": {
@@ -168,11 +168,11 @@
     "description": "Let this destination through on every site."
   },
   "action_block_here": {
-    "message": "Letiltás ezen az oldalon",
+    "message": "Blokkolás ezen az oldalon",
     "description": "Stop this destination on the current site."
   },
   "action_block_everywhere": {
-    "message": "Letiltás mindenhol",
+    "message": "Blokkolás mindenhol",
     "description": "Stop this destination on every site."
   },
   "popup_policy_heading": {
@@ -180,11 +180,11 @@
     "description": "Label above the default policy choice."
   },
   "policy_block": {
-    "message": "Letilt",
+    "message": "Blokkolás",
     "description": "Default policy: stop unknown cross-site destinations."
   },
   "policy_allow": {
-    "message": "Engedélyez",
+    "message": "Engedélyezés",
     "description": "Default policy: let unknown cross-site destinations through."
   },
   "popup_bridge_warning": {
@@ -212,7 +212,7 @@
     "description": "A form submitted to a new tab."
   },
   "kind_href_swap": {
-    "message": "Menet közben átírt hivatkozás",
+    "message": "Kattintás közben átírt hivatkozás",
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
@@ -240,11 +240,11 @@
     "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
   },
   "reason_took_press": {
-    "message": "Elvitte a kattintásodat.",
+    "message": "Elvitte a kattintást.",
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "Nincs szabály; engedélyezve.",
+    "message": "Nincs szabály. Engedélyezve.",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {
@@ -272,11 +272,11 @@
     "description": "Shown when a rules list has no entries."
   },
   "action_allow": {
-    "message": "Engedélyez",
+    "message": "Engedélyezés",
     "description": "Change a rule to allow."
   },
   "action_block": {
-    "message": "Letilt",
+    "message": "Blokkolás",
     "description": "Change a rule to block."
   },
   "action_clear": {
@@ -296,7 +296,7 @@
     "description": "Opens a prefilled issue about a site the guard missed."
   },
   "action_title_off": {
-    "message": "A védelem ki van kapcsolva; nyomd meg a bekapcsoláshoz",
+    "message": "Védelem kikapcsolva. Nyomja meg a bekapcsoláshoz",
     "description": "Toolbar button tooltip while the guard is off on the site."
   },
   "action_title_no_site": {

@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "מונע מדפים לנצל את הלחיצה שלכם כדי לפתוח או להפנות למקום שלא ביקשת.",
+    "message": "מונע מדפים לנצל את הלחיצה כדי לפתוח או להפנות למקום שלא התבקש.",
     "description": "Description of the extension."
   },
   "app_title": {
@@ -32,7 +32,7 @@
     "description": "Popup title on a tab with no website, such as the Start Page."
   },
   "popup_no_site_body": {
-    "message": "פתחו אתר ולחצו כאן.",
+    "message": "יש לפתוח אתר וללחוץ כאן.",
     "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
   },
   "popup_watch_unknown": {
@@ -52,7 +52,7 @@
     "description": "Label above the mode choice."
   },
   "mode_watched": {
-    "message": "אתרים שאפעיל",
+    "message": "אתרים שהפעלתי",
     "description": "Mode: the guard runs only on sites switched on individually."
   },
   "mode_everywhere": {
@@ -76,7 +76,7 @@
     "description": "Shown when the destination list is empty."
   },
   "popup_stopped_one": {
-    "message": "נעצרו: $COUNT$",
+    "message": "נעצר: $COUNT$",
     "description": "How many attempts were blocked on this page, singular.",
     "placeholders": {
       "count": {
@@ -96,7 +96,7 @@
     }
   },
   "popup_seen_one": {
-    "message": "ניסיונות שנרשמו: $COUNT$",
+    "message": "ניסיון שנרשם: $COUNT$",
     "description": "How many cross-site attempts were recorded, singular.",
     "placeholders": {
       "count": {
@@ -116,7 +116,7 @@
     }
   },
   "popup_tries_one": {
-    "message": "ניסיונות: $COUNT$",
+    "message": "ניסיון: $COUNT$",
     "description": "How many times one destination came up, singular.",
     "placeholders": {
       "count": {
@@ -140,11 +140,11 @@
     "description": "Heading for a per-site fix that was applied."
   },
   "state_blocked": {
-    "message": "נחסם",
+    "message": "חסום",
     "description": "A destination that is being stopped."
   },
   "state_allowed": {
-    "message": "אושר",
+    "message": "מותר",
     "description": "A destination that is being let through."
   },
   "scope_here": {
@@ -160,11 +160,11 @@
     "description": "No rule was set, so the default applies."
   },
   "action_allow_here": {
-    "message": "אישור באתר זה",
+    "message": "התרה באתר זה",
     "description": "Let this destination through on the current site."
   },
   "action_allow_everywhere": {
-    "message": "אישור בכל מקום",
+    "message": "התרה בכל מקום",
     "description": "Let this destination through on every site."
   },
   "action_block_here": {
@@ -184,7 +184,7 @@
     "description": "Default policy: stop unknown cross-site destinations."
   },
   "policy_allow": {
-    "message": "אישור",
+    "message": "התרה",
     "description": "Default policy: let unknown cross-site destinations through."
   },
   "popup_bridge_warning": {
@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "חזרה שהוסטה",
+    "message": "חזרה שהובילה למקום אחר",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
@@ -240,11 +240,11 @@
     "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
   },
   "reason_took_press": {
-    "message": "לקח את הלחיצה שלכם.",
+    "message": "לקח את הלחיצה.",
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "אין כלל; אושר.",
+    "message": "אין כלל. מותר.",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {
@@ -272,7 +272,7 @@
     "description": "Shown when a rules list has no entries."
   },
   "action_allow": {
-    "message": "אישור",
+    "message": "התרה",
     "description": "Change a rule to allow."
   },
   "action_block": {
@@ -296,7 +296,7 @@
     "description": "Opens a prefilled issue about a site the guard missed."
   },
   "action_title_off": {
-    "message": "ההגנה כבויה. לחצו כדי להפעיל",
+    "message": "ההגנה כבויה. לחיצה תפעיל אותה",
     "description": "Toolbar button tooltip while the guard is off on the site."
   },
   "action_title_no_site": {

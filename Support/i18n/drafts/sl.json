@@ -46,8 +46,8 @@
       "back": "Unwanted windows"
     },
     "app.welcome.feature.uninvited_windows.detail": {
-      "s": "Ko je zaščita vklopljena, se nov zavihek odpre samo tja, kamor ste se dotaknili.",
-      "back": "With protection on a new tab only opens where you tapped"
+      "s": "Ko je zaščita vklopljena, se nov zavihek odpre samo tja, kamor cilja vaš dotik.",
+      "back": "With protection on, a new tab opens only where your touch is aimed."
     },
     "app.welcome.feature.every_destination.title": {
       "s": "Vsak cilj",
@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Na spletnem mestu pritisnite gumb Undirect v orodni vrstici Safarija, da ga zaščitite.",
-      "back": "On a site press the Undirect button in Safari's toolbar to protect it"
+      "s": "Na spletnem mestu pritisnite gumb Undirect v orodni vrstici Safarija, da zaščitite to mesto.",
+      "back": "On a site, press the Undirect button in Safari's toolbar to protect that site."
     },
     "app.nav.guarded_sites": {
       "s": "Zaščitena mesta",
@@ -198,8 +198,8 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "Preprečuje, da bi strani uporabile vaš klik za odpiranje ali preusmeritev tja, kamor niste želeli.",
-      "back": "Prevents pages using your click to open or redirect where you did not want"
+      "s": "Preprečuje, da bi strani vaš klik izrabile za odpiranje ali preusmerjanje na neželena mesta.",
+      "back": "Prevents pages from abusing your click to open or redirect to unwanted places."
     },
     "ext.meta.app_title": {
       "s": "Undirect",
@@ -474,7 +474,7 @@
       "back": "Notice on the page"
     },
     "ext.action.report": {
-      "s": "Prijavi težavo",
+      "s": "Sporoči težavo",
       "back": "Report a problem"
     }
   }

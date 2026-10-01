@@ -50,12 +50,12 @@
       "back": "With protection on a new tab only opens where you tapped"
     },
     "app.welcome.feature.every_destination.title": {
-      "s": "Кожен пункт призначення",
-      "back": "Every destination"
+      "s": "Кожна адреса",
+      "back": "Every address"
     },
     "app.welcome.feature.every_destination.detail": {
-      "s": "Кожен пункт призначення має свій рядок: його можна дозволити або заблокувати на одному сайті чи на всіх.",
-      "back": "Each destination has its own row: allow or block on one site or all"
+      "s": "Кожна адреса має свій рядок: її можна дозволити або заблокувати на одному сайті чи на всіх.",
+      "back": "Every address has its own row: it can be allowed or blocked on one site or on all."
     },
     "app.welcome.feature.one_site_at_a_time.title": {
       "s": "Сайт за сайтом",
@@ -82,12 +82,12 @@
       "back": "Everywhere"
     },
     "app.rules.grouping.by_site": {
-      "s": "За сайтом",
-      "back": "By site"
+      "s": "Окремі сайти",
+      "back": "Individual sites"
     },
     "app.rules.empty_no_app.title": {
-      "s": "Від розширення ще нічого немає",
-      "back": "Nothing from the extension yet"
+      "s": "Розширення ще не озвалося",
+      "back": "The extension has not responded yet"
     },
     "app.rules.empty_no_app.detail": {
       "s": "Відкрийте будь-яку сторінку в Safari, і список заповниться сам.",
@@ -98,8 +98,8 @@
       "back": "No rules"
     },
     "app.rules.empty_no_rules.detail": {
-      "s": "Пункт призначення з'являється тут, коли ви дозволите або заблокуєте його.",
-      "back": "A destination appears here when you allow or block it"
+      "s": "Адреса з'являється тут, коли ви дозволите або заблокуєте її.",
+      "back": "An address appears here once you allow or block it."
     },
     "app.rules.footer.lifetime_count": {
       "s": "Усього зупинено спроб: %lld",
@@ -122,8 +122,8 @@
       "back": "Block"
     },
     "app.rules.row.help_tooltip": {
-      "s": "Дозволити або заблокувати цей пункт призначення",
-      "back": "Allow or block this destination"
+      "s": "Дозволити або заблокувати цю адресу",
+      "back": "Allow or block this address"
     },
     "app.rules.row.use_default": {
       "s": "Використати типове",
@@ -182,8 +182,8 @@
       "back": "Notice on the page"
     },
     "app.settings.policy_heading": {
-      "s": "Пункти призначення без правила",
-      "back": "Destinations without a rule"
+      "s": "Адреси без правила",
+      "back": "Addresses without a rule"
     },
     "app.settings.policy_block": {
       "s": "Блокувати",
@@ -218,8 +218,8 @@
       "back": "Nothing to protect here"
     },
     "ext.popup.no_site_title": {
-      "s": "Undirect працює на сайтах",
-      "back": "Undirect works on websites"
+      "s": "Undirect працює лише на сайтах",
+      "back": "Undirect works only on sites"
     },
     "ext.popup.no_site_body": {
       "s": "Відкрийте сайт і натисніть тут.",
@@ -234,12 +234,12 @@
       "back": "No page to protect"
     },
     "ext.popup.watch_everywhere_mode": {
-      "s": "За параметрами вже працює скрізь.",
-      "back": "Per settings already works everywhere"
+      "s": "За параметрами захист уже працює усюди.",
+      "back": "Per Settings, protection already runs everywhere."
     },
     "ext.popup.watch_master_off": {
-      "s": "У параметрах вимкнено.",
-      "back": "Switched off in settings"
+      "s": "Захист вимкнено в параметрах.",
+      "back": "Protection is off in Settings."
     },
     "ext.popup.watch_on": {
       "s": "Увімкнено. Після вимкнення сторінка перезавантажиться.",
@@ -314,7 +314,7 @@
       "back": "everywhere"
     },
     "ext.scope.default": {
-      "s": "за замовчуванням",
+      "s": "типово",
       "back": "by default"
     },
     "ext.action.allow_here": {
@@ -334,8 +334,8 @@
       "back": "Block everywhere"
     },
     "ext.popup.policy_heading": {
-      "s": "Пункти призначення без правила",
-      "back": "Destinations without a rule"
+      "s": "Адреси без правила",
+      "back": "Addresses without a rule"
     },
     "ext.policy.block": {
       "s": "Блокувати",
@@ -374,8 +374,8 @@
       "back": "Link changed mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "Перенаправлене повернення",
-      "back": "Diverted back"
+      "s": "Перенаправлення після «Назад»",
+      "back": "Redirect after Back"
     },
     "ext.kind.redirect": {
       "s": "Перенаправлення, що перехопило клік",
@@ -422,8 +422,8 @@
       "back": "Everywhere"
     },
     "ext.rules.by_site_heading": {
-      "s": "За сайтом",
-      "back": "By site"
+      "s": "Окремі сайти",
+      "back": "Individual sites"
     },
     "ext.rules.empty": {
       "s": "Правил немає",

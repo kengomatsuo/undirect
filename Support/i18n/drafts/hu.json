@@ -10,20 +10,20 @@
       "back": "Status cannot be checked"
     },
     "app.setup.detail_default": {
-      "s": "A védett oldalak már nem tudják elvenni a koppintásaidat.",
-      "back": "Protected sites can no longer take your taps"
+      "s": "A védett oldalak már nem vehetik el a koppintásokat.",
+      "back": "Protected pages can no longer take the taps."
     },
     "app.setup.detail_failed": {
-      "s": "A Safari ezúttal nem válaszolt. Ha bekapcsolod a bővítményt, az app magától észreveszi.",
-      "back": "Safari did not answer this time; if you switch it on the app notices by itself"
+      "s": "A Safari ezúttal nem válaszolt. Ha bekapcsolja a bővítményt, az app magától észreveszi.",
+      "back": "Safari did not answer this time. If you turn the extension on, the app notices by itself."
     },
     "app.setup.open_button": {
       "s": "Safari-bővítmények megnyitása",
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Üdvözlünk az Undirectben",
-      "back": "Welcome to Undirect"
+      "s": "Üdvözli az Undirect",
+      "back": "Undirect welcomes you"
     },
     "app.welcome.feature.invisible_layers.title": {
       "s": "Láthatatlan rétegek",
@@ -46,24 +46,24 @@
       "back": "Unrequested windows"
     },
     "app.welcome.feature.uninvited_windows.detail": {
-      "s": "Bekapcsolt védelemnél új lap csak oda nyílik, ahová koppintottál.",
-      "back": "With protection on a new tab only opens where you tapped"
+      "s": "Bekapcsolt védelemnél új lap csak oda nyílik, ahová koppintott.",
+      "back": "With protection on, a new tab opens only where you tapped."
     },
     "app.welcome.feature.every_destination.title": {
       "s": "Minden cél",
       "back": "Every destination"
     },
     "app.welcome.feature.every_destination.detail": {
-      "s": "Minden cél külön sort kap, és egy oldalon vagy mindenhol engedélyezheted vagy letilthatod.",
-      "back": "Each destination gets its own row; allow or block on one site or everywhere"
+      "s": "Minden cél külön sort kap, és engedélyezheti vagy blokkolhatja egy oldalon vagy mindenhol.",
+      "back": "Every destination gets its own row, and you can allow or block it on one site or everywhere."
     },
     "app.welcome.feature.one_site_at_a_time.title": {
-      "s": "Oldalanként",
-      "back": "Site by site"
+      "s": "Egyszerre egy oldal",
+      "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Egy oldalon nyomd meg az Undirect gombját a Safari eszköztárán, és bekapcsol rá a védelem.",
-      "back": "On a site press Undirect's button on Safari's toolbar and protection turns on for it"
+      "s": "Nyomja meg az Undirect gombját a Safari eszköztárán az adott oldalon, és bekapcsol a védelem.",
+      "back": "Press the Undirect button in Safari's toolbar on that site, and protection switches on."
     },
     "app.nav.guarded_sites": {
       "s": "Védett oldalak",
@@ -90,23 +90,23 @@
       "back": "The extension has not reported yet"
     },
     "app.rules.empty_no_app.detail": {
-      "s": "Nyiss meg egy oldalt a Safariban, és a lista magától feltöltődik.",
-      "back": "Open a page in Safari and the list fills itself"
+      "s": "Nyisson meg egy oldalt a Safariban, és a lista magától feltöltődik.",
+      "back": "Open a page in Safari and the list fills by itself."
     },
     "app.rules.empty_no_rules.title": {
       "s": "Nincsenek szabályok",
       "back": "No rules"
     },
     "app.rules.empty_no_rules.detail": {
-      "s": "A cél itt jelenik meg, miután engedélyezted vagy letiltottad.",
-      "back": "The destination appears here after you allow or block it"
+      "s": "A cél itt jelenik meg, miután engedélyezte vagy blokkolta.",
+      "back": "The destination appears here once you have allowed or blocked it."
     },
     "app.rules.footer.lifetime_count": {
-      "s": "Összesen megállított kísérletek: %lld",
-      "back": "Total attempts stopped: N"
+      "s": "Megállított kísérletek összesen: %lld",
+      "back": "Stopped attempts in total: %lld"
     },
     "app.rules.row.state_blocked": {
-      "s": "Letiltva",
+      "s": "Blokkolva",
       "back": "Blocked"
     },
     "app.rules.row.state_allowed": {
@@ -114,16 +114,16 @@
       "back": "Allowed"
     },
     "app.rules.row.action_allow": {
-      "s": "Engedélyez",
+      "s": "Engedélyezés",
       "back": "Allow"
     },
     "app.rules.row.action_block": {
-      "s": "Letilt",
+      "s": "Blokkolás",
       "back": "Block"
     },
     "app.rules.row.help_tooltip": {
-      "s": "A cél engedélyezése vagy letiltása",
-      "back": "Allow or block the destination"
+      "s": "A cél engedélyezése vagy blokkolása",
+      "back": "Allowing or blocking the destination"
     },
     "app.rules.row.use_default": {
       "s": "Alapértelmezett",
@@ -134,19 +134,19 @@
       "back": "No protected site yet"
     },
     "app.watched.empty.detail": {
-      "s": "Egy átirányító oldalon nyomd meg az Undirect gombját a Safari eszköztárán.",
-      "back": "On a redirecting site press Undirect's button on Safari's toolbar"
+      "s": "Egy átirányító oldalon nyomja meg az Undirect gombját a Safari eszköztárán.",
+      "back": "On a redirecting site, press the Undirect button in Safari's toolbar."
     },
     "app.watched.footer": {
-      "s": "Az oldalak a Safari Undirect gombjával kerülnek ide; itt csak eltávolítani lehet őket.",
-      "back": "Sites get here via Safari's button; here you can only remove"
+      "s": "Az oldalak a Safari Undirect gombjával kerülnek ide. Itt csak eltávolítani lehet őket.",
+      "back": "Sites get here through the Undirect button in Safari. Here they can only be removed."
     },
     "app.watched.row.guarded_badge": {
       "s": "Védett",
       "back": "Protected"
     },
     "app.watched.row.stop_button": {
-      "s": "Leállít",
+      "s": "Leállítás",
       "back": "Stop"
     },
     "app.watched.row.stop_tooltip": {
@@ -186,11 +186,11 @@
       "back": "Destinations without a rule"
     },
     "app.settings.policy_block": {
-      "s": "Letilt",
+      "s": "Blokkolás",
       "back": "Block"
     },
     "app.settings.policy_allow": {
-      "s": "Engedélyez",
+      "s": "Engedélyezés",
       "back": "Allow"
     },
     "ext.meta.name": {
@@ -198,8 +198,8 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "Megakadályozza, hogy az oldalak a kattintásodat felhasználva olyan helyre nyissanak vagy irányítsanak, amit nem kértél.",
-      "back": "Prevents pages using your click to open or redirect to a place you did not ask for"
+      "s": "Megakadályozza, hogy az oldalak a kattintással olyat nyissanak meg, vagy olyan helyre irányítsanak át, amit nem kért.",
+      "back": "Stops pages from using the click to open something, or redirect to a place, that you did not ask for."
     },
     "ext.meta.app_title": {
       "s": "Undirect",
@@ -210,8 +210,8 @@
       "back": "Protection is on for this site"
     },
     "ext.toolbar.tooltip_off": {
-      "s": "A védelem ki van kapcsolva; nyomd meg a bekapcsoláshoz",
-      "back": "Protection off; press to turn on"
+      "s": "Védelem kikapcsolva. Nyomja meg a bekapcsoláshoz",
+      "back": "Protection off. Press to turn on"
     },
     "ext.toolbar.tooltip_no_site": {
       "s": "Itt nincs mit védeni",
@@ -222,8 +222,8 @@
       "back": "Undirect works on websites"
     },
     "ext.popup.no_site_body": {
-      "s": "Nyiss meg egy weboldalt, és nyomd meg itt.",
-      "back": "Open a website and press here"
+      "s": "Nyisson meg egy weboldalt, és nyomja meg itt.",
+      "back": "Open a website and press here."
     },
     "ext.popup.watch_switch_label": {
       "s": "Az oldal védelme",
@@ -294,7 +294,7 @@
       "back": "Fix"
     },
     "ext.state.blocked": {
-      "s": "Letiltva",
+      "s": "Blokkolva",
       "back": "Blocked"
     },
     "ext.state.allowed": {
@@ -326,11 +326,11 @@
       "back": "Allow everywhere"
     },
     "ext.action.block_here": {
-      "s": "Letiltás ezen az oldalon",
+      "s": "Blokkolás ezen az oldalon",
       "back": "Block on this site"
     },
     "ext.action.block_everywhere": {
-      "s": "Letiltás mindenhol",
+      "s": "Blokkolás mindenhol",
       "back": "Block everywhere"
     },
     "ext.popup.policy_heading": {
@@ -338,11 +338,11 @@
       "back": "Destinations without a rule"
     },
     "ext.policy.block": {
-      "s": "Letilt",
+      "s": "Blokkolás",
       "back": "Block"
     },
     "ext.policy.allow": {
-      "s": "Engedélyez",
+      "s": "Engedélyezés",
       "back": "Allow"
     },
     "ext.popup.bridge_warning": {
@@ -370,8 +370,8 @@
       "back": "Hidden form"
     },
     "ext.kind.href_swap": {
-      "s": "Menet közben átírt hivatkozás",
-      "back": "Link rewritten mid-press"
+      "s": "Kattintás közben átírt hivatkozás",
+      "back": "Link rewritten during the click"
     },
     "ext.kind.back_hijack": {
       "s": "Eltérített visszalépés",
@@ -398,12 +398,12 @@
       "back": "Window of a set size"
     },
     "ext.reason.took_press": {
-      "s": "Elvitte a kattintásodat.",
-      "back": "Took your click"
+      "s": "Elvitte a kattintást.",
+      "back": "Took the click."
     },
     "ext.reason.default_allow": {
-      "s": "Nincs szabály; engedélyezve.",
-      "back": "No rule; allowed"
+      "s": "Nincs szabály. Engedélyezve.",
+      "back": "No rule. Allowed."
     },
     "ext.reason.own_code": {
       "s": "Maga az oldal nyitotta.",
@@ -430,11 +430,11 @@
       "back": "No rules"
     },
     "ext.action.allow": {
-      "s": "Engedélyez",
+      "s": "Engedélyezés",
       "back": "Allow"
     },
     "ext.action.block": {
-      "s": "Letilt",
+      "s": "Blokkolás",
       "back": "Block"
     },
     "ext.action.clear": {

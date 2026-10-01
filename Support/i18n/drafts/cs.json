@@ -38,16 +38,16 @@
       "back": "Swapped links"
     },
     "app.welcome.feature.swapped_links.detail": {
-      "s": "Některé stránky změní cíl odkazu mezi stisknutím a pustím.",
-      "back": "Some pages change the link target between pressing and releasing"
+      "s": "Některé stránky změní cíl odkazu mezi stisknutím a puštěním.",
+      "back": "Some pages change a link's target between pressing and releasing."
     },
     "app.welcome.feature.uninvited_windows.title": {
       "s": "Nevyžádaná okna",
       "back": "Unrequested windows"
     },
     "app.welcome.feature.uninvited_windows.detail": {
-      "s": "Při zapnuté ochraně se nový panel otevře jen tam, kam jste klepli.",
-      "back": "With protection on a new tab opens only where you tapped"
+      "s": "Při zapnuté ochraně se nový panel otevře jen tam, kam míří vaše klepnutí.",
+      "back": "With protection on, a new tab opens only where your tap is aimed."
     },
     "app.welcome.feature.every_destination.title": {
       "s": "Každý cíl",
@@ -198,8 +198,8 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "Brání stránkám, aby vaše klepnutí využily k otevření nebo přesměrování tam, kam jste nechtěli.",
-      "back": "Stops pages using your tap to open or redirect where you did not want"
+      "s": "Brání stránkám zneužít vaše klepnutí k otevření nebo přesměrování jinam.",
+      "back": "Stops pages from abusing your tap to open or redirect elsewhere."
     },
     "ext.meta.app_title": {
       "s": "Undirect",

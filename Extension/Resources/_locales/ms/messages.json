@@ -24,15 +24,15 @@
     "description": "State of the master switch when the guard is paused."
   },
   "popup_watch_label": {
-    "message": "Lindungi laman ini",
+    "message": "Lindungi tapak ini",
     "description": "Label of the per-site switch, the popup's first row."
   },
   "popup_no_site_title": {
-    "message": "Undirect berfungsi pada laman web",
+    "message": "Undirect berfungsi pada tapak web",
     "description": "Popup title on a tab with no website, such as the Start Page."
   },
   "popup_no_site_body": {
-    "message": "Buka laman web, kemudian tekan di sini.",
+    "message": "Buka tapak web, kemudian tekan di sini.",
     "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
   },
   "popup_watch_unknown": {
@@ -40,11 +40,11 @@
     "description": "Shown when the current tab has no site to watch."
   },
   "popup_watch_everywhere": {
-    "message": "Sudah hidup di semua laman menurut Tetapan.",
+    "message": "Sudah hidup di semua tapak menurut Seting.",
     "description": "Shown when the mode setting already covers every site."
   },
   "popup_watch_master_off": {
-    "message": "Dimatikan dalam Tetapan.",
+    "message": "Dimatikan dalam Seting.",
     "description": "Shown when the master Guard switch in Settings is off."
   },
   "popup_mode_heading": {
@@ -52,11 +52,11 @@
     "description": "Label above the mode choice."
   },
   "mode_watched": {
-    "message": "Laman yang saya hidupkan",
+    "message": "Tapak yang saya hidupkan",
     "description": "Mode: the guard runs only on sites switched on individually."
   },
   "mode_everywhere": {
-    "message": "Semua laman",
+    "message": "Semua tapak",
     "description": "Mode: the guard runs automatically on every site."
   },
   "popup_page_off": {
@@ -148,7 +148,7 @@
     "description": "A destination that is being let through."
   },
   "scope_here": {
-    "message": "pada laman ini",
+    "message": "pada tapak ini",
     "description": "The rule was set for the current site only."
   },
   "scope_everywhere": {
@@ -160,7 +160,7 @@
     "description": "No rule was set, so the default applies."
   },
   "action_allow_here": {
-    "message": "Benarkan pada laman ini",
+    "message": "Benarkan pada tapak ini",
     "description": "Let this destination through on the current site."
   },
   "action_allow_everywhere": {
@@ -168,7 +168,7 @@
     "description": "Let this destination through on every site."
   },
   "action_block_here": {
-    "message": "Sekat pada laman ini",
+    "message": "Sekat pada tapak ini",
     "description": "Stop this destination on the current site."
   },
   "action_block_everywhere": {
@@ -188,7 +188,7 @@
     "description": "Default policy: let unknown cross-site destinations through."
   },
   "popup_bridge_warning": {
-    "message": "Tetapan keselamatan halaman ini menyekat sebahagian skrip, jadi perlindungan di sini hanya separa.",
+    "message": "Seting keselamatan halaman ini menyekat sebahagian skrip, jadi perlindungan di sini hanya separa.",
     "description": "Shown when the page CSP stopped the page-world script."
   },
   "kind_click_catcher": {
@@ -212,11 +212,11 @@
     "description": "A form submitted to a new tab."
   },
   "kind_href_swap": {
-    "message": "Pautan ditukar pada tengah klik",
+    "message": "Pautan ditukar semasa klik",
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "Kembali dibelokkan",
+    "message": "Kembali dibawa ke tempat lain",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
@@ -232,7 +232,7 @@
     "description": "A known pop network refused by a network rule."
   },
   "reason_way_back": {
-    "message": "Alamatnya mengandungi jalan kembali ke laman ini.",
+    "message": "Alamatnya mengandungi jalan kembali ke tapak ini.",
     "description": "Why a redirect was allowed: its address carried a same-site callback."
   },
   "reason_sized": {
@@ -244,11 +244,11 @@
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "Tiada peraturan; dibenarkan.",
+    "message": "Tiada peraturan. Dibenarkan.",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {
-    "message": "Dibuka oleh laman itu sendiri.",
+    "message": "Dibuka oleh tapak itu sendiri.",
     "description": "Why a window was allowed: the code that opened it belongs to this site."
   },
   "popup_rules_link": {
@@ -264,7 +264,7 @@
     "description": "Heading for rules that apply on every site."
   },
   "rules_by_site_heading": {
-    "message": "Mengikut laman",
+    "message": "Mengikut tapak",
     "description": "Heading for rules that apply to a single site."
   },
   "rules_empty": {
@@ -284,11 +284,11 @@
     "description": "Remove a rule so the default applies."
   },
   "popup_settings_heading": {
-    "message": "Tetapan",
+    "message": "Seting",
     "description": "Heading of the settings section."
   },
   "setting_banner": {
-    "message": "Notis dalam halaman",
+    "message": "Notis pada halaman",
     "description": "Toggle for the note drawn in the page when something is stopped."
   },
   "action_report": {
@@ -296,7 +296,7 @@
     "description": "Opens a prefilled issue about a site the guard missed."
   },
   "action_title_off": {
-    "message": "Perlindungan mati; tekan untuk menghidupkan",
+    "message": "Perlindungan mati. Tekan untuk menghidupkan",
     "description": "Toolbar button tooltip while the guard is off on the site."
   },
   "action_title_no_site": {
@@ -304,7 +304,7 @@
     "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
   },
   "action_title_on": {
-    "message": "Perlindungan hidup pada laman ini",
+    "message": "Perlindungan hidup pada tapak ini",
     "description": "Toolbar button tooltip while the guard is on."
   },
   "popup_watch_on": {

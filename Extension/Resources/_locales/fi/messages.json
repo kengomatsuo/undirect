@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "Ohjattu takaisin muualle",
+    "message": "Takaisin vei muualle",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
@@ -236,7 +236,7 @@
     "description": "Why a redirect was allowed: its address carried a same-site callback."
   },
   "reason_sized": {
-    "message": "Ikkuna annetussa koossa.",
+    "message": "Ikkunalle oli annettu koko.",
     "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
   },
   "reason_took_press": {
@@ -244,7 +244,7 @@
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "Ei sääntöä; sallittu.",
+    "message": "Ei sääntöä. Sallittu.",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {
@@ -296,7 +296,7 @@
     "description": "Opens a prefilled issue about a site the guard missed."
   },
   "action_title_off": {
-    "message": "Suojaus pois; kytke päälle painamalla",
+    "message": "Suojaus pois päältä. Kytke päälle painamalla",
     "description": "Toolbar button tooltip while the guard is off on the site."
   },
   "action_title_no_site": {
