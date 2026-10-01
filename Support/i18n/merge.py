@@ -5,7 +5,8 @@
     python3 Support/i18n/merge.py ja ko      # only these
 
 App strings land in App/Localizable.xcstrings, keyed by the English source
-string. Extension strings land in Extension/Resources/_locales/<code>/messages.json,
+string. Store copy (Support/i18n/store/<App Store Connect code>.json) lands in
+Support/AppStore/locales.json. Extension strings land in Extension/Resources/_locales/<code>/messages.json,
 where the folder name takes an underscore, never a hyphen (MDN, WebExtensions
 Internationalization), and every placeholder block is carried over from en.
 """
@@ -16,6 +17,7 @@ DRAFTS = ROOT / "Support/i18n/drafts"
 BRIEF = ROOT / "Support/i18n/brief.json"
 CATALOG = ROOT / "App/Localizable.xcstrings"
 LOCALES = ROOT / "Extension/Resources/_locales"
+STORE = ROOT / "Support/i18n/store"
 
 # App Store shortcode -> the folder name the extension uses.
 EXT_FOLDER = {
@@ -62,7 +64,9 @@ def main(only):
                 app_count += 1
             else:
                 out = messages.setdefault(spec["en_key"], {})
-                out["message"] = value
+                # Drafts write a count as %lld; WebExtensions name it $COUNT$ and
+                # bind it to substitution $1 through the placeholders block.
+                out["message"] = value.replace("%lld", "$COUNT$")
                 # description and placeholders stay as en wrote them
         ext_count = sum(1 for i, s in brief.items() if s["surface"] == "extension" and i in draft)
 
@@ -75,6 +79,20 @@ def main(only):
 
     CATALOG.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
     print(f"catalog: {len(catalog['strings'])} keys")
+    merge_store()
+
+
+def merge_store():
+    """Fold Support/i18n/store/<ASC code>.json into Support/AppStore/locales.json."""
+    path = ROOT / "Support/AppStore/locales.json"
+    listing = json.loads(path.read_text())
+    for entry in listing["locales"]:
+        source = STORE / f"{entry['code']}.json"
+        if source.exists():
+            entry["copy"] = json.loads(source.read_text())
+    path.write_text(json.dumps(listing, ensure_ascii=False, indent=2) + "\n")
+    have = sum(1 for e in listing["locales"] if "copy" in e)
+    print(f"store copy: {have}/{len(listing['locales'])} locales")
 
 
 if __name__ == "__main__":

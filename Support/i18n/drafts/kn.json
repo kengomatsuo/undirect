@@ -1,0 +1,481 @@
+{
+  "locale": "kn",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಆನ್ ಆಗಿಲ್ಲ",
+      "back": "Extension is not on"
+    },
+    "app.setup.title_failed": {
+      "s": "ಸ್ಥಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಲಾಗಲಿಲ್ಲ",
+      "back": "Status could not be checked"
+    },
+    "app.setup.detail_default": {
+      "s": "ರಕ್ಷಿತ ಸೈಟ್‌ಗಳು ಇನ್ನು ನಿಮ್ಮ ಟ್ಯಾಪ್‌ಗಳನ್ನು ಕದಿಯಲಾರವು.",
+      "back": "Protected sites can no longer steal your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "ಈ ಬಾರಿ Safari ಉತ್ತರಿಸಲಿಲ್ಲ. ಎಕ್ಸ್‌ಟೆನ್ಶನ್ ಆನ್ ಮಾಡಿದರೆ ಆ್ಯಪ್ ತಾನೇ ಗುರುತಿಸುತ್ತದೆ.",
+      "back": "Safari did not answer this time; if you turn it on the app notices itself"
+    },
+    "app.setup.open_button": {
+      "s": "Safari ಎಕ್ಸ್‌ಟೆನ್ಶನ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Undirect ಗೆ ಸ್ವಾಗತ",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "ಅದೃಶ್ಯ ಪದರಗಳು",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "ಪಾರದರ್ಶಕ ಪದರವು ಪುಟವನ್ನು ಮುಚ್ಚಿ ಬೇರೆಯದಕ್ಕೆ ಮಾಡಿದ ಟ್ಯಾಪ್ ಅನ್ನು ಹಿಡಿಯಬಹುದು.",
+      "back": "A transparent layer can cover the page and catch a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "ಬದಲಾದ ಲಿಂಕ್‌ಗಳು",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "ಕೆಲವು ಪುಟಗಳು ಒತ್ತುವುದು ಮತ್ತು ಬಿಡುವುದರ ನಡುವೆ ಲಿಂಕ್‌ನ ಗುರಿಯನ್ನು ಬದಲಿಸುತ್ತವೆ.",
+      "back": "Some pages change a link's target between pressing and releasing"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "ಕೇಳದ ವಿಂಡೋಗಳು",
+      "back": "Windows not asked for"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "ರಕ್ಷಣೆ ಆನ್ ಇದ್ದಾಗ ಹೊಸ ಟ್ಯಾಬ್ ನೀವು ಟ್ಯಾಪ್ ಮಾಡಿದ ಕಡೆಗೆ ಮಾತ್ರ ತೆರೆಯುತ್ತದೆ.",
+      "back": "With protection on a new tab opens only where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "ಪ್ರತಿ ಗಮ್ಯಸ್ಥಾನ",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "ಪ್ರತಿ ಗಮ್ಯಸ್ಥಾನಕ್ಕೂ ಒಂದು ಸಾಲು ಇರುತ್ತದೆ. ಒಂದು ಸೈಟ್‌ನಲ್ಲಿ ಅಥವಾ ಎಲ್ಲೆಡೆ ಅನುಮತಿಸಿ ಅಥವಾ ನಿರ್ಬಂಧಿಸಿ.",
+      "back": "Each destination has a row; allow or block on one site or everywhere"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "ಒಂದು ಬಾರಿಗೆ ಒಂದು ಸೈಟ್",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "ಸೈಟ್‌ನಲ್ಲಿ Safari ಟೂಲ್‌ಬಾರ್‌ನ Undirect ಬಟನ್ ಒತ್ತಿದರೆ ಅಲ್ಲಿ ರಕ್ಷಣೆ ಆನ್ ಆಗುತ್ತದೆ.",
+      "back": "On a site pressing Undirect's button in Safari's toolbar turns protection on there"
+    },
+    "app.nav.guarded_sites": {
+      "s": "ರಕ್ಷಿತ ಸೈಟ್‌ಗಳು",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "ಎಲ್ಲೆಡೆ",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "ಸೈಟ್ ಪ್ರಕಾರ",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "ಎಕ್ಸ್‌ಟೆನ್ಶನ್‌ನಿಂದ ಇನ್ನೂ ಏನೂ ಬಂದಿಲ್ಲ",
+      "back": "Nothing from the extension yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Safari ಯಲ್ಲಿ ಯಾವುದೇ ಪುಟ ತೆರೆಯಿರಿ, ಪಟ್ಟಿ ತಾನೇ ತುಂಬುತ್ತದೆ.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "ನಿಯಮಗಳಿಲ್ಲ",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "ನೀವು ಅನುಮತಿಸಿದ ಅಥವಾ ನಿರ್ಬಂಧಿಸಿದ ನಂತರವೇ ಗಮ್ಯಸ್ಥಾನ ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ.",
+      "back": "A destination appears here only after you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "ಒಟ್ಟು ತಡೆದ ಪ್ರಯತ್ನಗಳು: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "ನಿರ್ಬಂಧಿತ",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "ಅನುಮತಿಸಲಾಗಿದೆ",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "ಅನುಮತಿಸಿ",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "ನಿರ್ಬಂಧಿಸಿ",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "ಈ ಗಮ್ಯಸ್ಥಾನವನ್ನು ಅನುಮತಿಸಿ ಅಥವಾ ನಿರ್ಬಂಧಿಸಿ",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "ಡೀಫಾಲ್ಟ್ ಬಳಸಿ",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "ಇನ್ನೂ ರಕ್ಷಿತ ಸೈಟ್‌ಗಳಿಲ್ಲ",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "ನಿಮ್ಮನ್ನು ಬೇರೆಡೆಗೆ ಕಳುಹಿಸುವ ಸೈಟ್‌ನಲ್ಲಿ Safari ಟೂಲ್‌ಬಾರ್‌ನ Undirect ಬಟನ್ ಒತ್ತಿ.",
+      "back": "On a site that sends you elsewhere press Undirect's button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "ಸೈಟ್‌ಗಳು Safari ಯ Undirect ಬಟನ್‌ನಿಂದ ಸೇರುತ್ತವೆ. ಇಲ್ಲಿ ತೆಗೆದುಹಾಕಲು ಮಾತ್ರ ಸಾಧ್ಯ.",
+      "back": "Sites are added by Safari's button; here only removal is possible"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "ರಕ್ಷಿತ",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "ನಿಲ್ಲಿಸಿ",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "ಈ ಸೈಟ್‌ನ ರಕ್ಷಣೆಯನ್ನು ಆಫ್ ಮಾಡುತ್ತದೆ",
+      "back": "Turns off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "ರಕ್ಷಣೆ",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "ಆನ್",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "ಆಫ್",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "ರಕ್ಷಣೆ ಎಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "ನಾನು ಆನ್ ಮಾಡಿದ ಸೈಟ್‌ಗಳು",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "ಎಲ್ಲ ಸೈಟ್‌ಗಳು",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "ಪುಟದಲ್ಲಿ ಸೂಚನೆ",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "ನಿಯಮವಿಲ್ಲದ ಗಮ್ಯಸ್ಥಾನಗಳು",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "ನಿರ್ಬಂಧಿಸಿ",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "ಅನುಮತಿಸಿ",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "ಪುಟಗಳು ನಿಮ್ಮ ಕ್ಲಿಕ್ ಬಳಸಿ ನೀವು ಕೇಳದ ಜಾಗಕ್ಕೆ ತೆರೆಯುವುದನ್ನು ಅಥವಾ ಕಳುಹಿಸುವುದನ್ನು ತಡೆಯುತ್ತದೆ.",
+      "back": "Stops pages using your click to open or send to somewhere you did not ask"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ರಕ್ಷಣೆ ಆನ್ ಆಗಿದೆ",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "ರಕ್ಷಣೆ ಆಫ್; ಆನ್ ಮಾಡಲು ಒತ್ತಿ",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "ಇಲ್ಲಿ ರಕ್ಷಿಸಲು ಏನೂ ಇಲ್ಲ",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "ವೆಬ್‌ಸೈಟ್ ತೆರೆದು ಇಲ್ಲಿ ಒತ್ತಿ.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "ಈ ಸೈಟ್ ಅನ್ನು ರಕ್ಷಿಸಿ",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "ರಕ್ಷಿಸಲು ಯಾವುದೇ ಪುಟವಿಲ್ಲ.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಪ್ರಕಾರ ಈಗಾಗಲೇ ಎಲ್ಲೆಡೆ ಆನ್ ಆಗಿದೆ.",
+      "back": "Per settings already on everywhere"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಆಫ್ ಆಗಿದೆ.",
+      "back": "Off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "ಆನ್. ಆಫ್ ಮಾಡಿದರೆ ಪುಟ ಮರುಲೋಡ್ ಆಗುತ್ತದೆ.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "ಆಫ್. ಆನ್ ಮಾಡಿದರೆ ಪುಟ ಮರುಲೋಡ್ ಆಗುತ್ತದೆ.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "ಈ ಪುಟ",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "ಏನೂ ದಾಖಲಾಗುತ್ತಿಲ್ಲ: ಇಲ್ಲಿ ರಕ್ಷಣೆ ಆಫ್ ಆಗಿದೆ.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "ಇದುವರೆಗೆ ಈ ಪುಟದಿಂದ ಹೊರಹೋಗಲು ಯಾವುದೂ ಪ್ರಯತ್ನಿಸಿಲ್ಲ.",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "ತೋರಿಸಲು ಇನ್ನೂ ಏನೂ ಇಲ್ಲ.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "ತಡೆದಿದ್ದು: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "ತಡೆದಿದ್ದು: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "ದಾಖಲಾದ ಪ್ರಯತ್ನಗಳು: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "ದಾಖಲಾದ ಪ್ರಯತ್ನಗಳು: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "ಪ್ರಯತ್ನಗಳು: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "ಪ್ರಯತ್ನಗಳು: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "ಪರಿಹಾರ",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "ನಿರ್ಬಂಧಿತ",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "ಅನುಮತಿಸಲಾಗಿದೆ",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "ತೆಗೆಯಲಾಗಿದೆ",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "ಈ ಸೈಟ್‌ನಲ್ಲಿ",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "ಎಲ್ಲೆಡೆ",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "ಡೀಫಾಲ್ಟ್ ಪ್ರಕಾರ",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ಅನುಮತಿಸಿ",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "ಎಲ್ಲೆಡೆ ಅನುಮತಿಸಿ",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ನಿರ್ಬಂಧಿಸಿ",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "ಎಲ್ಲೆಡೆ ನಿರ್ಬಂಧಿಸಿ",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "ನಿಯಮವಿಲ್ಲದ ಗಮ್ಯಸ್ಥಾನಗಳು",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "ನಿರ್ಬಂಧಿಸಿ",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "ಅನುಮತಿಸಿ",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "ಈ ಪುಟದ ಸ್ವಂತ ಭದ್ರತಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಒಂದು ಭಾಗವನ್ನು ತಡೆಯುತ್ತವೆ, ಹಾಗಾಗಿ ಇಲ್ಲಿ ರಕ್ಷಣೆ ಭಾಗಶಃ ಮಾತ್ರ.",
+      "back": "This page's own security settings block part of the script so protection is partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "ಅದೃಶ್ಯ ಕ್ಲಿಕ್ ಬಲೆ",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "ಪಾರದರ್ಶಕ ಪದರ",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "ನಕಲಿ ಕ್ಲಿಕ್",
+      "back": "Fake click"
+    },
+    "ext.kind.window_open": {
+      "s": "ಪಾಪ್‌ಅಪ್ ವಿಂಡೋ",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "ಮರೆಮಾಡಿದ ಫಾರ್ಮ್",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "ಕ್ಲಿಕ್ ನಡುವೆ ಬದಲಾದ ಲಿಂಕ್",
+      "back": "Link changed mid-click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "ತಿರುಗಿಸಿದ ಹಿಂತಿರುಗುವಿಕೆ",
+      "back": "Diverted going back"
+    },
+    "ext.kind.redirect": {
+      "s": "ಕ್ಲಿಕ್ ಕಸಿದುಕೊಂಡ ರೀಡೈರೆಕ್ಟ್",
+      "back": "Redirect that snatched the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "ಹಿನ್ನೆಲೆಯಲ್ಲಿ ತೆರೆದ ಟ್ಯಾಬ್",
+      "back": "Tab opened in the background"
+    },
+    "ext.kind.network_rule": {
+      "s": "ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ತಡೆಯಲಾಗಿದೆ",
+      "back": "Stopped at the network"
+    },
+    "ext.reason.way_back": {
+      "s": "ಇದರ ವಿಳಾಸದಲ್ಲಿ ಈ ಸೈಟ್‌ಗೆ ಹಿಂದಿರುಗುವ ದಾರಿ ಇತ್ತು.",
+      "back": "Its address had a way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "ನಿರ್ದಿಷ್ಟ ಗಾತ್ರದ ವಿಂಡೋ.",
+      "back": "Window of a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "ನಿಮ್ಮ ಕ್ಲಿಕ್ ಕಸಿದುಕೊಂಡಿತು.",
+      "back": "Snatched your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "ನಿಯಮವಿಲ್ಲ; ಅನುಮತಿಸಲಾಗಿದೆ.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "ಸೈಟ್ ತಾನೇ ತೆರೆಯಿತು.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "ನಿಯಮಗಳು",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "ಹಿಂದೆ",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "ಎಲ್ಲೆಡೆ",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "ಸೈಟ್ ಪ್ರಕಾರ",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "ನಿಯಮಗಳಿಲ್ಲ",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "ಅನುಮತಿಸಿ",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "ನಿರ್ಬಂಧಿಸಿ",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "ನಿಯಮ ತೆಗೆಯಿರಿ",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "ರಕ್ಷಣೆ",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "ಆನ್",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "ಆಫ್",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "ರಕ್ಷಣೆ ಎಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "ನಾನು ಆನ್ ಮಾಡಿದ ಸೈಟ್‌ಗಳು",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "ಎಲ್ಲ ಸೈಟ್‌ಗಳು",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "ಪುಟದಲ್ಲಿ ಸೂಚನೆ",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ",
+      "back": "Report a problem"
+    }
+  }
+}

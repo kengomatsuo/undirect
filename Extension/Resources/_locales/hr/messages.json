@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "Sprječava stranice da vaš klik iskoriste za otvaranje ili preusmjeravanje na mjesto koje niste tražili.",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "Zaštita",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "Uključeno",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "Isključeno",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "Zaštiti ovo mjesto",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "Undirect radi na web-mjestima",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "Otvorite web-mjesto pa pritisnite ovdje.",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "Nema stranice za zaštitu.",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "Već radi na svim mjestima, prema postavkama.",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "Isključena je u postavkama.",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "Gdje zaštita djeluje",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "Mjesta koja uključim",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "Sva mjesta",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "Ništa se ne bilježi: zaštita je ovdje isključena.",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "Ova stranica",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "Dosad ništa nije pokušalo izaći iz ove stranice.",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "Zasad nema ničega za prikaz.",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "Zaustavljeno: $COUNT$",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "Zaustavljeno: $COUNT$",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "Zabilježeno pokušaja: $COUNT$",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "Zabilježeno pokušaja: $COUNT$",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "Pokušaja: $COUNT$",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "Pokušaja: $COUNT$",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "Ispravak",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "Blokirano",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "Dopušteno",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "na ovom mjestu",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "svugdje",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "prema zadanom",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "Dopusti na ovom mjestu",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "Dopusti svugdje",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "Blokiraj na ovom mjestu",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "Blokiraj svugdje",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "Odredišta bez pravila",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "Blokiraj",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "Dopusti",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "Sigurnosna pravila ove stranice blokiraju dio skripte; zaštita je ovdje djelomična.",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "Nevidljiva zamka za klik",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "Prozirni sloj",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "Simulirani klik",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "Skočni prozor",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "Skriveni obrazac",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "Poveznica zamijenjena usred klika",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "Preusmjeren povratak",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "Preusmjeravanje koje preuzima klik",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "Kartica otvorena u pozadini",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "Blokirano na mreži",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "Njegova adresa sadrži povratak na ovo mjesto.",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "Prozor zadane veličine.",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "Preuzelo vaš klik.",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "Nema pravila; dopušteno.",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "Otvorilo ga je samo mjesto.",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "Pravila",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "Natrag",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "Svugdje",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "Po mjestu",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "Nema pravila",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "Dopusti",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "Blokiraj",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "Ukloni pravilo",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "Postavke",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "Obavijest na stranici",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "Prijavi problem",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "Zaštita isključena; pritisnite za uključivanje",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "Ovdje nema što štititi",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "Zaštita je uključena na ovom mjestu",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "Uključeno. Isključivanje ponovno učitava stranicu.",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "Isključeno. Uključivanje ponovno učitava stranicu.",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "Uklonjeno",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "locale": "ca",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Extensió no activada",
+      "back": "Extension not activated"
+    },
+    "app.setup.title_failed": {
+      "s": "No s'ha pogut comprovar",
+      "back": "Could not check"
+    },
+    "app.setup.detail_default": {
+      "s": "Un lloc protegit ja no et pot prendre els tocs.",
+      "back": "A protected site can no longer take your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "Aquesta vegada Safari no ha respost. Si actives l'extensió, l'app ho notarà soleta.",
+      "back": "Safari did not answer this time; if you enable it the app will notice by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Obre les extensions de Safari",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Et donem la benvinguda a l'Undirect",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Capes invisibles",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Una capa transparent pot cobrir la pàgina i quedar-se amb el teu toc.",
+      "back": "A transparent layer can cover the page and keep your tap"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Enllaços canviats",
+      "back": "Changed links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Algunes pàgines canvien el destí de l'enllaç entre que prems i que deixes anar.",
+      "back": "Some pages change the link's destination between pressing and releasing"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Finestres que ningú ha demanat",
+      "back": "Windows nobody asked for"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Amb la protecció activa, una pestanya nova només s'obre allà on has tocat.",
+      "back": "With protection on, a new tab opens only where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Tots els destins",
+      "back": "All destinations"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Cada destí queda en una llista: el pots permetre o bloquejar, en un lloc o en tots.",
+      "back": "Each destination is on a list: allow or block on one site or all"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Lloc per lloc",
+      "back": "Site by site"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "En un lloc, prem el botó de l'Undirect a la barra d'eines del Safari per activar-lo.",
+      "back": "On a site press the Undirect button in Safari's toolbar to activate it"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Llocs protegits",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Configuració",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "A tot arreu",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Per lloc",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Encara no hi ha notícies de l'extensió",
+      "back": "No news from the extension yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Obre qualsevol pàgina al Safari i la llista s'omplirà sola.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Cap regla",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Un destí apareix aquí quan el permets o el bloquejes.",
+      "back": "A destination appears here when you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Intents aturats en total: %lld",
+      "back": "Attempts stopped in total: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Bloquejat",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Permès",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Permet",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Bloqueja",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Permet o bloqueja aquest destí",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Usa el valor per defecte",
+      "back": "Use the default"
+    },
+    "app.watched.empty.title": {
+      "s": "Encara no hi ha llocs protegits",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "En un lloc que et redirigeix, prem el botó de l'Undirect a la barra d'eines del Safari.",
+      "back": "On a site that redirects you, press the Undirect button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "Els llocs s'afegeixen des del botó de l'Undirect al Safari; aquí només els pots treure.",
+      "back": "Sites are added from Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Protegit",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Atura",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Desactiva la protecció en aquest lloc",
+      "back": "Turns off protection on this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Protecció",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Activada",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Desactivada",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "On actua la protecció",
+      "back": "Where protection acts"
+    },
+    "app.settings.mode_watched": {
+      "s": "Els llocs que activo",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Tots els llocs",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Avís a la pàgina",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Destins sense regla",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Bloqueja",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Permet",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Evita que les pàgines facin servir el teu toc per obrir o redirigir a un lloc que no has demanat.",
+      "back": "Prevents pages using your tap to open or redirect somewhere not asked"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Protecció activa en aquest lloc",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Protecció desactivada; prem per activar-la",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Aquí no hi ha res a protegir",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "L'Undirect funciona en llocs web",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Obre un lloc web i prem aquí.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Protegeix aquest lloc",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "No hi ha cap pàgina per protegir.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Ja és activa a tots els llocs, per la configuració.",
+      "back": "Already on everywhere per settings"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Està desactivada a la configuració.",
+      "back": "Off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Activa. Si la desactives, es recarrega la pàgina.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Desactivada. Si l'actives, es recarrega la pàgina.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Aquesta pàgina",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "No es registra res: la protecció està desactivada aquí.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "De moment res no ha intentat sortir d'aquesta pàgina.",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "Encara no hi ha res per mostrar.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld aturat",
+      "back": "stopped"
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld aturats",
+      "back": "stopped"
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld intent registrat",
+      "back": "attempt recorded"
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld intents registrats",
+      "back": "attempts recorded"
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld cop",
+      "back": "time"
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld cops",
+      "back": "times"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Correcció",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Bloquejat",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Permès",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Retirat",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "en aquest lloc",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "a tot arreu",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "per defecte",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Permet en aquest lloc",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Permet a tot arreu",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Bloqueja en aquest lloc",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Bloqueja a tot arreu",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Destins sense regla",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Bloqueja",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Permet",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "La política de seguretat d'aquesta pàgina bloqueja part de l'script; aquí la protecció és parcial.",
+      "back": "This page's security policy blocks part of the script; protection partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Parany de tocs invisible",
+      "back": "Invisible tap trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Capa transparent",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Toc simulat",
+      "back": "Simulated tap"
+    },
+    "ext.kind.window_open": {
+      "s": "Finestra emergent",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Formulari ocult",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Enllaç canviat en ple toc",
+      "back": "Link changed mid-tap"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Retrocés desviat",
+      "back": "Back diverted"
+    },
+    "ext.kind.redirect": {
+      "s": "Redirecció que s'endú el toc",
+      "back": "Redirect that takes the tap"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Pestanya oberta per darrere",
+      "back": "Tab opened behind"
+    },
+    "ext.kind.network_rule": {
+      "s": "Bloquejat a la xarxa",
+      "back": "Blocked at the network"
+    },
+    "ext.reason.way_back": {
+      "s": "La seva adreça incloïa el retorn a aquest lloc.",
+      "back": "Its address included the return to this site"
+    },
+    "ext.reason.sized": {
+      "s": "Finestra amb mida definida.",
+      "back": "Window with a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "S'ha endut el teu toc.",
+      "back": "Took your tap"
+    },
+    "ext.reason.default_allow": {
+      "s": "Sense regla; s'ha permès.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "L'ha oberta el mateix lloc.",
+      "back": "Opened by the site itself"
+    },
+    "ext.popup.rules_link": {
+      "s": "Regles",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Enrere",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "A tot arreu",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Per lloc",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "Cap regla",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Permet",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Bloqueja",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Treu la regla",
+      "back": "Remove the rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Configuració",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Protecció",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Activada",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Desactivada",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "On actua la protecció",
+      "back": "Where protection acts"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Els llocs que activo",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Tots els llocs",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Avís a la pàgina",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "Informa d'un problema",
+      "back": "Report a problem"
+    }
+  }
+}

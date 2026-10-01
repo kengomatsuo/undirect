@@ -1,0 +1,481 @@
+{
+  "locale": "uk",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Розширення не ввімкнено",
+      "back": "Extension not turned on"
+    },
+    "app.setup.title_failed": {
+      "s": "Не вдалося перевірити стан",
+      "back": "Could not check the status"
+    },
+    "app.setup.detail_default": {
+      "s": "Захищені сайти більше не можуть перехопити ваші дотики.",
+      "back": "Protected sites can no longer intercept your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "Цього разу Safari не відповів. Якщо ввімкнути розширення, застосунок помітить це сам.",
+      "back": "Safari did not answer this time; if you turn it on the app notices itself"
+    },
+    "app.setup.open_button": {
+      "s": "Відкрити розширення Safari",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Вітаємо в Undirect",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Невидимі шари",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Прозорий шар може вкрити сторінку й перехопити дотик, призначений для іншого.",
+      "back": "A transparent layer can cover the page and intercept a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Підмінені посилання",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Деякі сторінки змінюють адресу посилання між натисканням і відпусканням.",
+      "back": "Some pages change a link's address between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Небажані вікна",
+      "back": "Unwanted windows"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Коли захист увімкнено, нова вкладка відкривається лише там, де ви торкнулися.",
+      "back": "With protection on a new tab only opens where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Кожен пункт призначення",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Кожен пункт призначення має свій рядок: його можна дозволити або заблокувати на одному сайті чи на всіх.",
+      "back": "Each destination has its own row: allow or block on one site or all"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Сайт за сайтом",
+      "back": "Site by site"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "На сайті натисніть кнопку Undirect на панелі інструментів Safari, щоб його захистити.",
+      "back": "On a site press the Undirect button on Safari's toolbar to protect it"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Захищені сайти",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Параметри",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Усюди",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "За сайтом",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Від розширення ще нічого немає",
+      "back": "Nothing from the extension yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Відкрийте будь-яку сторінку в Safari, і список заповниться сам.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Правил немає",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Пункт призначення з'являється тут, коли ви дозволите або заблокуєте його.",
+      "back": "A destination appears here when you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Усього зупинено спроб: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Заблоковано",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Дозволено",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Дозволити",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Заблокувати",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Дозволити або заблокувати цей пункт призначення",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Використати типове",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "Захищених сайтів ще немає",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "На сайті, що вас перенаправляє, натисніть кнопку Undirect на панелі інструментів Safari.",
+      "back": "On a site that redirects you press Undirect's button on Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "Сайти додаються кнопкою Undirect у Safari; тут їх можна лише вилучити.",
+      "back": "Sites are added by Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Захищено",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Зупинити",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Вимикає захист для цього сайту",
+      "back": "Turns off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Захист",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Увімкнено",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Вимкнено",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Де працює захист",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "Сайти, які я ввімкну",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Усі сайти",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Сповіщення на сторінці",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Пункти призначення без правила",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Блокувати",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Дозволяти",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Не дає сторінкам використати ваш клік, щоб відкрити чи перенаправити туди, куди ви не просили.",
+      "back": "Prevents pages from using your click to open or redirect where you did not ask"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Захист на цьому сайті ввімкнено",
+      "back": "Protection is on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Захист вимкнено; натисніть, щоб ввімкнути",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Тут нема чого захищати",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect працює на сайтах",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Відкрийте сайт і натисніть тут.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Захистити цей сайт",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Немає сторінки для захисту.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "За параметрами вже працює скрізь.",
+      "back": "Per settings already works everywhere"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "У параметрах вимкнено.",
+      "back": "Switched off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Увімкнено. Після вимкнення сторінка перезавантажиться.",
+      "back": "On; after turning off the page reloads"
+    },
+    "ext.popup.watch_off": {
+      "s": "Вимкнено. Після ввімкнення сторінка перезавантажиться.",
+      "back": "Off; after turning on the page reloads"
+    },
+    "ext.popup.page_heading": {
+      "s": "Ця сторінка",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "Нічого не записується: захист тут вимкнено.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Досі ніщо не намагалося вийти за межі цієї сторінки.",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "Поки що нема що показати.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Зупинено: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Зупинено: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "Записано спроб: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "Записано спроб: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "Спроб: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "Спроб: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Виправлення",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Заблоковано",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Дозволено",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Вилучено",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "на цьому сайті",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "усюди",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "за замовчуванням",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Дозволити на цьому сайті",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Дозволити всюди",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Заблокувати на цьому сайті",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Заблокувати всюди",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Пункти призначення без правила",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Блокувати",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Дозволяти",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Параметри безпеки цієї сторінки блокують частину скрипта, тому захист тут лише частковий.",
+      "back": "This page's security settings block part of the script so protection is only partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Невидима пастка для кліків",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Прозорий шар",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Імітований клік",
+      "back": "Simulated click"
+    },
+    "ext.kind.window_open": {
+      "s": "Спливне вікно",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Прихована форма",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Посилання змінено посеред кліку",
+      "back": "Link changed mid-click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Перенаправлене повернення",
+      "back": "Diverted back"
+    },
+    "ext.kind.redirect": {
+      "s": "Перенаправлення, що перехопило клік",
+      "back": "Redirect that intercepted the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Вкладка, відкрита у фоні",
+      "back": "Tab opened in the background"
+    },
+    "ext.kind.network_rule": {
+      "s": "Зупинено в мережі",
+      "back": "Stopped in the network"
+    },
+    "ext.reason.way_back": {
+      "s": "Його адреса містила шлях назад на цей сайт.",
+      "back": "Its address contained the way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "Вікно заданого розміру.",
+      "back": "Window of a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "Перехопило ваш клік.",
+      "back": "Intercepted your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "Правила немає; дозволено.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "Його відкрив сам сайт.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "Правила",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Назад",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Усюди",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "За сайтом",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "Правил немає",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Дозволити",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Заблокувати",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Вилучити правило",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Параметри",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Захист",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Увімкнено",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Вимкнено",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Де працює захист",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Сайти, які я ввімкну",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Усі сайти",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Сповіщення на сторінці",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "Повідомити про проблему",
+      "back": "Report a problem"
+    }
+  }
+}

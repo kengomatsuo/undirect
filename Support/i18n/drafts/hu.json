@@ -1,0 +1,481 @@
+{
+  "locale": "hu",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "A bővítmény nincs bekapcsolva",
+      "back": "The extension is not on"
+    },
+    "app.setup.title_failed": {
+      "s": "Az állapot nem ellenőrizhető",
+      "back": "Status cannot be checked"
+    },
+    "app.setup.detail_default": {
+      "s": "A védett oldalak már nem tudják elvenni a koppintásaidat.",
+      "back": "Protected sites can no longer take your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "A Safari ezúttal nem válaszolt. Ha bekapcsolod a bővítményt, az app magától észreveszi.",
+      "back": "Safari did not answer this time; if you switch it on the app notices by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Safari-bővítmények megnyitása",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Üdvözlünk az Undirectben",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Láthatatlan rétegek",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Egy átlátszó réteg ráfekhet az oldalra, és elfoghatja a máshová szánt koppintást.",
+      "back": "A transparent layer can lie on the page and intercept a tap meant elsewhere"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Kicserélt hivatkozások",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Egyes oldalak a lenyomás és az elengedés között megváltoztatják a hivatkozás célját.",
+      "back": "Some pages change a link's target between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Kéretlen ablakok",
+      "back": "Unrequested windows"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Bekapcsolt védelemnél új lap csak oda nyílik, ahová koppintottál.",
+      "back": "With protection on a new tab only opens where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Minden cél",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Minden cél külön sort kap, és egy oldalon vagy mindenhol engedélyezheted vagy letilthatod.",
+      "back": "Each destination gets its own row; allow or block on one site or everywhere"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Oldalanként",
+      "back": "Site by site"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Egy oldalon nyomd meg az Undirect gombját a Safari eszköztárán, és bekapcsol rá a védelem.",
+      "back": "On a site press Undirect's button on Safari's toolbar and protection turns on for it"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Védett oldalak",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Beállítások",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Mindenhol",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Oldalanként",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "A bővítmény még nem jelentkezett",
+      "back": "The extension has not reported yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Nyiss meg egy oldalt a Safariban, és a lista magától feltöltődik.",
+      "back": "Open a page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Nincsenek szabályok",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "A cél itt jelenik meg, miután engedélyezted vagy letiltottad.",
+      "back": "The destination appears here after you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Összesen megállított kísérletek: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Letiltva",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Engedélyezve",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Engedélyez",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Letilt",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "A cél engedélyezése vagy letiltása",
+      "back": "Allow or block the destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Alapértelmezett",
+      "back": "Default"
+    },
+    "app.watched.empty.title": {
+      "s": "Még nincs védett oldal",
+      "back": "No protected site yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Egy átirányító oldalon nyomd meg az Undirect gombját a Safari eszköztárán.",
+      "back": "On a redirecting site press Undirect's button on Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "Az oldalak a Safari Undirect gombjával kerülnek ide; itt csak eltávolítani lehet őket.",
+      "back": "Sites get here via Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Védett",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Leállít",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Kikapcsolja a védelmet ezen az oldalon",
+      "back": "Turns protection off on this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Védelem",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Be",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Ki",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Hol működik a védelem",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "Az általam bekapcsolt oldalak",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Minden oldal",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Értesítés az oldalon",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Szabály nélküli célok",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Letilt",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Engedélyez",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Megakadályozza, hogy az oldalak a kattintásodat felhasználva olyan helyre nyissanak vagy irányítsanak, amit nem kértél.",
+      "back": "Prevents pages using your click to open or redirect to a place you did not ask for"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "A védelem be van kapcsolva ezen az oldalon",
+      "back": "Protection is on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "A védelem ki van kapcsolva; nyomd meg a bekapcsoláshoz",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Itt nincs mit védeni",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Az Undirect weboldalakon működik",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Nyiss meg egy weboldalt, és nyomd meg itt.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Az oldal védelme",
+      "back": "Protection of this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Nincs védhető oldal.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "A Beállítások szerint már mindenhol működik.",
+      "back": "Per Settings already works everywhere"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "A Beállításokban ki van kapcsolva.",
+      "back": "Switched off in Settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Bekapcsolva. Kikapcsoláskor az oldal újratöltődik.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Kikapcsolva. Bekapcsoláskor az oldal újratöltődik.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Ez az oldal",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "Semmi nincs rögzítve: itt ki van kapcsolva a védelem.",
+      "back": "Nothing recorded: protection is off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Eddig semmi nem próbált kilépni erről az oldalról.",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "Egyelőre nincs mit mutatni.",
+      "back": "Nothing to show for now"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Megállítva: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Megállítva: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "Rögzített kísérletek: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "Rögzített kísérletek: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "Kísérletek: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "Kísérletek: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Javítás",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Letiltva",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Engedélyezve",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Eltávolítva",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "ezen az oldalon",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "mindenhol",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "alapértelmezés szerint",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Engedélyezés ezen az oldalon",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Engedélyezés mindenhol",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Letiltás ezen az oldalon",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Letiltás mindenhol",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Szabály nélküli célok",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Letilt",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Engedélyez",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Az oldal saját biztonsági beállításai blokkolják a szkript egy részét, ezért a védelem itt csak részleges.",
+      "back": "The page's own security settings block part of the script so protection is partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Láthatatlan kattintáscsapda",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Átlátszó réteg",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Szimulált kattintás",
+      "back": "Simulated click"
+    },
+    "ext.kind.window_open": {
+      "s": "Felugró ablak",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Rejtett űrlap",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Menet közben átírt hivatkozás",
+      "back": "Link rewritten mid-press"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Eltérített visszalépés",
+      "back": "Diverted back"
+    },
+    "ext.kind.redirect": {
+      "s": "Átirányítás, amely elvitte a kattintást",
+      "back": "Redirect that took the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Háttérben megnyitott lap",
+      "back": "Tab opened in background"
+    },
+    "ext.kind.network_rule": {
+      "s": "Hálózati szinten megállítva",
+      "back": "Stopped at network level"
+    },
+    "ext.reason.way_back": {
+      "s": "A címe tartalmazta az utat vissza erre az oldalra.",
+      "back": "Its address contained the way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "Meghatározott méretű ablak.",
+      "back": "Window of a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "Elvitte a kattintásodat.",
+      "back": "Took your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "Nincs szabály; engedélyezve.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "Maga az oldal nyitotta.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "Szabályok",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Vissza",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Mindenhol",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Oldalanként",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "Nincs szabály",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Engedélyez",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Letilt",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Szabály törlése",
+      "back": "Delete rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Beállítások",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Védelem",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Be",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Ki",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Hol működik a védelem",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Az általam bekapcsolt oldalak",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Minden oldal",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Értesítés az oldalon",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "Probléma jelentése",
+      "back": "Report a problem"
+    }
+  }
+}

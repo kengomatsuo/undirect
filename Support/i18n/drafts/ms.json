@@ -1,0 +1,481 @@
+{
+  "locale": "ms",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Sambungan belum dihidupkan",
+      "back": "Extension not switched on"
+    },
+    "app.setup.title_failed": {
+      "s": "Status tidak dapat disemak",
+      "back": "Status cannot be checked"
+    },
+    "app.setup.detail_default": {
+      "s": "Laman web yang dilindungi tidak lagi dapat merampas ketikan anda.",
+      "back": "Protected sites can no longer seize your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari tidak menjawab kali ini. Jika anda menghidupkan sambungan itu, app akan menyedarinya sendiri.",
+      "back": "Safari did not answer this time; if you switch it on the app notices by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Buka sambungan Safari",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Selamat datang ke Undirect",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Lapisan tidak kelihatan",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Lapisan lutsinar boleh menutupi halaman dan menangkap ketikan yang ditujukan kepada benda lain.",
+      "back": "A transparent layer can cover the page and catch a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Pautan ditukar",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Sesetengah halaman menukar destinasi pautan antara tekanan dan lepasan.",
+      "back": "Some pages change a link's destination between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Tetingkap tanpa diminta",
+      "back": "Windows not requested"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Apabila perlindungan hidup, tab baharu hanya dibuka di tempat yang anda ketik.",
+      "back": "When protection is on a new tab only opens where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Setiap destinasi",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Setiap destinasi mendapat barisnya sendiri. Anda boleh membenarkan atau menyekatnya pada satu laman atau semua laman.",
+      "back": "Each destination gets its own row; allow or block on one site or all"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Satu laman pada satu masa",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Pada sesuatu laman, tekan butang Undirect pada bar alat Safari untuk melindunginya.",
+      "back": "On a site, press the Undirect button on Safari's toolbar to protect it"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Laman dilindungi",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Tetapan",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Di mana-mana",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Mengikut laman",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Belum ada khabar daripada sambungan",
+      "back": "No word yet from the extension"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Buka mana-mana halaman dalam Safari dan senarai akan terisi sendiri.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Tiada peraturan",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Destinasi muncul di sini selepas anda membenarkan atau menyekatnya.",
+      "back": "A destination appears here after you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Jumlah percubaan dihentikan: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Disekat",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Dibenarkan",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Benarkan",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Sekat",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Benarkan atau sekat destinasi ini",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Guna lalai",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "Belum ada laman dilindungi",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Pada laman yang mengubah hala anda, tekan butang Undirect pada bar alat Safari.",
+      "back": "On a site that redirects you, press Undirect's button on Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "Laman ditambah daripada butang Undirect dalam Safari. Di sini anda hanya boleh mengalih keluarnya.",
+      "back": "Sites are added from Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Dilindungi",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Henti",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Matikan perlindungan untuk laman ini",
+      "back": "Turn off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Perlindungan",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Hidup",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Mati",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Di mana perlindungan berfungsi",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "Laman yang saya hidupkan",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Semua laman",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Notis dalam halaman",
+      "back": "Notice in the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Destinasi tanpa peraturan",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Sekat",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Benarkan",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Menghalang halaman daripada menggunakan klik anda untuk membuka atau mengubah hala ke tempat yang anda tidak minta.",
+      "back": "Prevents pages using your click to open or redirect to a place you did not ask for"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Perlindungan hidup pada laman ini",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Perlindungan mati; tekan untuk menghidupkan",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Tiada apa untuk dilindungi di sini",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect berfungsi pada laman web",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Buka laman web, kemudian tekan di sini.",
+      "back": "Open a website, then press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Lindungi laman ini",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Tiada halaman untuk dilindungi.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Sudah hidup di semua laman menurut Tetapan.",
+      "back": "Already on everywhere per Settings"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Dimatikan dalam Tetapan.",
+      "back": "Off in Settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Hidup. Mematikannya akan memuat semula halaman.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Mati. Menghidupkannya akan memuat semula halaman.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Halaman ini",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "Tiada apa direkodkan: perlindungan mati di sini.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Setakat ini tiada apa cuba keluar daripada halaman ini.",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "Belum ada apa untuk dipaparkan.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Dihentikan: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Dihentikan: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "Percubaan direkodkan: %lld",
+      "back": "Attempts recorded: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "Percubaan direkodkan: %lld",
+      "back": "Attempts recorded: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "Percubaan: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "Percubaan: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Pembetulan",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Disekat",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Dibenarkan",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Dialih keluar",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "pada laman ini",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "di mana-mana",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "secara lalai",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Benarkan pada laman ini",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Benarkan di mana-mana",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Sekat pada laman ini",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Sekat di mana-mana",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Destinasi tanpa peraturan",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Sekat",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Benarkan",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Tetapan keselamatan halaman ini menyekat sebahagian skrip, jadi perlindungan di sini hanya separa.",
+      "back": "This page's security settings block part of the script so protection is partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Perangkap klik tidak kelihatan",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Lapisan lutsinar",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Klik tiruan",
+      "back": "Simulated click"
+    },
+    "ext.kind.window_open": {
+      "s": "Tetingkap timbul",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Borang tersembunyi",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Pautan ditukar pada tengah klik",
+      "back": "Link swapped mid-click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Kembali dibelokkan",
+      "back": "Back diverted"
+    },
+    "ext.kind.redirect": {
+      "s": "Ubah hala yang mengambil klik",
+      "back": "Redirect that took the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Tab dibuka di latar belakang",
+      "back": "Tab opened in the background"
+    },
+    "ext.kind.network_rule": {
+      "s": "Disekat pada rangkaian",
+      "back": "Blocked on the network"
+    },
+    "ext.reason.way_back": {
+      "s": "Alamatnya mengandungi jalan kembali ke laman ini.",
+      "back": "Its address contained the way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "Tetingkap bersaiz tertentu.",
+      "back": "Window of a certain size"
+    },
+    "ext.reason.took_press": {
+      "s": "Mengambil klik anda.",
+      "back": "Took your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "Tiada peraturan; dibenarkan.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "Dibuka oleh laman itu sendiri.",
+      "back": "Opened by the site itself"
+    },
+    "ext.popup.rules_link": {
+      "s": "Peraturan",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Kembali",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Di mana-mana",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Mengikut laman",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "Tiada peraturan",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Benarkan",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Sekat",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Alih keluar peraturan",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Tetapan",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Perlindungan",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Hidup",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Mati",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Di mana perlindungan berfungsi",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Laman yang saya hidupkan",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Semua laman",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Notis dalam halaman",
+      "back": "Notice in the page"
+    },
+    "ext.action.report": {
+      "s": "Laporkan masalah",
+      "back": "Report a problem"
+    }
+  }
+}

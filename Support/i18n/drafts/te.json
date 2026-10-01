@@ -1,0 +1,481 @@
+{
+  "locale": "te",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "ఎక్స్‌టెన్షన్ ఆన్‌లో లేదు",
+      "back": "Extension is not on"
+    },
+    "app.setup.title_failed": {
+      "s": "స్థితిని తనిఖీ చేయలేకపోయాం",
+      "back": "Could not check the status"
+    },
+    "app.setup.detail_default": {
+      "s": "రక్షిత సైట్‌లు ఇకపై మీ ట్యాప్‌లను దొంగిలించలేవు.",
+      "back": "Protected sites can no longer steal your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "ఈసారి Safari స్పందించలేదు. ఎక్స్‌టెన్షన్‌ను ఆన్ చేస్తే యాప్ తనంతట తానే గుర్తిస్తుంది.",
+      "back": "Safari did not respond this time; if you turn it on the app will notice by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Safari ఎక్స్‌టెన్షన్‌లను తెరవండి",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Undirect కు స్వాగతం",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "కనిపించని పొరలు",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "పారదర్శకమైన పొర పేజీని కప్పి, వేరొకదానికి ఉద్దేశించిన ట్యాప్‌ను పట్టుకోగలదు.",
+      "back": "A transparent layer can cover the page and catch a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "మార్చిన లింక్‌లు",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "కొన్ని పేజీలు నొక్కడానికీ వదలడానికీ మధ్య లింక్ గమ్యాన్ని మార్చేస్తాయి.",
+      "back": "Some pages change a link's destination between pressing and releasing"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "అడగని విండోలు",
+      "back": "Windows not asked for"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "రక్షణ ఆన్‌లో ఉన్నప్పుడు కొత్త ట్యాబ్ మీరు ట్యాప్ చేసిన చోటుకే తెరుచుకుంటుంది.",
+      "back": "With protection on a new tab opens only where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "ప్రతి గమ్యం",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "ప్రతి గమ్యానికి ప్రత్యేక వరుస ఉంటుంది. ఒక సైట్‌లో లేదా అన్నిటిలో అనుమతించవచ్చు లేదా బ్లాక్ చేయవచ్చు.",
+      "back": "Each destination has its own row; allow or block on one site or all"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "ఒకేసారి ఒక సైట్",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "సైట్‌లో Safari టూల్‌బార్‌లోని Undirect బటన్‌ను నొక్కితే అక్కడ రక్షణ ఆన్ అవుతుంది.",
+      "back": "On a site pressing Undirect's button in Safari's toolbar turns protection on there"
+    },
+    "app.nav.guarded_sites": {
+      "s": "రక్షిత సైట్‌లు",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "సెట్టింగ్‌లు",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "ప్రతిచోటా",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "సైట్ ప్రకారం",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "ఎక్స్‌టెన్షన్ నుండి ఇంకా ఏమీ రాలేదు",
+      "back": "Nothing yet from the extension"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Safari లో ఏదైనా పేజీని తెరవండి, జాబితా దానంతట అదే నిండుతుంది.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "నియమాలు లేవు",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "మీరు అనుమతించిన లేదా బ్లాక్ చేసిన తర్వాతే గమ్యం ఇక్కడ కనిపిస్తుంది.",
+      "back": "A destination appears here only after you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "మొత్తం ఆపిన ప్రయత్నాలు: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "బ్లాక్ చేసినది",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "అనుమతించినది",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "అనుమతించు",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "బ్లాక్ చేయి",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "ఈ గమ్యాన్ని అనుమతించు లేదా బ్లాక్ చేయి",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "డిఫాల్ట్‌ను ఉపయోగించు",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "ఇంకా రక్షిత సైట్‌లు లేవు",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "మిమ్మల్ని వేరే చోటుకు పంపే సైట్‌లో Safari టూల్‌బార్‌లోని Undirect బటన్‌ను నొక్కండి.",
+      "back": "On a site that sends you elsewhere press Undirect's button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "సైట్‌లు Safari లోని Undirect బటన్ ద్వారా చేరతాయి. ఇక్కడ తొలగించడం మాత్రమే సాధ్యం.",
+      "back": "Sites are added through Safari's button; here only removal"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "రక్షితం",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "ఆపు",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "ఈ సైట్‌కు రక్షణను ఆఫ్ చేస్తుంది",
+      "back": "Turns off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "రక్షణ",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "ఆన్",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "ఆఫ్",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "రక్షణ ఎక్కడ పనిచేయాలి",
+      "back": "Where protection should work"
+    },
+    "app.settings.mode_watched": {
+      "s": "నేను ఆన్ చేసిన సైట్‌లు",
+      "back": "Sites I turned on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "అన్ని సైట్‌లు",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "పేజీలో సూచన",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "నియమం లేని గమ్యాలు",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "బ్లాక్ చేయి",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "అనుమతించు",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "పేజీలు మీ క్లిక్‌ను ఉపయోగించి మీరు అడగని చోటుకు తెరవడాన్ని లేదా పంపడాన్ని ఆపుతుంది.",
+      "back": "Stops pages using your click to open or send to somewhere you did not ask"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "ఈ సైట్‌లో రక్షణ ఆన్‌లో ఉంది",
+      "back": "Protection is on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "రక్షణ ఆఫ్; ఆన్ చేయడానికి నొక్కండి",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "ఇక్కడ రక్షించడానికి ఏమీ లేదు",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect వెబ్‌సైట్‌లలో పనిచేస్తుంది",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "ఒక వెబ్‌సైట్‌ను తెరిచి ఇక్కడ నొక్కండి.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "ఈ సైట్‌ను రక్షించండి",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "రక్షించడానికి పేజీ ఏదీ లేదు.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "సెట్టింగ్‌ల ప్రకారం ఇప్పటికే అన్నిచోట్లా ఆన్‌లో ఉంది.",
+      "back": "Per settings already on everywhere"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "సెట్టింగ్‌లలో ఆఫ్ చేశారు.",
+      "back": "Off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "ఆన్‌లో ఉంది. ఆఫ్ చేస్తే పేజీ మళ్లీ లోడ్ అవుతుంది.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "ఆఫ్‌లో ఉంది. ఆన్ చేస్తే పేజీ మళ్లీ లోడ్ అవుతుంది.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "ఈ పేజీ",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "ఏమీ నమోదు కావడం లేదు: ఇక్కడ రక్షణ ఆఫ్‌లో ఉంది.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "ఇప్పటివరకు ఈ పేజీ నుండి బయటకు వెళ్లడానికి ఏదీ ప్రయత్నించలేదు.",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "చూపించడానికి ఇంకా ఏమీ లేదు.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "ఆపినవి: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "ఆపినవి: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "నమోదైన ప్రయత్నాలు: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "నమోదైన ప్రయత్నాలు: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "ప్రయత్నాలు: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "ప్రయత్నాలు: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "పరిష్కారం",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "బ్లాక్ చేసినది",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "అనుమతించినది",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "తొలగించారు",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "ఈ సైట్‌లో",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "ప్రతిచోటా",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "డిఫాల్ట్ ప్రకారం",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "ఈ సైట్‌లో అనుమతించు",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "ప్రతిచోటా అనుమతించు",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "ఈ సైట్‌లో బ్లాక్ చేయి",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "ప్రతిచోటా బ్లాక్ చేయి",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "నియమం లేని గమ్యాలు",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "బ్లాక్ చేయి",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "అనుమతించు",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "ఈ పేజీ సొంత భద్రతా సెట్టింగ్‌లు స్క్రిప్ట్‌లో కొంత భాగాన్ని అడ్డుకుంటున్నాయి, కాబట్టి ఇక్కడ రక్షణ పాక్షికం మాత్రమే.",
+      "back": "This page's own security settings block part of the script so protection is partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "కనిపించని క్లిక్ ఉచ్చు",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "పారదర్శక పొర",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "నకిలీ క్లిక్",
+      "back": "Fake click"
+    },
+    "ext.kind.window_open": {
+      "s": "పాప్-అప్ విండో",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "దాచిన ఫారం",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "క్లిక్ మధ్యలో మార్చిన లింక్",
+      "back": "Link changed mid-click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "మళ్లించిన వెనుకకు వెళ్లడం",
+      "back": "Diverted going back"
+    },
+    "ext.kind.redirect": {
+      "s": "క్లిక్‌ను లాక్కున్న రీడైరెక్ట్",
+      "back": "Redirect that snatched the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "వెనుక తెరిచిన ట్యాబ్",
+      "back": "Tab opened behind"
+    },
+    "ext.kind.network_rule": {
+      "s": "నెట్‌వర్క్ వద్ద ఆపారు",
+      "back": "Stopped at the network"
+    },
+    "ext.reason.way_back": {
+      "s": "దీని చిరునామాలో ఈ సైట్‌కు తిరిగి వచ్చే దారి ఉంది.",
+      "back": "Its address had a way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "నిర్దిష్ట పరిమాణం గల విండో.",
+      "back": "Window of a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "మీ క్లిక్‌ను లాక్కుంది.",
+      "back": "Snatched your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "నియమం లేదు; అనుమతించారు.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "సైట్ స్వయంగా తెరిచింది.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "నియమాలు",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "వెనుకకు",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "ప్రతిచోటా",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "సైట్ ప్రకారం",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "నియమాలు లేవు",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "అనుమతించు",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "బ్లాక్ చేయి",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "నియమాన్ని తొలగించు",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "సెట్టింగ్‌లు",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "రక్షణ",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "ఆన్",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "ఆఫ్",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "రక్షణ ఎక్కడ పనిచేయాలి",
+      "back": "Where protection should work"
+    },
+    "ext.settings.mode_watched": {
+      "s": "నేను ఆన్ చేసిన సైట్‌లు",
+      "back": "Sites I turned on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "అన్ని సైట్‌లు",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "పేజీలో సూచన",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "సమస్యను నివేదించండి",
+      "back": "Report a problem"
+    }
+  }
+}

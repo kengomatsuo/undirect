@@ -1,0 +1,481 @@
+{
+  "locale": "sk",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Rozšírenie nie je zapnuté",
+      "back": "Extension not on"
+    },
+    "app.setup.title_failed": {
+      "s": "Stav sa nepodarilo zistiť",
+      "back": "Status could not be found"
+    },
+    "app.setup.detail_default": {
+      "s": "Chránené weby vám už nemôžu ukradnúť ťuknutia.",
+      "back": "Protected sites can no longer steal your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari tentoraz neodpovedalo. Ak rozšírenie zapnete, aplikácia si to všimne sama.",
+      "back": "Safari did not answer this time; if you switch it on the app notices by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Otvoriť rozšírenia Safari",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Vitajte v Undirecte",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Neviditeľné vrstvy",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Priehľadná vrstva môže prekryť stránku a zachytiť ťuknutie určené na iné miesto.",
+      "back": "A transparent layer can cover the page and catch a tap meant elsewhere"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Vymenené odkazy",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Niektoré stránky zmenia cieľ odkazu medzi stlačením a pustením.",
+      "back": "Some pages change the link target between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Nevyžiadané okná",
+      "back": "Unrequested windows"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Pri zapnutej ochrane sa nová karta otvorí len tam, kam ste ťukli.",
+      "back": "With protection on a new tab opens only where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Každý cieľ",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Každý cieľ dostane vlastný riadok: povolíte ho alebo zablokujete na jednom webe, alebo všade.",
+      "back": "Each destination gets its own row: allow or block on one site or everywhere"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Web po webe",
+      "back": "Site by site"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Na webe stlačte tlačidlo Undirect na paneli nástrojov Safari a ochrana sa zapne.",
+      "back": "On a site press the Undirect button on Safari's toolbar and protection turns on"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Chránené weby",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Nastavenia",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Všade",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Podľa webu",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Rozšírenie sa zatiaľ neozvalo",
+      "back": "The extension has not reported yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Otvorte v Safari ľubovoľnú stránku a zoznam sa vyplní sám.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Žiadne pravidlá",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Cieľ sa tu zobrazí, keď ho povolíte alebo zablokujete.",
+      "back": "A destination appears here when you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Spolu zastavených pokusov: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Blokované",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Povolené",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Povoliť",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Blokovať",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Povoliť alebo blokovať tento cieľ",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Použiť predvolené",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "Zatiaľ žiadne chránené weby",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Na webe, ktorý vás presmeruje, stlačte tlačidlo Undirect na paneli nástrojov Safari.",
+      "back": "On a site that redirects you press Undirect's button on Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "Weby sa pridávajú tlačidlom Undirect v Safari; tu ich možno len odstrániť.",
+      "back": "Sites are added with Safari's button; here only removal"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Chránené",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Zastaviť",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Vypne ochranu pre tento web",
+      "back": "Turns protection off for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Ochrana",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Zapnuté",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Vypnuté",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Kde ochrana funguje",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "Weby, ktoré zapnem",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Všetky weby",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Oznam na stránke",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Ciele bez pravidla",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Blokovať",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Povoliť",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Bráni stránkam, aby vaše kliknutie využili na otvorenie alebo presmerovanie tam, kam ste nechceli.",
+      "back": "Stops pages using your click to open or redirect where you did not want"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Ochrana je na tomto webe zapnutá",
+      "back": "Protection is on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Ochrana vypnutá; stlačením ju zapnete",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Tu nie je čo chrániť",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect funguje na weboch",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Otvorte web a stlačte tu.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Chrániť tento web",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Nie je tu stránka na ochranu.",
+      "back": "No page to protect here"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Už beží všade, podľa nastavení.",
+      "back": "Already running everywhere per settings"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "V nastaveniach je vypnutá.",
+      "back": "Off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Zapnuté. Vypnutie stránku načíta znova.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Vypnuté. Zapnutie stránku načíta znova.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Táto stránka",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "Nič sa nesleduje: ochrana je tu vypnutá.",
+      "back": "Nothing tracked: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Zatiaľ sa z tejto stránky nič nepokúsilo odísť.",
+      "back": "So far nothing tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "Zatiaľ nie je čo zobraziť.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Zastavené: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Zastavené: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "Zaznamenaných pokusov: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "Zaznamenaných pokusov: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "Pokusov: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "Pokusov: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Oprava",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Blokované",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Povolené",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Odstránené",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "na tomto webe",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "všade",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "predvolene",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Povoliť na tomto webe",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Povoliť všade",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Blokovať na tomto webe",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Blokovať všade",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Ciele bez pravidla",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Blokovať",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Povoliť",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Zabezpečenie tejto stránky blokuje časť skriptu, takže je ochrana tu len čiastočná.",
+      "back": "This page's security blocks part of the script so protection is only partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Neviditeľná pasca na ťuknutie",
+      "back": "Invisible tap trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Priehľadná vrstva",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Simulované ťuknutie",
+      "back": "Simulated tap"
+    },
+    "ext.kind.window_open": {
+      "s": "Vyskakovacie okno",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Skrytý formulár",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Odkaz zmenený počas stlačenia",
+      "back": "Link changed during press"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Presmerovaný návrat",
+      "back": "Diverted back"
+    },
+    "ext.kind.redirect": {
+      "s": "Presmerovanie, ktoré prevzalo ťuknutie",
+      "back": "Redirect that took the tap"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Karta otvorená na pozadí",
+      "back": "Tab opened in background"
+    },
+    "ext.kind.network_rule": {
+      "s": "Zastavené v sieti",
+      "back": "Stopped in the network"
+    },
+    "ext.reason.way_back": {
+      "s": "Jeho adresa obsahuje cestu späť na tento web.",
+      "back": "Its address contains the way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "Okno s pevnou veľkosťou.",
+      "back": "Window with fixed size"
+    },
+    "ext.reason.took_press": {
+      "s": "Prevzalo vaše ťuknutie.",
+      "back": "Took your tap"
+    },
+    "ext.reason.default_allow": {
+      "s": "Bez pravidla; povolené.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "Otvoril ho sám web.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "Pravidlá",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Späť",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Všade",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Podľa webu",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "Žiadne pravidlá",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Povoliť",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Blokovať",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Odstrániť pravidlo",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Nastavenia",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Ochrana",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Zapnuté",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Vypnuté",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Kde ochrana funguje",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Weby, ktoré zapnem",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Všetky weby",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Oznam na stránke",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "Nahlásiť problém",
+      "back": "Report a problem"
+    }
+  }
+}

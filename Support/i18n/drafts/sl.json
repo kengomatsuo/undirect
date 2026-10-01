@@ -1,0 +1,481 @@
+{
+  "locale": "sl",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Razširitev ni vklopljena",
+      "back": "Extension not switched on"
+    },
+    "app.setup.title_failed": {
+      "s": "Stanja ni bilo mogoče preveriti",
+      "back": "Status could not be checked"
+    },
+    "app.setup.detail_default": {
+      "s": "Zaščitena spletna mesta vam ne morejo več ukrasti dotikov.",
+      "back": "Protected sites can no longer steal your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari se tokrat ni odzval. Če razširitev vklopite, bo aplikacija to opazila sama.",
+      "back": "Safari did not respond this time; if you switch it on the app notices by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Odpri razširitve za Safari",
+      "back": "Open extensions for Safari"
+    },
+    "app.welcome.heading": {
+      "s": "Dobrodošli v Undirectu",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Nevidne plasti",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Prosojna plast lahko prekrije stran in prestreže dotik, namenjen nečemu drugemu.",
+      "back": "A transparent layer can cover the page and intercept a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Zamenjane povezave",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Nekatere strani spremenijo cilj povezave med pritiskom in spustom.",
+      "back": "Some pages change a link's target between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Nezaželena okna",
+      "back": "Unwanted windows"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Ko je zaščita vklopljena, se nov zavihek odpre samo tja, kamor ste se dotaknili.",
+      "back": "With protection on a new tab only opens where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Vsak cilj",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Vsak cilj dobi svojo vrstico: dovolite ali blokirate ga lahko na enem spletnem mestu ali povsod.",
+      "back": "Each destination gets its own row; allow or block on one site or everywhere"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Eno mesto naenkrat",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Na spletnem mestu pritisnite gumb Undirect v orodni vrstici Safarija, da ga zaščitite.",
+      "back": "On a site press the Undirect button in Safari's toolbar to protect it"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Zaščitena mesta",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Nastavitve",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Povsod",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Po mestu",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Razširitev se še ni oglasila",
+      "back": "The extension has not yet reported"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Odprite poljubno stran v Safariju in seznam se bo sam izpolnil.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Ni pravil",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Cilj se tu pojavi, ko ga dovolite ali blokirate.",
+      "back": "A destination appears here once you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Skupaj ustavljenih poskusov: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Blokirano",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Dovoljeno",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Dovoli",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Blokiraj",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Dovoli ali blokiraj ta cilj",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Uporabi privzeto",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "Še ni zaščitenih mest",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Na spletnem mestu, ki vas preusmerja, pritisnite gumb Undirect v orodni vrstici Safarija.",
+      "back": "On a site that redirects you press Undirect's button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "Mesta dodate z gumbom Undirect v Safariju; tukaj jih lahko samo odstranite.",
+      "back": "You add sites with Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Zaščiteno",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Ustavi",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Izklopi zaščito za to spletno mesto",
+      "back": "Turns off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Zaščita",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Vklopljeno",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Izklopljeno",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Kje zaščita deluje",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "Mesta, ki jih vklopim",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Vsa mesta",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Obvestilo na strani",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Cilji brez pravila",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Blokiraj",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Dovoli",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Preprečuje, da bi strani uporabile vaš klik za odpiranje ali preusmeritev tja, kamor niste želeli.",
+      "back": "Prevents pages using your click to open or redirect where you did not want"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Zaščita je na tem mestu vklopljena",
+      "back": "Protection is on at this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Zaščita izklopljena; pritisnite za vklop",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Tu ni ničesar za zaščititi",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect deluje na spletnih mestih",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Odprite spletno mesto in pritisnite tukaj.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Zaščiti to mesto",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Ni strani za zaščito.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Po nastavitvah že deluje povsod.",
+      "back": "Per settings already works everywhere"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "V nastavitvah je izklopljena.",
+      "back": "Off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Vklopljeno. Ob izklopu se stran znova naloži.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Izklopljeno. Ob vklopu se stran znova naloži.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Ta stran",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "Nič se ne beleži: zaščita je tu izklopljena.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Doslej ni nič poskusilo zapustiti te strani.",
+      "back": "So far nothing tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "Zaenkrat ni ničesar za prikaz.",
+      "back": "Nothing to show for now"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Ustavljeno: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Ustavljeno: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "Zabeleženih poskusov: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "Zabeleženih poskusov: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "Poskusov: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "Poskusov: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Popravek",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Blokirano",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Dovoljeno",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Odstranjeno",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "na tem mestu",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "povsod",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "privzeto",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Dovoli na tem mestu",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Dovoli povsod",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Blokiraj na tem mestu",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Blokiraj povsod",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Cilji brez pravila",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Blokiraj",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Dovoli",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Varnostne nastavitve te strani blokirajo del skripta, zato je zaščita tu le delna.",
+      "back": "This page's security settings block part of the script so protection is only partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Nevidna past za klike",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Prosojna plast",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Simuliran klik",
+      "back": "Simulated click"
+    },
+    "ext.kind.window_open": {
+      "s": "Pojavno okno",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Skrit obrazec",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Povezava zamenjana sredi klika",
+      "back": "Link swapped mid-click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Preusmerjen nazaj",
+      "back": "Diverted back"
+    },
+    "ext.kind.redirect": {
+      "s": "Preusmeritev, ki je prevzela klik",
+      "back": "Redirect that took the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Zavihek, odprt v ozadju",
+      "back": "Tab opened in background"
+    },
+    "ext.kind.network_rule": {
+      "s": "Ustavljeno v omrežju",
+      "back": "Stopped on the network"
+    },
+    "ext.reason.way_back": {
+      "s": "Njegov naslov vsebuje pot nazaj na to mesto.",
+      "back": "Its address contains the way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "Okno določene velikosti.",
+      "back": "Window of a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "Prevzelo je vaš klik.",
+      "back": "Took your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "Brez pravila; dovoljeno.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "Odprlo ga je samo mesto.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "Pravila",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Nazaj",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Povsod",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Po mestu",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "Ni pravil",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Dovoli",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Blokiraj",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Odstrani pravilo",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Nastavitve",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Zaščita",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Vklopljeno",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Izklopljeno",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Kje zaščita deluje",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Mesta, ki jih vklopim",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Vsa mesta",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Obvestilo na strani",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "Prijavi težavo",
+      "back": "Report a problem"
+    }
+  }
+}

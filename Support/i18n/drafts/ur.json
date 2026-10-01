@@ -1,0 +1,481 @@
+{
+  "locale": "ur",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "ایکسٹینشن آن نہیں ہے",
+      "back": "Extension is not on"
+    },
+    "app.setup.title_failed": {
+      "s": "حالت کی جانچ نہیں ہو سکی",
+      "back": "Status could not be checked"
+    },
+    "app.setup.detail_default": {
+      "s": "محفوظ سائٹس اب آپ کے ٹیپ نہیں چھین سکتیں۔",
+      "back": "Protected sites can no longer snatch your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "اس بار Safari نے جواب نہیں دیا۔ ایکسٹینشن آن کرنے پر ایپ خود پتا لگا لے گی۔",
+      "back": "Safari did not respond this time; if you turn it on the app will find out by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Safari ایکسٹینشنز کھولیں",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Undirect میں خوش آمدید",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "نادیدہ پرتیں",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "ایک شفاف پرت صفحے کو ڈھانپ کر کسی اور چیز کے لیے کیا گیا ٹیپ پکڑ سکتی ہے۔",
+      "back": "A transparent layer can cover the page and catch a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "بدلے ہوئے لنک",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "کچھ صفحے دبانے اور چھوڑنے کے درمیان لنک کی منزل بدل دیتے ہیں۔",
+      "back": "Some pages change a link's destination between pressing and releasing"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "بن مانگی ونڈوز",
+      "back": "Windows nobody asked for"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "تحفظ آن ہو تو نیا ٹیب صرف وہیں کھلتا ہے جہاں آپ نے ٹیپ کیا۔",
+      "back": "With protection on a new tab opens only where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "ہر منزل",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "ہر منزل کی اپنی الگ قطار بنتی ہے۔ ایک سائٹ پر یا ہر جگہ اسے اجازت دیں یا بلاک کریں۔",
+      "back": "Each destination has its own row; allow or block on one site or everywhere"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "ایک وقت میں ایک سائٹ",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "سائٹ پر Safari کے ٹول بار میں Undirect کا بٹن دبائیں، وہاں تحفظ آن ہو جائے گا۔",
+      "back": "On a site press Undirect's button in Safari's toolbar and protection turns on there"
+    },
+    "app.nav.guarded_sites": {
+      "s": "محفوظ سائٹس",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "ترتیبات",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "ہر جگہ",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "سائٹ کے مطابق",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "ایکسٹینشن کی طرف سے ابھی کچھ نہیں آیا",
+      "back": "Nothing yet from the extension"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Safari میں کوئی بھی صفحہ کھولیں، فہرست خود بھر جائے گی۔",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "کوئی اصول نہیں",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "منزل تبھی یہاں نظر آتی ہے جب آپ اسے اجازت دیں یا بلاک کریں۔",
+      "back": "A destination appears here only after you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "کل روکی گئی کوششیں: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "بلاک",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "اجازت یافتہ",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "اجازت دیں",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "بلاک کریں",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "اس منزل کو اجازت دیں یا بلاک کریں",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "ڈیفالٹ استعمال کریں",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "ابھی کوئی محفوظ سائٹ نہیں",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "جو سائٹ آپ کو کہیں اور بھیج دے وہاں Safari کے ٹول بار میں Undirect کا بٹن دبائیں۔",
+      "back": "On a site that sends you elsewhere press Undirect's button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "سائٹس Safari کے Undirect بٹن سے شامل ہوتی ہیں۔ یہاں صرف ہٹائی جا سکتی ہیں۔",
+      "back": "Sites are added from Safari's button; here only removal"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "محفوظ",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "روکیں",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "اس سائٹ کا تحفظ بند کرتا ہے",
+      "back": "Turns off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "تحفظ",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "آن",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "آف",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "تحفظ کہاں کام کرے",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "میری آن کی ہوئی سائٹس",
+      "back": "Sites I turned on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "تمام سائٹس",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "صفحے پر اطلاع",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "بغیر اصول والی منزلیں",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "بلاک کریں",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "اجازت دیں",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "صفحات کو آپ کا کلک استعمال کر کے آپ کی نہ مانگی ہوئی جگہ کھولنے یا بھیجنے سے روکتا ہے۔",
+      "back": "Stops pages using your click to open or send to a place you did not ask"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "اس سائٹ پر تحفظ آن ہے",
+      "back": "Protection is on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "تحفظ آف ہے؛ آن کرنے کے لیے دبائیں",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "یہاں تحفظ کے لیے کچھ نہیں",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect ویب سائٹس پر کام کرتا ہے",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "کوئی ویب سائٹ کھولیں اور یہاں دبائیں۔",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "اس سائٹ کو محفوظ کریں",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "تحفظ کے لیے کوئی صفحہ نہیں۔",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "ترتیبات کے مطابق ہر جگہ پہلے ہی آن ہے۔",
+      "back": "Per settings already on everywhere"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "ترتیبات میں آف ہے۔",
+      "back": "Off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "آن ہے۔ آف کرنے پر صفحہ دوبارہ لوڈ ہوگا۔",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "آف ہے۔ آن کرنے پر صفحہ دوبارہ لوڈ ہوگا۔",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "یہ صفحہ",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "کچھ درج نہیں ہو رہا: یہاں تحفظ آف ہے۔",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "اب تک اس صفحے سے باہر جانے کی کسی نے کوشش نہیں کی۔",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "دکھانے کو ابھی کچھ نہیں۔",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "روکے گئے: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "روکے گئے: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "درج کوششیں: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "درج کوششیں: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "کوششیں: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "کوششیں: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "حل",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "بلاک",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "اجازت یافتہ",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "ہٹا دیا گیا",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "اس سائٹ پر",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "ہر جگہ",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "بطورِ ڈیفالٹ",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "اس سائٹ پر اجازت دیں",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "ہر جگہ اجازت دیں",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "اس سائٹ پر بلاک کریں",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "ہر جگہ بلاک کریں",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "بغیر اصول والی منزلیں",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "بلاک کریں",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "اجازت دیں",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "اس صفحے کی اپنی سیکیورٹی ترتیبات اسکرپٹ کا ایک حصہ روکتی ہیں، اس لیے یہاں تحفظ جزوی ہے۔",
+      "back": "This page's own security settings block part of the script so protection is partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "نادیدہ کلک کا جال",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "شفاف پرت",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "جعلی کلک",
+      "back": "Fake click"
+    },
+    "ext.kind.window_open": {
+      "s": "پاپ اپ ونڈو",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "چھپا ہوا فارم",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "کلک کے دوران بدلا ہوا لنک",
+      "back": "Link changed during the click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "موڑا ہوا واپسی کا قدم",
+      "back": "Diverted going back"
+    },
+    "ext.kind.redirect": {
+      "s": "کلک چھیننے والا ری ڈائریکٹ",
+      "back": "Redirect that snatched the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "پیچھے کھلا ہوا ٹیب",
+      "back": "Tab opened behind"
+    },
+    "ext.kind.network_rule": {
+      "s": "نیٹ ورک پر روکا گیا",
+      "back": "Stopped at the network"
+    },
+    "ext.reason.way_back": {
+      "s": "اس کے پتے میں اس سائٹ پر واپسی کا راستہ تھا۔",
+      "back": "Its address had a way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "مقررہ سائز کی ونڈو۔",
+      "back": "Window of a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "آپ کا کلک چھین لیا۔",
+      "back": "Snatched your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "اصول نہیں؛ اجازت دی گئی۔",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "سائٹ نے خود کھولا۔",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "اصول",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "واپس",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "ہر جگہ",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "سائٹ کے مطابق",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "کوئی اصول نہیں",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "اجازت دیں",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "بلاک کریں",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "اصول ہٹائیں",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "ترتیبات",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "تحفظ",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "آن",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "آف",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "تحفظ کہاں کام کرے",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "میری آن کی ہوئی سائٹس",
+      "back": "Sites I turned on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "تمام سائٹس",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "صفحے پر اطلاع",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "مسئلے کی اطلاع دیں",
+      "back": "Report a problem"
+    }
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "locale": "el",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Η επέκταση δεν είναι ενεργή",
+      "back": "The extension is not active"
+    },
+    "app.setup.title_failed": {
+      "s": "Αδυναμία ελέγχου κατάστασης",
+      "back": "Unable to check status"
+    },
+    "app.setup.detail_default": {
+      "s": "Οι προστατευμένοι ιστότοποι δεν μπορούν πια να σου κλέβουν τα πατήματα.",
+      "back": "Protected sites can no longer steal your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "Το Safari δεν απάντησε αυτή τη φορά. Αν ενεργοποιήσεις την επέκταση, η εφαρμογή θα το καταλάβει μόνη της.",
+      "back": "Safari did not answer this time; if you enable it the app will notice itself"
+    },
+    "app.setup.open_button": {
+      "s": "Άνοιγμα επεκτάσεων Safari",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Καλώς ήρθες στο Undirect",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Αόρατα επίπεδα",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Ένα διάφανο επίπεδο μπορεί να καλύψει τη σελίδα και να πάρει το πάτημα που προοριζόταν για κάτι άλλο.",
+      "back": "A transparent layer can cover the page and take a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Αλλαγμένοι σύνδεσμοι",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Κάποιες σελίδες αλλάζουν τον προορισμό ενός συνδέσμου ανάμεσα στο πάτημα και την άφεση.",
+      "back": "Some pages change a link's destination between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Παράθυρα που δεν ζήτησες",
+      "back": "Windows you did not ask for"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Με ενεργή προστασία, μια νέα καρτέλα ανοίγει μόνο εκεί που πάτησες.",
+      "back": "With protection on a new tab opens only where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Κάθε προορισμός",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Κάθε προορισμός παίρνει τη δική του γραμμή: τον επιτρέπεις ή τον αποκλείεις σε έναν ιστότοπο ή σε όλους.",
+      "back": "Each destination gets its own row: allow or block on one site or all"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Ένας ιστότοπος τη φορά",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Σε έναν ιστότοπο, πάτα το κουμπί Undirect στη γραμμή εργαλείων του Safari για να τον προστατέψεις.",
+      "back": "On a site, press Undirect's button in Safari's toolbar to protect it"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Προστατευμένοι ιστότοποι",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Ρυθμίσεις",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Παντού",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Ανά ιστότοπο",
+      "back": "Per site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Καμία ειδοποίηση από την επέκταση ακόμη",
+      "back": "No word from the extension yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Άνοιξε μια σελίδα στο Safari και η λίστα θα γεμίσει μόνη της.",
+      "back": "Open a page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Κανένας κανόνας",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Ένας προορισμός εμφανίζεται εδώ όταν τον επιτρέψεις ή τον αποκλείσεις.",
+      "back": "A destination appears here when you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Απόπειρες που αποτράπηκαν συνολικά: %lld",
+      "back": "Total prevented: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Αποκλείστηκε",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Επιτρέπεται",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Να επιτρέπεται",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Αποκλεισμός",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Επιτρέπεται ή αποκλείεται αυτός ο προορισμός",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Χρήση προεπιλογής",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "Κανένας προστατευμένος ιστότοπος ακόμη",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Σε έναν ιστότοπο που σε ανακατευθύνει, πάτα το κουμπί Undirect στη γραμμή εργαλείων του Safari.",
+      "back": "On a site that redirects you, press Undirect's button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "Οι ιστότοποι προστίθενται από το κουμπί Undirect στο Safari· εδώ μπορείς μόνο να τους αφαιρέσεις.",
+      "back": "Sites are added from Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Προστατεύεται",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Διακοπή",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Απενεργοποιεί την προστασία για αυτόν τον ιστότοπο",
+      "back": "Turns off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Προστασία",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Ενεργή",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Ανενεργή",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Πού λειτουργεί η προστασία",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "Ιστότοποι που ενεργοποιώ",
+      "back": "Sites I activate"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Όλοι οι ιστότοποι",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Ειδοποίηση στη σελίδα",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Προορισμοί χωρίς κανόνα",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Αποκλεισμός",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Να επιτρέπονται",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Εμποδίζει τις σελίδες να χρησιμοποιούν το κλικ σου για να ανοίξουν ή να ανακατευθύνουν κάπου που δεν ζήτησες.",
+      "back": "Stops pages using your click to open or redirect somewhere you did not ask"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Προστασία ενεργή σε αυτόν τον ιστότοπο",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Προστασία ανενεργή· πάτα για ενεργοποίηση",
+      "back": "Protection off; press to enable"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Δεν υπάρχει τίποτα να προστατευτεί εδώ",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Το Undirect λειτουργεί σε ιστότοπους",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Άνοιξε έναν ιστότοπο και πάτα εδώ.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Προστασία αυτού του ιστότοπου",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Δεν υπάρχει σελίδα για προστασία.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Ήδη ενεργή παντού, από τις Ρυθμίσεις.",
+      "back": "Already on everywhere from Settings"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Ανενεργή από τις Ρυθμίσεις.",
+      "back": "Off from Settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Ενεργή. Η απενεργοποίηση ανανεώνει τη σελίδα.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Ανενεργή. Η ενεργοποίηση ανανεώνει τη σελίδα.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Αυτή η σελίδα",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "Δεν καταγράφεται τίποτα: η προστασία είναι ανενεργή εδώ.",
+      "back": "Nothing recorded: protection is off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Μέχρι στιγμής τίποτα δεν προσπάθησε να φύγει από αυτή τη σελίδα.",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "Δεν υπάρχει ακόμη τίποτα να εμφανιστεί.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Αποτράπηκαν: %lld",
+      "back": "Prevented: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Αποτράπηκαν: %lld",
+      "back": "Prevented: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "Καταγεγραμμένες απόπειρες: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "Καταγεγραμμένες απόπειρες: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "Απόπειρες: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "Απόπειρες: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Διόρθωση",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Αποκλείστηκε",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Επιτρέπεται",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Αφαιρέθηκε",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "σε αυτόν τον ιστότοπο",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "παντού",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "από προεπιλογή",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Να επιτρέπεται σε αυτόν τον ιστότοπο",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Να επιτρέπεται παντού",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Αποκλεισμός σε αυτόν τον ιστότοπο",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Αποκλεισμός παντού",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Προορισμοί χωρίς κανόνα",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Αποκλεισμός",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Να επιτρέπονται",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Οι ρυθμίσεις ασφαλείας αυτής της σελίδας μπλοκάρουν μέρος του script, οπότε η προστασία είναι εδώ μερική.",
+      "back": "This page's security settings block part of the script so protection is partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Αόρατη παγίδα κλικ",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Διάφανο επίπεδο",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Προσομοιωμένο κλικ",
+      "back": "Simulated click"
+    },
+    "ext.kind.window_open": {
+      "s": "Αναδυόμενο παράθυρο",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Κρυφή φόρμα",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Σύνδεσμος που άλλαξε εν μέσω κλικ",
+      "back": "Link changed mid-click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Εκτροπή της επιστροφής",
+      "back": "Back diverted"
+    },
+    "ext.kind.redirect": {
+      "s": "Ανακατεύθυνση που πήρε το κλικ",
+      "back": "Redirect that took the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Καρτέλα που άνοιξε στο παρασκήνιο",
+      "back": "Tab opened in the background"
+    },
+    "ext.kind.network_rule": {
+      "s": "Αποκλείστηκε στο δίκτυο",
+      "back": "Blocked on the network"
+    },
+    "ext.reason.way_back": {
+      "s": "Η διεύθυνσή του περιείχε επιστροφή σε αυτόν τον ιστότοπο.",
+      "back": "Its address contained a return to this site"
+    },
+    "ext.reason.sized": {
+      "s": "Παράθυρο με συγκεκριμένο μέγεθος.",
+      "back": "Window with a specific size"
+    },
+    "ext.reason.took_press": {
+      "s": "Πήρε το κλικ σου.",
+      "back": "Took your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "Χωρίς κανόνα· επιτράπηκε.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "Το άνοιξε ο ίδιος ο ιστότοπος.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "Κανόνες",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Πίσω",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Παντού",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Ανά ιστότοπο",
+      "back": "Per site"
+    },
+    "ext.rules.empty": {
+      "s": "Κανένας κανόνας",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Να επιτρέπεται",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Αποκλεισμός",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Αφαίρεση κανόνα",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Ρυθμίσεις",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Προστασία",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Ενεργή",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Ανενεργή",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Πού λειτουργεί η προστασία",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Ιστότοποι που ενεργοποιώ",
+      "back": "Sites I activate"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Όλοι οι ιστότοποι",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Ειδοποίηση στη σελίδα",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "Αναφορά προβλήματος",
+      "back": "Report a problem"
+    }
+  }
+}

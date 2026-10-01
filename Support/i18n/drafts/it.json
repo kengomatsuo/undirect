@@ -352,12 +352,12 @@
       "why": "Plural counterpart to seen_one."
     },
     "ext.popup.tries_one": {
-      "s": "volta",
+      "s": "%lld volta",
       "back": "time",
       "why": "Terse per-destination fragment meant to sit among other short tags in one detail line."
     },
     "ext.popup.tries_other": {
-      "s": "volte",
+      "s": "%lld volte",
       "back": "times",
       "why": "Plural counterpart to tries_one."
     },

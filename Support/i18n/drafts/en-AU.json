@@ -1,0 +1,481 @@
+{
+  "locale": "en-AU",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Turn on Undirect in Safari",
+      "back": "Turn on Undirect in Safari"
+    },
+    "app.setup.title_failed": {
+      "s": "Undirect may not be on",
+      "back": "Undirect may not be on"
+    },
+    "app.setup.detail_default": {
+      "s": "Guarded sites no longer steal your clicks.",
+      "back": "Guarded sites no longer steal your clicks."
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari did not answer. Switching it on there is picked up automatically.",
+      "back": "Safari did not answer. Switching it on there is picked up automatically."
+    },
+    "app.setup.open_button": {
+      "s": "Open Safari Extensions",
+      "back": "Open Safari Extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Welcome to Undirect",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Invisible layers",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "A page can cover itself to catch a press meant for something else.",
+      "back": "A page can cover itself to catch a press meant for something else."
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Swapped links",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Some pages rewrite a link between the press and the release.",
+      "back": "Some pages rewrite a link between the press and the release."
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Uninvited windows",
+      "back": "Uninvited windows"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "A new tab opens only where your press pointed.",
+      "back": "A new tab opens only where your press pointed."
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Every destination",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Each one is listed, to allow or block per site or everywhere.",
+      "back": "Each one is listed, to allow or block per site or everywhere."
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "One site at a time",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "It guards a site once you press Undirect in Safari there.",
+      "back": "It guards a site once you press Undirect in Safari there."
+    },
+    "app.nav.guarded_sites": {
+      "s": "Guarded sites",
+      "back": "Guarded sites"
+    },
+    "app.nav.settings": {
+      "s": "Settings",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Everywhere",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "By site",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Nothing from the extension yet",
+      "back": "Nothing from the extension yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Open a page in Safari once and this fills in.",
+      "back": "Open a page in Safari once and this fills in."
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "No rules here",
+      "back": "No rules here"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "A destination shows up once you allow or block it.",
+      "back": "A destination shows up once you allow or block it."
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "%lld stopped in all.",
+      "back": "%lld stopped in all."
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Blocked",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Allowed",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Allow",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Block",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Allow or block this destination",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Use Default",
+      "back": "Use Default"
+    },
+    "app.watched.empty.title": {
+      "s": "No sites guarded yet",
+      "back": "No sites guarded yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Press the Undirect button in Safari on a site that keeps redirecting.",
+      "back": "Press the Undirect button in Safari on a site that keeps redirecting."
+    },
+    "app.watched.footer": {
+      "s": "Sites are added from the Undirect button in Safari.",
+      "back": "Sites are added from the Undirect button in Safari."
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Guarded",
+      "back": "Guarded"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Stop",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Stop guarding this site",
+      "back": "Stop guarding this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Guard",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "On",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Off",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Where the guard runs",
+      "back": "Where the guard runs"
+    },
+    "app.settings.mode_watched": {
+      "s": "Sites you turn on",
+      "back": "Sites you turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Every site",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Note in the page",
+      "back": "Note in the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "A destination with no rule",
+      "back": "A destination with no rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Block it",
+      "back": "Block it"
+    },
+    "app.settings.policy_allow": {
+      "s": "Allow it",
+      "back": "Allow it"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Stops pages from taking your click to open or redirect somewhere you did not ask for.",
+      "back": "Stops pages from taking your click to open or redirect somewhere you did not ask for."
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Undirect is on for this site",
+      "back": "Undirect is on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Turn on Undirect for this site",
+      "back": "Turn on Undirect for this site"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Undirect works on websites",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect works on websites",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Open a website, then press here to guard it.",
+      "back": "Open a website, then press here to guard it."
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Guard this site",
+      "back": "Guard this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "No page to guard here.",
+      "back": "No page to guard here."
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "The guard runs on every site.",
+      "back": "The guard runs on every site."
+    },
+    "ext.popup.watch_master_off": {
+      "s": "The guard is switched off.",
+      "back": "The guard is switched off."
+    },
+    "ext.popup.watch_on": {
+      "s": "On. Turning it off reloads the page.",
+      "back": "On. Turning it off reloads the page."
+    },
+    "ext.popup.watch_off": {
+      "s": "Off. Turning it on reloads the page.",
+      "back": "Off. Turning it on reloads the page."
+    },
+    "ext.popup.page_heading": {
+      "s": "This page",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "The guard is off on this site.",
+      "back": "The guard is off on this site."
+    },
+    "ext.popup.page_quiet": {
+      "s": "Nothing here has reached for another site.",
+      "back": "Nothing here has reached for another site."
+    },
+    "ext.popup.page_empty": {
+      "s": "Nothing to list yet.",
+      "back": "Nothing to list yet."
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld stopped",
+      "back": "%lld stopped"
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld stopped",
+      "back": "%lld stopped"
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld try in all.",
+      "back": "%lld try in all."
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld tries in all.",
+      "back": "%lld tries in all."
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld try.",
+      "back": "%lld try."
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld tries.",
+      "back": "%lld tries."
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Site fix",
+      "back": "Site fix"
+    },
+    "ext.state.blocked": {
+      "s": "Blocked",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Allowed",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Removed",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "on this site",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "everywhere",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "by default",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Allow here",
+      "back": "Allow here"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Allow everywhere",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Block here",
+      "back": "Block here"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Block everywhere",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "A destination with no rule",
+      "back": "A destination with no rule"
+    },
+    "ext.policy.block": {
+      "s": "Block it",
+      "back": "Block it"
+    },
+    "ext.policy.allow": {
+      "s": "Allow it",
+      "back": "Allow it"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "This page blocks extension scripts. Only part of the guard is running.",
+      "back": "This page blocks extension scripts. Only part of the guard is running."
+    },
+    "ext.kind.click_catcher": {
+      "s": "Invisible click catcher",
+      "back": "Invisible click catcher"
+    },
+    "ext.kind.overlay": {
+      "s": "Transparent layer over the page",
+      "back": "Transparent layer over the page"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Click the page made up",
+      "back": "Click the page made up"
+    },
+    "ext.kind.window_open": {
+      "s": "Pop-up window",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Hidden form sent",
+      "back": "Hidden form sent"
+    },
+    "ext.kind.href_swap": {
+      "s": "Link changed as you clicked",
+      "back": "Link changed as you clicked"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Back button sent elsewhere",
+      "back": "Back button sent elsewhere"
+    },
+    "ext.kind.redirect": {
+      "s": "Sent off this site as you pressed",
+      "back": "Sent off this site as you pressed"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Tab opened behind your press",
+      "back": "Tab opened behind your press"
+    },
+    "ext.kind.network_rule": {
+      "s": "Stopped at the request",
+      "back": "Stopped at the request"
+    },
+    "ext.reason.way_back": {
+      "s": "It named a way back to this site.",
+      "back": "It named a way back to this site."
+    },
+    "ext.reason.sized": {
+      "s": "It opened at a deliberate size.",
+      "back": "It opened at a deliberate size."
+    },
+    "ext.reason.took_press": {
+      "s": "It took the press.",
+      "back": "It took the press."
+    },
+    "ext.reason.default_allow": {
+      "s": "Nothing said otherwise.",
+      "back": "Nothing said otherwise."
+    },
+    "ext.reason.own_code": {
+      "s": "It was the site's own code asking.",
+      "back": "It was the site's own code asking."
+    },
+    "ext.popup.rules_link": {
+      "s": "Rules",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Back",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Set everywhere",
+      "back": "Set everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Set for one site",
+      "back": "Set for one site"
+    },
+    "ext.rules.empty": {
+      "s": "None set.",
+      "back": "None set."
+    },
+    "ext.action.allow": {
+      "s": "Allow",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Block",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Use default",
+      "back": "Use default"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Settings",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Guard",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "On",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Off",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Where the guard runs",
+      "back": "Where the guard runs"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Sites you turn on",
+      "back": "Sites you turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Every site",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Page note",
+      "back": "Page note"
+    },
+    "ext.action.report": {
+      "s": "Report a site",
+      "back": "Report a site"
+    }
+  }
+}

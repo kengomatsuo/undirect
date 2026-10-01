@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "पाने तुमचा क्लिक वापरून तुम्ही न मागितलेल्या ठिकाणी उघडणे किंवा नेणे थांबवते.",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "संरक्षण",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "सुरू",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "बंद",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "ही साइट संरक्षित करा",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "Undirect वेबसाइटवर चालते",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "एखादी वेबसाइट उघडा आणि इथे दाबा.",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "संरक्षित करण्यासाठी पान नाही.",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "सेटिंग्जनुसार आधीच सर्वत्र सुरू आहे.",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "सेटिंग्जमध्ये बंद आहे.",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "संरक्षण कुठे चालते",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "मी सुरू केलेल्या साइट",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "सर्व साइट",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "काहीही नोंदवले जात नाही: इथे संरक्षण बंद आहे.",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "हे पान",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "आतापर्यंत या पानातून बाहेर जाण्याचा कोणताही प्रयत्न झाला नाही.",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "दाखवण्यासारखे अजून काही नाही.",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "थांबवले: $COUNT$",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "थांबवले: $COUNT$",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "नोंदवलेले प्रयत्न: $COUNT$",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "नोंदवलेले प्रयत्न: $COUNT$",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "प्रयत्न: $COUNT$",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "प्रयत्न: $COUNT$",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "उपाय",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "ब्लॉक केले",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "परवानगी आहे",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "या साइटवर",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "सर्वत्र",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "डीफॉल्टनुसार",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "या साइटवर परवानगी द्या",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "सर्वत्र परवानगी द्या",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "या साइटवर ब्लॉक करा",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "सर्वत्र ब्लॉक करा",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "नियम नसलेली गंतव्ये",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "ब्लॉक करा",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "परवानगी द्या",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "या पानाच्या स्वतःच्या सुरक्षा सेटिंग्ज स्क्रिप्टचा काही भाग रोखतात, त्यामुळे इथे संरक्षण अर्धवट आहे.",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "अदृश्य क्लिक सापळा",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "पारदर्शक स्तर",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "बनावट क्लिक",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "पॉप-अप विंडो",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "लपवलेला फॉर्म",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "क्लिकदरम्यान बदललेली लिंक",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "वळवलेले मागे जाणे",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "क्लिक हिरावून घेणारे रीडायरेक्ट",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "मागे उघडलेला टॅब",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "नेटवर्कवर रोखले",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "याच्या पत्त्यात या साइटवर परतण्याचा मार्ग होता.",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "ठरावीक आकाराची विंडो.",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "तुमचा क्लिक हिरावला.",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "नियम नाही; परवानगी दिली.",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "साइटनेच उघडले.",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "नियम",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "मागे",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "सर्वत्र",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "साइटनुसार",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "नियम नाहीत",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "परवानगी द्या",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "ब्लॉक करा",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "नियम काढा",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "सेटिंग्ज",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "पानावर सूचना",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "समस्या कळवा",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "संरक्षण बंद; सुरू करण्यासाठी दाबा",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "इथे संरक्षित करण्यासारखे काही नाही",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "या साइटवर संरक्षण सुरू आहे",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "सुरू. बंद केल्यास पान पुन्हा लोड होईल.",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "बंद. सुरू केल्यास पान पुन्हा लोड होईल.",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "काढले",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}

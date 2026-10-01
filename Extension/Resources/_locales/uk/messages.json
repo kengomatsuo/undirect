@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "Не дає сторінкам використати ваш клік, щоб відкрити чи перенаправити туди, куди ви не просили.",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "Захист",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "Увімкнено",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "Вимкнено",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "Захистити цей сайт",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "Undirect працює на сайтах",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "Відкрийте сайт і натисніть тут.",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "Немає сторінки для захисту.",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "За параметрами вже працює скрізь.",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "У параметрах вимкнено.",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "Де працює захист",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "Сайти, які я ввімкну",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "Усі сайти",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "Нічого не записується: захист тут вимкнено.",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "Ця сторінка",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "Досі ніщо не намагалося вийти за межі цієї сторінки.",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "Поки що нема що показати.",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "Зупинено: $COUNT$",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "Зупинено: $COUNT$",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "Записано спроб: $COUNT$",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "Записано спроб: $COUNT$",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "Спроб: $COUNT$",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "Спроб: $COUNT$",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "Виправлення",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "Заблоковано",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "Дозволено",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "на цьому сайті",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "усюди",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "за замовчуванням",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "Дозволити на цьому сайті",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "Дозволити всюди",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "Заблокувати на цьому сайті",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "Заблокувати всюди",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "Пункти призначення без правила",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "Блокувати",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "Дозволяти",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "Параметри безпеки цієї сторінки блокують частину скрипта, тому захист тут лише частковий.",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "Невидима пастка для кліків",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "Прозорий шар",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "Імітований клік",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "Спливне вікно",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "Прихована форма",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "Посилання змінено посеред кліку",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "Перенаправлене повернення",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "Перенаправлення, що перехопило клік",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "Вкладка, відкрита у фоні",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "Зупинено в мережі",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "Його адреса містила шлях назад на цей сайт.",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "Вікно заданого розміру.",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "Перехопило ваш клік.",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "Правила немає; дозволено.",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "Його відкрив сам сайт.",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "Правила",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "Назад",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "Усюди",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "За сайтом",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "Правил немає",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "Дозволити",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "Заблокувати",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "Вилучити правило",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "Параметри",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "Сповіщення на сторінці",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "Повідомити про проблему",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "Захист вимкнено; натисніть, щоб ввімкнути",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "Тут нема чого захищати",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "Захист на цьому сайті ввімкнено",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "Увімкнено. Після вимкнення сторінка перезавантажиться.",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "Вимкнено. Після ввімкнення сторінка перезавантажиться.",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "Вилучено",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "locale": "ro",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Extensia nu este activată",
+      "back": "The extension is not activated"
+    },
+    "app.setup.title_failed": {
+      "s": "Starea nu a putut fi verificată",
+      "back": "Status could not be checked"
+    },
+    "app.setup.detail_default": {
+      "s": "Site-urile protejate nu îți mai pot fura atingerile.",
+      "back": "Protected sites can no longer steal your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "De data asta Safari nu a răspuns. Dacă activezi extensia, aplicația își dă seama singură.",
+      "back": "Safari did not answer this time; if you activate it the app realizes by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Deschide extensiile Safari",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Bine ai venit în Undirect",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Straturi invizibile",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Un strat transparent poate acoperi pagina și poate prinde o atingere menită altceva.",
+      "back": "A transparent layer can cover the page and catch a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Linkuri schimbate",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Unele pagini schimbă destinația unui link între apăsare și eliberare.",
+      "back": "Some pages change a link's destination between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Ferestre nesolicitate",
+      "back": "Unrequested windows"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Cu protecția pornită, o filă nouă se deschide doar unde ai atins.",
+      "back": "With protection on a new tab only opens where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Fiecare destinație",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Fiecare destinație primește propriul rând: o permiți sau o blochezi pe un site ori pe toate.",
+      "back": "Each destination gets its own row: allow or block on one site or all"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Câte un site",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Pe un site, apasă butonul Undirect din bara de instrumente Safari ca să-l protejezi.",
+      "back": "On a site, press the Undirect button in Safari's toolbar to protect it"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Site-uri protejate",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Setări",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Peste tot",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Pe site",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Încă nu s-a auzit nimic de la extensie",
+      "back": "Nothing heard from the extension yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Deschide orice pagină în Safari și lista se completează singură.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Nicio regulă",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "O destinație apare aici după ce o permiți sau o blochezi.",
+      "back": "A destination appears here after you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Total încercări oprite: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Blocat",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Permis",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Permite",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Blochează",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Permite sau blochează această destinație",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Folosește valoarea implicită",
+      "back": "Use the default"
+    },
+    "app.watched.empty.title": {
+      "s": "Niciun site protejat încă",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Pe un site care te redirecționează, apasă butonul Undirect din bara de instrumente Safari.",
+      "back": "On a site that redirects you, press the Undirect button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "Site-urile se adaugă din butonul Undirect din Safari; aici le poți doar elimina.",
+      "back": "Sites are added from Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Protejat",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Oprește",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Dezactivează protecția pentru acest site",
+      "back": "Turns off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Protecție",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Activată",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Dezactivată",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Unde acționează protecția",
+      "back": "Where protection acts"
+    },
+    "app.settings.mode_watched": {
+      "s": "Site-urile pe care le activez",
+      "back": "Sites I activate"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Toate site-urile",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Notificare pe pagină",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Destinații fără regulă",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Blochează",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Permite",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Împiedică paginile să-ți folosească clicul ca să deschidă sau să redirecționeze spre un loc pe care nu l-ai cerut.",
+      "back": "Prevents pages using your click to open or redirect to a place you did not ask for"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Protecție activă pe acest site",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Protecție dezactivată; apasă pentru a activa",
+      "back": "Protection off; press to activate"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Aici nu e nimic de protejat",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect funcționează pe site-uri web",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Deschide un site web, apoi apasă aici.",
+      "back": "Open a website, then press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Protejează acest site",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Nu există nicio pagină de protejat.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "E deja activă peste tot, din Setări.",
+      "back": "Already on everywhere from Settings"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "E dezactivată din Setări.",
+      "back": "Off from Settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Activă. Dezactivarea reîncarcă pagina.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Dezactivată. Activarea reîncarcă pagina.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Această pagină",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "Nu se înregistrează nimic: protecția e dezactivată aici.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Până acum nimic nu a încercat să iasă din această pagină.",
+      "back": "So far nothing tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "Încă nu e nimic de afișat.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Oprite: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Oprite: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "Încercări înregistrate: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "Încercări înregistrate: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "Încercări: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "Încercări: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Remediere",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Blocat",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Permis",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Eliminat",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "pe acest site",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "peste tot",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "implicit",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Permite pe acest site",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Permite peste tot",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Blochează pe acest site",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Blochează peste tot",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Destinații fără regulă",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Blochează",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Permite",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Setările de securitate ale paginii blochează o parte din script, deci protecția e aici doar parțială.",
+      "back": "The page's security settings block part of the script so protection is only partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Capcană de clic invizibilă",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Strat transparent",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Clic simulat",
+      "back": "Simulated click"
+    },
+    "ext.kind.window_open": {
+      "s": "Fereastră pop-up",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Formular ascuns",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Link schimbat în mijlocul clicului",
+      "back": "Link swapped mid-click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Revenire deviată",
+      "back": "Back diverted"
+    },
+    "ext.kind.redirect": {
+      "s": "Redirecționare care a luat clicul",
+      "back": "Redirect that took the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Filă deschisă în fundal",
+      "back": "Tab opened in the background"
+    },
+    "ext.kind.network_rule": {
+      "s": "Oprit în rețea",
+      "back": "Stopped on the network"
+    },
+    "ext.reason.way_back": {
+      "s": "Adresa lui includea drumul înapoi spre acest site.",
+      "back": "Its address included the way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "Fereastră de o dimensiune anume.",
+      "back": "Window of a specific size"
+    },
+    "ext.reason.took_press": {
+      "s": "A luat clicul tău.",
+      "back": "Took your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "Fără regulă; permis.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "L-a deschis chiar site-ul.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "Reguli",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Înapoi",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Peste tot",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Pe site",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "Nicio regulă",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Permite",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Blochează",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Elimină regula",
+      "back": "Remove the rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Setări",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Protecție",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Activată",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Dezactivată",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Unde acționează protecția",
+      "back": "Where protection acts"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Site-urile pe care le activez",
+      "back": "Sites I activate"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Toate site-urile",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Notificare pe pagină",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "Raportează o problemă",
+      "back": "Report a problem"
+    }
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "locale": "mr",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "एक्स्टेन्शन सुरू नाही",
+      "back": "Extension is not on"
+    },
+    "app.setup.title_failed": {
+      "s": "स्थिती तपासता आली नाही",
+      "back": "Status could not be checked"
+    },
+    "app.setup.detail_default": {
+      "s": "संरक्षित साइट आता तुमचे टॅप चोरू शकत नाहीत.",
+      "back": "Protected sites can no longer steal your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "यावेळी Safari ने उत्तर दिले नाही. एक्स्टेन्शन सुरू केल्यास अॅपला ते आपोआप कळेल.",
+      "back": "Safari did not answer this time; if you turn it on the app will know on its own"
+    },
+    "app.setup.open_button": {
+      "s": "Safari एक्स्टेन्शन उघडा",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Undirect मध्ये स्वागत",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "अदृश्य स्तर",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "पारदर्शक स्तर पान झाकून दुसऱ्या गोष्टीसाठीचा टॅप पकडू शकतो.",
+      "back": "A transparent layer can cover the page and catch a tap meant for another thing"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "बदललेल्या लिंक",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "काही पाने दाबणे आणि सोडणे यांच्या दरम्यान लिंकचे गंतव्य बदलतात.",
+      "back": "Some pages change a link's destination between pressing and releasing"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "न मागितलेल्या विंडो",
+      "back": "Windows not asked for"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "संरक्षण सुरू असताना नवीन टॅब तुम्ही टॅप केलेल्या ठिकाणीच उघडतो.",
+      "back": "With protection on a new tab opens only where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "प्रत्येक गंतव्य",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "प्रत्येक गंतव्याची स्वतंत्र ओळ असते. एका साइटवर किंवा सर्वत्र ते परवानगी द्या किंवा ब्लॉक करा.",
+      "back": "Each destination has its own row; allow or block on one site or everywhere"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "एका वेळी एक साइट",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "साइटवर Safari च्या टूलबारमधील Undirect बटण दाबा, म्हणजे तिथे संरक्षण सुरू होते.",
+      "back": "On a site press the Undirect button in Safari's toolbar and protection starts there"
+    },
+    "app.nav.guarded_sites": {
+      "s": "संरक्षित साइट",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "सेटिंग्ज",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "सर्वत्र",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "साइटनुसार",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "एक्स्टेन्शनकडून अजून काही आले नाही",
+      "back": "Nothing yet from the extension"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Safari मध्ये कोणतेही पान उघडा, यादी आपोआप भरेल.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "कोणतेही नियम नाहीत",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "तुम्ही परवानगी दिल्यावर किंवा ब्लॉक केल्यावरच गंतव्य इथे दिसते.",
+      "back": "A destination shows here only after you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "एकूण थांबवलेले प्रयत्न: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "ब्लॉक केले",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "परवानगी आहे",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "परवानगी द्या",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "ब्लॉक करा",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "या गंतव्याला परवानगी द्या किंवा ब्लॉक करा",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "डीफॉल्ट वापरा",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "अजून संरक्षित साइट नाहीत",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "तुम्हाला दुसरीकडे पाठवणाऱ्या साइटवर Safari च्या टूलबारमधील Undirect बटण दाबा.",
+      "back": "On a site that sends you elsewhere press Undirect's button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "साइट Safari मधील Undirect बटणाने जोडल्या जातात. इथे फक्त काढता येतात.",
+      "back": "Sites are added with Safari's button; here only removal"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "संरक्षित",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "थांबवा",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "या साइटचे संरक्षण बंद करते",
+      "back": "Turns off protection for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "संरक्षण",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "सुरू",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "बंद",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "संरक्षण कुठे चालते",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "मी सुरू केलेल्या साइट",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "सर्व साइट",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "पानावर सूचना",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "नियम नसलेली गंतव्ये",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "ब्लॉक करा",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "परवानगी द्या",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "पाने तुमचा क्लिक वापरून तुम्ही न मागितलेल्या ठिकाणी उघडणे किंवा नेणे थांबवते.",
+      "back": "Stops pages using your click to open or take to a place you did not ask"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "या साइटवर संरक्षण सुरू आहे",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "संरक्षण बंद; सुरू करण्यासाठी दाबा",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "इथे संरक्षित करण्यासारखे काही नाही",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect वेबसाइटवर चालते",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "एखादी वेबसाइट उघडा आणि इथे दाबा.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "ही साइट संरक्षित करा",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "संरक्षित करण्यासाठी पान नाही.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "सेटिंग्जनुसार आधीच सर्वत्र सुरू आहे.",
+      "back": "Per settings already on everywhere"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "सेटिंग्जमध्ये बंद आहे.",
+      "back": "Off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "सुरू. बंद केल्यास पान पुन्हा लोड होईल.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "बंद. सुरू केल्यास पान पुन्हा लोड होईल.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "हे पान",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "काहीही नोंदवले जात नाही: इथे संरक्षण बंद आहे.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "आतापर्यंत या पानातून बाहेर जाण्याचा कोणताही प्रयत्न झाला नाही.",
+      "back": "So far no attempt has been made to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "दाखवण्यासारखे अजून काही नाही.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "थांबवले: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "थांबवले: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "नोंदवलेले प्रयत्न: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "नोंदवलेले प्रयत्न: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "प्रयत्न: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "प्रयत्न: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "उपाय",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "ब्लॉक केले",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "परवानगी आहे",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "काढले",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "या साइटवर",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "सर्वत्र",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "डीफॉल्टनुसार",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "या साइटवर परवानगी द्या",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "सर्वत्र परवानगी द्या",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "या साइटवर ब्लॉक करा",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "सर्वत्र ब्लॉक करा",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "नियम नसलेली गंतव्ये",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "ब्लॉक करा",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "परवानगी द्या",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "या पानाच्या स्वतःच्या सुरक्षा सेटिंग्ज स्क्रिप्टचा काही भाग रोखतात, त्यामुळे इथे संरक्षण अर्धवट आहे.",
+      "back": "This page's own security settings block part of the script so protection is partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "अदृश्य क्लिक सापळा",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "पारदर्शक स्तर",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "बनावट क्लिक",
+      "back": "Fake click"
+    },
+    "ext.kind.window_open": {
+      "s": "पॉप-अप विंडो",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "लपवलेला फॉर्म",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "क्लिकदरम्यान बदललेली लिंक",
+      "back": "Link changed during the click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "वळवलेले मागे जाणे",
+      "back": "Diverted going back"
+    },
+    "ext.kind.redirect": {
+      "s": "क्लिक हिरावून घेणारे रीडायरेक्ट",
+      "back": "Redirect that snatched the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "मागे उघडलेला टॅब",
+      "back": "Tab opened behind"
+    },
+    "ext.kind.network_rule": {
+      "s": "नेटवर्कवर रोखले",
+      "back": "Stopped at the network"
+    },
+    "ext.reason.way_back": {
+      "s": "याच्या पत्त्यात या साइटवर परतण्याचा मार्ग होता.",
+      "back": "Its address had a way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "ठरावीक आकाराची विंडो.",
+      "back": "Window of a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "तुमचा क्लिक हिरावला.",
+      "back": "Snatched your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "नियम नाही; परवानगी दिली.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "साइटनेच उघडले.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "नियम",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "मागे",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "सर्वत्र",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "साइटनुसार",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "नियम नाहीत",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "परवानगी द्या",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "ब्लॉक करा",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "नियम काढा",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "सेटिंग्ज",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "संरक्षण",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "सुरू",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "बंद",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "संरक्षण कुठे चालते",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "मी सुरू केलेल्या साइट",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "सर्व साइट",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "पानावर सूचना",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "समस्या कळवा",
+      "back": "Report a problem"
+    }
+  }
+}

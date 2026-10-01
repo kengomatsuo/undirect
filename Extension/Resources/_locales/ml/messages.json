@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "പേജുകൾ നിങ്ങളുടെ ക്ലിക്ക് ഉപയോഗിച്ച് നിങ്ങൾ ആവശ്യപ്പെടാത്ത ഇടത്തേക്ക് തുറക്കുന്നതും കൊണ്ടുപോകുന്നതും തടയുന്നു.",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "സംരക്ഷണം",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "ഓൺ",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "ഓഫ്",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "ഈ സൈറ്റ് സംരക്ഷിക്കുക",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "Undirect വെബ്സൈറ്റുകളിൽ പ്രവർത്തിക്കുന്നു",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "ഒരു വെബ്സൈറ്റ് തുറന്ന് ഇവിടെ അമർത്തുക.",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "സംരക്ഷിക്കാൻ പേജ് ഒന്നുമില്ല.",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "ക്രമീകരണങ്ങൾ പ്രകാരം എല്ലായിടത്തും ഇതിനകം ഓണാണ്.",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "ക്രമീകരണങ്ങളിൽ ഓഫാക്കിയിരിക്കുന്നു.",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "സംരക്ഷണം എവിടെ പ്രവർത്തിക്കും",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "ഞാൻ ഓണാക്കുന്ന സൈറ്റുകൾ",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "എല്ലാ സൈറ്റുകളും",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "ഒന്നും രേഖപ്പെടുത്തുന്നില്ല: ഇവിടെ സംരക്ഷണം ഓഫാണ്.",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "ഈ പേജ്",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "ഇതുവരെ ഈ പേജിൽ നിന്ന് പുറത്തുകടക്കാൻ ഒന്നും ശ്രമിച്ചിട്ടില്ല.",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "കാണിക്കാൻ ഇതുവരെ ഒന്നുമില്ല.",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "തടഞ്ഞത്: $COUNT$",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "തടഞ്ഞത്: $COUNT$",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "രേഖപ്പെടുത്തിയ ശ്രമങ്ങൾ: $COUNT$",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "രേഖപ്പെടുത്തിയ ശ്രമങ്ങൾ: $COUNT$",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "ശ്രമങ്ങൾ: $COUNT$",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "ശ്രമങ്ങൾ: $COUNT$",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "പരിഹാരം",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "തടഞ്ഞത്",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "അനുവദിച്ചത്",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "ഈ സൈറ്റിൽ",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "എല്ലായിടത്തും",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "ഡിഫോൾട്ട് പ്രകാരം",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "ഈ സൈറ്റിൽ അനുവദിക്കുക",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "എല്ലായിടത്തും അനുവദിക്കുക",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "ഈ സൈറ്റിൽ തടയുക",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "എല്ലായിടത്തും തടയുക",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "നിയമമില്ലാത്ത ലക്ഷ്യസ്ഥാനങ്ങൾ",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "തടയുക",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "അനുവദിക്കുക",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "ഈ പേജിന്റെ സ്വന്തം സുരക്ഷാ ക്രമീകരണങ്ങൾ സ്ക്രിപ്റ്റിന്റെ ഒരു ഭാഗം തടയുന്നതിനാൽ ഇവിടെ സംരക്ഷണം ഭാഗികം മാത്രമാണ്.",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "അദൃശ്യ ക്ലിക്ക് കെണി",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "സുതാര്യ പാളി",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "വ്യാജ ക്ലിക്ക്",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "പോപ്പ്-അപ്പ് വിൻഡോ",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "മറച്ച ഫോം",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "ക്ലിക്കിനിടയിൽ മാറ്റിയ ലിങ്ക്",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "വഴിതിരിച്ച മടക്കം",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "ക്ലിക്ക് തട്ടിയെടുത്ത റീഡയറക്ട്",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "പിന്നിൽ തുറന്ന ടാബ്",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "നെറ്റ്‌വർക്കിൽ തടഞ്ഞത്",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "ഇതിന്റെ വിലാസത്തിൽ ഈ സൈറ്റിലേക്കുള്ള മടക്കവഴി ഉണ്ടായിരുന്നു.",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "നിശ്ചിത വലുപ്പമുള്ള വിൻഡോ.",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "നിങ്ങളുടെ ക്ലിക്ക് എടുത്തു.",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "നിയമമില്ല; അനുവദിച്ചു.",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "സൈറ്റ് തന്നെ തുറന്നത്.",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "നിയമങ്ങൾ",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "തിരികെ",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "എല്ലായിടത്തും",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "സൈറ്റ് അനുസരിച്ച്",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "നിയമങ്ങളില്ല",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "അനുവദിക്കുക",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "തടയുക",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "നിയമം നീക്കുക",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "ക്രമീകരണങ്ങൾ",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "പേജിൽ അറിയിപ്പ്",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുക",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "സംരക്ഷണം ഓഫ്; ഓണാക്കാൻ അമർത്തുക",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "ഇവിടെ സംരക്ഷിക്കാൻ ഒന്നുമില്ല",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "ഈ സൈറ്റിൽ സംരക്ഷണം ഓണാണ്",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "ഓൺ. ഓഫാക്കിയാൽ പേജ് വീണ്ടും ലോഡ് ആകും.",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "ഓഫ്. ഓണാക്കിയാൽ പേജ് വീണ്ടും ലോഡ് ആകും.",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "നീക്കി",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}

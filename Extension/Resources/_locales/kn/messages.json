@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "ಪುಟಗಳು ನಿಮ್ಮ ಕ್ಲಿಕ್ ಬಳಸಿ ನೀವು ಕೇಳದ ಜಾಗಕ್ಕೆ ತೆರೆಯುವುದನ್ನು ಅಥವಾ ಕಳುಹಿಸುವುದನ್ನು ತಡೆಯುತ್ತದೆ.",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "ರಕ್ಷಣೆ",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "ಆನ್",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "ಆಫ್",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ರಕ್ಷಿಸಿ",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "Undirect ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "ವೆಬ್‌ಸೈಟ್ ತೆರೆದು ಇಲ್ಲಿ ಒತ್ತಿ.",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "ರಕ್ಷಿಸಲು ಯಾವುದೇ ಪುಟವಿಲ್ಲ.",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳ ಪ್ರಕಾರ ಈಗಾಗಲೇ ಎಲ್ಲೆಡೆ ಆನ್ ಆಗಿದೆ.",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಆಫ್ ಆಗಿದೆ.",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "ರಕ್ಷಣೆ ಎಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತದೆ",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "ನಾನು ಆನ್ ಮಾಡಿದ ಸೈಟ್‌ಗಳು",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "ಎಲ್ಲ ಸೈಟ್‌ಗಳು",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "ಏನೂ ದಾಖಲಾಗುತ್ತಿಲ್ಲ: ಇಲ್ಲಿ ರಕ್ಷಣೆ ಆಫ್ ಆಗಿದೆ.",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "ಈ ಪುಟ",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "ಇದುವರೆಗೆ ಈ ಪುಟದಿಂದ ಹೊರಹೋಗಲು ಯಾವುದೂ ಪ್ರಯತ್ನಿಸಿಲ್ಲ.",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "ತೋರಿಸಲು ಇನ್ನೂ ಏನೂ ಇಲ್ಲ.",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "ತಡೆದಿದ್ದು: $COUNT$",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "ತಡೆದಿದ್ದು: $COUNT$",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "ದಾಖಲಾದ ಪ್ರಯತ್ನಗಳು: $COUNT$",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "ದಾಖಲಾದ ಪ್ರಯತ್ನಗಳು: $COUNT$",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "ಪ್ರಯತ್ನಗಳು: $COUNT$",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "ಪ್ರಯತ್ನಗಳು: $COUNT$",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "ಪರಿಹಾರ",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "ನಿರ್ಬಂಧಿತ",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "ಅನುಮತಿಸಲಾಗಿದೆ",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "ಈ ಸೈಟ್‌ನಲ್ಲಿ",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "ಎಲ್ಲೆಡೆ",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "ಡೀಫಾಲ್ಟ್ ಪ್ರಕಾರ",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ಅನುಮತಿಸಿ",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "ಎಲ್ಲೆಡೆ ಅನುಮತಿಸಿ",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ನಿರ್ಬಂಧಿಸಿ",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "ಎಲ್ಲೆಡೆ ನಿರ್ಬಂಧಿಸಿ",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "ನಿಯಮವಿಲ್ಲದ ಗಮ್ಯಸ್ಥಾನಗಳು",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "ನಿರ್ಬಂಧಿಸಿ",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "ಅನುಮತಿಸಿ",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "ಈ ಪುಟದ ಸ್ವಂತ ಭದ್ರತಾ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಸ್ಕ್ರಿಪ್ಟ್‌ನ ಒಂದು ಭಾಗವನ್ನು ತಡೆಯುತ್ತವೆ, ಹಾಗಾಗಿ ಇಲ್ಲಿ ರಕ್ಷಣೆ ಭಾಗಶಃ ಮಾತ್ರ.",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "ಅದೃಶ್ಯ ಕ್ಲಿಕ್ ಬಲೆ",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "ಪಾರದರ್ಶಕ ಪದರ",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "ನಕಲಿ ಕ್ಲಿಕ್",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "ಪಾಪ್‌ಅಪ್ ವಿಂಡೋ",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "ಮರೆಮಾಡಿದ ಫಾರ್ಮ್",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "ಕ್ಲಿಕ್ ನಡುವೆ ಬದಲಾದ ಲಿಂಕ್",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "ತಿರುಗಿಸಿದ ಹಿಂತಿರುಗುವಿಕೆ",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "ಕ್ಲಿಕ್ ಕಸಿದುಕೊಂಡ ರೀಡೈರೆಕ್ಟ್",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "ಹಿನ್ನೆಲೆಯಲ್ಲಿ ತೆರೆದ ಟ್ಯಾಬ್",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "ನೆಟ್‌ವರ್ಕ್‌ನಲ್ಲಿ ತಡೆಯಲಾಗಿದೆ",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "ಇದರ ವಿಳಾಸದಲ್ಲಿ ಈ ಸೈಟ್‌ಗೆ ಹಿಂದಿರುಗುವ ದಾರಿ ಇತ್ತು.",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "ನಿರ್ದಿಷ್ಟ ಗಾತ್ರದ ವಿಂಡೋ.",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "ನಿಮ್ಮ ಕ್ಲಿಕ್ ಕಸಿದುಕೊಂಡಿತು.",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "ನಿಯಮವಿಲ್ಲ; ಅನುಮತಿಸಲಾಗಿದೆ.",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "ಸೈಟ್ ತಾನೇ ತೆರೆಯಿತು.",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "ನಿಯಮಗಳು",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "ಹಿಂದೆ",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "ಎಲ್ಲೆಡೆ",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "ಸೈಟ್ ಪ್ರಕಾರ",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "ನಿಯಮಗಳಿಲ್ಲ",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "ಅನುಮತಿಸಿ",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "ನಿರ್ಬಂಧಿಸಿ",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "ನಿಯಮ ತೆಗೆಯಿರಿ",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "ಪುಟದಲ್ಲಿ ಸೂಚನೆ",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "ರಕ್ಷಣೆ ಆಫ್; ಆನ್ ಮಾಡಲು ಒತ್ತಿ",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "ಇಲ್ಲಿ ರಕ್ಷಿಸಲು ಏನೂ ಇಲ್ಲ",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ರಕ್ಷಣೆ ಆನ್ ಆಗಿದೆ",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "ಆನ್. ಆಫ್ ಮಾಡಿದರೆ ಪುಟ ಮರುಲೋಡ್ ಆಗುತ್ತದೆ.",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "ಆಫ್. ಆನ್ ಮಾಡಿದರೆ ಪುಟ ಮರುಲೋಡ್ ಆಗುತ್ತದೆ.",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "ತೆಗೆಯಲಾಗಿದೆ",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}

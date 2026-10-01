@@ -1,0 +1,481 @@
+{
+  "locale": "ml",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "എക്സ്റ്റൻഷൻ ഓൺ ആക്കിയിട്ടില്ല",
+      "back": "Extension not turned on"
+    },
+    "app.setup.title_failed": {
+      "s": "നില പരിശോധിക്കാനായില്ല",
+      "back": "Status could not be checked"
+    },
+    "app.setup.detail_default": {
+      "s": "സംരക്ഷിത സൈറ്റുകൾക്ക് ഇനി നിങ്ങളുടെ ടാപ്പുകൾ തട്ടിയെടുക്കാനാകില്ല.",
+      "back": "Protected sites can no longer snatch your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "ഇത്തവണ Safari പ്രതികരിച്ചില്ല. എക്സ്റ്റൻഷൻ ഓൺ ആക്കിയാൽ ആപ്പ് സ്വയം അറിഞ്ഞുകൊള്ളും.",
+      "back": "Safari did not respond this time; if you turn it on the app will know by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Safari എക്സ്റ്റൻഷനുകൾ തുറക്കുക",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Undirect-ലേക്ക് സ്വാഗതം",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "അദൃശ്യ പാളികൾ",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "സുതാര്യമായ ഒരു പാളിക്ക് പേജ് മൂടി, മറ്റൊന്നിനായുള്ള ടാപ്പ് പിടിച്ചെടുക്കാനാകും.",
+      "back": "A transparent layer can cover the page and catch a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "മാറ്റിയ ലിങ്കുകൾ",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "ചില പേജുകൾ അമർത്തുന്നതിനും വിടുന്നതിനും ഇടയിൽ ലിങ്കിന്റെ ലക്ഷ്യം മാറ്റും.",
+      "back": "Some pages change a link's target between pressing and releasing"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "ആരും ചോദിക്കാത്ത വിൻഡോകൾ",
+      "back": "Windows nobody asked for"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "സംരക്ഷണം ഓണായിരിക്കുമ്പോൾ പുതിയ ടാബ് നിങ്ങൾ ടാപ്പ് ചെയ്തിടത്തേക്ക് മാത്രം തുറക്കും.",
+      "back": "With protection on a new tab opens only to where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "ഓരോ ലക്ഷ്യസ്ഥാനവും",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "ഓരോ ലക്ഷ്യസ്ഥാനത്തിനും ഒരു വരി ഉണ്ടാകും. ഒരു സൈറ്റിലോ എല്ലായിടത്തോ അനുവദിക്കുകയോ തടയുകയോ ചെയ്യാം.",
+      "back": "Each destination gets a row; allow or block on one site or everywhere"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "ഒരു സമയം ഒരു സൈറ്റ്",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "സൈറ്റിൽ Safari ടൂൾബാറിലെ Undirect ബട്ടൺ അമർത്തിയാൽ അവിടെ സംരക്ഷണം ഓണാകും.",
+      "back": "On a site pressing the Undirect button in Safari's toolbar turns protection on there"
+    },
+    "app.nav.guarded_sites": {
+      "s": "സംരക്ഷിത സൈറ്റുകൾ",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "ക്രമീകരണങ്ങൾ",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "എല്ലായിടത്തും",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "സൈറ്റ് അനുസരിച്ച്",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "എക്സ്റ്റൻഷനിൽ നിന്ന് ഇതുവരെ ഒന്നും വന്നിട്ടില്ല",
+      "back": "Nothing yet from the extension"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Safari-യിൽ ഏതെങ്കിലും പേജ് തുറക്കൂ, പട്ടിക സ്വയം നിറയും.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "നിയമങ്ങളില്ല",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "നിങ്ങൾ അനുവദിക്കുകയോ തടയുകയോ ചെയ്താൽ മാത്രമേ ലക്ഷ്യസ്ഥാനം ഇവിടെ വരൂ.",
+      "back": "A destination comes here only if you allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "ആകെ തടഞ്ഞ ശ്രമങ്ങൾ: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "തടഞ്ഞത്",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "അനുവദിച്ചത്",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "അനുവദിക്കുക",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "തടയുക",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "ഈ ലക്ഷ്യസ്ഥാനം അനുവദിക്കുക അല്ലെങ്കിൽ തടയുക",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "ഡിഫോൾട്ട് ഉപയോഗിക്കുക",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "സംരക്ഷിത സൈറ്റുകൾ ഇതുവരെ ഇല്ല",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "നിങ്ങളെ വഴിതിരിച്ചുവിടുന്ന സൈറ്റിൽ Safari ടൂൾബാറിലെ Undirect ബട്ടൺ അമർത്തുക.",
+      "back": "On a site that redirects you press Undirect's button in Safari's toolbar"
+    },
+    "app.watched.footer": {
+      "s": "സൈറ്റുകൾ ചേർക്കുന്നത് Safari-യിലെ Undirect ബട്ടൺ വഴിയാണ്. ഇവിടെ നീക്കം ചെയ്യാൻ മാത്രം കഴിയും.",
+      "back": "Sites are added via Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "സംരക്ഷിതം",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "നിർത്തുക",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "ഈ സൈറ്റിലെ സംരക്ഷണം ഓഫാക്കുന്നു",
+      "back": "Turns off protection on this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "സംരക്ഷണം",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "ഓൺ",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "ഓഫ്",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "സംരക്ഷണം എവിടെ പ്രവർത്തിക്കും",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "ഞാൻ ഓണാക്കുന്ന സൈറ്റുകൾ",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "എല്ലാ സൈറ്റുകളും",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "പേജിൽ അറിയിപ്പ്",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "നിയമമില്ലാത്ത ലക്ഷ്യസ്ഥാനങ്ങൾ",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "തടയുക",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "അനുവദിക്കുക",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "പേജുകൾ നിങ്ങളുടെ ക്ലിക്ക് ഉപയോഗിച്ച് നിങ്ങൾ ആവശ്യപ്പെടാത്ത ഇടത്തേക്ക് തുറക്കുന്നതും കൊണ്ടുപോകുന്നതും തടയുന്നു.",
+      "back": "Stops pages using your click to open or take to somewhere you did not request"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "ഈ സൈറ്റിൽ സംരക്ഷണം ഓണാണ്",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "സംരക്ഷണം ഓഫ്; ഓണാക്കാൻ അമർത്തുക",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "ഇവിടെ സംരക്ഷിക്കാൻ ഒന്നുമില്ല",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect വെബ്സൈറ്റുകളിൽ പ്രവർത്തിക്കുന്നു",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "ഒരു വെബ്സൈറ്റ് തുറന്ന് ഇവിടെ അമർത്തുക.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "ഈ സൈറ്റ് സംരക്ഷിക്കുക",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "സംരക്ഷിക്കാൻ പേജ് ഒന്നുമില്ല.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "ക്രമീകരണങ്ങൾ പ്രകാരം എല്ലായിടത്തും ഇതിനകം ഓണാണ്.",
+      "back": "Per settings already on everywhere"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "ക്രമീകരണങ്ങളിൽ ഓഫാക്കിയിരിക്കുന്നു.",
+      "back": "Off in settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "ഓൺ. ഓഫാക്കിയാൽ പേജ് വീണ്ടും ലോഡ് ആകും.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "ഓഫ്. ഓണാക്കിയാൽ പേജ് വീണ്ടും ലോഡ് ആകും.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "ഈ പേജ്",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "ഒന്നും രേഖപ്പെടുത്തുന്നില്ല: ഇവിടെ സംരക്ഷണം ഓഫാണ്.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "ഇതുവരെ ഈ പേജിൽ നിന്ന് പുറത്തുകടക്കാൻ ഒന്നും ശ്രമിച്ചിട്ടില്ല.",
+      "back": "So far nothing has tried to leave this page"
+    },
+    "ext.popup.page_empty": {
+      "s": "കാണിക്കാൻ ഇതുവരെ ഒന്നുമില്ല.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "തടഞ്ഞത്: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "തടഞ്ഞത്: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "രേഖപ്പെടുത്തിയ ശ്രമങ്ങൾ: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "രേഖപ്പെടുത്തിയ ശ്രമങ്ങൾ: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "ശ്രമങ്ങൾ: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "ശ്രമങ്ങൾ: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "പരിഹാരം",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "തടഞ്ഞത്",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "അനുവദിച്ചത്",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "നീക്കി",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "ഈ സൈറ്റിൽ",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "എല്ലായിടത്തും",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "ഡിഫോൾട്ട് പ്രകാരം",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "ഈ സൈറ്റിൽ അനുവദിക്കുക",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "എല്ലായിടത്തും അനുവദിക്കുക",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "ഈ സൈറ്റിൽ തടയുക",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "എല്ലായിടത്തും തടയുക",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "നിയമമില്ലാത്ത ലക്ഷ്യസ്ഥാനങ്ങൾ",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "തടയുക",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "അനുവദിക്കുക",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "ഈ പേജിന്റെ സ്വന്തം സുരക്ഷാ ക്രമീകരണങ്ങൾ സ്ക്രിപ്റ്റിന്റെ ഒരു ഭാഗം തടയുന്നതിനാൽ ഇവിടെ സംരക്ഷണം ഭാഗികം മാത്രമാണ്.",
+      "back": "This page's own security settings block part of the script so protection is only partial"
+    },
+    "ext.kind.click_catcher": {
+      "s": "അദൃശ്യ ക്ലിക്ക് കെണി",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "സുതാര്യ പാളി",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "വ്യാജ ക്ലിക്ക്",
+      "back": "Fake click"
+    },
+    "ext.kind.window_open": {
+      "s": "പോപ്പ്-അപ്പ് വിൻഡോ",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "മറച്ച ഫോം",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "ക്ലിക്കിനിടയിൽ മാറ്റിയ ലിങ്ക്",
+      "back": "Link changed during the click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "വഴിതിരിച്ച മടക്കം",
+      "back": "Diverted going back"
+    },
+    "ext.kind.redirect": {
+      "s": "ക്ലിക്ക് തട്ടിയെടുത്ത റീഡയറക്ട്",
+      "back": "Redirect that snatched the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "പിന്നിൽ തുറന്ന ടാബ്",
+      "back": "Tab opened behind"
+    },
+    "ext.kind.network_rule": {
+      "s": "നെറ്റ്‌വർക്കിൽ തടഞ്ഞത്",
+      "back": "Blocked at the network"
+    },
+    "ext.reason.way_back": {
+      "s": "ഇതിന്റെ വിലാസത്തിൽ ഈ സൈറ്റിലേക്കുള്ള മടക്കവഴി ഉണ്ടായിരുന്നു.",
+      "back": "Its address had a way back to this site"
+    },
+    "ext.reason.sized": {
+      "s": "നിശ്ചിത വലുപ്പമുള്ള വിൻഡോ.",
+      "back": "Window of a fixed size"
+    },
+    "ext.reason.took_press": {
+      "s": "നിങ്ങളുടെ ക്ലിക്ക് എടുത്തു.",
+      "back": "Took your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "നിയമമില്ല; അനുവദിച്ചു.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "സൈറ്റ് തന്നെ തുറന്നത്.",
+      "back": "The site itself opened it"
+    },
+    "ext.popup.rules_link": {
+      "s": "നിയമങ്ങൾ",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "തിരികെ",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "എല്ലായിടത്തും",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "സൈറ്റ് അനുസരിച്ച്",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "നിയമങ്ങളില്ല",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "അനുവദിക്കുക",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "തടയുക",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "നിയമം നീക്കുക",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "ക്രമീകരണങ്ങൾ",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "സംരക്ഷണം",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "ഓൺ",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "ഓഫ്",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "സംരക്ഷണം എവിടെ പ്രവർത്തിക്കും",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "ഞാൻ ഓണാക്കുന്ന സൈറ്റുകൾ",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "എല്ലാ സൈറ്റുകളും",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "പേജിൽ അറിയിപ്പ്",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുക",
+      "back": "Report a problem"
+    }
+  }
+}

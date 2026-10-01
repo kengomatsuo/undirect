@@ -76,7 +76,7 @@
     "description": "Shown when the destination list is empty."
   },
   "popup_stopped_one": {
-    "message": "บล็อก %lld ครั้ง",
+    "message": "บล็อก $COUNT$ ครั้ง",
     "description": "How many attempts were blocked on this page, singular.",
     "placeholders": {
       "count": {
@@ -86,7 +86,7 @@
     }
   },
   "popup_stopped_other": {
-    "message": "บล็อก %lld ครั้ง",
+    "message": "บล็อก $COUNT$ ครั้ง",
     "description": "How many attempts were blocked on this page, plural.",
     "placeholders": {
       "count": {
@@ -96,7 +96,7 @@
     }
   },
   "popup_seen_one": {
-    "message": "พบ %lld ครั้ง",
+    "message": "พบ $COUNT$ ครั้ง",
     "description": "How many cross-site attempts were recorded, singular.",
     "placeholders": {
       "count": {
@@ -106,7 +106,7 @@
     }
   },
   "popup_seen_other": {
-    "message": "พบ %lld ครั้ง",
+    "message": "พบ $COUNT$ ครั้ง",
     "description": "How many cross-site attempts were recorded, plural.",
     "placeholders": {
       "count": {
@@ -116,7 +116,7 @@
     }
   },
   "popup_tries_one": {
-    "message": "%lld ครั้ง",
+    "message": "$COUNT$ ครั้ง",
     "description": "How many times one destination came up, singular.",
     "placeholders": {
       "count": {
@@ -126,7 +126,7 @@
     }
   },
   "popup_tries_other": {
-    "message": "%lld ครั้ง",
+    "message": "$COUNT$ ครั้ง",
     "description": "How many times one destination came up, plural.",
     "placeholders": {
       "count": {

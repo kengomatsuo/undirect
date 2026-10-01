@@ -1,0 +1,322 @@
+{
+  "extension_name": {
+    "message": "Undirect",
+    "description": "Name of the extension."
+  },
+  "extension_description": {
+    "message": "পাতাগুলো আপনার ক্লিক ব্যবহার করে আপনার না চাওয়া জায়গায় নিয়ে যাওয়া বা খোলা থেকে আটকায়।",
+    "description": "Description of the extension."
+  },
+  "app_title": {
+    "message": "Undirect",
+    "description": "Title shown in the container app and the popup."
+  },
+  "popup_guard_label": {
+    "message": "সুরক্ষা",
+    "description": "Label of the master on/off switch."
+  },
+  "popup_guard_on": {
+    "message": "চালু",
+    "description": "State of the master switch when the guard is running."
+  },
+  "popup_guard_off": {
+    "message": "বন্ধ",
+    "description": "State of the master switch when the guard is paused."
+  },
+  "popup_watch_label": {
+    "message": "এই সাইট সুরক্ষিত করুন",
+    "description": "Label of the per-site switch, the popup's first row."
+  },
+  "popup_no_site_title": {
+    "message": "Undirect ওয়েবসাইটে কাজ করে",
+    "description": "Popup title on a tab with no website, such as the Start Page."
+  },
+  "popup_no_site_body": {
+    "message": "একটি ওয়েবসাইট খুলে এখানে চাপ দিন।",
+    "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."
+  },
+  "popup_watch_unknown": {
+    "message": "সুরক্ষার জন্য কোনো পাতা নেই।",
+    "description": "Shown when the current tab has no site to watch."
+  },
+  "popup_watch_everywhere": {
+    "message": "সেটিংস অনুযায়ী সব সাইটে আগে থেকেই চালু।",
+    "description": "Shown when the mode setting already covers every site."
+  },
+  "popup_watch_master_off": {
+    "message": "সেটিংসে বন্ধ করা আছে।",
+    "description": "Shown when the master Guard switch in Settings is off."
+  },
+  "popup_mode_heading": {
+    "message": "সুরক্ষা কোথায় কাজ করবে",
+    "description": "Label above the mode choice."
+  },
+  "mode_watched": {
+    "message": "আমার চালু করা সাইট",
+    "description": "Mode: the guard runs only on sites switched on individually."
+  },
+  "mode_everywhere": {
+    "message": "সব সাইট",
+    "description": "Mode: the guard runs automatically on every site."
+  },
+  "popup_page_off": {
+    "message": "কিছু নথিভুক্ত হচ্ছে না: এখানে সুরক্ষা বন্ধ।",
+    "description": "Shown in the tab section when the site is not being guarded."
+  },
+  "popup_page_heading": {
+    "message": "এই পাতা",
+    "description": "Heading of the section about the current tab."
+  },
+  "popup_page_quiet": {
+    "message": "এ পর্যন্ত এই পাতা থেকে কিছু বেরোনোর চেষ্টা করেনি।",
+    "description": "Shown when no cross-site destination was recorded."
+  },
+  "popup_page_empty": {
+    "message": "দেখানোর মতো কিছু এখনও নেই।",
+    "description": "Shown when the destination list is empty."
+  },
+  "popup_stopped_one": {
+    "message": "থামানো হয়েছে: $COUNT$",
+    "description": "How many attempts were blocked on this page, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_stopped_other": {
+    "message": "থামানো হয়েছে: $COUNT$",
+    "description": "How many attempts were blocked on this page, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "popup_seen_one": {
+    "message": "নথিভুক্ত প্রচেষ্টা: $COUNT$",
+    "description": "How many cross-site attempts were recorded, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_seen_other": {
+    "message": "নথিভুক্ত প্রচেষ্টা: $COUNT$",
+    "description": "How many cross-site attempts were recorded, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "5"
+      }
+    }
+  },
+  "popup_tries_one": {
+    "message": "প্রচেষ্টা: $COUNT$",
+    "description": "How many times one destination came up, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "popup_tries_other": {
+    "message": "প্রচেষ্টা: $COUNT$",
+    "description": "How many times one destination came up, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "4"
+      }
+    }
+  },
+  "popup_recipe_heading": {
+    "message": "সমাধান",
+    "description": "Heading for a per-site fix that was applied."
+  },
+  "state_blocked": {
+    "message": "আটকানো",
+    "description": "A destination that is being stopped."
+  },
+  "state_allowed": {
+    "message": "অনুমোদিত",
+    "description": "A destination that is being let through."
+  },
+  "scope_here": {
+    "message": "এই সাইটে",
+    "description": "The rule was set for the current site only."
+  },
+  "scope_everywhere": {
+    "message": "সর্বত্র",
+    "description": "The rule was set for every site."
+  },
+  "scope_default": {
+    "message": "ডিফল্ট অনুযায়ী",
+    "description": "No rule was set, so the default applies."
+  },
+  "action_allow_here": {
+    "message": "এই সাইটে অনুমতি দিন",
+    "description": "Let this destination through on the current site."
+  },
+  "action_allow_everywhere": {
+    "message": "সর্বত্র অনুমতি দিন",
+    "description": "Let this destination through on every site."
+  },
+  "action_block_here": {
+    "message": "এই সাইটে আটকান",
+    "description": "Stop this destination on the current site."
+  },
+  "action_block_everywhere": {
+    "message": "সর্বত্র আটকান",
+    "description": "Stop this destination on every site."
+  },
+  "popup_policy_heading": {
+    "message": "নিয়মহীন গন্তব্য",
+    "description": "Label above the default policy choice."
+  },
+  "policy_block": {
+    "message": "আটকান",
+    "description": "Default policy: stop unknown cross-site destinations."
+  },
+  "policy_allow": {
+    "message": "অনুমতি দিন",
+    "description": "Default policy: let unknown cross-site destinations through."
+  },
+  "popup_bridge_warning": {
+    "message": "এই পাতার নিজস্ব নিরাপত্তা সেটিংস স্ক্রিপ্টের একাংশ আটকে দিচ্ছে, তাই এখানে সুরক্ষা আংশিক।",
+    "description": "Shown when the page CSP stopped the page-world script."
+  },
+  "kind_click_catcher": {
+    "message": "অদৃশ্য ক্লিক-ফাঁদ",
+    "description": "A transparent form or link laid over the page."
+  },
+  "kind_overlay": {
+    "message": "স্বচ্ছ স্তর",
+    "description": "A see-through element covering the page."
+  },
+  "kind_synthetic_click": {
+    "message": "নকল ক্লিক",
+    "description": "A click the page dispatched itself."
+  },
+  "kind_window_open": {
+    "message": "পপ-আপ উইন্ডো",
+    "description": "A window.open call."
+  },
+  "kind_form_submit": {
+    "message": "লুকানো ফর্ম",
+    "description": "A form submitted to a new tab."
+  },
+  "kind_href_swap": {
+    "message": "ক্লিকের মাঝপথে বদলানো লিংক",
+    "description": "An anchor rewritten between press and release."
+  },
+  "kind_back_hijack": {
+    "message": "ঘুরিয়ে দেওয়া ফিরে যাওয়া",
+    "description": "A navigation right after the back gesture."
+  },
+  "kind_redirect": {
+    "message": "ক্লিক কেড়ে নেওয়া রিডাইরেক্ট",
+    "description": "A cross-site navigation that took the user's press."
+  },
+  "kind_pop_tab": {
+    "message": "পেছনে খোলা ট্যাব",
+    "description": "A new tab the page opened on somewhere else."
+  },
+  "kind_network_rule": {
+    "message": "নেটওয়ার্কে আটকানো",
+    "description": "A known pop network refused by a network rule."
+  },
+  "reason_way_back": {
+    "message": "এর ঠিকানায় এই সাইটে ফেরার পথ ছিল।",
+    "description": "Why a redirect was allowed: its address carried a same-site callback."
+  },
+  "reason_sized": {
+    "message": "নির্দিষ্ট মাপের উইন্ডো।",
+    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
+  },
+  "reason_took_press": {
+    "message": "আপনার ক্লিক কেড়ে নিয়েছে।",
+    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
+  },
+  "reason_default_allow": {
+    "message": "নিয়ম নেই; অনুমোদিত।",
+    "description": "Why a destination was allowed: no rule, and the default policy is allow."
+  },
+  "reason_own_code": {
+    "message": "সাইট নিজেই খুলেছে।",
+    "description": "Why a window was allowed: the code that opened it belongs to this site."
+  },
+  "popup_rules_link": {
+    "message": "নিয়ম",
+    "description": "Opens the list of every rule the user has set."
+  },
+  "popup_page_link": {
+    "message": "ফিরে যান",
+    "description": "Goes back from the rules list to the current tab."
+  },
+  "rules_everywhere_heading": {
+    "message": "সর্বত্র",
+    "description": "Heading for rules that apply on every site."
+  },
+  "rules_by_site_heading": {
+    "message": "সাইট অনুযায়ী",
+    "description": "Heading for rules that apply to a single site."
+  },
+  "rules_empty": {
+    "message": "কোনো নিয়ম নেই",
+    "description": "Shown when a rules list has no entries."
+  },
+  "action_allow": {
+    "message": "অনুমতি দিন",
+    "description": "Change a rule to allow."
+  },
+  "action_block": {
+    "message": "আটকান",
+    "description": "Change a rule to block."
+  },
+  "action_clear": {
+    "message": "নিয়ম সরান",
+    "description": "Remove a rule so the default applies."
+  },
+  "popup_settings_heading": {
+    "message": "সেটিংস",
+    "description": "Heading of the settings section."
+  },
+  "setting_banner": {
+    "message": "পাতায় বার্তা",
+    "description": "Toggle for the note drawn in the page when something is stopped."
+  },
+  "action_report": {
+    "message": "সমস্যা জানান",
+    "description": "Opens a prefilled issue about a site the guard missed."
+  },
+  "action_title_off": {
+    "message": "সুরক্ষা বন্ধ; চালু করতে চাপ দিন",
+    "description": "Toolbar button tooltip while the guard is off on the site."
+  },
+  "action_title_no_site": {
+    "message": "এখানে সুরক্ষার কিছু নেই",
+    "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."
+  },
+  "action_title_on": {
+    "message": "এই সাইটে সুরক্ষা চালু",
+    "description": "Toolbar button tooltip while the guard is on."
+  },
+  "popup_watch_on": {
+    "message": "চালু। বন্ধ করলে পাতা আবার লোড হবে।",
+    "description": "Under the site name while the guard runs there."
+  },
+  "popup_watch_off": {
+    "message": "বন্ধ। চালু করলে পাতা আবার লোড হবে।",
+    "description": "Under the site name while the guard is off there."
+  },
+  "state_removed": {
+    "message": "সরানো হয়েছে",
+    "description": "A trap on the page itself, taken off before it could catch a click."
+  }
+}

@@ -76,7 +76,7 @@
     "description": "Shown when the destination list is empty."
   },
   "popup_stopped_one": {
-    "message": "%lld zatrzymana",
+    "message": "$COUNT$ zatrzymana",
     "description": "How many attempts were blocked on this page, singular.",
     "placeholders": {
       "count": {
@@ -86,7 +86,7 @@
     }
   },
   "popup_stopped_other": {
-    "message": "%lld zatrzymanych",
+    "message": "$COUNT$ zatrzymanych",
     "description": "How many attempts were blocked on this page, plural.",
     "placeholders": {
       "count": {
@@ -96,7 +96,7 @@
     }
   },
   "popup_seen_one": {
-    "message": "%lld próba łącznie",
+    "message": "$COUNT$ próba łącznie",
     "description": "How many cross-site attempts were recorded, singular.",
     "placeholders": {
       "count": {
@@ -106,7 +106,7 @@
     }
   },
   "popup_seen_other": {
-    "message": "%lld prób łącznie",
+    "message": "$COUNT$ prób łącznie",
     "description": "How many cross-site attempts were recorded, plural.",
     "placeholders": {
       "count": {
@@ -116,7 +116,7 @@
     }
   },
   "popup_tries_one": {
-    "message": "%lld raz",
+    "message": "$COUNT$ raz",
     "description": "How many times one destination came up, singular.",
     "placeholders": {
       "count": {
@@ -126,7 +126,7 @@
     }
   },
   "popup_tries_other": {
-    "message": "%lld razy",
+    "message": "$COUNT$ razy",
     "description": "How many times one destination came up, plural.",
     "placeholders": {
       "count": {

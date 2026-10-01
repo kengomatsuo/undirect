@@ -14,6 +14,9 @@ function el(tag, className, text) {
 }
 
 function localizeStatic() {
+  // Hebrew, Arabic and Urdu read right to left; the stylesheet mirrors on this.
+  const direction = api.i18n.getMessage("@@bidi_dir");
+  document.documentElement.dir = direction === "rtl" ? "rtl" : "ltr";
   for (const node of document.querySelectorAll("[data-i18n]")) {
     node.textContent = t(node.dataset.i18n);
   }

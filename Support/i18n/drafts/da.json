@@ -1,0 +1,481 @@
+{
+  "locale": "da",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Udvidelsen er ikke slået til",
+      "back": "Extension not switched on"
+    },
+    "app.setup.title_failed": {
+      "s": "Kunne ikke tjekke status",
+      "back": "Could not check status"
+    },
+    "app.setup.detail_default": {
+      "s": "Beskyttede websteder kan ikke længere tage dine tryk.",
+      "back": "Protected sites can no longer take your taps"
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari svarede ikke denne gang. Slår du udvidelsen til, opdager appen det af sig selv.",
+      "back": "Safari did not answer; if you switch it on the app notices by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Åbn Safari-udvidelser",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Velkommen til Undirect",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Usynlige lag",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Et gennemsigtigt lag kan ligge over siden og fange et tryk, der var ment til noget andet.",
+      "back": "A transparent layer can lie over the page and catch a tap meant for something else"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Ombyttede links",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Nogle sider ændrer et links mål mellem tryk og slip.",
+      "back": "Some pages change a link's target between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Uventede vinduer",
+      "back": "Unexpected windows"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Med beskyttelsen slået til åbner en ny fane kun der, hvor du trykkede.",
+      "back": "With protection on a new tab only opens where you tapped"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Hvert mål",
+      "back": "Every destination"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Hvert mål får sin egen række. Du kan tillade eller blokere det på ét websted eller alle.",
+      "back": "Each destination gets its own row; allow or block on one site or all"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Ét websted ad gangen",
+      "back": "One site at a time"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "Tryk på Undirect-knappen i Safaris værktøjslinje på et websted for at slå det til.",
+      "back": "Press the Undirect button in Safari's toolbar on a site to switch it on"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Beskyttede websteder",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Indstillinger",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "Overalt",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Pr. websted",
+      "back": "Per site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Intet fra udvidelsen endnu",
+      "back": "Nothing from the extension yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Åbn en side i Safari, så udfyldes listen af sig selv.",
+      "back": "Open a page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "Ingen regler",
+      "back": "No rules"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Et mål dukker op her, når du har tilladt eller blokeret det.",
+      "back": "A destination shows up here once you have allowed or blocked it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Stoppede forsøg i alt: %lld",
+      "back": "Stopped attempts in total: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Blokeret",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Tilladt",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Tillad",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Bloker",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Tillad eller bloker dette mål",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Brug standard",
+      "back": "Use default"
+    },
+    "app.watched.empty.title": {
+      "s": "Ingen beskyttede websteder endnu",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "Tryk på Undirect-knappen i Safaris værktøjslinje på et websted, der omdirigerer dig.",
+      "back": "Press Undirect's button in Safari's toolbar on a site that redirects you"
+    },
+    "app.watched.footer": {
+      "s": "Websteder tilføjes fra Undirect-knappen i Safari. Her kan du kun fjerne dem.",
+      "back": "Sites are added from Safari's button; here you can only remove"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Beskyttet",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Stop",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Slår beskyttelsen fra for dette websted",
+      "back": "Switches protection off for this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Beskyttelse",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Til",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Fra",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Hvor beskyttelsen virker",
+      "back": "Where protection works"
+    },
+    "app.settings.mode_watched": {
+      "s": "Websteder, jeg slår til",
+      "back": "Sites I switch on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Alle websteder",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Besked på siden",
+      "back": "Notice on the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Mål uden regel",
+      "back": "Destinations without a rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Bloker",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Tillad",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Forhindrer sider i at bruge dit klik til at åbne eller omdirigere til noget, du ikke bad om.",
+      "back": "Stops pages using your click to open or redirect to something you did not ask for"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Beskyttelse er slået til på dette websted",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Beskyttelse slået fra. Tryk for at slå til",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "Intet at beskytte her",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect virker på websteder",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Åbn et websted, og tryk her.",
+      "back": "Open a site and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Beskyt dette websted",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "Ingen side at beskytte her.",
+      "back": "No page to protect here"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Kører allerede overalt ifølge Indstillinger.",
+      "back": "Already running everywhere per Settings"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Slået fra i Indstillinger.",
+      "back": "Switched off in Settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Slået til. Slår du fra, genindlæses siden.",
+      "back": "On; switching off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Slået fra. Slår du til, genindlæses siden.",
+      "back": "Off; switching on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Denne side",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "Intet registreres: beskyttelsen er slået fra her.",
+      "back": "Nothing recorded: protection off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Intet har forsøgt at forlade denne side indtil nu.",
+      "back": "Nothing has tried to leave this page so far"
+    },
+    "ext.popup.page_empty": {
+      "s": "Intet at vise endnu.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "Stoppet: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.stopped_other": {
+      "s": "Stoppet: %lld",
+      "back": "Stopped: N"
+    },
+    "ext.popup.seen_one": {
+      "s": "Registrerede forsøg: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.seen_other": {
+      "s": "Registrerede forsøg: %lld",
+      "back": "Recorded attempts: N"
+    },
+    "ext.popup.tries_one": {
+      "s": "Forsøg: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.tries_other": {
+      "s": "Forsøg: %lld",
+      "back": "Attempts: N"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Rettelse",
+      "back": "Fix"
+    },
+    "ext.state.blocked": {
+      "s": "Blokeret",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Tilladt",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Fjernet",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "på dette websted",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "overalt",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "som standard",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Tillad på dette websted",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Tillad overalt",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Bloker på dette websted",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Bloker overalt",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Mål uden regel",
+      "back": "Destinations without a rule"
+    },
+    "ext.policy.block": {
+      "s": "Bloker",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Tillad",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "Sidens egne sikkerhedsindstillinger blokerer en del af scriptet, så beskyttelsen kun virker delvist her.",
+      "back": "The page's own security settings block part of the script so protection only partly works"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Usynlig klikfælde",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Gennemsigtigt lag",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Simuleret klik",
+      "back": "Simulated click"
+    },
+    "ext.kind.window_open": {
+      "s": "Pop op-vindue",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Skjult formular",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Link ændret midt i trykket",
+      "back": "Link changed mid-press"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Omdirigeret tilbage",
+      "back": "Diverted back"
+    },
+    "ext.kind.redirect": {
+      "s": "Omdirigering, der tog trykket",
+      "back": "Redirect that took the press"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Fane åbnet i baggrunden",
+      "back": "Tab opened in the background"
+    },
+    "ext.kind.network_rule": {
+      "s": "Stoppet i netværket",
+      "back": "Stopped in the network"
+    },
+    "ext.reason.way_back": {
+      "s": "Dens adresse indeholdt vejen tilbage hertil.",
+      "back": "Its address contained the way back here"
+    },
+    "ext.reason.sized": {
+      "s": "Vindue i en bestemt størrelse.",
+      "back": "Window of a certain size"
+    },
+    "ext.reason.took_press": {
+      "s": "Tog dit tryk.",
+      "back": "Took your press"
+    },
+    "ext.reason.default_allow": {
+      "s": "Ingen regel. Tilladt.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "Åbnet af selve webstedet.",
+      "back": "Opened by the site itself"
+    },
+    "ext.popup.rules_link": {
+      "s": "Regler",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Tilbage",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "Overalt",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Pr. websted",
+      "back": "Per site"
+    },
+    "ext.rules.empty": {
+      "s": "Ingen regler",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Tillad",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Bloker",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Fjern regel",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Indstillinger",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Beskyttelse",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Til",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Fra",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Hvor beskyttelsen virker",
+      "back": "Where protection works"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Websteder, jeg slår til",
+      "back": "Sites I switch on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Alle websteder",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Besked på siden",
+      "back": "Notice on the page"
+    },
+    "ext.action.report": {
+      "s": "Rapportér et problem",
+      "back": "Report a problem"
+    }
+  }
+}

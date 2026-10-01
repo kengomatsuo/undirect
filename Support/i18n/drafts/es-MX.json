@@ -1,0 +1,481 @@
+{
+  "locale": "es-MX",
+  "entries": {
+    "app.setup.title_default": {
+      "s": "Extensión sin activar",
+      "back": "Extension not activated"
+    },
+    "app.setup.title_failed": {
+      "s": "No se pudo verificar",
+      "back": "Could not verify"
+    },
+    "app.setup.detail_default": {
+      "s": "Los sitios protegidos ya no podrán robarte los clics.",
+      "back": "Protected sites can no longer steal your clicks"
+    },
+    "app.setup.detail_failed": {
+      "s": "Safari no respondió esta vez. Si activas la extensión, la app lo detectará sola.",
+      "back": "Safari did not answer; if you enable it the app detects it by itself"
+    },
+    "app.setup.open_button": {
+      "s": "Abrir extensiones de Safari",
+      "back": "Open Safari extensions"
+    },
+    "app.welcome.heading": {
+      "s": "Te damos la bienvenida a Undirect",
+      "back": "Welcome to Undirect"
+    },
+    "app.welcome.feature.invisible_layers.title": {
+      "s": "Capas invisibles",
+      "back": "Invisible layers"
+    },
+    "app.welcome.feature.invisible_layers.detail": {
+      "s": "Una capa transparente cubre la página y se queda con tu clic.",
+      "back": "A transparent layer covers the page and takes your click"
+    },
+    "app.welcome.feature.swapped_links.title": {
+      "s": "Enlaces cambiados",
+      "back": "Swapped links"
+    },
+    "app.welcome.feature.swapped_links.detail": {
+      "s": "Algunas páginas cambian el destino del enlace entre que presionas y sueltas.",
+      "back": "Some pages change the link destination between press and release"
+    },
+    "app.welcome.feature.uninvited_windows.title": {
+      "s": "Ventanas que nadie pidió",
+      "back": "Windows nobody asked for"
+    },
+    "app.welcome.feature.uninvited_windows.detail": {
+      "s": "Con la protección activa, una pestaña nueva solo abre a donde diste el clic.",
+      "back": "With protection on, a new tab opens only where you clicked"
+    },
+    "app.welcome.feature.every_destination.title": {
+      "s": "Todos los destinos",
+      "back": "All destinations"
+    },
+    "app.welcome.feature.every_destination.detail": {
+      "s": "Cada destino queda en una lista: lo permites o lo bloqueas en un sitio o en todos.",
+      "back": "Each destination is listed; allow or block on one site or all"
+    },
+    "app.welcome.feature.one_site_at_a_time.title": {
+      "s": "Sitio por sitio",
+      "back": "Site by site"
+    },
+    "app.welcome.feature.one_site_at_a_time.detail": {
+      "s": "En un sitio, presiona el botón de Undirect en la barra de Safari para activarlo.",
+      "back": "On a site, press the Undirect button in Safari's bar to turn it on"
+    },
+    "app.nav.guarded_sites": {
+      "s": "Sitios protegidos",
+      "back": "Protected sites"
+    },
+    "app.nav.settings": {
+      "s": "Ajustes",
+      "back": "Settings"
+    },
+    "app.nav.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "app.rules.grouping.everywhere": {
+      "s": "En todos",
+      "back": "Everywhere"
+    },
+    "app.rules.grouping.by_site": {
+      "s": "Por sitio",
+      "back": "By site"
+    },
+    "app.rules.empty_no_app.title": {
+      "s": "Aún no hay noticias de la extensión",
+      "back": "No news from the extension yet"
+    },
+    "app.rules.empty_no_app.detail": {
+      "s": "Abre cualquier página en Safari y la lista se llenará sola.",
+      "back": "Open any page in Safari and the list fills itself"
+    },
+    "app.rules.empty_no_rules.title": {
+      "s": "No hay reglas",
+      "back": "No rules here"
+    },
+    "app.rules.empty_no_rules.detail": {
+      "s": "Un destino aparece aquí cuando decides permitirlo o bloquearlo.",
+      "back": "A destination shows up here when you decide to allow or block it"
+    },
+    "app.rules.footer.lifetime_count": {
+      "s": "Total de intentos detenidos: %lld",
+      "back": "Total attempts stopped: N"
+    },
+    "app.rules.row.state_blocked": {
+      "s": "Bloqueado",
+      "back": "Blocked"
+    },
+    "app.rules.row.state_allowed": {
+      "s": "Permitido",
+      "back": "Allowed"
+    },
+    "app.rules.row.action_allow": {
+      "s": "Permitir",
+      "back": "Allow"
+    },
+    "app.rules.row.action_block": {
+      "s": "Bloquear",
+      "back": "Block"
+    },
+    "app.rules.row.help_tooltip": {
+      "s": "Permitir o bloquear este destino",
+      "back": "Allow or block this destination"
+    },
+    "app.rules.row.use_default": {
+      "s": "Usar el valor predeterminado",
+      "back": "Use the default"
+    },
+    "app.watched.empty.title": {
+      "s": "Aún no hay sitios protegidos",
+      "back": "No protected sites yet"
+    },
+    "app.watched.empty.detail": {
+      "s": "En un sitio que te redirija, presiona el botón de Undirect en la barra de Safari.",
+      "back": "On a site that redirects you, press Undirect's button in Safari's bar"
+    },
+    "app.watched.footer": {
+      "s": "Los sitios se agregan desde el botón de Undirect en Safari; aquí solo puedes quitarlos.",
+      "back": "Sites are added from Safari's Undirect button; here only removal"
+    },
+    "app.watched.row.guarded_badge": {
+      "s": "Protegido",
+      "back": "Protected"
+    },
+    "app.watched.row.stop_button": {
+      "s": "Detener",
+      "back": "Stop"
+    },
+    "app.watched.row.stop_tooltip": {
+      "s": "Desactiva la protección en este sitio",
+      "back": "Turns protection off on this site"
+    },
+    "app.settings.guard_toggle": {
+      "s": "Protección",
+      "back": "Guard"
+    },
+    "app.settings.state_on": {
+      "s": "Activada",
+      "back": "On"
+    },
+    "app.settings.state_off": {
+      "s": "Desactivada",
+      "back": "Off"
+    },
+    "app.settings.mode_heading": {
+      "s": "Dónde actúa la protección",
+      "back": "Where protection acts"
+    },
+    "app.settings.mode_watched": {
+      "s": "Los sitios que yo active",
+      "back": "Sites I turn on"
+    },
+    "app.settings.mode_everywhere": {
+      "s": "Todos los sitios",
+      "back": "Every site"
+    },
+    "app.settings.banner_toggle": {
+      "s": "Aviso en la página",
+      "back": "Notice in the page"
+    },
+    "app.settings.policy_heading": {
+      "s": "Destinos sin regla",
+      "back": "Destinations with no rule"
+    },
+    "app.settings.policy_block": {
+      "s": "Bloquear",
+      "back": "Block"
+    },
+    "app.settings.policy_allow": {
+      "s": "Permitir",
+      "back": "Allow"
+    },
+    "ext.meta.name": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.meta.description": {
+      "s": "Evita que las páginas usen tu clic para abrir o redirigirte a un lugar que no pediste.",
+      "back": "Prevents pages using your click to open or redirect somewhere you did not ask"
+    },
+    "ext.meta.app_title": {
+      "s": "Undirect",
+      "back": "Undirect"
+    },
+    "ext.toolbar.tooltip_on": {
+      "s": "Protección activa en este sitio",
+      "back": "Protection on for this site"
+    },
+    "ext.toolbar.tooltip_off": {
+      "s": "Protección desactivada; presiona para activarla",
+      "back": "Protection off; press to turn on"
+    },
+    "ext.toolbar.tooltip_no_site": {
+      "s": "No hay nada que proteger aquí",
+      "back": "Nothing to protect here"
+    },
+    "ext.popup.no_site_title": {
+      "s": "Undirect funciona en sitios web",
+      "back": "Undirect works on websites"
+    },
+    "ext.popup.no_site_body": {
+      "s": "Abre un sitio web y presiona aquí.",
+      "back": "Open a website and press here"
+    },
+    "ext.popup.watch_switch_label": {
+      "s": "Proteger este sitio",
+      "back": "Protect this site"
+    },
+    "ext.popup.watch_unknown": {
+      "s": "No hay una página que proteger.",
+      "back": "No page to protect"
+    },
+    "ext.popup.watch_everywhere_mode": {
+      "s": "Ya está activa en todos los sitios, según Ajustes.",
+      "back": "Already on everywhere per Settings"
+    },
+    "ext.popup.watch_master_off": {
+      "s": "Está desactivada en Ajustes.",
+      "back": "Off in Settings"
+    },
+    "ext.popup.watch_on": {
+      "s": "Activa. Al desactivarla se recarga la página.",
+      "back": "On; turning off reloads the page"
+    },
+    "ext.popup.watch_off": {
+      "s": "Desactivada. Al activarla se recarga la página.",
+      "back": "Off; turning on reloads the page"
+    },
+    "ext.popup.page_heading": {
+      "s": "Esta página",
+      "back": "This page"
+    },
+    "ext.popup.page_off": {
+      "s": "No se registra nada: la protección está desactivada aquí.",
+      "back": "Nothing recorded: protection is off here"
+    },
+    "ext.popup.page_quiet": {
+      "s": "Nada ha intentado salir de esta página hasta ahora.",
+      "back": "Nothing has tried to leave this page so far"
+    },
+    "ext.popup.page_empty": {
+      "s": "Todavía no hay nada que mostrar.",
+      "back": "Nothing to show yet"
+    },
+    "ext.popup.stopped_one": {
+      "s": "%lld detenido",
+      "back": "stopped"
+    },
+    "ext.popup.stopped_other": {
+      "s": "%lld detenidos",
+      "back": "stopped"
+    },
+    "ext.popup.seen_one": {
+      "s": "%lld intento registrado",
+      "back": "attempt recorded"
+    },
+    "ext.popup.seen_other": {
+      "s": "%lld intentos registrados",
+      "back": "attempts recorded"
+    },
+    "ext.popup.tries_one": {
+      "s": "%lld vez",
+      "back": "time"
+    },
+    "ext.popup.tries_other": {
+      "s": "%lld veces",
+      "back": "times"
+    },
+    "ext.popup.recipe_heading": {
+      "s": "Ajuste aplicado",
+      "back": "Fix applied"
+    },
+    "ext.state.blocked": {
+      "s": "Bloqueado",
+      "back": "Blocked"
+    },
+    "ext.state.allowed": {
+      "s": "Permitido",
+      "back": "Allowed"
+    },
+    "ext.state.removed": {
+      "s": "Quitado",
+      "back": "Removed"
+    },
+    "ext.scope.here": {
+      "s": "en este sitio",
+      "back": "on this site"
+    },
+    "ext.scope.everywhere": {
+      "s": "en todos los sitios",
+      "back": "everywhere"
+    },
+    "ext.scope.default": {
+      "s": "por predeterminado",
+      "back": "by default"
+    },
+    "ext.action.allow_here": {
+      "s": "Permitir en este sitio",
+      "back": "Allow on this site"
+    },
+    "ext.action.allow_everywhere": {
+      "s": "Permitir en todos",
+      "back": "Allow everywhere"
+    },
+    "ext.action.block_here": {
+      "s": "Bloquear en este sitio",
+      "back": "Block on this site"
+    },
+    "ext.action.block_everywhere": {
+      "s": "Bloquear en todos",
+      "back": "Block everywhere"
+    },
+    "ext.popup.policy_heading": {
+      "s": "Destinos sin regla",
+      "back": "Destinations with no rule"
+    },
+    "ext.policy.block": {
+      "s": "Bloquear",
+      "back": "Block"
+    },
+    "ext.policy.allow": {
+      "s": "Permitir",
+      "back": "Allow"
+    },
+    "ext.popup.bridge_warning": {
+      "s": "La política de seguridad de esta página bloquea parte del script; aquí la protección es parcial.",
+      "back": "This page's security policy blocks part of the script; protection is partial here"
+    },
+    "ext.kind.click_catcher": {
+      "s": "Trampa de clics invisible",
+      "back": "Invisible click trap"
+    },
+    "ext.kind.overlay": {
+      "s": "Capa transparente",
+      "back": "Transparent layer"
+    },
+    "ext.kind.synthetic_click": {
+      "s": "Clic simulado",
+      "back": "Simulated click"
+    },
+    "ext.kind.window_open": {
+      "s": "Ventana emergente",
+      "back": "Pop-up window"
+    },
+    "ext.kind.form_submit": {
+      "s": "Formulario oculto",
+      "back": "Hidden form"
+    },
+    "ext.kind.href_swap": {
+      "s": "Enlace cambiado en pleno clic",
+      "back": "Link changed mid-click"
+    },
+    "ext.kind.back_hijack": {
+      "s": "Retroceso desviado",
+      "back": "Back diverted"
+    },
+    "ext.kind.redirect": {
+      "s": "Redirección que se queda con el clic",
+      "back": "Redirect that takes the click"
+    },
+    "ext.kind.pop_tab": {
+      "s": "Pestaña abierta por detrás",
+      "back": "Tab opened behind"
+    },
+    "ext.kind.network_rule": {
+      "s": "Bloqueado en la red",
+      "back": "Blocked at the network"
+    },
+    "ext.reason.way_back": {
+      "s": "Su dirección incluía el regreso a este sitio.",
+      "back": "Its address included the way back here"
+    },
+    "ext.reason.sized": {
+      "s": "Ventana con tamaño definido.",
+      "back": "Window with a set size"
+    },
+    "ext.reason.took_press": {
+      "s": "Se llevó tu clic.",
+      "back": "Took your click"
+    },
+    "ext.reason.default_allow": {
+      "s": "Sin regla; se permitió.",
+      "back": "No rule; allowed"
+    },
+    "ext.reason.own_code": {
+      "s": "La abrió el propio sitio.",
+      "back": "Opened by the site itself"
+    },
+    "ext.popup.rules_link": {
+      "s": "Reglas",
+      "back": "Rules"
+    },
+    "ext.popup.back_link": {
+      "s": "Atrás",
+      "back": "Back"
+    },
+    "ext.rules.everywhere_heading": {
+      "s": "En todos",
+      "back": "Everywhere"
+    },
+    "ext.rules.by_site_heading": {
+      "s": "Por sitio",
+      "back": "By site"
+    },
+    "ext.rules.empty": {
+      "s": "Sin reglas",
+      "back": "No rules"
+    },
+    "ext.action.allow": {
+      "s": "Permitir",
+      "back": "Allow"
+    },
+    "ext.action.block": {
+      "s": "Bloquear",
+      "back": "Block"
+    },
+    "ext.action.clear": {
+      "s": "Quitar regla",
+      "back": "Remove rule"
+    },
+    "ext.popup.settings_heading": {
+      "s": "Ajustes",
+      "back": "Settings"
+    },
+    "ext.settings.guard_label": {
+      "s": "Protección",
+      "back": "Guard"
+    },
+    "ext.settings.guard_on": {
+      "s": "Activada",
+      "back": "On"
+    },
+    "ext.settings.guard_off": {
+      "s": "Desactivada",
+      "back": "Off"
+    },
+    "ext.settings.mode_heading": {
+      "s": "Dónde actúa la protección",
+      "back": "Where protection acts"
+    },
+    "ext.settings.mode_watched": {
+      "s": "Los sitios que yo active",
+      "back": "Sites I turn on"
+    },
+    "ext.settings.mode_everywhere": {
+      "s": "Todos los sitios",
+      "back": "Every site"
+    },
+    "ext.settings.banner_toggle": {
+      "s": "Aviso en la página",
+      "back": "Notice in the page"
+    },
+    "ext.action.report": {
+      "s": "Reportar un problema",
+      "back": "Report a problem"
+    }
+  }
+}
