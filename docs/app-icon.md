@@ -65,7 +65,9 @@ Two constraints from Apple, both from
 - **An Icon Composer file replaces an asset catalogue icon.** Xcode uses the
   `.icon` instead of any `AppIcon` set, and generates the back-compatible images
   itself, so `App/Assets.xcassets/AppIcon.appiconset` was deleted rather than
-  left as a fallback. `AccentColor.colorset` stays.
+  left as a fallback. `AccentColor.colorset` stays, and follows the mark: `#D92B24` in
+light mode, a touch darker than `#E5322B` so small link text clears 4.5:1 on
+white, and `#FF5C55` in dark mode. The popup's `--accent` uses the same pair.
 
 XcodeGen 2.46 needs no help here. `App` is already a source path, and XcodeGen
 records the package as a single `wrapper.icon` file reference in the Resources

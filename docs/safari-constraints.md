@@ -78,6 +78,19 @@ Applying a change twice does no harm, which covers one arriving both live and
 from the queue. The app shows each change at once and keeps showing it until
 the extension writes a snapshot newer than it (`RulesModel.pending`).
 
+Tested on the Mac with Safari 26 on 2026-10-01. With the background page
+asleep, Stop left the change in `from-app.json` and the snapshot did not move
+for six seconds; the next page load collected it and the site was gone. With
+the page awake the live message did not arrive either, and the queue waited
+until the page next talked to the handler. So a page load asks for the queue
+too (`collectOnLoad`, at most every three seconds, never on iOS), and a Stop
+pressed while the page was awake landed on the next load. A debug build takes
+`-UndirectGuardSite <site>`, which queues a site switched on, so Stop can be
+tested without pressing Safari's button: computer use can only look at Safari.
+To test a debug build beside the App Store copy, unregister the App Store
+appex with `pluginkit -r` and register it again afterwards; pluginkit elects
+one copy per bundle id, and the debug copy keeps its own extension storage.
+
 ## Private windows share the extension (2026-10-01)
 
 Safari runs one copy of the extension across private and ordinary windows

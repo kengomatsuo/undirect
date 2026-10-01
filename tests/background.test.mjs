@@ -145,7 +145,9 @@ function world({ slowStorage = false, matchedRules = null,
     listeners.gone.forEach((fn) => fn(id));
   };
 
-  return { api, calls, local, session, send, emit, settle, close, releaseStorage };
+  const queue = (change) => queued.push(change);
+
+  return { api, calls, local, session, send, emit, settle, close, queue, releaseStorage };
 }
 
 const main = (tabId, url) => ({ frameId: 0, tabId, url });
@@ -515,6 +517,18 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   ok("a queued Stop is applied before the first page is judged", answer?.active === false,
      JSON.stringify(answer));
   ok("and the site leaves storage", !("site.com" in (w.local.watched ?? {})), JSON.stringify(w.local.watched));
+}
+
+{
+  // Safari dropped the app's live message even while this page was awake,
+  // so a change queued then is collected on the next page load.
+  const w = world({ watched: { "site.com": true } });
+  await w.settle();
+  w.queue({ action: "watch", site: "site.com", on: false });
+  w.send({ type: "undirect:hello", site: "site.com" }, 7);
+  await w.settle();
+  ok("a Stop queued while awake lands on the next page load",
+     !("site.com" in (w.local.watched ?? {})), JSON.stringify(w.local.watched));
 }
 
 {

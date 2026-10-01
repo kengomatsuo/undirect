@@ -72,6 +72,14 @@ final class RulesModel {
     // usually long after this window opened. Reading once at launch left the
     // list empty for the rest of the session.
     func watch() async {
+        #if DEBUG && os(macOS)
+        // Debug builds can guard a site from the command line, through the
+        // same queue Stop uses, so Stop can be tested without a press on
+        // Safari's own button.
+        if let site = UserDefaults.standard.string(forKey: "UndirectGuardSite") {
+            send(["action": "watch", "site": site, "on": true])
+        }
+        #endif
         while !Task.isCancelled {
             try? await Task.sleep(for: .seconds(2))
             let written = SharedStore.writtenAt()

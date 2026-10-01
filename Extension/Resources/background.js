@@ -527,6 +527,7 @@ async function noteNetworkBlocks(tabId) {
 // this too, and it was announcing itself over the record of its own theft.
 async function hello(tabId, site) {
   if (tabId === undefined) return;
+  collectOnLoad();
   await restored;
   const entry = tabEntry(tabId);
 
@@ -977,6 +978,20 @@ async function applyFromApp(changes) {
       // one bad change must not hold back the rest
     }
   }
+}
+
+// Safari also dropped the app's live message while this page was awake
+// (macOS 26, 2026-10-01), so a page load asks too, at most every few
+// seconds. iOS has no app that can send, so it never asks there.
+const appCanSend = Promise.resolve(api.runtime.getPlatformInfo?.())
+  .then((info) => info?.os !== "ios")
+  .catch(() => false);
+let collectedAt = 0;
+
+async function collectOnLoad() {
+  if (Date.now() - collectedAt < 3000 || !(await appCanSend)) return;
+  collectedAt = Date.now();
+  await collectFromApp();
 }
 
 // Asked once on waking, before any rule is read, so a site stopped from the
