@@ -364,7 +364,7 @@ body {
 }
 
 .verdict:has(select:focus-visible) {
-  outline: 2px solid var(--accent);
+  outline: auto; /* the system focus ring, in the user's colour */
   outline-offset: 2px;
 }
 
@@ -428,7 +428,7 @@ body {
 
 .switch input:focus-visible,
 .back:focus-visible {
-  outline: 2px solid var(--accent);
+  outline: auto;
   outline-offset: 2px;
 }
 
@@ -471,7 +471,7 @@ body {
 }
 
 .choice input:focus-visible ~ .title {
-  outline: 2px solid var(--accent);
+  outline: auto;
   outline-offset: 2px;
   border-radius: 3px;
 }
