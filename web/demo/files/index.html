@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bytebarn · Shared files</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #f4f1ea; color: #231f1a; font: 16px/1.5 -apple-system, "SF Pro Text", sans-serif; }
+  header { background: #231f1a; color: #f4f1ea; padding: 16px 28px; font-weight: 800; font-size: 20px; letter-spacing: -.01em; }
+  header span { color: #ffb347; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 20px 60px; }
+  h1 { font-size: 28px; letter-spacing: -.02em; margin-bottom: 4px; }
+  .sub { color: #6b6257; margin-bottom: 24px; }
+  .file { background: #fff; border-radius: 14px; padding: 18px 20px; margin-bottom: 14px; display: flex; align-items: center; gap: 16px; box-shadow: 0 1px 0 #e4ddcf; }
+  .ico { width: 46px; height: 56px; border-radius: 8px; background: #ffb347; display: grid; place-items: center; font-weight: 800; font-size: 12px; color: #231f1a; flex: none; }
+  .file b { display: block; font-size: 16px; }
+  .file small { color: #8b8274; }
+  .grow { flex: 1; min-width: 0; }
+  button { font: 700 15px -apple-system, sans-serif; background: #2f7d4f; color: #fff; border: 0; border-radius: 10px; padding: 11px 18px; cursor: pointer; }
+  .note { margin-top: 24px; font-size: 14px; color: #6b6257; }
+  #status { margin-top: 16px; font-weight: 600; color: #2f7d4f; min-height: 24px; }
+  footer { text-align: center; color: #9a917f; font-size: 12px; padding: 30px 20px; }
+</style>
+</head>
+<body>
+<header>byte<span>barn</span></header>
+<main>
+  <h1>Project files</h1>
+  <p class="sub">Shared by Marta · 3 files · expires in 6 days</p>
+  <div class="file"><div class="ico">PDF</div><div class="grow"><b>Site survey.pdf</b><small>4.2 MB</small></div><button data-file="Site survey.pdf">Download</button></div>
+  <div class="file"><div class="ico">ZIP</div><div class="grow"><b>Photos, set one.zip</b><small>38 MB</small></div><button data-file="Photos, set one.zip">Download</button></div>
+  <div class="file"><div class="ico">XLS</div><div class="grow"><b>Budget.xlsx</b><small>212 KB</small></div><button data-file="Budget.xlsx">Download</button></div>
+  <p id="status" role="status"></p>
+  <p class="note">Press any file to start. The first press is the page's own.</p>
+</main>
+<footer>Bytebarn is a fictional site made for the Undirect demo. Nothing here downloads.</footer>
+<script src="/demo/lib/env.js"></script>
+<script>
+  // The clear layer on top of this page belongs to a third-party "download manager".
+  DEMO.loadAd("overlay", DEMO.landed());
+  document.querySelectorAll("button").forEach((b) => b.addEventListener("click", () => {
+    document.getElementById("status").textContent = "Starting " + b.dataset.file + "…";
+  }));
+</script>
+</body>
+</html>
