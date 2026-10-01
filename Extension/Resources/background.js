@@ -451,9 +451,13 @@ api.runtime.onMessage.addListener((msg, sender) => {
   // here instead. `sender.tab.url` is the tab's top-level address in MV3
   // regardless of which frame sent the message.
   if (msg?.type === "undirect:active") {
-    return readState().then((state) => ({
-      active: guarding(state, Nav.destination(sender?.tab?.url ?? ""), sender?.tab?.id),
-    }));
+    return readState().then((state) => {
+      const site = Nav.destination(sender?.tab?.url ?? "");
+      return {
+        active: guarding(state, site, sender?.tab?.id),
+        here: tableFor(state, site, sender?.tab?.id).here,
+      };
+    });
   }
 
   return undefined;

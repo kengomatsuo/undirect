@@ -542,16 +542,19 @@
       active = false;
     } else if (settings.mode === "everywhere") {
       active = true;
-    } else if (isTop) {
-      active = stored.watched?.[siteBase] === true;
+    } else if (isTop && stored.watched?.[siteBase] === true) {
+      active = true;
     } else {
       // A subframe cannot read its own top-level site - a cross-origin frame
       // cannot see `top.location` - so it asks the background, which already
-      // knows the tab's real address. Slower than the top frame's storage
-      // read, and the frame stays inert until the answer lands.
+      // knows the tab's real address. A top frame asks too when storage says
+      // no: a site switched on in a private window lives in storage.session,
+      // which content scripts cannot read. Slower than the storage read, and
+      // the frame stays inert until the answer lands.
       try {
         const answer = await api.runtime.sendMessage({ type: "undirect:active" });
         active = !!answer?.active;
+        if (answer?.here) table.here = answer.here;
       } catch (e) {
         active = false;
       }

@@ -41,7 +41,7 @@ function world({ slowStorage = false, matchedRules = null,
 
   const calls = { goBack: [], removed: [], rules: [], badge: [], reloaded: [], native: [] };
   // Tabs that exist, by id; the private ones carry Safari's incognito flag.
-  const tabs = new Map([7, 8, 9, ...privateTabs].map((id) => [id, { id, url: "https://www.site.com/", incognito: privateTabs.includes(id) }]));
+  const tabs = new Map([7, 8, 9, ...privateTabs].map((id) => [id, { id, url: privateTabs.includes(id) ? "https://secret.com/" : "https://www.site.com/", incognito: privateTabs.includes(id) }]));
   // The Mac app's queue, handed over once, the way the native handler does.
   let queued = [...fromApp];
   const listeners = { message: [], before: [], committed: [], created: [], updated: [], gone: [] };
@@ -488,6 +488,13 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   const after = w.calls.native.filter((m) => m.snapshot).at(-1)?.snapshot;
   ok("a private-window rule for the site stays out of the snapshot", !("secret.com" in after.perSite),
      JSON.stringify(after.perSite));
+
+  // The page's own guard cannot read storage.session, so it asks.
+  const asked = await w.send({ type: "undirect:active" }, 9).find(Boolean);
+  ok("a private tab's page is told it is guarded", asked?.active === true, JSON.stringify(asked));
+  ok("and gets the site's private rules", asked?.here?.["ad.example"] === "allow", JSON.stringify(asked?.here));
+  const plain = await w.send({ type: "undirect:active" }, 7).find(Boolean);
+  ok("an ordinary tab is told it is not", plain?.active === false, JSON.stringify(plain));
 
   w.close(9);
   await w.settle();

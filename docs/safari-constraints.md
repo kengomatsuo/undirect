@@ -89,6 +89,16 @@ set, from a private tab goes to `privateWatched` or `privatePerSite` in
 private tabs, and they are cleared when the last private tab closes. Off clears
 both lists, wherever it was pressed.
 
+Content scripts cannot read `storage.session`, so a page's own guard that read
+only `storage.local` stayed off on a site switched on in a private window: the
+popup said On and the invisible layer still took the press. When storage says
+no, the top frame now asks the background (`undirect:active`), which answers
+with the site's rules for that tab too. Checked in the iOS 26 Simulator on
+2026-10-01 with the Bytebarn demo: the layer is swept in a private tab, and the
+snapshot never names the site. Safari also has to be allowed to run Undirect
+in Private Browsing (Manage Extensions in the page menu) before any of this
+applies.
+
 ## The background page is not persistent on iOS
 
 App Store Connect rejected the first iOS upload on 2026-09-10: when the manifest
