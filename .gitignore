@@ -33,3 +33,4 @@ tests/navigation.js
 fastlane/asc_api_key.json
 fastlane/report.xml
 fastlane/README.md
+dist/

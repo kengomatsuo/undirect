@@ -1,77 +1,78 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Try it · Undirect</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/style.css">
-    <script src="https://cdn.jsdelivr.net/gh/kengomatsuo/undirect@964ed96ae185a39b454c0b0873b1f3f0badf5eee/web/demo/pop.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Try it | Undirect</title>
+<meta name="description" content="Five made-up sites misbehave on purpose and one behaves. Open them in Safari with Undirect switched on and watch what it stops.">
+<link rel="canonical" href="https://undirect.matsuokengo.com/demo/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f7f6f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)">
+<meta name="apple-itunes-app" content="app-id=6810513194">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Try it | Undirect">
+<meta property="og:description" content="Five made-up sites misbehave on purpose and one behaves. Open them in Safari with Undirect switched on and watch what it stops.">
+<meta property="og:url" content="https://undirect.matsuokengo.com/demo/">
+<meta property="og:image" content="https://undirect.matsuokengo.com/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/icon.png">
+<link rel="stylesheet" href="/style.css">
+<script src="https://cdn.jsdelivr.net/gh/kengomatsuo/undirect@964ed96ae185a39b454c0b0873b1f3f0badf5eee/web/demo/pop.js"></script>
 </head>
 <body>
-    <nav class="site-nav">
-        <a href="/" class="nav-brand">
-            <img src="/icon.png" alt="Undirect" width="28" height="28">
-            Undirect
-        </a>
-        <input type="checkbox" id="nav-toggle" class="nav-toggle">
-        <label for="nav-toggle" class="nav-toggle-label">
-            <span></span><span></span><span></span>
-        </label>
-        <ul class="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/support/">Support</a></li>
-            <li><a href="/privacy/">Privacy</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-        <div class="page-header">
-            <h1>Try it</h1>
-            <p class="page-subtitle">This page misbehaves on purpose.</p>
-        </div>
-
-        <div class="support-section" id="cases">
-            <h2>Five made-up sites</h2>
-            <p>Each page below is fictional and shows one thing Undirect deals with. Every one of them can only reach a stand-in destination page that does nothing. The same list is <a href="/demo/cases/">on its own page</a>.</p>
-            <h3><a href="/demo/stream/" data-site="reelhouse">Reelhouse</a>, a film site</h3>
-            <p>The first click on the player opens a new window from third-party code.</p>
-            <h3><a href="/demo/files/" data-site="bytebarn">Bytebarn</a>, a file host</h3>
-            <p>A clear layer covers the page and takes the first press for itself.</p>
-            <h3><a href="/demo/download/" data-site="quickpatch">Quickpatch</a>, a download page</h3>
-            <p>The Download button sends this same tab to another site.</p>
-            <h3><a href="/demo/recipes/" data-site="saltpan">Saltpan Kitchen</a>, a recipe page</h3>
-            <p>A widget rewrites each link the moment you press it.</p>
-            <h3><a href="/demo/fine/" data-site="trailpress">Trailpress</a>, a news page that behaves</h3>
-            <p>A sign-in window and an outbound link, both asked for. Undirect leaves them alone.</p>
-        </div>
-
-        <div class="support-section">
-            <h2>How to test</h2>
-            <p>Press the Undirect button in Safari to turn it on for this site. Then tap anywhere below.</p>
-            <p>With Undirect off, a tap here opens tabs to made-up addresses.</p>
-        </div>
-
-        <div class="support-section">
-            <h2>What the page does</h2>
-            <h3>An invisible form over everything</h3>
-            <p>Your tap lands on it and it opens clicktrack.example in a new tab.</p>
-            <h3>A clear layer with no link</h3>
-            <p>It sits over the article and takes the tap for itself.</p>
-            <h3>A pop-up from third-party code</h3>
-            <p>A script from another server opens adserver.example.</p>
-            <h3>A click nobody made</h3>
-            <p>The same script clicks a link to tabunder.example.</p>
-        </div>
-    </div>
-    <footer class="site-footer">
-        <div class="footer-links">
-            <a href="/">Home</a>
-            <a href="/support/">Support</a>
-            <a href="/privacy/">Privacy</a>
-            <a href="https://github.com/kengomatsuo/undirect">Source</a>
-        </div>
-        <p class="copyright">© 2026 Kenneth Fang</p>
-    </footer>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+<nav class="site-nav">
+<a class="nav-brand" href="/"><img src="/icon.png" alt="" width="32" height="32">Undirect</a>
+<ul class="nav-links">
+<li><a href="/support/">Support</a></li>
+<li><a href="/privacy/">Privacy</a></li>
+<li><a href="/demo/" aria-current="page">Try it</a></li>
+</ul>
+</nav>
+</header>
+<main id="main">
+<div class="page">
+<div class="page-head"><h1>Try it</h1><p>This page misbehaves on purpose.</p></div>
+<div class="prose">
+<section id="cases">
+<h2>Five made-up sites</h2>
+<p>Each page below is fictional and shows one thing Undirect deals with. Every one of them can only reach a stand-in destination page that does nothing. The same list is <a href="/demo/cases/">on its own page</a>.</p>
+<ul class="demo-list">
+<li><a href="/demo/stream/" data-site="reelhouse">Reelhouse</a>, a film site<p>The first click on the player opens a new window from third-party code.</p></li>
+<li><a href="/demo/files/" data-site="bytebarn">Bytebarn</a>, a file host<p>A clear layer covers the page and takes the first press for itself.</p></li>
+<li><a href="/demo/download/" data-site="quickpatch">Quickpatch</a>, a download page<p>The Download button sends this same tab to another site.</p></li>
+<li><a href="/demo/recipes/" data-site="saltpan">Saltpan Kitchen</a>, a recipe page<p>A widget rewrites each link the moment you press it.</p></li>
+<li><a href="/demo/fine/" data-site="trailpress">Trailpress</a>, a news page that behaves<p>A sign-in window and an outbound link, both asked for. Undirect leaves them alone.</p></li>
+</ul>
+</section>
+<section>
+<h2>How to test</h2>
+<p>Press the Undirect button in Safari to turn it on for this site. Then tap anywhere below.</p>
+<p>With Undirect off, a tap here opens tabs to made-up addresses.</p>
+</section>
+<section>
+<h2>What the page does</h2>
+<p><strong>An invisible form over everything.</strong> Your tap lands on it and it opens clicktrack.example in a new tab.</p>
+<p><strong>A clear layer with no link.</strong> It sits over the article and takes the tap for itself.</p>
+<p><strong>A pop-up from third-party code.</strong> A script from another server opens adserver.example.</p>
+<p><strong>A click nobody made.</strong> The same script clicks a link to tabunder.example.</p>
+</section>
+</div>
+</div>
+</main>
+<footer class="site-footer">
+<ul class="footer-links">
+<li><a href="/">Undirect</a></li>
+<li><a href="/support/">Support</a></li>
+<li><a href="/privacy/">Privacy</a></li>
+<li><a href="https://github.com/kengomatsuo/undirect" rel="noopener">Source</a></li>
+</ul>
+<p class="copyright">&copy; 2026 Kenneth Fang</p>
+</footer>
     <script src="/demo/lib/env.js"></script>
     <script>
         // Locally each fake site gets its own *.localhost name, so Safari sees separate sites.
