@@ -41,6 +41,11 @@ Commands:
                     to every locale of the editable iOS and macOS versions; takes
                     its flags (--locales, --platform, --verify-only), needs the
                     renders in ../undirect-promo/out, and reads every set back
+  pages             Create or update the custom product pages from
+                    Support/AppStore/custom_pages.json (promo text, keywords,
+                    reordered iPhone and iPad frames, every locale) and read them
+                    back; takes --locales, --pages, --no-screenshots,
+                    --verify-only; never submits
   status            Print versions and builds per platform from App Store Connect
   help              Show this help
 
@@ -106,6 +111,13 @@ case "${1:-help}" in
     export ASC_KEY_ID ASC_ISSUER_ID ASC_PRIVATE_KEY_PATH
     shift
     python3 Support/AppStore/upload_previews.py "$@" ;;
+  pages)
+    ASC_KEY_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["key_id"])' "$UNDIRECT_ASC_KEY_FILE")"
+    ASC_ISSUER_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["issuer_id"])' "$UNDIRECT_ASC_KEY_FILE")"
+    ASC_PRIVATE_KEY_PATH="$(dirname "$UNDIRECT_ASC_KEY_FILE")/AuthKey_$ASC_KEY_ID.p8"
+    export ASC_KEY_ID ASC_ISSUER_ID ASC_PRIVATE_KEY_PATH
+    shift
+    python3 Support/AppStore/custom_pages.py "$@" ;;
   status)
     # asc takes the key from the environment; the .p8 sits beside the json.
     ASC_KEY_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["key_id"])' "$UNDIRECT_ASC_KEY_FILE")"
