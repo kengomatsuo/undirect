@@ -19,10 +19,6 @@ struct SettingsView: View {
         .formStyle(.grouped)
         .navigationTitle("Settings")
         .task { rules.reload() }
-        #if os(macOS)
-        .frame(width: 440)
-        .fixedSize(horizontal: false, vertical: true)
-        #endif
     }
 
     @ViewBuilder
