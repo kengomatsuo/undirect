@@ -76,7 +76,7 @@
     "description": "Shown when the destination list is empty."
   },
   "popup_stopped_one": {
-    "message": "ਰੋਕੇ ਗਏ: $COUNT$",
+    "message": "ਰੋਕਿਆ ਗਿਆ: $COUNT$",
     "description": "How many attempts were blocked on this page, singular.",
     "placeholders": {
       "count": {
@@ -96,7 +96,7 @@
     }
   },
   "popup_seen_one": {
-    "message": "ਦਰਜ ਕੋਸ਼ਿਸ਼ਾਂ: $COUNT$",
+    "message": "ਦਰਜ ਕੋਸ਼ਿਸ਼: $COUNT$",
     "description": "How many cross-site attempts were recorded, singular.",
     "placeholders": {
       "count": {
@@ -116,7 +116,7 @@
     }
   },
   "popup_tries_one": {
-    "message": "ਕੋਸ਼ਿਸ਼ਾਂ: $COUNT$",
+    "message": "ਕੋਸ਼ਿਸ਼: $COUNT$",
     "description": "How many times one destination came up, singular.",
     "placeholders": {
       "count": {
@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "ਮੋੜਿਆ ਹੋਇਆ ਵਾਪਸੀ ਕਦਮ",
+    "message": "ਵਾਪਸੀ ਦਾ ਰਾਹ ਬਦਲਿਆ",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
@@ -224,7 +224,7 @@
     "description": "A cross-site navigation that took the user's press."
   },
   "kind_pop_tab": {
-    "message": "ਪਿੱਛੇ ਖੁੱਲ੍ਹਿਆ ਟੈਬ",
+    "message": "ਕਲਿੱਕ ਮਗਰੋਂ ਖੁੱਲ੍ਹਿਆ ਟੈਬ",
     "description": "A new tab the page opened on somewhere else."
   },
   "kind_network_rule": {
@@ -244,7 +244,7 @@
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "ਨਿਯਮ ਨਹੀਂ; ਇਜਾਜ਼ਤ ਦਿੱਤੀ।",
+    "message": "ਕੋਈ ਨਿਯਮ ਨਹੀਂ, ਇਸ ਲਈ ਇਜਾਜ਼ਤ ਦਿੱਤੀ।",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {

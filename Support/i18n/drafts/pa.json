@@ -146,8 +146,8 @@
       "back": "Protected"
     },
     "app.watched.row.stop_button": {
-      "s": "ਰੋਕੋ",
-      "back": "Stop"
+      "s": "ਬੰਦ ਕਰੋ",
+      "back": "Turn off"
     },
     "app.watched.row.stop_tooltip": {
       "s": "ਇਸ ਸਾਈਟ ਦੀ ਸੁਰੱਖਿਆ ਬੰਦ ਕਰਦਾ ਹੈ",
@@ -266,24 +266,24 @@
       "back": "Nothing to show yet"
     },
     "ext.popup.stopped_one": {
-      "s": "ਰੋਕੇ ਗਏ: %lld",
-      "back": "Stopped: N"
+      "s": "ਰੋਕਿਆ ਗਿਆ: %lld",
+      "back": "Stopped: %lld"
     },
     "ext.popup.stopped_other": {
       "s": "ਰੋਕੇ ਗਏ: %lld",
       "back": "Stopped: N"
     },
     "ext.popup.seen_one": {
-      "s": "ਦਰਜ ਕੋਸ਼ਿਸ਼ਾਂ: %lld",
-      "back": "Recorded attempts: N"
+      "s": "ਦਰਜ ਕੋਸ਼ਿਸ਼: %lld",
+      "back": "Recorded attempt: %lld"
     },
     "ext.popup.seen_other": {
       "s": "ਦਰਜ ਕੋਸ਼ਿਸ਼ਾਂ: %lld",
       "back": "Recorded attempts: N"
     },
     "ext.popup.tries_one": {
-      "s": "ਕੋਸ਼ਿਸ਼ਾਂ: %lld",
-      "back": "Attempts: N"
+      "s": "ਕੋਸ਼ਿਸ਼: %lld",
+      "back": "Attempt: %lld"
     },
     "ext.popup.tries_other": {
       "s": "ਕੋਸ਼ਿਸ਼ਾਂ: %lld",
@@ -374,16 +374,16 @@
       "back": "Link changed during the click"
     },
     "ext.kind.back_hijack": {
-      "s": "ਮੋੜਿਆ ਹੋਇਆ ਵਾਪਸੀ ਕਦਮ",
-      "back": "Diverted going back"
+      "s": "ਵਾਪਸੀ ਦਾ ਰਾਹ ਬਦਲਿਆ",
+      "back": "Way back changed"
     },
     "ext.kind.redirect": {
       "s": "ਕਲਿੱਕ ਖੋਹਣ ਵਾਲਾ ਰੀਡਾਇਰੈਕਟ",
       "back": "Redirect that snatched the click"
     },
     "ext.kind.pop_tab": {
-      "s": "ਪਿੱਛੇ ਖੁੱਲ੍ਹਿਆ ਟੈਬ",
-      "back": "Tab opened behind"
+      "s": "ਕਲਿੱਕ ਮਗਰੋਂ ਖੁੱਲ੍ਹਿਆ ਟੈਬ",
+      "back": "Tab opened after the click"
     },
     "ext.kind.network_rule": {
       "s": "ਨੈੱਟਵਰਕ 'ਤੇ ਰੋਕਿਆ",
@@ -402,8 +402,8 @@
       "back": "Snatched your click"
     },
     "ext.reason.default_allow": {
-      "s": "ਨਿਯਮ ਨਹੀਂ; ਇਜਾਜ਼ਤ ਦਿੱਤੀ।",
-      "back": "No rule; allowed"
+      "s": "ਕੋਈ ਨਿਯਮ ਨਹੀਂ, ਇਸ ਲਈ ਇਜਾਜ਼ਤ ਦਿੱਤੀ।",
+      "back": "No rule, so it was allowed."
     },
     "ext.reason.own_code": {
       "s": "ਸਾਈਟ ਨੇ ਖ਼ੁਦ ਖੋਲ੍ਹਿਆ।",

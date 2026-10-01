@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Et donem la benvinguda a l'Undirect",
+      "s": "Benvinguda a l'Undirect",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -234,20 +234,20 @@
       "back": "No page to protect"
     },
     "ext.popup.watch_everywhere_mode": {
-      "s": "Ja és activa a tots els llocs, per la configuració.",
-      "back": "Already on everywhere per settings"
+      "s": "Ja protegeix tots els llocs, segons la configuració.",
+      "back": "It already protects every site, per Settings."
     },
     "ext.popup.watch_master_off": {
-      "s": "Està desactivada a la configuració.",
-      "back": "Off in settings"
+      "s": "La protecció està desactivada a la configuració.",
+      "back": "Protection is switched off in Settings."
     },
     "ext.popup.watch_on": {
-      "s": "Activa. Si la desactives, es recarrega la pàgina.",
-      "back": "On; turning off reloads the page"
+      "s": "Activada. Si la desactives, la pàgina es recarrega.",
+      "back": "On. If you switch it off, the page reloads."
     },
     "ext.popup.watch_off": {
-      "s": "Desactivada. Si l'actives, es recarrega la pàgina.",
-      "back": "Off; turning on reloads the page"
+      "s": "Desactivada. Si l'actives, la pàgina es recarrega.",
+      "back": "Off. If you switch it on, the page reloads."
     },
     "ext.popup.page_heading": {
       "s": "Aquesta pàgina",

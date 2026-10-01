@@ -198,8 +198,8 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "పేజీలు మీ క్లిక్‌ను ఉపయోగించి మీరు అడగని చోటుకు తెరవడాన్ని లేదా పంపడాన్ని ఆపుతుంది.",
-      "back": "Stops pages using your click to open or send to somewhere you did not ask"
+      "s": "మీ క్లిక్‌ను వాడుకుని మీకు అక్కర్లేని చోటుకు పేజీలు తెరవడాన్ని, మళ్లించడాన్ని ఆపుతుంది.",
+      "back": "Stops pages from using your click to open or redirect to a place you do not want."
     },
     "ext.meta.app_title": {
       "s": "Undirect",
@@ -374,8 +374,8 @@
       "back": "Link changed mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "మళ్లించిన వెనుకకు వెళ్లడం",
-      "back": "Diverted going back"
+      "s": "వెనుకకు వెళ్లే దారి మళ్లింపు",
+      "back": "Redirected way back"
     },
     "ext.kind.redirect": {
       "s": "క్లిక్‌ను లాక్కున్న రీడైరెక్ట్",
@@ -402,8 +402,8 @@
       "back": "Snatched your click"
     },
     "ext.reason.default_allow": {
-      "s": "నియమం లేదు; అనుమతించారు.",
-      "back": "No rule; allowed"
+      "s": "నియమం లేనందున అనుమతించారు.",
+      "back": "Allowed because there is no rule."
     },
     "ext.reason.own_code": {
       "s": "సైట్ స్వయంగా తెరిచింది.",

@@ -40,11 +40,11 @@
     "description": "Shown when the current tab has no site to watch."
   },
   "popup_watch_everywhere": {
-    "message": "Ja és activa a tots els llocs, per la configuració.",
+    "message": "Ja protegeix tots els llocs, segons la configuració.",
     "description": "Shown when the mode setting already covers every site."
   },
   "popup_watch_master_off": {
-    "message": "Està desactivada a la configuració.",
+    "message": "La protecció està desactivada a la configuració.",
     "description": "Shown when the master Guard switch in Settings is off."
   },
   "popup_mode_heading": {
@@ -308,11 +308,11 @@
     "description": "Toolbar button tooltip while the guard is on."
   },
   "popup_watch_on": {
-    "message": "Activa. Si la desactives, es recarrega la pàgina.",
+    "message": "Activada. Si la desactives, la pàgina es recarrega.",
     "description": "Under the site name while the guard runs there."
   },
   "popup_watch_off": {
-    "message": "Desactivada. Si l'actives, es recarrega la pàgina.",
+    "message": "Desactivada. Si l'actives, la pàgina es recarrega.",
     "description": "Under the site name while the guard is off there."
   },
   "state_removed": {

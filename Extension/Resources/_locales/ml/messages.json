@@ -52,7 +52,7 @@
     "description": "Label above the mode choice."
   },
   "mode_watched": {
-    "message": "ഞാൻ ഓണാക്കുന്ന സൈറ്റുകൾ",
+    "message": "ഞാൻ ഓണാക്കിയ സൈറ്റുകൾ",
     "description": "Mode: the guard runs only on sites switched on individually."
   },
   "mode_everywhere": {

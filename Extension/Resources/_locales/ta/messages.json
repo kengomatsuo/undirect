@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "உங்கள் கிளிக்கைப் பயன்படுத்தி, நீங்கள் கேட்காத இடத்துக்குத் திறப்பதையோ அனுப்புவதையோ பக்கங்களிடமிருந்து தடுக்கிறது.",
+    "message": "பக்கங்கள் உங்கள் கிளிக்கைப் பயன்படுத்தி, நீங்கள் விரும்பாத இடத்தைத் திறப்பதையோ அங்கே அனுப்புவதையோ தடுக்கிறது.",
     "description": "Description of the extension."
   },
   "app_title": {
@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "திருப்பிவிடப்பட்ட பின்செல்லல்",
+    "message": "பின்செல்லும் வழி மாற்றப்பட்டது",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
@@ -228,7 +228,7 @@
     "description": "A new tab the page opened on somewhere else."
   },
   "kind_network_rule": {
-    "message": "பிணையத்தில் தடுக்கப்பட்டது",
+    "message": "நெட்வொர்க்கில் தடுக்கப்பட்டது",
     "description": "A known pop network refused by a network rule."
   },
   "reason_way_back": {
@@ -244,7 +244,7 @@
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "விதி இல்லை; அனுமதிக்கப்பட்டது.",
+    "message": "விதி இல்லாததால் அனுமதிக்கப்பட்டது.",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {

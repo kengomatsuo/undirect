@@ -60,7 +60,7 @@
     "description": "Mode: the guard runs automatically on every site."
   },
   "popup_page_off": {
-    "message": "କିଛି ଲେଖାଯାଉନାହିଁ: ଏଠାରେ ସୁରକ୍ଷା ବନ୍ଦ ଅଛି।",
+    "message": "କିଛି ରେକର୍ଡ ହେଉନାହିଁ: ଏଠାରେ ସୁରକ୍ଷା ବନ୍ଦ ଅଛି।",
     "description": "Shown in the tab section when the site is not being guarded."
   },
   "popup_page_heading": {
@@ -68,7 +68,7 @@
     "description": "Heading of the section about the current tab."
   },
   "popup_page_quiet": {
-    "message": "ଏପର୍ଯ୍ୟନ୍ତ ଏହି ପୃଷ୍ଠାରୁ ବାହାରିବାକୁ କେହି ଚେଷ୍ଟା କରିନାହିଁ।",
+    "message": "ଏପର୍ଯ୍ୟନ୍ତ ଏହି ପୃଷ୍ଠାରୁ ବାହାରକୁ ଯିବାକୁ କିଛି ଚେଷ୍ଟା କରିନାହିଁ।",
     "description": "Shown when no cross-site destination was recorded."
   },
   "popup_page_empty": {
@@ -76,7 +76,7 @@
     "description": "Shown when the destination list is empty."
   },
   "popup_stopped_one": {
-    "message": "ବନ୍ଦ କରାଗଲା: $COUNT$",
+    "message": "ରୋକାଗଲା: $COUNT$",
     "description": "How many attempts were blocked on this page, singular.",
     "placeholders": {
       "count": {
@@ -86,7 +86,7 @@
     }
   },
   "popup_stopped_other": {
-    "message": "ବନ୍ଦ କରାଗଲା: $COUNT$",
+    "message": "ରୋକାଗଲା: $COUNT$",
     "description": "How many attempts were blocked on this page, plural.",
     "placeholders": {
       "count": {
@@ -96,7 +96,7 @@
     }
   },
   "popup_seen_one": {
-    "message": "ଲେଖାଯାଇଥିବା ପ୍ରୟାସ: $COUNT$",
+    "message": "ରେକର୍ଡ ହୋଇଥିବା ପ୍ରୟାସ: $COUNT$",
     "description": "How many cross-site attempts were recorded, singular.",
     "placeholders": {
       "count": {
@@ -106,7 +106,7 @@
     }
   },
   "popup_seen_other": {
-    "message": "ଲେଖାଯାଇଥିବା ପ୍ରୟାସ: $COUNT$",
+    "message": "ରେକର୍ଡ ହୋଇଥିବା ପ୍ରୟାସ: $COUNT$",
     "description": "How many cross-site attempts were recorded, plural.",
     "placeholders": {
       "count": {
@@ -140,11 +140,11 @@
     "description": "Heading for a per-site fix that was applied."
   },
   "state_blocked": {
-    "message": "ଅବରୋଧିତ",
+    "message": "ବ୍ଲକ ହୋଇଛି",
     "description": "A destination that is being stopped."
   },
   "state_allowed": {
-    "message": "ଅନୁମତି ପ୍ରାପ୍ତ",
+    "message": "ଅନୁମତି ମିଳିଛି",
     "description": "A destination that is being let through."
   },
   "scope_here": {
@@ -168,11 +168,11 @@
     "description": "Let this destination through on every site."
   },
   "action_block_here": {
-    "message": "ଏହି ସାଇଟରେ ଅବରୋଧ କରନ୍ତୁ",
+    "message": "ଏହି ସାଇଟରେ ବ୍ଲକ କରନ୍ତୁ",
     "description": "Stop this destination on the current site."
   },
   "action_block_everywhere": {
-    "message": "ସବୁଠି ଅବରୋଧ କରନ୍ତୁ",
+    "message": "ସବୁଠି ବ୍ଲକ କରନ୍ତୁ",
     "description": "Stop this destination on every site."
   },
   "popup_policy_heading": {
@@ -180,7 +180,7 @@
     "description": "Label above the default policy choice."
   },
   "policy_block": {
-    "message": "ଅବରୋଧ କରନ୍ତୁ",
+    "message": "ବ୍ଲକ କରନ୍ତୁ",
     "description": "Default policy: stop unknown cross-site destinations."
   },
   "policy_allow": {
@@ -276,7 +276,7 @@
     "description": "Change a rule to allow."
   },
   "action_block": {
-    "message": "ଅବରୋଧ କରନ୍ତୁ",
+    "message": "ବ୍ଲକ କରନ୍ତୁ",
     "description": "Change a rule to block."
   },
   "action_clear": {

@@ -46,8 +46,8 @@
       "back": "Windows nobody asked for"
     },
     "app.welcome.feature.uninvited_windows.detail": {
-      "s": "Con la protección activa, una pestaña nueva solo abre a donde diste el clic.",
-      "back": "With protection on, a new tab opens only where you clicked"
+      "s": "Con la protección activa, una pestaña nueva solo se abre adonde apuntaste.",
+      "back": "With protection on, a new tab only opens where you aimed."
     },
     "app.welcome.feature.every_destination.title": {
       "s": "Todos los destinos",
@@ -78,8 +78,8 @@
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
-      "s": "En todos",
-      "back": "Everywhere"
+      "s": "En todos los sitios",
+      "back": "On every site"
     },
     "app.rules.grouping.by_site": {
       "s": "Por sitio",
@@ -238,12 +238,12 @@
       "back": "Already on everywhere per Settings"
     },
     "ext.popup.watch_master_off": {
-      "s": "Está desactivada en Ajustes.",
-      "back": "Off in Settings"
+      "s": "La protección está desactivada en Ajustes.",
+      "back": "Protection is switched off in Settings."
     },
     "ext.popup.watch_on": {
-      "s": "Activa. Al desactivarla se recarga la página.",
-      "back": "On; turning off reloads the page"
+      "s": "Activada. Al desactivarla se recarga la página.",
+      "back": "On. Switching it off reloads the page."
     },
     "ext.popup.watch_off": {
       "s": "Desactivada. Al activarla se recarga la página.",
@@ -418,8 +418,8 @@
       "back": "Back"
     },
     "ext.rules.everywhere_heading": {
-      "s": "En todos",
-      "back": "Everywhere"
+      "s": "En todos los sitios",
+      "back": "On every site"
     },
     "ext.rules.by_site_heading": {
       "s": "Por sitio",

@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "ತಿರುಗಿಸಿದ ಹಿಂತಿರುಗುವಿಕೆ",
+    "message": "ಹಿಂದೆ ಹೋಗುವುದನ್ನು ತಿರುಗಿಸಿದ್ದು",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {

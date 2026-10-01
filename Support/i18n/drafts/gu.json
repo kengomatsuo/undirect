@@ -38,8 +38,8 @@
       "back": "Swapped links"
     },
     "app.welcome.feature.swapped_links.detail": {
-      "s": "કેટલાંક પાનાં દબાવવા અને છોડવા વચ્ચે લિંકનું લક્ષ્ય બદલી નાખે છે.",
-      "back": "Some pages change a link's target between pressing and releasing"
+      "s": "કેટલાંક પાનાં દબાવવા અને છોડવા વચ્ચે લિંકનું ગંતવ્ય બદલી નાખે છે.",
+      "back": "Some pages change the link's destination between the press and the release."
     },
     "app.welcome.feature.uninvited_windows.title": {
       "s": "ન માગેલી વિન્ડો",
@@ -50,12 +50,12 @@
       "back": "With protection on a new tab opens only where you tapped"
     },
     "app.welcome.feature.every_destination.title": {
-      "s": "દરેક લક્ષ્ય",
+      "s": "દરેક ગંતવ્ય",
       "back": "Every destination"
     },
     "app.welcome.feature.every_destination.detail": {
-      "s": "દરેક લક્ષ્યની અલગ હરોળ બને છે. એક સાઇટ માટે કે બધી સાઇટ માટે તેને મંજૂરી આપો અથવા અવરોધો.",
-      "back": "Each destination gets a row; allow or block for one site or all"
+      "s": "દરેક ગંતવ્યની અલગ હરોળ બને છે. એક સાઇટ માટે કે બધી સાઇટ માટે તેને મંજૂરી આપો અથવા બ્લૉક કરો.",
+      "back": "Every destination gets its own row. Allow or block it for one site or for all sites."
     },
     "app.welcome.feature.one_site_at_a_time.title": {
       "s": "એક સમયે એક સાઇટ",
@@ -98,15 +98,15 @@
       "back": "No rules"
     },
     "app.rules.empty_no_rules.detail": {
-      "s": "તમે મંજૂરી આપો કે અવરોધો પછી જ લક્ષ્ય અહીં દેખાય છે.",
-      "back": "A destination shows here only after you allow or block it"
+      "s": "તમે મંજૂરી આપો કે બ્લૉક કરો પછી જ ગંતવ્ય અહીં દેખાય છે.",
+      "back": "A destination appears here only after you allow or block it."
     },
     "app.rules.footer.lifetime_count": {
       "s": "કુલ અટકાવેલા પ્રયાસ: %lld",
       "back": "Total attempts stopped: N"
     },
     "app.rules.row.state_blocked": {
-      "s": "અવરોધિત",
+      "s": "બ્લૉક કરેલ",
       "back": "Blocked"
     },
     "app.rules.row.state_allowed": {
@@ -118,11 +118,11 @@
       "back": "Allow"
     },
     "app.rules.row.action_block": {
-      "s": "અવરોધો",
+      "s": "બ્લૉક કરો",
       "back": "Block"
     },
     "app.rules.row.help_tooltip": {
-      "s": "આ લક્ષ્યને મંજૂરી આપો અથવા અવરોધો",
+      "s": "આ ગંતવ્યને મંજૂરી આપો અથવા બ્લૉક કરો",
       "back": "Allow or block this destination"
     },
     "app.rules.row.use_default": {
@@ -146,8 +146,8 @@
       "back": "Protected"
     },
     "app.watched.row.stop_button": {
-      "s": "અટકાવો",
-      "back": "Stop"
+      "s": "બંધ કરો",
+      "back": "Turn off"
     },
     "app.watched.row.stop_tooltip": {
       "s": "આ સાઇટ માટે સુરક્ષા બંધ કરે છે",
@@ -170,8 +170,8 @@
       "back": "Where protection works"
     },
     "app.settings.mode_watched": {
-      "s": "હું ચાલુ કરું તે સાઇટ",
-      "back": "Sites I turn on"
+      "s": "મેં ચાલુ કરેલી સાઇટ",
+      "back": "Sites I turned on"
     },
     "app.settings.mode_everywhere": {
       "s": "બધી સાઇટ",
@@ -182,11 +182,11 @@
       "back": "Notice on the page"
     },
     "app.settings.policy_heading": {
-      "s": "નિયમ વિનાનાં લક્ષ્ય",
-      "back": "Destinations without a rule"
+      "s": "નિયમ વિનાનાં ગંતવ્ય",
+      "back": "Destinations with no rule"
     },
     "app.settings.policy_block": {
-      "s": "અવરોધો",
+      "s": "બ્લૉક કરો",
       "back": "Block"
     },
     "app.settings.policy_allow": {
@@ -258,8 +258,8 @@
       "back": "Nothing recorded: protection off here"
     },
     "ext.popup.page_quiet": {
-      "s": "અત્યાર સુધી આ પાનામાંથી કશાએ બહાર જવાનો પ્રયાસ કર્યો નથી.",
-      "back": "So far nothing has tried to leave this page"
+      "s": "અત્યાર સુધી આ પાનાએ બીજે ક્યાંય જવાનો પ્રયાસ કર્યો નથી.",
+      "back": "So far this page has not tried to go anywhere else."
     },
     "ext.popup.page_empty": {
       "s": "હજી બતાવવા જેવું કંઈ નથી.",
@@ -294,7 +294,7 @@
       "back": "Fix"
     },
     "ext.state.blocked": {
-      "s": "અવરોધિત",
+      "s": "બ્લૉક કરેલ",
       "back": "Blocked"
     },
     "ext.state.allowed": {
@@ -326,19 +326,19 @@
       "back": "Allow everywhere"
     },
     "ext.action.block_here": {
-      "s": "આ સાઇટ પર અવરોધો",
+      "s": "આ સાઇટ પર બ્લૉક કરો",
       "back": "Block on this site"
     },
     "ext.action.block_everywhere": {
-      "s": "બધે અવરોધો",
+      "s": "બધે બ્લૉક કરો",
       "back": "Block everywhere"
     },
     "ext.popup.policy_heading": {
-      "s": "નિયમ વિનાનાં લક્ષ્ય",
-      "back": "Destinations without a rule"
+      "s": "નિયમ વિનાનાં ગંતવ્ય",
+      "back": "Destinations with no rule"
     },
     "ext.policy.block": {
-      "s": "અવરોધો",
+      "s": "બ્લૉક કરો",
       "back": "Block"
     },
     "ext.policy.allow": {
@@ -386,7 +386,7 @@
       "back": "Tab opened behind"
     },
     "ext.kind.network_rule": {
-      "s": "નેટવર્ક પર અવરોધાયું",
+      "s": "નેટવર્ક પર બ્લૉક થયું",
       "back": "Blocked at the network"
     },
     "ext.reason.way_back": {
@@ -434,7 +434,7 @@
       "back": "Allow"
     },
     "ext.action.block": {
-      "s": "અવરોધો",
+      "s": "બ્લૉક કરો",
       "back": "Block"
     },
     "ext.action.clear": {
@@ -462,8 +462,8 @@
       "back": "Where protection works"
     },
     "ext.settings.mode_watched": {
-      "s": "હું ચાલુ કરું તે સાઇટ",
-      "back": "Sites I turn on"
+      "s": "મેં ચાલુ કરેલી સાઇટ",
+      "back": "Sites I turned on"
     },
     "ext.settings.mode_everywhere": {
       "s": "બધી સાઇટ",

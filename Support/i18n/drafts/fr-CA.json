@@ -54,8 +54,8 @@
       "back": "Every destination"
     },
     "app.welcome.feature.every_destination.detail": {
-      "s": "Chaque destination vue par la protection est listée; vous l'autorisez ou la bloquez, sur un site ou partout.",
-      "back": "Each destination is listed; you allow or block it, on one site or everywhere"
+      "s": "Chaque destination figure dans une liste : autorisez-la ou bloquez-la, sur un site ou partout.",
+      "back": "Every destination appears in a list: allow it or block it, on one site or everywhere."
     },
     "app.welcome.feature.one_site_at_a_time.title": {
       "s": "Un site à la fois",
@@ -138,8 +138,8 @@
       "back": "On a site that redirects you, press the Undirect button in Safari's toolbar"
     },
     "app.watched.footer": {
-      "s": "Les sites s'ajoutent depuis le bouton Undirect de Safari; ici, on peut seulement en retirer.",
-      "back": "Sites are added from Safari's button; here you can only remove"
+      "s": "Les sites s'ajoutent depuis le bouton Undirect de Safari; ici, vous pouvez seulement en retirer.",
+      "back": "Sites are added from the Undirect button in Safari; here you can only remove them."
     },
     "app.watched.row.guarded_badge": {
       "s": "Protégé",
@@ -274,8 +274,8 @@
       "back": "stopped"
     },
     "ext.popup.seen_one": {
-      "s": "Tentatives relevées : %lld",
-      "back": "Attempts recorded: N"
+      "s": "Tentative relevée : %lld",
+      "back": "Attempt recorded: %lld"
     },
     "ext.popup.seen_other": {
       "s": "Tentatives relevées : %lld",

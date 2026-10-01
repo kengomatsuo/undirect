@@ -52,7 +52,7 @@
     "description": "Label above the mode choice."
   },
   "mode_watched": {
-    "message": "હું ચાલુ કરું તે સાઇટ",
+    "message": "મેં ચાલુ કરેલી સાઇટ",
     "description": "Mode: the guard runs only on sites switched on individually."
   },
   "mode_everywhere": {
@@ -68,7 +68,7 @@
     "description": "Heading of the section about the current tab."
   },
   "popup_page_quiet": {
-    "message": "અત્યાર સુધી આ પાનામાંથી કશાએ બહાર જવાનો પ્રયાસ કર્યો નથી.",
+    "message": "અત્યાર સુધી આ પાનાએ બીજે ક્યાંય જવાનો પ્રયાસ કર્યો નથી.",
     "description": "Shown when no cross-site destination was recorded."
   },
   "popup_page_empty": {
@@ -140,7 +140,7 @@
     "description": "Heading for a per-site fix that was applied."
   },
   "state_blocked": {
-    "message": "અવરોધિત",
+    "message": "બ્લૉક કરેલ",
     "description": "A destination that is being stopped."
   },
   "state_allowed": {
@@ -168,19 +168,19 @@
     "description": "Let this destination through on every site."
   },
   "action_block_here": {
-    "message": "આ સાઇટ પર અવરોધો",
+    "message": "આ સાઇટ પર બ્લૉક કરો",
     "description": "Stop this destination on the current site."
   },
   "action_block_everywhere": {
-    "message": "બધે અવરોધો",
+    "message": "બધે બ્લૉક કરો",
     "description": "Stop this destination on every site."
   },
   "popup_policy_heading": {
-    "message": "નિયમ વિનાનાં લક્ષ્ય",
+    "message": "નિયમ વિનાનાં ગંતવ્ય",
     "description": "Label above the default policy choice."
   },
   "policy_block": {
-    "message": "અવરોધો",
+    "message": "બ્લૉક કરો",
     "description": "Default policy: stop unknown cross-site destinations."
   },
   "policy_allow": {
@@ -228,7 +228,7 @@
     "description": "A new tab the page opened on somewhere else."
   },
   "kind_network_rule": {
-    "message": "નેટવર્ક પર અવરોધાયું",
+    "message": "નેટવર્ક પર બ્લૉક થયું",
     "description": "A known pop network refused by a network rule."
   },
   "reason_way_back": {
@@ -276,7 +276,7 @@
     "description": "Change a rule to allow."
   },
   "action_block": {
-    "message": "અવરોધો",
+    "message": "બ્લૉક કરો",
     "description": "Change a rule to block."
   },
   "action_clear": {

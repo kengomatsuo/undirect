@@ -235,7 +235,7 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ମୋଟ ବନ୍ଦ କରାଯାଇଥିବା ପ୍ରୟାସ: %lld"
+            "value": "ମୋଟ ରୋକାଯାଇଥିବା ପ୍ରୟାସ: %lld"
           }
         },
         "pa": {
@@ -480,7 +480,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "તમે મંજૂરી આપો કે અવરોધો પછી જ લક્ષ્ય અહીં દેખાય છે."
+            "value": "તમે મંજૂરી આપો કે બ્લૉક કરો પછી જ ગંતવ્ય અહીં દેખાય છે."
           }
         },
         "he": {
@@ -534,7 +534,7 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଆପଣ ଅନୁମତି ଦେଲେ କିମ୍ବା ଅବରୋଧ କଲେ ହିଁ ଗନ୍ତବ୍ୟ ଏଠାରେ ଦେଖାଯାଏ।"
+            "value": "ଆପଣ ଅନୁମତି ଦେଲେ କିମ୍ବା ବ୍ଲକ କଲେ ହିଁ ଗନ୍ତବ୍ୟ ଏଠାରେ ଦେଖାଯାଏ।"
           }
         },
         "pa": {
@@ -713,7 +713,7 @@
         "bn": {
           "stringUnit": {
             "state": "translated",
-            "value": "নিয়মহীন গন্তব্য"
+            "value": "নিয়ম নেই এমন গন্তব্য"
           }
         },
         "ca": {
@@ -779,7 +779,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "નિયમ વિનાનાં લક્ષ્ય"
+            "value": "નિયમ વિનાનાં ગંતવ્ય"
           }
         },
         "he": {
@@ -1060,7 +1060,7 @@
         "es-MX": {
           "stringUnit": {
             "state": "translated",
-            "value": "Con la protección activa, una pestaña nueva solo abre a donde diste el clic."
+            "value": "Con la protección activa, una pestaña nueva solo se abre adonde apuntaste."
           }
         },
         "fi": {
@@ -2274,7 +2274,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "આ લક્ષ્યને મંજૂરી આપો અથવા અવરોધો"
+            "value": "આ ગંતવ્યને મંજૂરી આપો અથવા બ્લૉક કરો"
           }
         },
         "he": {
@@ -2328,7 +2328,7 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଏହି ଗନ୍ତବ୍ୟକୁ ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ଅବରୋଧ କରନ୍ତୁ"
+            "value": "ଏହି ଗନ୍ତବ୍ୟକୁ ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ବ୍ଲକ କରନ୍ତୁ"
           }
         },
         "pa": {
@@ -2627,7 +2627,7 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଅନୁମତି ପ୍ରାପ୍ତ"
+            "value": "ଅନୁମତି ମିଳିଛି"
           }
         },
         "pa": {
@@ -2872,7 +2872,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "અવરોધો"
+            "value": "બ્લૉક કરો"
           }
         },
         "he": {
@@ -2926,7 +2926,7 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଅବରୋଧ କରନ୍ତୁ"
+            "value": "ବ୍ଲକ କରନ୍ତୁ"
           }
         },
         "pa": {
@@ -3171,7 +3171,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "અવરોધો"
+            "value": "બ્લૉક કરો"
           }
         },
         "he": {
@@ -3225,7 +3225,7 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଅବରୋଧ କରନ୍ତୁ"
+            "value": "ବ୍ଲକ କରନ୍ତୁ"
           }
         },
         "pa": {
@@ -3470,7 +3470,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "અવરોધિત"
+            "value": "બ્લૉક કરેલ"
           }
         },
         "he": {
@@ -3524,7 +3524,7 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ଅବରୋଧିତ"
+            "value": "ବ୍ଲକ ହୋଇଛି"
           }
         },
         "pa": {
@@ -4062,13 +4062,13 @@
         "fr-CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Chaque destination vue par la protection est listée; vous l'autorisez ou la bloquez, sur un site ou partout."
+            "value": "Chaque destination figure dans une liste : autorisez-la ou bloquez-la, sur un site ou partout."
           }
         },
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "દરેક લક્ષ્યની અલગ હરોળ બને છે. એક સાઇટ માટે કે બધી સાઇટ માટે તેને મંજૂરી આપો અથવા અવરોધો."
+            "value": "દરેક ગંતવ્યની અલગ હરોળ બને છે. એક સાઇટ માટે કે બધી સાઇટ માટે તેને મંજૂરી આપો અથવા બ્લૉક કરો."
           }
         },
         "he": {
@@ -4104,7 +4104,7 @@
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "प्रत्येक गंतव्याची स्वतंत्र ओळ असते. एका साइटवर किंवा सर्वत्र ते परवानगी द्या किंवा ब्लॉक करा."
+            "value": "प्रत्येक गंतव्याची स्वतंत्र ओळ असते. एका साइटवर किंवा सर्वत्र त्याला परवानगी द्या किंवा ब्लॉक करा."
           }
         },
         "ms": {
@@ -4122,7 +4122,7 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ପ୍ରତ୍ୟେକ ଗନ୍ତବ୍ୟର ନିଜସ୍ୱ ଧାଡ଼ି ଥାଏ। ଗୋଟିଏ ସାଇଟରେ ବା ସବୁଠି ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ଅବରୋଧ କରନ୍ତୁ।"
+            "value": "ପ୍ରତ୍ୟେକ ଗନ୍ତବ୍ୟର ନିଜସ୍ୱ ଧାଡ଼ି ଥାଏ। ଗୋଟିଏ ସାଇଟରେ ବା ସବୁଠି ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ବ୍ଲକ କରନ୍ତୁ।"
           }
         },
         "pa": {
@@ -4367,7 +4367,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "દરેક લક્ષ્ય"
+            "value": "દરેક ગંતવ્ય"
           }
         },
         "he": {
@@ -4947,7 +4947,7 @@
         "es-MX": {
           "stringUnit": {
             "state": "translated",
-            "value": "En todos"
+            "value": "En todos los sitios"
           }
         },
         "fi": {
@@ -5031,7 +5031,7 @@
         "pt-PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Em todos"
+            "value": "Em todos os sites"
           }
         },
         "ro": {
@@ -7728,7 +7728,7 @@
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Notificare pe pagină"
+            "value": "Mesaj pe pagină"
           }
         },
         "sk": {
@@ -9546,7 +9546,7 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari-யில் ஏதேனும் ஒரு பக்கத்தைத் திறங்கள்; பட்டியல் தானாக நிரம்பும்."
+            "value": "Safari-யில் ஏதேனும் ஒரு பக்கத்தைத் திறவுங்கள்; பட்டியல் தானாக நிரம்பும்."
           }
         },
         "te": {
@@ -10640,7 +10640,7 @@
         "fr-CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Les sites s'ajoutent depuis le bouton Undirect de Safari; ici, on peut seulement en retirer."
+            "value": "Les sites s'ajoutent depuis le bouton Undirect de Safari; ici, vous pouvez seulement en retirer."
           }
         },
         "gu": {
@@ -10712,7 +10712,7 @@
         "pt-PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Os sites juntam-se pelo botão do Undirect no Safari; aqui só os pode remover."
+            "value": "Os sites adicionam-se a partir do botão do Undirect no Safari; aqui só os pode remover."
           }
         },
         "ro": {
@@ -10945,7 +10945,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "હું ચાલુ કરું તે સાઇટ"
+            "value": "મેં ચાલુ કરેલી સાઇટ"
           }
         },
         "he": {
@@ -10975,7 +10975,7 @@
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "ഞാൻ ഓണാക്കുന്ന സൈറ്റുകൾ"
+            "value": "ഞാൻ ഓണാക്കിയ സൈറ്റുകൾ"
           }
         },
         "mr": {
@@ -11244,7 +11244,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "કેટલાંક પાનાં દબાવવા અને છોડવા વચ્ચે લિંકનું લક્ષ્ય બદલી નાખે છે."
+            "value": "કેટલાંક પાનાં દબાવવા અને છોડવા વચ્ચે લિંકનું ગંતવ્ય બદલી નાખે છે."
           }
         },
         "he": {
@@ -11477,7 +11477,7 @@
         "bn": {
           "stringUnit": {
             "state": "translated",
-            "value": "থামান"
+            "value": "বন্ধ করুন"
           }
         },
         "ca": {
@@ -11543,7 +11543,7 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "અટકાવો"
+            "value": "બંધ કરો"
           }
         },
         "he": {
@@ -11567,19 +11567,19 @@
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ನಿಲ್ಲಿಸಿ"
+            "value": "ಆಫ್ ಮಾಡಿ"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "നിർത്തുക"
+            "value": "ഓഫാക്കുക"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "थांबवा"
+            "value": "बंद करा"
           }
         },
         "ms": {
@@ -11603,7 +11603,7 @@
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਰੋਕੋ"
+            "value": "ਬੰਦ ਕਰੋ"
           }
         },
         "pt-PT": {
@@ -11657,7 +11657,7 @@
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "روکیں"
+            "value": "بند کریں"
           }
         }
       }
@@ -13702,7 +13702,7 @@
         "pt-PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Usar o predefinido"
+            "value": "Usar a predefinição"
           }
         },
         "ro": {
@@ -13875,7 +13875,7 @@
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "Et donem la benvinguda a l'Undirect"
+            "value": "Benvinguda a l'Undirect"
           }
         },
         "cs": {
@@ -14001,13 +14001,13 @@
         "pt-PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bem-vindo ao Undirect"
+            "value": "Boas-vindas ao Undirect"
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Bine ai venit în Undirect"
+            "value": "Bun venit în Undirect"
           }
         },
         "sk": {

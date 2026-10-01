@@ -146,8 +146,8 @@
       "back": "Protected"
     },
     "app.watched.row.stop_button": {
-      "s": "روکیں",
-      "back": "Stop"
+      "s": "بند کریں",
+      "back": "Turn off"
     },
     "app.watched.row.stop_tooltip": {
       "s": "اس سائٹ کا تحفظ بند کرتا ہے",
@@ -198,8 +198,8 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "صفحات کو آپ کا کلک استعمال کر کے آپ کی نہ مانگی ہوئی جگہ کھولنے یا بھیجنے سے روکتا ہے۔",
-      "back": "Stops pages using your click to open or send to a place you did not ask"
+      "s": "صفحات کو آپ کا کلک استعمال کر کے، آپ کی مرضی کے بغیر، کوئی اور جگہ کھولنے یا آپ کو وہاں بھیجنے سے روکتا ہے۔",
+      "back": "Stops pages from using your click, without your wish, to open another place or send you there."
     },
     "ext.meta.app_title": {
       "s": "Undirect",
@@ -374,16 +374,16 @@
       "back": "Link changed during the click"
     },
     "ext.kind.back_hijack": {
-      "s": "موڑا ہوا واپسی کا قدم",
-      "back": "Diverted going back"
+      "s": "واپسی کا رخ بدلا گیا",
+      "back": "The direction of going back was changed"
     },
     "ext.kind.redirect": {
       "s": "کلک چھیننے والا ری ڈائریکٹ",
       "back": "Redirect that snatched the click"
     },
     "ext.kind.pop_tab": {
-      "s": "پیچھے کھلا ہوا ٹیب",
-      "back": "Tab opened behind"
+      "s": "کلک کے بعد کھلا ٹیب",
+      "back": "Tab opened after the click"
     },
     "ext.kind.network_rule": {
       "s": "نیٹ ورک پر روکا گیا",
@@ -402,8 +402,8 @@
       "back": "Snatched your click"
     },
     "ext.reason.default_allow": {
-      "s": "اصول نہیں؛ اجازت دی گئی۔",
-      "back": "No rule; allowed"
+      "s": "اصول نہ ہونے پر اجازت دی گئی۔",
+      "back": "Allowed because there was no rule."
     },
     "ext.reason.own_code": {
       "s": "سائٹ نے خود کھولا۔",

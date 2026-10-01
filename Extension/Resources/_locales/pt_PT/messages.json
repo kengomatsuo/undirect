@@ -40,11 +40,11 @@
     "description": "Shown when the current tab has no site to watch."
   },
   "popup_watch_everywhere": {
-    "message": "Já está ativa em todos os sites, nas Definições.",
+    "message": "Já está ativa em todos os sites, conforme as Definições.",
     "description": "Shown when the mode setting already covers every site."
   },
   "popup_watch_master_off": {
-    "message": "Está desativada nas Definições.",
+    "message": "A proteção está desativada nas Definições.",
     "description": "Shown when the master Guard switch in Settings is off."
   },
   "popup_mode_heading": {
@@ -152,7 +152,7 @@
     "description": "The rule was set for the current site only."
   },
   "scope_everywhere": {
-    "message": "em todos",
+    "message": "em todos os sites",
     "description": "The rule was set for every site."
   },
   "scope_default": {
@@ -260,7 +260,7 @@
     "description": "Goes back from the rules list to the current tab."
   },
   "rules_everywhere_heading": {
-    "message": "Em todos",
+    "message": "Em todos os sites",
     "description": "Heading for rules that apply on every site."
   },
   "rules_by_site_heading": {
@@ -308,7 +308,7 @@
     "description": "Toolbar button tooltip while the guard is on."
   },
   "popup_watch_on": {
-    "message": "Ativa. Ao desativar, a página é recarregada.",
+    "message": "Ativada. Ao desativar, a página é recarregada.",
     "description": "Under the site name while the guard runs there."
   },
   "popup_watch_off": {

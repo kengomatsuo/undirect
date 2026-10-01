@@ -146,8 +146,8 @@
       "back": "Protected"
     },
     "app.watched.row.stop_button": {
-      "s": "থামান",
-      "back": "Stop"
+      "s": "বন্ধ করুন",
+      "back": "Turn off"
     },
     "app.watched.row.stop_tooltip": {
       "s": "এই সাইটের সুরক্ষা বন্ধ করে",
@@ -182,8 +182,8 @@
       "back": "Message on the page"
     },
     "app.settings.policy_heading": {
-      "s": "নিয়মহীন গন্তব্য",
-      "back": "Destinations without a rule"
+      "s": "নিয়ম নেই এমন গন্তব্য",
+      "back": "Destinations that have no rule"
     },
     "app.settings.policy_block": {
       "s": "আটকান",
@@ -334,8 +334,8 @@
       "back": "Block everywhere"
     },
     "ext.popup.policy_heading": {
-      "s": "নিয়মহীন গন্তব্য",
-      "back": "Destinations without a rule"
+      "s": "নিয়ম নেই এমন গন্তব্য",
+      "back": "Destinations that have no rule"
     },
     "ext.policy.block": {
       "s": "আটকান",
@@ -374,8 +374,8 @@
       "back": "Link changed mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "ঘুরিয়ে দেওয়া ফিরে যাওয়া",
-      "back": "Diverted going back"
+      "s": "ফিরে যাওয়া ঘুরিয়ে দেওয়া",
+      "back": "Back-navigation turned elsewhere"
     },
     "ext.kind.redirect": {
       "s": "ক্লিক কেড়ে নেওয়া রিডাইরেক্ট",

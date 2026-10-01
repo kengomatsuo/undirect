@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Bine ai venit în Undirect",
+      "s": "Bun venit în Undirect",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -178,8 +178,8 @@
       "back": "Every site"
     },
     "app.settings.banner_toggle": {
-      "s": "Notificare pe pagină",
-      "back": "Notice on the page"
+      "s": "Mesaj pe pagină",
+      "back": "Message on the page"
     },
     "app.settings.policy_heading": {
       "s": "Destinații fără regulă",
@@ -234,12 +234,12 @@
       "back": "No page to protect"
     },
     "ext.popup.watch_everywhere_mode": {
-      "s": "E deja activă peste tot, din Setări.",
-      "back": "Already on everywhere from Settings"
+      "s": "Deja activă peste tot, conform Setărilor.",
+      "back": "Already on everywhere, per Settings."
     },
     "ext.popup.watch_master_off": {
-      "s": "E dezactivată din Setări.",
-      "back": "Off from Settings"
+      "s": "Protecția este dezactivată în Setări.",
+      "back": "Protection is switched off in Settings."
     },
     "ext.popup.watch_on": {
       "s": "Activă. Dezactivarea reîncarcă pagina.",
@@ -470,8 +470,8 @@
       "back": "Every site"
     },
     "ext.settings.banner_toggle": {
-      "s": "Notificare pe pagină",
-      "back": "Notice on the page"
+      "s": "Mesaj pe pagină",
+      "back": "Message on the page"
     },
     "ext.action.report": {
       "s": "Raportează o problemă",

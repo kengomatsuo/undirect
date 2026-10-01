@@ -54,8 +54,8 @@
       "back": "Every destination"
     },
     "app.welcome.feature.every_destination.detail": {
-      "s": "प्रत्येक गंतव्याची स्वतंत्र ओळ असते. एका साइटवर किंवा सर्वत्र ते परवानगी द्या किंवा ब्लॉक करा.",
-      "back": "Each destination has its own row; allow or block on one site or everywhere"
+      "s": "प्रत्येक गंतव्याची स्वतंत्र ओळ असते. एका साइटवर किंवा सर्वत्र त्याला परवानगी द्या किंवा ब्लॉक करा.",
+      "back": "Every destination gets its own row. Allow or block it for one site or for all sites."
     },
     "app.welcome.feature.one_site_at_a_time.title": {
       "s": "एका वेळी एक साइट",
@@ -146,8 +146,8 @@
       "back": "Protected"
     },
     "app.watched.row.stop_button": {
-      "s": "थांबवा",
-      "back": "Stop"
+      "s": "बंद करा",
+      "back": "Turn off"
     },
     "app.watched.row.stop_tooltip": {
       "s": "या साइटचे संरक्षण बंद करते",

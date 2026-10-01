@@ -96,7 +96,7 @@
     }
   },
   "popup_seen_one": {
-    "message": "Tentatives relevées : $COUNT$",
+    "message": "Tentative relevée : $COUNT$",
     "description": "How many cross-site attempts were recorded, singular.",
     "placeholders": {
       "count": {

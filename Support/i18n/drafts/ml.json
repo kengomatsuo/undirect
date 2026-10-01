@@ -146,8 +146,8 @@
       "back": "Protected"
     },
     "app.watched.row.stop_button": {
-      "s": "നിർത്തുക",
-      "back": "Stop"
+      "s": "ഓഫാക്കുക",
+      "back": "Turn off"
     },
     "app.watched.row.stop_tooltip": {
       "s": "ഈ സൈറ്റിലെ സംരക്ഷണം ഓഫാക്കുന്നു",
@@ -170,8 +170,8 @@
       "back": "Where protection works"
     },
     "app.settings.mode_watched": {
-      "s": "ഞാൻ ഓണാക്കുന്ന സൈറ്റുകൾ",
-      "back": "Sites I turn on"
+      "s": "ഞാൻ ഓണാക്കിയ സൈറ്റുകൾ",
+      "back": "Sites I turned on"
     },
     "app.settings.mode_everywhere": {
       "s": "എല്ലാ സൈറ്റുകളും",
@@ -462,8 +462,8 @@
       "back": "Where protection works"
     },
     "ext.settings.mode_watched": {
-      "s": "ഞാൻ ഓണാക്കുന്ന സൈറ്റുകൾ",
-      "back": "Sites I turn on"
+      "s": "ഞാൻ ഓണാക്കിയ സൈറ്റുകൾ",
+      "back": "Sites I turned on"
     },
     "ext.settings.mode_everywhere": {
       "s": "എല്ലാ സൈറ്റുകളും",

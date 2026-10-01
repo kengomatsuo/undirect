@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "పేజీలు మీ క్లిక్‌ను ఉపయోగించి మీరు అడగని చోటుకు తెరవడాన్ని లేదా పంపడాన్ని ఆపుతుంది.",
+    "message": "మీ క్లిక్‌ను వాడుకుని మీకు అక్కర్లేని చోటుకు పేజీలు తెరవడాన్ని, మళ్లించడాన్ని ఆపుతుంది.",
     "description": "Description of the extension."
   },
   "app_title": {
@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "మళ్లించిన వెనుకకు వెళ్లడం",
+    "message": "వెనుకకు వెళ్లే దారి మళ్లింపు",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
@@ -244,7 +244,7 @@
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "నియమం లేదు; అనుమతించారు.",
+    "message": "నియమం లేనందున అనుమతించారు.",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {

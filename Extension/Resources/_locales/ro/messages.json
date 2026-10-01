@@ -40,11 +40,11 @@
     "description": "Shown when the current tab has no site to watch."
   },
   "popup_watch_everywhere": {
-    "message": "E deja activă peste tot, din Setări.",
+    "message": "Deja activă peste tot, conform Setărilor.",
     "description": "Shown when the mode setting already covers every site."
   },
   "popup_watch_master_off": {
-    "message": "E dezactivată din Setări.",
+    "message": "Protecția este dezactivată în Setări.",
     "description": "Shown when the master Guard switch in Settings is off."
   },
   "popup_mode_heading": {
@@ -288,7 +288,7 @@
     "description": "Heading of the settings section."
   },
   "setting_banner": {
-    "message": "Notificare pe pagină",
+    "message": "Mesaj pe pagină",
     "description": "Toggle for the note drawn in the page when something is stopped."
   },
   "action_report": {

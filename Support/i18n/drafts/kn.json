@@ -146,8 +146,8 @@
       "back": "Protected"
     },
     "app.watched.row.stop_button": {
-      "s": "ನಿಲ್ಲಿಸಿ",
-      "back": "Stop"
+      "s": "ಆಫ್ ಮಾಡಿ",
+      "back": "Turn off"
     },
     "app.watched.row.stop_tooltip": {
       "s": "ಈ ಸೈಟ್‌ನ ರಕ್ಷಣೆಯನ್ನು ಆಫ್ ಮಾಡುತ್ತದೆ",
@@ -374,8 +374,8 @@
       "back": "Link changed mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "ತಿರುಗಿಸಿದ ಹಿಂತಿರುಗುವಿಕೆ",
-      "back": "Diverted going back"
+      "s": "ಹಿಂದೆ ಹೋಗುವುದನ್ನು ತಿರುಗಿಸಿದ್ದು",
+      "back": "Back-going that was turned elsewhere"
     },
     "ext.kind.redirect": {
       "s": "ಕ್ಲಿಕ್ ಕಸಿದುಕೊಂಡ ರೀಡೈರೆಕ್ಟ್",

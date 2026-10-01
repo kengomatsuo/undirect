@@ -44,7 +44,7 @@
     "description": "Shown when the mode setting already covers every site."
   },
   "popup_watch_master_off": {
-    "message": "Está desactivada en Ajustes.",
+    "message": "La protección está desactivada en Ajustes.",
     "description": "Shown when the master Guard switch in Settings is off."
   },
   "popup_mode_heading": {
@@ -260,7 +260,7 @@
     "description": "Goes back from the rules list to the current tab."
   },
   "rules_everywhere_heading": {
-    "message": "En todos",
+    "message": "En todos los sitios",
     "description": "Heading for rules that apply on every site."
   },
   "rules_by_site_heading": {
@@ -308,7 +308,7 @@
     "description": "Toolbar button tooltip while the guard is on."
   },
   "popup_watch_on": {
-    "message": "Activa. Al desactivarla se recarga la página.",
+    "message": "Activada. Al desactivarla se recarga la página.",
     "description": "Under the site name while the guard runs there."
   },
   "popup_watch_off": {

@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Bem-vindo ao Undirect",
+      "s": "Boas-vindas ao Undirect",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -78,8 +78,8 @@
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
-      "s": "Em todos",
-      "back": "Everywhere"
+      "s": "Em todos os sites",
+      "back": "On every site"
     },
     "app.rules.grouping.by_site": {
       "s": "Por site",
@@ -126,7 +126,7 @@
       "back": "Allow or block this destination"
     },
     "app.rules.row.use_default": {
-      "s": "Usar o predefinido",
+      "s": "Usar a predefinição",
       "back": "Use the default"
     },
     "app.watched.empty.title": {
@@ -138,8 +138,8 @@
       "back": "On a site that redirects you, press Undirect's button in Safari's bar"
     },
     "app.watched.footer": {
-      "s": "Os sites juntam-se pelo botão do Undirect no Safari; aqui só os pode remover.",
-      "back": "Sites are added via Safari's button; here you can only remove"
+      "s": "Os sites adicionam-se a partir do botão do Undirect no Safari; aqui só os pode remover.",
+      "back": "Sites are added from the Undirect button in Safari; here you can only remove them."
     },
     "app.watched.row.guarded_badge": {
       "s": "Protegido",
@@ -234,16 +234,16 @@
       "back": "No page to protect"
     },
     "ext.popup.watch_everywhere_mode": {
-      "s": "Já está ativa em todos os sites, nas Definições.",
-      "back": "Already on everywhere, in Settings"
+      "s": "Já está ativa em todos os sites, conforme as Definições.",
+      "back": "It is already on for every site, per Settings."
     },
     "ext.popup.watch_master_off": {
-      "s": "Está desativada nas Definições.",
-      "back": "Off in Settings"
+      "s": "A proteção está desativada nas Definições.",
+      "back": "Protection is switched off in Settings."
     },
     "ext.popup.watch_on": {
-      "s": "Ativa. Ao desativar, a página é recarregada.",
-      "back": "On; deactivating reloads the page"
+      "s": "Ativada. Ao desativar, a página é recarregada.",
+      "back": "On. When you switch it off, the page reloads."
     },
     "ext.popup.watch_off": {
       "s": "Desativada. Ao ativar, a página é recarregada.",
@@ -310,8 +310,8 @@
       "back": "on this site"
     },
     "ext.scope.everywhere": {
-      "s": "em todos",
-      "back": "everywhere"
+      "s": "em todos os sites",
+      "back": "on every site"
     },
     "ext.scope.default": {
       "s": "por predefinição",
@@ -418,8 +418,8 @@
       "back": "Back"
     },
     "ext.rules.everywhere_heading": {
-      "s": "Em todos",
-      "back": "Everywhere"
+      "s": "Em todos os sites",
+      "back": "On every site"
     },
     "ext.rules.by_site_heading": {
       "s": "Por site",

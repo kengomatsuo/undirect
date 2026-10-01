@@ -30,6 +30,21 @@
             <p class="page-subtitle">This page misbehaves on purpose.</p>
         </div>
 
+        <div class="support-section" id="cases">
+            <h2>Five made-up sites</h2>
+            <p>Each page below is fictional and shows one thing Undirect deals with. Every one of them can only reach a stand-in destination page that does nothing. The same list is <a href="/demo/cases/">on its own page</a>.</p>
+            <h3><a href="/demo/stream/" data-site="reelhouse">Reelhouse</a>, a film site</h3>
+            <p>The first click on the player opens a new window from third-party code.</p>
+            <h3><a href="/demo/files/" data-site="bytebarn">Bytebarn</a>, a file host</h3>
+            <p>A clear layer covers the page and takes the first press for itself.</p>
+            <h3><a href="/demo/download/" data-site="quickpatch">Quickpatch</a>, a download page</h3>
+            <p>The Download button sends this same tab to another site.</p>
+            <h3><a href="/demo/recipes/" data-site="saltpan">Saltpan Kitchen</a>, a recipe page</h3>
+            <p>A widget rewrites each link the moment you press it.</p>
+            <h3><a href="/demo/fine/" data-site="trailpress">Trailpress</a>, a news page that behaves</h3>
+            <p>A sign-in window and an outbound link, both asked for. Undirect leaves them alone.</p>
+        </div>
+
         <div class="support-section">
             <h2>How to test</h2>
             <p>Press the Undirect button in Safari to turn it on for this site. Then tap anywhere below.</p>
@@ -57,5 +72,12 @@
         </div>
         <p class="copyright">© 2026 Kenneth Fang</p>
     </footer>
+    <script src="/demo/lib/env.js"></script>
+    <script>
+        // Locally each fake site gets its own *.localhost name, so Safari sees separate sites.
+        if (DEMO.local) document.querySelectorAll("a[data-site]").forEach((a) => {
+            a.href = DEMO.site(a.dataset.site) + new URL(a.href).pathname;
+        });
+    </script>
 </body>
 </html>

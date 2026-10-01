@@ -176,7 +176,7 @@
     "description": "Stop this destination on every site."
   },
   "popup_policy_heading": {
-    "message": "নিয়মহীন গন্তব্য",
+    "message": "নিয়ম নেই এমন গন্তব্য",
     "description": "Label above the default policy choice."
   },
   "policy_block": {
@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "ঘুরিয়ে দেওয়া ফিরে যাওয়া",
+    "message": "ফিরে যাওয়া ঘুরিয়ে দেওয়া",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {

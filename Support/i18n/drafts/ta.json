@@ -90,8 +90,8 @@
       "back": "Nothing yet from the extension"
     },
     "app.rules.empty_no_app.detail": {
-      "s": "Safari-யில் ஏதேனும் ஒரு பக்கத்தைத் திறங்கள்; பட்டியல் தானாக நிரம்பும்.",
-      "back": "Open any page in Safari; the list fills itself"
+      "s": "Safari-யில் ஏதேனும் ஒரு பக்கத்தைத் திறவுங்கள்; பட்டியல் தானாக நிரம்பும்.",
+      "back": "Open any page in Safari; the list fills in by itself."
     },
     "app.rules.empty_no_rules.title": {
       "s": "விதிகள் இல்லை",
@@ -198,8 +198,8 @@
       "back": "Undirect"
     },
     "ext.meta.description": {
-      "s": "உங்கள் கிளிக்கைப் பயன்படுத்தி, நீங்கள் கேட்காத இடத்துக்குத் திறப்பதையோ அனுப்புவதையோ பக்கங்களிடமிருந்து தடுக்கிறது.",
-      "back": "Stops pages using your click to open or send to somewhere you did not ask"
+      "s": "பக்கங்கள் உங்கள் கிளிக்கைப் பயன்படுத்தி, நீங்கள் விரும்பாத இடத்தைத் திறப்பதையோ அங்கே அனுப்புவதையோ தடுக்கிறது.",
+      "back": "Stops pages from using your click to open, or send you to, a place you did not want."
     },
     "ext.meta.app_title": {
       "s": "Undirect",
@@ -374,8 +374,8 @@
       "back": "Link changed mid-click"
     },
     "ext.kind.back_hijack": {
-      "s": "திருப்பிவிடப்பட்ட பின்செல்லல்",
-      "back": "Diverted going back"
+      "s": "பின்செல்லும் வழி மாற்றப்பட்டது",
+      "back": "The way back was changed"
     },
     "ext.kind.redirect": {
       "s": "கிளிக்கைப் பறித்த வழிமாற்று",
@@ -386,8 +386,8 @@
       "back": "Tab opened in the background"
     },
     "ext.kind.network_rule": {
-      "s": "பிணையத்தில் தடுக்கப்பட்டது",
-      "back": "Blocked at the network"
+      "s": "நெட்வொர்க்கில் தடுக்கப்பட்டது",
+      "back": "Blocked on the network"
     },
     "ext.reason.way_back": {
       "s": "இதன் முகவரியில் இந்தத் தளத்துக்குத் திரும்பும் வழி இருந்தது.",
@@ -402,8 +402,8 @@
       "back": "Snatched your click"
     },
     "ext.reason.default_allow": {
-      "s": "விதி இல்லை; அனுமதிக்கப்பட்டது.",
-      "back": "No rule; allowed"
+      "s": "விதி இல்லாததால் அனுமதிக்கப்பட்டது.",
+      "back": "Allowed because there is no rule."
     },
     "ext.reason.own_code": {
       "s": "தளமே திறந்தது.",

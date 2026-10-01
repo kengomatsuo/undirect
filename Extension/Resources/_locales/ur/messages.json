@@ -4,7 +4,7 @@
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "صفحات کو آپ کا کلک استعمال کر کے آپ کی نہ مانگی ہوئی جگہ کھولنے یا بھیجنے سے روکتا ہے۔",
+    "message": "صفحات کو آپ کا کلک استعمال کر کے، آپ کی مرضی کے بغیر، کوئی اور جگہ کھولنے یا آپ کو وہاں بھیجنے سے روکتا ہے۔",
     "description": "Description of the extension."
   },
   "app_title": {
@@ -216,7 +216,7 @@
     "description": "An anchor rewritten between press and release."
   },
   "kind_back_hijack": {
-    "message": "موڑا ہوا واپسی کا قدم",
+    "message": "واپسی کا رخ بدلا گیا",
     "description": "A navigation right after the back gesture."
   },
   "kind_redirect": {
@@ -224,7 +224,7 @@
     "description": "A cross-site navigation that took the user's press."
   },
   "kind_pop_tab": {
-    "message": "پیچھے کھلا ہوا ٹیب",
+    "message": "کلک کے بعد کھلا ٹیب",
     "description": "A new tab the page opened on somewhere else."
   },
   "kind_network_rule": {
@@ -244,7 +244,7 @@
     "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
   },
   "reason_default_allow": {
-    "message": "اصول نہیں؛ اجازت دی گئی۔",
+    "message": "اصول نہ ہونے پر اجازت دی گئی۔",
     "description": "Why a destination was allowed: no rule, and the default policy is allow."
   },
   "reason_own_code": {

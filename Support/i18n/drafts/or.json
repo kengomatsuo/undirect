@@ -54,8 +54,8 @@
       "back": "Every destination"
     },
     "app.welcome.feature.every_destination.detail": {
-      "s": "ପ୍ରତ୍ୟେକ ଗନ୍ତବ୍ୟର ନିଜସ୍ୱ ଧାଡ଼ି ଥାଏ। ଗୋଟିଏ ସାଇଟରେ ବା ସବୁଠି ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ଅବରୋଧ କରନ୍ତୁ।",
-      "back": "Each destination has its own row; allow or block on one site or everywhere"
+      "s": "ପ୍ରତ୍ୟେକ ଗନ୍ତବ୍ୟର ନିଜସ୍ୱ ଧାଡ଼ି ଥାଏ। ଗୋଟିଏ ସାଇଟରେ ବା ସବୁଠି ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ବ୍ଲକ କରନ୍ତୁ।",
+      "back": "Every destination gets its own row. Allow or block it for one site or for all sites."
     },
     "app.welcome.feature.one_site_at_a_time.title": {
       "s": "ଥରକୁ ଗୋଟିଏ ସାଇଟ",
@@ -98,31 +98,31 @@
       "back": "No rules"
     },
     "app.rules.empty_no_rules.detail": {
-      "s": "ଆପଣ ଅନୁମତି ଦେଲେ କିମ୍ବା ଅବରୋଧ କଲେ ହିଁ ଗନ୍ତବ୍ୟ ଏଠାରେ ଦେଖାଯାଏ।",
-      "back": "A destination shows here only after you allow or block it"
+      "s": "ଆପଣ ଅନୁମତି ଦେଲେ କିମ୍ବା ବ୍ଲକ କଲେ ହିଁ ଗନ୍ତବ୍ୟ ଏଠାରେ ଦେଖାଯାଏ।",
+      "back": "A destination appears here only after you allow or block it."
     },
     "app.rules.footer.lifetime_count": {
-      "s": "ମୋଟ ବନ୍ଦ କରାଯାଇଥିବା ପ୍ରୟାସ: %lld",
-      "back": "Total attempts stopped: N"
+      "s": "ମୋଟ ରୋକାଯାଇଥିବା ପ୍ରୟାସ: %lld",
+      "back": "Total attempts stopped: %lld"
     },
     "app.rules.row.state_blocked": {
-      "s": "ଅବରୋଧିତ",
+      "s": "ବ୍ଲକ ହୋଇଛି",
       "back": "Blocked"
     },
     "app.rules.row.state_allowed": {
-      "s": "ଅନୁମତି ପ୍ରାପ୍ତ",
-      "back": "Allowed"
+      "s": "ଅନୁମତି ମିଳିଛି",
+      "back": "Allowed (permission granted)"
     },
     "app.rules.row.action_allow": {
       "s": "ଅନୁମତି ଦିଅନ୍ତୁ",
       "back": "Allow"
     },
     "app.rules.row.action_block": {
-      "s": "ଅବରୋଧ କରନ୍ତୁ",
+      "s": "ବ୍ଲକ କରନ୍ତୁ",
       "back": "Block"
     },
     "app.rules.row.help_tooltip": {
-      "s": "ଏହି ଗନ୍ତବ୍ୟକୁ ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ଅବରୋଧ କରନ୍ତୁ",
+      "s": "ଏହି ଗନ୍ତବ୍ୟକୁ ଅନୁମତି ଦିଅନ୍ତୁ କିମ୍ବା ବ୍ଲକ କରନ୍ତୁ",
       "back": "Allow or block this destination"
     },
     "app.rules.row.use_default": {
@@ -186,7 +186,7 @@
       "back": "Destinations without a rule"
     },
     "app.settings.policy_block": {
-      "s": "ଅବରୋଧ କରନ୍ତୁ",
+      "s": "ବ୍ଲକ କରନ୍ତୁ",
       "back": "Block"
     },
     "app.settings.policy_allow": {
@@ -254,32 +254,32 @@
       "back": "This page"
     },
     "ext.popup.page_off": {
-      "s": "କିଛି ଲେଖାଯାଉନାହିଁ: ଏଠାରେ ସୁରକ୍ଷା ବନ୍ଦ ଅଛି।",
-      "back": "Nothing recorded: protection off here"
+      "s": "କିଛି ରେକର୍ଡ ହେଉନାହିଁ: ଏଠାରେ ସୁରକ୍ଷା ବନ୍ଦ ଅଛି।",
+      "back": "Nothing is being recorded: protection is off here."
     },
     "ext.popup.page_quiet": {
-      "s": "ଏପର୍ଯ୍ୟନ୍ତ ଏହି ପୃଷ୍ଠାରୁ ବାହାରିବାକୁ କେହି ଚେଷ୍ଟା କରିନାହିଁ।",
-      "back": "So far nothing has tried to leave this page"
+      "s": "ଏପର୍ଯ୍ୟନ୍ତ ଏହି ପୃଷ୍ଠାରୁ ବାହାରକୁ ଯିବାକୁ କିଛି ଚେଷ୍ଟା କରିନାହିଁ।",
+      "back": "So far nothing has tried to leave this page."
     },
     "ext.popup.page_empty": {
       "s": "ଦେଖାଇବାକୁ ଏପର୍ଯ୍ୟନ୍ତ କିଛି ନାହିଁ।",
       "back": "Nothing to show yet"
     },
     "ext.popup.stopped_one": {
-      "s": "ବନ୍ଦ କରାଗଲା: %lld",
-      "back": "Stopped: N"
+      "s": "ରୋକାଗଲା: %lld",
+      "back": "Stopped: %lld"
     },
     "ext.popup.stopped_other": {
-      "s": "ବନ୍ଦ କରାଗଲା: %lld",
-      "back": "Stopped: N"
+      "s": "ରୋକାଗଲା: %lld",
+      "back": "Stopped: %lld"
     },
     "ext.popup.seen_one": {
-      "s": "ଲେଖାଯାଇଥିବା ପ୍ରୟାସ: %lld",
-      "back": "Recorded attempts: N"
+      "s": "ରେକର୍ଡ ହୋଇଥିବା ପ୍ରୟାସ: %lld",
+      "back": "Recorded attempts: %lld"
     },
     "ext.popup.seen_other": {
-      "s": "ଲେଖାଯାଇଥିବା ପ୍ରୟାସ: %lld",
-      "back": "Recorded attempts: N"
+      "s": "ରେକର୍ଡ ହୋଇଥିବା ପ୍ରୟାସ: %lld",
+      "back": "Recorded attempts: %lld"
     },
     "ext.popup.tries_one": {
       "s": "ପ୍ରୟାସ: %lld",
@@ -294,12 +294,12 @@
       "back": "Fix"
     },
     "ext.state.blocked": {
-      "s": "ଅବରୋଧିତ",
+      "s": "ବ୍ଲକ ହୋଇଛି",
       "back": "Blocked"
     },
     "ext.state.allowed": {
-      "s": "ଅନୁମତି ପ୍ରାପ୍ତ",
-      "back": "Allowed"
+      "s": "ଅନୁମତି ମିଳିଛି",
+      "back": "Allowed (permission granted)"
     },
     "ext.state.removed": {
       "s": "ହଟାଗଲା",
@@ -326,11 +326,11 @@
       "back": "Allow everywhere"
     },
     "ext.action.block_here": {
-      "s": "ଏହି ସାଇଟରେ ଅବରୋଧ କରନ୍ତୁ",
+      "s": "ଏହି ସାଇଟରେ ବ୍ଲକ କରନ୍ତୁ",
       "back": "Block on this site"
     },
     "ext.action.block_everywhere": {
-      "s": "ସବୁଠି ଅବରୋଧ କରନ୍ତୁ",
+      "s": "ସବୁଠି ବ୍ଲକ କରନ୍ତୁ",
       "back": "Block everywhere"
     },
     "ext.popup.policy_heading": {
@@ -338,7 +338,7 @@
       "back": "Destinations without a rule"
     },
     "ext.policy.block": {
-      "s": "ଅବରୋଧ କରନ୍ତୁ",
+      "s": "ବ୍ଲକ କରନ୍ତୁ",
       "back": "Block"
     },
     "ext.policy.allow": {
@@ -434,7 +434,7 @@
       "back": "Allow"
     },
     "ext.action.block": {
-      "s": "ଅବରୋଧ କରନ୍ତୁ",
+      "s": "ବ୍ଲକ କରନ୍ତୁ",
       "back": "Block"
     },
     "ext.action.clear": {
