@@ -201,6 +201,11 @@ a:hover { text-decoration-thickness: 2px; }
 .btn:hover { background: var(--accent-hover); text-decoration: none; }
 .btn svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
 
+/* Apple's badge is used as supplied: at least 40 px tall, 12 px (a quarter of its height) clear all round. */
+.badge { display: inline-block; line-height: 0; align-self: flex-start; padding: 0; border-radius: 10px; }
+.badge img { height: 48px; width: auto; }
+.cta-band .text-link { margin-top: 0; font-size: 19px; font-weight: 650; }
+
 .btn-quiet {
     background: transparent;
     color: var(--ink);

@@ -58,9 +58,19 @@ picks the visitor's language by script.
 - The favicon, `icon*.png` and `og.png` derive from the extension's icon and
   `Support/icon/build.py`; `og.png` carries only the icon and the name.
 
+## App Store badge
+
+`web/_generator/fetch_badges.py` downloads Apple's own black badge for each site
+language from `toolbox.marketingtools.apple.com` and writes `badges/*.svg` and
+`badges.json`. Apple's rules (checked 2026-10-01): artwork unmodified, black
+badge preferred (white only when black looks heavy, so the dark theme keeps black),
+at least 40 px tall (we use 48), clear space of a quarter of the height, one badge
+per layout (the home page has one, in the hero; the closing band is a text link),
+"App Store" never translated. Apple has no Hindi badge, so `hi` shows the English
+one; `bn-BD` uses `bn-in`, `ur-PK` uses `ur-in`, `ar-SA` uses `ar-ar`, and the
+English variants share `en-us`. The `cta_get` string is the image's alt text.
+
 ## Not done
 
-- Apple's official "Download on the App Store" badge artwork is not used. The
-  button is text. Apple supplies the badge through its marketing tools.
 - No Terms page. The footer links Apple's standard licence agreement.
 - No press kit, changelog or FAQ page. The support page carries the FAQ.

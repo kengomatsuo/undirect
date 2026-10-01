@@ -28,7 +28,7 @@ WEB = HERE.parent
 REPO = WEB.parent
 BASE = "https://undirect.matsuokengo.com"
 APP_ID = "6810513194"
-APP_URL = f"https://apps.apple.com/app/undirect/id{APP_ID}"
+APP_URL = f"https://apps.apple.com/app/id{APP_ID}"
 EULA_URL = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
 SOURCE_URL = "https://github.com/kengomatsuo/undirect"
 EMAIL = "kenneth@matsuokengo.com"
@@ -60,6 +60,21 @@ OG_LOCALE = {
     "sk": "sk_SK", "sv": "sv_SE", "th": "th_TH", "tr": "tr_TR", "uk": "uk_UA", "vi": "vi_VN",
     "zh-Hans": "zh_CN", "zh-Hant": "zh_TW",
 }
+
+
+BADGES = json.loads((HERE / "badges.json").read_text(encoding="utf-8"))["map"]
+BADGE_HEIGHT = 48          # Apple asks for at least 40 px on screen
+
+
+def badge_html(loc, alt):
+    """Apple's own black badge, unmodified, in the language of the page."""
+    code = BADGES[loc.code]
+    svg = (HERE / "badges" / f"{code}.svg").read_text(encoding="utf-8")
+    vb = re.search(r'viewBox="[\d.\-]+[ ,]+[\d.\-]+[ ,]+([\d.]+)[ ,]+([\d.]+)"', svg)
+    w, h = float(vb.group(1)), float(vb.group(2))
+    width = round(w / h * BADGE_HEIGHT)
+    return (f'<a class="badge" href="{APP_URL}" rel="noopener">'
+            f'<img src="/img/badges/{code}.svg" width="{width}" height="{BADGE_HEIGHT}" alt="{esc(alt)}"></a>')
 
 
 def load(path):
@@ -267,7 +282,8 @@ def home_page(loc, locales, s, t):
          "url": loc.url(), "image": BASE + "/icon-512.png", "downloadUrl": APP_URL, "installUrl": APP_URL,
          "author": person(), "offers": {"@type": "Offer", "price": "0.99", "priceCurrency": "USD"}},
     ]}
-    cta = f'<a class="btn" href="{APP_URL}" rel="noopener">{esc(t["cta_get"])}</a>'
+    cta = badge_html(loc, t["cta_get"])
+    cta_text = f'<a class="text-link" href="{APP_URL}" rel="noopener">{esc(t["cta_get"])}</a>'
     feats = "\n".join(
         f'<li><svg viewBox="0 0 24 24" aria-hidden="true">{ICONS[icon]}</svg><h3>{esc(s[f"feat{i}_t"])}</h3><p>{esc(s[f"feat{i}_b"])}</p></li>'
         for i, (icon, _, _) in enumerate(FEATURES, 1))
@@ -322,7 +338,7 @@ def home_page(loc, locales, s, t):
 <section class="section sunken cta-band"><div class="wrap">
 <h2>{esc(s['req_h'])}</h2>
 <p>{esc(s['req'])}</p>
-<div class="cta-row">{cta}</div>
+<div class="cta-row">{cta_text}</div>
 </div></section>"""
     return document(loc, locales, t, "", title, s["promo"], ld, body)
 
@@ -487,6 +503,9 @@ def main():
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(fn(l, locales, all_s[l.code], all_t[l.code]), encoding="utf-8")
             n += 1
+    (out / "img" / "badges").mkdir(parents=True, exist_ok=True)
+    for code in sorted(set(BADGES.values())):
+        shutil.copy(HERE / "badges" / f"{code}.svg", out / "img" / "badges" / f"{code}.svg")
     (out / "404.html").write_text(not_found_page(locales, all_t), encoding="utf-8")
     (out / "sitemap.xml").write_text(sitemap(locales), encoding="utf-8")
     (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")

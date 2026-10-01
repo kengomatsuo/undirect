@@ -17,7 +17,7 @@
  "p1_h": "Mit lát a bővítmény",
  "p1": "Az ellopott kattintás elkapásához a védelem azokon az oldalakon fut, ahol bekapcsolja. Az oldal felépítését olvassa: melyik elem van a mutató alatt, hová mutat egy hivatkozás, és melyik oldalra vinne egy új ablak. Ebből semmit nem tárol és nem küld el.",
  "p2_h": "Mi marad az eszközén",
- "p2": "Az Ön szabályai, a blokkolt hosztok és a megállított kísérletek száma. A Safari bővítménytárolójában vannak. Egy másolat olyan tárolóban van, amelyet csak az Undirect és a bővítménye olvashat, így az app ugyanazt a listát mutathatja.",
+ "p2": "Az Ön szabályai, a blokkolt hosztok és a megállított kísérletek száma. A Safari bővítménytárolójában vannak. Egy másolat olyan tárolóban van, amelyet csak az Undirect és a bővítménye olvashat, így az app ugyanazt a listát mutathatja. A privát ablakból bekapcsolt oldalakat a rendszer csak az utolsó privát lap bezárásáig őrzi meg, és soha nem másolja át az appnak.",
  "p3_h": "Oldal jelentése",
  "p3": "A Probléma jelentése gomb előre kitöltött hibajegyet nyit az Undirect nyilvános GitHub-tárházában. Benne van az oldal címe és az, amit a védelem ott látott. Addig semmi sem megy el, amíg Ön maga el nem küldi, előtte szerkesztheti, vagy bezárhatja a lapot. Elküldés után nyilvános, és a GitHub adatvédelmi irányelvei vonatkoznak rá.",
  "p4_h": "Nincs harmadik fél",
