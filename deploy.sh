@@ -87,8 +87,11 @@ case "${1:-help}" in
   screenshots)      $FASTLANE ios upload_screenshots ;;
   screenshots_mac)  $FASTLANE mac upload_screenshots_mac ;;
   status)
-    # Needs the asc CLI and the key's three values in ASC_KEY_ID, ASC_ISSUER_ID,
-    # ASC_PRIVATE_KEY_PATH (the key file must be mode 600).
+    # asc takes the key from the environment; the .p8 sits beside the json.
+    ASC_KEY_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["key_id"])' "$UNDIRECT_ASC_KEY_FILE")"
+    ASC_ISSUER_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["issuer_id"])' "$UNDIRECT_ASC_KEY_FILE")"
+    ASC_PRIVATE_KEY_PATH="$(dirname "$UNDIRECT_ASC_KEY_FILE")/AuthKey_$ASC_KEY_ID.p8"
+    export ASC_KEY_ID ASC_ISSUER_ID ASC_PRIVATE_KEY_PATH
     asc status --app 6810513194 ;;
   help|*)           usage ;;
 esac
