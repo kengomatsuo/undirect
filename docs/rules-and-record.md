@@ -238,7 +238,8 @@ List style is per platform: `.inset` on macOS, `.insetGrouped` on iOS. The macOS
 style on iOS stretches rows and collides the section footer with the row above it.
 
 Debug builds accept `-UndirectForceState off|on|checking`, so every screen can be
-captured without switching the extension off in Safari.
+captured without switching the extension off in Safari. Every launch flag is read
+in `App/LaunchFlags.swift`, the one place that has a `#if DEBUG` for them.
 
 ## Seeding the shared file
 

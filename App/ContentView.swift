@@ -29,7 +29,7 @@ struct ContentView: View {
                 #if !os(macOS)
                 if pane == nil, sizeClass != .compact { pane = .rules(.everywhere) }
                 #endif
-                showWelcome = !welcomeShown || forcedWelcome
+                showWelcome = !welcomeShown || LaunchFlags.showWelcome
                 // The file is instant. Safari can take its time.
                 rules.reload()
                 await status.refresh()
@@ -114,7 +114,7 @@ struct ContentView: View {
             #if os(macOS)
             .navigationSplitViewColumnWidth(min: 170, ideal: 190, max: 240)
             #endif
-            .task { await pickDebugPane() }
+            .task { if let debugPane = await LaunchFlags.pane() { pane = debugPane } }
         } detail: {
             switch pane ?? .rules(.everywhere) {
             case .rules(let grouping):
@@ -127,43 +127,9 @@ struct ContentView: View {
         }
     }
 
-    // Debug builds can open a pane for screenshots. It is picked after
-    // launch, so on iPhone it is pushed and keeps its title.
-    private func pickDebugPane() async {
-        #if DEBUG
-        guard let raw = UserDefaults.standard.string(forKey: "UndirectPane") else { return }
-        try? await Task.sleep(for: .milliseconds(700))
-        switch raw {
-        case "bysite": pane = .rules(.bySite)
-        case "sites": pane = .sites
-        case "settings": pane = .settings
-        default: pane = .rules(.everywhere)
-        }
-        #endif
-    }
-
-    // Debug builds can be launched into a given state so every screen can be
-    // captured without switching the extension off in Safari.
     private var shownState: ExtensionStatus.State {
-        #if DEBUG
-        switch UserDefaults.standard.string(forKey: "UndirectForceState") {
-        case "off": return .off
-        case "on": return .on
-        case "checking": return .checking
-        default: break
-        }
-        #endif
-        return status.state
+        LaunchFlags.forcedState ?? status.state
     }
-
-    private var forcedWelcome: Bool {
-        #if DEBUG
-        return UserDefaults.standard.bool(forKey: "UndirectShowWelcome")
-        #else
-        return false
-        #endif
-    }
-
 }
 
 #Preview {

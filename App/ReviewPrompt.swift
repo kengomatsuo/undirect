@@ -45,9 +45,6 @@ extension RulesModel {
     // The extension has stopped something at least once. Debug builds can
     // skip that with -UndirectReviewNow, to see the system sheet.
     var hasBlockedSomething: Bool {
-        #if DEBUG
-        if UserDefaults.standard.bool(forKey: "UndirectReviewNow") { return true }
-        #endif
-        return (snapshot?.counts.lifetime ?? 0) > 0
+        LaunchFlags.reviewNow || (snapshot?.counts.lifetime ?? 0) > 0
     }
 }

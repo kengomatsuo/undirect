@@ -7,41 +7,16 @@ struct WatchedView: View {
     let rules: RulesModel
 
     var body: some View {
-        container
-            .navigationTitle("Guarded sites")
-    }
-
-    @ViewBuilder
-    private var container: some View {
-        #if os(macOS)
-        Form { sections }
-            .formStyle(.grouped)
-        #else
-        List { sections }
-            .listStyle(.insetGrouped)
-        #endif
-    }
-
-    @ViewBuilder
-    private var sections: some View {
-        Section {
-            if !rules.reachedApp {
-                ContentUnavailableView(
-                    "Nothing from the extension yet",
-                    systemImage: "arrow.triangle.2.circlepath",
-                    description: Text("Open a page in Safari once and this fills in.")
-                )
-            } else if rules.watchedSites.isEmpty {
-                ContentUnavailableView(
-                    "No sites guarded yet",
-                    systemImage: "checkmark.shield",
-                    description: Text("Press the Undirect button in Safari on a site that keeps redirecting.")
-                )
-            } else {
-                ForEach(rules.watchedSites, id: \.self) { site in
-                    WatchedSiteRow(site: site, canEdit: rules.canEdit) {
-                        rules.stopWatching(site)
-                    }
+        RecordList(
+            reachedApp: rules.reachedApp,
+            isEmpty: rules.watchedSites.isEmpty,
+            emptyTitle: "No sites guarded yet",
+            emptySymbol: "checkmark.shield",
+            emptyDetail: "Press the Undirect button in Safari on a site that keeps redirecting."
+        ) {
+            ForEach(rules.watchedSites, id: \.self) { site in
+                WatchedSiteRow(site: site, canEdit: rules.canEdit) {
+                    rules.stopWatching(site)
                 }
             }
         } footer: {
@@ -49,6 +24,7 @@ struct WatchedView: View {
                 Text("Sites are added from the Undirect button in Safari.")
             }
         }
+        .navigationTitle("Guarded sites")
     }
 }
 
@@ -59,10 +35,7 @@ struct WatchedSiteRow: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: "globe")
-                .foregroundStyle(.tint)
-                .frame(width: 20)
-                .accessibilityHidden(true)
+            HostIcon()
 
             Text(site)
                 .lineLimit(1)
