@@ -16,14 +16,15 @@ from concurrent.futures import ThreadPoolExecutor
 
 APP_ID = "6810513194"
 PROMO = os.environ.get("UNDIRECT_PROMO_OUT", "/Users/hafang/Repositories/undirect-promo/out")
+VERSION = os.environ.get("UNDIRECT_PREVIEW_VERSION", "v6")  # the render to upload: ../undirect-promo/out/<name>-<version>.mp4
 POSTER = os.environ.get("UNDIRECT_POSTER_FRAME", "00:00:03:00")
 WORKERS = int(os.environ.get("UNDIRECT_PREVIEW_WORKERS", "4"))
 
 # platform -> (ASC platform, [(device type, file)])
 PLATFORMS = {
-    "ios": ("IOS", [("IPHONE_69", "AppStorePreview-v3.mp4"),
-                    ("IPAD_PRO_3GEN_129", "AppStorePreviewIPad-v3.mp4")]),
-    "mac": ("MAC_OS", [("DESKTOP", "MacPreview-v3.mp4")]),
+    "ios": ("IOS", [("IPHONE_69", f"AppStorePreview-{VERSION}.mp4"),
+                    ("IPAD_PRO_3GEN_129", f"AppStorePreviewIPad-{VERSION}.mp4")]),
+    "mac": ("MAC_OS", [("DESKTOP", f"MacPreview-{VERSION}.mp4")]),
 }
 
 # the API calls the 6.9" iPhone set IPHONE_67
@@ -63,12 +64,21 @@ def localizations(version_id):
 def read_back(loc_id):
     """Return {previewType: [preview attributes]} for one localization."""
     d = asc("video-previews", "list", "--version-localization", loc_id)
-    return {x["set"]["attributes"]["previewType"]: [p["attributes"] for p in x["previews"]]
+    return {x["set"]["attributes"]["previewType"]: [dict(p["attributes"], id=p["id"]) for p in x["previews"]]
             for x in d.get("sets", [])}
 
 
-def upload_one(loc_id, device, fname):
+def upload_one(loc_id, device, fname, loc=None):
     path = os.path.join(PROMO, fname)
+    if os.environ.get("UNDIRECT_UNIQUE_FILES") and loc:
+        # A copy whose bytes differ by one metadata tag per locale: Apple's processing failed sets at random while
+        # many locales shared one file, and replacing one locale's preview seemed to take another's with it.
+        d = f"/tmp/undirect-preview-variants/{loc}"
+        os.makedirs(d, exist_ok=True)
+        path = os.path.join(d, fname)
+        if not os.path.exists(path):
+            subprocess.run(["ffmpeg", "-nostdin", "-v", "error", "-y", "-i", os.path.join(PROMO, fname), "-c", "copy",
+                            "-metadata", f"comment=undirect {loc}", "-movflags", "+faststart", path], check=True)
     r = asc("video-previews", "upload", "--version-localization", loc_id, "--path", path,
             "--device-type", device, "--replace", "--confirm")
     res = r.get("results", [])
@@ -96,6 +106,8 @@ def main():
     ap.add_argument("--locales", help="comma-separated, default all")
     ap.add_argument("--platform", choices=list(PLATFORMS))
     ap.add_argument("--verify-only", action="store_true")
+    ap.add_argument("--fix-posters", action="store_true",
+                    help="after a run whose poster requests failed: wait for each set to finish processing, then set the poster frame where it is missing")
     a = ap.parse_args()
     start = time.time()
     only = set(a.locales.split(",")) if a.locales else None
@@ -111,7 +123,7 @@ def main():
         def run(j):
             loc, lid, dev, f = j
             try:
-                pid = upload_one(lid, dev, f)
+                pid = upload_one(lid, dev, f, loc)
                 print(f"  uploaded {platform} {loc} {dev}", flush=True)
                 set_poster(pid)
                 print(f"  poster   {platform} {loc} {dev}", flush=True)
@@ -119,7 +131,32 @@ def main():
                 failures.append((platform, loc, dev, str(e)))
                 print(f"  FAIL {platform} {loc} {dev}: {e}", flush=True)
 
-        if not a.verify_only:
+        if a.fix_posters:
+            want0 = {dev: f for dev, f in PLATFORMS[platform][1]}
+            for rnd in range(40):
+                todo = 0
+                for loc, lid in locs.items():
+                    got = read_back(lid)
+                    for dev, f in want0.items():
+                        ps = got.get(API_TYPE.get(dev, dev), [])
+                        if len(ps) != 1 or ps[0]["fileName"] != f:
+                            todo += 1
+                            continue
+                        if ps[0]["assetDeliveryState"]["state"] != "COMPLETE":
+                            todo += 1
+                            continue
+                        if ps[0].get("previewFrameTimeCode", "")[:8] != POSTER[:8]:
+                            try:
+                                asc("video-previews", "set-poster-frame", "--id", ps[0]["id"], "--time-code", POSTER, retries=2)
+                                print(f"  poster   {platform} {loc} {dev}", flush=True)
+                            except RuntimeError as e:
+                                print(f"  retry later {platform} {loc} {dev}: {str(e)[:80]}", flush=True)
+                            todo += 1
+                print(f"round {rnd}: {todo} sets not yet right", flush=True)
+                if not todo:
+                    break
+                time.sleep(60)
+        if not a.verify_only and not a.fix_posters:
             with ThreadPoolExecutor(WORKERS) as ex:
                 list(ex.map(run, jobs))
 
