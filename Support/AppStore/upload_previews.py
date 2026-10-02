@@ -20,12 +20,23 @@ VERSION = os.environ.get("UNDIRECT_PREVIEW_VERSION", "v6")  # the render to uplo
 POSTER = os.environ.get("UNDIRECT_POSTER_FRAME", "00:00:03:00")
 WORKERS = int(os.environ.get("UNDIRECT_PREVIEW_WORKERS", "4"))
 
-# platform -> (ASC platform, [(device type, file)])
+# platform -> (ASC platform, [(device type, English file)])
 PLATFORMS = {
     "ios": ("IOS", [("IPHONE_69", f"AppStorePreview-{VERSION}.mp4"),
                     ("IPAD_PRO_3GEN_129", f"AppStorePreviewIPad-{VERSION}.mp4")]),
     "mac": ("MAC_OS", [("DESKTOP", f"MacPreview-{VERSION}.mp4")]),
 }
+# device type -> the name of a locale's own file: <out>/locales/<locale>/<name>.mp4 (undirect-promo/wire/tools/locales-all.sh).
+# A locale with no such file gets the English master above.
+LOCALE_FILE = {"IPHONE_69": "iphone", "IPAD_PRO_3GEN_129": "ipad", "DESKTOP": "mac"}
+
+
+def source(loc, device, fname):
+    """(path, name Apple will list) for one locale and device: its own localized file, else the English master."""
+    own = os.path.join(PROMO, "locales", loc, LOCALE_FILE[device] + ".mp4") if loc else ""
+    if own and os.path.exists(own) and os.environ.get("UNDIRECT_ENGLISH_ONLY") != "1":
+        return own, os.path.basename(own)
+    return os.path.join(PROMO, fname), fname
 
 # the API calls the 6.9" iPhone set IPHONE_67
 API_TYPE = {"IPHONE_69": "IPHONE_67"}
@@ -69,8 +80,9 @@ def read_back(loc_id):
 
 
 def upload_one(loc_id, device, fname, loc=None):
-    path = os.path.join(PROMO, fname)
-    if os.environ.get("UNDIRECT_UNIQUE_FILES", "1") != "0" and loc:
+    path, listed = source(loc, device, fname)
+    # a localized file is already its own bytes (composite.sh tags each with its locale); only the shared English master needs a variant
+    if path.endswith(fname) and os.environ.get("UNDIRECT_UNIQUE_FILES", "1") != "0" and loc:
         # A copy whose bytes differ by one metadata tag per locale: Apple's processing failed sets at random while
         # many locales shared one file, and replacing one locale's preview seemed to take another's with it.
         d = f"/tmp/undirect-preview-variants/{loc}"
@@ -139,7 +151,7 @@ def main():
                     got = read_back(lid)
                     for dev, f in want0.items():
                         ps = got.get(API_TYPE.get(dev, dev), [])
-                        if len(ps) != 1 or ps[0]["fileName"] != f:
+                        if len(ps) != 1 or ps[0]["fileName"] != source(loc, dev, f)[1]:
                             todo += 1
                             continue
                         if ps[0]["assetDeliveryState"]["state"] != "COMPLETE":
@@ -166,7 +178,7 @@ def main():
             got = read_back(lid)
             for dev, f in want.items():
                 ps = got.get(API_TYPE.get(dev, dev), [])
-                ok = (len(ps) == 1 and ps[0]["fileName"] == f
+                ok = (len(ps) == 1 and ps[0]["fileName"] == source(loc, dev, f)[1]
                       and ps[0]["assetDeliveryState"]["state"] == "COMPLETE"
                       and ps[0].get("previewFrameTimeCode", "")[:8] == POSTER[:8])
                 counts.setdefault(dev, {}).setdefault(
@@ -174,7 +186,7 @@ def main():
                 if not ok:
                     failures.append((platform, loc, dev, f"read back: {ps}"))
         for dev, c in counts.items():
-            print(f"{platform} {dev}:", {k: len(v) for k, v in c.items()}, flush=True)
+            print(f"{platform} {dev}:", {k: len(v) for k, v in c.items()}, f"{len(c.get('COMPLETE', []))}/{len(locs)} COMPLETE", flush=True)
     print(f"uploads done in {time.time() - start:.0f}s, {len(failures)} failures")
     for f in failures:
         print("FAILED", *f)
