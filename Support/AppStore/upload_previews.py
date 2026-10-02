@@ -70,7 +70,7 @@ def read_back(loc_id):
 
 def upload_one(loc_id, device, fname, loc=None):
     path = os.path.join(PROMO, fname)
-    if os.environ.get("UNDIRECT_UNIQUE_FILES") and loc:
+    if os.environ.get("UNDIRECT_UNIQUE_FILES", "1") != "0" and loc:
         # A copy whose bytes differ by one metadata tag per locale: Apple's processing failed sets at random while
         # many locales shared one file, and replacing one locale's preview seemed to take another's with it.
         d = f"/tmp/undirect-preview-variants/{loc}"
