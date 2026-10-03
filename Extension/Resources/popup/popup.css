@@ -67,6 +67,7 @@
   box-sizing: border-box;
 }
 
+/* The Mac popover's own material shows through an unpainted page */
 html,
 body {
   margin: 0;
@@ -479,4 +480,16 @@ body {
 .power:focus-visible {
   outline: auto;
   outline-offset: 3px;
+}
+
+/* iOS paints the popup's page opaque, so it gets the two-tone grouped look */
+@supports (-webkit-touch-callout: none) {
+  html,
+  body {
+    background: var(--ground);
+  }
+
+  .group {
+    background: var(--card);
+  }
 }
