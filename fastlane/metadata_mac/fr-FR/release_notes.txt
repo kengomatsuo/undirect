@@ -1,4 +1,4 @@
-La fenêtre s'ouvre sur un bouton d'alimentation rond qui désactive la protection du site, avec son nom en dessous.
-Le bouton de la barre d'outils devient rouge tant qu'un site est protégé.
-Dans un onglet sans site web, la fenêtre s'ouvre directement sur Réglages, et ses interrupteurs sont ceux de Safari.
-Sur Mac, la fenêtre reprend l'arrière-plan translucide de Safari.
+La fenêtre qui s'ouvre depuis le bouton de la barre d'outils commence désormais par un grand bouton rond, comme un bouton d'alimentation. Appuyez dessus pour désactiver la protection sur le site actuel ; son nom s'affiche en dessous.
+Tant qu'un site est protégé, l'icône de l'extension dans la barre d'outils est rouge.
+Si l'onglet n'a aucun site (onglet vide ou page de démarrage), la fenêtre s'ouvre directement sur les Réglages.
+Les interrupteurs de la fenêtre sont désormais les interrupteurs système standard de Safari. Sur Mac, le fond de la fenêtre reprend la matière translucide et floutée de Safari.

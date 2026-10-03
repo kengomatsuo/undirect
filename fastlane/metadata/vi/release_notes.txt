@@ -1,4 +1,4 @@
-Cửa sổ bật lên mở ra với một nút nguồn tròn để tắt bảo vệ cho trang, tên trang nằm ngay bên dưới.
-Nút trên thanh công cụ chuyển sang màu đỏ khi một trang đang được bảo vệ.
-Ở tab không có trang web, cửa sổ mở thẳng vào Cài đặt, và các công tắc là của chính Safari.
-Trên Mac, cửa sổ dùng nền trong mờ của Safari.
+Cửa sổ bật lên khi nhấn nút tiện ích trên thanh công cụ nay mở đầu bằng một nút nguồn tròn, lớn. Nhấn nút này sẽ tắt bảo vệ cho trang web hiện tại, tên trang web hiển thị bên dưới nút.
+Khi một trang web đang được bảo vệ, biểu tượng tiện ích trên thanh công cụ có màu đỏ.
+Nếu tab hiện tại không có trang web, chẳng hạn tab trống hoặc trang khởi đầu, cửa sổ chuyển thẳng đến Cài đặt.
+Các công tắc trong cửa sổ nay là công tắc hệ thống tiêu chuẩn của Safari. Trên Mac, nền cửa sổ dùng chất liệu trong suốt có độ mờ của Safari.

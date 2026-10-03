@@ -1,4 +1,4 @@
-Het pop-upvenster opent met een ronde aan/uit-knop die de bescherming van de site uitzet, met de naam van de site eronder.
-De knop in de werkbalk wordt rood zolang een site beveiligd is.
-In een tabblad zonder website opent het venster direct op Instellingen, en de schakelaars zijn die van Safari zelf.
-Op de Mac gebruikt het venster de doorschijnende achtergrond van Safari.
+Het venster van de werkbalkknop begint nu met een grote ronde aan/uit-knop. Met een druk erop zet je de bescherming voor de huidige website uit. De naam van de website staat onder de knop.
+Het werkbalkicoon is rood zolang een website beveiligd is.
+Heeft het tabblad geen website, zoals een leeg tabblad of een startpagina, dan opent het venster meteen op Instellingen.
+De schakelaars in het venster zijn nu de standaardschakelaars van Safari. Op de Mac heeft het venster de doorzichtige, vervaagde achtergrond van Safari zelf.

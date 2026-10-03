@@ -1,4 +1,4 @@
-Pojavno okno se odpre z okroglim gumbom za vklop, ki izklopi zaščito spletnega mesta, pod njim pa je ime mesta.
-Gumb v orodni vrstici postane rdeč, dokler je spletno mesto zaščiteno.
-Na zavihku brez spletnega mesta se okno odpre kar v Nastavitvah, njegova stikala pa so Safarijeva.
-Na Macu ima okno Safarijevo prosojno ozadje.
+Okno, ki se odpre z gumbom orodne vrstice, se zdaj začne z velikim okroglim gumbom za vklop in izklop. Pritisk nanj izklopi zaščito za trenutno spletno mesto, njegovo ime pa piše pod gumbom.
+Dokler je spletno mesto zaščiteno, je ikona razširitve v orodni vrstici rdeča.
+Če zavihek nima spletnega mesta, na primer prazen zavihek ali začetna stran, se okno odpre kar v Nastavitvah.
+Stikala v oknu so zdaj Safarijeva sistemska stikala. Na Macu ima okno Safarijevo prosojno, zamegljeno ozadje.

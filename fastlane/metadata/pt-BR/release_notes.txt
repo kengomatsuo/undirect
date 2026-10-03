@@ -1,4 +1,4 @@
-O popup abre num botão de ligar redondo que desativa a proteção do site, com o nome do site embaixo.
-O botão da barra de ferramentas fica vermelho enquanto um site está protegido.
-Numa aba sem site, o popup abre direto em Ajustes, e seus botões são os do próprio Safari.
-No Mac, o popup usa o fundo translúcido do Safari.
+O botão da barra de ferramentas agora abre um popup que começa com um grande botão de ligar redondo. Ao tocar nele, a proteção do site atual é desativada. O nome do site aparece embaixo do botão.
+O ícone na barra de ferramentas fica vermelho enquanto o site está protegido.
+Em uma aba sem site, como uma aba vazia ou a página inicial, o popup abre direto em Ajustes.
+Os interruptores do popup agora são os controles padrão do sistema, do Safari. No Mac, o fundo do popup é o material translúcido e desfocado do próprio Safari.

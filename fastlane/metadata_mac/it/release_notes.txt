@@ -1,4 +1,4 @@
-Il popup si apre su un pulsante di accensione rotondo che disattiva la protezione del sito, con il nome del sito sotto.
-Il pulsante nella barra degli strumenti diventa rosso finché un sito è protetto.
-In una scheda senza sito web, il popup si apre direttamente su Impostazioni e i suoi interruttori sono quelli di Safari.
-Su Mac il popup usa lo sfondo traslucido di Safari.
+Il pulsante Undirect nella barra di Safari apre un pannello che ora comincia con un grande pulsante tondo di accensione. Premilo per disattivare la protezione sul sito aperto: il nome del sito appare sotto il pulsante.
+Finché un sito è protetto, l'icona nella barra è rossa.
+In una scheda vuota o nella pagina iniziale non c'è alcun sito, quindi il pannello si apre direttamente su Impostazioni.
+Gli interruttori nel pannello sono ora quelli standard di sistema. Su Mac lo sfondo del pannello è il materiale trasparente e sfocato di Safari.

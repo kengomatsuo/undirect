@@ -1,4 +1,4 @@
-Popup-fönstret öppnas på en rund strömknapp som stänger av skyddet för webbplatsen, med webbplatsens namn under.
-Knappen i verktygsfältet blir röd så länge en webbplats är skyddad.
-På en flik utan webbplats öppnas fönstret direkt på Inställningar, och reglagen är Safaris egna.
-På Mac får fönstret Safaris genomskinliga bakgrund.
+Fönstret som öppnas från verktygsfältsknappen börjar nu med en stor, rund strömknapp. Trycker du på den stängs skyddet av för den aktuella webbplatsen, vars namn står under knappen.
+Så länge en webbplats är skyddad är tilläggets ikon i verktygsfältet röd.
+Saknar fliken en webbplats, till exempel en tom flik eller startsidan, går fönstret direkt till Inställningar.
+Reglagen i fönstret är nu Safaris egna systemreglage. På Mac har fönstret Safaris genomskinliga, suddade bakgrund.

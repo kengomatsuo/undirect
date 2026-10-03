@@ -1,4 +1,4 @@
-A felugró ablak egy kerek bekapcsológombon nyílik meg, amely kikapcsolja az oldal védelmét, alatta az oldal nevével.
-Az eszköztár gombja pirosra vált, amíg egy oldal védett.
-Weboldal nélküli lapon az ablak közvetlenül a Beállításokon nyílik meg, és a kapcsolói a Safari saját kapcsolói.
-Macen az ablak a Safari áttetsző hátterét kapja.
+Az eszköztáron az Undirect gombra nyomva megnyíló felugró ablak mostantól egy nagy, kerek bekapcsológombbal indul. Ha megnyomja, kikapcsolja a védelmet az aktuális oldalon, az oldal neve pedig a gomb alatt látszik.
+Amíg egy oldal védett, az eszköztár ikonja piros.
+Üres lapon vagy a kezdőoldalon nincs weboldal, ezért az ablak rögtön a Beállítások képernyőt mutatja.
+Az ablak kapcsolói mostantól a rendszer szokásos kapcsolói. Macen az ablak háttere a Safari saját áttetsző, elmosódott anyaga.

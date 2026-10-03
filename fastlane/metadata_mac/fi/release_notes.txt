@@ -1,4 +1,4 @@
-Ponnahdusikkuna avautuu pyöreään virtapainikkeeseen, joka poistaa sivuston suojauksen. Sivuston nimi näkyy painikkeen alla.
-Työkalupalkin painike muuttuu punaiseksi, kun jokin sivusto on suojattu.
-Välilehdellä, jossa ei ole verkkosivustoa, ikkuna avautuu suoraan Asetuksiin, ja sen kytkimet ovat Safarin omia.
-Macilla ikkunalla on Safarin läpikuultava tausta.
+Työkalupalkin painikkeesta aukeava ikkuna alkaa nyt suurella pyöreällä virtapainikkeella. Sitä painamalla suojaus poistuu käytöstä nykyiseltä verkkosivustolta, ja sivuston nimi näkyy painikkeen alla.
+Kun verkkosivusto on suojattu, laajennuksen kuvake työkalupalkissa on punainen.
+Jos välilehdellä ei ole verkkosivustoa (tyhjä välilehti tai aloitussivu), ikkuna avautuu suoraan Asetuksiin.
+Ikkunan kytkimet ovat nyt Safarin tavalliset järjestelmäkytkimet. Macilla ikkunan tausta on Safarin oma läpikuultava, sumennettu materiaali.

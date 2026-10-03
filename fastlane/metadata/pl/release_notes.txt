@@ -1,4 +1,4 @@
-Okno otwiera się na okrągłym przycisku zasilania, który wyłącza ochronę witryny. Pod nim widać nazwę witryny.
-Przycisk na pasku narzędzi robi się czerwony, dopóki jakaś witryna jest chroniona.
-Na karcie bez witryny okno otwiera się od razu na Ustawieniach, a jego przełączniki pochodzą z Safari.
-Na Macu okno ma półprzezroczyste tło Safari.
+Przycisk na pasku narzędzi otwiera teraz okno, które zaczyna się od dużego, okrągłego przycisku zasilania. Jego naciśnięcie wyłącza ochronę bieżącej witryny. Nazwa witryny jest widoczna pod przyciskiem.
+Ikona na pasku narzędzi jest czerwona, dopóki witryna jest chroniona.
+Na karcie bez witryny, na przykład pustej albo ze stroną startową, okno od razu otwiera Ustawienia.
+Przełączniki w oknie to teraz standardowe przełączniki systemowe Safari. Na Macu tło okna jest półprzezroczystym, rozmytym materiałem Safari.

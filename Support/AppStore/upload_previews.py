@@ -58,10 +58,13 @@ def asc(*args, retries=3):
     raise RuntimeError(last)
 
 
+EDITABLE = {"PREPARE_FOR_SUBMISSION", "DEVELOPER_REJECTED", "REJECTED", "METADATA_REJECTED"}
+
+
 def editable_version(platform):
-    d = asc("versions", "list", "--app", APP_ID, "--platform", PLATFORMS[platform][0],
-            "--state", "PREPARE_FOR_SUBMISSION", "--output", "json")
-    rows = d.get("data", [])
+    # A cancelled submission leaves the version DEVELOPER_REJECTED, still editable.
+    d = asc("versions", "list", "--app", APP_ID, "--platform", PLATFORMS[platform][0], "--output", "json")
+    rows = [v for v in d.get("data", []) if v["attributes"].get("appStoreState") in EDITABLE]
     if len(rows) != 1:
         sys.exit(f"{platform}: expected one editable version, found {len(rows)}")
     return rows[0]["id"], rows[0]["attributes"]["versionString"]

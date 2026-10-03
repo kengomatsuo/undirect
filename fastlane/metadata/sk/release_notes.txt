@@ -1,4 +1,4 @@
-Okno sa otvára na okrúhlom tlačidle napájania, ktoré vypne ochranu webu. Pod ním je názov webu.
-Tlačidlo na paneli nástrojov sčervenie, kým je niektorý web chránený.
-Na karte bez webu sa okno otvorí rovno v Nastaveniach a jeho prepínače sú priamo zo Safari.
-Na Macu má okno priesvitné pozadie Safari.
+Tlačidlo na paneli nástrojov teraz otvára okno, ktoré začína veľkým okrúhlym tlačidlom napájania. Ak ho stlačíte, ochrana pre aktuálny web sa vypne. Názov webu je pod tlačidlom.
+Ikona na paneli nástrojov je červená, kým je web chránený.
+Na karte bez webu, napríklad prázdnej alebo s úvodnou stránkou, sa okno otvorí rovno v Nastaveniach.
+Prepínače v okne sú teraz štandardné systémové prepínače Safari. Na Macu je pozadie okna priesvitný rozmazaný materiál Safari.

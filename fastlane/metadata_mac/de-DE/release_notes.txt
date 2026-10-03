@@ -1,4 +1,4 @@
-Das Popup öffnet sich mit einer runden Ein-/Aus-Taste, die den Schutz für die Website beendet. Darunter steht der Name der Website.
-Die Taste in der Symbolleiste wird rot, solange eine Website geschützt ist.
-In einem Tab ohne Website öffnet das Popup direkt die Einstellungen. Die Schalter dort stammen von Safari.
-Auf dem Mac hat das Popup den durchscheinenden Hintergrund von Safari.
+Das Fenster, das sich über die Schaltfläche in der Symbolleiste öffnet, beginnt jetzt mit einer großen runden Taste im Stil eines Ein-/Ausschalters. Ein Druck darauf schaltet den Schutz für die aktuelle Website aus; ihr Name steht unter der Taste.
+Solange eine Website geschützt ist, leuchtet das Symbol der Erweiterung in der Symbolleiste rot.
+Hat der Tab keine Website (leerer Tab oder Startseite), öffnet sich das Fenster direkt in den Einstellungen.
+Die Schalter im Fenster sind jetzt die normalen Systemschalter von Safari. Auf dem Mac besteht der Hintergrund aus dem durchsichtigen, unscharfen Material von Safari.

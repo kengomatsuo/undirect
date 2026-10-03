@@ -1,4 +1,4 @@
-Místní okno se otevírá na kulatém tlačítku napájení, které vypne ochranu webu. Pod ním je název webu.
-Tlačítko na liště nástrojů zčervená, dokud je některý web chráněn.
-Na panelu bez webu se okno otevře rovnou v Nastavení a jeho přepínače jsou přímo ze Safari.
-Na Macu má okno průhledné pozadí Safari.
+Okno, které se otevře tlačítkem na liště, nově začíná velkým kulatým tlačítkem ve stylu vypínače. Klepnutím na něj vypnete ochranu pro aktuální web; jeho název je pod tlačítkem.
+Dokud je web chráněný, je ikona rozšíření na liště červená.
+Pokud karta žádný web nemá (prázdná karta nebo úvodní stránka), okno se otevře rovnou v Nastavení.
+Přepínače v okně jsou nyní standardní systémové přepínače Safari. Na Macu má okno pozadí z průhledného rozmazaného materiálu Safari.

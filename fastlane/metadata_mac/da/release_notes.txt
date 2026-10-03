@@ -1,4 +1,4 @@
-Popup-vinduet åbner på en rund tænd/sluk-knap, der slår beskyttelsen fra for webstedet. Webstedets navn står under den.
-Knappen i værktøjslinjen bliver rød, mens et websted er beskyttet.
-På en fane uden websted åbner popup-vinduet direkte på Indstillinger, og kontakterne er Safaris egne.
-På Mac har popup-vinduet Safaris gennemsigtige baggrund.
+Vinduet, der åbner fra knappen på værktøjslinjen, starter nu med en stor, rund tænd/sluk-knap. Tryk på den for at slå beskyttelsen fra på det aktuelle websted; webstedets navn står under knappen.
+Når et websted er beskyttet, er udvidelsens ikon på værktøjslinjen rødt.
+Hvis fanen ikke har noget websted (en tom fane eller startsiden), åbner vinduet direkte på Indstillinger.
+Til/fra-kontakterne i vinduet er nu Safaris almindelige systemkontakter. På Mac har vinduet Safaris eget gennemsigtige, slørede materiale som baggrund.

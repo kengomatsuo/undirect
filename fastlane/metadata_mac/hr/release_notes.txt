@@ -1,4 +1,4 @@
-Skočni prozor otvara se na okruglom gumbu za uključivanje koji isključuje zaštitu web-mjesta, a ispod njega piše naziv web-mjesta.
-Gumb na alatnoj traci postaje crven dok je neko web-mjesto zaštićeno.
-Na kartici bez web-mjesta prozor se otvara izravno u Postavkama, a njegove sklopke su izvorne sklopke Safarija.
-Na Macu prozor ima Safarijevu prozirnu pozadinu.
+Gumb Undirect na alatnoj traci Safarija otvara skočni prozor koji sada počinje velikim okruglim gumbom za uključivanje. Ako ga pritisnete, isključuje se zaštita za trenutačno web-mjesto, a njegov naziv piše ispod gumba.
+Dok je web-mjesto zaštićeno, ikona na alatnoj traci je crvena.
+Na praznoj kartici ili početnoj stranici nema web-mjesta, pa se skočni prozor odmah otvara na zaslonu Postavke.
+Prekidači u skočnom prozoru sada su standardni sistemski prekidači. Na Macu je pozadina skočnog prozora Safarijin prozirni, zamućeni materijal.

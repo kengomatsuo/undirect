@@ -1,4 +1,4 @@
-La ventana emergente se abre con un botón de encendido redondo que desactiva la protección del sitio, con su nombre debajo.
-El botón de la barra de herramientas se pone rojo mientras un sitio está protegido.
-En una pestaña sin web, la ventana se abre directamente en Ajustes, y sus interruptores son los de Safari.
-En el Mac, la ventana usa el fondo translúcido de Safari.
+La ventana que se abre con el botón de la barra de herramientas empieza ahora con un botón redondo grande, como el de encendido. Púlsalo para desactivar la protección en la web actual; el nombre de la web aparece debajo.
+Mientras una web está protegida, el icono de la extensión en la barra de herramientas es rojo.
+Si la pestaña no tiene ninguna web (una pestaña vacía o la página de inicio), la ventana se abre directamente en Ajustes.
+Los interruptores de la ventana son ahora los interruptores estándar del sistema de Safari. En Mac, el fondo de la ventana es el material translúcido y desenfocado del propio Safari.

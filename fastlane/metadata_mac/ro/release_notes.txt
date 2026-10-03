@@ -1,4 +1,4 @@
-Fereastra se deschide pe un buton rotund de pornire care dezactivează protecția site-ului, cu numele site-ului dedesubt.
-Butonul din bara de instrumente devine roșu cât timp un site este protejat.
-Într-un tab fără site web, fereastra se deschide direct la Setări, iar comutatoarele ei sunt cele din Safari.
-Pe Mac, fereastra are fundalul translucid din Safari.
+Butonul din bara de instrumente deschide acum o fereastră care începe cu un buton rotund mare de pornire. Dacă îl apeși, protecția se oprește pentru site-ul curent, al cărui nume apare sub buton.
+Pictograma din bara de instrumente este roșie cât timp site-ul este protejat.
+Într-un tab fără site web, de exemplu un tab gol sau pagina de start, fereastra se deschide direct la Setări.
+Comutatoarele din fereastră sunt acum comutatoarele de sistem ale Safari. Pe Mac, fundalul ferestrei este materialul translucid și estompat al Safari.

@@ -1,4 +1,4 @@
-Popup-vinduet åpner seg på en rund av/på-knapp som slår av beskyttelsen for nettstedet, med navnet på nettstedet under.
-Knappen i verktøylinjen blir rød så lenge et nettsted er beskyttet.
-På en fane uten nettsted åpner vinduet rett på Innstillinger, og bryterne er Safaris egne.
-På Mac har vinduet Safaris gjennomsiktige bakgrunn.
+Knappen i verktøylinjen åpner nå et vindu som starter med en stor, rund av/på-knapp. Trykk på den for å slå av beskyttelsen for nettstedet du er på. Nettstedets navn står under knappen.
+Ikonet i verktøylinjen er rødt så lenge nettstedet er beskyttet.
+Hvis fanen ikke har noe nettsted, for eksempel en tom fane eller en startside, åpnes Innstillinger med en gang.
+Bryterne i vinduet er nå Safaris vanlige systembrytere. På Mac har vinduet Safaris egen gjennomsiktige, uskarpe bakgrunn.

@@ -1,4 +1,4 @@
-Açılır pencere, sitenin korumasını kapatan yuvarlak bir güç düğmesiyle açılır; sitenin adı düğmenin altında görünür.
-Bir site korunurken araç çubuğundaki düğme kırmızı olur.
-Web sitesi olmayan bir sekmede pencere doğrudan Ayarlar'la açılır ve anahtarları Safari'nin kendi anahtarlarıdır.
-Mac'te pencere Safari'nin yarı saydam arka planını kullanır.
+Araç çubuğundaki uzantı düğmesine basınca açılan pencere artık büyük, yuvarlak bir güç düğmesiyle başlar. Düğmeye basmak geçerli web sitesi için korumayı kapatır; sitenin adı düğmenin altında görünür.
+Bir web sitesi korunurken araç çubuğundaki uzantı simgesi kırmızıdır.
+Geçerli sekmede web sitesi yoksa, örneğin boş sekmede ya da başlangıç sayfasında, pencere doğrudan Ayarlar ekranıyla açılır.
+Penceredeki anahtarlar artık Safari'nin standart sistem anahtarlarıdır. Mac'te pencerenin arka planı Safari'nin yarı saydam, bulanık malzemesidir.
