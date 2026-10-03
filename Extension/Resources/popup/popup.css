@@ -67,7 +67,8 @@
   box-sizing: border-box;
 }
 
-/* The Mac popover's own material shows through an unpainted page */
+/* The Mac popup draws no background (WebKit sets _drawsBackground = NO), so
+   the popover's own material shows through an unpainted page */
 html,
 body {
   margin: 0;
@@ -480,6 +481,15 @@ body {
 .power:focus-visible {
   outline: auto;
   outline-offset: 3px;
+}
+
+/* The Mac popup has system appearance on (WebKit WebExtensionActionCocoa.mm),
+   so cards and hairlines take the popover's own vibrancy */
+@supports (-apple-visual-effect: -apple-system-vibrancy-fill) {
+  .group {
+    background: none;
+    -apple-visual-effect: -apple-system-vibrancy-tertiary-fill;
+  }
 }
 
 /* iOS paints the popup's page opaque, so it gets the two-tone grouped look */
