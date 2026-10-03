@@ -84,12 +84,31 @@ PY
 
 gen_metadata() { python3 fastlane/generate_metadata.py && ./fastlane/verify_metadata.sh; }
 
+# fastlane edits the newest version, even one in review: it renamed Mac 1.0.1 to
+# 1.0.2 mid-review (2026-10-03). Refuse while a version of $1 is in review.
+not_in_review() {
+  ASC_KEY_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["key_id"])' "$UNDIRECT_ASC_KEY_FILE")"
+  ASC_ISSUER_ID="$(python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["issuer_id"])' "$UNDIRECT_ASC_KEY_FILE")"
+  ASC_PRIVATE_KEY_PATH="$(dirname "$UNDIRECT_ASC_KEY_FILE")/AuthKey_$ASC_KEY_ID.p8"
+  export ASC_KEY_ID ASC_ISSUER_ID ASC_PRIVATE_KEY_PATH
+  local busy
+  busy="$(asc versions list --app 6810513194 --platform "$1" --output json | python3 -c '
+import json, sys
+rows = json.load(sys.stdin)["data"]
+print(" ".join(v["attributes"]["versionString"] for v in rows
+               if v["attributes"].get("appStoreState") in ("WAITING_FOR_REVIEW", "IN_REVIEW")))')"
+  if [ -n "$busy" ]; then
+    echo "$1 $busy is in review; cancel it first or wait. Not uploading metadata." >&2
+    return 1
+  fi
+}
+
 case "${1:-help}" in
   bump)             bump "${2:-patch}" ;;
   verify)           gen_metadata ;;
-  metadata)         gen_metadata && $FASTLANE ios upload_metadata ;;
-  metadata_mac)     gen_metadata && $FASTLANE mac upload_metadata_mac ;;
-  upload)           gen_metadata && $FASTLANE ios upload_metadata && $FASTLANE mac upload_metadata_mac ;;
+  metadata)         not_in_review IOS && gen_metadata && $FASTLANE ios upload_metadata ;;
+  metadata_mac)     not_in_review MAC_OS && gen_metadata && $FASTLANE mac upload_metadata_mac ;;
+  upload)           not_in_review IOS && not_in_review MAC_OS && gen_metadata && $FASTLANE ios upload_metadata && $FASTLANE mac upload_metadata_mac ;;
   build)            xcodegen generate && $FASTLANE ios build ;;
   binary)           $FASTLANE ios upload_binary ;;
   mas)
