@@ -1,4 +1,4 @@
-The app and the Safari extension now speak 31 more languages, so every App Store language is covered.
-On Mac, pressing Stop beside a guarded site now removes it. Before, Safari could drop the request and nothing happened. The change applies the next time Safari opens a page.
-A site switched on from a private window stays private: the app does not list it, and it is forgotten when the last private tab closes. The guard now runs fully in private windows.
-The app's color now matches its red icon.
+The popup opens on a round power button that stops guarding the site, with the site's name under it.
+The toolbar button turns red while a site is guarded.
+On a tab with no website, the popup opens on Settings, and its switches are Safari's own.
+On the Mac, the popup uses Safari's translucent background.

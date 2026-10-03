@@ -1,4 +1,4 @@
-Die App und die Safari-Erweiterung sprechen jetzt 31 weitere Sprachen, damit sind alle Sprachen des App Store abgedeckt.
-Auf dem Mac entfernt die Taste „Entfernen“ neben einer geschützten Website diese jetzt wirklich. Zuvor konnte Safari die Anfrage verwerfen, und es passierte nichts. Die Änderung gilt, sobald Safari die nächste Seite öffnet.
-Eine Website, die Sie in einem privaten Fenster einschalten, bleibt privat: Die App listet sie nicht auf, und sie wird vergessen, sobald der letzte private Tab geschlossen wird. Der Schutz läuft in privaten Fenstern jetzt vollständig.
-Die Farbe der App passt jetzt zu ihrem roten Symbol.
+Das Popup öffnet sich mit einer runden Ein-/Aus-Taste, die den Schutz für die Website beendet. Darunter steht der Name der Website.
+Die Taste in der Symbolleiste wird rot, solange eine Website geschützt ist.
+In einem Tab ohne Website öffnet das Popup direkt die Einstellungen. Die Schalter dort stammen von Safari.
+Auf dem Mac hat das Popup den durchscheinenden Hintergrund von Safari.

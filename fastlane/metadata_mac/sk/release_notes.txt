@@ -1,4 +1,4 @@
-Aplikácia aj rozšírenie pre Safari teraz hovoria ďalšími 31 jazykmi, takže sú pokryté všetky jazyky App Storu.
-Na Macu tlačidlo Zastaviť vedľa chráneného webu ten web teraz odstráni. Predtým mohol Safari požiadavku zahodiť a nič sa nestalo. Zmena platí od ďalšej stránky, ktorú Safari otvorí.
-Web zapnutý z okna súkromného prezerania zostane súkromný: aplikácia ho nevypíše a zabudne sa, keď sa zatvorí posledný súkromný panel. Ochrana teraz v oknách súkromného prezerania beží naplno.
-Farba aplikácie teraz ladí s červenou ikonou.
+Okno sa otvára na okrúhlom tlačidle napájania, ktoré vypne ochranu webu. Pod ním je názov webu.
+Tlačidlo na paneli nástrojov sčervenie, kým je niektorý web chránený.
+Na karte bez webu sa okno otvorí rovno v Nastaveniach a jeho prepínače sú priamo zo Safari.
+Na Macu má okno priesvitné pozadie Safari.

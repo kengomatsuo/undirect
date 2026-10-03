@@ -1,4 +1,4 @@
-L'app et l'extension Safari parlent maintenant 31 langues de plus : toutes les langues de l'App Store sont couvertes.
-Sur Mac, Arrêter à côté d'un site protégé le retire désormais. Avant, Safari pouvait abandonner la demande et rien ne se passait. Le changement s'applique dès la prochaine page que Safari ouvre.
-Un site activé depuis une fenêtre de navigation privée reste privé : l'app ne le liste pas, et il est oublié quand le dernier onglet privé se ferme. La protection agit maintenant pleinement dans les fenêtres privées.
-La couleur de l'app s'accorde maintenant à son icône rouge.
+La fenêtre s'ouvre sur un bouton d'alimentation rond qui désactive la protection du site, avec son nom en dessous.
+Le bouton de la barre d'outils devient rouge tant qu'un site est protégé.
+Dans un onglet sans site web, la fenêtre s'ouvre directement sur Réglages, et ses interrupteurs sont ceux de Safari.
+Sur Mac, la fenêtre reprend l'arrière-plan translucide de Safari.

@@ -1,4 +1,4 @@
-O app e a extensão do Safari agora estão disponíveis em mais 31 idiomas, então todos os idiomas da App Store estão cobertos.
-No Mac, o botão Parar ao lado de um site protegido agora remove o site. Antes, o Safari podia descartar o pedido e nada acontecia. A mudança vale a partir da próxima página que o Safari abrir.
-Um site ativado em uma janela privada continua privado: o app não o lista, e ele é esquecido quando a última aba privada fecha. A proteção agora funciona por completo em janelas privadas.
-A cor do app agora combina com o ícone vermelho.
+O popup abre num botão de ligar redondo que desativa a proteção do site, com o nome do site embaixo.
+O botão da barra de ferramentas fica vermelho enquanto um site está protegido.
+Numa aba sem site, o popup abre direto em Ajustes, e seus botões são os do próprio Safari.
+No Mac, o popup usa o fundo translúcido do Safari.

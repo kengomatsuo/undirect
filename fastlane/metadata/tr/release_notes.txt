@@ -1,4 +1,4 @@
-Uygulama ve Safari uzantısı artık 31 dil daha konuşuyor; App Store'daki tüm diller kapsanıyor.
-Mac'te korunan bir sitenin yanındaki Durdur artık o siteyi kaldırıyor. Önceden Safari isteği düşürebiliyordu ve hiçbir şey olmuyordu. Değişiklik, Safari bir sonraki sayfayı açtığında geçerli olur.
-Özel pencerede etkinleştirilen bir site özel kalır: uygulama onu listelemez ve son özel sekme kapanınca unutulur. Koruma artık özel pencerelerde tam çalışır.
-Uygulamanın rengi artık kırmızı simgesiyle uyumlu.
+Açılır pencere, sitenin korumasını kapatan yuvarlak bir güç düğmesiyle açılır; sitenin adı düğmenin altında görünür.
+Bir site korunurken araç çubuğundaki düğme kırmızı olur.
+Web sitesi olmayan bir sekmede pencere doğrudan Ayarlar'la açılır ve anahtarları Safari'nin kendi anahtarlarıdır.
+Mac'te pencere Safari'nin yarı saydam arka planını kullanır.

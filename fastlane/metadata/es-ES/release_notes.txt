@@ -1,4 +1,4 @@
-La app y la extensión de Safari ya hablan 31 idiomas más, así que están cubiertos todos los idiomas del App Store.
-En el Mac, Detener junto a un sitio protegido ahora lo quita. Antes, Safari podía descartar la petición y no pasaba nada. El cambio se aplica la próxima vez que Safari abra una página.
-Un sitio activado desde una ventana privada sigue siendo privado: la app no lo lista y se olvida cuando se cierra la última pestaña privada. La protección ya funciona por completo en las ventanas privadas.
-El color de la app ya coincide con su icono rojo.
+La ventana emergente se abre con un botón de encendido redondo que desactiva la protección del sitio, con su nombre debajo.
+El botón de la barra de herramientas se pone rojo mientras un sitio está protegido.
+En una pestaña sin web, la ventana se abre directamente en Ajustes, y sus interruptores son los de Safari.
+En el Mac, la ventana usa el fondo translúcido de Safari.

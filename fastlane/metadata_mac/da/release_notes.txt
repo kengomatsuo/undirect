@@ -1,4 +1,4 @@
-Appen og Safari-udvidelsen taler nu 31 sprog mere, så alle App Store-sprog er dækket.
-På Mac fjerner Stop ved siden af et beskyttet websted det nu. Før kunne Safari droppe anmodningen, og der skete ingenting. Ændringen gælder, næste gang Safari åbner en side.
-Et websted, der slås til fra et privat vindue, forbliver privat: appen viser det ikke, og det glemmes, når den sidste private fane lukkes. Beskyttelsen kører nu fuldt ud i private vinduer.
-Appens farve passer nu til det røde ikon.
+Popup-vinduet åbner på en rund tænd/sluk-knap, der slår beskyttelsen fra for webstedet. Webstedets navn står under den.
+Knappen i værktøjslinjen bliver rød, mens et websted er beskyttet.
+På en fane uden websted åbner popup-vinduet direkte på Indstillinger, og kontakterne er Safaris egne.
+På Mac har popup-vinduet Safaris gennemsigtige baggrund.

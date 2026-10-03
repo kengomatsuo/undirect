@@ -1,4 +1,4 @@
-Aplikacja i rozszerzenie Safari są teraz dostępne w 31 kolejnych językach, więc obsługiwane są wszystkie języki App Store.
-Na Macu przycisk Zatrzymaj obok chronionej witryny usuwa ją teraz. Wcześniej Safari mogło porzucić żądanie i nic się nie działo. Zmiana działa od następnej strony, którą otworzy Safari.
-Witryna włączona z okna prywatnego pozostaje prywatna: aplikacja jej nie wyświetla, a po zamknięciu ostatniej karty prywatnej zostaje zapomniana. Ochrona działa teraz w pełni w oknach prywatnych.
-Kolor aplikacji pasuje teraz do czerwonej ikony.
+Okno otwiera się na okrągłym przycisku zasilania, który wyłącza ochronę witryny. Pod nim widać nazwę witryny.
+Przycisk na pasku narzędzi robi się czerwony, dopóki jakaś witryna jest chroniona.
+Na karcie bez witryny okno otwiera się od razu na Ustawieniach, a jego przełączniki pochodzą z Safari.
+Na Macu okno ma półprzezroczyste tło Safari.

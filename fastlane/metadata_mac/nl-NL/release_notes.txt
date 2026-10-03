@@ -1,4 +1,4 @@
-De app en de Safari-extensie ondersteunen nu 31 talen extra, dus alle talen van de App Store zijn gedekt.
-Op de Mac verwijdert de knop Stoppen naast een beveiligde site die site nu. Eerder kon Safari het verzoek laten vallen en gebeurde er niets. De wijziging geldt vanaf de volgende pagina die Safari opent.
-Een site die je in een privévenster inschakelt, blijft privé: de app toont hem niet en hij wordt vergeten zodra het laatste privétabblad sluit. De bescherming werkt nu volledig in privévensters.
-De kleur van de app past nu bij het rode icoon.
+Het pop-upvenster opent met een ronde aan/uit-knop die de bescherming van de site uitzet, met de naam van de site eronder.
+De knop in de werkbalk wordt rood zolang een site beveiligd is.
+In een tabblad zonder website opent het venster direct op Instellingen, en de schakelaars zijn die van Safari zelf.
+Op de Mac gebruikt het venster de doorschijnende achtergrond van Safari.

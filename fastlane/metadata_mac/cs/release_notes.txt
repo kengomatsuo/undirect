@@ -1,4 +1,4 @@
-Aplikace i rozšíření pro Safari nově mluví dalšími 31 jazyky, takže jsou pokryté všechny jazyky App Storu.
-Na Macu tlačítko Zastavit vedle chráněného webu ten web nově odebere. Dříve mohl Safari požadavek zahodit a nestalo se nic. Změna platí od další stránky, kterou Safari otevře.
-Web zapnutý z anonymního okna zůstane anonymní: aplikace ho nevypíše a zapomene se, jakmile se zavře poslední anonymní panel. Ochrana teď v anonymních oknech běží naplno.
-Barva aplikace teď ladí s červenou ikonou.
+Místní okno se otevírá na kulatém tlačítku napájení, které vypne ochranu webu. Pod ním je název webu.
+Tlačítko na liště nástrojů zčervená, dokud je některý web chráněn.
+Na panelu bez webu se okno otevře rovnou v Nastavení a jeho přepínače jsou přímo ze Safari.
+Na Macu má okno průhledné pozadí Safari.

@@ -1,4 +1,4 @@
-Aplikasi dan ekstensi Safari kini tersedia dalam 31 bahasa lagi, sehingga semua bahasa App Store tercakup.
-Di Mac, tombol Hentikan di samping situs yang dilindungi kini menghapus situs itu. Sebelumnya Safari bisa membuang permintaan sehingga tidak ada yang terjadi. Perubahan berlaku mulai halaman berikutnya yang dibuka Safari.
-Situs yang diaktifkan dari jendela pribadi tetap pribadi: aplikasi tidak menampilkannya dalam daftar, dan situs itu dilupakan saat tab pribadi terakhir ditutup. Perlindungan kini berjalan penuh di jendela pribadi.
-Warna aplikasi kini sesuai dengan ikon merahnya.
+Popup kini terbuka dengan tombol daya bulat yang mematikan pelindung situs, dengan nama situs di bawahnya.
+Tombol bilah alat berubah merah selama sebuah situs dijaga.
+Di tab tanpa situs web, popup langsung terbuka di Pengaturan, dan sakelarnya adalah milik Safari.
+Di Mac, popup memakai latar Safari yang tembus pandang.

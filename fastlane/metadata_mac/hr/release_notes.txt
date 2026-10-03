@@ -1,4 +1,4 @@
-Aplikacija i proširenje za Safari sada govore još 31 jezik, pa su pokriveni svi jezici App Storea.
-Na Macu gumb Zaustavi uz zaštićeno mjesto sada to mjesto uklanja. Prije je Safari mogao odbaciti zahtjev i ništa se nije događalo. Promjena vrijedi od sljedeće stranice koju Safari otvori.
-Mjesto uključeno iz privatnog prozora ostaje privatno: aplikacija ga ne navodi, a zaboravlja se kad se zatvori posljednja privatna kartica. Zaštita sada u privatnim prozorima radi u potpunosti.
-Boja aplikacije sada odgovara crvenoj ikoni.
+Skočni prozor otvara se na okruglom gumbu za uključivanje koji isključuje zaštitu web-mjesta, a ispod njega piše naziv web-mjesta.
+Gumb na alatnoj traci postaje crven dok je neko web-mjesto zaštićeno.
+Na kartici bez web-mjesta prozor se otvara izravno u Postavkama, a njegove sklopke su izvorne sklopke Safarija.
+Na Macu prozor ima Safarijevu prozirnu pozadinu.
