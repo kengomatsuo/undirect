@@ -308,7 +308,7 @@
     "description": "Toolbar button tooltip while the guard is on."
   },
   "popup_watch_on": {
-    "message": "ಆನ್. ಆಫ್ ಮಾಡಿದರೆ ಪುಟ ಮರುಲೋಡ್ ಆಗುತ್ತದೆ.",
+    "message": "ರಕ್ಷಿತ",
     "description": "Under the site name while the guard runs there."
   },
   "popup_watch_off": {
@@ -318,5 +318,13 @@
   "state_removed": {
     "message": "ತೆಗೆಯಲಾಗಿದೆ",
     "description": "A trap on the page itself, taken off before it could catch a click."
+  },
+  "popup_stop": {
+    "message": "ಆಫ್ ಮಾಡಿ",
+    "description": "Button on the popup's site row: stops guarding this site and reloads the page."
+  },
+  "popup_stop_help": {
+    "message": "ಈ ಸೈಟ್‌ನ ರಕ್ಷಣೆಯನ್ನು ಆಫ್ ಮಾಡುತ್ತದೆ",
+    "description": "Tooltip of popup_stop."
   }
 }

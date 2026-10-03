@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="popup.css" />
   </head>
   <body>
-    <!-- This tab: the site, its switch, what it reached for. -->
+    <!-- This tab: the site, its Stop row, what it reached for. -->
     <main class="view" id="page-view">
       <!-- A tab with no website, like the Start Page. -->
       <section class="group" id="no-site" hidden>
@@ -27,11 +27,8 @@
             <span class="title site" id="site"></span>
             <span class="subtitle" id="watch-note"></span>
           </div>
-          <label class="switch">
-            <input type="checkbox" id="watch" role="switch" />
-            <span class="sr-only" data-i18n="popup_watch_label"></span>
-          </label>
         </div>
+        <button type="button" class="row stop" id="stop" data-i18n="popup_stop"></button>
       </section>
 
       <p class="warning" id="bridge-warning" hidden data-i18n="popup_bridge_warning"></p>
@@ -85,14 +82,14 @@
         <li class="row">
           <span class="title" data-i18n="popup_guard_label"></span>
           <label class="switch">
-            <input type="checkbox" id="guard" role="switch" />
+            <input type="checkbox" id="guard" switch />
             <span class="sr-only" data-i18n="popup_guard_label"></span>
           </label>
         </li>
         <li class="row">
           <span class="title" data-i18n="setting_banner"></span>
           <label class="switch">
-            <input type="checkbox" id="banner" role="switch" />
+            <input type="checkbox" id="banner" switch />
             <span class="sr-only" data-i18n="setting_banner"></span>
           </label>
         </li>

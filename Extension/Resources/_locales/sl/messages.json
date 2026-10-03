@@ -308,7 +308,7 @@
     "description": "Toolbar button tooltip while the guard is on."
   },
   "popup_watch_on": {
-    "message": "Vklopljeno. Ob izklopu se stran znova naloži.",
+    "message": "Zaščiteno",
     "description": "Under the site name while the guard runs there."
   },
   "popup_watch_off": {
@@ -318,5 +318,13 @@
   "state_removed": {
     "message": "Odstranjeno",
     "description": "A trap on the page itself, taken off before it could catch a click."
+  },
+  "popup_stop": {
+    "message": "Ustavi",
+    "description": "Button on the popup's site row: stops guarding this site and reloads the page."
+  },
+  "popup_stop_help": {
+    "message": "Izklopi zaščito za to spletno mesto",
+    "description": "Tooltip of popup_stop."
   }
 }

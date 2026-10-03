@@ -83,8 +83,11 @@ group with `icon.json` and `mark.png` as separate children is not.
 
 ## The toolbar glyph
 
-`toolbar-icon.svg` is the same path with `fill="currentColor"`, because Safari
-renders it as a template image and supplies the colour. Its `viewBox` is the
+`toolbar-icon.svg`, the icon while a site is guarded, is the same path filled
+Undirect red (`#D92B24`): Safari shows a toolbar icon that is not grayscale in its
+own colour while the extension is active, which the iOS 27 Simulator confirmed on
+2026-10-03. `toolbar-icon-off.svg` keeps `fill="currentColor"`, so Safari tints it as
+a template for an off site. Its `viewBox` is the
 mark's own bounding box plus a small pad, so Safari scales it to fill the
 toolbar slot.
 

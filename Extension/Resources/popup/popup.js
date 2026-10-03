@@ -172,12 +172,13 @@ function renderRules(state) {
 }
 
 function renderWatch(state) {
-  const watch = document.getElementById("watch");
+  const stop = document.getElementById("stop");
   const note = document.getElementById("watch-note");
   document.getElementById("site").textContent = state.site || t("app_title");
 
-  watch.checked = state.guarding;
-  watch.disabled = !state.site || state.settings.enabled === false || state.settings.mode === "everywhere";
+  // An off site gets no popup, so the row can only stop the guard.
+  stop.hidden = !state.site || !state.guarding || state.settings.enabled === false || state.settings.mode === "everywhere";
+  stop.title = t("popup_stop_help");
 
   if (state.settings.enabled === false) note.textContent = t("popup_watch_master_off");
   else if (state.settings.mode === "everywhere") note.textContent = t("popup_watch_everywhere");
@@ -243,8 +244,8 @@ async function load() {
   }
 }
 
-document.getElementById("watch").addEventListener("change", async (e) => {
-  await send({ type: "undirect:watch", site: current?.site, on: e.target.checked, tabId });
+document.getElementById("stop").addEventListener("click", async () => {
+  await send({ type: "undirect:watch", site: current?.site, on: false, tabId });
   // The tab reloads: the hooks this controls are installed at document_start.
   window.close();
 });

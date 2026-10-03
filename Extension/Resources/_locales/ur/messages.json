@@ -308,7 +308,7 @@
     "description": "Toolbar button tooltip while the guard is on."
   },
   "popup_watch_on": {
-    "message": "آن ہے۔ آف کرنے پر صفحہ دوبارہ لوڈ ہوگا۔",
+    "message": "محفوظ",
     "description": "Under the site name while the guard runs there."
   },
   "popup_watch_off": {
@@ -318,5 +318,13 @@
   "state_removed": {
     "message": "ہٹا دیا گیا",
     "description": "A trap on the page itself, taken off before it could catch a click."
+  },
+  "popup_stop": {
+    "message": "بند کریں",
+    "description": "Button on the popup's site row: stops guarding this site and reloads the page."
+  },
+  "popup_stop_help": {
+    "message": "اس سائٹ کا تحفظ بند کرتا ہے",
+    "description": "Tooltip of popup_stop."
   }
 }
