@@ -33,6 +33,9 @@
   .card:nth-child(2) { background: linear-gradient(160deg, #1fa37a, #08281f); }
   .card:nth-child(3) { background: linear-gradient(160deg, #e0892f, #3a1c05); }
   .card:nth-child(4) { background: linear-gradient(160deg, #c23a6e, #330a1a); }
+  .player video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: 1; opacity: 0; transition: opacity .25s; background: #05070c; }
+  .player.playing video { opacity: 1; }
+  .player.playing .play, .player.playing .title, .player.playing .skyline, .player.playing::after { display: none; }
   footer { text-align: center; color: #5d6578; font-size: 12px; padding: 30px 20px; }
 </style>
 </head>
@@ -42,6 +45,7 @@
   <div class="player" id="player" role="button" aria-label="Play Night Harbor">
     <div class="skyline"></div>
     <div class="play"><i></i></div>
+    <video id="film" src="/demo/stream/night-harbor.mp4" muted playsinline preload="none" disablepictureinpicture></video>
     <div class="title"><h1>Night Harbor</h1><p>2026 · 1 h 48 min · Thriller</p></div>
   </div>
   <div class="meta"><span>HD</span><span>English</span><span>Subtitles</span></div>
@@ -53,6 +57,15 @@
 <script src="/demo/lib/env.js"></script>
 <script>
   // The player is a poster. Third-party "player" code listens for the first click.
+  // A real player: the first press starts the film, a second press pauses and resumes it.
+  (function () {
+    var box = document.getElementById("player"), v = document.getElementById("film");
+    box.addEventListener("click", function () {
+      if (!box.classList.contains("playing")) { box.classList.add("playing"); v.play().catch(function () {}); }
+      else if (v.paused) v.play(); else v.pause();
+    });
+    v.addEventListener("ended", function () { box.classList.remove("playing"); v.currentTime = 0; });
+  })();
   DEMO.loadAd("popunder", DEMO.landed());
 </script>
 </body>
