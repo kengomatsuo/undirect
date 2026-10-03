@@ -70,7 +70,7 @@
 html,
 body {
   margin: 0;
-  background: var(--ground);
+  background: transparent;
   color: var(--ink);
   font: var(--font) / 1.3 -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -114,7 +114,7 @@ body {
   list-style: none;
   margin: 0 0 var(--gap);
   padding: 0;
-  background: var(--card);
+  background: color-mix(in srgb, var(--card) 72%, transparent);
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -208,25 +208,26 @@ body {
   color: var(--ink-2);
 }
 
-.no-site {
+/* The site, under its power button: the popup's first thing */
+.hero {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  padding: 14px var(--pad) 16px;
+  gap: 2px;
+  margin: 0 0 var(--gap);
   text-align: center;
 }
 
-.no-site svg {
-  width: 26px;
-  height: 26px;
-  margin-bottom: 2px;
-  color: var(--ink-3);
+.hero .title {
+  flex: none;
+  margin-top: 10px;
+  white-space: normal;
 }
 
-.no-site .title {
-  flex: none;
-  white-space: normal;
+.hint {
+  margin: 0 0 12px;
+  color: var(--ink-2);
+  font-size: var(--small);
 }
 
 .warning {
@@ -439,25 +440,43 @@ body {
   border-radius: 3px;
 }
 
-/* ------------------------------------------------------------------ stop */
+/* ----------------------------------------------------------------- power */
 
-/* A full-width destructive row, as in Settings */
-.stop {
-  width: 100%;
-  justify-content: center;
-  border: 0;
-  border-top: 0.5px solid var(--separator);
-  background: none;
-  color: var(--red);
-  font: inherit;
+/* A round glass button; the glyph is red while the site is guarded */
+.power {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  padding: 0;
+  border: 0.5px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--card) 45%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  backdrop-filter: blur(20px) saturate(1.8);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.7),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.06),
+    0 6px 18px rgba(0, 0, 0, 0.12);
+  color: var(--accent);
   cursor: pointer;
+  transition: transform 120ms ease-out;
 }
 
-.stop:active {
-  background: var(--fill);
+.power svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
 }
 
-.stop:focus-visible {
+.power:active {
+  transform: scale(0.94);
+}
+
+.power:focus-visible {
   outline: auto;
-  outline-offset: -2px;
+  outline-offset: 3px;
 }

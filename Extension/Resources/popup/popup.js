@@ -20,6 +20,9 @@ function localizeStatic() {
   for (const node of document.querySelectorAll("[data-i18n]")) {
     node.textContent = t(node.dataset.i18n);
   }
+  for (const node of document.querySelectorAll("[data-i18n-aria]")) {
+    node.setAttribute("aria-label", t(node.dataset.i18nAria));
+  }
   for (const node of document.querySelectorAll("[data-i18n-label]")) {
     node.append(t(node.dataset.i18nLabel));
   }
@@ -177,8 +180,9 @@ function renderWatch(state) {
   document.getElementById("site").textContent = state.site || t("app_title");
 
   // An off site gets no popup, so the row can only stop the guard.
-  stop.hidden = !state.site || !state.guarding || state.settings.enabled === false || state.settings.mode === "everywhere";
-  stop.title = t("popup_stop_help");
+  const canStop = !!state.site && state.guarding && state.settings.enabled !== false && state.settings.mode !== "everywhere";
+  stop.hidden = !canStop;
+  document.getElementById("stop-hint").hidden = !canStop;
 
   if (state.settings.enabled === false) note.textContent = t("popup_watch_master_off");
   else if (state.settings.mode === "everywhere") note.textContent = t("popup_watch_everywhere");
@@ -211,9 +215,10 @@ async function load() {
 
   renderWatch(state);
 
-  // The Start Page: say where the button works instead of a dead switch.
-  document.getElementById("no-site").hidden = !!state.site;
+  // The Start Page has no site to guard, so it opens on the settings.
   document.getElementById("watch-group").hidden = !state.site;
+  document.querySelector("#settings-view .back").hidden = !state.site;
+  if (!state.site) show("settings-view");
   document.getElementById("report").hidden = !state.site;
 
   document.getElementById("page-section").hidden = !state.guarding;
