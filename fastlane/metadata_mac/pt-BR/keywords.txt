@@ -1,1 +1,1 @@
-popup,anúncios,bloquear,propaganda,extensão,iphone,mac,sequestro,janela,remover,abas
+anúncios,bloquear,propaganda,extensão,iphone,mac,sequestro,janela,remover,abas
