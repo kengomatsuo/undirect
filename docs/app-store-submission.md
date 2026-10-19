@@ -118,3 +118,33 @@ one-Safari-copy rule).
 ## Rating prompt (build 8)
 
 Build 8 adds Apple's standard review request: the app asks once per version, a few seconds after the rules list is on screen and the extension has stopped at least one thing. TestFlight builds never show the sheet, so there is nothing to test there; the first prompts appear in App Store installs. It adds no App Privacy answers (`UserDefaults` is already declared under CA92.1). Full account: [docs/review-prompt.md](review-prompt.md).
+
+## Store assets match the release
+
+On 2026-10-03 Undirect 1.0.2 (new popup) went to submission with screenshots and previews
+carried over from 1.0.1 that still showed the old popup, and the mismatch was mentioned
+only afterwards. The owner cancelled the submission: "you're just gonna stop there?" The
+listing is what people judge the update by, and App Review compares it with the build.
+
+Before any submission, list what the release changes on screen, then check every
+screenshot frame and preview that shows that area. If one shows the old UI, recapture and
+re-upload it in the same job without asking.
+
+## Store copy needs ASO research first
+
+On 2026-10-01 the keywords and subtitles in 50 languages had no research behind them. The
+owner wanted "not just the apple but the street-wise one": Apple's rules, practitioner
+sources and competitors' real keyword choices per market, recorded in
+[aso/research.md](aso/research.md). Run that research before writing or translating any
+store copy (name, subtitle, keywords, promo text).
+
+## Per-language films are still pending
+
+On 2026-10-02 the owner said "just English for now" about the promo film (website,
+Film-v5). That covers the film only. The App Store previews are localized per locale:
+captions written blind, recorded screens in English, matching the store screenshots.
+The owner asked for per-language videos and parked only the film. Open options: re-record
+about 10 top languages in their own UI with RocketSim plus captions for the other 40
+(about half a day); captions only in all 50 (about 2 hours); re-record all 50 (1-2 days).
+Sources are in `~/Repositories/undirect-promo`, captions in `storyboard/strings/<code>.json`.
+Say this in the first reply of each session.

@@ -131,6 +131,29 @@ replacing them, and the popup waits for it.
 The same upload also needed every orientation on iPad, which multitasking
 requires; iPhone stays portrait. `project.yml` sets the two per device.
 
+## One Undirect.app per Mac
+
+Every Mac `Undirect.app` that LaunchServices knows shows up as its own "Undirect" row in
+Safari > Settings > Extensions, and Safari may run an old one. On 2026-09-17 five copies
+were registered (Xcode DerivedData, /tmp build dirs, ~/Applications), and the owner saw the
+old popup and three duplicate rows. The owner tests in the real Safari, so a duplicate
+makes a fix look missing.
+
+After an `xcodebuild` of `Undirect-macOS`, copy the app over `~/Applications/Undirect.app`.
+For the build-products copy, run `pluginkit -r <appex>` and `lsregister -u <app>`, then
+move it to the Trash. Check with `lsregister -dump | grep 'path:.*Undirect.app'` that only
+the intended copy remains (simulator copies do not appear in Mac Safari).
+
+Since 2026-10-01 the owner runs the App Store copy at `/Applications/Undirect.app`. A debug
+build then needs `pluginkit -r` on the App Store appex for the test (check the elected copy
+with `pluginkit -mAvvv -i com.matsuokengo.undirect.Extension`). Afterwards: trash the debug
+copy, `lsregister -f /Applications/Undirect.app`, `pluginkit -a` its appex. **Swapping
+copies wipes the extension's storage.** On 2026-10-01 the swap emptied the owner's App
+Store extension: three guarded sites (fast.com, lunarx.to, instagram.com) and four learned
+blocks were lost, and the restored copy came back empty. Copy `snapshot.json` from the
+group container before any swap, tell the owner which sites to press again afterwards, or
+test in the iOS Simulator or ask first.
+
 ## The popup cannot borrow Safari's own vibrancy
 
 Verified 2026-09-16 on the iOS simulator, screenshot in hand: a translucent
@@ -143,3 +166,10 @@ and the rest) comes from a real `NSVisualEffectView`/`UIVisualEffectView` at
 the window level, which a web extension's popup page has no way to reach.
 `Extension/Resources/popup/popup.css` uses a flat fill for this reason, not by
 oversight.
+
+**Correction, 2026-10-03: the limit above was measured on the iOS Simulator only.** On Mac
+Safari the popover material does show behind a page that paints no background, as in
+lapcat/SafariExtensions#78 (open; its title names the popup's "vibrancy bugs"). I had
+called it impossible after one simulator test, and the owner said: "you didn't research.
+there is a way. other extensions could do it." Test on the Mac before treating the flat
+fill as forced there.
