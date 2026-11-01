@@ -16,6 +16,12 @@ JavaScript.
   must stay named `AppIcon.icon` to match `ASSETCATALOG_COMPILER_APPICON_NAME`.**
   Full account: [docs/app-icon.md](docs/app-icon.md).
 
+## Working rules
+
+- **Push in the same turn as every commit (owner, 2026-09-22: "always push").** Run the repo's check and `git push origin <branch>`, and report the pushed range. Commit paths come from what this session's own edits wrote, diffed against `git status` before the commit; `git status --short` lists other agents' files too (2026-10-01, commit 13e83f4 swept in the promo-video agent's unfinished `web/demo/index.html`).
+- **Per-language films are pending: say so in the first reply of each session.** Full account: [docs/app-store-submission.md](docs/app-store-submission.md).
+- **Every release re-checks its store screenshots and previews against the build before submission (2026-10-03).** Full account: [docs/app-store-submission.md](docs/app-store-submission.md).
+
 ## Rules paid for with a bug
 
 - **Safari reads `manifest.json` from the appex root, so `project.yml` lists the
