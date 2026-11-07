@@ -10,9 +10,10 @@
   sitemap, one h1 per page, canonical equals the page's own URL, JSON-LD parses.
 - `web/deploy.sh serve` serves `dist/` at `http://127.0.0.1:8790`. Add `?stay`
   to a root URL to stop the language redirect.
-- `web/deploy.sh web` runs the check, then rsyncs `dist/` onto `origin/gh-pages`
-  through a throwaway worktree and pushes. `CNAME` is copied from `web/` on every
-  build because the rsync deletes anything not in `dist/`.
+- `web/deploy.sh web` runs the check, then commits `dist/` as the whole tree of a
+  new commit on `origin/gh-pages` through a throwaway index and pushes it; nothing is
+  checked out. `CNAME` is copied from `web/` on every build because anything not in
+  `dist/` disappears from gh-pages.
 
 ## Where the words come from
 
