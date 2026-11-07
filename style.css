@@ -229,6 +229,7 @@ a:hover { text-decoration-thickness: 2px; }
     text-wrap: balance;
     margin-bottom: 20px;
 }
+.hero .eyebrow { font-size: 16px; font-weight: 650; color: var(--link); margin-bottom: 12px; text-wrap: balance; }
 .hero .lead { font-size: 19px; color: var(--muted); max-width: 34em; margin-bottom: 28px; text-wrap: pretty; }
 .cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
 .cta-note { margin-top: 14px; font-size: 15px; color: var(--muted); }
@@ -293,7 +294,9 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ===== Text pages ===== */
 .page { max-width: var(--prose); margin-inline: auto; padding: 36px 20px 96px; }
+.page-wide { max-width: 980px; }
 .page-head { margin-bottom: 36px; }
+.page-wide .page-head, .page-wide .prose section { max-width: var(--prose); }
 .page-head h1 { font-size: clamp(32px, 5vw, 46px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 750; text-wrap: balance; }
 .page-head p { margin-top: 12px; color: var(--muted); font-size: 18px; }
 
@@ -301,6 +304,18 @@ a:hover { text-decoration-thickness: 2px; }
 .prose h2 { font-size: 23px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 8px; }
 .prose p { color: var(--muted); }
 .prose p + p { margin-top: 12px; }
+
+.prose ul { padding-inline-start: 22px; margin-top: 12px; color: var(--muted); }
+.prose li + li { margin-top: 6px; }
+.prose .cta-row { margin-block: 18px; }
+.table-wrap { overflow-x: auto; margin-bottom: 12px; border: 1px solid var(--line); border-radius: var(--radius); }
+.compare { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 15px; line-height: 1.45; }
+.compare th, .compare td { padding: 12px 14px; text-align: start; vertical-align: top; border-bottom: 1px solid var(--line); }
+.compare tbody tr:last-child > * { border-bottom: 0; }
+.compare thead th { background: var(--sunken); font-weight: 650; }
+.compare tbody th { font-weight: 650; width: 14%; }
+.compare td { color: var(--muted); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 
 .summary { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; color: var(--ink); }
 

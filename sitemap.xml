@@ -8251,4 +8251,12 @@
 <xhtml:link rel="alternate" hreflang="x-default" href="https://undirect.matsuokengo.com/privacy/"/>
 </url>
 <url><loc>https://undirect.matsuokengo.com/demo/</loc><lastmod>2026-11-07</lastmod></url>
+<url><loc>https://undirect.matsuokengo.com/stop-safari-redirects/</loc><lastmod>2026-11-07</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://undirect.matsuokengo.com/stop-safari-redirects/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://undirect.matsuokengo.com/stop-safari-redirects/"/>
+</url>
+<url><loc>https://undirect.matsuokengo.com/compare/</loc><lastmod>2026-11-07</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://undirect.matsuokengo.com/compare/"/>
+<xhtml:link rel="alternate" hreflang="x-default" href="https://undirect.matsuokengo.com/compare/"/>
+</url>
 </urlset>
