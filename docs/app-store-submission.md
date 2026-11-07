@@ -148,3 +148,16 @@ about 10 top languages in their own UI with RocketSim plus captions for the othe
 (about half a day); captions only in all 50 (about 2 hours); re-record all 50 (1-2 days).
 Sources are in `~/Repositories/undirect-promo`, captions in `storyboard/strings/<code>.json`.
 Say this in the first reply of each session.
+
+## One command releases both apps (2026-11-07)
+
+`./deploy.sh release [patch|minor|major|build]` refuses while either platform
+has a version in review, then bumps, uploads the text, builds and uploads both
+binaries, and submits both with `automatic_release: true`, so each goes live
+the moment App Review approves it. fastlane 2.234.0 sets the release type
+inside the metadata upload (`deliver/lib/deliver/upload_metadata.rb`), so the
+`release` lanes upload text in the same call as the submit, and with no
+`build_number` they wait for the newest build of the version to finish
+processing. Export compliance is answered `false`, matching
+`ITSAppUsesNonExemptEncryption` in `project.yml`. Re-check the store
+screenshots against the build before running it; the command cannot.

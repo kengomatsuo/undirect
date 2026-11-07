@@ -46,12 +46,16 @@ Commands:
                     reordered iPhone and iPad frames, every locale) and read them
                     back; takes --locales, --pages, --no-screenshots,
                     --verify-only; never submits
+  release [part]    Everything, both platforms: bump (part as for bump), upload
+                    the text, build and upload the iOS and Mac binaries, submit
+                    both for review set to release as soon as Apple approves,
+                    then commit and push project.yml. Re-check the store
+                    screenshots against the build first
   status            Print versions and builds per platform from App Store Connect
   help              Show this help
 
-A release in order:
-  ./deploy.sh bump && ./deploy.sh metadata && ./deploy.sh metadata_mac
-  ./deploy.sh build && ./deploy.sh binary && ./deploy.sh mas
+A release, all of it:
+  ./deploy.sh release
 EOF
 }
 
@@ -103,6 +107,19 @@ print(" ".join(v["attributes"]["versionString"] for v in rows
   fi
 }
 
+mas() {
+  xcodegen generate
+  $FASTLANE mac upload_mas
+  # The archive registers its own Safari extension. A second copy can make
+  # Safari swap extensions and wipe the owner's storage (2026-10-01).
+  find build -name "Undirect.app" -maxdepth 6 2>/dev/null | while read -r app; do
+    pluginkit -r "$app/Contents/PlugIns/Undirect Extension.appex" 2>/dev/null
+    /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u "$app"
+  done
+  rm -rf build/mas
+  pluginkit -mAvvv -D -i com.matsuokengo.undirect.Extension | grep "Path" || true
+}
+
 case "${1:-help}" in
   bump)             bump "${2:-patch}" ;;
   verify)           gen_metadata ;;
@@ -111,16 +128,21 @@ case "${1:-help}" in
   upload)           not_in_review IOS && not_in_review MAC_OS && gen_metadata && $FASTLANE ios upload_metadata && $FASTLANE mac upload_metadata_mac ;;
   build)            xcodegen generate && $FASTLANE ios build ;;
   binary)           $FASTLANE ios upload_binary ;;
-  mas)
-    xcodegen generate && $FASTLANE mac upload_mas
-    # The archive registers its own Safari extension. A second copy can make
-    # Safari swap extensions and wipe the owner's storage (2026-10-01).
-    find build -name "Undirect.app" -maxdepth 6 2>/dev/null | while read -r app; do
-      pluginkit -r "$app/Contents/PlugIns/Undirect Extension.appex" 2>/dev/null
-      /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u "$app"
-    done
-    rm -rf build/mas
-    pluginkit -mAvvv -D -i com.matsuokengo.undirect.Extension | grep "Path" ;;
+  mas)              mas ;;
+  release)
+    # One command per line: set -e skips a failure inside an && chain.
+    not_in_review IOS
+    not_in_review MAC_OS
+    bump "${2:-patch}"
+    gen_metadata
+    $FASTLANE ios build
+    $FASTLANE ios upload_binary
+    mas
+    $FASTLANE ios release
+    $FASTLANE mac release_mac
+    git add project.yml
+    git commit -m "Version $(grep -o 'MARKETING_VERSION: "[0-9.]*"' project.yml | grep -o '[0-9.]*') ($(grep -o 'CURRENT_PROJECT_VERSION: "[0-9]*"' project.yml | grep -o '[0-9]*')) is submitted on both platforms and releases on approval"
+    git pull --no-rebase && git push ;;
   screenshots)      $FASTLANE ios upload_screenshots ;;
   screenshots_mac)  $FASTLANE mac upload_screenshots_mac ;;
   previews)
