@@ -16,25 +16,23 @@ check() { build; python3 "$GEN/validate.py" "$DIST"; }
 
 deploy_web() {
   check
-  # The CNAME rides along in dist/ because rsync --delete would otherwise wipe it
-  # from gh-pages and silently unset undirect.matsuokengo.com.
+  # gh-pages becomes exactly dist/, so the CNAME must be in dist/ or the deploy
+  # silently unsets undirect.matsuokengo.com.
   [ -f "$DIST/CNAME" ] || { echo "dist/CNAME is missing" >&2; exit 1; }
   git -C "$REPO_ROOT" fetch origin gh-pages
-  WORKTREE="$(mktemp -d)"
-  git -C "$REPO_ROOT" worktree add "$WORKTREE" origin/gh-pages --detach
-  rsync -a --delete --exclude='.git' "$DIST/" "$WORKTREE/"
-  (
-    cd "$WORKTREE"
-    git add -A
-    if git diff --cached --quiet; then
-      echo "Nothing to deploy: gh-pages is already up to date."
-    else
-      git commit -q -m "Deploy website $(date +%Y-%m-%d)"
-      git push origin HEAD:gh-pages
-      echo "Deployed."
-    fi
-  )
-  git -C "$REPO_ROOT" worktree remove --force "$WORKTREE"
+  # Commit dist/ onto gh-pages through a throwaway index: nothing is checked out.
+  PARENT="$(git -C "$REPO_ROOT" rev-parse FETCH_HEAD)"
+  INDEX="$(mktemp)"; rm -f "$INDEX"
+  GIT_INDEX_FILE="$INDEX" git -C "$REPO_ROOT" --work-tree="$DIST" add -A .
+  TREE="$(GIT_INDEX_FILE="$INDEX" git -C "$REPO_ROOT" write-tree)"
+  rm -f "$INDEX"
+  if [ "$TREE" = "$(git -C "$REPO_ROOT" rev-parse "$PARENT^{tree}")" ]; then
+    echo "Nothing to deploy: gh-pages is already up to date."
+  else
+    COMMIT="$(git -C "$REPO_ROOT" commit-tree "$TREE" -p "$PARENT" -m "Deploy website $(date +%Y-%m-%d)")"
+    git -C "$REPO_ROOT" push origin "$COMMIT:refs/heads/gh-pages"
+    echo "Deployed."
+  fi
 }
 
 case "${1:-help}" in
