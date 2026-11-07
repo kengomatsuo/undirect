@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- reelfren.net's pop, copied from the live page on 2026-11-07 for a device
+     test: the site sits behind a Cloudflare check an agent may not pass.
+     Open it with the extension ON for this host; a press anywhere must reach
+     the page and open no tab. The script below is the site's own, unchanged
+     apart from formatting. -->
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>reelfren repro</title>
+<style>
+  body { margin: 0; font: 17px -apple-system, system-ui, sans-serif; background: #111; color: #eee; }
+  .player { height: 70vh; display: grid; place-items: center; background: #222; }
+  button { font: inherit; padding: 14px 28px; border-radius: 12px; border: 0; }
+  #log { padding: 16px; }
+</style>
+</head><body>
+<div class="player"><button id="play">Play</button></div>
+<div id="log">plays: 0</div>
+<script>
+let plays = 0;
+document.getElementById("play").addEventListener("click", () => {
+  document.getElementById("log").textContent = "plays: " + ++plays;
+});
+</script>
+<script id="reelfren-safe-popup-ad">
+const openUrls = ['https://otieu.com/4/10094579'];
+const resetTime = 500;
+const cookieName = 'safe_popup_click';
+
+function setCookie(n,v,s){const d=new Date();d.setTime(d.getTime()+(s*1000));document.cookie=n+"="+v+";expires="+d.toUTCString()+";path=/";}
+function getCookie(n){const v="; "+document.cookie;const p=v.split("; "+n+"=");if(p.length===2)return p.pop().split(";").shift();return"";}
+function openPopup(u){const w=800,h=600,l=(screen.width/2)-(w/2),t=(screen.height/2)-(h/2);return window.open(u,'_blank',`width=${w},height=${h},top=${t},left=${l}`);}
+function removeOverlay(){const o=document.getElementById('safePopupArea');if(o)o.remove();}
+
+function openPopupOnce(){
+    if(getCookie(cookieName)==='clicked') return;
+    const w=openPopup(openUrls[0]);
+    setCookie(cookieName,'clicked',resetTime);
+    removeOverlay();
+    if(w){
+        let f=false;
+        const i=setInterval(()=>{
+            if(document.hasFocus()&&f){clearInterval(i);}
+            else if(w.closed){clearInterval(i);}
+            else{try{w.focus();f=true;}catch(e){clearInterval(i);}}
+        },300);
+    }
+}
+
+function initSafePopup(){
+    if(getCookie(cookieName)==='clicked') return;
+    if(!document.getElementById('safePopupArea')){
+        const d=document.createElement('div');
+        d.id='safePopupArea';
+        d.style.cssText='position:fixed;top:0;left:0;width:100%;height:100%;z-index:999999;opacity:0.01;background:none;cursor:pointer;';
+        d.onclick=openPopupOnce;
+        document.body.appendChild(d);
+    }
+}
+
+if(document.readyState==='complete'){
+    initSafePopup();
+}else{
+    window.addEventListener('load', initSafePopup, { once: true });
+}
+
+setInterval(()=>{
+    if(!getCookie(cookieName)) {
+        initSafePopup();
+    }
+}, 2000);
+</script>
+</body></html>

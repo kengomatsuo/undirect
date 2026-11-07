@@ -33,3 +33,10 @@ until a toolbar press turns it on, and this harness has no toolbar.
 
 Re-run `build.py` after any edit to `Extension/Resources`. The copies here are
 build output and are not edited by hand.
+
+`sites/` holds copies of real pages' traps for a device run, served by
+`serve.py` at `http://127.0.0.1:8766/sites/<name>.html`. Use one when the real
+site sits behind a bot check. Open it with Undirect on for 127.0.0.1, and once
+on `localhost:8767` as a baseline with the guard off, so each host keeps its
+own cookies. `reelfren.html` is reelfren.net's 800×600 pop under an
+`opacity:0.01` layer; passed in the iOS 27.2 Simulator on 2026-11-07.
