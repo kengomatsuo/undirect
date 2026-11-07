@@ -67,10 +67,6 @@ async function run() {
   fakePointer("pointermove", 600, 400);
   ok("an empty layer at opacity 0.01 is removed before anything is caught",
      !ghost.isConnected);
-  const ghostReport = window.__caught.find((c) => c.kind === "overlay");
-  ok("and the report measures it",
-     ghostReport?.trap?.cover === 100 && ghostReport?.trap?.opacity === 1 && ghostReport?.trap?.tag === "div",
-     JSON.stringify(ghostReport?.trap));
   await new Promise((r) => setTimeout(r, 60));   // past the hover throttle
 
   let form = makeCatcher();

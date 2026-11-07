@@ -115,26 +115,6 @@
       }
     }
   },
-  "popup_tries_one": {
-    "message": "முயற்சிகள்: $COUNT$",
-    "description": "How many times one destination came up, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_tries_other": {
-    "message": "முயற்சிகள்: $COUNT$",
-    "description": "How many times one destination came up, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "4"
-      }
-    }
-  },
   "popup_recipe_heading": {
     "message": "தீர்வு",
     "description": "Heading for a per-site fix that was applied."
@@ -231,26 +211,6 @@
     "message": "நெட்வொர்க்கில் தடுக்கப்பட்டது",
     "description": "A known pop network refused by a network rule."
   },
-  "reason_way_back": {
-    "message": "இதன் முகவரியில் இந்தத் தளத்துக்குத் திரும்பும் வழி இருந்தது.",
-    "description": "Why a redirect was allowed: its address carried a same-site callback."
-  },
-  "reason_sized": {
-    "message": "குறிப்பிட்ட அளவுள்ள சாளரம்.",
-    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
-  },
-  "reason_took_press": {
-    "message": "உங்கள் கிளிக்கைப் பறித்தது.",
-    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
-  },
-  "reason_default_allow": {
-    "message": "விதி இல்லாததால் அனுமதிக்கப்பட்டது.",
-    "description": "Why a destination was allowed: no rule, and the default policy is allow."
-  },
-  "reason_own_code": {
-    "message": "தளமே திறந்தது.",
-    "description": "Why a window was allowed: the code that opened it belongs to this site."
-  },
   "popup_rules_link": {
     "message": "விதிகள்",
     "description": "Opens the list of every rule the user has set."
@@ -327,90 +287,52 @@
     "message": "இந்தத் தளத்தின் பாதுகாப்பை அணைக்கும்",
     "description": "Tooltip of popup_stop."
   },
-  "detail_trap": {
-    "message": "பக்கத்தின் $COVER$% மீது ஒரு கண்ணுக்குத் தெரியாத $TAG$, $OPACITY$% ஒளிபுகாமையுடன்.",
-    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
-    "placeholders": {
-      "tag": {
-        "content": "$1",
-        "example": "<div id=\"safePopupArea\">"
-      },
-      "cover": {
-        "content": "$2",
-        "example": "100"
-      },
-      "opacity": {
-        "content": "$3",
-        "example": "1"
-      }
-    }
+  "method_click_catcher": {
+    "message": "கண்ணுக்குத் தெரியாத இணைப்பு அடுக்கு",
+    "description": "Row subtitle: the method, two to four words, for kind_click_catcher."
   },
-  "detail_put_back_one": {
-    "message": "நீக்கப்பட்ட பிறகு பக்கம் அதை $COUNT$ முறை மீண்டும் வைத்தது.",
-    "description": "Opened row: how often the page re-added the trap, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
+  "method_overlay": {
+    "message": "முழுத்திரை மேலடுக்கு",
+    "description": "Row subtitle: the method, two to four words, for kind_overlay."
   },
-  "detail_put_back_other": {
-    "message": "நீக்கப்பட்ட பிறகு பக்கம் அதை $COUNT$ முறை மீண்டும் வைத்தது.",
-    "description": "Opened row: how often the page re-added the trap, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "9"
-      }
-    }
+  "method_synthetic_click": {
+    "message": "ஸ்கிரிப்ட் கிளிக்",
+    "description": "Row subtitle: the method, two to four words, for kind_synthetic_click."
   },
-  "detail_led": {
-    "message": "அது இட்டுச் சென்ற இடம்: $URL$",
-    "description": "Opened row: the address the trap or pop-up pointed at.",
-    "placeholders": {
-      "url": {
-        "content": "$1",
-        "example": "https://otieu.com/4/10094579"
-      }
-    }
+  "method_window_open": {
+    "message": "ஸ்கிரிப்ட் பாப்-அப்",
+    "description": "Row subtitle: the method, two to four words, for kind_window_open."
   },
-  "detail_led_unknown": {
-    "message": "அது இட்டுச் சென்ற இடம் தெரியவில்லை: முகவரியைப் பக்கத்தின் குறியீடு கிளிக் செய்யும் நேரத்தில் தேர்ந்தெடுக்கிறது, கிளிக் அங்கே சென்றடையவே இல்லை.",
-    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  "method_form_submit": {
+    "message": "மறைந்த படிவம்",
+    "description": "Row subtitle: the method, two to four words, for kind_form_submit."
   },
-  "detail_reached": {
-    "message": "உங்கள் கிளிக் தொடர்ந்து “$LABEL$” ஐ அடைந்தது.",
-    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
-    "placeholders": {
-      "label": {
-        "content": "$1",
-        "example": "Play"
-      }
-    }
+  "method_href_swap": {
+    "message": "கிளிக்கில் இணைப்பு மாற்றம்",
+    "description": "Row subtitle: the method, two to four words, for kind_href_swap."
   },
-  "detail_time": {
-    "message": "$TIME$ மணிக்கு.",
-    "description": "Opened row: when it happened, once.",
-    "placeholders": {
-      "time": {
-        "content": "$1",
-        "example": "15:34:12"
-      }
-    }
+  "method_back_hijack": {
+    "message": "பின் பொத்தான் கடத்தல்",
+    "description": "Row subtitle: the method, two to four words, for kind_back_hijack."
   },
-  "detail_times": {
-    "message": "$FIRST$ முதல் $LAST$ வரை.",
-    "description": "Opened row: first and last time it happened.",
-    "placeholders": {
-      "first": {
-        "content": "$1",
-        "example": "15:33:02"
-      },
-      "last": {
-        "content": "$2",
-        "example": "15:34:12"
-      }
-    }
+  "method_redirect": {
+    "message": "கிளிக்கில் வழிமாற்று",
+    "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_pop_tab": {
+    "message": "பின்னணியில் திறந்த தாவல்",
+    "description": "Row subtitle: the method, two to four words, for kind_pop_tab."
+  },
+  "method_network_rule": {
+    "message": "கோரிக்கையிலேயே தடுப்பு",
+    "description": "Row subtitle: the method, two to four words, for kind_network_rule."
+  },
+  "popup_see_all": {
+    "message": "அனைத்தையும் காட்டு",
+    "description": "Under a row's first three addresses: shows the rest."
+  },
+  "popup_show_less": {
+    "message": "குறைவாகக் காட்டு",
+    "description": "Collapses a row's address list back to three."
   }
 }

@@ -172,48 +172,40 @@ body {
   font-size: var(--small);
 }
 
-.opens {
-  cursor: pointer;
-}
-
-/* A row that opens says so: a small chevron after its name, turned when open. */
-.opens > .title:first-child::after {
-  content: "";
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  margin-inline-start: 6px;
-  border-right: 1.5px solid var(--ink-2);
-  border-bottom: 1.5px solid var(--ink-2);
-  transform: translateY(-2px) rotate(45deg);
-  transition: transform 0.15s ease;
-}
-
-.opens[aria-expanded="true"] > .title:first-child::after {
-  transform: translateY(1px) rotate(225deg);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .opens > .title:first-child::after {
-    transition: none;
-  }
-}
-
-/* The opened account wraps; the row's own lines stay on one line each. */
-.row:has(> .more) {
+/* The addresses sit under the row, full width, so the row itself never moves. */
+.row:has(> .links) {
   flex-wrap: wrap;
 }
 
-.more {
+.links {
   flex-basis: 100%;
+  min-width: 0;
   margin-top: -2px;
-  color: var(--ink-2);
-  font-size: var(--small);
-  overflow-wrap: anywhere;
 }
 
-.more p {
+.links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  color: var(--ink-2);
+  font: var(--small) / 1.35 ui-monospace, Menlo, monospace;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.see-all {
   margin: 2px 0 0;
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: var(--small);
+  cursor: pointer;
 }
 
 .header {

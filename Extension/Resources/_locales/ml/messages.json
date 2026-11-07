@@ -115,26 +115,6 @@
       }
     }
   },
-  "popup_tries_one": {
-    "message": "ശ്രമങ്ങൾ: $COUNT$",
-    "description": "How many times one destination came up, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_tries_other": {
-    "message": "ശ്രമങ്ങൾ: $COUNT$",
-    "description": "How many times one destination came up, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "4"
-      }
-    }
-  },
   "popup_recipe_heading": {
     "message": "പരിഹാരം",
     "description": "Heading for a per-site fix that was applied."
@@ -231,26 +211,6 @@
     "message": "നെറ്റ്‌വർക്കിൽ തടഞ്ഞത്",
     "description": "A known pop network refused by a network rule."
   },
-  "reason_way_back": {
-    "message": "ഇതിന്റെ വിലാസത്തിൽ ഈ സൈറ്റിലേക്കുള്ള മടക്കവഴി ഉണ്ടായിരുന്നു.",
-    "description": "Why a redirect was allowed: its address carried a same-site callback."
-  },
-  "reason_sized": {
-    "message": "നിശ്ചിത വലുപ്പമുള്ള വിൻഡോ.",
-    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
-  },
-  "reason_took_press": {
-    "message": "നിങ്ങളുടെ ക്ലിക്ക് എടുത്തു.",
-    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
-  },
-  "reason_default_allow": {
-    "message": "നിയമമില്ല; അനുവദിച്ചു.",
-    "description": "Why a destination was allowed: no rule, and the default policy is allow."
-  },
-  "reason_own_code": {
-    "message": "സൈറ്റ് തന്നെ തുറന്നത്.",
-    "description": "Why a window was allowed: the code that opened it belongs to this site."
-  },
   "popup_rules_link": {
     "message": "നിയമങ്ങൾ",
     "description": "Opens the list of every rule the user has set."
@@ -327,90 +287,52 @@
     "message": "ഈ സൈറ്റിലെ സംരക്ഷണം ഓഫാക്കുന്നു",
     "description": "Tooltip of popup_stop."
   },
-  "detail_trap": {
-    "message": "പേജിന്റെ $COVER$% ഭാഗത്തിന് മുകളിൽ ഒരു അദൃശ്യ $TAG$, $OPACITY$% അതാര്യതയോടെ.",
-    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
-    "placeholders": {
-      "tag": {
-        "content": "$1",
-        "example": "<div id=\"safePopupArea\">"
-      },
-      "cover": {
-        "content": "$2",
-        "example": "100"
-      },
-      "opacity": {
-        "content": "$3",
-        "example": "1"
-      }
-    }
+  "method_click_catcher": {
+    "message": "അദൃശ്യ ലിങ്ക് പാളി",
+    "description": "Row subtitle: the method, two to four words, for kind_click_catcher."
   },
-  "detail_put_back_one": {
-    "message": "നീക്കിയ ശേഷം പേജ് ഇത് $COUNT$ തവണ തിരികെ വച്ചു.",
-    "description": "Opened row: how often the page re-added the trap, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
+  "method_overlay": {
+    "message": "പൂർണ്ണസ്ക്രീൻ ഓവർലേ",
+    "description": "Row subtitle: the method, two to four words, for kind_overlay."
   },
-  "detail_put_back_other": {
-    "message": "നീക്കിയ ശേഷം പേജ് ഇത് $COUNT$ തവണ തിരികെ വച്ചു.",
-    "description": "Opened row: how often the page re-added the trap, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "9"
-      }
-    }
+  "method_synthetic_click": {
+    "message": "സ്ക്രിപ്റ്റ് ക്ലിക്ക്",
+    "description": "Row subtitle: the method, two to four words, for kind_synthetic_click."
   },
-  "detail_led": {
-    "message": "ഇത് നയിച്ചത്: $URL$",
-    "description": "Opened row: the address the trap or pop-up pointed at.",
-    "placeholders": {
-      "url": {
-        "content": "$1",
-        "example": "https://otieu.com/4/10094579"
-      }
-    }
+  "method_window_open": {
+    "message": "സ്ക്രിപ്റ്റ് പോപ്പ്-അപ്പ്",
+    "description": "Row subtitle: the method, two to four words, for kind_window_open."
   },
-  "detail_led_unknown": {
-    "message": "ഇത് എവിടേക്കാണ് നയിച്ചതെന്ന് അറിയില്ല: വിലാസം പേജിന്റെ കോഡ് ക്ലിക്കിന്റെ നിമിഷത്തിൽ തിരഞ്ഞെടുക്കുന്നു, ക്ലിക്ക് അവിടെ എത്തിയതേയില്ല.",
-    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  "method_form_submit": {
+    "message": "മറച്ച ഫോം",
+    "description": "Row subtitle: the method, two to four words, for kind_form_submit."
   },
-  "detail_reached": {
-    "message": "നിങ്ങളുടെ ക്ലിക്ക് തുടർന്ന് “$LABEL$”-ൽ എത്തി.",
-    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
-    "placeholders": {
-      "label": {
-        "content": "$1",
-        "example": "Play"
-      }
-    }
+  "method_href_swap": {
+    "message": "ക്ലിക്കിൽ ലിങ്ക് മാറ്റം",
+    "description": "Row subtitle: the method, two to four words, for kind_href_swap."
   },
-  "detail_time": {
-    "message": "$TIME$-ന്.",
-    "description": "Opened row: when it happened, once.",
-    "placeholders": {
-      "time": {
-        "content": "$1",
-        "example": "15:34:12"
-      }
-    }
+  "method_back_hijack": {
+    "message": "ബാക്ക് ബട്ടൺ തട്ടിയെടുക്കൽ",
+    "description": "Row subtitle: the method, two to four words, for kind_back_hijack."
   },
-  "detail_times": {
-    "message": "$FIRST$ മുതൽ $LAST$ വരെ.",
-    "description": "Opened row: first and last time it happened.",
-    "placeholders": {
-      "first": {
-        "content": "$1",
-        "example": "15:33:02"
-      },
-      "last": {
-        "content": "$2",
-        "example": "15:34:12"
-      }
-    }
+  "method_redirect": {
+    "message": "ക്ലിക്കിൽ റീഡയറക്ട്",
+    "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_pop_tab": {
+    "message": "പിന്നിൽ തുറന്ന ടാബ്",
+    "description": "Row subtitle: the method, two to four words, for kind_pop_tab."
+  },
+  "method_network_rule": {
+    "message": "അഭ്യർത്ഥനയിൽ തടഞ്ഞു",
+    "description": "Row subtitle: the method, two to four words, for kind_network_rule."
+  },
+  "popup_see_all": {
+    "message": "എല്ലാം കാണുക",
+    "description": "Under a row's first three addresses: shows the rest."
+  },
+  "popup_show_less": {
+    "message": "കുറച്ച് കാണിക്കുക",
+    "description": "Collapses a row's address list back to three."
   }
 }

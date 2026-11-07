@@ -33,15 +33,6 @@ function show(id) {
   window.scrollTo(0, 0);
 }
 
-// because (lib/navigation.js) -> a short, localized line for why. A rule
-// already reads as "Blocked everywhere", so it gets no line of its own.
-const REASONS = {
-  "carries a way back here": "reason_way_back",
-  "asked for at a size": "reason_sized",
-  "took the press": "reason_took_press",
-  "allowed by default": "reason_default_allow",
-  "the page's own code": "reason_own_code",
-};
 
 const label = (verdict, scope) =>
   `${t(verdict === "block" ? "state_blocked" : "state_allowed")} ${t(scope)}`;
@@ -125,66 +116,53 @@ function renderRows(state) {
     const text = el("div", "text");
     const name = el("span", "title", row.base);
     name.title = row.url || row.base;
-    const kinds = row.kinds.map((k) => t(`kind_${k.replace(/-/g, "_")}`) || k);
-    const reason = REASONS[row.lastBecause] ? t(REASONS[row.lastBecause]) : "";
-    const scope = row.local ? "" : `${capital(scopeOf(row))}.`;
-    const detail = [scope, plural(row.count, "popup_tries"), kinds.length ? `${kinds.join(", ")}.` : "", reason]
-      .filter(Boolean)
-      .join(" ");
+    // How it tried, in a few words: the method, nothing else.
+    const methods = row.kinds.map((k) => {
+      const key = k.replace(/-/g, "_");
+      return t(`method_${key}`) || t(`kind_${key}`) || k;
+    });
+    const detail = methods.join(" · ");
     const sub = el("span", "subtitle title", detail);
     sub.title = detail;
     text.append(name, sub);
-    // The full account, a press away: what it was, where it led, what the
-    // press reached instead, and when.
-    const lines = account(row);
-    if (lines.length) {
-      const more = el("div", "more");
-      more.hidden = true;
-      for (const line of lines) more.append(el("p", "", line));
-      text.classList.add("opens");
-      text.tabIndex = 0;
-      text.setAttribute("role", "button");
-      text.setAttribute("aria-expanded", "false");
-      text.nextMore = more;
-      const toggle = () => {
-        more.hidden = !more.hidden;
-        text.setAttribute("aria-expanded", String(!more.hidden));
-      };
-      text.addEventListener("click", toggle);
-      text.addEventListener("keydown", (e) => {
-        if (e.key !== "Enter" && e.key !== " ") return;
-        e.preventDefault();
-        toggle();
-      });
-    }
     // A trap on this site has no destination to rule on.
     const control = row.local ? el("span", "removed", t("state_removed")) : verdictMenu(row, state.settings.policy);
     li.append(text, control);
-    // Below the row, full width, so opening it moves nothing already shown.
-    const more = text.nextMore;
-    if (more) li.append(more);
+    const links = addresses(row);
+    if (links) li.append(links);
     list.append(li);
   }
 }
 
-const clock = new Intl.DateTimeFormat(undefined, { timeStyle: "medium" });
+// The addresses it reached for: three, then See All for the rest. Plain text,
+// never links, since following one is the thing the guard stopped.
+const SHOWN_URLS = 3;
 
-function account(row) {
-  const lines = [];
-  if (row.trap) {
-    const tag = `<${row.trap.tag}${row.trap.id ? ` id="${row.trap.id}"` : ""}>`;
-    lines.push(t("detail_trap", tag, row.trap.cover, row.trap.opacity));
+function addresses(row) {
+  const urls = row.urls?.length ? row.urls : row.url ? [row.url] : [];
+  if (!urls.length) return null;
+  const box = el("div", "links");
+  const list = el("ul");
+  urls.forEach((url, i) => {
+    const item = el("li", "link title", url);
+    item.title = url;
+    item.hidden = i >= SHOWN_URLS;
+    list.append(item);
+  });
+  box.append(list);
+  if (urls.length > SHOWN_URLS) {
+    const more = el("button", "see-all", t("popup_see_all"));
+    more.type = "button";
+    more.setAttribute("aria-expanded", "false");
+    more.addEventListener("click", () => {
+      const open = more.getAttribute("aria-expanded") !== "true";
+      [...list.children].forEach((item, i) => (item.hidden = !open && i >= SHOWN_URLS));
+      more.setAttribute("aria-expanded", String(open));
+      more.textContent = t(open ? "popup_show_less" : "popup_see_all");
+    });
+    box.append(more);
   }
-  if (row.local && row.count > 1) lines.push(plural(row.count - 1, "detail_put_back"));
-  if (row.url) lines.push(t("detail_led", row.url));
-  else if (row.local) lines.push(t("detail_led_unknown"));
-  if (row.reached) lines.push(t("detail_reached", row.reached));
-  if (row.lastAt) {
-    const last = clock.format(row.lastAt);
-    const first = clock.format(row.firstAt ?? row.lastAt);
-    lines.push(first === last ? t("detail_time", last) : t("detail_times", first, last));
-  }
-  return lines.filter(Boolean);
+  return box;
 }
 
 function ruleRow(base, verdict, scope, site) {

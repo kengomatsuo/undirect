@@ -115,26 +115,6 @@
       }
     }
   },
-  "popup_tries_one": {
-    "message": "$COUNT$ kez",
-    "description": "How many times one destination came up, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_tries_other": {
-    "message": "$COUNT$ kez",
-    "description": "How many times one destination came up, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "4"
-      }
-    }
-  },
   "popup_recipe_heading": {
     "message": "Uygulanan düzeltme",
     "description": "Heading for a per-site fix that was applied."
@@ -231,26 +211,6 @@
     "message": "Ağ Düzeyinde Engelleme",
     "description": "A known pop network refused by a network rule."
   },
-  "reason_way_back": {
-    "message": "Adres, geldiğiniz siteye dönüş içeriyor.",
-    "description": "Why a redirect was allowed: its address carried a same-site callback."
-  },
-  "reason_sized": {
-    "message": "Belirli bir boyut istendi.",
-    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
-  },
-  "reason_took_press": {
-    "message": "Tıklamanızı kaçırdı.",
-    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
-  },
-  "reason_default_allow": {
-    "message": "Varsayılan izin verdi.",
-    "description": "Why a destination was allowed: no rule, and the default policy is allow."
-  },
-  "reason_own_code": {
-    "message": "Pencereyi site kendi açtı.",
-    "description": "Why a window was allowed: the code that opened it belongs to this site."
-  },
   "popup_rules_link": {
     "message": "Kurallar",
     "description": "Opens the list of every rule the user has set."
@@ -327,90 +287,52 @@
     "message": "Bu sitede korumayı kapatır.",
     "description": "Tooltip of popup_stop."
   },
-  "detail_trap": {
-    "message": "Sayfanın %$COVER$ kadarını kaplayan, %$OPACITY$ opaklıkta görünmez bir $TAG$.",
-    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
-    "placeholders": {
-      "tag": {
-        "content": "$1",
-        "example": "<div id=\"safePopupArea\">"
-      },
-      "cover": {
-        "content": "$2",
-        "example": "100"
-      },
-      "opacity": {
-        "content": "$3",
-        "example": "1"
-      }
-    }
+  "method_click_catcher": {
+    "message": "Görünmez Bağlantı Katmanı",
+    "description": "Row subtitle: the method, two to four words, for kind_click_catcher."
   },
-  "detail_put_back_one": {
-    "message": "Sayfa, kaldırıldıktan sonra bunu $COUNT$ kez geri koydu.",
-    "description": "Opened row: how often the page re-added the trap, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
+  "method_overlay": {
+    "message": "Tam Ekran Katman",
+    "description": "Row subtitle: the method, two to four words, for kind_overlay."
   },
-  "detail_put_back_other": {
-    "message": "Sayfa, kaldırıldıktan sonra bunu $COUNT$ kez geri koydu.",
-    "description": "Opened row: how often the page re-added the trap, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "9"
-      }
-    }
+  "method_synthetic_click": {
+    "message": "Komut Dosyası Tıklaması",
+    "description": "Row subtitle: the method, two to four words, for kind_synthetic_click."
   },
-  "detail_led": {
-    "message": "Gittiği yer: $URL$",
-    "description": "Opened row: the address the trap or pop-up pointed at.",
-    "placeholders": {
-      "url": {
-        "content": "$1",
-        "example": "https://otieu.com/4/10094579"
-      }
-    }
+  "method_window_open": {
+    "message": "Komut Dosyası Penceresi",
+    "description": "Row subtitle: the method, two to four words, for kind_window_open."
   },
-  "detail_led_unknown": {
-    "message": "Gittiği yer bilinmiyor: sayfanın kodu adresi tıklama anında seçer ve tıklama oraya hiç ulaşmadı.",
-    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  "method_form_submit": {
+    "message": "Gizli Form",
+    "description": "Row subtitle: the method, two to four words, for kind_form_submit."
   },
-  "detail_reached": {
-    "message": "Tıklama devam edip “$LABEL$” öğesine ulaştı.",
-    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
-    "placeholders": {
-      "label": {
-        "content": "$1",
-        "example": "Play"
-      }
-    }
+  "method_href_swap": {
+    "message": "Basınca Değişen Bağlantı",
+    "description": "Row subtitle: the method, two to four words, for kind_href_swap."
   },
-  "detail_time": {
-    "message": "Saat $TIME$.",
-    "description": "Opened row: when it happened, once.",
-    "placeholders": {
-      "time": {
-        "content": "$1",
-        "example": "15:34:12"
-      }
-    }
+  "method_back_hijack": {
+    "message": "Geri Tuşu Kaçırma",
+    "description": "Row subtitle: the method, two to four words, for kind_back_hijack."
   },
-  "detail_times": {
-    "message": "$FIRST$ ile $LAST$ arasında.",
-    "description": "Opened row: first and last time it happened.",
-    "placeholders": {
-      "first": {
-        "content": "$1",
-        "example": "15:33:02"
-      },
-      "last": {
-        "content": "$2",
-        "example": "15:34:12"
-      }
-    }
+  "method_redirect": {
+    "message": "Basınca Yönlendirme",
+    "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_pop_tab": {
+    "message": "Arkada Açılan Sekme",
+    "description": "Row subtitle: the method, two to four words, for kind_pop_tab."
+  },
+  "method_network_rule": {
+    "message": "İstekte Durduruldu",
+    "description": "Row subtitle: the method, two to four words, for kind_network_rule."
+  },
+  "popup_see_all": {
+    "message": "Tümünü Göster",
+    "description": "Under a row's first three addresses: shows the rest."
+  },
+  "popup_show_less": {
+    "message": "Daha Az Göster",
+    "description": "Collapses a row's address list back to three."
   }
 }

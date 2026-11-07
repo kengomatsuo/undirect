@@ -115,26 +115,6 @@
       }
     }
   },
-  "popup_tries_one": {
-    "message": "$COUNT$ बार",
-    "description": "How many times one destination came up, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_tries_other": {
-    "message": "$COUNT$ बार",
-    "description": "How many times one destination came up, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "4"
-      }
-    }
-  },
   "popup_recipe_heading": {
     "message": "स्वचालित सुधार",
     "description": "Heading for a per-site fix that was applied."
@@ -231,26 +211,6 @@
     "message": "नेटवर्क स्तर पर रोक",
     "description": "A known pop network refused by a network rule."
   },
-  "reason_way_back": {
-    "message": "पता वापसी का रास्ता दिखाता है",
-    "description": "Why a redirect was allowed: its address carried a same-site callback."
-  },
-  "reason_sized": {
-    "message": "तय साइज़ में खुली विंडो",
-    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
-  },
-  "reason_took_press": {
-    "message": "आपका क्लिक हड़प लिया",
-    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
-  },
-  "reason_default_allow": {
-    "message": "कोई नियम नहीं था",
-    "description": "Why a destination was allowed: no rule, and the default policy is allow."
-  },
-  "reason_own_code": {
-    "message": "साइट के अपने कोड ने खोली",
-    "description": "Why a window was allowed: the code that opened it belongs to this site."
-  },
   "popup_rules_link": {
     "message": "नियम",
     "description": "Opens the list of every rule the user has set."
@@ -327,90 +287,52 @@
     "message": "इस साइट की सुरक्षा बंद करें",
     "description": "Tooltip of popup_stop."
   },
-  "detail_trap": {
-    "message": "पेज के $COVER$% हिस्से पर एक अदृश्य $TAG$, $OPACITY$% अपारदर्शिता के साथ।",
-    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
-    "placeholders": {
-      "tag": {
-        "content": "$1",
-        "example": "<div id=\"safePopupArea\">"
-      },
-      "cover": {
-        "content": "$2",
-        "example": "100"
-      },
-      "opacity": {
-        "content": "$3",
-        "example": "1"
-      }
-    }
+  "method_click_catcher": {
+    "message": "अदृश्य क्लिक परत",
+    "description": "Row subtitle: the method, two to four words, for kind_click_catcher."
   },
-  "detail_put_back_one": {
-    "message": "हटाए जाने के बाद पेज ने इसे $COUNT$ बार वापस लगाया।",
-    "description": "Opened row: how often the page re-added the trap, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
+  "method_overlay": {
+    "message": "फ़ुल-स्क्रीन ओवरले",
+    "description": "Row subtitle: the method, two to four words, for kind_overlay."
   },
-  "detail_put_back_other": {
-    "message": "हटाए जाने के बाद पेज ने इसे $COUNT$ बार वापस लगाया।",
-    "description": "Opened row: how often the page re-added the trap, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "9"
-      }
-    }
+  "method_synthetic_click": {
+    "message": "स्क्रिप्ट से क्लिक",
+    "description": "Row subtitle: the method, two to four words, for kind_synthetic_click."
   },
-  "detail_led": {
-    "message": "यह कहाँ ले जाता था: $URL$",
-    "description": "Opened row: the address the trap or pop-up pointed at.",
-    "placeholders": {
-      "url": {
-        "content": "$1",
-        "example": "https://otieu.com/4/10094579"
-      }
-    }
+  "method_window_open": {
+    "message": "स्क्रिप्ट पॉप-अप",
+    "description": "Row subtitle: the method, two to four words, for kind_window_open."
   },
-  "detail_led_unknown": {
-    "message": "यह कहाँ ले जाता था: पता नहीं। पेज का कोड क्लिक के समय पता चुनता है, और क्लिक वहाँ तक पहुँचा ही नहीं।",
-    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  "method_form_submit": {
+    "message": "छिपा फ़ॉर्म",
+    "description": "Row subtitle: the method, two to four words, for kind_form_submit."
   },
-  "detail_reached": {
-    "message": "आपका क्लिक आगे “$LABEL$” तक पहुँचा।",
-    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
-    "placeholders": {
-      "label": {
-        "content": "$1",
-        "example": "Play"
-      }
-    }
+  "method_href_swap": {
+    "message": "क्लिक पर लिंक बदला",
+    "description": "Row subtitle: the method, two to four words, for kind_href_swap."
   },
-  "detail_time": {
-    "message": "$TIME$ बजे।",
-    "description": "Opened row: when it happened, once.",
-    "placeholders": {
-      "time": {
-        "content": "$1",
-        "example": "15:34:12"
-      }
-    }
+  "method_back_hijack": {
+    "message": "बैक बटन हाईजैक",
+    "description": "Row subtitle: the method, two to four words, for kind_back_hijack."
   },
-  "detail_times": {
-    "message": "$FIRST$ से $LAST$ तक।",
-    "description": "Opened row: first and last time it happened.",
-    "placeholders": {
-      "first": {
-        "content": "$1",
-        "example": "15:33:02"
-      },
-      "last": {
-        "content": "$2",
-        "example": "15:34:12"
-      }
-    }
+  "method_redirect": {
+    "message": "क्लिक पर रीडायरेक्ट",
+    "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_pop_tab": {
+    "message": "पीछे खुला टैब",
+    "description": "Row subtitle: the method, two to four words, for kind_pop_tab."
+  },
+  "method_network_rule": {
+    "message": "अनुरोध पर ही रोका गया",
+    "description": "Row subtitle: the method, two to four words, for kind_network_rule."
+  },
+  "popup_see_all": {
+    "message": "सभी देखें",
+    "description": "Under a row's first three addresses: shows the rest."
+  },
+  "popup_show_less": {
+    "message": "कम दिखाएँ",
+    "description": "Collapses a row's address list back to three."
   }
 }

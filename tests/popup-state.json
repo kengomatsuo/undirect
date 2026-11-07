@@ -28,8 +28,13 @@
       "url": "https://buildsstate.com/e6z5n7nsaf",
       "here": null,
       "everywhere": "block",
-      "firstAt": 1794040380000,
-      "lastAt": 1794040380000
+      "urls": [
+        "https://buildsstate.com/e6z5n7nsaf",
+        "https://buildsstate.com/r/88213?sub=gogo",
+        "https://cdn.buildsstate.com/pop/4410",
+        "https://buildsstate.com/e6z5n7nsaf?retry=2",
+        "https://buildsstate.com/z/1"
+      ]
     },
     {
       "base": "checkout.stripe.com",
@@ -58,22 +63,13 @@
       "kinds": [
         "overlay"
       ],
-      "count": 10,
-      "blocked": 10,
+      "count": 2,
+      "blocked": 2,
       "url": "",
       "here": null,
       "everywhere": null,
       "local": true,
-      "lastVerdict": "block",
-      "trap": {
-        "tag": "div",
-        "id": "safePopupArea",
-        "cover": 100,
-        "opacity": 1
-      },
-      "reached": "Play",
-      "firstAt": 1794040380000,
-      "lastAt": 1794040470000
+      "lastVerdict": "block"
     }
   ],
   "everywhere": {

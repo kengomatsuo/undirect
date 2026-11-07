@@ -115,26 +115,6 @@
       }
     }
   },
-  "popup_tries_one": {
-    "message": "出現 $COUNT$ 次",
-    "description": "How many times one destination came up, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_tries_other": {
-    "message": "出現 $COUNT$ 次",
-    "description": "How many times one destination came up, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "4"
-      }
-    }
-  },
   "popup_recipe_heading": {
     "message": "內建修正",
     "description": "Heading for a per-site fix that was applied."
@@ -231,26 +211,6 @@
     "message": "已在網路層攔截",
     "description": "A known pop network refused by a network rule."
   },
-  "reason_way_back": {
-    "message": "網址本身含返回路徑",
-    "description": "Why a redirect was allowed: its address carried a same-site callback."
-  },
-  "reason_sized": {
-    "message": "視窗有指定尺寸",
-    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
-  },
-  "reason_took_press": {
-    "message": "假借了這次點按",
-    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
-  },
-  "reason_default_allow": {
-    "message": "沒有規則，依預設放行",
-    "description": "Why a destination was allowed: no rule, and the default policy is allow."
-  },
-  "reason_own_code": {
-    "message": "由網站自身程式開啟",
-    "description": "Why a window was allowed: the code that opened it belongs to this site."
-  },
   "popup_rules_link": {
     "message": "規則",
     "description": "Opens the list of every rule the user has set."
@@ -327,90 +287,52 @@
     "message": "停止防護這個網站",
     "description": "Tooltip of popup_stop."
   },
-  "detail_trap": {
-    "message": "一個看不見的 $TAG$ 蓋住頁面的 $COVER$%，不透明度為 $OPACITY$%。",
-    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
-    "placeholders": {
-      "tag": {
-        "content": "$1",
-        "example": "<div id=\"safePopupArea\">"
-      },
-      "cover": {
-        "content": "$2",
-        "example": "100"
-      },
-      "opacity": {
-        "content": "$3",
-        "example": "1"
-      }
-    }
+  "method_click_catcher": {
+    "message": "隱形點擊層",
+    "description": "Row subtitle: the method, two to four words, for kind_click_catcher."
   },
-  "detail_put_back_one": {
-    "message": "移除後，頁面又把它放了回去 $COUNT$ 次。",
-    "description": "Opened row: how often the page re-added the trap, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
+  "method_overlay": {
+    "message": "全螢幕覆蓋層",
+    "description": "Row subtitle: the method, two to four words, for kind_overlay."
   },
-  "detail_put_back_other": {
-    "message": "移除後，頁面又把它放了回去 $COUNT$ 次。",
-    "description": "Opened row: how often the page re-added the trap, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "9"
-      }
-    }
+  "method_synthetic_click": {
+    "message": "腳本模擬點擊",
+    "description": "Row subtitle: the method, two to four words, for kind_synthetic_click."
   },
-  "detail_led": {
-    "message": "它指向：$URL$",
-    "description": "Opened row: the address the trap or pop-up pointed at.",
-    "placeholders": {
-      "url": {
-        "content": "$1",
-        "example": "https://otieu.com/4/10094579"
-      }
-    }
+  "method_window_open": {
+    "message": "腳本快顯視窗",
+    "description": "Row subtitle: the method, two to four words, for kind_window_open."
   },
-  "detail_led_unknown": {
-    "message": "去向不明：頁面程式碼在點按的當下才決定位址，而這次點按沒有走到那一步。",
-    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  "method_form_submit": {
+    "message": "隱藏表單",
+    "description": "Row subtitle: the method, two to four words, for kind_form_submit."
   },
-  "detail_reached": {
-    "message": "這次點按接著落在「$LABEL$」上。",
-    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
-    "placeholders": {
-      "label": {
-        "content": "$1",
-        "example": "Play"
-      }
-    }
+  "method_href_swap": {
+    "message": "點按時調包連結",
+    "description": "Row subtitle: the method, two to four words, for kind_href_swap."
   },
-  "detail_time": {
-    "message": "時間：$TIME$。",
-    "description": "Opened row: when it happened, once.",
-    "placeholders": {
-      "time": {
-        "content": "$1",
-        "example": "15:34:12"
-      }
-    }
+  "method_back_hijack": {
+    "message": "劫持返回鍵",
+    "description": "Row subtitle: the method, two to four words, for kind_back_hijack."
   },
-  "detail_times": {
-    "message": "從 $FIRST$ 到 $LAST$。",
-    "description": "Opened row: first and last time it happened.",
-    "placeholders": {
-      "first": {
-        "content": "$1",
-        "example": "15:33:02"
-      },
-      "last": {
-        "content": "$2",
-        "example": "15:34:12"
-      }
-    }
+  "method_redirect": {
+    "message": "點按時導向他站",
+    "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_pop_tab": {
+    "message": "背景開啟新分頁",
+    "description": "Row subtitle: the method, two to four words, for kind_pop_tab."
+  },
+  "method_network_rule": {
+    "message": "請求階段即攔截",
+    "description": "Row subtitle: the method, two to four words, for kind_network_rule."
+  },
+  "popup_see_all": {
+    "message": "顯示全部",
+    "description": "Under a row's first three addresses: shows the rest."
+  },
+  "popup_show_less": {
+    "message": "顯示較少",
+    "description": "Collapses a row's address list back to three."
   }
 }

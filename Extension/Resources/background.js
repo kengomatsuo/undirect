@@ -14,6 +14,7 @@ const Nav = globalThis.UndirectNavigation;
 
 const FIRST_DYNAMIC_RULE_ID = 1000;
 const MAX_ROWS_PER_TAB = 100;
+const MAX_URLS_PER_ROW = 20;
 const POP_TAB_MS = 15000;  // how long a new tab is still its opener's doing
 const REPORT_MS = 250;     // let the guard's report land before closing a tab
 const UNDO_LIMIT = 3;      // undos per tab before recording alone
@@ -343,10 +344,9 @@ async function note(tabId, msg) {
   if (msg.blocked) row.blocked += 1;
   if (msg.kind && !row.kinds.includes(msg.kind)) row.kinds.push(msg.kind);
   if (msg.url && !row.url) row.url = msg.url;
+  // Every address it reached for, newest first, so the popup can list them.
+  if (msg.url) row.urls = [msg.url, ...(row.urls ?? []).filter((u) => u !== msg.url)].slice(0, MAX_URLS_PER_ROW);
   if (msg.local) row.local = true;
-  if (msg.trap) row.trap = msg.trap;
-  row.lastAt = Date.now();
-  row.firstAt ??= row.lastAt;
   // What actually happened, most recently: a row shown by the current rule
   // alone read "Blocked by default" for a sign-in that was, in that instance,
   // let straight through, since nothing had ever set a rule for it.
@@ -394,17 +394,6 @@ api.runtime.onMessage.addListener((msg, sender) => {
   // thing under their finger leads off this site.
   if (msg?.type === "undirect:tap") {
     tap(tabId, msg);
-    return undefined;
-  }
-
-  // What a press reached once a trap came off: the guard's own words for the
-  // control, put on the page's trap row.
-  if (msg?.type === "undirect:reached") {
-    const row = perTab.get(tabId)?.rows.get(msg.site ?? "");
-    if (row?.local && msg.label) {
-      row.reached = String(msg.label).slice(0, 40);
-      saveSession();
-    }
     return undefined;
   }
 

@@ -115,26 +115,6 @@
       }
     }
   },
-  "popup_tries_one": {
-    "message": "ప్రయత్నాలు: $COUNT$",
-    "description": "How many times one destination came up, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "popup_tries_other": {
-    "message": "ప్రయత్నాలు: $COUNT$",
-    "description": "How many times one destination came up, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "4"
-      }
-    }
-  },
   "popup_recipe_heading": {
     "message": "పరిష్కారం",
     "description": "Heading for a per-site fix that was applied."
@@ -231,26 +211,6 @@
     "message": "నెట్‌వర్క్ వద్ద ఆపారు",
     "description": "A known pop network refused by a network rule."
   },
-  "reason_way_back": {
-    "message": "దీని చిరునామాలో ఈ సైట్‌కు తిరిగి వచ్చే దారి ఉంది.",
-    "description": "Why a redirect was allowed: its address carried a same-site callback."
-  },
-  "reason_sized": {
-    "message": "నిర్దిష్ట పరిమాణం గల విండో.",
-    "description": "Why a popup was allowed: the page asked for it at a size, not a bare tab."
-  },
-  "reason_took_press": {
-    "message": "మీ క్లిక్‌ను లాక్కుంది.",
-    "description": "Why a destination was blocked: it arrived on a press aimed elsewhere."
-  },
-  "reason_default_allow": {
-    "message": "నియమం లేనందున అనుమతించారు.",
-    "description": "Why a destination was allowed: no rule, and the default policy is allow."
-  },
-  "reason_own_code": {
-    "message": "సైట్ స్వయంగా తెరిచింది.",
-    "description": "Why a window was allowed: the code that opened it belongs to this site."
-  },
   "popup_rules_link": {
     "message": "నియమాలు",
     "description": "Opens the list of every rule the user has set."
@@ -327,90 +287,52 @@
     "message": "ఈ సైట్‌కు రక్షణను ఆఫ్ చేస్తుంది",
     "description": "Tooltip of popup_stop."
   },
-  "detail_trap": {
-    "message": "పేజీలోని $COVER$% పై కనిపించని ఒక $TAG$, $OPACITY$% అపారదర్శకతతో.",
-    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
-    "placeholders": {
-      "tag": {
-        "content": "$1",
-        "example": "<div id=\"safePopupArea\">"
-      },
-      "cover": {
-        "content": "$2",
-        "example": "100"
-      },
-      "opacity": {
-        "content": "$3",
-        "example": "1"
-      }
-    }
+  "method_click_catcher": {
+    "message": "కనిపించని లింక్ పొర",
+    "description": "Row subtitle: the method, two to four words, for kind_click_catcher."
   },
-  "detail_put_back_one": {
-    "message": "తొలగించిన తర్వాత పేజీ దాన్ని $COUNT$ సార్లు తిరిగి పెట్టింది.",
-    "description": "Opened row: how often the page re-added the trap, singular.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
+  "method_overlay": {
+    "message": "పూర్తి స్క్రీన్ ఓవర్‌లే",
+    "description": "Row subtitle: the method, two to four words, for kind_overlay."
   },
-  "detail_put_back_other": {
-    "message": "తొలగించిన తర్వాత పేజీ దాన్ని $COUNT$ సార్లు తిరిగి పెట్టింది.",
-    "description": "Opened row: how often the page re-added the trap, plural.",
-    "placeholders": {
-      "count": {
-        "content": "$1",
-        "example": "9"
-      }
-    }
+  "method_synthetic_click": {
+    "message": "స్క్రిప్ట్ క్లిక్",
+    "description": "Row subtitle: the method, two to four words, for kind_synthetic_click."
   },
-  "detail_led": {
-    "message": "అది ఎక్కడికి దారి తీసింది: $URL$",
-    "description": "Opened row: the address the trap or pop-up pointed at.",
-    "placeholders": {
-      "url": {
-        "content": "$1",
-        "example": "https://otieu.com/4/10094579"
-      }
-    }
+  "method_window_open": {
+    "message": "స్క్రిప్ట్ పాప్-అప్",
+    "description": "Row subtitle: the method, two to four words, for kind_window_open."
   },
-  "detail_led_unknown": {
-    "message": "అది ఎక్కడికి దారి తీసిందో తెలియదు: చిరునామాను పేజీ కోడ్ క్లిక్ క్షణంలో ఎంచుకుంటుంది, క్లిక్ అక్కడికి ఎప్పుడూ చేరలేదు.",
-    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  "method_form_submit": {
+    "message": "దాచిన ఫారం",
+    "description": "Row subtitle: the method, two to four words, for kind_form_submit."
   },
-  "detail_reached": {
-    "message": "మీ క్లిక్ ఆ తర్వాత “$LABEL$” కు చేరింది.",
-    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
-    "placeholders": {
-      "label": {
-        "content": "$1",
-        "example": "Play"
-      }
-    }
+  "method_href_swap": {
+    "message": "క్లిక్‌లో లింక్ మార్పు",
+    "description": "Row subtitle: the method, two to four words, for kind_href_swap."
   },
-  "detail_time": {
-    "message": "$TIME$ కి.",
-    "description": "Opened row: when it happened, once.",
-    "placeholders": {
-      "time": {
-        "content": "$1",
-        "example": "15:34:12"
-      }
-    }
+  "method_back_hijack": {
+    "message": "బ్యాక్ బటన్ హైజాక్",
+    "description": "Row subtitle: the method, two to four words, for kind_back_hijack."
   },
-  "detail_times": {
-    "message": "$FIRST$ నుండి $LAST$ వరకు.",
-    "description": "Opened row: first and last time it happened.",
-    "placeholders": {
-      "first": {
-        "content": "$1",
-        "example": "15:33:02"
-      },
-      "last": {
-        "content": "$2",
-        "example": "15:34:12"
-      }
-    }
+  "method_redirect": {
+    "message": "క్లిక్‌లో రీడైరెక్ట్",
+    "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_pop_tab": {
+    "message": "వెనుక తెరిచిన ట్యాబ్",
+    "description": "Row subtitle: the method, two to four words, for kind_pop_tab."
+  },
+  "method_network_rule": {
+    "message": "అభ్యర్థన వద్దే ఆపారు",
+    "description": "Row subtitle: the method, two to four words, for kind_network_rule."
+  },
+  "popup_see_all": {
+    "message": "అన్నీ చూడండి",
+    "description": "Under a row's first three addresses: shows the rest."
+  },
+  "popup_show_less": {
+    "message": "తక్కువ చూపండి",
+    "description": "Collapses a row's address list back to three."
   }
 }

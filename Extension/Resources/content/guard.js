@@ -13,7 +13,6 @@
   const HOVER_MS = 40;        // gap between hover hit-tests
   const FORWARD_MS = 350;     // wait for the browser's own click before forwarding
   const BACK_MS = 700;        // popstate to navigation, for the back hijack
-  const REACHED_MS = 2000;    // a press this soon after a removal is the one it freed
 
   // Kept in sync with DEFAULT_SETTINGS in background.js by hand - two copies
   // because a page reads its own settings once, at document_start, rather
@@ -162,7 +161,7 @@
   // stopped. The popup lists these so the user can decide about each one.
   const TRAPS = new Set(["click-catcher", "overlay"]);
 
-  function seen({ kind, host, url, blocked, learn, sized, because, trap }) {
+  function seen({ kind, host, url, blocked, learn, sized, because }) {
     if (!active) return;
     if (blocked) armed = true;
     // A trap leading nowhere else is still a trap: listed under this site.
@@ -181,7 +180,6 @@
         learn: !!learn && !local,
         sized: !!sized,
         because: because || undefined,
-        trap: trap || undefined,
         site: siteBase,
       });
     } catch (e) {
@@ -235,29 +233,6 @@
   // receive the click you meant for something underneath. This is deception
   // rather than a destination, so it goes whatever the rules say.
   const cleared = new WeakSet(); // nodes already judged innocent
-  let sweptAt = -Infinity;       // when a trap last came off this page
-  let reachedSent = false;       // whether that removal's press is accounted for
-
-  // What the press reached once the trap was gone, by the words a reader sees
-  // on it, so the record can say "your press went on to Play".
-  function reached(target) {
-    if (!active || reachedSent || performance.now() - sweptAt > REACHED_MS) return;
-    const control = target?.closest?.(
-      "a[href], button, input, select, textarea, label, summary, [role=button], [onclick], video"
-    ) ?? target;
-    if (!control || control === document.body || control === document.documentElement) return;
-    const words = (
-      control.getAttribute?.("aria-label") || control.innerText || control.value ||
-      control.getAttribute?.("title") || control.tagName?.toLowerCase() || ""
-    ).replace(/\s+/g, " ").trim().slice(0, 40);
-    if (!words) return;
-    reachedSent = true;
-    try {
-      api.runtime.sendMessage({ type: "undirect:reached", site: siteBase, label: words });
-    } catch (e) {
-      // the record goes without it
-    }
-  }
 
   function sweep(x, y) {
     let removed = 0;
@@ -286,16 +261,6 @@
       }
 
       const where = blank?.action || blank?.href || "";
-      // What the popup shows when the row is opened: the thing itself, read
-      // before it goes.
-      const trap = {
-        tag: node.tagName.toLowerCase(),
-        id: node.id || "",
-        cover: Math.round(coverage(node.getBoundingClientRect()) * 100),
-        opacity: Math.round(parseFloat(getComputedStyle(node).opacity) * 100),
-      };
-      sweptAt = performance.now();
-      reachedSent = false;
       node.style.pointerEvents = "none";
       node.remove();
       removed += 1;
@@ -305,7 +270,6 @@
         url: where,
         blocked: true,
         learn: true,
-        trap,
       });
     }
     return removed;
@@ -334,9 +298,7 @@
   let forwarding = false;
 
   addEventListener("click", (e) => {
-    if (!e.isTrusted) return;
-    clickedAt = performance.now();
-    reached(e.target);
+    if (e.isTrusted) clickedAt = performance.now();
   }, true);
 
   function forwardClick(x, y) {
@@ -351,7 +313,6 @@
       forwarding = true;
       try {
         target.click();
-        reached(target);
       } catch (err) {
         // nothing else to try
       } finally {

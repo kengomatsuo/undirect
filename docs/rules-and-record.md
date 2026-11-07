@@ -352,15 +352,15 @@ hand-rolled stack of centred text.
 The copy went through `ui-copy` first: one sentence per row, nothing addressing
 the reader, and the button naming what it does rather than saying Continue.
 
-## A row opens into the whole account (2026-11-07)
+## A row is its method and its addresses (2026-11-07)
 
-"10 tries. Transparent layer over the page." gave the owner nothing to
-check. Pressing a row's text now opens a block under it, full width so the row
-itself does not move: the trap as the guard measured it before removing it
-(element, id, share of the viewport, opacity), how many times the page put it
-back, where it led (the URL when the trap named one; otherwise that the page's
-code picks it on the press, which the removal pre-empted), the words on the
-control the press reached once the trap was gone (`undirect:reached`, sent
-within two seconds of a removal), and the first and last time. The guard
-sends the measurements with the report (`trap`); the background stamps
-`firstAt` and `lastAt` on the row.
+The owner asked for the addresses a page tried to reach, three shown and the
+rest behind See All, with the subtitle naming only the method in a few words
+("Full-screen overlay", "Script pop-up"). The background keeps every URL a row
+reached for (`row.urls`, newest first, once each, twenty at most); the popup
+lists them as plain text, never links, since following one is what the guard
+stopped. The HIG's Lists and tables page asks to "limit the number of rows" and
+names no label, so the control reads See All / Show Less. A trap removed before
+its code ran, like reelfren.net's layer, has no address to list: the page picks
+it on the press, and the press never reaches it. The count, scope and reason
+lines left the subtitle with this change.
