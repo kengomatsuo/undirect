@@ -35,9 +35,11 @@
   };
 
   // A window asked for at a size is one the page means the user to work in: a
-  // sign-in, a share sheet. A pop asks for a tab and nothing else, because a
-  // small window in front of the reader is no use to it. The background page
-  // takes this as the page vouching for the window; nothing else does.
+  // sign-in, a share sheet. The background page takes this as the page
+  // vouching for the window; nothing else does. A size alone is not enough:
+  // reelfren.net's pop asks for 800x600 (2026-11-07). A sign-in names its way
+  // back (Google's popup flow defaults redirect_uri to the page's origin) and
+  // a share sheet names the page, so ruling() asks for both.
   const sized = (features) => {
     const f = String(features ?? "");
     return (
@@ -118,7 +120,7 @@
   // whose code is asking - caller, size, or a way back all count as asking.
   function ruling(url, features) {
     const host = hostOf(url);
-    const deliberate = sized(features);
+    const deliberate = sized(features) && carriesAWayBack(url);
     if (!host || withinSite(host)) return { host, verdict: "allow", quiet: true, sized: deliberate };
 
     const base = Site.baseDomain(host);

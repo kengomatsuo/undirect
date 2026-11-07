@@ -57,6 +57,18 @@ async function run() {
   ok("viewport override took", innerWidth === W && innerHeight === H,
      `innerWidth ${innerWidth}`);
 
+  // An empty layer hidden by its own opacity goes before the page has shown
+  // its hand: reelfren.net's pop sits on one (2026-11-07).
+  const ghost = document.createElement("div");
+  Object.assign(ghost.style, { position: "fixed", left: "0", top: "0",
+    width: W + "px", height: H + "px", background: "none", opacity: "0.01",
+    zIndex: "999999", cursor: "pointer" });
+  document.body.appendChild(ghost);
+  fakePointer("pointermove", 600, 400);
+  ok("an empty layer at opacity 0.01 is removed before anything is caught",
+     !ghost.isConnected);
+  await new Promise((r) => setTimeout(r, 60));   // past the hover throttle
+
   let form = makeCatcher();
   // The stub ranks by z-index, so it stops at the form where a real hit test
   // would reach the submit inside it. Either answer is the catcher.
@@ -134,9 +146,10 @@ async function run() {
   ok("and it is reported",
      window.__caught.slice(before3).some((c) => c.kind === "window-open"));
 
-  // The same third-party call, asked for at a size: a real "Sign in with
-  // Google" popup is opened by Google's own script, not the page's, and this
-  // is the only signal telling it apart from a pop network riding the press.
+  // The same third-party call, asked for at a size. A size alone vouches for
+  // nothing: reelfren.net's pop asks for 800x600 (2026-11-07). A real "Sign in
+  // with Google" popup also names its way back, since Google's popup flow
+  // defaults redirect_uri to the page's origin.
   //
   // The report, not the return value, is what is checked: Safari's own
   // popup blocker can refuse a window.open that runs inside a setTimeout
@@ -144,11 +157,19 @@ async function run() {
   // directly inside a user gesture's own stack. `blocked` in the report is
   // this extension's verdict alone.
   const before3b = window.__caught.length;
-  const sizedWindow = await window.__thirdPartyOpenSized("https://pop.example/seven");
+  await window.__thirdPartyOpenSized("https://pop.example/seven");
+  await new Promise((r) => setTimeout(r, 80));
+  const bareSized = window.__caught.slice(before3b).find((c) => c.kind === "window-open");
+  ok("a window asked for at a size with no way back is refused",
+     bareSized?.blocked === true, JSON.stringify(bareSized));
+
+  const before3c = window.__caught.length;
+  const signIn = "https://accounts.example/auth?redirect_uri=" + encodeURIComponent(location.origin);
+  const sizedWindow = await window.__thirdPartyOpenSized(signIn);
   sizedWindow?.close?.();
   await new Promise((r) => setTimeout(r, 80));
-  const sizedReport = window.__caught.slice(before3b).find((c) => c.kind === "window-open");
-  ok("a third-party window.open asked for at a size is allowed",
+  const sizedReport = window.__caught.slice(before3c).find((c) => c.kind === "window-open");
+  ok("a sized window that names its way back is allowed",
      sizedReport?.blocked === false, JSON.stringify(sizedReport));
   ok("and it is reported as asked for at a size", sizedReport?.sized === true);
   ok("and why", sizedReport?.because === "asked for at a size", String(sizedReport?.because));

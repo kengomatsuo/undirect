@@ -139,9 +139,25 @@ A sign-in flow needs a window the reader works in and says so in the features
 string. A pop-under wants a full tab behind what the reader is looking at, and a
 small window in front of them is no use to it. `content/bridge.js` reads the
 features and the report carries `sized`, which is the only thing that puts a
-destination in a tab's allowed set. A network could start passing `width` to get
-past this; it would then be opening a visible window instead of a hidden tab,
-which costs it the trick rather than restoring it.
+destination in a tab's allowed set.
+
+## A size alone vouches for nothing, as reelfren.net showed on 2026-11-07
+
+reelfren.net's pop asks for `width=800,height=600` and then calls `focus()` on
+the window every 300 ms until it has it, so a visible window cost the network
+nothing. A size now counts only when the address also names a way back to the
+page. Google's popup sign-in defaults `redirect_uri` to the calling page's
+origin ([Use Code Model](https://developers.google.com/identity/oauth2/web/guides/use-code-model)),
+and a share sheet carries the page's own address, so both still pass. The
+reelfren pop goes to `otieu.com/4/<id>` and names nothing.
+
+The same page shows the other half. An inline script lays an empty `div` over
+the whole page at `opacity:0.01`, `z-index:999999`, whose `onclick` opens the
+pop, and puts it back every two seconds. A plain transparent layer waits for the
+page to have been caught once, because a click-outside backdrop looks the same,
+but a backdrop is see-through by its background and sits under the modal it
+belongs to. An empty floated layer hidden by its own opacity has no reason to
+exist except to be pressed unseen, so `guard.js` removes it on sight.
 
 ## Telling the user what the network layer stopped
 

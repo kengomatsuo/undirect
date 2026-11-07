@@ -83,6 +83,17 @@
     return Number.isFinite(z) && z >= 1000;
   }
 
+  // A layer hidden by its own opacity, holding nothing, floated over the page.
+  // A real backdrop under a modal is see-through by its background, and the
+  // modal it guards is drawn on top of it; an empty full-screen layer at
+  // opacity 0.01 exists only to be pressed without being seen. reelfren.net
+  // lays one over the player whose onclick opens the pop (2026-11-07).
+  function invisibleLayer(el) {
+    if (el.childElementCount > 0 || el.textContent.trim() !== "") return false;
+    if (parseFloat(getComputedStyle(el).opacity) >= 0.05) return false;
+    return floatsAbove(el);
+  }
+
   // The _blank form or anchor this node sits in, if any.
   function blankAncestor(el) {
     let node = el;
@@ -241,10 +252,10 @@
         cleared.add(hit);
         break;
       }
-      // A transparent full-screen _blank form is damning on its own. A plain
-      // one could be a real click-outside layer, so wait until the page has
-      // already shown its hand.
-      if (!blank && !(armed && floatsAbove(node))) {
+      // A transparent full-screen _blank form is damning on its own, and so
+      // is an empty layer hidden by its opacity. A plain one could be a real
+      // click-outside layer, so wait until the page has shown its hand.
+      if (!blank && !invisibleLayer(node) && !(armed && floatsAbove(node))) {
         cleared.add(hit);
         break;
       }

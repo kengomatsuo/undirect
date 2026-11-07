@@ -49,7 +49,8 @@ JavaScript.
   account: [docs/redirect-mechanism.md](docs/redirect-mechanism.md).
 - **Being the page's own code authorises no window either**, because the site
   taking the money is where the pop is served from: only a window asked for at a
-  size, which is a sign-in or a share sheet, counts as the page vouching. A stop
+  size whose address names a way back to the page, which is a sign-in or a share
+  sheet, counts as the page vouching. A stop
   at the network layer is invisible to the guard, so the record asks
   `getMatchedRules()` what it refused; Safari leaves out the rule id, so the
   host comes from the request URL. Same doc and
