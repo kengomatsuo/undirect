@@ -22,15 +22,18 @@ SRC = os.path.join(ROOT, "Extension", "Resources")
 CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
 OLD = os.path.join(ROOT, ".shots", "mac", "assets", "popup.png")  # a real Safari capture
 
-POP_H = 509  # the popup's own height at 340px, measured in Chrome
+POP_H = 642  # the popup's own height at 340px with the address lists, measured in Chrome (body.scrollHeight)
 STATE = {
     "settings": {"enabled": True, "policy": "block", "mode": "watched"},
     "counts": {"page": 8, "seen": 8, "session": 12, "lifetime": 340},
     "site": "matsuokengo.com", "guarding": True, "watched": {"matsuokengo.com": True}, "recipe": None,
     "rows": [
-        {"base": "adserver.example", "kinds": ["window-open"], "count": 3, "blocked": 3, "url": "https://adserver.example/x", "here": None, "everywhere": "block"},
-        {"base": "tabunder.example", "kinds": ["synthetic-click"], "count": 3, "blocked": 3, "url": "https://tabunder.example/x", "here": None, "everywhere": "block"},
-        {"base": "clicktrack.example", "kinds": ["click-catcher"], "count": 1, "blocked": 1, "url": "https://clicktrack.example/x", "here": None, "everywhere": "block"},
+        {"base": "adserver.example", "kinds": ["window-open"], "count": 3, "blocked": 3, "url": "https://adserver.example/pop?id=4410", "here": None, "everywhere": "block",
+         "urls": ["https://adserver.example/pop?id=4410", "https://adserver.example/r/88213?sub=demo", "https://cdn.adserver.example/go/7", "https://adserver.example/pop?id=4410&retry=2", "https://adserver.example/z/1"]},
+        {"base": "tabunder.example", "kinds": ["synthetic-click"], "count": 3, "blocked": 3, "url": "https://tabunder.example/t/52", "here": None, "everywhere": "block",
+         "urls": ["https://tabunder.example/t/52", "https://tabunder.example/t/52?b=1"]},
+        {"base": "clicktrack.example", "kinds": ["click-catcher"], "count": 1, "blocked": 1, "url": "https://clicktrack.example/c?src=demo", "here": None, "everywhere": "block",
+         "urls": ["https://clicktrack.example/c?src=demo"]},
         {"base": "matsuokengo.com", "kinds": ["overlay"], "count": 1, "blocked": 1, "url": "", "here": None, "everywhere": None, "local": True, "lastVerdict": "block"},
     ],
     "everywhere": {"adserver.example": "block", "tabunder.example": "block", "clicktrack.example": "block"},
