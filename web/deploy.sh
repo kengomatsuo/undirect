@@ -32,6 +32,8 @@ deploy_web() {
     COMMIT="$(git -C "$REPO_ROOT" commit-tree "$TREE" -p "$PARENT" -m "Deploy website $(date +%Y-%m-%d)")"
     git -C "$REPO_ROOT" push origin "$COMMIT:refs/heads/gh-pages"
     echo "Deployed."
+    # IndexNow: a failed ping is printed, never fatal. The key file ships in dist/.
+    python3 "$GEN/generate.py" --output-dir "$DIST" --indexnow || echo "WARNING: IndexNow step failed"
   fi
 }
 

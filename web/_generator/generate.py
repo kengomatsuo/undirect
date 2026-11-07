@@ -21,7 +21,11 @@ import json
 import re
 import shutil
 import sys
+import urllib.error
+import urllib.request
 from pathlib import Path
+
+import en_pages
 
 HERE = Path(__file__).resolve().parent
 WEB = HERE.parent
@@ -34,6 +38,9 @@ SOURCE_URL = "https://github.com/kengomatsuo/undirect"
 EMAIL = "kenneth@matsuokengo.com"
 ROOT_CODE = "en-GB"          # served at /
 PAGES = ["", "support/", "privacy/"]
+# IndexNow keys are public by design: the file <key>.txt at the site root proves ownership.
+INDEXNOW_KEY = "ff1e63138a8d4c283c9f95621fac5e34"
+INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 THEME = {"light": "#f7f6f4", "dark": "#0b0b0d"}
 
 # store code -> App/Localizable.xcstrings code
@@ -165,11 +172,11 @@ def load_site_strings(code, seen=()):
 
 # ---------------------------------------------------------------- html parts
 
-def head(loc, locales, t, page, title, description, ld, extra=""):
+def head(loc, locales, t, page, title, description, ld, extra="", en_only=False):
     canon = loc.url(page)
     alts = []
-    for l in locales:
-        alts.append(f'<link rel="alternate" hreflang="{l.hreflang}" href="{l.url(page)}">')
+    for l in ([loc] if en_only else locales):
+        alts.append(f'<link rel="alternate" hreflang="{"en" if en_only else l.hreflang}" href="{l.url(page)}">')
     alts.append(f'<link rel="alternate" hreflang="x-default" href="{locales_by_code[ROOT_CODE].url(page)}">')
     og_locale = OG_LOCALE.get(loc.code, loc.code.replace("-", "_"))
     return f"""<head>
@@ -207,7 +214,8 @@ def head(loc, locales, t, page, title, description, ld, extra=""):
 </head>"""
 
 
-def nav(loc, locales, t, page):
+def nav(loc, locales, t, page, lang_page=None):
+    lang_page = page if lang_page is None else lang_page
     def link(p, label):
         cur = ' aria-current="page"' if p == page else ""
         return f'<li><a href="{loc.href(p)}"{cur}>{esc(label)}</a></li>'
@@ -216,7 +224,7 @@ def nav(loc, locales, t, page):
     for l in locales:
         cur = ' aria-current="true"' if l is loc else ""
         items.append(
-            f'<li><a href="{l.href(page)}" hreflang="{l.hreflang}" lang="{l.lang_attr}" data-lang="{l.path or "root"}"{cur}>{esc(l.name)}</a></li>')
+            f'<li><a href="{l.href(lang_page)}" hreflang="{l.hreflang}" lang="{l.lang_attr}" data-lang="{l.path or "root"}"{cur}>{esc(l.name)}</a></li>')
     return f"""<a class="skip" href="#main">{esc(t['skip'])}</a>
 <header>
 <nav class="site-nav">
@@ -233,7 +241,8 @@ def nav(loc, locales, t, page):
 </header>"""
 
 
-def footer(loc, t):
+def footer(loc, t, en_links=False):
+    more = "".join(f'<li><a href="/{s}" hreflang="en" lang="en">{en_pages.LABEL[s]}</a></li>\n' for s in en_pages.SLUGS) if en_links else ""
     return f"""<footer class="site-footer">
 <ul class="footer-links">
 <li><a href="{loc.href()}">Undirect</a></li>
@@ -241,22 +250,24 @@ def footer(loc, t):
 <li><a href="{loc.href('privacy/')}">{esc(t['nav_privacy'])}</a></li>
 <li><a href="{EULA_URL}" rel="noopener">{esc(t['f_terms'])}</a></li>
 <li><a href="{SOURCE_URL}" rel="noopener">{esc(t['f_source'])}</a></li>
-</ul>
+{more}</ul>
 <p class="copyright">&copy; 2026 Kenneth Fang</p>
 </footer>"""
 
 
-def document(loc, locales, t, page, title, description, ld, body, extra_head=""):
+def document(loc, locales, t, page, title, description, ld, body, extra_head="", en_only=False):
     dir_attr = ' dir="rtl"' if loc.rtl else ""
+    lang = "en" if en_only else loc.lang_attr
+    root_attr = ' data-root="1"' if loc.is_root and not en_only else ''
     return f"""<!doctype html>
-<html lang="{loc.lang_attr}"{dir_attr} data-page="{page}"{' data-root="1"' if loc.is_root else ''}>
-{head(loc, locales, t, page, title, description, ld, extra_head)}
+<html lang="{lang}"{dir_attr} data-page="{page}"{root_attr}>
+{head(loc, locales, t, page, title, description, ld, extra_head, en_only)}
 <body>
-{nav(loc, locales, t, page)}
+{nav(loc, locales, t, page, "" if en_only else None)}
 <main id="main">
 {body}
 </main>
-{footer(loc, t)}
+{footer(loc, t, en_links=loc.is_root)}
 </body>
 </html>
 """
@@ -304,6 +315,7 @@ def home_page(loc, locales, s, t):
         for i, (icon, _, _) in enumerate(FEATURES, 1))
     body = f"""<section class="hero"><div class="wrap">
 <div>
+<p class="eyebrow">{esc(s['subtitle'])}</p>
 <h1>{esc(s['h1'])}</h1>
 <p class="lead">{esc(s['promo'])}</p>
 <div class="cta-row">{cta}<a class="btn btn-quiet" href="/demo/" hreflang="en">{esc(t['nav_demo'])}</a></div>
@@ -406,6 +418,44 @@ def privacy_page(loc, locales, s, t):
     return document(loc, locales, t, "privacy/", title, t["meta_privacy"], ld, body)
 
 
+def english_page(slug, loc, locales, t):
+    """One of en_pages: English only, hreflang "en" and x-default, breadcrumb in the JSON-LD."""
+    price = f"${PRICE[0]}" if PRICE[0] and PRICE[1] == "USD" else None
+    pg = en_pages.BUILDERS[slug](price, badge_html(loc, t["cta_get"]))
+    title = f"{pg['title']} | Undirect"
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "WebPage", "name": pg["title"], "url": loc.url(slug), "inLanguage": "en",
+         "isPartOf": {"@id": BASE + "/#site"}, "datePublished": "2026-11-07", "dateModified": "2026-11-07"},
+        breadcrumb(loc, t, slug, en_pages.LABEL[slug]),
+    ]}
+    wide = " page-wide" if slug == "compare/" else ""
+    body = f"""<div class="page{wide}">
+<div class="page-head"><h1>{esc(pg['h1'])}</h1><p>{esc(pg['sub'])}</p></div>
+<div class="prose">
+{pg['body']}
+</div>
+</div>"""
+    return document(loc, locales, t, slug, title, pg["description"], ld, body, en_only=True)
+
+
+def submit_indexnow(out):
+    """Tell IndexNow about every sitemap URL. Prints the HTTP status and never raises."""
+    urls = re.findall(r"<loc>([^<]+)</loc>", (out / "sitemap.xml").read_text(encoding="utf-8"))
+    host = BASE.split("//", 1)[1]
+    body = json.dumps({"host": host, "key": INDEXNOW_KEY, "keyLocation": f"{BASE}/{INDEXNOW_KEY}.txt", "urlList": urls}).encode()
+    req = urllib.request.Request(INDEXNOW_ENDPOINT, data=body, method="POST",
+                                 headers={"Content-Type": "application/json; charset=utf-8"})
+    try:
+        with urllib.request.urlopen(req, timeout=30) as r:
+            status = r.status
+    except urllib.error.HTTPError as e:
+        status = e.code
+    except Exception as e:
+        print(f"WARNING: IndexNow not reached ({e})")
+        return
+    print(f"IndexNow: HTTP {status} for {len(urls)} URLs" + ("" if status in (200, 202) else " (WARNING: not 200/202)"))
+
+
 # ------------------------------------------------------------------ extras
 
 def not_found_page(locales, all_t):
@@ -456,6 +506,11 @@ def sitemap(locales):
             out.append(f'<xhtml:link rel="alternate" hreflang="x-default" href="{locales_by_code[ROOT_CODE].url(page)}"/>')
             out.append("</url>")
     out.append(f"<url><loc>{BASE}/demo/</loc><lastmod>{today}</lastmod></url>")
+    for slug in en_pages.SLUGS:
+        out.append(f"<url><loc>{BASE}/{slug}</loc><lastmod>{today}</lastmod>")
+        out.append(f'<xhtml:link rel="alternate" hreflang="en" href="{BASE}/{slug}"/>')
+        out.append(f'<xhtml:link rel="alternate" hreflang="x-default" href="{BASE}/{slug}"/>')
+        out.append("</url>")
     out.append("</urlset>")
     return "\n".join(out) + "\n"
 
@@ -472,8 +527,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--output-dir", default=str(REPO / "dist"))
     ap.add_argument("--check", action="store_true", help="validate strings only, write nothing")
+    ap.add_argument("--indexnow", action="store_true", help="submit the built sitemap URLs to IndexNow and exit")
     args = ap.parse_args()
     out = Path(args.output_dir).resolve()
+    if args.indexnow:
+        submit_indexnow(out)
+        return
 
     locales = [Locale(e) for e in load(HERE / "locales.json")]
     locales_by_code.update({l.code: l for l in locales})
@@ -518,6 +577,13 @@ def main():
             dest.parent.mkdir(parents=True, exist_ok=True)
             dest.write_text(fn(l, locales, all_s[l.code], all_t[l.code]), encoding="utf-8")
             n += 1
+    root = locales_by_code[ROOT_CODE]
+    for slug in en_pages.SLUGS:
+        dest = out / slug / "index.html"
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(english_page(slug, root, locales, all_t[ROOT_CODE]), encoding="utf-8")
+        n += 1
+    (out / f"{INDEXNOW_KEY}.txt").write_text(INDEXNOW_KEY, encoding="utf-8")
     (out / "img" / "badges").mkdir(parents=True, exist_ok=True)
     for code in sorted(set(BADGES.values())):
         shutil.copy(HERE / "badges" / f"{code}.svg", out / "img" / "badges" / f"{code}.svg")

@@ -35,7 +35,7 @@ middot in a string.
 
 English (`en-GB`) is the root: `/`, `/support/`, `/privacy/`. Every other store
 language lives under its lowercased code (`/ja/`, `/zh-hant/`, `/pt-br/`, `/no/`).
-`/demo/` is English only and is not generated. `site.js` sends a root visitor to
+`/demo/` is English only and is not generated. `/stop-safari-redirects/` and `/compare/` are English only, generated from `web/_generator/en_pages.py`, carry hreflang `en` and `x-default` only, and are linked from the root footer. `site.js` sends a root visitor to
 their language once, from a saved choice (`localStorage` `undirect_lang`) or the
 browser's language list; picking a language in the menu saves the choice, and
 picking English stops further redirects. Crawlers never run it, so the root
@@ -75,3 +75,7 @@ English variants share `en-us`. The `cta_get` string is the image's alt text.
 
 - No Terms page. The footer links Apple's standard licence agreement.
 - No press kit, changelog or FAQ page. The support page carries the FAQ.
+
+## IndexNow
+
+The key is `INDEXNOW_KEY` in `generate.py` (public by design); the build writes `<key>.txt` at the site root. After the gh-pages push, `deploy.sh web` runs `generate.py --indexnow`, which POSTs every sitemap URL to `api.indexnow.org` and prints the HTTP status. Anything but 200 or 202 prints a warning and never fails the deploy.
