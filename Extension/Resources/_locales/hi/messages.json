@@ -326,5 +326,91 @@
   "popup_stop_help": {
     "message": "इस साइट की सुरक्षा बंद करें",
     "description": "Tooltip of popup_stop."
+  },
+  "detail_trap": {
+    "message": "पेज के $COVER$% हिस्से पर एक अदृश्य $TAG$, $OPACITY$% अपारदर्शिता के साथ।",
+    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
+    "placeholders": {
+      "tag": {
+        "content": "$1",
+        "example": "<div id=\"safePopupArea\">"
+      },
+      "cover": {
+        "content": "$2",
+        "example": "100"
+      },
+      "opacity": {
+        "content": "$3",
+        "example": "1"
+      }
+    }
+  },
+  "detail_put_back_one": {
+    "message": "हटाए जाने के बाद पेज ने इसे $COUNT$ बार वापस लगाया।",
+    "description": "Opened row: how often the page re-added the trap, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "detail_put_back_other": {
+    "message": "हटाए जाने के बाद पेज ने इसे $COUNT$ बार वापस लगाया।",
+    "description": "Opened row: how often the page re-added the trap, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "9"
+      }
+    }
+  },
+  "detail_led": {
+    "message": "यह कहाँ ले जाता था: $URL$",
+    "description": "Opened row: the address the trap or pop-up pointed at.",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "https://otieu.com/4/10094579"
+      }
+    }
+  },
+  "detail_led_unknown": {
+    "message": "यह कहाँ ले जाता था: पता नहीं। पेज का कोड क्लिक के समय पता चुनता है, और क्लिक वहाँ तक पहुँचा ही नहीं।",
+    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  },
+  "detail_reached": {
+    "message": "आपका क्लिक आगे “$LABEL$” तक पहुँचा।",
+    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
+    "placeholders": {
+      "label": {
+        "content": "$1",
+        "example": "Play"
+      }
+    }
+  },
+  "detail_time": {
+    "message": "$TIME$ बजे।",
+    "description": "Opened row: when it happened, once.",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "15:34:12"
+      }
+    }
+  },
+  "detail_times": {
+    "message": "$FIRST$ से $LAST$ तक।",
+    "description": "Opened row: first and last time it happened.",
+    "placeholders": {
+      "first": {
+        "content": "$1",
+        "example": "15:33:02"
+      },
+      "last": {
+        "content": "$2",
+        "example": "15:34:12"
+      }
+    }
   }
 }

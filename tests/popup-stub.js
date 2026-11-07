@@ -5,7 +5,11 @@ window.browser = {
     getMessage: (key, args = []) => {
       const entry = MESSAGES[key];
       if (!entry) return "";
-      return entry.message.replace(/\$([A-Z]+)\$/g, (_, name) => args[0] ?? name);
+      // Named placeholders map to $1, $2... as the browser's own lookup does.
+      return entry.message.replace(/\$([A-Z_]+)\$/g, (_, name) => {
+        const slot = entry.placeholders?.[name.toLowerCase()]?.content ?? "$1";
+        return args[Number(slot.slice(1)) - 1] ?? name;
+      });
     },
   },
   runtime: {

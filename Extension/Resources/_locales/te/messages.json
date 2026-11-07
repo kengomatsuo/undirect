@@ -326,5 +326,91 @@
   "popup_stop_help": {
     "message": "ఈ సైట్‌కు రక్షణను ఆఫ్ చేస్తుంది",
     "description": "Tooltip of popup_stop."
+  },
+  "detail_trap": {
+    "message": "పేజీలోని $COVER$% పై కనిపించని ఒక $TAG$, $OPACITY$% అపారదర్శకతతో.",
+    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
+    "placeholders": {
+      "tag": {
+        "content": "$1",
+        "example": "<div id=\"safePopupArea\">"
+      },
+      "cover": {
+        "content": "$2",
+        "example": "100"
+      },
+      "opacity": {
+        "content": "$3",
+        "example": "1"
+      }
+    }
+  },
+  "detail_put_back_one": {
+    "message": "తొలగించిన తర్వాత పేజీ దాన్ని $COUNT$ సార్లు తిరిగి పెట్టింది.",
+    "description": "Opened row: how often the page re-added the trap, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "detail_put_back_other": {
+    "message": "తొలగించిన తర్వాత పేజీ దాన్ని $COUNT$ సార్లు తిరిగి పెట్టింది.",
+    "description": "Opened row: how often the page re-added the trap, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "9"
+      }
+    }
+  },
+  "detail_led": {
+    "message": "అది ఎక్కడికి దారి తీసింది: $URL$",
+    "description": "Opened row: the address the trap or pop-up pointed at.",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "https://otieu.com/4/10094579"
+      }
+    }
+  },
+  "detail_led_unknown": {
+    "message": "అది ఎక్కడికి దారి తీసిందో తెలియదు: చిరునామాను పేజీ కోడ్ క్లిక్ క్షణంలో ఎంచుకుంటుంది, క్లిక్ అక్కడికి ఎప్పుడూ చేరలేదు.",
+    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  },
+  "detail_reached": {
+    "message": "మీ క్లిక్ ఆ తర్వాత “$LABEL$” కు చేరింది.",
+    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
+    "placeholders": {
+      "label": {
+        "content": "$1",
+        "example": "Play"
+      }
+    }
+  },
+  "detail_time": {
+    "message": "$TIME$ కి.",
+    "description": "Opened row: when it happened, once.",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "15:34:12"
+      }
+    }
+  },
+  "detail_times": {
+    "message": "$FIRST$ నుండి $LAST$ వరకు.",
+    "description": "Opened row: first and last time it happened.",
+    "placeholders": {
+      "first": {
+        "content": "$1",
+        "example": "15:33:02"
+      },
+      "last": {
+        "content": "$2",
+        "example": "15:34:12"
+      }
+    }
   }
 }

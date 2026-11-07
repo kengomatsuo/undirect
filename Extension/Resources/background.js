@@ -344,6 +344,9 @@ async function note(tabId, msg) {
   if (msg.kind && !row.kinds.includes(msg.kind)) row.kinds.push(msg.kind);
   if (msg.url && !row.url) row.url = msg.url;
   if (msg.local) row.local = true;
+  if (msg.trap) row.trap = msg.trap;
+  row.lastAt = Date.now();
+  row.firstAt ??= row.lastAt;
   // What actually happened, most recently: a row shown by the current rule
   // alone read "Blocked by default" for a sign-in that was, in that instance,
   // let straight through, since nothing had ever set a rule for it.
@@ -391,6 +394,17 @@ api.runtime.onMessage.addListener((msg, sender) => {
   // thing under their finger leads off this site.
   if (msg?.type === "undirect:tap") {
     tap(tabId, msg);
+    return undefined;
+  }
+
+  // What a press reached once a trap came off: the guard's own words for the
+  // control, put on the page's trap row.
+  if (msg?.type === "undirect:reached") {
+    const row = perTab.get(tabId)?.rows.get(msg.site ?? "");
+    if (row?.local && msg.label) {
+      row.reached = String(msg.label).slice(0, 40);
+      saveSession();
+    }
     return undefined;
   }
 

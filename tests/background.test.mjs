@@ -595,6 +595,31 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
      JSON.stringify([w.local.everywhere, w.local.ruleIds]));
 }
 
+{
+  // The opened row's account: the trap as the guard measured it, what the
+  // press reached once it was gone, and when.
+  const w = world();
+  await w.settle();
+  w.send({ type: "undirect:hello", site: "site.com" }, 7);
+  await w.settle();
+  const trap = { tag: "div", id: "safePopupArea", cover: 100, opacity: 1 };
+  w.send({ type: "undirect:seen", kind: "overlay", base: "site.com", local: true, trap,
+           host: "", url: "", blocked: true, learn: true, site: "site.com" }, 7);
+  await w.settle();
+  w.send({ type: "undirect:reached", site: "site.com", label: "Play" }, 7);
+  w.send({ type: "undirect:reached", site: "elsewhere.com", label: "Nope" }, 7);
+  await w.settle();
+  const state = await w.send({ type: "undirect:popup", tabId: 7 }).find(Boolean);
+  const row = state.rows.find((r) => r.base === "site.com");
+  ok("the row keeps the trap's measurements", JSON.stringify(row?.trap) === JSON.stringify(trap),
+     JSON.stringify(row?.trap));
+  ok("and what the press reached", row?.reached === "Play", String(row?.reached));
+  ok("and when", Number.isFinite(row?.lastAt) && row.firstAt <= row.lastAt,
+     JSON.stringify([row?.firstAt, row?.lastAt]));
+  ok("a press on another site's row lands nowhere",
+     !state.rows.some((r) => r.reached === "Nope"));
+}
+
 const failed = results.filter((r) => !r.pass);
 console.log(`\n${results.length} checks, ${failed.length} failed`);
 process.exit(failed.length ? 1 : 0);

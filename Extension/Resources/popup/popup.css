@@ -172,6 +172,50 @@ body {
   font-size: var(--small);
 }
 
+.opens {
+  cursor: pointer;
+}
+
+/* A row that opens says so: a small chevron after its name, turned when open. */
+.opens > .title:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-inline-start: 6px;
+  border-right: 1.5px solid var(--ink-2);
+  border-bottom: 1.5px solid var(--ink-2);
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.15s ease;
+}
+
+.opens[aria-expanded="true"] > .title:first-child::after {
+  transform: translateY(1px) rotate(225deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .opens > .title:first-child::after {
+    transition: none;
+  }
+}
+
+/* The opened account wraps; the row's own lines stay on one line each. */
+.row:has(> .more) {
+  flex-wrap: wrap;
+}
+
+.more {
+  flex-basis: 100%;
+  margin-top: -2px;
+  color: var(--ink-2);
+  font-size: var(--small);
+  overflow-wrap: anywhere;
+}
+
+.more p {
+  margin: 2px 0 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

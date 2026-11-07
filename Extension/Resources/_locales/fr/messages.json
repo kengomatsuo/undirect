@@ -326,5 +326,91 @@
   "popup_stop_help": {
     "message": "Désactive la protection pour ce site.",
     "description": "Tooltip of popup_stop."
+  },
+  "detail_trap": {
+    "message": "Un élément $TAG$ invisible sur $COVER$ % de la page, avec une opacité de $OPACITY$ %.",
+    "description": "Opened row: the trap element itself. TAG is HTML like <div id=\"x\">, kept as is.",
+    "placeholders": {
+      "tag": {
+        "content": "$1",
+        "example": "<div id=\"safePopupArea\">"
+      },
+      "cover": {
+        "content": "$2",
+        "example": "100"
+      },
+      "opacity": {
+        "content": "$3",
+        "example": "1"
+      }
+    }
+  },
+  "detail_put_back_one": {
+    "message": "La page l’a remis en place $COUNT$ fois après son retrait.",
+    "description": "Opened row: how often the page re-added the trap, singular.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "detail_put_back_other": {
+    "message": "La page l’a remis en place $COUNT$ fois après son retrait.",
+    "description": "Opened row: how often the page re-added the trap, plural.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "9"
+      }
+    }
+  },
+  "detail_led": {
+    "message": "Où il menait : $URL$",
+    "description": "Opened row: the address the trap or pop-up pointed at.",
+    "placeholders": {
+      "url": {
+        "content": "$1",
+        "example": "https://otieu.com/4/10094579"
+      }
+    }
+  },
+  "detail_led_unknown": {
+    "message": "Où il menait : inconnu. Le code de la page choisit l’adresse au moment du clic, et le clic n’y est jamais arrivé.",
+    "description": "Opened row: a trap whose destination stayed unknown because it was removed before it fired."
+  },
+  "detail_reached": {
+    "message": "Le clic a continué vers « $LABEL$ ».",
+    "description": "Opened row: the control the user's press reached once the trap was gone. LABEL is the page's own text for it.",
+    "placeholders": {
+      "label": {
+        "content": "$1",
+        "example": "Play"
+      }
+    }
+  },
+  "detail_time": {
+    "message": "À $TIME$.",
+    "description": "Opened row: when it happened, once.",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "15:34:12"
+      }
+    }
+  },
+  "detail_times": {
+    "message": "De $FIRST$ à $LAST$.",
+    "description": "Opened row: first and last time it happened.",
+    "placeholders": {
+      "first": {
+        "content": "$1",
+        "example": "15:33:02"
+      },
+      "last": {
+        "content": "$2",
+        "example": "15:34:12"
+      }
+    }
   }
 }

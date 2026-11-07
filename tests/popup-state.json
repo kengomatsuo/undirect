@@ -27,7 +27,9 @@
       "blocked": 4,
       "url": "https://buildsstate.com/e6z5n7nsaf",
       "here": null,
-      "everywhere": "block"
+      "everywhere": "block",
+      "firstAt": 1794040380000,
+      "lastAt": 1794040380000
     },
     {
       "base": "checkout.stripe.com",
@@ -56,13 +58,22 @@
       "kinds": [
         "overlay"
       ],
-      "count": 2,
-      "blocked": 2,
+      "count": 10,
+      "blocked": 10,
       "url": "",
       "here": null,
       "everywhere": null,
       "local": true,
-      "lastVerdict": "block"
+      "lastVerdict": "block",
+      "trap": {
+        "tag": "div",
+        "id": "safePopupArea",
+        "cover": 100,
+        "opacity": 1
+      },
+      "reached": "Play",
+      "firstAt": 1794040380000,
+      "lastAt": 1794040470000
     }
   ],
   "everywhere": {
