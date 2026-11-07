@@ -272,6 +272,21 @@ def person():
     return {"@type": "Person", "name": "Kenneth Fang", "url": "https://matsuokengo.com"}
 
 
+def live_price():
+    """The US App Store price, read at build time so the structured data never goes stale."""
+    import urllib.request
+    try:
+        with urllib.request.urlopen("https://itunes.apple.com/lookup?id=6810513194&country=us", timeout=15) as r:
+            result = json.load(r)["results"][0]
+        return f'{result["price"]:.2f}', result["currency"]
+    except Exception as e:  # offline build: leave the offer out instead of guessing a price
+        print(f"WARNING: no live price ({e}); structured data ships without an offer")
+        return None, None
+
+
+PRICE = live_price()
+
+
 def home_page(loc, locales, s, t):
     title = f"{s['name']} | {s['subtitle']}"
     ld = {"@context": "https://schema.org", "@graph": [
@@ -280,7 +295,7 @@ def home_page(loc, locales, s, t):
          "applicationCategory": "UtilitiesApplication",
          "operatingSystem": "iOS, iPadOS, macOS", "description": s["promo"], "inLanguage": loc.code,
          "url": loc.url(), "image": BASE + "/icon-512.png", "downloadUrl": APP_URL, "installUrl": APP_URL,
-         "author": person(), "offers": {"@type": "Offer", "price": "2.99", "priceCurrency": "USD"}},
+         "author": person(), **({"offers": {"@type": "Offer", "price": PRICE[0], "priceCurrency": PRICE[1]}} if PRICE[0] else {})},
     ]}
     cta = badge_html(loc, t["cta_get"])
     cta_text = f'<a class="text-link" href="{APP_URL}" rel="noopener">{esc(t["cta_get"])}</a>'
