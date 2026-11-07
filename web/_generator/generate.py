@@ -487,7 +487,7 @@ def main():
 
     if out.exists():
         shutil.rmtree(out)
-    shutil.copytree(WEB, out, ignore=shutil.ignore_patterns("_generator", ".DS_Store", "CNAME.bak"))
+    shutil.copytree(WEB, out, ignore=shutil.ignore_patterns("_generator", ".DS_Store", "CNAME.bak", "deploy.sh"))
     # Old hand-written pages are replaced by generated ones.
     for stale in ("index.html", "support", "privacy"):
         p = out / stale
