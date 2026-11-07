@@ -1,4 +1,3 @@
-Työkalupalkin painikkeesta aukeava ikkuna alkaa nyt suurella pyöreällä virtapainikkeella. Sitä painamalla suojaus poistuu käytöstä nykyiseltä verkkosivustolta, ja sivuston nimi näkyy painikkeen alla.
-Kun verkkosivusto on suojattu, laajennuksen kuvake työkalupalkissa on punainen.
-Jos välilehdellä ei ole verkkosivustoa (tyhjä välilehti tai aloitussivu), ikkuna avautuu suoraan Asetuksiin.
-Ikkunan kytkimet ovat nyt Safarin tavalliset järjestelmäkytkimet. Macilla ikkunan tausta on Safarin oma läpikuultava, sumennettu materiaali.
+Sivulta, joka asettaa näkymättömän kerroksen kaiken päälle niin, että mikä tahansa napautus avaa mainoksen, poistetaan nyt kerros ennen kuin se ehtii ottaa napautuksen vastaan.
+Kiinteän kokoisena avattu ponnahdusikkuna ei enää kelpaa kirjautumisikkunaksi, ellei sen osoite johda takaisin sivulle.
+Ikkunassa jokainen rivi kertoo, miten sivu yritti, ja luettelee osoitteet, joihin se tavoitteli: kolme, sitten Näytä kaikki.

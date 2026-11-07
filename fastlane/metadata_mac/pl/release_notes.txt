@@ -1,4 +1,3 @@
-Przycisk na pasku narzędzi otwiera teraz okno, które zaczyna się od dużego, okrągłego przycisku zasilania. Jego naciśnięcie wyłącza ochronę bieżącej witryny. Nazwa witryny jest widoczna pod przyciskiem.
-Ikona na pasku narzędzi jest czerwona, dopóki witryna jest chroniona.
-Na karcie bez witryny, na przykład pustej albo ze stroną startową, okno od razu otwiera Ustawienia.
-Przełączniki w oknie to teraz standardowe przełączniki systemowe Safari. Na Macu tło okna jest półprzezroczystym, rozmytym materiałem Safari.
+Strona, która kładzie na wszystkim niewidoczną warstwę, tak że każde dotknięcie otwiera reklamę, traci teraz tę warstwę, zanim ta przyjmie dotknięcie.
+Wyskakujące okno otwarte w stałym rozmiarze nie uchodzi już za okno logowania, chyba że jego adres prowadzi z powrotem do strony.
+W oknie każdy wiersz podaje, jak strona próbowała, i wymienia adresy, po które sięgnęła: trzy, potem Pokaż wszystko.

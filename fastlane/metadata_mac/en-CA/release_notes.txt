@@ -1,4 +1,3 @@
-The popup opens on a round power button that stops guarding the site, with the site's name under it.
-The toolbar button turns red while a site is guarded.
-On a tab with no website, the popup opens on Settings, and its switches are Safari's own.
-On the Mac, the popup uses Safari's translucent background.
+A page that lays an invisible layer over everything, so any tap opens an ad, now has the layer removed before it can take the tap.
+A pop-up opened at a set size no longer passes as a sign-in window unless its address leads back to the page.
+In the popup, each row names how the page tried and lists the addresses it reached for: three, then See All.

@@ -1,4 +1,3 @@
-Knappen i verktøylinjen åpner nå et vindu som starter med en stor, rund av/på-knapp. Trykk på den for å slå av beskyttelsen for nettstedet du er på. Nettstedets navn står under knappen.
-Ikonet i verktøylinjen er rødt så lenge nettstedet er beskyttet.
-Hvis fanen ikke har noe nettsted, for eksempel en tom fane eller en startside, åpnes Innstillinger med en gang.
-Bryterne i vinduet er nå Safaris vanlige systembrytere. På Mac har vinduet Safaris egen gjennomsiktige, uskarpe bakgrunn.
+En side som legger et usynlig lag over alt, slik at hvert trykk åpner en annonse, mister nå laget før det rekker å ta imot trykket.
+Et popup-vindu som åpnes i en fast størrelse regnes ikke lenger som et påloggingsvindu, med mindre adressen fører tilbake til siden.
+I vinduet navngir hver rad hvordan siden prøvde, og viser adressene den grep etter: tre, deretter Vis alle.

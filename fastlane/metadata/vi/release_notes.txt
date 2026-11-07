@@ -1,4 +1,3 @@
-Cửa sổ bật lên khi nhấn nút tiện ích trên thanh công cụ nay mở đầu bằng một nút nguồn tròn, lớn. Nhấn nút này sẽ tắt bảo vệ cho trang web hiện tại, tên trang web hiển thị bên dưới nút.
-Khi một trang web đang được bảo vệ, biểu tượng tiện ích trên thanh công cụ có màu đỏ.
-Nếu tab hiện tại không có trang web, chẳng hạn tab trống hoặc trang khởi đầu, cửa sổ chuyển thẳng đến Cài đặt.
-Các công tắc trong cửa sổ nay là công tắc hệ thống tiêu chuẩn của Safari. Trên Mac, nền cửa sổ dùng chất liệu trong suốt có độ mờ của Safari.
+Trang đặt một lớp vô hình lên mọi thứ để chạm đâu cũng mở quảng cáo nay bị gỡ lớp đó trước khi lớp kịp nhận cú chạm.
+Cửa sổ bật lên mở ở kích thước cố định không còn được coi là cửa sổ đăng nhập, trừ khi địa chỉ của nó dẫn về trang.
+Trong cửa sổ bật lên, mỗi hàng nêu cách trang đã thử và liệt kê các địa chỉ trang đã tìm đến: ba địa chỉ, rồi Xem tất cả.

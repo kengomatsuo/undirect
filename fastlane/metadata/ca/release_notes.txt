@@ -1,4 +1,3 @@
-La finestra emergent del botó de la barra d'eines comença ara amb un botó rodó gran, com el d'engegada. Si el prems, la protecció s'atura al lloc web actual, i el nom del lloc surt a sota.
-Mentre un lloc web està protegit, la icona de l'extensió a la barra d'eines és vermella.
-Si la pestanya no té cap lloc web (una pestanya buida o la pàgina d'inici), la finestra s'obre directament a Configuració.
-Els interruptors de la finestra són ara els interruptors estàndard del sistema de Safari. Al Mac, el fons de la finestra és el material translúcid i difuminat del mateix Safari.
+Quan una pàgina posa una capa invisible damunt de tot, de manera que qualsevol toc obre un anunci, ara se li treu la capa abans que reculli el toc.
+Una finestra emergent oberta amb una mida fixa ja no es pren per una finestra d'inici de sessió si la seva adreça no porta de nou a la pàgina.
+A la finestra emergent, cada fila diu com ho ha intentat la pàgina i enumera les adreces a què ha recorregut: tres, i després Mostra-ho tot.

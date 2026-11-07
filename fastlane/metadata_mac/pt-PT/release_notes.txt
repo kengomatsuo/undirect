@@ -1,4 +1,3 @@
-O botão da barra de ferramentas abre agora um popup que começa por um botão de ligar redondo e grande. Ao premi-lo, desativa a proteção do site atual. O nome do site aparece por baixo do botão.
-O ícone na barra de ferramentas fica vermelho enquanto o site está protegido.
-Num separador sem site, como um separador vazio ou a página inicial, o popup abre diretamente nas Definições.
-Os interruptores do popup são agora os interruptores de sistema do Safari. No Mac, o fundo do popup é o material translúcido e desfocado do próprio Safari.
+Quando uma página coloca uma camada invisível sobre tudo, de modo que qualquer toque abre um anúncio, a camada passa a ser removida antes de receber o toque.
+Um popup aberto com um tamanho fixo deixa de valer como janela de início de sessão, a menos que o seu endereço leve de volta à página.
+No popup, cada linha indica como a página tentou e lista os endereços a que recorreu: três e, depois, Ver Tudo.

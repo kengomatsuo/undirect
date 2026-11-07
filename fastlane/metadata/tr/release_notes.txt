@@ -1,4 +1,3 @@
-Araç çubuğundaki uzantı düğmesine basınca açılan pencere artık büyük, yuvarlak bir güç düğmesiyle başlar. Düğmeye basmak geçerli web sitesi için korumayı kapatır; sitenin adı düğmenin altında görünür.
-Bir web sitesi korunurken araç çubuğundaki uzantı simgesi kırmızıdır.
-Geçerli sekmede web sitesi yoksa, örneğin boş sekmede ya da başlangıç sayfasında, pencere doğrudan Ayarlar ekranıyla açılır.
-Penceredeki anahtarlar artık Safari'nin standart sistem anahtarlarıdır. Mac'te pencerenin arka planı Safari'nin yarı saydam, bulanık malzemesidir.
+Her şeyin üstüne görünmez bir katman koyan ve bu yüzden her dokunuşta reklam açan bir sayfanın katmanı artık dokunuşu almadan önce kaldırılıyor.
+Belirli bir boyutta açılan açılır pencere, adresi sayfaya geri götürmedikçe artık oturum açma penceresi sayılmıyor.
+Pencerede her satır sayfanın nasıl denediğini söyler ve başvurduğu adresleri listeler: üç adres, ardından Tümünü Göster.

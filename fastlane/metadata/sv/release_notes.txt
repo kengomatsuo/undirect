@@ -1,4 +1,3 @@
-Fönstret som öppnas från verktygsfältsknappen börjar nu med en stor, rund strömknapp. Trycker du på den stängs skyddet av för den aktuella webbplatsen, vars namn står under knappen.
-Så länge en webbplats är skyddad är tilläggets ikon i verktygsfältet röd.
-Saknar fliken en webbplats, till exempel en tom flik eller startsidan, går fönstret direkt till Inställningar.
-Reglagen i fönstret är nu Safaris egna systemreglage. På Mac har fönstret Safaris genomskinliga, suddade bakgrund.
+En sida som lägger ett osynligt lager över allt, så att varje tryck öppnar en annons, förlorar nu lagret innan det hinner ta emot trycket.
+Ett popup-fönster som öppnas i en fast storlek räknas inte längre som ett inloggningsfönster, om inte dess adress leder tillbaka till sidan.
+I fönstret anger varje rad hur sidan försökte och listar adresserna den sökte sig till: tre, sedan Visa alla.

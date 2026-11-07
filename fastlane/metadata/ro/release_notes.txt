@@ -1,4 +1,3 @@
-Butonul din bara de instrumente deschide acum o fereastră care începe cu un buton rotund mare de pornire. Dacă îl apeși, protecția se oprește pentru site-ul curent, al cărui nume apare sub buton.
-Pictograma din bara de instrumente este roșie cât timp site-ul este protejat.
-Într-un tab fără site web, de exemplu un tab gol sau pagina de start, fereastra se deschide direct la Setări.
-Comutatoarele din fereastră sunt acum comutatoarele de sistem ale Safari. Pe Mac, fundalul ferestrei este materialul translucid și estompat al Safari.
+Când o pagină așază un strat invizibil peste tot, astfel încât orice atingere deschide o reclamă, stratul este acum eliminat înainte să primească atingerea.
+O fereastră pop-up deschisă la o dimensiune fixă nu mai trece drept fereastră de autentificare, decât dacă adresa ei duce înapoi la pagină.
+În fereastră, fiecare rând numește metoda folosită de pagină și listează adresele la care a apelat: trei, apoi Afișează tot.

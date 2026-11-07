@@ -1,4 +1,3 @@
-Okno, ki se odpre z gumbom orodne vrstice, se zdaj začne z velikim okroglim gumbom za vklop in izklop. Pritisk nanj izklopi zaščito za trenutno spletno mesto, njegovo ime pa piše pod gumbom.
-Dokler je spletno mesto zaščiteno, je ikona razširitve v orodni vrstici rdeča.
-Če zavihek nima spletnega mesta, na primer prazen zavihek ali začetna stran, se okno odpre kar v Nastavitvah.
-Stikala v oknu so zdaj Safarijeva sistemska stikala. Na Macu ima okno Safarijevo prosojno, zamegljeno ozadje.
+Strani, ki čez vse položi nevidno plast, tako da vsak dotik odpre oglas, se plast zdaj odstrani, preden sprejme dotik.
+Pojavno okno, odprto v določeni velikosti, ne velja več za okno za prijavo, razen če njegov naslov vodi nazaj na stran.
+V oknu vsaka vrstica poimenuje, kako je stran poskusila, in našteje naslove, po katerih je segla: tri, nato Prikaži vse.

@@ -1,4 +1,3 @@
-Vinduet, der åbner fra knappen på værktøjslinjen, starter nu med en stor, rund tænd/sluk-knap. Tryk på den for at slå beskyttelsen fra på det aktuelle websted; webstedets navn står under knappen.
-Når et websted er beskyttet, er udvidelsens ikon på værktøjslinjen rødt.
-Hvis fanen ikke har noget websted (en tom fane eller startsiden), åbner vinduet direkte på Indstillinger.
-Til/fra-kontakterne i vinduet er nu Safaris almindelige systemkontakter. På Mac har vinduet Safaris eget gennemsigtige, slørede materiale som baggrund.
+En side, der lægger et usynligt lag over det hele, så ethvert tryk åbner en annonce, mister nu laget, før det når at tage imod trykket.
+Et pop op-vindue, der åbnes i en fast størrelse, tæller ikke længere som et login-vindue, medmindre dets adresse fører tilbage til siden.
+I vinduet navngiver hver række, hvordan siden prøvede, og viser de adresser, den greb efter: tre, derefter Vis alle.

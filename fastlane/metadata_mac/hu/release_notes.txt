@@ -1,4 +1,3 @@
-Az eszköztáron az Undirect gombra nyomva megnyíló felugró ablak mostantól egy nagy, kerek bekapcsológombbal indul. Ha megnyomja, kikapcsolja a védelmet az aktuális oldalon, az oldal neve pedig a gomb alatt látszik.
-Amíg egy oldal védett, az eszköztár ikonja piros.
-Üres lapon vagy a kezdőoldalon nincs weboldal, ezért az ablak rögtön a Beállítások képernyőt mutatja.
-Az ablak kapcsolói mostantól a rendszer szokásos kapcsolói. Macen az ablak háttere a Safari saját áttetsző, elmosódott anyaga.
+Ha egy oldal láthatatlan réteget fektet mindenre, így bármelyik koppintás hirdetést nyit, a réteget mostantól eltávolítjuk, mielőtt fogadná a koppintást.
+A meghatározott méretben megnyitott felugró ablak többé nem számít bejelentkezési ablaknak, hacsak a címe nem vezet vissza az oldalra.
+A felugró ablakban minden sor megnevezi, hogyan próbálkozott az oldal, és felsorolja a címeket, amelyekhez nyúlt: hármat, majd az Összes megtekintése gomb következik.

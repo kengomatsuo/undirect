@@ -1,4 +1,3 @@
-Tlačidlo na paneli nástrojov teraz otvára okno, ktoré začína veľkým okrúhlym tlačidlom napájania. Ak ho stlačíte, ochrana pre aktuálny web sa vypne. Názov webu je pod tlačidlom.
-Ikona na paneli nástrojov je červená, kým je web chránený.
-Na karte bez webu, napríklad prázdnej alebo s úvodnou stránkou, sa okno otvorí rovno v Nastaveniach.
-Prepínače v okne sú teraz štandardné systémové prepínače Safari. Na Macu je pozadie okna priesvitný rozmazaný materiál Safari.
+Stránke, ktorá cez všetko položí neviditeľnú vrstvu, takže akékoľvek klepnutie otvorí reklamu, sa vrstva teraz odstráni skôr, než klepnutie prijme.
+Vyskakovacie okno otvorené v pevnej veľkosti už neprejde ako prihlasovacie okno, ak jeho adresa nevedie späť na stránku.
+V okne každý riadok pomenúva, ako sa stránka pokúsila, a uvádza adresy, po ktoré siahla: tri, potom Zobraziť všetko.

@@ -1,4 +1,3 @@
-Das Fenster, das sich über die Schaltfläche in der Symbolleiste öffnet, beginnt jetzt mit einer großen runden Taste im Stil eines Ein-/Ausschalters. Ein Druck darauf schaltet den Schutz für die aktuelle Website aus; ihr Name steht unter der Taste.
-Solange eine Website geschützt ist, leuchtet das Symbol der Erweiterung in der Symbolleiste rot.
-Hat der Tab keine Website (leerer Tab oder Startseite), öffnet sich das Fenster direkt in den Einstellungen.
-Die Schalter im Fenster sind jetzt die normalen Systemschalter von Safari. Auf dem Mac besteht der Hintergrund aus dem durchsichtigen, unscharfen Material von Safari.
+Eine Seite, die eine unsichtbare Ebene über alles legt, sodass jedes Tippen eine Anzeige öffnet, verliert diese Ebene jetzt, bevor sie das Tippen annehmen kann.
+Ein Pop-up-Fenster mit fester Größe gilt nicht mehr als Anmeldefenster, solange seine Adresse nicht zur Seite zurückführt.
+Im Fenster nennt jede Zeile, wie die Seite es versucht hat, und listet die Adressen auf, nach denen sie gegriffen hat: drei, dann Alle anzeigen.

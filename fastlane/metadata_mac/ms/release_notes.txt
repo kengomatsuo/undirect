@@ -1,4 +1,3 @@
-Butang bar alat kini membuka pop timbul yang bermula dengan butang kuasa bulat yang besar. Tekan butang itu untuk mematikan perlindungan bagi tapak web semasa. Nama tapak tertera di bawahnya.
-Ikon bar alat berwarna merah selagi tapak dilindungi.
-Pada tab tanpa tapak web, seperti tab kosong atau halaman permulaan, pop timbul terus dibuka pada Seting.
-Suis dalam pop timbul kini ialah suis sistem Safari. Pada Mac, latar pop timbul ialah bahan lut sinar dan kabur milik Safari sendiri.
+Halaman yang meletakkan lapisan tidak kelihatan di atas segalanya, sehingga setiap ketikan membuka iklan, kini dibuang lapisannya sebelum sempat menerima ketikan.
+Tetingkap pop timbul yang dibuka pada saiz tertentu tidak lagi diterima sebagai tetingkap log masuk, kecuali alamatnya membawa kembali ke halaman.
+Dalam pop timbul, setiap baris menyebut cara yang digunakan halaman dan menyenaraikan alamat yang dituju: tiga, kemudian Lihat Semua.

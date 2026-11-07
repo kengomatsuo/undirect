@@ -1,4 +1,3 @@
-Tombol Undirect di bilah alat Safari kini membuka popup yang diawali tombol daya bulat besar. Tekan tombol itu untuk mematikan pelindung di situs yang sedang dibuka, dan nama situsnya tampil di bawah tombol.
-Selama situs dijaga, ikon di bilah alat berwarna merah.
-Di tab kosong atau halaman awal tidak ada situs, jadi popup langsung menampilkan Pengaturan.
-Sakelar di popup sekarang memakai sakelar standar sistem. Di Mac, latar popup memakai bahan tembus pandang dan buram milik Safari.
+Halaman yang menaruh lapisan tak terlihat di atas segalanya, sehingga setiap ketukan membuka iklan, kini dicopot lapisannya sebelum sempat menerima ketukan.
+Popup yang dibuka dengan ukuran tertentu tidak lagi dianggap jendela masuk, kecuali alamatnya mengarah kembali ke halaman.
+Di popup, setiap baris menyebut cara yang dipakai halaman dan mendaftar alamat yang dituju: tiga, lalu Lihat Semua.

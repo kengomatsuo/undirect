@@ -1,4 +1,3 @@
-Het venster van de werkbalkknop begint nu met een grote ronde aan/uit-knop. Met een druk erop zet je de bescherming voor de huidige website uit. De naam van de website staat onder de knop.
-Het werkbalkicoon is rood zolang een website beveiligd is.
-Heeft het tabblad geen website, zoals een leeg tabblad of een startpagina, dan opent het venster meteen op Instellingen.
-De schakelaars in het venster zijn nu de standaardschakelaars van Safari. Op de Mac heeft het venster de doorzichtige, vervaagde achtergrond van Safari zelf.
+Een pagina die een onzichtbare laag over alles legt, zodat elke tik een advertentie opent, raakt die laag nu kwijt voordat hij de tik kan opvangen.
+Een pop-up die op een vaste grootte opent, geldt niet langer als inlogvenster, tenzij het adres terugleidt naar de pagina.
+In het venster noemt elke rij hoe de pagina het probeerde en staan de adressen waarnaar ze greep: drie, daarna Toon alles.

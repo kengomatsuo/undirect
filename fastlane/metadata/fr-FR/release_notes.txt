@@ -1,4 +1,3 @@
-La fenêtre qui s'ouvre depuis le bouton de la barre d'outils commence désormais par un grand bouton rond, comme un bouton d'alimentation. Appuyez dessus pour désactiver la protection sur le site actuel ; son nom s'affiche en dessous.
-Tant qu'un site est protégé, l'icône de l'extension dans la barre d'outils est rouge.
-Si l'onglet n'a aucun site (onglet vide ou page de démarrage), la fenêtre s'ouvre directement sur les Réglages.
-Les interrupteurs de la fenêtre sont désormais les interrupteurs système standard de Safari. Sur Mac, le fond de la fenêtre reprend la matière translucide et floutée de Safari.
+Lorsqu'une page place une couche invisible sur tout le contenu, de sorte que n'importe quel appui ouvre une publicité, la couche est désormais retirée avant qu'elle reçoive l'appui.
+Une fenêtre contextuelle ouverte à une taille fixe n'est plus prise pour une fenêtre de connexion, sauf si son adresse ramène à la page.
+Dans la fenêtre, chaque ligne nomme la méthode employée par la page et liste les adresses visées : trois, puis Tout afficher.
