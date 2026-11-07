@@ -159,6 +159,11 @@ but a backdrop is see-through by its background and sits under the modal it
 belongs to. An empty floated layer hidden by its own opacity has no reason to
 exist except to be pressed unseen, so `guard.js` removes it on sight.
 
+Checked on the live site in the iOS 27.2 Simulator the same day, after the owner
+passed Cloudflare's check: with reelfren.net guarded, the player and the ad
+dialog's CLOSE did their own jobs, the record showed the layer removed twice,
+and no tab opened.
+
 ## Telling the user what the network layer stopped
 
 A `declarativeNetRequest` rule kills the request before the page sees anything,
