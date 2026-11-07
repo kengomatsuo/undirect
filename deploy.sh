@@ -47,7 +47,7 @@ Commands:
                     back; takes --locales, --pages, --no-screenshots,
                     --verify-only; never submits
   release [part]    Everything, both platforms: bump (part as for bump), upload
-                    the text, build and upload the iOS and Mac binaries, submit
+                    the text and screenshots, build and upload the iOS and Mac binaries, submit
                     both for review set to release as soon as Apple approves,
                     then commit and push project.yml. Re-check the store
                     screenshots against the build first

@@ -152,8 +152,8 @@ Say this in the first reply of each session.
 ## One command releases both apps (2026-11-07)
 
 `./deploy.sh release [patch|minor|major|build]` refuses while either platform
-has a version in review, then bumps, uploads the text, builds and uploads both
-binaries, and submits both with `automatic_release: true`, so each goes live
+has a version in review, then bumps, uploads the text and the store screenshots, builds and uploads
+both binaries, and submits both with `automatic_release: true`, so each goes live
 the moment App Review approves it. fastlane 2.234.0 sets the release type
 inside the metadata upload (`deliver/lib/deliver/upload_metadata.rb`), so the
 `release` lanes upload text in the same call as the submit, and with no
