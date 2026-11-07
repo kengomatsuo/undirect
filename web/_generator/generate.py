@@ -280,7 +280,7 @@ def home_page(loc, locales, s, t):
          "applicationCategory": "UtilitiesApplication",
          "operatingSystem": "iOS, iPadOS, macOS", "description": s["promo"], "inLanguage": loc.code,
          "url": loc.url(), "image": BASE + "/icon-512.png", "downloadUrl": APP_URL, "installUrl": APP_URL,
-         "author": person(), "offers": {"@type": "Offer", "price": "0.99", "priceCurrency": "USD"}},
+         "author": person(), "offers": {"@type": "Offer", "price": "2.99", "priceCurrency": "USD"}},
     ]}
     cta = badge_html(loc, t["cta_get"])
     cta_text = f'<a class="text-link" href="{APP_URL}" rel="noopener">{esc(t["cta_get"])}</a>'
