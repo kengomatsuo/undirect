@@ -112,7 +112,7 @@ mas() {
   $FASTLANE mac upload_mas
   # The archive registers its own Safari extension. A second copy can make
   # Safari swap extensions and wipe the owner's storage (2026-10-01).
-  find build -name "Undirect.app" -maxdepth 6 2>/dev/null | while read -r app; do
+  find "$PWD/build" -name "Undirect.app" -type d -prune 2>/dev/null | while read -r app; do
     pluginkit -r "$app/Contents/PlugIns/Undirect Extension.appex" 2>/dev/null
     /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u "$app"
   done
