@@ -522,21 +522,10 @@ body {
 /* The Mac popup has system appearance on (WebKit WebExtensionActionCocoa.mm),
    so cards and hairlines take the popover's own vibrancy */
 @supports (-apple-visual-effect: -apple-system-vibrancy-fill) {
-  /* The effect tints everything inside its element, text included, so it goes
-     on a layer behind the rows and never on the card itself */
+  /* A translucent fill keeps the popover's glass showing through the card; the
+     vibrancy effect dims every row inside it and paints nothing on an empty layer */
   .group {
-    position: relative;
-    isolation: isolate;
-    background: none;
-  }
-
-  .group::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    border-radius: inherit;
-    -apple-visual-effect: -apple-system-vibrancy-tertiary-fill;
+    background: var(--fill);
   }
 }
 
