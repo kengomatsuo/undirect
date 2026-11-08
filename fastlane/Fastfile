@@ -118,6 +118,15 @@ end
 
 default_platform(:ios)
 
+# altool can print "UPLOAD SUCCEEDED" and then a harmless resume-file error on stderr,
+# which fastlane reports as a failed upload. Treat exactly that error as success.
+def upload_tolerating_resume_file(**opts)
+  upload_to_testflight(**opts)
+rescue => e
+  raise unless e.message.include?("CDUploaderStateInfoResumeFilePath")
+  UI.important("altool reported the upload succeeded; ignoring its resume-file error")
+end
+
 platform :ios do
   desc "Upload text metadata for every locale to the editable iOS version (creates the version when none is editable). No screenshots, no binary."
   lane :upload_metadata do
@@ -173,7 +182,7 @@ platform :ios do
   lane :upload_binary do
     ipa = File.join(REPO, "build/ios/Undirect.ipa")
     UI.user_error!("No IPA at #{ipa}; run ./deploy.sh build first") unless File.exist?(ipa)
-    upload_to_testflight(
+    upload_tolerating_resume_file(
       api_key: asc_api_key,
       ipa: ipa,
       skip_waiting_for_build_processing: true,
@@ -258,7 +267,7 @@ platform :mac do
       xcargs: xcodebuild_auth_args,
       clean: true
     )
-    upload_to_testflight(
+    upload_tolerating_resume_file(
       api_key: asc_api_key,
       pkg: "./build/mas/Undirect.pkg",
       app_platform: "osx",
