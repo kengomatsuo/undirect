@@ -15,9 +15,11 @@ What is done, what needs an Apple account, and one judgement call.
 - Screenshots (2026-10-01, per `docs/aso/research.md`): five frames on iPhone 6.9"
   1320x2868, iPad 13" 2064x2752 and Mac 2880x1800, in all 50 locales. Frame 1 is the
   search words ("Popup blocker for Safari") over a smaller promise line; 2 the page menu
-  (Mac: toolbar button and switch); 3 the Everywhere list; 4 the popup in dark mode;
-  5 the Settings screen. Captures are real simulator and app captures except the Mac
-  dark popup, which is the shipping popup HTML rendered in dark. Captions are in
+  (Mac: toolbar button and switch); 3 the Everywhere list; 4 the popup on its own;
+  5 the Settings screen. Every frame is dark (2026-11-08). iOS and the Mac app are real
+  captures in dark mode. Mac frames 1, 2 and 4 are the shipping popup HTML rendered dark
+  (`capture_mac_popup.py`) over a real Safari dark frame from the 1.0.3 Mac take. The
+  Everywhere list keeps three of the debug sample's six rows. Captions are in
   `Support/AppStore/headlines.json` (`en` feeds the English default sets), line breaks
   chosen at word boundaries in `rebreaks.json`, rendered by
   `Support/AppStore/render_screenshots.py` (one Chrome over DevTools,
