@@ -71,7 +71,7 @@ def xcodebuild_auth_args
 end
 
 def marketing_version
-  File.read(File.join(REPO, "project.yml"))[/MARKETING_VERSION:\s*"?([\d.]+)"?/, 1] or UI.user_error!("MARKETING_VERSION not found in project.yml")
+  File.read(File.join(REPO, "project.yml"), encoding: "UTF-8")[/MARKETING_VERSION:\s*"?([\d.]+)"?/, 1] or UI.user_error!("MARKETING_VERSION not found in project.yml")
 end
 
 # xcodebuild on recent Xcode emits bytes that crash fastlane's PTY loop under a
