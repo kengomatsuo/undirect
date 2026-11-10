@@ -389,3 +389,6 @@ a:hover { text-decoration-thickness: 2px; }
 }
 
 [dir="rtl"] .btn svg { transform: none; }
+
+.directory-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin:20px 0 4px}
+.directory-badges img{height:44px;width:auto;display:block}
