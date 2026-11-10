@@ -42,7 +42,9 @@ def place(loc):
     if not os.path.exists(f): return loc, "no image"
     try:
         image = have.get(f"creative-{loc}") or uploaded_id(asc("asset-library", "images", "upload", "--library-id", app, "--file", f, "--reference-name", f"creative-{loc}"))
+        placed = {p["attributes"]["placementType"] for p in rows(asc("asset-library", "images", "placements", "--id", image))}
         for t in TYPES:
+            if t in placed: continue
             asc_api.call("POST", "/v1/appAssetLibraryPlacements", {"data": {"type": "appAssetLibraryPlacements",
                 "attributes": {"placementType": t, "placementGroup": "DEFAULT_PROFILE"},
                 "relationships": {"image": {"data": {"type": "appAssetLibraryImages", "id": image}},
