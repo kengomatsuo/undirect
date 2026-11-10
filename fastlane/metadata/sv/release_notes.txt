@@ -1,3 +1,1 @@
-En sida som lägger ett osynligt lager över allt, så att varje tryck öppnar en annons, förlorar nu lagret innan det hinner ta emot trycket.
-Ett popup-fönster som öppnas i en fast storlek räknas inte längre som ett inloggningsfönster, om inte dess adress leder tillbaka till sidan.
-I fönstret anger varje rad hur sidan försökte och listar adresserna den sökte sig till: tre, sedan Visa alla.
+Nya bilder i App Store. Själva appen är oförändrad.

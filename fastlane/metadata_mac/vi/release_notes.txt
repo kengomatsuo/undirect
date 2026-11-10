@@ -1,3 +1,1 @@
-Trang đặt một lớp vô hình lên mọi thứ để chạm đâu cũng mở quảng cáo nay bị gỡ lớp đó trước khi lớp kịp nhận cú chạm.
-Cửa sổ bật lên mở ở kích thước cố định không còn được coi là cửa sổ đăng nhập, trừ khi địa chỉ của nó dẫn về trang.
-Trong cửa sổ bật lên, mỗi hàng nêu cách trang đã thử và liệt kê các địa chỉ trang đã tìm đến: ba địa chỉ, rồi Xem tất cả.
+Hình ảnh mới trên App Store. Bản thân ứng dụng không thay đổi.

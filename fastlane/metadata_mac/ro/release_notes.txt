@@ -1,3 +1,1 @@
-Când o pagină așază un strat invizibil peste tot, astfel încât orice atingere deschide o reclamă, stratul este acum eliminat înainte să primească atingerea.
-O fereastră pop-up deschisă la o dimensiune fixă nu mai trece drept fereastră de autentificare, decât dacă adresa ei duce înapoi la pagină.
-În fereastră, fiecare rând numește metoda folosită de pagină și listează adresele la care a apelat: trei, apoi Afișează tot.
+Imagini noi în App Store. Aplicația în sine nu s-a schimbat.

@@ -1,3 +1,1 @@
-Stranici koja preko svega postavi nevidljivi sloj, pa svaki dodir otvori oglas, sloj se sada uklanja prije nego što primi dodir.
-Skočni prozor otvoren u zadanoj veličini više ne prolazi kao prozor za prijavu osim ako njegova adresa ne vodi natrag na stranicu.
-U skočnom prozoru svaki redak imenuje način na koji je stranica pokušala i navodi adrese koje je koristila: tri, zatim Prikaži sve.
+Nove slike u App Storeu. Sama aplikacija nije promijenjena.

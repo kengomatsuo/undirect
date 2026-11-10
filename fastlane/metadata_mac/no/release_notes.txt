@@ -1,3 +1,1 @@
-En side som legger et usynlig lag over alt, slik at hvert trykk åpner en annonse, mister nå laget før det rekker å ta imot trykket.
-Et popup-vindu som åpnes i en fast størrelse regnes ikke lenger som et påloggingsvindu, med mindre adressen fører tilbake til siden.
-I vinduet navngir hver rad hvordan siden prøvde, og viser adressene den grep etter: tre, deretter Vis alle.
+Nye bilder i App Store. Selve appen er uendret.

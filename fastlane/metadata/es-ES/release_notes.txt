@@ -1,3 +1,1 @@
-Cuando una página pone una capa invisible sobre todo, de modo que cualquier toque abre un anuncio, ahora se le quita la capa antes de que reciba el toque.
-Una ventana emergente abierta con un tamaño fijo ya no pasa por ventana de inicio de sesión si su dirección no lleva de vuelta a la página.
-En la ventana, cada fila dice cómo lo intentó la página y enumera las direcciones a las que recurrió: tres y, después, Ver todo.
+Imágenes nuevas en la App Store. La app no ha cambiado.

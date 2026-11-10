@@ -1,3 +1,1 @@
-Stránke, ktorá cez všetko položí neviditeľnú vrstvu, takže akékoľvek klepnutie otvorí reklamu, sa vrstva teraz odstráni skôr, než klepnutie prijme.
-Vyskakovacie okno otvorené v pevnej veľkosti už neprejde ako prihlasovacie okno, ak jeho adresa nevedie späť na stránku.
-V okne každý riadok pomenúva, ako sa stránka pokúsila, a uvádza adresy, po ktoré siahla: tri, potom Zobraziť všetko.
+Nové obrázky v App Store. Samotná aplikácia sa nezmenila.

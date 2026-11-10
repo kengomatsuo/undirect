@@ -1,3 +1,1 @@
-Eine Seite, die eine unsichtbare Ebene über alles legt, sodass jedes Tippen eine Anzeige öffnet, verliert diese Ebene jetzt, bevor sie das Tippen annehmen kann.
-Ein Pop-up-Fenster mit fester Größe gilt nicht mehr als Anmeldefenster, solange seine Adresse nicht zur Seite zurückführt.
-Im Fenster nennt jede Zeile, wie die Seite es versucht hat, und listet die Adressen auf, nach denen sie gegriffen hat: drei, dann Alle anzeigen.
+Neue Bilder im App Store. An der App selbst hat sich nichts geändert.

@@ -1,3 +1,1 @@
-Stránka, která přes všechno položí neviditelnou vrstvu, takže jakékoli klepnutí otevře reklamu, o ni nyní přijde dřív, než klepnutí zachytí.
-Vyskakovací okno otevřené v pevné velikosti už neprojde jako přihlašovací okno, pokud jeho adresa nevede zpět na stránku.
-V okně rozšíření každý řádek pojmenuje, jak se stránka pokusila o přesměrování, a vypíše adresy, na které sáhla: tři, pak Zobrazit vše.
+Nové obrázky v App Storu. Samotná aplikace se nezměnila.

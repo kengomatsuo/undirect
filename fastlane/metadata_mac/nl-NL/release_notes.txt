@@ -1,3 +1,1 @@
-Een pagina die een onzichtbare laag over alles legt, zodat elke tik een advertentie opent, raakt die laag nu kwijt voordat hij de tik kan opvangen.
-Een pop-up die op een vaste grootte opent, geldt niet langer als inlogvenster, tenzij het adres terugleidt naar de pagina.
-In het venster noemt elke rij hoe de pagina het probeerde en staan de adressen waarnaar ze greep: drie, daarna Toon alles.
+Nieuwe afbeeldingen in de App Store. De app zelf is niet veranderd.

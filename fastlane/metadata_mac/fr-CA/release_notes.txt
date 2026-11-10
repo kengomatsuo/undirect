@@ -1,3 +1,1 @@
-Lorsqu'une page place une couche invisible sur tout le contenu, de sorte que n'importe quel toucher ouvre une publicité, la couche est maintenant retirée avant qu'elle reçoive le toucher.
-Une fenêtre contextuelle ouverte à une taille fixe n'est plus prise pour une fenêtre de connexion, sauf si son adresse ramène à la page.
-Dans la fenêtre, chaque ligne nomme la méthode employée par la page et liste les adresses visées : trois, puis Tout afficher.
+Nouvelles images sur l'App Store. L'app elle-même n'a pas changé.

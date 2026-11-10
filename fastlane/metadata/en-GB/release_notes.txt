@@ -1,3 +1,1 @@
-A page that lays an invisible layer over everything, so any tap opens an ad, now has the layer removed before it can take the tap.
-A pop-up opened at a set size no longer passes as a sign-in window unless its address leads back to the page.
-In the popup, each row names how the page tried and lists the addresses it reached for: three, then See All.
+New App Store images. The app itself is unchanged.

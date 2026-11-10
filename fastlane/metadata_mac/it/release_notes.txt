@@ -1,3 +1,1 @@
-Quando una pagina stende sopra a tutto un livello invisibile, così che ogni tocco apre una pubblicità, ora il livello viene rimosso prima che riceva il tocco.
-Un pop-up aperto a una dimensione fissa non passa più per una finestra di accesso, a meno che il suo indirizzo riporti alla pagina.
-Nel pannello, ogni riga indica il metodo usato dalla pagina ed elenca gli indirizzi a cui ha puntato: tre, poi Mostra tutto.
+Nuove immagini su App Store. L'app non è cambiata.

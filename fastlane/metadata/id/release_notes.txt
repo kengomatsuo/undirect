@@ -1,3 +1,1 @@
-Halaman yang menaruh lapisan tak terlihat di atas segalanya, sehingga setiap ketukan membuka iklan, kini dicopot lapisannya sebelum sempat menerima ketukan.
-Popup yang dibuka dengan ukuran tertentu tidak lagi dianggap jendela masuk, kecuali alamatnya mengarah kembali ke halaman.
-Di popup, setiap baris menyebut cara yang dipakai halaman dan mendaftar alamat yang dituju: tiga, lalu Lihat Semua.
+Gambar baru di App Store. Aplikasinya sendiri tidak berubah.

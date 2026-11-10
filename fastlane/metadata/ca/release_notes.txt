@@ -1,3 +1,1 @@
-Quan una pàgina posa una capa invisible damunt de tot, de manera que qualsevol toc obre un anunci, ara se li treu la capa abans que reculli el toc.
-Una finestra emergent oberta amb una mida fixa ja no es pren per una finestra d'inici de sessió si la seva adreça no porta de nou a la pàgina.
-A la finestra emergent, cada fila diu com ho ha intentat la pàgina i enumera les adreces a què ha recorregut: tres, i després Mostra-ho tot.
+Imatges noves a l'App Store. L'app no ha canviat.

@@ -1,3 +1,1 @@
-Strani, ki čez vse položi nevidno plast, tako da vsak dotik odpre oglas, se plast zdaj odstrani, preden sprejme dotik.
-Pojavno okno, odprto v določeni velikosti, ne velja več za okno za prijavo, razen če njegov naslov vodi nazaj na stran.
-V oknu vsaka vrstica poimenuje, kako je stran poskusila, in našteje naslove, po katerih je segla: tri, nato Prikaži vse.
+Nove slike v App Storu. Aplikacija sama se ni spremenila.

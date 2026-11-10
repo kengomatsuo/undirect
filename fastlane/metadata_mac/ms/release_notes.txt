@@ -1,3 +1,1 @@
-Halaman yang meletakkan lapisan tidak kelihatan di atas segalanya, sehingga setiap ketikan membuka iklan, kini dibuang lapisannya sebelum sempat menerima ketikan.
-Tetingkap pop timbul yang dibuka pada saiz tertentu tidak lagi diterima sebagai tetingkap log masuk, kecuali alamatnya membawa kembali ke halaman.
-Dalam pop timbul, setiap baris menyebut cara yang digunakan halaman dan menyenaraikan alamat yang dituju: tiga, kemudian Lihat Semua.
+Imej baharu di App Store. Aplikasi itu sendiri tidak berubah.

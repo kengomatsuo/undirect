@@ -1,3 +1,1 @@
-Ha egy oldal láthatatlan réteget fektet mindenre, így bármelyik koppintás hirdetést nyit, a réteget mostantól eltávolítjuk, mielőtt fogadná a koppintást.
-A meghatározott méretben megnyitott felugró ablak többé nem számít bejelentkezési ablaknak, hacsak a címe nem vezet vissza az oldalra.
-A felugró ablakban minden sor megnevezi, hogyan próbálkozott az oldal, és felsorolja a címeket, amelyekhez nyúlt: hármat, majd az Összes megtekintése gomb következik.
+Új képek az App Store-ban. Maga az app nem változott.

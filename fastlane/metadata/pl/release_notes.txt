@@ -1,3 +1,1 @@
-Strona, która kładzie na wszystkim niewidoczną warstwę, tak że każde dotknięcie otwiera reklamę, traci teraz tę warstwę, zanim ta przyjmie dotknięcie.
-Wyskakujące okno otwarte w stałym rozmiarze nie uchodzi już za okno logowania, chyba że jego adres prowadzi z powrotem do strony.
-W oknie każdy wiersz podaje, jak strona próbowała, i wymienia adresy, po które sięgnęła: trzy, potem Pokaż wszystko.
+Nowe obrazy w App Store. Sama aplikacja się nie zmieniła.

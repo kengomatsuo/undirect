@@ -1,3 +1,1 @@
-Quando uma página coloca uma camada invisível sobre tudo, de modo que qualquer toque abre um anúncio, a camada agora é removida antes de receber o toque.
-Um popup aberto em um tamanho fixo deixa de valer como janela de login, a menos que seu endereço leve de volta à página.
-No popup, cada linha diz como a página tentou e lista os endereços que ela acionou: três, depois Ver tudo.
+Novas imagens na App Store. O app em si não mudou.

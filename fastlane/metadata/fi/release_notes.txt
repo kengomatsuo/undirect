@@ -1,3 +1,1 @@
-Sivulta, joka asettaa näkymättömän kerroksen kaiken päälle niin, että mikä tahansa napautus avaa mainoksen, poistetaan nyt kerros ennen kuin se ehtii ottaa napautuksen vastaan.
-Kiinteän kokoisena avattu ponnahdusikkuna ei enää kelpaa kirjautumisikkunaksi, ellei sen osoite johda takaisin sivulle.
-Ikkunassa jokainen rivi kertoo, miten sivu yritti, ja luettelee osoitteet, joihin se tavoitteli: kolme, sitten Näytä kaikki.
+Uudet kuvat App Storessa. Itse appi ei ole muuttunut.
