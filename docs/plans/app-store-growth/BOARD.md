@@ -10,6 +10,7 @@
 - **ASG3** Undirect store screenshots are black and lack the red and app banner seen in the reels · source: owner 2026-11-10 · plan: Compare live screenshots with film frames, rebuild from the film's look · done when: Owner approves new screenshot pictures · verify: Side-by-side of live and new · claim: aso-session 2026-11-10T00:28:15Z
 - **ASG4** Cutling keyboard image must be in iMessage, with no onboarding UI behind it · source: owner 2026-11-10 · plan: Use or capture the keyboard open in Messages, rebuild the Cutling banner draft · done when: Draft shows the keyboard in a Messages thread · verify: Look at the rendered draft · claim: aso-session 2026-11-10T00:31:09Z
 - **ASG5** Undirect screenshots must not lead with scam pages that look like the thing being advertised · source: owner 2026-11-10 · plan: Replace the YOU WON and CLAIM NOW frames with Undirect working · done when: No frame shows a scam page · verify: Look at the rendered set · claim: aso-session 2026-11-10T00:31:51Z
+- **ASG6** One press frame must show the power button being pressed · source: owner 2026-11-10 · plan: Use the real popup with a press ring on the power button · done when: The button and the press are obvious in the frame · verify: Look at the rendered frame · claim: aso-session 2026-11-10T00:33:47Z
 
 ## Review
 
