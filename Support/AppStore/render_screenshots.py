@@ -26,11 +26,11 @@ CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacO
 FRAMES = {1: "c1a", 2: "c2", 3: "c3", 4: "c4", 5: "c5"}
 # kind -> (profile, css w, css h, scale, panel number -> headline key)
 KINDS = {
-    "iphone": ("iphone-6.9-alt", 440, 956, 3, FRAMES),
+    "iphone": ("iphone-6.9-alt", 440, 956, 3, {1: "c1a", 2: "c2", 3: "c3", 4: "c1b", 5: "c5"}),
     "ipad": ("ipad-13", 1032, 1376, 2, FRAMES),
     "mac": ("mac-2880", 1440, 900, 2, FRAMES),
 }
-SUBS = {1: "c1b"}  # frame -> key of the smaller line under the headline
+SUBS = {"iphone": {}, "ipad": {1: "c1b"}, "mac": {1: "c1b"}}  # kind -> frame -> key of the smaller line under the headline
 
 # code -> (font family, weight, letter-spacing override, line-height, rtl). None = keep the theme.
 LATIN = None
@@ -195,7 +195,7 @@ def main():
             # fresh profile.css per kind
             for n, key in panels.items():
                 text = rebreaks.get(code, {}).get(kind, {}).get(key, heads[code][key])
-                sub = SUBS.get(n)
+                sub = SUBS[kind].get(n)
                 sub = rebreaks.get(code, {}).get(kind, {}).get(sub, heads[code][sub]) if sub else None
                 jobs.append((kind, code, n, key, text, sub))
     for kind in a.kinds.split(","):
