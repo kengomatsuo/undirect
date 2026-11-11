@@ -43,7 +43,11 @@ for loc in sorted(os.listdir(root)):
     i = have.get(ref) or first_id(asc("asset-library", "images", "upload", "--library-id", app, "--file", f, "--reference-name", ref), "appAssetLibraryImages")
     print(loc, i, flush=True); ids.append(i)
 
-sub = first_id(asc("review", "submissions-create", "--app", app, "--platform", "IOS"), "reviewSubmissions")
+# Apple allows five open submissions per app and an unsubmitted draft cannot be cancelled,
+# so an existing iOS draft is reused before a new one is created.
+drafts = [x["id"] for x in asc("review", "submissions-list", "--app", app, "--limit", "20")["data"]
+          if x["attributes"]["platform"] == "IOS" and x["attributes"]["state"] == "READY_FOR_REVIEW"]
+sub = drafts[0] if drafts else first_id(asc("review", "submissions-create", "--app", app, "--platform", "IOS"), "reviewSubmissions")
 for i in ids:
     asc("review", "items", "add", "--submission", sub, "--item-type", "appAssetLibraryImages", "--item-id", i)
 asc("review", "submissions-submit", "--id", sub, "--confirm")
