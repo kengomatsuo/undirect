@@ -15,3 +15,10 @@ paths:
   snapshot**, because Safari runs one extension copy across private and
   ordinary windows. Check `tab.incognito` before writing a site name anywhere
   the app reads (2026-10-01). Same doc.
+- **The Mac app lists and edits the rules; the iOS app shows the same list
+  read-only**, because Apple gives no way for a containing iOS app to message
+  its extension. They travel through an app group: the extension pushes a
+  snapshot file, the app reads it, and edits come back through
+  `SFSafariApplication.dispatchMessage`. macOS uses the team-prefixed group id
+  and needs no registration; iOS needs the registered `group.` form and a
+  profile. Full account: [docs/rules-and-record.md](../../docs/rules-and-record.md).
