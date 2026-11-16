@@ -24,7 +24,7 @@ shots = importlib.util.module_from_spec(spec); spec.loader.exec_module(shots)
 APPS = {
     "undirect": dict(card="ucard.png", bg="linear-gradient(120deg,#ff4a3d 0%,#e3192b 55%,#a80f24 100%)",
                      shadow="0 40px 160px rgba(70,0,10,.55)", out=os.path.join(HERE, "../../.shots/creative")),
-    "cutling": dict(card="ccard.png", bg="#128a72", shadow="0 40px 140px rgba(0,0,0,.28)",
+    "cutling": dict(card="ccard-keyboard.png", bg="#128a72", shadow="0 40px 140px rgba(0,0,0,.28)",
                     out=os.path.join(CUTLING, "fastlane/creative")),
 }
 
