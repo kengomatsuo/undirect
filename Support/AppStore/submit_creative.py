@@ -41,6 +41,10 @@ for loc in sorted(os.listdir(root)):
     if not os.path.exists(f): continue
     ref = f"{prefix}-{loc}"
     i = have.get(ref) or first_id(asc("asset-library", "images", "upload", "--library-id", app, "--file", f, "--reference-name", ref), "appAssetLibraryImages")
+    if not i:  # the upload receipt does not always carry the image id; the library listing does
+        relisted = asc("asset-library", "images", "list", "--library-id", app, "--paginate")
+        i = {x["attributes"].get("referenceName"): x["id"] for x in relisted["data"]}.get(ref)
+    if not i: raise SystemExit(f"{loc}: uploaded but no image id found for {ref}")
     print(loc, i, flush=True); ids.append(i)
 
 # Apple allows five open submissions per app and an unsubmitted draft cannot be cancelled,
