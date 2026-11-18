@@ -2,9 +2,9 @@
 
 ## Backlog
 - **ASG21** Do every suggested action the directory and listing sites offer for Cutling and Undirect: badges on sites and GitHub, X posts, boosts, verification · source: owner · lead from undirect-b6: MacPip offers iPip (iPhone/iPad sister directory, same account, free) for both apps; untouched
-- **ASG19b** Mac App Index and Get Indie Apps listings carry pt and ct=macappindex / ct=getindieapps · source: ASG19
 
 ## Ready
+- **ASG19b** Mac App Index and Get Indie Apps listings carry pt and ct=macappindex / ct=getindieapps · source: ASG19 · plan: In Chrome (owner signed in): Mac App Index dashboard and Get Indie Apps dashboard, set each app's App Store URL to https://apps.apple.com/app/apple-store/id&lt;ID&gt;?pt=127609326&ct=&lt;site&gt;&mt=12 · done when: Both apps' public pages on both sites link to the App Store with pt=127609326 and their site's ct · verify: curl or Chrome read of each public listing's App Store links
 
 ## Doing
 - **ASG1** List Undirect and Cutling on the ten free Mac app directories from the ekimakes reel · source: owner 2026-11-10 · plan: Read each site's submit rules, prepare listing text, submit after the owner signs in · done when: Each accepting site shows the app or a pending review · verify: Open each listing · claim: aso-session 2026-11-10T00:24:52Z · Owner: put the YouTube videos in the listings · Owner: take the free extras and put the directory badges on the sites through GitHub · Owner: every directory link carries its own App Store campaign (ct=&lt;site&gt;) · Owner: App Store links over landing pages where the site allows; never skip the YouTube link
