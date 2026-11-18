@@ -88,3 +88,13 @@ Every row above marked Not done, read back on each site after the change.
 | Product Hunt, Cutling forum thread | **Posted** on the owner's word ("up to you"): producthunt.com/p/cutling/which-snippet-would-you-save-first. First titled "What do you type over and over?", renamed because Textfold's forum already has a thread with that title and question. |
 | MacUpdate | Account showed no vendor apps, no association request and no submission mail (only sign-up and verify mails, Nov 10 and 11); Cutling had never been submitted. **Both submitted** ("Your app has been submitted! We'll review your application and get back to you by email within 10 days."). Undirect's first press returned "Api server error"; the second went through, so a duplicate is possible if the first was stored. |
 | Uptodown | Not started: Uptodown lists from an uploaded installer or a page to claim, and these App Store apps have neither. |
+
+## Follow-ups, 2026-11-18 (session asg-directories-3)
+
+| Row | Now |
+|---|---|
+| MacPip, Cutling 24 h boost | **Started.** The post had been found but the boost never began: the box said "One step left." After ticking "I follow @macpiphq" and pressing "Done, start my boost": "Thanks! It is up now. Cutling has 24 hours in Shared on X today." The last press is what starts a boost, on MacPip and iPip alike. |
+| iPip, both | @monholtco follows @ipiphq; "I follow @ipiphq" ticked on both status pages. "Check my site" on both: "We found your iPip badge." Launch day Sat Nov 21 opens 00:00 UTC (07:00 WIB); each boost post goes out that morning. |
+| MacPip, Undirect | Approved, launch Tue Dec 8, 7:00 WIB. Boost post goes out that morning; posting earlier would spend the 24 h before the launch. |
+| MacNative, Undirect badge | Still "In review"; "This unlocks once your app is approved." |
+| MacBase and Mac Browse share posts | Texts come from each dashboard. Mac Browse's own text says "is featured on Mac Browse", which is the paid tier's word, so the posts say "is now live on Mac Browse" instead. One post a day from @monholtco, from Nov 19. |
