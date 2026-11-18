@@ -75,7 +75,7 @@ Every row above marked Not done, read back on each site after the change.
 | MacPip, listing coach | **Undirect 4 → 12 of 15, Cutling 6 → 13 of 15.** One line with "utility", copy rewritten with "- " feature lines, 2 more categories (Undirect: Browsers, Security and Privacy; Cutling: Clipboard and Text, Menu Bar), alternatives (Undirect: Poper Blocker, wBlock, Wipr; Cutling: Paste, Maccy, PastePal, TextExpander), 4-question FAQ, 5 landscape screenshots each (Undirect's old black ones replaced by the red set), made in Indonesia, works offline, open source with the GitHub repo, all store languages, Apple silicon and Intel (both Release builds are arm64 + x86_64). Left: X handle (owner) and a deal (owner refused discounts). Undirect's badge tick waits on MacPip's daily check. |
 | MacPip, where made | Done on both: Indonesia. |
 | MacPip, Black Friday deal | Skipped: the owner refused discounts. Same for MacNative's discount field. |
-| MacPip, 24 h X boost (both), share links, follow @macpiphq | Drafted for the owner. His X account (@mctsuokengo) is protected, so MacPip cannot see a post from it until it is public. |
+| MacPip, 24 h X boost (both), share links, follow @macpiphq | Held, with the MacBase and Mac Browse X posts, until the owner makes a public X account (recommended @monholt, free on 2026-11-18, matches monholt.com); then it goes in the X-handle fields on MacPip, iPip and MacNative. His X account (@mctsuokengo) is protected, so MacPip cannot see a post from it until it is public. |
 | MacPip, invite 3 makers, maker picture and bio | Need the owner: whom to invite, and his own picture and words. |
 | MacPip, maker MCP | Not needed; the listings were edited in the browser. |
 | iPip | **Both listed, free launch Sat Nov 21** ("Cutling is in." / "Undirect is in."). Needed the iPip badge on each site (added: Cutling 447caa06, Undirect fbeea16, both deployed and found by iPip) and 3 votes for that day's makers. |
@@ -85,6 +85,6 @@ Every row above marked Not done, read back on each site after the change.
 | MacBase, dashboard | Read signed in: free offers are the share posts (drafted) and the banner; Featured is paid. |
 | Mac Browse, share card | Drafted for the owner. |
 | Mac App Index, upvote | Skipped: it would be the maker voting for his own app. |
-| Product Hunt, Cutling forum thread | Drafted for the owner, to post before the Nov 24 launch. |
+| Product Hunt, Cutling forum thread | **Posted** on the owner's word ("up to you"): producthunt.com/p/cutling/which-snippet-would-you-save-first. First titled "What do you type over and over?", renamed because Textfold's forum already has a thread with that title and question. |
 | MacUpdate | Account showed no vendor apps, no association request and no submission mail (only sign-up and verify mails, Nov 10 and 11); Cutling had never been submitted. **Both submitted** ("Your app has been submitted! We'll review your application and get back to you by email within 10 days."). Undirect's first press returned "Api server error"; the second went through, so a duplicate is possible if the first was stored. |
 | Uptodown | Not started: Uptodown lists from an uploaded installer or a page to claim, and these App Store apps have neither. |
