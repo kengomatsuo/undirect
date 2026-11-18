@@ -1,6 +1,10 @@
 # App Store growth
 
 ## Backlog
+- **ASG23** Vertical films on YouTube (and Instagram, TikTok) keep captions and key action out of each platform's overlay safe zone · source: owner 2026-11-18
+- **ASG24** Cutling's YouTube video has no audio copyright claim · source: owner 2026-11-18
+- **ASG25** Cutling and Undirect films are posted on Instagram and TikTok · source: owner 2026-11-18
+- **ASG26** @monholtco carries the directory X-handle fields and the MacPip boost posts · source: owner 2026-11-18
 
 ## Ready
 
