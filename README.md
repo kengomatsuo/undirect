@@ -1,5 +1,12 @@
 # Undirect
 
+<p>
+<a href="https://macbrowse.com"><img src="https://macbrowse.com/badge/listed-light.svg" alt="Listed on Mac Browse" height="48"></a>
+<a href="https://macappindex.com/apps/undirect?ref=badge"><img src="https://macappindex.com/apps/undirect/badge.svg?theme=light&height=56" alt="Listed on Mac App Index" height="48"></a>
+<a href="https://macpip.com/apps/undirect?ref=badge"><img src="https://macpip.com/badge/undirect.svg" alt="Listed on MacPip" height="48"></a>
+<a href="https://nativeshelf.com/undirect?ref=badge"><img src="https://nativeshelf.com/badge/dark.png?v=6" alt="Featured on NativeShelf" height="48"></a>
+</p>
+
 A Safari extension for macOS and iOS. It stops a page from taking your click to
 open a window or send you somewhere you did not ask for.
 
