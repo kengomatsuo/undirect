@@ -36,7 +36,7 @@ Both verified articles are about pop-ups. The pitches ask for a mention in a sec
 3. Links: site and App Store.
 4. Description: the press blurb below, shortened. Topics: Safari, Privacy, iPhone.
 5. Gallery: App Store screenshots and the promo film (the site hosts one at https://undirect.matsuokengo.com/media/film.mp4).
-6. First comment: say you are the developer, one person in Indonesia, and ask what sites still get through.
+6. First comment: say you are the developer, working alone, and ask what sites still get through.
 7. Pick the launch date yourself. Do not ask friends for upvotes in bulk.
 
 ## 3. Pitch emails
@@ -50,7 +50,7 @@ I read "Easily Block or Allow Pop-Ups in Safari on iPhone". I make Undirect, a S
 
 It is $2.99 and it is not a general ad blocker. It has no account, analytics or server.
 
-Here is a promo code if you want to try it: [CODE]. I am the developer, one person in Indonesia.
+Here is a promo code if you want to try it: [CODE]. I am the developer, working alone.
 
 https://undirect.matsuokengo.com
 
@@ -65,7 +65,7 @@ I read "How to allow pop-ups in Safari on iPhone, iPad, and Mac". Undirect handl
 
 $2.99, Safari extension for iPhone, iPad and Mac, not a general ad blocker. It does not track you.
 
-Promo code for a review: [CODE]. I am the developer, working alone in Indonesia.
+Promo code for a review: [CODE]. I am the developer, working alone.
 
 https://undirect.matsuokengo.com
 
@@ -120,7 +120,7 @@ Block Pop-ups only covers new windows. Many redirects come from a transparent la
 
 ## 6. Press blurb
 
-Undirect is a Safari extension for iPhone, iPad and Mac that stops pages taking your tap. It removes the transparent layers that turn the next press into an ad, puts back links a page rewrites between press and release, and opens a new window only when a site asks for one the way a sign-in does. It lists every address a page tried to send you to, and you can allow or block each one for that site or everywhere. It is not a general ad blocker. It costs $2.99, needs no account, and has no analytics or server; its list of destinations stays in your browser. Undirect is made by Kenneth Johannes Fang, one developer in Indonesia.
+Undirect is a Safari extension for iPhone, iPad and Mac that stops pages taking your tap. It removes the transparent layers that turn the next press into an ad, puts back links a page rewrites between press and release, and opens a new window only when a site asks for one the way a sign-in does. It lists every address a page tried to send you to, and you can allow or block each one for that site or everywhere. It is not a general ad blocker. It costs $2.99, needs no account, and has no analytics or server; its list of destinations stays in your browser. Undirect is made by Kenneth Johannes Fang, one developer.
 
 ## 7. Fact sheet
 
@@ -133,5 +133,5 @@ Undirect is a Safari extension for iPhone, iPad and Mac that stops pages taking 
 | Languages | 50 App Store localisations |
 | Privacy | There is no account, analytics or server. The destination list lives in your browser. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself. |
 | Setup | Switch it on in Safari, then press its toolbar button on each site you want guarded |
-| Developer | Kenneth Johannes Fang, one person, Indonesia |
+| Developer | Kenneth Johannes Fang, one person |
 | Links | https://undirect.matsuokengo.com and https://apps.apple.com/app/id6810513194 |
