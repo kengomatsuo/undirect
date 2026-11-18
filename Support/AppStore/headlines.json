@@ -2,6 +2,7 @@
  "en": {
   "c1a": "Popup blocker for Safari",
   "c1b": "Your tap lands where you aim",
+  "h1": "Block pop-ups\nthat hijack\nyour taps",
   "c2": "One press guards a site",
   "c3": "Every blocked address, listed",
   "c4": "Works beside your ad blocker",
@@ -10,6 +11,7 @@
  "ar-SA": {
   "c1a": "حجب النوافذ في Safari",
   "c1b": "نقرتك تصل حيث قصدت",
+  "h1": "أوقف النوافذ\nالمنبثقة التي\nتخطف نقراتك",
   "c2": "ضغطة واحدة تحمي الموقع",
   "c3": "كل عنوان محجوب في قائمة",
   "c4": "يعمل مع مانع الإعلانات لديك",
@@ -18,6 +20,7 @@
  "bn-BD": {
   "c1a": "Safari পপআপ ব্লকার",
   "c1b": "ক্লিক যেখানে চান সেখানেই যাক",
+  "h1": "আপনার ট্যাপ\nছিনিয়ে নেওয়া\nপপআপ আটকান",
   "c2": "এক চাপে এই সাইটে চালু",
   "c3": "আটকানো ঠিকানা সব তালিকায়",
   "c4": "আপনার অ্যাড ব্লকারের পাশে",
@@ -26,6 +29,7 @@
  "ca": {
   "c1a": "Bloqueig de pop-ups",
   "c1b": "El teu toc va on volies",
+  "h1": "Bloqueja els pop-ups\nque segresten\nels teus tocs",
   "c2": "Un toc protegeix el lloc",
   "c3": "Cada adreça bloquejada",
   "c4": "Va amb el teu bloquejador",
@@ -34,6 +38,7 @@
  "cs": {
   "c1a": "Popup blocker pro Safari",
   "c1b": "Klepnutí skončí, kam chcete",
+  "h1": "Zastavte popupy,\nkteré kradou\nvaše klepnutí",
   "c2": "Zapnuto jedním klepnutím",
   "c3": "Všechny zablokované adresy",
   "c4": "Funguje s blokátorem reklam",
@@ -42,6 +47,7 @@
  "da": {
   "c1a": "Popup-blokering i Safari",
   "c1b": "Dit klik lander, hvor du mente",
+  "h1": "Stop pop-ups,\nder kaprer\ndine tryk",
   "c2": "Ét tryk slår siden til",
   "c3": "Se hver blokeret adresse",
   "c4": "Virker med din adblocker",
@@ -50,6 +56,7 @@
  "de-DE": {
   "c1a": "Popup-Blocker für Safari",
   "c1b": "Ihr Klick landet, wo er soll",
+  "h1": "Stoppe Pop-ups,\ndie dein\nTippen kapern",
   "c2": "Ein Druck schützt die Seite",
   "c3": "Alle blockierten Adressen",
   "c4": "Neben Ihrem Werbeblocker",
@@ -58,6 +65,7 @@
  "el": {
   "c1a": "Pop up blocker Safari",
   "c1b": "Το κλικ πάει όπου ήθελες",
+  "h1": "Μπλόκαρε τα\npop-up που κλέβουν\nτα πατήματά σου",
   "c2": "Ένα πάτημα προστατεύει",
   "c3": "Κάθε αποκλεισμένη διεύθυνση",
   "c4": "Δουλεύει με το adblocker σου",
@@ -66,6 +74,7 @@
  "es-ES": {
   "c1a": "Pop-ups fuera de Safari",
   "c1b": "Tu clic llega adonde querías",
+  "h1": "Bloquea los pop-ups\nque secuestran\ntus toques",
   "c2": "Un toque protege esta web",
   "c3": "Cada dirección bloqueada",
   "c4": "Convive con tu bloqueador",
@@ -74,6 +83,7 @@
  "es-MX": {
   "c1a": "Pop-ups fuera de Safari",
   "c1b": "Tu clic va adonde querías",
+  "h1": "Bloquea los\npop-ups que se\nroban tus toques",
   "c2": "Un toque protege este sitio",
   "c3": "Cada dirección bloqueada",
   "c4": "Funciona con tu bloqueador",
@@ -82,6 +92,7 @@
  "fi": {
   "c1a": "Popup-esto Safarille",
   "c1b": "Napsautus osuu minne tähtäsit",
+  "h1": "Pysäytä pop-upit,\njotka kaappaavat\nnapautuksesi",
   "c2": "Yksi painallus suojaa sivun",
   "c3": "Estetyt osoitteet listassa",
   "c4": "Toimii mainosestosi kanssa",
@@ -90,6 +101,7 @@
  "fr-CA": {
   "c1a": "Bloqueur pop-up Safari",
   "c1b": "Votre clic va où vous voulez",
+  "h1": "Bloquez\nles pop-up qui\nvolent vos clics",
   "c2": "Un appui protège le site",
   "c3": "Chaque adresse bloquée",
   "c4": "Avec votre bloqueur de pub",
@@ -98,6 +110,7 @@
  "fr-FR": {
   "c1a": "Bloqueur pop-up Safari",
   "c1b": "Votre clic arrive où il faut",
+  "h1": "Bloquez les pop-up\nqui détournent\nvos clics",
   "c2": "Un appui protège le site",
   "c3": "Chaque adresse bloquée",
   "c4": "S'ajoute à votre anti-pub",
@@ -106,6 +119,7 @@
  "gu-IN": {
   "c1a": "Safari માટે પૉપઅપ બ્લૉકર",
   "c1b": "ક્લિક જ્યાં ધાર્યું ત્યાં જ જાય",
+  "h1": "તમારા ટૅપ હાઇજેક\nકરતા પૉપઅપ\nબ્લૉક કરો",
   "c2": "એક દબાણથી આ સાઇટ સુરક્ષિત",
   "c3": "દરેક બ્લૉક સરનામું યાદીમાં",
   "c4": "તમારા એડ બ્લૉકર સાથે ચાલે",
@@ -114,6 +128,7 @@
  "he": {
   "c1a": "חוסם חלונות ל-Safari",
   "c1b": "הלחיצה מגיעה למקום שרציתם",
+  "h1": "חסמו פופאפים\nשחוטפים לכם\nאת הנגיעות",
   "c2": "לחיצה אחת מגנה על האתר",
   "c3": "כל כתובת שנחסמה ברשימה",
   "c4": "פועל לצד חוסם הפרסומות",
@@ -122,6 +137,7 @@
  "hi": {
   "c1a": "Safari पॉपअप ब्लॉकर",
   "c1b": "क्लिक वहीं जाए जहाँ आपने चाहा",
+  "h1": "आपके टैप\nहड़पने वाले\nपॉपअप रोकें",
   "c2": "एक दबाव से साइट सुरक्षित",
   "c3": "हर ब्लॉक पता सूची में",
   "c4": "आपके ऐड ब्लॉकर के साथ",
@@ -130,6 +146,7 @@
  "hr": {
   "c1a": "Popup blocker za Safari",
   "c1b": "Klik završi gdje ste ciljali",
+  "h1": "Zaustavi\npop-upe koji ti\notimaju dodire",
   "c2": "Jedan dodir štiti stranicu",
   "c3": "Sve blokirane adrese",
   "c4": "Radi uz vaš adblock",
@@ -138,6 +155,7 @@
  "hu": {
   "c1a": "Popup blokkoló Safarihoz",
   "c1b": "Oda visz, ahová kattintasz",
+  "h1": "Állítsd meg\na pop-upokat,\namik ellopják érintésed",
   "c2": "Egy gomb, és védett az oldal",
   "c3": "Minden blokkolt cím listán",
   "c4": "Reklámblokkolóval is működik",
@@ -146,6 +164,7 @@
  "id": {
   "c1a": "Pemblokir Popup Safari",
   "c1b": "Klik sampai ke tujuan yang benar",
+  "h1": "Blokir popup\nyang membajak\nketukanmu",
   "c2": "Satu tombol untuk satu situs",
   "c3": "Daftar alamat yang diblokir",
   "c4": "Cocok dengan pemblokir iklan",
@@ -154,6 +173,7 @@
  "it": {
   "c1a": "Blocca popup per Safari",
   "c1b": "Ogni tocco arriva dove vuoi",
+  "h1": "Blocca i popup\nche dirottano\ni tuoi tocchi",
   "c2": "Un tocco protegge il sito",
   "c3": "Tutti gli indirizzi bloccati",
   "c4": "Funziona con il tuo adblock",
@@ -162,6 +182,7 @@
  "ja": {
   "c1a": "ポップアップブロック",
   "c1b": "Safariで、クリックは思った先へ",
+  "h1": "タップを乗っ取る\nポップアップを\nブロック",
   "c2": "ボタン一つでサイトを保護",
   "c3": "ブロックした先を一覧表示",
   "c4": "広告ブロッカーと併用可",
@@ -170,6 +191,7 @@
  "kn-IN": {
   "c1a": "Safari ಪಾಪ್‌ಅಪ್ ತಡೆ",
   "c1b": "ಕ್ಲಿಕ್ ಹೋಗಬೇಕಾದಲ್ಲೇ ಹೋಗುತ್ತದೆ",
+  "h1": "ಟ್ಯಾಪ್ ಕದಿಯುವ\nಪಾಪ್‌ಅಪ್‌ಗಳನ್ನು\nತಡೆಯಿರಿ",
   "c2": "ಒಂದೇ ಒತ್ತಿಗೆ ಸೈಟ್ ಸುರಕ್ಷಿತ",
   "c3": "ತಡೆದ ಪ್ರತಿ ವಿಳಾಸ ಪಟ್ಟಿಯಲ್ಲಿ",
   "c4": "ಜಾಹೀರಾತು ಬ್ಲಾಕರ್ ಜೊತೆಗೂ",
@@ -178,6 +200,7 @@
  "ko": {
   "c1a": "Safari 팝업 차단",
   "c1b": "클릭은 내가 누른 곳으로",
+  "h1": "탭을 가로채는\n팝업을\n차단하세요",
   "c2": "버튼 한 번에 사이트 보호",
   "c3": "차단한 주소를 모두 목록으로",
   "c4": "광고 차단기와 함께 사용",
@@ -186,6 +209,7 @@
  "ml-IN": {
   "c1a": "Safari പോപ്പ്അപ്പ് തടയൽ",
   "c1b": "ക്ലിക്ക് ഉദ്ദേശിച്ചിടത്തേ എത്തൂ",
+  "h1": "ടാപ്പുകൾ കവരുന്ന\nപോപ്പ്അപ്പുകൾ\nതടയൂ",
   "c2": "ഒറ്റ അമർത്തലിൽ സൈറ്റ് സുരക്ഷ",
   "c3": "തടഞ്ഞ ഓരോ വിലാസവും പട്ടികയിൽ",
   "c4": "പരസ്യ ബ്ലോക്കറിനൊപ്പവും",
@@ -194,6 +218,7 @@
  "mr-IN": {
   "c1a": "Safari पॉपअप ब्लॉकर",
   "c1b": "क्लिक हवे तिथेच पोहोचतो",
+  "h1": "तुमचे टॅप\nहायजॅक करणारे\nपॉपअप रोखा",
   "c2": "एका दाबाने साइट सुरक्षित",
   "c3": "ब्लॉक केलेले पत्ते यादीत",
   "c4": "जाहिरात ब्लॉकरसोबतही चालतो",
@@ -202,6 +227,7 @@
  "ms": {
   "c1a": "Penyekat Popup Safari",
   "c1b": "Klik tiba di tempat yang dituju",
+  "h1": "Sekat popup\nyang merampas\nketukan anda",
   "c2": "Satu tekan, laman dilindungi",
   "c3": "Senarai semua alamat disekat",
   "c4": "Serasi dengan penyekat iklan",
@@ -210,6 +236,7 @@
  "nl-NL": {
   "c1a": "Pop-up blokkeren Safari",
   "c1b": "Je klik komt aan waar je wilde",
+  "h1": "Blokkeer\npop-ups die je\ntikken kapen",
   "c2": "Eén knop beschermt de site",
   "c3": "Alle geblokkeerde adressen",
   "c4": "Werkt naast je adblocker",
@@ -218,6 +245,7 @@
  "no": {
   "c1a": "Popup-blokker for Safari",
   "c1b": "Klikket havner der du mente",
+  "h1": "Stopp pop-ups\nsom kaprer\ntrykkene dine",
   "c2": "Ett trykk beskytter siden",
   "c3": "Alle blokkerte adresser",
   "c4": "Virker med annonseblokkeren",
@@ -226,6 +254,7 @@
  "or-IN": {
   "c1a": "Safari ପପଅପ ବ୍ଲକର",
   "c1b": "କ୍ଲିକ ଯେଉଁଠି ଚାହିଁଲେ ସେଠିକି",
+  "h1": "ଆପଣଙ୍କ ଟ୍ୟାପ୍\nଚୋରି କରୁଥିବା\nପପଅପ୍ ଅଟକାନ୍ତୁ",
   "c2": "ଏକ ଦବାରେ ସାଇଟ ସୁରକ୍ଷିତ",
   "c3": "ଅଟକିଥିବା ଠିକଣା ତାଲିକାରେ",
   "c4": "ବିଜ୍ଞାପନ ବ୍ଲକର ସହ ମଧ୍ୟ",
@@ -234,6 +263,7 @@
  "pa-IN": {
   "c1a": "Safari ਪੌਪਅੱਪ ਬਲੌਕਰ",
   "c1b": "ਕਲਿੱਕ ਉੱਥੇ ਹੀ ਜਾਵੇ ਜਿੱਥੇ ਚਾਹਿਆ",
+  "h1": "ਤੁਹਾਡੇ ਟੈਪ\nਹਥਿਆਉਣ ਵਾਲੇ\nਪੌਪਅੱਪ ਰੋਕੋ",
   "c2": "ਇੱਕ ਦਬਾਅ ਨਾਲ ਸਾਈਟ ਸੁਰੱਖਿਅਤ",
   "c3": "ਰੋਕੇ ਹਰ ਪਤੇ ਦੀ ਸੂਚੀ",
   "c4": "ਇਸ਼ਤਿਹਾਰ ਬਲੌਕਰ ਨਾਲ ਵੀ",
@@ -242,6 +272,7 @@
  "pl": {
   "c1a": "Blokada popup dla Safari",
   "c1b": "Kliknięcie trafia, gdzie miało",
+  "h1": "Zablokuj popupy,\nktóre przechwytują\nTwoje dotknięcia",
   "c2": "Jeden przycisk chroni stronę",
   "c3": "Zablokowane adresy na liście",
   "c4": "Działa obok blokera reklam",
@@ -250,6 +281,7 @@
  "pt-BR": {
   "c1a": "Bloquear popup no Safari",
   "c1b": "O clique vai aonde você quer",
+  "h1": "Bloqueie os pop-ups\nque sequestram\nseus toques",
   "c2": "Um toque protege o site",
   "c3": "Veja cada endereço bloqueado",
   "c4": "Funciona com seu adblock",
@@ -258,6 +290,7 @@
  "pt-PT": {
   "c1a": "Bloqueador de pop-ups",
   "c1b": "O clique vai para onde quis",
+  "h1": "Bloqueie os pop-ups\nque sequestram\nos seus toques",
   "c2": "Um toque, site protegido",
   "c3": "Veja cada endereço bloqueado",
   "c4": "Complementa o seu bloqueador",
@@ -266,6 +299,7 @@
  "ro": {
   "c1a": "Popup Blocker pe Safari",
   "c1b": "Clicul tău ajunge unde ai vrut",
+  "h1": "Blochează\npop-up-urile care\nîți fură atingerile",
   "c2": "O apăsare pornește protecția",
   "c3": "Vezi fiecare adresă blocată",
   "c4": "Merge alături de adblocker",
@@ -274,6 +308,7 @@
  "ru": {
   "c1a": "Блокировщик окон Safari",
   "c1b": "Клик ведёт туда, куда нужно",
+  "h1": "Остановите\nвсплывающие окна,\nкрадущие касания",
   "c2": "Одно нажатие включает защиту",
   "c3": "Все заблокированные адреса",
   "c4": "Дополняет ваш блокировщик",
@@ -282,6 +317,7 @@
  "sk": {
   "c1a": "Popup Blocker pre Safari",
   "c1b": "Ťuknutie skončí tam, kam chcete",
+  "h1": "Zastavte popupy,\nktoré kradnú\nvaše ťuknutia",
   "c2": "Jedno ťuknutie zapne ochranu",
   "c3": "Všetky blokované adresy",
   "c4": "Dopĺňa váš blokátor reklám",
@@ -290,6 +326,7 @@
  "sl-SI": {
   "c1a": "Popup Blocker za Safari",
   "c1b": "Klik pristane, kamor ste ciljali",
+  "h1": "Ustavi pojavna\nokna, ki kradejo\ntvoje dotike",
   "c2": "En dotik vklopi zaščito",
   "c3": "Vsi blokirani naslovi",
   "c4": "Dopolnjuje vaš blokator",
@@ -298,6 +335,7 @@
  "sv": {
   "c1a": "Pop up blockerare Safari",
   "c1b": "Klicket hamnar där du ville",
+  "h1": "Stoppa\npopup-fönster som\nkapar dina tryck",
   "c2": "Ett tryck slår på skyddet",
   "c3": "Varje blockerad adress syns",
   "c4": "Funkar med annonsblockerare",
@@ -306,6 +344,7 @@
  "ta-IN": {
   "c1a": "Safari பாப்அப் தடுப்பான்",
   "c1b": "கிளிக் நினைத்த இடத்துக்கே",
+  "h1": "தட்டலைக் கடத்தும்\nபாப்அப்களைத்\nதடுங்கள்",
   "c2": "ஒரு அழுத்தம், பாதுகாப்பு",
   "c3": "தடுத்த முகவரிகள் பட்டியலில்",
   "c4": "விளம்பரத் தடுப்பானுடனும்",
@@ -314,6 +353,7 @@
  "te-IN": {
   "c1a": "Safari పాప్అప్ బ్లాకర్",
   "c1b": "క్లిక్ మీరు అనుకున్న చోటికే",
+  "h1": "మీ ట్యాప్‌లను\nహైజాక్ చేసే\nపాప్అప్‌లను ఆపండి",
   "c2": "ఒక్క నొక్కుతో సైట్‌కు రక్షణ",
   "c3": "ఆపిన ప్రతి చిరునామా జాబితాలో",
   "c4": "యాడ్ బ్లాకర్‌తో కలిసి",
@@ -322,6 +362,7 @@
  "th": {
   "c1a": "บล็อกป๊อปอัปใน Safari",
   "c1b": "คลิกพาไปที่ที่ตั้งใจ",
+  "h1": "บล็อกป๊อปอัป\nที่แย่งการแตะ\nของคุณ",
   "c2": "กดปุ่มเดียว เปิดป้องกัน",
   "c3": "ที่อยู่ที่บล็อกอยู่ในรายการ",
   "c4": "ใช้ร่วมกับตัวบล็อกโฆษณาได้",
@@ -330,6 +371,7 @@
  "tr": {
   "c1a": "Safari Popup Blocker",
   "c1b": "Tıklamanız doğru yere gider",
+  "h1": "Dokunuşlarınızı\nçalan pop-up'ları\nengelleyin",
   "c2": "Tek dokunuşla site korunur",
   "c3": "Engellenen her adres listede",
   "c4": "Reklam engelleyiciyle uyumlu",
@@ -338,6 +380,7 @@
  "uk": {
   "c1a": "Блокувальник для Safari",
   "c1b": "Клік веде туди, куди треба",
+  "h1": "Блокуйте спливні\nвікна, що крадуть\nваші дотики",
   "c2": "Один дотик вмикає захист",
   "c3": "Усі заблоковані адреси",
   "c4": "Доповнює ваш блокувальник",
@@ -346,6 +389,7 @@
  "ur-PK": {
   "c1a": "Safari پاپ اپ بلاکر",
   "c1b": "کلک وہیں جائے جہاں آپ چاہیں",
+  "h1": "آپ کے ٹیپ\nہتھیانے والے پاپ\nاپس بلاک کریں",
   "c2": "ایک دبانے پر سائٹ محفوظ",
   "c3": "بلاک ہوا ہر پتہ فہرست میں",
   "c4": "ایڈ بلاکر کے ساتھ چلتا ہے",
@@ -354,6 +398,7 @@
  "vi": {
   "c1a": "Chặn popup cho Safari",
   "c1b": "Cú nhấp đến đúng nơi bạn muốn",
+  "h1": "Chặn popup\ncướp mất lần\nchạm của bạn",
   "c2": "Một lần nhấn bật bảo vệ",
   "c3": "Liệt kê mọi địa chỉ bị chặn",
   "c4": "Đi cùng trình chặn quảng cáo",
@@ -362,6 +407,7 @@
  "zh-Hans": {
   "c1a": "Safari 弹窗拦截",
   "c1b": "点击去向由你决定",
+  "h1": "拦截劫持\n你点按的弹窗",
   "c2": "按一下，该网站即受保护",
   "c3": "拦截过的地址逐条列出",
   "c4": "与广告拦截器并用",
@@ -370,6 +416,7 @@
  "zh-Hant": {
   "c1a": "Safari 彈窗攔截",
   "c1b": "點按去向由你決定",
+  "h1": "攔截劫持\n你點按的彈窗",
   "c2": "按一下，該網站即受保護",
   "c3": "攔截過的位址逐條列出",
   "c4": "可與廣告攔截器並用",

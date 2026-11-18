@@ -12,7 +12,7 @@ Needs the Noto fonts: Support/AppStore/fetch_noto_fonts.sh (writes .shots/noto).
 English locales keep the English sets in Support/AppStore/{iphone,ipad,mac}.
 rebreaks.json holds the few headlines that did not fit at the panel floor and were
 re-broken at word boundaries (words untouched). Frames 1-5 carry c1a..c5 (c1b is the smaller second line under c1a), the same five on
-every device. The "en" entry in headlines.json renders into the English default sets
+every device, except that iPhone and iPad frame 1 carry the outcome headline h1 with no second line (ASG22). The "en" entry in headlines.json renders into the English default sets
 Support/AppStore/{iphone,ipad,mac}, which the four English locales use.
 """
 import argparse, html, json, os, re, shutil, subprocess, sys
@@ -26,11 +26,11 @@ CHROME = os.environ.get("CHROME", "/Applications/Google Chrome.app/Contents/MacO
 FRAMES = {1: "c1a", 2: "c2", 3: "c3", 4: "c4", 5: "c5"}
 # kind -> (profile, css w, css h, scale, panel number -> headline key)
 KINDS = {
-    "iphone": ("iphone-6.9-alt", 440, 956, 3, {1: "c1a", 2: "c2", 3: "c3", 4: "c1b", 5: "c5"}),
-    "ipad": ("ipad-13", 1032, 1376, 2, FRAMES),
+    "iphone": ("iphone-6.9-alt", 440, 956, 3, {1: "h1", 2: "c2", 3: "c3", 4: "c1b", 5: "c5"}),
+    "ipad": ("ipad-13", 1032, 1376, 2, {**FRAMES, 1: "h1"}),
     "mac": ("mac-2880", 1440, 900, 2, FRAMES),
 }
-SUBS = {"iphone": {}, "ipad": {1: "c1b"}, "mac": {1: "c1b"}}  # kind -> frame -> key of the smaller line under the headline
+SUBS = {"iphone": {}, "ipad": {}, "mac": {1: "c1b"}}  # kind -> frame -> key of the smaller line under the headline
 
 # code -> (font family, weight, letter-spacing override, line-height, rtl). None = keep the theme.
 LATIN = None
@@ -122,6 +122,8 @@ def make_panel(src, code, text, kind, sub=None):
     s, nowrap = swap_text(s, ("headline", "headline"), text, code, rtl)
     if sub:
         s, _ = swap_text(s, ("sub", "sub"), sub, code, rtl)
+    else:  # a panel template may still carry a default second line (the iPad's frame 1): drop it
+        s = re.sub(r'\s*<div class="sub"[^>]*>.*?</div>', "", s, flags=re.S)
     css = ""
     if cfg:
         fam, w, ls, lh, _ = cfg
