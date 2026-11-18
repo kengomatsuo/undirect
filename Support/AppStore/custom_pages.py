@@ -115,13 +115,20 @@ def page_keywords(page, code, released, claimed):
     return keep, log
 
 
+def finished_shots(loc_id):
+    """Screenshots per display type whose upload Apple finished; a stuck one does not count."""
+    r = api.call("GET", f"/v1/appCustomProductPageLocalizations/{loc_id}/appScreenshotSets?include=appScreenshots&limit=50")
+    done = {x["id"] for x in r.get("included", [])
+            if (x["attributes"].get("assetDeliveryState") or {}).get("state") == "COMPLETE"}
+    return {st["attributes"]["screenshotDisplayType"]: sum(k["id"] in done for k in st["relationships"]["appScreenshots"].get("data", []))
+            for st in r["data"]}
+
+
 def work(job):
     page, code, loc_id, shots, kws = job
     out = []
     if shots:
-        have = {}
-        for st in api.call("GET", f"/v1/appCustomProductPageLocalizations/{loc_id}/appScreenshotSets?include=appScreenshots&limit=50")["data"]:
-            have[st["attributes"]["screenshotDisplayType"]] = len(st["relationships"]["appScreenshots"].get("data", []))
+        have = finished_shots(loc_id)
         for kind, dev in DEVICES:
             if have.get("APP_" + dev) == 5:
                 continue  # already uploaded; delete the set in App Store Connect to force a redo
@@ -207,11 +214,7 @@ def main():
             row = have.get(c)
             if not row:
                 print(f"  {c}: MISSING"); continue
-            sets = api.call("GET", f"/v1/appCustomProductPageLocalizations/{row['id']}/appScreenshotSets?include=appScreenshots&limit=50")
-            n = {}
-            for s in sets["data"]:
-                kids = s["relationships"]["appScreenshots"].get("data", [])
-                n[s["attributes"]["screenshotDisplayType"].replace("APP_", "")] = len(kids)
+            n = {k.replace("APP_", ""): v for k, v in finished_shots(row["id"]).items()}
             kws = [k["id"] for k in api.call("GET", f"/v1/appCustomProductPageLocalizations/{row['id']}/searchKeywords")["data"]]
             ok = row["attributes"].get("promotionalText") == CFG["promo"][page["key"]][c]
             print(f"  {c}: promo {'ok' if ok else 'DIFFERS'} ({len(row['attributes'].get('promotionalText') or '')}), shots {n}, keywords {kws}")
