@@ -32,7 +32,20 @@ WEB = HERE.parent
 REPO = WEB.parent
 BASE = "https://undirect.matsuokengo.com"
 APP_ID = "6810513194"
-APP_URL = f"https://apps.apple.com/app/id{APP_ID}"
+PROVIDER_TOKEN = "127609326"  # the developer account's pt=, the same on every campaign link
+
+
+def store_url(campaign):
+    """Apple's campaign link, so App Store Connect counts views and downloads per campaign (ct, 30 chars at most)."""
+    assert len(campaign) <= 30, campaign
+    return f"https://apps.apple.com/app/apple-store/id{APP_ID}?pt={PROVIDER_TOKEN}&ct={campaign}&mt=8"
+
+
+def page_campaign(page):
+    """One campaign per page of this site: web-home, web-compare, web-stop-safari-redirects."""
+    return "web-" + (page.strip("/") or "home")
+
+
 EULA_URL = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
 SOURCE_URL = "https://github.com/kengomatsuo/undirect"
 EMAIL = "kenneth@matsuokengo.com"
@@ -73,14 +86,14 @@ BADGES = json.loads((HERE / "badges.json").read_text(encoding="utf-8"))["map"]
 BADGE_HEIGHT = 48          # Apple asks for at least 40 px on screen
 
 
-def badge_html(loc, alt):
+def badge_html(loc, alt, page):
     """Apple's own black badge, unmodified, in the language of the page."""
     code = BADGES[loc.code]
     svg = (HERE / "badges" / f"{code}.svg").read_text(encoding="utf-8")
     vb = re.search(r'viewBox="[\d.\-]+[ ,]+[\d.\-]+[ ,]+([\d.]+)[ ,]+([\d.]+)"', svg)
     w, h = float(vb.group(1)), float(vb.group(2))
     width = round(w / h * BADGE_HEIGHT)
-    return (f'<a class="badge" href="{APP_URL}" rel="noopener">'
+    return (f'<a class="badge" href="{esc(store_url(page_campaign(page)))}" rel="noopener">'
             f'<img src="/img/badges/{code}.svg" width="{width}" height="{BADGE_HEIGHT}" alt="{esc(alt)}"></a>')
 
 
@@ -190,7 +203,7 @@ def head(loc, locales, t, page, title, description, ld, extra="", en_only=False)
 <meta name="color-scheme" content="light dark">
 <meta name="theme-color" content="{THEME['light']}" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="{THEME['dark']}" media="(prefers-color-scheme: dark)">
-<meta name="apple-itunes-app" content="app-id={APP_ID}">
+<meta name="apple-itunes-app" content="app-id={APP_ID}, affiliate-data=pt={PROVIDER_TOKEN}&amp;ct=web-banner">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Undirect">
 <meta property="og:title" content="{esc(title)}">
@@ -300,17 +313,18 @@ PRICE = live_price()
 
 
 def home_page(loc, locales, s, t):
+    ld_store = store_url("web-schema")
     title = f"{s['name']} | {s['subtitle']}"
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebSite", "@id": BASE + "/#site", "name": "Undirect", "url": BASE + "/", "inLanguage": loc.code},
         {"@type": "SoftwareApplication", "@id": BASE + "/#app", "name": s["name"],
          "applicationCategory": "UtilitiesApplication",
          "operatingSystem": "iOS, iPadOS, macOS", "description": s["promo"], "inLanguage": loc.code,
-         "url": loc.url(), "image": BASE + "/icon-512.png", "downloadUrl": APP_URL, "installUrl": APP_URL,
+         "url": loc.url(), "image": BASE + "/icon-512.png", "downloadUrl": ld_store, "installUrl": ld_store,
          "author": person(), **({"offers": {"@type": "Offer", "price": PRICE[0], "priceCurrency": PRICE[1]}} if PRICE[0] else {})},
     ]}
-    cta = badge_html(loc, t["cta_get"])
-    cta_text = f'<a class="text-link" href="{APP_URL}" rel="noopener">{esc(t["cta_get"])}</a>'
+    cta = badge_html(loc, t["cta_get"], "")
+    cta_text = f'<a class="text-link" href="{esc(store_url(page_campaign("")))}" rel="noopener">{esc(t["cta_get"])}</a>'
     feats = "\n".join(
         f'<li><svg viewBox="0 0 24 24" aria-hidden="true">{ICONS[icon]}</svg><h3>{esc(s[f"feat{i}_t"])}</h3><p>{esc(s[f"feat{i}_b"])}</p></li>'
         for i, (icon, _, _) in enumerate(FEATURES, 1))
@@ -422,7 +436,7 @@ def privacy_page(loc, locales, s, t):
 def english_page(slug, loc, locales, t):
     """One of en_pages: English only, hreflang "en" and x-default, breadcrumb in the JSON-LD."""
     price = f"${PRICE[0]}" if PRICE[0] and PRICE[1] == "USD" else None
-    pg = en_pages.BUILDERS[slug](price, badge_html(loc, t["cta_get"]))
+    pg = en_pages.BUILDERS[slug](price, badge_html(loc, t["cta_get"], slug))
     title = f"{pg['title']} | Undirect"
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebPage", "name": pg["title"], "url": loc.url(slug), "inLanguage": "en",
