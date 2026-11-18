@@ -1,3 +1,4 @@
+> 2026-11-18: videos (new song, safe layout, re-uploads, Instagram and TikTok; ASG23-25, ASG27) continue in session asg-videos-3; its state file ~/.claude/session-states/asg-videos-3.md.
 > 2026-11-18: directory follow-ups continue in session asg-directories-3; its state file ~/.claude/session-states/asg-directories-3.md lists the open items (iPip Nov 21, MacPip Undirect Dec 8, MacNative badge, MacUpdate review, the asg-videos session). Outcome table: directory-actions.md.
 
 # App Store growth handoff (2026-11-10)
