@@ -1,3 +1,5 @@
+> 2026-11-18: directory follow-ups continue in session asg-directories-3; its state file ~/.claude/session-states/asg-directories-3.md lists the open items (iPip Nov 21, MacPip Undirect Dec 8, MacNative badge, MacUpdate review, the asg-videos session). Outcome table: directory-actions.md.
+
 # App Store growth handoff (2026-11-10)
 
 Where things stand: Undirect is done on 6 of the 10 directories, its 1.0.4 build is uploading screenshots, nothing is submitted to Apple yet. First action: "Next actions" step 1.
