@@ -1,0 +1,179 @@
+<title>Cutling and Undirect Conversion</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; evidence first, then each change as a before/after pair of store screenshots. */
+:root {
+  --paper: #f5f6f8; --card: #ffffff; --ink: #17202b; --muted: #5b6676; --rule: #d9dee6;
+  --accent: #1f5fbf; --cut: #1e9a82; --ud: #e2342f; --free: #1e9a82; --paid: #8f9aab;
+  --band: rgba(30,154,130,.10); --chip: #eef2f7;
+  --display: "Bricolage Grotesque", "Avenir Next", system-ui, sans-serif;
+  --body: "IBM Plex Sans", -apple-system, "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #11161d; --card: #19202a; --ink: #e8edf3; --muted: #9aa6b5; --rule: #2c3644;
+  --accent: #6ea4ff; --cut: #3cc3a6; --ud: #ff6a63; --free: #3cc3a6; --paid: #6b7789;
+  --band: rgba(60,195,166,.13); --chip: #222b37; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #11161d; --card: #19202a; --ink: #e8edf3; --muted: #9aa6b5; --rule: #2c3644;
+  --accent: #6ea4ff; --cut: #3cc3a6; --ud: #ff6a63; --free: #3cc3a6; --paid: #6b7789;
+  --band: rgba(60,195,166,.13); --chip: #222b37; color-scheme: dark }
+body { background: var(--paper); color: var(--ink); font: 400 16px/1.6 var(--body); }
+.wrap { max-width: 860px; margin: 0 auto; padding-block: 40px 72px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 56px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 700; letter-spacing: -.01em; text-wrap: balance; margin: 0; }
+h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.08; }
+h2 { font-size: clamp(22px, 3.4vw, 28px); line-height: 1.2; }
+h3 { font-size: 18px; }
+p { margin: 0; max-width: 66ch; }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+header { display: grid; gap: 14px; }
+.lede { font-size: 18px; color: var(--ink); }
+section { display: grid; gap: 18px; }
+.tag { display: inline-block; font: 500 12px/1 var(--mono); padding: 5px 8px; border-radius: 4px; background: var(--chip); color: var(--muted); }
+.tag.cut { color: var(--cut); } .tag.ud { color: var(--ud); }
+.tag.decide { color: var(--accent); }
+.figure { background: var(--card); border: 1px solid var(--rule); border-radius: 10px; padding: 18px; display: grid; gap: 12px; min-width: 0; }
+.figure svg { width: 100%; height: auto; display: block; }
+.scroll { overflow-x: auto; }
+.grid { stroke: var(--rule); stroke-width: 1; }
+.tick { fill: var(--muted); font: 400 11px var(--mono); }
+.bar.free { fill: var(--free); } .bar.paid { fill: var(--paid); }
+.freeband { fill: var(--band); }
+.bandlabel { fill: var(--free); font: 500 11px var(--mono); }
+.vlabel { fill: var(--ink); font: 500 11px var(--mono); }
+.note { fill: var(--muted); font: 400 11px var(--body); }
+.cut { stroke: var(--card); stroke-width: 2.5; fill: none; }
+.caption { font-size: 13px; color: var(--muted); }
+table { border-collapse: collapse; width: 100%; font-variant-numeric: tabular-nums; font-size: 14px; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th { font: 500 12px var(--mono); color: var(--muted); letter-spacing: .04em; }
+td.num, th.num { text-align: right; }
+tr.hl td { font-weight: 600; }
+.benches { display: grid; gap: 18px; }
+.bench { display: grid; gap: 6px; }
+.benchname { font-weight: 600; font-size: 14px; }
+.track { position: relative; height: 14px; background: var(--chip); border-radius: 7px; }
+.iqr { position: absolute; top: 0; bottom: 0; background: var(--paid); opacity: .45; border-radius: 7px; }
+.med { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--ink); }
+.you { position: absolute; top: 1px; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: var(--accent); border: 2px solid var(--card); }
+.benchnums { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; font-size: 13px; color: var(--muted); }
+.youlabel { color: var(--accent); font-weight: 500; }
+.pair { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.shot { display: grid; gap: 8px; margin: 0; min-width: 0; }
+.shot img { width: 100%; max-width: 300px; border-radius: 14px; border: 1px solid var(--rule); display: block; }
+.shot figcaption { font-size: 13px; color: var(--muted); }
+.shot figcaption b { color: var(--ink); font-weight: 600; }
+.options { display: grid; gap: 10px; padding: 0; margin: 0; list-style: none; }
+.options li { background: var(--card); border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; display: grid; gap: 4px; }
+.options li b { font-weight: 600; }
+.options li span { color: var(--muted); font-size: 14px; }
+.status { display: grid; gap: 8px; padding: 0; margin: 0; list-style: none; font-size: 15px; }
+.status li { display: grid; grid-template-columns: 92px 1fr; gap: 12px; align-items: baseline; }
+.status .st { font: 500 11px/1.4 var(--mono); letter-spacing: .05em; text-transform: uppercase; }
+.st.done { color: var(--free); } .st.wait { color: var(--accent); } .st.owner { color: var(--ud); }
+code { font: 400 13px var(--mono); background: var(--chip); padding: 1px 5px; border-radius: 4px; }
+.sources { font-size: 13px; color: var(--muted); display: grid; gap: 6px; }
+.sources a { color: var(--accent); }
+@media (max-width: 520px) { .status li { grid-template-columns: 1fr; gap: 2px; } }
+</style>
+
+<div class="wrap">
+<header>
+  <span class="eyebrow">App Store conversion · Cutling and Undirect · 18 Nov 2026</span>
+  <h1>The price is what stops the download</h1>
+  <p class="lede">Undirect gave away 411 copies in 22 free days and has sold 9 in the 17 paid days since, with seven times the impressions. Apple's own peer numbers show the same gap for every Utilities app. Three page fixes follow, but none of them moves the number the way the price does. The price model is your call.</p>
+</header>
+
+<section>
+  <div><span class="tag decide">Your decision</span></div>
+  <h2>Undirect, free versus paid</h2>
+  <div class="figure">
+    <div class="scroll">{{CHART}}</div>
+    <p class="caption">First-time downloads per day, Oct 1 to Nov 17. Axis cut at 30; the two cut bars are Oct 10 and 11. Hover a bar for its page views and impressions.</p>
+  </div>
+  <div class="figure scroll">
+    <table>
+      <thead><tr><th>Period</th><th>Price</th><th class="num">Downloads</th><th class="num">Page views</th><th class="num">Views that downloaded</th><th class="num">Impressions</th></tr></thead>
+      <tbody>
+        <tr><td>Oct 1–9</td><td>$1.99</td><td class="num">9</td><td class="num">50</td><td class="num">18%</td><td class="num">1,621</td></tr>
+        <tr class="hl"><td>Oct 12–31 (after the X spike)</td><td>Free</td><td class="num">136</td><td class="num">224</td><td class="num">61%</td><td class="num">5,159</td></tr>
+        <tr><td>Nov 1–17</td><td>$1.99</td><td class="num">9</td><td class="num">543</td><td class="num">1.7%</td><td class="num">42,894</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>The free days are the ones where Undirect earned $0 while it was still being downloaded, every day from Oct 10 to Oct 31. The X post that brought 177 downloads on Oct 10 was a deals account announcing it as free for a limited time. The listing images did not change until Nov 10, so the pictures were the same in the free and the paid weeks.</p>
+
+  <div class="figure">
+    <h3>Apple's peer benchmark, Utilities, impression to download</h3>
+    <div class="benches">
+      {{BENCH_PAID}}
+      {{BENCH_FREE}}
+    </div>
+    <p class="caption">Cutling: paid peer group, week of Oct 19. Undirect: free peer group, the same week, when it was free. Read from App Store Connect's Benchmarks.</p>
+  </div>
+
+  <h3>The ways to change the price</h3>
+  <ul class="options">
+    <li><b>Free download, one-time unlock inside the app</b><span>What every big keyboard and blocker does. Needs a StoreKit purchase and a locked tier built into each app, then App Review. Keeps the revenue from the people who like it.</span></li>
+    <li><b>A free week now and then</b><span>Repeats what Oct 10 did: deals accounts post free apps and the downloads bring ratings. No build needed; both price changes go into the schedule at once, so it switches back by itself.</span></li>
+    <li><b>Lower price</b><span>Cutling $4.99 to $1.99 or $0.99. No build needed. Phraser, the cheapest snippet keyboard, unlocks for $0.99.</span></li>
+    <li><b>Free outright</b><span>No build needed. Ends the revenue, which so far is $19 for Undirect since launch and $18 for Cutling since Aug 20.</span></li>
+  </ul>
+</section>
+
+<section>
+  <div><span class="tag cut">Cutling · ships with 1.6.1</span></div>
+  <h2>Cutling's first screenshot still shows the setup screen</h2>
+  <p>The live version, 1.6.0, opens its gallery on the keyboard over the Keyboard Setup test screen. Version 1.6.1 already has the keyboard in a chat, as you asked. It goes live when you press Submit for Review on the draft in App Store Connect and Apple approves it.</p>
+  <div class="pair">
+    <figure class="shot"><img src="{{CUT_LIVE}}" alt="Cutling live first screenshot: keyboard over the Keyboard Setup test screen"><figcaption><b>Live now, 1.6.0.</b> Keyboard over the setup screen.</figcaption></figure>
+    <figure class="shot"><img src="{{CUT_NEXT}}" alt="Cutling 1.6.1 first screenshot: keyboard in a chat pasting a bank number"><figcaption><b>Waiting in 1.6.1.</b> Keyboard in a chat.</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div><span class="tag decide">Your yes</span></div>
+  <h2>A short outcome as the first headline</h2>
+  <p>The most-rated keyboards open with one big line of three to eight words about the result: "Send thousands of messages in seconds!", "TYPE 10X FASTER". Cutling's line names the category in small type. Undirect's type is already big, but it names the category, not what the user gets. These mock-ups change only the words and size; everything below the headline is the real screenshot.</p>
+  <div class="pair">
+    <figure class="shot"><img src="{{CUT_NEXT}}" alt="Cutling current headline"><figcaption><b>Cutling now.</b> "Clipboard keyboard for snippets"</figcaption></figure>
+    <figure class="shot"><img src="{{CUT_MOCK}}" alt="Cutling mock-up headline: Paste your bank number in one tap"><figcaption><b>Proposed.</b> "Paste your bank number in one tap", the same line as Cutling's Shorts.</figcaption></figure>
+  </div>
+  <div class="pair">
+    <figure class="shot"><img src="{{UD_LIVE}}" alt="Undirect current headline"><figcaption><b>Undirect now.</b> "Popup blocker for Safari"</figcaption></figure>
+    <figure class="shot"><img src="{{UD_MOCK}}" alt="Undirect mock-up headline: Block pop-ups that hijack your taps"><figcaption><b>Proposed.</b> "Block pop-ups that hijack your taps", keeping the search word.</figcaption></figure>
+  </div>
+  <p>Screenshots change only with a new version, so this rides on each app's next release, in every language.</p>
+</section>
+
+<section>
+  <div><span class="tag ud">Undirect · needs a build</span></div>
+  <h2>About one iPhone in five cannot install Undirect</h2>
+  <p>Undirect requires iOS 26.2. Apple counted 79% of all iPhones and 68% of all iPads on iOS 26 on June 7, 2026, so the rest see "Requires iOS 26.2" where the price button should be. Every comparable blocker in the market read runs on iOS 18.5 or older, most on iOS 15.</p>
+  <p>The floor was raised on Sep 22 for one thing: the setup button that opens Undirect's own page in Safari's settings, which only iOS 26.2 offers. I test-built the iOS app at iOS 18 today. The only failures are four calls in <code>App/ExtensionStatus.swift</code>, all part of that button. On older iOS the button would open the Settings app with the three steps written out instead. Not yet checked: the extension itself running in Safari 18, because no iOS 18 simulator is installed (about 8 GB).</p>
+</section>
+
+<section>
+  <h2>Where each part stands</h2>
+  <ul class="status">
+    <li><span class="st done">Done</span><span>Campaign links on every App Store link of both websites, all 11 YouTube videos, Product Hunt and MacPip. Live and read back today.</span></li>
+    <li><span class="st owner">Your press</span><span>Submit for Review on Cutling 1.6.1 brings the chat screenshot live.</span></li>
+    <li><span class="st owner">Your call</span><span>Price model for each app.</span></li>
+    <li><span class="st wait">Your yes</span><span>New first headlines; Undirect down to iOS 18.</span></li>
+    <li><span class="st wait">Other session</span><span>Subtitle, keywords and custom product pages are in the App Store Connect audit (card ASG20).</span></li>
+  </ul>
+</section>
+
+<section class="sources">
+  <span class="eyebrow">Sources</span>
+  <span>Downloads, proceeds, page views, impressions: App Store Connect Analytics, read with <code>asc web analytics metrics</code> on Nov 18.</span>
+  <span>Peer conversion rates: App Store Connect Benchmarks, week of Oct 19–25, read with <code>asc web analytics benchmarks</code>.</span>
+  <span>iOS share: <a href="https://developer.apple.com/support/app-store/" rel="noopener">developer.apple.com/support/app-store</a>, measured June 7, 2026.</span>
+  <span>Screenshots: the en-US iPhone images uploaded to App Store Connect for Cutling 1.6.0 and 1.6.1 and Undirect 1.0.4.</span>
+</section>
+</div>
