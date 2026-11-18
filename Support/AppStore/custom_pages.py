@@ -167,7 +167,9 @@ def main():
                 report.append(f"{page['name']}: missing"); continue
         else:
             # Apple wants the first localization in the app's released (primary) locale
-            first = next((c for c in released if c in promo), "en-GB" if "en-GB" in promo else codes[0])
+            # Apple refuses a first localization outside the app's primary locale (409 "missing a required relationship")
+            primary = api.call("GET", f"/v1/apps/{APP}")["data"]["attributes"]["primaryLocale"]
+            first = primary if primary in promo else next((c for c in released if c in promo), codes[0])
             p = ensure_page(page, first)
         v = editable_version(p["id"])
         have = locs(v)

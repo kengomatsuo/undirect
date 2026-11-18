@@ -39,6 +39,41 @@
      "click"
     ]
    }
+  },
+  {
+   "key": "ads",
+   "name": "Block pop-up ads",
+   "screenshotOrder": [
+    1,
+    4,
+    3,
+    2,
+    5
+   ],
+   "keywords": {
+    "*": [
+     "ads",
+     "block"
+    ]
+   }
+  },
+  {
+   "key": "extension",
+   "name": "Safari extension for iPhone and iPad",
+   "screenshotOrder": [
+    2,
+    1,
+    3,
+    4,
+    5
+   ],
+   "keywords": {
+    "*": [
+     "extension",
+     "iphone",
+     "ipad"
+    ]
+   }
   }
  ],
  "promo": {
@@ -145,6 +180,18 @@
    "sv": "Hamnar du fel vid klick? Undirect stoppar omdirigeringar, flikar du inte bett om och länkar som skrivs om vid klicket i Safari. Slå på per webbplats och se adresserna.",
    "zh-Hant": "一點按就跳到別處？Undirect 在 Safari 裡攔住重新導向、自行開啟的分頁，以及點按瞬間被改寫的連結。為單一網站開啟後，會列出網頁試圖前往的每個位址。",
    "es-MX": "Evita en Safari redirecciones y pestañas que no pediste, y ligas reescritas al dar clic. Actívalo por sitio y verás cada dirección a la que la página quiso llevarte."
+  },
+  "ads": {
+   "en-US": "Stops the ad pop-ups, pop-unders and surprise tabs a page opens when you tap it in Safari. Turn Undirect on for a site from the toolbar. It is not a general ad blocker.",
+   "en-GB": "Stops the ad pop-ups, pop-unders and surprise tabs a page opens when you tap it in Safari. Turn Undirect on for a site from the toolbar. It is not a general ad blocker.",
+   "en-AU": "Stops the ad pop-ups, pop-unders and surprise tabs a page opens when you tap it in Safari. Turn Undirect on for a site from the toolbar. It is not a general ad blocker.",
+   "en-CA": "Stops the ad pop-ups, pop-unders and surprise tabs a page opens when you tap it in Safari. Turn Undirect on for a site from the toolbar. It is not a general ad blocker."
+  },
+  "extension": {
+   "en-US": "A Safari extension for iPhone and iPad that stops pages taking your tap: invisible click layers, pop-unders and rewritten links. No account; nothing leaves your device.",
+   "en-GB": "A Safari extension for iPhone and iPad that stops pages taking your tap: invisible click layers, pop-unders and rewritten links. No account; nothing leaves your device.",
+   "en-AU": "A Safari extension for iPhone and iPad that stops pages taking your tap: invisible click layers, pop-unders and rewritten links. No account; nothing leaves your device.",
+   "en-CA": "A Safari extension for iPhone and iPad that stops pages taking your tap: invisible click layers, pop-unders and rewritten links. No account; nothing leaves your device."
   }
  }
 }

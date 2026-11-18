@@ -5,6 +5,7 @@
 <a href="https://macappindex.com/apps/undirect?ref=badge"><img src="https://macappindex.com/apps/undirect/badge.svg?theme=light&height=56" alt="Listed on Mac App Index" height="48"></a>
 <a href="https://macpip.com/apps/undirect?ref=badge"><img src="https://macpip.com/badge/undirect.svg" alt="Listed on MacPip" height="48"></a>
 <a href="https://nativeshelf.com/undirect?ref=badge"><img src="https://nativeshelf.com/badge/dark.png?v=6" alt="Featured on NativeShelf" height="48"></a>
+<a href="https://www.producthunt.com/products/undirect?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-undirect"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1310867&theme=light" alt="Undirect on Product Hunt" height="48"></a>
 </p>
 
 A Safari extension for macOS and iOS. It stops a page from taking your click to
