@@ -9,6 +9,8 @@ export LC_ALL=en_US.UTF-8
 FASTLANE="${FASTLANE:-/Users/hafang/.rbenv/shims/fastlane}"
 REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO_ROOT"
+# Every archive, export and DerivedData goes here, in the temp folder, never in the repo.
+BUILD_DIR="$("$REPO_ROOT/build-dir.sh")"
 
 # The App Store Connect API key lives outside this repo. Default is Cutling's
 # (same team, PM3K35YS39); override with UNDIRECT_ASC_KEY_FILE.
@@ -28,9 +30,10 @@ Commands:
                     iOS version (creates it when none is editable)
   metadata_mac      The same for macOS (fastlane/metadata_mac, platform osx)
   verify            Generate and check the metadata folders, upload nothing
-  build             Archive and export the iOS IPA (./build/ios/Undirect.ipa)
+  build             Archive and export the iOS IPA ($BUILD_DIR/ios/Undirect.ipa)
   binary            Upload the built IPA to App Store Connect / TestFlight; run
-                    'build' first; does not submit for review
+                    'build' first; does not submit for review; deletes the
+                    IPA and its archive once uploaded
   mas               Archive the Mac App Store pkg and upload it to App Store
                     Connect / TestFlight; does not submit for review
   upload            metadata + metadata_mac (text only)
@@ -112,11 +115,11 @@ mas() {
   $FASTLANE mac upload_mas
   # The archive registers its own Safari extension. A second copy can make
   # Safari swap extensions and wipe the owner's storage (2026-10-01).
-  find "$PWD/build" -name "Undirect.app" -type d -prune 2>/dev/null | while read -r app; do
+  find "$BUILD_DIR" -name "Undirect.app" -type d -prune 2>/dev/null | while read -r app; do
     pluginkit -r "$app/Contents/PlugIns/Undirect Extension.appex" 2>/dev/null
     /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u "$app"
   done
-  rm -rf build/mas
+  rm -rf "$BUILD_DIR/mas"
   pluginkit -mAvvv -D -i com.matsuokengo.undirect.Extension | grep "Path" || true
 }
 
@@ -127,7 +130,7 @@ case "${1:-help}" in
   metadata_mac)     not_in_review MAC_OS && gen_metadata && $FASTLANE mac upload_metadata_mac ;;
   upload)           not_in_review IOS && not_in_review MAC_OS && gen_metadata && $FASTLANE ios upload_metadata && $FASTLANE mac upload_metadata_mac ;;
   build)            xcodegen generate && $FASTLANE ios build ;;
-  binary)           $FASTLANE ios upload_binary ;;
+  binary)           $FASTLANE ios upload_binary && rm -rf "$BUILD_DIR/ios" ;;
   mas)              mas ;;
   release)
     # One command per line: set -e skips a failure inside an && chain.
@@ -137,9 +140,11 @@ case "${1:-help}" in
     gen_metadata
     $FASTLANE ios build
     $FASTLANE ios upload_binary
+    rm -rf "$BUILD_DIR/ios"
     mas
     $FASTLANE ios release
     $FASTLANE mac release_mac
+    rm -rf "$BUILD_DIR"
     git add project.yml
     git commit -m "Version $(grep -o 'MARKETING_VERSION: "[0-9.]*"' project.yml | grep -o '[0-9.]*') ($(grep -o 'CURRENT_PROJECT_VERSION: "[0-9]*"' project.yml | grep -o '[0-9]*')) is submitted on both platforms and releases on approval"
     git pull --no-rebase && git push ;;

@@ -1,19 +1,20 @@
 # Website
 
 `undirect.matsuokengo.com`, served by GitHub Pages from the `gh-pages` branch.
-`web/` is the source; `dist/` (gitignored) is the build.
+`web/` is the source; the build goes to `$(./build-dir.sh)/site`, a temp folder outside
+the repo that macOS empties of anything untouched for three days.
 
 ## Build and publish
 
-- `web/deploy.sh check` generates `dist/` and runs `web/_generator/validate.py`:
+- `web/deploy.sh check` generates the site and runs `web/_generator/validate.py`:
   internal links and assets resolve, hreflang is reciprocal, every page is in the
   sitemap, one h1 per page, canonical equals the page's own URL, JSON-LD parses.
-- `web/deploy.sh serve` serves `dist/` at `http://127.0.0.1:8790`. Add `?stay`
+- `web/deploy.sh serve` serves the built site at `http://127.0.0.1:8790`. Add `?stay`
   to a root URL to stop the language redirect.
-- `web/deploy.sh web` runs the check, then commits `dist/` as the whole tree of a
+- `web/deploy.sh web` runs the check, then commits the built site as the whole tree of a
   new commit on `origin/gh-pages` through a throwaway index and pushes it; nothing is
   checked out. `CNAME` is copied from `web/` on every build because anything not in
-  `dist/` disappears from gh-pages.
+  the built site disappears from gh-pages.
 
 ## Where the words come from
 

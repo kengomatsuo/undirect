@@ -1,18 +1,20 @@
 #!/usr/bin/env python3
-"""Check a built site: python3 web/_generator/validate.py [dist]
+"""Check a built site: python3 web/_generator/validate.py [site folder, default <build-dir.sh>/site]
 
 Internal links and assets resolve, hreflang is reciprocal and matches the sitemap,
 canonical points at the page itself, one h1 per page, titles unique within a page
 type, descriptions not blank, JSON-LD parses. Exits 1 on any failure."""
 import json
 import re
+import subprocess
 import sys
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urldefrag, urlparse
 
 BASE = "https://undirect.matsuokengo.com"
-dist = Path(sys.argv[1] if len(sys.argv) > 1 else Path(__file__).resolve().parents[2] / "dist")
+dist = Path(sys.argv[1] if len(sys.argv) > 1 else subprocess.check_output(
+    ["bash", str(Path(__file__).resolve().parents[2] / "build-dir.sh")], text=True).strip() + "/site")
 errors = []
 
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the Undirect website into dist/.
+"""Build the Undirect website into <build-dir.sh>/site, a temp folder outside the repo.
 
     python3 web/_generator/generate.py [--output-dir DIR] [--check]
 
@@ -20,6 +20,7 @@ import html
 import json
 import re
 import shutil
+import subprocess
 import sys
 import urllib.error
 import urllib.request
@@ -540,7 +541,7 @@ locales_by_code = {}
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--output-dir", default=str(REPO / "dist"))
+    ap.add_argument("--output-dir", default=subprocess.check_output(["bash", str(REPO / "build-dir.sh")], text=True).strip() + "/site")
     ap.add_argument("--check", action="store_true", help="validate strings only, write nothing")
     ap.add_argument("--indexnow", action="store_true", help="submit the built sitemap URLs to IndexNow and exit")
     args = ap.parse_args()
