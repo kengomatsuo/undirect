@@ -267,7 +267,7 @@ def nav(loc, locales, t, page, lang_page=None):
     return f"""<a class="skip" href="#main">{esc(t['skip'])}</a>
 <header>
 <nav class="site-nav">
-<a class="nav-brand" href="{loc.href()}"><img src="/img/icon-64.webp" alt="" width="32" height="32">Undirect</a>
+<a class="nav-brand" href="{loc.href()}"><img src="/img/icon-64.webp" alt="Undirect app icon" width="32" height="32">Undirect</a>
 <ul class="nav-links">
 {link('support/', t['nav_support'])}
 {link('privacy/', t['nav_privacy'])}
@@ -343,10 +343,18 @@ def home_page(loc, locales, s, t):
     title = f"{s['name']} | {s['subtitle']}"
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebSite", "@id": BASE + "/#site", "name": "Undirect", "url": BASE + "/", "inLanguage": loc.code},
-        {"@type": "SoftwareApplication", "@id": BASE + "/#app", "name": s["name"],
-         "applicationCategory": "UtilitiesApplication",
+        # MobileApplication, a named icon file and screenshots, so a search or AI image lookup
+        # ties the app to its own icon instead of another shield-shaped blocker's.
+        {"@type": "MobileApplication", "@id": BASE + "/#app", "name": s["name"],
+         "alternateName": "Undirect", "applicationCategory": "UtilitiesApplication",
+         "applicationSubCategory": "Safari extension",
          "operatingSystem": "iOS, iPadOS, macOS", "description": s["promo"], "inLanguage": loc.code,
-         "url": loc.url(), "image": BASE + "/icon-512.png", "downloadUrl": ld_store, "installUrl": ld_store,
+         "url": loc.url(),
+         "image": {"@type": "ImageObject", "url": BASE + "/undirect-app-icon.png", "width": 512, "height": 512,
+                   "caption": "Undirect app icon"},
+         "screenshot": [BASE + "/img/iphone-popup-540.webp", BASE + "/img/mac-app-800.webp"],
+         "sameAs": ["https://apps.apple.com/app/id6810513194", SOURCE_URL],
+         "downloadUrl": ld_store, "installUrl": ld_store,
          "author": person(), **({"offers": {"@type": "Offer", "price": PRICE[0], "priceCurrency": PRICE[1]}} if PRICE[0] else {})},
     ]}
     cta = badge_html(loc, t["cta_get"], "")
