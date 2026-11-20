@@ -440,21 +440,27 @@ def privacy_page(loc, locales, s, t):
 def english_page(slug, loc, locales, t):
     """One of en_pages: English only, hreflang "en" and x-default, breadcrumb in the JSON-LD."""
     price = f"${PRICE[0]}" if PRICE[0] and PRICE[1] == "USD" else None
-    pg = en_pages.BUILDERS[slug](price, badge_html(loc, t["cta_get"], slug))
+    meta = en_pages.PAGES[slug]
+    pg = meta["build"](price, badge_html(loc, t["cta_get"], slug))
     title = f"{pg['title']} | Undirect"
     ld = {"@context": "https://schema.org", "@graph": [
-        {"@type": "WebPage", "name": pg["title"], "url": loc.url(slug), "inLanguage": "en",
-         "isPartOf": {"@id": BASE + "/#site"}, "datePublished": "2026-11-07", "dateModified": "2026-11-07"},
+        {"@type": "WebPage", "name": pg["title"], "description": pg["description"], "url": loc.url(slug), "inLanguage": "en",
+         "isPartOf": {"@id": BASE + "/#site"}, "author": person(),
+         "datePublished": meta["published"], "dateModified": meta["modified"]},
         breadcrumb(loc, t, slug, en_pages.LABEL[slug]),
     ]}
-    wide = " page-wide" if slug == "compare/" else ""
+    wide = " page-wide" if pg.get("wide") else ""
+    changed = datetime.date.fromisoformat(meta["modified"])
     body = f"""<div class="page{wide}">
-<div class="page-head"><h1>{esc(pg['h1'])}</h1><p>{esc(pg['sub'])}</p></div>
+<div class="page-head"><h1>{esc(pg['h1'])}</h1><p>{esc(pg['sub'])}</p>
+<p class="byline">Updated <time datetime="{changed.isoformat()}">{changed.day} {changed:%B %Y}</time> by Kenneth Fang, who makes Undirect</p></div>
 <div class="prose">
 {pg['body']}
 </div>
 </div>"""
-    return document(loc, locales, t, slug, title, pg["description"], ld, body, en_only=True)
+    # style.css has no rule for a heading inside an article or for the byline; these pages are the only ones with either.
+    style = "<style>.prose h3{font-size:18px;line-height:1.3;margin:18px 0 6px}.page-head .byline{font-size:15px}</style>\n"
+    return document(loc, locales, t, slug, title, pg["description"], ld, body, extra_head=style, en_only=True)
 
 
 def submit_indexnow(out):
@@ -560,6 +566,9 @@ def write_ai_files(out, locales):
     store = load(REPO / "Support/i18n/store/en-US.json")
     fx = ai_facts.facts(BASE, store, PRICE, store_url("llms"), SOURCE_URL, EMAIL, len(locales),
                         datetime.date.today().isoformat())
+    # Every English article gets a markdown copy and an llms.txt line, including ones ai_facts.py does not name.
+    listed = {rel for _, _, rel in fx["pages"]}
+    fx["pages"] += [(p["label"], p["note"], slug) for slug, p in en_pages.PAGES.items() if slug not in listed]
     ai_files.write(out, BASE, fx, lambda rel: (out / rel / "index.html", f"{BASE}/{rel}"))
 
 
