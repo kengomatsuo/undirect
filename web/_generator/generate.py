@@ -18,6 +18,7 @@ import argparse
 import datetime
 import html
 import json
+import time
 import re
 import shutil
 import subprocess
@@ -55,7 +56,7 @@ EMAIL = "kenneth@matsuokengo.com"
 ROOT_CODE = "en-GB"          # served at /
 PAGES = ["", "support/", "privacy/"]
 # IndexNow keys are public by design: the file <key>.txt at the site root proves ownership.
-INDEXNOW_KEY = "ff1e63138a8d4c283c9f95621fac5e34"
+INDEXNOW_KEY = "7020d84fa34667c5e4724f4fee4cef45"  # replaced 2026-11-20: Bing kept answering 403 for the first key
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 THEME = {"light": "#f7f6f4", "dark": "#0b0b0d"}
 
@@ -393,7 +394,7 @@ def email_link(text):
 
 
 def support_page(loc, locales, s, t):
-    title = f"{t['nav_support']} | {s['name']}"
+    title = f"{t['nav_support']} - {s['subtitle']} | Undirect"
     qa = [(t[f"q{i}"], t[f"a{i}"]) for i in range(1, 6)]
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "FAQPage", "inLanguage": loc.code, "mainEntity": [
@@ -417,7 +418,7 @@ def support_page(loc, locales, s, t):
 
 
 def privacy_page(loc, locales, s, t):
-    title = f"{t['nav_privacy']} | {s['name']}"
+    title = f"{t['nav_privacy']} - {s['subtitle']} | Undirect"
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "WebPage", "name": title, "url": loc.url("privacy/"), "inLanguage": loc.code,
          "isPartOf": {"@id": BASE + "/#site"}, "dateModified": "2026-09-10"},
@@ -461,6 +462,20 @@ def submit_indexnow(out):
     urls = re.findall(r"<loc>([^<]+)</loc>", (out / "sitemap.xml").read_text(encoding="utf-8"))
     host = BASE.split("//", 1)[1]
     body = json.dumps({"host": host, "key": INDEXNOW_KEY, "keyLocation": f"{BASE}/{INDEXNOW_KEY}.txt", "urlList": urls}).encode()
+    # The ping runs straight after the push, before GitHub Pages serves the new build;
+    # a key Bing cannot fetch yet earns a 403 it remembers, so wait for the key file.
+    key_url = f"{BASE}/{INDEXNOW_KEY}.txt"
+    for _ in range(30):
+        try:
+            with urllib.request.urlopen(key_url, timeout=15) as r:
+                if r.read().decode().strip() == INDEXNOW_KEY:
+                    break
+        except Exception:
+            pass
+        time.sleep(10)
+    else:
+        print(f"WARNING: {key_url} not live after 5 minutes; IndexNow not pinged")
+        return
     req = urllib.request.Request(INDEXNOW_ENDPOINT, data=body, method="POST",
                                  headers={"Content-Type": "application/json; charset=utf-8"})
     try:
