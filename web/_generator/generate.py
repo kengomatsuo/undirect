@@ -550,7 +550,9 @@ def sitemap(locales):
 
 def site_js(locales):
     langs = {l.path or "root": l.code for l in locales}
-    return (HERE / "site.js.tpl").read_text(encoding="utf-8").replace("/*LANGS*/{}", json.dumps(langs, separators=(",", ":")))
+    routing = (HERE / "site.js.tpl").read_text(encoding="utf-8").replace("/*LANGS*/{}", json.dumps(langs, separators=(",", ":")))
+    # The source is read first, before routing can send the visitor to their language's page.
+    return (HERE / "store-source.js").read_text(encoding="utf-8") + "\n" + routing
 
 
 def write_ai_files(out, locales):
