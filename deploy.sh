@@ -6,7 +6,7 @@ export RUBYOPT="-EUTF-8"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-FASTLANE="${FASTLANE:-/Users/hafang/.rbenv/shims/fastlane}"
+FASTLANE="${FASTLANE:-$(command -v fastlane || echo /Users/hafang/.rbenv/shims/fastlane)}"
 REPO_ROOT="$(cd "$(dirname "$0")" && pwd)"
 cd "$REPO_ROOT"
 # Every archive, export and DerivedData goes here, in the temp folder, never in the repo.
