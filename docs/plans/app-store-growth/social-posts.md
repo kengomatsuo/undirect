@@ -72,6 +72,14 @@ Nothing here goes out until the owner says go to it by number. Each reply's thre
 
 Read in Chrome 2026-11-20 13:20 WIB: 16VC (504 replies, 33K views) and @anupamrjp (28 replies) threads open, no @monholtco reply in either; iPip status pages for both apps say launch Sat Nov 21, boost needs the @ipiphq tag and the ipip.fyi link kept (drafts 3 and 4 keep both); Product Hunt Cutling scheduled Nov 24 12:01 AM PST; AlternativeTo both apps live.
 
+### Undirect 1.0.5 post (from undirect-pains, ASG61 and ASG62)
+
+| # | Where | Text | Media |
+|---|---|---|---|
+| U105 | X, IG Reel, TikTok, only after 1.0.5 is live on the App Store | Safari sending you to a fake virus page while you scroll, no tap at all? That's the page, not your iPhone. Undirect 1.0.5 keeps you where you were, and Back goes back. undirect.matsuokengo.com | docs/screenshots/pains/mac-scroll-on.mp4, mac-back-off.mp4 then mac-back-on.mp4; ios-*.mp4 when ready |
+
+P16 (Dec 6) and P19 (Dec 9) also describe 1.0.5 behaviour and go out only once 1.0.5 is live. As of Nov 20 it is prepared in App Store Connect and not submitted.
+
 ### Pain posts P1-P30 (from pains-content, ASG73)
 
 The text, platform and file for each row are in [social/pains-calendar.md](social/pains-calendar.md). Each one posts at 20:07 WIB on its date, Nov 21 to Dec 20, and goes out only after the owner says go to its number. P1, P4 (Product Hunt part), P7, P10 and P18 are the KEPT rows: they are drafts 3-4, 7, 10-11, 12 and 14 here. Videos for P2, P3, P5 and P6 wait on the owner's yes to social/storyboard.md.
