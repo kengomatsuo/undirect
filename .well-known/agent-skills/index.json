@@ -1,0 +1,12 @@
+{
+ "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+ "skills": [
+  {
+   "name": "undirect",
+   "type": "skill-md",
+   "description": "Answers questions about Undirect, a paid Safari extension for iPhone, iPad and Mac that stops pages redirecting, opening pop-under tabs or catching a tap through an invisible layer. Use when someone asks how to stop Safari redirects, pop-ups or tabs that open by themselves, or how to set up, use or troubleshoot Undirect.",
+   "url": "/.well-known/agent-skills/undirect/SKILL.md",
+   "digest": "sha256:d56fffaf0fc3cdd1bd56dd5b1b986e43f75a11360619a9ea2114b9c390d00580"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "specVersion": "1.0",
+ "host": {
+  "displayName": "Undirect",
+  "identifier": "https://undirect.matsuokengo.com",
+  "documentationUrl": "https://undirect.matsuokengo.com/llms.txt"
+ },
+ "entries": [
+  {
+   "identifier": "urn:air:undirect.matsuokengo.com:skill:undirect",
+   "displayName": "Undirect agent skill",
+   "type": "application/agent-skills+md",
+   "url": "https://undirect.matsuokengo.com/.well-known/agent-skills/undirect/SKILL.md",
+   "description": "Answers questions about Undirect, a paid Safari extension for iPhone, iPad and Mac that stops pages redirecting, opening pop-under tabs or catching a tap through an invisible layer. Use when someone asks how to stop Safari redirects, pop-ups or tabs that open by themselves, or how to set up, use or troubleshoot Undirect.",
+   "representativeQueries": [
+    "how do I stop Safari redirecting me to other sites on iPhone",
+    "Safari extension that blocks pop-unders and new tabs opening by themselves",
+    "Block Pop-ups is on but Safari still opens ad pages",
+    "help me set up or fix Undirect in Safari"
+   ]
+  }
+ ]
+}
