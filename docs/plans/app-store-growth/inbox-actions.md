@@ -70,3 +70,16 @@ The other 174 storefronts follow by equalization, for example Cutling Â¥800 to Â
 | MacNative | Undirect | No slot | Listing rejected (card ASG37); the edit page has no deal section. |
 | iPip | Undirect | Waits on iPip | 50% off, Nov 27 to Nov 30, no code. "Saved. It waits for a quick look from us, usually within a day." (iPip reads the App Store price on save; the sale price starts Nov 27.) |
 | iPip | Cutling | Waits on iPip | 40% off, same dates, same message. |
+| MacBase | Cutling | **Done** | "40% off, $2.99 (was $4.99)", Nov 27 to Nov 30, link App Store ct=macbase-bf; read back on macbase.app/dashboard/deals/black-friday. |
+| MacBase | Undirect | **Done** | "50% off, $0.99 (was $1.99)", Nov 27 to Nov 30, same read-back. |
+| Mac Browse | both | No deal field | Edit page offers Pricing type and "Price in US dollars, optional" ($4.99 / $1.99) with no dates, so the price stays at full; no deal or discount field. |
+| PostYourStartup | both | No dated field | "Offer for PostYourStartup users" (headline + how to redeem) has no end date, so it would outlive the sale. |
+| LaunchIgniter | both | No deal field | Submit form: name, tagline, description, URL, logo, screenshots, categories, video, open source, vibe coded. |
+| TinyLaunch | both | No edit page yet | Dashboard shows only Visit and Cancel Launch while both wait for approval. |
+| Product Hunt | both | Waits for Nov 27 | Launch edit pages have "Add promo code" (offer, code, optional end, no start date) and "Add pricing". A promo added now would show before the price drops, so it goes on Nov 27 with end Nov 30 (asg-social posts that day; line added under "For asg-social"). |
+| AlternativeTo | both | No deal field | Both now live (alternativeto.net/software/cutling/about/, /undirect/about/); listing shows only a Pricing label and the form has no price or deal field. |
+| Indie App Catalog | both | Follows the App Store | Price ($4.99) comes from the Mac App Store record; the developer account (email and password, owner only) adds custom links only. |
+| Mac App Index | both | No self-edit | Publishing locks the listing; edits go by email (ASG19b). |
+| NativeShelf | both | Waits on owner's sign-in | Sign-in is an emailed code; nativeshelf.com/login left open in Chrome. |
+| MacUpdate | both | Not listed | Search finds neither app (macupdate.com/find/mac/cutling, /undirect). |
+| Uptodown | both | Not listed | cutling.en.uptodown.com/mac and undirect... return 404. |
