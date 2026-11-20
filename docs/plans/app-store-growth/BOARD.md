@@ -3,6 +3,7 @@
 ## Backlog
 - **ASG32** Cutling's iPhone App Store preview shows Safari's "localhost" host chip above the keyboard during the address beat; the capture should show a real-looking host or none · source: ASG30 asg-videos-5
 - **ASG37** MacNative rejected Undirect with no reason given (email 2026-11-19 22:31 UTC, listing shows 'This submission was rejected'); decide whether to reply asking why or resubmit with a line on what makes it native, per macnative.io/guidelines · source: ASG35 asg-social
+- **ASG38** Read App Store Connect trends for the campaigns' effect (owner 2026-11-20) · source: owner 2026-11-20 · read 2026-11-20 in ASC Analytics (data to Nov 18): Cutling page views 215 on Nov 18 vs ~4/day before, 1 download; Undirect 22 page views, 2 downloads; campaigns 'not enough data'; sales-report API 403 (key lacks Sales role); re-read after Nov 22
 
 ## Ready
 
