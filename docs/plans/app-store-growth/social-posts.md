@@ -16,6 +16,15 @@ Every post, repost and boost from @monholtco on X, Instagram and TikTok, newest 
 | 2026-11-20 17:48 | X | Reply to @anupamrjp "drop your project URL": both apps (draft 21) | https://x.com/monholtco/status/2123731680964096385 |
 | 2026-11-20 17:50 | X | Reply to @uzzy_dev1 "what are you building right now?": both apps (draft 19) | https://x.com/monholtco/status/2123732077921304631 |
 | 2026-11-20 17:57 | X | Mac Browse listing, both apps (L1) | https://x.com/monholtco/status/2123732834447929352 |
+| 2026-11-20 20:24 | X | MacBase listing, Cutling (L2) | https://x.com/monholtco/status/2123769482862821555 |
+| 2026-11-20 21:00 | X | Mac App Index (L3), scheduled in X | URL once live |
+| 2026-11-20 21:30 | X | NativeShelf (L4), scheduled in X | URL once live |
+| 2026-11-20 22:00 | X | Get Indie Apps (L5), scheduled in X | URL once live |
+| 2026-11-20 22:30 | X | Indie App Catalog (L6), scheduled in X | URL once live |
+| 2026-11-20 23:00 | X | MacNative Cutling (L7), scheduled in X | URL once live |
+| 2026-11-20 23:30 | X | AlternativeTo (L8), scheduled in X | URL once live |
+| 2026-11-21 00:00 | X | LaunchIgniter (L9), scheduled in X | URL once live |
+| 2026-11-21 00:30 | X | Product Hunt Undirect (L10), scheduled in X | URL once live |
 | 2026-11-20 19:10 | TikTok @monholt | Cutling vertical film, en (ASG54) | https://www.tiktok.com/@monholt/video/7710225334066613524 |
 | 2026-11-20 19:14 | TikTok @monholt | Cutling vertical film, id (ASG54) | https://www.tiktok.com/@monholt/video/7710226143017815302 |
 | 2026-11-20 19:19 | TikTok @monholt | Undirect vertical film, en (ASG54) | https://www.tiktok.com/@monholt/video/7710227289488821525 |
@@ -74,13 +83,13 @@ Threads read in Chrome 15:40-15:55 WIB. Skipped: @GreenlandMa1 and @georgerowan0
 | 20 SENT | X reply, @brianoliveri "Tech builders and business owners, let's connect. What are you working on?" (4h, 50 replies, 1.3K views; one plain line each, he answers each) | Two small quality-of-life apps for iPhone, iPad and Mac: Cutling, a keyboard for the text you keep retyping, and Undirect, which stops Safari tabs and redirects you never asked for. |
 | 21 SENT | X reply, @anupamrjp "drop your project URL. let the product speak" (3h, 17 replies; bare links; third post of his we'd answer today) | undirect.matsuokengo.com / Blocks the tabs a page opens behind your back and lists every address it tried. / cutling.matsuokengo.com / A keyboard for the text you keep retyping. |
 | L1 SENT | X, Mac Browse (both) | Mac Browse hand-picks its Mac apps, and both of ours are in: Cutling (⇧⌘V for the text you paste every day) and Undirect (no more Safari tabs you never clicked). / macbrowse.com/productivity/cutling |
-| L2 | X, MacBase Cutling (MacBase's own text; the link shows its banner) | Cutling is on MacBase 🎉 / Paste saved text and images from your Mac menu bar / https://macbase.app/apps/cutling |
-| L3 | X, Mac App Index (both) | Undirect has a page on Mac App Index now, next to Cutling. If Safari on your Mac keeps opening tabs on its own, that's the one to look at. / macappindex.com/apps/undirect |
-| L4 | X, NativeShelf (both) | NativeShelf keeps the best Mac and iPhone apps in one place, and Cutling and Undirect are both on the shelf. Thanks @picconedoro. / nativeshelf.com/cutling |
-| L5 | X, Get Indie Apps (both) | @getindieapps found both our apps on the App Store by itself and listed them: Cutling and Undirect. Nice surprise. / getindieapps.com/app/cutling-clipboard-keyboard |
-| L6 | X, Indie App Catalog (both) | Cutling is in the Indie App Catalog, and so is Undirect. Cutling is a keyboard for the text you type again and again, on iPhone, iPad and Mac. / indieappcatalog.com/app/5527 |
-| L7 | X, MacNative Cutling | Cutling is listed on @mac_native. On the Mac it sits in the menu bar and opens with ⇧⌘V. / macnative.io/apps/cutling |
-| L8 | X, AlternativeTo (both) | Cutling and Undirect both have pages on AlternativeTo now. A like there helps them show up next to the apps people already use. / alternativeto.net/software/cutling/about/ |
-| L9 | X, LaunchIgniter (both) | Undirect is up on LaunchIgniter: a Safari extension that stops pages opening tabs and redirects you didn't ask for. Cutling is there too. / launchigniter.com/product/undirect |
-| L10 | X, Product Hunt Undirect (launched Tue Nov 17) | Undirect has been on Product Hunt since Tuesday. If Safari has ever opened a tab you didn't tap, it's for you. / producthunt.com/products/undirect |
+| L2 SENT | X, MacBase Cutling (MacBase's own text; the link shows its banner) | Cutling is on MacBase 🎉 / Paste saved text and images from your Mac menu bar / https://macbase.app/apps/cutling |
+| L3 SENT | X, Mac App Index (both) | Undirect has a page on Mac App Index now, next to Cutling. If Safari on your Mac keeps opening tabs on its own, that's the one to look at. / macappindex.com/apps/undirect |
+| L4 SENT | X, NativeShelf (both) | NativeShelf keeps the best Mac and iPhone apps in one place, and Cutling and Undirect are both on the shelf. Thanks @picconedoro. / nativeshelf.com/cutling |
+| L5 SENT | X, Get Indie Apps (both) | Get Indie Apps (@getindieapps) found both our apps on the App Store by itself and listed them: Cutling and Undirect. Nice surprise. / getindieapps.com/app/cutling-clipboard-keyboard |
+| L6 SENT | X, Indie App Catalog (both) | Cutling is in the Indie App Catalog, and so is Undirect. Cutling is a keyboard for the text you type again and again, on iPhone, iPad and Mac. / indieappcatalog.com/app/5527 |
+| L7 SENT | X, MacNative Cutling | Cutling is listed on @mac_native. On the Mac it sits in the menu bar and opens with ⇧⌘V. / macnative.io/apps/cutling |
+| L8 SENT | X, AlternativeTo (both) | Cutling and Undirect both have pages on AlternativeTo now. A like there helps them show up next to the apps people already use. / alternativeto.net/software/cutling/about/ |
+| L9 SENT | X, LaunchIgniter (both) | Undirect is up on LaunchIgniter: a Safari extension that stops pages opening tabs and redirects you didn't ask for. Cutling is there too. / launchigniter.com/product/undirect |
+| L10 SENT | X, Product Hunt Undirect (launched Tue Nov 17) | Undirect has been on Product Hunt since Tuesday. If Safari has ever opened a tab you didn't tap, it's for you. / producthunt.com/products/undirect |
 Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip both Sat 07:13 (3, 4), Product Hunt Cutling Tue 15:07 (7), MacPip Undirect Dec 8 (14), TinyLaunch Dec 21 and 28.
