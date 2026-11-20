@@ -19,6 +19,8 @@
 A Safari extension for macOS and iOS. It stops a page from taking your click to
 open a window or send you somewhere you did not ask for.
 
+Get it on the [App Store](https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=github-readme&mt=8), one purchase for Mac, iPhone and iPad.
+
 ## What it stops
 
 Pop networks do not wait for you to click their ad. They lay a transparent screen
