@@ -2,6 +2,7 @@
 
 ## Backlog
 - **ASG32** Cutling's iPhone App Store preview shows Safari's "localhost" host chip above the keyboard during the address beat; the capture should show a real-looking host or none · source: ASG30 asg-videos-5
+- **ASG36** Cutling answers the MacPip 4-star review: snippet caps raised as far as the keyboard's memory allows, and every listing says history skips password managers; no build yet · source: owner 2026-11-20
 
 ## Ready
 - **ASG34** Black Friday sale on Cutling and Undirect, listed on MacPip and every directory with a deal slot · source: owner · plan: Undirect up to 50% off, Cutling 20% or 40% (tier from the owner); App Store price change waits for that tier; MacPip deal form prepared meanwhile, submitted once the App Store sale is set; other directories' deal fields (MacNative) after · done when: The App Store shows the sale price on both apps and MacPip's Black Friday page lists both deals with real dates · verify: App Store page price read in Chrome; macpip.com Black Friday page read back · 2026-11-20 asg-inbox: App Store sale set and read back via Support/AppStore/price_sale.py (97a78f1): USA Cutling 4.99/2.99/4.99, Undirect 1.99/0.99/1.99, Nov 27 to Dec 1 00:00 PT, 174 storefronts equalized. Left: MacPip #bfdeal forms and MacNative discount fields
