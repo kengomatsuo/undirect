@@ -13,7 +13,7 @@
 
 Tested in Chrome on local builds: `/compare/?utm_source=macappindex.com` gives `ct=macappindex`, carried to `/stop-safari-redirects/`; Cutling `/mac/?ref=macpip` gives `ct=macpip` with `mt=12&platform=mac` kept. 15 unit cases pass (params, t.co, Google kept as page token, co.uk).
 
-Live: waiting on the site-ai-files-2 deploys (they carry these commits); read back with curl when live.
+Live 2026-11-20 (curl): undirect.matsuokengo.com/site.js and cutling.matsuokengo.com/store-source.js, loaded on every page; matsuokengo.com carries ct=matsuokengo.
 
 ## Every place a link appears
 
