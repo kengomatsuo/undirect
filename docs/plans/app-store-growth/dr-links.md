@@ -27,3 +27,9 @@ Seven followed links already exist (MacPip, iPip, MacBase, NativeShelf, Indie Ap
 | Hashnode | article live: kengomatsuo.hashnode.dev/how-a-web-page-steals-your-tap-in-safari-and-how-my-extension-takes-it-back (canonical to the dev.to post) | not posted | no: new authors get rel="nofollow ugc" in posts and on the profile website (read on the live pages) | | Cutling copy skipped since it adds no followed link |
 | Launching Next | not submitted | not submitted | listings read as followed | | OWNER: the free form ends in a math check, which Claude does not answer; launchingnext.com/submit/ |
 | Uneed (DR 75) | free line, launches Jun 11 2027 (uneed.best/edit/waiting-line/72520); copy fixed 2026-11-20: tagline, Mac+iPhone+iPad description, Open Source on | cannot join: "The free line takes one product at a time, unless you are on Uneed Pro" | nofollow while waiting; Uneed: "needs an upvote score of 10 on launch day to stay published, and 20 to keep a do-follow backlink" | | Cutling joins after Undirect launches |
+| Softpedia | not listed | not listed | no: listings link no developer site at all (Maccy's page has only nofollow ads and its own download redirect) | | skipped |
+| SourceForge, Fazier, Microlaunch, StartupBase | not submitted | not submitted | free tiers give nofollow or no link; the followed link is the paid tier (each site's own pricing page, 2026-11-20) | | skipped: money |
+
+## Where DR goes from here
+
+New followed links tonight: Twelve Tools (both apps) and dev.to (two articles). Ahrefs counts a link once it recrawls the page, usually within days to a few weeks, and DR is recalculated on its own schedule. The next step that moves DR needs DR 10 first: Turbo0 (draft saved) and 1000saas, 1000tools, devhub open at DR 10; saashunt and boostdomainrating at DR 20. Re-read DR on ahrefs.com/website-authority-checker and retry those as each floor passes.
