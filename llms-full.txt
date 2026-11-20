@@ -2,7 +2,7 @@
 
 > Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.
 
-Undirect (on the App Store as "Undirect - Popup Blocker") is a Safari extension for iPhone, iPad and Mac, made by Kenneth Fang. It stops a web page from taking your tap or click and sending you somewhere you did not choose. It is not an ad blocker.
+Undirect (on the App Store as "Undirect - Tab & Popup Blocker") is a Safari extension for iPhone, iPad and Mac, made by Kenneth Fang. It stops a web page from taking your tap or click and sending you somewhere you did not choose. It is not an ad blocker.
 
 Key facts:
 
@@ -45,7 +45,7 @@ Something else fits better when the problem is ads, banners, cookie notices or t
 
 Source: https://undirect.matsuokengo.com/
 
-Stop Safari redirects & tabs
+Stop Safari redirects, ad tabs
 
 ## No more pesky redirects
 

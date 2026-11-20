@@ -1,4 +1,4 @@
-Stop Safari redirects & tabs
+Stop Safari redirects, ad tabs
 
 # No more pesky redirects
 
