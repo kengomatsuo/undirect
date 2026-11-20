@@ -30,6 +30,9 @@ Something else fits better when the problem is ads, banners, cookie notices or t
 - [Compared](https://undirect.matsuokengo.com/compare/index.md): Undirect beside Safari's Block Pop-ups, 1Blocker and AdGuard, with what Undirect does not do
 - [Support](https://undirect.matsuokengo.com/support/index.md): turning it on, rules, common problems and how to reach the developer
 - [Privacy](https://undirect.matsuokengo.com/privacy/index.md): what the extension sees, what stays on the device and the one button that sends something
+- [Pop-ups still opening](https://undirect.matsuokengo.com/safari-popups-still-open/index.md): why ad pages still open with Block Pop-ups on, what each Safari setting covers on iPhone, iPad and Mac, and what stops the rest
+- [Stop new tabs](https://undirect.matsuokengo.com/stop-safari-new-tabs/index.md): how to stop Safari opening new tabs by itself on iPhone, iPad and Mac, by what is opening them
+- [Pop-up blockers compared](https://undirect.matsuokengo.com/safari-popup-blockers/index.md): Safari's settings, 1Blocker, AdGuard, Ghostery, TabGuard, Tab Blocker and Undirect, with prices, what each blocks and where each beats Undirect
 
 ## Elsewhere
 
