@@ -96,3 +96,22 @@ That runs `Extension/Resources` beside the App Store Undirect with no pluginkit
 swap, so the owner's guarded sites and learned blocks survive the test (a swap
 wipes them; see docs/safari-constraints.md). The native app messaging is absent
 in that mode, which the guard does not need.
+
+## Launch: featuring nomination and release timing (2026-11-20)
+
+- Apple takes featuring nominations in App Store Connect, types App Launch,
+  App Enhancements and New Content; 1.0.5 is App Enhancements. Apple asks for
+  at least two weeks' notice and recommends up to three months
+  ([Getting featured](https://developer.apple.com/app-store/getting-featured/));
+  App Store Connect's help sets the minimum at three weeks before the chosen
+  publication date
+  ([Nominate your app](https://developer.apple.com/help/app-store-connect/manage-featuring-nominations/nominate-your-app-for-featuring)).
+  Up to five supplemental links (art, documents, a TestFlight public link).
+- The App Store Connect API creates one (`POST /v1/nominations`, API 3.8.0):
+  `name`, `description`, `type`, `publishStartDate`, `submitted` (false keeps
+  it a draft in the owner's account), optional `deviceFamilies`, `locales`,
+  `supplementalMaterialsUris`, `notes`, and `relatedApps` (read from Apple's
+  OpenAPI specification zip, 2026-11-20).
+- So the release date decides whether the nomination can count: releasing on
+  approval (the repo's `automatic_release`) leaves no lead time; holding 1.0.5
+  for a set date three weeks out gives Apple the notice it asks for.
