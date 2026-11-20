@@ -75,3 +75,20 @@ Left as is: Cutling's App Store support URLs have no trailing slash, so Google l
 - Icon identity after ChatGPT showed another app's shield and a screenshot as the apps' images: named icon files (`undirect-app-icon.png`, `cutling-app-icon.png`, and copies under matsuokengo.com/images/), MobileApplication JSON-LD with ImageObject, sameAs App Store, alt text, icon line in llms.txt (undirect 231e324, Cutling 798c382e, kengomatsuo c42393c). ChatGPT's Indonesian storefront came from the reader's region: no site file names a country.
 - Buyer-voice rewrite of both llms.txt files, Agent Skills and ARD queries from `undirect-voice-of-customer.md` and `cutling-voice-of-customer.md` (undirect 7c982fc, Cutling 8c055d28), each naming what the app does not do.
 - AI baseline before indexing: `ai-answers-baseline.md` (Undirect named in 2 of 22 answers, Cutling 0 of 20).
+
+## Keyword popularity for Undirect's store name (2026-11-20, card ASG75)
+
+| Source | Term | What it shows |
+|---|---|---|
+| Bing Webmaster Keyword Research, 3 months to 17 Nov 2026, all countries | popup blocker | 20.9K impressions (US 12.8K) |
+| same | pop up blocker | 19.7K |
+| same | redirect blocker | 1.6K (US 552) |
+| same | tab blocker, safari pop up blocker, ad blocker for safari | too little data for Bing to show |
+| App Store search hints (US storefront, ranked by popularity) | "popup bl", "pop up bl" | popup blocker, popup blocker safari, pop up blocker, ad and pop up blocker, safari pop up blocker |
+| same | "tab bl", "new tab" | tab blocker is the first hint; new tab blocker is the first hint for "new tab" |
+| same | "redirect bl" | redirect blocker, then two apps named Redirect Blocker |
+| same | "ad tab" | no hint: nobody types "ad tab" on the App Store |
+| Google autocomplete | safari redirect / stop safari / safari new tab | safari redirect blocker (1st), stop safari from opening new tabs, new tab blocker safari, safari pop up blocker iphone |
+| Search Console, sc-domain:matsuokengo.com | all | 2 impressions, no query data yet (site not indexed) |
+
+Decision: keep "Popup Blocker" in the name (about 13 times the searches of "redirect blocker"), add "Tab" for the tab blocker and new tab blocker searches: name "Undirect - Tab & Popup Blocker" (30/30), English subtitle "Stop Safari redirects, ad tabs" (30/30), "new" added to the English keywords so "new tab blocker" matches across fields.
