@@ -12,23 +12,23 @@ launch calendar and MacPip Pips belong to the asg-social session (card ASG35).
 | 1 | SuperEmployee, video ready (Nov 20) | Skipped | Owner: the film is ugly. The page also needs a SuperEmployee sign-in to watch. |
 | 2 | iPip, Cutling launches tomorrow | asg-social | iPip launch day Nov 21 belongs to asg-social. iPip was signed out in Chrome at 10:00 WIB. |
 | 3 | iPip, Undirect launches tomorrow | asg-social | Same. |
-| 4 | 1000 SaaS (focusapps) | Open | Free tier: badge on site, site DR at least 10, review within 60 days. Sign-in needed (Google offered). |
+| 4 | 1000 SaaS (focusapps) | Waits on ASG39 images | Signed in with Google at 1000saas.best (focusapps template, shared by 1000 Tools, DevHub, Boost Domain Rating, SaaSHunt, ailaun.ch). Form requires a 16:9 product image; the owner wants every listing image remade (ASG39 is rendering them), and the launch is weeks out, so submission waits for ASG39's frame 01. Pricing has Paid; no deal field. |
 | 5 | OutBid (SaaSHunt network) | Paid, skipped | Paid ranking board across 50 directories; no free tier. |
-| 6 | 1000 Tools (focusapps) | Open | Same template and free terms as 1000 SaaS. |
-| 7 | DevHub (focusapps) | Open | Same template and free terms as 1000 SaaS. |
+| 6 | 1000 Tools (focusapps) | Waits on ASG39 images | Signed in with Google at 1000saas.best (focusapps template, shared by 1000 Tools, DevHub, Boost Domain Rating, SaaSHunt, ailaun.ch). Form requires a 16:9 product image; the owner wants every listing image remade (ASG39 is rendering them), and the launch is weeks out, so submission waits for ASG39's frame 01. Pricing has Paid; no deal field. |
+| 7 | DevHub (focusapps) | Waits on ASG39 images | Signed in with Google at 1000saas.best (focusapps template, shared by 1000 Tools, DevHub, Boost Domain Rating, SaaSHunt, ailaun.ch). Form requires a 16:9 product image; the owner wants every listing image remade (ASG39 is rendering them), and the launch is weeks out, so submission waits for ASG39's frame 01. Pricing has Paid; no deal field. |
 | 8 | Nadeem, Re: launch film | Skipped | Same film as row 1. |
-| 9 | LaunchIgniter | In progress | Signed in with Google (profile: "Indie developer making apps for Mac, iPhone and iPad", X @monholtco). Undirect submitted (owner answered the site's math check): "Product pending approval", schedule page launchigniter.com/product/schedule/undirect offers Free Launch (badge verification, admin review, date not guaranteed). Cutling form filled and waiting on the math check in Chrome (owner). Next: badge on both sites, then pick the free week. Basic $12, Pro $15 not bought. |
+| 9 | LaunchIgniter | Waits on owner | Both submitted ("Product pending approval"). Undirect: badge live on undirect.matsuokengo.com and verified ("Badge verified!"); free week needs 5 upvotes from the account today (UTC), and LaunchIgniter asks voters to try each product first, so the votes are the owner's; then Book the earliest free week (May 17-23, 2027) at launchigniter.com/product/schedule/undirect (tab open). Cutling: badge committed (Cutling c649600c), goes live with cutling-caps-2's web deploy; then verify and book the same way (tab open). Basic $12, Pro $15 not bought. |
 | 10 | GrowthAppOS | Skipped | Cold pitch for a paid growth tool; a reply would go to a third party. |
 | 11 | TinyLaunch | **Done** | Both submitted with free launches: Undirect Mon Dec 21, Cutling Mon Dec 28, "Waiting for approval" on the dashboard. No badge needed (badge only for top 3). Premium $39 and AI audit $9 not bought. |
 | 12 | Seeto | Paid, skipped | AI competitor report; first scan free behind sign-up, then paid. Its notes (price not on site, no reviews shown) are worth a separate look. |
 | 13 | MacPip, Cutling launch results | Read | Nov 18: 21 votes, 4th of 6, 52 views, 2 clicks to site. Nothing to act on. |
 | 14 | MacPip, Cutling boost done | Read | 4 people opened Cutling from the Shared on X row. Next boost comes with the next launch. |
 | 15 | Auspia | Paid, skipped | SEO page service. |
-| 16 | PostYourStartup | In progress | Both submitted (after its 5-round battle and one founder comment each: Fluxo Flow, API Test Lab). Free launch week Jul 12-18, 2027 (#398 in queue), needs the badge: `<a href="https://postyourstartup.com/startup/<slug>?ref=badge"><img src="https://postyourstartup.com/api/badge/<slug>?theme=light" alt="Featured on PostYourStartup" width="212" height="55"></a>`, slugs undirect and cutling. Badge pages: /dashboard/startups/cmwogixxz024h7liofdx0bxot/badge (Undirect), /dashboard/startups/cmwogoyha024y7lio9lbu4nes/badge (Cutling): verify there, then pick the week. Its "Offer for PostYourStartup users" has no end date, so no Black Friday offer there. Instant Premium $19 not bought. No screenshots uploaded yet (ASG39 remakes them). |
+| 16 | PostYourStartup | **Done** (Undirect) / Waits on deploy (Cutling) | Undirect: badge verified at undirect.matsuokengo.com, "You're scheduled for Week 71", launches Jul 12-18, 2027. Cutling: submitted; badge committed (Cutling c649600c) and goes live with cutling-caps-2's web deploy, then verify at /dashboard/startups/cmwogoyha024y7lio9lbu4nes/badge and keep the free week. Offer field has no end date (no Black Friday offer). Instant Premium $19 not bought. |
 | 17 | Appzoku | Paid, skipped | Auto-reel service for Instagram. |
-| 18 | Boost Domain Rating (focusapps) | Open | Same template and free terms as 1000 SaaS. |
-| 19 | SaaSHunt (focusapps) | Open | Same; the email also links ailaun.ch, same network. |
-| 20 | DodoLaunch, Cutling claim | Waits on owner | Owner will look later; claim page dodolaunch.com/claim/53j-EcTeGl4H to be left open. Next free launch week Jun 28. |
+| 18 | Boost Domain Rating (focusapps) | Waits on ASG39 images | Signed in with Google at 1000saas.best (focusapps template, shared by 1000 Tools, DevHub, Boost Domain Rating, SaaSHunt, ailaun.ch). Form requires a 16:9 product image; the owner wants every listing image remade (ASG39 is rendering them), and the launch is weeks out, so submission waits for ASG39's frame 01. Pricing has Paid; no deal field. |
+| 19 | SaaSHunt (focusapps) | Waits on ASG39 images | Signed in with Google at 1000saas.best (focusapps template, shared by 1000 Tools, DevHub, Boost Domain Rating, SaaSHunt, ailaun.ch). Form requires a 16:9 product image; the owner wants every listing image remade (ASG39 is rendering them), and the launch is weeks out, so submission waits for ASG39's frame 01. Pricing has Paid; no deal field. |
+| 20 | DodoLaunch, Cutling claim | Waits on owner | Claim page open in Chrome ("Cutling is ready to launch", drafted from cutling.matsuokengo.com, free launch week, DR 49 link). |
 | 21 | MacPip, 4-star review of Cutling | ASG36 | Card ASG36 (session cutling-caps) raises the caps first and drafts the replies, so the answer can say the new caps. |
 | 22 | MacPip, boosted 24h | Read | Done Nov 18-19. |
 | 23 | iPip, Undirect approved | Done earlier | Listed, launch Nov 21 (asg-directories-2). |
@@ -40,7 +40,7 @@ launch calendar and MacPip Pips belong to the asg-social session (card ASG35).
 | 29 | Smapp sponsorship | Paid, skipped | Daily sponsor auction with a 60% promo code; still a paid bid. |
 | 30 | MacPip, Cutling live | Done earlier | Launched Nov 18. |
 | 31 | Upvote Network | Skipped | Sells upvotes at $1 each; buying votes breaks Product Hunt's rules. |
-| 32 | NextGen Tools (nxgntools.com) | Open | Pricing page shows only paid tiers (Lifetime $99, TikTok feature $199); free submission not confirmed yet. |
+| 32 | NextGen Tools (nxgntools.com) | Waits on ASG39 images | Free path exists: the standard launch queue (5,948 ahead, 70 a week, about 85 weeks). Signed in with Google, supported one launch (DoodleNote) as step 1 asks, Undirect's listing step saved as a draft; Media needs a 700x400 screenshot, so it waits for ASG39's frame 01. Offers tab holds promo codes for the launch only, so no Black Friday deal. Lifetime Premium $99 (Black Friday) and TikTok feature $199 not bought. |
 | 33 | Nadeem, launch film (first) | Skipped | Same film as row 1. |
 | 34 | MacPip, Cutling tomorrow | Done earlier | Launch Nov 18. |
 | 35 | MacPip, Cutling weekly (58 views) | Done earlier | Coach fixes made Nov 18 (13 of 15). |
@@ -76,6 +76,7 @@ The other 174 storefronts follow by equalization, for example Cutling Â¥800 to Â
 | PostYourStartup | both | No dated field | "Offer for PostYourStartup users" (headline + how to redeem) has no end date, so it would outlive the sale. |
 | LaunchIgniter | both | No deal field | Submit form: name, tagline, description, URL, logo, screenshots, categories, video, open source, vibe coded. |
 | TinyLaunch | both | No edit page yet | Dashboard shows only Visit and Cancel Launch while both wait for approval. |
+| NextGen Tools | both | No dated deal | Offers tab takes promo codes for the launch, which is about 85 weeks out. |
 | Product Hunt | both | Waits for Nov 27 | Launch edit pages have "Add promo code" (offer, code, optional end, no start date) and "Add pricing". A promo added now would show before the price drops, so it goes on Nov 27 with end Nov 30 (asg-social posts that day; line added under "For asg-social"). |
 | AlternativeTo | both | No deal field | Both now live (alternativeto.net/software/cutling/about/, /undirect/about/); listing shows only a Pricing label and the form has no price or deal field. |
 | Indie App Catalog | both | Follows the App Store | Price ($4.99) comes from the Mac App Store record; the developer account (email and password, owner only) adds custom links only. |
