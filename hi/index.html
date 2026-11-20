@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari: अनचाहे रीडायरेक्ट बंद</p>
-<h1>Undirect किसी पेज को आपका क्लिक छीनने से रोकता है।</h1>
+<h1>परेशान करने वाले रीडायरेक्ट अब नहीं</h1>
 <p class="lead">हर साइट के लिए टूलबार के बटन से चालू करें। अदृश्य क्लिक-परत, पॉप-अंडर और क्लिक के बीच बदलते लिंक रोकता है, और पेज ने जितने पते खोलने चाहे, सबकी सूची देता है।</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/en-us.svg" width="144" height="48" alt="App Store से डाउनलोड करें"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">आज़माएँ</a></div>
 <p class="cta-note">iPhone, iPad और Mac के लिए एक ऐप।</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="iPhone पर Undirect ऐप, जिसमें वे गंतव्य सूचीबद्ध हैं जहाँ कोई पेज आपको भेजना चाहता था"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Undirect क्या रोकता है</h2>
+<ul class="pains">
+<li><h3>हर टैप पर ऐड वाला टैब</h3><p>Undirect आपका टैप उसी चीज़ तक पहुँचाता है जिसे आपने दबाया, और विज्ञापन वाला टैब खुलता ही नहीं। यह उन मुफ़्त स्ट्रीमिंग, खेल, मंगा और उपन्यास साइटों के लिए बना है जहाँ हर पेज पर ऐसा होता है।</p></li>
+<li><h3>Safari के पॉप-अप ब्लॉक करें को पार करने वाले नए टैब</h3><p>Safari का स्विच उस विंडो को रोकता है जो अपने-आप खुलती है। विज्ञापन स्क्रिप्ट आपके टैप का इंतज़ार करती हैं और उसी पल अपनी विंडो खोल देती हैं, इसलिए Safari समझता है कि आपने ही उसे माँगा। Undirect देखता है कि आपकी उँगली के नीचे क्या था।</p></li>
+<li><h3>ऐड ब्लॉकर से छूटने वाले रीडायरेक्ट</h3><p>ऐड ब्लॉकर विज्ञापन पतों की सूचियों से काम करते हैं, और रीडायरेक्ट एक ऐसे लिंक के पीछे छिपा रहता है जो सामान्य दिखता है। अपना ब्लॉकर रखें: Undirect उसके साथ चलता है और रीडायरेक्ट को खुद रोकता है।</p></li>
+<li><h3>नकली “आपका iPhone खतरे में है” पेज</h3><p>वह पेज वेबसाइट से आता है, और आपका iPhone ठीक है। अगर आपके टैप से वह खुला हो, तो Undirect उसे रोक देता है, और वर्शन 1.0.5 से वह उस पेज को भी रोकता है जो अपने आप आपको वहाँ भेज देता है, लोड होते समय या आपके स्क्रॉल करते समय।</p></li>
+<li><h3>बैक करो तो फिर वही ऐड</h3><p>जब Undirect कोई टैब रोकता है, तो आप उसी पेज पर रहते हैं जिसे आप पढ़ रहे थे। वर्शन 1.0.5 से, जो पेज वापस जाने वाले बटन के जवाब में कोई दूसरी साइट खोलता है, वह अपनी जगह पर ही रहता है, और वापस जाने वाले बटन को फँसाने के लिए पेज जो कॉपियाँ जमा करता है, वे घटकर एक रह जाती हैं।</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

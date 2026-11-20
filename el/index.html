@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari χωρίς ανακατευθύνσεις</p>
-<h1>Το Undirect εμποδίζει μια σελίδα να πάρει το κλικ σας.</h1>
+<h1>Τέλος οι ενοχλητικές ανακατευθύνσεις</h1>
 <p class="lead">Ενεργοποιήστε το ανά ιστότοπο από το κουμπί της γραμμής. Σταματά αόρατα επίπεδα, pop-under και συνδέσμους που αλλάζουν στο κλικ, και καταγράφει κάθε διεύθυνση.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/el-gr.svg" width="144" height="48" alt="Λήψη από το App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Δοκιμάστε το</a></div>
 <p class="cta-note">Μία εφαρμογή για iPhone, iPad και Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Η εφαρμογή Undirect σε iPhone, με τη λίστα των προορισμών όπου προσπάθησε να σας στείλει μια σελίδα"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Τι σταματά το Undirect</h2>
+<ul class="pains">
+<li><h3>Καρτέλα με διαφήμιση σε κάθε άγγιγμα</h3><p>Το Undirect στέλνει το άγγιγμά σας σε αυτό που πατήσατε, και η καρτέλα με τη διαφήμιση δεν ανοίγει ποτέ. Είναι φτιαγμένο για τους δωρεάν ιστότοπους streaming, αθλημάτων, manga και μυθιστορημάτων, όπου αυτό συμβαίνει σε κάθε σελίδα.</p></li>
+<li><h3>Νέες καρτέλες που περνούν τη Φραγή αναδυόμενων του Safari</h3><p>Ο διακόπτης του Safari σταματά ένα παράθυρο που ανοίγει μόνο του. Τα διαφημιστικά σενάρια περιμένουν το άγγιγμά σας και ανοίγουν το δικό τους εκείνη τη στιγμή, οπότε το Safari νομίζει ότι το ζητήσατε εσείς. Το Undirect κοιτάζει τι υπήρχε κάτω από το δάχτυλό σας.</p></li>
+<li><h3>Ανακατευθύνσεις που ξεφεύγουν από το adblocker σας</h3><p>Τα προγράμματα αποκλεισμού διαφημίσεων δουλεύουν με λίστες διαφημιστικών διευθύνσεων, ενώ μια ανακατεύθυνση κρύβεται πίσω από έναν σύνδεσμο που μοιάζει κανονικός. Κρατήστε το δικό σας: το Undirect τρέχει δίπλα του και σταματά την ίδια την ανακατεύθυνση.</p></li>
+<li><h3>Ψεύτικες σελίδες «Το iPhone σας κινδυνεύει»</h3><p>Αυτή η σελίδα προέρχεται από τον ιστότοπο, και το iPhone σας είναι μια χαρά. Το Undirect τη σταματά όταν την προκάλεσε το άγγιγμά σας, και από την έκδοση 1.0.5 σταματά επίσης μια σελίδα που σας στέλνει εκεί από μόνη της, καθώς φορτώνει ή ενώ κάνετε κύλιση.</p></li>
+<li><h3>Το Πίσω που σας γυρνά στη διαφήμιση</h3><p>Όταν το Undirect σταματά μια καρτέλα, μένετε στη σελίδα που διαβάζατε. Από την έκδοση 1.0.5, μια σελίδα που απαντά στο κουμπί Πίσω με άλλον ιστότοπο μένει εκεί που είναι, και τα αντίγραφα που στοιβάζει μια σελίδα για να παγιδέψει το κουμπί Πίσω περιορίζονται σε ένα.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

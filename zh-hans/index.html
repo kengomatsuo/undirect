@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">拦住 Safari 重定向和乱开标签页</p>
-<h1>Undirect 不让网页抢走你的点击。</h1>
+<h1>烦人的跳转，再见</h1>
 <p class="lead">在工具栏按钮上为单个网站开启。Undirect 拦住盖在点击之上的隐形层、弹出的后台窗口，以及点击途中被改写的链接，并列出网页试图打开的每个地址。</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/zh-cn.svg" width="131" height="48" alt="App Store 下载"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">试一试</a></div>
 <p class="cta-note">一个 App，覆盖 iPhone、iPad 和 Mac。</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="iPhone 上的 Undirect，列出网页试图带你前往的目的地"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Undirect 能拦什么</h2>
+<ul class="pains">
+<li><h3>一点就弹出的广告标签页</h3><p>Undirect 让你的点按落到你按下的地方，广告标签页根本不会打开。它就是为免费看片、看球、看漫画、看小说的网站做的，这些网站每一页都这样。</p></li>
+<li><h3>绕过 Safari“阻止弹出式窗口”的新标签页</h3><p>Safari 的这个开关拦的是自己弹出来的窗口。广告脚本会等你点按，在那一刻打开它的窗口，所以 Safari 以为是你要打开的。Undirect 看的是你手指下面到底是什么。</p></li>
+<li><h3>广告拦截漏掉的跳转</h3><p>广告拦截器靠广告地址列表工作，而跳转藏在一个看起来很正常的链接后面。你的拦截器照用就好：Undirect 和它一起运行，直接拦下跳转本身。</p></li>
+<li><h3>假的“你的 iPhone 有风险”页面</h3><p>那个页面来自网站，你的 iPhone 没事。如果是你的点按触发了它，Undirect 会拦下；从 1.0.5 版起，页面在加载时或你滚动时自己把你带过去，也会被拦下。</p></li>
+<li><h3>一点返回又回到广告</h3><p>Undirect 拦下标签页时，你会留在正在看的页面上。从 1.0.5 版起，用别的网站回应“返回”的网页会原地不动，网页为困住“返回”而堆起的多份副本也会合并成一份。</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

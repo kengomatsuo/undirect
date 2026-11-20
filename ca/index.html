@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari sense redireccions</p>
-<h1>L&#x27;Undirect evita que una pàgina es quedi el teu toc.</h1>
+<h1>Adeu a les redireccions molestes</h1>
 <p class="lead">Activa&#x27;l lloc per lloc amb el botó de la barra. Atura capes invisibles, pop-unders i enllaços reescrits en ple clic, i llista cada adreça que una pàgina volia obrir.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/ca-es.svg" width="152" height="48" alt="Descarrega a l’App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Prova-ho</a></div>
 <p class="cta-note">Una sola app per a iPhone, iPad i Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="L’app Undirect a l’iPhone, amb la llista dels destins on una pàgina ha intentat portar-te"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>El que atura l’Undirect</h2>
+<ul class="pains">
+<li><h3>Una pestanya de publicitat a cada toc</h3><p>L’Undirect porta el teu toc cap al que has premut, i la pestanya de publicitat no s’arriba a obrir. Està pensat per als webs gratuïts de streaming, esports, manga i lectura en línia, on això passa a cada pàgina.</p></li>
+<li><h3>Pestanyes noves que se salten Bloquejar finestres emergents del Safari</h3><p>L’interruptor del Safari atura les finestres que s’obren soles. Els scripts publicitaris esperen el teu toc i obren la seva en aquell moment, així que el Safari creu que l’has demanada tu. L’Undirect mira què hi havia sota el teu dit.</p></li>
+<li><h3>Redireccions que el bloquejador d’anuncis no veu</h3><p>Els bloquejadors d’anuncis treballen amb llistes d’adreces publicitàries, i una redirecció s’amaga darrere d’un enllaç que sembla normal. Conserva el teu bloquejador: l’Undirect funciona al seu costat i atura la redirecció pel seu compte.</p></li>
+<li><h3>Pàgines falses de «el teu iPhone està en perill»</h3><p>Aquesta pàgina ve del web, i el teu iPhone està bé. L’Undirect l’atura quan l’ha provocat el teu toc, i des de la versió 1.0.5 també atura una pàgina que t’hi envia tota sola, mentre es carrega o mentre et desplaces.</p></li>
+<li><h3>Tirar enrere i tornar a l’anunci</h3><p>Quan l’Undirect atura una pestanya, et quedes a la pàgina que llegies. Des de la versió 1.0.5, una pàgina que respon al botó Enrere amb un altre web es queda on és, i les còpies que una pàgina apila per atrapar el botó Enrere es redueixen a una.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

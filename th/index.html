@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">หยุดเปลี่ยนเส้นทางใน Safari</p>
-<h1>Undirect ไม่ให้หน้าเว็บแย่งคลิกของคุณไป</h1>
+<h1>บอกลาเว็บเด้งน่ารำคาญ</h1>
 <p class="lead">เปิดใช้ทีละเว็บไซต์ด้วยปุ่มบนแถบเครื่องมือ Undirect หยุดชั้นล่องหนที่ทับคลิก ป๊อปอันเดอร์ และลิงก์ที่ถูกเขียนทับกลางคลิก พร้อมแสดงรายการทุกที่อยู่ที่หน้าเว็บพยายามเปิด</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/th-th.svg" width="144" height="48" alt="ดาวน์โหลดได้ที่ App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">ลองใช้</a></div>
 <p class="cta-note">แอปเดียวสำหรับ iPhone, iPad และ Mac</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="แอป Undirect บน iPhone แสดงรายการปลายทางที่หน้าเว็บพยายามพาไป"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>สิ่งที่ Undirect หยุดได้</h2>
+<ul class="pains">
+<li><h3>แท็บโฆษณาเด้งทุกครั้งที่แตะ</h3><p>Undirect ส่งการแตะของคุณไปยังสิ่งที่คุณกด และแท็บโฆษณาจะไม่เปิดขึ้นเลย สร้างมาสำหรับเว็บดูหนังฟรี ดูบอล อ่านมังงะ และอ่านนิยาย ที่เจอแบบนี้ทุกหน้า</p></li>
+<li><h3>แท็บใหม่ที่หลุดผ่าน “ปิดกั้นหน้าต่างที่แสดงขึ้น” ของ Safari</h3><p>สวิตช์ของ Safari หยุดหน้าต่างที่เปิดขึ้นเอง สคริปต์โฆษณาจะรอให้คุณแตะแล้วเปิดหน้าต่างของมันในจังหวะนั้น Safari จึงคิดว่าคุณเป็นคนขอเปิด Undirect ดูว่าใต้นิ้วของคุณคืออะไร</p></li>
+<li><h3>การเด้งไปเว็บอื่นที่ตัวบล็อกโฆษณาจับไม่ได้</h3><p>ตัวบล็อกโฆษณาทำงานจากรายการที่อยู่ของโฆษณา ส่วนการเปลี่ยนเส้นทางซ่อนอยู่หลังลิงก์ที่ดูปกติ ใช้ตัวบล็อกของคุณต่อไปได้ Undirect ทำงานควบคู่กันและหยุดการเปลี่ยนเส้นทางนั้นเอง</p></li>
+<li><h3>หน้าปลอม “iPhone ของคุณตกอยู่ในความเสี่ยง”</h3><p>หน้านั้นมาจากเว็บไซต์ และ iPhone ของคุณไม่เป็นอะไร Undirect หยุดหน้านั้นเมื่อการแตะของคุณเป็นตัวกระตุ้น และตั้งแต่เวอร์ชัน 1.0.5 ยังหยุดหน้าที่พาคุณไปที่นั่นเองด้วย ไม่ว่าจะตอนโหลดหรือระหว่างที่คุณเลื่อน</p></li>
+<li><h3>กดย้อนกลับแล้วเจอโฆษณาอีก</h3><p>เมื่อ Undirect หยุดแท็บไว้ คุณจะยังอยู่ที่หน้าที่อ่านอยู่ ตั้งแต่เวอร์ชัน 1.0.5 หน้าที่ตอบปุ่มย้อนกลับด้วยเว็บไซต์อื่นจะอยู่กับที่ และสำเนาที่หน้าเว็บซ้อนไว้เพื่อดักปุ่มย้อนกลับจะถูกยุบเหลือหนึ่งเดียว</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

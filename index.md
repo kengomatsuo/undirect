@@ -1,12 +1,34 @@
 Stop Safari redirects & tabs
 
-# Undirect stops a page taking your click.
+# No more pesky redirects
 
 Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.
 
 [Download on the App Store](https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=llms&mt=8) [Try it](https://undirect.matsuokengo.com/demo/)
 
 One app for iPhone, iPad and Mac.
+
+## What Undirect stops
+
+### An ad tab on every tap
+
+Undirect sends your tap to what you pressed, and the ad tab never opens. It is made for the free streaming, sports, manga and novel sites where this happens on every page.
+
+### New tabs that get past Safari's Block Pop-ups
+
+Safari's switch stops a window that opens by itself. Ad scripts wait for your tap and open theirs at that moment, so Safari thinks you asked for it. Undirect looks at what was under your finger.
+
+### Redirects your ad blocker misses
+
+Ad blockers work from lists of ad addresses, and a redirect hides behind a link that looks normal. Keep your blocker: Undirect runs beside it and stops the redirect itself.
+
+### Fake “iPhone at risk” pages
+
+That page comes from the website, and your iPhone is fine. Undirect stops it when your tap set it off, and from version 1.0.5 it also stops a page that sends you there on its own, as it loads or while you scroll.
+
+### Back taking you to the ad again
+
+When Undirect stops a tab, you stay on the page you were reading. From version 1.0.5, a page that answers Back with another site stays put, and the copies a page stacks up to trap Back are cut to one.
 
 Pop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.
 

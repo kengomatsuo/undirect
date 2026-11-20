@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Henti ubah hala dan tab Safari</p>
-<h1>Undirect menghalang halaman daripada merampas klik anda.</h1>
+<h1>Tak ada lagi redirect yang menjengkelkan</h1>
 <p class="lead">Hidupkan per laman dengan butang bar alat. Menghentikan lapisan klik tak kelihatan, pop-under dan pautan diubah semasa klik, dan menyenaraikan alamat yang cuba dibuka.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/ms-my.svg" width="144" height="48" alt="Muat turun pada App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Cuba</a></div>
 <p class="cta-note">Satu app untuk iPhone, iPad dan Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="App Undirect pada iPhone, menunjukkan senarai destinasi yang cuba dituju oleh sesebuah halaman"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Apa yang Undirect hentikan</h2>
+<ul class="pains">
+<li><h3>Tab iklan setiap kali ketik</h3><p>Undirect menghantar ketikan anda kepada apa yang anda tekan, dan tab iklan tidak pernah dibuka. Ia dibuat untuk laman penstriman percuma, sukan, manga dan novel yang berbuat begini pada setiap halaman.</p></li>
+<li><h3>Tab baharu yang melepasi Sekat Tetingkap Timbul Safari</h3><p>Suis Safari itu menghentikan tetingkap yang terbuka dengan sendirinya. Skrip iklan menunggu ketikan anda dan membuka tetingkapnya pada saat itu, jadi Safari menyangka anda yang memintanya. Undirect melihat apa yang ada di bawah jari anda.</p></li>
+<li><h3>Redirect yang terlepas daripada ad blocker</h3><p>Penyekat iklan bekerja berdasarkan senarai alamat iklan, dan ubah hala bersembunyi di sebalik pautan yang nampak biasa. Kekalkan penyekat anda: Undirect berjalan di sebelahnya dan menghentikan ubah hala itu sendiri.</p></li>
+<li><h3>Halaman palsu “iPhone dalam bahaya”</h3><p>Halaman itu datang daripada laman web, dan iPhone anda tidak apa-apa. Undirect menghentikannya apabila ketikan anda yang mencetuskannya, dan mulai versi 1.0.5 ia juga menghentikan halaman yang menghantar anda ke sana dengan sendirinya, semasa halaman dimuatkan atau semasa anda menatal.</p></li>
+<li><h3>Tekan back, iklan muncul lagi</h3><p>Apabila Undirect menghentikan sesuatu tab, anda kekal pada halaman yang sedang dibaca. Mulai versi 1.0.5, halaman yang menjawab butang Kembali dengan laman lain akan kekal di tempatnya, dan salinan yang ditimbun halaman untuk memerangkap butang Kembali dikurangkan kepada satu.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

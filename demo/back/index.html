@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kickoff Live · Watch the match</title>
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #0e1116; color: #e9edf3; font: 16px/1.5 -apple-system, "SF Pro Text", sans-serif; min-height: 100vh; }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 16px 20px; font-weight: 800; font-size: 20px; }
+  header span { color: #3ddc84; }
+  main { max-width: 760px; margin: 0 auto; padding: 8px 20px 40px; }
+  .player { aspect-ratio: 16 / 9; border-radius: 14px; background: radial-gradient(circle at 50% 45%, #1f6f3f, #0b2a18 70%); display: grid; place-items: center; cursor: pointer; }
+  .play { width: 76px; height: 76px; border-radius: 50%; background: rgba(255,255,255,.92); display: grid; place-items: center; }
+  .play::after { content: ""; border-left: 24px solid #0e1116; border-top: 15px solid transparent; border-bottom: 15px solid transparent; margin-left: 6px; }
+  h1 { font-size: 22px; margin: 18px 0 6px; }
+  p { color: #a9b3c1; margin-bottom: 12px; }
+  footer { text-align: center; color: #6b7686; font-size: 12px; padding: 30px 20px; }
+</style>
+</head>
+<body>
+<header><div>kickoff<span>live</span></div></header>
+<main>
+  <div class="player" id="player" role="button" aria-label="Play"><div class="play"></div></div>
+  <h1>Harbour Town v Northgate · Live</h1>
+  <p>Tap play. On this page a script uses that tap to stack copies of the page in your history, so Back seems to do nothing, and when you press Back anyway it sends you to another site.</p>
+  <p>With Undirect on for this site, the copies are cut to one, so Back leaves on the first press, and Back is never answered with another site.</p>
+</main>
+<footer>Kickoff Live is a fictional stream made for the Undirect demo. Nothing plays.</footer>
+<script src="/demo/lib/env.js"></script>
+<script>DEMO.loadAd("backtrap", DEMO.landed());</script>
+</body>
+</html>

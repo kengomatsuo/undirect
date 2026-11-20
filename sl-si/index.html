@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Ustavi preusmeritve v Safari</p>
-<h1>Undirect ne pusti, da bi vam stran vzela klik.</h1>
+<h1>Dovolj nadležnih preusmeritev</h1>
 <p class="lead">Vklopite ga za stran z gumbom orodne vrstice. Undirect ustavi nevidne plasti, pop-under in povezave, prepisane med klikom, in našteje vse naslove, ki jih je stran odprla.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/sl-si.svg" width="144" height="48" alt="Prenos iz App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Preizkusite</a></div>
 <p class="cta-note">Ena aplikacija za iPhone, iPad in Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Aplikacija Undirect na iPhonu s seznamom ciljev, kamor vas je stran poskušala poslati"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Kaj ustavi Undirect</h2>
+<ul class="pains">
+<li><h3>Zavihek z oglasom ob vsakem dotiku</h3><p>Undirect vaš dotik pošlje tja, kamor ste tapnili, zavihek z oglasom pa se sploh ne odpre. Narejen je za brezplačne strani s filmi in serijami, športom, mango in spletnimi romani, kjer se to dogaja na vsaki strani.</p></li>
+<li><h3>Novi zavihki, ki zaobidejo Blokiraj pojavna okna v Safariju</h3><p>Safarijevo stikalo ustavi okno, ki se odpre samo od sebe. Oglasne skripte počakajo na vaš dotik in takrat odprejo svoje, zato Safari misli, da ste to zahtevali vi. Undirect pogleda, kaj je bilo pod vašim prstom.</p></li>
+<li><h3>Preusmeritve, ki jih blokator oglasov spregleda</h3><p>Blokatorji oglasov delajo s seznami oglasnih naslovov, preusmeritev pa se skriva za povezavo, ki je videti običajna. Blokator obdržite: Undirect teče poleg njega in sam ustavi preusmeritev.</p></li>
+<li><h3>Lažne strani „Vaš iPhone je ogrožen“</h3><p>To stran prikaže spletno mesto, vaš iPhone pa je v redu. Undirect jo ustavi, če jo je sprožil vaš dotik, od različice 1.0.5 pa ustavi tudi stran, ki vas tja pošlje sama od sebe, med nalaganjem ali med drsenjem.</p></li>
+<li><h3>Nazaj, ki vas spet pelje na oglas</h3><p>Ko Undirect ustavi zavihek, ostanete na strani, ki ste jo brali. Od različice 1.0.5 stran, ki na Nazaj odgovori z drugim spletnim mestom, ostane, kjer je, kopije, ki jih stran nakopiči, da bi ujela gumb Nazaj, pa se skrčijo na eno.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Стоп перенаправления в Safari</p>
-<h1>Undirect не даёт странице забрать ваш клик.</h1>
+<h1>Хватит назойливых редиректов</h1>
 <p class="lead">Включается для сайта кнопкой на панели. Undirect останавливает невидимые слои, попандеры и ссылки, подменённые на лету, и перечисляет каждый адрес, куда вела страница.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/ru-ru.svg" width="144" height="48" alt="Загрузите в App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Попробовать</a></div>
 <p class="cta-note">Одно приложение для iPhone, iPad и Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Приложение Undirect на iPhone со списком адресов, куда страница пыталась вас отправить"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Что останавливает Undirect</h2>
+<ul class="pains">
+<li><h3>Вкладка с рекламой на каждое нажатие</h3><p>Undirect отправляет нажатие туда, куда вы нажали, и вкладка с рекламой не открывается. Он сделан для бесплатных сайтов с фильмами и сериалами, спортом, мангой и новеллами, где так происходит на каждой странице.</p></li>
+<li><h3>Новые вкладки в обход «Блокировки всплывающих окон» Safari</h3><p>Переключатель Safari останавливает окно, которое открывается само. Рекламные скрипты ждут вашего нажатия и открывают своё окно в этот момент, поэтому Safari считает, что вы сами его попросили. Undirect смотрит, что было у вас под пальцем.</p></li>
+<li><h3>Редиректы, которые пропускает блокировщик рекламы</h3><p>Блокировщики рекламы работают по спискам рекламных адресов, а редирект прячется за ссылкой, которая выглядит обычной. Оставьте свой блокировщик: Undirect работает рядом с ним и сам останавливает редирект.</p></li>
+<li><h3>Фейковые страницы «Ваш iPhone под угрозой»</h3><p>Эту страницу показывает сайт, а с вашим iPhone всё в порядке. Undirect останавливает её, если её вызвало ваше нажатие, а начиная с версии 1.0.5 останавливает и страницу, которая сама отправляет вас туда, при загрузке или во время прокрутки.</p></li>
+<li><h3>«Назад», которое снова ведёт на рекламу</h3><p>Когда Undirect останавливает вкладку, вы остаётесь на странице, которую читали. Начиная с версии 1.0.5 страница, которая отвечает на «Назад» другим сайтом, остаётся на месте, а копии, которые страница накапливает, чтобы поймать «Назад» в ловушку, сводятся к одной.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

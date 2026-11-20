@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Zastaví presmerovanie v Safari</p>
-<h1>Undirect nedovolí stránke, aby vám zobrala ťuknutie.</h1>
+<h1>Koniec otravných presmerovaní</h1>
 <p class="lead">Zapnite ho pre web tlačidlom na paneli. Undirect zastaví neviditeľné vrstvy, pop-undery a odkazy prepísané počas ťuknutia a vypíše každú adresu, ktorú chcela otvoriť.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/sk-sk.svg" width="144" height="48" alt="Stiahnuť na App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Vyskúšať</a></div>
 <p class="cta-note">Jedna aplikácia pre iPhone, iPad a Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Aplikácia Undirect na iPhone so zoznamom cieľov, kam sa vás stránka pokúsila poslať"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Čo Undirect zastaví</h2>
+<ul class="pains">
+<li><h3>Karta s reklamou pri každom ťuknutí</h3><p>Undirect pošle vaše ťuknutie tam, kam ste ťukli, a karta s reklamou sa vôbec neotvorí. Je určený pre bezplatné weby s filmami a seriálmi, športom, mangou a novelami, kde sa to deje na každej stránke.</p></li>
+<li><h3>Nové karty, ktoré obídu Blokovať pop-upy v Safari</h3><p>Prepínač v Safari zastaví okno, ktoré sa otvorí samo. Reklamné skripty počkajú na vaše ťuknutie a v tej chvíli otvoria to svoje, takže Safari si myslí, že ste oň požiadali. Undirect sa pozrie, čo bolo pod vaším prstom.</p></li>
+<li><h3>Presmerovania, ktoré blokovač reklám prepustí</h3><p>Blokovače reklám pracujú so zoznamami reklamných adries a presmerovanie sa skrýva za odkazom, ktorý vyzerá normálne. Blokovač si nechajte: Undirect beží vedľa neho a zastaví samotné presmerovanie.</p></li>
+<li><h3>Falošné stránky „Váš iPhone je v ohrození“</h3><p>Túto stránku zobrazuje web a váš iPhone je v poriadku. Undirect ju zastaví, ak ju spustilo vaše ťuknutie, a od verzie 1.0.5 zastaví aj stránku, ktorá vás tam pošle sama od seba, pri načítaní alebo počas posúvania.</p></li>
+<li><h3>Späť, ktoré vás vráti na reklamu</h3><p>Keď Undirect zastaví kartu, zostanete na stránke, ktorú ste čítali. Od verzie 1.0.5 stránka, ktorá na Späť odpovie iným webom, zostane na mieste a kópie, ktoré stránka nahromadí, aby Späť uväznila, sa zredukujú na jednu.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

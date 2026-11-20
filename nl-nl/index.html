@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Stop omleidingen in Safari</p>
-<h1>Undirect zorgt dat een pagina jouw klik niet inpikt.</h1>
+<h1>Klaar met irritante doorverwijzingen</h1>
 <p class="lead">Zet per site aan met de werkbalkknop. Stopt onzichtbare kliklagen, pop-unders en links die tijdens het klikken veranderen. Toont elk adres dat de pagina wilde openen.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/nl-nl.svg" width="144" height="48" alt="Download in de App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Proberen</a></div>
 <p class="cta-note">Eén app voor iPhone, iPad en Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="De Undirect-app op iPhone, met de bestemmingen die een pagina probeerde te bereiken"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Wat Undirect tegenhoudt</h2>
+<ul class="pains">
+<li><h3>Een reclametabblad bij elke tik</h3><p>Undirect stuurt je tik naar wat je aanraakte, en het reclametabblad gaat nooit open. Het is gemaakt voor de gratis streaming-, sport-, manga- en romansites waar dit op elke pagina gebeurt.</p></li>
+<li><h3>Nieuwe tabbladen die langs Blokkeer pop-ups van Safari glippen</h3><p>De schakelaar van Safari houdt een venster tegen dat vanzelf opengaat. Reclamescripts wachten op je tik en openen hun venster precies op dat moment, dus Safari denkt dat jij erom vroeg. Undirect kijkt wat er onder je vinger zat.</p></li>
+<li><h3>Doorverwijzingen die je adblocker mist</h3><p>Adblockers werken met lijsten van reclameadressen, en een doorverwijzing verstopt zich achter een link die er normaal uitziet. Houd je adblocker: Undirect draait ernaast en houdt de doorverwijzing zelf tegen.</p></li>
+<li><h3>Neppagina&#x27;s met “Je iPhone loopt gevaar”</h3><p>Die pagina komt van de website, en met je iPhone is niets aan de hand. Undirect houdt haar tegen als jouw tik haar in gang zette, en vanaf versie 1.0.5 houdt het ook een pagina tegen die je er uit zichzelf naartoe stuurt, tijdens het laden of terwijl je scrolt.</p></li>
+<li><h3>Terug dat je weer naar de reclame stuurt</h3><p>Als Undirect een tabblad tegenhoudt, blijf je op de pagina die je las. Vanaf versie 1.0.5 blijft een pagina die op Terug antwoordt met een andere site gewoon staan, en de kopieën die een pagina opstapelt om Terug in de val te laten lopen, worden teruggebracht tot één.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

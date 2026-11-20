@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari lapok átirányítás ellen</p>
-<h1>Az Undirect megakadályozza, hogy egy oldal elvegye a kattintását.</h1>
+<h1>Elég a bosszantó átirányításokból</h1>
 <p class="lead">Oldalanként kapcsolható be az eszköztár gombjával. Megállítja a láthatatlan kattintásrétegeket, a háttérablakokat és az átírt linkeket, és felsorolja a próbált címeket.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/hu-hu.svg" width="181" height="48" alt="Letöltés az App Store-ból"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Próbálja ki</a></div>
 <p class="cta-note">Egy app iPhone-ra, iPadre és Macre.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Az Undirect app iPhone-on, a listával arról, hová akarta küldeni egy oldal"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Amit az Undirect megállít</h2>
+<ul class="pains">
+<li><h3>Reklámlap minden érintésre</h3><p>Az Undirect oda küldi az érintését, amire nyomott, és a reklámlap meg sem nyílik. Az ingyenes streaming-, sport-, manga- és regényoldalakra készült, ahol ez minden oldalon megtörténik.</p></li>
+<li><h3>Új lapok, amelyek átjutnak a Safari Felugrók blokkolása beállításán</h3><p>A Safari kapcsolója a magától megnyíló ablakot állítja meg. A reklámszkriptek megvárják az érintését, és abban a pillanatban nyitják meg a sajátjukat, így a Safari azt hiszi, Ön kérte. Az Undirect azt nézi, mi volt az ujja alatt.</p></li>
+<li><h3>Átirányítások, amelyeket a reklámblokkoló nem fog meg</h3><p>A reklámblokkolók reklámcímek listáival dolgoznak, az átirányítás pedig egy normálisnak látszó link mögé bújik. Tartsa meg a blokkolóját: az Undirect mellette fut, és magát az átirányítást állítja meg.</p></li>
+<li><h3>Kamu „Az iPhone-ja veszélyben van” oldalak</h3><p>Ez az oldal a weboldaltól jön, az iPhone-jával minden rendben. Az Undirect megállítja, ha az Ön érintése indította el, és az 1.0.5-ös verziótól azt az oldalt is megállítja, amely magától küldi oda, betöltés vagy görgetés közben.</p></li>
+<li><h3>A Vissza, ami újra a reklámra visz</h3><p>Amikor az Undirect megállít egy lapot, Ön azon az oldalon marad, amelyet olvasott. Az 1.0.5-ös verziótól az az oldal, amely a Vissza gombra egy másik webhellyel felel, a helyén marad, és azok a másolatok, amelyeket egy oldal a Vissza gomb csapdába ejtésére halmoz fel, egyre csökkennek.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

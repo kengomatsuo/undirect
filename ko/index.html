@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari 리디렉션, 탭 가로채기 차단</p>
-<h1>Undirect는 페이지가 내 클릭을 가로채지 못하게 합니다.</h1>
+<h1>짜증 나는 리디렉션, 이제 그만</h1>
 <p class="lead">사이트마다 도구 막대 버튼으로 켭니다. 보이지 않는 클릭 층, 팝언더, 클릭하는 사이 바뀌는 링크를 막고, 페이지가 열려던 모든 주소를 목록으로 보여 줍니다.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/ko-kr.svg" width="156" height="48" alt="App Store에서 다운로드 하기"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">체험하기</a></div>
 <p class="cta-note">앱 하나로 iPhone, iPad, Mac에서 모두 쓸 수 있습니다.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="iPhone의 Undirect 앱. 페이지가 보내려던 목적지를 목록으로 보여 줍니다"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Undirect가 막는 것</h2>
+<ul class="pains">
+<li><h3>누를 때마다 열리는 광고 탭</h3><p>Undirect는 누른 것으로 그대로 보내 주고, 광고 탭은 열리지 않습니다. 페이지마다 이런 일이 생기는 무료 스트리밍, 스포츠, 만화, 소설 사이트를 위해 만들었습니다.</p></li>
+<li><h3>Safari 팝업 차단을 뚫고 열리는 새 탭</h3><p>Safari의 이 스위치는 저절로 열리는 창을 막습니다. 광고 스크립트는 사용자가 누르기를 기다렸다가 그 순간 자기 창을 열기 때문에, Safari는 사용자가 요청한 것으로 여깁니다. Undirect는 손가락 아래에 무엇이 있었는지를 봅니다.</p></li>
+<li><h3>광고 차단 앱이 놓치는 리디렉션</h3><p>광고 차단기는 광고 주소 목록으로 작동하는데, 리디렉션은 평범해 보이는 링크 뒤에 숨어 있습니다. 쓰던 차단기는 그대로 두세요. Undirect는 그 옆에서 동작하며 리디렉션 자체를 막습니다.</p></li>
+<li><h3>가짜 “iPhone이 위험합니다” 페이지</h3><p>그 페이지는 웹사이트에서 온 것이고, iPhone은 괜찮습니다. 누른 것이 계기라면 Undirect가 막고, 버전 1.0.5부터는 페이지를 여는 중이나 스크롤하는 중에 페이지가 스스로 그곳으로 보내는 경우도 막습니다.</p></li>
+<li><h3>뒤로 가기 누르면 또 뜨는 광고</h3><p>Undirect가 탭을 막으면 읽던 페이지에 그대로 머뭅니다. 버전 1.0.5부터는 뒤로 버튼에 다른 사이트로 응답하는 페이지도 그 자리에 머물고, 뒤로 버튼을 가두려고 페이지가 쌓아 둔 사본은 하나로 줄어듭니다.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

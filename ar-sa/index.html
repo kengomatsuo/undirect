@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">حجب نوافذ منبثقة في Safari</p>
-<h1>يمنع Undirect الصفحة من خطف نقرتك.</h1>
+<h1>وداعًا للتحويلات المزعجة</h1>
 <p class="lead">فعّله لكل موقع من زر شريط الأدوات. يوقف الطبقات الخفية فوق الصفحة والنوافذ الخلفية والروابط التي تتبدل أثناء النقر، ويسرد كل عنوان حاولت الصفحة فتحه.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/ar-ar.svg" width="144" height="48" alt="نزّل من App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">جرّبه</a></div>
 <p class="cta-note">تطبيق واحد لـ iPhone وiPad وMac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="تطبيق Undirect على iPhone يعرض قائمة الوجهات التي حاولت صفحة إرسالك إليها"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>ما يوقفه Undirect</h2>
+<ul class="pains">
+<li><h3>تبويب إعلان مع كل لمسة</h3><p>يوجّه Undirect لمستك إلى ما ضغطت عليه، فلا تُفتح علامة التبويب الإعلانية أبدًا. صُمّم لمواقع البث المجاني والرياضة والمانغا والروايات التي يحدث فيها هذا في كل صفحة.</p></li>
+<li><h3>تبويبات جديدة تتخطى منع النوافذ المنبثقة في Safari</h3><p>مفتاح Safari يوقف النافذة التي تُفتح من تلقاء نفسها. أما سكربتات الإعلانات فتنتظر لمستك وتفتح نافذتها في تلك اللحظة، فيظن Safari أنك طلبتها. يتحقق Undirect مما كان تحت إصبعك.</p></li>
+<li><h3>تحويلات يفوتها مانع الإعلانات</h3><p>تعمل موانع الإعلانات بقوائم من عناوين الإعلانات، بينما تختبئ إعادة التوجيه خلف رابط يبدو عاديًا. أبقِ مانع الإعلانات لديك: يعمل Undirect بجانبه ويوقف إعادة التوجيه بنفسه.</p></li>
+<li><h3>صفحات مزيفة تقول «جهاز iPhone في خطر»</h3><p>هذه الصفحة تأتي من الموقع، وجهاز iPhone لديك سليم. يوقفها Undirect حين تكون لمستك هي ما أطلقها، ومنذ الإصدار 1.0.5 يوقف أيضًا الصفحة التي ترسلك إليها من تلقاء نفسها، أثناء تحميلها أو أثناء التمرير.</p></li>
+<li><h3>الرجوع للخلف يعيدك إلى الإعلان</h3><p>حين يوقف Undirect علامة تبويب، تبقى في الصفحة التي كنت تقرؤها. ومنذ الإصدار 1.0.5، تبقى الصفحة التي ترد على زر الرجوع بموقع آخر في مكانها، والنسخ التي تكدّسها الصفحة لتحبس زر الرجوع تُختصر إلى نسخة واحدة.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari senza reindirizzamenti</p>
-<h1>Undirect impedisce a una pagina di prendersi il tuo clic.</h1>
+<h1>Basta con i redirect fastidiosi</h1>
 <p class="lead">Si attiva per sito dal pulsante in barra. Ferma strati invisibili sul tocco, pop-under e link riscritti al tocco, ed elenca gli indirizzi che la pagina voleva aprire.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/it-it.svg" width="144" height="48" alt="Scarica su App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Prova</a></div>
 <p class="cta-note">Una sola app per iPhone, iPad e Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="L’app Undirect su iPhone, con l’elenco delle destinazioni che una pagina ha provato a raggiungere"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Cosa blocca Undirect</h2>
+<ul class="pains">
+<li><h3>Una scheda pubblicitaria a ogni tocco</h3><p>Undirect porta il tuo tocco su ciò che hai premuto e la scheda pubblicitaria non si apre mai. È pensato per i siti gratuiti di streaming, sport, manga e romanzi, dove succede a ogni pagina.</p></li>
+<li><h3>Nuove schede che superano Blocco finestre a comparsa di Safari</h3><p>L’opzione di Safari ferma le finestre che si aprono da sole. Gli script pubblicitari aspettano il tuo tocco e aprono la loro proprio in quel momento, così Safari crede che l’abbia chiesta tu. Undirect guarda cosa c’era sotto il tuo dito.</p></li>
+<li><h3>Redirect che sfuggono al tuo adblock</h3><p>Gli ad blocker lavorano con elenchi di indirizzi pubblicitari, e un reindirizzamento si nasconde dietro un link che sembra normale. Tieni il tuo ad blocker: Undirect funziona accanto a lui e ferma direttamente il reindirizzamento.</p></li>
+<li><h3>Pagine finte con “iPhone a rischio”</h3><p>Quella pagina arriva dal sito web, e il tuo iPhone sta bene. Undirect la ferma quando a farla partire è stato il tuo tocco, e dalla versione 1.0.5 ferma anche una pagina che ti ci manda da sola, mentre si carica o mentre scorri.</p></li>
+<li><h3>Indietro che ti riporta alla pubblicità</h3><p>Quando Undirect ferma una scheda, resti sulla pagina che stavi leggendo. Dalla versione 1.0.5, una pagina che risponde al pulsante Indietro con un altro sito resta dov’è, e le copie che una pagina accumula per intrappolare il pulsante Indietro si riducono a una.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

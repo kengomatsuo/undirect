@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Redirections et onglets Safari</p>
-<h1>Undirect empêche une page de s&#x27;emparer de votre clic.</h1>
+<h1>Fini les redirections pénibles</h1>
 <p class="lead">Activez-le site par site depuis la barre. Il bloque couches invisibles, pop-unders et liens réécrits en plein clic, et liste chaque adresse qu&#x27;une page a voulu ouvrir.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/fr-ca.svg" width="152" height="48" alt="Télécharger dans l’App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Essayer</a></div>
 <p class="cta-note">Une seule app pour iPhone, iPad et Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="L’app Undirect sur iPhone, avec la liste des destinations qu’une page a tenté d’atteindre"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Ce qu’Undirect bloque</h2>
+<ul class="pains">
+<li><h3>Un onglet de pub à chaque appui</h3><p>Undirect envoie votre appui vers ce que vous avez touché, et l’onglet de pub ne s’ouvre jamais. Il est conçu pour les sites gratuits de streaming, de sport, de manga et de romans, où cela arrive sur chaque page.</p></li>
+<li><h3>Des onglets qui passent outre « Bloquer les pop-up » de Safari</h3><p>Le réglage de Safari arrête les fenêtres qui s’ouvrent toutes seules. Les scripts publicitaires attendent votre appui et ouvrent la leur à ce moment-là, alors Safari croit que vous l’avez demandée. Undirect regarde ce qui se trouvait sous votre doigt.</p></li>
+<li><h3>Des redirections que votre bloqueur de pub laisse passer</h3><p>Les bloqueurs de pub fonctionnent avec des listes d’adresses publicitaires, et une redirection se cache derrière un lien qui a l’air normal. Gardez votre bloqueur : Undirect fonctionne à côté et arrête lui-même la redirection.</p></li>
+<li><h3>De fausses pages « Votre iPhone est en danger »</h3><p>Cette page vient du site web, et votre iPhone n’a rien. Undirect l’arrête quand c’est votre appui qui l’a déclenchée, et depuis la version 1.0.5 il arrête aussi une page qui vous y envoie d’elle-même, pendant son chargement ou pendant le défilement.</p></li>
+<li><h3>Le retour en arrière qui rouvre la pub</h3><p>Quand Undirect arrête un onglet, vous restez sur la page que vous lisiez. Depuis la version 1.0.5, une page qui répond au bouton Retour par un autre site reste où elle est, et les copies qu’une page empile pour piéger le bouton Retour sont ramenées à une seule.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

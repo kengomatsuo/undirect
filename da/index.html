@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari: omdirigering og faner</p>
-<h1>Undirect sørger for, at en side ikke tager dit klik.</h1>
+<h1>Slut med irriterende omdirigeringer</h1>
 <p class="lead">Slå det til pr. websted med værktøjslinjens knap. Stopper usynlige lag, pop-unders og links, der skiftes midt i klikket, og viser hver adresse, siden prøvede at åbne.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/da-dk.svg" width="144" height="48" alt="Hent i App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Prøv det</a></div>
 <p class="cta-note">Én app til iPhone, iPad og Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Undirect-appen på iPhone med listen over steder, en side forsøgte at sende dig hen"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Det stopper Undirect</h2>
+<ul class="pains">
+<li><h3>En reklamefane ved hvert tryk</h3><p>Undirect sender dit tryk videre til det, du trykkede på, og reklamefanen åbner aldrig. Det er lavet til de gratis streaming-, sports-, manga- og novelsider, hvor det sker på hver eneste side.</p></li>
+<li><h3>Nye faner, der slipper forbi Safaris Bloker ekstra vinduer</h3><p>Safaris kontakt stopper vinduer, der åbner af sig selv. Reklamescripts venter på dit tryk og åbner deres eget i samme øjeblik, så Safari tror, du bad om det. Undirect ser på, hvad der var under din finger.</p></li>
+<li><h3>Omdirigeringer, din adblocker overser</h3><p>Adblockere arbejder ud fra lister over reklameadresser, og en omdirigering gemmer sig bag et link, der ser normalt ud. Behold din adblocker: Undirect kører ved siden af og stopper selve omdirigeringen.</p></li>
+<li><h3>Falske »Din iPhone er i fare«-sider</h3><p>Den side kommer fra webstedet, og din iPhone fejler intet. Undirect stopper den, når dit tryk satte den i gang, og fra version 1.0.5 stopper det også en side, der sender dig derhen af sig selv, mens den indlæses, eller mens du scroller.</p></li>
+<li><h3>Tilbage, der sender dig til reklamen igen</h3><p>Når Undirect stopper en fane, bliver du på den side, du læste. Fra version 1.0.5 bliver en side, der svarer på Tilbage med et andet websted, hvor den er, og de kopier, en side stabler op for at fange Tilbage-knappen, skæres ned til én.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari: অযাচিত রিডাইরেক্ট বন্ধ</p>
-<h1>Undirect কোনো পাতাকে আপনার ক্লিক কেড়ে নিতে দেয় না।</h1>
+<h1>বিরক্তিকর রিডাইরেক্ট আর না</h1>
 <p class="lead">প্রতিটি সাইটের জন্য টুলবারের বোতামে একবার চেপে চালু করুন। অদৃশ্য ক্লিক-স্তর, পপ-আন্ডার ও ক্লিকের মাঝে বদলে যাওয়া লিংক আটকায়, আর পাতা যত ঠিকানা খুলতে চেয়েছে সব দেখায়।</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/bn-in.svg" width="172" height="48" alt="App Store থেকে ডাউনলোড করুন"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">চেষ্টা করুন</a></div>
 <p class="cta-note">iPhone, iPad ও Mac-এর জন্য একটি অ্যাপ।</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="iPhone-এ Undirect অ্যাপ, যেখানে পাতা আপনাকে যেসব গন্তব্যে পাঠাতে চেয়েছিল তার তালিকা"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Undirect যা থামায়</h2>
+<ul class="pains">
+<li><h3>প্রতিটি ট্যাপে অ্যাডের ট্যাব</h3><p>Undirect আপনার ট্যাপ সেখানেই পাঠায় যেখানে আপনি চেপেছেন, আর বিজ্ঞাপনের ট্যাব খোলেই না। এটি সেই ফ্রি স্ট্রিমিং, খেলা, মাঙ্গা আর উপন্যাসের সাইটগুলোর জন্য বানানো, যেখানে প্রতিটি পাতায় এমন হয়।</p></li>
+<li><h3>Safari-র পপ-আপ ব্লক করুন এড়িয়ে খোলা নতুন ট্যাব</h3><p>Safari-র সুইচ সেই উইন্ডো থামায় যা নিজে থেকে খোলে। বিজ্ঞাপনের স্ক্রিপ্ট আপনার ট্যাপের অপেক্ষায় থাকে আর ঠিক সেই মুহূর্তে নিজেরটা খোলে, তাই Safari ভাবে আপনিই চেয়েছেন। Undirect দেখে আপনার আঙুলের নিচে কী ছিল।</p></li>
+<li><h3>অ্যাড ব্লকার যে রিডাইরেক্ট ধরতে পারে না</h3><p>অ্যাড ব্লকার বিজ্ঞাপনের ঠিকানার তালিকা ধরে কাজ করে, আর রিডাইরেক্ট লুকিয়ে থাকে সাধারণ দেখতে একটি লিংকের পেছনে। আপনার ব্লকার রেখে দিন: Undirect তার পাশাপাশি চলে আর রিডাইরেক্টটি নিজেই থামায়।</p></li>
+<li><h3>ভুয়া “আপনার iPhone ঝুঁকিতে আছে” পেজ</h3><p>ওই পাতাটি ওয়েবসাইট থেকে আসে, আর আপনার iPhone ঠিক আছে। আপনার ট্যাপে সেটি চালু হলে Undirect তা থামায়, আর 1.0.5 সংস্করণ থেকে কোনো পাতা নিজে নিজেই আপনাকে সেখানে পাঠালে, লোড হওয়ার সময় বা স্ক্রল করার সময়, সেটিও থামায়।</p></li>
+<li><h3>ব্যাক করলে আবার সেই অ্যাড</h3><p>Undirect কোনো ট্যাব থামালে আপনি যে পাতাটি পড়ছিলেন সেখানেই থাকেন। 1.0.5 সংস্করণ থেকে, যে পাতা ফিরে যাওয়ার বোতামের জবাবে অন্য সাইট খোলে, সেটি নিজের জায়গাতেই থাকে, আর ফিরে যাওয়া আটকাতে পাতা যে কপিগুলো জমিয়ে রাখে, সেগুলো কমে একটিতে নেমে আসে।</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

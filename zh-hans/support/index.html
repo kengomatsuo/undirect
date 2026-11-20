@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -419,7 +424,7 @@ body { font-size: 16px; }
 [dir="rtl"] .btn svg { transform: none; }
 .directory-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin:20px 0 4px}
 .directory-badges img{height:44px;width:auto;display:block}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"Safari 里看不到 Undirect","acceptedAnswer":{"@type":"Answer","text":"先打开一次 App，再到 Safari 的扩展设置里开启 Undirect。"}},{"@type":"Question","name":"怎样为某个网站开启？","acceptedAnswer":{"@type":"Answer","text":"在 Safari 中打开该网站，点按 Undirect 按钮。在此之前，所有网站的防护都是关闭的。再点按一次，就会在该网站上关闭。"}},{"@type":"Question","name":"设置规则后某个网站不能用了","acceptedAnswer":{"@type":"Answer","text":"点按扩展按钮，找到那个主机，选择“默认”。规则就会移除。"}},{"@type":"Question","name":"在 iPhone 或 iPad 上无法修改规则","acceptedAnswer":{"@type":"Answer","text":"在那里，App 里的列表是只读的，因为 iOS 不允许 App 向自己的扩展发送改动。请通过 Safari 里的扩展按钮修改规则。"}},{"@type":"Question","name":"需要的窗口被拦截了","acceptedAnswer":{"@type":"Answer","text":"它的主机在列表里。可以只在该网站允许，也可以在所有网站允许。"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Undirect","item":"https://undirect.matsuokengo.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"支持","item":"https://undirect.matsuokengo.com/zh-hans/support/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"Safari 里看不到 Undirect","acceptedAnswer":{"@type":"Answer","text":"先打开一次 App，再到 Safari 的扩展设置里开启 Undirect。"}},{"@type":"Question","name":"怎样为某个网站开启？","acceptedAnswer":{"@type":"Answer","text":"在 Safari 中打开该网站，点按 Undirect 按钮。在此之前，所有网站的防护都是关闭的。再点按一次，就会在该网站上关闭。"}},{"@type":"Question","name":"设置规则后某个网站不能用了","acceptedAnswer":{"@type":"Answer","text":"点按扩展按钮，找到那个主机，选择“默认”。规则就会移除。"}},{"@type":"Question","name":"在 iPhone 或 iPad 上无法修改规则","acceptedAnswer":{"@type":"Answer","text":"在那里，App 里的列表是只读的，因为 iOS 不允许 App 向自己的扩展发送改动。请通过 Safari 里的扩展按钮修改规则。"}},{"@type":"Question","name":"需要的窗口被拦截了","acceptedAnswer":{"@type":"Answer","text":"它的主机在列表里。可以只在该网站允许，也可以在所有网站允许。"}},{"@type":"Question","name":"为什么 Safari 还是有弹窗？","acceptedAnswer":{"@type":"Answer","text":"Safari 的“阻止弹出式窗口”只拦网页在没有点按时打开的窗口。大多数广告弹窗会等你点按，所以 Safari 就放行了。Undirect 会检查这个标签页是不是你点的东西，不是的就拦下。"}},{"@type":"Question","name":"我的 iPhone 是被黑了还是中毒了？","acceptedAnswer":{"@type":"Answer","text":"几乎都不是。“发现病毒”或“iPhone 有风险”的页面，是网站把你带去的广告。关掉这个标签页，它让你安装或付款的东西一概不要理。由点按触发的这类页面，Undirect 会拦下。"}},{"@type":"Question","name":"没点按就发生的跳转，它能拦吗？","acceptedAnswer":{"@type":"Answer","text":"可以，从 1.0.5 版起。在开启了 Undirect 的网站上，网页不经点按就想把你带去别的网站（加载时、定时触发或你滚动时），会原地不动，地址会出现在 Undirect 的列表里，需要的话可以允许它。"}},{"@type":"Question","name":"我还需要广告拦截器吗？","acceptedAnswer":{"@type":"Answer","text":"Undirect 不隐藏网页上的广告。它拦的是广告拦截器漏掉的标签页和跳转。很多人两个一起用。"}},{"@type":"Question","name":"是订阅制吗？","acceptedAnswer":{"@type":"Answer","text":"不是。一次付费，就能在你的 iPhone、iPad 和 Mac 上使用。"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Undirect","item":"https://undirect.matsuokengo.com/zh-hans/"},{"@type":"ListItem","position":2,"name":"支持","item":"https://undirect.matsuokengo.com/zh-hans/support/"}]}]}</script>
 <script src="/site.js" defer></script>
 </head>
 <body>
@@ -500,6 +505,11 @@ body { font-size: 16px; }
 <details><summary>设置规则后某个网站不能用了</summary><div class="answer"><p>点按扩展按钮，找到那个主机，选择“默认”。规则就会移除。</p></div></details>
 <details><summary>在 iPhone 或 iPad 上无法修改规则</summary><div class="answer"><p>在那里，App 里的列表是只读的，因为 iOS 不允许 App 向自己的扩展发送改动。请通过 Safari 里的扩展按钮修改规则。</p></div></details>
 <details><summary>需要的窗口被拦截了</summary><div class="answer"><p>它的主机在列表里。可以只在该网站允许，也可以在所有网站允许。</p></div></details>
+<details><summary>为什么 Safari 还是有弹窗？</summary><div class="answer"><p>Safari 的“阻止弹出式窗口”只拦网页在没有点按时打开的窗口。大多数广告弹窗会等你点按，所以 Safari 就放行了。Undirect 会检查这个标签页是不是你点的东西，不是的就拦下。</p></div></details>
+<details><summary>我的 iPhone 是被黑了还是中毒了？</summary><div class="answer"><p>几乎都不是。“发现病毒”或“iPhone 有风险”的页面，是网站把你带去的广告。关掉这个标签页，它让你安装或付款的东西一概不要理。由点按触发的这类页面，Undirect 会拦下。</p></div></details>
+<details><summary>没点按就发生的跳转，它能拦吗？</summary><div class="answer"><p>可以，从 1.0.5 版起。在开启了 Undirect 的网站上，网页不经点按就想把你带去别的网站（加载时、定时触发或你滚动时），会原地不动，地址会出现在 Undirect 的列表里，需要的话可以允许它。</p></div></details>
+<details><summary>我还需要广告拦截器吗？</summary><div class="answer"><p>Undirect 不隐藏网页上的广告。它拦的是广告拦截器漏掉的标签页和跳转。很多人两个一起用。</p></div></details>
+<details><summary>是订阅制吗？</summary><div class="answer"><p>不是。一次付费，就能在你的 iPhone、iPad 和 Mac 上使用。</p></div></details>
 </div></section>
 </div>
 </div>

@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -419,7 +424,7 @@ body { font-size: 16px; }
 [dir="rtl"] .btn svg { transform: none; }
 .directory-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin:20px 0 4px}
 .directory-badges img{height:44px;width:auto;display:block}</style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"UndirectがSafariに表示されません","acceptedAnswer":{"@type":"Answer","text":"Appを一度開き、SafariのApp拡張機能の設定でUndirectをオンにしてください。"}},{"@type":"Question","name":"サイトごとにオンにするには","acceptedAnswer":{"@type":"Answer","text":"Safariでサイトを開き、Undirectのボタンを押します。押すまでは、どのサイトでもガードはオフです。もう一度押すと、そのサイトでオフになります。"}},{"@type":"Question","name":"ルールを設定したらサイトが動かなくなりました","acceptedAnswer":{"@type":"Answer","text":"機能拡張のボタンを押し、ホストを探して、既定の動作を選びます。ルールが取り除かれます。"}},{"@type":"Question","name":"iPhoneやiPadでルールを変更できません","acceptedAnswer":{"@type":"Answer","text":"iPhoneとiPadでは、Appの一覧は読み取り専用です。iOSでは、Appが自分の機能拡張に変更を送れないためです。ルールの変更は、Safariの機能拡張のボタンから行ってください。"}},{"@type":"Question","name":"必要なウインドウがブロックされました","acceptedAnswer":{"@type":"Answer","text":"そのホストは一覧にあります。そのサイトだけ、またはすべてのサイトで許可してください。"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Undirect","item":"https://undirect.matsuokengo.com/ja/"},{"@type":"ListItem","position":2,"name":"サポート","item":"https://undirect.matsuokengo.com/ja/support/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"UndirectがSafariに表示されません","acceptedAnswer":{"@type":"Answer","text":"Appを一度開き、SafariのApp拡張機能の設定でUndirectをオンにしてください。"}},{"@type":"Question","name":"サイトごとにオンにするには","acceptedAnswer":{"@type":"Answer","text":"Safariでサイトを開き、Undirectのボタンを押します。押すまでは、どのサイトでもガードはオフです。もう一度押すと、そのサイトでオフになります。"}},{"@type":"Question","name":"ルールを設定したらサイトが動かなくなりました","acceptedAnswer":{"@type":"Answer","text":"機能拡張のボタンを押し、ホストを探して、既定の動作を選びます。ルールが取り除かれます。"}},{"@type":"Question","name":"iPhoneやiPadでルールを変更できません","acceptedAnswer":{"@type":"Answer","text":"iPhoneとiPadでは、Appの一覧は読み取り専用です。iOSでは、Appが自分の機能拡張に変更を送れないためです。ルールの変更は、Safariの機能拡張のボタンから行ってください。"}},{"@type":"Question","name":"必要なウインドウがブロックされました","acceptedAnswer":{"@type":"Answer","text":"そのホストは一覧にあります。そのサイトだけ、またはすべてのサイトで許可してください。"}},{"@type":"Question","name":"Safariでまだポップアップが出るのはなぜですか？","acceptedAnswer":{"@type":"Answer","text":"Safariの「ポップアップをブロック」が止めるのは、ページがタップなしで開くウインドウだけです。広告のポップアップのほとんどはタップを待つので、Safariは通してしまいます。Undirectは、そのタブが押したものかどうかを確かめ、違うものを止めます。"}},{"@type":"Question","name":"iPhoneがハッキングされたり、ウイルスに感染したりしていますか？","acceptedAnswer":{"@type":"Answer","text":"ほとんどの場合、いいえ。「ウイルスが見つかりました」や「iPhoneが危険にさらされています」というページは、Webサイトが送り込んだ広告です。タブを閉じ、求められても何もインストールせず、何も支払わないでください。タップがきっかけなら、Undirectがこうしたページを止めます。"}},{"@type":"Question","name":"タップしていないのに起きるリダイレクトも止められますか？","acceptedAnswer":{"@type":"Answer","text":"はい、バージョン1.0.5から止めます。Undirectがオンになっているサイトでは、タップなしで別のサイトへ移動させようとするページ（読み込み時、タイマー、スクロール中）はその場にとどまり、そのアドレスはUndirectの一覧に表示されるので、必要なら許可できます。"}},{"@type":"Question","name":"広告ブロッカーはまだ必要ですか？","acceptedAnswer":{"@type":"Answer","text":"Undirectはページ上の広告を隠しません。広告ブロッカーが見逃すタブやリダイレクトを止めます。両方を使っている人もたくさんいます。"}},{"@type":"Question","name":"サブスクリプションですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。一度の支払いで、iPhone、iPad、Macで使えます。"}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Undirect","item":"https://undirect.matsuokengo.com/ja/"},{"@type":"ListItem","position":2,"name":"サポート","item":"https://undirect.matsuokengo.com/ja/support/"}]}]}</script>
 <script src="/site.js" defer></script>
 </head>
 <body>
@@ -500,6 +505,11 @@ body { font-size: 16px; }
 <details><summary>ルールを設定したらサイトが動かなくなりました</summary><div class="answer"><p>機能拡張のボタンを押し、ホストを探して、既定の動作を選びます。ルールが取り除かれます。</p></div></details>
 <details><summary>iPhoneやiPadでルールを変更できません</summary><div class="answer"><p>iPhoneとiPadでは、Appの一覧は読み取り専用です。iOSでは、Appが自分の機能拡張に変更を送れないためです。ルールの変更は、Safariの機能拡張のボタンから行ってください。</p></div></details>
 <details><summary>必要なウインドウがブロックされました</summary><div class="answer"><p>そのホストは一覧にあります。そのサイトだけ、またはすべてのサイトで許可してください。</p></div></details>
+<details><summary>Safariでまだポップアップが出るのはなぜですか？</summary><div class="answer"><p>Safariの「ポップアップをブロック」が止めるのは、ページがタップなしで開くウインドウだけです。広告のポップアップのほとんどはタップを待つので、Safariは通してしまいます。Undirectは、そのタブが押したものかどうかを確かめ、違うものを止めます。</p></div></details>
+<details><summary>iPhoneがハッキングされたり、ウイルスに感染したりしていますか？</summary><div class="answer"><p>ほとんどの場合、いいえ。「ウイルスが見つかりました」や「iPhoneが危険にさらされています」というページは、Webサイトが送り込んだ広告です。タブを閉じ、求められても何もインストールせず、何も支払わないでください。タップがきっかけなら、Undirectがこうしたページを止めます。</p></div></details>
+<details><summary>タップしていないのに起きるリダイレクトも止められますか？</summary><div class="answer"><p>はい、バージョン1.0.5から止めます。Undirectがオンになっているサイトでは、タップなしで別のサイトへ移動させようとするページ（読み込み時、タイマー、スクロール中）はその場にとどまり、そのアドレスはUndirectの一覧に表示されるので、必要なら許可できます。</p></div></details>
+<details><summary>広告ブロッカーはまだ必要ですか？</summary><div class="answer"><p>Undirectはページ上の広告を隠しません。広告ブロッカーが見逃すタブやリダイレクトを止めます。両方を使っている人もたくさんいます。</p></div></details>
+<details><summary>サブスクリプションですか？</summary><div class="answer"><p>いいえ。一度の支払いで、iPhone、iPad、Macで使えます。</p></div></details>
 </div></section>
 </div>
 </div>

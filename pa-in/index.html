@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari ਵਿੱਚ ਕਲਿੱਕ ਤੁਹਾਡਾ ਹੀ</p>
-<h1>Undirect ਕਿਸੇ ਵੀ ਪੰਨੇ ਨੂੰ ਤੁਹਾਡਾ ਕਲਿੱਕ ਖੋਹਣ ਨਹੀਂ ਦਿੰਦਾ।</h1>
+<h1>ਤੰਗ ਕਰਨ ਵਾਲੇ ਰੀਡਾਇਰੈਕਟ ਹੁਣ ਨਹੀਂ</h1>
 <p class="lead">ਟੂਲਬਾਰ ਬਟਨ ਨਾਲ ਹਰ ਸਾਈਟ ਲਈ ਚਾਲੂ ਕਰੋ। ਅਦਿੱਖ ਕਲਿੱਕ ਪਰਤਾਂ, ਪੌਪ-ਅੰਡਰ ਅਤੇ ਕਲਿੱਕ ਦੌਰਾਨ ਬਦਲੇ ਲਿੰਕ ਰੋਕਦਾ ਹੈ। ਪੰਨੇ ਨੇ ਖੋਲ੍ਹਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਹਰ ਪਤਾ ਸੂਚੀ ਵਿੱਚ ਦਿਖਾਉਂਦਾ ਹੈ।</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/pa-in.svg" width="131" height="48" alt="App Store ਤੋਂ ਡਾਊਨਲੋਡ ਕਰੋ"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">ਅਜ਼ਮਾਓ</a></div>
 <p class="cta-note">iPhone, iPad ਅਤੇ Mac ਲਈ ਇੱਕ ਐਪ।</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="iPhone &#x27;ਤੇ Undirect ਐਪ, ਜਿਸ ਵਿੱਚ ਉਹ ਮੰਜ਼ਿਲਾਂ ਦੀ ਸੂਚੀ ਹੈ ਜਿੱਥੇ ਪੰਨੇ ਨੇ ਤੁਹਾਨੂੰ ਭੇਜਣਾ ਚਾਹਿਆ"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Undirect ਕੀ ਰੋਕਦਾ ਹੈ</h2>
+<ul class="pains">
+<li><h3>ਹਰ ਟੈਪ &#x27;ਤੇ ਐਡ ਵਾਲੀ ਟੈਬ</h3><p>ਤੁਸੀਂ ਜੋ ਦਬਾਇਆ, Undirect ਤੁਹਾਡਾ ਟੈਪ ਉੱਥੇ ਹੀ ਪਹੁੰਚਾਉਂਦਾ ਹੈ, ਅਤੇ ਇਸ਼ਤਿਹਾਰ ਵਾਲੀ ਟੈਬ ਕਦੇ ਨਹੀਂ ਖੁੱਲ੍ਹਦੀ। ਇਹ ਉਹਨਾਂ ਮੁਫ਼ਤ ਸਟ੍ਰੀਮਿੰਗ, ਖੇਡਾਂ, ਮਾਂਗਾ ਅਤੇ ਨਾਵਲ ਸਾਈਟਾਂ ਲਈ ਬਣਾਇਆ ਗਿਆ ਹੈ ਜਿੱਥੇ ਹਰ ਪੰਨੇ &#x27;ਤੇ ਇਹੀ ਹੁੰਦਾ ਹੈ।</p></li>
+<li><h3>Safari ਦੇ ਪੌਪ-ਅੱਪ ਬਲਾਕ ਕਰੋ ਨੂੰ ਪਾਰ ਕਰਨ ਵਾਲੀਆਂ ਨਵੀਆਂ ਟੈਬਾਂ</h3><p>Safari ਦਾ ਇਹ ਸਵਿੱਚ ਆਪਣੇ-ਆਪ ਖੁੱਲ੍ਹਣ ਵਾਲੀ ਵਿੰਡੋ ਨੂੰ ਰੋਕਦਾ ਹੈ। ਇਸ਼ਤਿਹਾਰੀ ਸਕ੍ਰਿਪਟਾਂ ਤੁਹਾਡੇ ਟੈਪ ਦੀ ਉਡੀਕ ਕਰਦੀਆਂ ਹਨ ਅਤੇ ਉਸੇ ਪਲ ਆਪਣੀ ਵਿੰਡੋ ਖੋਲ੍ਹ ਦਿੰਦੀਆਂ ਹਨ, ਇਸ ਲਈ Safari ਸਮਝਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਹੀ ਮੰਗੀ ਸੀ। Undirect ਵੇਖਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀ ਉਂਗਲ ਹੇਠ ਕੀ ਸੀ।</p></li>
+<li><h3>ਐਡ ਬਲਾਕਰ ਤੋਂ ਬਚ ਨਿਕਲਣ ਵਾਲੇ ਰੀਡਾਇਰੈਕਟ</h3><p>ਐਡ ਬਲਾਕਰ ਇਸ਼ਤਿਹਾਰੀ ਪਤਿਆਂ ਦੀਆਂ ਸੂਚੀਆਂ ਨਾਲ ਕੰਮ ਕਰਦੇ ਹਨ, ਅਤੇ ਰੀਡਾਇਰੈਕਟ ਇੱਕ ਆਮ ਦਿਸਦੇ ਲਿੰਕ ਪਿੱਛੇ ਲੁਕਿਆ ਹੁੰਦਾ ਹੈ। ਆਪਣਾ ਬਲਾਕਰ ਰੱਖੋ: Undirect ਉਸਦੇ ਨਾਲ-ਨਾਲ ਚੱਲਦਾ ਹੈ ਅਤੇ ਰੀਡਾਇਰੈਕਟ ਨੂੰ ਹੀ ਰੋਕਦਾ ਹੈ।</p></li>
+<li><h3>ਨਕਲੀ “ਤੁਹਾਡਾ iPhone ਖ਼ਤਰੇ ਵਿੱਚ ਹੈ” ਪੇਜ</h3><p>ਉਹ ਪੰਨਾ ਵੈੱਬਸਾਈਟ ਤੋਂ ਆਉਂਦਾ ਹੈ, ਅਤੇ ਤੁਹਾਡਾ iPhone ਠੀਕ ਹੈ। ਜਦੋਂ ਤੁਹਾਡੇ ਟੈਪ ਨਾਲ ਉਹ ਸ਼ੁਰੂ ਹੁੰਦਾ ਹੈ, Undirect ਉਸਨੂੰ ਰੋਕਦਾ ਹੈ, ਅਤੇ ਵਰਜਨ 1.0.5 ਤੋਂ ਇਹ ਉਸ ਪੰਨੇ ਨੂੰ ਵੀ ਰੋਕਦਾ ਹੈ ਜੋ ਲੋਡ ਹੋਣ ਵੇਲੇ ਜਾਂ ਸਕ੍ਰੋਲ ਕਰਦਿਆਂ ਤੁਹਾਨੂੰ ਆਪਣੇ ਆਪ ਉੱਥੇ ਭੇਜ ਦਿੰਦਾ ਹੈ।</p></li>
+<li><h3>ਬੈਕ ਦੱਬੋ ਤਾਂ ਫਿਰ ਉਹੀ ਐਡ</h3><p>ਜਦੋਂ Undirect ਕੋਈ ਟੈਬ ਰੋਕਦਾ ਹੈ, ਤੁਸੀਂ ਉਸੇ ਪੰਨੇ &#x27;ਤੇ ਰਹਿੰਦੇ ਹੋ ਜੋ ਪੜ੍ਹ ਰਹੇ ਸੀ। ਵਰਜਨ 1.0.5 ਤੋਂ, ਜੋ ਪੰਨਾ ਪਿੱਛੇ ਵਾਲੇ ਬਟਨ ਦੇ ਜਵਾਬ ਵਿੱਚ ਕੋਈ ਹੋਰ ਸਾਈਟ ਖੋਲ੍ਹਦਾ ਹੈ, ਉਹ ਉੱਥੇ ਹੀ ਰਹਿੰਦਾ ਹੈ, ਅਤੇ ਪਿੱਛੇ ਵਾਲੇ ਬਟਨ ਨੂੰ ਫਸਾਉਣ ਲਈ ਪੰਨਾ ਜੋ ਨਕਲਾਂ ਜੋੜਦਾ ਹੈ, ਉਹ ਘਟ ਕੇ ਇੱਕ ਰਹਿ ਜਾਂਦੀਆਂ ਹਨ।</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

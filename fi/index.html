@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari: uudelleenohjaus pois</p>
-<h1>Undirect estää sivua nappaamasta napsautustasi.</h1>
+<h1>Ei enää ärsyttäviä uudelleenohjauksia</h1>
 <p class="lead">Ota käyttöön sivu kerrallaan työkalupalkista. Pysäyttää näkymättömät kerrokset, pop-under-ikkunat ja kesken napsautuksen vaihtuvat linkit ja listaa jokaisen osoitteen.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/fi-fi.svg" width="171" height="48" alt="Lataa App Storesta"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Kokeile</a></div>
 <p class="cta-note">Yksi sovellus iPhonelle, iPadille ja Macille.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Undirect-sovellus iPhonessa, luettelona kohteista, joihin sivu yritti ohjata"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Mitä Undirect pysäyttää</h2>
+<ul class="pains">
+<li><h3>Mainosvälilehti joka napautuksella</h3><p>Undirect vie napautuksesi siihen, mitä painoit, eikä mainosvälilehti aukea lainkaan. Se on tehty ilmaisille striimaus-, urheilu-, manga- ja romaanisivustoille, joilla tätä tapahtuu joka sivulla.</p></li>
+<li><h3>Uudet välilehdet, jotka pääsevät Safarin Estä ponnahdusikkunat -asetuksen ohi</h3><p>Safarin kytkin pysäyttää ikkunan, joka aukeaa itsestään. Mainosskriptit odottavat napautustasi ja avaavat omansa juuri silloin, joten Safari luulee, että pyysit sitä. Undirect katsoo, mitä sormesi alla oli.</p></li>
+<li><h3>Uudelleenohjaukset, jotka mainosesto päästää läpi</h3><p>Mainosestot toimivat mainososoitteiden listoilla, ja uudelleenohjaus piiloutuu tavalliselta näyttävän linkin taakse. Pidä estosi: Undirect toimii sen rinnalla ja pysäyttää uudelleenohjauksen itse.</p></li>
+<li><h3>Feikkisivut, joissa lukee ”iPhonesi on vaarassa”</h3><p>Sivu tulee verkkosivustolta, ja iPhonesi on kunnossa. Undirect pysäyttää sen, kun napautuksesi laukaisi sen, ja versiosta 1.0.5 alkaen se pysäyttää myös sivun, joka lähettää sinut sinne itsestään, latautuessaan tai kun vierität.</p></li>
+<li><h3>Takaisin vie taas mainokseen</h3><p>Kun Undirect pysäyttää välilehden, pysyt sivulla, jota luit. Versiosta 1.0.5 alkaen sivu, joka vastaa Takaisin-painikkeeseen toisella sivustolla, pysyy paikallaan, ja kopiot, joita sivu pinoaa ansoittaakseen Takaisin-painikkeen, karsitaan yhteen.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

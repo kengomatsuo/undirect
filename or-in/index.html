@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safariରେ ଆପଣଙ୍କ କ୍ଲିକ ଆପଣଙ୍କର</p>
-<h1>Undirect କୌଣସି ପୃଷ୍ଠାକୁ ଆପଣଙ୍କ କ୍ଲିକ ଛଡ଼ାଇ ନେବାକୁ ଦିଏ ନାହିଁ।</h1>
+<h1>ବିରକ୍ତିକର ରିଡାଇରେକ୍ଟ ଆଉ ନାହିଁ</h1>
 <p class="lead">ଟୁଲବାର ବଟନରୁ ପ୍ରତି ସାଇଟ ପାଇଁ ଚାଲୁ କରନ୍ତୁ। ଅଦୃଶ୍ୟ କ୍ଲିକ ସ୍ତର, ପପ-ଅଣ୍ଡର ଓ କ୍ଲିକ ବେଳେ ବଦଳୁଥିବା ଲିଙ୍କକୁ ଅଟକାଏ। ପୃଷ୍ଠା ଖୋଲିବାକୁ ଚେଷ୍ଟା କରିଥିବା ପ୍ରତ୍ୟେକ ଠିକଣା ତାଲିକାରେ ଦେଖାଏ।</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/or-in.svg" width="159" height="48" alt="App Store ରେ ଡାଉନ୍‌ଲୋଡ୍ କରନ୍ତୁ"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">ଚେଷ୍ଟା କରନ୍ତୁ</a></div>
 <p class="cta-note">iPhone, iPad ଓ Mac ପାଇଁ ଗୋଟିଏ ଆପ୍।</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="iPhone ରେ Undirect ଆପ୍, ଯେଉଁଥିରେ ପୃଷ୍ଠା ଆପଣଙ୍କୁ ଯେଉଁ ଗନ୍ତବ୍ୟକୁ ପଠାଇବାକୁ ଚାହିଁଲା ସେଗୁଡ଼ିକର ତାଲିକା"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Undirect କ&#x27;ଣ ରୋକେ</h2>
+<ul class="pains">
+<li><h3>ପ୍ରତି ଟ୍ୟାପ୍‌ରେ ଆଡ୍ ଟ୍ୟାବ</h3><p>ଆପଣ ଯାହା ଦବାଇଲେ Undirect ଆପଣଙ୍କ ଟ୍ୟାପ୍ ସେଇଠିକୁ ହିଁ ପହଞ୍ଚାଏ, ଏବଂ ବିଜ୍ଞାପନ ଟ୍ୟାବ କେବେ ଖୋଲେ ନାହିଁ। ପ୍ରତି ପୃଷ୍ଠାରେ ଏପରି ହେଉଥିବା ମାଗଣା ଷ୍ଟ୍ରିମିଂ, ଖେଳ, ମାଙ୍ଗା ଓ ଉପନ୍ୟାସ ସାଇଟ ପାଇଁ ଏହାକୁ ତିଆରି କରାଯାଇଛି।</p></li>
+<li><h3>Safari ର ପପ୍-ଅପ୍ ବ୍ଲକ କରନ୍ତୁ ଡେଇଁ ଖୋଲୁଥିବା ନୂଆ ଟ୍ୟାବ</h3><p>Safari ର ଏହି ସ୍ୱିଚ ନିଜେ ନିଜେ ଖୋଲୁଥିବା ୱିଣ୍ଡୋକୁ ରୋକେ। ବିଜ୍ଞାପନ ସ୍କ୍ରିପ୍ଟ ଆପଣଙ୍କ ଟ୍ୟାପ୍ ପାଇଁ ଅପେକ୍ଷା କରେ ଏବଂ ସେହି ମୁହୂର୍ତ୍ତରେ ନିଜର ୱିଣ୍ଡୋ ଖୋଲେ, ତେଣୁ Safari ଭାବେ ଆପଣ ହିଁ ତାହା ମାଗିଥିଲେ। ଆପଣଙ୍କ ଆଙ୍ଗୁଠି ତଳେ କ&#x27;ଣ ଥିଲା, Undirect ତାହା ଦେଖେ।</p></li>
+<li><h3>ଆଡ୍ ବ୍ଲକର ଧରି ପାରୁନଥିବା ରିଡାଇରେକ୍ଟ</h3><p>ଆଡ୍ ବ୍ଲକର ବିଜ୍ଞାପନ ଠିକଣାର ତାଲିକାରୁ କାମ କରେ, ଆଉ ରିଡାଇରେକ୍ଟ ସାଧାରଣ ଦେଖାଯାଉଥିବା ଲିଙ୍କ ପଛରେ ଲୁଚିଥାଏ। ଆପଣଙ୍କ ବ୍ଲକର ରଖନ୍ତୁ: Undirect ତାହା ପାଖରେ ଚାଲେ ଏବଂ ରିଡାଇରେକ୍ଟକୁ ହିଁ ରୋକେ।</p></li>
+<li><h3>ନକଲି “ଆପଣଙ୍କ iPhone ବିପଦରେ ଅଛି” ପେଜ</h3><p>ସେହି ପୃଷ୍ଠା ୱେବସାଇଟରୁ ଆସେ, ଆପଣଙ୍କ iPhone ଠିକ ଅଛି। ଆପଣଙ୍କ ଟ୍ୟାପ୍‌ରୁ ତାହା ଆରମ୍ଭ ହେଲେ Undirect ତାହାକୁ ରୋକେ, ଏବଂ ସଂସ୍କରଣ 1.0.5 ରୁ ଏହା ସେହି ପୃଷ୍ଠାକୁ ମଧ୍ୟ ରୋକେ ଯାହା ଲୋଡ ହେବା ସମୟରେ କିମ୍ବା ଆପଣ ସ୍କ୍ରୋଲ କରିବା ସମୟରେ ନିଜେ ନିଜେ ଆପଣଙ୍କୁ ସେଠାକୁ ପଠାଏ।</p></li>
+<li><h3>ବ୍ୟାକ୍ ଦବାଇଲେ ପୁଣି ସେହି ଆଡ୍</h3><p>Undirect ଟ୍ୟାବ ରୋକିଲେ ଆପଣ ପଢ଼ୁଥିବା ପୃଷ୍ଠାରେ ହିଁ ରହନ୍ତି। ସଂସ୍କରଣ 1.0.5 ରୁ, ପଛ ବଟନର ଉତ୍ତରରେ ଅନ୍ୟ ସାଇଟ ଖୋଲୁଥିବା ପୃଷ୍ଠା ଯେଉଁଠି ଅଛି ସେଇଠି ରହେ, ଏବଂ ପଛ ବଟନକୁ ଫାନ୍ଦରେ ପକାଇବା ପାଇଁ ପୃଷ୍ଠା ଯେଉଁ ନକଲଗୁଡ଼ିକ ଗଦା କରେ ସେଗୁଡ଼ିକୁ ଗୋଟିଏରେ କମାଇ ଦିଆଯାଏ।</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

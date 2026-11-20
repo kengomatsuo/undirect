@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safariలో దారిమళ్లింపులను ఆపండి</p>
-<h1>ఏ పేజీ కూడా మీ క్లిక్‌ను లాగేసుకోకుండా Undirect చూస్తుంది.</h1>
+<h1>చిరాకు రీడైరెక్ట్‌లకు ఇక చెక్</h1>
 <p class="lead">సైట్‌ వారీగా టూల్‌బార్ బటన్‌తో ఆన్ చేయండి. కనిపించని పొరలు, పాప్-అండర్లు, క్లిక్ మధ్యలో మారే లింక్‌లను Undirect ఆపి, పేజీ తెరవాలనుకున్న ప్రతి చిరునామాను జాబితా చేస్తుంది.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/te-in.svg" width="149" height="48" alt="App Storeలో డౌన్‌లోడ్ చేయండి"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">ప్రయత్నించండి</a></div>
 <p class="cta-note">iPhone, iPad, Mac కోసం ఒకే యాప్.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="iPhoneలో Undirect యాప్, పేజీ మిమ్మల్ని పంపాలని చూసిన గమ్యాల జాబితాతో"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Undirect ఆపేవి</h2>
+<ul class="pains">
+<li><h3>ప్రతి ట్యాప్‌కూ యాడ్ ట్యాబ్</h3><p>మీరు నొక్కిన దానికే Undirect మీ ట్యాప్‌ను పంపుతుంది, యాడ్ ట్యాబ్ అసలు తెరుచుకోదు. ప్రతి పేజీలో ఇలా జరిగే ఉచిత స్ట్రీమింగ్, స్పోర్ట్స్, మాంగా, నవలల సైట్ల కోసమే దీన్ని తయారు చేశాం.</p></li>
+<li><h3>Safari ‘పాప్-అప్‌లను బ్లాక్ చేయండి’ని దాటే కొత్త ట్యాబ్‌లు</h3><p>Safari స్విచ్ తనంతట తానే తెరుచుకునే విండోను ఆపుతుంది. యాడ్ స్క్రిప్ట్‌లు మీ ట్యాప్ కోసం ఎదురుచూసి, ఆ క్షణంలో తమ విండోను తెరుస్తాయి, అందుకే మీరే అడిగారని Safari అనుకుంటుంది. మీ వేలి కింద ఏముందో Undirect చూస్తుంది.</p></li>
+<li><h3>యాడ్ బ్లాకర్ పట్టుకోని రీడైరెక్ట్‌లు</h3><p>యాడ్ బ్లాకర్‌లు యాడ్ చిరునామాల జాబితాలతో పని చేస్తాయి, రీడైరెక్ట్ మామూలుగా కనిపించే లింక్ వెనుక దాక్కుంటుంది. మీ బ్లాకర్‌ను అలాగే ఉంచండి: Undirect దానితో పాటే నడుస్తూ రీడైరెక్ట్‌నే ఆపుతుంది.</p></li>
+<li><h3>‘మీ iPhone ప్రమాదంలో ఉంది’ అనే ఫేక్ పేజీలు</h3><p>ఆ పేజీ వెబ్‌సైట్ నుండి వస్తుంది, మీ iPhone బాగానే ఉంది. మీ ట్యాప్ దాన్ని మొదలుపెడితే Undirect దాన్ని ఆపుతుంది, వెర్షన్ 1.0.5 నుండి పేజీ లోడ్ అవుతున్నప్పుడు లేదా మీరు స్క్రోల్ చేస్తున్నప్పుడు తనంతట తానే మిమ్మల్ని అక్కడికి పంపే పేజీని కూడా ఆపుతుంది.</p></li>
+<li><h3>బ్యాక్ నొక్కితే మళ్లీ యాడ్</h3><p>Undirect ఒక ట్యాబ్‌ను ఆపినప్పుడు, మీరు చదువుతున్న పేజీలోనే ఉంటారు. వెర్షన్ 1.0.5 నుండి, వెనుకకు బటన్‌కు మరో సైట్‌తో జవాబిచ్చే పేజీ ఉన్నచోటే ఉంటుంది, వెనుకకు బటన్‌ను చిక్కించడానికి పేజీ పేర్చే కాపీలు ఒక్కటిగా తగ్గుతాయి.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Fără redirecționări în Safari</p>
-<h1>Undirect împiedică o pagină să-ți ia clicul.</h1>
+<h1>Gata cu redirecționările enervante</h1>
 <p class="lead">Îl pornești pe fiecare site din bară. Undirect oprește straturile invizibile, pop-under-urile și linkurile rescrise în timpul clicului și listează fiecare adresă.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/ro-ro.svg" width="144" height="48" alt="Descărcați de pe App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Încearcă</a></div>
 <p class="cta-note">O singură aplicație pentru iPhone, iPad și Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Aplicația Undirect pe iPhone, cu lista destinațiilor spre care a încercat o pagină să te trimită"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Ce oprește Undirect</h2>
+<ul class="pains">
+<li><h3>O filă cu reclame la fiecare atingere</h3><p>Undirect îți trimite atingerea către ce ai apăsat, iar fila cu reclame nu se mai deschide deloc. E făcut pentru site-urile gratuite de streaming, sport, manga și romane, unde se întâmplă asta pe fiecare pagină.</p></li>
+<li><h3>File noi care trec de Blocare ferestre pop-up din Safari</h3><p>Comutatorul din Safari oprește o fereastră care se deschide singură. Scripturile de reclame așteaptă atingerea ta și își deschid fereastra exact atunci, așa că Safari crede că ai cerut-o tu. Undirect se uită la ce era sub degetul tău.</p></li>
+<li><h3>Redirecționări pe care adblockerul le scapă</h3><p>Ad blockerele lucrează cu liste de adrese de reclame, iar o redirecționare se ascunde în spatele unui link care pare normal. Păstrează-ți ad blockerul: Undirect rulează lângă el și oprește chiar redirecționarea.</p></li>
+<li><h3>Pagini false cu „iPhone-ul tău e în pericol”</h3><p>Pagina aceea vine de la site, iar iPhone-ul tău e în regulă. Undirect o oprește când a declanșat-o atingerea ta, iar de la versiunea 1.0.5 oprește și o pagină care te trimite acolo de la sine, la încărcare sau în timp ce derulezi.</p></li>
+<li><h3>Înapoi care te duce iar la reclamă</h3><p>Când Undirect oprește o filă, rămâi pe pagina pe care o citeai. De la versiunea 1.0.5, o pagină care răspunde la Înapoi cu alt site rămâne pe loc, iar copiile pe care o pagină le adună ca să prindă butonul Înapoi în capcană sunt reduse la una.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">

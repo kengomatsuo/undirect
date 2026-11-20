@@ -325,6 +325,11 @@ min-height: 100%;
 .features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
 .features p { color: var(--muted); font-size: 17px; }
 .features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pains { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px 48px; list-style: none; padding: 0; margin-top: 28px; }
+.pains li { border-left: 3px solid var(--accent); padding-left: 18px; }
+.pains h3 { font-size: 19px; line-height: 1.3; margin-bottom: 8px; }
+.pains p { color: var(--muted); font-size: 17px; }
+@media (max-width: 860px) { .pains { grid-template-columns: 1fr; } }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
 .split img { width: 100%; }
 .phones { display: flex; gap: var(--gap); justify-content: center; }
@@ -490,12 +495,23 @@ body { font-size: 16px; }
 <section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">Safari ohne Weiterleitungen</p>
-<h1>Undirect sorgt dafür, dass eine Seite Ihren Klick nicht an sich reißt.</h1>
+<h1>Schluss mit nervigen Weiterleitungen</h1>
 <p class="lead">Pro Website per Symbolleiste einschalten. Stoppt unsichtbare Ebenen, Pop-unders und mitten im Klick umgeschriebene Links, listet jede Adresse, die sich öffnen sollte.</p>
 <div class="cta-row"><a class="badge" href="https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&amp;ct=web-home&amp;mt=8" rel="noopener"><img src="/img/badges/de-de.svg" width="144" height="48" alt="Laden im App Store"></a><a class="btn btn-quiet" href="/demo/" hreflang="en">Ausprobieren</a></div>
 <p class="cta-note">Eine App für iPhone, iPad und Mac.</p>
 </div>
 <div class="hero-shot"><picture><source type="image/avif" srcset="/img/iphone-popup-360.avif 360w, /img/iphone-popup-540.avif 540w, /img/iphone-popup-660.avif 660w" sizes="(max-width: 860px) 300px, 340px"><img src="/img/iphone-popup.webp" srcset="/img/iphone-popup-360.webp 360w, /img/iphone-popup-540.webp 540w, /img/iphone-popup.webp 660w" sizes="(max-width: 860px) 300px, 340px" width="660" height="1434" fetchpriority="high" alt="Die Undirect-App auf dem iPhone mit den Zielen, die eine Seite erreichen wollte"></picture></div>
+</div></section>
+
+<section class="section"><div class="wrap">
+<h2>Was Undirect stoppt</h2>
+<ul class="pains">
+<li><h3>Ein Werbe-Tab bei jedem Tippen</h3><p>Undirect gibt Ihren Tipp an das weiter, was Sie angetippt haben, und der Werbe-Tab geht gar nicht erst auf. Gemacht ist es für kostenlose Streaming-, Sport-, Manga- und Novel-Seiten, auf denen das auf jeder Seite passiert.</p></li>
+<li><h3>Neue Tabs, die an „Pop-ups blockieren“ in Safari vorbeikommen</h3><p>Der Schalter in Safari stoppt Fenster, die sich von selbst öffnen. Werbeskripte warten auf Ihren Tipp und öffnen ihres genau in diesem Moment, also glaubt Safari, Sie hätten es gewollt. Undirect prüft, was unter Ihrem Finger war.</p></li>
+<li><h3>Weiterleitungen, die Ihr Adblocker übersieht</h3><p>Adblocker arbeiten mit Listen von Werbeadressen, und eine Weiterleitung versteckt sich hinter einem Link, der normal aussieht. Behalten Sie Ihren Blocker: Undirect läuft daneben und stoppt die Weiterleitung selbst.</p></li>
+<li><h3>Fake-Seiten mit „Ihr iPhone ist gefährdet“</h3><p>Diese Seite kommt von der Website, Ihr iPhone ist in Ordnung. Undirect stoppt sie, wenn Ihr Tipp sie ausgelöst hat, und ab Version 1.0.5 stoppt es auch eine Seite, die Sie von selbst dorthin schickt, beim Laden oder während Sie scrollen.</p></li>
+<li><h3>Zurück, und schon wieder Werbung</h3><p>Wenn Undirect einen Tab stoppt, bleiben Sie auf der Seite, die Sie gerade lesen. Ab Version 1.0.5 bleibt eine Seite, die auf die Zurück-Taste mit einer anderen Website antwortet, wo sie ist, und die Kopien, die eine Seite stapelt, um die Zurück-Taste festzuhalten, werden auf eine gekürzt.</p></li>
+</ul>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">
