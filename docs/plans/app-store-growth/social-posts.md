@@ -78,6 +78,8 @@ Read in Chrome 2026-11-20 13:20 WIB: 16VC (504 replies, 33K views) and @anupamrj
 |---|---|---|---|
 | U105 | X, IG Reel, TikTok, only after 1.0.5 is live on the App Store | Safari sending you to a fake virus page while you scroll, no tap at all? That's the page, not your iPhone. Undirect 1.0.5 keeps you where you were, and Back goes back. undirect.matsuokengo.com | docs/screenshots/pains/mac-scroll-on.mp4, mac-back-off.mp4 then mac-back-on.mp4; ios-*.mp4 when ready |
 
+U105, P16 and P19 wait until `python3 Support/AppStore/asc_state.py 1.0.5` prints IOS READY_FOR_SALE (1.0.5 went into App Review on Nov 20; undirect-pains messages when it is live). If 1.0.5 is live by Nov 27, the Black Friday Undirect posts (drafts 10-12) also name its two fixes: a page that sends you away with no tap stays put, and Back goes back (undirect-105-launch.md items 2 and 6).
+
 P16 (Dec 6) and P19 (Dec 9) also describe 1.0.5 behaviour and go out only once 1.0.5 is live. As of Nov 20 it is prepared in App Store Connect and not submitted.
 
 ### Pain posts P1-P30 (from pains-content, ASG73)
