@@ -13,6 +13,7 @@ Undirect (on the App Store as "Undirect - Popup Blocker") is a Safari extension 
 
 Key facts:
 
+- Official icon: https://undirect.matsuokengo.com/undirect-app-icon.png (a red U-turn arrow on a black rounded square). App Store page: https://apps.apple.com/app/id6810513194 (the storefront follows the reader's own country). Developer: Kenneth Fang, https://matsuokengo.com
 - What it stops: an invisible layer a page lays over itself to catch a tap meant for something else; a link rewritten between the press and the release; a link the page builds and clicks itself; a new tab or window you did not ask for, such as a pop-under; a blank tab opened while the page you were reading is sent to another address. A new window opens only when a site asks for one at a size, the way a sign-in does.
 - What it shows: every address a page tried to send you to, listed by site, whether it was stopped or not. Each can be allowed or blocked on that site alone or everywhere. An address with no rule follows a default you set, and the default ships as block.
 - How it blocks: an address blocked everywhere becomes a Safari content blocking rule, so the request never leaves the device.
