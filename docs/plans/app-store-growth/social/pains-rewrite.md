@@ -76,3 +76,24 @@ X: no hashtags, no link in the post (Buffer: link posts on free accounts suppres
 - Instagram Reel 12 s, cover "40 DMs. Same 3 questions.": DM comes in "still available?", tap, answer in; "where do you ship?", tap; "how do I pay?", tap. Caption opens "Answering the same 3 DMs all day?" Tags #smallbusinesstips #iphonetips #productivityapps #iosapps #textreplacement
 - TikTok: same clip, said aloud "how I answer the same DMs in one tap". #smallbusiness #iphonetips #techtok
 - Threads: "Selling on Instagram: what's the question you answer 40 times a day?" Link in reply.
+
+## Interactive posts (polls, quizzes, stickers, Q&A)
+
+Limits, checked 2026-11-20: X polls 2-4 options of 25 characters, 5 minutes to 7 days (https://help.x.com/en/using-x/x-polls). Threads polls up to 4 options of 25 characters (https://developers.facebook.com/documentation/threads/create-posts/polls); duration unconfirmed (24 h at 2023 launch). Instagram Story stickers: poll (up to 4 answers), emoji slider, quiz (2-4 answers, one marked right), questions, Add Yours (https://help.instagram.com/iphone-app/204990845482566). TikTok: poll sticker on a video (24 h, no edits), comment polls up to 5 answers on your own video (https://newsroom.tiktok.com/say-more-in-the-comments?lang=en, Sep 3 2026), Q&A with video replies (https://newsroom.tiktok.com/tiktok-q-and-a?lang=en).
+
+Every poll asks about the buyer's life, not the app; the app arrives in our first reply under the poll or in the next Story frame.
+
+| # | Platform | Format | Text | Follow-up |
+|---|---|---|---|---|
+| I1 | X, Threads | poll, 1 day | Ad tabs you closed to watch one episode: 0 / 1-5 / 6-20 / Lost count | reply: the tab opens because the page takes your tap; Undirect + link |
+| I2 | X, Threads | poll | Your ad blocker vs the tabs that open when you tap: Stops them / Some get through / Doesn't touch them / No blocker | reply: blockers hide ads, Undirect stops the taken tap, run both |
+| I3 | X, Threads | poll | Where's your bank account number right now? Notes / Screenshot in Photos / I know it by heart / Ask my partner | reply: Cutling keyboard, one tap |
+| I4 | X, Threads | poll | A clipboard app on a subscription: Fine by me / Never / Paying and annoyed / What's a clipboard app | reply: Cutling $4.99 once |
+| I5 | Instagram carousel | game | Slide 1 "One of these X buttons closes the ad. Which?" (three X buttons on a mock ad, demo labelled) / slide 2 the answer / slide 3 why fake Xs exist / slide 4 Undirect | caption asks for their answer before swiping |
+| I6 | Instagram Story | quiz sticker | "Which Download button is the real one?" 3 buttons on a demo page, one marked right | next frame: the other two were ads; Undirect link sticker |
+| I7 | Instagram Story | emoji slider | "How much does a surprise ad tab ruin your night?" 😤 | next frame: UA clip |
+| I8 | Instagram Story | questions sticker | "What do you type again and again on your phone?" | answer the best ones in frames showing it saved in Cutling |
+| I9 | Instagram Story | Add Yours | "The text you retype every week" | ours first: account number, blurred |
+| I10 | TikTok | poll sticker, 24 h | over UA clip: "Has Safari ever opened a tab you didn't tap?" Yes / No | pinned comment with the fix |
+| I11 | TikTok | comment poll, up to 5 | on CA clip: "What do you retype most?" Account number / Address / Email / Same DM reply / Other | reply videos to the "Other" answers via Q&A |
+| I12 | TikTok | Q&A video replies | answer real questions as they come: "does it block ads?", "is a keyboard app safe for bank details?" | each answer is its own video |
