@@ -79,7 +79,346 @@
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/style.css">
+<style>:root {
+color-scheme: light dark;
+--bg: #f7f6f4;
+--surface: #ffffff;
+--sunken: #efedea;
+--ink: #141416;
+--muted: #5a5a62;
+--line: #dfddd8;
+--accent: #d92b24;
+--accent-ink: #ffffff;
+--accent-hover: #b9231d;
+--link: #c0261f;
+--focus: #1d6fe8;
+--shadow: 0 1px 2px rgb(20 20 22 / 6%), 0 12px 32px rgb(20 20 22 / 8%);
+--radius: 14px;
+--radius-lg: 22px;
+--gap: 24px;
+--wrap: 1080px;
+--prose: 680px;
+--font: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+--mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+:root:not([data-theme="light"]) {
+--bg: #0b0b0d;
+--surface: #151518;
+--sunken: #111114;
+--ink: #f4f4f6;
+--muted: #a3a3ad;
+--line: #26262c;
+--accent: #e5322b;
+--accent-hover: #f0524b;
+--link: #ff5c55;
+--shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 16px 40px rgb(0 0 0 / 50%);
+}
+}
+:root[data-theme="dark"] {
+--bg: #0b0b0d;
+--surface: #151518;
+--sunken: #111114;
+--ink: #f4f4f6;
+--muted: #a3a3ad;
+--line: #26262c;
+--accent: #e5322b;
+--accent-hover: #f0524b;
+--link: #ff5c55;
+--shadow: 0 1px 2px rgb(0 0 0 / 40%), 0 16px 40px rgb(0 0 0 / 50%);
+}
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-padding-top: 16px; }
+body {
+font-family: var(--font);
+background: var(--bg);
+color: var(--ink);
+line-height: 1.65;
+font-size: 17px;
+-webkit-font-smoothing: antialiased;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+main { flex: 1; }
+img, video, svg { display: block; max-width: 100%; height: auto; }
+a { color: var(--link); text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 6px; }
+.skip {
+position: absolute;
+inset-inline-start: 16px;
+top: -80px;
+background: var(--ink);
+color: var(--bg);
+padding: 10px 16px;
+border-radius: 10px;
+z-index: 20;
+}
+.skip:focus { top: 12px; }
+.wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: 20px; }
+.site-nav {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+gap: 8px 20px;
+max-width: var(--wrap);
+margin-inline: auto;
+padding: 18px 20px;
+}
+.nav-brand {
+display: flex;
+align-items: center;
+gap: 10px;
+color: var(--ink);
+font-size: 20px;
+font-weight: 700;
+letter-spacing: -0.01em;
+text-decoration: none;
+}
+.nav-brand img { width: 32px; height: 32px; border-radius: 8px; }
+.nav-links {
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 4px 6px;
+list-style: none;
+padding: 0;
+}
+.nav-links a, .lang summary {
+display: inline-flex;
+align-items: center;
+min-height: 44px;
+padding-inline: 12px;
+border-radius: 999px;
+color: var(--muted);
+font-size: 15px;
+font-weight: 500;
+text-decoration: none;
+cursor: pointer;
+list-style: none;
+}
+.nav-links a:hover, .lang summary:hover { color: var(--ink); background: var(--sunken); text-decoration: none; }
+.nav-links a[aria-current="page"] { color: var(--ink); background: var(--sunken); }
+.lang { position: relative; }
+.lang summary::-webkit-details-marker { display: none; }
+.lang summary::after {
+content: "";
+width: 7px;
+height: 7px;
+margin-inline-start: 8px;
+border-inline-end: 2px solid currentColor;
+border-bottom: 2px solid currentColor;
+transform: rotate(45deg) translate(-2px, -2px);
+}
+.lang[open] summary { color: var(--ink); background: var(--sunken); }
+.lang-menu {
+position: absolute;
+inset-inline-end: 0;
+top: calc(100% + 6px);
+z-index: 10;
+width: min(560px, calc(100vw - 32px));
+max-height: min(70vh, 480px);
+overflow-y: auto;
+padding: 8px;
+background: var(--surface);
+border: 1px solid var(--line);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+list-style: none;
+columns: 2 220px;
+column-gap: 4px;
+}
+.lang-menu li { break-inside: avoid; }
+.lang-menu a {
+display: block;
+padding: 9px 12px;
+border-radius: 8px;
+color: var(--ink);
+font-size: 15px;
+font-weight: 400;
+text-decoration: none;
+}
+.lang-menu a:hover { background: var(--sunken); }
+.lang-menu a[aria-current="true"] { font-weight: 700; color: var(--link); }
+.btn {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+min-height: 52px;
+padding: 12px 26px;
+border-radius: 999px;
+background: var(--accent);
+color: var(--accent-ink);
+font-size: 17px;
+font-weight: 600;
+text-decoration: none;
+transition: background-color 0.15s;
+}
+.btn:hover { background: var(--accent-hover); text-decoration: none; }
+.btn svg { width: 20px; height: 20px; fill: currentColor; flex: none; }
+.badge { display: inline-block; line-height: 0; align-self: flex-start; padding: 0; border-radius: 10px; }
+.badge img { height: 48px; width: auto; }
+.cta-band .text-link { margin-top: 0; font-size: 19px; font-weight: 650; }
+.btn-quiet {
+background: transparent;
+color: var(--ink);
+box-shadow: inset 0 0 0 1.5px var(--line);
+}
+.btn-quiet:hover { background: var(--sunken); }
+.hero { padding-block: 40px 72px; }
+.hero .wrap {
+display: grid;
+grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+gap: 48px;
+align-items: center;
+}
+.hero h1 {
+font-size: clamp(34px, 5.2vw, 58px);
+line-height: 1.08;
+letter-spacing: -0.025em;
+font-weight: 750;
+text-wrap: balance;
+margin-bottom: 20px;
+}
+.hero .eyebrow { font-size: 16px; font-weight: 650; color: var(--link); margin-bottom: 12px; text-wrap: balance; }
+.hero .lead { font-size: 19px; color: var(--muted); max-width: 34em; margin-bottom: 28px; text-wrap: pretty; }
+.cta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
+.cta-note { margin-top: 14px; font-size: 15px; color: var(--muted); }
+.hero-shot { justify-self: center; width: min(100%, 340px); }
+.hero-shot img { border-radius: 38px; box-shadow: var(--shadow); border: 1px solid var(--line); width: 100%; }
+.section { padding-block: 72px; }
+.section.sunken { background: var(--sunken); }
+.section h2 {
+font-size: clamp(28px, 3.6vw, 40px);
+line-height: 1.15;
+letter-spacing: -0.02em;
+font-weight: 720;
+text-wrap: balance;
+margin-bottom: 18px;
+}
+.section p { color: var(--muted); max-width: 40em; text-wrap: pretty; }
+.section p + p { margin-top: 14px; }
+.section-head { margin-bottom: 36px; }
+.problem { max-width: 46em; }
+.problem p { font-size: 20px; line-height: 1.6; color: var(--ink); }
+.problem p + p { color: var(--muted); font-size: 18px; }
+.film {
+position: relative;
+border-radius: var(--radius-lg);
+overflow: hidden;
+background: #0b0b0d;
+box-shadow: var(--shadow);
+border: 1px solid var(--line);
+}
+.film video { width: 100%; aspect-ratio: 16 / 9; background: #0b0b0d; }
+.features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--gap); list-style: none; padding: 0; }
+.features li {
+background: var(--surface);
+border: 1px solid var(--line);
+border-radius: var(--radius);
+padding: 26px 24px 28px;
+min-height: 100%;
+}
+.features h3 { font-size: 21px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 10px; }
+.features p { color: var(--muted); font-size: 17px; }
+.features svg { width: 30px; height: 30px; margin-bottom: 16px; color: var(--accent); stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 56px; align-items: center; }
+.split img { width: 100%; }
+.phones { display: flex; gap: var(--gap); justify-content: center; }
+.phones img { width: min(44%, 280px); border-radius: 30px; border: 1px solid var(--line); box-shadow: var(--shadow); }
+.private h2 { margin-bottom: 14px; }
+.text-link { display: inline-block; margin-top: 18px; font-weight: 600; }
+.cta-band { text-align: center; }
+.cta-band h2 { margin-inline: auto; }
+.cta-band p { margin-inline: auto; margin-bottom: 26px; }
+.cta-band .cta-row { justify-content: center; }
+.page { max-width: var(--prose); margin-inline: auto; padding: 36px 20px 96px; }
+.page-wide { max-width: 980px; }
+.page-head { margin-bottom: 36px; }
+.page-wide .page-head, .page-wide .prose section { max-width: var(--prose); }
+.page-head h1 { font-size: clamp(32px, 5vw, 46px); line-height: 1.1; letter-spacing: -0.025em; font-weight: 750; text-wrap: balance; }
+.page-head p { margin-top: 12px; color: var(--muted); font-size: 18px; }
+.prose section { margin-top: 36px; }
+.prose h2 { font-size: 23px; line-height: 1.25; letter-spacing: -0.01em; margin-bottom: 8px; }
+.prose p { color: var(--muted); }
+.prose p + p { margin-top: 12px; }
+.prose ul { padding-inline-start: 22px; margin-top: 12px; color: var(--muted); }
+.prose li + li { margin-top: 6px; }
+.prose .cta-row { margin-block: 18px; }
+.table-wrap { overflow-x: auto; margin-bottom: 12px; border: 1px solid var(--line); border-radius: var(--radius); }
+.compare { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 15px; line-height: 1.45; }
+.compare th, .compare td { padding: 12px 14px; text-align: start; vertical-align: top; border-bottom: 1px solid var(--line); }
+.compare tbody tr:last-child > * { border-bottom: 0; }
+.compare thead th { background: var(--sunken); font-weight: 650; }
+.compare tbody th { font-weight: 650; width: 14%; }
+.compare td { color: var(--muted); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.summary { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px 22px; color: var(--ink); }
+.faq { margin-top: 12px; border-top: 1px solid var(--line); }
+.faq details { border-bottom: 1px solid var(--line); }
+.faq summary {
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 16px;
+min-height: 56px;
+padding-block: 14px;
+font-weight: 600;
+font-size: 18px;
+cursor: pointer;
+list-style: none;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after {
+content: "";
+flex: none;
+width: 9px;
+height: 9px;
+border-inline-end: 2px solid var(--muted);
+border-bottom: 2px solid var(--muted);
+transform: rotate(45deg);
+transition: transform 0.15s;
+}
+.faq details[open] summary::after { transform: rotate(-135deg); }
+.faq .answer { padding-bottom: 18px; color: var(--muted); }
+.notfound { text-align: center; padding-block: 12vh; }
+.notfound h1 { font-size: 40px; margin-bottom: 12px; }
+.notfound p { color: var(--muted); margin-bottom: 24px; }
+.site-footer { border-top: 1px solid var(--line); padding: 32px 20px 44px; }
+.footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; list-style: none; padding: 0; }
+.footer-links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--muted); font-size: 15px; font-weight: 500; text-decoration: none; }
+.footer-links a:hover { color: var(--ink); text-decoration: underline; }
+.copyright { margin-top: 8px; text-align: center; font-size: 14px; color: var(--muted); }
+.demo-list { list-style: none; padding: 0; margin-top: 8px; }
+.demo-list li { padding-block: 14px; border-top: 1px solid var(--line); }
+.demo-list li:last-child { border-bottom: 1px solid var(--line); }
+.demo-list a { font-weight: 650; font-size: 18px; }
+.demo-list p { margin-top: 4px; }
+@media (max-width: 860px) {
+.hero .wrap, .split { grid-template-columns: minmax(0, 1fr); gap: 36px; }
+.hero { padding-block: 24px 48px; }
+.hero-shot { width: min(100%, 300px); }
+.features { grid-template-columns: minmax(0, 1fr); }
+.section { padding-block: 52px; }
+}
+@media (max-width: 520px) {
+body { font-size: 16px; }
+.hero .lead { font-size: 17px; }
+.problem p { font-size: 18px; }
+.btn { width: 100%; justify-content: center; }
+.cta-row { flex-direction: column; align-items: stretch; }
+.phones img { width: 46%; border-radius: 22px; }
+.lang-menu { position: fixed; inset-inline: 16px; top: 120px; width: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+* { transition: none !important; scroll-behavior: auto !important; }
+}
+[dir="rtl"] .btn svg { transform: none; }
+.directory-badges{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;align-items:center;margin:20px 0 4px}
+.directory-badges img{height:44px;width:auto;display:block}</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"FAQPage","inLanguage":"de-DE","mainEntity":[{"@type":"Question","name":"Undirect erscheint nicht in Safari","acceptedAnswer":{"@type":"Answer","text":"Öffnen Sie die App einmal und schalten Sie Undirect dann in den Erweiterungseinstellungen von Safari ein."}},{"@type":"Question","name":"Wie schalte ich es für eine Website ein?","acceptedAnswer":{"@type":"Answer","text":"Öffnen Sie die Website in Safari und tippen Sie auf die Undirect-Taste. Bis dahin ist der Schutz überall aus. Tippen Sie erneut, um ihn für diese Website auszuschalten."}},{"@type":"Question","name":"Eine Website funktioniert nicht mehr, seit ich eine Regel gesetzt habe","acceptedAnswer":{"@type":"Answer","text":"Tippen Sie auf die Erweiterungstaste, suchen Sie den Host und wählen Sie die Standardeinstellung. Damit entfällt die Regel."}},{"@type":"Question","name":"Ich kann Regeln auf iPhone oder iPad nicht ändern","acceptedAnswer":{"@type":"Answer","text":"Die Liste in der App ist dort nur lesbar, weil iOS einer App keinen Weg lässt, Änderungen an die eigene Erweiterung zu senden. Ändern Sie Regeln über die Erweiterungstaste in Safari."}},{"@type":"Question","name":"Ein Fenster, das ich wollte, wurde blockiert","acceptedAnswer":{"@type":"Answer","text":"Sein Host steht in der Liste. Erlauben Sie ihn auf dieser Website oder überall."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Undirect","item":"https://undirect.matsuokengo.com/de-de/"},{"@type":"ListItem","position":2,"name":"Support","item":"https://undirect.matsuokengo.com/de-de/support/"}]}]}</script>
 <script src="/site.js" defer></script>
 </head>
@@ -87,7 +426,7 @@
 <a class="skip" href="#main">Zum Inhalt springen</a>
 <header>
 <nav class="site-nav">
-<a class="nav-brand" href="/de-de/"><img src="/icon.png" alt="" width="32" height="32">Undirect</a>
+<a class="nav-brand" href="/de-de/"><img src="/img/icon-64.webp" alt="" width="32" height="32">Undirect</a>
 <ul class="nav-links">
 <li><a href="/de-de/support/" aria-current="page">Support</a></li>
 <li><a href="/de-de/privacy/">Datenschutz</a></li>
@@ -174,7 +513,7 @@
 <li><a href="https://github.com/kengomatsuo/undirect" rel="noopener">Quellcode</a></li>
 </ul>
 <p class="copyright">&copy; 2026 Kenneth Fang</p>
-<div class="directory-badges"><a href="https://www.producthunt.com/products/undirect?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-undirect" target="_blank" rel="noopener noreferrer"><img alt="Undirect on Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1310867&amp;theme=light"></a><a href="https://nativeshelf.com/undirect?ref=badge" target="_blank" title="Featured on NativeShelf.com"><img src="https://nativeshelf.com/badge/dark.png?v=6" alt="Featured on NativeShelf.com" width="232" height="68" /></a><a href="https://macpip.com/apps/undirect?ref=badge"><img src="https://macpip.com/badge/undirect.svg" height="44" alt="Listed on MacPip"></a><a href="https://macbase.app/apps/undirect?ref=badge" target="_blank" rel="noopener"><img src="https://macbase.app/badge/featured-on-macbase.svg" alt="Undirect is featured on MacBase" height="44" style="height:44px;width:auto"></a><a href="https://macbrowse.com"><img src="https://macbrowse.com/badge/listed-light.svg" alt="Listed on Mac Browse" height="44"></a><a href="https://macappindex.com/apps/undirect?ref=badge" target="_blank" title="Undirect on Mac App Index"><img src="https://macappindex.com/apps/undirect/badge.svg?theme=light&height=56" alt="Undirect on Mac App Index" width="224" height="56" /></a><a href="https://ipip.fyi/apps/undirect?ref=badge"><img src="https://ipip.fyi/badge/undirect.svg" alt="Undirect on iPip" width="220" height="56"></a><a href="https://postyourstartup.com/startup/undirect?ref=badge" target="_blank"><img src="https://postyourstartup.com/api/badge/undirect?theme=light" alt="Featured on PostYourStartup" width="212" height="55" /></a><a href="https://launchigniter.com/product/undirect?ref=badge-undirect" target="_blank"><img src="https://launchigniter.com/api/badge/undirect?theme=light" alt="Featured on LaunchIgniter" width="212" height="55" /></a><a href="https://ailaun.ch/projects/undirect?utm_source=badge" target="_blank" rel="noopener noreferrer"><img src="https://ailaun.ch/ailaunch/images/badges/featured-on-light.svg" alt="Featured on AI Launch" style="height:44px;width:auto"/></a><a href="https://www.nxgntools.com/tools/undirect?utm_source=undirect" target="_blank" rel="noopener" style="display: inline-block; width: auto;"><img src="https://www.nxgntools.com/api/embed/undirect?type=FIND_US_ON" alt="Find us on NxGn Tools" style="height: 48px; width: auto;" /></a><a href="https://alternativeto.net/software/undirect/about/?utm_source=badge&utm_medium=referral" target="_blank"><img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="Undirect | AlternativeTo" width="173" height="56" style="width:173px;height:56px" /></a><a href="https://indieappcatalog.com/app/5526"><img src="https://indieappcatalog.com/badge/listed-on-indie-app-catalog-black.svg" alt="Listed on Indie App Catalog" width="183" height="40"></a></div>
+<div class="directory-badges"><a href="https://www.producthunt.com/products/undirect?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-undirect" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" alt="Undirect on Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1310867&amp;theme=light"></a><a href="https://nativeshelf.com/undirect?ref=badge" target="_blank" title="Featured on NativeShelf.com"><img loading="lazy" decoding="async" src="https://nativeshelf.com/badge/dark.png?v=6" alt="Featured on NativeShelf.com" width="232" height="68" /></a><a href="https://macpip.com/apps/undirect?ref=badge"><img loading="lazy" decoding="async" src="https://macpip.com/badge/undirect.svg" height="44" alt="Listed on MacPip"></a><a href="https://macbase.app/apps/undirect?ref=badge" target="_blank" rel="noopener"><img loading="lazy" decoding="async" src="https://macbase.app/badge/featured-on-macbase.svg" alt="Undirect is featured on MacBase" height="44" style="height:44px;width:auto"></a><a href="https://macbrowse.com"><img loading="lazy" decoding="async" src="https://macbrowse.com/badge/listed-light.svg" alt="Listed on Mac Browse" height="44"></a><a href="https://macappindex.com/apps/undirect?ref=badge" target="_blank" title="Undirect on Mac App Index"><img loading="lazy" decoding="async" src="https://macappindex.com/apps/undirect/badge.svg?theme=light&height=56" alt="Undirect on Mac App Index" width="224" height="56" /></a><a href="https://ipip.fyi/apps/undirect?ref=badge"><img loading="lazy" decoding="async" src="https://ipip.fyi/badge/undirect.svg" alt="Undirect on iPip" width="220" height="56"></a><a href="https://postyourstartup.com/startup/undirect?ref=badge" target="_blank"><img loading="lazy" decoding="async" src="https://postyourstartup.com/api/badge/undirect?theme=light" alt="Featured on PostYourStartup" width="212" height="55" /></a><a href="https://launchigniter.com/product/undirect?ref=badge-undirect" target="_blank"><img loading="lazy" decoding="async" src="https://launchigniter.com/api/badge/undirect?theme=light" alt="Featured on LaunchIgniter" width="212" height="55" /></a><a href="https://ailaun.ch/projects/undirect?utm_source=badge" target="_blank" rel="noopener noreferrer"><img loading="lazy" decoding="async" src="https://ailaun.ch/ailaunch/images/badges/featured-on-light.svg" alt="Featured on AI Launch" style="height:44px;width:auto"/></a><a href="https://www.nxgntools.com/tools/undirect?utm_source=undirect" target="_blank" rel="noopener" style="display: inline-block; width: auto;"><img loading="lazy" decoding="async" src="https://www.nxgntools.com/api/embed/undirect?type=FIND_US_ON" alt="Find us on NxGn Tools" style="height: 48px; width: auto;" /></a><a href="https://alternativeto.net/software/undirect/about/?utm_source=badge&utm_medium=referral" target="_blank"><img loading="lazy" decoding="async" src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="Undirect | AlternativeTo" width="173" height="56" style="width:173px;height:56px" /></a><a href="https://indieappcatalog.com/app/5526"><img loading="lazy" decoding="async" src="https://indieappcatalog.com/badge/listed-on-indie-app-catalog-black.svg" alt="Listed on Indie App Catalog" width="183" height="40"></a></div>
 </footer>
 </body>
 </html>
