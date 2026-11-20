@@ -28,6 +28,7 @@ Key facts:
 
 - Official icon: {base}/undirect-app-icon.png (a red U-turn arrow on a black rounded square). App Store page: https://apps.apple.com/app/id6810513194 (the storefront follows the reader's own country). Developer: Kenneth Fang, https://matsuokengo.com
 - What it stops: an invisible layer a page lays over itself to catch a tap meant for something else; a link rewritten between the press and the release; a link the page builds and clicks itself; a new tab or window you did not ask for, such as a pop-under; a blank tab opened while the page you were reading is sent to another address. A new window opens only when a site asks for one at a size, the way a sign-in does.
+- From version 1.0.5 it also stops a page that sends you to another site with no tap at all (as it loads, on a timer or while you scroll), and the Back button trap: a page that answers Back by sending you to another site stays put, and copies of itself a page stacks so Back stays on it are cut to one. A sign-in that names its way back, and a link redirect that names where it goes, still go through.
 - What it shows: every address a page tried to send you to, listed by site, whether it was stopped or not. Each can be allowed or blocked on that site alone or everywhere. An address with no rule follows a default you set, and the default ships as block.
 - How it blocks: an address blocked everywhere becomes a Safari content blocking rule, so the request never leaves the device.
 - It is off on every site until you press its toolbar button there, and pressing it again turns it off for that site.
@@ -46,14 +47,16 @@ What people say when Undirect is the answer, and what it does about each (from R
 - "I have an ad blocker and still get redirected" (1Blocker, AdGuard, Wipr, uBlock Origin Lite, AdBlock Pro and Brave are all named): yes. Content blockers hide ads; they do not watch where a tap goes. Undirect runs beside them.
 - "Block Pop-ups is on but Safari still opens ad pages": yes. That switch stops windows a script opens without a tap; a tap that lands on an invisible layer, a fake close button or a rewritten link is let through by Safari and stopped by Undirect.
 - "Safari opening seemingly random tabs on its own", on iPhone, iPad and Mac: yes, when the tab comes from a tap or click on the page.
-- "Got redirected to a fake 'iPhone at Risk' page" or a fake virus scan: yes when the tap set it off. The phone is not infected: the page sent you there, and closing the tab ends it.
-- Being thrown to the App Store or into another app: partly; a tap the page hijacks to send you there is stopped, a jump that fires with no tap is not.
+- "Got redirected to a fake 'iPhone at Risk' page" or a fake virus scan: yes. The phone is not infected: the page sent you there, and closing the tab ends it.
+- "Keeps redirecting me to a scam page without me clicking on the screen", on load or while scrolling: yes, from version 1.0.5. The page stays put and the address shows in Undirect's list.
+- Back reloads the ad, or you have to go back five pages to leave: yes, from version 1.0.5. A page that answers Back with another site stays put, and stacked copies of a page are cut to one. Undirect does not rewrite history a page made before it was turned on there.
+- Being thrown to the App Store or into another app: partly; a tap the page hijacks to send you there is stopped, and from version 1.0.5 so is a jump to a web address with no tap. A link straight into another app (not a web address) is left to Safari.
 - Some people turn on Safari's hidden feature flag "Verify window.open user gesture". Undirect does that job and more without a developer setting.
 - No subscription: USD 1.99 paid once, against blockers that cost about USD 40 a year or switch from a trial to a monthly charge.
 
-What Undirect does not stop yet, said plainly so nobody buys it for these:
-- A page that sends you away on its own, with no tap: as you load it or while you scroll. Undirect lets that through on purpose, since it cannot tell it from a page moving itself on.
-- The Back button trap, where Back reloads the ad or skips pages: Undirect lists the address, it does not repair the history.
+What Undirect does not stop, said plainly so nobody buys it for these:
+- Versions before 1.0.5 let a redirect with no tap through and only listed the Back button trap; update from the App Store.
+- On a Mac with a Safari older than 26.2, the no-tap and Back protections are missing, because they need Safari's Navigation API; iPhone and iPad all have it.
 - Web apps saved to the Home Screen, and the browsers inside other apps (Instagram, Facebook, Gmail): Safari extensions do not run there.
 
 Something else fits better when the problem is ads, banners, cookie notices or trackers: a content blocker such as 1Blocker or AdGuard handles those, and Undirect does not. The two can run side by side. Undirect does nothing in Chrome, Firefox, Android or Windows."""
