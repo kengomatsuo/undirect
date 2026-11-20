@@ -26,6 +26,8 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+import ai_facts
+import ai_files
 import en_pages
 
 HERE = Path(__file__).resolve().parent
@@ -536,6 +538,14 @@ def site_js(locales):
     return (HERE / "site.js.tpl").read_text(encoding="utf-8").replace("/*LANGS*/{}", json.dumps(langs, separators=(",", ":")))
 
 
+def write_ai_files(out, locales):
+    """llms.txt, llms-full.txt, robots.txt, the .well-known files and a markdown copy of each English page (ai_files.py)."""
+    store = load(REPO / "Support/i18n/store/en-US.json")
+    fx = ai_facts.facts(BASE, store, PRICE, store_url("llms"), SOURCE_URL, EMAIL, len(locales),
+                        datetime.date.today().isoformat())
+    ai_files.write(out, BASE, fx, lambda rel: (out / rel / "index.html", f"{BASE}/{rel}"))
+
+
 locales_by_code = {}
 
 
@@ -605,13 +615,13 @@ def main():
         shutil.copy(HERE / "badges" / f"{code}.svg", out / "img" / "badges" / f"{code}.svg")
     (out / "404.html").write_text(not_found_page(locales, all_t), encoding="utf-8")
     (out / "sitemap.xml").write_text(sitemap(locales), encoding="utf-8")
-    (out / "robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n", encoding="utf-8")
     (out / "site.js").write_text(site_js(locales), encoding="utf-8")
     (out / "site.webmanifest").write_text(json.dumps({
         "name": "Undirect", "short_name": "Undirect", "start_url": "/", "display": "browser",
         "background_color": THEME["dark"], "theme_color": THEME["dark"],
         "icons": [{"src": "/icon-192.png", "sizes": "192x192", "type": "image/png"},
                   {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"}]}, indent=1) + "\n", encoding="utf-8")
+    write_ai_files(out, locales)
     print(f"{len(locales)} languages, {n} pages -> {out}")
 
 

@@ -57,8 +57,11 @@ picks the visitor's language by script.
   H.264 CRF 30 with 64 kbit/s audio, about 1.7 MB. Its captions are English.
 - `media/film-poster.webp` is the frame at 14 s.
 - `img/*.webp` come from `.shots/captures`. The captures are English UI.
-- The favicon, `icon*.png` and `og.png` derive from the extension's icon and
-  `Support/icon/build.py`; `og.png` carries only the icon and the name.
+- The favicon and `icon*.png` derive from the extension's icon and
+  `Support/icon/build.py`.
+- `og.png` (1200x630, the link preview) is the Mac frame 01 cover:
+  `python3 Support/AppStore/render_screenshots.py --kinds mac --locales en` writes
+  `Support/AppStore/listing-cover.png` and scales it into `web/og.png`.
 
 ## App Store badge
 
@@ -80,3 +83,7 @@ English variants share `en-us`. The `cta_get` string is the image's alt text.
 ## IndexNow
 
 The key is `INDEXNOW_KEY` in `generate.py` (public by design); the build writes `<key>.txt` at the site root. After the gh-pages push, `deploy.sh web` runs `generate.py --indexnow`, which POSTs every sitemap URL to `api.indexnow.org` and prints the HTTP status. Anything but 200 or 202 prints a warning and never fails the deploy.
+
+## Files for AI assistants and agents
+
+`web/_generator/ai_files.py` writes them after the pages, from what `ai_facts.py` says about Undirect (store listing, live price, `project.yml` minimums, the English pages): `/llms.txt` and `/llms-full.txt` (llmstxt.org v2), an `index.md` beside each English page (linked by `rel="alternate" type="text/markdown"`, plus `rel="describedby"` and `rel="ard"`), `robots.txt` naming every AI crawler on the ai.robots.txt list (read at build time, `ai_agents.json` when offline) as allowed with `Content-Signal: search=yes, ai-input=yes, ai-train=yes` and an `Agentmap:` line, `/.well-known/ard.json` (Agentic Resource Discovery, audited by Chrome Lighthouse's Agentic Browsing category), `/.well-known/agent-skills/` (an Agent Skill named `undirect`), `/.well-known/security.txt` and `.nojekyll`, without which GitHub Pages' Jekyll would turn `index.md` into HTML and drop `/.well-known/`. App Store links in these files carry `ct=llms`, so App Store Connect counts what AI answers send. `ai_files.py` is the same file in Cutling: change both. `python3 web/_generator/ai_files.py` refreshes `ai_agents.json`.
