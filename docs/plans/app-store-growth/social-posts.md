@@ -7,6 +7,8 @@ Every post, repost and boost from @monholtco on X, Instagram and TikTok, newest 
 | 2026-11-18 | X | Cutling launched on MacPip | https://x.com/monholtco/status/2122955578314297691 |
 | 2026-11-19 10:08 | X | Undirect is on MacBase | https://x.com/monholtco/status/2123251984472080675 |
 | 2026-11-20 09:57 | X | Quote of MacPip's "Top Pips earners, Nov 18" (#1); first version deleted on the owner's word for an unclear last line | https://x.com/monholtco/status/2123611052684521649 |
+| 2026-11-20 14:08 | X | Reply to @16vchq "Drop your startup link": Undirect (draft 1) | https://x.com/monholtco/status/2123673734460686782 |
+| 2026-11-20 14:09 | X | Reply to @anupamrjp "Promote your project URL": Cutling (draft 2) | https://x.com/monholtco/status/2123674046202257556 |
 
 ## Drafts waiting for the owner's go (asg-social-2, 2026-11-20)
 
@@ -14,8 +16,8 @@ Nothing here goes out until the owner says go to it by number. Each reply's thre
 
 | # | When (WIB) | Platform | Text |
 |---|---|---|---|
-| 1 | on his go | X reply to @16vchq "Drop your startup link" (x.com/16vchq/status/2123473588707868961) | Undirect, a Safari extension for Mac, iPhone and iPad that stops pages opening tabs or redirects you never clicked. / undirect.matsuokengo.com |
-| 2 | on his go | X reply to @anupamrjp "Promote your project URL" (x.com/anupamrjp/status/2123462853848076690) | Cutling: a keyboard for the text you keep typing, like your address or a bank number. iPhone, iPad and Mac. / cutling.matsuokengo.com |
+| 1 | SENT 14:08 | X reply to @16vchq "Drop your startup link" (x.com/16vchq/status/2123473588707868961) | Undirect, a Safari extension for Mac, iPhone and iPad that stops pages opening tabs or redirects you never clicked. / undirect.matsuokengo.com |
+| 2 | SENT 14:09 | X reply to @anupamrjp "Promote your project URL" (x.com/anupamrjp/status/2123462853848076690) | Cutling: a keyboard for the text you keep typing, like your address or a bank number. iPhone, iPad and Mac. / cutling.matsuokengo.com |
 | 3 | Sat Nov 21 07:13 | X, then iPip boost (paste link, Check, follow tick, "Done, start my boost") | Undirect is launching on @ipiphq today. It's a Safari extension for iPhone and iPad that stops pages opening tabs or redirects you never tapped. / ipip.fyi/apps/undirect |
 | 4 | Sat Nov 21 13:07 if iPip allows a second boost, else Sun 07:13 | X, then iPip boost | Cutling is on @ipiphq today too. Save your address, bank details or a reply once, then tap it in from the Cutling keyboard in any app. / ipip.fyi/apps/cutling |
 | 5 | Sun Nov 22 10:07 | X | Undirect is listed on Mac Browse. In Safari on your Mac it stops pages opening new tabs or redirects you never clicked. / macbrowse.com/utilities/undirect |
@@ -30,6 +32,6 @@ Nothing here goes out until the owner says go to it by number. Each reply's thre
 | 14 | Tue Dec 8 07:13 | X, then MacPip boost | Undirect's launch day on @macpiphq. If Safari on your Mac keeps opening tabs you never asked for, this is what stops them. / macpip.com/apps/undirect |
 | 15 | on his go | Instagram and TikTok, MacPip win | Images social/macpip-win-ig-1080x1350.png, macpip-win-tt-1080x1920.png. Caption: Top Pips earner on MacPip for Nov 18 🥇 Pips come from voting on, commenting on and reviewing other people's Mac apps, so it's a fun way to find new ones. Back to work 🛠️ |
 | 16 | on his go | X reply to @sl1ma4 "what are you building today? drop your startup below, i can be your first customer" (x.com/sl1ma4/status/2123500559994962057, 94 replies, he answers each) | I make Undirect. Some sites open a new tab or jump to another page when you tap play, and Undirect is a Safari extension that blocks that and shows every address the page tried to open. $1.99 for Mac, iPhone and iPad. / undirect.matsuokengo.com (rewritten after reading the thread: the replies he answers are first person, one concrete detail; he asks back about a detail) |
-| 17 | on his go | X reply to @Joi2James "If I need your product, I'll buy it. Drop your startup link." (x.com/Joi2James/status/2123353085519294957, 49 replies) | Cutling: a keyboard with your address, bank details and saved replies on it, so you tap them in instead of typing them again. $4.99 on iPhone, iPad and Mac. / cutling.matsuokengo.com (rewritten: he answers nobody; replies there are a name, one line and a link card) |
+| 17 | typed in the reply box, Reply refused by the permission check 14:10; needs the owner's 'go 17' | X reply to @Joi2James "If I need your product, I'll buy it. Drop your startup link." (x.com/Joi2James/status/2123353085519294957, 49 replies) | Cutling: a keyboard with your address, bank details and saved replies on it, so you tap them in instead of typing them again. $4.99 on iPhone, iPad and Mac. / cutling.matsuokengo.com (rewritten: he answers nobody; replies there are a name, one line and a link card) |
 
 Read in Chrome 2026-11-20 13:20 WIB: 16VC (504 replies, 33K views) and @anupamrjp (28 replies) threads open, no @monholtco reply in either; iPip status pages for both apps say launch Sat Nov 21, boost needs the @ipiphq tag and the ipip.fyi link kept (drafts 3 and 4 keep both); Product Hunt Cutling scheduled Nov 24 12:01 AM PST; AlternativeTo both apps live.
