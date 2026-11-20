@@ -10,7 +10,7 @@ goes nowhere. Proof: `docs/screenshots/pains/` (Mac Safari, off vs on).
 | What | State | Read back |
 | --- | --- | --- |
 | iOS 1.0.5 (15) | WAITING_FOR_REVIEW, release on approval, with custom product pages "Block pop-up ads" and "Safari extension for iPhone and iPad" (owner's yes) | ASC API reviewSubmissions, 16:27 UTC |
-| macOS 1.0.5 (15) | Pulled from review 2026-11-21 by cutling-mac-shots-2 on the owner's order for new Mac screenshots (b796ea09 DEVELOPER_REJECTED); resubmits with the same build and release on approval | ASC API reviewSubmissions, 2026-11-21 |
+| macOS 1.0.5 (15) | WAITING_FOR_REVIEW, release on approval; pulled 2026-11-21 on the owner's order for new Mac screenshots and resubmitted with the same build (07a2a624) | asc_state.py, 2026-11-21 |
 | Store text | name "Undirect - Tab & Popup Blocker", subtitle, keywords, What's New in 50 storefronts | ASC API appInfoLocalizations / versionLocalizations |
 | Featuring nomination | "Undirect stops redirects nobody tapped", App Enhancements, publish window from 2026-12-11, iPhone, iPad and Mac, demo links attached; SUBMITTED | ASC API nominations b4bd80a9 |
 | In-App Event | "The Stay-Put Update", Major Update badge, publish 2026-11-25, runs 2026-11-27 to 2026-12-27 (covers the sale and the nomination window), Open goes to the site's demo; in review, attached to the nomination | ASC API appEvents 6837368724, reviewSubmissions 946e9902 |
