@@ -37,3 +37,25 @@ Nothing here goes out until the owner says go to it by number. Each reply's thre
 | 17 | SENT 15:14 | X reply to @Joi2James "If I need your product, I'll buy it. Drop your startup link." (x.com/Joi2James/status/2123353085519294957, 49 replies) | Cutling: a keyboard with your address, bank details and saved replies on it, so you tap them in instead of typing them again. $4.99 on iPhone, iPad and Mac. / cutling.matsuokengo.com (rewritten: he answers nobody; replies there are a name, one line and a link card) |
 
 Read in Chrome 2026-11-20 13:20 WIB: 16VC (504 replies, 33K views) and @anupamrjp (28 replies) threads open, no @monholtco reply in either; iPip status pages for both apps say launch Sat Nov 21, boost needs the @ipiphq tag and the ipip.fyi link kept (drafts 3 and 4 keep both); Product Hunt Cutling scheduled Nov 24 12:01 AM PST; AlternativeTo both apps live.
+
+### More drafts (owner 2026-11-20 15:30: more replies, every listing now)
+
+Threads read in Chrome 15:40-15:55 WIB. Skipped: @GreenlandMa1 and @georgerowan0 (follow-for-follow "let's connect" posts, no products in replies), "Promote your page" follow trains, art and vendor threads.
+
+| # | Where | Text |
+|---|---|---|
+| 18 | X reply, @lightsilver323 "Founders, it's your turn. Drop your startup below." (1h, 21 replies; replies are name, one line, link) | Cutling: save your address, account number or a stock reply once, then tap it into any app from the keyboard. iPhone, iPad and Mac. / cutling.matsuokengo.com |
+| 19 | X reply, @uzzy_dev1 "indie devs, ai builders, and solo founders ... what are you building right now? drop it" (3h, 15 replies; he answers each) | Undirect, a Safari extension. Some sites put an invisible layer over the page so your first tap opens an ad tab. Undirect removes the layer before the tap lands. Mac, iPhone and iPad. / undirect.matsuokengo.com |
+| 20 | X reply, @brianoliveri "Tech builders and business owners, let's connect. What are you working on?" (4h, 50 replies, 1.3K views; one plain line each, he answers each) | Two small Apple apps: Cutling, a keyboard for the text you keep retyping, and Undirect, which stops Safari tabs and redirects you never asked for. |
+| 21 | X reply, @anupamrjp "drop your project URL. let the product speak" (3h, 17 replies; bare links; third post of his we'd answer today) | undirect.matsuokengo.com / A Safari extension that blocks the tabs a page opens behind your back and lists every address it tried. |
+| L1 | X, Mac Browse (both) | Mac Browse hand-picks its Mac apps, and both of ours are in: Cutling (⇧⌘V for the text you paste every day) and Undirect (no more Safari tabs you never clicked). / macbrowse.com/productivity/cutling |
+| L2 | X, MacBase Cutling (MacBase's own text; the link shows its banner) | Cutling is on MacBase 🎉 / Paste saved text and images from your Mac menu bar / https://macbase.app/apps/cutling |
+| L3 | X, Mac App Index (both) | Undirect has a page on Mac App Index now, next to Cutling. If Safari on your Mac keeps opening tabs on its own, that's the one to look at. / macappindex.com/apps/undirect |
+| L4 | X, NativeShelf (both) | NativeShelf keeps the best Mac and iPhone apps in one place, and Cutling and Undirect are both on the shelf. Thanks @picconedoro. / nativeshelf.com/cutling |
+| L5 | X, Get Indie Apps (both) | @getindieapps found both our apps on the App Store by itself and listed them: Cutling and Undirect. Nice surprise. / getindieapps.com/app/cutling-clipboard-keyboard |
+| L6 | X, Indie App Catalog (both) | Cutling is in the Indie App Catalog, and so is Undirect. Cutling is a keyboard for the text you type again and again, on iPhone, iPad and Mac. / indieappcatalog.com/app/5527 |
+| L7 | X, MacNative Cutling | Cutling is listed on @mac_native. On the Mac it sits in the menu bar and opens with ⇧⌘V. / macnative.io/apps/cutling |
+| L8 | X, AlternativeTo (both) | Cutling and Undirect both have pages on AlternativeTo now. A like there helps them show up next to the apps people already use. / alternativeto.net/software/cutling/about/ |
+| L9 | X, LaunchIgniter (both) | Undirect is up on LaunchIgniter: a Safari extension that stops pages opening tabs and redirects you didn't ask for. Cutling is there too. / launchigniter.com/product/undirect |
+| L10 | X, Product Hunt Undirect (launched Tue Nov 17) | Undirect has been on Product Hunt since Tuesday. If Safari has ever opened a tab you didn't tap, it's for you. / producthunt.com/products/undirect |
+Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip both Sat 07:13 (3, 4), Product Hunt Cutling Tue 15:07 (7), MacPip Undirect Dec 8 (14), TinyLaunch Dec 21 and 28.
