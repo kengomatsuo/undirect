@@ -1,9 +1,22 @@
 import SwiftUI
+#if os(macOS)
+import AppKit
+#endif
 
 @main
 struct UndirectApp: App {
     // One model for the window and the Settings window, so both show the same.
     @State private var rules = RulesModel()
+
+    #if DEBUG && os(macOS)
+    // Screenshot runs: -UndirectSnapshotDark YES draws the app dark whatever the
+    // system appearance, because every Undirect listing image is dark.
+    init() {
+        if UserDefaults.standard.bool(forKey: "UndirectSnapshotDark") {
+            NSApplication.shared.appearance = NSAppearance(named: .darkAqua)
+        }
+    }
+    #endif
 
     var body: some Scene {
         WindowGroup {

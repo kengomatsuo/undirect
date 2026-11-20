@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Render the localized App Store screenshots.
 
-Takes the English hypershots panels in .shots/<kind>/panels (untracked), swaps
+Takes the English hypershots panels in .shots/<kind>/panels (untracked; the Mac's are
+the tracked direction-B pages in Support/AppStore/listing-design/undirect), swaps
 only the headline text for each locale in Support/AppStore/headlines.json, and
 renders with headless Chrome at the exact App Store canvas, the way the
 hypershots render.sh does. Output goes to Support/AppStore/<code>/<kind>/NN.png.
@@ -63,9 +64,10 @@ FACES = {  # family -> file in .shots/noto
 
 WORD_BREAK = {"ja": "auto-phrase", "ko": "keep-all"}
 
-# Mac copy column width; ml-IN's one-word second line needs more at the panel floor.
-MAC_WIDTH = {"ml-IN": 470, "ta-IN": 480}
-MAC_WIDTH_FRAME = {("ml-IN", 4): 520}  # the dark popup frame leaves room for a wider column
+# Panel sources per kind. The Mac's are tracked, so a localized page names its
+# source folder in <base> and every relative link (wallpaper, captures, b.css) resolves there.
+PANELS = {"mac": os.path.join(APPSTORE, "listing-design", "undirect")}
+NOTO = "file://" + os.path.join(SHOTS, "noto")
 
 # Shrinks any "\n"-broken headline until its widest line fits the box, down to the
 # panel's own floor. fit.js (loaded after) then does the height. A failure is
@@ -135,7 +137,7 @@ def make_panel(src, code, text, kind, sub=None):
         css += "}\n"
         css += ".panel .sub{font-family:'%s','Noto Sans',sans-serif;font-weight:%s;letter-spacing:0;line-height:%s}\n" % (
             fam, min(w, 600), (lh or 1.3))
-        extra_link = '<link rel="stylesheet" href="../../noto/noto-faces.css">\n'
+        extra_link = '<link rel="stylesheet" href="%s/noto-faces.css">\n' % NOTO
     else:
         extra_link = ""
     if nowrap:
@@ -146,14 +148,12 @@ def make_panel(src, code, text, kind, sub=None):
     if code in WORD_BREAK:  # Japanese breaks at phrases, Korean at spaces, not inside a word
         css += ".panel .headline,.panel .sub{word-break:%s}\n" % WORD_BREAK[code]
     css += ".panel .headline,.panel .sub{overflow-wrap:normal}\n"
-    if kind == "mac":
-        # the 470px column ends 7px from the window; a longer line must shrink, not touch it
-        frame = int(re.search(r"panel-(\d)", src).group(1))
-        css += ".mac .wrap{width:%dpx}\n" % MAC_WIDTH_FRAME.get((code, frame), MAC_WIDTH.get(code, 430))
     head_add = extra_link + "<style>" + css + "</style>"
+    if kind in PANELS:  # <base> must precede the first relative link
+        s = s.replace("<head>", '<head><base href="file://%s/">' % PANELS[kind], 1)
     s = s.replace("</head>", head_add + "</head>", 1)
     s = s.replace('<script src="../fit.js"></script>',
-                  '<script src="../../noto/fit-i18n.js"></script>\n<script src="../fit.js"></script>', 1)
+                  '<script src="%s/fit-i18n.js"></script>\n<script src="../fit.js"></script>' % NOTO, 1)
     return s
 
 
@@ -171,11 +171,29 @@ def build_page(job):
     pdir = os.path.join(ws, "panels-" + code)
     os.makedirs(pdir, exist_ok=True)
     page = os.path.join(pdir, "panel-%d.html" % n)
-    src = os.path.join(ws, "panels", "panel-%d.html" % n)
+    src = os.path.join(PANELS.get(kind, os.path.join(ws, "panels")), "panel-%d.html" % n)
     open(page, "w", encoding="utf-8").write(make_panel(src, code, text, kind, sub))
     out = os.path.join(ws, "out", profile, code)
     os.makedirs(out, exist_ok=True)
     return {"page": page, "png": os.path.join(out, "panel-%d.png" % n), "w": w, "h": h, "scale": scale}
+
+
+COVER = os.path.join(APPSTORE, "listing-cover.png")  # 2880x1512, directories crop it to their own ratio
+OG = os.path.join(ROOT, "web", "og.png")  # 1200x630 link preview
+
+
+def render_cover():
+    """Mac frame 01 rendered 1440x756 (#wide in fit.js): the directory cover and the site's og:image."""
+    page = os.path.join(SHOTS, "mac", "panels-en", "panel-1.html")
+    jp, rp = os.path.join(SHOTS, "cdp-cover.json"), os.path.join(SHOTS, "cdp-cover-results.json")
+    json.dump([{"page": page + "#wide", "png": COVER, "w": 1440, "h": 756, "scale": 2}], open(jp, "w"))
+    subprocess.run(["node", os.path.join(APPSTORE, "render_cdp.mjs"), jp, rp, "1"], stdout=subprocess.DEVNULL, check=True)
+    if not json.load(open(rp))[0]["ok"]:
+        print("cover FAIL", json.load(open(rp))[0].get("error"))
+        return False
+    subprocess.run(["sips", "-z", "630", "1200", COVER, "--out", OG], stdout=subprocess.DEVNULL, check=True)
+    print("cover OK", COVER, OG)
+    return True
 
 
 def main():
@@ -249,6 +267,8 @@ def main():
         os.makedirs(dst, exist_ok=True)
         shutil.copy(os.path.join(SHOTS, kind, "out", profile, code, "panel-%d.png" % n),
                     os.path.join(dst, "%02d.png" % n))
+    if "mac" in a.kinds.split(",") and "en" in codes:
+        bad += [] if render_cover() else [("cover",)]
     json.dump([list(r) for r in results], open(os.path.join(SHOTS, "render-report.json"), "w"))
     print("done: %d ok, %d failed" % (len(results) - len(bad), len(bad)))
     sys.exit(1 if bad else 0)

@@ -1,19 +1,18 @@
 # Listing images, both apps (ASG39)
 
-Two directions drawn 2026-11-20 and shown to the owner at MacNative's card size beside Liqoria and PinSet:
-A, brand poster (brand gradient, white headline, real UI large and bleeding off the edge) and
-B, on the desktop (a brand-coloured wallpaper drawn in SVG, a menu bar or Safari toolbar, the real UI floated with a deep shadow).
-The owner left the pick to this session ("go put what you want up to you"); B is the pick for both apps, all five frames.
+Direction B, "on the desktop", picked 2026-11-20 after the owner saw A (brand poster) and B at
+MacNative's card size and left the choice to us: a brand-coloured wallpaper, the real app UI
+floated on it with a deep shadow, a white headline beside it. One appearance per app: Undirect
+dark, Cutling light (.claude/rules/store-release.md).
 
-Each page is 1440x900 CSS, rendered at device scale 2 (2880x1800) in headless Chrome:
-`"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --force-device-scale-factor=2 --window-size=1440,900 --screenshot=out.png file://$PWD/B-cutling.html`
-
-Assets the pages name, copied beside them before a render (not committed, each has a home):
-- c-picker.png, c-history.png: Cutling/fastlane/screenshots_mac/raw/<locale>/01_Picker.png, 02_History.png
-- c-icon.png: Cutling/fastlane/listing-icon.png (ictool render of Cutling/AppIcon.icon, macOS, 1024)
-- u-popup.png: undirect/.shots/mac/assets/popup.png (854x1204; real popup over a Safari dark plate; B clips it to the toolbar pill and the popup)
-- u-icon.png: undirect/Support/AppStore/listing-icon.png
-- menubar-cutling.png: SF Symbol doc.on.clipboard, Cutling's MenuBarExtra icon, from `swift sym.swift doc.on.clipboard menubar-cutling.png`
-
-ictool lives at ~/Repositories/_mac/Xcode/Xcode.app/Contents/Applications/Icon Composer.app/Contents/Executables/ictool
-(/usr/bin/ictool is a different tool).
+- `b.css`, `fit.js`, `wall.html`: shared by both apps (Cutling keeps copies in
+  Cutling/fastlane/compose/mac). `wall.html#red` and the other palettes are rendered once to
+  `wall-<palette>.jpg`; the command is in its comment.
+- `undirect/panel-1..5.html`: Undirect's five Mac frames, 1440x900 CSS at 2x.
+  `python3 Support/AppStore/render_screenshots.py --kinds mac` localises the headline per
+  locale and renders them; with `en` it also writes `Support/AppStore/listing-cover.png`
+  (frame 01 at 1440x756, `#wide`) and `web/og.png` (1200x630).
+- `undirect/safari-open.png` and `safari-menu.png` are frames 12.2 s and 10.2 s of the real
+  Safari take `undirect-promo/wire/public/previews/mac-103-popup.mov`; `dark.png` is
+  `capture_mac_popup.py`'s dark popup; `icon.png` is `../listing-icon.png` at 256 px.
+- `submit/`: frame 01 cut to the sizes directories ask for.
