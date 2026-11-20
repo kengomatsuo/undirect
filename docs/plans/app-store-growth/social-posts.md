@@ -11,6 +11,11 @@ Every post, repost and boost from @monholtco on X, Instagram and TikTok, newest 
 | 2026-11-20 14:09 | X | Reply to @anupamrjp "Promote your project URL": Cutling (draft 2) | https://x.com/monholtco/status/2123674046202257556 |
 | 2026-11-20 15:11 | X | Reply to @sl1ma4 "drop your startup below": Undirect (draft 16) | https://x.com/monholtco/status/2123689018957447659 |
 | 2026-11-20 15:14 | X | Reply to @Joi2James "Drop your startup link": Cutling (draft 17) | https://x.com/monholtco/status/2123689962872905932 |
+| 2026-11-20 17:45 | X | Reply to @lightsilver323 "Drop your startup below": both apps (draft 18) | https://x.com/monholtco/status/2123730985552646312 |
+| 2026-11-20 17:47 | X | Reply to @brianoliveri "What are you working on?": both apps (draft 20) | https://x.com/monholtco/status/2123731303405416602 |
+| 2026-11-20 17:48 | X | Reply to @anupamrjp "drop your project URL": both apps (draft 21) | https://x.com/monholtco/status/2123731680964096385 |
+| 2026-11-20 17:50 | X | Reply to @uzzy_dev1 "what are you building right now?": both apps (draft 19) | https://x.com/monholtco/status/2123732077921304631 |
+| 2026-11-20 17:57 | X | Mac Browse listing, both apps (L1) | https://x.com/monholtco/status/2123732834447929352 |
 
 ## Drafts waiting for the owner's go (asg-social-2, 2026-11-20)
 
@@ -44,11 +49,11 @@ Threads read in Chrome 15:40-15:55 WIB. Skipped: @GreenlandMa1 and @georgerowan0
 
 | # | Where | Text |
 |---|---|---|
-| 18 | X reply, @lightsilver323 "Founders, it's your turn. Drop your startup below." (1h, 21 replies; replies are name, one line, link) | We make two Apple apps. / Cutling: save your address, account number or a stock reply once, then tap it into any app from the keyboard. cutling.matsuokengo.com / Undirect: a Safari extension that stops pages opening tabs and redirects you never tapped. undirect.matsuokengo.com (272/280) |
-| 19 | X reply, @uzzy_dev1 "indie devs, ai builders, and solo founders ... what are you building right now? drop it" (3h, 15 replies; he answers each) | Two apps, iPhone, iPad and Mac. / Undirect, a Safari extension. Some sites lay an invisible layer over the page so your first tap opens an ad tab, and Undirect removes it first. undirect.matsuokengo.com / Cutling, a keyboard for the text you keep retyping. cutling.matsuokengo.com (275/280) |
-| 20 | X reply, @brianoliveri "Tech builders and business owners, let's connect. What are you working on?" (4h, 50 replies, 1.3K views; one plain line each, he answers each) | Two small Apple apps: Cutling, a keyboard for the text you keep retyping, and Undirect, which stops Safari tabs and redirects you never asked for. |
-| 21 | X reply, @anupamrjp "drop your project URL. let the product speak" (3h, 17 replies; bare links; third post of his we'd answer today) | undirect.matsuokengo.com / Blocks the tabs a page opens behind your back and lists every address it tried. / cutling.matsuokengo.com / A keyboard for the text you keep retyping. |
-| L1 | X, Mac Browse (both) | Mac Browse hand-picks its Mac apps, and both of ours are in: Cutling (⇧⌘V for the text you paste every day) and Undirect (no more Safari tabs you never clicked). / macbrowse.com/productivity/cutling |
+| 18 SENT | X reply, @lightsilver323 "Founders, it's your turn. Drop your startup below." (1h, 21 replies; replies are name, one line, link) | We make two Apple apps. / Cutling: save your address, account number or a stock reply once, then tap it into any app from the keyboard. cutling.matsuokengo.com / Undirect: a Safari extension that stops pages opening tabs and redirects you never tapped. undirect.matsuokengo.com (272/280) |
+| 19 SENT | X reply, @uzzy_dev1 "indie devs, ai builders, and solo founders ... what are you building right now? drop it" (3h, 15 replies; he answers each) | Two apps, iPhone, iPad and Mac. / Undirect, a Safari extension. Some sites lay an invisible layer over the page so your first tap opens an ad tab, and Undirect removes it first. undirect.matsuokengo.com / Cutling, a keyboard for the text you keep retyping. cutling.matsuokengo.com (275/280) |
+| 20 SENT | X reply, @brianoliveri "Tech builders and business owners, let's connect. What are you working on?" (4h, 50 replies, 1.3K views; one plain line each, he answers each) | Two small quality-of-life apps for iPhone, iPad and Mac: Cutling, a keyboard for the text you keep retyping, and Undirect, which stops Safari tabs and redirects you never asked for. |
+| 21 SENT | X reply, @anupamrjp "drop your project URL. let the product speak" (3h, 17 replies; bare links; third post of his we'd answer today) | undirect.matsuokengo.com / Blocks the tabs a page opens behind your back and lists every address it tried. / cutling.matsuokengo.com / A keyboard for the text you keep retyping. |
+| L1 SENT | X, Mac Browse (both) | Mac Browse hand-picks its Mac apps, and both of ours are in: Cutling (⇧⌘V for the text you paste every day) and Undirect (no more Safari tabs you never clicked). / macbrowse.com/productivity/cutling |
 | L2 | X, MacBase Cutling (MacBase's own text; the link shows its banner) | Cutling is on MacBase 🎉 / Paste saved text and images from your Mac menu bar / https://macbase.app/apps/cutling |
 | L3 | X, Mac App Index (both) | Undirect has a page on Mac App Index now, next to Cutling. If Safari on your Mac keeps opening tabs on its own, that's the one to look at. / macappindex.com/apps/undirect |
 | L4 | X, NativeShelf (both) | NativeShelf keeps the best Mac and iPhone apps in one place, and Cutling and Undirect are both on the shelf. Thanks @picconedoro. / nativeshelf.com/cutling |
