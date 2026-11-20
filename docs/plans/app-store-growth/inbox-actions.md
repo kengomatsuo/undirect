@@ -17,14 +17,14 @@ launch calendar and MacPip Pips belong to the asg-social session (card ASG35).
 | 6 | 1000 Tools (focusapps) | Open | Same template and free terms as 1000 SaaS. |
 | 7 | DevHub (focusapps) | Open | Same template and free terms as 1000 SaaS. |
 | 8 | Nadeem, Re: launch film | Skipped | Same film as row 1. |
-| 9 | LaunchIgniter | Open | Free launch: 1 week, badge required, reviewed. Basic $12, Pro $15 not bought. |
+| 9 | LaunchIgniter | In progress | Signed in with Google (profile: "Indie developer making apps for Mac, iPhone and iPad", X @monholtco). Undirect submitted (owner answered the site's math check): "Product pending approval", schedule page launchigniter.com/product/schedule/undirect offers Free Launch (badge verification, admin review, date not guaranteed). Cutling form filled and waiting on the math check in Chrome (owner). Next: badge on both sites, then pick the free week. Basic $12, Pro $15 not bought. |
 | 10 | GrowthAppOS | Skipped | Cold pitch for a paid growth tool; a reply would go to a third party. |
 | 11 | TinyLaunch | **Done** | Both submitted with free launches: Undirect Mon Dec 21, Cutling Mon Dec 28, "Waiting for approval" on the dashboard. No badge needed (badge only for top 3). Premium $39 and AI audit $9 not bought. |
 | 12 | Seeto | Paid, skipped | AI competitor report; first scan free behind sign-up, then paid. Its notes (price not on site, no reviews shown) are worth a separate look. |
 | 13 | MacPip, Cutling launch results | Read | Nov 18: 21 votes, 4th of 6, 52 views, 2 clicks to site. Nothing to act on. |
 | 14 | MacPip, Cutling boost done | Read | 4 people opened Cutling from the Shared on X row. Next boost comes with the next launch. |
 | 15 | Auspia | Paid, skipped | SEO page service. |
-| 16 | PostYourStartup | In progress | Account made with Google (Welcome page open). Free listing needs its badge on the site and a launch week. |
+| 16 | PostYourStartup | In progress | Both submitted (after its 5-round battle and one founder comment each: Fluxo Flow, API Test Lab). Free launch week Jul 12-18, 2027 (#398 in queue), needs the badge: `<a href="https://postyourstartup.com/startup/<slug>?ref=badge"><img src="https://postyourstartup.com/api/badge/<slug>?theme=light" alt="Featured on PostYourStartup" width="212" height="55"></a>`, slugs undirect and cutling. Badge pages: /dashboard/startups/cmwogixxz024h7liofdx0bxot/badge (Undirect), /dashboard/startups/cmwogoyha024y7lio9lbu4nes/badge (Cutling): verify there, then pick the week. Its "Offer for PostYourStartup users" has no end date, so no Black Friday offer there. Instant Premium $19 not bought. No screenshots uploaded yet (ASG39 remakes them). |
 | 17 | Appzoku | Paid, skipped | Auto-reel service for Instagram. |
 | 18 | Boost Domain Rating (focusapps) | Open | Same template and free terms as 1000 SaaS. |
 | 19 | SaaSHunt (focusapps) | Open | Same; the email also links ailaun.ch, same network. |
