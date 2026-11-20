@@ -117,7 +117,9 @@ mas() {
   # Safari swap extensions and wipe the owner's storage (2026-10-01).
   find "$BUILD_DIR" -name "Undirect.app" -type d -prune 2>/dev/null | while read -r app; do
     pluginkit -r "$app/Contents/PlugIns/Undirect Extension.appex" 2>/dev/null
-    /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u "$app"
+    # lsregister answers 1 for an app it never registered (-10814), which
+    # failed the whole command after a good upload (2026-11-20).
+    /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -u "$app" || true
   done
   rm -rf "$BUILD_DIR/mas"
   pluginkit -mAvvv -D -i com.matsuokengo.undirect.Extension | grep "Path" || true
