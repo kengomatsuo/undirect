@@ -115,3 +115,18 @@ in that mode, which the guard does not need.
 - So the release date decides whether the nomination can count: releasing on
   approval (the repo's `automatic_release`) leaves no lead time; holding 1.0.5
   for a set date three weeks out gives Apple the notice it asks for.
+- Release at the nomination date or now (owner asked for an honest read,
+  2026-11-20): Apple frames nominations around upcoming moments and asks
+  three weeks' notice, but none of its pages says an already-live enhancement
+  is out ([Getting featured](https://developer.apple.com/app-store/getting-featured/)).
+  Kept release on approval for the sale, and added an In-App Event instead:
+  Apple lists In-App Events in editorial selections and personalised
+  recommendations and lets a nomination carry one
+  ([In-App Events](https://developer.apple.com/app-store/in-app-events/)).
+- In-App Event rules used: name 30 characters title case, short 50, long
+  120 sentence case; card 16:9 at least 1920x1080, details 9:16 at least
+  1080x1920, no text or logos; at most 31 days, published at most 14 days
+  ahead; Major Update is for "significant new features"
+  ([badges](https://developer.apple.com/help/app-store-connect/reference/in-app-events/in-app-event-badges)).
+  App Store Connect also requires a deep link and a purchase requirement
+  before review although the create call takes neither.

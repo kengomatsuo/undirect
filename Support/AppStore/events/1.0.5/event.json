@@ -1,0 +1,23 @@
+{
+  "referenceName": "1.0.5 The Stay-Put Update",
+  "badge": "MAJOR_UPDATE",
+  "priority": "HIGH",
+  "purpose": "APPROPRIATE_FOR_ALL_USERS",
+  "primaryLocale": "en-US",
+  "publishStart": "2026-11-25T08:00:00Z",
+  "eventStart": "2026-11-27T08:00:00Z",
+  "eventEnd": "2026-12-27T08:00:00Z",
+  "localizations": {
+    "en-US": {
+      "name": "The Stay-Put Update",
+      "shortDescription": "Pages can no longer send you away with no tap",
+      "longDescription": "Undirect now keeps you on the page when a site redirects as it loads or while you scroll, and Back takes you back."
+    }
+  },
+  "media": {
+    "EVENT_CARD": "card.png",
+    "EVENT_DETAILS_PAGE": "details.png"
+  },
+  "deepLink": "https://undirect.matsuokengo.com/demo/",
+  "purchaseRequirement": "NO_COST_ASSOCIATED"
+}

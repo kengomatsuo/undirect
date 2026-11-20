@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><style>
+  html,body{margin:0;width:100%;height:100%;background:#0b0b0d;overflow:hidden}
+  svg{width:100%;height:100%;display:block}
+</style></head><body>
+<!-- The In-App Event art for 1.0.5: a page that stays put while a redirect arrow turns back at its edge. No text, no logo (Apple's In-App Event media rules). ?w=1920&h=1080 or 1080x1920. -->
+<svg id="s" xmlns="http://www.w3.org/2000/svg"></svg>
+<script>
+const q = new URLSearchParams(location.search), W = +q.get("w") || 1920, H = +q.get("h") || 1080;
+const s = document.getElementById("s"); s.setAttribute("viewBox", `0 0 ${W} ${H}`);
+const portrait = H > W;
+// The page: a browser card centred left (landscape) or high (portrait).
+const pw = portrait ? W * 0.72 : W * 0.40, ph = pw * 1.25;
+const px = portrait ? (W - pw) / 2 : W * 0.16, py = portrait ? H * 0.16 : (H - ph) / 2;
+const lines = [];
+for (let i = 0; i < 9; i++) {
+  const y = py + ph * 0.30 + i * ph * 0.068, w = pw * (i % 3 === 2 ? 0.52 : 0.78);
+  lines.push(`<rect x="${px + pw * 0.11}" y="${y}" width="${w}" height="${ph * 0.022}" rx="${ph * 0.011}" fill="#2a2a31"/>`);
+}
+// The redirect: a red arrow leaves the page, hits a line and turns back.
+const ex = portrait ? W * 0.5 : px + pw + W * 0.20, ey = portrait ? py + ph + H * 0.13 : py + ph * 0.45;
+const sx = portrait ? W * 0.5 : px + pw * 0.88, sy = portrait ? py + ph * 0.92 : py + ph * 0.45;
+const bar = portrait
+  ? `<rect x="${W * 0.22}" y="${ey + H * 0.02}" width="${W * 0.56}" height="${H * 0.008}" rx="${H * 0.004}" fill="#f2f2f4"/>`
+  : `<rect x="${ex + W * 0.03}" y="${py + ph * 0.18}" width="${W * 0.008}" height="${ph * 0.54}" rx="${W * 0.004}" fill="#f2f2f4"/>`;
+const r = portrait ? W * 0.14 : H * 0.16;
+const path = portrait
+  ? `M ${sx} ${sy} L ${sx} ${ey - r} A ${r} ${r} 0 0 1 ${sx - 2 * r} ${ey - r} L ${sx - 2 * r} ${sy + H * 0.02}`
+  : `M ${sx} ${sy} L ${ex - r} ${sy} A ${r} ${r} 0 0 1 ${ex - r} ${sy + 2 * r} L ${sx + W * 0.02} ${sy + 2 * r}`;
+const head = portrait
+  ? `<path d="M ${sx - 2 * r - W * 0.045} ${sy + H * 0.05} L ${sx - 2 * r} ${sy} L ${sx - 2 * r + W * 0.045} ${sy + H * 0.05}" fill="none" stroke="#ff3b30" stroke-width="${W * 0.03}" stroke-linecap="round" stroke-linejoin="round"/>`
+  : `<path d="M ${sx + W * 0.05} ${sy + 2 * r - H * 0.07} L ${sx} ${sy + 2 * r} L ${sx + W * 0.05} ${sy + 2 * r + H * 0.07}" fill="none" stroke="#ff3b30" stroke-width="${H * 0.035}" stroke-linecap="round" stroke-linejoin="round"/>`;
+s.innerHTML = `
+  <defs><radialGradient id="g" cx="0.35" cy="0.45" r="0.8"><stop offset="0" stop-color="#3a0d0b"/><stop offset="1" stop-color="#0b0b0d"/></radialGradient></defs>
+  <rect width="${W}" height="${H}" fill="url(#g)"/>
+  <rect x="${px}" y="${py}" width="${pw}" height="${ph}" rx="${pw * 0.06}" fill="#16161a" stroke="#34343c" stroke-width="${pw * 0.006}"/>
+  <rect x="${px}" y="${py}" width="${pw}" height="${ph * 0.13}" rx="${pw * 0.06}" fill="#1f1f25"/>
+  <rect x="${px}" y="${py + ph * 0.07}" width="${pw}" height="${ph * 0.06}" fill="#1f1f25"/>
+  <circle cx="${px + pw * 0.08}" cy="${py + ph * 0.065}" r="${pw * 0.018}" fill="#ff5f57"/>
+  <circle cx="${px + pw * 0.14}" cy="${py + ph * 0.065}" r="${pw * 0.018}" fill="#febc2e"/>
+  <circle cx="${px + pw * 0.20}" cy="${py + ph * 0.065}" r="${pw * 0.018}" fill="#28c840"/>
+  <rect x="${px + pw * 0.11}" y="${py + ph * 0.19}" width="${pw * 0.78}" height="${ph * 0.06}" rx="${ph * 0.02}" fill="#3a3a44"/>
+  ${lines.join("")}
+  <path d="${path}" fill="none" stroke="#ff3b30" stroke-width="${portrait ? W * 0.03 : H * 0.035}" stroke-linecap="round" stroke-linejoin="round"/>
+  ${head}${bar}`;
+</script></body></html>

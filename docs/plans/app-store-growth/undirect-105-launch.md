@@ -13,11 +13,17 @@ goes nowhere. Proof: `docs/screenshots/pains/` (Mac Safari, off vs on).
 | macOS 1.0.5 (15) | WAITING_FOR_REVIEW, release on approval | ASC API reviewSubmissions, 16:25 UTC |
 | Store text | name "Undirect - Tab & Popup Blocker", subtitle, keywords, What's New in 50 storefronts | ASC API appInfoLocalizations / versionLocalizations |
 | Featuring nomination | "Undirect stops redirects nobody tapped", App Enhancements, publish window from 2026-12-11, iPhone, iPad and Mac, demo links attached; SUBMITTED | ASC API nominations b4bd80a9 |
+| In-App Event | "The Stay-Put Update", Major Update badge, publish 2026-11-25, runs 2026-11-27 to 2026-12-27 (covers the sale and the nomination window), Open goes to the site's demo; in review, attached to the nomination | ASC API appEvents 6837368724, reviewSubmissions 946e9902 |
 | Site and AI files | "from version 1.0.5" on all 50 support pages, llms.txt, demo pages /demo/scroll/ and /demo/back/ | curl of the live site |
 
 Apple asks three weeks' notice for featuring and the owner chose to release
 before the Black Friday sale (Nov 27-30), so the nomination's window starts
-three weeks out instead of on release day.
+three weeks out instead of on release day. Holding the release to the
+nomination date was weighed after research (docs/research/undirect-pains.md,
+"Launch"): nothing Apple publishes rules out an update that is already live,
+holding it would cost the sale traffic and keep buyers on the version these
+complaints are about, and the In-App Event keeps 1.0.5 in front of editors and
+in search through Dec 27.
 
 ## The hour 1.0.5 is live (READY_FOR_SALE on iOS)
 
@@ -49,7 +55,3 @@ state; the launch starts when iOS reads READY_FOR_SALE.
 ## Not done here
 
 - iPhone clips from the Simulator (filmer run in progress 2026-11-20).
-- An In-App Event with the "Major Update" badge (Apple's badge for significant
-  new features) could carry 1.0.5 on the product page and in search: it needs
-  a 1920x1080 card and goes through review, so it is the owner's call; not
-  prepared yet.
