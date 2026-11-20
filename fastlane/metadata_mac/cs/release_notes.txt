@@ -1,1 +1,2 @@
-Nové obrázky v App Storu. Samotná aplikace se nezměnila.
+Na webech, kde máte Undirect zapnutý, teď zůstanete, kde jste, když se vás stránka pokusí bez klepnutí poslat na jiný web, ať už při načítání, po chvíli, nebo jen během posouvání. Adresa, kterou zkoušela, se objeví v seznamu Undirect a můžete ji povolit, pokud to byl váš záměr.
+Tlačítko Zpět na takových stránkách zase funguje. Stránka, která na Zpět odpoví přesměrováním na jiný web, vás už nikam nepošle, a stránka, která se do historie zapíše mnohokrát, aby z ní Zpět nikdy nevedlo, v ní teď zůstane jen jednou.

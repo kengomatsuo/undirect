@@ -1,1 +1,2 @@
-Imagini noi în App Store. Aplicația în sine nu s-a schimbat.
+Pe site-urile unde Undirect este activat, o pagină care încearcă să vă trimită pe alt site fără nicio atingere, la încărcare, după un timp sau doar în timp ce derulați, acum vă lasă unde sunteți. Adresa încercată apare în lista Undirect, ca s-o puteți permite dacă chiar voiați să ajungeți acolo.
+Butonul Înapoi funcționează din nou pe aceste pagini. O pagină care răspunde la Înapoi trimițându-vă pe alt site vă lasă acum pe loc, iar o pagină care se adaugă de multe ori în istoric, ca Înapoi să nu vă scoată niciodată din ea, rămâne acolo o singură dată.

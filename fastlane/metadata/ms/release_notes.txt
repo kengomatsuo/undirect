@@ -1,1 +1,2 @@
-Imej baharu di App Store. Aplikasi itu sendiri tidak berubah.
+Di tapak yang telah dihidupkan Undirect, halaman yang cuba membawa anda ke tapak lain tanpa sebarang ketikan, semasa dimuatkan, selepas seketika atau ketika anda hanya menatal, kini gagal. Alamat yang dicubanya muncul dalam senarai Undirect, jadi anda boleh membenarkannya jika memang mahu ke sana.
+Butang Kembali berfungsi semula pada halaman sebegini. Halaman yang membalas Kembali dengan menghantar anda ke tapak lain kini tidak lagi memindahkan anda, dan halaman yang menyalin dirinya berkali-kali dalam sejarah supaya anda tidak dapat keluar dengan Kembali kini tinggal satu.

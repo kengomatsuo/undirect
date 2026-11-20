@@ -1,1 +1,1 @@
-browser,website,page,malicious,unwanted,annoying,secure,clean,scam
+browser,website,page,malicious,unwanted,annoying,secure,clean,scam,new

@@ -1,1 +1,2 @@
-Nieuwe afbeeldingen in de App Store. De app zelf is niet veranderd.
+Op sites waar je Undirect hebt aangezet, blijf je nu gewoon waar je bent als een pagina je zonder tik naar een andere site wil sturen, tijdens het laden, na een paar seconden of terwijl je alleen scrolt. Het adres verschijnt in de lijst van Undirect, zodat je het kunt toestaan als je er wel heen wilde.
+De Terug-knop werkt weer op zulke pagina's. Een pagina die op Terug reageert door je naar een andere site te sturen, stuurt je nergens meer heen, en een pagina die zichzelf vaak in je geschiedenis zet zodat je met Terug nooit wegkomt, staat er nu nog maar één keer in.

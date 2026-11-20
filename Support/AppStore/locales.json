@@ -20,7 +20,7 @@
       "name": "Bengali",
       "code": "bn-BD",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari: অযাচিত রিডাইরেক্ট বন্ধ",
         "promo": "প্রতিটি সাইটের জন্য টুলবারের বোতামে একবার চেপে চালু করুন। অদৃশ্য ক্লিক-স্তর, পপ-আন্ডার ও ক্লিকের মাঝে বদলে যাওয়া লিংক আটকায়, আর পাতা যত ঠিকানা খুলতে চেয়েছে সব দেখায়।",
         "keywords": "বিজ্ঞাপন,ব্লক,পপআপ,সাফারি,এক্সটেনশন",
@@ -68,7 +68,7 @@
       "name": "Croatian",
       "code": "hr",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari bez preusmjeravanja",
         "promo": "Uključite ga po stranici s trake. Zaustavlja nevidljive slojeve, pop-undere i poveznice prepisane usred klika te popisuje svaku adresu koju je stranica htjela otvoriti.",
         "keywords": "reklame,oglasi,blokiranje,proširenje,iphone,mac,skočni,prozor,otmica,preusmjeravanje,kartice",
@@ -80,7 +80,7 @@
       "name": "Czech",
       "code": "cs",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari: přesměrování a panely",
         "promo": "Zapněte ho pro každý web tlačítkem na liště. Zastaví neviditelné vrstvy, okna pod stránkou a odkazy přepsané při klepnutí; vypíše každou adresu, kterou stránka otevírala.",
         "keywords": "reklamy,blokování,rozšíření,iphone,mac,vyskakovací,okno,únos",
@@ -92,7 +92,7 @@
       "name": "Danish",
       "code": "da",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari: omdirigering og faner",
         "promo": "Slå det til pr. websted med værktøjslinjens knap. Stopper usynlige lag, pop-unders og links, der skiftes midt i klikket, og viser hver adresse, siden prøvede at åbne.",
         "keywords": "reklame,reklamer,blokering,udvidelse,iphone,mac,kapring,blokere",
@@ -116,10 +116,10 @@
       "name": "English (Australia)",
       "code": "en-AU",
       "copy": {
-        "name": "Undirect - Popup Blocker",
-        "subtitle": "Stop Safari redirects & tabs",
+        "name": "Undirect - Tab & Popup Blocker",
+        "subtitle": "Stop Safari redirects, ad tabs",
         "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
-        "keywords": "browser,website,page,malicious,unwanted,annoying,secure,clean,scam",
+        "keywords": "browser,website,page,malicious,unwanted,annoying,secure,clean,scam,new",
         "description": "Undirect stops a page taking your click.\n\nPop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.\n\nUndirect watches for those shapes and undoes them. The invisible layer goes before your press lands, so the click reaches what you aimed at. A link rewritten mid-click is put back, and you arrive where you meant to. A new window opens only when a site asks for one at a size, the way a sign-in does.\n\nEverywhere a page tried to send you is listed, whether or not it was stopped. Each destination can be allowed or blocked, on that site alone or everywhere. A destination with no rule follows a default you set.\n\nWhat is blocked everywhere becomes a content blocking rule, so the request never leaves your device.\n\nPRIVATE BY BUILD\nNo account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.\n\nREQUIREMENTS\nUndirect is a Safari extension. Switch it on in Safari, then press its toolbar button on each site you want guarded.",
         "whatsNew": "On a site where Undirect is on, a page that tries to send you to another site without a tap, as it loads, after a delay or while you are just scrolling, now stays put. The address it tried appears in Undirect's list, so you can allow it if you wanted to go there.\nBack works again on those pages. A page that answers Back by sending you elsewhere stays where it is, and a page that stacks copies of itself in your history so Back never gets you out now keeps just one."
       }
@@ -128,10 +128,10 @@
       "name": "English (Canada)",
       "code": "en-CA",
       "copy": {
-        "name": "Undirect - Popup Blocker",
-        "subtitle": "Stop Safari redirects & tabs",
+        "name": "Undirect - Tab & Popup Blocker",
+        "subtitle": "Stop Safari redirects, ad tabs",
         "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
-        "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
+        "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window,new",
         "description": "Undirect stops a page taking your click.\n\nPop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.\n\nUndirect watches for those shapes and undoes them. The invisible layer goes before your press lands, so the click reaches what you aimed at. A link rewritten mid-click is put back, and you arrive where you meant to. A new window opens only when a site asks for one at a size, the way a sign-in does.\n\nEverywhere a page tried to send you is listed, whether or not it was stopped. Each destination can be allowed or blocked, on that site alone or everywhere. A destination with no rule follows a default you set.\n\nWhat is blocked everywhere becomes a content blocking rule, so the request never leaves your device.\n\nPRIVATE BY BUILD\nNo account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.\n\nREQUIREMENTS\nUndirect is a Safari extension. Switch it on in Safari, then press its toolbar button on each site you want guarded.",
         "whatsNew": "On a site where Undirect is on, a page that tries to send you to another site without a tap, as it loads, after a delay or while you are just scrolling, now stays put. The address it tried appears in Undirect's list, so you can allow it if you wanted to go there.\nBack works again on those pages. A page that answers Back by sending you elsewhere stays where it is, and a page that stacks copies of itself in your history so Back never gets you out now keeps just one."
       }
@@ -140,10 +140,10 @@
       "name": "English (U.K.)",
       "code": "en-GB",
       "copy": {
-        "name": "Undirect - Popup Blocker",
-        "subtitle": "Stop Safari redirects & tabs",
+        "name": "Undirect - Tab & Popup Blocker",
+        "subtitle": "Stop Safari redirects, ad tabs",
         "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
-        "keywords": "pop up,advert,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
+        "keywords": "pop up,advert,ads,block,iphone,ipad,mac,extension,hijack,popunder,window,new",
         "description": "Undirect stops a page taking your click.\n\nPop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.\n\nUndirect watches for those shapes and undoes them. The invisible layer goes before your press lands, so the click reaches what you aimed at. A link rewritten mid-click is put back, and you arrive where you meant to. A new window opens only when a site asks for one at a size, the way a sign-in does.\n\nEverywhere a page tried to send you is listed, whether or not it was stopped. Each destination can be allowed or blocked, on that site alone or everywhere. A destination with no rule follows a default you set.\n\nWhat is blocked everywhere becomes a content blocking rule, so the request never leaves your device.\n\nPRIVATE BY BUILD\nNo account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.\n\nREQUIREMENTS\nUndirect is a Safari extension. Switch it on in Safari, then press its toolbar button on each site you want guarded.",
         "whatsNew": "On a site where Undirect is on, a page that tries to send you to another site without a tap, as it loads, after a delay or while you are just scrolling, now stays put. The address it tried appears in Undirect's list, so you can allow it if you wanted to go there.\nBack works again on those pages. A page that answers Back by sending you elsewhere stays where it is, and a page that stacks copies of itself in your history so Back never gets you out now keeps just one."
       }
@@ -152,10 +152,10 @@
       "name": "English (U.S.)",
       "code": "en-US",
       "copy": {
-        "name": "Undirect - Popup Blocker",
-        "subtitle": "Stop Safari redirects & tabs",
+        "name": "Undirect - Tab & Popup Blocker",
+        "subtitle": "Stop Safari redirects, ad tabs",
         "promo": "Switch Undirect on for a site from the toolbar button. It stops invisible click layers, pop-unders and rewritten links, and lists every address a page tried to open.",
-        "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window",
+        "keywords": "pop up,ads,block,iphone,ipad,mac,extension,hijack,popunder,window,new",
         "description": "Undirect stops a page taking your click.\n\nPop networks do not wait to be clicked. They lay a transparent layer over the page and take the next press. They build a link and click it themselves. They rewrite the link under your finger between the press and the release. They open a blank tab and rewrite the address of the one you were reading.\n\nUndirect watches for those shapes and undoes them. The invisible layer goes before your press lands, so the click reaches what you aimed at. A link rewritten mid-click is put back, and you arrive where you meant to. A new window opens only when a site asks for one at a size, the way a sign-in does.\n\nEverywhere a page tried to send you is listed, whether or not it was stopped. Each destination can be allowed or blocked, on that site alone or everywhere. A destination with no rule follows a default you set.\n\nWhat is blocked everywhere becomes a content blocking rule, so the request never leaves your device.\n\nPRIVATE BY BUILD\nNo account, no analytics, no server. The list of destinations lives in your browser, and the app reads it through a container on the same machine. Nothing leaves the device unless you press Report, which opens a prefilled issue you send yourself.\n\nREQUIREMENTS\nUndirect is a Safari extension. Switch it on in Safari, then press its toolbar button on each site you want guarded.",
         "whatsNew": "A page that sends you to another site without you tapping, as it loads, on a timer or while you scroll, now stays put on any site where Undirect is on. The address shows in the list, so you can allow it.\nBack works again: a page that answers Back by sending you to another site stays where it is, and a page that stacks copies of itself so Back goes nowhere keeps only one."
       }
@@ -164,7 +164,7 @@
       "name": "Finnish",
       "code": "fi",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari: uudelleenohjaus pois",
         "promo": "Ota käyttöön sivu kerrallaan työkalupalkista. Pysäyttää näkymättömät kerrokset, pop-under-ikkunat ja kesken napsautuksen vaihtuvat linkit ja listaa jokaisen osoitteen.",
         "keywords": "mainos,mainokset,esto,laajennus,iphone,mac,kaappaus,ponnahdus,estäjä,välilehdet",
@@ -200,7 +200,7 @@
       "name": "German",
       "code": "de-DE",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari ohne Weiterleitungen",
         "promo": "Pro Website per Symbolleiste einschalten. Stoppt unsichtbare Ebenen, Pop-unders und mitten im Klick umgeschriebene Links, listet jede Adresse, die sich öffnen sollte.",
         "keywords": "pop-up,blockieren,umleitung,erweiterung,tab,klick,iphone,mac,kapern,Werbung",
@@ -212,7 +212,7 @@
       "name": "Greek",
       "code": "el",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari χωρίς ανακατευθύνσεις",
         "promo": "Ενεργοποιήστε το ανά ιστότοπο από το κουμπί της γραμμής. Σταματά αόρατα επίπεδα, pop-under και συνδέσμους που αλλάζουν στο κλικ, και καταγράφει κάθε διεύθυνση.",
         "keywords": "διαφημίσεις,αποκλεισμός,επέκταση,αναδυόμενα,καρτέλες",
@@ -224,7 +224,7 @@
       "name": "Gujarati",
       "code": "gu-IN",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari: અણગમતા રીડાયરેક્ટ બંધ",
         "promo": "દરેક સાઇટ માટે ટૂલબારના બટનથી ચાલુ કરો. અદૃશ્ય ક્લિક-સ્તર, પૉપ-અંડર અને ક્લિક દરમિયાન બદલાતી લિંક અટકાવે છે, અને પાનાએ ખોલવા ચાહેલા દરેક સરનામાની યાદી આપે છે.",
         "keywords": "જાહેરાત,બ્લૉક,પૉપઅપ,સફારી",
@@ -248,7 +248,7 @@
       "name": "Hindi",
       "code": "hi",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari: अनचाहे रीडायरेक्ट बंद",
         "promo": "हर साइट के लिए टूलबार के बटन से चालू करें। अदृश्य क्लिक-परत, पॉप-अंडर और क्लिक के बीच बदलते लिंक रोकता है, और पेज ने जितने पते खोलने चाहे, सबकी सूची देता है।",
         "keywords": "विज्ञापन,ब्लॉक,पॉपअप,सफारी,एक्सटेंशन",
@@ -260,7 +260,7 @@
       "name": "Hungarian",
       "code": "hu",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari lapok átirányítás ellen",
         "promo": "Oldalanként kapcsolható be az eszköztár gombjával. Megállítja a láthatatlan kattintásrétegeket, a háttérablakokat és az átírt linkeket, és felsorolja a próbált címeket.",
         "keywords": "reklám,blokkoló,bővítmény,iphone,mac,felugró,ablak,eltérítés",
@@ -272,7 +272,7 @@
       "name": "Indonesian",
       "code": "id",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Cegah pengalihan tab di Safari",
         "promo": "Aktifkan per situs lewat tombol bilah alat. Menghentikan lapisan klik tak terlihat, pop-under, dan tautan yang diubah saat klik, serta mendaftar alamat yang coba dibuka.",
         "keywords": "iklan,blokir,pemblokir,ekstensi,iphone,mac,peramban,pembajakan,anti iklan",
@@ -308,7 +308,7 @@
       "name": "Kannada",
       "code": "kn-IN",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari: ನಿಮ್ಮ ಕ್ಲಿಕ್ ನಿಮ್ಮದೇ",
         "promo": "ಟೂಲ್‌ಬಾರ್ ಬಟನ್‌ನಿಂದ ಪ್ರತಿ ಸೈಟ್‌ಗೆ ಆನ್ ಮಾಡಿ. ಅದೃಶ್ಯ ಕ್ಲಿಕ್ ಪದರ, ಪಾಪ್‌ಅಂಡರ್, ಕ್ಲಿಕ್ ನಡುವೆ ಬದಲಾಗುವ ಲಿಂಕ್ ತಡೆಯುತ್ತದೆ. ಪುಟ ತೆರೆಯಲು ಯತ್ನಿಸಿದ ವಿಳಾಸಗಳನ್ನು ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.",
         "keywords": "ಜಾಹೀರಾತು,ಬ್ಲಾಕ್,ಪಾಪ್‌ಅಪ್,ಸಫಾರಿ",
@@ -332,7 +332,7 @@
       "name": "Malay",
       "code": "ms",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Henti ubah hala dan tab Safari",
         "promo": "Hidupkan per laman dengan butang bar alat. Menghentikan lapisan klik tak kelihatan, pop-under dan pautan diubah semasa klik, dan menyenaraikan alamat yang cuba dibuka.",
         "keywords": "iklan,sekat,penyekat,sambungan,iphone,mac,timbul,rampas",
@@ -344,7 +344,7 @@
       "name": "Malayalam",
       "code": "ml-IN",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari: ക്ലിക്ക് നിങ്ങളുടേത്",
         "promo": "ടൂൾബാർ ബട്ടൺ അമർത്തി ഓരോ സൈറ്റിനും ഓണാക്കാം. അദൃശ്യ ക്ലിക്ക് പാളി, പോപ്പ്-അണ്ടർ, ക്ലിക്കിനിടെ മാറുന്ന ലിങ്ക് എന്നിവ തടയും. പേജ് തുറക്കാൻ ശ്രമിച്ച ഓരോ വിലാസവും പട്ടികയിൽ.",
         "keywords": "പരസ്യം,ബ്ലോക്ക്,പോപ്പ്അപ്പ്,സഫാരി",
@@ -356,7 +356,7 @@
       "name": "Marathi",
       "code": "mr-IN",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari मध्ये क्लिक तुमचाच",
         "promo": "टूलबार बटणाने प्रत्येक साइटसाठी चालू करा. अदृश्य क्लिक थर, पॉप-अंडर आणि क्लिकमध्येच बदलणाऱ्या लिंक थांबवतो. पानाने उघडायचा प्रयत्न केलेला प्रत्येक पत्ता यादीत दाखवतो.",
         "keywords": "जाहिरात,ब्लॉक,पॉपअप,सफारी,एक्स्टेंशन",
@@ -368,7 +368,7 @@
       "name": "Norwegian",
       "code": "no",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari-faner uten omdirigering",
         "promo": "Slå på per nettsted med verktøylinjeknappen. Stopper usynlige klikklag, pop-unders og lenker som skrives om midt i klikket, og lister hver adresse en side prøvde å åpne.",
         "keywords": "annonse,reklame,blokkering,utvidelse,iphone,mac,kapring,blokkere",
@@ -380,7 +380,7 @@
       "name": "Oriya",
       "code": "or-IN",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safariରେ ଆପଣଙ୍କ କ୍ଲିକ ଆପଣଙ୍କର",
         "promo": "ଟୁଲବାର ବଟନରୁ ପ୍ରତି ସାଇଟ ପାଇଁ ଚାଲୁ କରନ୍ତୁ। ଅଦୃଶ୍ୟ କ୍ଲିକ ସ୍ତର, ପପ-ଅଣ୍ଡର ଓ କ୍ଲିକ ବେଳେ ବଦଳୁଥିବା ଲିଙ୍କକୁ ଅଟକାଏ। ପୃଷ୍ଠା ଖୋଲିବାକୁ ଚେଷ୍ଟା କରିଥିବା ପ୍ରତ୍ୟେକ ଠିକଣା ତାଲିକାରେ ଦେଖାଏ।",
         "keywords": "ବିଜ୍ଞାପନ,ବ୍ଲକ,ପପଅପ,ସାଫାରି,iphone,mac",
@@ -392,7 +392,7 @@
       "name": "Polish",
       "code": "pl",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Blokuj przekierowania w Safari",
         "promo": "Przycisk na pasku włącza go dla strony. Zatrzymuje ukryte nakładki, pop-undery i linki podmieniane podczas klikania i wylicza adresy, które strona chciała otworzyć.",
         "keywords": "reklamy,blokada,blokowanie,rozszerzenie,iphone,mac,wyskakujące,okno,przejęcie,karty",
@@ -428,7 +428,7 @@
       "name": "Punjabi",
       "code": "pa-IN",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari ਵਿੱਚ ਕਲਿੱਕ ਤੁਹਾਡਾ ਹੀ",
         "promo": "ਟੂਲਬਾਰ ਬਟਨ ਨਾਲ ਹਰ ਸਾਈਟ ਲਈ ਚਾਲੂ ਕਰੋ। ਅਦਿੱਖ ਕਲਿੱਕ ਪਰਤਾਂ, ਪੌਪ-ਅੰਡਰ ਅਤੇ ਕਲਿੱਕ ਦੌਰਾਨ ਬਦਲੇ ਲਿੰਕ ਰੋਕਦਾ ਹੈ। ਪੰਨੇ ਨੇ ਖੋਲ੍ਹਣ ਦੀ ਕੋਸ਼ਿਸ਼ ਕੀਤੀ ਹਰ ਪਤਾ ਸੂਚੀ ਵਿੱਚ ਦਿਖਾਉਂਦਾ ਹੈ।",
         "keywords": "ਇਸ਼ਤਿਹਾਰ,ਬਲੌਕ,ਪੌਪਅੱਪ,ਸਫਾਰੀ,iphone,mac",
@@ -440,7 +440,7 @@
       "name": "Romanian",
       "code": "ro",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Fără redirecționări în Safari",
         "promo": "Îl pornești pe fiecare site din bară. Undirect oprește straturile invizibile, pop-under-urile și linkurile rescrise în timpul clicului și listează fiecare adresă.",
         "keywords": "reclame,blocare,extensie,iphone,mac,pop-up,fereastră,deturnare,file",
@@ -464,7 +464,7 @@
       "name": "Slovak",
       "code": "sk",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Zastaví presmerovanie v Safari",
         "promo": "Zapnite ho pre web tlačidlom na paneli. Undirect zastaví neviditeľné vrstvy, pop-undery a odkazy prepísané počas ťuknutia a vypíše každú adresu, ktorú chcela otvoriť.",
         "keywords": "reklamy,blokovanie,rozšírenie,iphone,mac,vyskakovacie,okno,únos,karty",
@@ -476,7 +476,7 @@
       "name": "Slovenian",
       "code": "sl-SI",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Ustavi preusmeritve v Safari",
         "promo": "Vklopite ga za stran z gumbom orodne vrstice. Undirect ustavi nevidne plasti, pop-under in povezave, prepisane med klikom, in našteje vse naslove, ki jih je stran odprla.",
         "keywords": "oglasi,reklame,blokiranje,razširitev,iphone,mac,pojavno,okno,ugrabitev,zavihki",
@@ -524,7 +524,7 @@
       "name": "Tamil",
       "code": "ta-IN",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari வழிமாற்றம் வேண்டாம்",
         "promo": "தளம்தோறும் பொத்தானில் இயக்குங்கள். மறைந்த அடுக்குகள், பாப்-அண்டர்கள், கிளிக்கின் நடுவே மாறும் இணைப்புகளை Undirect தடுத்து, திறக்க முயன்ற முகவரிகளைப் பட்டியலிடும்.",
         "keywords": "விளம்பரம்,தடுப்பு,பாப்அப்,சஃபாரி",
@@ -536,7 +536,7 @@
       "name": "Telugu",
       "code": "te-IN",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safariలో దారిమళ్లింపులను ఆపండి",
         "promo": "సైట్‌ వారీగా టూల్‌బార్ బటన్‌తో ఆన్ చేయండి. కనిపించని పొరలు, పాప్-అండర్లు, క్లిక్ మధ్యలో మారే లింక్‌లను Undirect ఆపి, పేజీ తెరవాలనుకున్న ప్రతి చిరునామాను జాబితా చేస్తుంది.",
         "keywords": "ప్రకటన,బ్లాకర్,పాప్అప్,సఫారి",
@@ -560,7 +560,7 @@
       "name": "Turkish",
       "code": "tr",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari yönlendirmelerine engel",
         "promo": "Siteye göre araç çubuğundan açın. Undirect görünmez katmanları, pop-under'ları ve tıklarken değiştirilen bağlantıları durdurur, denenen her adresi listeler.",
         "keywords": "reklam,engelleyici,açılır,pencere,uzantı,iphone,mac,engelle,kaçırma,sekme",
@@ -584,7 +584,7 @@
       "name": "Urdu",
       "code": "ur-PK",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Safari میں ری ڈائریکٹ روکیں",
         "promo": "ہر سائٹ کے لیے ٹول بار کے بٹن سے آن کریں۔ Undirect نادیدہ پرتوں، پاپ انڈر اور کلک کے دوران بدلتے لنکس کو روکتا ہے اور صفحے کے کھولے ہر پتے کی فہرست دکھاتا ہے۔",
         "keywords": "اشتہار,بلاک,پاپ اپ,سفاری,ایکسٹینشن,iphone,mac",
@@ -596,7 +596,7 @@
       "name": "Vietnamese",
       "code": "vi",
       "copy": {
-        "name": "Undirect - Popup Blocker",
+        "name": "Undirect - Tab & Popup Blocker",
         "subtitle": "Chặn chuyển hướng trên Safari",
         "promo": "Bật cho từng trang bằng nút trên thanh công cụ. Undirect chặn lớp vô hình, cửa sổ pop-under và liên kết bị đổi giữa chừng, đồng thời liệt kê mọi địa chỉ trang muốn mở.",
         "keywords": "quảng cáo,tiện ích,iphone,mac,cửa sổ,chiếm quyền,tab",

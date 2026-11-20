@@ -1,1 +1,2 @@
-Gambar baru di App Store. Aplikasinya sendiri tidak berubah.
+Di situs tempat Undirect aktif, halaman yang mencoba memindahkanmu ke situs lain tanpa ketukan apa pun, saat dimuat, setelah beberapa saat, atau ketika kamu hanya menggulir, kini tidak bisa lagi. Alamat yang dicobanya muncul di daftar Undirect, jadi kamu bisa mengizinkannya kalau memang ingin ke sana.
+Tombol Kembali berfungsi lagi di halaman seperti itu. Halaman yang membalas tombol Kembali dengan mengirimmu ke situs lain tidak lagi memindahkanmu, dan halaman yang menumpuk salinan dirinya di riwayat agar kamu tak pernah bisa keluar dengan Kembali kini hanya menyisakan satu.

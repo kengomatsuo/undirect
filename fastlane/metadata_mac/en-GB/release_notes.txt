@@ -1,1 +1,2 @@
-New App Store images. The app itself is unchanged.
+On a site where Undirect is on, a page that tries to send you to another site without a tap, as it loads, after a delay or while you are just scrolling, now stays put. The address it tried appears in Undirect's list, so you can allow it if you wanted to go there.
+Back works again on those pages. A page that answers Back by sending you elsewhere stays where it is, and a page that stacks copies of itself in your history so Back never gets you out now keeps just one.

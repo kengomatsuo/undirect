@@ -1,1 +1,2 @@
-Új képek az App Store-ban. Maga az app nem változott.
+Azokon a webhelyeken, ahol bekapcsolta az Undirectet, most a helyén marad, ha egy oldal koppintás nélkül próbálja átküldeni egy másik webhelyre, betöltés közben, kis idő múlva vagy puszta görgetés közben. A cím, amellyel próbálkozott, megjelenik az Undirect listájában, így engedélyezheti, ha mégis oda akart menni.
+A Vissza gomb újra működik ezeken az oldalakon. Az az oldal, amely a Visszára egy másik webhellyel felel, már nem viszi el sehova, az pedig, amelyik sokszor beírja magát az előzményekbe, hogy a Vissza soha ne vezessen ki belőle, mostantól csak egyszer szerepel ott.

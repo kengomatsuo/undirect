@@ -1,1 +1,2 @@
-Uudet kuvat App Storessa. Itse appi ei ole muuttunut.
+Sivustoilla, joilla Undirect on päällä, pysyt nyt paikallasi, kun sivu yrittää viedä sinut toiselle sivustolle ilman napautusta, latautuessaan, hetken päästä tai kun vain vierität. Osoite näkyy Undirectin luettelossa, joten voit sallia sen, jos halusit sinne.
+Takaisin-painike toimii taas tällaisilla sivuilla. Sivu, joka vastaa Takaisin-painikkeeseen viemällä sinut toiselle sivustolle, ei enää siirrä sinua minnekään, ja sivu, joka lisää itsensä historiaan monta kertaa, jotta Takaisin ei koskaan vie pois, on siellä nyt vain kerran.

@@ -1,1 +1,2 @@
-Nouvelles images sur l'App Store. L'app elle-même n'a pas changé.
+Sur un site où Undirect est activé, une page qui tente de vous envoyer vers un autre site sans le moindre appui, au chargement, après un délai ou pendant un simple défilement, ne vous emmène plus ailleurs. L'adresse visée apparaît dans la liste d'Undirect, et vous pouvez l'autoriser si vous vouliez y aller.
+Le bouton Retour fonctionne à nouveau sur ces pages. Une page qui répond à Retour en vous envoyant sur un autre site vous laisse où vous êtes, et une page qui s'inscrit plusieurs fois dans l'historique pour qu'on n'en sorte jamais avec Retour n'y figure plus qu'une fois.

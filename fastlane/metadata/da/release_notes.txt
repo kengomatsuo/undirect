@@ -1,1 +1,2 @@
-Nye billeder i App Store. Selve appen er uændret.
+På websteder, hvor du har slået Undirect til, bliver du nu, hvor du er, når en side prøver at sende dig videre til et andet websted uden et tryk, mens den indlæses, efter lidt tid eller bare mens du scroller. Adressen vises i Undirects liste, så du kan tillade den, hvis du faktisk ville derhen.
+Tilbage-knappen virker igen på de sider. En side, der svarer på Tilbage ved at sende dig til et andet websted, flytter dig ikke længere, og en side, der lægger sig selv i historikken mange gange, så Tilbage aldrig fører væk, står der nu kun én gang.

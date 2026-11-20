@@ -1,1 +1,1 @@
-pop up,advert,ads,block,iphone,ipad,mac,extension,hijack,popunder,window
+pop up,advert,ads,block,iphone,ipad,mac,extension,hijack,popunder,window,new

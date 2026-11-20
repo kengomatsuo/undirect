@@ -1,1 +1,2 @@
-Nowe obrazy w App Store. Sama aplikacja się nie zmieniła.
+Na witrynach z włączonym Undirect strona, która bez żadnego dotknięcia próbuje przejść na inną witrynę, podczas ładowania, po chwili albo w trakcie samego przewijania, teraz zostaje na miejscu. Adres, który próbowała otworzyć, pojawia się na liście Undirect i można na niego zezwolić, jeśli przejście było zamierzone.
+Przycisk Wstecz znów działa na takich stronach. Strona, która na Wstecz odpowiada przejściem na inną witrynę, zostaje na miejscu, a strona, która wpisuje się do historii wiele razy, żeby Wstecz nigdy z niej nie wyprowadzał, ma tam teraz tylko jeden wpis.

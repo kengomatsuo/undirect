@@ -1,1 +1,2 @@
-Novas imagens na App Store. O app em si não mudou.
+Nos sites em que o Undirect está ativado, quando uma página tenta levar você para outro site sem nenhum toque, ao carregar, depois de alguns segundos ou enquanto você só rola a tela, agora você continua onde está. O endereço que ela tentou aparece na lista do Undirect, e você pode permitir se queria mesmo ir.
+O botão Voltar funciona de novo nessas páginas. Uma página que responde ao Voltar mandando você para outro site não tira mais você do lugar, e uma página que se repete várias vezes no histórico para o Voltar nunca tirar você dela agora fica com uma cópia só.

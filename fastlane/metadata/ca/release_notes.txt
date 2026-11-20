@@ -1,1 +1,2 @@
-Imatges noves a l'App Store. L'app no ha canviat.
+Als llocs on tens Undirect activat, si una pàgina prova de portar-te a un altre lloc sense que hagis tocat res, en carregar-se, al cap d'una estona o mentre només et desplaces, ara et quedes on ets. L'adreça que ha provat surt a la llista d'Undirect, i la pots permetre si de debò hi volies anar.
+El botó Enrere torna a funcionar en aquestes pàgines. Si una pàgina respon a Enrere enviant-te a un altre lloc, continues on eres, i si s'apila diverses vegades a l'historial perquè Enrere no te'n tregui mai, ara només en queda una còpia.

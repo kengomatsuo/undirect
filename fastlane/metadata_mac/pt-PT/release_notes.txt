@@ -1,1 +1,2 @@
-Novas imagens na App Store. A app em si não mudou.
+Nos sites onde o Undirect está ativo, uma página que tente saltar para outro site sem qualquer toque, ao carregar, passado algum tempo ou durante um simples deslizar, fica agora onde está. O endereço que tentou aparece na lista do Undirect e pode ser permitido, se a ida era mesmo desejada.
+O botão Retroceder volta a funcionar nessas páginas. Uma página que responde ao Retroceder saltando para outro site fica onde está, e uma página que se repete várias vezes no histórico para nunca se conseguir sair dela com o Retroceder passa a ter uma só entrada.

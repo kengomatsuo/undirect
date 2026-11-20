@@ -1,1 +1,2 @@
-Nuove immagini su App Store. L'app non è cambiata.
+Sui siti in cui hai attivato Undirect, una pagina che prova a portarti su un altro sito senza che tu abbia toccato nulla, mentre si carica, dopo qualche secondo o mentre scorri e basta, ora ti lascia dove sei. L'indirizzo che ha tentato compare nell'elenco di Undirect, così puoi consentirlo se ci volevi davvero andare.
+Il tasto Indietro torna a funzionare su queste pagine. Una pagina che risponde a Indietro mandandoti su un altro sito ti lascia dove sei, e una pagina che si copia più volte nella cronologia perché Indietro non ti porti mai fuori ora ne lascia una copia sola.

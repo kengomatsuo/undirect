@@ -1,1 +1,2 @@
-Nové obrázky v App Store. Samotná aplikácia sa nezmenila.
+Na weboch, kde máte Undirect zapnutý, teraz zostanete tam, kde ste, keď sa vás stránka pokúsi bez klepnutia poslať na iný web, či už pri načítaní, po chvíli alebo len počas posúvania. Adresa, ktorú skúšala, sa zobrazí v zozname Undirect a môžete ju povoliť, ak to bol váš zámer.
+Tlačidlo Späť na takých stránkach opäť funguje. Stránka, ktorá na Späť odpovie presmerovaním na iný web, vás už nikam nepošle, a stránka, ktorá sa do histórie zapíše mnohokrát, aby z nej Späť nikdy neviedlo, v nej teraz zostane len raz.

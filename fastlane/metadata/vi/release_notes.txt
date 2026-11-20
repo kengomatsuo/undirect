@@ -1,1 +1,2 @@
-Hình ảnh mới trên App Store. Bản thân ứng dụng không thay đổi.
+Trên các trang web đã bật Undirect, một trang cố đưa bạn sang trang web khác khi bạn chưa chạm vào gì, lúc đang tải, sau một lúc hay chỉ khi bạn đang cuộn, nay sẽ giữ bạn ở nguyên chỗ cũ. Địa chỉ trang định mở sẽ hiện trong danh sách của Undirect để bạn cho phép nếu thật sự muốn đến đó.
+Nút Lùi hoạt động trở lại trên những trang như vậy. Trang đáp lại nút Lùi bằng cách đưa bạn sang trang web khác nay giữ bạn ở nguyên chỗ, còn trang tự chép mình nhiều lần vào lịch sử để bấm Lùi mãi không thoát ra được nay chỉ còn lại một bản.

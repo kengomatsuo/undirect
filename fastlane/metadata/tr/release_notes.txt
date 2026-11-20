@@ -1,1 +1,2 @@
-App Store'da yeni görseller. Uygulamanın kendisi değişmedi.
+Undirect'i açtığınız sitelerde bir sayfa, siz hiçbir yere dokunmadan sizi başka bir siteye göndermeye çalıştığında, ister yüklenirken ister bir süre sonra ister siz yalnızca kaydırırken, artık olduğunuz yerde kalırsınız. Denediği adres Undirect listesinde görünür; oraya gerçekten gitmek istediyseniz izin verebilirsiniz.
+Geri düğmesi bu sayfalarda yeniden çalışıyor. Geri'ye sizi başka bir siteye göndererek karşılık veren sayfa artık sizi yerinizden oynatmaz; Geri ile hiç çıkamayasınız diye geçmişe kendini defalarca yazan sayfa da artık orada yalnızca bir kez yer alır.

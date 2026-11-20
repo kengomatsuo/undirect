@@ -1,1 +1,2 @@
-Imágenes nuevas en App Store. La app no cambió.
+En los sitios donde tienes Undirect activado, si una página intenta llevarte a otro sitio sin que toques nada, al cargar, después de un momento o mientras solo te desplazas, ahora te quedas donde estás. La dirección que intentó aparece en la lista de Undirect, y puedes permitirla si sí querías ir.
+El botón Atrás vuelve a funcionar en esas páginas. Si una página responde a Atrás enviándote a otro sitio, sigues en ella, y si se copia varias veces en el historial para que Atrás nunca te saque de ahí, ahora solo queda una copia.

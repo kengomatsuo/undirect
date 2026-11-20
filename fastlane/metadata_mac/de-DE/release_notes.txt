@@ -1,1 +1,2 @@
-Neue Bilder im App Store. An der App selbst hat sich nichts geändert.
+Auf Websites, für die Undirect eingeschaltet ist, bleibt man jetzt, wo man ist, wenn eine Seite ohne Tippen zu einer anderen Website wechseln will, ob beim Laden, nach ein paar Sekunden oder nur beim Scrollen. Die Adresse erscheint in der Liste von Undirect und lässt sich dort zulassen, falls man doch dorthin wollte.
+Auch Zurück funktioniert auf solchen Seiten wieder. Antwortet eine Seite auf Zurück mit einer anderen Website, bleibt man auf der Seite, und eine Seite, die sich mehrfach in den Verlauf schreibt, damit man mit Zurück nie wegkommt, steht dort jetzt nur noch einmal.

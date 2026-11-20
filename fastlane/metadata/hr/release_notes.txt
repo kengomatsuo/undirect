@@ -1,1 +1,2 @@
-Nove slike u App Storeu. Sama aplikacija nije promijenjena.
+Na mjestima na kojima je Undirect uključen sada ostajete gdje ste kad vas stranica bez ijednog dodira pokuša poslati na drugo mjesto, dok se učitava, nakon nekog vremena ili dok se samo pomičete po njoj. Adresa koju je pokušala otvoriti pojavljuje se na popisu Undirecta i možete je dopustiti ako vam je to bila namjera.
+Tipka Natrag na takvim stranicama ponovno radi. Stranica koja na Natrag odgovori slanjem na drugo mjesto više vas nikamo ne šalje, a stranica koja se u povijest upiše mnogo puta da vas Natrag nikad ne izvede s nje sada je u njoj samo jednom.

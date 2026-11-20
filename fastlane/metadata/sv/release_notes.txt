@@ -1,1 +1,2 @@
-Nya bilder i App Store. Själva appen är oförändrad.
+På webbplatser där du har slagit på Undirect stannar du nu där du är när en sida försöker skicka dig till en annan webbplats utan att du har tryckt, medan den läses in, efter en stund eller bara medan du scrollar. Adressen syns i Undirects lista, så att du kan tillåta den om du faktiskt ville dit.
+Bakåtknappen fungerar igen på sådana sidor. En sida som svarar på Bakåt genom att skicka dig till en annan webbplats får inte längre flytta dig, och en sida som lägger sig i historiken många gånger så att Bakåt aldrig tar dig därifrån finns nu bara med en gång.

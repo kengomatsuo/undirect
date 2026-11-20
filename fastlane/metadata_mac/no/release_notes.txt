@@ -1,1 +1,2 @@
-Nye bilder i App Store. Selve appen er uendret.
+På nettsteder der du har slått på Undirect, blir du nå værende der du er når en side prøver å sende deg til et annet nettsted uten at du har trykket, mens den lastes, etter en stund eller bare mens du ruller. Adressen vises i listen til Undirect, så du kan tillate den hvis du faktisk ville dit.
+Tilbake-knappen virker igjen på slike sider. En side som svarer på Tilbake ved å sende deg til et annet nettsted, får ikke lenger flytte deg, og en side som legger seg selv i loggen mange ganger så du aldri kommer ut med Tilbake, ligger der nå bare én gang.

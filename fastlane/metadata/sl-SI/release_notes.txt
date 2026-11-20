@@ -1,1 +1,2 @@
-Nove slike v App Storu. Aplikacija sama se ni spremenila.
+Na spletnih mestih, kjer imate Undirect vklopljen, zdaj ostanete, kjer ste, ko vas stran brez dotika poskuša poslati na drugo mesto, med nalaganjem, čez nekaj časa ali kar med pomikanjem. Naslov, ki ga je poskusila, se pokaže na seznamu Undirect, in ga lahko dovolite, če je bil to vaš namen.
+Gumb Nazaj na takih straneh spet deluje. Stran, ki na Nazaj odgovori s preusmeritvijo na drugo mesto, vas ne pošlje nikamor več, stran, ki se v zgodovino vpiše večkrat, da z Nazaj nikoli ne pridete ven, pa je v njej zdaj samo enkrat.
