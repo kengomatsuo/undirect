@@ -74,6 +74,8 @@ Read in Chrome 2026-11-20 13:20 WIB: 16VC (504 replies, 33K views) and @anupamrj
 
 ### Undirect 1.0.5 post (from undirect-pains, ASG61 and ASG62)
 
+Media (undirect-pains, commit 988d426, iPad simulator): docs/screenshots/pains/ios-scroll-guard-off-left-article.png (guard off: scrolling sends the tab to the ad), ios-scroll-guard-on-article-stays.png (guard on: the tab stays), ios-scroll-guard-on-popup-redirect-with-no-press.png (popup row "Redirect with no press: Blocked"), ios-scroll-guard-on-clip.mp4 (built from frames at an assumed 2 fps, timing approximate). The iOS Back-trap clip is still being filmed; use the Mac Back clips until then. Still held until iOS 1.0.5 reads READY_FOR_SALE and the owner says go.
+
 | # | Where | Text | Media |
 |---|---|---|---|
 | U105 | X, IG Reel, TikTok, only after 1.0.5 is live on the App Store | Safari sending you to a fake virus page while you scroll, no tap at all? That's the page, not your iPhone. Undirect 1.0.5 keeps you where you were, and Back goes back. undirect.matsuokengo.com | docs/screenshots/pains/mac-scroll-on.mp4, mac-back-off.mp4 then mac-back-on.mp4; ios-*.mp4 when ready |
