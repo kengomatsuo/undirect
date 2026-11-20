@@ -4,7 +4,13 @@ window.__caught = [];
 window.chrome = {
   runtime: {
     getURL: (p) => new URL(p.split("/").pop(), location.href).href,
-    sendMessage: (msg) => { window.__caught.push(msg); return Promise.resolve(); },
+    // ?hang=1: the background never answers whether the site is guarded, as
+    // Safari's can while it wakes the page.
+    sendMessage: (msg) => {
+      window.__caught.push(msg);
+      if (msg?.type === "undirect:active" && new URLSearchParams(location.search).get("hang")) return new Promise(() => {});
+      return Promise.resolve();
+    },
     onMessage: { addListener() {} },
   },
   storage: {
@@ -15,7 +21,7 @@ window.chrome = {
         Promise.resolve({
           settings: {
             policy: new URLSearchParams(location.search).get("policy") ?? "block",
-            mode: "everywhere",
+            mode: new URLSearchParams(location.search).get("mode") ?? "everywhere",
           },
           everywhere: JSON.parse(new URLSearchParams(location.search).get("everywhere") ?? "{}"),
           perSite: JSON.parse(new URLSearchParams(location.search).get("perSite") ?? "{}"),

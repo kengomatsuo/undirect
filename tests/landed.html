@@ -3,5 +3,13 @@
 <body>
 <!-- Reached only when the guard let a redirect through. -->
 <pre id="out">FAIL: the page sent the tab here and nothing stopped it</pre>
-<script>window.__results = [{ name: "redirect stayed put", pass: false, detail: location.search }];</script>
+<script>
+// run-hang.html sends itself here on purpose: a site nobody guards must still
+// be able to move itself on when the background never answers.
+const meant = location.search.includes("from=hang");
+document.getElementById("out").textContent = meant
+  ? "PASS: an unguarded page's own redirect went through while the background was silent"
+  : "FAIL: the page sent the tab here and nothing stopped it";
+window.__results = [{ name: meant ? "a silent background does not hold a redirect for good" : "redirect stayed put", pass: meant, detail: location.search }];
+</script>
 </body></html>

@@ -469,6 +469,7 @@
   // Not learned as a network block: one wrong call would block that site
   // everywhere, and the next attempt here is cancelled the same way.
   const NO_TAP_MS = 5000;
+  const ASK_MS = 1500;        // longest a held trip waits on the background
   let lastActivation = -Infinity;
   let known = false;          // start() has read whether this site is guarded
   let held = null;            // a trip cancelled before that was known
@@ -646,6 +647,13 @@
       // no: a site switched on in a private window lives in storage.session,
       // which content scripts cannot read. Slower than the storage read, and
       // the frame stays inert until the answer lands.
+      //
+      // A trip held at load (see D) waits on this answer, and Safari may be
+      // waking the background page or may never answer at all: on a loaded
+      // Mac it was still silent twenty seconds in. So after ASK_MS the held
+      // trip is let go as though the site were not guarded, and the answer
+      // still switches the guard on whenever it lands.
+      const late = setTimeout(settle, ASK_MS);
       try {
         const answer = await api.runtime.sendMessage({ type: "undirect:active" });
         active = !!answer?.active;
@@ -653,6 +661,7 @@
       } catch (e) {
         active = false;
       }
+      clearTimeout(late);
     }
 
     settle();
