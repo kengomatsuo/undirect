@@ -25,7 +25,7 @@ const ok = (name, pass, detail) => {
 // against, so the guard being off by default costs no existing check a line.
 function world({ slowStorage = false, matchedRules = null,
                  watched = { "site.com": true }, settings = {}, stored = {},
-                 privateTabs = [], fromApp = [] } = {}) {
+                 privateTabs = [], fromApp = [], appSilent = false } = {}) {
   const local = {
     settings: { enabled: true, policy: "block", mode: "watched", ...settings },
     watched,
@@ -51,6 +51,7 @@ function world({ slowStorage = false, matchedRules = null,
       onMessage: { addListener: (fn) => listeners.message.push(fn) },
       sendNativeMessage: async (_, msg) => {
         calls.native.push(msg);
+        if (appSilent && msg?.collect) return new Promise(() => {});
         const changes = queued;
         queued = [];
         return { stored: true, changes };
@@ -640,6 +641,18 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   });
   ok("a trip nobody pressed for is told from an honest one", wrong.length === 0,
      wrong.map(([name, args]) => `${name}: got ${JSON.stringify(N.judgeUnasked(args))}`).join("; "));
+}
+
+// No container app answering (a temporary extension in Safari's Developer
+// settings): the background still has to answer a page within a few seconds.
+{
+  const w = world({ appSilent: true });
+  const answer = await Promise.race([
+    w.send({ type: "undirect:active" }, 7).find(Boolean),
+    new Promise((r) => setTimeout(() => r("no answer"), 4000)),
+  ]);
+  ok("a silent app does not stop the background answering a page", answer !== "no answer" && answer?.active === true,
+     JSON.stringify(answer));
 }
 
 const failed = results.filter((r) => !r.pass);

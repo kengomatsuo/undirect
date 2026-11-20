@@ -999,9 +999,19 @@ async function collectOnLoad() {
 
 // Asked once on waking, before any rule is read, so a site stopped from the
 // app while this page was unloaded is already off when it next loads.
+//
+// readState() waits on this, so it cannot wait forever: with no container app
+// behind it (a temporary extension in Safari's Developer settings, 2026-11-20)
+// the native reply never came, the toolbar button did nothing and every page
+// asking whether it was guarded went unanswered. Past APP_REPLY_MS the queue
+// is left for the next wake.
+const APP_REPLY_MS = 2000;
 async function collectFromApp() {
   try {
-    const reply = await api.runtime.sendNativeMessage("com.matsuokengo.undirect", { collect: true });
+    const reply = await Promise.race([
+      api.runtime.sendNativeMessage("com.matsuokengo.undirect", { collect: true }),
+      new Promise((resolve) => setTimeout(() => resolve(null), APP_REPLY_MS)),
+    ]);
     if (reply?.changes?.length) await applyFromApp(reply.changes);
   } catch (e) {
     // no container app listening
