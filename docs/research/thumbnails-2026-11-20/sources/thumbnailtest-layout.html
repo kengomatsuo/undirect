@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html data-wf-page="65d64429d4ef748fce35dfbc" data-wf-site="6595ea04b2dadb873b9d78ac" lang="en" lang="en-US"><head><meta charset="utf-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="2.0.4",this.userEvents=["keydown","keyup","mousedown","mouseup","mousemove","mouseover","mouseout","touchmove","touchstart","touchend","touchcancel","wheel","click","dblclick","input"],this.attributeEvents=["onblur","onclick","oncontextmenu","ondblclick","onfocus","onmousedown","onmouseenter","onmouseleave","onmousemove","onmouseout","onmouseover","onmouseup","onmousewheel","onscroll","onsubmit"]}async t(){this.i(),this.o(),/iP(ad|hone)/.test(navigator.userAgent)&&this.h(),this.u(),this.l(this),this.m(),this.k(this),this.p(this),this._(),await Promise.all([this.R(),this.L()]),this.lastBreath=Date.now(),this.S(this),this.P(),this.D(),this.O(),this.M(),await this.C(this.delayedScripts.normal),await this.C(this.delayedScripts.defer),await this.C(this.delayedScripts.async),await this.T(),await this.F(),await this.j(),await this.A(),window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.lastTouchEnd&&await new Promise(t=>setTimeout(t,500-Date.now()+this.lastTouchEnd)),this.I(),this.H(),this.U(),this.W()}i(){this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))},{isRocket:!0})}o(){window.addEventListener("pageshow",t=>{this.persisted=t.persisted,this.realWindowLoadedFired=!0},{isRocket:!0}),window.addEventListener("pagehide",()=>{this.onFirstUserAction=null},{isRocket:!0})}h(){let t;function e(e){t=e}window.addEventListener("touchstart",e,{isRocket:!0}),window.addEventListener("touchend",function i(o){o.changedTouches[0]&&t.changedTouches[0]&&Math.abs(o.changedTouches[0].pageX-t.changedTouches[0].pageX)<10&&Math.abs(o.changedTouches[0].pageY-t.changedTouches[0].pageY)<10&&o.timeStamp-t.timeStamp<200&&(window.removeEventListener("touchstart",e,{isRocket:!0}),window.removeEventListener("touchend",i,{isRocket:!0}),"INPUT"===o.target.tagName&&"text"===o.target.type||(o.target.dispatchEvent(new TouchEvent("touchend",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new MouseEvent("mouseover",{target:o.target,bubbles:!0})),o.target.dispatchEvent(new PointerEvent("click",{target:o.target,bubbles:!0,cancelable:!0,detail:1,clientX:o.changedTouches[0].clientX,clientY:o.changedTouches[0].clientY})),event.preventDefault()))},{isRocket:!0})}q(t){this.userActionTriggered||("mousemove"!==t.type||this.firstMousemoveIgnored?"keyup"===t.type||"mouseover"===t.type||"mouseout"===t.type||(this.userActionTriggered=!0,this.onFirstUserAction&&this.onFirstUserAction()):this.firstMousemoveIgnored=!0),"click"===t.type&&t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),"touchstart"===this.lastEvent&&"touchend"===t.type&&(this.lastTouchEnd=Date.now()),"click"===t.type&&(this.lastTouchEnd=0),this.lastEvent=t.type,t.composedPath&&t.composedPath()[0].getRootNode()instanceof ShadowRoot&&(t.rocketTarget=t.composedPath()[0]),this.savedUserEvents.push(t)}u(){this.savedUserEvents=[],this.userEventHandler=this.q.bind(this),this.userEvents.forEach(t=>window.addEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.addEventListener("visibilitychange",this.userEventHandler,{isRocket:!0})}U(){this.userEvents.forEach(t=>window.removeEventListener(t,this.userEventHandler,{passive:!1,isRocket:!0})),document.removeEventListener("visibilitychange",this.userEventHandler,{isRocket:!0}),this.savedUserEvents.forEach(t=>{(t.rocketTarget||t.target).dispatchEvent(new window[t.constructor.name](t.type,t))})}m(){const t="return false",e=Array.from(this.attributeEvents,t=>"data-rocket-"+t),i="["+this.attributeEvents.join("],[")+"]",o="[data-rocket-"+this.attributeEvents.join("],[data-rocket-")+"]",s=(e,i,o)=>{o&&o!==t&&(e.setAttribute("data-rocket-"+i,o),e["rocket"+i]=new Function("event",o),e.setAttribute(i,t))};new MutationObserver(t=>{for(const n of t)"attributes"===n.type&&(n.attributeName.startsWith("data-rocket-")||this.everythingLoaded?n.attributeName.startsWith("data-rocket-")&&this.everythingLoaded&&this.N(n.target,n.attributeName.substring(12)):s(n.target,n.attributeName,n.target.getAttribute(n.attributeName))),"childList"===n.type&&n.addedNodes.forEach(t=>{if(t.nodeType===Node.ELEMENT_NODE)if(this.everythingLoaded)for(const i of[t,...t.querySelectorAll(o)])for(const t of i.getAttributeNames())e.includes(t)&&this.N(i,t.substring(12));else for(const e of[t,...t.querySelectorAll(i)])for(const t of e.getAttributeNames())this.attributeEvents.includes(t)&&s(e,t,e.getAttribute(t))})}).observe(document,{subtree:!0,childList:!0,attributeFilter:[...this.attributeEvents,...e]})}I(){this.attributeEvents.forEach(t=>{document.querySelectorAll("[data-rocket-"+t+"]").forEach(e=>{this.N(e,t)})})}N(t,e){const i=t.getAttribute("data-rocket-"+e);i&&(t.setAttribute(e,i),t.removeAttribute("data-rocket-"+e))}k(t){Object.defineProperty(HTMLElement.prototype,"onclick",{get(){return this.rocketonclick||null},set(e){this.rocketonclick=e,this.setAttribute(t.everythingLoaded?"onclick":"data-rocket-onclick","this.rocketonclick(event)")}})}S(t){function e(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o,set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}e(document,"onreadystatechange"),e(window,"onload"),e(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}l(t){this.originalAddEventListener=EventTarget.prototype.addEventListener,this.originalRemoveEventListener=EventTarget.prototype.removeEventListener,this.savedEventListeners=[],EventTarget.prototype.addEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalAddEventListener.call(this,e,i,o):(t.savedEventListeners.push({target:this,remove:!1,type:e,func:i,options:o}),"mouseenter"!==e&&"mouseleave"!==e||t.originalAddEventListener.call(this,e,t.savedUserEvents.push,o))},EventTarget.prototype.removeEventListener=function(e,i,o){o&&o.isRocket||!t.B(e,this)&&!t.userEvents.includes(e)||t.B(e,this)&&!t.userActionTriggered||e.startsWith("rocket-")||t.everythingLoaded?t.originalRemoveEventListener.call(this,e,i,o):t.savedEventListeners.push({target:this,remove:!0,type:e,func:i,options:o})}}J(t,e){this.savedEventListeners=this.savedEventListeners.filter(i=>{let o=i.type,s=i.target||window;return e!==o||t!==s||(this.B(o,s)&&(i.type="rocket-"+o),this.$(i),!1)})}H(){EventTarget.prototype.addEventListener=this.originalAddEventListener,EventTarget.prototype.removeEventListener=this.originalRemoveEventListener,this.savedEventListeners.forEach(t=>this.$(t))}$(t){t.remove?this.originalRemoveEventListener.call(t.target,t.type,t.func,t.options):this.originalAddEventListener.call(t.target,t.type,t.func,t.options)}p(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map(t=>"load"===t||t.startsWith("load.")?"rocket-jquery-load":t).join(" ")}function o(o){function s(e){const s=o.fn[e];o.fn[e]=o.fn.init.prototype[e]=function(){return this[0]===window&&t.userActionTriggered&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach(t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e})),s.apply(this,arguments),this}}if(o&&o.fn&&!t.allJQueries.includes(o)){const e={DOMContentLoaded:[],"rocket-DOMContentLoaded":[]};for(const t in e)document.addEventListener(t,()=>{e[t].forEach(t=>t())},{isRocket:!0});o.fn.ready=o.fn.init.prototype.ready=function(i){function s(){parseInt(o.fn.jquery)>2?setTimeout(()=>i.bind(document)(o)):i.bind(document)(o)}return"function"==typeof i&&(t.realDomReadyFired?!t.userActionTriggered||t.fauxDomReadyFired?s():e["rocket-DOMContentLoaded"].push(s):e.DOMContentLoaded.push(s)),o([])},s("on"),s("one"),s("off"),t.allJQueries.push(o)}e=o}t.allJQueries=[],o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}P(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript,o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async R(){return new Promise(t=>{this.userActionTriggered?t():this.onFirstUserAction=t})}async L(){return new Promise(t=>{document.addEventListener("DOMContentLoaded",()=>{this.realDomReadyFired=!0,t()},{isRocket:!0})})}async j(){return this.realWindowLoadedFired?Promise.resolve():new Promise(t=>{window.addEventListener("load",t,{isRocket:!0})})}M(){this.pendingScripts=[];this.scriptsMutationObserver=new MutationObserver(t=>{for(const e of t)e.addedNodes.forEach(t=>{"SCRIPT"!==t.tagName||t.noModule||t.isWPRocket||this.pendingScripts.push({script:t,promise:new Promise(e=>{const i=()=>{const i=this.pendingScripts.findIndex(e=>e.script===t);i>=0&&this.pendingScripts.splice(i,1),e()};t.addEventListener("load",i,{isRocket:!0}),t.addEventListener("error",i,{isRocket:!0}),setTimeout(i,1e3)})})})}),this.scriptsMutationObserver.observe(document,{childList:!0,subtree:!0})}async F(){await this.X(),this.pendingScripts.length?(await this.pendingScripts[0].promise,await this.F()):this.scriptsMutationObserver.disconnect()}D(){this.delayedScripts={normal:[],async:[],defer:[]},document.querySelectorAll("script[type$=rocketlazyloadscript]").forEach(t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)})}async _(){await this.L();let t=[];document.querySelectorAll("script[type$=rocketlazyloadscript][data-rocket-src]").forEach(e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){i.startsWith("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}}),t=[...new Map(t.map(t=>[JSON.stringify(t),t])).values()],this.Y(t,"preconnect")}async G(t){if(await this.K(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise(e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.includes("Firefox/")||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach(t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))}),t.text&&(i.text=t.text),t.nonce&&(i.nonce=t.nonce),i.hasAttribute("src")?(i.addEventListener("load",o,{isRocket:!0}),i.addEventListener("error",()=>{i.setAttribute("data-rocket-status","failed-network"),e()},{isRocket:!0}),setTimeout(()=>{i.isConnected||e()},1)):(i.text=t.text,o()),i.isWPRocket=!0,t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o,{isRocket:!0}),t.addEventListener("error",i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: CSP fallback activated"),t.removeAttribute("src"),this.G(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())},{isRocket:!0}),s?(t.fetchPriority="high",t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}});t.setAttribute("data-rocket-status","skipped")}async C(t){const e=t.shift();return e?(e.isConnected&&await this.G(e),this.C(t)):Promise.resolve()}O(){this.Y([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}Y(t,e){this.trash=this.trash||[];let i=!0;var o=document.createDocumentFragment();t.forEach(t=>{const s=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(s&&!s.startsWith("data:")){const n=document.createElement("link");n.href=s,n.rel=e,"preconnect"!==e&&(n.as="script",n.fetchPriority=i?"high":"low"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(n.crossOrigin=!0),t.crossOrigin&&(n.crossOrigin=t.crossOrigin),t.integrity&&(n.integrity=t.integrity),t.nonce&&(n.nonce=t.nonce),o.appendChild(n),this.trash.push(n),i=!1}}),document.head.appendChild(o)}W(){this.trash.forEach(t=>t.remove())}async T(){try{document.readyState="interactive"}catch(t){}this.fauxDomReadyFired=!0;try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(document,"DOMContentLoaded"),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.K(),this.J(window,"DOMContentLoaded"),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}catch(t){console.error(t)}}async A(){try{document.readyState="complete"}catch(t){}try{await this.K(),this.J(document,"readystatechange"),document.dispatchEvent(new Event("rocket-readystatechange")),await this.K(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.K(),this.J(window,"load"),window.dispatchEvent(new Event("rocket-load")),await this.K(),window.rocketonload&&window.rocketonload(),await this.K(),this.allJQueries.forEach(t=>t(window).trigger("rocket-jquery-load")),await this.K(),this.J(window,"pageshow");const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.K(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}catch(t){console.error(t)}}async K(){Date.now()-this.lastBreath>45&&(await this.X(),this.lastBreath=Date.now())}async X(){return document.hidden?new Promise(t=>setTimeout(t)):new Promise(t=>requestAnimationFrame(t))}B(t,e){return e===document&&"readystatechange"===t||(e===document&&"DOMContentLoaded"===t||(e===window&&"DOMContentLoaded"===t||(e===window&&"load"===t||e===window&&"pageshow"===t)))}static run(){(new RocketLazyLoadScripts).t()}}RocketLazyLoadScripts.run()})();</script>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://thumbnailtest.com/wp-content/cache/min/1/ajax/libs/webfont/1.6.26/webfont.js?ver=1794167243" data-rocket-type="text/javascript"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">WebFont.load({
+google: {
+families: ["Architects Daughter:300,400,500,600,700","Inter:300,400,500,600,700","Kalam:300,400,500,600,700"]
+}});</script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+<link href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/favicon.png?v=1770050197" data-spai-egr="1" rel="shortcut icon" type="image/x-icon">
+<link href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/webclip.png?v=1770050197" data-spai-egr="1" rel="apple-touch-icon"><!--
+Posthog below
+-->
+<script type="rocketlazyloadscript">
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys onSessionId".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_92PJTkawVLrmiGm19Qm1lx4KkdHFpPMIIyp01h9i9Q0',{api_host:'https://app.posthog.com', disable_session_recording: true} )
+</script>
+<script type="rocketlazyloadscript">
+document.addEventListener("DOMContentLoaded", () => {
+if (typeof posthog !== "undefined") {
+posthog.onFeatureFlags(() => {
+try {
+	const priceBasicMonthly = document.querySelector("#basic-monthly-price");
+const priceBasicYearly = document.querySelector("#basic-yearly-price");
+const priceProMonthly = document.querySelector("#pro-monthly-price");
+const priceProYearly = document.querySelector("#pro-yearly-price");
+if (!(priceBasicMonthly && priceBasicYearly && priceProMonthly && priceProYearly)) {
+	const prices = document.querySelectorAll(".price-for-pricing-card-v2");
+	prices.forEach(element => {
+				element.style.visibility = "visible";
+				});
+console.log("Prices not found");
+return;
+}
+if (posthog.getFeatureFlag("increased-price-a-b-test-may-2025") === "test") {
+const prices = document.querySelectorAll(".price-for-pricing-card-v2");
+prices.forEach(element => {
+			element.style.visibility = "visible";
+			});
+// Test Prices
+// Basic prices
+priceBasicMonthly.textContent = "$49";
+priceBasicYearly.textContent = "$40";
+// Pro prices
+priceProMonthly.textContent = "$69";
+priceProYearly.textContent = "$54";
+} else {
+const prices = document.querySelectorAll(".price-for-pricing-card-v2");
+prices.forEach(element => {
+			element.style.visibility = "visible";
+			});
+// Control prices
+// Monthly prices
+priceBasicMonthly.textContent = "$29";
+priceProMonthly.textContent = "$49";
+// Yearly prices
+priceBasicYearly.textContent = "$24";
+priceProYearly.textContent = "$37";
+}
+} catch (error) {
+const prices = document.querySelectorAll(".price-for-pricing-card-v2");
+prices.forEach(element => {
+element.style.visibility = "visible";
+});
+console.error("Error handling feature flags:", error);
+}
+});
+} else {
+const prices = document.querySelectorAll(".price-for-pricing-card-v2");
+prices.forEach(element => {
+element.style.visibility = "visible";
+});
+console.error("posthog is not defined");
+}
+});
+</script>
+<!--
+Crisp Script
+-->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="e4b46b8b-ef21-4083-90db-91b70107cf7f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<!--
+Crisp Styling
+-->
+<style>
+.cc-1m2mf{
+position:relative !important;
+}
+#crisp-close {
+opacity: 0;
+transition: opacity 0.3s ease-in-out;
+}
+#crisp-close.show {
+opacity: 1;
+}
+</style>
+<style>
+.blog-post__sidebar__toggle__button__icon{
+transition:transform 0.3s ease;
+}
+.blog-post__sidebar__toggle__button--active
+.blog-post__sidebar__toggle__button__icon{
+transform:rotate(180deg);
+}
+@media(max-width:992px){
+.blog-post__rt h2,
+.blog-post__rt h3,
+.blog-post__rt h4{
+margin-top:-50px;
+padding-top:80px;
+}
+}
+</style><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Layout for YouTube Thumbnail: THE Working Solution (2026)</title>
+<link data-rocket-prefetch href="https://cdn.shortpixel.ai" rel="dns-prefetch"><link rel="preload" data-rocket-preload as="image" href="https://cdn.shortpixel.ai/spai/q_lossy+w_910+to_webp+ret_img/thumbnailtest.com/wp-content/uploads/2024/04/YouTube-Thumbnail-Layout.jpg" fetchpriority="high">
+	<meta name="description" content="The perfect layout for a YouTube thumbnail has a simple background, short text, and a very expressive face. This works very well." />
+	<link rel="canonical" href="https://thumbnailtest.com/guides/youtube-thumbnail-layout/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Layout for YouTube Thumbnail: THE Working Solution (2026)" />
+	<meta property="og:description" content="The perfect layout for a YouTube thumbnail has a simple background, short text, and a very expressive face. This works very well." />
+	<meta property="og:url" content="https://thumbnailtest.com/guides/youtube-thumbnail-layout/" />
+	<meta property="og:site_name" content="Thumbnail Test" />
+	<meta property="article:published_time" content="2024-04-17T16:16:49+00:00" />
+	<meta property="article:modified_time" content="2026-01-12T17:09:49+00:00" />
+	<meta property="og:image" content="https://thumbnailtest.com/wp-content/uploads/2024/04/YouTube-Thumbnail-Layout.jpg" />
+	<meta property="og:image:width" content="1800" />
+	<meta property="og:image:height" content="1050" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="David Ch" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@chhddavid" />
+	<meta name="twitter:site" content="@ABThumbnailTest" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="David Ch" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="10 minutes" />
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Thumbnail Test &raquo; Layout for YouTube Thumbnail: THE Working Solution (2026) Comments Feed" href="https://thumbnailtest.com/guides/youtube-thumbnail-layout/feed/" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://thumbnailtest.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthumbnailtest.com%2Fguides%2Fyoutube-thumbnail-layout%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://thumbnailtest.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fthumbnailtest.com%2Fguides%2Fyoutube-thumbnail-layout%2F&#038;format=xml" />
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link data-minify="1" rel='stylesheet' id='normalize-css' href='https://thumbnailtest.com/wp-content/cache/min/1/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/css/normalize.css?ver=1794167243' media='all' />
+<link data-minify="1" rel='stylesheet' id='webflow-css' href='https://thumbnailtest.com/wp-content/cache/min/1/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/css/webflow.css?ver=1794167243' media='all' />
+<link data-minify="1" rel='stylesheet' id='thumbnailtest-3388fbb2932c6d0d28cb573n9webflow-css' href='https://thumbnailtest.com/wp-content/cache/background-css/1/thumbnailtest.com/wp-content/cache/min/1/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/css/thumbnailtest-3388fbb2932c6d0d28cb573n9.webflow.css?ver=1794167243&wpr_t=1794962177' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://thumbnailtest.com/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:rgba(90,90,90,.25);border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto rgba(90,90,90,.25);outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:rgba(90,90,90,.25);border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://thumbnailtest.com/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://thumbnailtest.com/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://thumbnailtest.com/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-separator-inline-css">
+@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
+/*# sourceURL=https://thumbnailtest.com/wp-includes/blocks/separator/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link data-minify="1" rel='stylesheet' id='udesly-common-css' href='https://thumbnailtest.com/wp-content/cache/min/1/wp-content/plugins/udesly-wp-app/assets/frontend/css/common.css?ver=1794167243' media='all' />
+<style id="rocket-lazyload-inline-css">
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:var(--wpr-bg-6063fa95-731a-4f81-8e9d-b64524beaa08) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}.wp-embed-responsive .wp-has-aspect-ratio .rll-youtube-player{position:absolute;padding-bottom:0;width:100%;height:100%;top:0;bottom:0;left:0;right:0}
+/*# sourceURL=rocket-lazyload-inline-css */
+</style>
+<script type="rocketlazyloadscript" id="jquery-core-js" data-rocket-src="https://thumbnailtest.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script type="rocketlazyloadscript" id="jquery-migrate-js" data-rocket-src="https://thumbnailtest.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<link rel="https://api.w.org/" href="https://thumbnailtest.com/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://thumbnailtest.com/wp-json/wp/v2/posts/1296" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://thumbnailtest.com/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 7.1.4" />
+<link rel='shortlink' href='https://thumbnailtest.com/?p=1296' />
+<!-- start Simple Custom CSS and JS -->
+<style>
+/* ThumbnailTest blog posts: sticky navbar 1.1.0 (CSS part; JS part is a separate entry).
+   1.1.0: navbar stacks above the sticky sidebars (z-index 1000 vs 999), desktop sidebars sit 28px below it.
+   Blog posts use the navbar-non-sticky-not-floating variant, so the navbar scrolled away.
+   Stick it to the top like the homepage, and keep the sticky sidebars just below it.
+   Source: ~/SFERHA/docs/blog-navbar/ */
+body.single-post .navbar.navbar-non-sticky-not-floating { position: sticky; top: 0; z-index: 1000; }
+body.single-post.admin-bar .navbar.navbar-non-sticky-not-floating { top: var(--wp-admin--admin-bar--height, 32px); }
+@media screen and (max-width: 600px) {
+  body.single-post.admin-bar .navbar.navbar-non-sticky-not-floating { top: 0; }
+}
+body.single-post .blog-post__sidebar__wrapper--sticky { top: calc(var(--tt-nav-bottom, 90px) + 28px); }
+@media screen and (min-width: 992px) {
+  body.single-post .blog-post__sidebar__wrapper--sticky {
+    max-height: none;
+    overflow: visible; /* 1.6.0: no inner scroll box (David: long sidebar "scrolling weird"); a too-tall sidebar follows the page via JS */
+  }
+}
+@media screen and (max-width: 991px) {
+  body.single-post .blog-post__sidebar--sticky { top: var(--tt-nav-bottom, 90px); }
+  body.single-post .blog-post__sidebar__wrapper--sticky { top: 0; }
+}
+
+/* 1.1.0: narrow desktop (992-1199px): the "Show sections" button text wraps instead of being cut off. */
+@media screen and (min-width: 992px) {
+  body.single-post .blog-post__sidebar__toggle__button { height: auto; min-height: 40px; }
+  body.single-post .blog-post__sidebar__toggle__button__text { white-space: normal; line-height: 1.25; min-width: 0; text-align: left; }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  body.single-post .blog-post__sidebar__wrapper--sticky { padding-left: 8px; padding-right: 8px; }
+  body.single-post .blog-post__sidebar__toggle__button { padding-left: 6px; padding-right: 6px; gap: 6px; }
+}
+
+/* 1.2.0: long code lines (e.g. a URL in a code block) wrap inside their box instead of pushing the page sideways on phones. */
+body.single-post .blog-post__columns > * { min-width: 0; }
+body.single-post .blog-post__rt pre { max-width: 100%; overflow-x: auto; }
+body.single-post .blog-post__rt pre,
+body.single-post .blog-post__rt pre * { white-space: pre-wrap !important; overflow-wrap: anywhere !important; }
+
+/* 1.3.0: long web addresses in inline code and links wrap instead of running past the edge of the column. */
+body.single-post .blog-post__rt code,
+body.single-post .blog-post__rt code * { white-space: pre-wrap !important; overflow-wrap: anywhere !important; }
+body.single-post .blog-post__rt a { overflow-wrap: anywhere; }
+
+/* 1.4.0: room for the "Show sections" outline ring, which the scrollable sidebar was cropping; same visual position. */
+@media screen and (min-width: 992px) {
+  html body.single-post .blog-post__sidebar__wrapper--sticky { padding-top: 4px; top: calc(var(--tt-nav-bottom, 90px) + 24px); }
+}
+</style>
+<!-- end Simple Custom CSS and JS -->
+<!-- start Simple Custom CSS and JS -->
+<style>
+ul > li:last-child{
+    margin-bottom: 0px;
+}
+
+li > ul{
+    margin-top: 14px !important;
+}
+
+</style>
+<!-- end Simple Custom CSS and JS -->
+<!-- start Simple Custom CSS and JS -->
+<style>
+.w-richtext figure {
+	max-width: 100% !important;
+	border-radius: 12px;
+	overflow: hidden;
+	margin-bottom: 24px;
+}
+
+figure.wp-block-table {
+    overflow: auto;
+}</style>
+<!-- end Simple Custom CSS and JS -->
+<!-- start Simple Custom CSS and JS -->
+<style>
+.wp-block-table{
+	max-width: 100% !important;
+	border-radius: 0 !important;
+}
+
+.custom-content-gallery{
+	max-width: 100% !important;
+}</style>
+<!-- end Simple Custom CSS and JS -->
+<!-- start Simple Custom CSS and JS -->
+<script type="rocketlazyloadscript">
+function customizeGalleryElement(figcaption) {
+	const content = figcaption.textContent;
+	if (content) {
+		const items = content.split(':')
+		const title = items[0];
+		const subtitle = items[1].trim();
+		console.log('Title + subtitle: ', title, ' - ', subtitle);
+		figcaption.style.position = 'static';
+		figcaption.style.display= 'flex';
+		figcaption.style.flexDirection= 'column';
+		figcaption.style.gap = '6px';
+		figcaption.style.boxShadow = 'none';
+		figcaption.style.background='transparent';
+		const {
+			headerElement, subtitleElement }
+		= createHeaderElement(title, subtitle)
+		figcaption.removeChild(figcaption.firstChild);
+		figcaption.appendChild(headerElement);
+		figcaption.appendChild(subtitleElement);
+	}
+}
+function createHeaderElement(title, subtitle) {
+	const headerElement = document.createElement('h2')
+	headerElement.style.fontWeight = '800';
+	headerElement.style.fontSize = '20px';
+	headerElement.style.lineHeight = '1.4';
+	headerElement.textContent = title;
+	headerElement.style.color='#000';
+	headerElement.style.margin='0';
+	const subtitleElement = document.createElement('h3');
+	subtitleElement.style.fontWeight = '400';
+	subtitleElement.style.fontSize = '17px';
+	subtitleElement.textContent = subtitle;
+	subtitleElement.style.color='#000';
+	subtitleElement.style.margin='0';
+	return {
+		headerElement,
+		subtitleElement
+	}
+}
+const galleryFigCaptions = document.querySelectorAll('.custom-content-gallery figure figcaption')
+if(galleryFigCaptions){
+	for (let figure of galleryFigCaptions) {
+		if (figure) {
+			customizeGalleryElement(figure);
+		}
+	}
+}
+</script>
+<!-- end Simple Custom CSS and JS -->
+<!-- Google tag (gtag.js) -->
+<script type="rocketlazyloadscript" async data-rocket-src="https://www.googletagmanager.com/gtag/js?id=G-CVRNQHZ6W6"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CVRNQHZ6W6');
+</script>
+
+
+<!-- Rewardful -->
+<script type="rocketlazyloadscript">(function(w,r){w._rwq=r;w[r]=w[r]||function(){(w[r].q=w[r].q||[]).push(arguments)}})(window,'rewardful');</script>
+<script type="rocketlazyloadscript" data-minify="1" async data-rocket-src='https://thumbnailtest.com/wp-content/cache/min/1/rw.js?ver=1794167243' data-rewardful='24ff22'></script>
+
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "qcdx83p5t0");
+</script>
+
+<!-- Schema & Structured Data For WP v1.54.2 - -->
+<script type="application/ld+json" class="saswp-schema-markup-output">
+[{"@context":"https:\/\/schema.org\/","@type":"VideoObject","@id":"https:\/\/thumbnailtest.com\/guides\/youtube-thumbnail-layout\/#videoobject","url":"https:\/\/thumbnailtest.com\/guides\/youtube-thumbnail-layout\/","headline":"Layout for YouTube Thumbnail: THE Working Solution (2026)","datePublished":"2024-04-17T16:16:49+00:00","dateModified":"2026-01-12T17:09:49+00:00","description":"In this guide, we're teaching you what's the best layout for a YouTube thumbnail. We'll talk about which elements to add so that your thumbnails will go viral. Related: Size &amp; Format for Thumbnails. The Perfect Layout for YouTube Thumbnails A great layout for a YouTube thumbnail includes: simple background, clear text, branding, expressive faces,","transcript":"In this guide, we're teaching you what's the best layout for a YouTube thumbnail.     We'll talk about which elements to add so that your thumbnails will go viral.     Related: Size &amp; Format for Thumbnails.        The Perfect Layout for YouTube Thumbnails    A great layout for a YouTube thumbnail includes: simple background, clear text, branding, expressive faces, a call-to-action.    Most commonly-used Layout    Very relevant: TOP 10 Thumbnail Types &amp; Layouts.    1. Background    Choose engaging images that accurately represent your video's content and theme.     Select images relevant to your video's topic to pique viewers' interest.    Opt for visually striking visuals that grab attention.    Ensure the images effectively convey the mood or theme of your video.         2. Text    Add simple text on your thumbnail to send your video's key message or topic effectively.         Keep text short and impactful for easy readability.    Use attention-grabbing phrases or keywords to intrigue viewers.    Ensure text is large enough to be easily readable on various devices.     Last point is so important \u2014 make sure you're using the right thumbnail fonts!        3. Branding    Add consistent branding elements such as your channel logo, colors, or fonts to enhance brand recognition.         Maintain brand consistency across all thumbnails to strengthen your channel's identity.    Place your channel's logo on the thumbnail without overwhelming the main content.    Use consistent elements to establish a cohesive visual identity for your channel.         4. Expressive Faces    Include expressive faces or emotions relevant to your video content to evoke curiosity and connection with viewers.         Choose faces that convey emotions aligned with your video's theme.    Opt for close-up shots to emphasize facial expressions and emotions effectively.    Ensure faces are clear and easily recognizable, even at smaller thumbnail sizes.     Also read why YouTubers make weird faces in thumbnails.        5. Composition    Compose your thumbnail in a visually appealing manner, balancing elements such as background, text, and whitespace.     Ensure a clean and uncluttered layout for maximum impact.    Experiment with different compositions to find what works best for your content.    Maintain a cohesive design aesthetic across all thumbnails on your channel.         Tips for Layout Perfection    1. Avoid Bad Clickbait    Ensure your thumbnail accurately represents the content of your video to avoid misleading viewers.         Choose images and text that accurately depict the main topic or theme of your video.    Avoid clickbait or misleading thumbnails that may lead to viewer dissatisfaction.    Align your thumbnail with your video's title and description to set clear expectations.         2. Call-to-Action    Include a subtle or non-intrusive call-to-action (CTA) to encourage viewers to click on your video.     Use phrases like \"Watch Now\" or \"Learn More\" to prompt viewer engagement.    Place your CTA strategically within the thumbnail without detracting from the main content.    Experiment with different CTAs to see what resonates best with your target audience.         3. A\/B Test    Experiment with different thumbnail designs and analyze their performance using Thumbnail Test.         Monitor click-through rates (CTR) and viewer engagement to gauge thumbnail effectiveness.    A\/B test different thumbnail variations to identify what resonates best with your audience.    Continuously refine and iterate your thumbnail strategy based on data-driven insights.     Relevant: Learn how to A\/B Test Titles as well.        4. Mobile Optimization:    Optimize your thumbnails for mobile viewing by ensuring key elements are visible and legible on smaller screens.     Use larger text and imagery to maintain readability on mobile devices.    Test your thumbnails on various mobile devices to ensure compatibility.    Consider how your thumbnail will appear in YouTube's mobile app and mobile browser.         5. Comply with Guidelines    Adhere to YouTube's Community Guidelines and policies when creating thumbnails to maintain channel integrity.         Familiarize yourself with YouTube's thumbnail guidelines to ensure compliance.    Monitor your thumbnails for any potential violations and make adjustments as necessary.     Another relevant set of rules is the Thumbnails Policy.        FAQs    1. How do I change the thumbnail layout on YouTube?    To change the thumbnail layout on YouTube:     Go to YouTube Studio and select the video you want to change the thumbnail for.    Click on \"Customization\" in the left menu, then select \"Thumbnails.\"    Choose from the available options or upload your own custom thumbnail.    Once selected, click \"Save\" to apply the changes.     Ensure your thumbnail follows YouTube's guidelines for optimal display and engagement.    2. What is the best layout for a YouTube thumbnail?    The best layout for a YouTube thumbnail often includes: a clear text overlay, branding, expressive faces, and a strategic call-to-action,.    All while adhering to platform guidelines for maximum impact and viewer engagement.    3. What is the format of a thumbnail?    The format of a YouTube thumbnail is typically 1280x720 pixels (16:9 ratio), ensuring compatibility across devices and platforms. It should be saved in either JPG, GIF, BMP, or PNG format and be under 2MB in size to meet platform requirements.    Related Guide: YouTube Thumbnail Format.","name":"Layout for YouTube Thumbnail: THE Working Solution (2026)","uploadDate":"2024-04-17T16:16:49+00:00","thumbnailUrl":"https:\/\/thumbnailtest.com\/wp-content\/uploads\/2024\/04\/YouTube-Thumbnail-Layout-150x150.jpg","author":{"@type":"Person","name":"David Ch","description":"David is the head of the editing team at ThumbnailTest. With his help, the editorial team is able to provide you with the best free guides related to YouTube thumbnails and A\/B testing.","url":"https:\/\/thumbnailtest.com\/author\/chdavid\/","sameAs":["http:\/\/chdavid.com","chhddavid","http:\/\/instagam.com\/ch.davidd"],"image":{"@type":"ImageObject","url":"https:\/\/secure.gravatar.com\/avatar\/f963cdc7d004c8da13dba66b3a6ad165fd74f6bc7f3360e52aa89275c3fffb13?s=96&d=mm&r=g","height":96,"width":96}},"contentUrl":"https:\/\/www.youtube.com\/howyoutubeworks\/policies\/community-guidelines\/","embedUrl":"https:\/\/www.youtube.com\/howyoutubeworks\/policies\/community-guidelines\/"}]
+</script>
+
+<link data-minify="1" rel="preload" as="style" href="https://thumbnailtest.com/wp-content/cache/min/1/wp-content/plugins/code-prettify/prettify/prettify.css?ver=1794167243" />            <script type="text/javascript" id="spai_js" data-cfasync="false" data-spai-excluded="true">
+                document.documentElement.className += " spai_has_js";
+                (function(w, d){
+                    var b = d.getElementsByTagName('head')[0];
+                    var s = d.createElement("script");
+                    var v = ("IntersectionObserver" in w) ? "" : "-compat";
+                    s.async = true; // This includes the script as async.
+                    s.src = "https://cdn.shortpixel.ai/assets/js/bundles/spai-lib-bg" + v
+                        + ".1.1.min.js?v=3.11.1";
+                    w.spaiDomain = "cdn.shortpixel.ai";
+                    w.spaiData = {
+                        version: "3.11.1",
+                        key: "spai",
+                        customKeys: [],
+                        quality: "lossy",
+                        convert: "webp",
+                        lqip: false,
+                                                rootMargin: "500px",
+                        crop: false,
+                        sizeBreakpoints: {"on":null,"base":null,"rate":null},
+                        backgroundsMaxWidth: 1920,
+                        resizeStyleBackgrounds: false,
+                        nativeLazyLoad: false,
+                        safeLazyBackgrounds: false,
+                        asyncInitialParsing: true,
+                        debug: false,
+                        doSelectors: [{"selectors":"img","type":"attr","targetAttr":"src","attrType":"url","lazy":true,"resize":true}],
+                        exclusions: {"selectors":[],"urls":{"regex:\/\\\/\\\/([^\\\/]*\\.|)gravatar.com\\\/\/":{"lazy":0,"cdn":0,"resize":0,"lqip":0,"crop":-1},"path:\/\/i.ytimg.com\/vi\/ID\/hqdefault.jpg":{"lazy":0,"cdn":0,"resize":0,"lqip":0,"crop":-1}}},
+                        sizeFromImageSuffix: true,
+                        ajax_url: "https://thumbnailtest.com/wp-admin/admin-ajax.php"
+                    };
+                    b.appendChild(s);
+                }(window, document));
+            </script>
+            <link rel="icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/thumbnailtest.com/wp-content/uploads/2024/04/cropped-Thumbnail-Test-Site-Icon-32x32.png" data-spai-egr="1" sizes="32x32" />
+<link rel="icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/thumbnailtest.com/wp-content/uploads/2024/04/cropped-Thumbnail-Test-Site-Icon-192x192.png" data-spai-egr="1" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://cdn.shortpixel.ai/spai/q_lossy+ret_img+to_webp/thumbnailtest.com/wp-content/uploads/2024/04/cropped-Thumbnail-Test-Site-Icon-180x180.png" data-spai-egr="1" />
+<meta name="msapplication-TileImage" content="https://thumbnailtest.com/wp-content/uploads/2024/04/cropped-Thumbnail-Test-Site-Icon-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript><style id="wpr-lazyload-bg-container"></style><style id="wpr-lazyload-bg-exclusion"></style>
+<noscript>
+<style id="wpr-lazyload-bg-nostyle">.flex-horizontal-center-center.video-on-hero{--wpr-bg-bfb9c937-b9c1-45ff-a23e-9c65e7057520: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/group-56.png');}.flex-horizontal-center-center.video-on-hero:hover{--wpr-bg-7d910682-b5f9-406c-873a-b16b515bf7ac: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/group-56.png');}.post-author-dp{--wpr-bg-93fa0edb-b26b-4afd-bdb4-d0df55c30600: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');}.post-item-image{--wpr-bg-e5e60574-4013-4b57-af38-8d4941987b5a: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');}.author-display-picture{--wpr-bg-302b3f66-6798-44aa-b1ac-ae0bb4b58738: url('https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg');}.x-button-search{--wpr-bg-1b39a134-d9d9-41c0-95a5-63e866233bfd: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/cancel.svg');}.search-button-2{--wpr-bg-90c13109-2eb7-4b16-9fa9-174bc6d48784: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/search.svg');}.modal-close{--wpr-bg-a44b0853-f869-48ec-b6e5-a17646676644: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/icons8-multiply-64-1_1icons8-multiply-64-1.png');}.modal-close-2{--wpr-bg-5f36b0a9-240a-4a29-add1-b23d30692964: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/icons8-multiply-64-1_1icons8-multiply-64-1.png');}.modal-close-3{--wpr-bg-74b49254-796e-47fe-a337-98ec4d1eab16: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/icons8-multiply-64-1_1icons8-multiply-64-1.png');}.avatar{--wpr-bg-0257a917-2faa-4835-8f20-26f98a57d3b1: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/mr_beast-cover.jpg');}.body{--wpr-bg-f9628c3b-51ae-4224-81bc-ddb857e9f089: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/thumbnail-test-landing-page.png');}.youtube-vs-us-header{--wpr-bg-bf11c1ae-588e-4003-9ee7-85ebf27101ff: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/red-youtube_1.webp');}.section-hero-2.compare{--wpr-bg-61e83179-dec5-4f52-a701-62efaef0ab92: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/bg-hero.png');}.section-hero-2.affiliate{--wpr-bg-530c042d-2cf5-4539-8dc4-422dcf9e56cd: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/heroaffilitae.png');}.affiliate-img-1{--wpr-bg-34211c60-ded4-4e74-9a3d-ec5d2d10b956: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/illustration_4.png');}.affiliate-img-1-copy._2{--wpr-bg-a6bb6c70-3261-4205-87ee-ba6492bb6c70: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/illustration_5.png');}.body-copy{--wpr-bg-9c641f72-2be2-4b99-a6a2-d07d4303dd3e: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/thumbnail-test-landing-page.png');}.bake-homepage{--wpr-bg-2a622f16-04e5-447c-956f-144d54ba725f: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/thumbnail-test-landing-page.png');}.section-partnership{--wpr-bg-e72e3c3a-b4ad-442e-8490-65e2d94c7646: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/partnership-bg.png');}.cta-div-wrapper{--wpr-bg-9e7a5e88-686e-4e46-8a88-eae5ffeff7d8: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/cta-1.png');}.section-hero-2{--wpr-bg-a4617950-023f-486d-8d4e-f163b3c9c547: url('https://thumbnailtest.com/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/images/hero.png');}.rll-youtube-player .play{--wpr-bg-6063fa95-731a-4f81-8e9d-b64524beaa08: url('https://thumbnailtest.com/wp-content/plugins/wp-rocket/assets/img/youtube.png');}</style>
+</noscript>
+<script type="application/javascript">const rocket_pairs = [{"selector":".flex-horizontal-center-center.video-on-hero","style":".flex-horizontal-center-center.video-on-hero{--wpr-bg-bfb9c937-b9c1-45ff-a23e-9c65e7057520: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/group-56.png');}","hash":"bfb9c937-b9c1-45ff-a23e-9c65e7057520","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/group-56.png"},{"selector":".flex-horizontal-center-center.video-on-hero","style":".flex-horizontal-center-center.video-on-hero:hover{--wpr-bg-7d910682-b5f9-406c-873a-b16b515bf7ac: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/group-56.png');}","hash":"7d910682-b5f9-406c-873a-b16b515bf7ac","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/group-56.png"},{"selector":".post-author-dp","style":".post-author-dp{--wpr-bg-93fa0edb-b26b-4afd-bdb4-d0df55c30600: url('https:\/\/d3e54v103j8qbb.cloudfront.net\/img\/background-image.svg');}","hash":"93fa0edb-b26b-4afd-bdb4-d0df55c30600","url":"https:\/\/d3e54v103j8qbb.cloudfront.net\/img\/background-image.svg"},{"selector":".post-item-image","style":".post-item-image{--wpr-bg-e5e60574-4013-4b57-af38-8d4941987b5a: url('https:\/\/d3e54v103j8qbb.cloudfront.net\/img\/background-image.svg');}","hash":"e5e60574-4013-4b57-af38-8d4941987b5a","url":"https:\/\/d3e54v103j8qbb.cloudfront.net\/img\/background-image.svg"},{"selector":".author-display-picture","style":".author-display-picture{--wpr-bg-302b3f66-6798-44aa-b1ac-ae0bb4b58738: url('https:\/\/d3e54v103j8qbb.cloudfront.net\/img\/background-image.svg');}","hash":"302b3f66-6798-44aa-b1ac-ae0bb4b58738","url":"https:\/\/d3e54v103j8qbb.cloudfront.net\/img\/background-image.svg"},{"selector":".x-button-search","style":".x-button-search{--wpr-bg-1b39a134-d9d9-41c0-95a5-63e866233bfd: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/cancel.svg');}","hash":"1b39a134-d9d9-41c0-95a5-63e866233bfd","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/cancel.svg"},{"selector":".search-button-2","style":".search-button-2{--wpr-bg-90c13109-2eb7-4b16-9fa9-174bc6d48784: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/search.svg');}","hash":"90c13109-2eb7-4b16-9fa9-174bc6d48784","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/search.svg"},{"selector":".modal-close","style":".modal-close{--wpr-bg-a44b0853-f869-48ec-b6e5-a17646676644: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/icons8-multiply-64-1_1icons8-multiply-64-1.png');}","hash":"a44b0853-f869-48ec-b6e5-a17646676644","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/icons8-multiply-64-1_1icons8-multiply-64-1.png"},{"selector":".modal-close-2","style":".modal-close-2{--wpr-bg-5f36b0a9-240a-4a29-add1-b23d30692964: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/icons8-multiply-64-1_1icons8-multiply-64-1.png');}","hash":"5f36b0a9-240a-4a29-add1-b23d30692964","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/icons8-multiply-64-1_1icons8-multiply-64-1.png"},{"selector":".modal-close-3","style":".modal-close-3{--wpr-bg-74b49254-796e-47fe-a337-98ec4d1eab16: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/icons8-multiply-64-1_1icons8-multiply-64-1.png');}","hash":"74b49254-796e-47fe-a337-98ec4d1eab16","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/icons8-multiply-64-1_1icons8-multiply-64-1.png"},{"selector":".avatar","style":".avatar{--wpr-bg-0257a917-2faa-4835-8f20-26f98a57d3b1: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/mr_beast-cover.jpg');}","hash":"0257a917-2faa-4835-8f20-26f98a57d3b1","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/mr_beast-cover.jpg"},{"selector":".body","style":".body{--wpr-bg-f9628c3b-51ae-4224-81bc-ddb857e9f089: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/thumbnail-test-landing-page.png');}","hash":"f9628c3b-51ae-4224-81bc-ddb857e9f089","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/thumbnail-test-landing-page.png"},{"selector":".youtube-vs-us-header","style":".youtube-vs-us-header{--wpr-bg-bf11c1ae-588e-4003-9ee7-85ebf27101ff: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/red-youtube_1.webp');}","hash":"bf11c1ae-588e-4003-9ee7-85ebf27101ff","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/red-youtube_1.webp"},{"selector":".section-hero-2.compare","style":".section-hero-2.compare{--wpr-bg-61e83179-dec5-4f52-a701-62efaef0ab92: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/bg-hero.png');}","hash":"61e83179-dec5-4f52-a701-62efaef0ab92","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/bg-hero.png"},{"selector":".section-hero-2.affiliate","style":".section-hero-2.affiliate{--wpr-bg-530c042d-2cf5-4539-8dc4-422dcf9e56cd: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/heroaffilitae.png');}","hash":"530c042d-2cf5-4539-8dc4-422dcf9e56cd","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/heroaffilitae.png"},{"selector":".affiliate-img-1","style":".affiliate-img-1{--wpr-bg-34211c60-ded4-4e74-9a3d-ec5d2d10b956: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/illustration_4.png');}","hash":"34211c60-ded4-4e74-9a3d-ec5d2d10b956","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/illustration_4.png"},{"selector":".affiliate-img-1-copy._2","style":".affiliate-img-1-copy._2{--wpr-bg-a6bb6c70-3261-4205-87ee-ba6492bb6c70: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/illustration_5.png');}","hash":"a6bb6c70-3261-4205-87ee-ba6492bb6c70","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/illustration_5.png"},{"selector":".body-copy","style":".body-copy{--wpr-bg-9c641f72-2be2-4b99-a6a2-d07d4303dd3e: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/thumbnail-test-landing-page.png');}","hash":"9c641f72-2be2-4b99-a6a2-d07d4303dd3e","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/thumbnail-test-landing-page.png"},{"selector":".bake-homepage","style":".bake-homepage{--wpr-bg-2a622f16-04e5-447c-956f-144d54ba725f: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/thumbnail-test-landing-page.png');}","hash":"2a622f16-04e5-447c-956f-144d54ba725f","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/thumbnail-test-landing-page.png"},{"selector":".section-partnership","style":".section-partnership{--wpr-bg-e72e3c3a-b4ad-442e-8490-65e2d94c7646: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/partnership-bg.png');}","hash":"e72e3c3a-b4ad-442e-8490-65e2d94c7646","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/partnership-bg.png"},{"selector":".cta-div-wrapper","style":".cta-div-wrapper{--wpr-bg-9e7a5e88-686e-4e46-8a88-eae5ffeff7d8: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/cta-1.png');}","hash":"9e7a5e88-686e-4e46-8a88-eae5ffeff7d8","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/cta-1.png"},{"selector":".section-hero-2","style":".section-hero-2{--wpr-bg-a4617950-023f-486d-8d4e-f163b3c9c547: url('https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/hero.png');}","hash":"a4617950-023f-486d-8d4e-f163b3c9c547","url":"https:\/\/thumbnailtest.com\/wp-content\/themes\/thumbnailtest-3388fbb2932c6d0d28cb57we3\/assets\/images\/hero.png"},{"selector":".rll-youtube-player .play","style":".rll-youtube-player .play{--wpr-bg-6063fa95-731a-4f81-8e9d-b64524beaa08: url('https:\/\/thumbnailtest.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png');}","hash":"6063fa95-731a-4f81-8e9d-b64524beaa08","url":"https:\/\/thumbnailtest.com\/wp-content\/plugins\/wp-rocket\/assets\/img\/youtube.png"}]; const rocket_excluded_pairs = [];</script><meta name="generator" content="WP Rocket 3.20.3" data-wpr-features="wpr_lazyload_css_bg_img wpr_delay_js wpr_minify_js wpr_lazyload_iframes wpr_preconnect_external_domains wpr_oci wpr_minify_css wpr_preload_links wpr_desktop" /><link href="https://cdn.shortpixel.ai" rel="preconnect" crossorigin></head>
+<body class="wp-singular post-template-default single single-post postid-1296 single-format-standard wp-embed-responsive wp-theme-thumbnailtest-3388fbb2932c6d0d28cb57we3">
+     
+  <div class="navbar navbar-non-sticky-not-floating">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
+      <div class="wc-for-navbar">
+        <a href="/" class="brand-button w-nav-brand" data-link="a2f"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzAgMjMiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjMiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ0aGVtZXMlMkZ0aHVtYm5haWx0ZXN0LTMzODhmYmIyOTMyYzZkMGQyOGNiNTd3ZTMlMkZhc3NldHMlMkZpbWFnZXMlMkZ0dC1sb2dvLS5zdmciIGRhdGEtdz0iMTcwIiBkYXRhLWg9IjIzIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" height="32" alt="" class="brand-image" data-img="in2e54e39b"></a>
+        <nav role="navigation" class="nav-menu w-nav-menu">
+          <div class="flex-horizontal-center-right navbar-upper-right">
+            <a href="https://thumbnailtest.com/pricing" class="navlink-2-notion w-inline-block" data-link="a-12c7603a">
+              <div data-text="t507137a6">Pricing</div>
+            </a>
+            <a href="https://thumbnailtest.com/guides" class="navlink-2-notion w-inline-block" data-link="a-499adb09">
+              <div data-text="t7fca1117">Guides</div>
+            </a>
+            <a href="https://thumbnailtest.com/service" class="navlink-2-notion w-inline-block" data-link="a7643c6b5">
+              <div data-text="tn2683a16b">Service</div>
+            </a>
+            <div data-hover="true" data-delay="0" class="dropdown-3 w-dropdown">
+              <div class="navlink-2-notion w-dropdown-toggle">
+                <div data-text="tnd78b7a3">Features</div>
+              </div>
+              <nav class="dropdown-list-wrapper w-dropdown-list">
+                <div class="dropdown-list-navbar-item">
+                  <a href="https://thumbnailtest.com/test-and-compare-vs-thumbnail-test" class="dropdown-link w-inline-block" data-link="a-1e389176"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdGhlbWVzJTJGdGh1bWJuYWlsdGVzdC0zMzg4ZmJiMjkzMmM2ZDBkMjhjYjU3d2UzJTJGYXNzZXRzJTJGaW1hZ2VzJTJGY29tcGFyZS5wbmciIGRhdGEtdz0iOTYiIGRhdGEtaD0iOTYiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="" class="nav-img" data-img="in47b9a2ba">
+                    <div class="top-dd-wrapper">
+                      <div data-text="tn757ec231">YouTube's Test &amp; Compare vs us</div>
+                      <div class="textsize14px grey-text" data-text="t57276646">Test &amp;&nbsp;Compare vs Thumbnail Test</div>
+                    </div>
+                  </a>
+                  <a href="https://thumbnailtest.com/features/thumbnail-ab-testing" class="dropdown-link w-inline-block" data-link="a68662677"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdGhlbWVzJTJGdGh1bWJuYWlsdGVzdC0zMzg4ZmJiMjkzMmM2ZDBkMjhjYjU3d2UzJTJGYXNzZXRzJTJGaW1hZ2VzJTJGdGVzdC5wbmciIGRhdGEtdz0iOTYiIGRhdGEtaD0iOTYiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="" class="nav-img" data-img="i188358e7">
+                    <div class="top-dd-wrapper">
+                      <div data-text="tn14028990">Thumbnail A/B Testing</div>
+                      <div class="textsize14px grey-text" data-text="tn754c1122">Test thumbnails that get more clicks</div>
+                    </div>
+                  </a>
+                  <a href="https://thumbnailtest.com/features/title-ab-testing" class="dropdown-link w-inline-block" data-link="a-2fdc6d75"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdGhlbWVzJTJGdGh1bWJuYWlsdGVzdC0zMzg4ZmJiMjkzMmM2ZDBkMjhjYjU3d2UzJTJGYXNzZXRzJTJGaW1hZ2VzJTJGdGl0bGUucG5nIiBkYXRhLXc9Ijk2IiBkYXRhLWg9Ijk2IiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" alt="" class="nav-img" data-img="in3e6afd47">
+                    <div class="top-dd-wrapper">
+                      <div data-text="tn6c48a24">Title A/B Testing</div>
+                      <div class="textsize14px grey-text" data-text="t5ae0045a">Optimize titles for maximum reach</div>
+                    </div>
+                  </a>
+                  <a href="https://thumbnailtest.com/features/hourly-or-daily-ab-tests" class="dropdown-link w-inline-block" data-link="a4eb24d09"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdGhlbWVzJTJGdGh1bWJuYWlsdGVzdC0zMzg4ZmJiMjkzMmM2ZDBkMjhjYjU3d2UzJTJGYXNzZXRzJTJGaW1hZ2VzJTJGaG91cmx5LnBuZyIgZGF0YS13PSI5NiIgZGF0YS1oPSI5NiIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="" class="nav-img" data-img="i2c7008c6">
+                    <div class="top-dd-wrapper">
+                      <div data-text="t7aa76bcc">Hourly or Daily Tests</div>
+                      <div class="textsize14px grey-text" data-text="t757eb292">Get results faster with flexible testing</div>
+                    </div>
+                  </a>
+                  <a href="https://thumbnailtest.com/features/analytics-for-youtube-tests" class="dropdown-link w-inline-block" data-link="a7d3f479a"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdGhlbWVzJTJGdGh1bWJuYWlsdGVzdC0zMzg4ZmJiMjkzMmM2ZDBkMjhjYjU3d2UzJTJGYXNzZXRzJTJGaW1hZ2VzJTJGYW5hbHl0aWNzLnBuZyIgZGF0YS13PSI5NiIgZGF0YS1oPSI5NiIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="" class="nav-img" data-img="inc2dce19">
+                    <div class="top-dd-wrapper">
+                      <div data-text="t5b3fdbb0">Analytics for Tests</div>
+                      <div class="textsize14px grey-text" data-text="tn5b0b5032">Track what’s working with real data</div>
+                    </div>
+                  </a>
+                  <a href="https://thumbnailtest.com/features/revive-old-videos" class="dropdown-link w-inline-block" data-link="a3a8fbbe4"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdGhlbWVzJTJGdGh1bWJuYWlsdGVzdC0zMzg4ZmJiMjkzMmM2ZDBkMjhjYjU3d2UzJTJGYXNzZXRzJTJGaW1hZ2VzJTJGcmV2aXZlLnBuZyIgZGF0YS13PSI5NiIgZGF0YS1oPSI5NiIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="" class="nav-img" data-img="in779e2a56">
+                    <div class="top-dd-wrapper">
+                      <div data-text="t331efb3c">Revive Old Videos</div>
+                      <div class="textsize14px grey-text" data-text="tn6ba20c62">Boost underperforming contents</div>
+                    </div>
+                  </a>
+                  <a href="https://thumbnailtest.com/features/revive-old-videos" class="dropdown-link w-inline-block" data-link="a3a8fbbe4"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5NiA5NiIgd2lkdGg9Ijk2IiBoZWlnaHQ9Ijk2IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdGhlbWVzJTJGdGh1bWJuYWlsdGVzdC0zMzg4ZmJiMjkzMmM2ZDBkMjhjYjU3d2UzJTJGYXNzZXRzJTJGaW1hZ2VzJTJGY29sbGFib3JhdGUucG5nIiBkYXRhLXc9Ijk2IiBkYXRhLWg9Ijk2IiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" alt="" class="nav-img" data-img="i48ffe4c3">
+                    <div class="top-dd-wrapper">
+                      <div data-text="t3f0714f5">Collaborate with Teammates</div>
+                      <div class="textsize14px grey-text" data-text="tne267131">Invite your team and share results.</div>
+                    </div>
+                  </a>
+                </div>
+              </nav>
+            </div>
+            <a href="https://app.thumbnailtest.com/" class="button in-navbar w-inline-block" data-link="a-7710ca46">
+              <div class="text-inside-cta-button in-navbar-link" data-text="t79d84104">Start Testing →</div>
+            </a>
+          </div>
+        </nav>
+        <div class="menu-button w-nav-button">
+          <div class="html-embed-icon-main html-menu-mobile-navbar w-embed"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="100" height="100" viewBox="0 0 24 24" stroke-width="2.5" stroke="CurrentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M4 6l16 0"></path>
+              <path d="M4 12l16 0"></path>
+              <path d="M4 18l16 0"></path>
+            </svg></div>
+        </div>
+      </div>
+    </div>
+    <div class="search-overlay">
+      <div class="wc-2 but-for-navbar">
+        <div class="_2nd-sb-copy">
+          <form action="https://thumbnailtest.com" class="searchhhh w-form" method="get" role="search"><input type="submit" class="search-button-2 w-button" value="">
+            <div class="search-form-container"><input class="search-input-2 w-input" autofocus="true" maxlength="256" name="s" placeholder="Search here" type="search" id="search" required=""></div>
+            <div data-w-id="7c92c032-c65b-c4d7-4943-b1751cae282a" class="x-button-search"></div>
+          <input type="hidden" name="post_type" value="post"></form>
+        </div>
+      </div>
+      <div data-w-id="7c92c032-c65b-c4d7-4943-b1751cae282b" class="black-overlay"></div>
+    </div>
+  </div>
+  <div  class="wc">
+    <div  class="hero-text-wrapper">
+      <div  class="flex-horizontal-center-center">
+        <a href="/" class="link-in-breadcrumbs w-inline-block" data-link="a2f">
+          <div data-text="t2268ff">Home</div>
+        </a>
+        <div class="html-embed-icon-main breadcrumb-delimitator w-embed"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="CurrentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="9 6 15 12 9 18"></polyline>
+          </svg></div>
+                        <div class="flex-horizontal-left-center w-dyn-list" udy-collection="category">
+          <div role="list" class="flex-horizontal-left-center w-dyn-items">
+            <div role="listitem" class="w-dyn-item">
+              <a href="https://thumbnailtest.com/category/guides/" class="link-in-breadcrumbs w-inline-block">
+                <div class="">Guides</div>
+              </a>
+            </div><div role="listitem" class="w-dyn-item">
+              <a href="https://thumbnailtest.com/category/guides/youtube/thumbnails/" class="link-in-breadcrumbs w-inline-block">
+                <div class="">Thumbnails</div>
+              </a>
+            </div><div role="listitem" class="w-dyn-item">
+              <a href="https://thumbnailtest.com/category/guides/youtube/" class="link-in-breadcrumbs w-inline-block">
+                <div class="">YouTube</div>
+              </a>
+            </div>          </div>
+                  </div>
+         <div class="html-embed-icon-main breadcrumb-delimitator w-embed"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="CurrentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <polyline points="9 6 15 12 9 18"></polyline>
+          </svg></div>
+        <a href="#" class="link-in-breadcrumbs w-inline-block" data-link="a23">
+          <div class="">Layout for YouTube Thumbnail: THE Working Solution (2026)</div>
+        </a>
+      </div>
+      <h1 class="heading">Layout for YouTube Thumbnail: THE Working Solution (2026)</h1>
+      <div  class="flex-horizontal-left-center mt-20-mb-40"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTMyIDk3OSIgd2lkdGg9IjExMzIiIGhlaWdodD0iOTc5IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjQlMkYwMiUyRkNoLURhdmlkLUhlYWRzaG90LW1pbi5wbmciIGRhdGEtdz0iMTEzMiIgZGF0YS1oPSI5NzkiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="Ch David - Author Headshot" class="author-display-picture in-blog-post">
+        <div class="flex-vertical-left-top ml-0 mb-0">
+          <a href="https://thumbnailtest.com/author/chdavid/" class="span-link-purple no-underline-flex-horizontal fs-16 w-inline-block">
+            <div data-text="t6ad11420">Written by</div>
+            <div class="text-block-131">David Ch</div>
+          </a>
+          <div class="flex-horizontal-left-center">
+            <a href="/" class="link-in-breadcrumbs return-to-blog-button w-inline-block" data-link="a2f">
+              <div data-textarea="ta2db05b57">Return to blog<br></div>
+            </a>
+          </div>
+        </div>
+      </div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAwIDEwNTAiIHdpZHRoPSIxODAwIiBoZWlnaHQ9IjEwNTAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjA0JTJGWW91VHViZS1UaHVtYm5haWwtTGF5b3V0LmpwZyIgZGF0YS13PSIxODAwIiBkYXRhLWg9IjEwNTAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="" class="cover-image">
+    </div>
+    <section  class="blog-post">
+      <div  class="w-layout-blockcontainer blog-post__content w-container">
+        <div class="blog-post__columns">
+          <div class="blog-post__sidebar blog-post__sidebar--sticky">
+            <div class="blog-post__sidebar__wrapper blog-post__sidebar__wrapper--sticky">
+              <div class="blog-post__sidebar__toggle">
+                <a aria-label="Toggle Table of Contents" aria-controls="sidebar-content" aria-expanded="true" href="#" class="blog-post__sidebar__toggle__button w-inline-block" data-link="a23">
+                  <div class="blog-post__sidebar__toggle__button__icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M6 9l6 6l6 -6"></path>
+                    </svg></div>
+                  <div class="blog-post__sidebar__toggle__button__text" data-text="t53019fd1">Show sections</div>
+                </a>
+              </div>
+              <div aria-label="Table of Contents" role="navigation" class="blog-post__sidebar__content">
+                <div class="blog-post__sidebar__content__links">
+                  <div class="blog-post__sidebar__content__link active" data-text="tn882480">Example H2</div>
+                  <div class="blog-post__sidebar__content__link blog-post__sidebar__content__link--h2" data-text="tn882480">Example H2</div>
+                  <div class="blog-post__sidebar__content__link" data-text="tn88247f">Example H3</div>
+                  <div class="blog-post__sidebar__content__link" data-text="tn88247e">Example H4</div>
+                </div>
+                <div class="div-block-290">
+                  <a href="/" class="button w-inline-block" data-link="a2f">
+                    <div class="text-inside-cta-button fs-14" data-text="tn57511fd2">Reach your maximum potential on YouTube &nbsp;→</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-post__text">
+            <div class="wrapper-for-date-in-article">
+              <div class="text-block-130-copy-copy" data-text="tn4c19cb2a">Article last updated on:</div>
+              <div class="text-block-130-copy ml-3">January 12, 2026</div>
+            </div>
+            <div class="blog-post__rt rich-text-block-blog-post w-richtext" data-richtext="r3fbe8166">
+<ul class="wp-block-list">
+<li>In this guide, we&#8217;re teaching you what&#8217;s the best layout for a YouTube thumbnail. </li>
+
+
+
+<li>We&#8217;ll talk about which elements to add so that your <a href="https://thumbnailtest.com/guides/make-viral-youtube-thumbnails/" target="_blank" rel="noreferrer noopener">thumbnails will go viral</a>.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Related: <a href="https://thumbnailtest.com/guides/youtube-thumbnail-size/" target="_blank" rel="noreferrer noopener">Size &amp; Format for Thumbnails</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+
+
+
+<h2 class="wp-block-heading"><strong>The Perfect Layout for YouTube Thumbnails</strong></h2>
+
+
+
+<p class="wp-block-paragraph"><strong>A great layout for a YouTube thumbnail includes:</strong> simple background, clear text, branding, expressive faces, a call-to-action.</p>
+
+
+
+<figure class="w-richtext-figure-type-image w-richtext-align-fullwidth wp-block-image size-large is-resized"><img fetchpriority="high" decoding="async" width="1024" height="597" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAwIDEwNTAiIHdpZHRoPSIxODAwIiBoZWlnaHQ9IjEwNTAiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjA0JTJGSWxsdXN0cmF0aW9uLVlvdVR1YmUtVGh1bWJuYWlsLUxheW91dC5qcGciIGRhdGEtdz0iMTgwMCIgZGF0YS1oPSIxMDUwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" alt="Illustration - YouTube Thumbnail Layout" class="wp-image-1298" style="width:840px;height:auto" srcset=" " sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption">Most commonly-used Layout</figcaption></figure>
+
+
+
+<p class="wp-block-paragraph"><em>Very relevant: <a href="https://thumbnailtest.com/guides/types-of-youtube-thumbnails/" target="_blank" rel="noreferrer noopener">TOP 10 Thumbnail Types &amp; Layouts</a>.</em></p>
+
+
+
+<h3 class="wp-block-heading">1. Background</h3>
+
+
+
+<p class="wp-block-paragraph">Choose engaging images that accurately represent your video&#8217;s content and theme.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Select images relevant to your video&#8217;s topic to pique viewers&#8217; interest.</li>
+
+
+
+<li>Opt for visually striking visuals that grab attention.</li>
+
+
+
+<li>Ensure the images effectively convey the mood or theme of your video.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">2. Text</h3>
+
+
+
+<p class="wp-block-paragraph"><a href="https://thumbnailtest.com/guides/text-on-youtube-thumbnail/" target="_blank" rel="noreferrer noopener">Add simple text on your thumbnail</a> to send your video&#8217;s key message or topic effectively.</p>
+
+
+
+<figure class="w-richtext-figure-type-image w-richtext-align-fullwidth wp-block-image size-large"><img decoding="async" width="1024" height="576" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDExNTIiIHdpZHRoPSIyMDQ4IiBoZWlnaHQ9IjExNTIiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjAzJTJGWW91VHViZS1UaHVtYm5haWwtd2l0aC1hLVNtYWxsLUFycm93LTIwNDh4MTE1Mi53ZWJwIiBkYXRhLXc9IjIwNDgiIGRhdGEtaD0iMTE1MiIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="YouTube Thumbnail with a Gentle Arrow" class="wp-image-928" srcset=" " sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Keep text short and impactful for easy readability.</li>
+
+
+
+<li>Use <a href="https://www.indeed.com/career-advice/career-development/attention-grabbing-words" target="_blank" rel="noreferrer noopener">attention-grabbing phrases</a> or keywords to intrigue viewers.</li>
+
+
+
+<li>Ensure text is large enough to be easily readable on various devices.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Last point is so important — make sure you&#8217;re using the right <a href="https://thumbnailtest.com/guides/youtube-thumbnail-fonts/" target="_blank" rel="noreferrer noopener">thumbnail fonts</a>!</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">3. Branding</h3>
+
+
+
+<p class="wp-block-paragraph">Add consistent <a href="https://doi.org/10.1016/j.jdmm.2016.06.011" target="_blank" rel="noreferrer noopener">branding elements</a> such as your channel logo, colors, or fonts to enhance brand recognition.</p>
+
+
+
+<figure class="w-richtext-figure-type-image w-richtext-align-fullwidth wp-block-image size-large"><img decoding="async" width="1024" height="576" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDExNTIiIHdpZHRoPSIyMDQ4IiBoZWlnaHQ9IjExNTIiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjAyJTJGQnJhbmRpbmctb24tWW91VHViZS1UaHVtYm5haWxzLTIwNDh4MTE1Mi53ZWJwIiBkYXRhLXc9IjIwNDgiIGRhdGEtaD0iMTE1MiIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="Branding on YouTube Thumbnails" class="wp-image-413" srcset=" " sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Maintain brand consistency across all thumbnails to strengthen your channel&#8217;s identity.</li>
+
+
+
+<li>Place <a href="https://thumbnailtest.com/guides/logo-on-youtube-thumbnail/" target="_blank" rel="noreferrer noopener">your channel&#8217;s logo on the thumbnail</a> without overwhelming the main content.</li>
+
+
+
+<li>Use consistent elements to establish a cohesive visual identity for your channel.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">4. Expressive Faces</h3>
+
+
+
+<p class="wp-block-paragraph"><a href="https://thumbnailtest.com/guides/face-in-youtube-thumbnail/" target="_blank" rel="noreferrer noopener">Include expressive faces</a> or emotions relevant to your video content to evoke curiosity and connection with viewers.</p>
+
+
+
+<figure class="w-richtext-figure-type-image w-richtext-align-fullwidth wp-block-image size-large"><img decoding="async" width="1024" height="576" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDExNTIiIHdpZHRoPSIyMDQ4IiBoZWlnaHQ9IjExNTIiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjAzJTJGRXhhbXBsZS1vZi1hLVlvdVR1YmUtVGh1bWJuYWlsLXdpdGgtYS1Qb3B1bGFyLUZhY2UtMjA0OHgxMTUyLndlYnAiIGRhdGEtdz0iMjA0OCIgZGF0YS1oPSIxMTUyIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" alt="Example of a YouTube Thumbnail with a Popular Face" class="wp-image-792" srcset=" " sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Choose faces that convey emotions aligned with your video&#8217;s theme.</li>
+
+
+
+<li>Opt for <a href="https://www.castingnetworks.com/news/the-art-of-acting-for-dramatic-close-ups-mastering-the-intimate-screen-moment/" target="_blank" rel="noreferrer noopener"><em>close-up shots to emphasize facial expressions</em></a> and emotions effectively.</li>
+
+
+
+<li>Ensure faces are clear and easily recognizable, even at smaller thumbnail sizes.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Also read <a href="https://thumbnailtest.com/guides/weird-faces-youtube-thumbnails/" target="_blank" rel="noreferrer noopener">why YouTubers make weird faces in thumbnails</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">5. Composition</h3>
+
+
+
+<p class="wp-block-paragraph">Compose your thumbnail in a visually appealing manner, balancing elements such as background, text, and whitespace.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Ensure a clean and uncluttered layout for maximum impact.</li>
+
+
+
+<li>Experiment with different compositions to find what works best for your content.</li>
+
+
+
+<li>Maintain a cohesive design aesthetic across all thumbnails on your channel.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading"><strong>Tips for Layout Perfection</strong></h2>
+
+
+
+<h3 class="wp-block-heading">1. Avoid Bad Clickbait</h3>
+
+
+
+<p class="wp-block-paragraph">Ensure your thumbnail accurately represents the content of your video to avoid misleading viewers.</p>
+
+
+
+<figure class="w-richtext-figure-type-image w-richtext-align-fullwidth wp-block-image size-large"><img decoding="async" width="1024" height="576" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDExNTIiIHdpZHRoPSIyMDQ4IiBoZWlnaHQ9IjExNTIiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjAzJTJGQ2xpY2tiYWl0LXZpZGVvLXdpdGgtYW4tZXhhZ2dlcmF0ZWQtdGh1bWJuYWlsLTIwNDh4MTE1Mi53ZWJwIiBkYXRhLXc9IjIwNDgiIGRhdGEtaD0iMTE1MiIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" alt="Clickbait video with an exaggerated thumbnail" class="wp-image-954" srcset=" " sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Choose images and text that accurately depict the main topic or theme of your video.</li>
+
+
+
+<li>Avoid <a href="https://edu.gcfglobal.org/en/digital-media-literacy/what-is-clickbait/1/" target="_blank" rel="noreferrer noopener">clickbait or misleading thumbnails</a> that may lead to viewer dissatisfaction.</li>
+
+
+
+<li>Align your thumbnail with your video&#8217;s title and description to set clear expectations.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">2. Call-to-Action</h3>
+
+
+
+<p class="wp-block-paragraph">Include a subtle or non-intrusive <a href="https://www.investopedia.com/terms/c/call-action-cta.asp" target="_blank" rel="noreferrer noopener">call-to-action (CTA)</a> to encourage viewers to click on your video.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Use phrases like &#8220;Watch Now&#8221; or &#8220;Learn More&#8221; to prompt <a href="https://support.google.com/youtube/answer/2991785?hl=en" target="_blank" rel="noreferrer noopener">viewer engagement</a>.</li>
+
+
+
+<li>Place your CTA strategically within the thumbnail without detracting from the main content.</li>
+
+
+
+<li>Experiment with different CTAs to see what resonates best with your <a href="https://thumbnailtest.com/guides/find-target-audience-youtube/" target="_blank" rel="noreferrer noopener">target audience</a>.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">3. A/B Test</h3>
+
+
+
+<p class="wp-block-paragraph"><a href="https://thumbnailtest.com/guides/ab-test-youtube-thumbnail/" target="_blank" rel="noreferrer noopener">Experiment with different thumbnail designs</a> and analyze their performance using Thumbnail Test.</p>
+
+
+
+<figure class="w-richtext-figure-type-image w-richtext-align-fullwidth wp-block-image size-large"><img decoding="async" width="1024" height="576" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDExNTIiIHdpZHRoPSIyMDQ4IiBoZWlnaHQ9IjExNTIiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjAzJTJGVGh1bWJuYWlsVGVzdC5jb20tV2Vic2l0ZS0yMDQ4eDExNTIud2VicCIgZGF0YS13PSIyMDQ4IiBkYXRhLWg9IjExNTIiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="Thumbnail Test Homepage" class="wp-image-707" srcset=" " sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Monitor <a href="https://support.google.com/google-ads/answer/2615875?hl=en" target="_blank" rel="noreferrer noopener">click-through rates (CTR)</a> and viewer engagement to gauge thumbnail effectiveness.</li>
+
+
+
+<li>A/B test different thumbnail variations to identify what resonates best with your audience.</li>
+
+
+
+<li>Continuously refine and iterate your thumbnail strategy based on data-driven insights.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"><strong>Relevant:</strong> Learn <a href="https://thumbnailtest.com/guides/ab-test-youtube-title/" target="_blank" rel="noreferrer noopener">how to A/B Test Titles</a> as well.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">4. Mobile Optimization:</h3>
+
+
+
+<p class="wp-block-paragraph">Optimize your thumbnails for mobile viewing by ensuring key elements are visible and legible on smaller screens.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Use larger text and imagery to maintain readability on mobile devices.</li>
+
+
+
+<li>Test your thumbnails on various mobile devices to ensure compatibility.</li>
+
+
+
+<li>Consider how your thumbnail will appear in YouTube&#8217;s mobile app and mobile browser.</li>
+</ul>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h3 class="wp-block-heading">5. Comply with Guidelines</h3>
+
+
+
+<p class="wp-block-paragraph">Adhere to <a href="https://support.google.com/youtube/answer/9288567?hl=en" target="_blank" rel="noreferrer noopener">YouTube&#8217;s Community Guidelines</a> and policies when creating thumbnails to maintain channel integrity.</p>
+
+
+
+<figure class="w-richtext-figure-type-image w-richtext-align-fullwidth wp-block-image size-large"><img decoding="async" width="1024" height="576" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDQ4IDExNTIiIHdpZHRoPSIyMDQ4IiBoZWlnaHQ9IjExNTIiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyNCUyRjAzJTJGWW91VHViZS1Db21tdW5pdHktR3VpZGVsaW5lcy0yMDQ4eDExNTIud2VicCIgZGF0YS13PSIyMDQ4IiBkYXRhLWg9IjExNTIiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="Screenshot from the YouTube Community Guidelines" class="wp-image-716" srcset=" " sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<ul class="wp-block-list">
+<li>Familiarize yourself with YouTube&#8217;s thumbnail guidelines to ensure compliance.</li>
+
+
+
+<li>Monitor your thumbnails for any potential violations and make adjustments as necessary.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Another relevant set of rules is the <a href="https://support.google.com/youtube/answer/9229980?hl=en" target="_blank" rel="noreferrer noopener">Thumbnails Policy</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity"/>
+
+
+
+<h2 class="wp-block-heading"><strong>FAQs</strong></h2>
+
+
+
+<h3 class="wp-block-heading">1. How do I change the thumbnail layout on YouTube?</h3>
+
+
+
+<p class="wp-block-paragraph">To <a href="https://thumbnailtest.com/guides/change-youtube-thumbnail/" target="_blank" rel="noreferrer noopener">change the thumbnail</a> layout on YouTube:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Go to <a href="https://studio.youtube.com/" target="_blank" rel="noreferrer noopener">YouTube Studio</a> and select the video you want to change the thumbnail for.</li>
+
+
+
+<li>Click on &#8220;<strong>Customization</strong>&#8221; in the left menu, then select &#8220;<strong>Thumbnails</strong>.&#8221;</li>
+
+
+
+<li>Choose from the available options or upload your own custom thumbnail.</li>
+
+
+
+<li>Once selected, click &#8220;<strong>Save</strong>&#8221; to apply the changes.</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">Ensure your thumbnail follows YouTube&#8217;s guidelines for optimal display and engagement.</p>
+
+
+
+<h3 class="wp-block-heading">2. What is the best layout for a YouTube thumbnail?</h3>
+
+
+
+<p class="wp-block-paragraph"><strong>The best layout for a YouTube thumbnail often includes:</strong> a clear text overlay, branding, expressive faces, and a strategic call-to-action,.</p>
+
+
+
+<p class="wp-block-paragraph">All while adhering to <a href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/" target="_blank" rel="noreferrer noopener">platform guidelines</a> for maximum impact and viewer engagement.</p>
+
+
+
+<h3 class="wp-block-heading">3. What is the format of a thumbnail?</h3>
+
+
+
+<p class="wp-block-paragraph">The format of a YouTube thumbnail is typically 1280&#215;720 pixels (16:9 ratio), ensuring compatibility across devices and platforms. <em>It should be saved in either JPG, GIF, BMP, or PNG format and be under 2MB in size to meet platform requirements.</em></p>
+
+
+
+<p class="wp-block-paragraph"><strong>Related Guide:</strong> <a href="https://thumbnailtest.com/guides/youtube-thumbnail-size/">YouTube Thumbnail Format</a>.</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots"/>
+
+
+
+<p class="wp-block-paragraph">Thank you for reading this,<br>Thumbnail Test</p>
+</div>
+          </div>
+          <div class="blog-post__sidebar blog-post__sidebar--sticky">
+            <div class="blog-post__sidebar__wrapper blog-post__sidebar__wrapper--sticky blog-post__sidebar__wrapper--static-mobile">
+              <div>
+                <div class="label-above-encharge-form _1st-label" data-text="tn4e37d22c">Want to get updates?</div>
+                <div class="label-above-encharge-form" data-text="tn4335475c">YouTube, growing an audience, A/B&nbsp;testing and more!</div>
+                <div class="html-embed w-embed w-script">
+                  <script type="rocketlazyloadscript" data-minify="1" data-rocket-type="text/javascript" class="encharge-form-embed-script" data-rocket-src="https://thumbnailtest.com/wp-content/cache/min/1/embed-production.min.js?ver=1794167276"></script>
+                  <div class="encharge-form-embed" data-encharge-form-id="64229af2-6ad5-4341-bfa1-e68bd36634c3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-for-author-block">
+          <div class="flex-horizontal-left-center">
+            <div class="flex-vertical-left-top ml-0 mb-0">
+              <a href="https://thumbnailtest.com/author/chdavid/" class="author-bio-wrapper w-inline-block"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMTMyIDk3OSIgd2lkdGg9IjExMzIiIGhlaWdodD0iOTc5IiBkYXRhLXU9Imh0dHBzJTNBJTJGJTJGdGh1bWJuYWlsdGVzdC5jb20lMkZ3cC1jb250ZW50JTJGdXBsb2FkcyUyRjIwMjQlMkYwMiUyRkNoLURhdmlkLUhlYWRzaG90LW1pbi5wbmciIGRhdGEtdz0iMTEzMiIgZGF0YS1oPSI5NzkiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" alt="Ch David - Author Headshot" class="blog-post-author-img-2">
+                <div class="author-text">
+                  <div class="fw-700">David Ch</div>
+                  <div class="">Chief Editor at ThumbnailTest</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h2 class="preheading atauthor-preheading" data-text="tn17f6b953">About the author</h2>
+            <div class="rte-in-collection w-richtext" data-richtext="r3fbe8166"><p>David is the head of the editing team at ThumbnailTest. With his help, the editorial team is able to provide you with the best free guides related to YouTube thumbnails and A/B testing.</p>
+</div>
+          </div>
+          <div class="flex-horizontal-left-center">
+            <a href="https://twitter.com/chhddavid" class="link-block-5 in-article-author-bio twitter-hover w-inline-block">
+              <div class="html-embed-17 w-embed"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="none" fill="CurrentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path>
+                </svg></div>
+            </a>
+            <a href="https://chdavid.com/" class="link-block-5 in-article-author-bio green-hover w-inline-block">
+              <div class="html-embed-17 w-embed"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <line x1="3.6" y1="9" x2="20.4" y2="9"></line>
+                  <line x1="3.6" y1="15" x2="20.4" y2="15"></line>
+                  <path d="M11.5 3a17 17 0 0 0 0 18"></path>
+                  <path d="M12.5 3a17 17 0 0 1 0 18"></path>
+                </svg></div>
+            </a>
+            <a href="https://www.linkedin.com/in/chdavidd/" class="link-block-5 in-article-author-bio li-blue-hover w-inline-block">
+              <div class="html-embed-17 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="CurrentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                </svg></div>
+            </a>
+            <a href="https://www.instagram.com/ch.davidd/" class="link-block-5 in-article-author-bio instagram-hover w-inline-block">
+              <div class="html-embed-17 w-embed"><svg class="instagram-logo" fill="currentColor" id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 551.034 551.034" style="enable-background:new 0 0 000.000 000.000;" xml:space="preserve">
+                  <path class="logo" fill:"currentcolor"="" id="XMLID_17_" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722 c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156 C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156 c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722 c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z"></path>
+                  <path id="XMLID_81_" fill="#fff" d="M275.517,133C196.933,133,133,196.933,133,275.516 s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6 c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083 C362.6,323.611,323.611,362.6,275.517,362.6z"></path>
+                  <circle id="XMLID_83_" fill="#fff" cx="418.306" cy="134.072" r="34.149"></circle>
+                </svg></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div  class="footer">
+    <div  class="wc">
+      <div  class="footer-wrapper">
+        <div class="footer-left">
+          <a href="/" class="brand-button w-nav-brand" data-link="a2f"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzAgMjMiIHdpZHRoPSIxNzAiIGhlaWdodD0iMjMiIGRhdGEtdT0iaHR0cHMlM0ElMkYlMkZ0aHVtYm5haWx0ZXN0LmNvbSUyRndwLWNvbnRlbnQlMkZ0aGVtZXMlMkZ0aHVtYm5haWx0ZXN0LTMzODhmYmIyOTMyYzZkMGQyOGNiNTd3ZTMlMkZhc3NldHMlMkZpbWFnZXMlMkZ0dC1sb2dvLXdoaXRlLS5zdmciIGRhdGEtdz0iMTcwIiBkYXRhLWg9IjIzIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" height="36" alt="" class="brand-image" data-img="i14e7f449"></a>
+          <div class="footer-text-explanatory" data-text="t2d74969e">YouTube A/B&nbsp;testing software for thumbnails and titles:&nbsp;ThumbnailTest allows you to get the most out of your videos.<a href="https://www.tiktok.com/@pdfai" target="_blank" ><br></a>
+          </div>
+          <div class="wrapper-of-socials">
+            <a href="https://www.tiktok.com/@abthumbnailtest" target="_blank" class="socials-link tt-link-special w-inline-block" data-link="a-657f3487">
+              <div class="flex-horizontal-center-center-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16">
+                  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"></path>
+                </svg></div>
+            </a>
+            <a href="https://twitter.com/ABThumbnailTest" target="_blank" class="socials-link w-inline-block" data-link="a-3ab187bb">
+              <div class="flex-horizontal-center-center-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"></path>
+                </svg></div>
+            </a>
+            <a href="https://www.instagram.com/abthumbnailtest/" target="_blank" class="socials-link w-inline-block" data-link="a-3e8c935e">
+              <div class="flex-horizontal-center-center-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                </svg></div>
+            </a>
+            <a href="https://www.youtube.com/@ABThumbnailTest" target="_blank" class="socials-link w-inline-block" data-link="a6b4d453c">
+              <div class="flex-horizontal-center-center-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="CurrentColor">
+                  <path d="M10 9.333l5.333 2.662-5.333 2.672v-5.334zm14-4.333v14c0 2.761-2.238 5-5 5h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5zm-4 7c-.02-4.123-.323-5.7-2.923-5.877-2.403-.164-7.754-.163-10.153 0-2.598.177-2.904 1.747-2.924 5.877.02 4.123.323 5.7 2.923 5.877 2.399.163 7.75.164 10.153 0 2.598-.177 2.904-1.747 2.924-5.877z"></path>
+                </svg></div>
+            </a>
+            <a href="https://www.pinterest.com/thumbnailtest/" target="_blank" class="socials-link w-inline-block" data-link="a29a39959">
+              <div class="flex-horizontal-center-center-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="CurrentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-7 20c-.825 0-1.62-.125-2.369-.357.326-.531.813-1.402.994-2.098l.499-1.901c.261.498 1.023.918 1.833.918 2.414 0 4.152-2.219 4.152-4.976 0-2.643-2.157-4.62-4.933-4.62-3.452 0-5.286 2.317-5.286 4.841 0 1.174.625 2.634 1.624 3.1.151.07.232.039.268-.107l.222-.907c.019-.081.01-.15-.056-.23-.331-.4-.595-1.138-.595-1.825 0-1.765 1.336-3.472 3.612-3.472 1.965 0 3.341 1.339 3.341 3.255 0 2.164-1.093 3.663-2.515 3.663-.786 0-1.374-.649-1.185-1.446.226-.951.663-1.977.663-2.664 0-.614-.33-1.127-1.012-1.127-.803 0-1.448.831-1.448 1.943 0 .709.239 1.188.239 1.188s-.793 3.353-.938 3.977c-.161.691-.098 1.662-.028 2.294-2.974-1.165-5.082-4.06-5.082-7.449 0-4.418 3.582-8 8-8s8 3.582 8 8-3.582 8-8 8z"></path>
+                </svg></div>
+            </a>
+            <a href="https://www.linkedin.com/company/101087919/" target="_blank" class="socials-link w-inline-block" data-link="a7aaf7f35">
+              <div class="flex-horizontal-center-center-3 w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="CurrentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                </svg></div>
+            </a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-column-wrapper">
+            <div class="links-section-footer link-sections-in-double-column">
+              <div class="footer-column-of-links" data-text="t38a73c7d">company</div>
+              <a href="/" class="footer-item w-inline-block" data-link="a2f">
+                <div data-text="t2268ff">Home</div>
+              </a>
+              <a href="https://thumbnailtest.com/pricing" class="footer-item w-inline-block" data-link="a-12c7603a">
+                <div data-text="t507137a6">Pricing</div>
+              </a>
+              <a href="https://thumbnailtest.com/features" class="footer-item w-inline-block" data-link="a-11531bc3">
+                <div data-text="tnd78b7a3">Features</div>
+              </a>
+              <a href="https://thumbnailtest.com/guides" class="footer-item w-inline-block" data-link="a-499adb09">
+                <div data-text="t7fca1117">Guides</div>
+              </a>
+              <a href="https://thumbnailtest.com/service" class="footer-item w-inline-block" data-link="a7643c6b5">
+                <div data-text="tn29c7f39b">Done-for-you Service</div>
+              </a>
+              <a href="https://thumbnailtest.com/tools" class="footer-item w-inline-block" data-link="a696c9db">
+                <div data-text="t4d3d9bb">Tools</div>
+              </a>
+              <a href="https://thumbnailtest.com/affiliate-program" class="footer-item w-inline-block" data-link="a7415ea04">
+                <div data-text="t186ae291">Affiliate program</div>
+              </a>
+              <a href="https://roadmap.thumbnailtest.com/roadmap" class="footer-item w-inline-block" data-link="ae05831d">
+                <div data-text="tn4b5115e4">Roadmap</div>
+              </a>
+              <a href="https://thumbnailcheck.com/" target="_blank" class="footer-item w-inline-block" data-link="a-75c6914f">
+                <div data-text="tn2d604f6c">Thumbnail Check</div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-right-column-wrapper">
+            <div class="links-section-footer link-sections-in-double-column">
+              <div class="footer-column-of-links" data-text="tn11531bc3">features</div>
+              <a href="https://thumbnailtest.com/test-and-compare-vs-thumbnail-test" class="footer-item w-inline-block" data-link="a-1e389176">
+                <div data-text="t7453c537">YouTube's Test &amp; Compare vs Thumbnail Test</div>
+              </a>
+              <a href="https://thumbnailtest.com/features/thumbnail-ab-testing" class="footer-item w-inline-block" data-link="a68662677">
+                <div data-text="tn14028990">Thumbnail A/B Testing</div>
+              </a>
+              <a href="https://thumbnailtest.com/features/title-ab-testing" class="footer-item w-inline-block" data-link="a-2fdc6d75">
+                <div data-text="tn6c48a24">Title A/B Testing</div>
+              </a>
+              <a href="https://thumbnailtest.com/features/hourly-or-daily-ab-tests" class="footer-item w-inline-block" data-link="a4eb24d09">
+                <div data-text="t1900b40c">Hourly or daily tests</div>
+              </a>
+              <a href="https://thumbnailtest.com/features/analytics-for-youtube-tests" class="footer-item w-inline-block" data-link="a7d3f479a">
+                <div data-text="t1288bb66">Analytics</div>
+              </a>
+              <a href="https://thumbnailtest.com/features/revive-old-videos" class="footer-item w-inline-block" data-link="a3a8fbbe4">
+                <div data-text="tnd17cd04">Revive old videos</div>
+              </a>
+              <a href="https://thumbnailtest.com/features/collaborate-with-teammates" class="footer-item w-inline-block" data-link="a52b3ede7">
+                <div data-text="tn3a68a3e">Collaborate</div>
+              </a>
+            </div>
+          </div>
+          <div class="footer-right-column-wrapper">
+            <div class="links-section-footer link-sections-in-double-column">
+              <div class="footer-column-of-links" data-text="t224361">Help</div>
+              <a href="https://support.thumbnailtest.com/" target="_blank" class="footer-item w-inline-block" data-link="a-2e259a34">
+                <div data-text="tn283629fa">Support Center</div>
+              </a>
+              <a href="https://thumbnailtest.com/terms/" class="footer-item w-inline-block" data-link="a-63a269eb">
+                <div data-text="tn7ac7b766">Terms and Conditions</div>
+              </a>
+              <a href="https://thumbnailtest.com/privacy-policy/" class="footer-item w-inline-block" data-link="a6815600b">
+                <div data-text="tn3fbde6f6">Privacy Policy</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div  class="flex-horizontal-center-left footer-copyright-text">
+        <div class="copyright-text" data-textarea="tan312f0b7">© <span id="currentYear">2024</span> ThumbnailTest. All rights reserved - Prices are in USD.</div>
+      </div>
+      <div  class="flex-horizontal-center-left footer-copyright-text-line-2">
+        <div class="wrapper-copyright-text-safe-payments">
+          <div class="copyright-text" data-text="t71a2e902">100%&nbsp;safe payments via</div><img height="22" alt="" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NjggMjIzIiB3aWR0aD0iNDY4IiBoZWlnaHQ9IjIyMyIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnRodW1ibmFpbHRlc3QuY29tJTJGd3AtY29udGVudCUyRnRoZW1lcyUyRnRodW1ibmFpbHRlc3QtMzM4OGZiYjI5MzJjNmQwZDI4Y2I1N3dlMyUyRmFzc2V0cyUyRmltYWdlcyUyRnMtbG9nby1zdmcuc3ZnIiBkYXRhLXc9IjQ2OCIgZGF0YS1oPSIyMjMiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" data-img="in28a75094">
+        </div>
+        <div class="copyright-text" data-text="t63208073">|&nbsp;Need help?&nbsp;Call us: <a href="tel:+18778128378" class="link-text-span-white-on-hover">+1 877-812-TEST</a>
+        </div>
+      </div>
+      <div  class="flex-horizontal-center-left footer-copyright-text-line-2">
+        <div class="card-logos-wrapper">
+          <div class="copyright-text" data-text="tn6c87a46">Accepting</div><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3ODAgNTAwIiB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwMCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnRodW1ibmFpbHRlc3QuY29tJTJGd3AtY29udGVudCUyRnRoZW1lcyUyRnRodW1ibmFpbHRlc3QtMzM4OGZiYjI5MzJjNmQwZDI4Y2I1N3dlMyUyRmFzc2V0cyUyRmltYWdlcyUyRnZpc2Euc3ZnIiBkYXRhLXc9Ijc4MCIgZGF0YS1oPSI1MDAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" width="50" alt="" class="card-image" data-img="in452d12af"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3ODAgNTAwIiB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwMCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnRodW1ibmFpbHRlc3QuY29tJTJGd3AtY29udGVudCUyRnRoZW1lcyUyRnRodW1ibmFpbHRlc3QtMzM4OGZiYjI5MzJjNmQwZDI4Y2I1N3dlMyUyRmFzc2V0cyUyRmltYWdlcyUyRm1hc3RlcmNhcmQuc3ZnIiBkYXRhLXc9Ijc4MCIgZGF0YS1oPSI1MDAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" width="50" alt="" class="card-image" data-img="i1ba25982"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3ODAgNTAwIiB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwMCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnRodW1ibmFpbHRlc3QuY29tJTJGd3AtY29udGVudCUyRnRoZW1lcyUyRnRodW1ibmFpbHRlc3QtMzM4OGZiYjI5MzJjNmQwZDI4Y2I1N3dlMyUyRmFzc2V0cyUyRmltYWdlcyUyRmFtZXguc3ZnIiBkYXRhLXc9Ijc4MCIgZGF0YS1oPSI1MDAiIGRhdGEtYmlwPSIiPjwvc3ZnPg==" data-spai="1" width="50" alt="" class="card-image" data-img="indac9011"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3ODAgNTAwIiB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwMCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnRodW1ibmFpbHRlc3QuY29tJTJGd3AtY29udGVudCUyRnRoZW1lcyUyRnRodW1ibmFpbHRlc3QtMzM4OGZiYjI5MzJjNmQwZDI4Y2I1N3dlMyUyRmFzc2V0cyUyRmltYWdlcyUyRmRpc2NvdmVyLnN2ZyIgZGF0YS13PSI3ODAiIGRhdGEtaD0iNTAwIiBkYXRhLWJpcD0iIj48L3N2Zz4=" data-spai="1" width="50" alt="" class="card-image" data-img="in6d5c8807"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3ODAgNTAwIiB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwMCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnRodW1ibmFpbHRlc3QuY29tJTJGd3AtY29udGVudCUyRnRoZW1lcyUyRnRodW1ibmFpbHRlc3QtMzM4OGZiYjI5MzJjNmQwZDI4Y2I1N3dlMyUyRmFzc2V0cyUyRmltYWdlcyUyRmRpbmVycy5zdmciIGRhdGEtdz0iNzgwIiBkYXRhLWg9IjUwMCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" width="50" alt="" class="card-image" data-img="i64bf00cd"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3ODAgNTAwIiB3aWR0aD0iNzgwIiBoZWlnaHQ9IjUwMCIgZGF0YS11PSJodHRwcyUzQSUyRiUyRnRodW1ibmFpbHRlc3QuY29tJTJGd3AtY29udGVudCUyRnRoZW1lcyUyRnRodW1ibmFpbHRlc3QtMzM4OGZiYjI5MzJjNmQwZDI4Y2I1N3dlMyUyRmFzc2V0cyUyRmltYWdlcyUyRmpjYi5zdmciIGRhdGEtdz0iNzgwIiBkYXRhLWg9IjUwMCIgZGF0YS1iaXA9IiI+PC9zdmc+" data-spai="1" width="50" alt="" class="card-image" data-img="i7ff937e5">
+          <div class="card-image text-card-image">
+            <div data-text="t1f7b3737">+ more!</div>
+          </div>
+        </div>
+      </div>
+      <div  class="hidden w-embed w-script">
+        <script type="rocketlazyloadscript">
+let currentYearEl = document.getElementById('currentYear')
+currentYearEl.textContent = new Date().getFullYear();
+</script>
+      </div>
+    </div>
+    <div  class="support-wrap">
+      <div  class="buy-modal">
+        <div class="contact-modal-wrap">
+          <h2 class="modal-heading" data-textarea="tan64c41890">Support &amp; Feedback<br></h2>
+          <div class="modal-button-wrapper">
+            <div class="support-member-wrap">
+              <div class="support-member-image">
+                <div data-text="t1b0bae">👋</div>
+              </div>
+              <div class="support-member-content">
+                <div class="support-member-name" data-textarea="ta1bb29027">You can expect a response from our 💜 lovely team 💜 within the next <strong>2&nbsp;to&nbsp;12&nbsp;hours</strong>, but usually we’re quicker than that!</div>
+                <p class="support-member-paragraph" data-text="t486fd38d">Please be nice to our team — they're here to help ✌️</p>
+              </div>
+            </div>
+            <div class="faq_component">
+              <div blocks-name="faq1_list" blocks-slot-children="ST366" class="faq_list">
+                <div class="faq-dropdown faq-dropdown-toggle full-width modal-close crisp-open">
+                  <div class="faq-title large" data-text="t7f2746de">Contact Us</div>
+                  <div class="faq-icon-block">
+                    <div class="faq-icon-line"></div>
+                    <div class="faq-icon-line rotate"></div>
+                  </div>
+                </div>
+                <div data-delay="300" data-hover="false" class="faq-dropdown w-dropdown">
+                  <div class="faq-dropdown-toggle full-width w-dropdown-toggle">
+                    <div class="faq-title large" data-text="tn6e533468">Refund</div>
+                    <div class="faq-icon-block">
+                      <div class="faq-icon-line"></div>
+                      <div class="faq-icon-line rotate"></div>
+                    </div>
+                  </div>
+                  <nav class="faq-dropdown-list is-modal w-dropdown-list">
+                    <p class="faq-paragraph is-modal" data-textarea="tan7ca5c220">Not happy with our service?&nbsp;No hard feelings :)&nbsp;<br><br>We have a 14-day money-back guarantee if you don't love Thumbnail Test. <br><br>We'll refund your money.<br><br>Simply to cancel your subscription (<a href="https://support.thumbnailtest.com/en/articles/8886029-how-to-cancel-your-subscription" target="_blank" class="span-link-purple">here's how, it's simple</a>) →&nbsp;our team will take care of the rest. NOTE:&nbsp;you won't have access to your account afterwards, so only do this if you don't want to use Thumbnail Test&nbsp;anymore.</p>
+                  </nav>
+                </div>
+                <div data-delay="300" data-hover="false" class="faq-dropdown w-dropdown">
+                  <div class="faq-dropdown-toggle full-width w-dropdown-toggle">
+                    <div class="faq-title large" data-text="tn212e7014">Invoices and invoice details</div>
+                    <div class="faq-icon-block">
+                      <div class="faq-icon-line"></div>
+                      <div class="faq-icon-line rotate"></div>
+                    </div>
+                  </div>
+                  <nav class="faq-dropdown-list w-dropdown-list">
+                    <p class="faq-paragraph is-modal" data-textarea="tan7b9b39dd">You can use our self-serve portal below to get your invoice *and*&nbsp;to add your details (e.g. VAT&nbsp;code, company name, etc).<br><br>Simply click below →&nbsp;use the email you used for your payment →&nbsp;your invoices will be shown.</p>
+                    <div class="padding-24">
+                      <a href="https://zenvoice.io/p/65d53937ab64656db728f685" target="_blank" class="button-white-with-shadow-2-alt mt-0 fs-14 w-inline-block" data-link="a28750866">
+                        <div data-text="tn34e9e125">Access invoice portal</div>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+                <div data-delay="300" data-hover="false" class="faq-dropdown w-dropdown">
+                  <div class="faq-dropdown-toggle full-width w-dropdown-toggle">
+                    <div class="faq-title large" data-text="tn644669bb">Submit feedback or suggestions</div>
+                    <div class="faq-icon-block">
+                      <div class="faq-icon-line"></div>
+                      <div class="faq-icon-line rotate"></div>
+                    </div>
+                  </div>
+                  <nav class="faq-dropdown-list w-dropdown-list">
+                    <p class="faq-paragraph is-modal" data-textarea="ta35817557">Got a feature you need? Want to contribute to our product and the next feature we'll be building?&nbsp;<br><br>Or simply vote so that we build your desired feature faster? Check out our Roadmap here: vote, add suggestions, comment — your feedback is very valuable to us!</p>
+                    <div class="padding-24">
+                      <a href="https://thumbnail-test.canny.io/" target="_blank" class="button-white-with-shadow-2-alt mt-0 fs-14 w-inline-block" data-link="a269d736a">
+                        <div data-text="tn623e1fc2">Check out our Roadmap</div>
+                      </a>
+                    </div>
+                  </nav>
+                </div>
+                <div class="faq-dropdown faq-dropdown-toggle full-width modal-close crisp-open">
+                  <div class="faq-title large" data-text="t38fc1330">Report a bug or technical issue</div>
+                  <div class="faq-icon-block">
+                    <div class="faq-icon-line"></div>
+                    <div class="faq-icon-line rotate"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="close-modal-icon modal-close w-inline-block" data-link="a23">
+            <div class="modal-close-icon w-embed"><svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="22.5" cy="22.5" r="22" stroke-opacity="0.29" fill="currentcolor"></circle>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M28.8336 16.6666C28.9743 16.8073 29.0533 16.9981 29.0533 17.197C29.0533 17.3959 28.9743 17.5866 28.8336 17.7273L24.0607 22.5003L28.8336 27.2732C28.9743 27.4139 29.0533 27.6047 29.0533 27.8036C29.0533 28.0025 28.9743 28.1932 28.8336 28.3339C28.693 28.4746 28.5022 28.5536 28.3033 28.5536C28.1044 28.5536 27.9136 28.4746 27.773 28.3339L23 23.5609L18.227 28.3339C18.0864 28.4746 17.8956 28.5536 17.6967 28.5536C17.4978 28.5536 17.307 28.4746 17.1664 28.3339C17.0257 28.1932 16.9467 28.0025 16.9467 27.8036C16.9467 27.6047 17.0257 27.4139 17.1664 27.2732L21.9393 22.5003L17.1664 17.7273C17.0257 17.5866 16.9467 17.3959 16.9467 17.197C16.9467 16.9981 17.0257 16.8073 17.1664 16.6666C17.307 16.526 17.4978 16.447 17.6967 16.447C17.8956 16.447 18.0864 16.526 18.227 16.6666L23 21.4396L27.773 16.6666C27.9136 16.526 28.1044 16.447 28.3033 16.447C28.5022 16.447 28.693 16.526 28.8336 16.6666Z" fill="#771ee6"></path>
+              </svg></div>
+          </a>
+        </div>
+        <div class="close-overlay modal-close"></div>
+      </div>
+      <div  class="suppor-button-wrap">
+        <div class="w-embed">
+          <style>
+.support-icon, .close-icon {
+  position: absolute;
+  transition: transform 600ms cubic-bezier(0.25, 1, 0.5, 1), opacity 600ms cubic-bezier(0.25, 1, 0.5, 1); /* Out-quart easing */
+  opacity: 1;
+}
+.support-icon {
+  transform: translateY(0); /* Default state */
+}
+.close-icon {
+  transform: translateY(0);
+  opacity: 0; /* Hidden by default */
+}
+.support-modal-open.crisp-close .support-icon {
+  transform: translateY(0.5rem); /* Moves down */
+  opacity: 0; /* Fades out */
+}
+.support-modal-open.crisp-close .close-icon {
+  transform: translateY(0); /* Moves up (reset) */
+  opacity: 1; /* Fades in */
+}
+</style>
+        </div>
+        <div class="support-modal-open modal-open">
+          <div class="support-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square">
+              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+            </svg></div>
+          <div class="close-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x">
+              <path d="M18 6 6 18"></path>
+              <path d="m6 6 12 12"></path>
+            </svg></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script type="rocketlazyloadscript" data-rocket-type="text/javascript">var $ = window.jQuery;</script><script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://thumbnailtest.com/wp-content/cache/min/1/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/assets/js/webflow.js?ver=1794167244" data-rocket-type="text/javascript"></script>
+<style>
+.lazy-yt-wrapper {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px;
+}
+.lazy-youtube {
+	background-color: #000;
+	position: relative;
+	padding-top: 56.25%;
+	overflow: hidden;
+	cursor: pointer;
+}
+.lazy-youtube img {
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 1;
+}
+.lazy-youtube .lazy-play-btn {
+	width: 90px;
+	height: 60px;
+	background-color: #333;
+	box-shadow: 0 0 30px rgba( 0,0,0,0.6 );
+	z-index: 1;
+	opacity: 0.8;
+	border-radius: 6px;
+}
+.lazy-youtube .lazy-play-btn:before {
+	content: "";
+	border-style: solid;
+	border-width: 15px 0 15px 26.0px;
+	border-color: transparent transparent transparent #fff;
+}
+.lazy-youtube img,
+.lazy-youtube .lazy-play-btn {
+	cursor: pointer;
+}
+.lazy-youtube img,
+.lazy-youtube iframe,
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	position: absolute;
+}
+.lazy-youtube .lazy-play-btn,
+.lazy-youtube .lazy-play-btn:before {
+	top: 50%;
+	left: 50%;
+	transform: translate3d( -50%, -50%, 0 );
+}
+.lazy-youtube iframe {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+</style>
+<script type="rocketlazyloadscript">
+// The following styling is for lazy-loading YT videos. We do this to improve PageSpeed Insights scores
+( function() {
+	var youtube = document.querySelectorAll( ".lazy-youtube" );
+	for (var i = 0; i < youtube.length; i++) {
+		var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/maxresdefault.jpg";
+		var image = new Image();
+				image.src = source;
+				image.addEventListener( "load", function() {
+					youtube[ i ].appendChild( image );
+				}( i ) );
+				youtube[i].addEventListener( "click", function() {
+					var iframe = document.createElement( "iframe" );
+					
+iframe.setAttribute( "allow", "autoplay" );
+							iframe.setAttribute( "frameborder", "0" );
+							iframe.setAttribute( "allowfullscreen", "" );
+var embedUrl = "https://www.youtube.com/embed/" + this.dataset.embed + "?rel=0&showinfo=0&autoplay=1" + (this.dataset.embed2 || "");
+iframe.setAttribute("src", embedUrl);
+							this.innerHTML = "";
+							this.appendChild( iframe );
+				} );	
+	};
+} )();
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="module" data-spai-excluded="true">
+// Mini-game: guess the thumbnail
+window.addEventListener("message", (event) => {
+if (typeof event.data === "string") {
+let modal = null;
+if (event.data === "test-success") {
+modal = document.getElementById("success-modal");
+} else if (event.data === "test-fail") {
+modal = document.getElementById("fail-modal");
+}
+if (modal) {
+const appFrame = document.getElementById("thumbnail-test-app");
+modal.style.display = "flex";
+appFrame.style.display = "none";
+}
+}
+});
+</script>
+<script type="rocketlazyloadscript">
+document.addEventListener("DOMContentLoaded", function() {
+const openButtons = document.querySelectorAll(".modal-open");
+openButtons.forEach(function(openButton) {
+openButton.addEventListener("click", function(event) {
+event.preventDefault();
+// Check if the button also has 'crisp-close' class
+if (openButton.classList.contains("crisp-close")) {
+return; // Do nothing if it has 'intercom-close'
+}
+const modal = document.querySelector(".buy-modal");
+if (modal) {
+modal.classList.add("active");
+document.body.classList.add("no-scroll");
+}
+});
+});
+const modalCloseButtons = document.querySelectorAll(".modal-close");
+modalCloseButtons.forEach(function(modalCloseButton) {
+modalCloseButton.addEventListener("click", function(event) {
+const modal = document.querySelector(".buy-modal.active");
+if (modal) {
+modal.classList.remove("active");
+document.body.classList.remove("no-scroll");
+}
+});
+});
+document.addEventListener("keydown", function(event) {
+if (event.key === "Escape") {
+const modal = document.querySelector(".buy-modal.active");
+if (modal) {
+modal.classList.remove("active");
+document.body.classList.remove("no-scroll");
+}
+}
+});
+});
+</script>
+<script type="rocketlazyloadscript">
+document.addEventListener("DOMContentLoaded", function() {
+const openButtons = document.querySelectorAll('.crisp-open');
+const supportModal = document.querySelector('.support-modal-open');
+openButtons.forEach(button => {
+button.addEventListener('click', function() {
+$crisp.push(["do", "chat:open"])
+console.log("Crisp chat opened");
+if (supportModal) {
+supportModal.classList.add('crisp-close');
+// Add the event listener for the close button after opening
+const closeButton = document.querySelector('.crisp-close');
+if (closeButton) {
+closeButton.addEventListener('click', function() {
+$crisp.push(["do", "chat:close"])
+console.log("Crisp chat closed");
+supportModal.classList.remove('crisp-close');
+});
+}
+}
+});
+});
+if (openButtons.length === 0) {
+console.warn("No Crisp open buttons found");
+}
+});
+</script>
+<!--
+Rich Tooltips
+-->
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://thumbnailtest.com/wp-content/cache/min/1/gh/chddaniel/Rich-Tooltips@v1.0.16/dist/main.js?ver=1794167244"></script>
+<script type="rocketlazyloadscript">
+(() => {
+document.addEventListener('DOMContentLoaded', () => {
+/** Script to dynamically add a table of contents (TOC) and highlight the active section **/
+// Initialize IntersectionObserver for observing headers
+const observer = new IntersectionObserver(entries => {
+entries.forEach(entry => {
+const id = entry.target.getAttribute("id");
+if (entry.isIntersecting) {
+// Remove 'active' class from previously highlighted items
+document.querySelectorAll(".active").forEach(activeItem => {
+activeItem.classList.remove("active");
+});
+// Highlight the current active TOC item
+const currentItem = document.querySelector(`a[href="#${id}"]`);
+if (currentItem) currentItem.classList.add("active");
+}
+});
+}, { rootMargin: '-1% 0px -99% 0px' });
+// Generate TOC and observe headers
+const richTextElement = document.querySelector(".blog-post__rt");
+const sidebarContentContainer = document.querySelector(".blog-post__sidebar__content");
+const sidebarLinksContainer = document.querySelector('.blog-post__sidebar__content__links');
+// Clear demo data initially
+sidebarLinksContainer.innerHTML = '';
+// Populate the link tree
+if (richTextElement && sidebarContentContainer) {
+richTextElement.querySelectorAll("h2, h3, h4").forEach((heading, key) => {
+// Generate a clean, URL-friendly ID
+const cleanString = heading.innerText
+.trim()
+.replace(/\s+/g, '-')
+.replace(/[°&\/\\#,+()$~%.'":;*?<>{}]/g, "")
+.toLowerCase();
+const id = `${key}-${cleanString}`;
+heading.setAttribute("id", id);
+// Create a TOC link for this heading
+const linkItem = document.createElement("a");
+linkItem.innerHTML = heading.innerHTML;
+linkItem.classList.add("blog-post__sidebar__content__link", `blog-post__sidebar__content__link--${heading.tagName.toLowerCase()}`);
+linkItem.setAttribute("href", `#${id}`);
+// Append the Sidebar link to the Sidebar container
+sidebarLinksContainer.appendChild(linkItem);
+// Observe the heading for intersection
+observer.observe(heading);
+// Add event listener for toggling the TOC
+});
+} else {
+console.warn("Missing: The blog post rich text element or the sidebar Link container");
+}
+// Toggle button
+const toggleButton = document.querySelector('.blog-post__sidebar__toggle__button');
+// Set the initial class for the button active state
+if(window.innerWidth > 991){
+toggleButton.classList.add('blog-post__sidebar__toggle__button--active');
+}
+const toggleLinkContainer = () => {
+let toggleElement = sidebarContentContainer;
+if(window.innerWidth > 991){
+toggleElement = sidebarLinksContainer
+}
+const computedStyle = window.getComputedStyle(toggleElement);
+if (computedStyle.display === 'none') {
+toggleElement.style.display = 'flex'; // Show the sidebar
+toggleButton.classList.add('blog-post__sidebar__toggle__button--active');
+toggleElement.setAttribute('aria-hidden', "false");
+} else {
+toggleElement.style.display = 'none'; // Hide the sidebar
+toggleButton.classList.remove('blog-post__sidebar__toggle__button--active');
+toggleElement.setAttribute('aria-hidden', "true");
+}
+}
+toggleButton.addEventListener('click', () => {
+// Accessibility
+const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+toggleButton.setAttribute('aria-expanded', !isExpanded);
+// Toggle visibility
+toggleLinkContainer();
+});
+// Hide the link container when a link is clicked on mobile
+sidebarContentContainer.addEventListener('click', (event) => {
+if (!event.target.closest('.blog-post__sidebar__content__link') || window.innerWidth > 991) return;
+toggleLinkContainer();
+})
+});
+})()
+</script>
+<script type="rocketlazyloadscript">
+// Script for exit pop-up
+const CookieService = {
+setCookie(name, value, days) {
+let expires = '';
+if (days) {
+const date = new Date();
+date.setTime(date.getTime() + days * 24 * 60 * 60 * 1000);
+expires = '; expires=' + date.toUTCString();
+}
+document.cookie = name + '=' + (value || '') + expires + ';';
+},
+getCookie(name) {
+const cookies = document.cookie.split(';');
+for (const cookie of cookies) {
+if (cookie.indexOf(name + '=') > -1) {
+return cookie.split('=')[1];
+}
+}
+return null;
+},
+};</script><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/thumbnailtest-3388fbb2932c6d0d28cb57we3/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="rocketlazyloadscript">
+	document.querySelectorAll('form[data-ajax-action="contact"] select[multiple]').forEach( select => {
+		select.name = select.name + "[]";
+	})
+</script>
+	<script type="rocketlazyloadscript" id="code-prettify-js-before">
+var codePrettifyLoaderBaseUrl = "https:\/\/thumbnailtest.com\/wp-content\/plugins\/code-prettify\/prettify";
+//# sourceURL=code-prettify-js-before
+</script>
+<script type="rocketlazyloadscript" data-minify="1" id="code-prettify-js" data-rocket-src="https://thumbnailtest.com/wp-content/cache/min/1/wp-content/plugins/code-prettify/prettify/run_prettify.js?ver=1794167244"></script>
+<script id="udesly-frontend-js-extra">
+var udesly_frontend_options = {"plugins":{"woocommerce":false},"wp":{"ajax_url":"https://thumbnailtest.com/wp-admin/admin-ajax.php","lifespan":86400}};
+//# sourceURL=udesly-frontend-js-extra
+</script>
+<script type="rocketlazyloadscript" data-rocket-type="module" data-rocket-src="https://thumbnailtest.com/wp-content/plugins/udesly-wp-app/assets/frontend/js/udesly-frontend-scripts.js?ver=3.0.0%40beta49" data-spai-excluded="true"></script><script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+//# sourceURL=rocket-browser-checker-js-after
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"/(?:.+/)?feed(?:/(?:.+/?)?)?$|/(?:.+/)?embed/|/(index.php/)?(.*)wp-json(/.*|$)|/refer/|/go/|/recommend/|/recommends/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https://thumbnailtest.com","onHoverDelay":"100","rateThrottle":"3"};
+//# sourceURL=rocket-preload-links-js-extra
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+
+//# sourceURL=rocket-preload-links-js-after
+</script>
+<script id="rocket_lazyload_css-js-extra">
+var rocket_lazyload_css_data = {"threshold":"300"};
+//# sourceURL=rocket_lazyload_css-js-extra
+</script>
+<script id="rocket_lazyload_css-js-after">
+!function o(n,c,a){function u(t,e){if(!c[t]){if(!n[t]){var r="function"==typeof require&&require;if(!e&&r)return r(t,!0);if(s)return s(t,!0);throw(e=new Error("Cannot find module '"+t+"'")).code="MODULE_NOT_FOUND",e}r=c[t]={exports:{}},n[t][0].call(r.exports,function(e){return u(n[t][1][e]||e)},r,r.exports,o,n,c,a)}return c[t].exports}for(var s="function"==typeof require&&require,e=0;e<a.length;e++)u(a[e]);return u}({1:[function(e,t,r){"use strict";{const c="undefined"==typeof rocket_pairs?[]:rocket_pairs,a=(("undefined"==typeof rocket_excluded_pairs?[]:rocket_excluded_pairs).map(t=>{var e=t.selector;document.querySelectorAll(e).forEach(e=>{e.setAttribute("data-rocket-lazy-bg-"+t.hash,"excluded")})}),document.querySelector("#wpr-lazyload-bg-container"));var o=rocket_lazyload_css_data.threshold||300;const u=new IntersectionObserver(e=>{e.forEach(t=>{t.isIntersecting&&c.filter(e=>t.target.matches(e.selector)).map(t=>{var e;t&&((e=document.createElement("style")).textContent=t.style,a.insertAdjacentElement("afterend",e),t.elements.forEach(e=>{u.unobserve(e),e.setAttribute("data-rocket-lazy-bg-"+t.hash,"loaded")}))})})},{rootMargin:o+"px"});function n(){0<(0<arguments.length&&void 0!==arguments[0]?arguments[0]:[]).length&&c.forEach(t=>{try{document.querySelectorAll(t.selector).forEach(e=>{"loaded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&"excluded"!==e.getAttribute("data-rocket-lazy-bg-"+t.hash)&&(u.observe(e),(t.elements||=[]).push(e))})}catch(e){console.error(e)}})}n(),function(){const r=window.MutationObserver;return function(e,t){if(e&&1===e.nodeType)return(t=new r(t)).observe(e,{attributes:!0,childList:!0,subtree:!0}),t}}()(document.querySelector("body"),n)}},{}]},{},[1]);
+//# sourceURL=rocket_lazyload_css-js-after
+</script>
+<!-- start Simple Custom CSS and JS -->
+<script type="rocketlazyloadscript">
+/* ThumbnailTest blog posts: sticky navbar 1.0.0 (JS part; CSS part is a separate entry).
+   Measures the navbar bottom (--tt-nav-bottom) for the sticky sidebars, scrolls section links
+   to just below the navbar, and keeps the section highlight in step.
+   Source: ~/SFERHA/docs/blog-navbar/ */
+(function () {
+  var body = document.body;
+  if (!body || !body.classList.contains('single-post')) return;
+  var nav = document.querySelector('.navbar.navbar-non-sticky-not-floating');
+  if (!nav) return;
+  var VAR = '--tt-nav-bottom';
+
+  function setNavBottom() {
+    var pill = nav.querySelector('.wc-for-navbar') || nav;
+    var r = pill.getBoundingClientRect();
+    var stuckTop = parseInt(getComputedStyle(nav).top, 10) || 0;
+    // Measure as if stuck: distance from nav top to pill bottom, plus the sticky top.
+    var bottom = Math.round(r.bottom - nav.getBoundingClientRect().top + stuckTop);
+    if (bottom > 0) document.documentElement.style.setProperty(VAR, bottom + 'px');
+  }
+  function navBottomPx() {
+    return parseInt(getComputedStyle(document.documentElement).getPropertyValue(VAR), 10) || 90;
+  }
+  // On phones the "Show sections" bar also sticks (just under the navbar), so clear it too.
+  function topClearance() {
+    var clear = navBottomPx();
+    if (window.innerWidth <= 991) {
+      var bar = document.querySelector('.blog-post__sidebar__toggle');
+      if (bar) clear += Math.round(bar.getBoundingClientRect().height);
+    }
+    return clear;
+  }
+  setNavBottom();
+  window.addEventListener('load', setNavBottom);
+  window.addEventListener('resize', setNavBottom);
+  setTimeout(setNavBottom, 1500);
+
+  function syncActive() {
+    var line = topClearance() + 40;
+    var current = null;
+    document.querySelectorAll('.blog-post__rt h2[id], .blog-post__rt h3[id], .blog-post__rt h4[id]').forEach(function (h) {
+      if (h.getBoundingClientRect().top <= line) current = h;
+    });
+    if (!current) return;
+    var link = document.querySelector('.blog-post__sidebar__content__link[href="#' + CSS.escape(current.id) + '"]');
+    if (!link || link.classList.contains('active')) return;
+    document.querySelectorAll('.blog-post__sidebar__content__link.active').forEach(function (a) { a.classList.remove('active'); });
+    link.classList.add('active');
+  }
+  var syncTimer;
+  window.addEventListener('scroll', function () {
+    clearTimeout(syncTimer);
+    syncTimer = setTimeout(syncActive, 150);
+  }, { passive: true });
+
+  var toc = document.querySelector('.blog-post__sidebar__content');
+  if (toc) {
+    toc.addEventListener('click', function (e) {
+      var link = e.target.closest('a.blog-post__sidebar__content__link');
+      if (!link) return;
+      var id = decodeURIComponent((link.getAttribute('href') || '').slice(1));
+      var target = id && document.getElementById(id);
+      if (!target) return;
+      e.preventDefault();
+      e.stopPropagation();
+      setNavBottom();
+      var offset = topClearance() + 24;
+      // Each click gets an id. A newer click, or the reader taking over (wheel, touch, keys), cancels it,
+      // and taking over also stops the glide where it is (user 2026-11-08: "it auto scrolls itself sometimes").
+      var jump = toc.shJump = (toc.shJump || 0) + 1;
+      if (!toc.shWatch) {
+        toc.shWatch = true;
+        var takeOver = function () {
+          if (!toc.shGliding) return;
+          toc.shGliding = false; toc.shJump++;
+          window.scrollTo(window.pageXOffset, window.pageYOffset);
+        };
+        ['wheel', 'touchstart', 'keydown'].forEach(function (t) { window.addEventListener(t, takeOver, { passive: true }); });
+      }
+      function want() {
+        var y = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        return Math.max(0, Math.min(document.documentElement.scrollHeight - window.innerHeight, y));
+      }
+      var tries = 0, aimed = 0;
+      function go(behavior) {
+        aimed = want();
+        toc.shGliding = true;
+        window.scrollTo({ top: aimed, behavior: behavior });
+      }
+      function settle() {
+        var last = -1, still = 0;
+        var timer = setInterval(function () {
+          if (jump !== toc.shJump) { clearInterval(timer); return; }
+          if (Math.abs(window.pageYOffset - last) < 1) still++; else still = 0;
+          last = window.pageYOffset;
+          if (still < 3) return;
+          clearInterval(timer);
+          toc.shGliding = false;
+          // Correct only if the page is still where we sent it (nobody else moved it) and the heading drifted.
+          var mine = Math.abs(window.pageYOffset - aimed) <= 4;
+          if (mine && Math.abs(window.pageYOffset - want()) > 4 && tries < 3) { tries++; go('smooth'); settle(); }
+          else syncActive();
+        }, 120);
+      }
+      go('smooth');
+      settle();
+      if (history.replaceState) history.replaceState(null, '', '#' + id);
+      document.querySelectorAll('.blog-post__sidebar__content__link.active').forEach(function (a) { a.classList.remove('active'); });
+      link.classList.add('active');
+      if (window.innerWidth <= 991) {
+        var btn = document.querySelector('.blog-post__sidebar__toggle__button');
+        toc.style.display = 'none';
+        toc.setAttribute('aria-hidden', 'true');
+        if (btn) {
+          btn.classList.remove('blog-post__sidebar__toggle__button--active');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      }
+    }, true);
+  }
+})();
+
+/* Sidebar follow 2.0.1 (2026-11-08). 2.0.1: the current link stays fully in view on narrow desktops (3-line links), no snaps.
+   1.0.0 (David: long sidebar "scrolling weird") slid a too-tall sidebar up with the page.
+   2.0.0 (David: "Navbar overlaps with the ToC", and "Show sections" "goes away when you scroll, it should be visible at all times"):
+   the sidebar never moves under the navbar now. The "Show sections" bar stays pinned below the navbar. When the list is taller
+   than the space left, only the list slides, inside a window that ends 16px above the screen bottom and is cut off just
+   under the "Show sections" bar. Where the list sits follows the reading position (between two headings it glides between
+   their two links), so the highlighted section is always fully in view, even when a link wraps to 3 lines on narrow desktops. Nothing becomes a scroll box, so the wheel always moves the page.
+   Soft fades mark where the list is cut. Other too-tall sticky boxes (no section list) keep the 1.0.0 behaviour. Desktop only (992px and up).
+   Per site: NAV_VAR / NAV_FALLBACK (same reading line as Section highlight: navbar bottom + 40). */
+(function () {
+  if (!document.body.classList.contains('single-post')) return;
+  var NAV_VAR = '--tt-nav-bottom', NAV_FALLBACK = 90;
+  var LINK = '.blog-post__sidebar__content__link';
+  var mq = window.matchMedia('(min-width: 992px)');
+  var last = window.pageYOffset, off = [], ticking = false;
+  // Soft fades where the list is cut (under "Show sections" and at the bottom), only while there is more list that way.
+  var css = document.createElement('style');
+  css.textContent = '@media (min-width:992px){.sh-list-clip{position:relative}' +
+    '.sh-list-clip::before,.sh-list-clip::after{content:"";position:absolute;left:0;right:0;height:32px;z-index:2;' +
+    'pointer-events:none;opacity:0;transition:opacity .15s}' +
+    '.sh-list-clip::before{top:0;background:linear-gradient(var(--sh-fade,#fff) 8px,rgba(255,255,255,0))}' +
+    '.sh-list-clip::after{bottom:0;background:linear-gradient(rgba(255,255,255,0),var(--sh-fade,#fff) 24px)}' +
+    '.sh-list-clip.sh-up::before,.sh-list-clip.sh-down::after{opacity:1}}';
+  document.head.appendChild(css);
+
+  function shift(box, o) {
+    o = Math.round(o);
+    if (box.shOff === o) return;
+    box.shOff = o;
+    for (var c = box.firstElementChild; c; c = c.nextElementSibling) {
+      if (o) c.style.setProperty('transform', 'translateY(' + o + 'px)'); else c.style.removeProperty('transform');
+    }
+  }
+  function release(box) {
+    if (!box.shClipped) return;
+    box.shClipped = false;
+    box.style.removeProperty('max-height');
+    box.style.removeProperty('clip-path');
+    box.classList.remove('sh-list-clip', 'sh-up', 'sh-down');
+    shift(box, 0);
+  }
+  // Where the list should sit (its translateY) for the current reading position. Each heading gets an anchor value that
+  // keeps its link fully in view (16px clear of the fades) and, where both fit, the previous link too; between two headings
+  // the list glides from one anchor to the next. So the current section's link is always visible and the list never jumps.
+  function target(box, full, avail) {
+    var y = window.pageYOffset, top = box.getBoundingClientRect().top, now = box.shOff || 0;
+    var line = (parseInt(getComputedStyle(document.documentElement).getPropertyValue(NAV_VAR), 10) || NAV_FALLBACK) + 40;
+    var r = y + line, end = document.documentElement.scrollHeight - window.innerHeight + line;
+    var lo = avail - full, M = 36;
+    function base(spot) { return Math.max(lo, Math.min(0, -((spot - M) / (full - 2 * M)) * (full - avail))); }
+    function fit(o, I) { return Math.max(I[0], Math.min(I[1], o)); }
+    var pts = [{ at: line, o: 0 }], prevI = null, links = box.querySelectorAll(LINK);
+    for (var i = 0; i < links.length; i++) {
+      var id = (links[i].getAttribute('href') || '').split('#')[1];
+      var h = id && document.getElementById(decodeURIComponent(id));
+      if (!h) continue;
+      var at = h.getBoundingClientRect().top + y;
+      if (!(at > pts[pts.length - 1].at && at < end)) continue;
+      var lr = links[i].getBoundingClientRect(), t0 = lr.top - top - now, b0 = lr.bottom - top - now;
+      var I = [Math.max(lo, 16 - t0), Math.min(0, avail - 16 - b0)];
+      if (I[0] > I[1]) I = [I[0], I[0]];
+      var J = prevI ? [Math.max(I[0], prevI[0]), Math.min(I[1], prevI[1])] : I;
+      if (J[0] > J[1]) J = I;
+      pts.push({ at: at, o: fit(base((t0 + b0) / 2), J) });
+      prevI = I;
+    }
+    pts.push({ at: Math.max(end, pts[pts.length - 1].at + 1), o: prevI ? fit(lo, prevI) : lo });
+    for (var k = 0; k < pts.length - 1; k++) {
+      if (r <= pts[k + 1].at) {
+        var f = Math.max(0, (r - pts[k].at) / (pts[k + 1].at - pts[k].at));
+        return pts[k].o + f * (pts[k + 1].o - pts[k].o);
+      }
+    }
+    return pts[pts.length - 1].o;
+  }
+  function fitList(w, box) {
+    w.style.removeProperty('top');
+    if (!mq.matches) { release(box); return; }
+    var cs = window.getComputedStyle(box), now = box.shOff || 0;
+    var bt = box.getBoundingClientRect().top, lastKid = box.lastElementChild;
+    if (!lastKid) { release(box); return; }
+    var full = lastKid.getBoundingClientRect().bottom - now - bt + (parseFloat(cs.paddingBottom) || 0);
+    var stuckTop = (parseFloat(window.getComputedStyle(w).top) || 0) + (bt - w.getBoundingClientRect().top);
+    var avail = Math.floor(window.innerHeight - 16 - stuckTop);
+    if (full <= avail || avail < 120) { release(box); return; }
+    if (!box.shClipped) {
+      box.shClipped = true;
+      box.style.setProperty('clip-path', 'inset(0 -60px 0 -60px)');
+      var bg = window.getComputedStyle(w).backgroundColor;
+      if (bg && bg !== 'transparent' && bg !== 'rgba(0, 0, 0, 0)') box.style.setProperty('--sh-fade', bg);
+      box.classList.add('sh-list-clip');
+    }
+    box.style.setProperty('max-height', avail + 'px');
+    var o = target(box, full, avail);
+    o = Math.round(Math.max(avail - full, Math.min(0, o)));
+    shift(box, o);
+    box.classList.toggle('sh-up', o < 0);
+    box.classList.toggle('sh-down', o > avail - full);
+  }
+  function run() {
+    ticking = false;
+    var y = window.pageYOffset, d = y - last; last = y;
+    var ws = document.querySelectorAll('.blog-post__sidebar__wrapper--sticky');
+    for (var i = 0; i < ws.length; i++) {
+      var w = ws[i], box = w.querySelector('.blog-post__sidebar__content');
+      if (box && box.querySelector(LINK)) { off[i] = null; fitList(w, box); continue; }
+      w.style.removeProperty('top');
+      if (!mq.matches) { off[i] = null; continue; }
+      var maxT = parseFloat(window.getComputedStyle(w).top) || 0;
+      var minT = window.innerHeight - w.offsetHeight - 16;
+      if (minT >= maxT) { off[i] = null; continue; }
+      var o = off[i] == null ? maxT : off[i];
+      o = Math.max(minT, Math.min(maxT, o - d));
+      off[i] = o;
+      w.style.setProperty('top', o + 'px');
+    }
+  }
+  function req() { if (!ticking) { ticking = true; window.requestAnimationFrame(run); } }
+  window.addEventListener('scroll', req, { passive: true });
+  window.addEventListener('resize', req);
+  window.addEventListener('load', req);
+  document.addEventListener('click', function () { setTimeout(req, 350); });
+  run();
+})();
+
+/* Section highlight 1.2.0 (2026-11-08). 1.0.0: David, clicking a section link "flicks between different items".
+   1.1.0: user, hover was late and needed a second click. 1.0.0 disabled the list's pointer events for ~2s after a
+   click; now nothing is ever disabled. Only the grey hover box is hidden while the list slides under a resting mouse,
+   and it comes back on the first real mouse move or when scrolling stops.
+   The theme's own tracker highlights every heading the page passes while it glides to a clicked section,
+   using a line hidden under the navbar. This module is now the only thing that decides the highlight:
+   - after a click, the clicked link stays highlighted for the whole glide (and stays put at the page bottom);
+   - while reading, the highlight follows the navbar line live;
+   - while the page glides, the grey hover box is hidden until the mouse really moves (clicks always work).
+   Per site: NAV_VAR / NAV_FALLBACK / PHONE_BAR (phones also clear the sticky "Show sections" bar). */
+(function () {
+  if (!document.body.classList.contains('single-post')) return;
+  var NAV_VAR = '--tt-nav-bottom', NAV_FALLBACK = 90, PHONE_BAR = true;
+  var LINK = '.blog-post__sidebar__content__link';
+  var locked = null, kept = null, desired = null, applying = false, lockTimer = null, frame = false;
+  var GLIDE = 'sh-gliding';
+
+  var css = document.createElement('style');
+  css.textContent = 'body.' + GLIDE + ' ' + LINK + ':not(.active):hover{background-color:transparent}';
+  document.head.appendChild(css);
+
+  function line() {
+    var clear = parseInt(getComputedStyle(document.documentElement).getPropertyValue(NAV_VAR), 10) || NAV_FALLBACK;
+    if (PHONE_BAR && window.innerWidth <= 991) {
+      var bar = document.querySelector('.blog-post__sidebar__toggle');
+      if (bar) clear += Math.round(bar.getBoundingClientRect().height);
+    }
+    return clear + 40;
+  }
+  function atBottom() {
+    return window.pageYOffset + window.innerHeight >= document.documentElement.scrollHeight - 2;
+  }
+  function linkFor(h) {
+    return h ? document.querySelector(LINK + '[href="#' + CSS.escape(h.id) + '"]') : null;
+  }
+  function compute() {
+    if (locked) return locked;
+    if (kept && atBottom()) return kept;
+    kept = null;
+    var y = line(), current = null;
+    var hs = document.querySelectorAll('.blog-post__rt h2[id], .blog-post__rt h3[id], .blog-post__rt h4[id]');
+    for (var i = 0; i < hs.length; i++) { if (hs[i].getBoundingClientRect().top <= y) current = hs[i]; else break; }
+    return linkFor(current);
+  }
+  function apply() {
+    // 1.2.0: above the first heading nothing is desired, so clear any stale highlight.
+    var links = document.querySelectorAll(LINK);
+    applying = true;
+    for (var i = 0; i < links.length; i++) {
+      var on = links[i] === desired;
+      if (links[i].classList.contains('active') !== on) links[i].classList.toggle('active', on);
+    }
+    applying = false;
+  }
+  function update() { frame = false; desired = compute(); apply(); }
+  function req() { if (!frame) { frame = true; window.requestAnimationFrame(update); } }
+
+  // Undo anyone else's highlight change before it paints (MutationObserver runs before the next frame).
+  new MutationObserver(function () { if (!applying) apply(); })
+    .observe(document.body, { subtree: true, attributes: true, attributeFilter: ['class'] });
+
+  function endGlide() { document.body.classList.remove(GLIDE); }
+  function unlock() {
+    endGlide();
+    if (!locked) return;
+    kept = locked; locked = null;
+    clearInterval(lockTimer);
+    req();
+  }
+  // A real mouse move (not the browser's zero-distance hover refresh after scrolling) brings hover back at once.
+  document.addEventListener('mousemove', function (e) {
+    if ((e.movementX || e.movementY) && document.body.classList.contains(GLIDE)) endGlide();
+  }, { passive: true });
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest(LINK);
+    if (!a) return;
+    locked = a; kept = null; desired = a; apply();
+    document.body.classList.add(GLIDE);
+    clearInterval(lockTimer);
+    var last = -1, still = 0, ticks = 0;
+    lockTimer = setInterval(function () {
+      ticks++;
+      if (Math.abs(window.pageYOffset - last) < 1) still++; else still = 0;
+      last = window.pageYOffset;
+      if (still >= 2 && ticks > 2) endGlide();
+      if ((still >= 5 && ticks > 3) || ticks > 40) unlock();
+    }, 100);
+  }, true);
+  // The reader takes over (wheel, touch, keys): stop holding the clicked link.
+  ['wheel', 'touchstart', 'keydown'].forEach(function (t) {
+    window.addEventListener(t, function () { if (locked) unlock(); kept = null; }, { passive: true });
+  });
+
+  window.addEventListener('scroll', req, { passive: true });
+  window.addEventListener('resize', req);
+  window.addEventListener('load', req);
+  req();
+})();
+</script>
+<!-- end Simple Custom CSS and JS -->
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://thumbnailtest.com/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js" data-spai-excluded="true"></script><script>function lazyLoadThumb(e,alt,l){var t='<img data-lazy-src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360"><noscript>__sp_noscript_plAc3h0ldR_2</noscript>',a='<button class="play" aria-label="Play Youtube video"></button>';if(l){t=t.replace('data-lazy-','');t=t.replace('loading="lazy"','');t=t.replace(/<noscript>.*?<\/noscript>/g,'');}t=t.replace('alt=""','alt="'+alt+'"');return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?"":"&"+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var exclusions=[];var e,t,p,u,l,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)(e=document.createElement("div")),(u='https://i.ytimg.com/vi/ID/hqdefault.jpg'),(u=u.replace('ID',a[t].dataset.id)),(l=exclusions.some(exclusion=>u.includes(exclusion))),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query",a[t].dataset.query),e.setAttribute("data-src",a[t].dataset.src),(e.innerHTML=lazyLoadThumb(a[t].dataset.id,a[t].dataset.alt,l)),a[t].appendChild(e),(p=e.querySelector(".play")),(p.onclick=lazyLoadYoutubeIframe)});</script>    </body>
+</html>
+ 
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1794962178 -->

@@ -1,0 +1,362 @@
+
+A/B test titles & thumbnails - YouTube Help
+Skip to main content
+YouTube Help
+Sign in
+Google Help
+Help Center
+Fix a problem
+Watch videos
+Manage your account & settings
+Supervised experiences on YouTube
+YouTube Premium
+Create & grow your channel
+Monetize your content
+Policy, safety, & copyright
+Community
+YouTube
+Privacy Policy
+YouTube Terms of Service
+Submit feedback
+Send feedback on...
+This help content & information
+General Help Center experience
+Close
+Next
+Help Center
+Community
+Creator Tips
+YouTube
+Fix a problem
+Troubleshoot problems playing videos
+Troubleshoot account issues
+Fix upload problems
+Get help with the YouTube Partner Program
+Learn about recent updates on YouTube
+Get help with YouTube
+Watch videos
+Find videos to watch
+Change video settings
+Watch videos on different devices
+Comment, subscribe, & connect with creators
+Save or share videos & playlists
+Troubleshoot problems playing videos
+Purchase & manage movies, TV shows & products on YouTube
+Manage your account & settings
+Sign up and manage your account
+Manage account settings
+Manage privacy settings
+Manage ad settings
+Manage accessibility settings
+Troubleshoot account issues
+YouTube updates
+Supervised experiences on YouTube
+Supervised accounts for kids
+Supervised accounts for teens
+YouTube Premium
+Join YouTube Premium
+YouTube Premium benefits
+Manage your Premium membership
+Manage Premium billing & payments
+Fix YouTube Premium issues
+Create & grow your channel
+Upload videos
+Edit videos & video settings
+Create Shorts
+Edit videos with YouTube Create
+Customize & manage your channel
+Analyze performance with analytics
+Translate videos, subtitles, & captions
+Manage your posts & comments
+Live stream on YouTube
+YouTube Creator Community
+Become a podcast creator on YouTube
+Creator and Studio App updates
+Monetize your content
+YouTube Partner Program
+Make money on YouTube
+Get paid
+Understand ads and related policies
+Get help with the YouTube Partner Program
+YouTube for Content Managers
+Policy, safety, & copyright
+YouTube policies
+Reporting and enforcement
+Privacy and safety center
+Copyright and rights management
+Edit videos & video settings
+A/B test titles & thumbnails
+A/B test titles & thumbnails
+Creators can test and compare up to 3 different titles and thumbnails. At the end of the test, the title or combination of title and thumbnail with the highest watch time will be shown to all viewers. Your content must follow our 
+Community Guidelines
+ or you may lose access to this feature.
+A/B testing on YouTube
+Eligibility requirements
+Desktop only:
+ This feature is currently only available on computers through YouTube Studio.
+Enable advanced features:
+ You need to enable advanced features to be eligible. Learn about the 
+different YouTube Tools and features
+ and 
+how to unlock access to advanced features
+.
+Video format:
+ You are not able to A/B test Shorts, Scheduled Lives, and Premiere videos at this time. However, you can A/B test Live Archives. Premiere videos are only eligible after the Premiere ends and the video converts to a long-form video.
+Content restrictions:
+ You cannot use this feature on videos that are made for kids, mature audiences, or are private. 
+Learn how to change your video settings
+.
+Note:
+ If you upload age-restricted (18+) content to the testing tool and don't mark it as age-restricted (18+), you will lose feature access. If you try to run an A/B test for a video that is marked as age-restricted, the test will not run, but you can still use the testing tool in the future. 
+Learn more about age restricted content
+.
+Run an A/B test
+Sign in to 
+YouTube Studio
+.
+Select the video you want to test.
+Test a new video:
+ From the upper right corner, click 
+CREATE
+Upload videos
+. Then upload the video.
+Test an existing video:
+ From the left menu, click 
+Content
+. Click the video you’d like to edit.
+In the 
+Title
+ box or under 
+Thumbnail
+, click 
+A/B Testing
+.
+Select either 
+Title only, Thumbnail only,
+ or 
+Title and thumbnail
+.
+Upload up to 3 thumbnails and/or titles to test.
+Note:
+ If a video’s title or thumbnail is changed during the test, the test will automatically stop. Then, you will need to restart the A/B test.
+Click 
+Done
+.
+Your test should be completed within two weeks.
+Review or stop A/B tests
+If you’re currently running an A/B test, you can review your current test results or stop your test at any time.
+Sign in to 
+YouTube Studio
+.
+Select the video you’re currently testing.
+Click 
+Analytics
+.
+Click the 
+Reach
+ tab.
+Under “How your A/B test is going,” click 
+Manage test
+.
+Note:
+ We may maintain a small percentage of traffic as a control group of viewers that are excluded from the experiment. The control group will only see the default thumbnail and title. The video performance from the control group is excluded from the experiment calculations.
+Understand A/B test results
+You can view your test results on your video’s 
+Details
+ page or the 
+Reach
+ tab of your video’s Analytics page.
+When your A/B test is over, the option with the highest watch time will be shown to all viewers. If there was no clear “winner,” then the 
+first
+ title or combination of title and thumbnail that you uploaded will be shown to all viewers. You can always change your video’s title or thumbnail manually after the test has been completed.
+Tips for A/B testing
+Choose specific videos:
+ When you A/B test titles and thumbnails, some versions of your video may perform better than others. For this reason, we recommend testing older videos first to reduce the impact to your channel’s overall views. From there, choose specific videos that will be most helpful to test for your channel’s content strategy.
+Run diverse A/B tests:
+ Testing titles and thumbnails that are too similar to each other can cause tests to run for longer. This is because there may not be enough of a difference between them to decide on a “winner.”
+Give yourself time:
+ Your A/B test can take a few days or up to 2 weeks to complete due to differences in impressions, how recently your video was published, and other factors.
+Upload high resolution thumbnails:
+ We always recommend using the highest resolution for all thumbnails. If the resolution of any thumbnail is lower than 720p (1280 x 720), all experiment thumbnails will be downscaled to 480p (854 x 480). 
+Learn more about custom thumbnail best practices
+.
+FAQs
+How does it work?
+At the end of the experiment, you will see one of following results based on watch time share:
+Winner:
+ This option clearly outperformed the others based on watch time share, and we’re sure that these results are statistically significant based on data from viewers.
+Performed Same:
+ This result means that the test ran and all your options performed about the same. While there may be small differences, there isn’t a clear winner, so pick the option you prefer.
+Inconclusive:
+ There was no strong statistical difference in engagement between your options. In this case, the first title and thumbnail you upload will be the default title and thumbnail for your video. Alternatively, you can always manually change to the title and thumbnail of your choice.
+Control group
+We may maintain a small percentage of traffic as a control group of viewers that are excluded from the experiment. The control group will only see the default title and thumbnail. The video performance from the control group is excluded from the experiment calculations.
+Why is there no “Winner” test result?
+It's normal not to receive a “Winner” test result. When you are running an A/B test, it’s common to receive other test results like “Performed Same” or “Inconclusive.” To review your A/B test report, use the 
+Reach tab in YouTube Analytics
+.
+There may be a few reasons why your video didn’t have a clear “Winner”:
+Minimal difference in titles or thumbnails:
+ It may be that the difference in the titles or thumbnails chosen for the experiment did not have a measurable impact on video performance.
+Not enough impressions:
+ It may be that your videos are not generating a sufficient amount of impressions. If your video receives a higher number of views, then the more likely a “Winner” will be declared.
+Why is the watch time used to determine the winner?
+Great titles and thumbnails serve an important purpose beyond getting viewers to click. They help a viewer understand what the video is about so that they don't waste their time clicking on the wrong videos.
+To help your video get high quality engagement, we optimize tests for overall watch time over other metrics, like click-through-rate.
+Why am I getting different test results?
+There may be cases where A/B tests will lead to different results:
+Different results using the same video:
+ Test results for a given video may vary due to the statistical variation that exists in any real-world experiment, similar to flipping a coin that results in different outcomes each time due to chance. Test results may also vary due to natural changes in a video’s audience composition over time. For example, early impressions are more likely to come from viewers who are already familiar with your channel, while later impressions are more likely to include viewers who haven't yet watched your channel.
+YouTube’s test results compared to third-party tests:
+ When using tools not native to YouTube, you may receive conflicting test results. YouTube’s A/B tests are true, concurrent A/B/C tests. This means all variations are shown to viewers at the same time.
+Many third-party tools run A/B tests sequentially and may generate different results. These tools often only optimize for click-through rate, which may determine a different “winner” than measuring by watch time share. This may be because videos with high overall engagement (strong click-through rate, watch time share, and other factors) are shown more frequently. However, we believe that deciding a “winner” by watch time will best support creators’ growth.
+Can I A/B test videos that transitioned into Shorts?
+A/B testing is not available for Shorts. Once a video is transitioned to a Short, you will not have access to any previously created tests or run A/B test for that video.
+Note:
+ Video uploads up to three minutes in length that are square or taller in aspect ratio will be considered a Short. 
+Learn about three-minute Shorts
+.
+How can I provide feedback?
+Our team is focused on improving our systems to make them accurate and useful for our creators. You can provide feedback about your experience using the feature within the test report.
+Was this helpful?
+How can we improve it?
+Yes
+No
+Submit
+Need more help?
+Try these next steps:
+ Post to the help community 
+ Get answers from community members 
+true
+Edit videos & video settings
+1 of 8
+Add custom thumbnails on YouTube
+2 of 8
+Add end screens to videos
+3 of 8
+Add info cards to videos
+4 of 8
+Trim your videos
+5 of 8
+Blur your videos
+6 of 8
+Add an audio track to your video
+7 of 8
+Learn about Ask Studio in YouTube Studio
+8 of 8
+A/B test titles & thumbnails
+ ©2026 Google 
+Privacy Policy
+YouTube Terms of Service
+ Language 
+Afrikaans‎
+azərbaycan‎
+bosanski‎
+català‎
+dansk‎
+Deutsch‎
+eesti‎
+English (United Kingdom)‎
+español‎
+español (Latinoamérica)‎
+euskara‎
+Filipino‎
+français‎
+français (Canada)‎
+Gaeilge‎
+galego‎
+hrvatski‎
+Indonesia‎
+isiZulu‎
+italiano‎
+Kiswahili‎
+latviešu‎
+lietuvių‎
+magyar‎
+Malti‎
+Melayu‎
+Nederlands‎
+norsk‎
+o‘zbek‎
+polski‎
+português‎
+português (Brasil)‎
+română‎
+shqip‎
+slovenčina‎
+slovenščina‎
+suomi‎
+svenska‎
+Tiếng Việt‎
+Türkçe‎
+íslenska‎
+čeština‎
+Ελληνικά‎
+беларуская‎
+български‎
+кыргызча‎
+македонски‎
+монгол‎
+русский‎
+српски‎
+українська‎
+қазақ тілі‎
+հայերեն‎
+‏
+עברית
+‏
+اردو
+‏
+العربية
+‏
+فارسی
+नेपाली‎
+मराठी‎
+हिन्दी‎
+অসমীয়া‎
+বাংলা‎
+ਪੰਜਾਬੀ‎
+ગુજરાતી‎
+ଓଡ଼ିଆ‎
+தமிழ்‎
+తెలుగు‎
+ಕನ್ನಡ‎
+മലയാളം‎
+සිංහල‎
+ไทย‎
+ລາວ‎
+မြန်မာ‎
+ქართული‎
+አማርኛ‎
+ខ្មែរ‎
+中文（简体）‎
+中文（繁體）‎
+中文（香港）‎
+日本語‎
+한국어‎
+English‎
+Enable Dark Mode
+Send feedback on...
+This help content & information
+General Help Center experience
+Search
+Clear search
+Close search
+Google apps
+Main menu
+18051030774701860065
+true
+Search Help Center
+false
+true
+true
+true
+true
+true
+59
+false
+false
+false
+false
+false
+

@@ -1,0 +1,339 @@
+
+Add custom thumbnails on YouTube - Computer - YouTube Help
+Skip to main content
+YouTube Help
+Sign in
+Google Help
+Help Center
+Fix a problem
+Watch videos
+Manage your account & settings
+Supervised experiences on YouTube
+YouTube Premium
+Create & grow your channel
+Monetize your content
+Policy, safety, & copyright
+Community
+YouTube
+Privacy Policy
+YouTube Terms of Service
+Submit feedback
+Send feedback on...
+This help content & information
+General Help Center experience
+Close
+Next
+Help Center
+Community
+Creator Tips
+YouTube
+Fix a problem
+Troubleshoot problems playing videos
+Troubleshoot account issues
+Fix upload problems
+Get help with the YouTube Partner Program
+Learn about recent updates on YouTube
+Get help with YouTube
+Watch videos
+Find videos to watch
+Change video settings
+Watch videos on different devices
+Comment, subscribe, & connect with creators
+Save or share videos & playlists
+Troubleshoot problems playing videos
+Purchase & manage movies, TV shows & products on YouTube
+Manage your account & settings
+Sign up and manage your account
+Manage account settings
+Manage privacy settings
+Manage ad settings
+Manage accessibility settings
+Troubleshoot account issues
+YouTube updates
+Supervised experiences on YouTube
+Supervised accounts for kids
+Supervised accounts for teens
+YouTube Premium
+Join YouTube Premium
+YouTube Premium benefits
+Manage your Premium membership
+Manage Premium billing & payments
+Fix YouTube Premium issues
+Create & grow your channel
+Upload videos
+Edit videos & video settings
+Create Shorts
+Edit videos with YouTube Create
+Customize & manage your channel
+Analyze performance with analytics
+Translate videos, subtitles, & captions
+Manage your posts & comments
+Live stream on YouTube
+YouTube Creator Community
+Become a podcast creator on YouTube
+Creator and Studio App updates
+Monetize your content
+YouTube Partner Program
+Make money on YouTube
+Get paid
+Understand ads and related policies
+Get help with the YouTube Partner Program
+YouTube for Content Managers
+Policy, safety, & copyright
+YouTube policies
+Reporting and enforcement
+Privacy and safety center
+Copyright and rights management
+Edit videos & video settings
+Add custom thumbnails on YouTube
+Add custom thumbnails on YouTube
+Custom video and Shorts thumbnails let your audience view a quick snapshot of your content. You can choose from auto generated suggested options, or upload your own if your 
+account is verified
+. Make sure your thumbnail follows our 
+Community Guidelines
+.
+Note:
+ Custom thumbnails for Shorts are currently only available to add in YouTube Studio on a computer. Your 
+account must be verified
+ to use this feature.
+Add a custom video thumbnail
+Sign in to 
+YouTube Studio
+.
+From the left menu, select 
+Content 
+.
+Go to the video you’d like to edit 
+ click 
+.
+Below “Thumbnail,” click 
+Upload file 
+to create a custom video thumbnail from an image on your device or select 
+Get suggestions
+ to generate a thumbnail.
+Click 
+SAVE.
+Add a custom Short thumbnail
+Sign in to
+ YouTube Studio
+.
+From the left menu, select 
+Content 
+Shorts
+ at the top.
+Go to the Short you’d like to edit 
+ click 
+.
+Below “Thumbnail,” click 
+Upload file 
+to create a custom Shorts thumbnail from an image on your device.
+For uploaded files, the recommended aspect ratio is 9:16.
+Click 
+SAVE.
+Note
+: It may take time for your thumbnail changes to appear on YouTube.
+Watch how to add a custom video thumbnail
+Watch the following video from the YouTube Creators channel if you’d like a tutorial on how to add a custom video thumbnail on YouTube.
+How to Add Custom Thumbnails to Your YouTube Videos
+✨HOW TO✨ UPLOAD a Custom Shorts Thumbnail
+Subscribe to the 
+YouTube Creators channel
+ for the latest news, updates, and tips.
+Get creator tips for 
+video thumbnails
+.
+Generate thumbnails using Ask Studio
+Use Ask Studio to get suggestions on custom thumbnails for your videos. Ask Studio analyzes your video’s transcript and themes to suggest thumbnails that are tailored to your video.
+To generate a thumbnail:
+Open Ask Studio within your publishing workflow.
+Enter a prompt like "Create a thumbnail."
+In the chat box, click Add
+ to select your video for suggestions or upload reference images.
+Use follow-up prompts to make any changes.
+For example, you can prompt Ask Studio to make the text on your thumbnail larger.
+Review the generated suggestions.
+Custom thumbnail best practices
+Image size & resolution
+Your custom thumbnail image should be as large as possible. It will be used as the preview image in the embedded player. We recommend your custom thumbnails:
+Have a resolution of 3840 x 2160 pixels for videos and 2160 x 3840 for Shorts, with a minimum width of 640 pixels for videos and a minimum height of 640 pixels for Shorts.
+Be uploaded in image formats such as JPG or PNG.
+Remain under MB limits. Limits depend on the device you’re using to upload your thumbnail:
+Mobile:
+ 2 MB for video thumbnails or 10 MB for podcasts.
+Desktop:
+ 50MB for video, Shorts, and podcast thumbnails.
+For videos, try to upload a thumbnail with an aspect ratio of 16:9.
+For Shorts, try to upload a thumbnail with an aspect ratio of 9:16.
+For podcast playlists, upload a thumbnail with an aspect ratio of 1:1 instead of 16:9.
+Note:
+ Vertical videos with 16:9 custom thumbnails will be replaced by an auto-generated 4:5 thumbnail on the home, explore, and subscription pages. Your custom thumbnail will still appear on the watch feed, watch history, and non-mobile platforms.
+Thumbnail policies
+All custom thumbnail images must follow our 
+Community Guidelines
+. Your thumbnails may be rejected and a strike on your account when it contains:
+Nudity or sexually provocative content
+Hate Speech
+Violence
+Harmful or dangerous content
+Repeat offenses may lead to the removal of your custom thumbnail privileges for 30 days or even account termination. 
+Learn more about Community Guidelines strikes
+.
+If a strike is issued, you'll get an email and see an alert in your 
+Channel Settings
+ the next time you sign in to YouTube. You can 
+appeal the strike
+ if you think your thumbnails don’t violate the YouTube Community Guidelines. If your appeal is approved and you haven’t already replaced the thumbnail, we may restore it.
+Custom thumbnail limits
+There's a limit to how many custom thumbnails a channel can upload each day. If you get an error saying “Daily custom thumbnail limit reached” when trying to upload a thumbnail, try again in 24 hours.
+Limits may vary by country/region or channel history. Copyright strikes may impact channel history eligibility. Community Guidelines strikes will affect how many custom thumbnails you can upload.
+Why are my custom thumbnails turned off?
+YouTube may turn off custom thumbnails for certain search results when they're considered inappropriate for viewers.
+All custom thumbnail images must follow our 
+Community Guidelines
+.
+Was this helpful?
+How can we improve it?
+Yes
+No
+Submit
+Computer
+Android phone & tablet
+iPhone & iPad
+More
+Need more help?
+Try these next steps:
+ Post to the help community 
+ Get answers from community members 
+true
+Edit videos & video settings
+1 of 8
+Add custom thumbnails on YouTube
+2 of 8
+Add end screens to videos
+3 of 8
+Add info cards to videos
+4 of 8
+Trim your videos
+5 of 8
+Blur your videos
+6 of 8
+Add an audio track to your video
+7 of 8
+Learn about Ask Studio in YouTube Studio
+8 of 8
+A/B test titles & thumbnails
+ ©2026 Google 
+Privacy Policy
+YouTube Terms of Service
+ Language 
+Afrikaans‎
+azərbaycan‎
+bosanski‎
+català‎
+dansk‎
+Deutsch‎
+eesti‎
+English (United Kingdom)‎
+español‎
+español (Latinoamérica)‎
+euskara‎
+Filipino‎
+français‎
+français (Canada)‎
+Gaeilge‎
+galego‎
+hrvatski‎
+Indonesia‎
+isiZulu‎
+italiano‎
+Kiswahili‎
+latviešu‎
+lietuvių‎
+magyar‎
+Malti‎
+Melayu‎
+Nederlands‎
+norsk‎
+o‘zbek‎
+polski‎
+português‎
+português (Brasil)‎
+română‎
+shqip‎
+slovenčina‎
+slovenščina‎
+suomi‎
+svenska‎
+Tiếng Việt‎
+Türkçe‎
+íslenska‎
+čeština‎
+Ελληνικά‎
+беларуская‎
+български‎
+кыргызча‎
+македонски‎
+монгол‎
+русский‎
+српски‎
+українська‎
+қазақ тілі‎
+հայերեն‎
+‏
+עברית
+‏
+اردو
+‏
+العربية
+‏
+فارسی
+नेपाली‎
+मराठी‎
+हिन्दी‎
+অসমীয়া‎
+বাংলা‎
+ਪੰਜਾਬੀ‎
+ગુજરાતી‎
+ଓଡ଼ିଆ‎
+தமிழ்‎
+తెలుగు‎
+ಕನ್ನಡ‎
+മലയാളം‎
+සිංහල‎
+ไทย‎
+ລາວ‎
+မြန်မာ‎
+ქართული‎
+አማርኛ‎
+ខ្មែរ‎
+中文（简体）‎
+中文（繁體）‎
+中文（香港）‎
+日本語‎
+한국어‎
+English‎
+Enable Dark Mode
+Send feedback on...
+This help content & information
+General Help Center experience
+Search
+Clear search
+Close search
+Google apps
+Main menu
+8417390675399220132
+true
+Search Help Center
+false
+true
+true
+true
+true
+true
+59
+false
+false
+false
+false
+false
+
