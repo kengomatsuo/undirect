@@ -70,8 +70,8 @@ So the JavaScript half detects and names the host, and the background page turns
 that host into a block rule. The second attempt dies at the request. See
 `Extension/Resources/background.js`.
 
-The one case that only reports is the back-button redirect. It arms the sweeper
-and nothing more.
+The back-button redirect used to be the one case that only reported. Since
+2026-11-20 it is stopped in the page; see "A trip nobody pressed for" below.
 
 # Judging a navigation
 
@@ -117,6 +117,43 @@ None of this runs at all on a site nobody turned the guard on for (added
 2026-09-16, see "What the guard runs on" in
 [docs/rules-and-record.md](rules-and-record.md)) - `guarding(state, site)` gates
 `announced`, `arrived` and `judgeOpened` before any of the above is reached.
+
+## A trip nobody pressed for, and the Back-button trap (2026-11-20)
+
+Judging by the press left a hole people reported more than any other: a page
+that sends the tab to a fake virus page on load, on a timer or while the reader
+scrolls, with no press at all. The background cannot tell that from the user
+typing an address, because Safari's `webNavigation` has no `transitionType`.
+
+The Navigation API can. Its `navigate` event is raised for a navigation the page
+or a link on it started, never for the address bar, a bookmark or Back, and a
+cross-document push or replace can be cancelled with `preventDefault()` before a
+request is made. Safari has it from 26.2, which is the iOS deployment target.
+`content/guard.js` listens in the top frame. A cross-site trip that no link or
+form started, with no click or key on the page in the last five seconds, is
+judged by `judgeUnasked()` in `lib/navigation.js` (now loaded in the content
+script too): the same site, then a rule, then the "allow" default, then a
+sign-in naming its way back, then a link shim whose own address names the
+destination, and otherwise it is cancelled and listed as "Redirect with no
+press". It is not learned as a network block: one wrong call would block that
+site everywhere, and the next attempt is cancelled the same way. A redirect in
+the page's first script can run before storage says whether the site is
+guarded, so it is held and sent on (`location.assign` or `replace`) once the
+answer is no.
+
+The Back-button trap has two halves, both on a guarded site:
+
+- A trip to another site within 700 ms of Back (a `traverse` navigate or a
+  `popstate`) is cancelled whatever was pressed before it, and listed as a Back
+  button hijack. Back was the user's press; answering it with somewhere else is
+  the trap.
+- `content/bridge.js` wraps `history.pushState`. A push of the address already
+  showing becomes a `replaceState` after the first one, or at once when it
+  answers Back. WebKit already skips entries pushed with no gesture (bug
+  241885), so these are the ones that ride a real tap.
+
+Research and sources: [docs/research/undirect-pains.md](research/undirect-pains.md).
+`tests/run-notap.html` stages each case; a failure lands on `landed.html`.
 
 ## Being the page's own code buys nothing
 

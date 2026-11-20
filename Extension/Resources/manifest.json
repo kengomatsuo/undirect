@@ -24,6 +24,7 @@
     {
       "js": [
         "lib/site.js",
+        "lib/navigation.js",
         "sites/recipes.js",
         "content/guard.js"
       ],

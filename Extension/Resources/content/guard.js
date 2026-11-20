@@ -26,7 +26,7 @@
 
   let table = { policy: "block", everywhere: {}, here: {} };
   let armed = false;          // this document has already tried something
-  let lastPopstate = 0;
+  let lastPopstate = -Infinity;
   let bridgeLoaded = false;
 
   // Unknown means inert. Read only after the storage lookup in start()
@@ -159,7 +159,7 @@
 
   // Every cross-site destination the page reached for, whether or not it was
   // stopped. The popup lists these so the user can decide about each one.
-  const TRAPS = new Set(["click-catcher", "overlay"]);
+  const TRAPS = new Set(["click-catcher", "overlay", "back-hijack"]);
 
   function seen({ kind, host, url, blocked, learn, sized, because }) {
     if (!active) return;
@@ -447,8 +447,37 @@
     true
   );
 
-  // D. Back button sent somewhere new. We cannot stop this one from here; it
-  // arms the sweeper and names the host so the block rule catches the retry.
+  // D. A trip off the site that nobody asked for: on load, on a timer, while
+  // scrolling, or in reply to the Back button.
+  //
+  // The background page judges a same-tab trip by the press before it, and
+  // with no press it cannot tell a script's redirect from the user typing an
+  // address: Safari's webNavigation has no transitionType. The Navigation API
+  // can. Its `navigate` event is never raised by the address bar, a bookmark or
+  // Back, only by the page itself or a link on it (HTML, "navigate": user
+  // involvement is not "browser UI" and the initiator is same-origin), and a
+  // cross-document push or replace can be cancelled before any request is
+  // made. Safari has it from 26.2, the iOS deployment target; an older Mac
+  // Safari has no `navigation` and keeps the background's judgement alone.
+  //
+  // A link or form the user activated, or any press in the last few seconds,
+  // goes to the background as before: a button that sends the page to a
+  // checkout is a press followed by a script's trip. Back is the exception. It
+  // is the user's own press, and a page answering it with another site is the
+  // trap people describe, whatever they tapped before.
+  //
+  // Not learned as a network block: one wrong call would block that site
+  // everywhere, and the next attempt here is cancelled the same way.
+  const NO_TAP_MS = 5000;
+  let lastActivation = -Infinity;
+  let known = false;          // start() has read whether this site is guarded
+  let held = null;            // a trip cancelled before that was known
+
+  const activated = (e) => {
+    if (e.isTrusted) lastActivation = performance.now();
+  };
+  addEventListener("click", activated, true);
+  addEventListener("keydown", activated, true);
   addEventListener("popstate", () => (lastPopstate = performance.now()), true);
   addEventListener(
     "beforeunload",
@@ -457,6 +486,61 @@
     },
     true
   );
+
+  function stop(url, afterBack) {
+    const ruling = globalThis.UndirectNavigation.judgeUnasked({
+      url,
+      pageUrl: location.href,
+      table,
+      afterBack,
+    });
+    if (ruling.ruling !== "steal") return false;
+    seen({
+      kind: afterBack ? "back-hijack" : "no-tap",
+      host: hostOf(url),
+      url,
+      blocked: true,
+      learn: false,
+      because: ruling.because,
+    });
+    return true;
+  }
+
+  const nav = window.top === window ? globalThis.navigation : null;
+  nav?.addEventListener?.("navigate", (e) => {
+    const now = performance.now();
+    if (e.navigationType === "traverse") {
+      lastPopstate = now;
+      return;
+    }
+    if (e.navigationType === "reload" || !e.cancelable || e.userInitiated) return;
+    if (e.formData) return; // a form posting what the user typed
+    if (!settings.enabled) return;
+    const url = e.destination?.url ?? "";
+    if (isOurs(hostOf(url))) return;
+
+    const afterBack = now - lastPopstate < BACK_MS;
+    const pressed = now - lastActivation < NO_TAP_MS || navigator.userActivation?.isActive;
+    if (pressed && !afterBack) return;
+
+    if (!known) {
+      // A redirect in the page's first script runs before storage answers.
+      // Hold it, and send it on once start() says this site is not guarded.
+      e.preventDefault();
+      held = { url, replace: e.navigationType === "replace", afterBack };
+      return;
+    }
+    if (active && stop(url, afterBack)) e.preventDefault();
+  });
+
+  function settle() {
+    known = true;
+    const trip = held;
+    held = null;
+    if (!trip || (active && stop(trip.url, trip.afterBack))) return;
+    if (trip.replace) location.replace(trip.url);
+    else location.assign(trip.url);
+  }
 
   // E. Whatever the page-world half saw.
   addEventListener("message", (e) => {
@@ -571,6 +655,7 @@
       }
     }
 
+    settle();
     if (!active) return;
     applyRecipes();
     injectBridge();

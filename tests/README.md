@@ -16,6 +16,12 @@ is what the swap test's release looks like from the outside, so with the
 extension enabled it vetoes the harness's own clicks before any test listener
 sees them. Three checks fail that way, and the veto is the guard working.
 
+`run-notap.html` stages a redirect with no press (in the first script, on a
+timer, by `location.replace`), stacked copies of the same address, and Back
+answered with another site. It needs the Navigation API (Safari 26.2). Each
+check passes by the page staying put; a redirect that gets through lands on
+`landed.html`, which says FAIL.
+
 `background.test.mjs` runs `background.js` against stub extension APIs. It is
 separate because the case that matters most cannot be staged in a page: Safari
 unloads the background page, and a navigation that arrives while the record is

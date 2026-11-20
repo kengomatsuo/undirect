@@ -476,6 +476,10 @@
       "back": "The-Click Hijacking Redirect",
       "why": "Names the core same-tab-redirect trick as one that hijacks the click."
     },
+    "ext.kind.no_tap": {
+      "s": "Tıklama Olmadan Yönlendirme",
+      "back": "redirect without a click"
+    },
     "ext.kind.pop_tab": {
       "s": "Arkadan Açılan Sekme",
       "back": "From-Behind Opened Tab",

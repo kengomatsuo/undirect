@@ -203,6 +203,10 @@
     "message": "Átirányítás, amely elvitte a kattintást",
     "description": "A cross-site navigation that took the user's press."
   },
+  "kind_no_tap": {
+    "message": "Magától induló átirányítás",
+    "description": "A cross-site navigation the page started on its own, with nobody pressing anything: on load, on a timer or while scrolling."
+  },
   "kind_pop_tab": {
     "message": "Háttérben megnyitott lap",
     "description": "A new tab the page opened on somewhere else."
@@ -318,6 +322,10 @@
   "method_redirect": {
     "message": "Átirányítás kattintáskor",
     "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_no_tap": {
+    "message": "Átirányítás kattintás nélkül",
+    "description": "Row subtitle: the method, two to four words, for kind_no_tap."
   },
   "method_pop_tab": {
     "message": "Háttérlap megnyitása",

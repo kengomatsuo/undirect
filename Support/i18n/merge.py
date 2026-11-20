@@ -46,9 +46,18 @@ def main(only):
         if missing:
             print(f"{code}: missing {len(missing)} ids, first {missing[:3]}")
 
+        # Keys no draft covers (the method_* subtitles) were written straight
+        # into the locale's file, so start from that file and fall back to en
+        # only for a key it lacks; starting from en reset them to English.
+        folder = LOCALES / ext_folder(code)
+        existing = {}
+        if (folder / "messages.json").exists():
+            existing = json.loads((folder / "messages.json").read_text())
         messages, app_count = {}, 0
         for key, entry in en_messages.items():
             messages[key] = dict(entry)
+            if key in existing and "message" in existing[key]:
+                messages[key]["message"] = existing[key]["message"]
 
         for ident, spec in brief.items():
             got = draft.get(ident)
@@ -70,7 +79,6 @@ def main(only):
                 # description and placeholders stay as en wrote them
         ext_count = sum(1 for i, s in brief.items() if s["surface"] == "extension" and i in draft)
 
-        folder = LOCALES / ext_folder(code)
         folder.mkdir(parents=True, exist_ok=True)
         (folder / "messages.json").write_text(
             json.dumps(messages, ensure_ascii=False, indent=2) + "\n"

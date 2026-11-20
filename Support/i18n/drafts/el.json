@@ -381,6 +381,10 @@
       "s": "Ανακατεύθυνση που πήρε το κλικ",
       "back": "Redirect that took the click"
     },
+    "ext.kind.no_tap": {
+      "s": "Ανακατεύθυνση χωρίς κανένα πάτημα",
+      "back": "redirect without any press"
+    },
     "ext.kind.pop_tab": {
       "s": "Καρτέλα που άνοιξε στο παρασκήνιο",
       "back": "Tab opened in the background"

@@ -203,6 +203,10 @@
     "message": "క్లిక్‌ను లాక్కున్న రీడైరెక్ట్",
     "description": "A cross-site navigation that took the user's press."
   },
+  "kind_no_tap": {
+    "message": "క్లిక్ లేకుండానే దానంతట అదే రీడైరెక్ట్",
+    "description": "A cross-site navigation the page started on its own, with nobody pressing anything: on load, on a timer or while scrolling."
+  },
   "kind_pop_tab": {
     "message": "వెనుక తెరిచిన ట్యాబ్",
     "description": "A new tab the page opened on somewhere else."
@@ -318,6 +322,10 @@
   "method_redirect": {
     "message": "క్లిక్‌లో రీడైరెక్ట్",
     "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_no_tap": {
+    "message": "క్లిక్ లేకుండా రీడైరెక్ట్",
+    "description": "Row subtitle: the method, two to four words, for kind_no_tap."
   },
   "method_pop_tab": {
     "message": "వెనుక తెరిచిన ట్యాబ్",

@@ -203,6 +203,10 @@
     "message": "같은 탭에서 강제 이동",
     "description": "A cross-site navigation that took the user's press."
   },
+  "kind_no_tap": {
+    "message": "아무것도 안 눌렀는데 강제 이동",
+    "description": "A cross-site navigation the page started on its own, with nobody pressing anything: on load, on a timer or while scrolling."
+  },
   "kind_pop_tab": {
     "message": "몰래 열린 새 탭",
     "description": "A new tab the page opened on somewhere else."
@@ -318,6 +322,10 @@
   "method_redirect": {
     "message": "누르면 강제 이동",
     "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_no_tap": {
+    "message": "안 눌러도 강제 이동",
+    "description": "Row subtitle: the method, two to four words, for kind_no_tap."
   },
   "method_pop_tab": {
     "message": "뒤에서 열린 탭",

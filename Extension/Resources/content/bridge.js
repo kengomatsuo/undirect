@@ -89,31 +89,16 @@
   }
 
   // A sign-in or a checkout carries a way back to this site in its own query
-  // string almost every time - an ad has no reason to. This is the same
-  // reading background.js's lib/navigation.js does for a same-tab redirect,
-  // kept here too since a window this call is deciding whether to even open
-  // never reaches the background in time for that check to matter.
-  function carriesAWayBack(url) {
-    let params;
+  // string almost every time - an ad has no reason to. lib/site.js holds the
+  // reading; the background asks it about a same-tab redirect, and this asks
+  // it about a window that never reaches the background in time.
+  const carriesAWayBack = (url) => {
     try {
-      params = new URL(url, location.href).searchParams;
+      return Site.namesSite(new URL(url, location.href).href, location.hostname);
     } catch (e) {
       return false;
     }
-    for (const raw of params.values()) {
-      let decoded = null;
-      try {
-        decoded = decodeURIComponent(raw);
-      } catch (e) {}
-      for (const candidate of [raw, decoded]) {
-        if (!candidate || !/^https?:\/\//i.test(candidate)) continue;
-        try {
-          if (withinSite(new URL(candidate).hostname)) return true;
-        } catch (e) {}
-      }
-    }
-    return false;
-  }
+  };
 
   // A press invites nothing on its own: these networks pick a real click and
   // ride it. What decides is the destination, what the user said about it, and
@@ -185,6 +170,42 @@
       return true;
     }
     return nativeDispatch.call(this, event);
+  };
+
+  // The Back-button trap: a page stacks copies of the address already showing,
+  // so Back stays put, and re-stacks one each time Back pops it. WebKit already
+  // skips entries pushed with no gesture (bug 241885); these ride a real tap
+  // or answer the Back press itself. One copy is kept, since a sheet or a menu
+  // that Back should close pushes exactly that; past one, or in reply to Back,
+  // the push only replaces the entry, which the page cannot tell apart.
+  const nativePush = History.prototype.pushState;
+  const nativeReplace = History.prototype.replaceState;
+  const BACK_MS = 700;
+  let lastPop = -Infinity;
+  let copies = 0;
+  addEventListener("popstate", () => {
+    lastPop = performance.now();
+    copies = 0;
+  }, true);
+
+  History.prototype.pushState = function (state, unused, url) {
+    let target = null;
+    try {
+      target = new URL(url ?? location.href, location.href).href;
+    } catch (e) {
+      // the native call throws the page's own error
+    }
+    if (target !== null && target === location.href) {
+      const answeringBack = performance.now() - lastPop < BACK_MS;
+      if (copies >= 1 || answeringBack) {
+        tell("back-hijack", location.hostname, target, true, false, "the same page again");
+        return nativeReplace.apply(this, arguments);
+      }
+      copies += 1;
+    } else if (target !== null) {
+      copies = 0;
+    }
+    return nativePush.apply(this, arguments);
   };
 
   tell("ready", "", "", false);

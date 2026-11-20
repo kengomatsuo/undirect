@@ -476,6 +476,10 @@
       "back": "Hijacking redirect",
       "why": "Names the core same-tab redirect trick as a noun phrase, distinct from the generic “redirect” word."
     },
+    "ext.kind.no_tap": {
+      "s": "إعادة توجيه تلقائية دون أي ضغطة",
+      "back": "automatic redirect without any press"
+    },
     "ext.kind.pop_tab": {
       "s": "تبويب خفي جديد",
       "back": "Hidden new tab",

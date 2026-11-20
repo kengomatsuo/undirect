@@ -203,6 +203,10 @@
     "message": "கிளிக்கைப் பறித்த வழிமாற்று",
     "description": "A cross-site navigation that took the user's press."
   },
+  "kind_no_tap": {
+    "message": "கிளிக் இல்லாமல் தானாக வழிமாற்று",
+    "description": "A cross-site navigation the page started on its own, with nobody pressing anything: on load, on a timer or while scrolling."
+  },
   "kind_pop_tab": {
     "message": "பின்னணியில் திறந்த தாவல்",
     "description": "A new tab the page opened on somewhere else."
@@ -318,6 +322,10 @@
   "method_redirect": {
     "message": "கிளிக்கில் வழிமாற்று",
     "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_no_tap": {
+    "message": "கிளிக் இல்லாமல் வழிமாற்று",
+    "description": "Row subtitle: the method, two to four words, for kind_no_tap."
   },
   "method_pop_tab": {
     "message": "பின்னணியில் திறந்த தாவல்",

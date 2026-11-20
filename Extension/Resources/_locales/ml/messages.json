@@ -203,6 +203,10 @@
     "message": "ക്ലിക്ക് തട്ടിയെടുത്ത റീഡയറക്ട്",
     "description": "A cross-site navigation that took the user's press."
   },
+  "kind_no_tap": {
+    "message": "ക്ലിക്കില്ലാതെ സ്വയം റീഡയറക്ട്",
+    "description": "A cross-site navigation the page started on its own, with nobody pressing anything: on load, on a timer or while scrolling."
+  },
   "kind_pop_tab": {
     "message": "പിന്നിൽ തുറന്ന ടാബ്",
     "description": "A new tab the page opened on somewhere else."
@@ -318,6 +322,10 @@
   "method_redirect": {
     "message": "ക്ലിക്കിൽ റീഡയറക്ട്",
     "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_no_tap": {
+    "message": "ക്ലിക്കില്ലാതെ റീഡയറക്ട്",
+    "description": "Row subtitle: the method, two to four words, for kind_no_tap."
   },
   "method_pop_tab": {
     "message": "പിന്നിൽ തുറന്ന ടാബ്",

@@ -476,6 +476,10 @@
       "back": "Press hijacked by redirect",
       "why": "Core same-tab redirect trick, named as a short tag for the comma-joined list."
     },
+    "ext.kind.no_tap": {
+      "s": "未点按就自行跳转",
+      "back": "jumped away by itself without a tap"
+    },
     "ext.kind.pop_tab": {
       "s": "背后开新标签页",
       "back": "New tab opened behind",

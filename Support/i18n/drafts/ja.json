@@ -476,6 +476,10 @@
       "back": "Forced move within the same tab",
       "why": "concrete tag for the core same-tab-redirect trick"
     },
+    "ext.kind.no_tap": {
+      "s": "勝手に起きた強制移動",
+      "back": "forced move that happened on its own (uninvited)"
+    },
     "ext.kind.pop_tab": {
       "s": "裏から開いた新規タブ",
       "back": "New tab opened from behind",

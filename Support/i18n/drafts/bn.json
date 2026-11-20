@@ -381,6 +381,10 @@
       "s": "ক্লিক কেড়ে নেওয়া রিডাইরেক্ট",
       "back": "Redirect that took the click"
     },
+    "ext.kind.no_tap": {
+      "s": "ক্লিক ছাড়াই নিজে থেকে রিডাইরেক্ট",
+      "back": "redirect by itself without a click"
+    },
     "ext.kind.pop_tab": {
       "s": "পেছনে খোলা ট্যাব",
       "back": "Tab opened behind"

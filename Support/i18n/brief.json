@@ -1216,6 +1216,17 @@
       "budget": "Inline tag within a comma-joined list, ~4-5 words"
     },
     {
+      "id": "ext.kind.no_tap",
+      "surface": "extension",
+      "en_key": "kind_no_tap",
+      "file": "Extension/Resources/popup/popup.js",
+      "role": "label",
+      "screen": "Popup, kind tag for a cross-site navigation the page started by itself, with no press from the person",
+      "moment": "Same detail-line position, for a page that tried to send the tab to another site on its own: as it loaded, on a timer, or while the person was only scrolling, never having pressed anything. Undirect stopped it and the tab stayed put.",
+      "says": "Name, as a short tag, a page trying to send the tab to another site although the person pressed nothing.",
+      "budget": "Inline tag within a comma-joined list, ~4-5 words"
+    },
+    {
       "id": "ext.kind.pop_tab",
       "surface": "extension",
       "en_key": "kind_pop_tab",

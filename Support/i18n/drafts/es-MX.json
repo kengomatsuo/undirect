@@ -381,6 +381,10 @@
       "s": "Redirección que se queda con el clic",
       "back": "Redirect that takes the click"
     },
+    "ext.kind.no_tap": {
+      "s": "Redirección sin ningún clic",
+      "back": "redirect without any click"
+    },
     "ext.kind.pop_tab": {
       "s": "Pestaña abierta por detrás",
       "back": "Tab opened behind"

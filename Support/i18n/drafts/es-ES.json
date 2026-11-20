@@ -476,6 +476,10 @@
       "back": "Redirect in the same tab",
       "why": "El truco central: la pestaña cambia de sitio en el instante de una pulsación ajena."
     },
+    "ext.kind.no_tap": {
+      "s": "Redirección sin pulsar nada",
+      "back": "redirect without pressing anything"
+    },
     "ext.kind.pop_tab": {
       "s": "Pestaña abierta a escondidas",
       "back": "Tab opened on the sly",

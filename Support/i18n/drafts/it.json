@@ -476,6 +476,10 @@
       "back": "Sudden redirect",
       "why": "Names the core same-tab-redirect trick concisely, chosen shorter over the longer literal phrasing."
     },
+    "ext.kind.no_tap": {
+      "s": "Reindirizzamento senza alcun clic",
+      "back": "redirect without any click"
+    },
     "ext.kind.pop_tab": {
       "s": "Scheda aperta di nascosto",
       "back": "Tab opened secretly",

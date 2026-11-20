@@ -203,6 +203,10 @@
     "message": "କ୍ଲିକ ଛଡ଼ାଇ ନେଇଥିବା ରିଡାଇରେକ୍ଟ",
     "description": "A cross-site navigation that took the user's press."
   },
+  "kind_no_tap": {
+    "message": "କ୍ଲିକ ବିନା ନିଜେ ରିଡାଇରେକ୍ଟ",
+    "description": "A cross-site navigation the page started on its own, with nobody pressing anything: on load, on a timer or while scrolling."
+  },
   "kind_pop_tab": {
     "message": "ପଛରେ ଖୋଲାଯାଇଥିବା ଟ୍ୟାବ",
     "description": "A new tab the page opened on somewhere else."
@@ -318,6 +322,10 @@
   "method_redirect": {
     "message": "କ୍ଲିକରେ ରିଡାଇରେକ୍ଟ",
     "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_no_tap": {
+    "message": "କ୍ଲିକ ବିନା ରିଡାଇରେକ୍ଟ",
+    "description": "Row subtitle: the method, two to four words, for kind_no_tap."
   },
   "method_pop_tab": {
     "message": "ପଛରେ ଖୋଲା ଟ୍ୟାବ",

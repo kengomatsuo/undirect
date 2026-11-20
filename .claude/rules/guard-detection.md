@@ -33,3 +33,8 @@ paths:
   `cdn.site.com` may vouch for `www.site.com`. `lib/site.js` works that out and
   approximates the Public Suffix List rather than shipping it. Full account:
   [docs/redirect-mechanism.md](../../docs/redirect-mechanism.md).
+- **A cross-site trip nobody pressed for is cancelled in the page through the
+  Navigation API's `navigate` event**, which the address bar, bookmarks and Back
+  never raise; `judgeUnasked()` in `lib/navigation.js` decides, and a Back answered
+  with another site is cancelled whatever was pressed before. Not learned as a
+  network block. Full account: [docs/redirect-mechanism.md](../../docs/redirect-mechanism.md).

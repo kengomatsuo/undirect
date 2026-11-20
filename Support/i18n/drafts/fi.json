@@ -381,6 +381,10 @@
       "s": "Uudelleenohjaus, joka vei napsautuksen",
       "back": "Redirect that took the click"
     },
+    "ext.kind.no_tap": {
+      "s": "Itsestään käynnistynyt uudelleenohjaus",
+      "back": "redirect that started by itself"
+    },
     "ext.kind.pop_tab": {
       "s": "Välilehti avattu taustalle",
       "back": "Tab opened in the background"

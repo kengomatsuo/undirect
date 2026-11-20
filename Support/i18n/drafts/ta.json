@@ -381,6 +381,10 @@
       "s": "கிளிக்கைப் பறித்த வழிமாற்று",
       "back": "Redirect that snatched the click"
     },
+    "ext.kind.no_tap": {
+      "s": "கிளிக் இல்லாமல் தானாக வழிமாற்று",
+      "back": "redirect by itself without a click"
+    },
     "ext.kind.pop_tab": {
       "s": "பின்னணியில் திறந்த தாவல்",
       "back": "Tab opened in the background"

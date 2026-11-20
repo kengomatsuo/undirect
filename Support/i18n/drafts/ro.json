@@ -381,6 +381,10 @@
       "s": "Redirecționare care a luat clicul",
       "back": "Redirect that took the click"
     },
+    "ext.kind.no_tap": {
+      "s": "Redirecționare fără niciun clic",
+      "back": "redirect without any click"
+    },
     "ext.kind.pop_tab": {
       "s": "Filă deschisă în fundal",
       "back": "Tab opened in the background"

@@ -203,6 +203,10 @@
     "message": "کلک چھیننے والا ری ڈائریکٹ",
     "description": "A cross-site navigation that took the user's press."
   },
+  "kind_no_tap": {
+    "message": "کلک کے بغیر خود ری ڈائریکٹ",
+    "description": "A cross-site navigation the page started on its own, with nobody pressing anything: on load, on a timer or while scrolling."
+  },
   "kind_pop_tab": {
     "message": "کلک کے بعد کھلا ٹیب",
     "description": "A new tab the page opened on somewhere else."
@@ -318,6 +322,10 @@
   "method_redirect": {
     "message": "کلک پر ری ڈائریکٹ",
     "description": "Row subtitle: the method, two to four words, for kind_redirect."
+  },
+  "method_no_tap": {
+    "message": "کلک کے بغیر ری ڈائریکٹ",
+    "description": "Row subtitle: the method, two to four words, for kind_no_tap."
   },
   "method_pop_tab": {
     "message": "پیچھے کھلا ٹیب",

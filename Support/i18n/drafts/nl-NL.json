@@ -476,6 +476,10 @@
       "back": "Redirect that took over click",
       "why": "Names the core same-tab-redirect trick."
     },
+    "ext.kind.no_tap": {
+      "s": "Omleiding zonder dat je klikte",
+      "back": "redirect without you having clicked"
+    },
     "ext.kind.pop_tab": {
       "s": "Nieuw tabblad achter je klik",
       "back": "New tab behind your click",

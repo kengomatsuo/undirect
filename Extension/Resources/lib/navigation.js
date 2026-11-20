@@ -87,31 +87,36 @@ globalThis.UndirectNavigation = (() => {
       : verdict("steal", "took the press", base, false);
   }
 
-  function carriesAWayBack(url, site) {
+  const carriesAWayBack = (url, site) => globalThis.UndirectSite.namesSite(url, site);
+
+  // A trip the page started with nobody pressing anything: on load, on a
+  // timer, while scrolling, or in reply to Back. content/guard.js sees these
+  // through the Navigation API's `navigate` event, which the address bar, a
+  // bookmark and Back never raise, so "no press" here means the page's own
+  // doing rather than the user's. Same order as judge(): the same site, a
+  // rule, the default, then the two honest reasons to leave unprompted - a
+  // sign-in naming its way back, and a link shim whose own address names
+  // where it is going (google.com/url?q=...).
+  function judgeUnasked({ url, pageUrl, table, afterBack = false }) {
     const Site = globalThis.UndirectSite;
-    let params;
+    const base = destination(url);
+    if (!base) return verdict("allow", "not a web address", base, true);
+    let page = "";
     try {
-      params = new URL(String(url ?? "")).searchParams;
+      page = new URL(String(pageUrl ?? "")).hostname;
     } catch (e) {
-      return false;
+      return verdict("allow", "the page is unknown", base, true);
     }
-    for (const raw of params.values()) {
-      let decoded = null;
-      try {
-        decoded = decodeURIComponent(raw);
-      } catch (e) {
-        // left as null; raw is still tried below
-      }
-      for (const candidate of [raw, decoded]) {
-        if (!candidate || !/^https?:\/\//i.test(candidate)) continue;
-        try {
-          if (Site.sameSite(new URL(candidate).hostname, site)) return true;
-        } catch (e) {
-          // not a URL after all
-        }
-      }
+    if (Site.sameSite(base, page)) return verdict("allow", "the same site", base, true);
+
+    const explicit = table?.here?.[base] ?? table?.everywhere?.[base];
+    if (explicit) {
+      return verdict(explicit === "block" ? "steal" : "allow", "a rule says so", base, false);
     }
-    return false;
+    if (table?.policy === "allow") return verdict("allow", "allowed by default", base, false);
+    if (Site.namesSite(url, page)) return verdict("allow", "carries a way back here", base, false);
+    if (Site.namesSite(pageUrl, base)) return verdict("allow", "the page names it", base, false);
+    return verdict("steal", afterBack ? "answered Back" : "no tap", base, false);
   }
 
   // A window the page opened, judged against the tab that opened it. A tab the
@@ -133,5 +138,5 @@ globalThis.UndirectNavigation = (() => {
 
   const verdict = (ruling, because, base, quiet) => ({ ruling, because, base, quiet });
 
-  return { judge, judgeOpened, destination, TAP_MS };
+  return { judge, judgeOpened, judgeUnasked, destination, TAP_MS };
 })();

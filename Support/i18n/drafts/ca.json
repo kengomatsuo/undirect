@@ -381,6 +381,10 @@
       "s": "Redirecció que s'endú el toc",
       "back": "Redirect that takes the tap"
     },
+    "ext.kind.no_tap": {
+      "s": "Redirecció sense tocar res",
+      "back": "redirect without touching anything"
+    },
     "ext.kind.pop_tab": {
       "s": "Pestanya oberta per darrere",
       "back": "Tab opened behind"

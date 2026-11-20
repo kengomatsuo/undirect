@@ -613,6 +613,35 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
      JSON.stringify(row?.urls));
 }
 
+// A trip the page started with no press: the judgement content/guard.js asks
+// for each `navigate` event the address bar could not have raised.
+{
+  const N = new Function(`${read("lib/site.js")};${read("lib/navigation.js")}; return globalThis.UndirectNavigation;`)();
+  const table = { policy: "block", everywhere: {}, here: {} };
+  const page = "https://www.site.com/article";
+  const cases = [
+    ["a scam page on load is stopped", { url: "https://iphone-risk.example/scan", pageUrl: page, table }, "steal", "no tap"],
+    ["a trip in reply to Back is stopped and says so", { url: "https://ad.example/", pageUrl: page, table, afterBack: true }, "steal", "answered Back"],
+    ["the same site is let through", { url: "https://cdn.site.com/next", pageUrl: page, table }, "allow"],
+    ["a sign-in naming its way back is let through",
+     { url: "https://accounts.google.com/o?redirect_uri=" + encodeURIComponent("https://www.site.com/cb"), pageUrl: page, table }, "allow"],
+    ["a link shim naming where it goes is let through",
+     { url: "https://news.example/story", pageUrl: "https://www.site.com/url?q=" + encodeURIComponent("https://news.example/story"), table }, "allow"],
+    ["a destination the user allowed is let through",
+     { url: "https://partner.example/", pageUrl: page, table: { ...table, here: { "partner.example": "allow" } } }, "allow"],
+    ["allow as the default turns it off", { url: "https://ad.example/", pageUrl: page, table: { ...table, policy: "allow" } }, "allow"],
+    ["a blocked destination is stopped by its rule", { url: "https://ad.example/", pageUrl: page,
+      table: { ...table, policy: "allow", everywhere: { "ad.example": "block" } } }, "steal", "a rule says so"],
+    ["an app link is not a web trip", { url: "itms-apps://apps.apple.com/app/id1", pageUrl: page, table }, "allow"],
+  ];
+  const wrong = cases.filter(([, args, ruling, because]) => {
+    const v = N.judgeUnasked(args);
+    return v.ruling !== ruling || (because && v.because !== because);
+  });
+  ok("a trip nobody pressed for is told from an honest one", wrong.length === 0,
+     wrong.map(([name, args]) => `${name}: got ${JSON.stringify(N.judgeUnasked(args))}`).join("; "));
+}
+
 const failed = results.filter((r) => !r.pass);
 console.log(`\n${results.length} checks, ${failed.length} failed`);
 process.exit(failed.length ? 1 : 0);

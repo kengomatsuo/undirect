@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><title>no-tap and back trap</title>
+<script src="site.js"></script>
+<script src="navigation.js"></script>
+<script src="shim.js"></script>
+<script src="recipes.js"></script>
+<script src="guard.test.js"></script>
+<script>
+// A scam page's first move: redirect before the guard has read its storage.
+// localhost is a different site from 127.0.0.1.
+location.href = "http://localhost:8767/landed.html?from=load";
+</script>
+</head>
+<body>
+<pre id="out">running</pre>
+<script>
+// Needs the Navigation API (Safari 26.2, Chrome 102). Every check here passes by
+// the page staying put; a failure lands on landed.html, which says so.
+const results = [];
+const ok = (name, pass, detail) => results.push({ name, pass, ...(detail ? { detail } : {}) });
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+const caught = (kind, from) =>
+  window.__caught.some((c) => c.kind === kind && c.host === "localhost" && c.url.includes(from));
+
+async function run() {
+  await wait(500);
+  ok("the Navigation API is here", !!globalThis.navigation);
+  ok("a redirect in the page's first script is stopped", caught("no-tap", "from=load"));
+
+  // On a timer, with no press.
+  location.href = "http://localhost:8767/landed.html?from=timer";
+  await wait(600);
+  ok("a redirect on a timer stays put", caught("no-tap", "from=timer"));
+
+  location.replace("http://localhost:8767/landed.html?from=replace");
+  await wait(600);
+  ok("location.replace is stopped too", caught("no-tap", "from=replace"));
+
+  // The Back trap, half one: copies of the same address stacked so Back stays.
+  const start = history.length;
+  for (let i = 0; i < 4; i++) history.pushState({ trap: i }, "", location.href);
+  ok("stacked copies of this address leave one entry", history.length === start + 1,
+     `${start} -> ${history.length}`);
+  history.pushState({}, "", location.pathname + "?page=2");
+  ok("a push to a new address still adds an entry", history.length === start + 2,
+     `${start} -> ${history.length}`);
+  history.back();
+  await wait(300);
+
+  // Half two: Back answered with another site.
+  addEventListener("popstate", () => {
+    location.href = "http://localhost:8767/landed.html?from=back";
+  }, { once: true });
+  history.back();
+  await wait(900);
+  ok("Back answered with another site stays put and says so", caught("back-hijack", "from=back"));
+
+  ok("nothing in here was learned as a network block",
+     !window.__caught.some((c) => c.kind === "no-tap" && c.learn));
+
+  document.getElementById("out").textContent = JSON.stringify(results, null, 1);
+  window.__results = results;
+}
+run();
+</script>
+</body></html>

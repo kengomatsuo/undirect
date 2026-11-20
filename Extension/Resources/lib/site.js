@@ -56,5 +56,35 @@ globalThis.UndirectSite = (() => {
     return table.policy === "allow" ? "allow" : "block";
   }
 
-  return { baseDomain, sameSite, decide };
+  // Whether an address names a page on `host`'s site in its own query string.
+  // A sign-in or a checkout carries a way back to the site that sent the user
+  // there; a link shim (google.com/url?q=...) carries where it is about to go.
+  // An ad redirect has no reason to do either.
+  function namesSite(url, host) {
+    let params;
+    try {
+      params = new URL(String(url ?? "")).searchParams;
+    } catch (e) {
+      return false;
+    }
+    for (const raw of params.values()) {
+      let decoded = null;
+      try {
+        decoded = decodeURIComponent(raw);
+      } catch (e) {
+        // left as null; raw is still tried below
+      }
+      for (const candidate of [raw, decoded]) {
+        if (!candidate || !/^https?:\/\//i.test(candidate)) continue;
+        try {
+          if (sameSite(new URL(candidate).hostname, host)) return true;
+        } catch (e) {
+          // not a URL after all
+        }
+      }
+    }
+    return false;
+  }
+
+  return { baseDomain, sameSite, decide, namesSite };
 })();
