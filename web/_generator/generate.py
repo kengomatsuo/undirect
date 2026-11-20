@@ -338,6 +338,24 @@ def live_price():
 PRICE = live_price()
 
 
+def pains_html(t):
+    """The problems buyers name on Reddit and in rivals' reviews, as plain headings in their words, each with
+    what Undirect does about it (docs/research/undirect-voice-of-customer.md). A language
+    without these strings shows no section."""
+    if "pains_h" not in t:
+        return ""
+    items = "\n".join(f'<li><h3>{esc(t[f"pain{i}_q"])}</h3><p>{esc(t[f"pain{i}_a"])}</p></li>'
+                      for i in range(1, 10) if f"pain{i}_q" in t)
+    return f"""<section class="section"><div class="wrap">
+<h2>{esc(t['pains_h'])}</h2>
+<ul class="pains">
+{items}
+</ul>
+</div></section>
+
+"""
+
+
 def home_page(loc, locales, s, t):
     ld_store = store_url("web-schema")
     title = f"{s['name']} | {s['subtitle']}"
@@ -365,7 +383,7 @@ def home_page(loc, locales, s, t):
     body = f"""<section class="hero"><div class="wrap">
 <div>
 <p class="eyebrow">{esc(s['subtitle'])}</p>
-<h1>{esc(s['h1'])}</h1>
+<h1>{esc(t.get('home_h1', s['h1']))}</h1>
 <p class="lead">{esc(s['promo'])}</p>
 <div class="cta-row">{cta}<a class="btn btn-quiet" href="/demo/" hreflang="en">{esc(t['nav_demo'])}</a></div>
 <p class="cta-note">{esc(t['devices_line'])}</p>
@@ -373,7 +391,7 @@ def home_page(loc, locales, s, t):
 <div class="hero-shot">{picture("iphone-popup", (360, 540, 660), 660, 1434, esc(t['alt_phone']), "(max-width: 860px) 300px, 340px", lcp=True)}</div>
 </div></section>
 
-<section class="section sunken"><div class="wrap"><div class="problem">
+{pains_html(t)}<section class="section sunken"><div class="wrap"><div class="problem">
 <p>{esc(s['problem1'])}</p>
 <p>{esc(s['problem2'])}</p>
 </div></div></section>
@@ -425,7 +443,7 @@ def email_link(text):
 
 def support_page(loc, locales, s, t):
     title = f"{t['nav_support']} - {s['subtitle']} | Undirect"
-    qa = [(t[f"q{i}"], t[f"a{i}"]) for i in range(1, 6)]
+    qa = [(t[f"q{i}"], t[f"a{i}"]) for i in range(1, 30) if f"q{i}" in t]
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "FAQPage", "inLanguage": loc.code, "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]},
