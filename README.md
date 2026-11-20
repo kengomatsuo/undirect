@@ -10,6 +10,9 @@
 <a href="https://launchigniter.com/product/undirect?ref=badge-undirect"><img src="https://launchigniter.com/api/badge/undirect?theme=light" alt="Featured on LaunchIgniter" height="48"></a>
 <a href="https://ailaun.ch/projects/undirect?utm_source=badge"><img src="https://ailaun.ch/ailaunch/images/badges/featured-on-light.svg" alt="Featured on AI Launch" height="48"></a>
 <a href="https://www.nxgntools.com/tools/undirect?utm_source=undirect"><img src="https://www.nxgntools.com/api/embed/undirect?type=FIND_US_ON" alt="Find us on NxGn Tools" height="48"></a>
+<a href="https://alternativeto.net/software/undirect/about/?utm_source=badge&utm_medium=referral"><img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="Undirect | AlternativeTo" height="48"></a>
+<a href="https://indieappcatalog.com/app/5526"><img src="https://indieappcatalog.com/badge/listed-on-indie-app-catalog-black.svg" alt="Listed on Indie App Catalog" height="48"></a>
+<a href="https://macbase.app/apps/undirect?ref=badge"><img src="https://macbase.app/badge/featured-on-macbase.svg" alt="Featured on MacBase" height="48"></a>
 <a href="https://www.producthunt.com/products/undirect?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-undirect"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1310867&theme=light" alt="Undirect on Product Hunt" height="48"></a>
 </p>
 
