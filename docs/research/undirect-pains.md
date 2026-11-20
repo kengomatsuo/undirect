@@ -85,3 +85,14 @@ Each finding is written here as it lands.
   - `history.pushState` to the address already showing is turned into
     `replaceState` after the first one, so a page can keep one entry for a sheet
     or menu but cannot stack copies that Back has to wade through.
+
+## Testing on the Mac without touching the App Store copy
+
+Safari 26 loads an unpacked web extension folder from Settings > Developer >
+"Add Temporary Extension…", lists it under Temporary, and drops it after 24
+hours or when Safari quits
+([Apple, Running your Safari web extension](https://developer.apple.com/documentation/safariservices/running-your-safari-web-extension.md)).
+That runs `Extension/Resources` beside the App Store Undirect with no pluginkit
+swap, so the owner's guarded sites and learned blocks survive the test (a swap
+wipes them; see docs/safari-constraints.md). The native app messaging is absent
+in that mode, which the guard does not need.
