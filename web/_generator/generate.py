@@ -86,6 +86,28 @@ OG_LOCALE = {
 }
 
 
+# The stylesheet is inlined into every page's head: at about 4 KB gzipped it costs less than the
+# round trip a <link> makes the first paint wait for. /style.css still ships for demo/.
+INLINE_CSS = re.sub(r"\s*\n\s*", "\n", re.sub(r"/\*.*?\*/", "", (WEB / "style.css").read_text(encoding="utf-8"), flags=re.S)).strip()
+
+
+def picture(name, widths, width, height, alt, sizes, lcp=False):
+    """An image served at the size it is shown: AVIF where the browser takes it, else WebP.
+    web/img/<name>-<w>.avif exists for every width; the WebP of the largest width is <name>.webp."""
+    top = widths[-1]
+    webp = lambda w: f"/img/{name}.webp" if w == top else f"/img/{name}-{w}.webp"
+    avif = ", ".join(f"/img/{name}-{w}.avif {w}w" for w in widths)
+    webps = ", ".join(f"{webp(w)} {w}w" for w in widths)
+    load = ' fetchpriority="high"' if lcp else ' loading="lazy" decoding="async"'
+    return (f'<picture><source type="image/avif" srcset="{avif}" sizes="{sizes}">'
+            f'<img src="{webp(top)}" srcset="{webps}" sizes="{sizes}" width="{width}" height="{height}"{load} alt="{alt}"></picture>')
+
+
+def lazy(markup):
+    """Third-party badges sit at the foot of the page: they load when scrolled near, never with the first paint."""
+    return markup.replace("<img ", '<img loading="lazy" decoding="async" ')
+
+
 BADGES = json.loads((HERE / "badges.json").read_text(encoding="utf-8"))["map"]
 BADGE_HEIGHT = 48          # Apple asks for at least 40 px on screen
 
@@ -225,7 +247,7 @@ def head(loc, locales, t, page, title, description, ld, extra="", en_only=False)
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="apple-touch-icon" href="/icon.png">
 <link rel="manifest" href="/site.webmanifest">
-<link rel="stylesheet" href="/style.css">
+<style>{INLINE_CSS}</style>
 {extra}<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(',', ':'))}</script>
 <script src="/site.js" defer></script>
 </head>"""
@@ -245,7 +267,7 @@ def nav(loc, locales, t, page, lang_page=None):
     return f"""<a class="skip" href="#main">{esc(t['skip'])}</a>
 <header>
 <nav class="site-nav">
-<a class="nav-brand" href="{loc.href()}"><img src="/icon.png" alt="" width="32" height="32">Undirect</a>
+<a class="nav-brand" href="{loc.href()}"><img src="/img/icon-64.webp" alt="" width="32" height="32">Undirect</a>
 <ul class="nav-links">
 {link('support/', t['nav_support'])}
 {link('privacy/', t['nav_privacy'])}
@@ -260,7 +282,7 @@ def nav(loc, locales, t, page, lang_page=None):
 
 def footer(loc, t, en_links=False):
     more = "".join(f'<li><a href="/{s}" hreflang="en" lang="en">{en_pages.LABEL[s]}</a></li>\n' for s in en_pages.SLUGS) if en_links else ""
-    return f"""<footer class="site-footer">
+    return lazy(f"""<footer class="site-footer">
 <ul class="footer-links">
 <li><a href="{loc.href()}">Undirect</a></li>
 <li><a href="{loc.href('support/')}">{esc(t['nav_support'])}</a></li>
@@ -270,7 +292,7 @@ def footer(loc, t, en_links=False):
 {more}</ul>
 <p class="copyright">&copy; 2026 Kenneth Fang</p>
 <div class="directory-badges"><a href="https://www.producthunt.com/products/undirect?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-undirect" target="_blank" rel="noopener noreferrer"><img alt="Undirect on Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1310867&amp;theme=light"></a><a href="https://nativeshelf.com/undirect?ref=badge" target="_blank" title="Featured on NativeShelf.com"><img src="https://nativeshelf.com/badge/dark.png?v=6" alt="Featured on NativeShelf.com" width="232" height="68" /></a><a href="https://macpip.com/apps/undirect?ref=badge"><img src="https://macpip.com/badge/undirect.svg" height="44" alt="Listed on MacPip"></a><a href="https://macbase.app/apps/undirect?ref=badge" target="_blank" rel="noopener"><img src="https://macbase.app/badge/featured-on-macbase.svg" alt="Undirect is featured on MacBase" height="44" style="height:44px;width:auto"></a><a href="https://macbrowse.com"><img src="https://macbrowse.com/badge/listed-light.svg" alt="Listed on Mac Browse" height="44"></a><a href="https://macappindex.com/apps/undirect?ref=badge" target="_blank" title="Undirect on Mac App Index"><img src="https://macappindex.com/apps/undirect/badge.svg?theme=light&height=56" alt="Undirect on Mac App Index" width="224" height="56" /></a><a href="https://ipip.fyi/apps/undirect?ref=badge"><img src="https://ipip.fyi/badge/undirect.svg" alt="Undirect on iPip" width="220" height="56"></a><a href="https://postyourstartup.com/startup/undirect?ref=badge" target="_blank"><img src="https://postyourstartup.com/api/badge/undirect?theme=light" alt="Featured on PostYourStartup" width="212" height="55" /></a><a href="https://launchigniter.com/product/undirect?ref=badge-undirect" target="_blank"><img src="https://launchigniter.com/api/badge/undirect?theme=light" alt="Featured on LaunchIgniter" width="212" height="55" /></a><a href="https://ailaun.ch/projects/undirect?utm_source=badge" target="_blank" rel="noopener noreferrer"><img src="https://ailaun.ch/ailaunch/images/badges/featured-on-light.svg" alt="Featured on AI Launch" style="height:44px;width:auto"/></a><a href="https://www.nxgntools.com/tools/undirect?utm_source=undirect" target="_blank" rel="noopener" style="display: inline-block; width: auto;"><img src="https://www.nxgntools.com/api/embed/undirect?type=FIND_US_ON" alt="Find us on NxGn Tools" style="height: 48px; width: auto;" /></a><a href="https://alternativeto.net/software/undirect/about/?utm_source=badge&utm_medium=referral" target="_blank"><img src="https://alternativeto.net/static/badges/badge-compact-color.svg" alt="Undirect | AlternativeTo" width="173" height="56" style="width:173px;height:56px" /></a><a href="https://indieappcatalog.com/app/5526"><img src="https://indieappcatalog.com/badge/listed-on-indie-app-catalog-black.svg" alt="Listed on Indie App Catalog" width="183" height="40"></a></div>
-</footer>"""
+</footer>""")
 
 
 def document(loc, locales, t, page, title, description, ld, body, extra_head="", en_only=False):
@@ -340,7 +362,7 @@ def home_page(loc, locales, s, t):
 <div class="cta-row">{cta}<a class="btn btn-quiet" href="/demo/" hreflang="en">{esc(t['nav_demo'])}</a></div>
 <p class="cta-note">{esc(t['devices_line'])}</p>
 </div>
-<div class="hero-shot"><img src="/img/iphone-popup.webp" width="660" height="1434" alt="{esc(t['alt_phone'])}" fetchpriority="high"></div>
+<div class="hero-shot">{picture("iphone-popup", (360, 540, 660), 660, 1434, esc(t['alt_phone']), "(max-width: 860px) 300px, 340px", lcp=True)}</div>
 </div></section>
 
 <section class="section sunken"><div class="wrap"><div class="problem">
@@ -350,7 +372,7 @@ def home_page(loc, locales, s, t):
 
 <section class="section"><div class="wrap">
 <h2>{esc(t['video_title'])}</h2>
-<div class="film"><video controls playsinline preload="none" poster="/media/film-poster.webp" width="1280" height="720" aria-label="{esc(t['video_title'])}">
+<div class="film"><video controls playsinline preload="none" poster="/media/film-poster-960.avif" width="1280" height="720" aria-label="{esc(t['video_title'])}">
 <source src="/media/film.mp4" type="video/mp4"></video></div>
 </div></section>
 
@@ -366,7 +388,7 @@ def home_page(loc, locales, s, t):
 <p>{esc(s['dest1'])}</p>
 <p>{esc(s['dest2'])}</p>
 </div>
-<img src="/img/mac-app.webp" width="1100" height="1071" loading="lazy" alt="{esc(t['alt_mac'])}">
+{picture("mac-app", (560, 800, 1100), 1100, 1071, esc(t['alt_mac']), "(max-width: 860px) calc(100vw - 40px), 540px")}
 </div></section>
 
 <section class="section sunken"><div class="wrap">
@@ -516,7 +538,7 @@ def not_found_page(locales, all_t):
 <meta name="theme-color" content="{THEME['dark']}" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
-<link rel="stylesheet" href="/style.css">
+<style>{INLINE_CSS}</style>
 <script id="nf-data" type="application/json">{json.dumps(data, ensure_ascii=False, separators=(',', ':'))}</script>
 <script src="/site.js" defer data-404="1"></script>
 </head>
