@@ -130,3 +130,16 @@ in that mode, which the guard does not need.
   ([badges](https://developer.apple.com/help/app-store-connect/reference/in-app-events/in-app-event-badges)).
   App Store Connect also requires a deep link and a purchase requirement
   before review although the create call takes neither.
+
+## The Back trap on iOS Safari 26 (simulator, 2026-11-21)
+
+- The demo trap (`web/demo/ads/backtrap.js`: four same-address `pushState`
+  calls on the first tap, `popstate` sends the tab to the ad) does not fire on
+  the iPad simulator with Undirect off: the first Back leaves to the previous
+  page and the Back list holds no Kickoff copies
+  (`docs/screenshots/pains/ios-back-off-*`). WebKit's history intervention
+  (bug 241885 above) skips the pushed entries even after a tap, so no
+  `popstate` reaches the page. The repair is therefore proven on Mac Safari
+  (`mac-back-*`), where the same trap does land on the ad with Undirect off;
+  on iOS the trap people still report must take another shape (a redirect
+  page left in history, or a push on a later interaction), not reproduced here.
