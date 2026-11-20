@@ -27,3 +27,21 @@ Read on each live profile, signed in as @monholtco.
 - X: "We make apps for iPhone, Mac, Android and the web, and build them for other companies." Long, a platform list, two "and"s, and X's profession tag "Software developer/Programmer/Software engineer" under it reads as a freelancer, not a studio.
 - Instagram, TikTok, Threads: "Phone and web apps, designed and built for other companies." A fragment; "other companies" is vague.
 - Two different lines across platforms.
+
+## Near the owner (read 2026-11-20 on Instagram)
+
+| Company | Kind | Category | Bio |
+|---|---|---|---|
+| Suitmedia Digital Agency | software house | (none) | Experts in crafting impactful digital solutions through strategy, technology, and creativity to fuel business growth. 🚀 |
+| Sagara Technology | software house | Software company | Sagara Technology Official Account. / Technology Solutions and Outsourcing Company. / Fast Response Technology Service: +62... (then an office address) |
+| Sekawan Media | software house | Business service | ⚙️ Empowering Business Through Technology / 💻 13+ Years in Software Development & IT Consulting / 🏆 150+ Clients ... (then an address) |
+| GITS.ID | AI agency | Consulting agency | We help clients and consumers over 18 years, building smarter, better future together, through AI. #AIAgency |
+| Mitrais | outsourcing | Information technology company | Your SEA nearshore software development company for team augmentation. 600+ coders, ISO 27001 certified ... |
+| Moka Indonesia | POS product | Product/service | Aplikasi kasir online yang #BisaDiandalkan untuk beragam bisnis yang kamu jalankan! |
+| Xendit | payments product | Financial service | Making payments simple. |
+| HashMicro ERP Software | ERP product | Software company | Bringing joy to work and sharing stories that inspire growth. Now with Hashy AI ... |
+
+What this adds:
+- Local software houses sell on proof (years, client counts, certifications) in emoji lines, and put a phone or WhatsApp number and an address in the bio. Monholt has no counts to show yet, and the bio may not name a place.
+- Local products that small businesses buy speak to the owner directly: Moka in Indonesian with "kamu"; Xendit in three English words. The strongest ones are the shortest.
+- Most set a category (Software company, Product/service), and the ones that want enquiries give a contact. Instagram's contact button carries that without cluttering the bio.
