@@ -93,8 +93,8 @@ end
   class << self
     alias_method :__orig_spawn_pty, :spawn_with_pty
     alias_method :__orig_spawn_popen, :spawn_with_popen
-    def spawn_with_pty(command, &block); __orig_spawn_pty(command) { |o, i, p| yield(UTF8SafeIO.new(o), i, p) }; end
-    def spawn_with_popen(command, &block); __orig_spawn_popen(command) { |o, i, p| yield(UTF8SafeIO.new(o), i, p) }; end
+    def spawn_with_pty(command, **opts, &block); __orig_spawn_pty(command, **opts) { |o, i, p| yield(UTF8SafeIO.new(o), i, p) }; end
+    def spawn_with_popen(command, **opts, &block); __orig_spawn_popen(command, **opts) { |o, i, p| yield(UTF8SafeIO.new(o), i, p) }; end
   end
 end
 
