@@ -29,7 +29,7 @@ launch calendar and MacPip Pips belong to the asg-social session (card ASG35).
 | 18 | Boost Domain Rating (focusapps) | Open | Same template and free terms as 1000 SaaS. |
 | 19 | SaaSHunt (focusapps) | Open | Same; the email also links ailaun.ch, same network. |
 | 20 | DodoLaunch, Cutling claim | Waits on owner | Owner will look later; claim page dodolaunch.com/claim/53j-EcTeGl4H to be left open. Next free launch week Jun 28. |
-| 21 | MacPip, 4-star review of Cutling | Open | Reply as maker: the caps are 100 text and 25 image snippets; the Mac history skips anything a password manager marks concealed (Cutling/Mac/PasteboardMonitor.swift). asg-social confirmed it is not replying. |
+| 21 | MacPip, 4-star review of Cutling | ASG36 | Card ASG36 (session cutling-caps) raises the caps first and drafts the replies, so the answer can say the new caps. |
 | 22 | MacPip, boosted 24h | Read | Done Nov 18-19. |
 | 23 | iPip, Undirect approved | Done earlier | Listed, launch Nov 21 (asg-directories-2). |
 | 24 | iPip, Cutling approved | Done earlier | Same. |
@@ -51,7 +51,7 @@ launch calendar and MacPip Pips belong to the asg-social session (card ASG35).
 | 40 | IARC rating, Artosia | Not promotion | Another app; no action. |
 | 41 | Windows Dev Center welcome | Not promotion | No action. |
 | 42 | MacPip, Claude Max pips race | asg-social | asg-social earns Pips from the shared MacPip account. |
-| 43 | MacPip, Black Friday deal | Open | Owner now allows the sale (rows below). MacPip deal form on each status page (#bfdeal) needs the MacPip sign-in, which asg-social reports is back. |
+| 43 | MacPip, Black Friday deal | **Done** (Cutling) / Refused (Undirect) | Cutling: 40% off, Nov 27 to Nov 30, no code; MacPip: "Saved. Your deal goes live on its start day, by itself." Undirect: MacPip refuses a deal that ends before the app's MacPip launch ("That deal ends before your app launches, so nobody would see it"); Undirect's earliest launch slot is Dec 8, after the sale ends. |
 
 ## Black Friday sale (card ASG34)
 
@@ -60,5 +60,13 @@ read back: USA manual prices Cutling $4.99 until Nov 27, $2.99 Nov 27 to Dec 1, 
 Dec 1; Undirect $1.99, $0.99, $1.99 on the same dates. Apple's `endDate` ends a price at
 00:00 Pacific on that day, so the sale runs Nov 27 00:00 PT (15:00 WIB) to Dec 1 00:00 PT.
 The other 174 storefronts follow by equalization, for example Cutling ¥800 to ¥500, £4.99 to
-£2.99, €5.99 to €2.99; Undirect ¥300 to ¥150, €1.99 to €0.99. Directory deal slots (MacPip
-#bfdeal, MacNative discount field) are still to fill.
+£2.99, €5.99 to €2.99; Undirect ¥300 to ¥150, €1.99 to €0.99. Directory deal slots, 2026-11-20 (asg-inbox-2):
+
+| Site | App | Status | What the site shows |
+|---|---|---|---|
+| MacPip | Cutling | **Done** | 40% off, Nov 27 to Nov 30, no code. "Saved. Your deal goes live on its start day, by itself." Live on macpip.com/deals from Nov 27. |
+| MacPip | Undirect | Refused by site | "That deal ends before your app launches": deals show only after the MacPip launch, and Undirect's earliest slot is Dec 8. |
+| MacNative | Cutling | **Done** | Member deal "40% off: $2.99 instead of $4.99", Nov 27 to Nov 30 UTC, no code, redemption link App Store ct=macnative-bf. macnative.io/deals lists it under Coming soon, "Starts Nov 27". |
+| MacNative | Undirect | No slot | Listing rejected (card ASG37); the edit page has no deal section. |
+| iPip | Undirect | Waits on iPip | 50% off, Nov 27 to Nov 30, no code. "Saved. It waits for a quick look from us, usually within a day." (iPip reads the App Store price on save; the sale price starts Nov 27.) |
+| iPip | Cutling | Waits on iPip | 40% off, same dates, same message. |
