@@ -6,6 +6,8 @@
 <a href="https://macpip.com/apps/undirect?ref=badge"><img src="https://macpip.com/badge/undirect.svg" alt="Listed on MacPip" height="48"></a>
 <a href="https://nativeshelf.com/undirect?ref=badge"><img src="https://nativeshelf.com/badge/dark.png?v=6" alt="Featured on NativeShelf" height="48"></a>
 <a href="https://ipip.fyi/apps/undirect?ref=badge"><img src="https://ipip.fyi/badge/undirect.svg" alt="Undirect on iPip" height="48"></a>
+<a href="https://postyourstartup.com/startup/undirect?ref=badge"><img src="https://postyourstartup.com/api/badge/undirect?theme=light" alt="Featured on PostYourStartup" height="48"></a>
+<a href="https://launchigniter.com/product/undirect?ref=badge-undirect"><img src="https://launchigniter.com/api/badge/undirect?theme=light" alt="Featured on LaunchIgniter" height="48"></a>
 <a href="https://www.producthunt.com/products/undirect?utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-undirect"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1310867&theme=light" alt="Undirect on Product Hunt" height="48"></a>
 </p>
 
