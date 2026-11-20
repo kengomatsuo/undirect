@@ -48,7 +48,7 @@ Files: videos are in `social/video/`, 1080 x 1920, 30 fps. "To make" means the f
 | P18 | Tue Dec 8 | X | KEPT: Undirect on MacPip 07:13 (draft 14) | | |
 | P19 | Wed Dec 9 | X, IG Reel, TikTok | U6 Back taking you to the ad again | Press Back and land on the ad again? From 1.0.5, a page that answers Back with another site stays put, and the copies it stacks up to trap Back are cut to one.<br><br>undirect.matsuokengo.com | video/u-back.mp4, after release (clip from session undirect-pains) |
 | P20 | Thu Dec 10 | X | C6 iPhone can't keep a clipboard history | Can an iPhone keep a clipboard history? No app can: iOS doesn't let apps read what you copy in the background. Cutling keeps what you choose to save on iPhone, and its Mac app keeps the full history.<br><br>cutling.matsuokengo.com | none |
-| P21 | Fri Dec 11 | X, IG Reel, TikTok | C13 snippets need fill-ins and dates | A saved reply with a blank for the name and today's date filled in for you. Cutling asks for the blank when you tap it.<br><br>cutling.matsuokengo.com | video/c-fill-in.mp4, after release (clip from session cutling-pains) |
+| P21 | Fri Dec 11 | X, IG Reel, TikTok | C13 snippets need fill-ins and dates | A saved reply with a blank for the name and today's date filled in for you. Cutling asks for the blank when you tap it.<br><br>cutling.matsuokengo.com | WITHDRAWN until cutling-pains sends the redesigned clip (ASG84-ASG91); the old fill-ins clip is not to be used |
 
 ## Week 4
 
