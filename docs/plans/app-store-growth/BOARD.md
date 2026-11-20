@@ -2,6 +2,7 @@
 
 ## Backlog
 - **ASG32** Cutling's iPhone App Store preview shows Safari's "localhost" host chip above the keyboard during the address beat; the capture should show a real-looking host or none · source: ASG30 asg-videos-5
+- **ASG33** Act on every free promotion offer in the owner's Mail inbox for Cutling and Undirect · source: owner 2026-11-20 · plan: Free directory and launch submissions, claims and MacPip/iPip actions from inbox-2026-11-20.txt; paid offers named, not bought · done when: Each email in inbox-2026-11-20.txt is done with the site's readback, or named as paid/skip with why · verify: Chrome readback of each listing; outcome table in inbox-actions.md
 
 ## Ready
 
