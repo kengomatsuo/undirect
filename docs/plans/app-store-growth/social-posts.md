@@ -32,6 +32,10 @@ Every post, repost and boost from @monholtco on X, Instagram and TikTok, newest 
 | 2026-11-20 19:15 | Threads | Cutling vertical film, id (ASG54) | https://www.threads.com/@monholtco/post/Df9oYWRky_O |
 | 2026-11-20 19:20 | Threads | Undirect vertical film, en (ASG54) | https://www.threads.com/@monholtco/post/Df9o4FDk-TT |
 | 2026-11-20 19:23 | Threads | Undirect vertical film, id (ASG54) | https://www.threads.com/@monholtco/post/Df9pTsTkyEV |
+| 2026-11-20 19:40 | TikTok @monholt | Cutling vertical film, ja (ASG54) | https://www.tiktok.com/@monholt/video/7710233816341728532 |
+| 2026-11-20 19:46 | Instagram | Cutling vertical film, ja (ASG54) | https://www.instagram.com/monholtco/reel/Df9sCRZDsLY/ |
+| 2026-11-20 19:46 | Facebook Page Monholt | Cutling vertical film, ja (ASG54) | https://www.facebook.com/reel/1662848915533004 |
+| 2026-11-20 19:45 | Threads | Cutling vertical film, ja (ASG54) | https://www.threads.com/@monholtco/post/Df9rogWk0OY |
 
 ## Drafts waiting for the owner's go (asg-social-2, 2026-11-20)
 
