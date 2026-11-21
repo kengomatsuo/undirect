@@ -223,7 +223,7 @@ Paths are inside that repo. The fuller reading of this code is in
   fewer, under 2 hours old (`ColdStartMaxPostAgeSecs` 7200) and under 200 home impressions
   (`ColdStartImpressionThreshold`), is placed at slot 15 or 16, chosen by Thompson sampling on its
   like rate (`sample_reward` uses `fav_count`). Only original posts qualify
-  (`cold_start_base_eligible` excludes replies and reposts). Consequence for the debut: the first
+  (`cold_start_base_eligible` excludes replies and reposts). Every original post from an account of 50,000 followers or fewer gets this per post (not once per account). Consequence for the debut: the first
   ~200 strangers' impressions are a like-rate test. Likes in the first two hours, not replies, are
   what the sampler reads.
 - **Hashtags are not a ranking input in For You.** No file in `home-mixer`, `phoenix` ranking,

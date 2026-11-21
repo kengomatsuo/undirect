@@ -116,3 +116,27 @@ Skipped: @Sarakhan49309 (engagement-farm account posting "fast payout" threads).
 Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip both Sat 07:13 (3, 4), Product Hunt Cutling Tue 15:07 (7), MacPip Undirect Dec 8 (14), TinyLaunch Dec 21 and 28.
 
 | 2026-11-27 20:15 WIB (scheduled 2026-11-21) | X @monholtco | Arabic quote of @APPS_RH (https://x.com/APPS_RH/status/2108909412626604059): thanks, free offer ended, Undirect half price Nov 27-30 | scheduled in X, confirmed in Unsent posts > Scheduled |
+
+### X routine log, Sat 2026-11-21 (WIB)
+
+- 16:36 reply #1 to @iPritamX (https://x.com/iPritamX/status/2123768537236049962): https://x.com/monholtco/status/2124074391772512624
+- 16:36 follow 1/10 @MacBaseApp (MacBase, 34 followers, macbase.app as listed): https://x.com/MacBaseApp
+- 16:38 follow 2/10 @mac_native (MacNative.io, 453 followers, as listed): https://x.com/mac_native
+- 16:39 follow 3/10 @getindieapps (Get Indie Apps, 102 followers, as listed): https://x.com/getindieapps
+- 16:40 follow 4/10 @picconedoro (Vincent, Building NativeShelf, 2,343 followers): https://x.com/picconedoro
+- 16:42 follow 5/10 @JustinasRoland0 (Justinas Rolando, founder of MacPip/iPip, 2,270 followers): https://x.com/JustinasRoland0
+- 16:43 follow 6/10 @iPritamX (Pritam, solo dev, 4 iOS apps + Hauntboard, 1,360 followers): https://x.com/iPritamX
+- 16:44 follow 7/10 @DanielSmidstrup (Daniel Smidstrup, daniellaunches.com, 14.8K followers): https://x.com/DanielSmidstrup
+- 16:47 reply #3 to @picconedoro (https://x.com/picconedoro/status/2123884336277549123): https://x.com/monholtco/status/2124077018639937982
+- 16:47 skipped reply #2 to @richontech: the Settings path is not confirmed on iOS 27
+- 16:47 follow 8/10 @Guronnimo (Jeroen van Welsenes, 5,058 followers): https://x.com/Guronnimo
+- 16:49 follow 9/10 @sl1ma4 (Artem, founder of uptimepage.dev, 3,290 followers): https://x.com/sl1ma4
+- 16:50 follow 10/10 @PitchProtocol (Pitch Protocol, 354 followers): https://x.com/PitchProtocol
+- 16:57 reply #4 to @JustinasRoland0 (https://x.com/JustinasRoland0/status/2123910694542172389): https://x.com/monholtco/status/2124079806493135273
+- 16:59 original, Undirect ("Safari's Block Pop-ups setting has one exception...", link undirect.matsuokengo.com on its last line, 274/280): scheduled for Sat 2026-11-21 21:30 WIB (banner "Will send on Sat, Nov 21, 2026 at 9:30 PM")
+- 17:00 original, Cutling ("Safari AutoFill puts your address into checkout forms...", link cutling.matsuokengo.com on its last line, 270/280): scheduled for Sun 2026-11-22 01:00 WIB (banner "Will send on Sun, Nov 22, 2026 at 1:00 AM")
+- 17:00 both originals confirmed in Unsent posts > Scheduled (Nov 21 9:30 PM, Nov 22 1:00 AM, beside the Nov 27 8:15 PM Arabic quote)
+- 17:08 reply #5 to @Copypaster3000 (https://x.com/Copypaster3000/status/2123908200772898918; the post now also names Michael Tsai's list and Apps.Deals, still no MacBase or MacPip): https://x.com/monholtco/status/2124082518249050360
+- 17:18 reply #6 to @rashem48 (https://x.com/rashem48/status/2124035834424721681): https://x.com/monholtco/status/2124085055484240025
+
+| 2026-11-21 17:20 WIB | X @monholtco | Debut post, pinned: "Hey, I just started Monholt, a small studio making apps that do exactly what they say..." | https://x.com/monholtco/status/2124085365057389008 |
