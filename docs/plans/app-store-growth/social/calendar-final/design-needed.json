@@ -1,0 +1,7329 @@
+{
+ "meta": {
+  "built": "2026-11-21T15:34:46.033Z",
+  "rule": "Rows here have no finished media for their platform and language. Design is Fable's; this file only lists what is missing and why."
+ },
+ "new_media": [],
+ "localized_media": [
+  {
+   "file": "P03/story-1.png",
+   "rows": [
+    {
+     "id": "P03-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-11-23 05:47"
+    },
+    {
+     "id": "P03-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-11-25 07:32"
+    },
+    {
+     "id": "P03-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, poll sticker",
+     "lang": "ja",
+     "wib": "2026-11-28 05:45"
+    },
+    {
+     "id": "P03-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, poll sticker",
+     "lang": "id",
+     "wib": "2026-11-29 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P03/story-2.png",
+   "rows": [
+    {
+     "id": "P03-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-11-23 05:47"
+    },
+    {
+     "id": "P03-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-11-25 07:32"
+    },
+    {
+     "id": "P03-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, poll sticker",
+     "lang": "ja",
+     "wib": "2026-11-28 05:45"
+    },
+    {
+     "id": "P03-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, poll sticker",
+     "lang": "id",
+     "wib": "2026-11-29 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u1.mp4",
+   "rows": [
+    {
+     "id": "P01-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-11-23 10:15"
+    },
+    {
+     "id": "P01-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-11-23 10:19"
+    },
+    {
+     "id": "P01-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-11-23 10:20"
+    },
+    {
+     "id": "P01-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-11-25 12:15"
+    },
+    {
+     "id": "P01-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-11-25 12:19"
+    },
+    {
+     "id": "P01-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-11-25 12:20"
+    },
+    {
+     "id": "P01-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-11-28 10:17"
+    },
+    {
+     "id": "P01-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-11-29 12:17"
+    },
+    {
+     "id": "P13-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-07 10:15"
+    },
+    {
+     "id": "P13-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-07 10:17"
+    },
+    {
+     "id": "P13-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-07 10:19"
+    },
+    {
+     "id": "P13-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-07 10:20"
+    },
+    {
+     "id": "P13-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-09 12:15"
+    },
+    {
+     "id": "P13-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-09 12:17"
+    },
+    {
+     "id": "P13-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-09 12:19"
+    },
+    {
+     "id": "P13-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-09 12:20"
+    },
+    {
+     "id": "P80-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-10 19:15"
+    },
+    {
+     "id": "P80-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-10 19:17"
+    },
+    {
+     "id": "P80-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-10 19:19"
+    },
+    {
+     "id": "P80-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-10 19:20"
+    },
+    {
+     "id": "P80-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-11 19:30"
+    },
+    {
+     "id": "P80-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-11 19:32"
+    },
+    {
+     "id": "P80-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-11 19:34"
+    },
+    {
+     "id": "P80-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-11 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P09/story-1.png",
+   "rows": [
+    {
+     "id": "P09-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, link sticker",
+     "lang": "ja",
+     "wib": "2026-11-24 19:15"
+    },
+    {
+     "id": "P09-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-11-24 19:17"
+    },
+    {
+     "id": "P09-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, link sticker",
+     "lang": "id",
+     "wib": "2026-11-24 19:30"
+    },
+    {
+     "id": "P09-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-11-24 19:32"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P09/card-tt.png",
+   "rows": [
+    {
+     "id": "P09-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-11-24 19:20"
+    },
+    {
+     "id": "P09-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-11-24 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "_assets/tt-end-Cutling.png",
+   "rows": [
+    {
+     "id": "P09-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-11-24 19:20"
+    },
+    {
+     "id": "P09-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-11-24 19:35"
+    },
+    {
+     "id": "P08-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-03 19:20"
+    },
+    {
+     "id": "P08-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-04 19:35"
+    },
+    {
+     "id": "P12-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-06 05:50"
+    },
+    {
+     "id": "P12-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-07 07:35"
+    },
+    {
+     "id": "P16-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-11 10:20"
+    },
+    {
+     "id": "P16-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-12 12:20"
+    },
+    {
+     "id": "P21-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-15 05:50"
+    },
+    {
+     "id": "P21-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-16 07:35"
+    },
+    {
+     "id": "P23-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-17 19:20"
+    },
+    {
+     "id": "P23-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-18 19:35"
+    },
+    {
+     "id": "P25-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-19 10:20"
+    },
+    {
+     "id": "P25-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-20 12:20"
+    },
+    {
+     "id": "P40-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-02 10:20"
+    },
+    {
+     "id": "P40-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-03 12:20"
+    },
+    {
+     "id": "P44-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-06 19:20"
+    },
+    {
+     "id": "P44-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-07 19:35"
+    },
+    {
+     "id": "P51-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-12 05:50"
+    },
+    {
+     "id": "P51-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-13 07:35"
+    },
+    {
+     "id": "P55-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-16 10:20"
+    },
+    {
+     "id": "P55-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-17 12:20"
+    },
+    {
+     "id": "P65-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-26 19:20"
+    },
+    {
+     "id": "P65-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-27 19:35"
+    },
+    {
+     "id": "P69-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-30 05:50"
+    },
+    {
+     "id": "P69-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-31 07:35"
+    },
+    {
+     "id": "P73-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-03 10:20"
+    },
+    {
+     "id": "P73-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-04 12:20"
+    },
+    {
+     "id": "P77-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-07 19:20"
+    },
+    {
+     "id": "P77-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-08 19:35"
+    },
+    {
+     "id": "P87-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-17 05:50"
+    },
+    {
+     "id": "P87-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-18 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P05/ig-1.png",
+   "rows": [
+    {
+     "id": "P05-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2026-11-25 19:15"
+    },
+    {
+     "id": "P05-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-11-25 19:17"
+    },
+    {
+     "id": "P05-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2026-11-26 19:30"
+    },
+    {
+     "id": "P05-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-11-26 19:32"
+    },
+    {
+     "id": "P05-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2026-11-29 19:19"
+    },
+    {
+     "id": "P05-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2026-12-01 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-address.mp4",
+   "rows": [
+    {
+     "id": "P02-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-11-25 19:19"
+    },
+    {
+     "id": "P02-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-11-25 19:20"
+    },
+    {
+     "id": "P02-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-11-26 19:15"
+    },
+    {
+     "id": "P02-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-11-26 19:34"
+    },
+    {
+     "id": "P02-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-11-26 19:35"
+    },
+    {
+     "id": "P02-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-11-28 19:30"
+    },
+    {
+     "id": "P02-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-11-29 19:17"
+    },
+    {
+     "id": "P06-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-01 05:50"
+    },
+    {
+     "id": "P02-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-01 19:32"
+    },
+    {
+     "id": "P06-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-02 07:35"
+    },
+    {
+     "id": "P30-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-23 05:45"
+    },
+    {
+     "id": "P30-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-23 05:47"
+    },
+    {
+     "id": "P30-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-23 05:49"
+    },
+    {
+     "id": "P30-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-23 05:50"
+    },
+    {
+     "id": "P30-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-24 07:30"
+    },
+    {
+     "id": "P30-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-24 07:32"
+    },
+    {
+     "id": "P30-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-24 07:34"
+    },
+    {
+     "id": "P30-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-24 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P06/story-1.png",
+   "rows": [
+    {
+     "id": "P06-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-11-26 05:47"
+    },
+    {
+     "id": "P06-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-11-28 07:32"
+    },
+    {
+     "id": "P06-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, add yours sticker",
+     "lang": "ja",
+     "wib": "2026-12-01 05:45"
+    },
+    {
+     "id": "P06-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, add yours sticker",
+     "lang": "id",
+     "wib": "2026-12-02 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P06/story-2.png",
+   "rows": [
+    {
+     "id": "P06-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-11-26 05:47"
+    },
+    {
+     "id": "P06-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-11-28 07:32"
+    },
+    {
+     "id": "P06-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, add yours sticker",
+     "lang": "ja",
+     "wib": "2026-12-01 05:45"
+    },
+    {
+     "id": "P06-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, add yours sticker",
+     "lang": "id",
+     "wib": "2026-12-02 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P03/u1-short-first6s.mp4",
+   "rows": [
+    {
+     "id": "P03-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-11-26 05:50"
+    },
+    {
+     "id": "P03-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-11-28 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P17/sale-undirect-ig.png",
+   "rows": [
+    {
+     "id": "P17-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-11-27 19:15"
+    },
+    {
+     "id": "P17-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-11-27 19:17"
+    },
+    {
+     "id": "P17-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-11-27 19:19"
+    },
+    {
+     "id": "P17-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-11-27 19:30"
+    },
+    {
+     "id": "P17-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-11-27 19:32"
+    },
+    {
+     "id": "P17-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-11-27 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P17/sale-cutling-ig.png",
+   "rows": [
+    {
+     "id": "P17-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-11-27 19:15"
+    },
+    {
+     "id": "P17-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-11-27 19:17"
+    },
+    {
+     "id": "P17-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-11-27 19:19"
+    },
+    {
+     "id": "P17-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-11-27 19:30"
+    },
+    {
+     "id": "P17-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-11-27 19:32"
+    },
+    {
+     "id": "P17-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-11-27 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P17/sale-undirect-tt.png",
+   "rows": [
+    {
+     "id": "P17-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-11-27 19:20"
+    },
+    {
+     "id": "P17-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-11-27 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P17/sale-cutling-tt.png",
+   "rows": [
+    {
+     "id": "P17-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-11-27 19:20"
+    },
+    {
+     "id": "P17-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-11-27 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-email.mp4",
+   "rows": [
+    {
+     "id": "P04-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-11-28 10:19"
+    },
+    {
+     "id": "P04-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-11-28 10:20"
+    },
+    {
+     "id": "P04-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-11-29 10:15"
+    },
+    {
+     "id": "P04-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-11-29 12:19"
+    },
+    {
+     "id": "P04-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-11-29 12:20"
+    },
+    {
+     "id": "P04-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-01 10:17"
+    },
+    {
+     "id": "P04-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-01 12:15"
+    },
+    {
+     "id": "P04-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-02 12:17"
+    },
+    {
+     "id": "P79-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-09 10:15"
+    },
+    {
+     "id": "P79-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-09 10:17"
+    },
+    {
+     "id": "P79-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-09 10:19"
+    },
+    {
+     "id": "P79-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-09 10:20"
+    },
+    {
+     "id": "P79-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-10 12:15"
+    },
+    {
+     "id": "P79-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-10 12:17"
+    },
+    {
+     "id": "P79-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-10 12:19"
+    },
+    {
+     "id": "P79-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-10 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P05/tt-1.png",
+   "rows": [
+    {
+     "id": "P05-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-11-29 19:20"
+    },
+    {
+     "id": "P05-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-01 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "_assets/tt-end-Undirect.png",
+   "rows": [
+    {
+     "id": "P05-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-11-29 19:20"
+    },
+    {
+     "id": "P26-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-11-30 19:20"
+    },
+    {
+     "id": "P26-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-11-30 19:35"
+    },
+    {
+     "id": "P05-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-01 19:35"
+    },
+    {
+     "id": "P50-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-08 19:20"
+    },
+    {
+     "id": "P50-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-08 19:35"
+    },
+    {
+     "id": "P18-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-12 05:50"
+    },
+    {
+     "id": "P18-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-13 07:35"
+    },
+    {
+     "id": "P20-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:20"
+    },
+    {
+     "id": "P20-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:35"
+    },
+    {
+     "id": "P22-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-16 10:20"
+    },
+    {
+     "id": "P22-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-17 12:20"
+    },
+    {
+     "id": "P27-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:50"
+    },
+    {
+     "id": "P27-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:35"
+    },
+    {
+     "id": "P29-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-22 19:20"
+    },
+    {
+     "id": "P29-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-23 19:35"
+    },
+    {
+     "id": "P39-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-01 05:50"
+    },
+    {
+     "id": "P39-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-02 07:35"
+    },
+    {
+     "id": "P47-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-09 19:20"
+    },
+    {
+     "id": "P47-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-10 19:35"
+    },
+    {
+     "id": "P58-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-19 10:20"
+    },
+    {
+     "id": "P58-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-20 12:20"
+    },
+    {
+     "id": "P66-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-27 05:50"
+    },
+    {
+     "id": "P66-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-28 07:35"
+    },
+    {
+     "id": "P72-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-02 05:50"
+    },
+    {
+     "id": "P72-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-03 07:35"
+    },
+    {
+     "id": "P78-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-08 05:50"
+    },
+    {
+     "id": "P78-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-09 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P26/story-1.png",
+   "rows": [
+    {
+     "id": "P26-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, link sticker",
+     "lang": "ja",
+     "wib": "2026-11-30 19:15"
+    },
+    {
+     "id": "P26-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-11-30 19:17"
+    },
+    {
+     "id": "P26-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, link sticker",
+     "lang": "id",
+     "wib": "2026-11-30 19:30"
+    },
+    {
+     "id": "P26-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-11-30 19:32"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P26/card-tt.png",
+   "rows": [
+    {
+     "id": "P26-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-11-30 19:20"
+    },
+    {
+     "id": "P26-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-11-30 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u2-short.mp4",
+   "rows": [
+    {
+     "id": "P07-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-02 10:15"
+    },
+    {
+     "id": "P07-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-02 10:17"
+    },
+    {
+     "id": "P07-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-02 10:19"
+    },
+    {
+     "id": "P07-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-02 10:20"
+    },
+    {
+     "id": "P07-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-03 12:15"
+    },
+    {
+     "id": "P07-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-03 12:17"
+    },
+    {
+     "id": "P07-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-03 12:19"
+    },
+    {
+     "id": "P07-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-03 12:20"
+    },
+    {
+     "id": "P43-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-05 10:15"
+    },
+    {
+     "id": "P43-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-05 10:17"
+    },
+    {
+     "id": "P43-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-05 10:19"
+    },
+    {
+     "id": "P43-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-05 10:20"
+    },
+    {
+     "id": "P43-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-06 12:15"
+    },
+    {
+     "id": "P43-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-06 12:17"
+    },
+    {
+     "id": "P43-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-06 12:19"
+    },
+    {
+     "id": "P43-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-06 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P08/ig-1.png",
+   "rows": [
+    {
+     "id": "P08-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2026-12-03 19:15"
+    },
+    {
+     "id": "P08-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-12-03 19:17"
+    },
+    {
+     "id": "P08-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2026-12-03 19:19"
+    },
+    {
+     "id": "P08-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2026-12-04 19:30"
+    },
+    {
+     "id": "P08-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-12-04 19:32"
+    },
+    {
+     "id": "P08-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2026-12-04 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P08/tt-1.png",
+   "rows": [
+    {
+     "id": "P08-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-03 19:20"
+    },
+    {
+     "id": "P08-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-04 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-android.mp4",
+   "rows": [
+    {
+     "id": "P10-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-04 10:15"
+    },
+    {
+     "id": "P10-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-04 10:17"
+    },
+    {
+     "id": "P10-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-04 10:19"
+    },
+    {
+     "id": "P10-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-04 10:20"
+    },
+    {
+     "id": "P10-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-05 12:15"
+    },
+    {
+     "id": "P10-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-05 12:17"
+    },
+    {
+     "id": "P10-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-05 12:19"
+    },
+    {
+     "id": "P10-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-05 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u-mac.mp4",
+   "rows": [
+    {
+     "id": "P11-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-05 19:15"
+    },
+    {
+     "id": "P11-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-05 19:17"
+    },
+    {
+     "id": "P11-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-05 19:19"
+    },
+    {
+     "id": "P11-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-05 19:20"
+    },
+    {
+     "id": "P11-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-06 19:30"
+    },
+    {
+     "id": "P11-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-06 19:32"
+    },
+    {
+     "id": "P11-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-06 19:34"
+    },
+    {
+     "id": "P11-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-06 19:35"
+    },
+    {
+     "id": "P64-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-25 10:15"
+    },
+    {
+     "id": "P64-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-25 10:17"
+    },
+    {
+     "id": "P64-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-25 10:19"
+    },
+    {
+     "id": "P64-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-25 10:20"
+    },
+    {
+     "id": "P64-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-26 12:15"
+    },
+    {
+     "id": "P64-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-26 12:17"
+    },
+    {
+     "id": "P64-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-26 12:19"
+    },
+    {
+     "id": "P64-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-26 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P12/ig-1.png",
+   "rows": [
+    {
+     "id": "P12-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2026-12-06 05:45"
+    },
+    {
+     "id": "P12-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-12-06 05:47"
+    },
+    {
+     "id": "P12-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2026-12-06 05:49"
+    },
+    {
+     "id": "P12-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2026-12-07 07:30"
+    },
+    {
+     "id": "P12-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-12-07 07:32"
+    },
+    {
+     "id": "P12-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2026-12-07 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P12/tt-1.png",
+   "rows": [
+    {
+     "id": "P12-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-06 05:50"
+    },
+    {
+     "id": "P12-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-07 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P50/story-1.png",
+   "rows": [
+    {
+     "id": "P50-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, link sticker",
+     "lang": "ja",
+     "wib": "2026-12-08 19:15"
+    },
+    {
+     "id": "P50-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-12-08 19:17"
+    },
+    {
+     "id": "P50-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, link sticker",
+     "lang": "id",
+     "wib": "2026-12-08 19:30"
+    },
+    {
+     "id": "P50-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-12-08 19:32"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P50/card-tt.png",
+   "rows": [
+    {
+     "id": "P50-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-08 19:20"
+    },
+    {
+     "id": "P50-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-08 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-sync.mp4",
+   "rows": [
+    {
+     "id": "P14-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-09 19:15"
+    },
+    {
+     "id": "P14-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-09 19:17"
+    },
+    {
+     "id": "P14-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-09 19:19"
+    },
+    {
+     "id": "P14-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-09 19:20"
+    },
+    {
+     "id": "P14-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-10 19:30"
+    },
+    {
+     "id": "P14-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-10 19:32"
+    },
+    {
+     "id": "P14-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-10 19:34"
+    },
+    {
+     "id": "P14-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-10 19:35"
+    },
+    {
+     "id": "P57-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-18 05:45"
+    },
+    {
+     "id": "P57-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-18 05:47"
+    },
+    {
+     "id": "P57-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-18 05:49"
+    },
+    {
+     "id": "P57-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-18 05:50"
+    },
+    {
+     "id": "P57-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-19 07:30"
+    },
+    {
+     "id": "P57-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-19 07:32"
+    },
+    {
+     "id": "P57-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-19 07:34"
+    },
+    {
+     "id": "P57-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-19 07:35"
+    },
+    {
+     "id": "P75-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-05 05:45"
+    },
+    {
+     "id": "P75-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-05 05:47"
+    },
+    {
+     "id": "P75-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-05 05:49"
+    },
+    {
+     "id": "P75-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-05 05:50"
+    },
+    {
+     "id": "P75-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-06 07:30"
+    },
+    {
+     "id": "P75-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-06 07:32"
+    },
+    {
+     "id": "P75-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-06 07:34"
+    },
+    {
+     "id": "P75-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-06 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P15/story-1.png",
+   "rows": [
+    {
+     "id": "P15-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, quiz sticker",
+     "lang": "ja",
+     "wib": "2026-12-10 05:45"
+    },
+    {
+     "id": "P15-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, quiz sticker",
+     "lang": "id",
+     "wib": "2026-12-11 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P15/story-2.png",
+   "rows": [
+    {
+     "id": "P15-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, quiz sticker",
+     "lang": "ja",
+     "wib": "2026-12-10 05:45"
+    },
+    {
+     "id": "P15-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, quiz sticker",
+     "lang": "id",
+     "wib": "2026-12-11 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u2.mp4",
+   "rows": [
+    {
+     "id": "P15-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-10 05:50"
+    },
+    {
+     "id": "P15-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-11 07:35"
+    },
+    {
+     "id": "P31-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-24 10:15"
+    },
+    {
+     "id": "P31-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-24 10:17"
+    },
+    {
+     "id": "P31-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-24 10:19"
+    },
+    {
+     "id": "P31-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-24 10:20"
+    },
+    {
+     "id": "P31-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-25 12:15"
+    },
+    {
+     "id": "P31-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-25 12:17"
+    },
+    {
+     "id": "P31-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-25 12:19"
+    },
+    {
+     "id": "P31-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-25 12:20"
+    },
+    {
+     "id": "P86-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-16 19:15"
+    },
+    {
+     "id": "P86-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-16 19:17"
+    },
+    {
+     "id": "P86-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-16 19:19"
+    },
+    {
+     "id": "P86-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-16 19:20"
+    },
+    {
+     "id": "P86-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-17 19:30"
+    },
+    {
+     "id": "P86-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-17 19:32"
+    },
+    {
+     "id": "P86-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-17 19:34"
+    },
+    {
+     "id": "P86-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-17 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P16/ig-1.png",
+   "rows": [
+    {
+     "id": "P16-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2026-12-11 10:15"
+    },
+    {
+     "id": "P16-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-12-11 10:17"
+    },
+    {
+     "id": "P16-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2026-12-11 10:19"
+    },
+    {
+     "id": "P16-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2026-12-12 12:15"
+    },
+    {
+     "id": "P16-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-12-12 12:17"
+    },
+    {
+     "id": "P16-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2026-12-12 12:19"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P16/tt-1.png",
+   "rows": [
+    {
+     "id": "P16-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-11 10:20"
+    },
+    {
+     "id": "P16-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-12 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P18/card-ig.png",
+   "rows": [
+    {
+     "id": "P18-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Text post (text card)",
+     "lang": "ja",
+     "wib": "2026-12-12 05:45"
+    },
+    {
+     "id": "P18-id-Instagram",
+     "platform": "Instagram",
+     "format": "Text post (text card)",
+     "lang": "id",
+     "wib": "2026-12-13 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P18/card-tt.png",
+   "rows": [
+    {
+     "id": "P18-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-12 05:50"
+    },
+    {
+     "id": "P18-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-13 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P19/story-1.png",
+   "rows": [
+    {
+     "id": "P19-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "ja",
+     "wib": "2026-12-13 10:15"
+    },
+    {
+     "id": "P19-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-12-13 10:17"
+    },
+    {
+     "id": "P19-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "id",
+     "wib": "2026-12-14 12:15"
+    },
+    {
+     "id": "P19-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-12-14 12:17"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P19/story-2.png",
+   "rows": [
+    {
+     "id": "P19-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "ja",
+     "wib": "2026-12-13 10:15"
+    },
+    {
+     "id": "P19-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-12-13 10:17"
+    },
+    {
+     "id": "P19-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "id",
+     "wib": "2026-12-14 12:15"
+    },
+    {
+     "id": "P19-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-12-14 12:17"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P19/cutling-android-no-endcard.mp4",
+   "rows": [
+    {
+     "id": "P19-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-13 10:20"
+    },
+    {
+     "id": "P19-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-14 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/ig-1.png",
+   "rows": [
+    {
+     "id": "P20-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:15"
+    },
+    {
+     "id": "P20-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:17"
+    },
+    {
+     "id": "P20-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:19"
+    },
+    {
+     "id": "P20-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:30"
+    },
+    {
+     "id": "P20-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:32"
+    },
+    {
+     "id": "P20-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/ig-2.png",
+   "rows": [
+    {
+     "id": "P20-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:15"
+    },
+    {
+     "id": "P20-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:17"
+    },
+    {
+     "id": "P20-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:19"
+    },
+    {
+     "id": "P20-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:30"
+    },
+    {
+     "id": "P20-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:32"
+    },
+    {
+     "id": "P20-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/ig-3.png",
+   "rows": [
+    {
+     "id": "P20-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:15"
+    },
+    {
+     "id": "P20-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:17"
+    },
+    {
+     "id": "P20-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:19"
+    },
+    {
+     "id": "P20-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:30"
+    },
+    {
+     "id": "P20-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:32"
+    },
+    {
+     "id": "P20-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/ig-4.png",
+   "rows": [
+    {
+     "id": "P20-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:15"
+    },
+    {
+     "id": "P20-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:17"
+    },
+    {
+     "id": "P20-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:19"
+    },
+    {
+     "id": "P20-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:30"
+    },
+    {
+     "id": "P20-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:32"
+    },
+    {
+     "id": "P20-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/ig-5.png",
+   "rows": [
+    {
+     "id": "P20-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:15"
+    },
+    {
+     "id": "P20-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:17"
+    },
+    {
+     "id": "P20-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:19"
+    },
+    {
+     "id": "P20-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:30"
+    },
+    {
+     "id": "P20-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:32"
+    },
+    {
+     "id": "P20-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/tt-1.png",
+   "rows": [
+    {
+     "id": "P20-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:20"
+    },
+    {
+     "id": "P20-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/tt-2.png",
+   "rows": [
+    {
+     "id": "P20-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:20"
+    },
+    {
+     "id": "P20-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/tt-3.png",
+   "rows": [
+    {
+     "id": "P20-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:20"
+    },
+    {
+     "id": "P20-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/tt-4.png",
+   "rows": [
+    {
+     "id": "P20-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:20"
+    },
+    {
+     "id": "P20-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P20/tt-5.png",
+   "rows": [
+    {
+     "id": "P20-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-14 19:20"
+    },
+    {
+     "id": "P20-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-15 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P21/card-ig.png",
+   "rows": [
+    {
+     "id": "P21-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Text post (text card)",
+     "lang": "ja",
+     "wib": "2026-12-15 05:45"
+    },
+    {
+     "id": "P21-id-Instagram",
+     "platform": "Instagram",
+     "format": "Text post (text card)",
+     "lang": "id",
+     "wib": "2026-12-16 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P21/card-tt.png",
+   "rows": [
+    {
+     "id": "P21-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-15 05:50"
+    },
+    {
+     "id": "P21-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-16 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P22/card-ig.png",
+   "rows": [
+    {
+     "id": "P22-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Text post (text card)",
+     "lang": "ja",
+     "wib": "2026-12-16 10:15"
+    },
+    {
+     "id": "P22-id-Instagram",
+     "platform": "Instagram",
+     "format": "Text post (text card)",
+     "lang": "id",
+     "wib": "2026-12-17 12:15"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P22/card-tt.png",
+   "rows": [
+    {
+     "id": "P22-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-16 10:20"
+    },
+    {
+     "id": "P22-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-17 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P23/ig-1.png",
+   "rows": [
+    {
+     "id": "P23-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2026-12-17 19:15"
+    },
+    {
+     "id": "P23-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-12-17 19:17"
+    },
+    {
+     "id": "P23-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2026-12-17 19:19"
+    },
+    {
+     "id": "P23-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2026-12-18 19:30"
+    },
+    {
+     "id": "P23-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-12-18 19:32"
+    },
+    {
+     "id": "P23-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2026-12-18 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P23/tt-1.png",
+   "rows": [
+    {
+     "id": "P23-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-17 19:20"
+    },
+    {
+     "id": "P23-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-18 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P24/story-1.png",
+   "rows": [
+    {
+     "id": "P24-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, quiz sticker",
+     "lang": "ja",
+     "wib": "2026-12-18 05:45"
+    },
+    {
+     "id": "P24-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, quiz sticker",
+     "lang": "id",
+     "wib": "2026-12-19 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P24/story-2.png",
+   "rows": [
+    {
+     "id": "P24-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, quiz sticker",
+     "lang": "ja",
+     "wib": "2026-12-18 05:45"
+    },
+    {
+     "id": "P24-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, quiz sticker",
+     "lang": "id",
+     "wib": "2026-12-19 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P24/u2-short-first6s.mp4",
+   "rows": [
+    {
+     "id": "P24-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-18 05:50"
+    },
+    {
+     "id": "P24-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-19 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P25/ig-1.png",
+   "rows": [
+    {
+     "id": "P25-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2026-12-19 10:15"
+    },
+    {
+     "id": "P25-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-12-19 10:17"
+    },
+    {
+     "id": "P25-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2026-12-19 10:19"
+    },
+    {
+     "id": "P25-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2026-12-20 12:15"
+    },
+    {
+     "id": "P25-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-12-20 12:17"
+    },
+    {
+     "id": "P25-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2026-12-20 12:19"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P25/tt-1.png",
+   "rows": [
+    {
+     "id": "P25-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-19 10:20"
+    },
+    {
+     "id": "P25-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-20 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P27/ig-1.png",
+   "rows": [
+    {
+     "id": "P27-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:45"
+    },
+    {
+     "id": "P27-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:47"
+    },
+    {
+     "id": "P27-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:49"
+    },
+    {
+     "id": "P27-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:30"
+    },
+    {
+     "id": "P27-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:32"
+    },
+    {
+     "id": "P27-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P27/ig-2.png",
+   "rows": [
+    {
+     "id": "P27-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:45"
+    },
+    {
+     "id": "P27-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:47"
+    },
+    {
+     "id": "P27-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:49"
+    },
+    {
+     "id": "P27-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:30"
+    },
+    {
+     "id": "P27-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:32"
+    },
+    {
+     "id": "P27-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P27/ig-3.png",
+   "rows": [
+    {
+     "id": "P27-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:45"
+    },
+    {
+     "id": "P27-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:47"
+    },
+    {
+     "id": "P27-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:49"
+    },
+    {
+     "id": "P27-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:30"
+    },
+    {
+     "id": "P27-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:32"
+    },
+    {
+     "id": "P27-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P27/ig-4.png",
+   "rows": [
+    {
+     "id": "P27-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:45"
+    },
+    {
+     "id": "P27-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:47"
+    },
+    {
+     "id": "P27-ja-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:49"
+    },
+    {
+     "id": "P27-id-Instagram",
+     "platform": "Instagram",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:30"
+    },
+    {
+     "id": "P27-id-Facebook",
+     "platform": "Facebook",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:32"
+    },
+    {
+     "id": "P27-id-Threads",
+     "platform": "Threads",
+     "format": "Carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P27/tt-1.png",
+   "rows": [
+    {
+     "id": "P27-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:50"
+    },
+    {
+     "id": "P27-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P27/tt-2.png",
+   "rows": [
+    {
+     "id": "P27-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:50"
+    },
+    {
+     "id": "P27-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P27/tt-3.png",
+   "rows": [
+    {
+     "id": "P27-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:50"
+    },
+    {
+     "id": "P27-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P27/tt-4.png",
+   "rows": [
+    {
+     "id": "P27-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-20 05:50"
+    },
+    {
+     "id": "P27-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-21 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P28/story-1.png",
+   "rows": [
+    {
+     "id": "P28-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "ja",
+     "wib": "2026-12-21 10:15"
+    },
+    {
+     "id": "P28-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-12-21 10:17"
+    },
+    {
+     "id": "P28-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "id",
+     "wib": "2026-12-22 12:15"
+    },
+    {
+     "id": "P28-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-12-22 12:17"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P28/story-2.png",
+   "rows": [
+    {
+     "id": "P28-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "ja",
+     "wib": "2026-12-21 10:15"
+    },
+    {
+     "id": "P28-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2026-12-21 10:17"
+    },
+    {
+     "id": "P28-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "id",
+     "wib": "2026-12-22 12:15"
+    },
+    {
+     "id": "P28-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2026-12-22 12:17"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P28/cutling-sync-no-endcard.mp4",
+   "rows": [
+    {
+     "id": "P28-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-21 10:20"
+    },
+    {
+     "id": "P28-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-22 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P29/ig-1.png",
+   "rows": [
+    {
+     "id": "P29-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2026-12-22 19:15"
+    },
+    {
+     "id": "P29-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2026-12-22 19:17"
+    },
+    {
+     "id": "P29-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2026-12-22 19:19"
+    },
+    {
+     "id": "P29-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2026-12-23 19:30"
+    },
+    {
+     "id": "P29-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2026-12-23 19:32"
+    },
+    {
+     "id": "P29-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2026-12-23 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P29/tt-1.png",
+   "rows": [
+    {
+     "id": "P29-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2026-12-22 19:20"
+    },
+    {
+     "id": "P29-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2026-12-23 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-share.mp4",
+   "rows": [
+    {
+     "id": "P32-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-25 19:15"
+    },
+    {
+     "id": "P32-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-25 19:17"
+    },
+    {
+     "id": "P32-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-25 19:19"
+    },
+    {
+     "id": "P32-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-25 19:20"
+    },
+    {
+     "id": "P32-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-26 19:30"
+    },
+    {
+     "id": "P32-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-26 19:32"
+    },
+    {
+     "id": "P32-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-26 19:34"
+    },
+    {
+     "id": "P32-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-26 19:35"
+    },
+    {
+     "id": "P71-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-01 19:15"
+    },
+    {
+     "id": "P71-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-01 19:17"
+    },
+    {
+     "id": "P71-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-01 19:19"
+    },
+    {
+     "id": "P71-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-01 19:20"
+    },
+    {
+     "id": "P71-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-02 19:30"
+    },
+    {
+     "id": "P71-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-02 19:32"
+    },
+    {
+     "id": "P71-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-02 19:34"
+    },
+    {
+     "id": "P71-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-02 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u-ipad.mp4",
+   "rows": [
+    {
+     "id": "P33-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-26 05:45"
+    },
+    {
+     "id": "P33-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-26 05:47"
+    },
+    {
+     "id": "P33-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-26 05:49"
+    },
+    {
+     "id": "P33-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-26 05:50"
+    },
+    {
+     "id": "P33-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-27 07:30"
+    },
+    {
+     "id": "P33-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-27 07:32"
+    },
+    {
+     "id": "P33-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-27 07:34"
+    },
+    {
+     "id": "P33-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-27 07:35"
+    },
+    {
+     "id": "P76-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-06 10:15"
+    },
+    {
+     "id": "P76-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-06 10:17"
+    },
+    {
+     "id": "P76-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-06 10:19"
+    },
+    {
+     "id": "P76-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-06 10:20"
+    },
+    {
+     "id": "P76-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-07 12:15"
+    },
+    {
+     "id": "P76-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-07 12:17"
+    },
+    {
+     "id": "P76-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-07 12:19"
+    },
+    {
+     "id": "P76-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-07 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-mac-history.mp4",
+   "rows": [
+    {
+     "id": "P34-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-27 10:15"
+    },
+    {
+     "id": "P34-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-27 10:17"
+    },
+    {
+     "id": "P34-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-27 10:19"
+    },
+    {
+     "id": "P34-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-27 10:20"
+    },
+    {
+     "id": "P34-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-28 12:15"
+    },
+    {
+     "id": "P34-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-28 12:17"
+    },
+    {
+     "id": "P34-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-28 12:19"
+    },
+    {
+     "id": "P34-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-28 12:20"
+    },
+    {
+     "id": "P36-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-29 05:50"
+    },
+    {
+     "id": "P36-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-30 07:35"
+    },
+    {
+     "id": "P63-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-24 05:45"
+    },
+    {
+     "id": "P63-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-24 05:47"
+    },
+    {
+     "id": "P63-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-24 05:49"
+    },
+    {
+     "id": "P63-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-24 05:50"
+    },
+    {
+     "id": "P63-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-25 07:30"
+    },
+    {
+     "id": "P63-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-25 07:32"
+    },
+    {
+     "id": "P63-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-25 07:34"
+    },
+    {
+     "id": "P63-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-25 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u-mac-short.mp4",
+   "rows": [
+    {
+     "id": "P35-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-28 19:15"
+    },
+    {
+     "id": "P35-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-28 19:17"
+    },
+    {
+     "id": "P35-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-28 19:19"
+    },
+    {
+     "id": "P35-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-28 19:20"
+    },
+    {
+     "id": "P35-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-29 19:30"
+    },
+    {
+     "id": "P35-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-29 19:32"
+    },
+    {
+     "id": "P35-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-29 19:34"
+    },
+    {
+     "id": "P35-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-29 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P36/story-1.png",
+   "rows": [
+    {
+     "id": "P36-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "ja",
+     "wib": "2026-12-29 05:45"
+    },
+    {
+     "id": "P36-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "id",
+     "wib": "2026-12-30 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P36/story-2.png",
+   "rows": [
+    {
+     "id": "P36-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "ja",
+     "wib": "2026-12-29 05:45"
+    },
+    {
+     "id": "P36-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "id",
+     "wib": "2026-12-30 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u1-short.mp4",
+   "rows": [
+    {
+     "id": "P37-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-30 10:15"
+    },
+    {
+     "id": "P37-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-30 10:17"
+    },
+    {
+     "id": "P37-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-30 10:19"
+    },
+    {
+     "id": "P37-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-30 10:20"
+    },
+    {
+     "id": "P37-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2026-12-31 12:15"
+    },
+    {
+     "id": "P37-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2026-12-31 12:17"
+    },
+    {
+     "id": "P37-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-31 12:19"
+    },
+    {
+     "id": "P37-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2026-12-31 12:20"
+    },
+    {
+     "id": "P68-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-29 19:20"
+    },
+    {
+     "id": "P68-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-30 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-email-short.mp4",
+   "rows": [
+    {
+     "id": "P38-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2026-12-31 19:15"
+    },
+    {
+     "id": "P38-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2026-12-31 19:17"
+    },
+    {
+     "id": "P38-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-31 19:19"
+    },
+    {
+     "id": "P38-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2026-12-31 19:20"
+    },
+    {
+     "id": "P38-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-01 19:30"
+    },
+    {
+     "id": "P38-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-01 19:32"
+    },
+    {
+     "id": "P38-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-01 19:34"
+    },
+    {
+     "id": "P38-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-01 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P39/ig-1.png",
+   "rows": [
+    {
+     "id": "P39-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-01 05:45"
+    },
+    {
+     "id": "P39-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-01 05:47"
+    },
+    {
+     "id": "P39-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-01 05:49"
+    },
+    {
+     "id": "P39-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-02 07:30"
+    },
+    {
+     "id": "P39-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-02 07:32"
+    },
+    {
+     "id": "P39-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-02 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P39/tt-1.png",
+   "rows": [
+    {
+     "id": "P39-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-01 05:50"
+    },
+    {
+     "id": "P39-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-02 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P40/ig-1.png",
+   "rows": [
+    {
+     "id": "P40-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-02 10:15"
+    },
+    {
+     "id": "P40-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-02 10:17"
+    },
+    {
+     "id": "P40-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-02 10:19"
+    },
+    {
+     "id": "P40-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-03 12:15"
+    },
+    {
+     "id": "P40-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-03 12:17"
+    },
+    {
+     "id": "P40-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-03 12:19"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P40/tt-1.png",
+   "rows": [
+    {
+     "id": "P40-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-02 10:20"
+    },
+    {
+     "id": "P40-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-03 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u-no-tap.mp4",
+   "rows": [
+    {
+     "id": "P41-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-03 19:15"
+    },
+    {
+     "id": "P41-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-03 19:17"
+    },
+    {
+     "id": "P41-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-03 19:19"
+    },
+    {
+     "id": "P41-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-03 19:20"
+    },
+    {
+     "id": "P41-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-04 19:30"
+    },
+    {
+     "id": "P41-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-04 19:32"
+    },
+    {
+     "id": "P41-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-04 19:34"
+    },
+    {
+     "id": "P41-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-04 19:35"
+    },
+    {
+     "id": "P82-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-12 10:15"
+    },
+    {
+     "id": "P82-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-12 10:17"
+    },
+    {
+     "id": "P82-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-12 10:19"
+    },
+    {
+     "id": "P82-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-12 10:20"
+    },
+    {
+     "id": "P82-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-13 12:15"
+    },
+    {
+     "id": "P82-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-13 12:17"
+    },
+    {
+     "id": "P82-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-13 12:19"
+    },
+    {
+     "id": "P82-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-13 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-android-short.mp4",
+   "rows": [
+    {
+     "id": "P42-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-04 05:45"
+    },
+    {
+     "id": "P42-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-04 05:47"
+    },
+    {
+     "id": "P42-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-04 05:49"
+    },
+    {
+     "id": "P42-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-04 05:50"
+    },
+    {
+     "id": "P42-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-05 07:30"
+    },
+    {
+     "id": "P42-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-05 07:32"
+    },
+    {
+     "id": "P42-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-05 07:34"
+    },
+    {
+     "id": "P42-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-05 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P44/card-ig.png",
+   "rows": [
+    {
+     "id": "P44-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Text post (text card)",
+     "lang": "ja",
+     "wib": "2027-01-06 19:15"
+    },
+    {
+     "id": "P44-id-Instagram",
+     "platform": "Instagram",
+     "format": "Text post (text card)",
+     "lang": "id",
+     "wib": "2027-01-07 19:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P44/card-tt.png",
+   "rows": [
+    {
+     "id": "P44-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-06 19:20"
+    },
+    {
+     "id": "P44-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-07 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u-back.mp4",
+   "rows": [
+    {
+     "id": "P45-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-07 05:45"
+    },
+    {
+     "id": "P45-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-07 05:47"
+    },
+    {
+     "id": "P45-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-07 05:49"
+    },
+    {
+     "id": "P45-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-07 05:50"
+    },
+    {
+     "id": "P45-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-08 07:30"
+    },
+    {
+     "id": "P45-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-08 07:32"
+    },
+    {
+     "id": "P45-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-08 07:34"
+    },
+    {
+     "id": "P45-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-08 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-mac-history-short.mp4",
+   "rows": [
+    {
+     "id": "P46-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-08 10:15"
+    },
+    {
+     "id": "P46-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-08 10:17"
+    },
+    {
+     "id": "P46-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-08 10:19"
+    },
+    {
+     "id": "P46-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-08 10:20"
+    },
+    {
+     "id": "P46-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-09 12:15"
+    },
+    {
+     "id": "P46-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-09 12:17"
+    },
+    {
+     "id": "P46-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-09 12:19"
+    },
+    {
+     "id": "P46-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-09 12:20"
+    },
+    {
+     "id": "P83-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-13 19:15"
+    },
+    {
+     "id": "P83-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-13 19:17"
+    },
+    {
+     "id": "P83-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-13 19:19"
+    },
+    {
+     "id": "P83-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-13 19:20"
+    },
+    {
+     "id": "P83-id-Instagram",
+     "platform": "Instagram",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-14 19:30"
+    },
+    {
+     "id": "P83-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-14 19:32"
+    },
+    {
+     "id": "P83-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-14 19:34"
+    },
+    {
+     "id": "P83-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-14 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P47/ig-1.png",
+   "rows": [
+    {
+     "id": "P47-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-09 19:15"
+    },
+    {
+     "id": "P47-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-09 19:17"
+    },
+    {
+     "id": "P47-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-09 19:19"
+    },
+    {
+     "id": "P47-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-10 19:30"
+    },
+    {
+     "id": "P47-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-10 19:32"
+    },
+    {
+     "id": "P47-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-10 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P47/tt-1.png",
+   "rows": [
+    {
+     "id": "P47-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-09 19:20"
+    },
+    {
+     "id": "P47-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-10 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P48/story-1.png",
+   "rows": [
+    {
+     "id": "P48-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "ja",
+     "wib": "2027-01-10 05:45"
+    },
+    {
+     "id": "P48-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2027-01-10 05:47"
+    },
+    {
+     "id": "P48-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "id",
+     "wib": "2027-01-11 07:30"
+    },
+    {
+     "id": "P48-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2027-01-11 07:32"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P48/story-2.png",
+   "rows": [
+    {
+     "id": "P48-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "ja",
+     "wib": "2027-01-10 05:45"
+    },
+    {
+     "id": "P48-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2027-01-10 05:47"
+    },
+    {
+     "id": "P48-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "id",
+     "wib": "2027-01-11 07:30"
+    },
+    {
+     "id": "P48-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2027-01-11 07:32"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-wifi-again.mp4",
+   "rows": [
+    {
+     "id": "P48-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-10 05:50"
+    },
+    {
+     "id": "P48-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-11 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-sync-short.mp4",
+   "rows": [
+    {
+     "id": "P49-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-11 10:15"
+    },
+    {
+     "id": "P49-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-11 10:17"
+    },
+    {
+     "id": "P49-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-11 10:19"
+    },
+    {
+     "id": "P49-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-11 10:20"
+    },
+    {
+     "id": "P49-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-12 12:15"
+    },
+    {
+     "id": "P49-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-12 12:17"
+    },
+    {
+     "id": "P49-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-12 12:19"
+    },
+    {
+     "id": "P49-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-12 12:20"
+    },
+    {
+     "id": "P81-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-11 05:50"
+    },
+    {
+     "id": "P81-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-12 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P51/ig-1.png",
+   "rows": [
+    {
+     "id": "P51-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-12 05:45"
+    },
+    {
+     "id": "P51-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-12 05:47"
+    },
+    {
+     "id": "P51-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-12 05:49"
+    },
+    {
+     "id": "P51-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-13 07:30"
+    },
+    {
+     "id": "P51-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-13 07:32"
+    },
+    {
+     "id": "P51-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-13 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P51/tt-1.png",
+   "rows": [
+    {
+     "id": "P51-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-12 05:50"
+    },
+    {
+     "id": "P51-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-13 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u-no-tap-short.mp4",
+   "rows": [
+    {
+     "id": "P52-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-13 10:15"
+    },
+    {
+     "id": "P52-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-13 10:17"
+    },
+    {
+     "id": "P52-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-13 10:19"
+    },
+    {
+     "id": "P52-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-13 10:20"
+    },
+    {
+     "id": "P52-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-14 12:15"
+    },
+    {
+     "id": "P52-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-14 12:17"
+    },
+    {
+     "id": "P52-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-14 12:19"
+    },
+    {
+     "id": "P52-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-14 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-address-short.mp4",
+   "rows": [
+    {
+     "id": "P53-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-14 19:15"
+    },
+    {
+     "id": "P53-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-14 19:17"
+    },
+    {
+     "id": "P53-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-14 19:19"
+    },
+    {
+     "id": "P53-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-14 19:20"
+    },
+    {
+     "id": "P53-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-15 19:30"
+    },
+    {
+     "id": "P53-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-15 19:32"
+    },
+    {
+     "id": "P53-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-15 19:34"
+    },
+    {
+     "id": "P53-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-15 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P54/story-1.png",
+   "rows": [
+    {
+     "id": "P54-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "ja",
+     "wib": "2027-01-15 05:45"
+    },
+    {
+     "id": "P54-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "id",
+     "wib": "2027-01-16 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P54/story-2.png",
+   "rows": [
+    {
+     "id": "P54-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "ja",
+     "wib": "2027-01-15 05:45"
+    },
+    {
+     "id": "P54-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, emoji slider sticker",
+     "lang": "id",
+     "wib": "2027-01-16 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P54/reply.mp4",
+   "rows": [
+    {
+     "id": "P54-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Reply to a comment",
+     "lang": "ja",
+     "wib": "2027-01-15 05:50"
+    },
+    {
+     "id": "P54-id-TikTok",
+     "platform": "TikTok",
+     "format": "Reply to a comment",
+     "lang": "id",
+     "wib": "2027-01-16 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P55/ig-1.png",
+   "rows": [
+    {
+     "id": "P55-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-16 10:15"
+    },
+    {
+     "id": "P55-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-16 10:17"
+    },
+    {
+     "id": "P55-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-16 10:19"
+    },
+    {
+     "id": "P55-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-17 12:15"
+    },
+    {
+     "id": "P55-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-17 12:17"
+    },
+    {
+     "id": "P55-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-17 12:19"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P55/tt-1.png",
+   "rows": [
+    {
+     "id": "P55-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-16 10:20"
+    },
+    {
+     "id": "P55-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-17 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u-ipad-short.mp4",
+   "rows": [
+    {
+     "id": "P56-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-17 19:15"
+    },
+    {
+     "id": "P56-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-17 19:17"
+    },
+    {
+     "id": "P56-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-17 19:19"
+    },
+    {
+     "id": "P56-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-17 19:20"
+    },
+    {
+     "id": "P56-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-18 19:30"
+    },
+    {
+     "id": "P56-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-18 19:32"
+    },
+    {
+     "id": "P56-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-18 19:34"
+    },
+    {
+     "id": "P56-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-18 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P58/ig-1.png",
+   "rows": [
+    {
+     "id": "P58-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-19 10:15"
+    },
+    {
+     "id": "P58-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-19 10:17"
+    },
+    {
+     "id": "P58-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-19 10:19"
+    },
+    {
+     "id": "P58-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-20 12:15"
+    },
+    {
+     "id": "P58-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-20 12:17"
+    },
+    {
+     "id": "P58-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-20 12:19"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P58/tt-1.png",
+   "rows": [
+    {
+     "id": "P58-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-19 10:20"
+    },
+    {
+     "id": "P58-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-20 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-miss-android.mp4",
+   "rows": [
+    {
+     "id": "P59-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-20 19:15"
+    },
+    {
+     "id": "P59-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-20 19:17"
+    },
+    {
+     "id": "P59-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-20 19:19"
+    },
+    {
+     "id": "P59-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-20 19:20"
+    },
+    {
+     "id": "P59-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-21 19:30"
+    },
+    {
+     "id": "P59-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-21 19:32"
+    },
+    {
+     "id": "P59-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-21 19:34"
+    },
+    {
+     "id": "P59-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-21 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/AdPov.mp4",
+   "rows": [
+    {
+     "id": "P60-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-21 05:45"
+    },
+    {
+     "id": "P60-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-21 05:47"
+    },
+    {
+     "id": "P60-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-21 05:49"
+    },
+    {
+     "id": "P60-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-21 05:50"
+    },
+    {
+     "id": "P60-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-22 07:30"
+    },
+    {
+     "id": "P60-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-22 07:32"
+    },
+    {
+     "id": "P60-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-22 07:34"
+    },
+    {
+     "id": "P60-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-22 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P61/story-1.png",
+   "rows": [
+    {
+     "id": "P61-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "ja",
+     "wib": "2027-01-22 10:15"
+    },
+    {
+     "id": "P61-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2027-01-22 10:17"
+    },
+    {
+     "id": "P61-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "id",
+     "wib": "2027-01-23 12:15"
+    },
+    {
+     "id": "P61-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2027-01-23 12:17"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P61/story-2.png",
+   "rows": [
+    {
+     "id": "P61-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "ja",
+     "wib": "2027-01-22 10:15"
+    },
+    {
+     "id": "P61-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2027-01-22 10:17"
+    },
+    {
+     "id": "P61-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "id",
+     "wib": "2027-01-23 12:15"
+    },
+    {
+     "id": "P61-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2027-01-23 12:17"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P61/reply.mp4",
+   "rows": [
+    {
+     "id": "P61-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Reply to a comment",
+     "lang": "ja",
+     "wib": "2027-01-22 10:20"
+    },
+    {
+     "id": "P61-id-TikTok",
+     "platform": "TikTok",
+     "format": "Reply to a comment",
+     "lang": "id",
+     "wib": "2027-01-23 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/Quiz.mp4",
+   "rows": [
+    {
+     "id": "P62-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-23 19:15"
+    },
+    {
+     "id": "P62-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-23 19:17"
+    },
+    {
+     "id": "P62-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-23 19:19"
+    },
+    {
+     "id": "P62-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-23 19:20"
+    },
+    {
+     "id": "P62-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-24 19:30"
+    },
+    {
+     "id": "P62-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-24 19:32"
+    },
+    {
+     "id": "P62-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-24 19:34"
+    },
+    {
+     "id": "P62-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-24 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P65/ig-1.png",
+   "rows": [
+    {
+     "id": "P65-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-26 19:15"
+    },
+    {
+     "id": "P65-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-26 19:17"
+    },
+    {
+     "id": "P65-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-26 19:19"
+    },
+    {
+     "id": "P65-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-27 19:30"
+    },
+    {
+     "id": "P65-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-27 19:32"
+    },
+    {
+     "id": "P65-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-27 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P65/tt-1.png",
+   "rows": [
+    {
+     "id": "P65-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-26 19:20"
+    },
+    {
+     "id": "P65-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-27 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P66/ig-1.png",
+   "rows": [
+    {
+     "id": "P66-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-27 05:45"
+    },
+    {
+     "id": "P66-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-27 05:47"
+    },
+    {
+     "id": "P66-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-27 05:49"
+    },
+    {
+     "id": "P66-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-28 07:30"
+    },
+    {
+     "id": "P66-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-28 07:32"
+    },
+    {
+     "id": "P66-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-28 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P66/tt-1.png",
+   "rows": [
+    {
+     "id": "P66-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-27 05:50"
+    },
+    {
+     "id": "P66-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-28 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-share-short.mp4",
+   "rows": [
+    {
+     "id": "P67-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-28 10:15"
+    },
+    {
+     "id": "P67-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-28 10:17"
+    },
+    {
+     "id": "P67-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-28 10:19"
+    },
+    {
+     "id": "P67-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-28 10:20"
+    },
+    {
+     "id": "P67-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-01-29 12:15"
+    },
+    {
+     "id": "P67-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-01-29 12:17"
+    },
+    {
+     "id": "P67-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-29 12:19"
+    },
+    {
+     "id": "P67-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-01-29 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P68/story-1.png",
+   "rows": [
+    {
+     "id": "P68-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, poll sticker",
+     "lang": "ja",
+     "wib": "2027-01-29 19:15"
+    },
+    {
+     "id": "P68-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, poll sticker",
+     "lang": "id",
+     "wib": "2027-01-30 19:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P68/story-2.png",
+   "rows": [
+    {
+     "id": "P68-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, poll sticker",
+     "lang": "ja",
+     "wib": "2027-01-29 19:15"
+    },
+    {
+     "id": "P68-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, poll sticker",
+     "lang": "id",
+     "wib": "2027-01-30 19:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P69/ig-1.png",
+   "rows": [
+    {
+     "id": "P69-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-01-30 05:45"
+    },
+    {
+     "id": "P69-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-01-30 05:47"
+    },
+    {
+     "id": "P69-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-01-30 05:49"
+    },
+    {
+     "id": "P69-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-01-31 07:30"
+    },
+    {
+     "id": "P69-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-01-31 07:32"
+    },
+    {
+     "id": "P69-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-01-31 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P69/tt-1.png",
+   "rows": [
+    {
+     "id": "P69-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-01-30 05:50"
+    },
+    {
+     "id": "P69-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-01-31 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/u-back-short.mp4",
+   "rows": [
+    {
+     "id": "P70-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-01-31 10:15"
+    },
+    {
+     "id": "P70-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-01-31 10:17"
+    },
+    {
+     "id": "P70-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-31 10:19"
+    },
+    {
+     "id": "P70-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-01-31 10:20"
+    },
+    {
+     "id": "P70-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-02-01 12:15"
+    },
+    {
+     "id": "P70-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-01 12:17"
+    },
+    {
+     "id": "P70-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-01 12:19"
+    },
+    {
+     "id": "P70-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-01 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P72/ig-1.png",
+   "rows": [
+    {
+     "id": "P72-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-02-02 05:45"
+    },
+    {
+     "id": "P72-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-02-02 05:47"
+    },
+    {
+     "id": "P72-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-02-02 05:49"
+    },
+    {
+     "id": "P72-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-02-03 07:30"
+    },
+    {
+     "id": "P72-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-02-03 07:32"
+    },
+    {
+     "id": "P72-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-02-03 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P72/tt-1.png",
+   "rows": [
+    {
+     "id": "P72-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-02 05:50"
+    },
+    {
+     "id": "P72-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-03 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P73/ig-1.png",
+   "rows": [
+    {
+     "id": "P73-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-02-03 10:15"
+    },
+    {
+     "id": "P73-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-02-03 10:17"
+    },
+    {
+     "id": "P73-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-02-03 10:19"
+    },
+    {
+     "id": "P73-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-02-04 12:15"
+    },
+    {
+     "id": "P73-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-02-04 12:17"
+    },
+    {
+     "id": "P73-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-02-04 12:19"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P73/tt-1.png",
+   "rows": [
+    {
+     "id": "P73-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-03 10:20"
+    },
+    {
+     "id": "P73-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-04 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/Dad.mp4",
+   "rows": [
+    {
+     "id": "P74-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-02-04 19:15"
+    },
+    {
+     "id": "P74-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-04 19:17"
+    },
+    {
+     "id": "P74-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-04 19:19"
+    },
+    {
+     "id": "P74-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-04 19:20"
+    },
+    {
+     "id": "P74-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-02-05 19:30"
+    },
+    {
+     "id": "P74-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-05 19:32"
+    },
+    {
+     "id": "P74-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-05 19:34"
+    },
+    {
+     "id": "P74-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-05 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P77/ig-1.png",
+   "rows": [
+    {
+     "id": "P77-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-02-07 19:15"
+    },
+    {
+     "id": "P77-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-02-07 19:17"
+    },
+    {
+     "id": "P77-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-02-07 19:19"
+    },
+    {
+     "id": "P77-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-02-08 19:30"
+    },
+    {
+     "id": "P77-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-02-08 19:32"
+    },
+    {
+     "id": "P77-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-02-08 19:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P77/tt-1.png",
+   "rows": [
+    {
+     "id": "P77-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-07 19:20"
+    },
+    {
+     "id": "P77-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-08 19:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P78/ig-1.png",
+   "rows": [
+    {
+     "id": "P78-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-02-08 05:45"
+    },
+    {
+     "id": "P78-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-02-08 05:47"
+    },
+    {
+     "id": "P78-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-02-08 05:49"
+    },
+    {
+     "id": "P78-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-02-09 07:30"
+    },
+    {
+     "id": "P78-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-02-09 07:32"
+    },
+    {
+     "id": "P78-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-02-09 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P78/tt-1.png",
+   "rows": [
+    {
+     "id": "P78-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-08 05:50"
+    },
+    {
+     "id": "P78-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-09 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P81/story-1.png",
+   "rows": [
+    {
+     "id": "P81-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, add yours sticker",
+     "lang": "ja",
+     "wib": "2027-02-11 05:45"
+    },
+    {
+     "id": "P81-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2027-02-11 05:47"
+    },
+    {
+     "id": "P81-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, add yours sticker",
+     "lang": "id",
+     "wib": "2027-02-12 07:30"
+    },
+    {
+     "id": "P81-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2027-02-12 07:32"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P81/story-2.png",
+   "rows": [
+    {
+     "id": "P81-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, add yours sticker",
+     "lang": "ja",
+     "wib": "2027-02-11 05:45"
+    },
+    {
+     "id": "P81-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "ja",
+     "wib": "2027-02-11 05:47"
+    },
+    {
+     "id": "P81-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, add yours sticker",
+     "lang": "id",
+     "wib": "2027-02-12 07:30"
+    },
+    {
+     "id": "P81-id-Facebook",
+     "platform": "Facebook",
+     "format": "Story",
+     "lang": "id",
+     "wib": "2027-02-12 07:32"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P84/story-1.png",
+   "rows": [
+    {
+     "id": "P84-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "ja",
+     "wib": "2027-02-14 05:45"
+    },
+    {
+     "id": "P84-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "id",
+     "wib": "2027-02-15 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P84/story-2.png",
+   "rows": [
+    {
+     "id": "P84-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "ja",
+     "wib": "2027-02-14 05:45"
+    },
+    {
+     "id": "P84-id-Instagram",
+     "platform": "Instagram",
+     "format": "Story, questions sticker",
+     "lang": "id",
+     "wib": "2027-02-15 07:30"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P84/u2-short-first6s.mp4",
+   "rows": [
+    {
+     "id": "P84-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-14 05:50"
+    },
+    {
+     "id": "P84-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-15 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "~/Downloads/pain-films-v4/cutling-address-field.mp4",
+   "rows": [
+    {
+     "id": "P85-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "ja",
+     "wib": "2027-02-15 10:15"
+    },
+    {
+     "id": "P85-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "ja",
+     "wib": "2027-02-15 10:17"
+    },
+    {
+     "id": "P85-ja-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-15 10:19"
+    },
+    {
+     "id": "P85-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "ja",
+     "wib": "2027-02-15 10:20"
+    },
+    {
+     "id": "P85-id-Instagram",
+     "platform": "Instagram",
+     "format": "Trial reel",
+     "lang": "id",
+     "wib": "2027-02-16 12:15"
+    },
+    {
+     "id": "P85-id-Facebook",
+     "platform": "Facebook",
+     "format": "Reel",
+     "lang": "id",
+     "wib": "2027-02-16 12:17"
+    },
+    {
+     "id": "P85-id-Threads",
+     "platform": "Threads",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-16 12:19"
+    },
+    {
+     "id": "P85-id-TikTok",
+     "platform": "TikTok",
+     "format": "Video",
+     "lang": "id",
+     "wib": "2027-02-16 12:20"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P87/ig-1.png",
+   "rows": [
+    {
+     "id": "P87-ja-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "ja",
+     "wib": "2027-02-17 05:45"
+    },
+    {
+     "id": "P87-ja-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "ja",
+     "wib": "2027-02-17 05:47"
+    },
+    {
+     "id": "P87-ja-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "ja",
+     "wib": "2027-02-17 05:49"
+    },
+    {
+     "id": "P87-id-Instagram",
+     "platform": "Instagram",
+     "format": "Single image",
+     "lang": "id",
+     "wib": "2027-02-18 07:30"
+    },
+    {
+     "id": "P87-id-Facebook",
+     "platform": "Facebook",
+     "format": "Image post",
+     "lang": "id",
+     "wib": "2027-02-18 07:32"
+    },
+    {
+     "id": "P87-id-Threads",
+     "platform": "Threads",
+     "format": "Image",
+     "lang": "id",
+     "wib": "2027-02-18 07:34"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  },
+  {
+   "file": "P87/tt-1.png",
+   "rows": [
+    {
+     "id": "P87-ja-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "ja",
+     "wib": "2027-02-17 05:50"
+    },
+    {
+     "id": "P87-id-TikTok",
+     "platform": "TikTok",
+     "format": "Photo carousel",
+     "lang": "id",
+     "wib": "2027-02-18 07:35"
+    }
+   ],
+   "langs": [
+    "ja",
+    "id"
+   ],
+   "needs": "the same frames with their on-screen words in each listed language"
+  }
+ ],
+ "frame_fixes": [
+  {
+   "file": "u1.mp4",
+   "issue": "end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248)",
+   "rows": [
+    "P01-en-Instagram",
+    "P01-en-TikTok",
+    "P01-en-YouTube",
+    "P01-ja-Instagram",
+    "P01-ja-TikTok",
+    "P01-id-Instagram",
+    "P01-id-TikTok",
+    "P01-en-Facebook",
+    "P13-en-YouTube",
+    "P01-ja-Facebook",
+    "P01-id-Facebook",
+    "P13-en-Instagram",
+    "P13-en-Facebook",
+    "P13-en-TikTok",
+    "P13-ja-Instagram",
+    "P13-ja-Facebook",
+    "P13-ja-TikTok",
+    "P13-id-Instagram",
+    "P13-id-Facebook",
+    "P13-id-TikTok",
+    "P80-en-YouTube",
+    "P80-en-TikTok",
+    "P80-en-Instagram",
+    "P80-en-Facebook",
+    "P80-ja-Instagram",
+    "P80-ja-Facebook",
+    "P80-ja-TikTok",
+    "P80-id-Instagram",
+    "P80-id-Facebook",
+    "P80-id-TikTok"
+   ]
+  },
+  {
+   "file": "cutling-address.mp4",
+   "issue": "end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248)",
+   "rows": [
+    "P02-en-YouTube",
+    "P02-en-TikTok",
+    "P02-ja-TikTok",
+    "P02-en-Instagram",
+    "P02-ja-Instagram",
+    "P02-id-TikTok",
+    "P02-id-Instagram",
+    "P02-en-Facebook",
+    "P02-ja-Facebook",
+    "P06-en-TikTok",
+    "P06-ja-TikTok",
+    "P02-id-Facebook",
+    "P30-en-YouTube",
+    "P06-id-TikTok",
+    "P30-en-Instagram",
+    "P30-en-Facebook",
+    "P30-en-TikTok",
+    "P30-ja-Instagram",
+    "P30-ja-Facebook",
+    "P30-ja-TikTok",
+    "P30-id-Instagram",
+    "P30-id-Facebook",
+    "P30-id-TikTok"
+   ]
+  },
+  {
+   "file": "cutling-email.mp4",
+   "issue": "end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248)",
+   "rows": [
+    "P04-en-YouTube",
+    "P04-en-TikTok",
+    "P04-ja-TikTok",
+    "P04-en-Instagram",
+    "P04-ja-Instagram",
+    "P04-id-TikTok",
+    "P04-en-Facebook",
+    "P04-ja-Facebook",
+    "P04-id-Instagram",
+    "P04-id-Facebook",
+    "P79-en-YouTube",
+    "P79-en-Instagram",
+    "P79-en-Facebook",
+    "P79-en-TikTok",
+    "P79-ja-Instagram",
+    "P79-ja-Facebook",
+    "P79-ja-TikTok",
+    "P79-id-Instagram",
+    "P79-id-Facebook",
+    "P79-id-TikTok"
+   ]
+  },
+  {
+   "file": "u2-short.mp4",
+   "issue": "end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248)",
+   "rows": [
+    "P07-en-YouTube",
+    "P07-en-Instagram",
+    "P07-en-Facebook",
+    "P07-en-TikTok",
+    "P07-ja-Instagram",
+    "P07-ja-Facebook",
+    "P07-ja-TikTok",
+    "P07-id-Instagram",
+    "P07-id-Facebook",
+    "P07-id-TikTok",
+    "P43-en-YouTube",
+    "P43-en-Instagram",
+    "P43-en-Facebook",
+    "P43-en-TikTok",
+    "P43-ja-Instagram",
+    "P43-ja-Facebook",
+    "P43-ja-TikTok",
+    "P43-id-Instagram",
+    "P43-id-Facebook",
+    "P43-id-TikTok"
+   ]
+  },
+  {
+   "file": "cutling-android.mp4",
+   "issue": "end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248)",
+   "rows": [
+    "P10-en-YouTube",
+    "P10-en-Instagram",
+    "P10-en-Facebook",
+    "P10-en-TikTok",
+    "P10-ja-Instagram",
+    "P10-ja-Facebook",
+    "P10-ja-TikTok",
+    "P10-id-Instagram",
+    "P10-id-Facebook",
+    "P10-id-TikTok"
+   ]
+  },
+  {
+   "file": "u-mac.mp4",
+   "issue": "end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248)",
+   "rows": [
+    "P11-en-YouTube",
+    "P11-en-TikTok",
+    "P11-en-Instagram",
+    "P11-en-Facebook",
+    "P11-ja-Instagram",
+    "P11-ja-Facebook",
+    "P11-ja-TikTok",
+    "P11-id-Instagram",
+    "P11-id-Facebook",
+    "P11-id-TikTok",
+    "P64-en-YouTube",
+    "P64-en-Instagram",
+    "P64-en-Facebook",
+    "P64-en-TikTok",
+    "P64-ja-Instagram",
+    "P64-ja-Facebook",
+    "P64-ja-TikTok",
+    "P64-id-Instagram",
+    "P64-id-Facebook",
+    "P64-id-TikTok"
+   ]
+  },
+  {
+   "file": "P05/tt-1.png",
+   "issue": "\"The tabs still open.\" sits under TikTok's caption band and the toggle under its right rail",
+   "rows": [
+    "P05-en-TikTok",
+    "P05-ja-TikTok",
+    "P05-id-TikTok"
+   ]
+  },
+  {
+   "file": "P09/card-tt.png",
+   "issue": "the Cutling badge sits under TikTok's caption band and \"Product Hunt\" touches the right rail",
+   "rows": [
+    "P09-en-TikTok",
+    "P09-ja-TikTok",
+    "P09-id-TikTok"
+   ]
+  },
+  {
+   "file": "P12/tt-1.png",
+   "issue": "a 4:5 card floats in the top half of a dark 9:16 frame; its top words sit under TikTok's search bar",
+   "rows": [
+    "P12-en-TikTok",
+    "P12-ja-TikTok",
+    "P12-id-TikTok"
+   ]
+  },
+  {
+   "file": "_assets/tt-end-Cutling.png",
+   "issue": "\"Cutling\" and \"App Store\" run under TikTok's right button column",
+   "rows": [
+    "P09-en-TikTok",
+    "P09-ja-TikTok",
+    "P09-id-TikTok",
+    "P08-en-TikTok",
+    "P08-ja-TikTok",
+    "P08-id-TikTok",
+    "P12-en-TikTok",
+    "P12-ja-TikTok",
+    "P12-id-TikTok",
+    "P16-en-TikTok",
+    "P16-ja-TikTok",
+    "P16-id-TikTok",
+    "P21-en-TikTok",
+    "P21-ja-TikTok",
+    "P21-id-TikTok",
+    "P23-en-TikTok",
+    "P23-ja-TikTok",
+    "P23-id-TikTok",
+    "P25-en-TikTok",
+    "P25-ja-TikTok",
+    "P25-id-TikTok",
+    "P40-en-TikTok",
+    "P40-ja-TikTok",
+    "P40-id-TikTok",
+    "P44-en-TikTok",
+    "P44-ja-TikTok",
+    "P44-id-TikTok",
+    "P51-en-TikTok",
+    "P51-ja-TikTok",
+    "P51-id-TikTok",
+    "P55-en-TikTok",
+    "P55-ja-TikTok",
+    "P55-id-TikTok",
+    "P65-en-TikTok",
+    "P65-ja-TikTok",
+    "P65-id-TikTok",
+    "P69-en-TikTok",
+    "P69-ja-TikTok",
+    "P69-id-TikTok",
+    "P73-en-TikTok",
+    "P73-ja-TikTok",
+    "P73-id-TikTok",
+    "P77-en-TikTok",
+    "P77-ja-TikTok",
+    "P77-id-TikTok",
+    "P87-en-TikTok",
+    "P87-ja-TikTok",
+    "P87-id-TikTok"
+   ]
+  },
+  {
+   "file": "_assets/tt-end-Undirect.png",
+   "issue": "\"Undirect\" and \"App Store\" run under TikTok's right button column",
+   "rows": [
+    "P05-en-TikTok",
+    "P05-ja-TikTok",
+    "P26-en-TikTok",
+    "P26-ja-TikTok",
+    "P26-id-TikTok",
+    "P05-id-TikTok",
+    "P50-en-TikTok",
+    "P50-ja-TikTok",
+    "P50-id-TikTok",
+    "P18-en-TikTok",
+    "P18-ja-TikTok",
+    "P18-id-TikTok",
+    "P20-en-TikTok",
+    "P20-ja-TikTok",
+    "P20-id-TikTok",
+    "P22-en-TikTok",
+    "P22-ja-TikTok",
+    "P22-id-TikTok",
+    "P27-en-TikTok",
+    "P27-ja-TikTok",
+    "P27-id-TikTok",
+    "P29-en-TikTok",
+    "P29-ja-TikTok",
+    "P29-id-TikTok",
+    "P39-en-TikTok",
+    "P39-ja-TikTok",
+    "P39-id-TikTok",
+    "P47-en-TikTok",
+    "P47-ja-TikTok",
+    "P47-id-TikTok",
+    "P58-en-TikTok",
+    "P58-ja-TikTok",
+    "P58-id-TikTok",
+    "P66-en-TikTok",
+    "P66-ja-TikTok",
+    "P66-id-TikTok",
+    "P72-en-TikTok",
+    "P72-ja-TikTok",
+    "P72-id-TikTok",
+    "P78-en-TikTok",
+    "P78-ja-TikTok",
+    "P78-id-TikTok"
+   ]
+  }
+ ]
+}

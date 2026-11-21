@@ -1,6 +1,6 @@
 {
  "meta": {
-  "window": "2026-11-21 19:35 to 2026-11-24 23:59 WIB",
+  "window": "2026-11-21 22:34 to 2026-11-24 23:59 WIB",
   "platforms": [
    "Instagram",
    "Facebook",
@@ -9,97 +9,24 @@
    "YouTube"
   ],
   "approved_posts_only": true,
-  "rows": 38,
-  "ready_to_schedule": 38,
+  "rows": 36,
+  "ready_to_schedule": 36,
   "needs_wording": 0,
   "per_language": {
-   "id": 2,
-   "ar": 3,
-   "en": 30,
-   "ja": 2,
-   "zh-Hant": 1
+   "en": 24,
+   "ja": 8,
+   "id": 4
   },
   "per_platform": {
-   "Instagram": 7,
-   "TikTok": 8,
-   "Threads": 8,
-   "Facebook": 8,
-   "YouTube": 7
+   "Threads": 10,
+   "Facebook": 7,
+   "YouTube": 7,
+   "Instagram": 6,
+   "TikTok": 6
   },
   "note": "Western markets' Nov 24 evening falls on Nov 25 WIB, so their Nov 24 posts are in deliveries.json, not here."
  },
  "rows": [
-  {
-   "id": "P03-id-Instagram",
-   "post": "P03",
-   "app": "Undirect",
-   "lang": "id",
-   "language": "Indonesian",
-   "country": "Indonesia",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Story, poll sticker",
-   "wib": "2026-11-22 07:30",
-   "local": "2026-11-22 07:30",
-   "zone": "WIB",
-   "time_source": "Jakpat 07-09",
-   "caption": null,
-   "sticker": "Poll: \"Berapa tab iklan yang kamu tutup demi satu episode?\" · 0 / 1-5 / 6-20 / Tak terhitung",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P03/story-1.png",
-    "/Users/hafang/Downloads/social-calendar/P03/story-2.png"
-   ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Frame 2: link sticker to undirect.matsuokengo.com.",
-    "The sticker is drawn on the review frames to show where it goes; post the clean frames and add the sticker in the app.",
-    "Business Suite's Instagram Story editor offers only Mention, Link and emoji stickers: post this from the Instagram app at the time."
-   ]
-  },
-  {
-   "id": "P03-ar-TikTok",
-   "post": "P03",
-   "app": "Undirect",
-   "lang": "ar",
-   "language": "Arabic",
-   "country": "Saudi Arabia",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Video",
-   "wib": "2026-11-22 13:05",
-   "local": "2026-11-22 09:05",
-   "zone": "Riyadh",
-   "time_source": "Buffer TikTok Sun 9:00",
-   "caption": "هل فتح Safari يومًا تبويبًا لم تضغط عليه؟ صوّت في الملصق.\n\nابحث عن Undirect في App Store.\n#نصائح_ايفون #حيل_ايفون #النوافذ_المنبثقة #تقنية",
-   "poll": {
-    "q": "هل فتح Safari تبويبًا لم تضغط عليه؟",
-    "options": [
-     "نعم",
-     "لا"
-    ]
-   },
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P03/u1-short-first6s.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Poll sticker, 24 h: \"Has Safari ever opened a tab you didn't tap?\""
-   ]
-  },
   {
    "id": "P03-en-Threads",
    "post": "P03",
@@ -254,7 +181,7 @@
    "wib": "2026-11-23 00:30",
    "local": "2026-11-22 12:30",
    "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
+   "time_source": "Sprout tech IG 11-13",
    "caption": "You press Play. A page says \"install the VPN app to keep watching\". Back, press again: \"Your iPhone is severely damaged by (12) virus!\" Again: \"You are today's lucky visitor.\"\n\nThe page lays an invisible layer over Play, so your tap goes to an ad first.\n\nLink in bio.\n#iphonetips #iphonehacks #safari #adblock #iosapps",
    "first_comment": null,
    "media": [
@@ -268,43 +195,12 @@
     "Time: approved 2026-11-22 02:20 WIB for every platform; now 2026-11-23 00:30 WIB, this platform's best hour in ET"
    ],
    "notes": [
-    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel."
+    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
    ],
-   "already_scheduled": true
-  },
-  {
-   "id": "P01-en-Facebook",
-   "post": "P01",
-   "app": "Undirect",
-   "lang": "en",
-   "language": "English",
-   "country": "United States",
-   "platform": "Facebook",
-   "account": "Monholt (Page)",
-   "format": "Reel",
-   "wib": "2026-11-23 00:32",
-   "local": "2026-11-22 12:32",
-   "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "You press Play. A page says \"install the VPN app to keep watching\". Back, press again: \"Your iPhone is severely damaged by (12) virus!\" Again: \"You are today's lucky visitor.\"\n\nThe page lays an invisible layer over Play, so your tap goes to an ad first.",
-   "first_comment": {
-    "label": "First comment",
-    "text": "Undirect on the App Store: undirect.matsuokengo.com"
-   },
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
-   ],
-   "on_screen_text": "English",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": true,
-   "changed_since_approval": [
-    "Time: approved 2026-11-22 02:20 WIB for every platform; now 2026-11-23 00:32 WIB, this platform's best hour in ET"
-   ],
-   "notes": [
-    "Business Suite can't attach a first comment: post it by hand at this time."
-   ],
-   "already_scheduled": true
+   "frame_fail": [
+    "u1.mp4"
+   ]
   },
   {
    "id": "P01-en-TikTok",
@@ -319,7 +215,7 @@
    "wib": "2026-11-23 01:05",
    "local": "2026-11-22 13:05",
    "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
+   "time_source": "Buffer TikTok Mon 13:00",
    "caption": "You press Play. A page says \"install the VPN app to keep watching\". Back, press again: \"Your iPhone is severely damaged by (12) virus!\" Again: \"You are today's lucky visitor.\"\n\nThe page lays an invisible layer over Play, so your tap goes to an ad first.\n\nSearch Undirect on the App Store.\n#iphonetips #iphonehacks #popupads #techtok",
    "first_comment": null,
    "media": [
@@ -332,8 +228,13 @@
    "changed_since_approval": [
     "Time: approved 2026-11-22 02:20 WIB for every platform; now 2026-11-23 01:05 WIB, this platform's best hour in ET"
    ],
-   "notes": [],
-   "already_scheduled": true
+   "notes": [
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
+   ],
+   "frame_fail": [
+    "u1.mp4"
+   ]
   },
   {
    "id": "P02-en-Threads",
@@ -380,7 +281,7 @@
    "wib": "2026-11-23 04:08",
    "local": "2026-11-22 16:08",
    "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
+   "time_source": "Buffer Shorts Fri 16:00",
    "caption": "You press Play. A page says \"install the VPN app to keep watching\". Back, press again: \"Your iPhone is severely damaged by (12) virus!\" Again: \"You are today's lucky visitor.\"\n\nThe page lays an invisible layer over Play, so your tap goes to an ad first.\n\nUndirect on the App Store: undirect.matsuokengo.com\n\n#iPhoneTips #AdBlocker #PopUps #Undirect",
    "title": "Every tap on Play opens another ad in Safari #SafariTips #iPhoneTips",
    "first_comment": null,
@@ -396,34 +297,10 @@
    ],
    "notes": [
     "Channel @matsuokengo, scheduled with youtube.ts upload --publish-at.",
-    "Add the 12 translations in YouTube Studio: Subtitles > the video > Title and description > Add language."
+    "Add the Japanese and Indonesian titles and descriptions in YouTube Studio: Subtitles > the video > Title and description > Add language.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
    ],
-   "already_scheduled": true,
    "translations": [
-    {
-     "lang": "ar",
-     "language": "Arabic",
-     "title": "كل ضغطة على زر التشغيل تفتح إعلانًا جديدًا في Safari #سفاري #نصائح_ايفون",
-     "description": "تضغط زر التشغيل، فتظهر صفحة تقول: «ثبّت تطبيق VPN لمتابعة المشاهدة». ترجع وتضغط مرة ثانية: «جهازك الـiPhone متضرر بشدة بسبب (12) فيروسًا!». وفي الثالثة: «مبروك، أنت الزائر المحظوظ اليوم».\n\nالصفحة تضع طبقة غير مرئية فوق زر التشغيل، فتذهب ضغطتك إلى الإعلان أولًا.\n\nUndirect في App Store: undirect.matsuokengo.com\n\n#نصائح_ايفون #حجب_الاعلانات #النوافذ_المنبثقة #Undirect"
-    },
-    {
-     "lang": "tr",
-     "language": "Turkish",
-     "title": "Safari'de Oynat'a her basışta yeni bir reklam açılıyor #safari #iphoneipuçları",
-     "description": "Oynat'a basıyorsun, karşına \"izlemeye devam etmek için VPN uygulamasını yükle\" diyen bir sayfa çıkıyor. Geri dönüp yine basıyorsun: \"iPhone'unuz (12) virüs yüzünden ciddi hasar gördü!\" Bir daha: \"Bugünün şanslı ziyaretçisi sizsiniz.\"\n\nSayfa, Oynat düğmesinin üstüne görünmez bir katman koyuyor; dokunuşun önce reklama gidiyor.\n\nUndirect App Store'da: undirect.matsuokengo.com\n\n#iphoneipuçları #reklamengelleyici #açılırpencere #Undirect"
-    },
-    {
-     "lang": "ru",
-     "language": "Russian",
-     "title": "В Safari каждое нажатие на Play открывает новую рекламу #safari #фишкиайфона",
-     "description": "Нажимаете «Смотреть», а открывается страница: «Установите VPN-приложение, чтобы продолжить просмотр». Назад, ещё раз: «Ваш iPhone серьёзно повреждён (12) вирусами!» И снова: «Вы сегодняшний счастливый посетитель».\n\nСтраница кладёт поверх кнопки невидимый слой, и ваше нажатие сначала достаётся рекламе.\n\nUndirect в App Store: undirect.matsuokengo.com\n\n#фишкиайфона #блокировкарекламы #всплывающиеокна #Undirect"
-    },
-    {
-     "lang": "id",
-     "language": "Indonesian",
-     "title": "Tiap tekan Play di Safari, yang muncul malah iklan #tipssafari #tipsiphone",
-     "description": "Kamu tekan Play, muncul halaman \"pasang aplikasi VPN untuk lanjut nonton\". Balik, tekan lagi: \"iPhone kamu rusak parah karena (12) virus!\" Sekali lagi: \"Selamat, kamu pengunjung beruntung hari ini.\"\n\nHalaman itu menaruh lapisan tak terlihat di atas tombol Play, jadi ketukanmu kena iklan duluan.\n\nUndirect di App Store: undirect.matsuokengo.com\n\n#tipsiphone #blokiriklan #iklanpopup #Undirect"
-    },
     {
      "lang": "ja",
      "language": "Japanese",
@@ -431,79 +308,37 @@
      "description": "再生ボタンを押したら「視聴を続けるにはVPNアプリをインストール」。戻ってもう一度押すと「お使いのiPhoneは(12)個のウイルスに感染しています！」。3回目は「おめでとうございます！本日のラッキービジターに選ばれました」。\n\n再生ボタンの上には見えない広告のレイヤーが重ねてあって、タップは先にそっちへ吸われます。\n\nUndirectはApp Storeで： undirect.matsuokengo.com\n\n#iPhone便利機能 #広告ブロック #ポップアップ #Undirect"
     },
     {
-     "lang": "zh-Hant",
-     "language": "Traditional Chinese",
-     "title": "Safari 每按一次播放就多開一個廣告分頁 #Safari #iPhone技巧",
-     "description": "你按下播放，跳出「請安裝 VPN App 才能繼續觀看」。返回再按一次：「您的 iPhone 已被 (12) 個病毒嚴重損壞！」再按：「恭喜！您是今日的幸運訪客。」\n\n網頁在播放鍵上面蓋了一層看不見的廣告，你那一下其實先點到它。\n\nUndirect 在 App Store： undirect.matsuokengo.com\n\n#iPhone技巧 #擋廣告 #彈出式視窗 #Undirect"
-    },
-    {
-     "lang": "zh-Hans",
-     "language": "Simplified Chinese",
-     "title": "Safari 里每点一次播放，就弹出一个广告标签页 #Safari #iPhone技巧",
-     "description": "点了播放，页面说“安装 VPN 应用才能继续观看”。返回再点：“你的 iPhone 已被 (12) 个病毒严重损坏！”第三次：“恭喜，你是今天的幸运访客。”\n\n网页在播放键上盖了一层看不见的广告，你那一下先点到的是它。\n\nUndirect 在 App Store： undirect.matsuokengo.com\n\n#iPhone技巧 #去广告 #弹窗 #Undirect"
-    },
-    {
-     "lang": "fr",
-     "language": "French",
-     "title": "Chaque appui sur Lecture ouvre une pub de plus dans Safari #safari #astucesiphone",
-     "description": "Vous appuyez sur Lecture. Une page s'ouvre : « installez l'app VPN pour continuer à regarder ». Retour, vous réessayez : « Votre iPhone est gravement endommagé par (12) virus ! » Encore une fois : « Vous êtes le visiteur chanceux du jour. »\n\nLa page pose un calque invisible sur le bouton Lecture, et c'est une pub qui reçoit votre appui en premier.\n\nUndirect sur l'App Store : undirect.matsuokengo.com\n\n#astucesiphone #bloqueurdepub #popup #Undirect"
-    },
-    {
-     "lang": "it",
-     "language": "Italian",
-     "title": "Ogni tocco su Play apre un'altra pubblicità in Safari #safari #trucchiiphone",
-     "description": "Premi Play. Si apre una pagina: \"installa l'app VPN per continuare a guardare\". Torni indietro, riprovi: \"Il tuo iPhone è gravemente danneggiato da (12) virus!\" Ancora: \"Sei il visitatore fortunato di oggi.\"\n\nLa pagina mette un livello invisibile sopra Play, così il tuo tocco finisce prima su una pubblicità.\n\nUndirect sull'App Store: undirect.matsuokengo.com\n\n#trucchiiphone #bloccapubblicità #popup #Undirect"
-    },
-    {
-     "lang": "de",
-     "language": "German",
-     "title": "Jeder Tipp auf Play öffnet in Safari die nächste Werbung #safaritipps #iphonetipps",
-     "description": "Du tippst auf Play. Eine Seite meldet: „Installiere die VPN-App, um weiterzuschauen“. Zurück, noch mal getippt: „Dein iPhone ist durch (12) Viren schwer beschädigt!“ Und wieder: „Du bist der glückliche Besucher des Tages.“\n\nDie Seite legt eine unsichtbare Ebene über den Play-Button, und dein Tipp landet zuerst bei einer Anzeige.\n\nUndirect im App Store: undirect.matsuokengo.com\n\n#iphonetipps #werbeblocker #popups #Undirect"
-    },
-    {
-     "lang": "es",
-     "language": "Spanish",
-     "title": "Cada toque en Reproducir abre otro anuncio en Safari #safari #trucosiphone",
-     "description": "Le das a Reproducir. Sale una página: «instala la app de VPN para seguir viendo». Atrás, le das otra vez: «¡Tu iPhone está gravemente dañado por (12) virus!». Y otra: «Eres el visitante afortunado de hoy».\n\nLa página pone una capa invisible encima del botón, así que tu toque le llega primero a un anuncio.\n\nUndirect en el App Store: undirect.matsuokengo.com\n\n#trucosiphone #bloqueadordeanuncios #ventanasemergentes #Undirect"
-    },
-    {
-     "lang": "pt-BR",
-     "language": "Portuguese (Brazil)",
-     "title": "Cada toque no Play abre mais um anúncio no Safari #safari #dicasiphone",
-     "description": "Você toca em Play. Abre uma página: \"instale o app de VPN para continuar assistindo\". Volta, toca de novo: \"Seu iPhone está gravemente danificado por (12) vírus!\" Mais uma vez: \"Você é o visitante sortudo de hoje.\"\n\nA página coloca uma camada invisível em cima do Play, e o seu toque cai primeiro num anúncio.\n\nUndirect na App Store: undirect.matsuokengo.com\n\n#dicasiphone #bloqueadordeanuncios #popup #Undirect"
+     "lang": "id",
+     "language": "Indonesian",
+     "title": "Tiap tekan Play di Safari, yang muncul malah iklan #tipssafari #tipsiphone",
+     "description": "Kamu tekan Play, muncul halaman \"pasang aplikasi VPN untuk lanjut nonton\". Balik, tekan lagi: \"iPhone kamu rusak parah karena (12) virus!\" Sekali lagi: \"Selamat, kamu pengunjung beruntung hari ini.\"\n\nHalaman itu menaruh lapisan tak terlihat di atas tombol Play, jadi ketukanmu kena iklan duluan.\n\nUndirect di App Store: undirect.matsuokengo.com\n\n#tipsiphone #blokiriklan #iklanpopup #Undirect"
     }
+   ],
+   "frame_fail": [
+    "u1.mp4"
    ]
   },
   {
-   "id": "P06-ja-TikTok",
-   "post": "P06",
-   "app": "Cutling",
+   "id": "P03-ja-Facebook",
+   "post": "P03",
+   "app": "Undirect",
    "lang": "ja",
    "language": "Japanese",
    "country": "Japan",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Video",
-   "wib": "2026-11-23 05:50",
-   "local": "2026-11-23 07:50",
+   "platform": "Facebook",
+   "account": "Monholt (Page)",
+   "format": "Story",
+   "wib": "2026-11-23 05:47",
+   "local": "2026-11-23 07:47",
    "zone": "JST",
    "time_source": "MIC 07-08時 commute",
-   "caption": "いちばん何度も打ち直しているのは？住所、メールアドレス、いつも同じDMの返信、URL。投票で教えてください。\n\nApp Storeで「Cutling」と検索。\n#ユーザ辞書 #iPhone便利機能 #iPhone裏技 #ガジェット",
-   "poll": {
-    "q": "いちばん打ち直しているのは？",
-    "options": [
-     "住所",
-     "メール",
-     "同じDM返信",
-     "URL",
-     "その他"
-    ]
-   },
+   "caption": null,
    "first_comment": null,
    "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-address.mp4"
+    "/Users/hafang/Downloads/social-calendar/P03/story-1.png",
+    "/Users/hafang/Downloads/social-calendar/P03/story-2.png"
    ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
    "needs_wording": null,
    "approved_post": true,
    "in_approved_set": false,
@@ -512,103 +347,10 @@
     "Note changed: answers are text over film, no face on camera"
    ],
    "notes": [
-    "Comment poll, up to 5 answers: \"What do you retype most?\"",
-    "Answer each \"Other\" with a reply video of text over the film or a screen recording; no face on camera."
-   ]
-  },
-  {
-   "id": "P02-en-TikTok",
-   "post": "P02",
-   "app": "Cutling",
-   "lang": "en",
-   "language": "English",
-   "country": "United States",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Video",
-   "wib": "2026-11-23 07:05",
-   "local": "2026-11-22 19:05",
-   "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "Deliver to. Shipping address. Delivery details. Billing address. Your address again, by thumb, typos and all: 14 seconds a form.\n\nSaved once in Cutling, it goes in with one tap, in about a second.\n\nSearch Cutling on the App Store.\n#textreplacement #iphonetips #iphonehacks #techtok",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-address.mp4"
+    "Same frames as the Instagram Story, posted to the Page from Business Suite; frame 2 carries the link sticker (Business Suite's Story link sticker is unchecked, GUESS).",
+    "The English row has no caption, sticker or reply to write: the Story frames carry the words."
    ],
-   "on_screen_text": "English",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": true,
-   "changed_since_approval": [
-    "Time: approved 2026-11-22 05:50 WIB for every platform; now 2026-11-23 07:05 WIB, this platform's best hour in ET"
-   ],
-   "notes": [],
-   "already_scheduled": true
-  },
-  {
-   "id": "P02-en-Instagram",
-   "post": "P02",
-   "app": "Cutling",
-   "lang": "en",
-   "language": "English",
-   "country": "United States",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Trial reel",
-   "wib": "2026-11-23 08:00",
-   "local": "2026-11-22 20:00",
-   "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "Deliver to. Shipping address. Delivery details. Billing address. Your address again, by thumb, typos and all: 14 seconds a form.\n\nSaved once in Cutling, it goes in with one tap, in about a second.\n\nLink in bio.\n#iphonetips #textreplacement #productivityapps #iosapps #macapps",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-address.mp4"
-   ],
-   "on_screen_text": "English",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": true,
-   "changed_since_approval": [
-    "Time: approved 2026-11-22 05:50 WIB for every platform; now 2026-11-23 08:00 WIB, this platform's best hour in ET"
-   ],
-   "notes": [
-    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel."
-   ],
-   "already_scheduled": true
-  },
-  {
-   "id": "P02-en-Facebook",
-   "post": "P02",
-   "app": "Cutling",
-   "lang": "en",
-   "language": "English",
-   "country": "United States",
-   "platform": "Facebook",
-   "account": "Monholt (Page)",
-   "format": "Reel",
-   "wib": "2026-11-23 08:02",
-   "local": "2026-11-22 20:02",
-   "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "Deliver to. Shipping address. Delivery details. Billing address. Your address again, by thumb, typos and all: 14 seconds a form.\n\nSaved once in Cutling, it goes in with one tap, in about a second.",
-   "first_comment": {
-    "label": "First comment",
-    "text": "Cutling on the App Store: cutling.matsuokengo.com"
-   },
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-address.mp4"
-   ],
-   "on_screen_text": "English",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": true,
-   "changed_since_approval": [
-    "Time: approved 2026-11-22 05:50 WIB for every platform; now 2026-11-23 08:02 WIB, this platform's best hour in ET"
-   ],
-   "notes": [
-    "Business Suite can't attach a first comment: post it by hand at this time."
-   ],
-   "already_scheduled": true
+   "needs_localized_media": true
   },
   {
    "id": "P02-en-YouTube",
@@ -623,7 +365,7 @@
    "wib": "2026-11-23 08:08",
    "local": "2026-11-22 20:08",
    "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
+   "time_source": "GUESS: Buffer's short-video view peak 18-23",
    "caption": "Deliver to. Shipping address. Delivery details. Billing address. Your address again, by thumb, typos and all: 14 seconds a form.\n\nSaved once in Cutling, it goes in with one tap, in about a second.\n\nCutling on the App Store: cutling.matsuokengo.com\n\n#iPhoneTips #iPhoneKeyboard #Clipboard #Cutling",
    "title": "Stop typing your address into every checkout #iPhoneTips #iPhoneKeyboard",
    "first_comment": null,
@@ -639,34 +381,10 @@
    ],
    "notes": [
     "Channel @matsuokengo, scheduled with youtube.ts upload --publish-at.",
-    "Add the 12 translations in YouTube Studio: Subtitles > the video > Title and description > Add language."
+    "Add the Japanese and Indonesian titles and descriptions in YouTube Studio: Subtitles > the video > Title and description > Add language.",
+    "Frame check 2026-11-21 failed: cutling-address.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
    ],
-   "already_scheduled": true,
    "translations": [
-    {
-     "lang": "ar",
-     "language": "Arabic",
-     "title": "لا تكتب عنوانك من جديد عند كل طلب #نصائح_ايفون #كيبورد_ايفون",
-     "description": "عنوان التوصيل. عنوان الشحن. عنوان الفاتورة. العنوان نفسه تكتبه بإبهامك مرة أخرى، بأخطائه الإملائية: 14 ثانية لكل نموذج.\n\nاحفظه مرة واحدة في Cutling، وبعدها يدخل بضغطة واحدة في نحو ثانية.\n\nCutling في App Store: cutling.matsuokengo.com\n\n#نصائح_ايفون #كيبورد_ايفون #نسخ_ولصق #Cutling"
-    },
-    {
-     "lang": "tr",
-     "language": "Turkish",
-     "title": "Her siparişte adresini baştan yazma #iphoneipuçları #iphoneklavye",
-     "description": "Teslimat adresi. Gönderim adresi. Fatura adresi. Aynı adresi başparmağınla, yazım hatalarıyla birlikte yeniden yazıyorsun: form başına 14 saniye.\n\nCutling'e bir kez kaydet, sonra tek dokunuşla, bir saniyede giriyor.\n\nCutling App Store'da: cutling.matsuokengo.com\n\n#iphoneipuçları #iphoneklavye #kopyalayapıştır #Cutling"
-    },
-    {
-     "lang": "ru",
-     "language": "Russian",
-     "title": "Хватит вводить адрес заново в каждом заказе #фишкиайфона #клавиатураайфон",
-     "description": "Адрес доставки. Адрес получателя. Платёжный адрес. Один и тот же адрес снова большим пальцем, с опечатками: 14 секунд на каждую форму.\n\nСохраните его в Cutling один раз, и дальше он вставляется одним касанием, примерно за секунду.\n\nCutling в App Store: cutling.matsuokengo.com\n\n#фишкиайфона #клавиатураайфон #буферобмена #Cutling"
-    },
-    {
-     "lang": "id",
-     "language": "Indonesian",
-     "title": "Berhenti mengetik alamat di setiap checkout #tipsiphone #keyboardiphone",
-     "description": "Alamat pengiriman. Alamat penerima. Alamat tagihan. Alamat yang sama diketik lagi pakai jempol, lengkap dengan salah ketiknya: 14 detik per formulir.\n\nSimpan sekali di Cutling, lalu tinggal satu ketukan, kira-kira sedetik.\n\nCutling di App Store: cutling.matsuokengo.com\n\n#tipsiphone #keyboardiphone #copypaste #Cutling"
-    },
     {
      "lang": "ja",
      "language": "Japanese",
@@ -674,71 +392,36 @@
      "description": "お届け先、配送先住所、請求先住所。郵便番号から部屋番号まで、また親指で打って、また打ち間違える。フォームひとつに14秒かかります。\n\nCutlingに一度保存しておけば、ワンタップで入ります。1秒ほどです。\n\nCutlingはApp Storeで： cutling.matsuokengo.com\n\n#iPhone便利機能 #iPhoneキーボード #コピペ #Cutling"
     },
     {
-     "lang": "zh-Hant",
-     "language": "Traditional Chinese",
-     "title": "結帳不用再重打地址，鍵盤點一下就填好 #iPhone技巧 #iPhone鍵盤",
-     "description": "收件地址、配送地址、帳單地址。同一串地址又用拇指打一遍，還打錯字，每張表單 14 秒。\n\n在 Cutling 存一次，之後點一下就填好，大概一秒。\n\nCutling 在 App Store： cutling.matsuokengo.com\n\n#iPhone技巧 #iPhone鍵盤 #剪貼簿 #Cutling"
-    },
-    {
-     "lang": "zh-Hans",
-     "language": "Simplified Chinese",
-     "title": "结账别再重输地址，键盘上点一下就填好 #iPhone技巧 #iPhone键盘",
-     "description": "收货地址、配送地址、账单地址。同一个地址又用拇指敲一遍，还带错别字，每张表单 14 秒。\n\n在 Cutling 里存一次，以后点一下就填好，大约一秒。\n\nCutling 在 App Store： cutling.matsuokengo.com\n\n#iPhone技巧 #iPhone键盘 #剪贴板 #Cutling"
-    },
-    {
-     "lang": "fr",
-     "language": "French",
-     "title": "Arrêtez de retaper votre adresse à chaque commande #astucesiphone #clavieriphone",
-     "description": "Adresse de livraison. Adresse d'expédition. Adresse de facturation. Toujours la même adresse, retapée au pouce avec les fautes de frappe : 14 secondes par formulaire.\n\nEnregistrée une fois dans Cutling, elle se saisit d'un seul toucher, en une seconde environ.\n\nCutling sur l'App Store : cutling.matsuokengo.com\n\n#astucesiphone #clavieriphone #copiercoller #Cutling"
-    },
-    {
-     "lang": "it",
-     "language": "Italian",
-     "title": "Basta riscrivere l'indirizzo a ogni ordine #trucchiiphone #tastieraiphone",
-     "description": "Indirizzo di consegna. Indirizzo di spedizione. Indirizzo di fatturazione. Sempre lo stesso indirizzo, scritto col pollice, refusi compresi: 14 secondi a modulo.\n\nSalvalo una volta in Cutling e poi lo inserisci con un tocco, in un secondo circa.\n\nCutling sull'App Store: cutling.matsuokengo.com\n\n#trucchiiphone #tastieraiphone #copiaincolla #Cutling"
-    },
-    {
-     "lang": "de",
-     "language": "German",
-     "title": "Tipp deine Adresse nicht bei jeder Bestellung neu #iphonetipps #iphonetastatur",
-     "description": "Lieferadresse. Versandadresse. Rechnungsadresse. Wieder dieselbe Adresse, mit dem Daumen getippt, Tippfehler inklusive: 14 Sekunden pro Formular.\n\nEinmal in Cutling gespeichert, ist sie mit einem Tipp drin, in etwa einer Sekunde.\n\nCutling im App Store: cutling.matsuokengo.com\n\n#iphonetipps #iphonetastatur #zwischenablage #Cutling"
-    },
-    {
-     "lang": "es",
-     "language": "Spanish",
-     "title": "Deja de escribir tu dirección en cada pedido #trucosiphone #tecladoiphone",
-     "description": "Dirección de entrega. Dirección de envío. Dirección de facturación. La misma dirección otra vez, con el pulgar y con sus erratas: 14 segundos por formulario.\n\nLa guardas una vez en Cutling y entra con un toque, en un segundo más o menos.\n\nCutling en el App Store: cutling.matsuokengo.com\n\n#trucosiphone #tecladoiphone #copiarypegar #Cutling"
-    },
-    {
-     "lang": "pt-BR",
-     "language": "Portuguese (Brazil)",
-     "title": "Pare de digitar seu endereço em toda compra #dicasiphone #tecladoiphone",
-     "description": "Endereço de entrega. Endereço de envio. Endereço de cobrança. O mesmo endereço e o mesmo CEP de novo, no polegar, com erro de digitação e tudo: 14 segundos por formulário.\n\nSalvo uma vez no Cutling, ele entra com um toque, em mais ou menos um segundo.\n\nCutling na App Store: cutling.matsuokengo.com\n\n#dicasiphone #tecladoiphone #copiarecolar #Cutling"
+     "lang": "id",
+     "language": "Indonesian",
+     "title": "Berhenti mengetik alamat di setiap checkout #tipsiphone #keyboardiphone",
+     "description": "Alamat pengiriman. Alamat penerima. Alamat tagihan. Alamat yang sama diketik lagi pakai jempol, lengkap dengan salah ketiknya: 14 detik per formulir.\n\nSimpan sekali di Cutling, lalu tinggal satu ketukan, kira-kira sedetik.\n\nCutling di App Store: cutling.matsuokengo.com\n\n#tipsiphone #keyboardiphone #copypaste #Cutling"
     }
+   ],
+   "frame_fail": [
+    "cutling-address.mp4"
    ]
   },
   {
-   "id": "P06-ar-Instagram",
-   "post": "P06",
-   "app": "Cutling",
-   "lang": "ar",
-   "language": "Arabic",
-   "country": "Saudi Arabia",
+   "id": "P01-ja-Instagram",
+   "post": "P01",
+   "app": "Undirect",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
    "platform": "Instagram",
    "account": "monholtco",
-   "format": "Story, add yours sticker",
-   "wib": "2026-11-23 13:00",
-   "local": "2026-11-23 09:00",
-   "zone": "Riyadh",
-   "time_source": "Buffer IG Thu 9:00",
-   "caption": null,
-   "sticker": "Add Yours: «النص الذي تعيد كتابته كل أسبوع»",
+   "format": "Trial reel",
+   "wib": "2026-11-23 10:15",
+   "local": "2026-11-23 12:15",
+   "zone": "JST",
+   "time_source": "MIC 12時台 lunch peak",
+   "caption": "再生ボタンを押したら「視聴を続けるにはVPNアプリをインストール」。戻ってもう一度押すと「お使いのiPhoneは(12)個のウイルスに感染しています！」。3回目は「おめでとうございます！本日のラッキービジターに選ばれました」。\n\n再生ボタンの上には見えない広告のレイヤーが重ねてあって、タップは先にそっちへ吸われます。\n\nリンクはプロフィールから。\n#iPhone便利機能 #iPhone裏技 #Safari #広告ブロック #iPhoneアプリ",
    "first_comment": null,
    "media": [
-    "/Users/hafang/Downloads/social-calendar/P06/story-1.png",
-    "/Users/hafang/Downloads/social-calendar/P06/story-2.png"
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
    ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
    "needs_wording": null,
    "approved_post": true,
    "in_approved_set": false,
@@ -746,10 +429,79 @@
     "New: this language was not in the approved set"
    ],
    "notes": [
-    "Our own answer goes first: \"221 Example Street, Flat 4\" (fictional).",
-    "Frame 2: link sticker to cutling.matsuokengo.com.",
-    "The sticker is drawn on the review frames to show where it goes; post the clean frames and add the sticker in the app.",
-    "Business Suite's Instagram Story editor offers only Mention, Link and emoji stickers: post this from the Instagram app at the time."
+    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "u1.mp4"
+   ]
+  },
+  {
+   "id": "P01-ja-Threads",
+   "post": "P01",
+   "app": "Undirect",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Threads",
+   "account": "@monholtco",
+   "format": "Video",
+   "wib": "2026-11-23 10:19",
+   "local": "2026-11-23 12:19",
+   "zone": "JST",
+   "time_source": "MIC 12時台 lunch peak",
+   "caption": "再生ボタンを押したら「視聴を続けるにはVPNアプリをインストール」。戻ってもう一度押すと「お使いのiPhoneは(12)個のウイルスに感染しています！」。3回目は「おめでとうございます！本日のラッキービジターに選ばれました」。\n\n再生ボタンの上には見えない広告のレイヤーが重ねてあって、タップは先にそっちへ吸われます。\n\n再生ボタンを押して飛ばされた先で、いちばんひどかったのはどこですか？",
+   "first_comment": {
+    "label": "Our first reply",
+    "text": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=th-ja&mt=8"
+   },
+   "media": [
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
+   ],
+   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P01-ja-TikTok",
+   "post": "P01",
+   "app": "Undirect",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "TikTok",
+   "account": "@monholt",
+   "format": "Video",
+   "wib": "2026-11-23 10:20",
+   "local": "2026-11-23 12:20",
+   "zone": "JST",
+   "time_source": "MIC 12時台 lunch peak",
+   "caption": "再生ボタンを押したら「視聴を続けるにはVPNアプリをインストール」。戻ってもう一度押すと「お使いのiPhoneは(12)個のウイルスに感染しています！」。3回目は「おめでとうございます！本日のラッキービジターに選ばれました」。\n\n再生ボタンの上には見えない広告のレイヤーが重ねてあって、タップは先にそっちへ吸われます。\n\nApp Storeで「Undirect」と検索。\n#iPhone便利機能 #iPhone裏技 #ポップアップ広告 #ガジェット",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
+   ],
+   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "u1.mp4"
    ]
   },
   {
@@ -894,100 +646,6 @@
    "already_scheduled": true
   },
   {
-   "id": "P04-en-Instagram",
-   "post": "P04",
-   "app": "Cutling",
-   "lang": "en",
-   "language": "English",
-   "country": "United States",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Trial reel",
-   "wib": "2026-11-24 00:30",
-   "local": "2026-11-23 12:30",
-   "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "Your email address into a Wi-Fi login, a 10%-off pop-up, a check-in form and a receipt: 21 seconds of typing.\n\nSave it in Cutling once. In an email field the keyboard puts it first, so each form takes one tap.\n\nLink in bio.\n#iphonetips #textreplacement #productivityapps #iosapps #macapps",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-email.mp4"
-   ],
-   "on_screen_text": "English",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": true,
-   "changed_since_approval": [
-    "Time: approved 2026-11-23 02:20 WIB for every platform; now 2026-11-24 00:30 WIB, this platform's best hour in ET"
-   ],
-   "notes": [
-    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel."
-   ],
-   "already_scheduled": true
-  },
-  {
-   "id": "P04-en-Facebook",
-   "post": "P04",
-   "app": "Cutling",
-   "lang": "en",
-   "language": "English",
-   "country": "United States",
-   "platform": "Facebook",
-   "account": "Monholt (Page)",
-   "format": "Reel",
-   "wib": "2026-11-24 00:32",
-   "local": "2026-11-23 12:32",
-   "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "Your email address into a Wi-Fi login, a 10%-off pop-up, a check-in form and a receipt: 21 seconds of typing.\n\nSave it in Cutling once. In an email field the keyboard puts it first, so each form takes one tap.",
-   "first_comment": {
-    "label": "First comment",
-    "text": "Cutling on the App Store: cutling.matsuokengo.com"
-   },
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-email.mp4"
-   ],
-   "on_screen_text": "English",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": true,
-   "changed_since_approval": [
-    "Time: approved 2026-11-23 02:20 WIB for every platform; now 2026-11-24 00:32 WIB, this platform's best hour in ET"
-   ],
-   "notes": [
-    "Business Suite can't attach a first comment: post it by hand at this time."
-   ],
-   "already_scheduled": true
-  },
-  {
-   "id": "P04-en-TikTok",
-   "post": "P04",
-   "app": "Cutling",
-   "lang": "en",
-   "language": "English",
-   "country": "United States",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Video",
-   "wib": "2026-11-24 01:05",
-   "local": "2026-11-23 13:05",
-   "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "Your email address into a Wi-Fi login, a 10%-off pop-up, a check-in form and a receipt: 21 seconds of typing.\n\nSave it in Cutling once. In an email field the keyboard puts it first, so each form takes one tap.\n\nSearch Cutling on the App Store.\n#textreplacement #iphonetips #iphonehacks #techtok",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-email.mp4"
-   ],
-   "on_screen_text": "English",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": true,
-   "changed_since_approval": [
-    "Time: approved 2026-11-23 02:20 WIB for every platform; now 2026-11-24 01:05 WIB, this platform's best hour in ET"
-   ],
-   "notes": [],
-   "already_scheduled": true
-  },
-  {
    "id": "P05-en-Threads",
    "post": "P05",
    "app": "Undirect",
@@ -1032,7 +690,7 @@
    "wib": "2026-11-24 04:08",
    "local": "2026-11-23 16:08",
    "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
+   "time_source": "Buffer Shorts Fri 16:00",
    "caption": "Your email address into a Wi-Fi login, a 10%-off pop-up, a check-in form and a receipt: 21 seconds of typing.\n\nSave it in Cutling once. In an email field the keyboard puts it first, so each form takes one tap.\n\nCutling on the App Store: cutling.matsuokengo.com\n\n#iPhoneTips #iPhoneKeyboard #Clipboard #Cutling",
    "title": "Stop typing your email address into every form #iPhoneTips #iPhoneKeyboard",
    "first_comment": null,
@@ -1048,34 +706,10 @@
    ],
    "notes": [
     "Channel @matsuokengo, scheduled with youtube.ts upload --publish-at.",
-    "Add the 12 translations in YouTube Studio: Subtitles > the video > Title and description > Add language."
+    "Add the Japanese and Indonesian titles and descriptions in YouTube Studio: Subtitles > the video > Title and description > Add language.",
+    "Frame check 2026-11-21 failed: cutling-email.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
    ],
-   "already_scheduled": true,
    "translations": [
-    {
-     "lang": "ar",
-     "language": "Arabic",
-     "title": "بريدك الإلكتروني بضغطة واحدة في كل نموذج #نصائح_ايفون #كيبورد_ايفون",
-     "description": "شبكة Wi-Fi في المقهى، نافذة «خصم 10%»، نموذج تسجيل الوصول، وإيصال الشراء: كتبت بريدك الإلكتروني أربع مرات في 21 ثانية.\n\nاحفظه مرة واحدة في Cutling. في خانة البريد تضعه لوحة المفاتيح في المقدمة، فيكفي كل نموذج ضغطة واحدة.\n\nCutling في App Store: cutling.matsuokengo.com\n\n#نصائح_ايفون #كيبورد_ايفون #نسخ_ولصق #Cutling"
-    },
-    {
-     "lang": "tr",
-     "language": "Turkish",
-     "title": "E-posta adresini her forma yeniden yazma #iphoneipuçları #iphoneklavye",
-     "description": "Kafenin Wi-Fi girişi, \"%10 indirim\" penceresi, check-in formu, e-fiş: e-posta adresini dört kez yazdın, 21 saniye.\n\nCutling'e bir kez kaydet. E-posta alanında klavye onu en başa koyuyor, her form tek dokunuşla bitiyor.\n\nCutling App Store'da: cutling.matsuokengo.com\n\n#iphoneipuçları #iphoneklavye #kopyalayapıştır #Cutling"
-    },
-    {
-     "lang": "ru",
-     "language": "Russian",
-     "title": "Не вводите почту заново в каждой форме #фишкиайфона #клавиатураайфон",
-     "description": "Вход в Wi-Fi, окно «скидка 10%», форма регистрации в отеле, электронный чек: адрес почты набран четыре раза, 21 секунда.\n\nСохраните его в Cutling один раз. В поле для почты клавиатура ставит его первым, и на каждую форму уходит одно касание.\n\nCutling в App Store: cutling.matsuokengo.com\n\n#фишкиайфона #клавиатураайфон #буферобмена #Cutling"
-    },
-    {
-     "lang": "id",
-     "language": "Indonesian",
-     "title": "Alamat email tak perlu diketik ulang di tiap formulir #tipsiphone #keyboardiphone",
-     "description": "Login Wi-Fi kafe, pop-up \"diskon 10%\", formulir check-in, struk belanja: empat kali mengetik alamat email, 21 detik.\n\nSimpan sekali di Cutling. Di kolom email, keyboard menaruhnya paling depan, jadi tiap formulir cukup satu ketukan.\n\nCutling di App Store: cutling.matsuokengo.com\n\n#tipsiphone #keyboardiphone #copypaste #Cutling"
-    },
     {
      "lang": "ja",
      "language": "Japanese",
@@ -1083,80 +717,49 @@
      "description": "カフェのWi-Fiログイン、「10%オフ」のポップアップ、チェックインのフォーム、レシートの送り先。メールアドレスを4回打って、合わせて21秒。\n\nCutlingに一度保存すると、メール欄ではキーボードがそのアドレスを先頭に出します。あとはどのフォームもワンタップです。\n\nCutlingはApp Storeで： cutling.matsuokengo.com\n\n#iPhone便利機能 #iPhoneキーボード #コピペ #Cutling"
     },
     {
-     "lang": "zh-Hant",
-     "language": "Traditional Chinese",
-     "title": "Email 不用每張表單都重打 #iPhone技巧 #iPhone鍵盤",
-     "description": "連 Wi-Fi 要填 Email，「首購九折」的彈出視窗要填，報到表單要填，電子發票也要填。四次加起來打了 21 秒。\n\n在 Cutling 存一次。遇到 Email 欄位，鍵盤會把它排在第一個，每張表單點一下就好。\n\nCutling 在 App Store： cutling.matsuokengo.com\n\n#iPhone技巧 #iPhone鍵盤 #剪貼簿 #Cutling"
-    },
-    {
-     "lang": "zh-Hans",
-     "language": "Simplified Chinese",
-     "title": "邮箱地址不用每张表单都重输 #iPhone技巧 #iPhone键盘",
-     "description": "连 Wi-Fi 要填邮箱，“首单九折”的弹窗要填，入住登记要填，电子收据还要填。四次下来敲了 21 秒。\n\n在 Cutling 里存一次。碰到邮箱输入框，键盘会把它放在第一个，每张表单点一下就行。\n\nCutling 在 App Store： cutling.matsuokengo.com\n\n#iPhone技巧 #iPhone键盘 #剪贴板 #Cutling"
-    },
-    {
-     "lang": "fr",
-     "language": "French",
-     "title": "Ne retapez plus votre adresse e-mail à chaque formulaire #astucesiphone #clavieriphone",
-     "description": "Le Wi-Fi du café, la pop-up « -10 % », le formulaire d'enregistrement, le ticket de caisse par e-mail : votre adresse e-mail tapée quatre fois, 21 secondes.\n\nEnregistrez-la une fois dans Cutling. Dans un champ e-mail, le clavier la propose en premier, et chaque formulaire se règle d'un toucher.\n\nCutling sur l'App Store : cutling.matsuokengo.com\n\n#astucesiphone #clavieriphone #copiercoller #Cutling"
-    },
-    {
-     "lang": "it",
-     "language": "Italian",
-     "title": "Basta riscrivere l'email in ogni modulo #trucchiiphone #tastieraiphone",
-     "description": "Il Wi-Fi del bar, il pop-up \"10% di sconto\", il modulo del check-in, lo scontrino via email: il tuo indirizzo email scritto quattro volte, 21 secondi.\n\nSalvalo una volta in Cutling. In un campo email la tastiera lo propone per primo, e ogni modulo si chiude con un tocco.\n\nCutling sull'App Store: cutling.matsuokengo.com\n\n#trucchiiphone #tastieraiphone #copiaincolla #Cutling"
-    },
-    {
-     "lang": "de",
-     "language": "German",
-     "title": "Tipp deine E-Mail-Adresse nicht in jedes Formular neu #iphonetipps #iphonetastatur",
-     "description": "WLAN-Anmeldung im Café, das „10 % Rabatt“-Pop-up, das Check-in-Formular, der Kassenbon per Mail: viermal deine E-Mail-Adresse getippt, 21 Sekunden.\n\nSpeichere sie einmal in Cutling. In einem E-Mail-Feld zeigt die Tastatur sie als Erstes an, und jedes Formular braucht nur einen Tipp.\n\nCutling im App Store: cutling.matsuokengo.com\n\n#iphonetipps #iphonetastatur #zwischenablage #Cutling"
-    },
-    {
-     "lang": "es",
-     "language": "Spanish",
-     "title": "Deja de escribir tu correo en cada formulario #trucosiphone #tecladoiphone",
-     "description": "El wifi de la cafetería, el pop-up del «10 % de descuento», el formulario del check-in, el tique por correo: tu correo electrónico escrito cuatro veces, 21 segundos.\n\nGuárdalo una vez en Cutling. En un campo de correo el teclado lo pone el primero, y cada formulario se resuelve con un toque.\n\nCutling en el App Store: cutling.matsuokengo.com\n\n#trucosiphone #tecladoiphone #copiarypegar #Cutling"
-    },
-    {
-     "lang": "pt-BR",
-     "language": "Portuguese (Brazil)",
-     "title": "Pare de digitar seu e-mail em todo formulário #dicasiphone #tecladoiphone",
-     "description": "O Wi-Fi da cafeteria, o pop-up de \"10% off\", o formulário do check-in, o comprovante por e-mail: seu e-mail digitado quatro vezes, 21 segundos.\n\nSalve uma vez no Cutling. Num campo de e-mail o teclado mostra ele primeiro, e cada formulário leva um toque.\n\nCutling na App Store: cutling.matsuokengo.com\n\n#dicasiphone #tecladoiphone #copiarecolar #Cutling"
+     "lang": "id",
+     "language": "Indonesian",
+     "title": "Alamat email tak perlu diketik ulang di tiap formulir #tipsiphone #keyboardiphone",
+     "description": "Login Wi-Fi kafe, pop-up \"diskon 10%\", formulir check-in, struk belanja: empat kali mengetik alamat email, 21 detik.\n\nSimpan sekali di Cutling. Di kolom email, keyboard menaruhnya paling depan, jadi tiap formulir cukup satu ketukan.\n\nCutling di App Store: cutling.matsuokengo.com\n\n#tipsiphone #keyboardiphone #copypaste #Cutling"
     }
+   ],
+   "frame_fail": [
+    "cutling-email.mp4"
    ]
   },
   {
-   "id": "P05-en-TikTok",
-   "post": "P05",
-   "app": "Undirect",
+   "id": "P02-en-TikTok",
+   "post": "P02",
+   "app": "Cutling",
    "lang": "en",
    "language": "English",
    "country": "United States",
    "platform": "TikTok",
    "account": "@monholt",
-   "format": "Photo mode",
+   "format": "Video",
    "wib": "2026-11-24 07:05",
    "local": "2026-11-23 19:05",
    "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "Settings, Safari, Block Pop-ups: on. And the tabs keep coming.\n\nSafari lets a tab through when it thinks you asked for it, and a page can make any tap look like you asked.\n\nSearch Undirect on the App Store.\n#iphonetips #iphonehacks #popupads #techtok",
+   "time_source": "Metricool TikTok 18-20",
+   "caption": "Deliver to. Shipping address. Delivery details. Billing address. Your address again, by thumb, typos and all: 14 seconds a form.\n\nSaved once in Cutling, it goes in with one tap, in about a second.\n\nSearch Cutling on the App Store.\n#textreplacement #iphonetips #iphonehacks #techtok",
    "first_comment": null,
    "media": [
-    "/Users/hafang/Downloads/social-calendar/P05/tt-1.png",
-    "/Users/hafang/Downloads/social-calendar/_assets/tt-end-Undirect.png"
+    "/Users/hafang/Downloads/pain-films-v4/cutling-address.mp4"
    ],
    "on_screen_text": "English",
    "needs_wording": null,
    "approved_post": true,
    "in_approved_set": true,
    "changed_since_approval": [
-    "Time: approved 2026-11-23 05:50 WIB for every platform; now 2026-11-24 07:05 WIB, this platform's best hour in ET"
+    "Time: approved 2026-11-22 05:50 WIB for every platform; now 2026-11-24 07:05 WIB, this platform's best hour in ET"
    ],
    "notes": [
-    "Photo set: the post's slides, then the search slide."
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: cutling-address.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
    ],
-   "already_scheduled": true
+   "frame_fail": [
+    "cutling-address.mp4"
+   ]
   },
   {
    "id": "P05-en-Instagram",
@@ -1253,125 +856,6 @@
    ]
   },
   {
-   "id": "P07-ja-Instagram",
-   "post": "P07",
-   "app": "Undirect",
-   "lang": "ja",
-   "language": "Japanese",
-   "country": "Japan",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Trial reel",
-   "wib": "2026-11-24 10:15",
-   "local": "2026-11-24 12:15",
-   "zone": "JST",
-   "time_source": "MIC 12時台 lunch peak",
-   "caption": "映画サイトで「ダウンロード」を押すと、「ダウンロード中…」という偽のページが出て、再生アプリを入れろと言ってきます。\n\nそのサイトでUndirectをオンにしておけば、元のページから動きません。\n\nリンクはプロフィールから。\n#iPhone便利機能 #iPhone裏技 #Safari #広告ブロック #iPhoneアプリ",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u2-short.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel."
-   ]
-  },
-  {
-   "id": "P07-zh-Hant-Threads",
-   "post": "P07",
-   "app": "Undirect",
-   "lang": "zh-Hant",
-   "language": "Traditional Chinese",
-   "country": "Taiwan",
-   "platform": "Threads",
-   "account": "@monholtco",
-   "format": "Video",
-   "wib": "2026-11-24 11:04",
-   "local": "2026-11-24 12:04",
-   "zone": "Taipei",
-   "time_source": "Hootsuite Threads Wed 12:00",
-   "caption": "在電影網站按「下載」，結果跳到一個假的「下載中」頁面，叫你先裝播放器 App。\n\n在那個網站開啟 Undirect，你就會留在原本的頁面。\n\n上一次假的下載鍵把你帶去哪裡？",
-   "first_comment": {
-    "label": "Our first reply",
-    "text": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=th-zh-hant&mt=8"
-   },
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u2-short.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": []
-  },
-  {
-   "id": "P07-id-TikTok",
-   "post": "P07",
-   "app": "Undirect",
-   "lang": "id",
-   "language": "Indonesian",
-   "country": "Indonesia",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Video",
-   "wib": "2026-11-24 12:20",
-   "local": "2026-11-24 12:20",
-   "zone": "WIB",
-   "time_source": "GUESS: lunch, borrowed from Japan",
-   "caption": "Ketuk Download di situs film, yang muncul malah halaman palsu \"Download sedang berjalan\" yang menyuruhmu memasang aplikasi pemutar.\n\nKalau Undirect nyala untuk situs itu, kamu tetap di halaman tadi.\n\nCari Undirect di App Store.\n#tipsiphone #trikiphone #iklanpopup #techtok",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u2-short.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": []
-  },
-  {
-   "id": "P09-en-TikTok",
-   "post": "P09",
-   "app": "Cutling",
-   "lang": "en",
-   "language": "English",
-   "country": "United States",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Photo mode",
-   "wib": "2026-11-24 15:05",
-   "local": "2026-11-24 03:05",
-   "zone": "ET",
-   "time_source": "already scheduled at this minute (social-posts.md)",
-   "caption": "Cutling is on Product Hunt today: a keyboard for the text you type again and again, on iPhone, iPad and Mac.\n\nSearch Cutling on the App Store.\n#textreplacement #iphonetips #iphonehacks #techtok",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P09/card-tt.png",
-    "/Users/hafang/Downloads/social-calendar/_assets/tt-end-Cutling.png"
-   ],
-   "on_screen_text": "English",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": true,
-   "changed_since_approval": [
-    "Time: approved 2026-11-24 15:07 WIB for every platform; now 2026-11-24 15:05 WIB, this platform's best hour in ET"
-   ],
-   "notes": [],
-   "already_scheduled": true
-  },
-  {
    "id": "P09-en-Facebook",
    "post": "P09",
    "app": "Cutling",
@@ -1399,6 +883,35 @@
     "Link sticker to cutling.matsuokengo.com (Business Suite's Story link sticker is unchecked, GUESS)."
    ],
    "already_scheduled": true
+  },
+  {
+   "id": "P09-en-Instagram",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "en",
+   "language": "English",
+   "country": "United States",
+   "platform": "Instagram",
+   "account": "monholtco",
+   "format": "Story, link sticker",
+   "wib": "2026-11-24 15:07",
+   "local": "2026-11-24 03:07",
+   "zone": "ET",
+   "time_source": "the approved minute, tied to the launch or sale day",
+   "caption": null,
+   "sticker": "Link: cutling.matsuokengo.com",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/story-1.png"
+   ],
+   "on_screen_text": "English",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": true,
+   "changed_since_approval": [],
+   "notes": [
+    "The link sticker is drawn on the review frame; post the clean frame and add the sticker in the app."
+   ]
   },
   {
    "id": "P09-en-Threads",
@@ -1429,6 +942,40 @@
    "already_scheduled": true
   },
   {
+   "id": "P09-en-TikTok",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "en",
+   "language": "English",
+   "country": "United States",
+   "platform": "TikTok",
+   "account": "@monholt",
+   "format": "Photo carousel",
+   "wib": "2026-11-24 15:07",
+   "local": "2026-11-24 03:07",
+   "zone": "ET",
+   "time_source": "the approved minute, tied to the launch or sale day",
+   "caption": "Cutling is on Product Hunt today: a keyboard for the text you type again and again, on iPhone, iPad and Mac.\n\nSearch Cutling on the App Store.\n#textreplacement #iphonetips #iphonehacks #techtok",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/card-tt.png",
+    "/Users/hafang/Downloads/social-calendar/_assets/tt-end-Cutling.png"
+   ],
+   "on_screen_text": "English",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": true,
+   "changed_since_approval": [],
+   "notes": [
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: P09/card-tt.png: the Cutling badge sits under TikTok's caption band and \"Product Hunt\" touches the right rail; _assets/tt-end-Cutling.png: \"Cutling\" and \"App Store\" run under TikTok's right button column. Do not schedule until Fable's fix lands."
+   ],
+   "frame_fail": [
+    "P09/card-tt.png",
+    "_assets/tt-end-Cutling.png"
+   ]
+  },
+  {
    "id": "P09-en-YouTube",
    "post": "P09",
    "app": "Cutling",
@@ -1456,28 +1003,26 @@
    ]
   },
   {
-   "id": "P07-ar-Facebook",
-   "post": "P07",
-   "app": "Undirect",
-   "lang": "ar",
-   "language": "Arabic",
-   "country": "Saudi Arabia",
-   "platform": "Facebook",
-   "account": "Monholt (Page)",
-   "format": "Reel",
-   "wib": "2026-11-24 16:32",
-   "local": "2026-11-24 12:32",
-   "zone": "Riyadh",
-   "time_source": "Sprout FB Tue-Wed 12-20",
-   "caption": "تضغط «تنزيل» في موقع أفلام، فتظهر لك صفحة مزيفة مكتوب فيها «جارٍ التنزيل» وتطلب منك تثبيت تطبيق مشغّل.\n\nإذا كان Undirect مفعّلًا لهذا الموقع، تبقى في صفحتك.",
-   "first_comment": {
-    "label": "First comment",
-    "text": "Undirect في App Store:\nhttps://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=fb-ar&mt=8"
-   },
+   "id": "P09-ja-Instagram",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Instagram",
+   "account": "monholtco",
+   "format": "Story, link sticker",
+   "wib": "2026-11-24 19:15",
+   "local": "2026-11-24 21:15",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": null,
+   "sticker": "Link: cutling.matsuokengo.com",
+   "first_comment": null,
    "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u2-short.mp4"
+    "/Users/hafang/Downloads/social-calendar/P09/story-1.png"
    ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
    "needs_wording": null,
    "approved_post": true,
    "in_approved_set": false,
@@ -1485,7 +1030,238 @@
     "New: this language was not in the approved set"
    ],
    "notes": [
-    "Business Suite can't attach a first comment: post it by hand at this time."
+    "The link sticker is drawn on the review frame; post the clean frame and add the sticker in the app."
+   ],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P09-ja-Facebook",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Facebook",
+   "account": "Monholt (Page)",
+   "format": "Story",
+   "wib": "2026-11-24 19:17",
+   "local": "2026-11-24 21:17",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": null,
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/story-1.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set",
+    "Note changed: answers are text over film, no face on camera"
+   ],
+   "notes": [
+    "Link sticker to cutling.matsuokengo.com (Business Suite's Story link sticker is unchecked, GUESS).",
+    "The English row has no caption, sticker or reply to write: the Story frames carry the words."
+   ],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P09-ja-Threads",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Threads",
+   "account": "@monholtco",
+   "format": "Text",
+   "wib": "2026-11-24 19:19",
+   "local": "2026-11-24 21:19",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": "今日、CutlingがProduct Huntに掲載されています。何度も打つ文章をしまっておけるキーボードで、iPhone、iPad、Macで使えます。\n\nキーボードに最初に保存するとしたら、何にしますか？",
+   "first_comment": {
+    "label": "Our first reply",
+    "text": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=th-ja&mt=8"
+   },
+   "media": [],
+   "on_screen_text": "none",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": []
+  },
+  {
+   "id": "P09-ja-TikTok",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "TikTok",
+   "account": "@monholt",
+   "format": "Photo carousel",
+   "wib": "2026-11-24 19:20",
+   "local": "2026-11-24 21:20",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": "今日、CutlingがProduct Huntに掲載されています。何度も打つ文章をしまっておけるキーボードで、iPhone、iPad、Macで使えます。\n\nApp Storeで「Cutling」と検索。\n#ユーザ辞書 #iPhone便利機能 #iPhone裏技 #ガジェット",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/card-tt.png",
+    "/Users/hafang/Downloads/social-calendar/_assets/tt-end-Cutling.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: P09/card-tt.png: the Cutling badge sits under TikTok's caption band and \"Product Hunt\" touches the right rail; _assets/tt-end-Cutling.png: \"Cutling\" and \"App Store\" run under TikTok's right button column. Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "P09/card-tt.png",
+    "_assets/tt-end-Cutling.png"
+   ]
+  },
+  {
+   "id": "P09-id-Instagram",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "Instagram",
+   "account": "monholtco",
+   "format": "Story, link sticker",
+   "wib": "2026-11-24 19:30",
+   "local": "2026-11-24 19:30",
+   "zone": "WIB",
+   "time_source": "Jakpat 18-21",
+   "caption": null,
+   "sticker": "Link: cutling.matsuokengo.com",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/story-1.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "The link sticker is drawn on the review frame; post the clean frame and add the sticker in the app."
+   ],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P09-id-Facebook",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "Facebook",
+   "account": "Monholt (Page)",
+   "format": "Story",
+   "wib": "2026-11-24 19:32",
+   "local": "2026-11-24 19:32",
+   "zone": "WIB",
+   "time_source": "Jakpat 18-21",
+   "caption": null,
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/story-1.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set",
+    "Note changed: answers are text over film, no face on camera"
+   ],
+   "notes": [
+    "Link sticker to cutling.matsuokengo.com (Business Suite's Story link sticker is unchecked, GUESS).",
+    "The English row has no caption, sticker or reply to write: the Story frames carry the words."
+   ],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P09-id-Threads",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "Threads",
+   "account": "@monholtco",
+   "format": "Text",
+   "wib": "2026-11-24 19:34",
+   "local": "2026-11-24 19:34",
+   "zone": "WIB",
+   "time_source": "Jakpat 18-21",
+   "caption": "Hari ini Cutling tampil di Product Hunt: keyboard untuk teks yang kamu ketik berulang-ulang, di iPhone, iPad, dan Mac.\n\nApa yang pertama kamu simpan di keyboard?",
+   "first_comment": {
+    "label": "Our first reply",
+    "text": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=th-id&mt=8"
+   },
+   "media": [],
+   "on_screen_text": "none",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": []
+  },
+  {
+   "id": "P09-id-TikTok",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "TikTok",
+   "account": "@monholt",
+   "format": "Photo carousel",
+   "wib": "2026-11-24 19:35",
+   "local": "2026-11-24 19:35",
+   "zone": "WIB",
+   "time_source": "Jakpat 18-21",
+   "caption": "Hari ini Cutling tampil di Product Hunt: keyboard untuk teks yang kamu ketik berulang-ulang, di iPhone, iPad, dan Mac.\n\nCari Cutling di App Store.\n#penggantianteks #tipsiphone #trikiphone #techtok",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/card-tt.png",
+    "/Users/hafang/Downloads/social-calendar/_assets/tt-end-Cutling.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: P09/card-tt.png: the Cutling badge sits under TikTok's caption band and \"Product Hunt\" touches the right rail; _assets/tt-end-Cutling.png: \"Cutling\" and \"App Store\" run under TikTok's right button column. Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "P09/card-tt.png",
+    "_assets/tt-end-Cutling.png"
    ]
   }
  ]

@@ -213,3 +213,24 @@ Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip 
 | 2026-11-21 21:22 WIB | Instagram @monholtco feed | Debut carousel (monholt-debut-ig-1.png, ig-2.png) with the debut caption, via Business Suite, Instagram only, no boost | live, https://www.instagram.com/p/DgAb0UGnX06/ (id 17872100397663065) |
 | 2026-11-21 21:24 WIB | Instagram @monholtco Story | Debut Story (monholt-debut-tt-1.png) with link sticker to https://monholt.com moved below the question, via Business Suite, Instagram only | live 24 h, id 18132329827895296 |
 | 2026-11-21 21:27 WIB | TikTok @monholt photo mode | Debut post (monholt-debut-tt-1.png, tt-2.png) with the debut caption, Disclose post content > Your brand, default original sound | live, https://www.tiktok.com/@monholt/photo/7710631569291005205 |
+
+### Cleanup 2026-11-21 (ASG135): English, Japanese and Indonesian only, every scheduled post checked in its platform's frame
+
+Owner decision: post only in en, ja and id. Read in Chrome 21:00-22:30 WIB; every removal read back in the platform's scheduled list. Evidence in [social/qa-2026-11-21/](social/qa-2026-11-21/); overlays from Google's Shorts file, TikTok's In-Feed template (product-video/references/formats.md) and Meta's Stories margins (third-party 14% top / 20% bottom; Meta's own Story preview checked for P03).
+
+Unscheduled, other languages (Business Suite: Move to drafts, so the post is kept unpublished; Threads: Delete draft, its only way to unschedule; captions stay in wording-done.json):
+- Instagram: P10-zh-Hant Reel (Nov 25 11:30), P08-fr image (Nov 25 02:00), P12-ru image (Nov 25 13:30)
+- Facebook: P07-ar Reel (Nov 24 16:32), P08-it image (Nov 25 02:17)
+- Threads: P07-zh-Hant (Tue 11:04), P08-pt-BR (Wed 00:04; its image was P12's Text Replacement card, not P08's), P10-ar (Wed 16:04)
+- TikTok: NOT removed. TikTok Studio on the web refuses delete, edit and privacy on posts disclosed as Your brand ("Videos with commercial content can only be edited on the TikTok app"): P12-it (25 Nov 3:20 pm), P10-zh-Hant (25 Nov 12:05 pm), P08-de (25 Nov 1:35 am) wait for the owner in the TikTok app. Screenshot qa-2026-11-21/tiktok-delete-blocked.jpg
+- YouTube: no other-language item was scheduled. X: the Arabic quote of @APPS_RH (Nov 27 20:15) stays, as asked.
+
+QA failures, unscheduled:
+- Instagram P07-ja Reel (Nov 24 10:15), Facebook P10-id Reel (Nov 25 12:17), Facebook P12-ja image (Nov 25 05:47), Threads P12-ja image (Wed 05:49), Threads P11-id video (Wed 19:34): Japanese or Indonesian caption over English on-screen text (film-jaid.jpg, ig-overlay-sheet.jpg)
+- Instagram and Facebook Reels P01 (Nov 23 00:30 / 00:32), P02 (08:00 / 08:02), P04 (Nov 24 00:30 / 00:32), YouTube Shorts P01 dYNZzJYhKBk, P02 NmFG_xc9oPE, P04 -wgj1iPls8s: the end card's App Store badge and device line sit below y 1248, under the Reels, Shorts and TikTok caption band (shorts-end-sheet.jpg, film-u1.jpg, film-cutling-address.jpg, film-cutling-email.jpg). Shorts set back to private with no publish time by `youtube.ts unschedule` (claude-house-rules a9ce5c24), read back "no scheduled publish (private)"
+- TikTok, all six other scheduled posts fail and wait for the owner in the TikTok app: P01-en (23 Nov 1:05 am, end card), P02-en (23 Nov 7:05 am, end card), P04-en (24 Nov 1:05 am, end card), P05-en photo (24 Nov 7:05 am: "The tabs still open." under the caption band, toggle and end card under the right rail), P07-id (24 Nov 12:20 pm: Indonesian caption over English film, end card), P09-en photo (24 Nov 3:05 pm: Cutling badge under the caption band, end card under the right rail) (tt-overlay-sheet.jpg)
+- No scheduled media shows bank details or an IBAN (macOS Vision OCR of every remaining image and the three English films at 1 fps)
+
+Still scheduled, passed: Facebook Stories P03 (Nov 22 21:02, 2 frames), P06 (Nov 23 21:02, 2 frames), P09 (Nov 24 15:07); P05 image on Instagram (Nov 24 08:00) and Facebook (08:02); Threads P03 poll (Nov 22 20:34), P01 video (Nov 23 00:04), P02 video (02:04), P06 poll (20:34), P04 video (Nov 24 00:04), P05 image (02:04), P09 text (15:07); X items as scheduled in X. Lists after: meta-posts-scheduled-after.jpg, threads-drafts-after.jpg, fb-story-P03-header-clear.jpg
+
+Calendar version 7 (deliveries.ts, markets.ts, page.ts; design-needed.json for Fable), republished at https://claude.ai/artifact/RTN1joQJUz6eKqvcH5De6f (version 10).

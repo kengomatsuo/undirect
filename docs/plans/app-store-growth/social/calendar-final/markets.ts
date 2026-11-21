@@ -1,21 +1,19 @@
-// Every language the calendar posts in, each timed in its own country's clock, and its share of the
-// language rotation on Instagram, Facebook, Threads and TikTok (owner, 2026-11-21: one account per
-// platform, about 3 posts a day, English and the top markets ja, ar, zh-Hant, id first, every other
-// language a regular share each month). Sources for each hour are in
+// Every language the calendar posts in, each timed in its own country's clock (owner, 2026-11-21: English,
+// Japanese and Indonesian only; every other language is dropped). Each post goes out in all three on
+// Instagram, Facebook, Threads and TikTok, so there is no weighting between them. Sources for each hour are in
 // docs/research/posting-times-countries.md (sections 2a-2e); a GUESS is marked as one.
 
-export type LangCode = "en" | "ar" | "id" | "ja" | "zh-Hant" | "zh-Hans" | "fr" | "it" | "de" | "es" | "pt-BR" | "tr" | "ru";
+export type LangCode = "en" | "ja" | "id";
 export type Plat = "X" | "Instagram" | "Facebook" | "Threads" | "TikTok" | "YouTube";
 
 export type Market = {
   lang: LangCode; name: string; country: string; zone: string;
-  off: number; // hours from WIB (UTC+7) to the market's local clock, valid Nov 22-Dec 20 2026
+  off: number; // hours from WIB (UTC+7) to the market's local clock, valid Nov 22 2026 to Mar 13 2027 (US daylight time starts Mar 14)
   stagger: number; // minutes, so languages in one zone never share a minute on one account
   // App Store units from the markets this language reaches, both apps, Aug 20-Nov 19 2026, and paid
   // units Sep 1-Nov 19 (posting-times-countries.md, "App Store units by country").
   units: number; paid: number;
-  // Share of rotation slots. The owner's tiers set the order (English, then ja, ar, zh-Hant, id, then
-  // the rest); units order languages inside a tier.
+  // Each language carries every post (version 7), so every weight is 1; kept for the export's shape.
   weight: number;
   grid?: "ja" | "id"; // measured national hours replace the global grid
   note?: string;
@@ -23,23 +21,9 @@ export type Market = {
 
 export const MARKETS: Market[] = [
   // US and Canada 140, UK 8, India 5, Australia 4; paid US 7, Canada 2, UK 1, India 1
-  { lang: "en", name: "English", country: "United States", zone: "ET", off: -12, stagger: 0, units: 157, paid: 11, weight: 30 },
-  // Saudi Arabia 132 (the Oct 10 free day), Egypt 12, UAE 8, Jordan 3, Morocco 3
-  { lang: "ar", name: "Arabic", country: "Saudi Arabia", zone: "Riyadh", off: -4, stagger: 0, units: 158, paid: 0, weight: 11 },
-  { lang: "tr", name: "Turkish", country: "Türkiye", zone: "Istanbul", off: -4, stagger: 15, units: 7, paid: 0, weight: 3 },
-  { lang: "ru", name: "Russian", country: "Russia", zone: "Moscow", off: -4, stagger: 30, units: 6, paid: 0, weight: 3, note: "Instagram, Facebook and X are blocked in Russia (Roskomnadzor, 2022), so these reach Russian readers who use them anyway or live abroad." },
-  { lang: "id", name: "Indonesian", country: "Indonesia", zone: "WIB", off: 0, stagger: 0, units: 7, paid: 1, weight: 10, grid: "id" },
-  { lang: "ja", name: "Japanese", country: "Japan", zone: "JST", off: 2, stagger: 0, units: 6, paid: 1, weight: 10, grid: "ja" },
-  { lang: "zh-Hant", name: "Traditional Chinese", country: "Taiwan", zone: "Taipei", off: 1, stagger: 0, units: 10, paid: 2, weight: 10 },
-  // China mainland 12, which these platforms do not reach
-  { lang: "zh-Hans", name: "Simplified Chinese", country: "Singapore, Malaysia and Chinese readers abroad", zone: "UTC+8", off: 1, stagger: 15, units: 12, paid: 0, weight: 3, note: "None of these platforms is reachable in mainland China without a VPN, so the hour is set for UTC+8 readers outside it." },
-  { lang: "fr", name: "French", country: "France", zone: "Paris", off: -6, stagger: 0, units: 13, paid: 0, weight: 4 },
-  { lang: "it", name: "Italian", country: "Italy", zone: "Rome", off: -6, stagger: 15, units: 11, paid: 0, weight: 4 },
-  { lang: "de", name: "German", country: "Germany", zone: "Berlin", off: -6, stagger: 30, units: 5, paid: 0, weight: 3 },
-  // Spain 4; Latin America 17 is not split by country
-  { lang: "es", name: "Spanish", country: "Spain", zone: "Madrid", off: -6, stagger: 45, units: 4, paid: 0, weight: 3 },
-  // all of Latin America, not split by country
-  { lang: "pt-BR", name: "Portuguese (Brazil)", country: "Brazil", zone: "Brasília", off: -10, stagger: 0, units: 17, paid: 0, weight: 3 },
+  { lang: "en", name: "English", country: "United States", zone: "ET", off: -12, stagger: 0, units: 157, paid: 11, weight: 1 },
+  { lang: "ja", name: "Japanese", country: "Japan", zone: "JST", off: 2, stagger: 0, units: 6, paid: 1, weight: 1, grid: "ja" },
+  { lang: "id", name: "Indonesian", country: "Indonesia", zone: "WIB", off: 0, stagger: 0, units: 7, paid: 1, weight: 1, grid: "id" },
 ];
 
 // A post's part of the day. The approved calendar's slot 3 was the US morning, slot 1 the US

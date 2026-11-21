@@ -1,6 +1,7 @@
-// Builds the review page from deliveries.json (version 6, the language rotation): one card per post with
-// the language and local time it draws on each platform, each platform's version in that language, the
-// YouTube translations, and an unticked box; then the X routine. Writes ~/Downloads/social-calendar/artifact.html.
+// Builds the review page from deliveries.json (version 7: English, Japanese and Indonesian): one card per
+// post with its English, Japanese and Indonesian deliveries on each platform and their local times, each
+// version's words, what still needs Fable (localized media, frame fixes), and an unticked box; then the X
+// routine. Writes ~/Downloads/social-calendar/artifact.html.
 // Run after deliveries.ts: bun page.ts
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -11,6 +12,8 @@ import { MARKETS } from "./markets";
 
 const OUT = join(homedir(), "Downloads/social-calendar");
 const { meta, rows } = JSON.parse(readFileSync(join(import.meta.dir, "deliveries.json"), "utf8"));
+const design = JSON.parse(readFileSync(join(import.meta.dir, "design-needed.json"), "utf8"));
+const LORDER: Record<string, number> = { en: 0, ja: 1, id: 2 };
 type R = (typeof rows)[number];
 
 const esc = (s = "") => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -45,28 +48,36 @@ function versionHtml(r: R) {
     ${r.poll ? pollHtml(r.poll) : ""}${r.sticker ? `<p class="meta strong">Sticker: ${esc(r.sticker)}</p>` : ""}
     ${r.caption ? `<p class="cap" dir="auto">${br(r.caption)}</p>` : ""}
     ${r.first_comment?.text ? `<div class="follow"><p class="fl">${esc(r.first_comment.label)}</p><p class="cap">${br(r.first_comment.text)}</p></div>` : ""}
+    ${r.frame_fail ? `<p class="meta warnt">Frame check failed: Fable fixes ${esc(r.frame_fail.join(", "))} before this is scheduled.</p>` : ""}
+    ${r.needs_localized_media ? `<p class="meta warnt">On-screen text is English: needs a ${esc(r.language)} version of the media.</p>` : ""}
+    ${r.needs_design ? `<p class="meta warnt">Needs design: ${esc(r.needs_design)}</p>` : ""}
     ${r.requires_x_premium ? `<p class="meta warnt">${r.x_length} characters: needs X Premium (over 280).</p>` : ""}
     ${r.changed_since_approval.length ? `<ul class="chgl">${r.changed_since_approval.map((c: string) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
     ${r.notes.length ? `<ul class="notes">${r.notes.map((n: string) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
-    ${r.translations ? `<details class="tests"><summary>12 translated titles and descriptions for YouTube Studio</summary>${r.translations.map((t: { language: string; title: string; description: string }) => `<div class="follow"><p class="fl">${esc(t.language)}</p><p class="yt-title" dir="auto">${esc(t.title)}</p><p class="cap" dir="auto">${br(t.description)}</p></div>`).join("")}</details>` : ""}</div>`;
+    ${r.translations ? `<details class="tests"><summary>Japanese and Indonesian titles and descriptions for YouTube Studio</summary>${r.translations.map((t: { language: string; title: string; description: string }) => `<div class="follow"><p class="fl">${esc(t.language)}</p><p class="yt-title" dir="auto">${esc(t.title)}</p><p class="cap" dir="auto">${br(t.description)}</p></div>`).join("")}</details>` : ""}</div>`;
 }
 
 function card(n: number) {
   const p = posts.find((p) => p.n === n)!;
   const id = `P${String(n).padStart(2, "0")}`;
   const rs = byPost.get(id)!;
-  const del = PLATS.slice(0, 5).map((pl) => rs.find((r) => r.platform === pl)).filter(Boolean) as R[];
-  const media = del.find((r) => r.media.some((m: string) => m.endsWith(".mp4")))?.media ?? del.find((r) => r.media.length)?.media ?? [];
+  const del = rs.filter((r) => r.platform !== "X").sort((a, b) => PLATS.indexOf(a.platform) - PLATS.indexOf(b.platform) || LORDER[a.lang] - LORDER[b.lang]);
+  const en = del.filter((r) => r.lang === "en");
+  const media = en.find((r) => (r.media ?? []).some((m: string) => m.endsWith(".mp4")))?.media ?? en.find((r) => r.media?.length)?.media ?? [];
+  const fails = [...new Set(del.flatMap((r) => r.frame_fail ?? []))];
+  const loc = del.some((r) => r.needs_localized_media);
   const onX = rs.filter((r) => r.platform === "X");
   const langs = [...new Set(del.map((r) => r.lang))];
   const grid = `<div class="tw"><table class="mt"><thead><tr><th>Platform</th><th>Language</th><th>Local time</th><th>WIB</th></tr></thead><tbody>${[...del, ...onX].map((r) => `<tr><th>${r.platform}</th><td>${esc(r.language)}</td><td>${esc(when(r.local))} ${esc(r.zone)}</td><td>${esc(when(r.wib))}${r.already_scheduled ? ` <span class="okc">scheduled</span>` : ""}</td></tr>`).join("")}</tbody></table></div>`;
   const chips = [
     p.gate ? `<span class="wait">Held for 1.0.5, not in your approved set</span>` : `<span class="okc">Approved post</span>`,
     ...langs.map((l) => `<span class="chg">${esc(MARKETS.find((m) => m.lang === l)!.name)}</span>`),
+    ...(fails.length ? [`<span class="wait">Frame check failed: ${esc(fails.join(", "))}</span>`] : []),
+    ...(loc ? [`<span class="wait">Japanese and Indonesian media still English</span>`] : []),
     ...(onX.length ? [`<span class="chg">On X in English</span>`] : [`<span class="dimc">Not on X</span>`]),
   ];
   return `<article class="del" id="${id}" data-gate="${p.gate ? 1 : 0}" data-x="${onX.length ? 1 : 0}" data-langs="${langs.join(" ")}">
-    <div class="ph"><label class="tick"><input type="checkbox" data-id="${id}" id="c-${id}"><b>${id}</b></label><span class="app a-${p.app}">${p.app}</span><span class="kind">${p.kind}</span><span class="loc">${esc(p.date)}, local day in each country</span></div>
+    <div class="ph"><label class="tick"><input type="checkbox" data-id="${id}" id="c-${id}"><b>${id}</b></label><span class="app a-${p.app}">${p.app}</span><span class="kind">${p.kind}</span><span class="loc">English from ${esc(when((startDay.get(id) ?? p.date) + " 00:00").slice(0, -6))}, then Japanese and Indonesian on the next days</span></div>
     <p class="pain">${esc(p.pain)}</p>
     <div class="chips">${chips.join("")}</div>
     ${p.gate ? `<p class="gate">${esc(p.gate)}</p>` : ""}
@@ -86,9 +97,13 @@ const perLang = meta.deliveries_per_language as Record<string, number>;
 const perPlat = meta.deliveries_per_platform_per_language as Record<string, Record<string, number>>;
 const rot = meta.rotation;
 const ready = rows.filter((r: R) => !r.needs_wording && !r.already_scheduled && !r.id.startsWith("X-quote")).length;
-const weeks = [...new Set(posts.map((p) => p.date))].sort();
+// Each card sits on the local day its English version first goes out on Instagram, Facebook, Threads or TikTok.
+const off: Record<string, number> = Object.fromEntries(MARKETS.map((m) => [m.lang, m.off]));
+const localDay = (r: R) => new Date(new Date(r.wib.replace(" ", "T") + ":00Z").getTime() + off[r.lang] * 3600000).toISOString().slice(0, 10);
+const startDay = new Map<string, string>();
+for (const r of rows) if (r.post && r.lang === "en" && ["Instagram", "Facebook", "Threads", "TikTok"].includes(r.platform)) { const d = localDay(r); if (!startDay.has(r.post) || d < startDay.get(r.post)!) startDay.set(r.post, d); }
 const dayIds = new Map<string, number[]>();
-for (const p of posts) (dayIds.get(p.date) ?? dayIds.set(p.date, []).get(p.date)!).push(p.n);
+for (const p of posts) { const d = startDay.get(`P${String(p.n).padStart(2, "0")}`) ?? p.date; (dayIds.get(d) ?? dayIds.set(d, []).get(d)!).push(p.n); }
 
 const html = `<title>Monholt social calendar</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -141,27 +156,25 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 </style>
 <div class="wrap">
 <h1>Monholt social calendar</h1>
-<p class="lead">Sun Nov 22 to Sun Dec 20 2026, <b>version 6: rotation</b>. These are the 87 posts you approved (82, plus 5 still held for Undirect 1.0.5). Instagram, Facebook, Threads and TikTok each post about 3 a day from one account, and each post goes out once per platform in the language its slot draws, at that country's own best hour. YouTube uploads each post once, in English. X stays English only, <b>${perPlat.X.en}</b> posts. Nothing is ticked: the rotation needs a new go.</p>
-<p class="warn">English captions are the ones you approved. Every other caption is Fable's native wording, unchanged. Films and images keep their English on-screen text.</p>
+<p class="lead"><b>Version 7: English, Japanese and Indonesian only.</b> These are the 87 posts you approved (82, plus 5 still held for Undirect 1.0.5). On Instagram, Facebook, Threads and TikTok each post goes out three times: in English, then in Japanese the next day, then in Indonesian the day after. Each platform posts three a day, one per language, each at that country's best hour. At one new post a day the run lasts until ${esc(when(meta.window.slice(14, 24) + " 00:00").slice(0, -6))}. YouTube uploads each film once in English. X stays English only, <b>${perPlat.X.en}</b> posts. Nothing is ticked: this version needs a new go.</p>
+<p class="warn">${meta.frame_fail} deliveries use a film or image that failed the frame check, and ${meta.needs_localized_media} Japanese and Indonesian deliveries still show English on screen. Both wait for Fable before they're scheduled.</p>
 <div class="sum">
-<h3>New in version 6</h3><ul>
-<li><b>One account per platform</b>, no per-language accounts.</li>
-<li><b>About 3 posts a day per platform</b>, ${MARKETS.length} languages in turn. Each approved post goes out once on each platform, so one post can reach four languages across Instagram, Facebook, Threads and TikTok.</li>
-<li><b>Shares follow App Store units</b> (Aug 20 to Nov 19): English about ${rot.share_percent.en}%, then Arabic, Japanese, Traditional Chinese and Indonesian about 10% each, and the other eight languages 3 to 4% each, which is 3 or 4 posts a month on each platform.</li>
-<li><b>Each slot at its language's local best hour</b>: the same platform studies as before, with Japan and Indonesia from national surveys.</li>
-<li><b>YouTube</b>: each film uploads once, in English, with 12 translated titles and descriptions to add in Studio. Community posts go out in English, since YouTube can't translate them.</li>
-<li><b>The sale</b>: P17 goes out in English, Arabic, Traditional Chinese and Japanese, and P26 in English, Indonesian, Arabic and Traditional Chinese. The Traditional Chinese P17 on Threads posts at 17:04 Taipei, after the sale opens at 16:00 Taipei (00:00 Pacific).</li>
-<li><b>Already scheduled</b>: the ${rot.already_scheduled} English deliveries in YouTube, Business Suite, Threads and TikTok Studio keep their minutes, and the rotation is built around them.</li>
-<li><b>X</b>: unchanged from version 5. 4 posts a day 6 hours apart, English only, because X translates each post for its reader.</li></ul>
-<h3>Posts per language on Instagram, Facebook, Threads and TikTok together</h3><div>${MARKETS.map((m) => `<span class="fc">${m.name} <b>${rot.deliveries_on_rotated_platforms[m.lang]}</b> · ${rot.share_percent[m.lang]}%</span>`).join("")}</div>
-<h3>Posts a day per platform, Nov 22 to Dec 20</h3><div>${Object.entries(rot.per_day as Record<string, { min: number; max: number; mean: number }>).map(([pl, d]) => `<span class="fc">${pl} <b>${d.mean}</b> (${d.min} to ${d.max})</span>`).join("")}<span class="fc">X <b>4</b></span></div>
-<h3>Wording</h3><div><span class="fc">Ready to schedule <b>${ready}</b></span><span class="fc">X pieces Fable still writes <b>${meta.needs_wording}</b></span></div>
+<h3>What changed on Nov 21</h3><ul>
+<li><b>Only English, Japanese and Indonesian.</b> Arabic, both Chinese scripts, French, Italian, German, Spanish, Portuguese, Turkish and Russian are gone from the calendar and from every scheduler. The one exception is the Arabic thank-you to @APPS_RH on X, Nov 27, which stays.</li>
+<li><b>Every post in all three languages</b>, on consecutive days: ${rot.days_from_en_to_ja["1"]} of ${Object.values(rot.days_from_en_to_ja as Record<string, number>).reduce((a, b) => a + b, 0)} Japanese versions follow the English by one day. The rest are the dated posts, which go out in all three on their day (Product Hunt Nov 24, the sale Nov 27 and 30, MacPip Dec 8), and the first week's posts, which wait for the English already scheduled.</li>
+<li><b>Every format on every platform.</b> Facebook now has polls, text posts and carousels. Instagram shows the text posts as text cards. X posts the two carousel posts as four-image posts. TikTok photo posts are photo carousels.</li>
+<li><b>A frame check in the generator.</b> Every TikTok, Story, Reel and Short file must be 9:16. All of them are, so no row needed new media. The P12 TikTok was 9:16 too, but it held a 4:5 card floating in a dark frame. That's why the frame check on Nov 21 also looked inside the frame.</li>
+<li><b>What the frame check found</b>: on six films the end card puts the App Store badge under the Reels, Shorts and TikTok caption band, and the TikTok photo cards for P05, P09 and P12 and both end cards run under TikTok's buttons. Those deliveries are marked and wait for Fable's fix.</li>
+<li><b>Removed from the schedulers</b>: every scheduled post in another language, plus the English Reels and Shorts of P01, P02 and P04, and the Japanese and Indonesian posts over English on-screen text. ${rot.already_scheduled} English deliveries stay scheduled: Facebook Stories P03, P06 and P09, the P05 image on Instagram and Facebook, and seven threads.</li></ul>
+<h3>Posts per language, every platform</h3><div>${MARKETS.map((m) => `<span class="fc">${m.name} <b>${perLang[m.lang]}</b></span>`).join("")}</div>
+<h3>Posts a day per platform, counted by WIB day</h3><div>${Object.entries(rot.per_day as Record<string, { min: number; max: number; mean: number }>).map(([pl, d]) => `<span class="fc">${pl} <b>${d.mean}</b> (${d.min} to ${d.max})</span>`).join("")}<span class="fc">X <b>4</b></span></div>
+<h3>Formats</h3><div>${Object.entries(meta.formats as Record<string, Record<string, number>>).map(([pl, f]) => `<span class="fc">${pl}: ${Object.entries(f).map(([k, n]) => `${esc(k)} <b>${n}</b>`).join(", ")}</span>`).join("")}</div>
+<h3>For Fable</h3><div><span class="fc">Media to localize <b>${design.localized_media.length}</b> files</span><span class="fc">Frame fixes <b>${design.frame_fixes.length}</b> files</span><span class="fc">New media <b>${design.new_media.length}</b></span><span class="fc">X pieces to write <b>${meta.needs_wording}</b></span></div>
 <h3>Before you go</h3><ul>
-<li>Sun Nov 22 has one post per platform, since the English posts already scheduled for the first days fall on Nov 23 and 24 WIB.</li>
+<li>Counted by each country's own day, every platform posts exactly one English, one Japanese and one Indonesian post a day. Counted in WIB, the English evening in the US falls on the next WIB day, so a WIB day shows 2 to 4.</li>
+<li>TikTok posts marked Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app.</li>
 <li>Instagram Stories with poll, quiz, questions, slider or Add Yours stickers, and TikTok poll stickers, are posted from the phone app at their time: the web schedulers don't offer those stickers.</li>
-<li>Instagram, Facebook and X are blocked in Russia, and none of these platforms reaches mainland China without a VPN. Russian and Simplified Chinese posts reach readers outside those countries.</li>
-<li>Spanish is timed for Spain. Latin American Spanish speakers would need their own hours.</li>
-<li>Films keep their English on-screen text everywhere: no platform translates words inside a video.</li></ul>
+<li>Facebook polls: if Business Suite offers no poll for a Page post, post them from the Facebook app.</li></ul>
 </div>
 <div class="bar"><button type="button" class="go" id="copy">Copy my go</button><button type="button" id="none">Clear</button>
 <select id="fo" aria-label="Show"><option value="">All posts</option><option value="x">On X</option><option value="gate">Held for 1.0.5</option></select>
@@ -170,11 +183,11 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 <nav class="jump" aria-label="Days">${[...dayIds.keys()].sort().map((d) => `<a href="#d-${d}">${esc(when(d + " 00:00").slice(0, -6))}</a>`).join("")}<a href="#x-routine">X</a></nav>
 ${[...dayIds.keys()].sort().map((d) => `<h2 class="day" id="d-${d}">${esc(when(d + " 00:00").slice(0, -6))} <small class="loc">local day</small></h2>${dayIds.get(d)!.map(card).join("")}`).join("")}
 <h2 id="x-routine">X, day by day</h2>
-<p class="lead">Every X post on @monholtco in time order, English only, with the three already scheduled shown grey. The Nov 27 Arabic quote of @APPS_RH stays as scheduled.</p>
+<p class="lead">Every X post on @monholtco in time order, English only, with the three already scheduled shown grey. The Nov 27 Arabic thank-you to @APPS_RH stays as scheduled.</p>
 ${xHtml}
 </div>
 <script>
-(function(){var K="monholt-cal-v7",s={};try{s=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
+(function(){var K="monholt-cal-v8",s={};try{s=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
 var boxes=[].slice.call(document.querySelectorAll("input[data-id]"));
 function ids(){return boxes.filter(function(b){return b.checked}).map(function(b){return b.dataset.id})}
 function save(){try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}document.getElementById("n").textContent=ids().length+" of "+boxes.length+" ticked"}

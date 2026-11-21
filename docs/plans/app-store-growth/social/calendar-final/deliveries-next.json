@@ -1,46 +1,37 @@
 {
  "meta": {
-  "window": "2026-11-21 19:35 to 2026-11-25 23:59 WIB",
-  "version": 6,
-  "what": "the non-English rotation rows in this window, captions from wording-done.json, ready to schedule; English rows here are already scheduled or in deliveries.json",
-  "rows": 22,
+  "window": "2026-11-21 22:34 to 2026-11-25 23:59 WIB",
+  "version": 7,
+  "what": "the Japanese and Indonesian rows in this window, captions from wording-done.json; rows with frame_fail or needs_localized_media wait for Fable before scheduling",
+  "rows": 20,
   "per_language": {
-   "id": 4,
-   "ar": 4,
-   "ja": 4,
-   "zh-Hant": 3,
-   "pt-BR": 1,
-   "tr": 1,
-   "de": 1,
-   "fr": 1,
-   "it": 2,
-   "ru": 1
+   "ja": 12,
+   "id": 8
   },
   "per_platform": {
-   "Instagram": 7,
-   "TikTok": 6,
+   "Facebook": 5,
+   "Instagram": 5,
    "Threads": 5,
-   "Facebook": 4
+   "TikTok": 5
   },
   "held": 0
  },
  "rows": [
   {
-   "id": "P03-id-Instagram",
+   "id": "P03-ja-Facebook",
    "post": "P03",
    "app": "Undirect",
-   "lang": "id",
-   "language": "Indonesian",
-   "country": "Indonesia",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Story, poll sticker",
-   "wib": "2026-11-22 07:30",
-   "local": "2026-11-22 07:30",
-   "zone": "WIB",
-   "time_source": "Jakpat 07-09",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Facebook",
+   "account": "Monholt (Page)",
+   "format": "Story",
+   "wib": "2026-11-23 05:47",
+   "local": "2026-11-23 07:47",
+   "zone": "JST",
+   "time_source": "MIC 07-08時 commute",
    "caption": null,
-   "sticker": "Poll: \"Berapa tab iklan yang kamu tutup demi satu episode?\" · 0 / 1-5 / 6-20 / Tak terhitung",
    "first_comment": null,
    "media": [
     "/Users/hafang/Downloads/social-calendar/P03/story-1.png",
@@ -51,131 +42,18 @@
    "approved_post": true,
    "in_approved_set": false,
    "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Frame 2: link sticker to undirect.matsuokengo.com.",
-    "The sticker is drawn on the review frames to show where it goes; post the clean frames and add the sticker in the app.",
-    "Business Suite's Instagram Story editor offers only Mention, Link and emoji stickers: post this from the Instagram app at the time."
-   ]
-  },
-  {
-   "id": "P03-ar-TikTok",
-   "post": "P03",
-   "app": "Undirect",
-   "lang": "ar",
-   "language": "Arabic",
-   "country": "Saudi Arabia",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Video",
-   "wib": "2026-11-22 13:05",
-   "local": "2026-11-22 09:05",
-   "zone": "Riyadh",
-   "time_source": "Buffer TikTok Sun 9:00",
-   "caption": "هل فتح Safari يومًا تبويبًا لم تضغط عليه؟ صوّت في الملصق.\n\nابحث عن Undirect في App Store.\n#نصائح_ايفون #حيل_ايفون #النوافذ_المنبثقة #تقنية",
-   "poll": {
-    "q": "هل فتح Safari تبويبًا لم تضغط عليه؟",
-    "options": [
-     "نعم",
-     "لا"
-    ]
-   },
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P03/u1-short-first6s.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Poll sticker, 24 h: \"Has Safari ever opened a tab you didn't tap?\""
-   ]
-  },
-  {
-   "id": "P06-ja-TikTok",
-   "post": "P06",
-   "app": "Cutling",
-   "lang": "ja",
-   "language": "Japanese",
-   "country": "Japan",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Video",
-   "wib": "2026-11-23 05:50",
-   "local": "2026-11-23 07:50",
-   "zone": "JST",
-   "time_source": "MIC 07-08時 commute",
-   "caption": "いちばん何度も打ち直しているのは？住所、メールアドレス、いつも同じDMの返信、URL。投票で教えてください。\n\nApp Storeで「Cutling」と検索。\n#ユーザ辞書 #iPhone便利機能 #iPhone裏技 #ガジェット",
-   "poll": {
-    "q": "いちばん打ち直しているのは？",
-    "options": [
-     "住所",
-     "メール",
-     "同じDM返信",
-     "URL",
-     "その他"
-    ]
-   },
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-address.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
     "New: this language was not in the approved set",
     "Note changed: answers are text over film, no face on camera"
    ],
    "notes": [
-    "Comment poll, up to 5 answers: \"What do you retype most?\"",
-    "Answer each \"Other\" with a reply video of text over the film or a screen recording; no face on camera."
-   ]
+    "Same frames as the Instagram Story, posted to the Page from Business Suite; frame 2 carries the link sticker (Business Suite's Story link sticker is unchecked, GUESS).",
+    "The English row has no caption, sticker or reply to write: the Story frames carry the words."
+   ],
+   "needs_localized_media": true
   },
   {
-   "id": "P06-ar-Instagram",
-   "post": "P06",
-   "app": "Cutling",
-   "lang": "ar",
-   "language": "Arabic",
-   "country": "Saudi Arabia",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Story, add yours sticker",
-   "wib": "2026-11-23 13:00",
-   "local": "2026-11-23 09:00",
-   "zone": "Riyadh",
-   "time_source": "Buffer IG Thu 9:00",
-   "caption": null,
-   "sticker": "Add Yours: «النص الذي تعيد كتابته كل أسبوع»",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P06/story-1.png",
-    "/Users/hafang/Downloads/social-calendar/P06/story-2.png"
-   ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Our own answer goes first: \"221 Example Street, Flat 4\" (fictional).",
-    "Frame 2: link sticker to cutling.matsuokengo.com.",
-    "The sticker is drawn on the review frames to show where it goes; post the clean frames and add the sticker in the app.",
-    "Business Suite's Instagram Story editor offers only Mention, Link and emoji stickers: post this from the Instagram app at the time."
-   ]
-  },
-  {
-   "id": "P07-ja-Instagram",
-   "post": "P07",
+   "id": "P01-ja-Instagram",
+   "post": "P01",
    "app": "Undirect",
    "lang": "ja",
    "language": "Japanese",
@@ -183,14 +61,14 @@
    "platform": "Instagram",
    "account": "monholtco",
    "format": "Trial reel",
-   "wib": "2026-11-24 10:15",
-   "local": "2026-11-24 12:15",
+   "wib": "2026-11-23 10:15",
+   "local": "2026-11-23 12:15",
    "zone": "JST",
    "time_source": "MIC 12時台 lunch peak",
-   "caption": "映画サイトで「ダウンロード」を押すと、「ダウンロード中…」という偽のページが出て、再生アプリを入れろと言ってきます。\n\nそのサイトでUndirectをオンにしておけば、元のページから動きません。\n\nリンクはプロフィールから。\n#iPhone便利機能 #iPhone裏技 #Safari #広告ブロック #iPhoneアプリ",
+   "caption": "再生ボタンを押したら「視聴を続けるにはVPNアプリをインストール」。戻ってもう一度押すと「お使いのiPhoneは(12)個のウイルスに感染しています！」。3回目は「おめでとうございます！本日のラッキービジターに選ばれました」。\n\n再生ボタンの上には見えない広告のレイヤーが重ねてあって、タップは先にそっちへ吸われます。\n\nリンクはプロフィールから。\n#iPhone便利機能 #iPhone裏技 #Safari #広告ブロック #iPhoneアプリ",
    "first_comment": null,
    "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u2-short.mp4"
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
    ],
    "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
    "needs_wording": null,
@@ -200,30 +78,35 @@
     "New: this language was not in the approved set"
    ],
    "notes": [
-    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel."
+    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "u1.mp4"
    ]
   },
   {
-   "id": "P07-zh-Hant-Threads",
-   "post": "P07",
+   "id": "P01-ja-Threads",
+   "post": "P01",
    "app": "Undirect",
-   "lang": "zh-Hant",
-   "language": "Traditional Chinese",
-   "country": "Taiwan",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
    "platform": "Threads",
    "account": "@monholtco",
    "format": "Video",
-   "wib": "2026-11-24 11:04",
-   "local": "2026-11-24 12:04",
-   "zone": "Taipei",
-   "time_source": "Hootsuite Threads Wed 12:00",
-   "caption": "在電影網站按「下載」，結果跳到一個假的「下載中」頁面，叫你先裝播放器 App。\n\n在那個網站開啟 Undirect，你就會留在原本的頁面。\n\n上一次假的下載鍵把你帶去哪裡？",
+   "wib": "2026-11-23 10:19",
+   "local": "2026-11-23 12:19",
+   "zone": "JST",
+   "time_source": "MIC 12時台 lunch peak",
+   "caption": "再生ボタンを押したら「視聴を続けるにはVPNアプリをインストール」。戻ってもう一度押すと「お使いのiPhoneは(12)個のウイルスに感染しています！」。3回目は「おめでとうございます！本日のラッキービジターに選ばれました」。\n\n再生ボタンの上には見えない広告のレイヤーが重ねてあって、タップは先にそっちへ吸われます。\n\n再生ボタンを押して飛ばされた先で、いちばんひどかったのはどこですか？",
    "first_comment": {
     "label": "Our first reply",
-    "text": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=th-zh-hant&mt=8"
+    "text": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=th-ja&mt=8"
    },
    "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u2-short.mp4"
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
    ],
    "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
    "needs_wording": null,
@@ -232,57 +115,27 @@
    "changed_since_approval": [
     "New: this language was not in the approved set"
    ],
-   "notes": []
+   "notes": [],
+   "needs_localized_media": true
   },
   {
-   "id": "P07-id-TikTok",
-   "post": "P07",
+   "id": "P01-ja-TikTok",
+   "post": "P01",
    "app": "Undirect",
-   "lang": "id",
-   "language": "Indonesian",
-   "country": "Indonesia",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
    "platform": "TikTok",
    "account": "@monholt",
    "format": "Video",
-   "wib": "2026-11-24 12:20",
-   "local": "2026-11-24 12:20",
-   "zone": "WIB",
-   "time_source": "GUESS: lunch, borrowed from Japan",
-   "caption": "Ketuk Download di situs film, yang muncul malah halaman palsu \"Download sedang berjalan\" yang menyuruhmu memasang aplikasi pemutar.\n\nKalau Undirect nyala untuk situs itu, kamu tetap di halaman tadi.\n\nCari Undirect di App Store.\n#tipsiphone #trikiphone #iklanpopup #techtok",
+   "wib": "2026-11-23 10:20",
+   "local": "2026-11-23 12:20",
+   "zone": "JST",
+   "time_source": "MIC 12時台 lunch peak",
+   "caption": "再生ボタンを押したら「視聴を続けるにはVPNアプリをインストール」。戻ってもう一度押すと「お使いのiPhoneは(12)個のウイルスに感染しています！」。3回目は「おめでとうございます！本日のラッキービジターに選ばれました」。\n\n再生ボタンの上には見えない広告のレイヤーが重ねてあって、タップは先にそっちへ吸われます。\n\nApp Storeで「Undirect」と検索。\n#iPhone便利機能 #iPhone裏技 #ポップアップ広告 #ガジェット",
    "first_comment": null,
    "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u2-short.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": []
-  },
-  {
-   "id": "P07-ar-Facebook",
-   "post": "P07",
-   "app": "Undirect",
-   "lang": "ar",
-   "language": "Arabic",
-   "country": "Saudi Arabia",
-   "platform": "Facebook",
-   "account": "Monholt (Page)",
-   "format": "Reel",
-   "wib": "2026-11-24 16:32",
-   "local": "2026-11-24 12:32",
-   "zone": "Riyadh",
-   "time_source": "Sprout FB Tue-Wed 12-20",
-   "caption": "تضغط «تنزيل» في موقع أفلام، فتظهر لك صفحة مزيفة مكتوب فيها «جارٍ التنزيل» وتطلب منك تثبيت تطبيق مشغّل.\n\nإذا كان Undirect مفعّلًا لهذا الموقع، تبقى في صفحتك.",
-   "first_comment": {
-    "label": "First comment",
-    "text": "Undirect في App Store:\nhttps://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=fb-ar&mt=8"
-   },
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u2-short.mp4"
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
    ],
    "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
    "needs_wording": null,
@@ -292,54 +145,28 @@
     "New: this language was not in the approved set"
    ],
    "notes": [
-    "Business Suite can't attach a first comment: post it by hand at this time."
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "u1.mp4"
    ]
   },
   {
-   "id": "P08-pt-BR-Threads",
-   "post": "P08",
-   "app": "Cutling",
-   "lang": "pt-BR",
-   "language": "Portuguese (Brazil)",
-   "country": "Brazil",
-   "platform": "Threads",
-   "account": "@monholtco",
-   "format": "Image",
-   "wib": "2026-11-25 00:04",
-   "local": "2026-11-24 14:04",
-   "zone": "Brasília",
-   "time_source": "Hootsuite Threads Fri 14:00",
-   "caption": "Você deixaria um app de teclado ler o que você digita? A dúvida faz sentido.\n\nO teclado do Cutling não tem código de rede, não existe conta, e o selo de privacidade na App Store diz \"Dados Não Coletados\". Ele lê a palavra antes do cursor para sugerir um texto salvo, e não envia nada.\n\nO que você precisaria saber antes de deixar um teclado ler o que você digita?",
-   "first_comment": {
-    "label": "Our first reply",
-    "text": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=th-pt-br&mt=8"
-   },
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P08/ig-1.png"
-   ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": []
-  },
-  {
-   "id": "P09-tr-Instagram",
+   "id": "P09-ja-Instagram",
    "post": "P09",
    "app": "Cutling",
-   "lang": "tr",
-   "language": "Turkish",
-   "country": "Türkiye",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
    "platform": "Instagram",
    "account": "monholtco",
    "format": "Story, link sticker",
-   "wib": "2026-11-25 00:15",
-   "local": "2026-11-24 20:15",
-   "zone": "Istanbul",
-   "time_source": "Metricool IG 20:00",
+   "wib": "2026-11-24 19:15",
+   "local": "2026-11-24 21:15",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
    "caption": null,
    "sticker": "Link: cutling.matsuokengo.com",
    "first_comment": null,
@@ -355,273 +182,27 @@
    ],
    "notes": [
     "The link sticker is drawn on the review frame; post the clean frame and add the sticker in the app."
-   ]
+   ],
+   "needs_localized_media": true
   },
   {
-   "id": "P08-de-TikTok",
-   "post": "P08",
-   "app": "Cutling",
-   "lang": "de",
-   "language": "German",
-   "country": "Germany",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Photo mode",
-   "wib": "2026-11-25 01:35",
-   "local": "2026-11-24 19:35",
-   "zone": "Berlin",
-   "time_source": "Metricool TikTok 18-20",
-   "caption": "Würdest du eine Tastatur-App mitlesen lassen, was du tippst? Die Frage ist berechtigt.\n\nDie Cutling-Tastatur enthält keinen Netzwerkcode, es gibt kein Konto, und im App Store steht beim Datenschutz „Keine Daten erfasst“. Sie liest das Wort vor dem Cursor, um einen gespeicherten Text vorzuschlagen, und sendet nichts.\n\nSuch im App Store nach Cutling.\n#textersetzung #iphonetipps #iphonetricks #techtok",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P08/tt-1.png",
-    "/Users/hafang/Downloads/social-calendar/_assets/tt-end-Cutling.png"
-   ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Photo set: the post's slides, then the search slide."
-   ]
-  },
-  {
-   "id": "P08-fr-Instagram",
-   "post": "P08",
-   "app": "Cutling",
-   "lang": "fr",
-   "language": "French",
-   "country": "France",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Single image",
-   "wib": "2026-11-25 02:00",
-   "local": "2026-11-24 20:00",
-   "zone": "Paris",
-   "time_source": "Metricool IG 20:00",
-   "caption": "Laisseriez-vous une app de clavier lire ce que vous tapez ? La question se pose.\n\nLe clavier de Cutling ne contient aucun code réseau, il n'y a pas de compte, et sa fiche App Store indique qu'aucune donnée n'est collectée. Il lit le mot placé avant le curseur pour vous proposer un texte enregistré, et n'envoie rien.\n\nLien en bio.\n#astucesiphone #remplacementdetexte #productivité #applisios #applismac",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P08/ig-1.png"
-   ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": []
-  },
-  {
-   "id": "P08-it-Facebook",
-   "post": "P08",
-   "app": "Cutling",
-   "lang": "it",
-   "language": "Italian",
-   "country": "Italy",
-   "platform": "Facebook",
-   "account": "Monholt (Page)",
-   "format": "Image post",
-   "wib": "2026-11-25 02:17",
-   "local": "2026-11-24 20:17",
-   "zone": "Rome",
-   "time_source": "Sprout FB Tue-Wed 12-20",
-   "caption": "Lasceresti leggere a una tastiera quello che scrivi? Domanda legittima.\n\nLa tastiera di Cutling non ha codice di rete, non c'è un account e la scheda sull'App Store dichiara che non viene raccolto nessun dato. Legge la parola prima del cursore per suggerirti un testo salvato, e non invia niente.",
-   "first_comment": {
-    "label": "First comment",
-    "text": "Cutling sull'App Store:\nhttps://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=fb-it&mt=8"
-   },
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P08/ig-1.png"
-   ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Business Suite can't attach a first comment: post it by hand at this time."
-   ]
-  },
-  {
-   "id": "P12-ja-Facebook",
-   "post": "P12",
+   "id": "P09-ja-Facebook",
+   "post": "P09",
    "app": "Cutling",
    "lang": "ja",
    "language": "Japanese",
    "country": "Japan",
    "platform": "Facebook",
    "account": "Monholt (Page)",
-   "format": "Image post",
-   "wib": "2026-11-25 05:47",
-   "local": "2026-11-25 07:47",
+   "format": "Story",
+   "wib": "2026-11-24 19:17",
+   "local": "2026-11-24 21:17",
    "zone": "JST",
-   "time_source": "MIC 07-08時 commute",
-   "caption": "iPhoneのユーザ辞書に入るのは文字だけで、「よみ」を打ったときにしか出てきません。アップデートのあと、1台だけ登録が全部消えていたという人もいます。\n\nCutlingなら長い文章も画像もそのまま保存できて、自分のiCloudで同期されます。",
-   "first_comment": {
-    "label": "First comment",
-    "text": "CutlingはApp Storeで：\nhttps://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=fb-ja&mt=8"
-   },
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P12/ig-1.png"
-   ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Business Suite can't attach a first comment: post it by hand at this time."
-   ]
-  },
-  {
-   "id": "P12-ja-Threads",
-   "post": "P12",
-   "app": "Cutling",
-   "lang": "ja",
-   "language": "Japanese",
-   "country": "Japan",
-   "platform": "Threads",
-   "account": "@monholtco",
-   "format": "Image",
-   "wib": "2026-11-25 05:49",
-   "local": "2026-11-25 07:49",
-   "zone": "JST",
-   "time_source": "MIC 07-08時 commute",
-   "caption": "iPhoneのユーザ辞書に入るのは文字だけで、「よみ」を打ったときにしか出てきません。アップデートのあと、1台だけ登録が全部消えていたという人もいます。\n\nCutlingなら長い文章も画像もそのまま保存できて、自分のiCloudで同期されます。\n\nユーザ辞書、まだ使っていますか？それとももう諦めましたか？",
-   "first_comment": {
-    "label": "Our first reply",
-    "text": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=th-ja&mt=8"
-   },
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P12/ig-1.png"
-   ],
-   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": []
-  },
-  {
-   "id": "P10-zh-Hant-Instagram",
-   "post": "P10",
-   "app": "Cutling",
-   "lang": "zh-Hant",
-   "language": "Traditional Chinese",
-   "country": "Taiwan",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Trial reel",
-   "wib": "2026-11-25 11:30",
-   "local": "2026-11-25 12:30",
-   "zone": "Taipei",
-   "time_source": "Sprout tech IG 11-13",
-   "caption": "先複製門禁密碼，再複製包裹追蹤編號，再複製會議連結。iPhone 只留得住最後一個。\n\n從 Android 換過來，很想念可以釘選的剪貼內容嗎？Cutling 把你整天都在貼的文字釘在鍵盤上。它不會記錄你複製了什麼，因為 iOS 不讓任何 App 這樣做。\n\n連結在個人檔案。\n#iPhone技巧 #替代文字 #效率工具 #iOSApp #MacApp",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": null,
    "first_comment": null,
    "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-android.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel."
-   ]
-  },
-  {
-   "id": "P10-zh-Hant-TikTok",
-   "post": "P10",
-   "app": "Cutling",
-   "lang": "zh-Hant",
-   "language": "Traditional Chinese",
-   "country": "Taiwan",
-   "platform": "TikTok",
-   "account": "@monholt",
-   "format": "Video",
-   "wib": "2026-11-25 12:05",
-   "local": "2026-11-25 13:05",
-   "zone": "Taipei",
-   "time_source": "Buffer TikTok Mon 13:00",
-   "caption": "先複製門禁密碼，再複製包裹追蹤編號，再複製會議連結。iPhone 只留得住最後一個。\n\n從 Android 換過來，很想念可以釘選的剪貼內容嗎？Cutling 把你整天都在貼的文字釘在鍵盤上。它不會記錄你複製了什麼，因為 iOS 不讓任何 App 這樣做。\n\n在 App Store 搜尋「Cutling」。\n#替代文字 #iPhone技巧 #iPhone小技巧 #3C",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-android.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": []
-  },
-  {
-   "id": "P10-id-Facebook",
-   "post": "P10",
-   "app": "Cutling",
-   "lang": "id",
-   "language": "Indonesian",
-   "country": "Indonesia",
-   "platform": "Facebook",
-   "account": "Monholt (Page)",
-   "format": "Reel",
-   "wib": "2026-11-25 12:17",
-   "local": "2026-11-25 12:17",
-   "zone": "WIB",
-   "time_source": "GUESS: lunch, borrowed from Japan",
-   "caption": "Salin kode pintu, lalu nomor resi, lalu link rapat. iPhone cuma menyimpan yang terakhir.\n\nBaru pindah dari Android dan kangen klip yang bisa disematkan? Cutling menyematkan teks yang kamu tempel seharian di keyboard. Cutling tidak merekam apa yang kamu salin, karena iOS memang tidak mengizinkan aplikasi mana pun melakukannya.",
-   "first_comment": {
-    "label": "First comment",
-    "text": "Cutling di App Store:\nhttps://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=fb-id&mt=8"
-   },
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-android.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
-   "needs_wording": null,
-   "approved_post": true,
-   "in_approved_set": false,
-   "changed_since_approval": [
-    "New: this language was not in the approved set"
-   ],
-   "notes": [
-    "Business Suite can't attach a first comment: post it by hand at this time."
-   ]
-  },
-  {
-   "id": "P12-ru-Instagram",
-   "post": "P12",
-   "app": "Cutling",
-   "lang": "ru",
-   "language": "Russian",
-   "country": "Russia",
-   "platform": "Instagram",
-   "account": "monholtco",
-   "format": "Single image",
-   "wib": "2026-11-25 13:30",
-   "local": "2026-11-25 09:30",
-   "zone": "Moscow",
-   "time_source": "Buffer IG Thu 9:00",
-   "caption": "«Замена текста» на iPhone хранит только простой текст и срабатывает, только когда вы набрали сокращение. А после обновления у некоторых весь список пропал с одного из устройств.\n\nВ Cutling можно сохранить целый абзац или картинку, и всё синхронизируется через ваш собственный iCloud.\n\nСсылка в шапке профиля.\n#фишкиайфона #заменатекста #продуктивность #приложениядляайфона #приложениядляmac",
-   "first_comment": null,
-   "media": [
-    "/Users/hafang/Downloads/social-calendar/P12/ig-1.png"
+    "/Users/hafang/Downloads/social-calendar/P09/story-1.png"
    ],
    "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
    "needs_wording": null,
@@ -632,27 +213,58 @@
     "Note changed: answers are text over film, no face on camera"
    ],
    "notes": [
-    "Instagram, Facebook and X are blocked in Russia (Roskomnadzor, 2022), so these reach Russian readers who use them anyway or live abroad."
-   ]
+    "Link sticker to cutling.matsuokengo.com (Business Suite's Story link sticker is unchecked, GUESS).",
+    "The English row has no caption, sticker or reply to write: the Story frames carry the words."
+   ],
+   "needs_localized_media": true
   },
   {
-   "id": "P12-it-TikTok",
-   "post": "P12",
+   "id": "P09-ja-Threads",
+   "post": "P09",
    "app": "Cutling",
-   "lang": "it",
-   "language": "Italian",
-   "country": "Italy",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Threads",
+   "account": "@monholtco",
+   "format": "Text",
+   "wib": "2026-11-24 19:19",
+   "local": "2026-11-24 21:19",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": "今日、CutlingがProduct Huntに掲載されています。何度も打つ文章をしまっておけるキーボードで、iPhone、iPad、Macで使えます。\n\nキーボードに最初に保存するとしたら、何にしますか？",
+   "first_comment": {
+    "label": "Our first reply",
+    "text": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=th-ja&mt=8"
+   },
+   "media": [],
+   "on_screen_text": "none",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": []
+  },
+  {
+   "id": "P09-ja-TikTok",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
    "platform": "TikTok",
    "account": "@monholt",
-   "format": "Photo mode",
-   "wib": "2026-11-25 15:20",
-   "local": "2026-11-25 09:20",
-   "zone": "Rome",
-   "time_source": "Buffer TikTok Sun 9:00",
-   "caption": "La Sostituzione testo dell'iPhone conserva solo testo semplice e scatta solo se digiti l'abbreviazione. Dopo un aggiornamento, c'è chi ha trovato l'intero elenco sparito da uno dei dispositivi.\n\nIn Cutling un elemento può contenere un paragrafo intero o un'immagine, e si sincronizza attraverso il tuo iCloud.\n\nCerca Cutling sull'App Store.\n#sostituzionetesto #trucchiiphone #consigliiphone #techtok",
+   "format": "Photo carousel",
+   "wib": "2026-11-24 19:20",
+   "local": "2026-11-24 21:20",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": "今日、CutlingがProduct Huntに掲載されています。何度も打つ文章をしまっておけるキーボードで、iPhone、iPad、Macで使えます。\n\nApp Storeで「Cutling」と検索。\n#ユーザ辞書 #iPhone便利機能 #iPhone裏技 #ガジェット",
    "first_comment": null,
    "media": [
-    "/Users/hafang/Downloads/social-calendar/P12/tt-1.png",
+    "/Users/hafang/Downloads/social-calendar/P09/card-tt.png",
     "/Users/hafang/Downloads/social-calendar/_assets/tt-end-Cutling.png"
    ],
    "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
@@ -663,32 +275,101 @@
     "New: this language was not in the approved set"
    ],
    "notes": [
-    "Photo set: the post's slides, then the search slide."
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: P09/card-tt.png: the Cutling badge sits under TikTok's caption band and \"Product Hunt\" touches the right rail; _assets/tt-end-Cutling.png: \"Cutling\" and \"App Store\" run under TikTok's right button column. Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "P09/card-tt.png",
+    "_assets/tt-end-Cutling.png"
    ]
   },
   {
-   "id": "P10-ar-Threads",
-   "post": "P10",
+   "id": "P09-id-Instagram",
+   "post": "P09",
    "app": "Cutling",
-   "lang": "ar",
-   "language": "Arabic",
-   "country": "Saudi Arabia",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "Instagram",
+   "account": "monholtco",
+   "format": "Story, link sticker",
+   "wib": "2026-11-24 19:30",
+   "local": "2026-11-24 19:30",
+   "zone": "WIB",
+   "time_source": "Jakpat 18-21",
+   "caption": null,
+   "sticker": "Link: cutling.matsuokengo.com",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/story-1.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "The link sticker is drawn on the review frame; post the clean frame and add the sticker in the app."
+   ],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P09-id-Facebook",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "Facebook",
+   "account": "Monholt (Page)",
+   "format": "Story",
+   "wib": "2026-11-24 19:32",
+   "local": "2026-11-24 19:32",
+   "zone": "WIB",
+   "time_source": "Jakpat 18-21",
+   "caption": null,
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/story-1.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set",
+    "Note changed: answers are text over film, no face on camera"
+   ],
+   "notes": [
+    "Link sticker to cutling.matsuokengo.com (Business Suite's Story link sticker is unchecked, GUESS).",
+    "The English row has no caption, sticker or reply to write: the Story frames carry the words."
+   ],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P09-id-Threads",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
    "platform": "Threads",
    "account": "@monholtco",
-   "format": "Video",
-   "wib": "2026-11-25 16:04",
-   "local": "2026-11-25 12:04",
-   "zone": "Riyadh",
-   "time_source": "Hootsuite Threads Wed 12:00",
-   "caption": "تنسخ رمز الباب، ثم رقم تتبع الشحنة، ثم رابط الاجتماع. والـiPhone لا يحتفظ إلا بالأخير.\n\nانتقلت من أندرويد وتفتقد المقاطع المثبّتة؟ Cutling يثبّت على لوحة المفاتيح النصوص التي تلصقها طوال اليوم. وهو لا يسجّل ما تنسخه، فنظام iOS لا يسمح بذلك لأي تطبيق.\n\nما أكثر ميزة افتقدتها بعد أن تركت أندرويد؟",
+   "format": "Text",
+   "wib": "2026-11-24 19:34",
+   "local": "2026-11-24 19:34",
+   "zone": "WIB",
+   "time_source": "Jakpat 18-21",
+   "caption": "Hari ini Cutling tampil di Product Hunt: keyboard untuk teks yang kamu ketik berulang-ulang, di iPhone, iPad, dan Mac.\n\nApa yang pertama kamu simpan di keyboard?",
    "first_comment": {
     "label": "Our first reply",
-    "text": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=th-ar&mt=8"
+    "text": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=th-id&mt=8"
    },
-   "media": [
-    "/Users/hafang/Downloads/pain-films-v4/cutling-android.mp4"
-   ],
-   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "media": [],
+   "on_screen_text": "none",
    "needs_wording": null,
    "approved_post": true,
    "in_approved_set": false,
@@ -698,8 +379,114 @@
    "notes": []
   },
   {
-   "id": "P11-id-Threads",
-   "post": "P11",
+   "id": "P09-id-TikTok",
+   "post": "P09",
+   "app": "Cutling",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "TikTok",
+   "account": "@monholt",
+   "format": "Photo carousel",
+   "wib": "2026-11-24 19:35",
+   "local": "2026-11-24 19:35",
+   "zone": "WIB",
+   "time_source": "Jakpat 18-21",
+   "caption": "Hari ini Cutling tampil di Product Hunt: keyboard untuk teks yang kamu ketik berulang-ulang, di iPhone, iPad, dan Mac.\n\nCari Cutling di App Store.\n#penggantianteks #tipsiphone #trikiphone #techtok",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P09/card-tt.png",
+    "/Users/hafang/Downloads/social-calendar/_assets/tt-end-Cutling.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: P09/card-tt.png: the Cutling badge sits under TikTok's caption band and \"Product Hunt\" touches the right rail; _assets/tt-end-Cutling.png: \"Cutling\" and \"App Store\" run under TikTok's right button column. Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "P09/card-tt.png",
+    "_assets/tt-end-Cutling.png"
+   ]
+  },
+  {
+   "id": "P03-id-Facebook",
+   "post": "P03",
+   "app": "Undirect",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "Facebook",
+   "account": "Monholt (Page)",
+   "format": "Story",
+   "wib": "2026-11-25 07:32",
+   "local": "2026-11-25 07:32",
+   "zone": "WIB",
+   "time_source": "Jakpat 07-09",
+   "caption": null,
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P03/story-1.png",
+    "/Users/hafang/Downloads/social-calendar/P03/story-2.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set",
+    "Note changed: answers are text over film, no face on camera"
+   ],
+   "notes": [
+    "Same frames as the Instagram Story, posted to the Page from Business Suite; frame 2 carries the link sticker (Business Suite's Story link sticker is unchecked, GUESS).",
+    "The English row has no caption, sticker or reply to write: the Story frames carry the words."
+   ],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P01-id-Instagram",
+   "post": "P01",
+   "app": "Undirect",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "Instagram",
+   "account": "monholtco",
+   "format": "Trial reel",
+   "wib": "2026-11-25 12:15",
+   "local": "2026-11-25 12:15",
+   "zone": "WIB",
+   "time_source": "GUESS: lunch, borrowed from Japan",
+   "caption": "Kamu tekan Play, muncul halaman \"pasang aplikasi VPN untuk lanjut nonton\". Balik, tekan lagi: \"iPhone kamu rusak parah karena (12) virus!\" Sekali lagi: \"Selamat, kamu pengunjung beruntung hari ini.\"\n\nHalaman itu menaruh lapisan tak terlihat di atas tombol Play, jadi ketukanmu kena iklan duluan.\n\nLink ada di bio.\n#tipsiphone #trikiphone #safari #blokiriklan #aplikasiiphone",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
+   ],
+   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "First Instagram use of this cut: post as a trial reel set to graduate on performance. Needs 200 followers; below that, post it as a normal Reel.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "u1.mp4"
+   ]
+  },
+  {
+   "id": "P01-id-Threads",
+   "post": "P01",
    "app": "Undirect",
    "lang": "id",
    "language": "Indonesian",
@@ -707,17 +494,17 @@
    "platform": "Threads",
    "account": "@monholtco",
    "format": "Video",
-   "wib": "2026-11-25 19:34",
-   "local": "2026-11-25 19:34",
+   "wib": "2026-11-25 12:19",
+   "local": "2026-11-25 12:19",
    "zone": "WIB",
-   "time_source": "Jakpat 18-21",
-   "caption": "Klik Play di Safari Mac, yang terbuka tab kasino: \"bonus sambutan 200%\".\n\nKlik tombol Undirect sekali dan ia aktif untuk situs itu. Setelah itu Play tidak membuka tab baru lagi.\n\nDi Mac kamu begini juga, atau cuma di iPhone?",
+   "time_source": "GUESS: lunch, borrowed from Japan",
+   "caption": "Kamu tekan Play, muncul halaman \"pasang aplikasi VPN untuk lanjut nonton\". Balik, tekan lagi: \"iPhone kamu rusak parah karena (12) virus!\" Sekali lagi: \"Selamat, kamu pengunjung beruntung hari ini.\"\n\nHalaman itu menaruh lapisan tak terlihat di atas tombol Play, jadi ketukanmu kena iklan duluan.\n\nGara-gara tombol Play, kamu pernah dilempar ke halaman separah apa?",
    "first_comment": {
     "label": "Our first reply",
     "text": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=th-id&mt=8"
    },
    "media": [
-    "/Users/hafang/Downloads/pain-films-v4/u-mac.mp4"
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
    ],
    "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
    "needs_wording": null,
@@ -726,7 +513,173 @@
    "changed_since_approval": [
     "New: this language was not in the approved set"
    ],
-   "notes": []
+   "notes": [],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P01-id-TikTok",
+   "post": "P01",
+   "app": "Undirect",
+   "lang": "id",
+   "language": "Indonesian",
+   "country": "Indonesia",
+   "platform": "TikTok",
+   "account": "@monholt",
+   "format": "Video",
+   "wib": "2026-11-25 12:20",
+   "local": "2026-11-25 12:20",
+   "zone": "WIB",
+   "time_source": "GUESS: lunch, borrowed from Japan",
+   "caption": "Kamu tekan Play, muncul halaman \"pasang aplikasi VPN untuk lanjut nonton\". Balik, tekan lagi: \"iPhone kamu rusak parah karena (12) virus!\" Sekali lagi: \"Selamat, kamu pengunjung beruntung hari ini.\"\n\nHalaman itu menaruh lapisan tak terlihat di atas tombol Play, jadi ketukanmu kena iklan duluan.\n\nCari Undirect di App Store.\n#tipsiphone #trikiphone #iklanpopup #techtok",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/pain-films-v4/u1.mp4"
+   ],
+   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: u1.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "u1.mp4"
+   ]
+  },
+  {
+   "id": "P05-ja-Instagram",
+   "post": "P05",
+   "app": "Undirect",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Instagram",
+   "account": "monholtco",
+   "format": "Single image",
+   "wib": "2026-11-25 19:15",
+   "local": "2026-11-25 21:15",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": "「設定」→「Safari」→「ポップアップブロック」はオン。それでもタブは開き続けます。\n\nSafariは「ユーザーが自分で開いた」と判断したタブは通します。そしてページは、どんなタップでもそう見せかけられます。\n\nリンクはプロフィールから。\n#iPhone便利機能 #iPhone裏技 #Safari #広告ブロック #iPhoneアプリ",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P05/ig-1.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P05-ja-Facebook",
+   "post": "P05",
+   "app": "Undirect",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Facebook",
+   "account": "Monholt (Page)",
+   "format": "Image post",
+   "wib": "2026-11-25 19:17",
+   "local": "2026-11-25 21:17",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": "「設定」→「Safari」→「ポップアップブロック」はオン。それでもタブは開き続けます。\n\nSafariは「ユーザーが自分で開いた」と判断したタブは通します。そしてページは、どんなタップでもそう見せかけられます。",
+   "first_comment": {
+    "label": "First comment",
+    "text": "UndirectはApp Storeで：\nhttps://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=fb-ja&mt=8"
+   },
+   "media": [
+    "/Users/hafang/Downloads/social-calendar/P05/ig-1.png"
+   ],
+   "on_screen_text": "English: no localized version of this image exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "Business Suite can't attach a first comment: post it by hand at this time."
+   ],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P02-ja-Threads",
+   "post": "P02",
+   "app": "Cutling",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "Threads",
+   "account": "@monholtco",
+   "format": "Video",
+   "wib": "2026-11-25 19:19",
+   "local": "2026-11-25 21:19",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": "お届け先、配送先住所、請求先住所。郵便番号から部屋番号まで、また親指で打って、また打ち間違える。フォームひとつに14秒かかります。\n\nCutlingに一度保存しておけば、ワンタップで入ります。1秒ほどです。\n\n住所、週に何回くらい入力していますか？",
+   "first_comment": {
+    "label": "Our first reply",
+    "text": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=th-ja&mt=8"
+   },
+   "media": [
+    "/Users/hafang/Downloads/pain-films-v4/cutling-address.mp4"
+   ],
+   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [],
+   "needs_localized_media": true
+  },
+  {
+   "id": "P02-ja-TikTok",
+   "post": "P02",
+   "app": "Cutling",
+   "lang": "ja",
+   "language": "Japanese",
+   "country": "Japan",
+   "platform": "TikTok",
+   "account": "@monholt",
+   "format": "Video",
+   "wib": "2026-11-25 19:20",
+   "local": "2026-11-25 21:20",
+   "zone": "JST",
+   "time_source": "MIC 21時台 daily peak",
+   "caption": "お届け先、配送先住所、請求先住所。郵便番号から部屋番号まで、また親指で打って、また打ち間違える。フォームひとつに14秒かかります。\n\nCutlingに一度保存しておけば、ワンタップで入ります。1秒ほどです。\n\nApp Storeで「Cutling」と検索。\n#ユーザ辞書 #iPhone便利機能 #iPhone裏技 #ガジェット",
+   "first_comment": null,
+   "media": [
+    "/Users/hafang/Downloads/pain-films-v4/cutling-address.mp4"
+   ],
+   "on_screen_text": "English: no localized cut of this film exists; the caption is in the post's language",
+   "needs_wording": null,
+   "approved_post": true,
+   "in_approved_set": false,
+   "changed_since_approval": [
+    "New: this language was not in the approved set"
+   ],
+   "notes": [
+    "Posts disclosed as Your brand can't be edited or deleted in TikTok Studio on the web, only in the TikTok app: check it in TikTok's frame before scheduling.",
+    "Frame check 2026-11-21 failed: cutling-address.mp4: end card: the App Store badge and device line sit under the Reels, Shorts and TikTok caption band (below y 1248). Do not schedule until Fable's fix lands."
+   ],
+   "needs_localized_media": true,
+   "frame_fail": [
+    "cutling-address.mp4"
+   ]
   }
  ]
 }
