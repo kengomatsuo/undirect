@@ -1,0 +1,182 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+  <title>Fishing boats moored in a calm harbour behind a sea wall at first light</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3f5468"/>
+      <stop offset=".5" stop-color="#7f93a0"/>
+      <stop offset=".82" stop-color="#e9cfae"/>
+      <stop offset="1" stop-color="#f6e3c3"/>
+    </linearGradient>
+    <linearGradient id="basin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7fa3ad"/>
+      <stop offset="1" stop-color="#3f6677"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#fff3d6" stop-opacity=".9"/>
+      <stop offset="1" stop-color="#fff3d6" stop-opacity="0"/>
+    </radialGradient>
+    <g id="boat">
+      <path d="M-14-10 274-16 244 44q-6 12-20 12H40q-16 0-24-14z"/>
+    </g>
+    <g id="gull" fill="none" stroke="#f4efe6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M-22-6q12-10 22 4 10-14 22-4"/>
+    </g>
+  </defs>
+
+  <!-- sky, the last of the storm moving off to the left -->
+  <rect width="1600" height="560" fill="url(#sky)"/>
+  <circle cx="1120" cy="492" r="230" fill="url(#glow)"/>
+  <circle cx="1120" cy="492" r="46" fill="#fff6e0"/>
+  <g fill="#34475a">
+    <ellipse cx="180" cy="60" rx="420" ry="120"/>
+    <ellipse cx="640" cy="20" rx="380" ry="100"/>
+    <ellipse cx="60" cy="210" rx="300" ry="90"/>
+    <ellipse cx="1050" cy="-10" rx="330" ry="70"/>
+  </g>
+  <g fill="#4b6074">
+    <ellipse cx="420" cy="170" rx="330" ry="78"/>
+    <ellipse cx="820" cy="110" rx="280" ry="60"/>
+    <ellipse cx="170" cy="318" rx="250" ry="52"/>
+    <ellipse cx="1380" cy="70" rx="300" ry="54"/>
+  </g>
+  <g fill="#6d8394">
+    <ellipse cx="560" cy="262" rx="250" ry="40"/>
+    <ellipse cx="960" cy="196" rx="220" ry="32"/>
+    <ellipse cx="1330" cy="170" rx="210" ry="30"/>
+  </g>
+  <g fill="#f3dcbb" opacity=".75">
+    <rect x="700" y="410" width="520" height="12" rx="6"/>
+    <rect x="1010" y="442" width="430" height="10" rx="5"/>
+    <rect x="560" y="462" width="300" height="9" rx="4.5"/>
+    <rect x="1260" y="392" width="260" height="9" rx="4.5"/>
+  </g>
+  <use href="#gull" x="820" y="330"/>
+  <use href="#gull" x="900" y="372" transform="translate(900 372) scale(.7) translate(-900 -372)"/>
+  <use href="#gull" x="1420" y="300" transform="translate(1420 300) scale(.8) translate(-1420 -300)"/>
+  <use href="#gull" x="330" y="430" transform="translate(330 430) scale(.6) translate(-330 -430)"/>
+
+  <!-- headland and open sea -->
+  <path d="M0 492q150-34 290-6 120 26 250 54H0z" fill="#51697b"/>
+  <path d="M1600 508q-90-14-170 4-70 14-130 28h300z" fill="#5d7586"/>
+  <rect y="538" width="1600" height="70" fill="#577a8b"/>
+  <g fill="#e9eef0" opacity=".7">
+    <rect x="120" y="556" width="90" height="4" rx="2"/>
+    <rect x="330" y="572" width="60" height="4" rx="2"/>
+    <rect x="900" y="552" width="120" height="4" rx="2"/>
+    <rect x="1320" y="560" width="80" height="4" rx="2"/>
+    <rect x="640" y="548" width="50" height="4" rx="2"/>
+  </g>
+  <rect x="820" y="540" width="600" height="5" fill="#f6e3c3" opacity=".6"/>
+
+  <!-- the outer wall and its light -->
+  <path d="M1600 552 760 574 452 590v40l308 8 840 22z" fill="#27333f"/>
+  <path d="M1600 552 760 574 452 590v10l308-12 840-20z" fill="#465869"/>
+  <g fill="#1d2731">
+    <rect x="900" y="590" width="3" height="48"/><rect x="1080" y="586" width="3" height="56"/>
+    <rect x="1270" y="580" width="3" height="66"/><rect x="1460" y="574" width="3" height="76"/>
+    <rect x="640" y="596" width="3" height="38"/>
+  </g>
+  <path d="M452 590h64v40h-64z" fill="#1d2731"/>
+  <path d="M468 590l8-118h24l8 118z" fill="#f4efe6"/>
+  <path d="M472 536h32l2 26h-36z" fill="#b5412f"/>
+  <rect x="470" y="452" width="36" height="22" fill="#1d2731"/>
+  <rect x="476" y="456" width="24" height="14" fill="#ffe7a8"/>
+  <path d="M466 452h44l-22-22z" fill="#b5412f"/>
+  <rect x="464" y="472" width="48" height="5" fill="#1d2731"/>
+
+  <!-- the basin -->
+  <rect y="608" width="1600" height="392" fill="url(#basin)"/>
+  <path d="M452 630l308 8 840 22v26l-840-30-308-6z" fill="#2c4352" opacity=".55"/>
+  <g fill="#f6e3c3" opacity=".42">
+    <rect x="1010" y="700" width="230" height="7" rx="3.5"/>
+    <rect x="1060" y="738" width="150" height="7" rx="3.5"/>
+    <rect x="980" y="786" width="260" height="8" rx="4"/>
+    <rect x="1080" y="842" width="130" height="8" rx="4"/>
+    <rect x="1020" y="900" width="210" height="9" rx="4.5"/>
+  </g>
+  <g fill="#cfe0e4" opacity=".3">
+    <rect x="90" y="700" width="170" height="6" rx="3"/>
+    <rect x="300" y="752" width="110" height="6" rx="3"/>
+    <rect x="620" y="880" width="190" height="7" rx="3.5"/>
+    <rect x="1380" y="730" width="120" height="6" rx="3"/>
+    <rect x="520" y="960" width="150" height="7" rx="3.5"/>
+  </g>
+
+  <!-- boats at their moorings -->
+  <g transform="translate(250 690) scale(.62)">
+    <use href="#boat" fill="#1f3446"/>
+    <path d="M-12-8 272-14 268-2-8 4z" fill="#f4efe6"/>
+    <rect x="70" y="-70" width="80" height="60" fill="#f4efe6"/>
+    <rect x="62" y="-80" width="96" height="12" fill="#1f3446"/>
+    <rect x="80" y="-58" width="24" height="20" fill="#35495a"/><rect x="114" y="-58" width="24" height="20" fill="#35495a"/>
+    <rect x="186" y="-170" width="7" height="160" fill="#1d2731"/>
+    <path d="M190-160l-90 110" stroke="#1d2731" stroke-width="4"/>
+    <path d="M0 66h250l-20 30H26z" fill="#1f3446" opacity=".28"/>
+  </g>
+  <g transform="translate(560 756) scale(.92)">
+    <use href="#boat" fill="#b5412f"/>
+    <path d="M-12-8 272-14 268-2-8 4z" fill="#f4efe6"/>
+    <rect x="56" y="-74" width="88" height="64" fill="#f4efe6"/>
+    <rect x="46" y="-86" width="108" height="14" fill="#8f2f22"/>
+    <rect x="68" y="-60" width="26" height="22" fill="#35495a"/><rect x="104" y="-60" width="26" height="22" fill="#35495a"/>
+    <rect x="182" y="-196" width="8" height="186" fill="#1d2731"/>
+    <path d="M186-186l-110 120" stroke="#1d2731" stroke-width="4"/>
+    <path d="M190-190h46l-12 14 12 14h-46z" fill="#e8b23a"/>
+    <circle cx="40" cy="22" r="11" fill="#e8873a"/><circle cx="120" cy="24" r="11" fill="#e8873a"/><circle cx="200" cy="22" r="11" fill="#e8873a"/>
+    <path d="M0 68h252l-22 40H28z" fill="#b5412f" opacity=".3"/>
+    <rect x="182" y="68" width="8" height="120" fill="#1d2731" opacity=".2"/>
+  </g>
+  <g transform="translate(1010 742) scale(.74)">
+    <use href="#boat" fill="#e8e2d3"/>
+    <path d="M-12-8 272-14 268-2-8 4z" fill="#2f7a78"/>
+    <rect x="96" y="-66" width="76" height="56" fill="#2f7a78"/>
+    <rect x="88" y="-76" width="92" height="12" fill="#1d2731"/>
+    <rect x="106" y="-54" width="22" height="20" fill="#cfe0e4"/><rect x="138" y="-54" width="22" height="20" fill="#cfe0e4"/>
+    <rect x="52" y="-150" width="7" height="140" fill="#1d2731"/>
+    <path d="M0 66h250l-20 32H26z" fill="#e8e2d3" opacity=".3"/>
+  </g>
+  <g transform="translate(900 662) scale(.42)">
+    <use href="#boat" fill="#e8b23a"/>
+    <rect x="80" y="-60" width="70" height="50" fill="#f4efe6"/>
+    <rect x="170" y="-130" width="7" height="120" fill="#1d2731"/>
+    <path d="M0 66h250l-20 30H26z" fill="#e8b23a" opacity=".28"/>
+  </g>
+
+  <!-- the quay in the foreground -->
+  <path d="M0 830h330l96 62v108H0z" fill="#2a343e"/>
+  <path d="M0 808h318l108 84H0z" fill="#5c6976"/>
+  <g stroke="#3a4651" stroke-width="3">
+    <path d="M0 928h426M0 964h426M120 892v36M290 892v36M60 928v36M220 928v36M370 928v36M150 964v36M320 964v36"/>
+  </g>
+  <g fill="#1d2731">
+    <path d="M84 780h44v16h10v22H74v-22h10z"/>
+    <path d="M246 796h40v14h10v20h-60v-20h10z"/>
+  </g>
+  <path d="M128 800q60 34 118 22" fill="none" stroke="#d9c7a3" stroke-width="6" stroke-linecap="round"/>
+  <g>
+    <path d="M330 868q0-44 44-44t44 44z" fill="#3a6f76"/>
+    <path d="M300 868q0-36 36-36t36 36z" fill="#2f5a61"/>
+    <path d="M352 824q0-36 36-36t36 36z" fill="#2f5a61" transform="translate(-10 0)"/>
+    <path d="M300 868h118" stroke="#1d2731" stroke-width="5"/>
+  </g>
+
+  <!-- the slipway, shingle still piled on it, and the digger clearing it -->
+  <path d="M1600 772h-380L1060 1000h540z" fill="#8d9296"/>
+  <path d="M1600 772h-380L1060 1000h40l136-212h364z" fill="#a9aeb1"/>
+  <path d="M1170 1000q14-64 80-72 30-58 104-52 50-30 96 6 70-6 150 40v78z" fill="#c9b796"/>
+  <path d="M1250 1000q30-44 92-42 52-30 110-12 60-4 148 30v24z" fill="#b3a07e"/>
+  <g fill="#8f7f62">
+    <circle cx="1300" cy="952" r="6"/><circle cx="1362" cy="914" r="5"/><circle cx="1424" cy="938" r="7"/>
+    <circle cx="1490" cy="930" r="5"/><circle cx="1250" cy="982" r="5"/><circle cx="1400" cy="984" r="6"/><circle cx="1552" cy="972" r="6"/>
+  </g>
+  <g transform="translate(1372 772)">
+    <path d="M40-74-50-176-128-66" fill="none" stroke="#d99a1e" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-150-70h44l-6 46h-30z" fill="#1d2731"/>
+    <rect x="18" y="-92" width="140" height="62" rx="6" fill="#e8b23a"/>
+    <rect x="18" y="-140" width="62" height="56" rx="5" fill="#e8b23a"/>
+    <rect x="28" y="-130" width="42" height="32" fill="#35495a"/>
+    <rect x="112" y="-104" width="34" height="14" rx="3" fill="#1d2731"/>
+    <rect x="4" y="-34" width="170" height="36" rx="18" fill="#1d2731"/>
+    <g fill="#5c6976"><circle cx="26" cy="-16" r="9"/><circle cx="68" cy="-16" r="9"/><circle cx="110" cy="-16" r="9"/><circle cx="152" cy="-16" r="9"/></g>
+  </g>
+</svg>

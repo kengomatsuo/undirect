@@ -3,38 +3,313 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Northwind Daily · Harbour reopens after the storm</title>
+<title>Harbour reopens to small boats after a week of storms | Northwind Daily</title>
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121416" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/demo/scroll/favicon.svg" type="image/svg+xml">
 <style>
+  :root {
+    color-scheme: light dark;
+    --paper: #fff; --ink: #15171a; --soft: #50555d; --rule: #d9dce0; --wash: #f2f4f6; --accent: #0d4f80;
+    --foot: #15171a; --foot-ink: #f1f2f3; --foot-soft: #a4a9b0; --foot-rule: #33373d;
+    --serif: Charter, "Iowan Old Style", "New York", ui-serif, Georgia, serif;
+    --sans: "Avenir Next", system-ui, -apple-system, "Helvetica Neue", sans-serif;
+    --plate: Didot, "Bodoni 72", Charter, Georgia, serif;
+    --gutter: 16px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --paper: #121416; --ink: #e9eaeb; --soft: #a1a6ad; --rule: #2d3136; --wash: #1b1e22; --accent: #86bbea; --foot: #0b0c0e; --foot-rule: #2d3136; }
+  }
   * { box-sizing: border-box; margin: 0; }
-  body { background: #fbfaf7; color: #1f1d1a; font: 18px/1.65 Georgia, "New York", serif; }
-  header { border-bottom: 1px solid #e4e0d8; padding: 18px 20px; font: 800 22px/1 -apple-system, sans-serif; letter-spacing: -.02em; }
-  header span { color: #0f6b5c; }
-  main { max-width: 640px; margin: 0 auto; padding: 28px 20px 80px; }
-  .kicker { font: 700 12px/1 -apple-system, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: #0f6b5c; margin-bottom: 10px; }
-  h1 { font-size: 34px; line-height: 1.15; letter-spacing: -.01em; margin-bottom: 12px; }
-  .by { font: 14px -apple-system, sans-serif; color: #7a7468; margin-bottom: 24px; }
-  p { margin-bottom: 18px; }
-  .photo { height: 200px; border-radius: 12px; margin: 8px 0 24px; background: linear-gradient(160deg, #9cc7d6, #3d6f86 60%, #284a5b); }
-  footer { text-align: center; color: #8a8478; font: 12px -apple-system, sans-serif; padding: 40px 20px; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { background: var(--paper); color: var(--ink); font: 18px/28px var(--serif); -webkit-font-smoothing: antialiased; }
+  svg, img { display: block; }
+  ul, ol { list-style: none; padding: 0; }
+  .wrap { max-width: 1172px; margin: 0 auto; padding: 0 var(--gutter); }
+
+  /* Masthead */
+  .mast-row { display: grid; grid-template-columns: auto 1fr auto; gap: 14px; align-items: center; height: 60px; }
+  .menu { width: 22px; height: 16px; border-top: 2px solid var(--ink); border-bottom: 2px solid var(--ink); position: relative; }
+  .menu::after { content: ""; position: absolute; left: 0; right: 0; top: 5px; border-top: 2px solid var(--ink); }
+  .edition, .signin { display: none; font: 500 13px/18px var(--sans); color: var(--soft); }
+  .plate { display: flex; align-items: center; gap: 7px; font: 700 22px/1 var(--plate); letter-spacing: -.01em; white-space: nowrap; }
+  .plate svg { width: 11px; height: 22px; flex: none; }
+  .plate .n { fill: var(--accent); } .plate .s { fill: var(--ink); }
+  .mast-end { display: flex; justify-content: flex-end; align-items: center; gap: 20px; }
+  .subscribe { font: 600 13px/32px var(--sans); padding: 0 13px; border-radius: 16px; background: var(--ink); color: var(--paper); }
+  .sections { display: none; }
+  .mast { border-bottom: 1px solid var(--rule); }
+
+  /* Article head */
+  .head { padding-top: 24px; }
+  .kicker { font: 700 13px/18px var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+  h1 { font: 700 34px/38px var(--serif); letter-spacing: -.015em; text-wrap: balance; }
+  .standfirst { font: 20px/28px var(--serif); color: var(--soft); margin-top: 14px; text-wrap: pretty; }
+  .byline { display: flex; align-items: center; gap: 12px; margin-top: 20px; padding: 14px 0; border-top: 1px solid var(--rule); font: 500 13px/18px var(--sans); color: var(--soft); }
+  .byline .face { flex: none; width: 40px; height: 40px; border-radius: 50%; background: var(--wash); color: var(--accent); font: 700 13px/40px var(--sans); text-align: center; letter-spacing: .02em; }
+  .byline b { display: block; font-weight: 600; font-size: 14px; color: var(--ink); }
+  .byline .when { margin-left: auto; text-align: right; }
+  .byline .when span { display: block; }
+
+  /* Pictures */
+  figure.lead { margin: 4px calc(var(--gutter) * -1) 0; }
+  figure.lead img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; background: #577a8b; }
+  figcaption { font: 13px/18px var(--sans); color: var(--soft); padding-top: 8px; }
+  figure.lead figcaption { padding-left: var(--gutter); padding-right: var(--gutter); }
+
+  /* Body */
+  .body { padding-top: 24px; }
+  .body > p { margin-bottom: 20px; text-wrap: pretty; }
+  .body h2 { font: 700 23px/28px var(--serif); letter-spacing: -.01em; margin: 34px 0 12px; }
+  .chart { margin: 30px 0 32px; padding: 16px 0 14px; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
+  .chart h3 { font: 700 16px/22px var(--sans); }
+  .chart .sub { font: 14px/20px var(--sans); color: var(--soft); margin-bottom: 16px; }
+  .bars { display: grid; grid-template-columns: repeat(8, 1fr); align-items: end; text-align: center; font: 13px/18px var(--sans); color: var(--soft); }
+  .bars b { display: block; font-weight: 600; color: var(--ink); padding-bottom: 4px; }
+  .bars i { display: block; height: calc(var(--m) * 40px); margin: 0 4px; background: var(--rule); }
+  .bars .storm i { background: var(--accent); }
+  .bars span { display: block; border-top: 1px solid var(--ink); padding-top: 6px; }
+  blockquote { margin: 30px 0 32px; padding-left: 18px; border-left: 3px solid var(--accent); }
+  blockquote p { font: italic 23px/31px var(--serif); text-wrap: balance; }
+  blockquote footer { font: 500 13px/18px var(--sans); color: var(--soft); margin-top: 10px; }
+  .topics { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 30px; padding-top: 18px; border-top: 1px solid var(--rule); font: 500 13px/30px var(--sans); }
+  .topics span { padding: 0 12px; border-radius: 15px; background: var(--wash); }
+  .topics .label { padding: 0 4px 0 0; background: none; color: var(--soft); }
+
+  /* Rail */
+  .rail { margin-top: 44px; }
+  .rail h2, .more h2 { font: 700 13px/18px var(--sans); letter-spacing: .06em; text-transform: uppercase; padding-top: 10px; border-top: 2px solid var(--ink); margin-bottom: 4px; }
+  .read { counter-reset: rank; }
+  .read li { counter-increment: rank; display: grid; grid-template-columns: 34px 1fr; padding: 14px 0; border-bottom: 1px solid var(--rule); font: 700 17px/22px var(--serif); }
+  .read li::before { content: counter(rank); font: 700 26px/24px var(--plate); color: var(--accent); }
+  .weather { margin-top: 36px; }
+  .weather ul { display: grid; grid-template-columns: repeat(5, 1fr); padding: 14px 0 12px; text-align: center; font: 500 13px/18px var(--sans); color: var(--soft); }
+  .weather svg { width: 28px; height: 28px; margin: 6px auto 4px; fill: none; stroke: var(--ink); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .weather b { display: block; font: 600 16px/20px var(--sans); color: var(--ink); }
+  .weather p { font: 14px/20px var(--sans); color: var(--soft); padding-top: 12px; border-top: 1px solid var(--rule); }
+  .tides { margin-top: 36px; }
+  .tides li { display: grid; grid-template-columns: 1fr 56px 52px; padding: 11px 0; border-bottom: 1px solid var(--rule); font: 500 14px/20px var(--sans); color: var(--soft); }
+  .tides b { font-weight: 600; color: var(--ink); text-align: right; }
+  .opinion { margin-top: 36px; }
+  .opinion li { padding: 13px 0 14px; border-bottom: 1px solid var(--rule); font: italic 18px/23px var(--serif); }
+  .opinion small { display: block; font: 600 13px/18px var(--sans); color: var(--accent); margin-bottom: 3px; }
+
+  /* More stories */
+  .more { margin-top: 48px; padding-bottom: 56px; }
+  .more ul { display: grid; }
+  .more li { display: grid; grid-template-columns: 1fr 116px; gap: 14px; align-items: start; padding: 16px 0; border-bottom: 1px solid var(--rule); }
+  .more li svg { width: 100%; height: auto; order: 2; }
+  .more small { display: block; font: 700 12px/16px var(--sans); letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: 4px; }
+  .more b { display: block; font: 700 18px/23px var(--serif); }
+  .more li p { display: none; }
+
+  /* Footer */
+  .foot { background: var(--foot); color: var(--foot-ink); padding: 36px 0 40px; }
+  .foot .plate { color: var(--foot-ink); font-size: 23px; }
+  .foot .plate .s { fill: var(--foot-ink); } .foot .plate .n { fill: #86bbea; }
+  .foot-links { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 24px; margin: 24px 0; padding: 20px 0; border-top: 1px solid var(--foot-rule); border-bottom: 1px solid var(--foot-rule); font: 500 14px/24px var(--sans); color: var(--foot-soft); }
+  .foot-links b { display: block; color: var(--foot-ink); font-weight: 600; }
+  .note { font: 13px/19px var(--sans); color: var(--foot-soft); max-width: 62ch; }
+
+  @media (min-width: 720px) {
+    :root { --gutter: 32px; }
+    .mast-row { grid-template-columns: 1fr auto 1fr; height: 84px; }
+    .menu { display: none; }
+    .edition, .signin { display: block; }
+    .plate { font-size: 38px; gap: 11px; }
+    .plate svg { width: 19px; height: 38px; }
+    .subscribe { font-size: 14px; line-height: 36px; padding: 0 18px; border-radius: 18px; }
+    .mast { border-bottom: 0; }
+    .sections { display: block; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
+    .sections ul { display: flex; justify-content: center; gap: 30px; font: 600 14px/44px var(--sans); }
+    .sections .on { color: var(--accent); box-shadow: inset 0 -3px var(--accent); }
+    .head { padding-top: 44px; max-width: 900px; }
+    .kicker { font-size: 14px; margin-bottom: 14px; }
+    h1 { font-size: 52px; line-height: 56px; letter-spacing: -.02em; }
+    .standfirst { font-size: 23px; line-height: 32px; margin-top: 18px; max-width: 760px; }
+    .byline { margin-top: 28px; }
+    .byline .when span { display: inline; }
+    .byline .when span + span { margin-left: 12px; padding-left: 12px; border-left: 1px solid var(--rule); }
+    figure.lead { margin: 8px 0 0; }
+    figure.lead img { aspect-ratio: 16 / 10; }
+    figure.lead figcaption { padding-left: 0; padding-right: 0; }
+    body { font-size: 20px; line-height: 32px; }
+    .body { padding-top: 32px; max-width: 660px; }
+    .body > p { margin-bottom: 24px; }
+    .body h2 { font-size: 27px; line-height: 32px; margin: 44px 0 14px; }
+    blockquote { margin: 38px 0 40px; padding-left: 24px; }
+    blockquote p { font-size: 28px; line-height: 37px; }
+    .chart { margin: 38px 0 40px; }
+    .bars { font-size: 14px; }
+    .bars i { height: calc(var(--m) * 48px); margin: 0 7px; }
+    .rail { display: grid; grid-template-columns: 1fr 1fr; gap: 0 48px; margin-top: 56px; }
+    .weather { margin-top: 0; }
+    .more { margin-top: 64px; padding-bottom: 80px; }
+    .more ul { grid-template-columns: repeat(3, 1fr); gap: 0 32px; }
+    .more li { display: block; padding: 20px 0 0; border-bottom: 0; }
+    .more li svg { margin-bottom: 14px; }
+    .more b { font-size: 21px; line-height: 26px; }
+    .more li p { display: block; font: 15px/22px var(--sans); color: var(--soft); margin-top: 8px; }
+    .foot { padding: 52px 0 56px; }
+    .foot .plate { font-size: 30px; }
+    .foot-links { grid-template-columns: repeat(4, 1fr); margin: 30px 0; padding: 26px 0; }
+  }
+  @media (min-width: 1080px) {
+    .cols { display: grid; grid-template-columns: minmax(0, 760px) 300px; justify-content: space-between; }
+    .rail { display: block; margin-top: 8px; }
+    .weather, .tides, .opinion { margin-top: 40px; }
+  }
 </style>
 </head>
 <body>
-<header>north<span>wind</span> daily</header>
-<main>
-  <p class="kicker">Local</p>
-  <h1>Harbour reopens to small boats after a week of storms</h1>
-  <p class="by">By the newsroom · 4 min read</p>
-  <div class="photo" role="img" aria-label="Boats in a grey harbour"></div>
-  <p>The harbour master lifted the closure on Thursday morning, a week after the first of three storms pushed waves over the outer wall and left the slipway buried in shingle.</p>
-  <p>Crews worked through the weekend to clear it. By Wednesday evening the first fishing boats were tied up at the inner quay again, and the ferry is expected back on Saturday.</p>
-  <p>Keep reading. On this page an ad script is waiting for you to scroll, and the moment you do it sends this tab to another site. You never tap anything.</p>
-  <p>With Undirect on for this site, the page stays where it is, and the address the script reached for shows in Undirect's list.</p>
-  <p>Repairs to the outer wall will take most of the winter. The council says the work will be done from the water side where it can, so the promenade stays open.</p>
-  <p>Traders on the front said the week cost them their best weekend since the summer, and asked for the car park charges to be lifted while the works go on.</p>
-  <p>The lifeboat crew thanked the volunteers who checked on moorings through the worst of it.</p>
-  <p>Weather for the week ahead is calmer, with light winds and sun by Sunday.</p>
+<header class="mast">
+  <div class="wrap mast-row">
+    <div><div class="menu" aria-hidden="true"></div><p class="edition">Morning edition</p></div>
+    <div class="plate"><svg viewBox="0 0 24 48" aria-hidden="true"><path class="n" d="M12 0l12 24H0z"/><path class="s" d="M12 48L0 24h24z"/></svg>Northwind Daily</div>
+    <div class="mast-end"><span class="signin">Sign in</span><span class="subscribe">Subscribe</span></div>
+  </div>
+  <nav class="sections" aria-label="Sections">
+    <ul class="wrap"><li>News</li><li class="on">Coast</li><li>Business</li><li>Sport</li><li>Culture</li><li>Opinion</li><li>Weather</li></ul>
+  </nav>
+</header>
+
+<main class="wrap">
+  <article>
+    <div class="head">
+      <p class="kicker">Coast</p>
+      <h1>Harbour reopens to small boats after a week of storms</h1>
+      <p class="standfirst">Crews cleared the slipway by hand and by digger. The ferry is due back on Saturday, and repairs to the outer wall will run through the winter.</p>
+    </div>
+    <div class="cols">
+      <div>
+        <div class="byline">
+          <span class="face" aria-hidden="true">ME</span>
+          <p><b>Mara Ellison</b>Coast correspondent</p>
+          <p class="when"><span>Updated 2 hours ago</span><span>5 min read</span></p>
+        </div>
+        <figure class="lead">
+          <img src="/demo/scroll/harbour.svg" width="1600" height="1000" alt="Fishing boats moored in a calm harbour behind a sea wall at first light, with a digger on the slipway beside a heap of shingle">
+          <figcaption>The inner quay on Thursday morning, with the slipway still half under shingle. Illustration: Northwind Daily</figcaption>
+        </figure>
+        <div class="body">
+          <p>The harbour master lifted the closure on Thursday morning, a week after the first of three storms pushed waves over the outer wall and left the slipway buried in shingle.</p>
+          <p>Crews worked through the weekend to clear it. By Wednesday evening the first fishing boats were tied up at the inner quay again, and the ferry is expected back on Saturday.</p>
+          <p>“We had a metre of stones where the slip should be,” said Ines Calloway, the harbour master. “You could not have launched a dinghy, never mind the lifeboat’s tender.”</p>
+          <p>The closure was the longest since the harbour office began keeping daily records. For seven days nothing larger than a kayak left the inner basin, and the fish market sold what it could bring in by road.</p>
+
+          <h2>Three storms in seven days</h2>
+          <p>The first storm arrived on the Thursday before last with a spring tide behind it. The gauge at the end of the outer wall measured waves of 4.1 metres that night, the highest of the week. Two more fronts followed, on Saturday and on Monday, before the wind dropped.</p>
+          <figure class="chart">
+            <h3>Wave height at the outer wall</h3>
+            <p class="sub">Highest wave each day, in metres</p>
+            <ol class="bars">
+              <li class="storm" style="--m:4.1"><b>4.1</b><i></i><span>Thu</span></li>
+              <li style="--m:2.6"><b>2.6</b><i></i><span>Fri</span></li>
+              <li class="storm" style="--m:3.8"><b>3.8</b><i></i><span>Sat</span></li>
+              <li style="--m:2.2"><b>2.2</b><i></i><span>Sun</span></li>
+              <li class="storm" style="--m:3.5"><b>3.5</b><i></i><span>Mon</span></li>
+              <li style="--m:1.9"><b>1.9</b><i></i><span>Tue</span></li>
+              <li style="--m:1.2"><b>1.2</b><i></i><span>Wed</span></li>
+              <li style="--m:0.8"><b>0.8</b><i></i><span>Thu</span></li>
+            </ol>
+            <figcaption>The three storms are in blue. Source: harbour office gauge</figcaption>
+          </figure>
+          <p>Most of the damage is to the seaward face of the wall, where the sea lifted out a row of coping stones and opened a gap about as long as a bus. Divers will survey the footings next week, once the water clears.</p>
+          <p>Repairs will take most of the winter. The council says the work will be done from the water side where it can, so the promenade stays open.</p>
+
+          <h2>Traders count the cost</h2>
+          <p>Traders on the front said the week cost them their best weekend since the summer, and asked for the car park charges to be lifted while the works go on.</p>
+          <blockquote>
+            <p>“Nobody walks the front in a gale. Let people park for nothing until the wall is mended.”</p>
+            <footer>Tomas Reyne, who runs the cafe by the slipway</footer>
+          </blockquote>
+          <p>The council’s harbour committee meets on Tuesday and will take the request then. A spokesperson said short-stay charges were “under review for the length of the repairs”.</p>
+          <p>At the fish market, stallholders were back at their usual pitches on Thursday. The first landing of the morning, mostly crab and a few boxes of pollack, sold out before nine.</p>
+
+          <h2>What happens next</h2>
+          <p>The lifeboat crew thanked the volunteers who checked on moorings through the worst of it. Eleven boats broke free or dragged their anchors during the week, and all but one were recovered without damage.</p>
+          <p>The ferry company said it would run a reduced timetable from Saturday and return to the full one once the pontoon has been inspected.</p>
+          <p>Weather for the week ahead is calmer, with light winds and sun by Sunday.</p>
+          <div class="topics"><span class="label">Topics</span><span>Coast</span><span>Weather</span><span>Fishing</span><span>Council</span></div>
+        </div>
+      </div>
+
+      <aside class="rail">
+        <section>
+          <h2>Most read</h2>
+          <ol class="read">
+            <li>Ferry returns on Saturday with a reduced timetable</li>
+            <li>The night the outer wall gave way, hour by hour</li>
+            <li>Free parking on the front? Councillors decide on Tuesday</li>
+            <li>Crab is back at the fish market, and it sold out by nine</li>
+            <li>Why three storms in a week no longer surprises forecasters</li>
+          </ol>
+        </section>
+        <div>
+        <section class="weather">
+          <h2>The week ahead</h2>
+          <ul>
+            <li>Fri<svg viewBox="0 0 28 28"><path d="M8 21h12a5 5 0 0 0 .6-9.96A7 7 0 0 0 7.2 12.6 4.3 4.3 0 0 0 8 21z"/></svg><b>9°</b></li>
+            <li>Sat<svg viewBox="0 0 28 28"><circle cx="10" cy="9" r="3.5"/><path d="M10 2.5v1.2M3.5 9h1.2M5.4 4.4l.9.9M14.6 4.4l-.9.9M10 22h11a4.5 4.5 0 0 0 .5-8.97 6.3 6.3 0 0 0-11.9 1.3A3.9 3.9 0 0 0 10 22z"/></svg><b>10°</b></li>
+            <li>Sun<svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="5"/><path d="M14 3.5v2.5M14 22v2.5M3.5 14H6M22 14h2.5M6.6 6.6l1.8 1.8M19.6 19.6l1.8 1.8M21.4 6.6l-1.8 1.8M8.4 19.6l-1.8 1.8"/></svg><b>12°</b></li>
+            <li>Mon<svg viewBox="0 0 28 28"><circle cx="14" cy="14" r="5"/><path d="M14 3.5v2.5M14 22v2.5M3.5 14H6M22 14h2.5M6.6 6.6l1.8 1.8M19.6 19.6l1.8 1.8M21.4 6.6l-1.8 1.8M8.4 19.6l-1.8 1.8"/></svg><b>11°</b></li>
+            <li>Tue<svg viewBox="0 0 28 28"><circle cx="10" cy="9" r="3.5"/><path d="M10 2.5v1.2M3.5 9h1.2M5.4 4.4l.9.9M14.6 4.4l-.9.9M10 22h11a4.5 4.5 0 0 0 .5-8.97 6.3 6.3 0 0 0-11.9 1.3A3.9 3.9 0 0 0 10 22z"/></svg><b>11°</b></li>
+          </ul>
+          <p>Light winds from the north, and sun by Sunday.</p>
+        </section>
+        <section class="tides">
+          <h2>Tides today</h2>
+          <ul>
+            <li>High water<span>06:12</span><b>4.8 m</b></li>
+            <li>Low water<span>12:31</span><b>0.9 m</b></li>
+            <li>High water<span>18:40</span><b>4.6 m</b></li>
+          </ul>
+        </section>
+        <section class="opinion">
+          <h2>Opinion</h2>
+          <ul>
+            <li><small>Hester Vane</small>The wall held for ninety years. We should ask what changed</li>
+            <li><small>Joss Tiernan</small>A harbour is a workplace first and a postcard second</li>
+            <li><small>Editorial</small>Free parking is a small price for a hard winter on the front</li>
+          </ul>
+        </section>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+  <section class="more">
+    <h2>More from Coast</h2>
+    <ul>
+      <li>
+        <svg viewBox="0 0 300 200" role="img" aria-label="A ferry on a calm sea at dawn"><rect width="300" height="200" fill="#e9cfae"/><rect width="300" height="70" fill="#8ea0aa"/><circle cx="212" cy="104" r="20" fill="#fff6e0"/><rect y="116" width="300" height="84" fill="#577a8b"/><path d="M52 116h178l-16 30H70z" fill="#1f3446"/><path d="M70 92h128l10 24H62z" fill="#f4efe6"/><rect x="92" y="74" width="74" height="18" fill="#f4efe6"/><rect x="118" y="52" width="20" height="22" fill="#b5412f"/><rect x="118" y="52" width="20" height="6" fill="#1d2731"/><g fill="#35495a"><rect x="80" y="100" width="12" height="8"/><rect x="100" y="100" width="12" height="8"/><rect x="120" y="100" width="12" height="8"/><rect x="140" y="100" width="12" height="8"/><rect x="160" y="100" width="12" height="8"/><rect x="180" y="100" width="12" height="8"/></g><g fill="#f6e3c3" opacity=".45"><rect x="170" y="158" width="90" height="4" rx="2"/><rect x="190" y="176" width="56" height="4" rx="2"/><rect x="30" y="168" width="60" height="4" rx="2"/></g></svg>
+        <div><small>Travel</small><b>Ferry returns on Saturday with a reduced timetable</b><p>Four sailings a day until the pontoon has been inspected.</p></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 300 200" role="img" aria-label="An orange lifeboat in heavy seas"><rect width="300" height="200" fill="#3f5468"/><ellipse cx="70" cy="30" rx="130" ry="40" fill="#34475a"/><ellipse cx="250" cy="52" rx="110" ry="26" fill="#4b6074"/><path d="M0 120q38-26 76 0t76 0 76 0 72-6v86H0z" fill="#2c4352"/><path d="M92 112h128l-22 30h-90z" fill="#1f3446"/><path d="M88 104h136l-4 12H92z" fill="#e8873a"/><path d="M128 76h56l8 28h-70z" fill="#e8873a"/><rect x="138" y="84" width="34" height="12" fill="#cfe0e4"/><rect x="154" y="52" width="4" height="24" fill="#1d2731"/><path d="M0 148q38-24 76 0t76 0 76 0 72-4v56H0z" fill="#3f6677"/><g fill="#e9eef0" opacity=".7"><rect x="30" y="140" width="34" height="4" rx="2"/><rect x="186" y="138" width="40" height="4" rx="2"/><rect x="230" y="168" width="30" height="4" rx="2"/></g></svg>
+        <div><small>Lifeboat</small><b>Volunteers checked the moorings on every tide for a week</b><p>Eleven boats dragged or broke free. One was lost.</p></div>
+      </li>
+      <li>
+        <svg viewBox="0 0 300 200" role="img" aria-label="A promenade with a lamp post, a railing and a works barrier beside the sea"><rect width="300" height="200" fill="#c9d6da"/><rect y="96" width="300" height="40" fill="#577a8b"/><circle cx="60" cy="50" r="18" fill="#fff6e0"/><rect y="136" width="300" height="64" fill="#8d9296"/><rect y="136" width="300" height="6" fill="#a9aeb1"/><g fill="#1d2731"><rect y="104" width="300" height="4"/><rect x="20" y="104" width="4" height="34"/><rect x="80" y="104" width="4" height="34"/><rect x="140" y="104" width="4" height="34"/><rect x="200" y="104" width="4" height="34"/><rect x="260" y="104" width="4" height="34"/><rect x="226" y="34" width="5" height="104"/><rect x="206" y="34" width="24" height="5"/><rect x="202" y="38" width="12" height="10" rx="3"/></g><rect x="62" y="140" width="96" height="16" fill="#f4efe6"/><g fill="#b5412f"><path d="M70 140h14l-8 16H62zM98 140h14l-8 16H90zM126 140h14l-8 16h-14z"/></g><g fill="#1d2731"><rect x="66" y="156" width="4" height="18"/><rect x="150" y="156" width="4" height="18"/></g><path d="M178 174l10-34h8l10 34z" fill="#e8873a"/><rect x="183" y="152" width="18" height="6" fill="#f4efe6"/></svg>
+        <div><small>Council</small><b>A winter of repairs, and what it means for the promenade</b><p>The path stays open. Work starts from the water side.</p></div>
+      </li>
+    </ul>
+  </section>
 </main>
-<footer>Northwind Daily is a fictional paper made for the Undirect demo. The redirect goes to a harmless stand-in page.</footer>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="plate"><svg viewBox="0 0 24 48" aria-hidden="true"><path class="n" d="M12 0l12 24H0z"/><path class="s" d="M12 48L0 24h24z"/></svg>Northwind Daily</div>
+    <div class="foot-links">
+      <p><b>Sections</b>News<br>Coast<br>Business<br>Sport</p>
+      <p><b>More</b>Culture<br>Opinion<br>Weather<br>Tide tables</p>
+      <p><b>The paper</b>About us<br>Contact the newsroom<br>Corrections</p>
+      <p><b>Readers</b>Subscribe<br>Newsletters<br>Print edition</p>
+    </div>
+    <p class="note">Northwind Daily is a fictional paper made for the Undirect demo. The redirect goes to a harmless stand-in page.</p>
+  </div>
+</footer>
 <script src="/demo/lib/env.js"></script>
 <script>DEMO.loadAd("scrollredirect", DEMO.landed());</script>
 </body>
