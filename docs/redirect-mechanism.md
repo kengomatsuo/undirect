@@ -128,7 +128,7 @@ typing an address, because Safari's `webNavigation` has no `transitionType`.
 The Navigation API can. Its `navigate` event is raised for a navigation the page
 or a link on it started, never for the address bar, a bookmark or Back, and a
 cross-document push or replace can be cancelled with `preventDefault()` before a
-request is made. Safari has it from 26.2. From 1.0.6 the app runs on iOS 18, where Safari has no
+request is made. Safari has it from 26.2. From 1.1.0 the app runs on iOS 18, where Safari has no
 `navigation`: the guard feature-detects it and keeps the background's judgement
 alone, as on a Mac with an older Safari.
 `content/guard.js` listens in the top frame. A cross-site trip that no link or

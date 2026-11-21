@@ -851,7 +851,7 @@
     }
     Object.assign(settings, stored.settings ?? {});
     notesShown = stored.notesShown ?? 0;
-    // 1.0.6 turned the note on for everyone; an older stored `false` was the old default.
+    // 1.1.0 turned the note on for everyone; an older stored `false` was the old default.
     if (!stored.noteDefaultOn) settings.banner = true;
     table = {
       policy: settings.policy ?? "block",

@@ -25,7 +25,7 @@ const DEFAULT_SETTINGS = {
   sweep: true,
   veto: true,
   recipes: true,
-  banner: true, // a note in the page when something is stopped (on from 1.0.6)
+  banner: true, // a note in the page when something is stopped (on from 1.1.0)
   effects: true, // the trap drawn breaking on the page (content/fx.js); fx.<name> turns one off
   policy: "block", // what an unknown cross-site destination gets
   mode: "watched", // "watched": only sites turned on; "everywhere": every site
@@ -105,7 +105,7 @@ async function loadState() {
     "settings", "everywhere", "perSite", "watched", "learned", "ruleIds", "nextRuleId", "lifetime",
     "noteDefaultOn",
   ]);
-  // 1.0.6 turned the page note on for everyone. Before it the note was off by
+  // 1.1.0 turned the page note on for everyone. Before it the note was off by
   // default and stored with every other setting, so a stored false is almost
   // always the old default rather than a choice: flip it once.
   if (!stored.noteDefaultOn) {
