@@ -111,6 +111,23 @@ td .sub{display:block;color:var(--muted);font-size:.78rem}
   table.beats td.t{display:inline-block}
   table.all{min-width:640px}
 }
+/* step 2: the film, the reel, the proof */
+.films{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;max-width:760px}
+@media (max-width:640px){.films{grid-auto-flow:column;grid-template-columns:none;grid-auto-columns:72%;overflow-x:auto;padding-bottom:6px;scroll-snap-type:x proximity}.films figure{scroll-snap-align:start}}
+.gate video{width:100%;height:100%;display:block;object-fit:contain;background:var(--gate)}
+.reel{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:10px;max-width:760px}
+audio{width:100%;max-width:100%;height:40px}
+.tracks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;max-width:760px}
+.track{background:var(--surface);padding:14px;display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px 14px;align-items:start}
+.track .tn{font-family:var(--display);font-weight:700;font-size:1.6rem;line-height:1;font-variant-numeric:tabular-nums;min-width:1.2em}
+.track .tmeta{display:flex;flex-direction:column;gap:3px;min-width:0}
+.track .tnote{font-size:.88rem;color:var(--muted)}
+.track audio{grid-column:1/-1}
+.sheet{display:block;width:100%;height:auto;border-radius:6px;background:var(--gate)}
+.sheetbox{overflow-x:auto}
+.sheetbox img{min-width:900px}
+.asks{background:var(--accent-soft);border-radius:14px;padding:22px 18px;display:flex;flex-direction:column;gap:12px}
+.asks ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px;max-width:66ch}
 details{border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:0 16px}
 summary{cursor:pointer;padding:14px 0;font-weight:600}
 details[open]{padding-bottom:14px}
@@ -123,10 +140,175 @@ ul.plain{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:8px;
 <div class="wrap">
 
 <header style="display:flex;flex-direction:column;gap:16px">
-  <span class="eyebrow">Monholt · ASG136 · read 21 Nov 2026 · nothing is built yet</span>
-  <h1>Why our films read as generated, and three ways out</h1>
-  <p class="lede">I downloaded 33 films from Apple, Samsung and app studios, measured every cut, tempo and line of on-screen text, then ran 15 of our own films through the same tools. The gap is narrower than it feels and it sits in four places. Pick a direction at the end and I storyboard an Undirect film in it.</p>
+  <span class="eyebrow">Monholt · ASG136 · step 2 · 22 Nov 2026 · one film built, nothing posted</span>
+  <h1>The first Black stage film, and eight tracks to choose from</h1>
+  <p class="lede">You said the direction was up to me, so I built direction A with its press shot as close as C. Below are the film in English, Japanese and Indonesian, a reel of eight free tracks for your ear, and the proof that nothing you must read sits under a platform's buttons or shadows. Step 1, the study this came from, follows unchanged.</p>
 </header>
+
+<section>
+  <div class="asks">
+    <span class="eyebrow">What I need from you</span>
+    <ol>
+      <li><b>A track.</b> Listen to the reel on your phone and give me a number, or say none of them.</li>
+      <li><b>The film.</b> Say go, or what to change. It is a first cut on a placeholder track, and I will lay it again on the track you pick.</li>
+    </ol>
+    <p class="note">I measured the sound and could not hear it. Unmute before you play anything.</p>
+  </div>
+</section>
+
+<section>
+  <span class="eyebrow">The film · 15.5 s · 1080 × 1920 · version 2</span>
+  <h2>A tap goes wrong, one press, and the page stays</h2>
+  <div class="films">
+    <figure><div class="gate tall"><video controls playsinline preload="metadata" poster="film/poster.jpg" src="film/undirect-stage-en-v2.mp4"></video></div><figcaption><b>English.</b> "Not what you tapped." "One press." $1.99 once.</figcaption></figure>
+    <figure><div class="gate tall"><video controls playsinline preload="metadata" poster="film/poster.jpg" src="film/undirect-stage-ja-v2.mp4"></video></div><figcaption><b>Japanese.</b> 「押したのは、そこじゃない。」「ひと押しで、止まる。」300円の買い切り</figcaption></figure>
+    <figure><div class="gate tall"><video controls playsinline preload="metadata" poster="film/poster.jpg" src="film/undirect-stage-id-v2.mp4"></video></div><figcaption><b>Indonesian.</b> "Bukan yang kamu ketuk." "Sekali ketuk, beres." Rp 39.000 sekali bayar</figcaption></figure>
+  </div>
+  <p>Every product shot is a real Safari recording playing on the house's 3D iPhone. Nothing on the phone's screen is drawn. The Japanese and Indonesian lines are written in each language and are not translations of the English: the second card says "one press and it stops" and "one tap, sorted". The badges are Apple's own for each language, and the prices are the ones our posts in those languages already use.</p>
+  <div class="tablebox"><table class="beats">
+    <thead><tr><th>#</th><th>Seconds</th><th>On screen</th><th>Motion</th><th>Sound</th></tr></thead>
+    <tbody>
+    <tr><td class="n">1</td><td class="t">0.0–2.5</td><td data-l="On screen">The lit iPhone on black with the demo film site. A touch lands on Play at 1.4 s and the demo's stand-in page takes the tab.</td><td data-l="Motion">A slow push in for 1.9 s, then a 0.6 s hold.</td><td data-l="Sound">The track's quiet build. One click on the touch.</td></tr>
+    <tr><td class="n">2</td><td class="t">2.5–5.1</td><td data-l="On screen">Black. "Not what you tapped."</td><td data-l="Motion">The line lights left to right in 0.3 s and holds.</td><td data-l="Sound">The build goes on.</td></tr>
+    <tr><td class="n">3</td><td class="t">5.1–7.6</td><td data-l="On screen">The press, close. Safari's page menu fills the frame; a finger lands on the Undirect row at 5.8 s; the menu closes and the page reloads.</td><td data-l="Motion">Held close for 0.75 s, then one pull back to the whole phone, at rest 0.7 s before the cut. The row is shown at the recording's own pixel size, which is as close as it goes without blurring.</td><td data-l="Sound">The music drops to a fifth for 0.3 s before the press. One click.</td></tr>
+    <tr><td class="n">4</td><td class="t">7.6–10.4</td><td data-l="On screen">Black. "One press."</td><td data-l="Motion">The same sweep.</td><td data-l="Sound">The last bar of the build.</td></tr>
+    <tr><td class="n">5</td><td class="t">10.4–13.0</td><td data-l="On screen">The phone from the other side: the film page still there, Undirect's popup under it. A loupe shows "1 stopped" and Blocked at 2.2 times their size.</td><td data-l="Motion">The phone turns 11° to face the lens in 1.4 s. The loupe grows out of the chip at 11.4 s and holds 1.5 s.</td><td data-l="Sound">The lift lands on the cut, at 10.43 s.</td></tr>
+    <tr><td class="n">6</td><td class="t">13.0–15.5</td><td data-l="On screen">The icon, the name, the price, Apple's badge.</td><td data-l="Motion">The icon settles in 0.6 s and holds 2 s.</td><td data-l="Sound">The music stops on the cut. One low hit rings out, then 1.5 s of silence.</td></tr>
+    </tbody></table></div>
+  <h3>What changed from the plan on this page, and why</h3>
+  <ul class="plain">
+    <li><b>Newer recordings.</b> The plan named the takes with the old white popup and its switch. Shots 3 and 5 use the 60-frame takes of build 1.0.3, which show today's dark popup and its power button. I compared them with a current screenshot of 1.1.0 and the popup's first screen is the same.</li>
+    <li><b>Shot 5 has no tap on Play.</b> No recording holds a guarded tap and the popup opening in one piece, so the shot opens with the popup already up. The words before it carry the cause.</li>
+    <li><b>The film is 15.5 s, not 17.1 s.</b> The cuts sit on the downbeats of the placeholder track, which runs at 95 BPM where the plan assumed 84.</li>
+    <li><b>The loupe is the readable copy of the result.</b> The real row sits low on the phone, under where TikTok and Reels put the caption, so the loupe repeats it inside the clear area.</li>
+  </ul>
+  <h3>Not right yet</h3>
+  <ul class="plain">
+    <li><b>Shot 1 is an October recording in which the demo site is still called reelhouse</b>; in shots 3 and 5 it is Marlow TV. The name is small, but it has to be recorded again on the current demo before anything is posted.</li>
+    <li><b>The page that replaces the film is the demo's own stand-in</b>, with a "Stand-in destination" label. It is real behaviour of our demo and it reads as a demo.</li>
+    <li><b>The recordings are of 1.0.3, and the current build is 1.1.0.</b> A final cut should be recorded on the build that is in the store.</li>
+    <li><b>The price line is the full price.</b> A cut posted from 27 to 30 November needs the sale price.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="eyebrow">Music · eight tracks · pick by ear</span>
+  <h2>Each one builds quietly, then lifts where the film's result lands</h2>
+  <p>I scored 449 Mixkit tracks by their published waveforms, then measured the best 30, all 51 tracks on Unminus and 10 by Scott Buckley with the house beat tracker. These eight have a quiet build of four film beats and a lift of 8 to 20 dB. Each clip is cut the way it would sit under the film: four beats of build, the lift, two beats after it. A voice says the number before each track on the reel.</p>
+  <div class="reel"><span class="mono muted">The whole reel · 2 min 40 s · MP3</span><audio controls preload="metadata" src="audio/music-reel.mp3" id="reel"></audio></div>
+  <ol class="tracks">
+      <li class="track">
+        <span class="tn">1</span>
+        <div class="tmeta"><b>Thunder</b><span class="muted">Arulo</span>
+          <span><span class="tag ref">Mixkit</span><span class="mono">95 BPM · lift at 10.1 s of 15.2 s</span></span>
+          <span class="tnote">A long low build, then a hard, bass-heavy lift. The placeholder under the film. No credit. Ads and social posts named in the licence. <a href="https://assets.mixkit.co/music/318/318.mp3">Whole track</a>, lift at 0:20.2.</span></div>
+        <audio controls preload="none" src="audio/01-thunder.mp3" id="track-1"></audio>
+      </li>
+      <li class="track">
+        <span class="tn">2</span>
+        <div class="tmeta"><b>Waveform</b><span class="muted">Kit Wheston</span>
+          <span><span class="tag ref">Unminus</span><span class="mono">80 BPM · lift at 12.0 s of 18.0 s</span></span>
+          <span class="tnote">The quietest build of the eight, then an equally large lift. Listed by its library as dark hip hop. No credit. Commercial use, videos and apps named in the licence. <a href="https://feeds.soundcloud.com/stream/1038044245-unminus-waveform.mp3">Whole track</a>, lift at 0:23.9.</span></div>
+        <audio controls preload="none" src="audio/02-waveform.mp3" id="track-2"></audio>
+      </li>
+      <li class="track">
+        <span class="tn">3</span>
+        <div class="tmeta"><b>Other World</b><span class="muted">Lily J</span>
+          <span><span class="tag ref">Mixkit</span><span class="mono">140.1 BPM · lift at 9.2 s of 14.3 s</span></span>
+          <span class="tnote">Starts from silence, thins out twice, then one flat, loud section. No credit. Ads and social posts named in the licence. <a href="https://assets.mixkit.co/music/723/723.mp3">Whole track</a>, lift at 0:09.2.</span></div>
+        <audio controls preload="none" src="audio/03-other-world.mp3" id="track-3"></audio>
+      </li>
+      <li class="track">
+        <span class="tn">4</span>
+        <div class="tmeta"><b>Atoms in Peace</b><span class="muted">Alejandro Magaña (A. M.)</span>
+          <span><span class="tag ref">Mixkit</span><span class="mono">96.3 BPM · lift at 10.0 s of 15.0 s</span></span>
+          <span class="tnote">The build is busier and the lift smaller: a steadier electronic track. No credit. Ads and social posts named in the licence. <a href="https://assets.mixkit.co/music/107/107.mp3">Whole track</a>, lift at 0:28.5.</span></div>
+        <audio controls preload="none" src="audio/04-atoms-in-peace.mp3" id="track-4"></audio>
+      </li>
+      <li class="track">
+        <span class="tn">5</span>
+        <div class="tmeta"><b>Kickin' Heart</b><span class="muted">Mauro Urbina</span>
+          <span><span class="tag ref">Mixkit</span><span class="mono">108.6 BPM · lift at 13.2 s of 19.9 s</span></span>
+          <span class="tnote">Mid-tempo electronic with a melodic lift. The brightest of the Mixkit set. No credit. Ads and social posts named in the licence. <a href="https://assets.mixkit.co/music/771/771.mp3">Whole track</a>, lift at 0:17.8.</span></div>
+        <audio controls preload="none" src="audio/05-kickin-heart.mp3" id="track-5"></audio>
+      </li>
+      <li class="track">
+        <span class="tn">6</span>
+        <div class="tmeta"><b>Silent Descent</b><span class="muted">Eugenio Mininni</span>
+          <span><span class="tag ref">Mixkit</span><span class="mono">140 BPM · lift at 10.3 s of 15.4 s</span></span>
+          <span class="tnote">No bass at all. A bright cinematic rise, the nearest to Samsung's character. No credit. Ads and social posts named in the licence. <a href="https://assets.mixkit.co/music/614/614.mp3">Whole track</a>, lift at 1:09.7.</span></div>
+        <audio controls preload="none" src="audio/06-silent-descent.mp3" id="track-6"></audio>
+      </li>
+      <li class="track">
+        <span class="tn">7</span>
+        <div class="tmeta"><b>5 Stages of You</b><span class="muted">Kit Wheston</span>
+          <span><span class="tag ref">Unminus</span><span class="mono">80 BPM · lift at 12.0 s of 18.0 s</span></span>
+          <span class="tnote">A soft piano track that drops to near silence for a bar, then lifts. No credit. Commercial use, videos and apps named in the licence. <a href="https://feeds.soundcloud.com/stream/1145820199-unminus-5-stages-of-you-free-lo-fi-music.mp3">Whole track</a>, lift at 0:24.0.</span></div>
+        <audio controls preload="none" src="audio/07-5-stages-of-you.mp3" id="track-7"></audio>
+      </li>
+      <li class="track">
+        <span class="tn">8</span>
+        <div class="tmeta"><b>Born of the Sky</b><span class="muted">Scott Buckley</span>
+          <span><span class="tag ref">CC BY 4.0</span><span class="mono">119.8 BPM · lift at 12.0 s of 18.0 s</span></span>
+          <span class="tnote">An orchestral swell with no hard edge. Needs the credit line. Credit in every caption. Not for a store preview unless a licence is bought (AUD 40 to 300). <a href="https://www.scottbuckley.com.au/library/wp-content/uploads/2025/08/BornOfTheSky.mp3">Whole track</a>, lift at 0:32.5.</span></div>
+        <audio controls preload="none" src="audio/08-born-of-the-sky.mp3" id="track-8"></audio>
+      </li>
+  </ol>
+  <ul class="plain">
+    <li><b>A phone speaker will flatten track 1.</b> Its lift measures 19 dB as plain level and 8 dB as loudness the ear weighs, because most of the lift is bass. Tracks 5 and 6 lose the least on a small speaker.</li>
+    <li><b>Tracks 1 to 7 need no credit and may go on every platform.</b> Track 8 needs "Born of the Sky by Scott Buckley, released under CC-BY 4.0. www.scottbuckley.com.au" in every caption.</li>
+    <li><b>TikTok's and Meta's own libraries stay on their platforms.</b> I read both sets of terms: a film cut to one of their songs can be posted only there, so neither is on this reel. If you want one, the film gets a TikTok-only or Meta-only version with that song.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="eyebrow">The frame · all 62 frames at 4 a second · 3 languages × 4 platforms</span>
+  <h2>Every word and every pressed control sits inside the clear box, for the whole film</h2>
+  <p>Each sheet is the finished film under one platform's player: its unsafe zones tinted, a shadow from the top and bottom edges, and stand-ins for the buttons and the caption. The outlined box is what that platform leaves clear. The words, the touch on Play, the Undirect row and the finger on it, the loupe and the whole end card stay inside it in every frame. The phone itself runs under the edges, as the hero is meant to.</p>
+  <figure><div class="sheetbox"><img class="sheet" src="qa/en-tiktok.jpg" alt="The English film, 62 frames, under TikTok's zones" loading="lazy"></div><figcaption><b>English under TikTok</b>, the tightest of the four: 240 px at the top, everything from 1260 px down, and the button column from 780 px across below 840 px.</figcaption></figure>
+  <details><summary>The other eleven sheets, and the film with nothing over it</summary>
+    <div style="display:flex;flex-direction:column;gap:18px;padding-top:6px">
+      <figure><div class="sheetbox"><img class="sheet" src="qa/en-clean.jpg" alt="The English film, 62 frames, nothing over it" loading="lazy"></div><figcaption><b>English, clean.</b> The same 62 frames with no overlay.</figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/en-reels.jpg" alt="The English film under Reels" loading="lazy"></div><figcaption><b>English under Reels.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/en-shorts.jpg" alt="The English film under Shorts" loading="lazy"></div><figcaption><b>English under Shorts.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/en-stories.jpg" alt="The English film under Stories" loading="lazy"></div><figcaption><b>English under Stories.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/ja-tiktok.jpg" alt="The Japanese film under TikTok" loading="lazy"></div><figcaption><b>Japanese under TikTok.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/ja-reels.jpg" alt="The Japanese film under Reels" loading="lazy"></div><figcaption><b>Japanese under Reels.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/ja-shorts.jpg" alt="The Japanese film under Shorts" loading="lazy"></div><figcaption><b>Japanese under Shorts.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/ja-stories.jpg" alt="The Japanese film under Stories" loading="lazy"></div><figcaption><b>Japanese under Stories.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/id-tiktok.jpg" alt="The Indonesian film under TikTok" loading="lazy"></div><figcaption><b>Indonesian under TikTok.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/id-reels.jpg" alt="The Indonesian film under Reels" loading="lazy"></div><figcaption><b>Indonesian under Reels.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/id-shorts.jpg" alt="The Indonesian film under Shorts" loading="lazy"></div><figcaption><b>Indonesian under Shorts.</b></figcaption></figure>
+      <figure><div class="sheetbox"><img class="sheet" src="qa/id-stories.jpg" alt="The Indonesian film under Stories" loading="lazy"></div><figcaption><b>Indonesian under Stories.</b></figcaption></figure>
+    </div>
+  </details>
+  <ul class="plain">
+    <li><b>Where the zones come from.</b> TikTok's is its own In-Feed template and Shorts' is Google's overlay file. Meta publishes no pixel numbers for Reels, so Reels uses the strictest of the other two. Stories uses 270 px at the top and 384 px at the bottom.</li>
+    <li><b>The shadows and buttons are drawn, not captured from the apps.</b> Each shadow is full strength at the frame's edge and reaches zero exactly at the zone's inner edge, so anything clear of it is clear of the real one.</li>
+    <li><b>A test holds the same line in code.</b> It projects the Play button, the stand-in page's headline, the Undirect row, the finger, the loupe and the end card onto the frame every 0.05 s and fails if any leaves the box.</li>
+  </ul>
+</section>
+
+<section>
+  <span class="eyebrow">Checks</span>
+  <h2>What I checked, and what I could not</h2>
+  <div class="tablebox"><table class="all">
+    <thead><tr><th>Check</th><th>Result</th></tr></thead>
+    <tbody>
+      <tr><td>Stills</td><td>51 stills across the three languages, opened and read. Two rounds of fixes before the first render: the touch was on the wrong menu row, and the result shot left the lower half of the frame empty.</td></tr>
+      <tr><td>Frame sheets</td><td>Every frame at 4 a second, in all three languages, read on the sheets above.</td></tr>
+      <tr><td>Motion</td><td>Each shot is at rest before its cut: 0.65 s, 0.71 s and 1.09 s for the three product shots. Version 1 failed this on the press shot, which was still moving at the cut; version 2 ends the pull back earlier.</td></tr>
+      <tr><td>Loudness</td><td>-14.2 LUFS, true peak -1.3 dBFS, on each of the three delivered files (target -14 ± 0.5 and at most -1). The lift's peaks are held by a limiter; the quiet build is left as quiet as the track has it.</td></tr>
+      <tr><td>Safe box</td><td>5 tests, 384 checks, all pass.</td></tr>
+      <tr><td>Not checked</td><td>How any of it sounds. The films inside the real apps on a phone. A fresh recording on build 1.1.0.</td></tr>
+    </tbody></table></div>
+</section>
+
+<section>
+  <span class="eyebrow">Step 1 · read 21 Nov 2026</span>
+  <h2>Why our films read as generated, and three ways out</h2>
+  <p>I downloaded 33 films from Apple, Samsung and app studios, measured every cut, tempo and line of on-screen text, then ran 15 of our own films through the same tools. The gap is narrower than it feels and it sits in four places.</p>
+</section>
 
 <section>
   <span class="eyebrow">What the measurements say</span>
@@ -357,7 +539,7 @@ ul.plain{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:8px;
 
 <section>
   <div class="choose">
-    <span class="eyebrow">Your call</span>
+    <span class="eyebrow">Step 1 asked · answered: A, with free libraries</span>
     <h2>I would build A, and shoot its press as close as C</h2>
     <p>A is the grammar of the films you named: Apple's iPhone 17 Pro and 18 Pro ads, and the Halide, Things and CleanShot films, all show a card of words, then the product, in turn. It removes the biggest measured gap by construction, because a frame holds words or the product and never both. It keeps Undirect's black and red, needs no new set, and Cutling can stand on the same stage in green. Its one weakness is that it leans on the song, which is also the thing you said you respond to.</p>
     <ol>
@@ -370,17 +552,20 @@ ul.plain{margin:0;padding-left:1.1em;display:flex;flex-direction:column;gap:8px;
 
 <section>
   <span class="eyebrow">Music we are allowed to use</span>
-  <h2>Where a track with a real build can come from</h2>
+  <h2>What each free library's own terms permit</h2>
   <div class="tablebox"><table class="all">
-    <thead><tr><th>Source</th><th>Cost</th><th>Covers</th><th>Catch</th></tr></thead>
+    <thead><tr><th>Library</th><th>Ads and social posts</th><th>Store preview</th><th>Credit</th><th>Catch</th></tr></thead>
     <tbody>
-      <tr><td><a href="https://www.epidemicsound.com/our-plans/business-plan/">Epidemic Sound, Business</a></td><td>US$20 a month, billed US$240 yearly. 30 days free.</td><td>A brand's own social posts, websites and paid ads. Protects 3 channels per platform. For revenue under $10M.</td><td>Films published while subscribed stay licensed. Nothing new may be published after cancelling.</td></tr>
-      <tr><td><a href="https://mixkit.co/license/#musicFree">Mixkit</a></td><td>Free</td><td>Social posts and online ads, no credit line. Its licence forbids Content ID registration, so no claims.</td><td>A small catalogue. Both loops under our social films come from it.</td></tr>
-      <tr><td>TikTok Commercial Music Library, Meta Sound Collection</td><td>Free for business accounts</td><td>Recognisable songs, added inside the app when posting.</td><td>The track cannot leave that platform and the film cannot be cut to it beforehand.</td></tr>
-      <tr><td>Artlist</td><td>Not confirmed</td><td>Its pricing page showed only AI plans when I read it; the music plans did not load.</td><td>Left out until the page can be read.</td></tr>
-      <tr><td>Pixabay</td><td>Free</td><td>Out since 18 Nov 2026.</td><td>A distributor registered "Revival" with Content ID and blocked two Cutling Shorts.</td></tr>
+      <tr><td><a href="https://mixkit.co/license/#musicFree">Mixkit</a></td><td>Yes. The licence names "Social Media video posts" and "Online marketing ads" on "any web or social media platform".</td><td>Not named; read as covered.</td><td>None</td><td>Nobody may register a track with a rights service, so claims should not happen. Not for TV, radio or games.</td></tr>
+      <tr><td><a href="https://www.unminus.com/license">Unminus</a></td><td>Yes, "including for commercial purposes".</td><td>Yes: videos and apps are named.</td><td>None</td><td>51 tracks in all.</td></tr>
+      <tr><td><a href="https://dova-s.jp/contents/license">DOVA-SYNDROME</a>, <a href="https://maou.audio/rule/">魔王魂</a></td><td>Yes, including commercials and every video platform.</td><td>Not named; apps are among DOVA's examples.</td><td>None (optional at 魔王魂)</td><td>Japanese libraries, good for Japanese posts. Each DOVA composer may add conditions on the track's page.</td></tr>
+      <tr><td><a href="https://www.scottbuckley.com.au/library/using-this-music/">Scott Buckley</a>, <a href="https://incompetech.com/music/royalty-free/faq.html">Incompetech</a>, <a href="https://audionautix.com/">Audionautix</a>, <a href="https://www.silvermansound.com/licenses">Silverman Sound</a></td><td>Yes, under CC BY 4.0.</td><td>No, unless a no-credit licence is bought.</td><td>In every caption or description</td><td>A YouTube video without the credit gets a claim.</td></tr>
+      <tr><td><a href="https://www.tiktok.com/legal/page/global/commercial-music-library-user-terms/en">TikTok Commercial Music Library</a></td><td>On TikTok only: "Commercial Uses outside of TikTok are not permitted".</td><td>No</td><td>None</td><td>TikTok may mute the video if it loses the song.</td></tr>
+      <tr><td><a href="https://www.facebook.com/sound/collection/terms">Meta Sound Collection</a></td><td>On Facebook and Instagram only: content "on the Meta Company Products ... only".</td><td>No</td><td>None</td><td>Tracks can be downloaded, so a Meta-only cut can be made to one.</td></tr>
+      <tr><td><a href="https://support.google.com/youtube/answer/3376882">YouTube Audio Library</a></td><td>On YouTube: "any of your videos". Its terms name no other platform.</td><td>Not granted in writing</td><td>None, except tracks marked Creative Commons</td><td>Treat as YouTube only.</td></tr>
+      <tr><td>Pixabay, StreamBeats, NCS, Free To Use</td><td>Out</td><td>Out</td><td></td><td>Pixabay's "Revival" was registered with Content ID and blocked two Cutling Shorts. StreamBeats registers its own tracks and is written for streamers. NCS and Free To Use ask brands to pay.</td></tr>
     </tbody></table></div>
-  <p class="note">Prices read on each company's own page on 21 Nov 2026. Mixkit's terms were read on 20 Nov 2026.</p>
+  <p class="note">Each row was read on the library's own terms page on 21 Nov 2026. The quotes and every source are in the product-video skill, <span class="mono">research/audio-library.md</span>. Epidemic Sound's Business plan (US$20 a month, billed yearly) was read in step 1 and is not needed for this reel.</p>
 </section>
 
 <section>

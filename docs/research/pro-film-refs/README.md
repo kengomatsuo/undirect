@@ -2,8 +2,8 @@
 
 Read and measured 2026-11-21. Step 1 of the owner's ask to make Monholt's social films and
 photos look made by a studio. The page the owner reads:
-https://claude.ai/artifact/9Df2FgDw3F8fnUFensjEL8 (source in `page/`). Nothing is built;
-the owner picks a direction first.
+https://claude.ai/artifact/9Df2FgDw3F8fnUFensjEL8 (source in `page/`). Step 2 (2026-11-22, below) built
+the first film and the music reel; the owner picks a track and approves the film next.
 
 ## What is here
 
@@ -93,6 +93,53 @@ Beat tables for a 15 to 20 s Undirect film in each are on the page.
 - Artlist: https://artlist.io/page/pricing showed only AI plans in Chrome; the music plans
   were not read. No price is quoted.
 - Pixabay stays out (`product-video/research/audio-library.md`, 2026-11-18).
+- Superseded on 2026-11-21 by the licence table in `product-video/research/audio-library.md`, section 2: TikTok's and
+  Meta's libraries are bound to their platforms by their terms, YouTube's names no other platform, and Unminus joins
+  Mixkit as a no-credit source.
+
+## Step 2: the first Black stage film and the music reel (ASG138, ASG139, 2026-11-22)
+
+The owner's answers: direction "up to you" (so A, with the press shot as close as C), and no paid library.
+
+**Film.** `undirect-promo/wire/src/stage/` (`film.ts` holds every timing, take, pose and word; `BlackStage.tsx` the
+composition `BlackStage`, 1080 x 1920 at 60 fps, 15.48 s, `lang` en, ja or id). Render and master:
+`bun tools/stage.ts render <lang> <version>` then `python3 tools/stage-master.py out/stage/raw-<lang>-<version>.mp4
+out/stage/undirect-stage-<lang>-<version>.mp4`, which also writes the 4 fps sheet and the four platform sheets.
+`bun test src/stage/film.test.ts` holds the safe box in code. The films on the page are version 2.
+
+- Six beats on the downbeats of the placeholder track ("Thunder", Mixkit 318, 95 BPM, played from 9.762 s; its lift at
+  20.19 s lands on the cut to the result at 10.43 s). The music stops on the cut to the end card.
+- Takes, cut into `wire/public/stage/`: `hijack.mp4` is `wire/public/takes/F_S1.mp4` (October, the demo site still
+  named reelhouse); `press.mp4` is `capture/takes/V8_PI_103_on.mp4` 14.0 to 17.8 s (row press at 1.6 s of it);
+  `result.mp4` is `capture/takes/V8_PI_103_list.mp4` 0 to 3.3 s. The V8 takes are Undirect 1.0.3 (10) at 60 fps.
+- Decisions changed from the step 1 beat table: the V8 takes replace `ip-stream-on` and `reel-on`, whose popup is the
+  old white one; shot 5 opens with the popup up, since no take holds a guarded tap and the popup opening; the press shot
+  starts close and pulls back once instead of going in and out; the loupe carries "1 stopped" and Blocked into the clear
+  box because the real row sits under the caption band.
+- Words: en "Not what you tapped." / "One press." / "$1.99 once"; ja 押したのは、そこじゃない。/ ひと押しで、止まる。/
+  300円の買い切り; id "Bukan yang kamu ketuk." / "Sekali ketuk, beres." / "Rp 39.000 sekali bayar" (prices as in
+  `social/calendar-final`). Badges are Apple's localized files from tools.applemediaservices.com.
+- Checks on version 2: at rest before each cut (0.65, 0.71 and 1.09 s on the product shots); -14.2 LUFS, true peak
+  -1.3 dBFS on each language; every word, press, the loupe and the end card inside the box TikTok, Reels and Shorts leave
+  clear, on 62 frames x 3 languages x 4 platforms. Version 1 failed the rest check on the press shot (still moving at the
+  cut) and its true peak sat at the limit.
+- Open before posting: re-record shot 1 on the current demo (Marlow TV) and all takes on 1.1.0; nobody has heard the
+  sound; the price line needs the sale price from 27 to 30 November.
+
+**Platform sheets.** `product-video/scripts/platform-overlay-sheet.py` composites each platform's unsafe zones, a
+shadow gradient from the top and bottom edges and stand-in buttons over every frame at 4 fps. TikTok's zones are its
+own In-Feed template (`product-video/references/overlays/tiktok-in-feed-template.png`), Shorts' are Google's overlay;
+Reels uses the strictest of those two since Meta publishes no numbers. The gradients and buttons are drawn, not captured.
+
+**Music.** `music/tracks.json` is the shortlist of eight (file URL, tempo, film beat, lift time, clip window);
+`music/measurements.json` the measured lift, build and bass share of each; `music/lifts-*.json` the best lifts of every
+track measured (Mixkit, Unminus, Scott Buckley). `music/tools/`: `mixkit-screen.py` scores Mixkit's published
+waveforms, `analyse.py` and `refine.py` find and time lifts on downbeats (need `uv run --with numpy`), `curve.py` and
+`onset.py` print level curves, `reel.py` rebuilds the clips and the reel. What each library's licence permits, with
+quotes and sources, is in `product-video/research/audio-library.md`, section 2.
+
+`page/audio`, `page/film` and `page/qa` are what the artifact serves; they are ignored by git and rebuilt by `reel.py`
+and `stage-master.py` (sheets resized to 1980 px wide for the page).
 
 ## Method and limits
 
