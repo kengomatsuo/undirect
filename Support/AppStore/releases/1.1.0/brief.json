@@ -1,0 +1,18 @@
+{
+  "key": "whatsNew 1.1.0",
+  "surface": "App Store product page, 'What's New' box under the version number; the first two or three lines show before 'more'.",
+  "reader": "A Safari user who has Undirect installed or is looking at it in the store, reading on an iPhone. Same register as that locale's 1.0.5 whatsNew and description.",
+  "says": [
+    "When a page tries to take the person's click or send them somewhere they did not ask for, they now see it fail on the page itself: a short note names what was stopped, and the trick visibly breaks (an invisible layer shatters, a pop-up bursts, a link swapped under the finger snaps back). So they know the site did it, not their phone.",
+    "Undirect now also runs on iPhone and iPad with iOS 18, not only the newest iOS.",
+    "For anyone who prefers it quiet: the note and the effects each switch off, in Undirect's menu in Safari or in the app."
+  ],
+  "facts_checked": [
+    "Extension/Resources/background.js: banner (page note) and effects both default on from 1.1.0",
+    "Extension/Resources/content/fx.js: shatter (invisible layer), burst (pop-up or faked click), snap (swapped link)",
+    "project.yml: iOS deploymentTarget 18.0"
+  ],
+  "fixed_words": ["Undirect", "Safari", "iOS 18", "iPhone", "iPad"],
+  "vocabulary": "Note and effects use each locale's setting_banner / setting_effects nouns from Extension/Resources/_locales.",
+  "budget": "4000 characters enforced by App Store Connect; aim under about 450 (English) so it reads in one glance."
+}
