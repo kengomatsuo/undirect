@@ -157,6 +157,12 @@ the off-beat, so the grid is counted back from the kick). Both are mastered with
 kept 3 dB of lift; at -16 it works 2.6 and 5.8 dB and the lift lands 9 and about 7 dB over the build. Rest before each
 cut: 0.65 s or more. Japanese and Indonesian wait for the owner's pick; the three-language cut on track 1 is version 2.
 
+**Reel 3 (2026-11-22).** `music/tracks-reel-3.json` is tracks 17 to 26: the ten in `reel-3-candidates.json` (ASG143, an
+audio model's ranking of 1,114 tracks by closeness to the owner's kept tracks), with Complicated, Hangtime and Dont Care
+first and the rest in the ranking's order. These hold one level rather than lift, so each clip is the track's own 20 s
+from `tools/main-section.py`: about 4 s before the first run of 12 s or more within 4 dB of the track's loud level.
+`reel.py` takes such a `window` in place of a lift. The film is not laid on any of them.
+
 `page/audio`, `page/film` and `page/qa` are what the artifact serves; they are ignored by git and rebuilt by `reel.py`
 and `stage-master.py` (sheets resized to 1980 px wide for the page).
 
