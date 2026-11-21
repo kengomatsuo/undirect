@@ -1,6 +1,6 @@
 {
  "meta": {
-  "window": "2026-11-21 22:34 to 2026-11-25 23:59 WIB",
+  "window": "2026-11-22 02:00 to 2026-11-25 23:59 WIB",
   "version": 7,
   "what": "the Japanese and Indonesian rows in this window, captions from wording-done.json; rows with frame_fail or needs_localized_media wait for Fable before scheduling",
   "rows": 20,

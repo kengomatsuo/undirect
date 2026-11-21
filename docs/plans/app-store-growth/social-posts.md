@@ -234,3 +234,15 @@ QA failures, unscheduled:
 Still scheduled, passed: Facebook Stories P03 (Nov 22 21:02, 2 frames), P06 (Nov 23 21:02, 2 frames), P09 (Nov 24 15:07); P05 image on Instagram (Nov 24 08:00) and Facebook (08:02); Threads P03 poll (Nov 22 20:34), P01 video (Nov 23 00:04), P02 video (02:04), P06 poll (20:34), P04 video (Nov 24 00:04), P05 image (02:04), P09 text (15:07); X items as scheduled in X. Lists after: meta-posts-scheduled-after.jpg, threads-drafts-after.jpg, fb-story-P03-header-clear.jpg
 
 Calendar version 7 (deliveries.ts, markets.ts, page.ts; design-needed.json for Fable), republished at https://claude.ai/artifact/RTN1joQJUz6eKqvcH5De6f (version 10).
+
+### X posts rewritten short, each with a picture (ASG142, 2026-11-22)
+
+Owner: the X posts lacked pictures and ran too long. Read in Chrome 01:28-02:05 WIB.
+
+- X's Scheduled list at 01:28 WIB held one item, the Arabic quote of @APPS_RH, reading "Will send on Fri, Nov 27, 2026 at 1:15 PM" (this log has it at 20:15 WIB; the browser's zone is Asia/Jakarta). No English post was pending: the two originals of Nov 21 21:30 and Nov 22 01:00 had gone out (profile: "4h" and "42m" at 01:45), both without a picture, and the calendar's X rows were never scheduled.
+- Replaced in the scheduler: nothing, since nothing English was pending. Nothing was deleted, scheduled or posted in this pass. The new posts wait for the owner's go on the calendar page.
+- At 02:03-02:05 WIB the Scheduled list read "Hold that thought" (empty) on four loads, Unsent posts was empty too, and the profile shows no Arabic post. This pass clicked nothing in that list. Screenshot: social/x-images/checks/x-scheduled-empty-2026-11-22-0204.jpg. Its text as read at 01:28, for whoever restores it: "شكراً نبض أبل على المشاركة 🙏 العرض المجاني انتهى، بس Undirect بنص السعر من ٢٧ إلى ٣٠ نوفمبر. / يوقف الصفحات اللي تفتح تبويب جديد أو تحوّلك لموقع ما ضغطت عليه في Safari، على iPhone وiPad وMac، وبالعربي.", quoting https://x.com/APPS_RH/status/2108909412626604059.
+- Calendar: 84 X rows now take their words and media from social/calendar-final/x-posts.ts: 80 rewritten or kept short and 4 written for first-week slots that had none (X-heavy-en-1, 2, 3 as how-tos with a picture, X-original-en-1). 129 characters before the link at the middle of the set, 151 at the longest. 34 carry one 1200 x 675 picture from social/x-images/, 38 keep their film, 12 are polls. P20 and P27 go out as one picture, not four: X crops a set of pictures to a strip.
+- Checks: social/x-images/checks/<row id>.jpg shows each picture at X's measured web (518 px) and mobile web (310 px) size with its words; checks/ocr.json is macOS Vision's reading of all 34, none with a bank word. `bun deliveries.ts` refuses a shared opening or sentence, bank details, clipboard history without the Mac, and a sale price outside the sale.
+- Still without words: X-heavy-en-4 to 13 and X-original-en-2 to 11 (Nov 29 on), and the 10 quote slots, which are written on the day.
+- Page: https://claude.ai/artifact/RTN1joQJUz6eKqvcH5De6f, version 11.

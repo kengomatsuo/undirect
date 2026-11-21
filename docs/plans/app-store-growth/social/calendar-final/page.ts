@@ -4,7 +4,7 @@
 // routine. Writes ~/Downloads/social-calendar/artifact.html.
 // Run after deliveries.ts: bun page.ts
 
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join, basename } from "node:path";
 import { posts } from "./posts";
@@ -30,6 +30,15 @@ function review(path: string): { kind: "v" | "i"; src: string; poster?: string }
   for (const t of tries) if (existsSync(join(OUT, t))) return path.endsWith(".mp4") ? { kind: "v", src: t, poster: t.replace(/\.mp4$/, ".jpg") } : { kind: "i", src: t };
   return null;
 }
+// X pictures (../x-images, rendered by x-images.ts) are published beside the page as review/x/<row id>.jpg.
+function xPicture(r: R): string | null {
+  const f = (r.media ?? []).find((m: string) => m.includes("/x-images/"));
+  if (!f || !existsSync(f)) return null;
+  const to = `review/x/${basename(f).replace(/\.png$/, ".jpg")}`;
+  mkdirSync(join(OUT, "review/x"), { recursive: true });
+  Bun.spawnSync(["sips", "-s", "format", "jpeg", "-s", "formatOptions", "84", f, "--out", join(OUT, to)]);
+  return to;
+}
 const mediaHtml = (paths: string[]) => {
   const ms = paths.map(review).filter(Boolean) as NonNullable<ReturnType<typeof review>>[];
   if (!ms.length) return "";
@@ -47,6 +56,7 @@ function versionHtml(r: R) {
     ${r.title ? `<p class="yt-title">${esc(r.title)}</p>` : ""}
     ${r.poll ? pollHtml(r.poll) : ""}${r.sticker ? `<p class="meta strong">Sticker: ${esc(r.sticker)}</p>` : ""}
     ${r.caption ? `<p class="cap" dir="auto">${br(r.caption)}</p>` : ""}
+    ${r.platform === "X" && xPicture(r) ? `<div class="one xone"><img loading="lazy" src="${xPicture(r)}" alt=""></div>` : ""}
     ${r.first_comment?.text ? `<div class="follow"><p class="fl">${esc(r.first_comment.label)}</p><p class="cap">${br(r.first_comment.text)}</p></div>` : ""}
     ${r.frame_fail ? `<p class="meta warnt">Frame check failed: Fable fixes ${esc(r.frame_fail.join(", "))} before this is scheduled.</p>` : ""}
     ${r.needs_localized_media ? `<p class="meta warnt">On-screen text is English: needs a ${esc(r.language)} version of the media.</p>` : ""}
@@ -89,8 +99,15 @@ function card(n: number) {
 
 // ---------- X ----------
 const xr = rows.filter((r: R) => r.platform === "X").sort((a: R, b: R) => a.wib.localeCompare(b.wib));
-const xKind = (r: R) => (r.already_scheduled ? "Already scheduled" : r.id.startsWith("X-heavy") ? "Heavy piece" : r.id.startsWith("X-original") ? "New original" : r.id.startsWith("X-quote") ? "Quote, by hand" : r.post);
-const xHtml = `<div class="tw"><table class="xt"><thead><tr><th></th><th>WIB</th><th>Local</th><th>Language</th><th>What</th><th>Text</th></tr></thead><tbody>${xr.map((r: R) => `<tr class="${r.already_scheduled ? "sch" : ""}"><td>${r.already_scheduled ? "" : `<input type="checkbox" aria-label="${esc(r.id)}" data-id="${esc(r.id)}" id="c-${esc(r.id)}">`}</td><td>${esc(when(r.wib))}</td><td>${esc(hm(r.local))} ${esc(r.zone)}</td><td>${esc(r.language)}</td><td>${esc(xKind(r))}</td><td class="xc">${r.caption ? `<span dir="auto">${br(r.caption)}</span>${r.requires_x_premium ? `<br><span class="warnt">${r.x_length} characters: needs Premium</span>` : ""}` : r.already_scheduled ? esc(r.notes[0]) : `<span class="nw">Awaiting wording</span>`}</td></tr>`).join("")}</tbody></table></div>`;
+const xKind = (r: R) => (r.already_scheduled ? (r.lang === "en" ? "Posted" : "Already scheduled") : r.id.startsWith("X-heavy") ? (r.caption ? "How-to" : "Heavy piece") : r.id.startsWith("X-original") ? "New original" : r.id.startsWith("X-quote") ? "Quote, by hand" : r.post);
+const xGoes = (r: R) => { const pic = xPicture(r); const film = (r.media ?? []).find((m: string) => m.endsWith(".mp4")); return pic ? `<img class="xp" loading="lazy" width="1200" height="675" src="${pic}" alt="">` : film ? `<p class="meta">Goes out with the film ${esc(basename(film))}</p>` : ""; };
+// One block per X post, in the order X shows it: the words, then the picture or the poll's options.
+const xHtml = `<div class="xl">${xr.map((r: R) => `<article class="xr${r.already_scheduled ? " sch" : ""}">
+  <p class="xh">${r.already_scheduled ? "" : `<input type="checkbox" aria-label="${esc(r.id)}" data-id="${esc(r.id)}" id="c-${esc(r.id)}">`}<b>${esc(when(r.wib))} WIB</b> <span class="loc">${esc(hm(r.local))} ${esc(r.zone)}</span> <span class="fmt">${esc(xKind(r))}</span>${r.format && !r.already_scheduled ? ` <span class="fmt">${esc(r.format)}</span>` : ""}</p>
+  ${r.poll ? `<p class="pq">${esc(r.poll.q ?? "")}</p>` : ""}
+  ${r.caption ? `<p class="cap" dir="auto">${br(r.caption)}</p>${r.requires_x_premium ? `<p class="meta warnt">${r.x_length} characters: needs Premium</p>` : ""}` : r.already_scheduled ? `<p class="cap">${esc(r.notes[0])}</p>` : `<p class="cap nw">Awaiting wording</p>`}
+  ${r.poll ? `<div class="poll">${r.poll.options.map((o: string | null) => `<div class="opt">${esc(o ?? "")}</div>`).join("")}</div>` : ""}${xGoes(r)}
+</article>`).join("")}</div>`;
 
 // ---------- summary ----------
 const perLang = meta.deliveries_per_language as Record<string, number>;
@@ -152,17 +169,23 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 .poll{margin:6px 0;max-width:340px}.pq{font-weight:600;margin:0 0 6px}.opt{border:1.5px solid var(--c);border-radius:999px;padding:5px 14px;margin:5px 0}
 .follow{border-left:3px solid var(--line);padding-left:10px;margin:8px 0}.fl{font-size:12px;color:var(--mute);margin:0}
 .notes,.chgl{font-size:12.5px;color:var(--mute);padding-left:18px;margin:6px 0}.chgl{color:var(--new)}
-.xt{font-size:13px;font-variant-numeric:tabular-nums}.xt td{border-top:1px solid var(--line)}.xt .xc{min-width:260px;max-width:460px;overflow-wrap:anywhere}.xt tr.sch td{color:var(--mute)}
+.xl{max-width:560px}.xr{border-top:1px solid var(--line);padding:12px 0;min-width:0}.xr.sch{color:var(--mute)}.xh{display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center;margin:0 0 4px;font-size:13px;font-variant-numeric:tabular-nums}.xh input{width:22px;height:22px;margin:0 4px 0 0}.xr .cap{margin:4px 0 8px;font-size:15px}.xr .pq{margin:4px 0}.xp{display:block;width:100%;height:auto;border-radius:12px;background:#000}.xone{max-width:420px}
 </style>
 <div class="wrap">
 <h1>Monholt social calendar</h1>
 <p class="lead"><b>Version 7: English, Japanese and Indonesian only.</b> These are the 87 posts you approved (82, plus 5 still held for Undirect 1.0.5). On Instagram, Facebook, Threads and TikTok each post goes out three times: in English, then in Japanese the next day, then in Indonesian the day after. Each platform posts three a day, one per language, each at that country's best hour. At one new post a day the run lasts until ${esc(when(meta.window.slice(14, 24) + " 00:00").slice(0, -6))}. YouTube uploads each film once in English. X stays English only, <b>${perPlat.X.en}</b> posts. Nothing is ticked: this version needs a new go.</p>
 <p class="warn">${meta.frame_fail} deliveries use a film or image that failed the frame check, and ${meta.needs_localized_media} Japanese and Indonesian deliveries still show English on screen. Both wait for Fable before they're scheduled.</p>
 <div class="sum">
+<h3>What changed on Nov 22: X only</h3><ul>
+<li><b>Every X post is short.</b> ${meta.x.short_posts.worded} posts say their point in one or two lines, ${meta.x.short_posts.median_characters_before_link} characters before the link at the middle of the set. Before, the ones with a film or a picture ran 218 at the middle and 372 at the longest. <a href="#x-routine">See them all</a>.</li>
+<li><b>${meta.x.short_posts.with_picture} of them now carry a picture.</b> Each is a real screen from the app, its App Store page or the demo site, lifted out on black with one line. ${meta.x.short_posts.with_film} posts keep their film, and the ${meta.x.short_posts.polls} polls have none because X allows none on a poll.</li>
+<li><b>One picture a post.</b> On X's timeline a single 16:9 picture shows whole, 518 px wide on the web and 310 px on a phone. Two or more turn into a strip that cuts the sides off. So the two four-picture posts (P20, P27) go out as one picture each.</li>
+<li><b>The first week's three long posts are short how-tos</b> with a picture, and its one empty slot has a post. After Nov 28, ten long posts and ten originals still have no words.</li>
+<li><b>Nothing new is scheduled on X.</b> Its Scheduled list holds only the Arabic thank-you of Nov 27. Tick the X rows you want and they go in with their pictures.</li></ul>
 <h3>What changed on Nov 21</h3><ul>
 <li><b>Only English, Japanese and Indonesian.</b> Arabic, both Chinese scripts, French, Italian, German, Spanish, Portuguese, Turkish and Russian are gone from the calendar and from every scheduler. The one exception is the Arabic thank-you to @APPS_RH on X, Nov 27, which stays.</li>
 <li><b>Every post in all three languages</b>, on consecutive days: ${rot.days_from_en_to_ja["1"]} of ${Object.values(rot.days_from_en_to_ja as Record<string, number>).reduce((a, b) => a + b, 0)} Japanese versions follow the English by one day. The rest are the dated posts, which go out in all three on their day (Product Hunt Nov 24, the sale Nov 27 and 30, MacPip Dec 8), and the first week's posts, which wait for the English already scheduled.</li>
-<li><b>Every format on every platform.</b> Facebook now has polls, text posts and carousels. Instagram shows the text posts as text cards. X posts the two carousel posts as four-image posts. TikTok photo posts are photo carousels.</li>
+<li><b>Every format on every platform.</b> Facebook now has polls, text posts and carousels. Instagram shows the text posts as text cards. TikTok photo posts are photo carousels.</li>
 <li><b>A frame check in the generator.</b> Every TikTok, Story, Reel and Short file must be 9:16. All of them are, so no row needed new media. The P12 TikTok was 9:16 too, but it held a 4:5 card floating in a dark frame. That's why the frame check on Nov 21 also looked inside the frame.</li>
 <li><b>What the frame check found</b>: on six films the end card puts the App Store badge under the Reels, Shorts and TikTok caption band, and the TikTok photo cards for P05, P09 and P12 and both end cards run under TikTok's buttons. Those deliveries are marked and wait for Fable's fix.</li>
 <li><b>Removed from the schedulers</b>: every scheduled post in another language, plus the English Reels and Shorts of P01, P02 and P04, and the Japanese and Indonesian posts over English on-screen text. ${rot.already_scheduled} English deliveries stay scheduled: Facebook Stories P03, P06 and P09, the P05 image on Instagram and Facebook, and seven threads.</li></ul>
@@ -183,7 +206,8 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 <nav class="jump" aria-label="Days">${[...dayIds.keys()].sort().map((d) => `<a href="#d-${d}">${esc(when(d + " 00:00").slice(0, -6))}</a>`).join("")}<a href="#x-routine">X</a></nav>
 ${[...dayIds.keys()].sort().map((d) => `<h2 class="day" id="d-${d}">${esc(when(d + " 00:00").slice(0, -6))} <small class="loc">local day</small></h2>${dayIds.get(d)!.map(card).join("")}`).join("")}
 <h2 id="x-routine">X, day by day</h2>
-<p class="lead">Every X post on @monholtco in time order, English only, with the three already scheduled shown grey. The Nov 27 Arabic thank-you to @APPS_RH stays as scheduled.</p>
+<p class="lead">Every X post on @monholtco in time order, English only. The two English originals of Nov 21 and 22 have gone out; the Nov 27 Arabic thank-you to @APPS_RH stays as scheduled.</p>
+<p class="lead"><b>Rewritten on Nov 22.</b> ${meta.x.short_posts.worded} posts now make their point in one or two lines (${meta.x.short_posts.median_characters_before_link} characters before the link at the middle of the set, ${meta.x.short_posts.longest_before_link} at the longest). ${meta.x.short_posts.with_picture} of them carry one picture, a real screen on black with one line; ${meta.x.short_posts.with_film} keep their film and ${meta.x.short_posts.polls} are polls, which X shows without a picture. No post on X carries several pictures any more: X's timeline shows one 16:9 picture whole and crops a strip of several.</p>
 ${xHtml}
 </div>
 <script>

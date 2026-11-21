@@ -1,0 +1,407 @@
+{
+ "checked": "2026-11-21T18:59:09.348Z",
+ "must_not_match": "\\b(bank|iban|swift|routing|sort code|account (no|number)|de89)\\b",
+ "pictures": [
+  {
+   "picture": "X-heavy-en-1.png",
+   "text": [
+    "Turn Off Content",
+    "Blockers",
+    "• Undirect",
+    "It's in Safari's page menu.",
+    "n"
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P08-en-X.png",
+   "text": [
+    "Data Not Collected",
+    "The developer does not collect any data from",
+    "this app.",
+    "Nothing leaves your phone."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P09-en-X.png",
+   "text": [
+    "Booking Ref",
+    "FLT-2026-XKCD42",
+    "Meeting Link",
+    "https://meet.example....",
+    "On Product Hunt today."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "X-original-en-1.png",
+   "text": [
+    "Thanks for today",
+    "Best regards,",
+    "Alex Chen",
+    "alex@example.com",
+    "Your sign-off, one tap."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "X-heavy-en-2.png",
+   "text": [
+    "• Add from Clipboard",
+    "Home Address",
+    "123 Main Street, Apt 4B...",
+    "x Email Signature",
+    "Best regards,...",
+    "Copied it? Keep it."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P12-en-X.png",
+   "text": [
+    "Aa Meeting Notes",
+    "Agenda for Friday, see the brief",
+    "No shortcut to remember."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P16-en-X.png",
+   "text": [
+    "• Add from Clipboard",
+    "Suggestions",
+    "Work Email",
+    "alex@example.com",
+    "x Signature",
+    "Best regards,….",
+    "No ads on this keyboard."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P17-en-X.png",
+   "text": [
+    "$0.99 and $2.99 until Nov 30."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "X-heavy-en-3.png",
+   "text": [
+    "Blocked by default",
+    "Blocked on this site",
+    "Allowed on this site",
+    "v Blocked everywhere",
+    "Allowed everywhere",
+    "Allow it on",
+    "one site."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P18-en-X.png",
+   "text": [
+    "THIS PAGE",
+    "adserver.example",
+    "Script pop-up",
+    "https://adserver.example/offer",
+    "8 stopped",
+    "Blocked",
+    "Paid once. No account."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P20-en-X.png",
+   "text": [
+    "STAND-IN DESTINATION",
+    "You were taken",
+    "somewhere you did",
+    "not choose",
+    "undirect.matsuokengo.com",
+    "It's the",
+    "page, not",
+    "your iPhone."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P21-en-X.png",
+   "text": [
+    "Win+V, for",
+    "your Mac.",
+    "Saved 8",
+    "History",
+    "https://cutling.matsuokengo.com",
+    "alex@example.com",
+    "+1 (555) 014-2233",
+    "1Z 999 AA1 01 2345 6784"
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P22-en-X.png",
+   "text": [
+    "Stop guarding this site",
+    "matsuokengo.com",
+    "Guarded",
+    "On for this site."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P23-en-X.png",
+   "text": [
+    "Full name",
+    "Alex Chen",
+    "Address",
+    "123 Main Street, Apt 4B New York, NY 10001",
+    "Your address, one tap."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P25-en-X.png",
+   "text": [
+    "Home Address",
+    "123 Main Street, Apt 4...",
+    "Email Signature",
+    "Best regards,...",
+    "Kept until you delete it."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P26-en-X.png",
+   "text": [
+    "Last day at $0.99 and $2.99."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P27-en-X.png",
+   "text": [
+    "THIS PAGE",
+    "prize-hub.example",
+    "Script pop-up",
+    "https://prize-hub.example/win",
+    "1 stopped",
+    "Blocked",
+    "The X was part of the ad."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P29-en-X.png",
+   "text": [
+    "THIS PAGE",
+    "adserver.example",
+    "Script pop-up",
+    "https://adserver.example/offer",
+    "tabunder.example",
+    "Script-made click",
+    "https://tabunder.example/",
+    "8 stopped",
+    "Blocked *",
+    "Blocked ¢",
+    "Every address it tried."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P39-en-X.png",
+   "text": [
+    "Guard",
+    "On",
+    "Where the guard runs",
+    "Sites you turn on",
+    "No hidden setting."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P40-en-X.png",
+   "text": [
+    "Cutling - Clipboard Keyboard",
+    "Paste Text Snippets & Replies",
+    "$4.99",
+    "View in Mac App Store 7",
+    "iPhone, iPad, Mac",
+    "One price, three devices."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P44-en-X.png",
+   "text": [
+    "Social Bio",
+    "Designer & developer....",
+    "Phone Number",
+    "+1 (555) 234-5678",
+    "One tap from the keyboard."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P47-en-X.png",
+   "text": [
+    "Night Harbor",
+    "2026 • 1 h 48 min • Thriller",
+    "STAND-IN DESTINATION",
+    "You were taken",
+    "somewhere you did",
+    "not choose",
+    "undirect.matsuokengo.com",
+    "You pressed Play. You got this.",
+    "n"
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P50-en-X.png",
+   "text": [
+    "Launch day",
+    "on MacPip.",
+    "n",
+    "+ #",
+    "Stop guarding this site",
+    "matsuokengo.com",
+    "Guarded"
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P51-en-X.png",
+   "text": [
+    "Summon Cutling from anywhere",
+    "Everything you copied on your Mac."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P55-en-X.png",
+   "text": [
+    "Home Address",
+    "123 Main Street, Apt 4...",
+    "Email Signature",
+    "Best regards,...",
+    "Office door",
+    "Code 4815, then push...",
+    "Wi-Fi Password",
+    "cOff33-Sh0p-2024!",
+    "Saved 8",
+    "History",
+    "https://cutling.matsuokengo.com",
+    "alex@example.com",
+    "+1 (555) 014-2233",
+    "1Z 999 AA1 01 2345 6784",
+    "Saved on iPhone. Full history on Mac."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P58-en-X.png",
+   "text": [
+    "undirect.matsuokengo.com",
+    "marlowtv",
+    "Films",
+    "Series",
+    "New My list",
+    "Only in Safari."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P65-en-X.png",
+   "text": [
+    "Same answer,",
+    "one tap.",
+    "Home Address",
+    "123 Main Street, Apt 4...",
+    "Office door",
+    "Code 4815, then push...",
+    "Email Signature",
+    "Best regards,...",
+    "Wi-Fi Password",
+    "cOff33-Sh0p-2024!"
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P66-en-X.png",
+   "text": [
+    "Everywhere",
+    "adserver.example",
+    "clicktrack.example",
+    "Blocked",
+    "Blocked",
+    "Blocked on every site."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P69-en-X.png",
+   "text": [
+    "iCloud Sync",
+    "Status",
+    "Saved cutlings sync across your devices. Clipboard history stays on this Mac.",
+    "Up to date",
+    "Your iCloud. No account."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P72-en-X.png",
+   "text": [
+    "trailpress",
+    "Sign in",
+    "The ridge route is open",
+    "again after the spring",
+    "washout",
+    "What you pressed still opens."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P73-en-X.png",
+   "text": [
+    "+",
+    "123 Main Street, Apt 4B",
+    "New York, NY 10001",
+    "5. Add from Clipboard",
+    "The right address, one tap."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P77-en-X.png",
+   "text": [
+    "Cutling - Clipboard Keyboard",
+    "Paste Text Snippets & Replies",
+    "View in Mac App Store 7",
+    "$4.99. Once."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P78-en-X.png",
+   "text": [
+    "Turn Off Content",
+    "Blockers",
+    "Undirect",
+    "Next to your ad blocker."
+   ],
+   "bank_words": []
+  },
+  {
+   "picture": "P87-en-X.png",
+   "text": [
+    "Text Cutling",
+    "Image Cutling",
+    "An image is a cutling too."
+   ],
+   "bank_words": []
+  }
+ ]
+}

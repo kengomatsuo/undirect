@@ -18,6 +18,7 @@ import { $ } from "bun";
 import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join, isAbsolute, basename } from "node:path";
+import { X_POSTS } from "./x-posts";
 import { posts, type Post } from "./posts";
 import { MARKETS, PART_OF_SLOT, deliveryTime, iso, DAY, HOUR, type Market, type Plat, type Part, type LangCode } from "./markets";
 
@@ -408,7 +409,7 @@ for (const x of X_TAKEN) {
   const t = new Date(x.wib.replace(" ", "T") + ":00Z").getTime();
   rows.push({ id: `X-scheduled-${x.wib.replace(/\D/g, "")}`, post: null, app: "", lang: x.lang, language: m.name, country: m.country, platform: "X", account: HANDLE.X, format: "Already scheduled", wib: x.wib, local: iso(t + m.off * HOUR), zone: m.zone, time_source: "scheduled in X on 2026-11-21",
     caption: null, first_comment: null, media: [], on_screen_text: "none", needs_wording: null, approved_post: false, in_approved_set: false, changed_since_approval: [], already_scheduled: true,
-    notes: [`${x.what}. Already in X's Scheduled list (social-posts.md): do not schedule again.`] });
+    notes: [x.lang === "en" ? `${x.what}. Posted from X's scheduler at this time (read on the profile, 2026-11-22).` : `${x.what}. Already in X's Scheduled list (social-posts.md): do not schedule again.`] });
 }
 
 // ---------- formats: every format on every platform ----------
@@ -444,8 +445,33 @@ for (const r of rows) {
     r.notes.push("Facebook poll: read Business Suite's composer for a poll option first; if a Page post offers none, post it from the Facebook app at this time.");
   }
 }
+// ---------- X: short words and one picture ----------
+// Owner, 2026-11-22: the X posts ran long and most had no picture. x-posts.ts now holds every X post's
+// words and its picture (rendered by x-images.ts into ../x-images/); a row keeps its film or its poll.
+// X shows one 16:9 picture whole on web and mobile and crops a strip of several (measured, x-posts.ts),
+// so a post that was an X carousel or a long post goes out as one picture with short words.
+const X_IMG = join(HERE, "../x-images");
+for (const r of rows) {
+  const x = r.platform === "X" ? X_POSTS[r.id] : undefined;
+  if (!x) continue;
+  const film = (r.media ?? []).some((m) => m.endsWith(".mp4"));
+  const wasCarousel = /^Carousel/.test(r.format), wasNew = !r.caption;
+  r.caption = [x.text, x.link].filter(Boolean).join("\n");
+  r.x_length = xLen([r.poll?.q, r.caption].filter(Boolean).join("\n\n"));
+  r.requires_x_premium = r.x_length > 280;
+  r.needs_wording = null;
+  r.notes = r.notes.filter((n) => !n.startsWith("Needs X Premium") && !n.startsWith("Text as approved"));
+  if (x.picture) { r.media = [join(X_IMG, `${r.id}.png`)]; r.on_screen_text = "English"; r.format = x.format ?? "Image"; }
+  else if (!film) { r.media = []; r.on_screen_text = "none"; }
+  if (x.kept) r.notes.push("Words kept as approved.");
+  else if (wasNew) r.changed_since_approval.push("New on 2026-11-22: written short for this slot, which had no words");
+  else r.changed_since_approval.push("Words shortened on 2026-11-22: the claim in the first line, about 140 characters before the link");
+  if (x.picture) r.changed_since_approval.push(wasCarousel ? "One picture on 2026-11-22 in place of the slides: X crops a strip of several" : "Picture added on 2026-11-22: a real capture on black, 1200 x 675");
+}
+
 const FORMATS_NEEDED: Partial<Record<Plat, [string, RegExp][]>> = {
-  X: [["single image", /^Image$/], ["carousel", /^Carousel/], ["text post", /^Single post$/], ["poll", /^Poll$/], ["video", /^Video$/]],
+  // No X carousel since 2026-11-22: its timeline shows several pictures as a strip that crops each one.
+  X: [["single image", /^Image$/], ["text post", /^Single post$/], ["poll", /^Poll$/], ["video", /^Video$/]],
   Instagram: [["single image", /^Single image$/], ["carousel", /^Carousel$/], ["text post", /^Text post/], ["poll", /poll sticker/], ["Story", /^Story/], ["Reel", /reel$/i]],
   Facebook: [["single image", /^Image post$/], ["carousel", /^Carousel$/], ["text post", /^Text post$/], ["poll", /^Poll$/], ["Story", /^Story/], ["Reel", /^Reel$/]],
   Threads: [["text post", /^Text$/], ["image post", /^Image$/]],
@@ -590,6 +616,37 @@ const bad = [
   ...(Math.min(...heavyWeeks) < 2 || Math.max(...heavyWeeks) > 4 ? [`heavy per 7 days ${Math.min(...heavyWeeks)}-${Math.max(...heavyWeeks)}`] : []),
 ];
 if (bad.length) throw new Error(`X routine broken: ${bad.join("; ")}`);
+// X words (owner, 2026-11-22; social-lessons.md): every worded X row comes from x-posts.ts, stays short, shares no
+// opening and no sentence with another, keeps Cutling off bank details, claims clipboard history on the
+// Mac only, shows a sale price only inside the sale, and carries its picture unless it is a poll or a film.
+const xWorded = rows.filter((r) => r.platform === "X" && r.caption);
+const norm = (t: string) => t.toLowerCase().replace(/[^a-z0-9$ ]+/g, " ").replace(/\s+/g, " ").trim();
+const xText: string[] = [];
+const seenOpen = new Map<string, string>([["safari s block pop ups setting", "the Nov 21 original"], ["safari autofill puts your address", "the Nov 22 original"]]);
+const seenSentence = new Map<string, string>();
+for (const r of xWorded) {
+  const x = X_POSTS[r.id];
+  if (!x) { xText.push(`${r.id} has words that are not in x-posts.ts`); continue; }
+  if (r.x_length! > 280) xText.push(`${r.id} is ${r.x_length} characters`);
+  if (x.text.length > 160) xText.push(`${r.id} runs ${x.text.length} characters before its link`);
+  const open = norm(x.text).split(" ").slice(0, 5).join(" ");
+  if (seenOpen.has(open)) xText.push(`${r.id} opens like ${seenOpen.get(open)}: "${open}"`);
+  seenOpen.set(open, r.id);
+  for (const sentence of x.text.split(/(?<=[.?!"])\s+|\n+/).map(norm).filter((t) => t.split(" ").length >= 4)) {
+    if (seenSentence.has(sentence)) xText.push(`${r.id} repeats a sentence of ${seenSentence.get(sentence)}: "${sentence}"`);
+    seenSentence.set(sentence, r.id);
+  }
+  if (/\b(bank|iban)\b/i.test(x.text)) xText.push(`${r.id} names bank details`);
+  if (/clipboard history/i.test(x.text) && !/\bMac\b/.test(x.text)) xText.push(`${r.id} claims clipboard history without naming the Mac`);
+  if (/\$0\.99|\$2\.99/.test(x.text) && (r.wib < "2026-11-27 00:00" || r.wib >= SALE_END)) xText.push(`${r.id} shows a sale price at ${r.wib} WIB, outside the sale`);
+  if (/\$1\.99|\$4\.99/.test(x.text) && r.wib >= SALE_START && r.wib < SALE_END && !/\bwas\b|back to/.test(x.text)) xText.push(`${r.id} shows the full price at ${r.wib} WIB, inside the sale`);
+  const pictured = !!x.picture, shows = r.format !== "Poll" && !(r.media ?? []).some((m) => m.endsWith(".mp4"));
+  if (shows && !pictured) xText.push(`${r.id} explains or shows something and has no picture`);
+  if (pictured) { const wh = r.media?.length === 1 ? sizeOf(r.media[0]) : null; if (!wh || wh[0] !== 1200 || wh[1] !== 675) xText.push(`${r.id} needs one 1200 x 675 picture (bun x-images.ts)`); }
+}
+if (xText.length) throw new Error(`X words:\n${xText.join("\n")}`);
+const xShort = { worded: xWorded.length, with_picture: xWorded.filter((r) => X_POSTS[r.id]?.picture).length, with_film: xWorded.filter((r) => r.format === "Video").length, polls: xWorded.filter((r) => r.format === "Poll").length,
+  median_characters_before_link: xWorded.map((r) => X_POSTS[r.id].text.length).sort((a, b) => a - b)[Math.floor(xWorded.length / 2)], longest_before_link: Math.max(...xWorded.map((r) => X_POSTS[r.id].text.length)), over_140: xWorded.filter((r) => X_POSTS[r.id].text.length > 140).map((r) => r.id) };
 const words = rows.filter((r) => r.needs_wording);
 const formatCount = Object.fromEntries((["X", ...NON_X] as Plat[]).map((pl) => [pl, cal.filter((r) => r.platform === pl).reduce((o, r) => ((o[r.format] = (o[r.format] ?? 0) + 1), o), {} as Record<string, number>)]));
 const hist = (v: number[]) => v.reduce((o, n) => ((o[n] = (o[n] ?? 0) + 1), o), {} as Record<number, number>);
@@ -609,7 +666,7 @@ const meta = {
   needs_design: rows.filter((r) => r.needs_design).length,
   needs_localized_media: rows.filter((r) => r.needs_localized_media).length,
   frame_fail: rows.filter((r) => r.frame_fail).length,
-  x: { per_day_min: Math.min(...xPerDay), per_day_max: Math.max(...xPerDay), gap_hours_min: Math.min(...gaps), gap_hours_max: Math.max(...gaps), gaps_outside_4_to_8: badGap.length, english_only: true, heavy_per_7_days_min: Math.min(...heavyWeeks), heavy_per_7_days_max: Math.max(...heavyWeeks), heavy_pieces: heavy, new_originals: rows.filter((r) => r.id.startsWith("X-original")).length, approved_posts: rows.filter((r) => r.platform === "X" && r.post).length, quote_slots: rows.filter((r) => r.id.startsWith("X-quote")).length },
+  x: { per_day_min: Math.min(...xPerDay), per_day_max: Math.max(...xPerDay), gap_hours_min: Math.min(...gaps), gap_hours_max: Math.max(...gaps), gaps_outside_4_to_8: badGap.length, english_only: true, heavy_per_7_days_min: Math.min(...heavyWeeks), heavy_per_7_days_max: Math.max(...heavyWeeks), heavy_pieces: heavy, new_originals: rows.filter((r) => r.id.startsWith("X-original")).length, approved_posts: rows.filter((r) => r.platform === "X" && r.post).length, quote_slots: rows.filter((r) => r.id.startsWith("X-quote")).length, short_posts: xShort },
   needs_wording: words.length, missing_media: [...missingMedia],
 };
 // Fable's list: new media no file exists for, localized cuts of English on-screen media, and fixes the

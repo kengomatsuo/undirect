@@ -1,26 +1,11 @@
 {
  "meta": {
   "rules": "Write natively in each language (human-prose language rules), never translated word for word from the English; keep each English row's meaning, numbers and app facts; prices from that country's App Store; one app per post; no country of ours named.",
-  "groups": 34,
-  "rows": 34,
+  "groups": 30,
+  "rows": 30,
   "first_window_rows": 0
  },
  "groups": [
-  {
-   "post": null,
-   "lang": "en",
-   "language": "English",
-   "app": "Undirect",
-   "rows": [
-    {
-     "id": "X-heavy-en-1",
-     "platform": "X",
-     "format": "Long post (heavy piece)",
-     "wib": "2026-11-23 09:00",
-     "needs_wording": "English heavy piece for X: a how-to deep dive on one Undirect pain not covered by the other heavy pieces, as one long post (X's scheduler can't schedule threads; long posts need X Premium, up to 25,000 characters); the store link https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=x-en&mt=8 on its own last line. X translates it for every reader, so write for a worldwide audience: no US-only references."
-    }
-   ]
-  },
   {
    "post": null,
    "lang": "en",
@@ -40,36 +25,6 @@
    "post": null,
    "lang": "en",
    "language": "English",
-   "app": "Cutling",
-   "rows": [
-    {
-     "id": "X-original-en-1",
-     "platform": "X",
-     "format": "Single post",
-     "wib": "2026-11-24 21:00",
-     "needs_wording": "English original for X on one Cutling pain, a different pain or angle from the approved posts in the days around it and from every other new original; no sentence or opening shared with another post (the routine); 280 characters including the store link https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=x-en&mt=8 on its own last line. X translates it for every reader, so write for a worldwide audience: no US-only references."
-    }
-   ]
-  },
-  {
-   "post": null,
-   "lang": "en",
-   "language": "English",
-   "app": "Cutling",
-   "rows": [
-    {
-     "id": "X-heavy-en-2",
-     "platform": "X",
-     "format": "Long post (heavy piece)",
-     "wib": "2026-11-25 15:00",
-     "needs_wording": "English heavy piece for X: a how-to deep dive on one Cutling pain not covered by the other heavy pieces, as one long post (X's scheduler can't schedule threads; long posts need X Premium, up to 25,000 characters); the store link https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&ct=x-en&mt=8 on its own last line. X translates it for every reader, so write for a worldwide audience: no US-only references."
-    }
-   ]
-  },
-  {
-   "post": null,
-   "lang": "en",
-   "language": "English",
    "app": "either",
    "rows": [
     {
@@ -78,21 +33,6 @@
      "format": "Quote post",
      "wib": "2026-11-26 15:00",
      "needs_wording": "A quote of a post trending in the hours before this slot about a pain one of our apps fixes, with one line of substance; no link unless the quoted post asks for one; English; 280 characters. Written and posted by hand at the time: the post to quote isn't known in advance."
-    }
-   ]
-  },
-  {
-   "post": null,
-   "lang": "en",
-   "language": "English",
-   "app": "Undirect",
-   "rows": [
-    {
-     "id": "X-heavy-en-3",
-     "platform": "X",
-     "format": "Long post (heavy piece)",
-     "wib": "2026-11-27 15:00",
-     "needs_wording": "English heavy piece for X: a how-to deep dive on one Undirect pain not covered by the other heavy pieces, as one long post (X's scheduler can't schedule threads; long posts need X Premium, up to 25,000 characters); the store link https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=x-en&mt=8 on its own last line. X translates it for every reader, so write for a worldwide audience: no US-only references."
     }
    ]
   },

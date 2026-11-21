@@ -37,6 +37,18 @@ Buffer, Later, Hootsuite, Sprout and similar (tests and opinions, not rules).
 
 - Free accounts: 280 characters; any Premium tier: up to 25,000, collapsed behind "Show more" in the feed. Sources (third-party, consistent): https://www.hootsuite.com/whats-new/longer-captions-for-x-twitter-premium-users, https://posteverywhere.ai/help/platforms/x-character-limits (search snippets, read 2026-11-20). No help.x.com page found today stating the fold point. GUESS: the fold falls near 280 characters, so the first 280 must stand alone.
 
+### X: short posts with one picture (measured 2026-11-22)
+
+Read in Chrome as @monholtco, with a script that reads each post's text length, like count and media box on the profile pages of accounts @monholtco follows.
+
+- What small-app makers' best posts look like: @jordibruin's top post of the autumn is 59 characters over one picture ("Fixed Safari on Duo. Wider coming on October 23rd for free.", 1.6K likes), and his next four run 105 to 160 characters over a clip or a picture. @dudufolio's best two after his launch film are 21 and 32 characters over pictures (355 and 242 likes). @rashem48's short one, 45 characters with a link, matches his 300-character diary posts (34 likes each). @sindresorhus's top posts are opinions in 115 to 220 characters with no picture, and his product posts with a picture run 170 to 290. Long posts that do well are announcements with a film (@dudufolio's Shotbase launch, 308 characters, 4.1K likes).
+- Every post @monholtco had sent by Nov 22 carried no picture (profile read, media count 0 on each).
+- X on the web (window 1470 px wide): a single picture is shown whole at its own ratio, 518 px wide, up to 510 px tall, 48 px in from the post's left edge. 16:9 comes out 518 x 291; a 0.84 portrait 428 x 510.
+- X's mobile web layout (a 390 px wide window of x.com): a single picture is shown whole, 310 px wide; 16:9 comes out 310 x 174.
+- Two or more pictures are a strip of equal height (350 px on the web and 209 px at 390 px for the same post), and a picture wider than about 1.18:1 is cropped at the sides to fit (a 2878 x 2064 picture showed as 412 x 350). A 16:9 picture in a set loses about a third of its width.
+- Not measured: the iPhone and Android apps. Vendor guides disagree on how the apps crop tall pictures (skedsocial.com: whole between 2:1 and 3:4; adobe.com/express: "displayed at a 16:9 ratio" on mobile) and all of them call 16:9 safe, so 1200 x 675 is the one size used.
+- Reading for us: one 1200 x 675 picture per post, never a set; one line of words on it at 58 px or more (15 px on a phone); the claim in the post's first 8 to 10 words and about 140 characters before the link. `docs/plans/app-store-growth/social/calendar-final/x-posts.ts` holds the posts and `x-images.ts` renders the pictures and their timeline checks.
+
 ## Instagram (feed, carousel, Reels)
 
 Already in short-video-platforms.md: 5-hashtag cap (Dec 2025), Mosseri's "hashtags don't improve visibility", Reels ranking signals (2023), trial reels, links, AI label, cadence.
