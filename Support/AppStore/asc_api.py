@@ -3,14 +3,14 @@
 The asc CLI cannot create a custom product page: Apple's endpoint needs the first
 version and its localizations in the same request body, and the CLI sends none.
 Auth reads ASC_KEY_ID, ASC_ISSUER_ID and ASC_PRIVATE_KEY_PATH, which default to the
-team key that lives in the Cutling repo.
+Admin team key V48TZG72KY in ~/.appstoreconnect/private_keys (backed up by the vault), which also reads sales reports (vendor 93285092).
 """
 import base64, json, os, subprocess, time, urllib.error, urllib.request
 
-KEY_ID = os.environ.get("ASC_KEY_ID", "8R8JCJZUNJ")
+KEY_ID = os.environ.get("ASC_KEY_ID", "V48TZG72KY")
 ISSUER = os.environ.get("ASC_ISSUER_ID", "79deecfa-75ef-43ad-80c2-e25e55f38f41")
 KEY_PATH = os.environ.get("ASC_PRIVATE_KEY_PATH",
-                          "/Users/hafang/Repositories/Cutling/fastlane/AuthKey_8R8JCJZUNJ.p8")
+                          os.path.expanduser("~/.appstoreconnect/private_keys/AuthKey_V48TZG72KY.p8"))
 BASE = "https://api.appstoreconnect.apple.com"
 _token = {"v": None, "exp": 0}
 
