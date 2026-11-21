@@ -114,3 +114,5 @@ Skipped: @Sarakhan49309 (engagement-farm account posting "fast payout" threads).
 | L9 SENT | X, LaunchIgniter (both) | Undirect is up on LaunchIgniter: a Safari extension that stops pages opening tabs and redirects you didn't ask for. Cutling is there too. / launchigniter.com/product/undirect |
 | L10 SENT | X, Product Hunt Undirect (launched Tue Nov 17) | Undirect has been on Product Hunt since Tuesday. If Safari has ever opened a tab you didn't tap, it's for you. / producthunt.com/products/undirect |
 Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip both Sat 07:13 (3, 4), Product Hunt Cutling Tue 15:07 (7), MacPip Undirect Dec 8 (14), TinyLaunch Dec 21 and 28.
+
+| 2026-11-27 20:15 WIB (scheduled 2026-11-21) | X @monholtco | Arabic quote of @APPS_RH (https://x.com/APPS_RH/status/2108909412626604059): thanks, free offer ended, Undirect half price Nov 27-30 | scheduled in X, confirmed in Unsent posts > Scheduled |
