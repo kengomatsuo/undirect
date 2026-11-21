@@ -30,6 +30,13 @@ const TAGS = {
   csmb: { ig: "#smallbusinesstips #iphonetips #productivityapps #iosapps #textreplacement", tt: "#smallbusiness #iphonetips #techtok" },
 };
 
+// Poster and suggested platform cover per film, in seconds: the first frame where the headline
+// sits over a real screen, read from 2 fps tiles of the Nov 21 13:00 renders. 1.2 s landed on a
+// dark transition card ("Next order…") in the Cutling address film.
+const POSTER: Record<string, number> = {};
+const posterAt = (film: string) => POSTER[film] ?? 0.5;
+const coverLabel = (film: string) => `suggested cover: 0:${posterAt(film).toFixed(1).padStart(4, "0")}`;
+
 const pad = (n: number) => String(n).padStart(2, "0");
 const pid = (p: Post) => `P${pad(p.n)}`;
 const dir = (p: Post) => join(OUT, pid(p));
@@ -193,7 +200,7 @@ async function render(browser: Browser, img: Img, size: Size, to: string) {
 const esc = (s = "") => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const br = (s = "") => esc(s).replace(/\n/g, "<br>");
 
-type Media = { x?: string[]; ig?: string[]; tt?: string[]; story?: string[]; video?: string; ttVideo?: string; ttCut?: string };
+type Media = { x?: string[]; ig?: string[]; tt?: string[]; story?: string[]; video?: string; ttVideo?: string; ttCut?: string; cover?: string; ttCover?: string };
 
 function page(rows: { p: Post; c: Captions; m: Media; issues: string[]; t: ReturnType<typeof times> }[]) {
   const count = (f: (r: (typeof rows)[0]) => string) => rows.reduce((a, r) => ((a[f(r)] = (a[f(r)] ?? 0) + 1), a), {} as Record<string, number>);
@@ -214,7 +221,7 @@ function page(rows: { p: Post; c: Captions; m: Media; issues: string[]; t: Retur
     return `<article class="pcard x"><div class="plat">X</div>
       <div class="xrow"><div class="av">M</div><div class="xbody"><div class="who"><b>Monholt</b> <span>@monholtco</span></div>
       <div class="txt">${br(c.xPoll ? c.xPoll.q : c.x)}</div>${poll}${m.x ? `<div class="xmedia">${slider(m.x, m.x[0].endsWith(".mp4") ? "9/16" : "4/5")}</div>` : ""}
-      ${c.x ? `<div class="meta">${xLen(c.x)}/280</div>` : ""}</div></div>
+      ${m.cover && m.x?.[0]?.endsWith(".mp4") ? `<div class="meta cover">${esc(m.cover)}</div>` : ""}${c.x ? `<div class="meta">${xLen(c.x)}/280</div>` : ""}</div></div>
       ${c.xReply ? `<div class="xrow reply"><div class="av">M</div><div class="xbody"><div class="who"><b>Monholt</b> <span>@monholtco · reply</span></div><div class="txt">${br(c.xReply)}</div></div></div>` : ""}
     </article>`;
   };
@@ -229,7 +236,7 @@ function page(rows: { p: Post; c: Captions; m: Media; issues: string[]; t: Retur
     return `<article class="pcard ig"><div class="plat">Instagram ${m.ig && m.ig[0]?.endsWith(".mp4") ? "Reel" : m.ig && m.ig.length > 1 ? "carousel" : "post"}</div>
       <div class="igtop"><div class="av">M</div><b>monholtco</b></div>
       ${m.ig ? slider(m.ig, m.ig[0].endsWith(".mp4") ? "9/16" : "4/5") : ""}
-      <div class="txt"><b>monholtco</b> ${cut}</div><div class="meta" title="${cap.length}">Hook in the first 125 characters, before …more</div></article>`;
+      ${m.cover && m.ig?.[0]?.endsWith(".mp4") ? `<div class="meta cover">${esc(m.cover)}</div>` : ""}<div class="txt"><b>monholtco</b> ${cut}</div><div class="meta" title="${cap.length}">Hook in the first 125 characters, before …more</div></article>`;
   };
   const ttCard = (r: (typeof rows)[0]) => {
     const { c, m, p } = r;
@@ -237,7 +244,7 @@ function page(rows: { p: Post; c: Captions; m: Media; issues: string[]; t: Retur
     const pl = p.poll?.tt;
     return `<article class="pcard tt"><div class="plat">TikTok ${pl ? esc(pl.type) : m.tt?.[0]?.endsWith(".mp4") ? "video" : "photo post"}</div>
       <div class="ttmedia">${m.tt ? slider(m.tt, "9/16") : ""}${pl ? `<div class="sticker tt">${esc(pl.q)}${(pl.options ?? []).map((o) => `<span>${esc(o)}</span>`).join("")}</div>` : ""}</div>
-      ${m.ttCut ? `<div class="meta">${esc(m.ttCut)}</div>` : ""}${pl?.note ? `<div class="meta">${esc(pl.note)}</div>` : ""}
+      ${m.ttCover ? `<div class="meta cover">${esc(m.ttCover)}</div>` : ""}${m.ttCut ? `<div class="meta">${esc(m.ttCut)}</div>` : ""}${pl?.note ? `<div class="meta">${esc(pl.note)}</div>` : ""}
       <div class="txt"><b>@monholt</b> ${br(c.tt)}</div></article>`;
   };
 
@@ -296,6 +303,7 @@ main{padding:0 16px 80px}.day h2{font-size:18px;margin:28px 0 10px;position:stic
 img,video{display:block;width:100%;border-radius:10px;background:#000;object-fit:cover}
 .xmedia{margin-top:8px}.igtop{display:flex;align-items:center;gap:8px;margin-bottom:8px}
 .slides{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:6px}.slides>*{flex:0 0 100%;scroll-snap-align:start}.dots{font-size:11px;color:var(--mute);text-align:center;margin-top:4px}
+.cover{color:var(--ink);font-weight:600}
 .more{color:var(--mute);background:var(--waitbg);border-radius:4px;padding:0 3px;margin:0 2px;font-size:12px}
 .poll{margin-top:8px}.opt{border:1px solid #1d9bf0;color:#1d9bf0;border-radius:999px;padding:5px 12px;margin:5px 0;font-weight:600;display:flex;justify-content:space-between}.opt .len{opacity:.5;font-weight:400;font-size:11px}
 .story{display:flex;gap:6px;overflow-x:auto}.sframe{position:relative;flex:0 0 100%}
@@ -335,6 +343,7 @@ async function main() {
   const rows = [];
   const allText: string[] = [];
   const firstLines = new Map<string, number>();
+  const replies = new Map<string, number>();
   for (const p of posts) {
     const d = dir(p); mkdirSync(d, { recursive: true });
     const c = captions(p);
@@ -343,7 +352,7 @@ async function main() {
     if (!only) {
       if (p.film) {
         const f = linkFilm(p.film, d);
-        await $`ffmpeg -v error -y -ss 1.2 -i ${join(FILMS, p.film + ".mp4")} -frames:v 1 -vf scale=540:-1 ${join(d, p.film + ".jpg")}`;
+        await $`ffmpeg -v error -y -ss ${posterAt(p.film)} -i ${join(FILMS, p.film + ".mp4")} -frames:v 1 -vf scale=540:-1 ${join(d, p.film + ".jpg")}`;
         m.x = m.ig = m.tt = [rel(f)];
       }
       if (p.images) {
@@ -363,11 +372,11 @@ async function main() {
         if (tt.cut) {
           const name = `${tt.film}-${tt.cut === "6s" ? "first6s" : "no-endcard"}.mp4`;
           const sec = await cutFilm(tt.film, tt.cut, join(d, name));
-          await $`ffmpeg -v error -y -ss 1.2 -i ${join(d, name)} -frames:v 1 -vf scale=540:-1 ${join(d, name.replace(".mp4", ".jpg"))}`;
+          await $`ffmpeg -v error -y -ss ${posterAt(tt.film)} -i ${join(d, name)} -frames:v 1 -vf scale=540:-1 ${join(d, name.replace(".mp4", ".jpg"))}`;
           m.tt = [rel(name)]; m.ttCut = `Cut from ${tt.film}.mp4: first ${sec.toFixed(1)} s, ${tt.cut === "6s" ? "before the price line" : "before the end card"}. Re-run build.ts after the re-render.`;
         } else {
           const f = linkFilm(tt.film, d);
-          await $`ffmpeg -v error -y -ss 1.2 -i ${join(FILMS, tt.film + ".mp4")} -frames:v 1 -vf scale=540:-1 ${join(d, tt.film + ".jpg")}`;
+          await $`ffmpeg -v error -y -ss ${posterAt(tt.film)} -i ${join(FILMS, tt.film + ".mp4")} -frames:v 1 -vf scale=540:-1 ${join(d, tt.film + ".jpg")}`;
           m.tt = [rel(f)];
         }
       }
@@ -383,7 +392,13 @@ async function main() {
       if (p.poll) { m.story = [rel("story-1.png"), rel("story-2.png")]; const tt = p.poll.tt; const cut = `${tt.film}-${tt.cut === "6s" ? "first6s" : "no-endcard"}.mp4`; m.tt = [rel(tt.cut && has(cut) ? cut : tt.film + ".mp4")]; if (tt.cut && has(cut)) { const sec = Number((await $`ffprobe -v error -show_entries format=duration -of csv=p=0 ${join(d, cut)}`.text()).trim()); m.ttCut = `Cut from ${tt.film}.mp4: first ${sec.toFixed(1)} s, ${tt.cut === "6s" ? "before the price line" : "before the end card"}. Re-run build.ts after the re-render.`; } }
       if (p.kept?.media) { m.x = [rel("sale-undirect-ig.png"), rel("sale-cutling-ig.png")]; m.ig = m.x; m.tt = [rel("sale-undirect-tt.png"), rel("sale-cutling-tt.png")]; }
     }
+    if (p.film) { m.cover = coverLabel(p.film); m.ttCover = m.cover; }
+    if (p.poll) m.ttCover = coverLabel(p.poll.tt.film);
     const issues = check(p, c);
+    if (p.reply) {
+      if (replies.has(p.reply)) issues.push(`X reply repeats P${pad(replies.get(p.reply)!)}`);
+      replies.set(p.reply, p.n);
+    }
     if (p.body) {
       const fl = p.body.split("\n")[0];
       if (firstLines.has(fl)) issues.push(`first line repeats P${pad(firstLines.get(fl)!)}`);

@@ -40,7 +40,7 @@ export const posts: Post[] = [
   {
     n: 1, date: "2026-11-22", slot: 1, app: U, kind: "film", tags: "u", film: "u1",
     pain: "U1 an ad tab on every tap",
-    body: `You press Play. A "YOU WON" page opens. Back, press again: "CLAIM NOW". Again: "FREE SPINS". Block Pop-ups is on the whole time.
+    body: `You press Play. A page says "install the VPN app to keep watching". Back, press again: "Your iPhone is severely damaged by (12) virus!" Again: "You are today's lucky visitor."
 
 The page lays an invisible layer over Play, so your tap goes to an ad first.`,
     reply: `Undirect takes that layer's tap away, so Play just plays. It's a Safari extension, $1.99 once.`,
@@ -48,9 +48,9 @@ The page lays an invisible layer over Play, so your tap goes to an ad first.`,
   {
     n: 2, date: "2026-11-22", slot: 2, app: C, kind: "film", tags: "c", film: "cutling-address",
     pain: "C5 retyping your address into every checkout form",
-    body: `Fifth checkout this week. Street, flat number, postcode, phone, all by thumb.
+    body: `Deliver to. Shipping address. Delivery details. Billing address. Your address again, by thumb, typos and all: 14 seconds a form.
 
-I saved my address once in Cutling. Now the keyboard types it in with one tap.`,
+Saved once in Cutling, it goes in with one tap, in about a second.`,
     reply: `Cutling is the keyboard in that clip. $4.99 once for iPhone and iPad, and the Mac app comes with it.`,
   },
   {
@@ -71,7 +71,9 @@ Search Undirect on the App Store.` },
   {
     n: 4, date: "2026-11-23", slot: 1, app: C, kind: "film", tags: "c", film: "cutling-email",
     pain: "C5 typing your email address over and over",
-    body: `You type your email address into a sign-up form every week. Save it in Cutling once and tap it in from the keyboard. In an email field the keyboard offers it before you go looking.`,
+    body: `Your email address into a Wi-Fi login, a 10%-off pop-up, a check-in form and a receipt: 21 seconds of typing.
+
+Save it in Cutling once. In an email field the keyboard puts it first, so each form takes one tap.`,
     reply: `Cutling: saved text on your iPhone and iPad keyboard, $4.99 once, no account.`,
   },
   {
@@ -103,9 +105,9 @@ Search Cutling on the App Store.` },
   {
     n: 7, date: "2026-11-24", slot: 1, app: U, kind: "film", tags: "u", film: "u2-short",
     pain: "U2 thrown to another site (\"The download button redirects to dumb fake file-hosting site\")",
-    body: `You press Download and the whole tab goes off to a casino.
+    body: `Tap Download on a movie site and you get a fake "Download in progress" page telling you to install a player app.
 
-With Undirect on for that site you stay on the page, and the list shows the address it tried.`,
+With Undirect on for that site, you stay put.`,
     reply: `One press on the site turns Undirect on there, and it stays on for that site. $1.99 once.`,
   },
   {
@@ -128,17 +130,17 @@ producthunt.com/products/cutling` },
   {
     n: 10, date: "2026-11-25", slot: 1, app: C, kind: "film", tags: "c", film: "cutling-android",
     pain: "Android switchers miss the clipboard (\"It's the main thing I missed from Samsung\")",
-    body: `Moved from Android and the clipboard is what you miss. On iPhone, Cutling keeps what you save, so the link you paste all day sits on your keyboard.
+    body: `Copy a door code, then a tracking number, then a meeting link. Your iPhone keeps only the last one.
 
-It doesn't record what you copy. iOS doesn't let any app do that.`,
+Moved from Android and miss pinned clips? Cutling pins the text you paste all day to your keyboard. It doesn't record what you copy; iOS doesn't let any app do that.`,
     reply: `Cutling: pinned text on your iPhone keyboard, and the full clipboard history in its Mac app. $4.99 once.`,
   },
   {
     n: 11, date: "2026-11-25", slot: 2, app: U, kind: "film", tags: "umac", film: "u-mac",
     pain: "U15 Safari on a Mac opening tabs",
-    body: `Safari on your Mac opening a new tab whenever you click anything.
+    body: `Click Play in Safari on your Mac and a casino tab opens: "200% welcome bonus".
 
-Press Undirect's button on that site once. After that a click goes where you pointed, and every address the page reached for is in the list.`,
+One click on Undirect's button turns it on for that site. After that, Play opens no new tab.`,
     reply: `The same purchase covers Safari on your iPhone and iPad. $1.99.`,
   },
   {
@@ -155,17 +157,17 @@ A cutling can hold a whole paragraph or an image, and it syncs through your own 
   {
     n: 13, date: "2026-11-26", slot: 1, app: U, kind: "film", tags: "u", film: "u1",
     pain: "U1 an ad tab on every tap on free streaming sites",
-    body: `Streaming a movie and every press of Play opens another tab of ads.
+    body: `Free streaming site, and each press of Play opens an ad instead of the movie.
 
-Undirect sends your press back to the player. Switch it on for that site once.`,
+Switch Undirect on for that site once, and Play just plays.`,
     reply: `Works the same on the iPhone and iPad versions of Safari. $1.99 once, no account.`,
   },
   {
     n: 14, date: "2026-11-26", slot: 2, app: C, kind: "film", tags: "c", film: "cutling-sync",
     pain: "C7 Text Replacement not syncing",
-    body: `Your Text Replacements are on your iPhone and missing on your iPad, and signing out of iCloud didn't bring them back.
+    body: `Your Text Replacement shortcuts work on your iPhone, and on your iPad "addr" just stays "addr".
 
-Cutlings sync between iPhone, iPad and Mac through your own iCloud, and one can hold a whole paragraph or an image.`,
+Save the text once in Cutling and it's on your iPad keyboard too, synced through your own iCloud.`,
     reply: `No Cutling account to make: it syncs through the iCloud you already use. $4.99 once.`,
   },
   {
@@ -289,8 +291,8 @@ Tap it in from the Cutling keyboard instead.`,
       ig: { sticker: "Quiz", q: "Which Download button is the real one?", options: ["Big green one", "Start Download", "The file link"], correct: 2,
         note: "Next frame: \"The other two were ads.\" and the link sticker.",
         bg: { tpl: "storyq", app: U, q: "Which one is the *real* Download?", visual: "download" } },
-      tt: { type: "Poll sticker, 24 h", q: "Has a Download button ever sent you to a casino?", options: ["Yes", "No"], film: "u2-short", cut: "6s",
-        caption: `Has a Download button ever sent you to a casino? Vote on the sticker.
+      tt: { type: "Poll sticker, 24 h", q: "Has a Download button ever given you a fake download?", options: ["Yes", "No"], film: "u2-short", cut: "6s",
+        caption: `Has a Download button ever given you a fake download page? Vote on the sticker.
 
 Search Undirect on the App Store.` },
     },
@@ -355,51 +357,51 @@ Undirect lists every address a page reached for, so you can block one everywhere
   {
     n: 30, date: "2026-12-01", slot: 3, app: C, kind: "film", tags: "c", film: "cutling-address",
     pain: "C5 parcels and cards, the same addresses again",
-    body: `Sending cards and parcels this month? Save each address once in Cutling, and tap it into any form or message.
+    body: `Shipping form, delivery form, billing form: this month you'll type your address into all of them.
 
-$4.99 once, for iPhone and iPad, and the Mac app too.`,
+Save it once in Cutling and each one takes a tap. $4.99 once, for iPhone and iPad, and the Mac app too.`,
     reply: `Cutling on the App Store. The Mac app is in the same purchase.`,
   },
   // ---------------- Wed Dec 2 ----------------
   {
     n: 31, date: "2026-12-02", slot: 1, app: U, kind: "film", tags: "u", film: "u2",
     pain: "U7 \"The download button redirects to dumb fake file-hosting site\"",
-    body: `You press Download and the tab goes to a fake file-hosting site.
+    body: `You press Download and get a fake download page, then an "Add Calendar Subscription" pop-up, then a "Speedy Clean" app page.
 
-With Undirect on, the tab stays on the page you were on, and the address it tried goes in the list.`,
+With Undirect on, you stay on the page you were on, and the list shows the address it tried.`,
     reply: `$1.99 once, and it covers Safari on your Mac too.`,
   },
   {
     n: 32, date: "2026-12-02", slot: 2, app: C, kind: "film", tags: "c", film: "cutling-share",
     pain: "C5 copying an address from a message into Notes and back",
-    body: `Found an address in a message or on a web page? Share it to Cutling and it's on your keyboard the next time you need it.
+    body: `Copy, switch apps, paste, go back. Four trips for one boat time and one door code.
 
-No Notes in between.`,
+Share the page to Cutling instead. It's saved with a name, and next time it goes in with one tap.`,
     reply: `Cutling shows up in the iPhone share sheet once it's installed. $4.99 once.`,
   },
   {
     n: 33, date: "2026-12-02", slot: 3, app: U, kind: "film", tags: "u", film: "u-ipad",
     pain: "U1 on iPad (\"without opening 50 tabs\")",
-    body: `Streaming on an iPad without a new ad tab on every tap.
+    body: `Streaming on an iPad and every tap on Play leaves a new tab behind.
 
-Undirect works the same in Safari on iPad, from the same $1.99 purchase.`,
+Undirect works the same in Safari on iPad, from the same $1.99 purchase. Allow it once for the site, and Play stops opening tabs.`,
     reply: `Bought it on your iPhone? It's already yours on the iPad.`,
   },
   // ---------------- Thu Dec 3 ----------------
   {
     n: 34, date: "2026-12-03", slot: 1, app: C, kind: "film", tags: "cmac", film: "cutling-mac-history",
     pain: "C8 copied passwords landing in clipboard history",
-    body: `On a Mac, clipboard history fills up with every password you copy.
+    body: `A clipboard history that saves every password you copy is a risk on a Mac.
 
-Cutling's history skips anything your password manager marks as concealed, so those never land in it.`,
+Cutling's history keeps every copy and skips anything your password manager marks as concealed.`,
     reply: `Cutling for Mac, with the iPhone and iPad keyboard in the same $4.99 purchase.`,
   },
   {
     n: 35, date: "2026-12-03", slot: 2, app: U, kind: "film", tags: "umac", film: "u-mac-short",
     pain: "U15 tabs on a Mac that nobody clicked",
-    body: `Mac Safari, a movie site, and one click opens three tabs.
+    body: `Mac Safari, a movie site, and one click on Play opens a casino tab.
 
-Undirect sends the click to what you pressed and lists each address the page tried.`,
+Undirect turns on for that site with one click, and the next Play opens no tab.`,
     reply: `Undirect for Safari on the Mac, $1.99 once, iPhone and iPad included.`,
   },
   {
@@ -422,15 +424,15 @@ Search Cutling on the App Store.` },
     pain: "U3 and U10 closing ad tabs (\"repeat 7 times\")",
     body: `How many ad tabs did you close tonight to watch one episode? One person wrote "repeat 7 times".
 
-Here's what that looks like, then the same tap with Undirect on.`,
+Here it's a VPN alert, then a virus warning. Then the same tap with Undirect on.`,
     reply: `Undirect is the Safari extension in the second half. $1.99 once.`,
   },
   {
     n: 38, date: "2026-12-04", slot: 2, app: C, kind: "film", tags: "c", film: "cutling-email-short",
     pain: "C5 retyping an email address into forms",
-    body: `Every sign-up form asks for your email address again.
+    body: `Free Wi-Fi, 10% off, check-in, receipts: every form asks for your email address again.
 
-Save it in Cutling once. In an email field the keyboard offers it to you.`,
+Save it in Cutling once. In an email field the keyboard offers it first.`,
     reply: `Cutling: $4.99 once, and the Mac app comes with it.`,
   },
   {
@@ -458,25 +460,25 @@ Cutling is one $4.99 purchase for iPhone, iPad and Mac.`,
     n: 41, date: "2026-12-05", slot: 2, app: U, kind: "film", tags: "u", film: "u-no-tap",
     gate: "AFTER 1.0.5: the no-tap redirect stop ships in 1.0.5. Checked Nov 21: asc_state.py 1.0.5 prints IOS WAITING_FOR_REVIEW.",
     pain: "U5 redirects \"without me clicking\", while scrolling",
-    body: `Scrolling a recipe. No tap at all. The page jumps to "Your iPhone is infected".
+    body: `Reading a news story, scrolling, no tap at all, and the page jumps to a fake Settings screen: "Platform Security… RUN A TEST".
 
-The page did that, and your phone is fine. Undirect 1.0.5 keeps you on the recipe.`,
+The page did that, and your device is fine. Undirect 1.0.5 keeps you on the story.`,
     reply: `Undirect 1.0.5 is out now. $1.99 once.`,
   },
   {
     n: 42, date: "2026-12-05", slot: 3, app: C, kind: "film", tags: "c", film: "cutling-android-short",
     pain: "Pinned clips on iPhone (\"I especially miss the clipboard where you can pin\")",
-    body: `Gboard on Android kept your pinned clips. Cutling puts that pinned list on your iPhone keyboard: the booking link, and the reply you send ten times a day.`,
+    body: `Gboard on Android kept your pinned clips. Cutling pins them to your iPhone keyboard: your address, your work email, the Wi-Fi password.`,
     reply: `Cutling for iPhone and iPad, $4.99 once, with the Mac app included.`,
   },
   // ---------------- Sun Dec 6 ----------------
   {
     n: 43, date: "2026-12-06", slot: 1, app: U, kind: "film", tags: "u", film: "u2-short",
     pain: "U7 a Download button that leaves the page",
-    body: `Tap Download, land on a casino. Tap again, a jackpot page. Tap again, a fake file host.
+    body: `Tap Download, get a fake download page. Tap again, an "Add Calendar Subscription" pop-up.
 
 Then the same Download with Undirect on.`,
-    reply: `Undirect, $1.99 once. The list in the clip is real: every address the page tried.`,
+    reply: `Undirect is $1.99 once, and one press per site turns it on.`,
   },
   {
     n: 44, date: "2026-12-06", slot: 2, app: C, kind: "text",
@@ -488,9 +490,9 @@ Then the same Download with Undirect on.`,
     n: 45, date: "2026-12-06", slot: 3, app: U, kind: "film", tags: "u", film: "u-back",
     gate: "AFTER 1.0.5: the Back-trap fix ships in 1.0.5. Checked Nov 21: IOS WAITING_FOR_REVIEW.",
     pain: "U6 Back taking you to the ad again",
-    body: `Press Back and land on the ad again?
+    body: `Press Back to leave a live-stream site and land on a casino page instead?
 
-From 1.0.5, a page that answers Back with another site stays put, and the copies it stacks up to trap Back are cut to one.`,
+From 1.0.5, with Undirect on for the site, Back just goes back.`,
     reply: `Back works again from Undirect 1.0.5. $1.99 once.`,
   },
   // ---------------- Mon Dec 7 ----------------
@@ -530,10 +532,10 @@ Search Cutling on the App Store.` },
   {
     n: 49, date: "2026-12-08", slot: 1, app: C, kind: "film", tags: "c", film: "cutling-sync-short",
     pain: "C5 getting text from your iPhone to your Mac (\"emailing myself just to get text across\")",
-    body: `Texting yourself an address to get it from your iPhone to your Mac?
+    body: `Texting yourself a door code to get it from your iPhone to your iPad?
 
-Save it in Cutling on the iPhone. It syncs to your Mac through iCloud and sits in the picker.`,
-    reply: `Cutling, $4.99 once. The Mac picker opens with Shift-Command-V.`,
+Save it in Cutling on the iPhone, and it's on the iPad keyboard too, through your iCloud.`,
+    reply: `Cutling, $4.99 once, and the Mac app comes with it.`,
     notes: ["Film changed from cutling-share to cutling-sync-short: the post is about getting text to another device, which the sync film shows."],
   },
   {
@@ -562,9 +564,9 @@ macpip.com/apps/undirect` },
   {
     n: 53, date: "2026-12-09", slot: 2, app: C, kind: "film", tags: "c", film: "cutling-address-short",
     pain: "C5 \"the addresses of the three buildings we manage\"",
-    body: `Managing three buildings means typing three addresses into every work order.
+    body: `Managing three buildings means typing an address into every work order, at 14 seconds a go.
 
-Save each one in Cutling once, and tap the right one in.`,
+Save each one in Cutling, and it's one tap.`,
     reply: `Cutling, $4.99 once, iPhone and iPad with the Mac app.`,
   },
   {
@@ -603,7 +605,7 @@ The sites are the same ones, and Undirect works in Safari on iPad. Switch it on 
   {
     n: 57, date: "2026-12-10", slot: 3, app: C, kind: "film", tags: "c", film: "cutling-sync",
     pain: "C7 \"iCloud sync stopped working\"",
-    body: `iPhone, iPad, Mac, one Apple ID, and your saved text on all three.
+    body: `iPhone and iPad, one Apple ID, and the text you saved is on both.
 
 Cutlings sync through your own iCloud, so there's no Cutling account to sign in to.`,
     reply: `Cutling: one $4.99 purchase for all three.`,
@@ -621,9 +623,9 @@ Open the link in Safari and it's covered.`,
   {
     n: 59, date: "2026-12-11", slot: 2, app: C, kind: "film", tags: "c", film: "cutling-miss-android",
     pain: "Pinned clips on iPhone (\"Samsung switcher: the main thing I missed\")",
-    body: `Switched from a Samsung and the thing you miss is the clipboard?
+    body: `Switched from a Samsung? The Android things you miss: pasting without "Allow Paste", clipboard history, Gboard's pinned clips.
 
-On iPhone, save the text you paste most in Cutling and tap it in from the keyboard. It keeps what you save, and it can't record what you copy.`,
+Cutling brings back the pinned clips: your booking link on the iPhone keyboard, one tap into any chat. It can't record what you copy.`,
     reply: `Cutling: $4.99 once for iPhone and iPad, Mac app included.`,
     notes: ["Uses the new cutling-miss-android film (\"Things I miss from Android\") in place of cutling-android, which P10 and P42 use."],
   },
@@ -664,18 +666,18 @@ With Undirect on for the site, the fakes go nowhere and the real one downloads.`
   {
     n: 63, date: "2026-12-12", slot: 3, app: C, kind: "film", tags: "cmac", film: "cutling-mac-history",
     pain: "C2 macOS Spotlight's clipboard history forgets after 8 hours",
-    body: `Spotlight's clipboard history on macOS Tahoe forgets after 8 hours by default.
+    body: `Copy a flight number, then a one-time code, then an address. Press Command-V and only the address is left.
 
-Cutling's Mac app keeps a history of its own, and a saved cutling stays until you delete it.`,
+Press Shift-Command-V with Cutling for Mac: every copy is in the history, and passwords stay out.`,
     reply: `Cutling for Mac, with the iPhone keyboard in the same $4.99 purchase.`,
   },
   // ---------------- Sun Dec 13 ----------------
   {
     n: 64, date: "2026-12-13", slot: 1, app: U, kind: "film", tags: "umac", film: "u-mac",
     pain: "U15 a Mac Safari that opens tabs",
-    body: `Click a link in Safari on your Mac and a second tab opens that you never wanted.
+    body: `Click Play in Safari on your Mac and a tab you never clicked opens.
 
-One press of Undirect on that site, and the click goes where you pointed.`,
+One click on Undirect's button for that site, and the next Play opens no tab.`,
     reply: `Undirect on the Mac App Store, $1.99 once with iPhone and iPad.`,
   },
   {
@@ -702,7 +704,7 @@ Switch Undirect on for that reader site once and the Next press stays on the cha
     pain: "C5 a booking link you go looking for",
     body: `Someone asks when you're free and you go hunting for your booking link.
 
-Share the link to Cutling once, and next time it's on your keyboard.`,
+Share the page to Cutling once. It's saved with a name, and next time it's one tap on your keyboard.`,
     reply: `Cutling for iPhone and iPad, $4.99 once.`,
   },
   {
@@ -731,17 +733,15 @@ Search Undirect on the App Store.` },
     n: 70, date: "2026-12-15", slot: 1, app: U, kind: "film", tags: "u", film: "u-back-short",
     gate: "AFTER 1.0.5: the Back-trap fix ships in 1.0.5. Checked Nov 21: IOS WAITING_FOR_REVIEW.",
     pain: "U6 Back taking you to the ad (\"go back 5 pages\")",
-    body: `Press Back to leave a streaming site and it takes you through the ad again, five pages deep.
+    body: `You press Back on a streaming site and it takes you to the ad again.
 
-Undirect 1.0.5 cuts the pile of copies a page stacks up to trap Back, down to one.`,
+With Undirect 1.0.5 on for the site, Back just goes back.`,
     reply: `Undirect 1.0.5, $1.99 once.`,
   },
   {
     n: 71, date: "2026-12-15", slot: 2, app: C, kind: "film", tags: "c", film: "cutling-share",
     pain: "C5 an address found in a message",
-    body: `An address comes in by message and you have to put it somewhere.
-
-Share it to Cutling and it is on your keyboard when the form asks.`,
+    body: `Safari's share sheet has a Cutling button. Share a page to it, give it a name, and the next time a form asks, it's one tap on your keyboard.`,
     reply: `Cutling: $4.99 once, Mac app included.`,
   },
   {
@@ -776,18 +776,18 @@ I put Undirect on his iPhone and switched it on for that site. The movie just pl
   {
     n: 75, date: "2026-12-16", slot: 3, app: C, kind: "film", tags: "c", film: "cutling-sync",
     pain: "C2 Universal Clipboard failing (\"copy-paste doesn't work between an iPhone and a Mac\")",
-    body: `Copy on your iPhone, paste on your Mac, and nothing comes through.
+    body: `Copy on your iPhone, paste on your iPad, and nothing comes through.
 
-What you saved in Cutling is on both, because cutlings sync through iCloud. It won't carry a one-off copy.`,
+Save it in Cutling instead: the office door code you saved on the iPhone is on the iPad keyboard too. It won't carry a one-off copy.`,
     reply: `Cutling is $4.99 once, Mac app included.`,
   },
   // ---------------- Thu Dec 17 ----------------
   {
     n: 76, date: "2026-12-17", slot: 1, app: U, kind: "film", tags: "u", film: "u-ipad",
     pain: "U1 on iPad (\"most free sites trigger a million\" pop-ups)",
-    body: `iPad, free sites, a million pop-ups.
+    body: `iPad, free movie site, and Play opens a tab saying "Your iPhone has been hacked".
 
-Switch Undirect on for the site in Safari and the tabs stop. Same $1.99 as on iPhone and Mac.`,
+Switch Undirect on for the site in Safari and Play opens no more tabs. Same $1.99 as on iPhone and Mac.`,
     reply: `One purchase covers all three.`,
   },
   {
@@ -812,13 +812,13 @@ It stops the tabs and redirects your blocker misses, so run the two side by side
   {
     n: 79, date: "2026-12-18", slot: 1, app: C, kind: "film", tags: "c", film: "cutling-email",
     pain: "C5 email address in an email field",
-    body: `In an email field, the Cutling keyboard offers your email address before you go looking for it.`,
+    body: `Seven forms, seven taps. In an email field, the Cutling keyboard puts your email address first, so you don't go looking for it.`,
     reply: `Cutling: $4.99 once. It's the keyboard in the clip.`,
   },
   {
     n: 80, date: "2026-12-18", slot: 2, app: U, kind: "film", tags: "u", film: "u1",
     pain: "U1 the ad tab on Play, counted",
-    body: `Press Play three times, get three ad tabs, with Block Pop-ups on the whole time.
+    body: `Press Play three times, get three different traps: a VPN alert, a virus countdown, a prize page.
 
 The same press with Undirect on plays the video.`,
     reply: `That's Undirect in the second half. $1.99 once.`,
@@ -842,10 +842,10 @@ Search Cutling on the App Store.` },
     n: 82, date: "2026-12-19", slot: 1, app: U, kind: "film", tags: "u", film: "u-no-tap",
     gate: "AFTER 1.0.5: describes 1.0.5's no-tap redirect stop. Checked Nov 21: IOS WAITING_FOR_REVIEW.",
     pain: "U5 \"keeps redirecting me to a scam page\"",
-    body: `You didn't tap anything, and the page sent you to a scam page anyway.
+    body: `You didn't tap anything, and the page sent you to a fake security alert anyway.
 
 Undirect 1.0.5 keeps you where you were, and the address it tried shows in the list.`,
-    reply: `Undirect 1.0.5, $1.99 once.`,
+    reply: `Undirect 1.0.5 is $1.99 once, for Safari on iPhone, iPad and Mac.`,
   },
   {
     n: 83, date: "2026-12-19", slot: 2, app: C, kind: "film", tags: "cmac", film: "cutling-mac-history-short",
@@ -882,10 +882,10 @@ Save it once in Cutling, and tap it in.`,
   {
     n: 86, date: "2026-12-20", slot: 2, app: U, kind: "film", tags: "u", film: "u2",
     pain: "U2 a Download button on a free file site",
-    body: `Download button, fake file host. Every time.
+    body: `Download button, fake "download in progress" page. Every time.
 
 Switch Undirect on for that site once, and the tab stays on the page.`,
-    reply: `Undirect, $1.99 once.`,
+    reply: `Undirect, $1.99 once, and the iPhone, iPad and Mac versions come together.`,
   },
   {
     n: 87, date: "2026-12-20", slot: 3, app: C, kind: "image", tags: "c",
