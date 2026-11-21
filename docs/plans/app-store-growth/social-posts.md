@@ -181,3 +181,32 @@ Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip 
 
 | 2026-11-21 19:31 WIB | Threads @monholtco | Debut post (same text as X), in Tech Threads, pinned | live |
 | 2026-11-21 19:31 WIB | Facebook Page Monholt | Debut post (same text as X), Page only, no boost | live, id 122111892351530914 |
+
+### Non-English rotation deliveries (deliveries-next.json), scheduled 2026-11-21
+
+- 2026-11-24 10:15 WIB | Instagram Reel @monholtco | P07-ja-Instagram | scheduled in Business Suite as a normal Reel (no trial-reel option there); Scheduled list reads "24 November 10:15"
+- 2026-11-24 16:32 WIB | Facebook Reel, Monholt Page | P07-ar-Facebook | scheduled in Business Suite; Scheduled list reads "24 November 16:32"; first comment not attachable: post by hand at 16:32
+- 2026-11-25 11:30 WIB | Instagram Reel @monholtco | P10-zh-Hant-Instagram | scheduled in Business Suite as a normal Reel (no trial-reel option there); Scheduled list reads "25 November 11:30"
+- 2026-11-25 12:17 WIB | Facebook Reel, Monholt Page | P10-id-Facebook | scheduled in Business Suite; Scheduled list reads "25 November 12:17"; first comment not attachable: post by hand at 12:17
+- 2026-11-25 02:00 WIB | Instagram image post @monholtco | P08-fr-Instagram | scheduled in Business Suite; Scheduled list reads "25 November 02:00"
+- 2026-11-25 13:30 WIB | Instagram image post @monholtco | P12-ru-Instagram | scheduled in Business Suite (boost offer declined); Scheduled list reads "25 November 13:30"
+- 2026-11-25 02:17 WIB | Facebook image post, Monholt Page | P08-it-Facebook | scheduled in Business Suite (boost offer declined); Scheduled list reads "25 November 02:17"; first comment not attachable: post by hand at 02:17
+- 2026-11-25 05:47 WIB | Facebook image post, Monholt Page | P12-ja-Facebook | scheduled in Business Suite (boost offer declined); Scheduled list reads "25 November 05:47"; first comment not attachable: post by hand at 05:47
+- P17-en: Business Suite Content > Posts and reels > Scheduled holds nothing after 25 November (read 2026-11-21), so English P17 is not scheduled on Instagram or Facebook and there was nothing to move
+- 2026-11-24 11:04 WIB | Threads @monholtco video | P07-zh-Hant-Threads | scheduled on threads.com with first reply (App Store link, ct=th-zh-hant) as 2/2; Drafts reads "Posting on Tuesday at 11:04 GMT+7", 1 reply
+- P17-en: Threads Drafts lists no Nov 27 post (read 2026-11-21), so English P17 is not scheduled on Threads and there was nothing to move
+- 2026-11-25 00:04 WIB | Threads @monholtco image | P08-pt-BR-Threads | scheduled on threads.com with first reply (App Store link, ct=th-pt-br) as 2/2; Drafts reads "Posting on Wednesday at 00:04 GMT+7", 1 reply
+- 2026-11-25 05:49 WIB | Threads @monholtco image | P12-ja-Threads | scheduled on threads.com with first reply (App Store link, ct=th-ja) as 2/2; Drafts reads "Posting on Wednesday at 05:49 GMT+7", 1 reply
+- 2026-11-25 16:04 WIB | Threads @monholtco video | P10-ar-Threads | scheduled on threads.com with first reply (App Store link, ct=th-ar) as 2/2; Drafts reads "Posting on Wednesday at 16:04 GMT+7"
+- 2026-11-25 19:34 WIB | Threads @monholtco video | P11-id-Threads | scheduled on threads.com with first reply (App Store link, ct=th-id) as 2/2; Drafts reads "Posting on Wednesday at 19:34 GMT+7", 1 reply; Drafts now lists 12 scheduled threads, each with 1 reply
+- P17-en: TikTok Studio Posts lists nothing after 24 Nov 3:05 pm (read 2026-11-21), so English P17 is not scheduled on TikTok and there was nothing to move
+- 2026-11-24 12:20 WIB | TikTok @monholt video | P07-id-TikTok | scheduled in TikTok Studio (hashtags picked from the suggestion list, Disclose > Your brand, music and content checks "No issues found"); Posts list reads "24 Nov, 12:20 pm (GMT+7) Jakarta"
+- 2026-11-25 12:05 WIB | TikTok @monholt video | P10-zh-Hant-TikTok | scheduled in TikTok Studio (hashtags picked from suggestions, Disclose > Your brand, checks "No issues found"); Posts list reads "25 Nov, 12:05 pm (GMT+7) Jakarta"
+- 2026-11-25 01:35 WIB | TikTok @monholt photo mode (P08 tt-1.png, tt-end-Cutling.png) | P08-de-TikTok | scheduled in TikTok Studio (hashtags picked from suggestions, Disclose > Your brand); Posts list reads "25 Nov, 1:35 am (GMT+7) Jakarta"
+- 2026-11-25 15:20 WIB | TikTok @monholt photo mode (P12 tt-1.png, tt-end-Cutling.png) | P12-it-TikTok | scheduled in TikTok Studio (hashtags picked from suggestions, Disclose > Your brand); Posts list reads "25 Nov, 3:20 pm (GMT+7) Jakarta"
+- post from the app at 2026-11-22 07:30 WIB: P03-id-Instagram Story (2 frames, poll sticker, frame 2 link sticker to undirect.matsuokengo.com); Business Suite offers no Poll sticker
+- post from the app at 2026-11-22 13:05 WIB: P03-ar-TikTok video with poll sticker; TikTok Studio web offers no poll
+- post from the app at 2026-11-23 05:50 WIB: P06-ja-TikTok video with poll; TikTok Studio web offers no poll
+- post from the app at 2026-11-23 13:00 WIB: P06-ar-Instagram Story (2 frames, Add Yours sticker, frame 2 link sticker to cutling.matsuokengo.com); Business Suite offers no Add Yours sticker
+- post from the app at 2026-11-25 00:15 WIB: P09-tr-Instagram Story with link sticker to cutling.matsuokengo.com (Business Suite places the link sticker where it cannot be moved)
+- first comments to post by hand on the Facebook Page: 2026-11-24 16:32 P07-ar, 2026-11-25 02:17 P08-it, 2026-11-25 05:47 P12-ja, 2026-11-25 12:17 P10-id (text in deliveries-next.json first_comment)
