@@ -148,6 +148,15 @@ no title in `mixkit-titles.json` (910 titles from its listing pages, which answe
 one a second): a file that answers on Mixkit's server without being listed may not be on offer, so they are off the reel.
 The film stays on track 1 until the owner picks.
 
+**The film on tracks 13 and 16 (ASG142, 2026-11-22).** The owner picked 13 (Chill Trap) and 16 (Electro Dreams),
+"still meh". `wire/src/stage/film.ts` now holds a table of tracks (`TRACKS`: seven moments of each, the fifth its lift)
+and the film takes its clock from it: `bun tools/stage.ts render en v5 --track chill-trap` (16.0 s, lift at 10.65 s) and
+`--track electro-dreams` (18.0 s, lift at 12.0 s; its kick enters at 16.024 s of the track and the beat tracker follows
+the off-beat, so the grid is counted back from the kick). Both are mastered with `stage-master.py <raw> <out> -16`:
+-16.1 LUFS, true peak -1.0 and -1.2 dBFS. At -14 the limiter held the lift's peaks by 6 to 11 dB and Electro Dreams
+kept 3 dB of lift; at -16 it works 2.6 and 5.8 dB and the lift lands 9 and about 7 dB over the build. Rest before each
+cut: 0.65 s or more. Japanese and Indonesian wait for the owner's pick; the three-language cut on track 1 is version 2.
+
 `page/audio`, `page/film` and `page/qa` are what the artifact serves; they are ignored by git and rebuilt by `reel.py`
 and `stage-master.py` (sheets resized to 1980 px wide for the page).
 
