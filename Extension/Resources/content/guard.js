@@ -110,25 +110,64 @@
 
   // ---------------------------------------------------------------- the record
 
-  // A note drawn in the page, off unless asked for. Safari gives extensions no
-  // notifications API, so this is the only way to say something happened while
-  // the reader is looking at the page.
-  // The note: a small card at the foot of the page each time something is
-  // stopped, so a person sees Undirect working without being interrupted.
-  // The address the page reached for sits in a chip that cracks and falls
-  // apart, then stays behind struck through, so the note reads at a glance.
-  // It never takes focus, covers only itself, counts blocks that land while
-  // it is up ("3 stopped", each one breaking in turn), and fades on its own.
-  // On the first NOTE_OFFER notes it carries a Settings button that opens
-  // Undirect's popup, where the note can be switched off.
-  const NOTE_MS = 3600;
+  // The note: one capsule of dark glass at the foot of the page each time
+  // something is stopped, so a person sees Undirect working without being
+  // interrupted. Safari gives extensions no notifications API, so this is the
+  // only way to say something happened while the reader is looking at the page.
+  //
+  // It rises from the bottom edge on a spring. Undirect's mark draws itself in
+  // the badge, and the address the page reached for arrives whole on a red
+  // chip that is then wiped away into dust, leaving the address struck through
+  // (Safari's own Hide Distracting Items takes an element away the same way).
+  // A block that lands while it is up rolls the title to a count ("3 stopped")
+  // and the capsule's width follows. It never takes focus and covers only
+  // itself; a click sends it away, the pointer resting on it holds it, and
+  // left alone it goes by itself. On the first NOTE_OFFER notes it carries a
+  // gear that opens Undirect's popup, where the note can be switched off.
+  // Research and the plan: docs/research/page-effects.md.
+  const FX = globalThis.UndirectFX;
+  const NOTE_MS = 4000;
+  const NOTE_OFFER_MS = 6500; // longer while it carries the gear
   const NOTE_OFFER = 3;
-  const SHARDS = [ // vertical slices of the chip, jagged where they meet
-    "0 0,26% 0,20% 52%,28% 100%,0 100%",
-    "26% 0,47% 0,41% 46%,50% 100%,28% 100%,20% 52%",
-    "47% 0,70% 0,64% 58%,73% 100%,50% 100%,41% 46%",
-    "70% 0,100% 0,100% 100%,73% 100%,64% 58%",
-  ];
+  const HIT_MS = 560;         // the address is read whole this long, then struck
+  const WIPE_MS = 420;
+  const GEAR =
+    '<svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">' +
+    '<path d="M8.1 4 8.6 1.8h2.8L11.9 4l1 .4 1.9-1.2 2 2-1.2 1.9.4 1 2.2.5v2.8l-2.2.5-.4 1 1.2 1.9-2 2-1.9-1.2-1 .4-.5 2.2H8.6L8.1 16l-1-.4-1.9 1.2-2-2 1.2-1.9-.4-1-2.2-.5V8.6L4 8.1l.4-1-1.2-1.9 2-2 1.9 1.2z"/>' +
+    '<circle cx="10" cy="10" r="2.7"/></svg>';
+  const NOTE_CSS =
+    ".n{pointer-events:auto;box-sizing:border-box;display:grid;justify-content:start;align-content:center;overflow:clip;" +
+    "min-height:48px;max-width:min(440px,100%);padding:8px;border-radius:24px;cursor:default;color:#fff;" +
+    "font:600 15px/20px -apple-system,BlinkMacSystemFont,system-ui,sans-serif;letter-spacing:-.01em;" +
+    "-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;" + FX.glass + "}" +
+    ".r{display:flex;align-items:center;gap:10px;width:max-content;" +
+    "max-width:calc(min(440px,100vw - 24px - env(safe-area-inset-left,0px) - env(safe-area-inset-right,0px)) - 16px)}" +
+    ".b{flex:none;box-sizing:border-box;width:32px;height:32px;padding:5px;border-radius:50%;" +
+    "background:linear-gradient(#f2463c,#d92b24);box-shadow:inset 0 1px 0 rgba(255,255,255,.28)}" +
+    ".s{display:flex;align-items:center;gap:8px;min-width:0}.s:last-child{padding-inline-end:6px}" +
+    // Short of room, the address gives way first, down to a stub; only then does the title wrap.
+    ".t{flex:0 1 auto;min-width:0}" +
+    ".c{position:relative;flex:0 999 auto;min-width:64px;display:flex;direction:ltr}.c[hidden]{display:none}" +
+    ".h,.k{box-sizing:border-box;height:24px;padding:0 8px;border-radius:12px;white-space:nowrap;overflow:hidden;" +
+    "text-overflow:ellipsis;text-align:center;font:500 13px/24px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:0}" +
+    ".h{position:relative;flex:1 1 auto;min-width:0;max-width:168px;color:rgba(235,235,245,.7)}" +
+    ".h::after{content:'';position:absolute;left:7px;right:7px;top:50%;height:1.5px;border-radius:1px;" +
+    "background:currentColor;transform-origin:0 50%}" +
+    ".k{position:absolute;inset:0;background:#d92b24;color:#fff}" +
+    ".g{all:unset;flex:none;position:relative;box-sizing:border-box;width:32px;height:32px;border-radius:50%;" +
+    "display:grid;place-items:center;cursor:pointer;color:#fff;background:rgba(255,255,255,.14);" +
+    "-webkit-tap-highlight-color:transparent;" +
+    `transition:background-color .15s,scale ${FX.springs.pressIn.duration}ms ${FX.springs.pressIn.easing}}` +
+    ".g::after{content:'';position:absolute;inset:-6px}" + // a 44 px target round a 32 px look
+    `.g svg{display:block;transition:rotate ${FX.springs.select.duration}ms ${FX.springs.select.easing}}` +
+    "@media (hover:hover){.g:hover{background:rgba(255,255,255,.24)}.g:hover svg{rotate:60deg}}" +
+    ".g:active{background:rgba(255,255,255,.32);scale:.96}" +
+    ".g:focus-visible{outline:2px solid #fff;outline-offset:2px}" +
+    ".d{position:fixed;left:0;top:0}.d i{position:absolute;opacity:0;border-radius:1px}" +
+    "@media (prefers-reduced-motion:reduce){.g,.g svg{transition:none}.g:hover svg{rotate:none}}" +
+    "@media (prefers-contrast:more),(prefers-reduced-transparency:reduce){.n{background:#1c1c1e;" +
+    "-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.7),0 8px 24px -4px rgba(0,0,0,.3)}" +
+    ".h{color:rgba(235,235,245,.85)}}";
   let notesShown = 0;
   let note = null;
 
@@ -144,10 +183,14 @@
 
   function showNote(kind, host) {
     if (!settings.banner || window.top !== window || !document.body) return;
+    // A Back trap's title is the note's whole text: the trap is often the
+    // page's own, and its address struck through would read as the page's.
+    const named = kind !== "back-hijack";
     if (note) {
       note.count += 1;
-      note.title.textContent = say("note_count", [String(note.count)], note.count + " stopped");
-      breakChip(host);
+      retitle(say("note_count", [String(note.count)], note.count + " stopped"), () => named && strike(host));
+      if (!FX.reduced()) FX.pop(note.card, 0.05);
+      FX.mark(note.badge);
       return refresh();
     }
     const offer = notesShown < NOTE_OFFER;
@@ -156,99 +199,149 @@
 
     const root = document.createElement("div");
     root.style.cssText =
-      "all:initial;position:fixed;z-index:2147483647;left:50%;transform:translateX(-50%);" +
-      "bottom:calc(16px + env(safe-area-inset-bottom, 0px));pointer-events:none";
+      "all:initial;position:fixed;z-index:2147483647;left:0;right:0;bottom:0;display:flex;justify-content:center;" +
+      "pointer-events:none;padding:0 calc(12px + env(safe-area-inset-right,0px)) " +
+      "calc(14px + env(safe-area-inset-bottom,0px)) calc(12px + env(safe-area-inset-left,0px))";
     const shadow = root.attachShadow({ mode: "closed" });
     shadow.innerHTML =
-      "<style>" +
-      ".n{pointer-events:auto;display:flex;align-items:center;gap:10px;padding:9px 12px 9px 10px;" +
-      "border-radius:14px;background:rgba(22,24,28,.94);color:#f7f8fa;" +
-      "font:13px/1.3 -apple-system,system-ui,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.3);" +
-      "max-width:min(400px,calc(100vw - 32px));animation:in .42s cubic-bezier(.34,1.56,.64,1) both}" +
-      ".n.out{animation:out .22s ease-in both}" +
-      ".i{flex:none;width:22px;height:22px;border-radius:50%;background:#d8352a;display:grid;place-items:center}" +
-      ".i.on{animation:pop .5s cubic-bezier(.34,1.8,.64,1) both}" +
-      ".t{font-weight:600;white-space:nowrap}" +
-      ".c{position:relative;min-width:0;display:flex}" +
-      ".h,.s{font-family:ui-monospace,Menlo,monospace;font-size:12px;padding:2px 7px;border-radius:6px;" +
-      "background:#d8352a;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px}" +
-      ".h.gone{background:transparent;color:rgba(247,248,250,.6);text-decoration:line-through;" +
-      "transition:color .3s,background .3s}" +
-      ".s{position:absolute;left:0;top:0;pointer-events:none;" +
-      "animation:fall .7s cubic-bezier(.45,0,.75,.4) both}" +
-      "button{all:unset;cursor:pointer;white-space:nowrap;color:#9db7ff;padding:2px 0 2px 6px;font-size:12px}" +
-      "button:focus-visible{outline:2px solid #9db7ff;border-radius:4px}" +
-      "@keyframes in{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}" +
-      "@keyframes out{to{opacity:0;transform:translateY(8px)}}" +
-      "@keyframes pop{from{transform:scale(.3)}to{transform:scale(1)}}" +
-      "@keyframes fall{0%{transform:none;opacity:1}" +
-      "18%{transform:translate(calc(var(--dx) * .15),-3px) rotate(calc(var(--r) * .2))}" +
-      "100%{transform:translate(var(--dx),34px) rotate(var(--r));opacity:0}}" +
-      "@media (prefers-reduced-motion:reduce){.n{animation:fade .2s both}.n.out{animation:fade .2s reverse both}" +
-      ".i,.i.on{animation:none;transform:none}.s{display:none}" +
-      "@keyframes fade{from{opacity:0}to{opacity:1}}}" +
-      "</style>" +
-      '<div class="n" role="status" aria-live="polite">' +
-      '<span class="i"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">' +
-      '<path d="M2.5 6.2 5 8.6 9.6 3.6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' +
-      '<span class="t"></span><span class="c"><span class="h"></span></span></div>';
+      "<style>" + NOTE_CSS + "</style>" +
+      '<div class="n"><div class="r"><span class="b" aria-hidden="true"></span>' +
+      '<span class="s" role="status" aria-live="polite"><span class="t"></span>' +
+      '<span class="c"><span class="h"></span></span></span></div></div>' +
+      '<div class="d" aria-hidden="true"></div>';
     const card = shadow.querySelector(".n");
-    note = { root, card, icon: shadow.querySelector(".i"), title: shadow.querySelector(".t"),
-             chip: shadow.querySelector(".c"), host: shadow.querySelector(".h"), count: 1, timer: 0, breaking: 0 };
-    note.title.textContent = noteTitle(kind);
+    const n = note = {
+      root, card, badge: shadow.querySelector(".b"), title: shadow.querySelector(".t"),
+      chip: shadow.querySelector(".c"), host: shadow.querySelector(".h"), dust: shadow.querySelector(".d"),
+      count: 1, life: offer ? NOTE_OFFER_MS : NOTE_MS, timer: 0, striking: 0, resize: null,
+    };
+    card.dir = say("@@bidi_dir", undefined, "ltr");
+    n.title.textContent = noteTitle(kind);
+    const parts = [n.badge, n.title, n.chip];
     if (offer) {
       const button = document.createElement("button");
-      button.textContent = say("note_settings", undefined, "Settings");
+      button.className = "g";
+      button.type = "button";
+      button.innerHTML = GEAR;
+      button.title = say("note_settings", undefined, "Settings");
+      button.setAttribute("aria-label", button.title);
       button.addEventListener("click", (e) => {
         e.stopPropagation();
+        button.disabled = true;
         // The popup holds the note's own switch. Safari opens it only for a
         // press it can still see, which a message to the background may lose;
         // then the note says where the button is instead.
-        api.runtime.sendMessage({ type: "undirect:openPopup" }).then((reply) => {
-          if (reply?.opened) return hideNote();
-          note && (note.title.textContent = say("note_where", undefined, "Press Undirect in the toolbar for settings."));
-          note && refresh();
-        }, () => {});
-        button.remove();
+        api.runtime.sendMessage({ type: "undirect:openPopup" }).then((reply) => reply?.opened, () => false).then((opened) => {
+          if (note !== n) return;
+          if (opened) return hideNote();
+          retitle(say("note_where", undefined, "Press Undirect in the toolbar for settings."), () => {
+            clearTimeout(n.striking);
+            button.remove();
+            n.chip.hidden = true; // a later block brings it back with its address
+          });
+          refresh();
+        });
       });
-      card.appendChild(button);
+      card.firstChild.appendChild(button);
+      parts.push(button);
     }
+    card.addEventListener("click", hideNote);
+    card.addEventListener("pointerenter", () => clearTimeout(n.timer));
+    card.addEventListener("pointerleave", refresh);
+    card.addEventListener("focusin", () => clearTimeout(n.timer));
+    card.addEventListener("focusout", refresh);
     document.documentElement.appendChild(root);
-    breakChip(host);
+
+    if (FX.reduced()) {
+      card.animate({ opacity: [0, 1] }, { duration: 200 });
+    } else {
+      card.animate({ transform: ["translateY(calc(100% + 24px)) scale(.9)", "none"], opacity: [0, 1] }, FX.springs.bounce);
+      parts.forEach((el, i) => el.animate({ transform: ["translateY(10px) scale(.92)", "none"], opacity: [0, 1] },
+        { ...FX.springs.bounce, delay: 60 + i * 60, fill: "backwards" }));
+    }
+    FX.mark(n.badge, 160);
+    if (named) strike(host);
+    else n.chip.hidden = true;
     refresh();
   }
 
-  // Put the address in the chip whole, then crack it into falling shards and
-  // leave it struck through. Reduced motion skips the shards (CSS).
-  function breakChip(host) {
+  // The address arrives whole on a red chip. After a beat the chip is wiped
+  // away from the left, its dust blown off to the right, and the address is
+  // left struck through. Reduced motion shows only that last state.
+  function strike(host) {
     const n = note;
+    n.chip.hidden = false;
     n.host.textContent = host;
-    n.host.classList.remove("gone");
-    n.icon.classList.remove("on");
-    clearTimeout(n.breaking);
-    n.breaking = setTimeout(() => {
+    n.chip.querySelector(".k")?.remove();
+    clearTimeout(n.striking);
+    if (FX.reduced()) return;
+    const cover = document.createElement("span");
+    cover.className = "k";
+    cover.setAttribute("aria-hidden", "true"); // the address is read once, from under it
+    cover.textContent = host;
+    n.chip.appendChild(cover);
+    n.striking = setTimeout(() => {
       if (note !== n) return;
-      SHARDS.forEach((poly, i) => {
-        const shard = document.createElement("span");
-        shard.className = "s";
-        shard.textContent = host;
-        shard.style.width = n.host.offsetWidth + "px";
-        shard.style.clipPath = "polygon(" + poly + ")";
-        shard.style.setProperty("--dx", (i - 1.5) * 9 + "px");
-        shard.style.setProperty("--r", (i % 2 ? 1 : -1) * (10 + i * 7) + "deg");
-        shard.style.animationDelay = i * 35 + "ms";
-        n.chip.appendChild(shard);
-        setTimeout(() => shard.remove(), 900);
+      const sweep = { duration: WIPE_MS, easing: "cubic-bezier(.65,0,.35,1)", fill: "both" };
+      n.host.animate({ transform: ["scaleX(0)", "scaleX(1)"] }, { ...sweep, pseudoElement: "::after" });
+      cover.animate({ clipPath: ["inset(0 0 0 0 round 12px)", "inset(0 0 0 100% round 12px)"] }, sweep)
+        .onfinish = () => cover.remove();
+      const box = n.chip.getBoundingClientRect();
+      for (let i = 0; i < 36; i++) {
+        const along = Math.random();
+        const size = 2 + Math.random() * 3;
+        const bit = document.createElement("i");
+        bit.style.cssText =
+          `left:${box.left + along * box.width}px;top:${box.top + Math.random() * box.height}px;` +
+          `width:${size}px;height:${size}px;background:${i % 4 ? "#e8463d" : "#ffd5d0"}`;
+        n.dust.appendChild(bit);
+        bit.animate({
+          transform: ["none", `translate(${16 + Math.random() * 48}px,${-8 - Math.random() * 34}px) rotate(${Math.random() * 240 - 120}deg) scale(.3)`],
+          opacity: [1, 0],
+        }, { duration: 480 + Math.random() * 380, delay: along * WIPE_MS, easing: FX.OUT, fill: "forwards" })
+          .onfinish = () => bit.remove();
+      }
+    }, HIT_MS);
+  }
+
+  // Whatever changes the capsule's size happens inside this, and the capsule
+  // springs from the old size to the new one. The row inside is always laid
+  // out at its final width from the leading edge and the capsule clips its
+  // far end, so the badge stays put and no line wraps on the way.
+  function morph(change) {
+    const { card } = note;
+    const from = [card.offsetWidth, card.offsetHeight];
+    note.resize?.cancel();
+    change();
+    if (FX.reduced()) return;
+    note.resize = card.animate({
+      width: [from[0] + "px", card.offsetWidth + "px"],
+      height: [from[1] + "px", card.offsetHeight + "px"],
+    }, FX.springs.select);
+  }
+
+  // The title rolls: the old one up and out, the new one up into place.
+  function retitle(text, also) {
+    const n = note;
+    const land = () => {
+      if (note !== n) return;
+      morph(() => {
+        n.title.textContent = text;
+        also?.();
       });
-      n.host.classList.add("gone");
-      void n.icon.offsetWidth;
-      n.icon.classList.add("on");
-    }, 450);
+    };
+    if (FX.reduced()) return land();
+    n.title.animate({ transform: ["none", "translateY(-12px)"], opacity: [1, 0] }, { duration: 110, easing: FX.IN })
+      .onfinish = () => {
+        land();
+        n.title.animate({ transform: ["translateY(14px)", "none"], opacity: [0, 1] }, FX.springs.bounce);
+      };
   }
 
   function refresh() {
+    if (!note) return;
     clearTimeout(note.timer);
-    note.timer = setTimeout(hideNote, NOTE_MS);
+    note.timer = setTimeout(hideNote, note.life);
   }
 
   function hideNote() {
@@ -256,8 +349,12 @@
     const gone = note;
     note = null;
     clearTimeout(gone.timer);
-    gone.card.classList.add("out");
-    setTimeout(() => gone.root.remove(), 240);
+    clearTimeout(gone.striking);
+    gone.card.style.pointerEvents = "none";
+    gone.card.animate(
+      FX.reduced() ? { opacity: [1, 0] } : { transform: ["none", "translateY(calc(100% + 24px)) scale(.94)"], opacity: [1, 0] },
+      { duration: 200, easing: FX.IN, fill: "forwards" });
+    setTimeout(() => gone.root.remove(), 220);
   }
 
   // Every cross-site destination the page reached for, whether or not it was

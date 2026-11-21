@@ -27,6 +27,12 @@ separate because the case that matters most cannot be staged in a page: Safari
 unloads the background page, and a navigation that arrives while the record is
 still being restored has to be judged anyway.
 
+`fx.test.mjs` (`bun tests/fx.test.mjs`) checks the two calculations in
+`content/fx.js` that no picture can: the spring easings, and that the shards a
+pane breaks into tile it exactly. The jitter is random, so the run prints its
+seed; `SEED=<n>` replays it. How the note and the effects look is judged from
+frames, in `docs/screenshots/page-effects/`.
+
 `build.py` copies the extension scripts here and relaxes one thing: the guard
 ignores events it did not see the browser generate, so the copy accepts the
 harness's own pointer events. Everything else is the shipping code.
