@@ -40,7 +40,9 @@ ASSETS = {
     "u-icon.png": R / "undirect/Support/AppStore/listing-icon.png",
     "u-screen.png": R / "undirect/.shots/iphone/assets/popup.png",                                   # 1320x2868
     "c-icon.png": R / "Cutling/fastlane/listing-icon.png",
-    "c-screen.png": R / "Cutling/fastlane/screenshots/en-US/iPhone 14 Pro Max-01_KeyboardInMessages.png",  # 1290x2796
+    # 1320x2868, the take behind the store frame "Your address in one tap". Cutling is never shown leading with
+    # bank details (owner), so this is the capture Cutling's clean_caps.sh made without the seed's Bank Account tile.
+    "c-screen.png": R / "Cutling/fastlane/compose/tall/cutling/cap/iphone-address-chat-clean.png",
 }
 for name, src in ASSETS.items():
     shutil.copy(src, S / name)
@@ -53,7 +55,7 @@ T = {
 INK_MARK = "white" if THEME == "dark" else "black"
 APPS = {
     "undirect": dict(name="Undirect", bg="#D92B24", ink="#FFFFFF", icon="u-icon.png", screen="u-screen.png", ratio=2868 / 1320, island=True),
-    "cutling": dict(name="Cutling", bg="#DDF3EA", ink="#04281D", icon="c-icon.png", screen="c-screen.png", ratio=2796 / 1290, island=False),
+    "cutling": dict(name="Cutling", bg="#DDF3EA", ink="#04281D", icon="c-icon.png", screen="c-screen.png", ratio=2868 / 1320, island=False),
 }
 W, M, G = 1080, 44, 10
 QUESTION = ["What do you", "expect your", "phone to do,", "but it just", "doesn’t?"]
