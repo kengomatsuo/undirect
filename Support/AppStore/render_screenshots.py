@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Render the localized App Store screenshots.
 
-Takes the English hypershots panels in .shots/<kind>/panels (untracked; the Mac's are
-the tracked direction-B pages in Support/AppStore/listing-design/undirect), swaps
+Takes the tracked direction-B pages in Support/AppStore/listing-design/undirect (the Mac's
+panel-N.html, and iphone/ and ipad/, which listing-design/tall.py writes from undirect/tall.json), swaps
 only the headline text for each locale in Support/AppStore/headlines.json, and
 renders with headless Chrome at the exact App Store canvas, the way the
 hypershots render.sh does. Output goes to Support/AppStore/<code>/<kind>/NN.png.
@@ -28,7 +28,7 @@ FRAMES = {1: "c1a", 2: "c2", 3: "c3", 4: "c4", 5: "c5"}
 # kind -> (profile, css w, css h, scale, panel number -> headline key)
 KINDS = {
     "iphone": ("iphone-6.9-alt", 440, 956, 3, {1: "h1", 2: "c2", 3: "c3", 4: "c1b", 5: "c5"}),
-    "ipad": ("ipad-13", 1032, 1376, 2, {**FRAMES, 1: "h1"}),
+    "ipad": ("ipad-13", 1032, 1376, 2, {1: "h1", 2: "c2", 3: "c3", 4: "c1b", 5: "c5"}),
     "mac": ("mac-2880", 1440, 900, 2, FRAMES),
 }
 SUBS = {"iphone": {}, "ipad": {}, "mac": {1: "c1b"}}  # kind -> frame -> key of the smaller line under the headline
@@ -66,7 +66,8 @@ WORD_BREAK = {"ja": "auto-phrase", "ko": "keep-all"}
 
 # Panel sources per kind. The Mac's are tracked, so a localized page names its
 # source folder in <base> and every relative link (wallpaper, captures, b.css) resolves there.
-PANELS = {"mac": os.path.join(APPSTORE, "listing-design", "undirect")}
+DESIGN = os.path.join(APPSTORE, "listing-design", "undirect")
+PANELS = {"mac": DESIGN, "iphone": os.path.join(DESIGN, "iphone"), "ipad": os.path.join(DESIGN, "ipad")}
 NOTO = "file://" + os.path.join(SHOTS, "noto")
 
 # Shrinks any "\n"-broken headline until its widest line fits the box, down to the
@@ -152,8 +153,8 @@ def make_panel(src, code, text, kind, sub=None):
     if kind in PANELS:  # <base> must precede the first relative link
         s = s.replace("<head>", '<head><base href="file://%s/">' % PANELS[kind], 1)
     s = s.replace("</head>", head_add + "</head>", 1)
-    s = s.replace('<script src="../fit.js"></script>',
-                  '<script src="%s/fit-i18n.js"></script>\n<script src="../fit.js"></script>' % NOTO, 1)
+    s = re.sub(r'<script src="((?:\.\./)+)fit\.js"></script>',
+               lambda m: '<script src="%s/fit-i18n.js"></script>\n%s' % (NOTO, m.group(0)), s, count=1)
     return s
 
 
@@ -198,7 +199,7 @@ def with_headline(page, text):
 def render_wide(page, png):
     jp, rp = os.path.join(SHOTS, "cdp-cover.json"), os.path.join(SHOTS, "cdp-cover-results.json")
     json.dump([{"page": page + "#wide", "png": png, "w": 1440, "h": 756, "scale": 2}], open(jp, "w"))
-    subprocess.run(["node", os.path.join(APPSTORE, "render_cdp.mjs"), jp, rp, "1"], stdout=subprocess.DEVNULL, check=True)
+    subprocess.run(["bun", os.path.join(APPSTORE, "render_cdp.mjs"), jp, rp, "1"], stdout=subprocess.DEVNULL, check=True)
     r = json.load(open(rp))[0]
     if not r["ok"]:
         print("wide FAIL", png, r.get("error"))
@@ -259,7 +260,7 @@ def main():
         jp = os.path.join(SHOTS, "cdp-jobs-%d.json" % i)
         json.dump([cdp_jobs[k] for k in idx], open(jp, "w"))
         procs.append((idx, os.path.join(SHOTS, "cdp-results-%d.json" % i),
-                      subprocess.Popen(["node", os.path.join(APPSTORE, "render_cdp.mjs"), jp,
+                      subprocess.Popen(["bun", os.path.join(APPSTORE, "render_cdp.mjs"), jp,
                                         os.path.join(SHOTS, "cdp-results-%d.json" % i), "1"],
                                        stdout=subprocess.DEVNULL)))
     raw = [None] * len(cdp_jobs)

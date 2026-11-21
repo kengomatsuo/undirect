@@ -1,6 +1,6 @@
 // Renders panel pages to PNG through one headless Chrome driven over the DevTools
 // protocol, so a 750-panel run does not pay a browser launch per page.
-//   node render_cdp.mjs jobs.json results.json [concurrency]
+//   bun render_cdp.mjs jobs.json results.json [concurrency]
 // jobs.json: [{page, png, w, h, scale}]. results.json: [{page, ok, boxes, wfail, error}]
 import { spawn } from "node:child_process";
 import { readFileSync, writeFileSync, mkdtempSync } from "node:fs";

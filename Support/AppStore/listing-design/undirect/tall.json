@@ -1,0 +1,211 @@
+{
+ "name": "Undirect",
+ "icon": "../icon-512.png",
+ "wall": "../wall-red-tall.jpg",
+ "theme": "dark",
+ "frames": [
+  {
+   "n": 1,
+   "key": "h1",
+   "cover": true,
+   "headline": "Block pop-ups\nthat hijack\nyour taps",
+   "cards": {
+    "iphone": [
+     {
+      "src": "../cap/iphone-popup.png",
+      "natural": 1320,
+      "crop": [
+       0,
+       170,
+       1320,
+       1552
+      ],
+      "w": 350,
+      "y": 470
+     }
+    ],
+    "ipad": [
+     {
+      "src": "../cap/ipad-popup.png",
+      "natural": 2064,
+      "crop": [
+       0,
+       60,
+       2064,
+       1500
+      ],
+      "w": 900,
+      "y": 650
+     }
+    ]
+   }
+  },
+  {
+   "n": 2,
+   "key": "c2",
+   "headline": "One press guards a site",
+   "cards": {
+    "iphone": [
+     {
+      "src": "../cap/iphone-menu.png",
+      "natural": 1320,
+      "crop": [
+       0,
+       1000,
+       1320,
+       2790
+      ],
+      "w": 400,
+      "y": 300
+     }
+    ],
+    "ipad": [
+     {
+      "src": "../cap/ipad-popup.png",
+      "natural": 2064,
+      "crop": [
+       780,
+       150,
+       1640,
+       1225
+      ],
+      "w": 760,
+      "y": 330
+     }
+    ]
+   }
+  },
+  {
+   "n": 3,
+   "key": "c3",
+   "headline": "Every blocked address, listed",
+   "cards": {
+    "iphone": [
+     {
+      "src": "../cap/iphone-popup.png",
+      "natural": 1320,
+      "crop": [
+       0,
+       980,
+       1320,
+       1960
+      ],
+      "w": 392,
+      "y": 290
+     },
+     {
+      "src": "../cap/iphone-list.png",
+      "natural": 1320,
+      "crop": [
+       0,
+       330,
+       1320,
+       1010
+      ],
+      "w": 360,
+      "y": 620,
+      "z": 3
+     }
+    ],
+    "ipad": [
+     {
+      "src": "../cap/ipad-list.png",
+      "natural": 2064,
+      "crop": [
+       0,
+       60,
+       2064,
+       640
+      ],
+      "w": 940,
+      "y": 330
+     },
+     {
+      "src": "../cap/ipad-popup.png",
+      "natural": 2064,
+      "crop": [
+       800,
+       560,
+       1620,
+       1360
+      ],
+      "w": 620,
+      "x": 360,
+      "y": 630,
+      "z": 3
+     }
+    ]
+   }
+  },
+  {
+   "n": 4,
+   "key": "c1b",
+   "headline": "Your tap lands where you aim",
+   "cards": {
+    "iphone": [
+     {
+      "src": "../cap/iphone-film.png",
+      "natural": 1320,
+      "crop": [
+       0,
+       0,
+       1320,
+       2050
+      ],
+      "w": 380,
+      "y": 290
+     }
+    ],
+    "ipad": [
+     {
+      "src": "../cap/ipad-page.png",
+      "natural": 2064,
+      "crop": [
+       0,
+       60,
+       2064,
+       2000
+      ],
+      "w": 900,
+      "y": 340
+     }
+    ]
+   }
+  },
+  {
+   "n": 5,
+   "key": "c5",
+   "headline": "Nothing leaves your device",
+   "cards": {
+    "iphone": [
+     {
+      "src": "../cap/iphone-settings.png",
+      "natural": 1320,
+      "crop": [
+       0,
+       340,
+       1320,
+       1240
+      ],
+      "w": 404,
+      "y": 470
+     }
+    ],
+    "ipad": [
+     {
+      "src": "../cap/ipad-settings.png",
+      "natural": 2064,
+      "crop": [
+       540,
+       60,
+       2064,
+       780
+      ],
+      "w": 900,
+      "y": 520
+     }
+    ]
+   }
+  }
+ ]
+}

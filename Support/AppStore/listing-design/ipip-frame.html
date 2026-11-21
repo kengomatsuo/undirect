@@ -1,0 +1,28 @@
+<!doctype html><html><head><meta charset="utf-8">
+<!-- An iPhone screenshot inside iPip's phone frame, to check the island and corners cover nothing.
+     Geometry read from ipip.fyi/apps/cutling on 2026-11-21 (.dv-iphone): shell 263x539.2, radius 44.71,
+     padding 7.89; screen 247.2x523.5, radius 36.82, the shot object-fit: cover; island 81.6x24 at
+     82.8,11 on the screen; iPip's own status bar text at y 13.6-24.
+     Open as ipip-frame.html#<image path>. -->
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100vw;height:100vh;overflow:hidden;background:#f4efe6;font-family:-apple-system,system-ui,sans-serif}
+body{display:grid;place-items:center}
+.stage{position:relative;width:263px;height:539.2px;transform-origin:center}
+.shell{position:absolute;inset:0;border-radius:44.71px;padding:7.89px;background:#050506;box-shadow:0 0 0 1.5px #2b2b2e,0 30px 60px -20px rgba(0,0,0,.35)}
+.scr{position:relative;width:247.2px;height:523.5px;border-radius:36.82px;overflow:hidden;background:#000}
+.scr img{width:100%;height:100%;object-fit:cover;display:block}
+.island{position:absolute;left:82.8px;top:11px;width:81.6px;height:24px;border-radius:99px;background:#000}
+.sb{position:absolute;left:27.2px;right:14.3px;top:13.6px;height:10.5px;display:flex;justify-content:space-between;color:#fff;font:600 9px/10.5px -apple-system,system-ui;text-shadow:0 0 2px rgba(0,0,0,.3)}
+.sb i{display:inline-block;width:13.6px;height:7.9px;border-radius:2px;background:#fff}
+.btn{position:absolute;width:5.9px;border-radius:2px;background:#1b1b1d}
+</style></head><body>
+<div class="stage" id="stage">
+<i class="btn" style="left:-8.5px;top:86.3px;height:22.6px"></i><i class="btn" style="left:-8.5px;top:129.4px;height:41px"></i>
+<i class="btn" style="left:-8.5px;top:180.6px;height:41px"></i><i class="btn" style="left:265.6px;top:145.6px;height:62px"></i>
+<div class="shell"><div class="scr"><img id="shot"><i class="island"></i><div class="sb"><span>9:41</span><i></i></div></div></div>
+</div>
+<script>
+document.getElementById("shot").src = decodeURIComponent(location.hash.slice(1));
+document.getElementById("stage").style.transform = "scale(" + Math.min(innerWidth / 290, innerHeight / 560) + ")";
+</script></body></html>
