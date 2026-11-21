@@ -438,7 +438,12 @@ function schedule(): Del[] {
   for (const [lo, hi] of [[-1, 4], [-3, 8], [-10, 28]]) for (const it of items) {
     if (it.kind === "kept" || onPlat.has(it.id)) continue;
     const d0 = day(it.date);
-    for (const pl of PREF[it.kind]) {
+    // Spread the native formats: some polls go to an Instagram and Facebook Story first, the two
+    // reply videos to TikTok, and a third of the image posts to TikTok photo mode.
+    const n = it.p?.n ?? 0;
+    const pref: SPlat[] = it.p && TT_REPLY[n] ? ["TikTok", "X", "Threads"] : it.kind === "poll" && n % 2 === 0 ? ["IG+FB", "X", "Threads"]
+      : (it.kind === "image" || it.kind === "carousel") && n % 3 === 0 ? ["TikTok", "IG+FB", "X", "Threads"] : PREF[it.kind];
+    for (const pl of pref) {
       const s = en.find((s) => !used.has(s) && s.plat === pl && fitEN(it.kind, pl, it.p?.n) && day(s.date) >= d0 + lo * 86400000 && day(s.date) <= d0 + hi * 86400000);
       if (s) { take(it, s); break; }
     }
@@ -448,7 +453,12 @@ function schedule(): Del[] {
   // on X and Threads, so 3 in 10 help a stranger.
   for (const s of en.filter((s) => !used.has(s))) {
     const cands = items.filter((it) => fitEN(it.kind, s.plat, it.p?.n) && !(onPlat.get(it.id)?.has(ig(s.plat))) && Math.abs(day(it.date) - day(s.date)) <= 6 * 86400000 && !(s.plat === "IG+FB" && it.kind === "help-unit"));
-    cands.sort((a, b) => (Number(b.help) - Number(a.help)) * ((s.plat === "X" || s.plat === "Threads") ? 1 : 0) || (onPlat.get(a.id)?.size ?? 0) - (onPlat.get(b.id)?.size ?? 0) || Math.abs(day(a.date) - day(s.date)) - Math.abs(day(b.date) - day(s.date)));
+    // Keep every native format in use: Stories on Instagram and Facebook, photo mode and reply
+    // videos on TikTok, until each has a few posts.
+    const fmtN = (k: string[]) => dels.filter((x) => x.plat === s.plat && k.includes(x.kind)).length;
+    const bonus = (it: Item) => (s.plat === "IG+FB" && it.kind === "poll" && fmtN(["poll"]) < 5 ? 2 : 0) + (s.plat === "TikTok" && ["image", "carousel"].includes(it.kind) && fmtN(["image", "carousel"]) < 5 ? 2 : 0)
+      + (s.plat === "TikTok" && it.p && TT_REPLY[it.p.n] ? 3 : 0) + (s.plat === "Threads" && it.kind === "poll" && fmtN(["poll"]) < 6 ? 1 : 0);
+    cands.sort((a, b) => bonus(b) - bonus(a) || (Number(b.help) - Number(a.help)) * ((s.plat === "X" || s.plat === "Threads") ? 1 : 0) || (onPlat.get(a.id)?.size ?? 0) - (onPlat.get(b.id)?.size ?? 0) || Math.abs(day(a.date) - day(s.date)) - Math.abs(day(b.date) - day(s.date)));
     if (cands[0]) take(cands[0], s);
   }
   // Language tracks: units in order, each once per platform.

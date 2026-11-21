@@ -41,7 +41,7 @@ Note: The explainer shows a bank-account example on screen (the owner's own expl
 J04 · JA · YouTube · Sun Nov 22 19:30 WIB · Sun Nov 22 21:30 JST
 Status: New
 Test: T1 time, JA YouTube arm A (MIC 21-22時; our best Japanese Short went up at 21:37 JST). No other-arm post of this kind this week; pairs with the next one. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in EN on YouTube Sat Nov 28 04:00 WIB (P13). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T3 language: the same film in EN on YouTube Fri Nov 27 04:00 WIB (P13). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
 Title: 再生ボタンを押すたびに広告タブが開く #iPhone便利機能 #広告ブロック
 動画の再生ボタンを押すたびに、広告のタブが開く。押した場所の上に、見えない層が重ねてあるからです。Undirectはその層を外して、再生ボタンだけが反応するようにします。
@@ -112,7 +112,7 @@ Media: ~/Downloads/pain-films-v4/cutling-address.mp4
 P03 · EN · X · Sun Nov 22 22:30 WIB · Sun Nov 22 10:30 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN X arm test (Hootsuite Sun 9-12 against Metricool's avoid Sunday). Paired with P06 at arm A, Mon Nov 23 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm test (Hootsuite Sun 9-12 against Metricool's avoid Sunday). Paired with P15 at arm B, Wed Nov 25 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == X: Poll ==
 Poll: Ad tabs you closed last night to watch one episode:
@@ -126,19 +126,21 @@ Media: none
 
 ------------------------------------------------------------
 
-P05 · EN · Threads · Mon Nov 23 02:00 WIB · Sun Nov 22 20:00 CET (UK 1 h earlier) · helps, no pitch
+P06 · EN · Threads · Mon Nov 23 02:00 WIB · Sun Nov 22 20:00 CET (UK 1 h earlier) · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN Europe Threads arm EU (European evening, Sun and Wed 20:00 CET). Paired with P06 at arm A, Tue Nov 24 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN Europe Threads arm EU (European evening, Sun and Wed 20:00 CET). Paired with P03 at arm A, Tue Nov 24 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T7 Europe: the same English post at a European evening slot; read ct taps from European storefronts in App Store Connect against the US slot of the same post.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== Threads: Image ==
-Settings, Safari, Block Pop-ups: on. And the tabs keep coming.
-
-Safari lets a tab through when it thinks you asked for it, and a page can make any tap look like you asked.
-
-Is Block Pop-ups on for you, and do tabs still open?
-Media: ~/Downloads/social-calendar/P05/ig-1.png
+== Threads: Poll ==
+Poll: Where do you keep the text you retype every week?
+- The Notes app
+- A screenshot in Photos
+- Text Replacement
+- I just retype it
+Our first reply:
+If it's plain text, Text Replacement in Settings, General, Keyboard turns a short code into the whole thing.
+Media: none
 
 ------------------------------------------------------------
 
@@ -182,19 +184,12 @@ Note: The film carries this language on screen.
 
 ------------------------------------------------------------
 
-P06 · EN · X · Mon Nov 23 21:15 WIB · Mon Nov 23 09:15 ET · helps, no pitch
-Status: Time and platform set changed
-Status: Pitch removed: helps a stranger
-Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with P03 at arm test, Sun Nov 22 22:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+H01 · EN · X · Mon Nov 23 21:15 WIB · Mon Nov 23 09:15 ET · helps, no pitch
+Status: New
+Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with H02 at arm B, Tue Nov 24 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== X: Poll ==
-Poll: Where do you keep the text you retype every week?
-- The Notes app
-- A screenshot in Photos
-- Text Replacement
-- I just retype it
-Our first reply:
-If it's plain text, Text Replacement in Settings, General, Keyboard turns a short code into the whole thing.
+== X: Single post ==
+Copy on your iPhone, paste on your Mac, and nothing arrives? Universal Clipboard needs both signed in to the same Apple ID, with Wi-Fi, Bluetooth and Handoff on, and the two close together.
 Media: none
 
 ------------------------------------------------------------
@@ -202,7 +197,7 @@ Media: none
 P05 · EN · IG+FB · Tue Nov 24 00:30 WIB · Mon Nov 23 12:30 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN IG+FB arm B (Sprout tech IG Mon 11-13, Tue 11-16; Sprout FB Tue-Wed 12-20). Paired with P12 at arm C, Thu Nov 26 06:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN IG+FB arm B (Sprout tech IG Mon 11-13, Tue 11-16; Sprout FB Tue-Wed 12-20). Paired with P08 at arm C, Thu Nov 26 06:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == Instagram: Single image ==
 Settings, Safari, Block Pop-ups: on. And the tabs keep coming.
@@ -235,12 +230,12 @@ Media: ~/Downloads/pain-films-v4/cutling-email.mp4
 
 ------------------------------------------------------------
 
-H01 · EN · X · Tue Nov 24 01:30 WIB · Mon Nov 23 13:30 ET · helps, no pitch
+H02 · EN · X · Tue Nov 24 01:30 WIB · Mon Nov 23 13:30 ET · helps, no pitch
 Status: New
-Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with H02 at arm A, Tue Nov 24 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with H01 at arm A, Mon Nov 23 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == X: Single post ==
-Copy on your iPhone, paste on your Mac, and nothing arrives? Universal Clipboard needs both signed in to the same Apple ID, with Wi-Fi, Bluetooth and Handoff on, and the two close together.
+iPhone tip: Settings, General, Keyboard, Text Replacement. Give your address a short code like "addr" and it expands as you type. It holds plain text only.
 Media: none
 
 ------------------------------------------------------------
@@ -302,51 +297,52 @@ Note: The film carries this language on screen.
 
 ------------------------------------------------------------
 
-P06 · EN · Threads · Tue Nov 24 20:30 WIB · Tue Nov 24 08:30 ET · helps, no pitch
+P03 · EN · Threads · Tue Nov 24 20:30 WIB · Tue Nov 24 08:30 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN Threads arm A (Buffer Thu 9:00, weekdays 7-12; Hootsuite Tue 8:00). Paired with P15 at arm EU, Thu Nov 26 02:00 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN Threads arm A (Buffer Thu 9:00, weekdays 7-12; Hootsuite Tue 8:00). Paired with P06 at arm EU, Mon Nov 23 02:00 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == Threads: Poll ==
-Poll: Where do you keep the text you retype every week?
-- The Notes app
-- A screenshot in Photos
-- Text Replacement
-- I just retype it
+Poll: How many ad tabs did you close to watch one episode?
+- 0
+- 1-5
+- 6-20
+- Lost count
+Our first reply:
+If one opens, close it without tapping anything inside it.
+Media: none
+
+------------------------------------------------------------
+
+P05 · EN · X · Tue Nov 24 21:15 WIB · Tue Nov 24 09:15 ET · helps, no pitch
+Status: Time and platform set changed
+Status: Pitch removed: helps a stranger
+Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with P03 at arm test, Sun Nov 22 22:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
+== X: Image ==
+Settings, Safari, Block Pop-ups: on. And the tabs keep coming.
+
+Safari lets a tab through when it thinks you asked for it, and a page can make any tap look like you asked.
+Media: ~/Downloads/social-calendar/P05/ig-1.png
+
+------------------------------------------------------------
+
+P06 · EN · IG+FB · Wed Nov 25 00:30 WIB · Tue Nov 24 12:30 ET · helps, no pitch
+Status: Time and platform set changed
+Status: Pitch removed: helps a stranger
+Test: T1 time, EN IG+FB arm B (Sprout tech IG Mon 11-13, Tue 11-16; Sprout FB Tue-Wed 12-20). Paired with P08 at arm C, Thu Nov 26 06:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
+== Instagram: Story, add yours sticker ==
+Sticker: Add Yours: "The text you retype every week"
 Our first reply:
 If it's plain text, Text Replacement in Settings, General, Keyboard turns a short code into the whole thing.
-Media: none
-
-------------------------------------------------------------
-
-H02 · EN · X · Tue Nov 24 21:15 WIB · Tue Nov 24 09:15 ET · helps, no pitch
-Status: New
-Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with H01 at arm B, Tue Nov 24 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== X: Single post ==
-iPhone tip: Settings, General, Keyboard, Text Replacement. Give your address a short code like "addr" and it expands as you type. It holds plain text only.
-Media: none
-
-------------------------------------------------------------
-
-P08 · EN · IG+FB · Wed Nov 25 00:30 WIB · Tue Nov 24 12:30 ET
-Status: Time and platform set changed
-Test: T1 time, EN IG+FB arm B (Sprout tech IG Mon 11-13, Tue 11-16; Sprout FB Tue-Wed 12-20). Paired with P12 at arm C, Thu Nov 26 06:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-== Instagram: Single image ==
-Would you let a keyboard app read what you type? Fair question.
-
-Cutling's keyboard has no network code, there's no account, and the App Store label says Data Not Collected. It reads the word before the cursor to suggest a saved item, and sends nothing.
-
-Link in bio.
-#iphonetips #textreplacement #productivityapps #iosapps #macapps
-Media: ~/Downloads/social-calendar/P08/ig-1.png
-== Facebook: Image post ==
-Would you let a keyboard app read what you type? Fair question.
-
-Cutling's keyboard has no network code, there's no account, and the App Store label says Data Not Collected. It reads the word before the cursor to suggest a saved item, and sends nothing.
-First comment (links in comments; Facebook is testing a cap on link posts for Pages):
-Cutling on the App Store: cutling.matsuokengo.com
-Media: ~/Downloads/social-calendar/P08/ig-1.png
+Media: ~/Downloads/social-calendar/P06/story-1.png
+Note: Frame 1 only: no link frame, since this post helps without a pitch.
+== Facebook: Story ==
+First comment:
+If it's plain text, Text Replacement in Settings, General, Keyboard turns a short code into the whole thing.
+Media: ~/Downloads/social-calendar/P06/story-1.png, ~/Downloads/social-calendar/P06/story-2.png
+Note: Same frames as the Instagram Story, posted to the Page from Business Suite; frame 2 carries the link sticker (Business Suite's Story link sticker is unchecked, GUESS).
 
 ------------------------------------------------------------
 
@@ -466,28 +462,37 @@ Media: none
 
 ------------------------------------------------------------
 
-H02 · EN · Threads · Wed Nov 25 20:30 WIB · Wed Nov 25 08:30 ET · helps, no pitch
-Status: New
-Test: T1 time, EN Threads arm A (Buffer Thu 9:00, weekdays 7-12; Hootsuite Tue 8:00). Paired with P05 at arm EU, Mon Nov 23 02:00 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+P15 · EN · Threads · Wed Nov 25 20:30 WIB · Wed Nov 25 08:30 ET · helps, no pitch
+Status: Time and platform set changed
+Status: Pitch removed: helps a stranger
+Test: T1 time, EN Threads arm A (Buffer Thu 9:00, weekdays 7-12; Hootsuite Tue 8:00). Paired with P06 at arm EU, Mon Nov 23 02:00 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== Threads: Text ==
-iPhone tip: Settings, General, Keyboard, Text Replacement. Give your address a short code like "addr" and it expands as you type. It holds plain text only.
-
-What's the one phrase you'd give a shortcut?
+== Threads: Poll ==
+Poll: Does your ad blocker stop the tabs that open when you tap?
+- Stops them
+- Some get through
+- Doesn't touch them
+- I have no blocker
+Our first reply:
+Blockers hide ads. The tab that opens when you press Play is the page taking your tap, so a blocker has nothing there to hide. Close it without tapping inside.
 Media: none
 
 ------------------------------------------------------------
 
-P05 · EN · X · Wed Nov 25 21:15 WIB · Wed Nov 25 09:15 ET · helps, no pitch
+P24 · EN · X · Wed Nov 25 21:15 WIB · Wed Nov 25 09:15 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
 Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with P03 at arm test, Sun Nov 22 22:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== X: Image ==
-Settings, Safari, Block Pop-ups: on. And the tabs keep coming.
-
-Safari lets a tab through when it thinks you asked for it, and a page can make any tap look like you asked.
-Media: ~/Downloads/social-calendar/P05/ig-1.png
+== X: Poll ==
+Poll: A Download button on a free site sent you to another site:
+- Every time
+- Often
+- Rarely
+- Never
+Our first reply:
+On free file sites the big coloured buttons are often ads. The real one tends to be the plain link with the file name and size.
+Media: none
 
 ------------------------------------------------------------
 
@@ -505,42 +510,42 @@ Media: none
 
 ------------------------------------------------------------
 
-P15 · EN · Threads · Thu Nov 26 02:00 WIB · Wed Nov 25 20:00 CET (UK 1 h earlier) · helps, no pitch
+P19 · EN · Threads · Thu Nov 26 02:00 WIB · Wed Nov 25 20:00 CET (UK 1 h earlier) · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN Europe Threads arm EU (European evening, Sun and Wed 20:00 CET). Paired with P06 at arm A, Tue Nov 24 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN Europe Threads arm EU (European evening, Sun and Wed 20:00 CET). Paired with P03 at arm A, Tue Nov 24 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T7 Europe: the same English post at a European evening slot; read ct taps from European storefronts in App Store Connect against the US slot of the same post.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == Threads: Poll ==
-Poll: Does your ad blocker stop the tabs that open when you tap?
-- Stops them
-- Some get through
-- Doesn't touch them
-- I have no blocker
+Poll: Would you pay a subscription for a clipboard app?
+- Fine by me
+- Never
+- Paying and annoyed
+- What's a clipboard app
 Our first reply:
-Blockers hide ads. The tab that opens when you press Play is the page taking your tap, so a blocker has nothing there to hide. Close it without tapping inside.
+Before you install one, the App Store listing shows an In-App Purchases line. That's where a subscription hides.
 Media: none
 
 ------------------------------------------------------------
 
-P12 · EN · IG+FB · Thu Nov 26 06:00 WIB · Wed Nov 25 18:00 ET
+P08 · EN · IG+FB · Thu Nov 26 06:00 WIB · Wed Nov 25 18:00 ET
 Status: Time and platform set changed
 Test: T1 time, EN IG+FB arm C (Buffer IG Wed 18:00; Metricool IG 20:00). Paired with P05 at arm B, Tue Nov 24 00:30 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 == Instagram: Single image ==
-iPhone Text Replacement keeps plain text and fires only when you type the shortcut. After an update, some people found the whole list gone from one device.
+Would you let a keyboard app read what you type? Fair question.
 
-A cutling can hold a whole paragraph or an image, and it syncs through your own iCloud.
+Cutling's keyboard has no network code, there's no account, and the App Store label says Data Not Collected. It reads the word before the cursor to suggest a saved item, and sends nothing.
 
 Link in bio.
 #iphonetips #textreplacement #productivityapps #iosapps #macapps
-Media: ~/Downloads/social-calendar/P12/ig-1.png
+Media: ~/Downloads/social-calendar/P08/ig-1.png
 == Facebook: Image post ==
-iPhone Text Replacement keeps plain text and fires only when you type the shortcut. After an update, some people found the whole list gone from one device.
+Would you let a keyboard app read what you type? Fair question.
 
-A cutling can hold a whole paragraph or an image, and it syncs through your own iCloud.
+Cutling's keyboard has no network code, there's no account, and the App Store label says Data Not Collected. It reads the word before the cursor to suggest a saved item, and sends nothing.
 First comment (links in comments; Facebook is testing a cap on link posts for Pages):
 Cutling on the App Store: cutling.matsuokengo.com
-Media: ~/Downloads/social-calendar/P12/ig-1.png
+Media: ~/Downloads/social-calendar/P08/ig-1.png
 
 ------------------------------------------------------------
 
@@ -606,50 +611,42 @@ Media: none
 
 ------------------------------------------------------------
 
-H03 · EN · Threads · Thu Nov 26 20:30 WIB · Thu Nov 26 08:30 ET · helps, no pitch
+H02 · EN · Threads · Thu Nov 26 20:30 WIB · Thu Nov 26 08:30 ET · helps, no pitch
 Status: New
-Test: T1 time, EN Threads arm A (Buffer Thu 9:00, weekdays 7-12; Hootsuite Tue 8:00). Paired with P05 at arm EU, Mon Nov 23 02:00 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN Threads arm A (Buffer Thu 9:00, weekdays 7-12; Hootsuite Tue 8:00). Paired with H03 at arm B, Sat Nov 28 02:00 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == Threads: Text ==
-Tired of "Allow Paste?" every time? Settings, Apps, pick the app, then Paste from Other Apps, and set it to Allow.
+iPhone tip: Settings, General, Keyboard, Text Replacement. Give your address a short code like "addr" and it expands as you type. It holds plain text only.
 
-Which app asks you this the most?
+What's the one phrase you'd give a shortcut?
 Media: none
 
 ------------------------------------------------------------
 
-P13 · EN · IG+FB · Thu Nov 26 21:00 WIB · Thu Nov 26 09:00 ET
+P12 · EN · IG+FB · Thu Nov 26 21:00 WIB · Thu Nov 26 09:00 ET
 Status: Time and platform set changed
 Test: T1 time, EN IG+FB arm A (Buffer IG and FB Thu 9:00). Paired with P05 at arm B, Tue Nov 24 00:30 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T2 hook on Instagram: if @monholtco has 1,000+ followers, post this film as three trial reels the same day, one per promise: "Every tap opens another ad" (claim), "You press Play and a VPN alert opens" (hook), "3 taps, 3 different traps" (number); keep the one with the best 3-second hold and average watch time, then saves and shares. Under 1,000 followers (trial reels need 1,000): post it as a normal Reel.
-Test: T2 hook on Facebook: Business Suite A/B test of this reel, caption A (as written) against B (opens on the question), goal average time watched, 24 h; carry the winner to the next TikTok and X post.
-== Instagram: Reel (trial reels if 1,000+ followers) ==
-Free streaming site, and each press of Play opens an ad instead of the movie.
+== Instagram: Single image ==
+iPhone Text Replacement keeps plain text and fires only when you type the shortcut. After an update, some people found the whole list gone from one device.
 
-Switch Undirect on for that site once, and Play just plays.
+A cutling can hold a whole paragraph or an image, and it syncs through your own iCloud.
 
 Link in bio.
-#iphonetips #iphonehacks #safari #adblock #iosapps
-Media: ~/Downloads/pain-films-v4/u1.mp4
-== Facebook: Reel ==
-Free streaming site, and each press of Play opens an ad instead of the movie.
+#iphonetips #textreplacement #productivityapps #iosapps #macapps
+Media: ~/Downloads/social-calendar/P12/ig-1.png
+== Facebook: Image post ==
+iPhone Text Replacement keeps plain text and fires only when you type the shortcut. After an update, some people found the whole list gone from one device.
 
-Switch Undirect on for that site once, and Play just plays.
+A cutling can hold a whole paragraph or an image, and it syncs through your own iCloud.
 First comment (links in comments; Facebook is testing a cap on link posts for Pages):
-Undirect on the App Store: undirect.matsuokengo.com
-A/B hook B (Business Suite reel A/B test):
-Which streaming site is the worst for this?
-
-Free streaming site, and each press of Play opens an ad instead of the movie.
-
-Switch Undirect on for that site once, and Play just plays.
-Media: ~/Downloads/pain-films-v4/u1.mp4
+Cutling on the App Store: cutling.matsuokengo.com
+Media: ~/Downloads/social-calendar/P12/ig-1.png
 
 ------------------------------------------------------------
 
 H03 · EN · X · Thu Nov 26 21:15 WIB · Thu Nov 26 09:15 ET · helps, no pitch
 Status: New
-Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with H01 at arm B, Tue Nov 24 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with H02 at arm B, Tue Nov 24 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == X: Single post ==
 Tired of "Allow Paste?" every time? Settings, Apps, pick the app, then Paste from Other Apps, and set it to Allow.
@@ -674,20 +671,20 @@ Media: none
 
 ------------------------------------------------------------
 
-P14 · EN · YouTube · Fri Nov 27 04:00 WIB · Thu Nov 26 16:00 ET
+P13 · EN · YouTube · Fri Nov 27 04:00 WIB · Thu Nov 26 16:00 ET
 Status: Time and platform set changed
 Test: T1 time, EN YouTube arm A (Buffer Shorts Fri 16:00, Thu/Fri/Sat best). No other-arm post of this kind this week; pairs with the next one. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in JA on YouTube Sun Nov 29 19:30 WIB (J09). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T3 language: the same film in JA on YouTube Sun Nov 22 19:30 WIB (J04). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
-Title: Text Replacement not syncing to iPad #iPhoneTips #iPhoneKeyboard
-Your Text Replacement shortcuts work on your iPhone, and on your iPad "addr" just stays "addr".
+Title: Free streaming site: Play opens an ad, not the movie #SafariTips #iPhoneTips
+Free streaming site, and each press of Play opens an ad instead of the movie.
 
-Save the text once in Cutling and it's on your iPad keyboard too, synced through your own iCloud.
+Switch Undirect on for that site once, and Play just plays.
 
-Cutling on the App Store: cutling.matsuokengo.com
+Undirect on the App Store: undirect.matsuokengo.com
 
-#iPhoneTips #iPhoneKeyboard #Clipboard #Cutling
-Media: ~/Downloads/social-calendar/_assets/cuts/cutling-sync-no-endcard.mp4
+#iPhoneTips #AdBlocker #PopUps #Undirect
+Media: ~/Downloads/social-calendar/_assets/cuts/u1-no-endcard.mp4
 Note: Needs the channel confirmed: there is no record of a @monholtco YouTube channel.
 Note: Trimmed before its end card: the card shows the full price, and this goes out during the Black Friday prices.
 
@@ -783,19 +780,14 @@ Media: none
 
 ------------------------------------------------------------
 
-P19 · EN · Threads · Sat Nov 28 02:00 WIB · Fri Nov 27 14:00 ET · helps, no pitch
-Status: Time and platform set changed
-Status: Pitch removed: helps a stranger
-Test: T1 time, EN Threads arm B (Hootsuite Fri 14:00). Paired with P06 at arm A, Tue Nov 24 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+H03 · EN · Threads · Sat Nov 28 02:00 WIB · Fri Nov 27 14:00 ET · helps, no pitch
+Status: New
+Test: T1 time, EN Threads arm B (Hootsuite Fri 14:00). Paired with H02 at arm A, Thu Nov 26 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== Threads: Poll ==
-Poll: Would you pay a subscription for a clipboard app?
-- Fine by me
-- Never
-- Paying and annoyed
-- What's a clipboard app
-Our first reply:
-Before you install one, the App Store listing shows an In-App Purchases line. That's where a subscription hides.
+== Threads: Text ==
+Tired of "Allow Paste?" every time? Settings, Apps, pick the app, then Paste from Other Apps, and set it to Allow.
+
+Which app asks you this the most?
 Media: none
 
 ------------------------------------------------------------
@@ -827,20 +819,20 @@ Media: none
 
 ------------------------------------------------------------
 
-P13 · EN · YouTube · Sat Nov 28 04:00 WIB · Fri Nov 27 16:00 ET
+P14 · EN · YouTube · Sat Nov 28 04:00 WIB · Fri Nov 27 16:00 ET
 Status: Time and platform set changed
 Test: T1 time, EN YouTube arm A (Buffer Shorts Fri 16:00, Thu/Fri/Sat best). No other-arm post of this kind this week; pairs with the next one. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in JA on YouTube Sun Nov 22 19:30 WIB (J04). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T3 language: the same film in JA on YouTube Sun Nov 29 19:30 WIB (J09). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
-Title: Free streaming site: Play opens an ad, not the movie #SafariTips #iPhoneTips
-Free streaming site, and each press of Play opens an ad instead of the movie.
+Title: Text Replacement not syncing to iPad #iPhoneTips #iPhoneKeyboard
+Your Text Replacement shortcuts work on your iPhone, and on your iPad "addr" just stays "addr".
 
-Switch Undirect on for that site once, and Play just plays.
+Save the text once in Cutling and it's on your iPad keyboard too, synced through your own iCloud.
 
-Undirect on the App Store: undirect.matsuokengo.com
+Cutling on the App Store: cutling.matsuokengo.com
 
-#iPhoneTips #AdBlocker #PopUps #Undirect
-Media: ~/Downloads/social-calendar/_assets/cuts/u1-no-endcard.mp4
+#iPhoneTips #iPhoneKeyboard #Clipboard #Cutling
+Media: ~/Downloads/social-calendar/_assets/cuts/cutling-sync-no-endcard.mp4
 Note: Needs the channel confirmed: there is no record of a @monholtco YouTube channel.
 Note: Trimmed before its end card: the card shows the full price, and this goes out during the Black Friday prices.
 
@@ -962,7 +954,7 @@ Note: Trimmed before its end card: the card shows the full price, and this goes 
 J09 · JA · YouTube · Sun Nov 29 19:30 WIB · Sun Nov 29 21:30 JST
 Status: New
 Test: T1 time, JA YouTube arm A (MIC 21-22時; our best Japanese Short went up at 21:37 JST). No other-arm post of this kind this week; pairs with the next one. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in EN on YouTube Fri Nov 27 04:00 WIB (P14). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T3 language: the same film in EN on YouTube Sat Nov 28 04:00 WIB (P14). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
 Title: ユーザ辞書がiPadに同期されないとき #iPhone便利機能 #ユーザー辞書
 iPhoneで登録したユーザ辞書が、iPadでは変換されない。カットリングに保存した文章は自分のiCloudで同期されるので、iPadのキーボードにも同じものが出ます。
@@ -1030,19 +1022,12 @@ Note: Trimmed before its end card: the card shows the full price, and this goes 
 
 ------------------------------------------------------------
 
-P24 · EN · X · Sun Nov 29 22:30 WIB · Sun Nov 29 10:30 ET · helps, no pitch
-Status: Time and platform set changed
-Status: Pitch removed: helps a stranger
-Test: T1 time, EN X arm test (Hootsuite Sun 9-12 against Metricool's avoid Sunday). Paired with P28 at arm B, Wed Dec 2 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+H04 · EN · X · Sun Nov 29 22:30 WIB · Sun Nov 29 10:30 ET · helps, no pitch
+Status: New
+Test: T1 time, EN X arm test (Hootsuite Sun 9-12 against Metricool's avoid Sunday). Paired with H05 at arm B, Tue Dec 1 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== X: Poll ==
-Poll: A Download button on a free site sent you to another site:
-- Every time
-- Often
-- Rarely
-- Never
-Our first reply:
-On free file sites the big coloured buttons are often ads. The real one tends to be the plain link with the file name and size.
+== X: Single post ==
+A site added calendar events that say your iPhone is infected? Your phone is fine. In Settings, open Calendar, then its accounts, and remove the subscribed calendar you don't recognise.
 Media: none
 
 ------------------------------------------------------------
@@ -1050,7 +1035,7 @@ Media: none
 P27 · EN · Threads · Mon Nov 30 02:00 WIB · Sun Nov 29 20:00 CET (UK 1 h earlier) · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN Europe Threads arm EU (European evening, Sun and Wed 20:00 CET). Paired with P06 at arm A, Tue Nov 24 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN Europe Threads arm EU (European evening, Sun and Wed 20:00 CET). Paired with P03 at arm A, Tue Nov 24 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T7 Europe: the same English post at a European evening slot; read ct taps from European storefronts in App Store Connect against the US slot of the same post.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == Threads: Carousel ==
@@ -1104,7 +1089,6 @@ Note: Text as approved in social-posts.md draft 12.
 I06 · ID · TikTok · Mon Nov 30 19:30 WIB · Mon Nov 30 19:30 WIB
 Status: New
 Test: T1 time, ID TikTok arm A (Jakpat 18-21; Buffer Mon). Paired with I07 at arm B, Wed Dec 2 07:30 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in EN on TikTok Sun Dec 6 21:00 WIB (P33). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == TikTok: Video ==
 Nonton di iPad, tiap pencet play kebuka tab "iPhone kamu diretas". Undirect jalan juga di Safari iPad, belinya cukup sekali.
 
@@ -1116,13 +1100,17 @@ Note: Trimmed before its end card: the card shows the full price, and this goes 
 
 ------------------------------------------------------------
 
-H04 · EN · X · Mon Nov 30 21:15 WIB · Mon Nov 30 09:15 ET · helps, no pitch
-Status: New
-Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with H07 at arm B, Fri Dec 4 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== X: Single post ==
-A site added calendar events that say your iPhone is infected? Your phone is fine. In Settings, open Calendar, then its accounts, and remove the subscribed calendar you don't recognise.
-Media: none
+P25 · EN · X · Mon Nov 30 21:15 WIB · Mon Nov 30 09:15 ET
+Status: Time and platform set changed
+Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with P29 at arm B, Wed Dec 2 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+== X: Image ==
+Your iPhone clipboard holds one thing. Copy a new link and the last one is gone.
+
+Keep the text you paste every day on the keyboard, one tap away.
+Our first reply:
+That's Cutling's keyboard. It keeps what you save; iOS lets no app record what you copy.
+cutling.matsuokengo.com
+Media: ~/Downloads/social-calendar/P25/ig-1.png
 
 ------------------------------------------------------------
 
@@ -1147,32 +1135,28 @@ Media: ~/Downloads/social-calendar/P16/ig-1.png
 
 ------------------------------------------------------------
 
-P30 · EN · TikTok · Tue Dec 1 01:00 WIB · Mon Nov 30 13:00 ET
-Status: Time and platform set changed
-Test: T1 time, EN TikTok arm A (Buffer Mon 13:00; Sprout Mon 15-17). Paired with P10 at arm B, Sun Nov 29 07:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in ID on TikTok Wed Nov 25 07:30 WIB (I03). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
-== TikTok: Video ==
-Shipping form, delivery form, billing form: this month you'll type your address into all of them.
-
-Save it once in Cutling and each one takes a tap. $4.99 once, for iPhone and iPad, and the Mac app too.
-
-Search Cutling on the App Store.
-#textreplacement #iphonetips #iphonehacks #techtok
-Media: ~/Downloads/social-calendar/_assets/cuts/cutling-address-no-endcard.mp4
-Note: Trimmed before its end card: the card shows the full price, and this goes out during the Black Friday prices.
-
-------------------------------------------------------------
-
-P27 · EN · X · Tue Dec 1 01:30 WIB · Mon Nov 30 13:30 ET · helps, no pitch
+P27 · EN · TikTok · Tue Dec 1 01:00 WIB · Mon Nov 30 13:00 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with H02 at arm A, Tue Nov 24 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN TikTok arm A (Buffer Mon 13:00; Sprout Mon 15-17). Paired with P07 at arm B, Thu Nov 26 07:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== X: Thread ==
+== TikTok: Photo mode ==
 You hit the X on the ad and another ad opens.
 
 The X is drawn by the ad, so tapping it is tapping the ad. To get rid of it, close the tab.
-Media: ~/Downloads/social-calendar/P27/ig-1.png
+#iphonetips #iphonehacks #popupads #techtok
+Media: ~/Downloads/social-calendar/P27/tt-1.png, ~/Downloads/social-calendar/P27/tt-2.png, ~/Downloads/social-calendar/P27/tt-3.png
+Note: Photo set: the post's slides, then the search slide.
+
+------------------------------------------------------------
+
+H05 · EN · X · Tue Dec 1 01:30 WIB · Mon Nov 30 13:30 ET · helps, no pitch
+Status: New
+Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with H04 at arm test, Sun Nov 29 22:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
+== X: Single post ==
+Forty tabs from one movie site? In Safari, press and hold the tabs button and choose Close All Tabs.
+Media: none
 
 ------------------------------------------------------------
 
@@ -1236,12 +1220,18 @@ Media: none
 
 ------------------------------------------------------------
 
-H05 · EN · X · Tue Dec 1 21:15 WIB · Tue Dec 1 09:15 ET · helps, no pitch
-Status: New
-Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with H07 at arm B, Fri Dec 4 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== X: Single post ==
-Forty tabs from one movie site? In Safari, press and hold the tabs button and choose Close All Tabs.
+P28 · EN · X · Tue Dec 1 21:15 WIB · Tue Dec 1 09:15 ET
+Status: Time and platform set changed
+Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with P36 at arm B, Thu Dec 3 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+== X: Poll ==
+Poll: Text Replacement between your iPhone and Mac:
+- Syncs fine
+- Stopped syncing
+- Never worked
+- I don't use it
+Our first reply:
+Cutlings sync through your own iCloud, and a deleted one comes back from Recently Deleted for 30 days.
+cutling.matsuokengo.com
 Media: none
 
 ------------------------------------------------------------
@@ -1249,7 +1239,7 @@ Media: none
 P20 · EN · IG+FB · Wed Dec 2 00:30 WIB · Tue Dec 1 12:30 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN IG+FB arm B (Sprout tech IG Mon 11-13, Tue 11-16; Sprout FB Tue-Wed 12-20). Paired with P12 at arm C, Thu Nov 26 06:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN IG+FB arm B (Sprout tech IG Mon 11-13, Tue 11-16; Sprout FB Tue-Wed 12-20). Paired with P08 at arm C, Thu Nov 26 06:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == Instagram: Carousel ==
 Your iPhone doesn't have a virus.
@@ -1267,19 +1257,17 @@ Media: ~/Downloads/social-calendar/P20/ig-1.png, ~/Downloads/social-calendar/P20
 
 ------------------------------------------------------------
 
-P28 · EN · X · Wed Dec 2 01:30 WIB · Tue Dec 1 13:30 ET
+P29 · EN · X · Wed Dec 2 01:30 WIB · Tue Dec 1 13:30 ET
 Status: Time and platform set changed
-Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with P24 at arm test, Sun Nov 29 22:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-== X: Poll ==
-Poll: Text Replacement between your iPhone and Mac:
-- Syncs fine
-- Stopped syncing
-- Never worked
-- I don't use it
+Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with P25 at arm A, Mon Nov 30 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+== X: Image ==
+Want to know where that tab was trying to take you?
+
+Undirect lists every address a page reached for, so you can block one everywhere or allow it on that site.
 Our first reply:
-Cutlings sync through your own iCloud, and a deleted one comes back from Recently Deleted for 30 days.
-cutling.matsuokengo.com
-Media: none
+Nothing in that list leaves your device.
+undirect.matsuokengo.com
+Media: ~/Downloads/social-calendar/P29/ig-1.png
 
 ------------------------------------------------------------
 
@@ -1300,18 +1288,14 @@ Note: First Instagram use of this cut: post as a trial reel set to graduate on p
 
 ------------------------------------------------------------
 
-P29 · EN · X · Wed Dec 2 02:45 WIB · Tue Dec 1 20:45 CET (UK 1 h earlier)
-Status: Time and platform set changed
-Test: T1 time, EN Europe X arm EU (European evening, Tue and Fri 20:45 CET; an hour and a quarter after the US X post at 01:30). Paired with P39 at arm A, Thu Dec 3 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+H06 · EN · X · Wed Dec 2 02:45 WIB · Tue Dec 1 20:45 CET (UK 1 h earlier) · helps, no pitch
+Status: New
+Test: T1 time, EN Europe X arm EU (European evening, Tue and Fri 20:45 CET; an hour and a quarter after the US X post at 01:30). Paired with H04 at arm test, Sun Nov 29 22:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T7 Europe: the same English post at a European evening slot; read ct taps from European storefronts in App Store Connect against the US slot of the same post.
-== X: Image ==
-Want to know where that tab was trying to take you?
-
-Undirect lists every address a page reached for, so you can block one everywhere or allow it on that site.
-Our first reply:
-Nothing in that list leaves your device.
-undirect.matsuokengo.com
-Media: ~/Downloads/social-calendar/P29/ig-1.png
+Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
+== X: Single post ==
+Back keeps landing on the ad? Press and hold Safari's back arrow. It lists every page behind you, so you can jump straight past the ad.
+Media: none
 
 ------------------------------------------------------------
 
@@ -1357,7 +1341,6 @@ Note: English on-screen text under a native caption: no localized cut of this fi
 J10 · JA · YouTube · Wed Dec 2 19:30 WIB · Wed Dec 2 21:30 JST
 Status: New
 Test: T1 time, JA YouTube arm A (MIC 21-22時; our best Japanese Short went up at 21:37 JST). No other-arm post of this kind this week; pairs with the next one. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in EN on YouTube Sat Dec 5 04:00 WIB (P35). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
 Title: MacのSafariで勝手に開くカジノのタブ #iPhone便利機能 #広告ブロック
 MacのSafariで再生をクリックしたら、カジノのタブが開いた。Undirectのボタンをそのサイトで一度押せば、次からは再生で新しいタブが開きません。
@@ -1398,20 +1381,24 @@ Media: none
 
 ------------------------------------------------------------
 
-H06 · EN · X · Wed Dec 2 21:15 WIB · Wed Dec 2 09:15 ET · helps, no pitch
-Status: New
-Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with H07 at arm B, Fri Dec 4 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
-== X: Single post ==
-Back keeps landing on the ad? Press and hold Safari's back arrow. It lists every page behind you, so you can jump straight past the ad.
-Media: none
+P35 · EN · X · Wed Dec 2 21:15 WIB · Wed Dec 2 09:15 ET
+Status: Time and platform set changed
+Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with P42 at arm EU, Sat Dec 5 02:45 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+== X: Video ==
+Mac Safari, a movie site, and one click on Play opens a casino tab.
+
+Undirect turns on for that site with one click, and the next Play opens no tab.
+Our first reply:
+Undirect for Safari on the Mac, $1.99 once, iPhone and iPad included.
+undirect.matsuokengo.com
+Media: ~/Downloads/pain-films-v4/u-mac-short.mp4
 
 ------------------------------------------------------------
 
 P36 · EN · X · Thu Dec 3 01:30 WIB · Wed Dec 2 13:30 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with P24 at arm test, Sun Nov 29 22:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with P28 at arm A, Tue Dec 1 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == X: Poll ==
 Poll: How long does your Mac remember what you copied?
@@ -1428,7 +1415,7 @@ Media: none
 P36 · EN · Threads · Thu Dec 3 02:00 WIB · Wed Dec 2 20:00 CET (UK 1 h earlier) · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN Europe Threads arm EU (European evening, Sun and Wed 20:00 CET). Paired with H03 at arm A, Thu Nov 26 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN Europe Threads arm EU (European evening, Sun and Wed 20:00 CET). Paired with H02 at arm A, Thu Nov 26 20:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T7 Europe: the same English post at a European evening slot; read ct taps from European storefronts in App Store Connect against the US slot of the same post.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == Threads: Poll ==
@@ -1464,18 +1451,17 @@ Media: ~/Downloads/social-calendar/P23/ig-1.png
 
 ------------------------------------------------------------
 
-P31 · EN · TikTok · Thu Dec 3 07:00 WIB · Wed Dec 2 19:00 ET
+P30 · EN · TikTok · Thu Dec 3 07:00 WIB · Wed Dec 2 19:00 ET
 Status: Time and platform set changed
 Test: T1 time, EN TikTok arm B (Metricool 18-20; Buffer views peak 18-23). Paired with P11 at arm A, Sun Nov 29 21:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in ID on TikTok Sat Nov 28 19:00 WIB (I04). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == TikTok: Video ==
-You press Download and get a fake download page, then an "Add Calendar Subscription" pop-up, then a "Speedy Clean" app page.
+Shipping form, delivery form, billing form: this month you'll type your address into all of them.
 
-With Undirect on, you stay on the page you were on, and the list shows the address it tried.
+Save it once in Cutling and each one takes a tap. $4.99 once, for iPhone and iPad, and the Mac app too.
 
-Search Undirect on the App Store.
-#iphonetips #iphonehacks #popupads #techtok
-Media: ~/Downloads/pain-films-v4/u2.mp4
+Search Cutling on the App Store.
+#textreplacement #iphonetips #iphonehacks #techtok
+Media: ~/Downloads/pain-films-v4/cutling-address.mp4
 
 ------------------------------------------------------------
 
@@ -1529,7 +1515,7 @@ Media: none
 P39 · EN · Threads · Thu Dec 3 20:30 WIB · Thu Dec 3 08:30 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN Threads arm A (Buffer Thu 9:00, weekdays 7-12; Hootsuite Tue 8:00). Paired with P19 at arm B, Sat Nov 28 02:00 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN Threads arm A (Buffer Thu 9:00, weekdays 7-12; Hootsuite Tue 8:00). Paired with H03 at arm B, Sat Nov 28 02:00 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == Threads: Image ==
 Someone on Reddit told you to turn on a hidden Safari setting, "Verify window.open user gesture", to stop redirect tabs.
@@ -1541,31 +1527,29 @@ Media: ~/Downloads/social-calendar/P39/ig-1.png
 
 ------------------------------------------------------------
 
-P25 · EN · IG+FB · Thu Dec 3 21:00 WIB · Thu Dec 3 09:00 ET
+P24 · EN · IG+FB · Thu Dec 3 21:00 WIB · Thu Dec 3 09:00 ET · helps, no pitch
 Status: Time and platform set changed
+Status: Pitch removed: helps a stranger
 Test: T1 time, EN IG+FB arm A (Buffer IG and FB Thu 9:00). Paired with P16 at arm B, Tue Dec 1 00:30 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-== Instagram: Single image ==
-Your iPhone clipboard holds one thing. Copy a new link and the last one is gone.
-
-Keep the text you paste every day on the keyboard, one tap away.
-
-Link in bio.
-#iphonetips #textreplacement #productivityapps #iosapps #macapps
-Media: ~/Downloads/social-calendar/P25/ig-1.png
-== Facebook: Image post ==
-Your iPhone clipboard holds one thing. Copy a new link and the last one is gone.
-
-Keep the text you paste every day on the keyboard, one tap away.
-First comment (links in comments; Facebook is testing a cap on link posts for Pages):
-Cutling on the App Store: cutling.matsuokengo.com
-Media: ~/Downloads/social-calendar/P25/ig-1.png
+Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
+== Instagram: Story, quiz sticker ==
+Sticker: Quiz: "Which Download button is the real one?" · Big green one / Start Download / The file link · correct: The file link
+Our first reply:
+On free file sites the big coloured buttons are often ads. The real one tends to be the plain link with the file name and size.
+Media: ~/Downloads/social-calendar/P24/story-1.png
+Note: Frame 1 only: no link frame, since this post helps without a pitch.
+== Facebook: Story ==
+First comment:
+On free file sites the big coloured buttons are often ads. The real one tends to be the plain link with the file name and size.
+Media: ~/Downloads/social-calendar/P24/story-1.png, ~/Downloads/social-calendar/P24/story-2.png
+Note: Same frames as the Instagram Story, posted to the Page from Business Suite; frame 2 carries the link sticker (Business Suite's Story link sticker is unchecked, GUESS).
 
 ------------------------------------------------------------
 
 P39 · EN · X · Thu Dec 3 21:15 WIB · Thu Dec 3 09:15 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with P29 at arm EU, Wed Dec 2 02:45 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm A (Buffer Tue 9:00 / Wed 9-10; Hootsuite Wed-Fri 9-11 (research 21:10, moved to X's quarter hour)). Paired with P29 at arm B, Wed Dec 2 01:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == X: Image ==
 Someone on Reddit told you to turn on a hidden Safari setting, "Verify window.open user gesture", to stop redirect tabs.
@@ -1577,7 +1561,7 @@ Media: ~/Downloads/social-calendar/P39/ig-1.png
 
 H07 · EN · X · Fri Dec 4 01:30 WIB · Thu Dec 3 13:30 ET · helps, no pitch
 Status: New
-Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with H04 at arm A, Mon Nov 30 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with H04 at arm test, Sun Nov 29 22:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == X: Single post ==
 Closed a tab by mistake in Safari on your Mac? Shift-Command-T brings it back.
@@ -1585,19 +1569,20 @@ Media: none
 
 ------------------------------------------------------------
 
-P34 · EN · YouTube · Fri Dec 4 04:00 WIB · Thu Dec 3 16:00 ET
+P33 · EN · YouTube · Fri Dec 4 04:00 WIB · Thu Dec 3 16:00 ET
 Status: Time and platform set changed
 Test: T1 time, EN YouTube arm A (Buffer Shorts Fri 16:00, Thu/Fri/Sat best). No other-arm post of this kind this week; pairs with the next one. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T3 language: the same film in ID on YouTube Fri Dec 4 16:30 WIB (I06). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
-Title: Mac clipboard history that skips your passwords #MacTips #Clipboard
-A clipboard history that saves every password you copy is a risk on a Mac.
+Title: Stop Safari ad tabs on iPad #SafariTips #iPhoneTips
+Streaming on an iPad and every tap on Play leaves a new tab behind.
 
-Cutling's history keeps every copy and skips anything your password manager marks as concealed.
+Undirect works the same in Safari on iPad, from the same $1.99 purchase. Allow it once for the site, and Play stops opening tabs.
 
-Cutling on the App Store: cutling.matsuokengo.com
+Undirect on the App Store: undirect.matsuokengo.com
 
-#MacTips #Clipboard #ProductivityApps #Cutling
-Media: ~/Downloads/pain-films-v4/cutling-mac-history.mp4
+#iPhoneTips #AdBlocker #PopUps #Undirect
+Media: ~/Downloads/pain-films-v4/u-ipad.mp4
 Note: Needs the channel confirmed: there is no record of a @monholtco YouTube channel.
 
 ------------------------------------------------------------
@@ -1630,7 +1615,7 @@ Note: English on-screen text under a native caption: no localized cut of this fi
 I06 · ID · YouTube · Fri Dec 4 16:30 WIB · Fri Dec 4 16:30 WIB
 Status: New
 Test: T1 time, ID YouTube arm A (Buffer Shorts Fri 16:00; our uploads at 16:12-19:04 WIB reached 456-945). Paired with I05 at arm B, Mon Nov 30 06:30 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in JA on YouTube Wed Dec 9 19:30 WIB (J14). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T3 language: the same film in EN on YouTube Fri Dec 4 04:00 WIB (P33). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
 Title: Tab "iPhone kamu diretas" di iPad #TipsiPhone #BlokirIklan
 Nonton di iPad, tiap pencet play kebuka tab "iPhone kamu diretas". Undirect jalan juga di Safari iPad, belinya cukup sekali.
@@ -1710,7 +1695,7 @@ Note: Event text pending the owner's pick.
 
 P42 · EN · X · Sat Dec 5 02:45 WIB · Fri Dec 4 20:45 CET (UK 1 h earlier)
 Status: Time and platform set changed
-Test: T1 time, EN Europe X arm EU (European evening, Tue and Fri 20:45 CET; an hour and a quarter after the US X post at 01:30). Paired with P41 at arm A, Fri Dec 4 23:30 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN Europe X arm EU (European evening, Tue and Fri 20:45 CET; an hour and a quarter after the US X post at 01:30). Paired with P35 at arm A, Wed Dec 2 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T7 Europe: the same English post at a European evening slot; read ct taps from European storefronts in App Store Connect against the US slot of the same post.
 == X: Video ==
 Gboard on Android kept your pinned clips. Cutling pins them to your iPhone keyboard: your address, your work email, the Wi-Fi password.
@@ -1721,20 +1706,19 @@ Media: ~/Downloads/pain-films-v4/cutling-android-short.mp4
 
 ------------------------------------------------------------
 
-P35 · EN · YouTube · Sat Dec 5 04:00 WIB · Fri Dec 4 16:00 ET
+P34 · EN · YouTube · Sat Dec 5 04:00 WIB · Fri Dec 4 16:00 ET
 Status: Time and platform set changed
 Test: T1 time, EN YouTube arm A (Buffer Shorts Fri 16:00, Thu/Fri/Sat best). No other-arm post of this kind this week; pairs with the next one. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in JA on YouTube Wed Dec 2 19:30 WIB (J10). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
-Title: Mac Safari: one click on Play opens a casino tab #SafariTips #MacTips
-Mac Safari, a movie site, and one click on Play opens a casino tab.
+Title: Mac clipboard history that skips your passwords #MacTips #Clipboard
+A clipboard history that saves every password you copy is a risk on a Mac.
 
-Undirect turns on for that site with one click, and the next Play opens no tab.
+Cutling's history keeps every copy and skips anything your password manager marks as concealed.
 
-Undirect on the App Store: undirect.matsuokengo.com
+Cutling on the App Store: cutling.matsuokengo.com
 
-#MacTips #AdBlocker #PopUps #Undirect
-Media: ~/Downloads/pain-films-v4/u-mac-short.mp4
+#MacTips #Clipboard #ProductivityApps #Cutling
+Media: ~/Downloads/pain-films-v4/cutling-mac-history.mp4
 Note: Needs the channel confirmed: there is no record of a @monholtco YouTube channel.
 
 ------------------------------------------------------------
@@ -1807,18 +1791,17 @@ Note: English on-screen text under a native caption: no localized cut of this fi
 
 ------------------------------------------------------------
 
-P32 · EN · TikTok · Sun Dec 6 07:00 WIB · Sat Dec 5 19:00 ET
+P31 · EN · TikTok · Sun Dec 6 07:00 WIB · Sat Dec 5 19:00 ET
 Status: Time and platform set changed
-Test: T1 time, EN TikTok arm B (Metricool 18-20; Buffer views peak 18-23). Paired with P33 at arm A, Sun Dec 6 21:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in ID on TikTok Wed Dec 9 07:30 WIB (I11). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T1 time, EN TikTok arm B (Metricool 18-20; Buffer views peak 18-23). Paired with P32 at arm A, Sun Dec 6 21:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 == TikTok: Video ==
-Copy, switch apps, paste, go back. Four trips for one boat time and one door code.
+You press Download and get a fake download page, then an "Add Calendar Subscription" pop-up, then a "Speedy Clean" app page.
 
-Share the page to Cutling instead. It's saved with a name, and next time it goes in with one tap.
+With Undirect on, you stay on the page you were on, and the list shows the address it tried.
 
-Search Cutling on the App Store.
-#textreplacement #iphonetips #iphonehacks #techtok
-Media: ~/Downloads/pain-films-v4/cutling-share.mp4
+Search Undirect on the App Store.
+#iphonetips #iphonehacks #popupads #techtok
+Media: ~/Downloads/pain-films-v4/u2.mp4
 
 ------------------------------------------------------------
 
@@ -1901,24 +1884,24 @@ Media: none
 
 ------------------------------------------------------------
 
-P33 · EN · TikTok · Sun Dec 6 21:00 WIB · Sun Dec 6 09:00 ET
+P32 · EN · TikTok · Sun Dec 6 21:00 WIB · Sun Dec 6 09:00 ET
 Status: Time and platform set changed
-Test: T1 time, EN TikTok arm A (Buffer TikTok Sun 9:00). Paired with P32 at arm B, Sun Dec 6 07:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in ID on TikTok Mon Nov 30 19:30 WIB (I06). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T1 time, EN TikTok arm A (Buffer TikTok Sun 9:00). Paired with P31 at arm B, Sun Dec 6 07:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T3 language: the same film in ID on TikTok Wed Dec 9 07:30 WIB (I11). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == TikTok: Video ==
-Streaming on an iPad and every tap on Play leaves a new tab behind.
+Copy, switch apps, paste, go back. Four trips for one boat time and one door code.
 
-Undirect works the same in Safari on iPad, from the same $1.99 purchase. Allow it once for the site, and Play stops opening tabs.
+Share the page to Cutling instead. It's saved with a name, and next time it goes in with one tap.
 
-Search Undirect on the App Store.
-#iphonetips #iphonehacks #popupads #techtok
-Media: ~/Downloads/pain-films-v4/u-ipad.mp4
+Search Cutling on the App Store.
+#textreplacement #iphonetips #iphonehacks #techtok
+Media: ~/Downloads/pain-films-v4/cutling-share.mp4
 
 ------------------------------------------------------------
 
 P44 · EN · X · Sun Dec 6 22:30 WIB · Sun Dec 6 10:30 ET
 Status: Time and platform set changed
-Test: T1 time, EN X arm test (Hootsuite Sun 9-12 against Metricool's avoid Sunday). Paired with H04 at arm A, Mon Nov 30 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm test (Hootsuite Sun 9-12 against Metricool's avoid Sunday). Paired with P25 at arm A, Mon Nov 30 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T4 format, weeks 3-4: Single post on X; compare replies and link taps against the other formats on EN X in the same slot arm.
 == X: Single post ==
 Reply guys: your wallet address and your X handle, one tap from the keyboard. No text-replacement codes to remember.
@@ -2030,7 +2013,7 @@ Media: ~/Downloads/pain-films-v4/cutling-email-short.mp4
 
 P37 · EN · TikTok · Tue Dec 8 01:00 WIB · Mon Dec 7 13:00 ET
 Status: Time and platform set changed
-Test: T1 time, EN TikTok arm A (Buffer Mon 13:00; Sprout Mon 15-17). Paired with P32 at arm B, Sun Dec 6 07:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN TikTok arm A (Buffer Mon 13:00; Sprout Mon 15-17). Paired with P31 at arm B, Sun Dec 6 07:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T3 language: the same film in ID on TikTok Sat Dec 5 19:00 WIB (I08). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == TikTok: Video ==
 How many ad tabs did you close tonight to watch one episode? One person wrote "repeat 7 times".
@@ -2046,7 +2029,7 @@ Media: ~/Downloads/pain-films-v4/u1-short.mp4
 P47 · EN · X · Tue Dec 8 01:30 WIB · Mon Dec 7 13:30 ET · helps, no pitch
 Status: Time and platform set changed
 Status: Pitch removed: helps a stranger
-Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with H05 at arm A, Tue Dec 1 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with P28 at arm A, Tue Dec 1 21:15 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T4 format, weeks 3-4: Image on X; compare replies and link taps against the other formats on EN X in the same slot arm.
 Test: Helps a stranger with no pitch: read saves, shares and profile visits; no link to tap.
 == X: Image ==
@@ -2185,7 +2168,7 @@ Media: ~/Downloads/social-calendar/P40/ig-1.png
 
 P51 · EN · X · Wed Dec 9 01:30 WIB · Tue Dec 8 13:30 ET
 Status: Time and platform set changed
-Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with P29 at arm EU, Wed Dec 2 02:45 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN X arm B (Sprout software and technology X Tue-Thu 11-16). Paired with H06 at arm EU, Wed Dec 2 02:45 WIB. Read: replies, profile visits and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 Test: T4 format, weeks 3-4: Image on X; compare replies and link taps against the other formats on EN X in the same slot arm.
 == X: Image ==
 On a Mac, press Shift-Command-V and your history is right there: the last thing you copied, and the cutlings you saved.
@@ -2228,7 +2211,7 @@ Media: none
 I11 · ID · TikTok · Wed Dec 9 07:30 WIB · Wed Dec 9 07:30 WIB
 Status: New
 Test: T1 time, ID TikTok arm B (Jakpat morning 07-09). Paired with I09 at arm A, Sun Dec 6 19:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in EN on TikTok Sun Dec 6 07:00 WIB (P32). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T3 language: the same film in EN on TikTok Sun Dec 6 21:00 WIB (P32). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == TikTok: Video ==
 Nemu alamat atau link di Safari? Bagikan ke Cutling, kasih nama, dan lain kali tinggal tap dari keyboard.
 
@@ -2268,7 +2251,7 @@ Note: English on-screen text under a native caption: no localized cut of this fi
 J14 · JA · YouTube · Wed Dec 9 19:30 WIB · Wed Dec 9 21:30 JST
 Status: New
 Test: T1 time, JA YouTube arm A (MIC 21-22時; our best Japanese Short went up at 21:37 JST). No other-arm post of this kind this week; pairs with the next one. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
-Test: T3 language: the same film in ID on YouTube Fri Dec 4 16:30 WIB (I06). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
+Test: T3 language: the same film in EN on YouTube Fri Dec 4 04:00 WIB (P33). Read views and ct taps per language; taps decide, since iPhone share is 21% in Indonesia and 52-54% in the US and Japan.
 == YouTube: Short ==
 Title: iPadで再生すると開く「ハッキング」タブ #iPhone便利機能 #広告ブロック
 iPadで動画を見ようとすると「iPhoneがハッキングされています」のタブが開く。UndirectはiPadのSafariでも使えて、購入は一度だけです。
@@ -2413,7 +2396,7 @@ Note: Event text pending the owner's pick.
 
 P43 · EN · TikTok · Thu Dec 10 07:00 WIB · Wed Dec 9 19:00 ET
 Status: Time and platform set changed
-Test: T1 time, EN TikTok arm B (Metricool 18-20; Buffer views peak 18-23). Paired with P33 at arm A, Sun Dec 6 21:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
+Test: T1 time, EN TikTok arm B (Metricool 18-20; Buffer views peak 18-23). Paired with P32 at arm A, Sun Dec 6 21:00 WIB. Read: median views, 3-second hold, average watch time and App Store taps (ct) at 48 h; a slot wins at 7 of 8 pairs.
 == TikTok: Video ==
 Tap Download, get a fake download page. Tap again, an "Add Calendar Subscription" pop-up.
 

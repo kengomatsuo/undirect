@@ -1,59 +1,59 @@
 You press Play. A page says "install the VPN app to keep watching". Back, press again: "Your iPhone is severely damaged by (12) virus!" Again: "You are today's lucky visitor."
 Deliver to. Shipping address. Delivery details. Billing address. Your address again, by thumb, typos and all: 14 seconds a form.
 If one opens, close it without tapping anything inside it.
-Settings, Safari, Block Pop-ups: on. And the tabs keep coming.
 If it's plain text, Text Replacement in Settings, General, Keyboard turns a short code into the whole thing.
-Your email address into a Wi-Fi login, a 10%-off pop-up, a check-in form and a receipt: 21 seconds of typing.
 Copy on your iPhone, paste on your Mac, and nothing arrives? Universal Clipboard needs both signed in to the same Apple ID, with Wi-Fi, Bluetooth and Handoff on, and the two close together.
-Cutling is on Product Hunt today: a keyboard for the text you type again and again, on iPhone, iPad and Mac. producthunt.com/products/cutling
+Settings, Safari, Block Pop-ups: on. And the tabs keep coming.
+Your email address into a Wi-Fi login, a 10%-off pop-up, a check-in form and a receipt: 21 seconds of typing.
 iPhone tip: Settings, General, Keyboard, Text Replacement. Give your address a short code like "addr" and it expands as you type. It holds plain text only.
-Would you let a keyboard app read what you type? Fair question.
-Cutling on the App Store: cutling.matsuokengo.com
+Cutling is on Product Hunt today: a keyboard for the text you type again and again, on iPhone, iPad and Mac. producthunt.com/products/cutling
 Blockers hide ads. The tab that opens when you press Play is the page taking your tap, so a blocker has nothing there to hide. Close it without tapping inside.
 Copy a door code, then a tracking number, then a meeting link. Your iPhone keeps only the last one.
 Your iPhone doesn't have a virus.
+On free file sites the big coloured buttons are often ads. The real one tends to be the plain link with the file name and size.
 $40 for the year, and the redirect tabs still got through.
 Undirect stops the tabs and redirects a page sets off from your tap, in Safari on iPhone, iPad and Mac. undirect.matsuokengo.com
-iPhone Text Replacement keeps plain text and fires only when you type the shortcut. After an update, some people found the whole list gone from one device.
+Before you install one, the App Store listing shows an In-App Purchases line. That's where a subscription hides.
+Would you let a keyboard app read what you type? Fair question.
+Cutling on the App Store: cutling.matsuokengo.com
 Tap Download on a movie site and you get a fake "Download in progress" page telling you to install a player app.
+iPhone Text Replacement keeps plain text and fires only when you type the shortcut. After an update, some people found the whole list gone from one device.
 Tired of "Allow Paste?" every time? Settings, Apps, pick the app, then Paste from Other Apps, and set it to Allow.
 Free streaming site, and each press of Play opens an ad instead of the movie.
-Undirect on the App Store: undirect.matsuokengo.com
-Which streaming site is the worst for this?
-Before you install one, the App Store listing shows an In-App Purchases line. That's where a subscription hides.
-Your Text Replacement shortcuts work on your iPhone, and on your iPad "addr" just stays "addr".
 Black Friday, Nov 27 to 30 on the App Store: Cutling $2.99 (was $4.99) Undirect $0.99 (was $1.99) One purchase covers iPhone, iPad and Mac. apps.apple.com/app/id6759476314
 On Windows, Win+V showed everything you'd copied. A Mac has nothing like it out of the box.
 Shift-Command-V opens it. Cutling for Mac comes with the iPhone and iPad keyboard. cutling.matsuokengo.com
 Black Friday on the App Store, Nov 27 to 30. Undirect $0.99 instead of $1.99, Cutling $2.99 instead of $4.99. One purchase for iPhone, iPad and Mac.
 Reading a manga or a web novel and every page turn opens another site? Switch Undirect on for that site once and the next-page tap stays on the chapter.
 Undirect runs in Safari on iPhone and iPad, and on the Mac. undirect.matsuokengo.com
+Your Text Replacement shortcuts work on your iPhone, and on your iPad "addr" just stays "addr".
 Click Play in Safari on your Mac and a casino tab opens: "200% welcome bonus".
-On free file sites the big coloured buttons are often ads. The real one tends to be the plain link with the file name and size.
+A site added calendar events that say your iPhone is infected? Your phone is fine. In Settings, open Calendar, then its accounts, and remove the subscribed calendar you don't recognise.
 You hit the X on the ad and another ad opens.
 Last day of the Black Friday prices. Undirect is $0.99 and Cutling $2.99 until midnight Pacific, then back to $1.99 and $4.99.
-A site added calendar events that say your iPhone is infected? Your phone is fine. In Settings, open Calendar, then its accounts, and remove the subscribed calendar you don't recognise.
+Your iPhone clipboard holds one thing. Copy a new link and the last one is gone.
+That's Cutling's keyboard. It keeps what you save; iOS lets no app record what you copy. cutling.matsuokengo.com
 "It's a clipboard, not a billboard." That's how one reviewer put it about a paste keyboard with ads in it.
-Shipping form, delivery form, billing form: this month you'll type your address into all of them.
 Forty tabs from one movie site? In Safari, press and hold the tabs button and choose Close All Tabs.
 Cutlings sync through your own iCloud, and a deleted one comes back from Recently Deleted for 30 days. cutling.matsuokengo.com
-You press Download and get a fake download page, then an "Add Calendar Subscription" pop-up, then a "Speedy Clean" app page.
 Want to know where that tab was trying to take you?
 Nothing in that list leaves your device. undirect.matsuokengo.com
+You press Download and get a fake download page, then an "Add Calendar Subscription" pop-up, then a "Speedy Clean" app page.
 Back keeps landing on the ad? Press and hold Safari's back arrow. It lists every page behind you, so you can jump straight past the ad.
+Mac Safari, a movie site, and one click on Play opens a casino tab.
+Undirect for Safari on the Mac, $1.99 once, iPhone and iPad included. undirect.matsuokengo.com
 macOS Tahoe's Spotlight keeps a clipboard history. It forgets after 8 hours by default; from 26.1 you can pick 30 minutes, 8 hours or 7 days.
 Delivery app. Address field. Street, flat number and postcode by thumb, again.
+Shipping form, delivery form, billing form: this month you'll type your address into all of them.
 Someone on Reddit told you to turn on a hidden Safari setting, "Verify window.open user gesture", to stop redirect tabs.
-Your iPhone clipboard holds one thing. Copy a new link and the last one is gone.
 Closed a tab by mistake in Safari on your Mac? Shift-Command-T brings it back.
-A clipboard history that saves every password you copy is a risk on a Mac.
+Streaming on an iPad and every tap on Play leaves a new tab behind.
 Reading a news story, scrolling, no tap at all, and the page jumps to a fake Settings screen: "Platform Security… RUN A TEST".
 Undirect 1.0.5 is out now. $1.99 once. undirect.matsuokengo.com
 Gboard on Android kept your pinned clips. Cutling pins them to your iPhone keyboard: your address, your work email, the Wi-Fi password.
 Cutling for iPhone and iPad, $4.99 once, with the Mac app included. cutling.matsuokengo.com
-Mac Safari, a movie site, and one click on Play opens a casino tab.
+A clipboard history that saves every password you copy is a risk on a Mac.
 Copy, switch apps, paste, go back. Four trips for one boat time and one door code.
-Streaming on an iPad and every tap on Play leaves a new tab behind.
 Reply guys: your wallet address and your X handle, one tap from the keyboard. No text-replacement codes to remember.
 Cutling: $4.99 once on iPhone and iPad, Mac app included. cutling.matsuokengo.com
 Safari opening tabs on its own and you're freaked out?
@@ -74,6 +74,7 @@ That switch stops windows a page opens by itself. A tab that opens right after y
 Can an iPhone keep a clipboard history? No app can: iOS doesn't let apps read what you copy in the background.
 Wherever it took you, close the tab without tapping inside, and don't install anything it pushes.
 Press Back to leave a live-stream site and land on a casino page instead?
+Undirect on the App Store: undirect.matsuokengo.com
 Which site traps your Back button?
 Tap Download, get a fake download page. Tap again, an "Add Calendar Subscription" pop-up.
 "Type out the same info over and over and over." That's how one reviewer described a paste keyboard's job.
