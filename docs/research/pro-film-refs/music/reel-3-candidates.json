@@ -1,0 +1,698 @@
+{
+ "made": "2026-11-22",
+ "card": "ASG143",
+ "method": "LAION-CLAP (laion/clap-htsat-unfused) embeds 10 s windows every 5 s. score = z(text) + z(taste). text: similarity to four prompts fixed before any result (\"Apple iPhone product film music, modern, confident, catchy build\" and three more, in clap_rank.py). taste: similarity to the owner's direction, mean of reel tracks 1, 2, 13, 16 minus mean of 3, 4, 5, 6, 8. ref (similarity to 8 Apple and Samsung films) is shown but not used: it ranked his rejected tracks above his liked ones. Tracks already in reels 1 and 2 are left out; at most two per artist. Mixkit was heard from the middle third of each file. Descriptions: MOSS-Music-8B-Thinking 4-bit (MLX) on a 30 s clip starting at described_from_s.",
+ "pool": {
+  "Mixkit": 923,
+  "Unminus": 51,
+  "HoliznaCC0": 65,
+  "OpenTracks": "59 of the 60 already screened (one fetch failed)",
+  "total_ranked": 1114
+ },
+ "references": [
+  "apple-iphone-15-pro-titanium",
+  "apple-iphone-16-pro-reveal",
+  "apple-iphone-17-pro-ad",
+  "apple-iphone-18-pro-ad",
+  "apple-iphone-17-scratch",
+  "samsung-one-ui-8-5",
+  "samsung-short-8th-gen",
+  "samsung-short-fold8-thin"
+ ],
+ "calibration": {
+  "pairs_liked_above_rejected": {
+   "ref": "4/20",
+   "near": "3/20",
+   "text": "19/20",
+   "taste_leave_one_out": "40/40",
+   "score": "20/20 (in-sample)"
+  },
+  "tracks": [
+   {
+    "key": "reel-1",
+    "title": "Thunder",
+    "artist": "Arulo",
+    "library": "Mixkit",
+    "url": "https://assets.mixkit.co/music/318/318.mp3",
+    "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+    "licence_source": "https://mixkit.co/license/#musicFree",
+    "score": 2.74,
+    "text": 0.457,
+    "taste": 0.445,
+    "ref": 0.639,
+    "overall_rank": 42,
+    "clap_tags": {
+     "genre": [
+      "hip hop beat",
+      "drum and bass"
+     ],
+     "mood": [
+      "cool",
+      "cheesy"
+     ],
+     "sound": [
+      "vocal chops",
+      "808 drums",
+      "plucks"
+     ]
+    },
+    "moss_music": "This track is an instrumental hip-hop piece featuring a steady 808 bassline, sharp trap-style beats, and repetitive synth patterns, maintaining a tense, mid-tempo energy that stays level.",
+    "described_from_s": 50.4,
+    "id": null,
+    "reel_track": 1,
+    "owner": "liked"
+   },
+   {
+    "key": "reel-2",
+    "title": "Waveform",
+    "artist": "Kit Wheston",
+    "library": "Unminus",
+    "url": "https://feeds.soundcloud.com/stream/1038044245-unminus-waveform.mp3",
+    "licence": "Unminus License: commercial, any platform, no credit",
+    "licence_source": "https://www.unminus.com/license",
+    "score": 2.5,
+    "text": 0.403,
+    "taste": 0.529,
+    "ref": 0.543,
+    "overall_rank": 67,
+    "clap_tags": {
+     "genre": [
+      "hip hop beat",
+      "drum and bass"
+     ],
+     "mood": [
+      "cool",
+      "playful"
+     ],
+     "sound": [
+      "synth lead",
+      "vocal chops",
+      "808 drums"
+     ]
+    },
+    "moss_music": "This is an energetic instrumental hip-hop track featuring a steady boom-bap beat, maintaining consistent dynamics.",
+    "described_from_s": 15.0,
+    "reel_track": 2,
+    "owner": "liked"
+   },
+   {
+    "key": "reel-13",
+    "title": "Chill Trap",
+    "artist": "Arulo",
+    "library": "Mixkit",
+    "url": "https://assets.mixkit.co/music/256/256.mp3",
+    "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+    "licence_source": "https://mixkit.co/license/#musicFree",
+    "score": 2.52,
+    "text": 0.486,
+    "taste": 0.338,
+    "ref": 0.666,
+    "overall_rank": 63,
+    "clap_tags": {
+     "genre": [
+      "hip hop beat",
+      "drum and bass"
+     ],
+     "mood": [
+      "playful",
+      "cool"
+     ],
+     "sound": [
+      "808 drums",
+      "piano",
+      "plucks"
+     ]
+    },
+    "moss_music": "A short, steady instrumental hip-hop/chillhop track featuring a drum machine beat and a synth or electric/acoustic piano/guitar melody, with a constant, slightly mellow or neutral background vibe that stays level for its 6-second duration.",
+    "described_from_s": 67.7,
+    "id": null,
+    "reel_track": 13,
+    "owner": "liked"
+   },
+   {
+    "key": "reel-16",
+    "title": "Electro Dreams",
+    "artist": "Arulo",
+    "library": "Mixkit",
+    "url": "https://assets.mixkit.co/music/190/190.mp3",
+    "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+    "licence_source": "https://mixkit.co/license/#musicFree",
+    "score": 2.71,
+    "text": 0.433,
+    "taste": 0.496,
+    "ref": 0.517,
+    "overall_rank": 47,
+    "clap_tags": {
+     "genre": [
+      "hip hop beat",
+      "trap"
+     ],
+     "mood": [
+      "cool",
+      "playful"
+     ],
+     "sound": [
+      "vocal chops",
+      "808 drums",
+      "piano"
+     ]
+    },
+    "moss_music": "This is a suspenseful, energetic media score featuring strings (violins/cellos) and percussion, building in tension and intensity toward its end.",
+    "described_from_s": 39.7,
+    "id": null,
+    "reel_track": 16,
+    "owner": "liked"
+   },
+   {
+    "key": "reel-7",
+    "title": "5 Stages of You",
+    "artist": "Kit Wheston",
+    "library": "Unminus",
+    "url": "https://feeds.soundcloud.com/stream/1145820199-unminus-5-stages-of-you-free-lo-fi-music.mp3",
+    "licence": "Unminus License: commercial, any platform, no credit",
+    "licence_source": "https://www.unminus.com/license",
+    "score": 1.92,
+    "text": 0.408,
+    "taste": 0.408,
+    "ref": 0.612,
+    "overall_rank": 149,
+    "clap_tags": {
+     "genre": [
+      "hip hop beat",
+      "drum and bass"
+     ],
+     "mood": [
+      "cool",
+      "playful"
+     ],
+     "sound": [
+      "piano",
+      "808 drums",
+      "vocal chops"
+     ]
+    },
+    "moss_music": "This instrumental hip hop track features bass, drums, and a melancholic melody on a key instrument (piano/synth), maintaining a consistent, steady mellow mood from 0:13 to 0:28.",
+    "described_from_s": 20.0,
+    "reel_track": 7,
+    "owner": "liked for a different film"
+   },
+   {
+    "key": "reel-3",
+    "title": "Other World",
+    "artist": "Lily J",
+    "library": "Mixkit",
+    "url": "https://assets.mixkit.co/music/723/723.mp3",
+    "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+    "licence_source": "https://mixkit.co/license/#musicFree",
+    "score": -0.1,
+    "text": 0.398,
+    "taste": 0.062,
+    "ref": 0.675,
+    "overall_rank": 576,
+    "clap_tags": {
+     "genre": [
+      "hip hop beat",
+      "chillout"
+     ],
+     "mood": [
+      "playful",
+      "cool"
+     ],
+     "sound": [
+      "piano",
+      "808 drums",
+      "plucks"
+     ]
+    },
+    "moss_music": "This is a melancholic instrumental track featuring an acoustic guitar, characterized by a steady, medium-paced rhythm that maintains a relatively constant, somber mood without significant dynamic builds or drops.",
+    "described_from_s": 38.8,
+    "id": null,
+    "reel_track": 3,
+    "owner": "rejected"
+   },
+   {
+    "key": "reel-4",
+    "title": "Atoms in Peace",
+    "artist": "Alejandro Magaña (A. M.)",
+    "library": "Mixkit",
+    "url": "https://assets.mixkit.co/music/107/107.mp3",
+    "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+    "licence_source": "https://mixkit.co/license/#musicFree",
+    "score": -1.46,
+    "text": 0.364,
+    "taste": -0.108,
+    "ref": 0.738,
+    "overall_rank": 884,
+    "clap_tags": {
+     "genre": [
+      "hip hop beat",
+      "lo-fi"
+     ],
+     "mood": [
+      "cool",
+      "cheesy"
+     ],
+     "sound": [
+      "piano",
+      "808 drums",
+      "vocal chops"
+     ]
+    },
+    "moss_music": "This is an upbeat, driving electronic trance track featuring prominent synthesizers that gradually build in intensity and drops into high-energy sections.",
+    "described_from_s": 83.1,
+    "id": null,
+    "reel_track": 4,
+    "owner": "rejected"
+   },
+   {
+    "key": "reel-5",
+    "title": "Kickin' Heart",
+    "artist": "Mauro Urbina",
+    "library": "Mixkit",
+    "url": "https://assets.mixkit.co/music/771/771.mp3",
+    "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+    "licence_source": "https://mixkit.co/license/#musicFree",
+    "score": -0.06,
+    "text": 0.384,
+    "taste": 0.101,
+    "ref": 0.636,
+    "overall_rank": 566,
+    "clap_tags": {
+     "genre": [
+      "hip hop beat",
+      "indie rock"
+     ],
+     "mood": [
+      "cool",
+      "cheesy"
+     ],
+     "sound": [
+      "piano",
+      "808 drums",
+      "plucks"
+     ]
+    },
+    "moss_music": "This is a steady, mid-tempo ambient/electronic track driven by a synthetic beat, which uses melancholic lead synth melodies and sweeping riser sound effects to build a continuous, contemplative yet forward-moving mood.",
+    "described_from_s": 49.4,
+    "id": null,
+    "reel_track": 5,
+    "owner": "rejected"
+   },
+   {
+    "key": "reel-6",
+    "title": "Silent Descent",
+    "artist": "Eugenio Mininni",
+    "library": "Mixkit",
+    "url": "https://assets.mixkit.co/music/614/614.mp3",
+    "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+    "licence_source": "https://mixkit.co/license/#musicFree",
+    "score": -3.3,
+    "text": 0.316,
+    "taste": -0.333,
+    "ref": 0.563,
+    "overall_rank": 1085,
+    "clap_tags": {
+     "genre": [
+      "cinematic orchestral",
+      "piano ballad"
+     ],
+     "mood": [
+      "melancholic",
+      "playful"
+     ],
+     "sound": [
+      "strings",
+      "piano",
+      "brass"
+     ]
+    },
+    "moss_music": "This is a cinematic orchestral piece featuring woodwinds (flute, oboe) and strings, evoking a melancholic yet sweeping and epic mood. The energy remains steady but gradually builds in intensity, starting around 0:23.",
+    "described_from_s": 63.1,
+    "id": null,
+    "reel_track": 6,
+    "owner": "rejected"
+   },
+   {
+    "key": "reel-8",
+    "title": "Born of the Sky",
+    "artist": "Scott Buckley",
+    "library": "Scott Buckley (CC BY 4.0)",
+    "url": "https://www.scottbuckley.com.au/library/wp-content/uploads/2025/08/BornOfTheSky.mp3",
+    "licence": "",
+    "licence_source": null,
+    "score": -1.77,
+    "text": 0.404,
+    "taste": -0.26,
+    "ref": 0.719,
+    "overall_rank": 939,
+    "clap_tags": {
+     "genre": [
+      "cinematic orchestral",
+      "drum and bass"
+     ],
+     "mood": [
+      "playful",
+      "dark"
+     ],
+     "sound": [
+      "strings",
+      "brass",
+      "pads"
+     ]
+    },
+    "moss_music": "This piece is epic, cinematic orchestral music that builds in energy, featuring prominent lead strings and brass instruments, conveying an intense, dramatic, and somewhat melancholic mood.",
+    "described_from_s": 95.0,
+    "reel_track": 8,
+    "owner": "rejected"
+   }
+  ]
+ },
+ "top": [
+  {
+   "rank": 1,
+   "key": "mk-326",
+   "title": "Chalie Puth",
+   "artist": "Arulo",
+   "library": "Mixkit",
+   "url": "https://assets.mixkit.co/music/326/326.mp3",
+   "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+   "licence_source": "https://mixkit.co/license/#musicFree",
+   "score": 3.44,
+   "text": 0.523,
+   "taste": 0.418,
+   "ref": 0.561,
+   "overall_rank": 1,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "chillout"
+    ],
+    "mood": [
+     "playful",
+     "cool"
+    ],
+    "sound": [
+     "synth lead",
+     "plucks",
+     "piano"
+    ]
+   },
+   "moss_music": "This upbeat 80s-style synth-pop/funk instrumental track (0:29-0:31) features a driving electronic drum beat, prominent bass, and bright synthesizer lead, maintaining a consistent energetic and positive groove throughout its excerpt.",
+   "described_from_s": 30.9,
+   "id": "326"
+  },
+  {
+   "rank": 2,
+   "key": "mk-281",
+   "title": "Complicated",
+   "artist": "Arulo",
+   "library": "Mixkit",
+   "url": "https://assets.mixkit.co/music/281/281.mp3",
+   "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+   "licence_source": "https://mixkit.co/license/#musicFree",
+   "score": 3.39,
+   "text": 0.526,
+   "taste": 0.402,
+   "ref": 0.6,
+   "overall_rank": 2,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "drum and bass"
+    ],
+    "mood": [
+     "cool",
+     "playful"
+    ],
+    "sound": [
+     "808 drums",
+     "piano",
+     "plucks"
+    ]
+   },
+   "moss_music": "This is a mellow, melancholic lo-fi hip-hop/chillhop instrumental track featuring a steady boom-bap beat, prominent piano/synth lead, and a consistent, contemplative, mid-tempo energy that builds no significant tension or dynamic shifts.",
+   "described_from_s": 47.8,
+   "id": "281"
+  },
+  {
+   "rank": 3,
+   "key": "un-hangtime",
+   "title": "Hangtime",
+   "artist": "WOWA",
+   "library": "Unminus",
+   "url": "https://feeds.soundcloud.com/stream/768679555-unminus-hangtime.mp3",
+   "licence": "Unminus License: commercial, any platform, no credit",
+   "licence_source": "https://www.unminus.com/license",
+   "score": 3.25,
+   "text": 0.514,
+   "taste": 0.405,
+   "ref": 0.702,
+   "overall_rank": 6,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "trap"
+    ],
+    "mood": [
+     "cool",
+     "cheesy"
+    ],
+    "sound": [
+     "808 drums",
+     "piano",
+     "synth lead"
+    ]
+   },
+   "moss_music": "Based on the audio, I would describe this as a steady, mid-tempo hip-hop or trap instrumental track. It features heavy bass (808s), rhythmic drums/percussion, and a repetitive, somewhat dark or moody synth melody. The energy is consistent and driving, designed for mixing picture rather than having a dynamic build.",
+   "described_from_s": 130.0
+  },
+  {
+   "rank": 4,
+   "key": "mk-899",
+   "title": "Christmas in the Guetto",
+   "artist": "Michael Ramir C.",
+   "library": "Mixkit",
+   "url": "https://assets.mixkit.co/music/899/899.mp3",
+   "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+   "licence_source": "https://mixkit.co/license/#musicFree",
+   "score": 3.13,
+   "text": 0.49,
+   "taste": 0.441,
+   "ref": 0.682,
+   "overall_rank": 9,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "indie rock"
+    ],
+    "mood": [
+     "cool",
+     "playful"
+    ],
+    "sound": [
+     "808 drums",
+     "synth lead",
+     "piano"
+    ]
+   },
+   "moss_music": "This instrumental track falls into the pop or corporate background music genre, featuring bass and drums as lead instruments, and has an upbeat, positive, and energetic mood that builds slightly in intensity.",
+   "described_from_s": 33.9,
+   "id": "899"
+  },
+  {
+   "rank": 5,
+   "key": "un-latin-by-coldise-free-edm-music",
+   "title": "Latin By Coldise Free Edm Music",
+   "artist": "Coldise",
+   "library": "Unminus",
+   "url": "https://feeds.soundcloud.com/stream/1270254490-unminus-latin-by-coldise-free-edm-music.mp3",
+   "licence": "Unminus License: commercial, any platform, no credit",
+   "licence_source": "https://www.unminus.com/license",
+   "score": 3.13,
+   "text": 0.535,
+   "taste": 0.334,
+   "ref": 0.66,
+   "overall_rank": 10,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "chillout"
+    ],
+    "mood": [
+     "cool",
+     "playful"
+    ],
+    "sound": [
+     "808 drums",
+     "synth lead",
+     "piano"
+    ]
+   },
+   "moss_music": "This high-energy electronic track, driven by fast-paced synthesizers and a steady beat, creates an upbeat, almost sterile or corporate mood, maintaining a constant, driving energy throughout.",
+   "described_from_s": 105.2
+  },
+  {
+   "rank": 6,
+   "key": "mk-555",
+   "title": "South Waves",
+   "artist": "Eugenio Mininni",
+   "library": "Mixkit",
+   "url": "https://assets.mixkit.co/music/555/555.mp3",
+   "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+   "licence_source": "https://mixkit.co/license/#musicFree",
+   "score": 3.11,
+   "text": 0.524,
+   "taste": 0.355,
+   "ref": 0.561,
+   "overall_rank": 11,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "chillout"
+    ],
+    "mood": [
+     "playful",
+     "cool"
+    ],
+    "sound": [
+     "808 drums",
+     "plucks",
+     "synth lead"
+    ]
+   },
+   "moss_music": "This fast-paced instrumental track fuses electronic beats and synthesizers into an energetic, action-oriented score; it maintains a relentless, driving intensity from beginning to end.",
+   "described_from_s": 55.3,
+   "id": "555"
+  },
+  {
+   "rank": 7,
+   "key": "un-barry-under",
+   "title": "Barry Under",
+   "artist": "Uberan Mino",
+   "library": "Unminus",
+   "url": "https://feeds.soundcloud.com/stream/1923324272-unminus-barry-under.mp3",
+   "licence": "Unminus License: commercial, any platform, no credit",
+   "licence_source": "https://www.unminus.com/license",
+   "score": 3.08,
+   "text": 0.517,
+   "taste": 0.367,
+   "ref": 0.721,
+   "overall_rank": 13,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "chillout"
+    ],
+    "mood": [
+     "cool",
+     "melancholic"
+    ],
+    "sound": [
+     "808 drums",
+     "deep sub bass",
+     "synth lead"
+    ]
+   },
+   "moss_music": "This is an energetic, trance-style electronic track driven by a steady 4/4 beat, pulsing bass, and arpeggiated synths, creating an uplifting, hypnotic, and consistently high-energy mood.",
+   "described_from_s": 150.0
+  },
+  {
+   "rank": 8,
+   "key": "un-dont-care",
+   "title": "Dont Care",
+   "artist": "Kit Wheston",
+   "library": "Unminus",
+   "url": "https://feeds.soundcloud.com/stream/2372644364-unminus-dont-care.mp3",
+   "licence": "Unminus License: commercial, any platform, no credit",
+   "licence_source": "https://www.unminus.com/license",
+   "score": 2.92,
+   "text": 0.47,
+   "taste": 0.448,
+   "ref": 0.729,
+   "overall_rank": 20,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "electro pop"
+    ],
+    "mood": [
+     "cool",
+     "playful"
+    ],
+    "sound": [
+     "808 drums",
+     "vocal chops",
+     "piano"
+    ]
+   },
+   "moss_music": "This is a melancholic instrumental hip-hop/trap beat featuring heavy bass and steady drums. It maintains a mid-tempo, somber, \"sad\" or \"tough\" vibe, staying at a consistent level rather than building significantly during the initial 23-second excerpt.",
+   "described_from_s": 0
+  },
+  {
+   "rank": 9,
+   "key": "mk-928",
+   "title": "You're Somewhere in Between",
+   "artist": "Michael Ramir C.",
+   "library": "Mixkit",
+   "url": "https://assets.mixkit.co/music/928/928.mp3",
+   "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+   "licence_source": "https://mixkit.co/license/#musicFree",
+   "score": 2.9,
+   "text": 0.525,
+   "taste": 0.315,
+   "ref": 0.559,
+   "overall_rank": 22,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "chillout"
+    ],
+    "mood": [
+     "cool",
+     "playful"
+    ],
+    "sound": [
+     "808 drums",
+     "plucks",
+     "synth lead"
+    ]
+   },
+   "moss_music": "This fast-paced instrumental pop/electronic track features driving beats and bright lead instruments (like guitars or synths) for an upbeat, positive, and energetic feel that builds consistently in intensity.",
+   "described_from_s": 31.2,
+   "id": "928"
+  },
+  {
+   "rank": 10,
+   "key": "mk-772",
+   "title": "Macario",
+   "artist": "Mauro Urbina",
+   "library": "Mixkit",
+   "url": "https://assets.mixkit.co/music/772/772.mp3",
+   "licence": "Mixkit Stock Music Free License: commercial, any platform, no credit",
+   "licence_source": "https://mixkit.co/license/#musicFree",
+   "score": 2.89,
+   "text": 0.499,
+   "taste": 0.373,
+   "ref": 0.65,
+   "overall_rank": 24,
+   "clap_tags": {
+    "genre": [
+     "hip hop beat",
+     "drum and bass"
+    ],
+    "mood": [
+     "cool",
+     "playful"
+    ],
+    "sound": [
+     "piano",
+     "808 drums",
+     "synth lead"
+    ]
+   },
+   "moss_music": "This high-energy rock/instrumental track features heavy electric guitar riffs and driving percussion, building in intensity from its rhythmic opening (0:02) through increasingly urgent chord progressions (0:13-0:46) to a dynamic peak (0:59), perfectly suited for action or thriller editing.",
+   "described_from_s": 57.5,
+   "id": "772"
+  }
+ ]
+}
