@@ -39,6 +39,12 @@ do not consult the rules. Full account:
 
 ## Shipping
 
+**Release binaries build on Xcode Cloud, never on the Mac (owner, 2026-11-21):** the
+Mac is shared by every session and a local archive starves them. `./deploy.sh build`
+and the binary half of `release` archive locally, so they are not used;
+`ci_scripts/ci_post_clone.sh` generates the project there. Store text and
+screenshots still go up with `./deploy.sh metadata`.
+
 Store copy, review notes and the App Privacy answers live in
 `Support/AppStore/metadata.md`, each counted against Apple's limit. What still
 needs the Account Holder is in [docs/app-store-submission.md](docs/app-store-submission.md).
