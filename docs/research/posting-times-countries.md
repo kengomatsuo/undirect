@@ -203,3 +203,17 @@ Valid Nov 22-Dec 20 2026 (US on Eastern Standard Time: WIB = ET + 12 h; JST = WI
 About 52 posts a week (EN 25, ID 9, JA 16, AR 2), against today's 21 posts each copied to six platforms at the same three WIB minutes (126 deliveries). The English posts already written (P1-P87) move onto the English slots above; the Indonesian and Japanese tracks reuse the films that already exist in those languages and need captions written per `blind-translation`. One account per platform carries every language (YouTube already does); whether to split Japanese into its own X account later is the owner's call and blocks nothing now.
 
 Recheck after two weeks: T1 results per track; ASC Sales by territory once the API key has the Sales role and the vendor number is known; YouTube Studio Geography; TikTok Studio most-active times; Instagram follower count for trial reels.
+
+## App Store units by country, read in App Store Connect Sales and Trends (2026-11-21)
+
+Both apps, iOS and macOS app purchases, units (downloads and sales), Aug 20 to Nov 19 2026, 450 units. Most fall on the Oct 10 spike while Undirect was free. Vendor number 93285092; the API key 8R8JCJZUNJ still lacks the Sales role (salesReports answers 403), so these are read from the web dashboard.
+
+| Region | Units | Top countries |
+|---|---|---|
+| Africa, Middle East and India | 170 | Saudi Arabia 132, Egypt 12, UAE 8, India 5, Jordan 3, Morocco 3 |
+| USA and Canada | 140 | (not split) |
+| Europe | 71 | France 13, Italy 11, UK 8, Türkiye 7, Russia 6, Germany 5, Spain 4 |
+| Asia Pacific | 52 | China mainland 12, Taiwan 10, Indonesia 7, Japan 6, Australia 4, Thailand 4 |
+| Latin America | 17 | |
+
+Last 30 days (Oct 20 to Nov 19, 76 units): Europe 29, Asia Pacific 22, USA and Canada 14, Africa/ME/India 6, Latin America 5. After the free spike, Europe and Asia Pacific lead.
