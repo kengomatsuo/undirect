@@ -138,5 +138,6 @@ Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip 
 - 17:00 both originals confirmed in Unsent posts > Scheduled (Nov 21 9:30 PM, Nov 22 1:00 AM, beside the Nov 27 8:15 PM Arabic quote)
 - 17:08 reply #5 to @Copypaster3000 (https://x.com/Copypaster3000/status/2123908200772898918; the post now also names Michael Tsai's list and Apps.Deals, still no MacBase or MacPip): https://x.com/monholtco/status/2124082518249050360
 - 17:18 reply #6 to @rashem48 (https://x.com/rashem48/status/2124035834424721681): https://x.com/monholtco/status/2124085055484240025
+- 17:37 reply #7 (Arabic) to @APPS_RH (https://x.com/APPS_RH/status/2124063083106890041): https://x.com/monholtco/status/2124089788487852329
 
 | 2026-11-21 17:20 WIB | X @monholtco | Debut post, pinned: "Hey, I just started Monholt, a small studio making apps that do exactly what they say..." | https://x.com/monholtco/status/2124085365057389008 |
