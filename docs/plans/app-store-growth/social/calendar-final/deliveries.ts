@@ -1,5 +1,6 @@
 // Writes the schedulable export of the @monholtco calendar:
-//   deliveries.json        every delivery, Nov 22-Dec 20 2026, every language, every platform
+//   deliveries.json        every delivery, Nov 22-Dec 20 2026: every language on Instagram, Facebook, Threads,
+//                          TikTok and YouTube; English only on X, which translates each post for its reader
 //   deliveries-first.json  Instagram, Facebook, Threads, TikTok and YouTube from now to Nov 24 23:59 WIB,
 //                          approved posts only, so scheduling can start before the rest is worded
 //   wording-needed.json    every caption still to be written, grouped by post and language
@@ -175,18 +176,20 @@ for (const p of posts) {
 }
 
 // ---------- X: the routine (docs/research/x-account-health-and-practice.md) ----------
-// One account, 3-5 originals a day, 4-8 hours apart, about 2-3 heavy pieces a week, link on the last
-// line (X's scheduler cannot schedule replies). Thirteen languages share it, so each language gets the
-// same number of X posts: 7 approved posts and 1 heavy piece, at a WIB hour inside its local window.
-const X_SLOTS: { wib: string; langs: LangCode[] }[] = [
-  { wib: "03:00", langs: ["en", "pt-BR", "fr", "it", "de", "es"] }, // 15:00 ET, 17:00 Brasília, 21:00 CET
-  { wib: "09:00", langs: ["id", "zh-Hant", "zh-Hans", "ja"] }, // 09:00 WIB, 10:00 Taipei, 11:00 JST
-  { wib: "15:00", langs: ["ar", "tr", "ru", "fr", "it", "de", "es"] }, // 11:00 Riyadh/Istanbul/Moscow, 09:00 CET
-  { wib: "21:00", langs: ["en", "pt-BR", "ar", "tr", "ru", "id", "zh-Hant", "zh-Hans", "ja"] }, // 09:00 ET, 11:00 Brasília, 17:00 Riyadh, 21:00 WIB, 22:00 Taipei, 23:00 JST
+// English only (owner, 2026-11-21): X has shown every post translated into the reader's language by
+// default since April 2026 (TechCrunch 2026-04-08), so one English post reaches every market and the
+// other twelve languages post nothing new on X. One account, 4 originals a day 6 hours apart (the
+// routine's 3-5 a day, 4-8 hours apart), each slot at a local peak of a different region, 3 heavy
+// pieces a week (the routine's 2-4), link on the last line (X's scheduler cannot schedule replies).
+const X_SLOTS: { wib: string; zone: string; off: number; why: string }[] = [
+  { wib: "03:00", zone: "ET", off: -12, why: "15:00 ET (Sprout tech X 11-16), 17:00 Brasília, 21:00 CET (Buffer X evening)" },
+  { wib: "09:00", zone: "JST", off: 2, why: "11:00 JST (MIC 11-12時), 10:00 Taipei, 09:00 WIB (Jakpat 07-09)" },
+  { wib: "15:00", zone: "CET", off: -6, why: "09:00 CET (Buffer X 9:00), 11:00 Riyadh, Istanbul and Moscow (Sprout tech X 11-16)" },
+  { wib: "21:00", zone: "ET", off: -12, why: "09:00 ET (Buffer X Tue 9:00), 11:00 Brasília, 21:00 WIB (Jakpat 18-21), 23:00 JST (MIC 22-23時)" },
 ];
-const X_WHY: Record<string, string> = { en: "Buffer X Tue 9:00 / Sprout tech 11-16 ET", "pt-BR": "Sprout tech X 11-16, Brasília", fr: "Buffer X 9:00 / evening, CET", it: "Buffer X 9:00 / evening, CET", de: "Buffer X 9:00 / evening, CET", es: "Buffer X 9:00 / evening, CET", ar: "Sprout tech X 11-16; our 132-download Arabic post went out 16:16 Riyadh", tr: "Sprout tech X 11-16, Istanbul", ru: "Sprout tech X 11-16, Moscow", id: "Jakpat 07-09 and 18-21", "zh-Hant": "GUESS: MIC's Japan hours applied to Taipei", "zh-Hans": "GUESS: MIC's Japan hours applied to UTC+8", ja: "MIC 11-12時 and 22-23時" };
-const PER_LANG_X = 8;
-// Already scheduled in X on 2026-11-21 (social-posts.md): not repeated, and counted in the cadence.
+const HEAVY_PER_WEEK = 3;
+const QUOTE_EVERY_DAYS = 3; // live quotes of trending posts, posted by hand on the day
+// Already scheduled in X on 2026-11-21 (social-posts.md): kept, not repeated, and counted in the cadence.
 const X_TAKEN = [
   { wib: "2026-11-21 21:30", lang: "en" as LangCode, what: "Original, Undirect: \"Safari's Block Pop-ups setting has one exception...\"", post: null },
   { wib: "2026-11-22 01:00", lang: "en" as LangCode, what: "Original, Cutling: \"Safari AutoFill puts your address into checkout forms...\"", post: null },
@@ -194,98 +197,86 @@ const X_TAKEN = [
 ];
 // Approved posts whose English X version would repeat tonight's originals.
 const X_DUP_EN = new Set([5, 54]);
+const EN = MARKETS.find((m) => m.lang === "en")!;
 
-type XSlot = { t: number; langs: LangCode[]; lang?: LangCode; quote?: boolean };
+type XSlot = { t: number; s: (typeof X_SLOTS)[number]; kind?: "post" | "heavy" | "quote" | "original"; post?: Post };
 const xs: XSlot[] = [];
+const taken = X_TAKEN.map((x) => new Date(x.wib.replace(" ", "T") + ":00Z").getTime());
 for (let d = new Date("2026-11-22T00:00:00Z").getTime(); d <= new Date("2026-12-20T00:00:00Z").getTime(); d += DAY) {
   for (const s of X_SLOTS) {
     const t = d + Number(s.wib.slice(0, 2)) * HOUR;
-    const taken = X_TAKEN.map((x) => new Date(x.wib.replace(" ", "T") + ":00Z").getTime());
     if (taken.some((x) => Math.abs(x - t) < 4 * HOUR)) continue;
-    xs.push({ t, langs: s.langs });
+    xs.push({ t, s });
   }
 }
-// Slots beyond 13 x 8 are spread through the month as live quotes of trending posts.
-const nQuote = xs.length - MARKETS.length * PER_LANG_X;
-for (let i = 0; i < nQuote; i++) xs[Math.floor(((i + 0.5) * xs.length) / nQuote)].quote = true;
-const got = new Map<LangCode, number[]>(MARKETS.map((m) => [m.lang, []]));
-const open = xs.filter((s) => !s.quote);
-open.forEach((s, i) => {
-  const cands = s.langs.filter((l) => got.get(l)!.length < PER_LANG_X);
-  if (!cands.length) { s.quote = true; return; }
-  // The language whose remaining need is largest against the slots still open to it goes first.
-  const left = (l: LangCode) => open.slice(i).filter((o) => o.langs.includes(l)).length;
-  const urgency = (l: LangCode) => (PER_LANG_X - got.get(l)!.length) / left(l);
-  cands.sort((a, b) => urgency(b) - urgency(a) || (got.get(a)!.at(-1) ?? 0) - (got.get(b)!.at(-1) ?? 0));
-  s.lang = cands[0];
-  got.get(s.lang)!.push(s.t);
-});
-const short = MARKETS.filter((m) => got.get(m.lang)!.length !== PER_LANG_X);
-if (short.length) throw new Error(`X slots left ${short.map((m) => `${m.lang} at ${got.get(m.lang)!.length}`).join(", ")}`);
-
-// One heavy piece per language, at evenly spaced points of the month (about 3 a week): each target
-// takes the nearest slot of a language that has none yet.
-const heavyAt = new Map<LangCode, number>();
-{
-  const assigned = xs.filter((s) => s.lang);
-  const t0 = assigned[0].t, t1 = assigned.at(-1)!.t;
-  for (let i = 0; i < MARKETS.length; i++) {
-    const target = t0 + ((i + 0.5) * (t1 - t0)) / MARKETS.length;
-    const s = assigned.filter((s) => !heavyAt.has(s.lang!)).sort((a, b) => Math.abs(a.t - target) - Math.abs(b.t - target))[0];
-    heavyAt.set(s.lang!, got.get(s.lang!)!.indexOf(s.t));
-  }
-}
-const xLen = (s: string) => [...s.replace(/\S+\.(com|example)(\/\S*)?/g, "x".repeat(23))].length;
-const usedX = new Map<LangCode, Set<number>>(MARKETS.map((m) => [m.lang, new Set()]));
-const lastOnX = new Map<number, number>();
 const xBlock = (n: number) => approved.get(n)!.find((b) => b.plat === "X")!;
+const tOf = (wib: string) => new Date(wib.replace(" ", "T") + ":00Z").getTime();
+
+// 1. Every approved post with a schedulable X version goes out once, in the free slot nearest its
+// approved minute; posts tied to an outside date (kept) go first and stay within 4 hours of it.
+const xPosts = posts.filter((p) => !p.gate && xBlock(p.n).format !== "Thread" && !X_DUP_EN.has(p.n));
+for (const p of [...xPosts].sort((a, b) => Number(b.slot === "kept") - Number(a.slot === "kept") || approvedTime(a).localeCompare(approvedTime(b)))) {
+  const at = tOf(approvedTime(p));
+  const free = xs.filter((s) => !s.kind && (p.slot !== "kept" || Math.abs(s.t - at) <= 4 * HOUR)).sort((a, b) => Math.abs(a.t - at) - Math.abs(b.t - at) || a.t - b.t);
+  if (!free.length) throw new Error(`no X slot for P${p.n}`);
+  free[0].kind = "post";
+  free[0].post = p;
+}
+// 2. Heavy pieces and quotes at evenly spaced points of the month, each taking the nearest free slot.
+const spread = (n: number, kind: "heavy" | "quote") => {
+  const t0 = xs[0].t, t1 = xs.at(-1)!.t;
+  for (let i = 0; i < n; i++) {
+    const target = t0 + ((i + 0.5) * (t1 - t0)) / n;
+    const s = xs.filter((s) => !s.kind).sort((a, b) => Math.abs(a.t - target) - Math.abs(b.t - target))[0];
+    if (!s) throw new Error(`no free X slot for ${kind} ${i + 1}`);
+    s.kind = kind;
+  }
+};
+const weeks = (xs.at(-1)!.t - xs[0].t + DAY) / (7 * DAY);
+spread(Math.round(weeks * HEAVY_PER_WEEK), "heavy");
+spread(Math.round((weeks * 7) / QUOTE_EVERY_DAYS), "quote");
+// 3. Every slot left is a new English original, for the writer.
+xs.filter((s) => !s.kind).forEach((s) => (s.kind = "original"));
+
+const xLen = (s: string) => [...s.replace(/\S+\.(com|example)(\/\S*)?/g, "x".repeat(23))].length;
+let heavyN = 0, origN = 0;
 for (const s of xs) {
   const wib = iso(s.t);
-  if (s.quote) {
-    rows.push({ id: `X-quote-${wib.replace(/\D/g, "")}`, post: null, app: "either", lang: "en", language: "English or the quoted post's language", country: "", platform: "X", account: HANDLE.X, format: "Quote post", wib, local: iso(s.t - 12 * HOUR), zone: "ET", time_source: "keeps the 4-8 hour cadence",
-      caption: null, first_comment: null, media: [], on_screen_text: "none",
-      needs_wording: "A quote of a post trending in the hours before this slot about a pain one of our apps fixes, with one line of substance; no link unless the quoted post asks for one; English or the quoted post's language; 280 characters. Written and posted by hand at the time: the post to quote isn't known in advance.",
+  const local = iso(s.t + s.s.off * HOUR);
+  const base = { lang: "en" as LangCode, language: EN.name, country: "Every market: X translates each post for its reader", platform: "X" as Plat, account: HANDLE.X, wib, local, zone: s.s.zone, time_source: s.s.why, first_comment: null, media: [] as string[], on_screen_text: "none", notes: [] as string[] };
+  if (s.kind === "quote") {
+    rows.push({ ...base, id: `X-quote-${wib.replace(/\D/g, "")}`, post: null, app: "either", format: "Quote post",
+      caption: null,
+      needs_wording: "A quote of a post trending in the hours before this slot about a pain one of our apps fixes, with one line of substance; no link unless the quoted post asks for one; English; 280 characters. Written and posted by hand at the time: the post to quote isn't known in advance.",
       approved_post: false, in_approved_set: false, changed_since_approval: ["New: X routine quote slot"], notes: ["Not schedulable ahead: the quoted post is chosen at the time."] });
     continue;
   }
-  const m = MARKETS.find((m) => m.lang === s.lang)!;
-  const k = got.get(m.lang)!.indexOf(s.t);
-  const local = iso(s.t + m.off * HOUR);
-  const when = { wib, local, why: X_WHY[m.lang] };
-  if (k === heavyAt.get(m.lang)) {
-    const app = MARKETS.indexOf(m) % 2 ? "Cutling" : "Undirect";
-    rows.push({ id: `X-heavy-${m.lang}`, post: null, app, lang: m.lang, language: m.name, country: m.country, platform: "X", account: HANDLE.X, format: "Long post (heavy piece)", wib, local, zone: m.zone, time_source: when.why,
-      caption: null, first_comment: null, media: [], on_screen_text: "none",
-      needs_wording: `${m.name} heavy piece for X: a how-to deep dive on one ${app} pain, as one long post (X's scheduler can't schedule threads; long posts need X Premium, up to 25,000 characters); the store link ${storeLink(app as "Undirect", "X", m.lang)} on its own last line.`,
-      approved_post: false, in_approved_set: false, changed_since_approval: ["New: X routine heavy piece"], notes: ["Needs X Premium for its length; without it, post by hand as a thread at this time."] });
+  if (s.kind === "heavy" || s.kind === "original") {
+    const k = s.kind === "heavy" ? heavyN++ : origN++;
+    const app = (k + (s.kind === "heavy" ? 0 : 1)) % 2 ? "Cutling" : "Undirect";
+    const link = storeLink(app as "Undirect", "X", "en");
+    rows.push({ ...base, id: s.kind === "heavy" ? `X-heavy-en-${k + 1}` : `X-original-en-${k + 1}`, post: null, app, format: s.kind === "heavy" ? "Long post (heavy piece)" : "Single post",
+      caption: null,
+      needs_wording: s.kind === "heavy"
+        ? `English heavy piece for X: a how-to deep dive on one ${app} pain not covered by the other heavy pieces, as one long post (X's scheduler can't schedule threads; long posts need X Premium, up to 25,000 characters); the store link ${link} on its own last line. X translates it for every reader, so write for a worldwide audience: no US-only references.`
+        : `English original for X on one ${app} pain, a different pain or angle from the approved posts in the days around it and from every other new original; no sentence or opening shared with another post (the routine); 280 characters including the store link ${link} on its own last line. X translates it for every reader, so write for a worldwide audience: no US-only references.`,
+      approved_post: false, in_approved_set: false, changed_since_approval: [s.kind === "heavy" ? "New: X routine heavy piece" : "New: X routine original, filling a slot the 12 dropped languages used"],
+      notes: s.kind === "heavy" ? ["Needs X Premium for its length; without it, post by hand as a thread at this time."] : [] });
     continue;
   }
-  const day = (iso: string) => new Date(iso.slice(0, 10) + "T00:00:00Z").getTime();
-  const dLocal = day(local);
-  const cands = posts.filter((p) => !p.gate && !usedX.get(m.lang)!.has(p.n) && xBlock(p.n).format !== "Thread" && !(m.lang === "en" && X_DUP_EN.has(p.n)) && (p.slot !== "kept" || day(p.date) === dLocal));
-  cands.sort((a, b) => {
-    const sc = (p: Post) => Math.abs(day(p.date) - dLocal) / DAY + (s.t - (lastOnX.get(p.n) ?? -Infinity) < 3 * DAY ? 10 : 0);
-    return sc(a) - sc(b) || a.n - b.n;
-  });
-  const p = cands[0];
-  usedX.get(m.lang)!.add(p.n);
-  lastOnX.set(p.n, s.t);
+  const p = s.post!;
   const b = xBlock(p.n);
-  const r = rowFor(p, b, m, when);
-  if (m.lang === "en") {
-    const reply = b.follow[0]?.text;
-    const caption = b.poll ? [b.poll.q, reply].filter(Boolean).join("\n\n") : [b.text, reply].filter(Boolean).join("\n\n");
-    r.caption = b.poll ? reply ?? null : caption;
-    r.first_comment = null;
-    r.x_length = xLen(caption);
-    r.requires_x_premium = r.x_length > 280;
-    r.changed_since_approval.push(`Time: approved ${approvedTime(p)} WIB; now ${wib} WIB under the X routine`);
-    if (reply) r.changed_since_approval.push("Our first reply now closes the post itself, link on the last line: X's scheduler can't schedule replies");
-    if (b.poll) r.notes.push("Poll: the question is the poll question; the caption text sits under it.");
-  } else {
-    r.first_comment = null;
-    r.needs_wording = r.needs_wording!.replace(/; the line before the link in the our first reply[^;]*/, "") + `; the post ends with the line ${storeLink(p.app === "Both" ? "Undirect" : (p.app as "Undirect"), "X", m.lang)} on its own (X's scheduler can't schedule replies)`;
-  }
+  const r = rowFor(p, b, EN, { wib, local, why: s.s.why });
+  Object.assign(r, { zone: s.s.zone, country: base.country });
+  const reply = b.follow[0]?.text;
+  const caption = b.poll ? [b.poll.q, reply].filter(Boolean).join("\n\n") : [b.text, reply].filter(Boolean).join("\n\n");
+  r.caption = b.poll ? reply ?? null : caption;
+  r.first_comment = null;
+  r.x_length = xLen(caption);
+  r.requires_x_premium = r.x_length > 280;
+  r.changed_since_approval.push(`Time: approved ${approvedTime(p)} WIB; now ${wib} WIB under the X routine`);
+  if (reply) r.changed_since_approval.push("Our first reply now closes the post itself, link on the last line: X's scheduler can't schedule replies");
+  if (b.poll) r.notes.push("Poll: the question is the poll question; the caption text sits under it.");
   rows.push(r);
 }
 for (const x of X_TAKEN) {
@@ -301,17 +292,32 @@ rows.sort((a, b) => a.wib.localeCompare(b.wib) || a.id.localeCompare(b.id));
 const cal = rows.filter((r) => !r.already_scheduled && !r.id.startsWith("X-quote"));
 const count = (f: (r: Row) => boolean) => Object.fromEntries(MARKETS.map((m) => [m.lang, cal.filter((r) => r.lang === m.lang && f(r)).length]));
 const perLang = count(() => true);
-if (new Set(Object.values(perLang)).size !== 1) throw new Error(`unequal per-language counts ${JSON.stringify(perLang)}`);
 const perPlat = Object.fromEntries((["X", ...NON_X] as Plat[]).map((pl) => [pl, count((r) => r.platform === pl)]));
-for (const [pl, c] of Object.entries(perPlat)) if (new Set(Object.values(c)).size !== 1) throw new Error(`unequal ${pl} counts ${JSON.stringify(c)}`);
+for (const pl of NON_X) if (new Set(Object.values(perPlat[pl])).size !== 1) throw new Error(`unequal ${pl} counts ${JSON.stringify(perPlat[pl])}`);
+// X is English only; the one other-language X row is the Arabic quote already scheduled.
+const xOther = rows.filter((r) => r.platform === "X" && r.lang !== "en" && !r.already_scheduled);
+if (xOther.length) throw new Error(`non-English X rows ${xOther.map((r) => r.id).join(", ")}`);
 // X cadence: gaps and daily counts on the one account.
 const xt = rows.filter((r) => r.platform === "X").map((r) => new Date(r.wib.replace(" ", "T") + ":00Z").getTime()).sort((a, b) => a - b);
 const gaps = xt.slice(1).map((t, i) => (t - xt[i]) / HOUR);
 const xDays = new Map<string, number>();
 xt.forEach((t) => xDays.set(iso(t).slice(0, 10), (xDays.get(iso(t).slice(0, 10)) ?? 0) + 1));
-const badGap = gaps.filter((g) => g < 4 || g > 8);
+// The two English originals already scheduled tonight sit 3.5 hours apart; that gap is X's, not ours.
+const takenT = new Set(X_TAKEN.map((x) => new Date(x.wib.replace(" ", "T") + ":00Z").getTime()));
+const badGap = gaps.filter((g, i) => (g < 4 || g > 8) && !(takenT.has(xt[i]) && takenT.has(xt[i + 1])));
 const xPerDay = [...xDays.entries()].filter(([d]) => d >= "2026-11-22" && d <= "2026-12-20").map(([, n]) => n);
 const heavy = rows.filter((r) => r.id.startsWith("X-heavy")).map((r) => r.wib);
+// Heavy pieces in every 7-day window that fits inside the calendar.
+const ht = heavy.map((w) => new Date(w.replace(" ", "T") + ":00Z").getTime());
+const winStart = new Date("2026-11-22T00:00:00Z").getTime(), winEnd = new Date("2026-12-21T00:00:00Z").getTime();
+const heavyWeeks: number[] = [];
+for (let w = winStart; w + 7 * DAY <= winEnd; w += DAY) heavyWeeks.push(ht.filter((t) => t >= w && t < w + 7 * DAY).length);
+const bad = [
+  ...(badGap.length ? [`${badGap.length} X gaps outside 4-8 hours: ${badGap.join(", ")}`] : []),
+  ...(Math.min(...xPerDay) < 3 || Math.max(...xPerDay) > 5 ? [`X per day ${Math.min(...xPerDay)}-${Math.max(...xPerDay)}`] : []),
+  ...(Math.min(...heavyWeeks) < 2 || Math.max(...heavyWeeks) > 4 ? [`heavy per 7 days ${Math.min(...heavyWeeks)}-${Math.max(...heavyWeeks)}`] : []),
+];
+if (bad.length) throw new Error(`X routine broken: ${bad.join("; ")}`);
 const words = rows.filter((r) => r.needs_wording);
 
 // ---------- write ----------
@@ -319,7 +325,7 @@ const meta = {
   built: new Date().toISOString(), approved_commit: APPROVED, window: "2026-11-22 to 2026-12-20, WIB",
   languages: MARKETS.map(({ lang, name, country, zone, off }) => ({ lang, name, country, zone, hours_from_wib: off })),
   deliveries_per_language: perLang, deliveries_per_platform_per_language: perPlat,
-  x: { per_day_min: Math.min(...xPerDay), per_day_max: Math.max(...xPerDay), gap_hours_min: Math.min(...gaps), gap_hours_max: Math.max(...gaps), gaps_outside_4_to_8: badGap.length, heavy_pieces: heavy, quote_slots: rows.filter((r) => r.id.startsWith("X-quote")).length },
+  x: { per_day_min: Math.min(...xPerDay), per_day_max: Math.max(...xPerDay), gap_hours_min: Math.min(...gaps), gap_hours_max: Math.max(...gaps), gaps_outside_4_to_8: badGap.length, english_only: true, heavy_per_7_days_min: Math.min(...heavyWeeks), heavy_per_7_days_max: Math.max(...heavyWeeks), heavy_pieces: heavy, new_originals: rows.filter((r) => r.id.startsWith("X-original")).length, approved_posts: rows.filter((r) => r.platform === "X" && r.post).length, quote_slots: rows.filter((r) => r.id.startsWith("X-quote")).length },
   needs_wording: words.length, missing_media: [...missingMedia],
 };
 writeFileSync(join(HERE, "deliveries.json"), JSON.stringify({ meta, rows }, null, 1) + "\n");
