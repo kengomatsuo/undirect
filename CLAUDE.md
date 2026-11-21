@@ -41,7 +41,9 @@ do not consult the rules. Full account:
 
 **Release binaries build on Xcode Cloud, never on the Mac (owner, 2026-11-21):** the
 Mac is shared by every session and a local archive starves them. `./deploy.sh build`
-and the binary half of `release` archive locally, so they are not used;
+and the binary half of `release` archive locally, so they are not used: push, then
+`python3 Support/AppStore/cloud_build.py` starts the "Release" workflow (archives
+both platforms, started only by hand, never by a push), and
 `ci_scripts/ci_post_clone.sh` generates the project there. Store text and
 screenshots still go up with `./deploy.sh metadata`.
 
