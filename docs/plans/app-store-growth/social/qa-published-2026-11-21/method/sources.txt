@@ -1,0 +1,13 @@
+cut-talent-en /Users/hafang/Repositories/cutling-promo/out/talent/explainer-en-portrait.mp4
+cut-talent-id /Users/hafang/Repositories/cutling-promo/out/talent/explainer-id-portrait.mp4
+cut-talent-ja /Users/hafang/Repositories/cutling-promo/out/talent/explainer-ja-portrait.mp4
+cut-green-en /Users/hafang/Repositories/cutling-promo/out/green/explainer-en-portrait.mp4
+cut-green-id /Users/hafang/Repositories/cutling-promo/out/green/explainer-id-portrait.mp4
+cut-green-ja /Users/hafang/Repositories/cutling-promo/out/green/explainer-ja-portrait.mp4
+cut-green2-en /Users/hafang/Repositories/cutling-promo/out/green2/explainer-en-portrait.mp4
+cut-green2-id /Users/hafang/Repositories/cutling-promo/out/green2/explainer-id-portrait.mp4
+cut-green2-ja /Users/hafang/Repositories/cutling-promo/out/green2/explainer-ja-portrait.mp4
+und-safe-en /Users/hafang/Repositories/undirect-promo/wire/out/safe/explainer2-en-portrait.mp4
+und-safe-id /Users/hafang/Repositories/undirect-promo/wire/out/safe/explainer2-id-portrait.mp4
+und-fix-en /Users/hafang/Repositories/undirect-promo/wire/out/fix/explainer2-en-portrait.mp4
+und-fix-id /Users/hafang/Repositories/undirect-promo/wire/out/fix/explainer2-id-portrait.mp4
