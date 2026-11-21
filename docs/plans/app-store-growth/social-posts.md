@@ -246,3 +246,5 @@ Owner: the X posts lacked pictures and ran too long. Read in Chrome 01:28-02:05 
 - Checks: social/x-images/checks/<row id>.jpg shows each picture at X's measured web (518 px) and mobile web (310 px) size with its words; checks/ocr.json is macOS Vision's reading of all 34, none with a bank word. `bun deliveries.ts` refuses a shared opening or sentence, bank details, clipboard history without the Mac, and a sale price outside the sale.
 - Still without words: X-heavy-en-4 to 13 and X-original-en-2 to 11 (Nov 29 on), and the 10 quote slots, which are written on the day.
 - Page: https://claude.ai/artifact/RTN1joQJUz6eKqvcH5De6f, version 11.
+
+| 2026-11-22 02:10 WIB | X @monholtco | Arabic @APPS_RH quote found missing from Scheduled; rescheduled same text for Nov 27 20:15 WIB, confirmed in Unsent > Scheduled | scheduled |
