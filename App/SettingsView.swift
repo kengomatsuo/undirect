@@ -24,6 +24,7 @@ struct SettingsView: View {
             }
             Section {
                 toggle("Note in the page", Binding(get: { rules.snapshot?.banner ?? true }, set: { rules.setBanner($0) }))
+                toggle("Effects on the page", Binding(get: { rules.snapshot?.effects ?? true }, set: { rules.setEffects($0) }))
                 choice("A destination with no rule", Binding(get: { rules.snapshot?.policy ?? "block" }, set: { rules.setPolicy($0) }), [
                     Choice(tag: "block", label: "Block it"),
                     Choice(tag: "allow", label: "Allow it"),

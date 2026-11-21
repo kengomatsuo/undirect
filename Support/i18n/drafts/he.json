@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "להגדרות, לוחצים על Undirect בסרגל הכלים."
+    },
+    "ext.setting.effects": {
+      "s": "אפקטים בדף"
     }
   }
 }

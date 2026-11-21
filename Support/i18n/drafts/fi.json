@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Asetukset saat painamalla Undirectia työkalupalkissa."
+    },
+    "ext.setting.effects": {
+      "s": "Sivun tehosteet"
     }
   }
 }

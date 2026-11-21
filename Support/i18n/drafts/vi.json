@@ -617,6 +617,9 @@
     },
     "ext.note.where": {
       "s": "Chạm vào Undirect trên thanh công cụ để mở cài đặt."
+    },
+    "ext.setting.effects": {
+      "s": "Hiệu ứng trên trang"
     }
   }
 }

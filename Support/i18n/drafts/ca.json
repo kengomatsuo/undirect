@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Prem Undirect a la barra d'eines per a la configuració."
+    },
+    "ext.setting.effects": {
+      "s": "Efectes a la pàgina"
     }
   }
 }

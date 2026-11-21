@@ -372,5 +372,9 @@
   "note_where": {
     "message": "સેટિંગ્સ માટે ટૂલબારમાં Undirect દબાવો.",
     "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
+  },
+  "setting_effects": {
+    "message": "પેજ ઇફેક્ટ્સ",
+    "description": "Toggle for the effects drawn on the page when something is stopped: the hidden layer breaking apart, a burst where a pop-up was refused."
   }
 }

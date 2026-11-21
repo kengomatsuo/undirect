@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Za nastavitve pritisnite Undirect v orodni vrstici."
+    },
+    "ext.setting.effects": {
+      "s": "Učinki na strani"
     }
   }
 }

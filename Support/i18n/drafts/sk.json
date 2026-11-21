@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Nastavenia nájdete po stlačení Undirect na paneli nástrojov."
+    },
+    "ext.setting.effects": {
+      "s": "Efekty na stránke"
     }
   }
 }

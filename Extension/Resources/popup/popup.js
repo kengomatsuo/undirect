@@ -258,7 +258,8 @@ async function load() {
   renderRules(state);
 
   document.getElementById("guard").checked = state.settings.enabled !== false;
-  document.getElementById("banner").checked = state.settings.banner === true;
+  document.getElementById("banner").checked = state.settings.banner !== false;
+  document.getElementById("effects").checked = state.settings.effects !== false;
   for (const radio of document.querySelectorAll('input[name="policy"]')) {
     radio.checked = radio.value === state.settings.policy;
   }
@@ -286,6 +287,10 @@ document.getElementById("guard").addEventListener("change", async (e) => {
 
 document.getElementById("banner").addEventListener("change", async (e) => {
   await send({ type: "undirect:set", settings: { banner: e.target.checked } });
+});
+
+document.getElementById("effects").addEventListener("change", async (e) => {
+  await send({ type: "undirect:set", settings: { effects: e.target.checked } });
 });
 
 for (const name of ["policy", "mode"]) {

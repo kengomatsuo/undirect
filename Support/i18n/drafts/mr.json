@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "सेटिंग्जसाठी टूलबारमधील Undirect दाबा."
+    },
+    "ext.setting.effects": {
+      "s": "पेज इफेक्ट्स"
     }
   }
 }

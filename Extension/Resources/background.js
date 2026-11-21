@@ -26,6 +26,7 @@ const DEFAULT_SETTINGS = {
   veto: true,
   recipes: true,
   banner: true, // a note in the page when something is stopped (on from 1.0.6)
+  effects: true, // the trap drawn breaking on the page (content/fx.js); fx.<name> turns one off
   policy: "block", // what an unknown cross-site destination gets
   mode: "watched", // "watched": only sites turned on; "everywhere": every site
 };
@@ -962,6 +963,7 @@ async function pushSnapshot(now = false) {
     enabled: state.settings.enabled !== false,
     mode: state.settings.mode ?? "watched",
     banner: state.settings.banner !== false,
+    effects: state.settings.effects !== false,
     everywhere: state.everywhere,
     perSite: state.perSite,
     watched: state.watched,

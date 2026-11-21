@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Tryck på Undirect i verktygsfältet för inställningar."
+    },
+    "ext.setting.effects": {
+      "s": "Effekter på sidan"
     }
   }
 }

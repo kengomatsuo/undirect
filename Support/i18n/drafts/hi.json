@@ -617,6 +617,9 @@
     },
     "ext.note.where": {
       "s": "सेटिंग के लिए टूलबार में Undirect दबाएँ।"
+    },
+    "ext.setting.effects": {
+      "s": "पेज इफ़ेक्ट"
     }
   }
 }

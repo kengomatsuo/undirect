@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Press Undirect in the toolbar for settings."
+    },
+    "ext.setting.effects": {
+      "s": "Page effects"
     }
   }
 }

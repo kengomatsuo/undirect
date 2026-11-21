@@ -26,6 +26,7 @@
         "lib/site.js",
         "lib/navigation.js",
         "sites/recipes.js",
+        "content/fx.js",
         "content/guard.js"
       ],
       "matches": [

@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Toca Undirect en la barra de herramientas para ver la configuración."
+    },
+    "ext.setting.effects": {
+      "s": "Efectos en la página"
     }
   }
 }

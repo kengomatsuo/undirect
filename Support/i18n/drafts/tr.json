@@ -617,6 +617,9 @@
     },
     "ext.note.where": {
       "s": "Ayarlar için araç çubuğunda Undirect'e dokunun."
+    },
+    "ext.setting.effects": {
+      "s": "Sayfa efektleri"
     }
   }
 }

@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "সেটিংসের জন্য টুলবারে Undirect চাপুন।"
+    },
+    "ext.setting.effects": {
+      "s": "পেজ ইফেক্ট"
     }
   }
 }

@@ -18,7 +18,7 @@
   // because a page reads its own settings once, at document_start, rather
   // than asking the background and waiting.
   const settings = {
-    enabled: true, sweep: true, veto: true, recipes: true, banner: true,
+    enabled: true, sweep: true, veto: true, recipes: true, banner: true, effects: true,
     policy: "block", mode: "watched",
   };
   const site = location.hostname;
@@ -263,6 +263,12 @@
   // Every cross-site destination the page reached for, whether or not it was
   // stopped. The popup lists these so the user can decide about each one.
   const TRAPS = new Set(["click-catcher", "overlay", "back-hijack"]);
+  const SHOWN_WHERE_CAUGHT = new Set(["click-catcher", "overlay", "href-swap"]);
+  let lastPress = {};
+
+  function fx(name, args) {
+    globalThis.UndirectFX?.play(name, args, settings);
+  }
 
   function seen({ kind, host, url, blocked, learn, sized, because }) {
     if (!active) return;
@@ -271,6 +277,14 @@
     const local = isOurs(host);
     if (local && !(blocked && TRAPS.has(kind))) return;
     if (blocked && (!local || kind === "back-hijack")) showNote(kind, Site.baseDomain(host));
+    if (blocked) {
+      // The trap's own effect; the layer that shatters and the link that
+      // snaps back are drawn where they are caught, since only there is the
+      // element still in hand.
+      if (kind === "no-tap") fx("field");
+      else if (kind === "back-hijack") fx("back");
+      else if (!SHOWN_WHERE_CAUGHT.has(kind)) fx("burst", lastPress);
+    }
     try {
       api.runtime.sendMessage({
         type: "undirect:seen",
@@ -315,6 +329,7 @@
     "pointerdown",
     (e) => {
       if (!active || !e.isTrusted) return;
+      lastPress = { x: e.clientX, y: e.clientY };
       pressed(e.target);
     },
     true
@@ -342,6 +357,9 @@
     for (let round = 0; round < 5; round++) {
       const hit = document.elementFromPoint(x, y);
       if (!hit || hit === document.body || hit === document.documentElement) break;
+      // Our own effects never take a press, but a hit test that ignores
+      // pointer-events (a test harness, an old engine) must not judge them.
+      if (hit.closest?.("[data-undirect-fx]")) break;
       if (cleared.has(hit)) break;
 
       const blank = blankAncestor(hit);
@@ -364,9 +382,11 @@
       }
 
       const where = blank?.action || blank?.href || "";
+      const rect = node.getBoundingClientRect();
       node.style.pointerEvents = "none";
       node.remove();
       removed += 1;
+      fx("shatter", { rect, x, y });
       seen({
         kind: blank ? "click-catcher" : "overlay",
         host: hostOf(where),
@@ -502,6 +522,7 @@
 
       e.preventDefault();
       e.stopImmediatePropagation();
+      fx("snap", { el: a });
       seen({
         kind: "href-swap",
         host: hostOf(href),
@@ -539,6 +560,7 @@
       if (!paintsNothing(form)) return;
       e.preventDefault();
       e.stopImmediatePropagation();
+      fx("shatter", { rect: form.getBoundingClientRect(), ...lastPress });
       seen({
         kind: "click-catcher",
         host: hostOf(form.action),

@@ -16,6 +16,7 @@ struct Snapshot: Codable, Sendable, Equatable {
     var enabled: Bool = true
     var mode: String = "watched"
     var banner: Bool = true
+    var effects: Bool = true
     var everywhere: [String: String] = [:]
     var perSite: [String: [String: String]] = [:]
     var watched: [String: Bool] = [:]
@@ -35,6 +36,7 @@ struct Snapshot: Codable, Sendable, Equatable {
         enabled = try c.decodeIfPresent(Bool.self, forKey: .enabled) ?? true
         mode = try c.decodeIfPresent(String.self, forKey: .mode) ?? "watched"
         banner = try c.decodeIfPresent(Bool.self, forKey: .banner) ?? true
+        effects = try c.decodeIfPresent(Bool.self, forKey: .effects) ?? true
         everywhere = try c.decodeIfPresent([String: String].self, forKey: .everywhere) ?? [:]
         perSite = try c.decodeIfPresent([String: [String: String]].self, forKey: .perSite) ?? [:]
         watched = try c.decodeIfPresent([String: Bool].self, forKey: .watched) ?? [:]

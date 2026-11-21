@@ -143,6 +143,10 @@ final class RulesModel {
         send(["action": "settings", "settings": ["banner": on]])
     }
 
+    func setEffects(_ on: Bool) {
+        send(["action": "settings", "settings": ["effects": on]])
+    }
+
     func setMode(_ mode: String) {
         send(["action": "settings", "settings": ["mode": mode]])
     }
@@ -180,6 +184,7 @@ final class RulesModel {
             if let policy = settings["policy"] as? String { shown.policy = policy }
             if let mode = settings["mode"] as? String { shown.mode = mode }
             if let banner = settings["banner"] as? Bool { shown.banner = banner }
+            if let effects = settings["effects"] as? Bool { shown.effects = effects }
             if let enabled = settings["enabled"] as? Bool { shown.enabled = enabled }
         default:
             break

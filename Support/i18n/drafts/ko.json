@@ -617,6 +617,9 @@
     },
     "ext.note.where": {
       "s": "설정은 도구 막대에서 Undirect를 누르세요."
+    },
+    "ext.setting.effects": {
+      "s": "페이지 효과"
     }
   }
 }

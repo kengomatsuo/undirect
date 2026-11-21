@@ -49,6 +49,9 @@ document.elementFromPoint = (x, y) => {
   let order = 0;
   for (const el of document.querySelectorAll("*")) {
     order += 1;
+    // A real hit test passes through pointer-events: none, as Undirect's own
+    // effect layers are drawn.
+    if (getComputedStyle(el).pointerEvents === "none") continue;
     const r = el.getBoundingClientRect();
     const width = r.width || (getComputedStyle(el).position === "fixed" ? 1280 : 0);
     const height = r.height || (getComputedStyle(el).position === "fixed" ? 720 : 0);

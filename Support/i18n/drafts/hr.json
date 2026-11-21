@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Za postavke dodirnite Undirect na alatnoj traci."
+    },
+    "ext.setting.effects": {
+      "s": "Efekti na stranici"
     }
   }
 }

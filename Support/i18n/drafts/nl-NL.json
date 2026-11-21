@@ -617,6 +617,9 @@
     },
     "ext.note.where": {
       "s": "Tik op Undirect in de knoppenbalk voor instellingen."
+    },
+    "ext.setting.effects": {
+      "s": "Effecten op de pagina"
     }
   }
 }

@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "A beállításokhoz koppints az Undirectre az eszközsoron."
+    },
+    "ext.setting.effects": {
+      "s": "Effektek az oldalon"
     }
   }
 }

@@ -617,6 +617,9 @@
     },
     "ext.note.where": {
       "s": "在工具列中點一下 Undirect 即可開啟設定。"
+    },
+    "ext.setting.effects": {
+      "s": "頁面效果"
     }
   }
 }

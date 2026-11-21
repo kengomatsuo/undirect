@@ -372,5 +372,9 @@
   "note_where": {
     "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗಾಗಿ ಟೂಲ್‌ಬಾರ್‌ನಲ್ಲಿ Undirect ಒತ್ತಿ.",
     "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
+  },
+  "setting_effects": {
+    "message": "ಪುಟದ ಎಫೆಕ್ಟ್‌ಗಳು",
+    "description": "Toggle for the effects drawn on the page when something is stopped: the hidden layer breaking apart, a burst where a pop-up was refused."
   }
 }

@@ -372,5 +372,9 @@
   "note_where": {
     "message": "Toca Undirect en la barra de herramientas para ver la configuración.",
     "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
+  },
+  "setting_effects": {
+    "message": "Efectos en la página",
+    "description": "Toggle for the effects drawn on the page when something is stopped: the hidden layer breaking apart, a burst where a pop-up was refused."
   }
 }

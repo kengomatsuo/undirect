@@ -617,6 +617,9 @@
     },
     "ext.note.where": {
       "s": "Ustawienia otworzysz, naciskając Undirect na pasku narzędzi."
+    },
+    "ext.setting.effects": {
+      "s": "Efekty na stronie"
     }
   }
 }

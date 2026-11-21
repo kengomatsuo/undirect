@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Apasă Undirect în bara de instrumente pentru setări."
+    },
+    "ext.setting.effects": {
+      "s": "Efecte pe pagină"
     }
   }
 }

@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "સેટિંગ્સ માટે ટૂલબારમાં Undirect દબાવો."
+    },
+    "ext.setting.effects": {
+      "s": "પેજ ઇફેક્ટ્સ"
     }
   }
 }

@@ -617,6 +617,9 @@
     },
     "ext.note.where": {
       "s": "Ketuk Undirect di bar alat untuk pengaturan."
+    },
+    "ext.setting.effects": {
+      "s": "Efek halaman"
     }
   }
 }

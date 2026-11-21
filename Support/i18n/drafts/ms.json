@@ -498,6 +498,9 @@
     },
     "ext.note.where": {
       "s": "Tekan Undirect pada bar alat untuk tetapan."
+    },
+    "ext.setting.effects": {
+      "s": "Kesan halaman"
     }
   }
 }
