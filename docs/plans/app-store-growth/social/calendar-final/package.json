@@ -1,0 +1,7 @@
+{
+  "name": "monholt-calendar-final",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "bun build.ts" },
+  "devDependencies": { "playwright": "1.56.1" }
+}
