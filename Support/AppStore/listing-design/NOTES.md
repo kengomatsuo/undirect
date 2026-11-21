@@ -31,3 +31,4 @@ whose Dynamic Island covers the top ~8%, so every word and card sits below 100 C
 - Cutling keeps copies of `tall.py`, `tall.css` and `fit.js` in Cutling/fastlane/compose/tall, its spec
   in `compose/tall/cutling/`, and renders with `compose/tall/render.py` to fastlane/screenshots_tall.
 - `ipip-frame.html#<png>` shows a shot inside iPip's phone frame, to check nothing is covered.
+- Cutling uses `wall.html#mint-tall-top`: a stronger green, with the waves also run through the top corners, because its floated UI covers the lower waves.
