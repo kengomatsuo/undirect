@@ -64,6 +64,21 @@ final class ExtensionStatus {
     }
 
     private static func read() async -> State {
+        #if os(macOS)
+        return await ask()
+        #else
+        if #available(iOS 26.2, *) { return await ask() }
+        // No way to ask before 26.2; the screen falls back to whether the
+        // extension has written to the app yet.
+        return .unavailable
+        #endif
+    }
+
+    // The macOS call covers both extension kinds; iOS only has the
+    // web-extension one, and only from 26.2, which is also when the state
+    // type itself arrived there.
+    @available(iOS 26.2, *)
+    private static func ask() async -> State {
         await withCheckedContinuation { continuation in
             let answer: @Sendable (SFSafariExtensionState?, (any Error)?) -> Void = { state, error in
                 if let error {
@@ -72,24 +87,16 @@ final class ExtensionStatus {
                     continuation.resume(returning: state?.isEnabled == true ? .on : .off)
                 }
             }
-            // The macOS call covers both extension kinds; iOS only has the
-            // web-extension one.
             #if os(macOS)
             SFSafariExtensionManager.getStateOfSafariExtension(
                 withIdentifier: extensionBundleIdentifier,
                 completionHandler: answer
             )
             #else
-            if #available(iOS 26.2, *) {
-                SFSafariExtensionManager.getStateOfExtension(
-                    withIdentifier: extensionBundleIdentifier,
-                    completionHandler: answer
-                )
-            } else {
-                // No way to ask before 26.2; the screen falls back to whether
-                // the extension has written to the app yet.
-                continuation.resume(returning: .unavailable)
-            }
+            SFSafariExtensionManager.getStateOfExtension(
+                withIdentifier: extensionBundleIdentifier,
+                completionHandler: answer
+            )
             #endif
         }
     }
