@@ -13,7 +13,7 @@ goes nowhere. Proof: `docs/screenshots/pains/` (Mac Safari, off vs on).
 | macOS 1.0.5 (15) | WAITING_FOR_REVIEW, release on approval; pulled 2026-11-21 on the owner's order for new Mac screenshots and resubmitted with the same build (07a2a624) | asc_state.py, 2026-11-21 |
 | Store text | name "Undirect - Tab & Popup Blocker", subtitle, keywords, What's New in 50 storefronts | ASC API appInfoLocalizations / versionLocalizations |
 | Featuring nomination | "Undirect stops redirects nobody tapped", App Enhancements, publish window from 2026-12-11, iPhone, iPad and Mac, demo links attached; SUBMITTED | ASC API nominations b4bd80a9 |
-| In-App Event | "The Stay-Put Update", Major Update badge, publish 2026-11-25, runs 2026-11-27 to 2026-12-27 (covers the sale and the nomination window), Open goes to the site's demo; in review, attached to the nomination | ASC API appEvents 6837368724, reviewSubmissions 946e9902 |
+| In-App Event | "The Stay-Put Update", Major Update badge, publish 2026-11-25, runs 2026-11-27 to 2026-12-27. Pulled from review 2026-11-21 on the owner's word (art judged ugly); back to DRAFT while Fable makes new art, then resubmitted with `create_event.py` after deleting the old screenshots | ASC API appEvents 6837368724 eventState DRAFT, 2026-11-21 |
 | Site and AI files | "from version 1.0.5" on all 50 support pages, llms.txt, demo pages /demo/scroll/ and /demo/back/ | curl of the live site |
 
 Apple asks three weeks' notice for featuring and the owner chose to release
