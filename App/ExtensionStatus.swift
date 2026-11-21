@@ -34,16 +34,32 @@ final class ExtensionStatus {
         }
     }
 
+    // iOS gained both a link to an extension's own settings page and a way to
+    // read whether it is on in 26.2. Before that (iOS 18 to 26.1) the app can
+    // only open Safari on the demo page, where the page menu's Manage
+    // Extensions turns Undirect on, and the screen says so in words.
+    static var opensExtensionSettings: Bool {
+        #if os(iOS)
+        if #available(iOS 26.2, *) { return true }
+        return false
+        #else
+        return true
+        #endif
+    }
+
     func openSafariSettings() {
         #if os(macOS)
         SFSafariApplication.showPreferencesForExtension(
             withIdentifier: extensionBundleIdentifier
         ) { _ in }
         #else
-        // One identifier opens that extension's own page under Safari
-        // Extensions. It arrived in iOS 26.2, which is also the first version
-        // that will say whether the extension is on, so the app asks for both.
-        SFSafariSettings.openExtensionsSettings(forIdentifiers: [extensionBundleIdentifier]) { _ in }
+        if #available(iOS 26.2, *) {
+            // One identifier opens that extension's own page under Safari
+            // Extensions.
+            SFSafariSettings.openExtensionsSettings(forIdentifiers: [extensionBundleIdentifier]) { _ in }
+        } else if let demo = URL(string: "https://undirect.matsuokengo.com/demo/") {
+            UIApplication.shared.open(demo)
+        }
         #endif
     }
 
@@ -64,10 +80,16 @@ final class ExtensionStatus {
                 completionHandler: answer
             )
             #else
-            SFSafariExtensionManager.getStateOfExtension(
-                withIdentifier: extensionBundleIdentifier,
-                completionHandler: answer
-            )
+            if #available(iOS 26.2, *) {
+                SFSafariExtensionManager.getStateOfExtension(
+                    withIdentifier: extensionBundleIdentifier,
+                    completionHandler: answer
+                )
+            } else {
+                // No way to ask before 26.2; the screen falls back to whether
+                // the extension has written to the app yet.
+                continuation.resume(returning: .unavailable)
+            }
             #endif
         }
     }

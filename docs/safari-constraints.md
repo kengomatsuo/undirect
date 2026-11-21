@@ -57,6 +57,11 @@ extension settings.
 `SFSafariExtensionManager` reads the on/off state. The method differs by
 platform: macOS has `getStateOfSafariExtension`, iOS has `getStateOfExtension`,
 and iOS only got the class in 26.2. `App/ExtensionStatus.swift` splits on that.
+From 1.0.6 the iOS floor is 18.0 (owner, 2026-11-21): below 26.2 the app cannot
+read the state or open the extension's settings page, so it reads `.unavailable`
+(the screen then waits for the extension to write to the app), and its button
+opens Safari on the demo page with the steps in words (page menu, Manage
+Extensions).
 
 ## The app's message does not wake the background page (2026-10-01)
 

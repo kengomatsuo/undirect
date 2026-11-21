@@ -31,6 +31,9 @@ struct SetupView: View {
         if case .failed = state {
             return "Safari did not answer. Switching it on there is picked up automatically."
         }
+        if !ExtensionStatus.opensExtensionSettings {
+            return "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
+        }
         return "Guarded sites no longer steal your clicks."
     }
 }
@@ -42,7 +45,7 @@ struct OpenExtensionsButton: View {
 
     var body: some View {
         Button(action: action) {
-            Text("Open Safari Extensions")
+            Text(ExtensionStatus.opensExtensionSettings ? LocalizedStringKey("Open Safari Extensions") : "Open Safari")
                 .frame(maxWidth: 420)
         }
         .modifier(ProminentGlass())

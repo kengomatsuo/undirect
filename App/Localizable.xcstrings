@@ -14352,6 +14352,604 @@
           }
         }
       }
+    },
+    "Open Safari": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar-SA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "افتح Safari"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari খুলুন"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Obre el Safari"
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otevřít Safari"
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åbn Safari"
+          }
+        },
+        "de-DE": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari öffnen"
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Άνοιγμα Safari"
+          }
+        },
+        "en-AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Safari"
+          }
+        },
+        "en-CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Safari"
+          }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Safari"
+          }
+        },
+        "es-ES": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Safari"
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir Safari"
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avaa Safari"
+          }
+        },
+        "fr-CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir Safari"
+          }
+        },
+        "fr-FR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ouvrir Safari"
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari ખોલો"
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "פתיחת Safari"
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari खोलें"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otvori Safari"
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari megnyitása"
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buka Safari"
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Apri Safari"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safariを開く"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari ತೆರೆಯಿರಿ"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari 열기"
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari തുറക്കുക"
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari उघडा"
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Buka Safari"
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åpne Safari"
+          }
+        },
+        "nl-NL": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open Safari"
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari ଖୋଲନ୍ତୁ"
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari ਖੋਲ੍ਹੋ"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otwórz Safari"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir o Safari"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Abrir o Safari"
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deschide Safari"
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Открыть Safari"
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Otvoriť Safari"
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Odpri Safari"
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öppna Safari"
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari-ஐத் திற"
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari తెరవండి"
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เปิด Safari"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari'yi Aç"
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Відкрити Safari"
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari کھولیں"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mở Safari"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打开 Safari"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "打開 Safari"
+          }
+        }
+      }
+    },
+    "In Safari, open the page menu, choose Manage Extensions and turn on Undirect.": {
+      "extractionState": "manual",
+      "localizations": {
+        "ar-SA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "في Safari، افتح قائمة الصفحة واختر «إدارة الامتدادات» وشغّل Undirect."
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari-তে পেজ মেনু খুলুন, Manage Extensions বেছে নিন এবং Undirect চালু করুন।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Al Safari, obre el menú de la pàgina, tria Gestiona les extensions i activa Undirect."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V Safari otevřete nabídku stránky, zvolte Spravovat rozšíření a zapněte Undirect."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åbn sidemenuen i Safari, vælg Administrer udvidelser, og slå Undirect til."
+          }
+        },
+        "de-DE": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öffne in Safari das Seitenmenü, wähle „Erweiterungen verwalten“ und schalte Undirect ein."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Στο Safari, ανοίξτε το μενού σελίδας, επιλέξτε Διαχείριση επεκτάσεων και ενεργοποιήστε το Undirect."
+          }
+        },
+        "en-AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
+          }
+        },
+        "en-CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
+          }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
+          }
+        },
+        "es-ES": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En Safari, abre el menú de la página, elige Gestionar extensiones y activa Undirect."
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En Safari, abre el menú de la página, elige Administrar extensiones y activa Undirect."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Avaa Safarissa sivuvalikko, valitse Hallitse laajennuksia ja laita Undirect päälle."
+          }
+        },
+        "fr-CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans Safari, ouvrez le menu de la page, choisissez Gérer les extensions et activez Undirect."
+          }
+        },
+        "fr-FR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dans Safari, ouvrez le menu de la page, choisissez Gérer les extensions et activez Undirect."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safariમાં પેજ મેનૂ ખોલો, Manage Extensions પસંદ કરો અને Undirect ચાલુ કરો."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ב-Safari, פותחים את תפריט הדף, בוחרים ״ניהול הרחבות״ ומפעילים את Undirect."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari में पेज मेन्यू खोलें, Manage Extensions चुनें और Undirect चालू करें।"
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "U Safariju otvorite izbornik stranice, odaberite Upravljanje proširenjima i uključite Undirect."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A Safariban nyisd meg az oldal menüjét, válaszd a Bővítmények kezelése lehetőséget, és kapcsold be az Undirectet."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Di Safari, buka menu halaman, pilih Kelola Ekstensi, lalu nyalakan Undirect."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "In Safari, apri il menu della pagina, scegli Gestisci estensioni e attiva Undirect."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safariでページメニューを開き、「拡張機能を管理」を選んでUndirectをオンにしてください。"
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari ಯಲ್ಲಿ ಪುಟ ಮೆನು ತೆರೆಯಿರಿ, Manage Extensions ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು Undirect ಆನ್ ಮಾಡಿ."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari에서 페이지 메뉴를 열고 '확장 프로그램 관리'를 선택한 다음 Undirect를 켜세요."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari-യിൽ പേജ് മെനു തുറന്ന് Manage Extensions തിരഞ്ഞെടുത്ത് Undirect ഓണാക്കുക."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari मध्ये पेज मेनू उघडा, Manage Extensions निवडा आणि Undirect सुरू करा."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dalam Safari, buka menu halaman, pilih Urus Sambungan dan hidupkan Undirect."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Åpne sidemenyen i Safari, velg Administrer utvidelser og slå på Undirect."
+          }
+        },
+        "nl-NL": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Open in Safari het paginamenu, kies 'Beheer extensies' en zet Undirect aan."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safariରେ ପେଜ୍ ମେନୁ ଖୋଲନ୍ତୁ, Manage Extensions ବାଛନ୍ତୁ ଏବଂ Undirect ଚାଲୁ କରନ୍ତୁ।"
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari ਵਿੱਚ ਪੇਜ ਮੀਨੂ ਖੋਲ੍ਹੋ, Manage Extensions ਚੁਣੋ ਅਤੇ Undirect ਚਾਲੂ ਕਰੋ।"
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "W Safari otwórz menu strony, wybierz Zarządzaj rozszerzeniami i włącz Undirect."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Safari, abra o menu da página, escolha Gerenciar Extensões e ative o Undirect."
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "No Safari, abra o menu da página, escolha Gerir extensões e ative o Undirect."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "În Safari, deschide meniul paginii, alege Gestionează extensiile și activează Undirect."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "В Safari откройте меню страницы, выберите «Управление расширениями» и включите Undirect."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V Safari otvorte ponuku stránky, vyberte Spravovať rozšírenia a zapnite Undirect."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "V Safariju odprite meni strani, izberite Upravljanje razširitev in vklopite Undirect."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Öppna sidmenyn i Safari, välj Hantera tillägg och slå på Undirect."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari-இல் பக்க மெனுவைத் திறந்து Manage Extensions-ஐத் தேர்ந்தெடுத்து Undirect-ஐ இயக்கவும்."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safariలో పేజీ మెనూ తెరిచి, Manage Extensions ఎంచుకుని Undirect ఆన్ చేయండి."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ใน Safari เปิดเมนูหน้าเว็บ เลือกจัดการส่วนขยาย แล้วเปิด Undirect"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari'de sayfa menüsünü açın, Uzantıları Yönet'i seçin ve Undirect'i açın."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "У Safari відкрийте меню сторінки, виберіть «Керувати розширеннями» й увімкніть Undirect."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Safari میں صفحے کا مینو کھولیں، Manage Extensions منتخب کریں اور Undirect آن کریں۔"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trong Safari, mở menu trang, chọn Quản lý tiện ích mở rộng và bật Undirect."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 Safari 中打开页面菜单，选择“管理扩展”，然后打开 Undirect。"
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 Safari 中打開頁面選單，選擇「管理延伸功能」，然後開啟 Undirect。"
+          }
+        }
+      }
     }
   },
   "version": "1.0"
