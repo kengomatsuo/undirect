@@ -13,7 +13,7 @@ goes nowhere. Proof: `docs/screenshots/pains/` (Mac Safari, off vs on).
 | macOS 1.0.5 (15) | WAITING_FOR_REVIEW, release on approval; pulled 2026-11-21 on the owner's order for new Mac screenshots and resubmitted with the same build (07a2a624) | asc_state.py, 2026-11-21 |
 | Store text | name "Undirect - Tab & Popup Blocker", subtitle, keywords, What's New in 50 storefronts | ASC API appInfoLocalizations / versionLocalizations |
 | Featuring nomination | "Undirect stops redirects nobody tapped", App Enhancements, publish window from 2026-12-11, iPhone, iPad and Mac, demo links attached; SUBMITTED | ASC API nominations b4bd80a9 |
-| In-App Event | "The Stay-Put Update", Major Update badge, publish 2026-11-25, runs 2026-11-27 to 2026-12-27. Art remade by Fable on the owner's word; he picked "Paperweight" (stone holding pages in the wind) from three; resubmitted 2026-11-21 in submission daf83baf. Earlier art kept as card-v1/v2.png | ASC API appEvents 6837368724 eventState WAITING_FOR_REVIEW, 2026-11-21 |
+| In-App Event | "The Stay-Put Update", Major Update badge, publish 2026-11-25, runs 2026-11-27 to 2026-12-27. Art: "Paperweight" (owner's pick). Text (owner's words): "No surprise redirects. No broken Back button." / "However a site invents ways to throw you to scam pages, Undirect closes them. You just stay put." Resubmitted 2026-11-21 in submission bf9eec72. When 1.1.0 is live, the long description gains what the effects show (one more review) | ASC API appEvents 6837368724 eventState WAITING_FOR_REVIEW, 2026-11-21 |
 | Site and AI files | "from version 1.0.5" on all 50 support pages, llms.txt, demo pages /demo/scroll/ and /demo/back/ | curl of the live site |
 
 Apple asks three weeks' notice for featuring and the owner chose to release

@@ -1,0 +1,185 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Fourth text sheet for the 1.0.5 event: the name kept, four pairs that sell the result to the buyer
+     (what they were doing, and that they get to finish it) and name no tool. Each pair is a stage 1 text
+     (true of the release on the store) and a stage 2 text (stage 1 plus one beat, true once 1.1.0 is live).
+     Same art and Apple overlay as the earlier sheets; the pairs and their sources are in
+     docs/research/in-app-event-art.md, "Event text, fourth pass".
+       bun render.mjs src/text-sheet-4.html text-sheet-4.png 2180 900 page 2   (run in options/) -->
+<style>
+  :root { --font: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif; }
+  html, body { margin: 0; background: #f2f2f4; font-family: var(--font); color: #1d1d1f; -webkit-font-smoothing: antialiased; }
+  body { width: 2180px; padding: 34px 44px 44px; box-sizing: border-box; }
+  h1 { font: 700 22px/1.2 var(--font); margin: 0 0 4px; }
+  .sub { font: 400 13px/1.45 var(--font); color: #6e6e73; margin: 0 0 26px; max-width: 1180px; }
+  .row { display: grid; grid-template-columns: repeat(5, 385px); justify-content: space-between; }
+  .opt h2 { font: 700 17px/1.2 var(--font); margin: 0 0 3px; }
+  .opt h2 em { font: 700 10px/1 var(--font); font-style: normal; letter-spacing: .05em; text-transform: uppercase; color: #fff; background: #0071e3; border-radius: 4px; padding: 3px 6px; margin-left: 8px; vertical-align: 2px; }
+  .opt .what { font: 400 12.5px/1.4 var(--font); color: #6e6e73; margin: 0 0 14px; min-height: 53px; }
+  .opt .det { margin: 0 auto; }
+  .lab { font: 600 10px/1 var(--font); letter-spacing: .06em; text-transform: uppercase; color: #8e8e93; margin: 18px 0 8px; }
+  .now { font: 700 11px/16px var(--font); color: #0071e3; text-transform: uppercase; letter-spacing: .02em; margin-bottom: 4px; }
+  .counts { margin: 16px 0 0; padding: 0; list-style: none; font: 400 12px/1.45 var(--font); color: #1d1d1f; }
+  .counts li { display: grid; grid-template-columns: 44px 1fr 46px; gap: 8px; padding: 5px 0; border-top: 1px solid #d2d2d7; }
+  .counts li:last-child { border-bottom: 1px solid #d2d2d7; }
+  .counts span { color: #8e8e93; font-weight: 600; font-size: 10px; letter-spacing: .05em; text-transform: uppercase; padding-top: 2px; }
+  .counts b { font-weight: 400; color: #6e6e73; text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* Apple's event card: 16:9, text over the artwork */
+  .card { position: relative; width: 385px; height: 216.5px; border-radius: 17px; overflow: hidden; display: grid; grid-template-areas: "content"; box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 8px 24px rgb(0 0 0 / 10%); }
+  .card > img, .det > img { grid-area: content; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .gradient-container { grid-area: content; position: relative; z-index: 1; }
+  .gradient-overlay { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    background: linear-gradient(#0000, var(--color) var(--height, 100%)); bottom: 0; filter: saturate(1.5) brightness(var(--brightness));
+    height: var(--height, 60%); -webkit-mask-image: linear-gradient(180deg, #0000 6%, #000001 85%); mask-image: linear-gradient(180deg, #0000 6%, #000001 85%);
+    position: absolute; width: 100%; z-index: 1; }
+  .card .gradient-overlay { --color: rgb(83 83 83 / 48%); --height: 80%; --brightness: .85; border-radius: 17px; }
+  .card .text-container { color: #ffffffeb; display: flex; flex-direction: column; grid-area: content; justify-content: flex-end; padding: 12px 16px; z-index: 2; }
+  .card .kind { font: 600 12px/1.25 var(--font); text-transform: uppercase; opacity: .92; }
+  .card h3 { font: 400 17px/1.41 var(--font); margin: 0; }
+  .card p { font: 600 12px/1.25 var(--font); margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* Apple's event details page: 9:16 */
+  .det { position: relative; width: 340px; height: 604.4px; border-radius: 16px; overflow: hidden; display: grid; grid-template-areas: "time" "text"; grid-template-rows: 1fr auto; box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 8px 24px rgb(0 0 0 / 10%); }
+  .det > img { grid-column: 1; grid-row: 1 / 3; position: absolute; inset: 0; }
+  .det .gradient-overlay { --height: 70%; --brightness: .85; border-radius: 16px; }
+  .det .time { grid-area: time; margin: 16px 0 0 16px; z-index: 3; }
+  .det .time span { background: #ffffffa3; border-radius: 12px; color: #000000d9; font: 600 12px/1.25 var(--font); padding: 3px 10px; }
+  .det .text-container { color: #ffffffeb; display: flex; flex-direction: column; gap: 16px; grid-area: text; justify-content: space-between; padding: 16px; z-index: 2; }
+  .det .event-details-container { display: flex; flex-direction: column; gap: 6px; }
+  .det .kind { font: 600 12px/1.25 var(--font); text-transform: uppercase; }
+  .det .title { font: 700 26px/1.23 var(--font); margin: 0; }
+  .det .subtitle { font: 400 15px/1.33 var(--font); margin: 0; }
+  .det .lockup { border-top: 1px solid #ffffff4d; padding-top: 16px; display: flex; align-items: center; gap: 10px; }
+  .det .lockup img { width: 40px; height: 40px; border-radius: 9px; flex: none; }
+  .det .lockup > span:not(.view) { min-width: 0; }
+  .det .lockup b { font: 600 13px/1.2 var(--font); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .det .lockup i { font: 400 11px/1.3 var(--font); font-style: normal; opacity: .75; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .det .lockup .view { margin-left: auto; font: 700 13px/1 var(--font); background: #ffffff38; border-radius: 14px; padding: 7px 16px; flex: none; }
+  .band { margin: 0 0 20px; padding: 0 0 8px; border-bottom: 2px solid #1d1d1f; display: flex; align-items: baseline; gap: 14px; }
+  .band + .row { margin-bottom: 46px; }
+  .band h2 { font: 700 19px/1.2 var(--font); margin: 0; }
+  .band p { font: 400 13px/1.4 var(--font); color: #6e6e73; margin: 0; }
+  .band.later h2 { color: #b3261e; } .band.later { border-color: #b3261e; }
+  .opt.note { align-self: start; background: #fff; border-radius: 14px; padding: 18px 20px; box-sizing: border-box; font: 400 13px/1.5 var(--font); color: #1d1d1f; }
+  .opt.note h2 { margin-bottom: 8px; } .opt.note p { margin: 0 0 10px; } .opt.note p:last-child { margin: 0; }
+  .counts mark { background: #ffe08a; color: inherit; border-radius: 3px; padding: 0 2px; }
+  .same { font: 400 11.5px/1.4 var(--font); color: #8e8e93; margin: 8px 0 0; }
+</style></head><body>
+<h1>Undirect In-App Event, fourth pass: the result, not the feature</h1>
+<p class="sub">The name stays “The Stay-Put Update”. Each column is one pair: the text for now on top, and under it the same text with one beat added for the day 1.1.0 is on the store. Every line says what the buyer gets to do; the wording comes from the complaints in docs/research/undirect-voice-of-customer.md. Apple’s limits are 50 and 120 characters.</p>
+<div id="sheet"></div>
+<script>
+const KIND = "Major Update", NAME = "The Stay-Put Update";
+const BG = "#ce0420";   // the Paperweight details image's own lower third, as in contact.html
+const ROWS = [
+ {
+  "title": "Stage 1: true of the release on the store now",
+  "sub": "Whatever pages try, you still get where you meant to go.",
+  "sets": [
+   {
+    "tag": "Before",
+    "what": "The text in event.json today. It says what the page can no longer do, which is the maker's view of it.",
+    "short": "Pages can no longer send you away with no tap",
+    "long": "Undirect now keeps you on the page when a site redirects as it loads or while you scroll, and Back takes you back."
+   },
+   {
+    "tag": "A. Read on",
+    "what": "The call and answer he liked, with every answer a thing the reader gets to do. The feeling “whatever the page tries” opens the details page.",
+    "short": "Reading? Read on. Leaving? Leave.",
+    "long": "Whatever the page tries, you finish the article and the Back button takes you back."
+   },
+   {
+    "tag": "B. The article, not the scam page",
+    "what": "What the buyer was doing and what they got instead, in their own two nouns. Clear to someone who has never heard of the app.",
+    "short": "Read the article, not the scam page.",
+    "long": "Finish what you opened. Press the Back button once and go back.",
+    "pick": true
+   },
+   {
+    "tag": "C. Still here",
+    "what": "The buyer's side of the story after the page has had its go. It is also what “stay put” means.",
+    "short": "Still here. Still reading.",
+    "long": "A page tries to send you away. You stay, and the Back button still takes you back."
+   },
+   {
+    "tag": "D. Pages try",
+    "what": "The feeling he named, in five words. The details page is three things you do and what happens, the app's main point last.",
+    "short": "Pages try. You read on.",
+    "long": "Scroll and stay. Press the Back button and go back. Tap a link and land on it."
+   }
+  ]
+ },
+ {
+  "title": "Stage 2: the same text plus one beat, once 1.1.0 is live",
+  "sub": "You see it happen, so you know you are fine.",
+  "later": true,
+  "sets": [
+   {
+    "tag": "How the two stages work",
+    "note": [
+     "Stage 1 is what a buyer gets from the release on the store now: they stay on what they opened, and the Back button takes them back.",
+     "Stage 2 is stage 1 with one beat added, marked in yellow under each card. The beat is a result too: with 1.1.0 the buyer sees the page's attempt on screen, so they stop wondering whether their phone is the problem. It goes up the day 1.1.0 is live, and not before.",
+     "No line names a tool. The words left out on purpose: caught, blocked, trap, trick, layer, shatter."
+    ]
+   },
+   {
+    "tag": "A, stage 2",
+    "what": "",
+    "short": "Reading? Read on. Leaving? Leave. Worried? Don't.",
+    "long": "Whatever the page tries, you finish the article and the Back button takes you back. See it happen and stop wondering.",
+    "markS": "Reading? Read on. Leaving? Leave.{ Worried? Don't.}",
+    "markL": "Whatever the page tries, you finish the article and the Back button takes you back.{ See it happen and stop wondering.}",
+    "sameCard": false
+   },
+   {
+    "tag": "B, stage 2",
+    "what": "",
+    "short": "Read the article, not the scam page. Watch it try.",
+    "long": "Finish what you opened. Press the Back button once and go back. See what the page tried, and know it's not your phone.",
+    "markS": "Read the article, not the scam page.{ Watch it try.}",
+    "markL": "Finish what you opened. Press the Back button once and go back.{ See what the page tried, and know it's not your phone.}",
+    "sameCard": false
+   },
+   {
+    "tag": "C, stage 2",
+    "what": "",
+    "short": "Still here. Still reading. Now you see why.",
+    "long": "A page tries to send you away. You stay, and the Back button still takes you back. You see it, and you know you're fine.",
+    "markS": "Still here. Still reading.{ Now you see why.}",
+    "markL": "A page tries to send you away. You stay, and the Back button still takes you back.{ You see it, and you know you're fine.}",
+    "sameCard": false
+   },
+   {
+    "tag": "D, stage 2",
+    "what": "",
+    "short": "Pages try. You read on. And you see each try.",
+    "long": "Scroll and stay. Press the Back button and go back. Tap a link and land on it. And see for yourself each time.",
+    "markS": "Pages try. You read on.{ And you see each try.}",
+    "markL": "Scroll and stay. Press the Back button and go back. Tap a link and land on it.{ And see for yourself each time.}",
+    "sameCard": false
+   }
+  ]
+ }
+];
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const card = (e) => `<div class="card"><img src="../../card.png"><div class="gradient-container"><div class="gradient-overlay"></div></div>
+  <div class="text-container"><span class="kind">${KIND}</span><h3>${NAME}</h3><p>${esc(e.short)}</p></div></div>`;
+const det = (e) => `<div class="det"><img src="../../details.png"><div class="gradient-overlay" style="--color:${BG}"></div>
+  <div class="time"><span>Happening Now</span></div>
+  <div class="text-container"><div class="event-details-container"><span class="kind">${KIND}</span><h2 class="title">${NAME}</h2><p class="subtitle">${esc(e.long)}</p></div>
+  <div class="lockup"><img src="../../../../../../web/undirect-app-icon.png"><span><b>Undirect - Tab &amp; Popup Blocker</b><i>Stop Safari redirects, ad tabs</i></span><span class="view">View</span></div></div></div>`;
+const mark = (m, plain) => m ? esc(m).replace("{", "<mark>").replace("}", "</mark>") : esc(plain);
+const cell = (e) => e.note ? `<div class="opt note"><h2>${esc(e.tag)}</h2>${e.note.map((p) => `<p>${p}</p>`).join("")}</div>`
+  : `<div class="opt"><h2>${esc(e.tag)}${e.pick ? "<em>Pick</em>" : ""}</h2><p class="what">${e.what || "Stage 1 plus the marked beat."}</p>
+  <div class="now">Happening now</div>${card(e)}
+  <div class="lab">Event details page</div>${det(e)}
+  <ul class="counts"><li><span>Short</span><div>${mark(e.markS, e.short)}</div><b>${e.short.length}/50</b></li><li><span>Long</span><div>${mark(e.markL, e.long)}</div><b>${e.long.length}/120</b></li></ul>${e.sameCard ? '<p class="same">The card line is the same as stage 1: it is already 50 characters.</p>' : ""}</div>`;
+document.getElementById("sheet").innerHTML = ROWS.map((r) => `<div class="band${r.later ? " later" : ""}"><h2>${esc(r.title)}</h2><p>${r.sub}</p></div><div class="row">${r.sets.map(cell).join("")}</div>`).join("");
+const all = ROWS.flatMap((r) => r.sets).filter((e) => !e.note);
+const over = all.filter((e) => e.short.length > 50 || e.long.length > 120).map((e) => e.tag);
+const clipped = [...document.querySelectorAll(".card p")].filter((p) => p.scrollWidth > p.clientWidth).length;
+if (over.length) window.__error = "ERR over Apple's limit: " + over.join(", ");
+Promise.all([...document.images].map((i) => i.decode().catch(() => {}))).then(() => { window.__note = `text sheet 4, ${all.length} sets, ${clipped} short descriptions clipped`; window.__done = true; });
+</script>
+</body></html>

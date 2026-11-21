@@ -1,0 +1,100 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Text sheet for the 1.0.5 event: the current name, short and long description and each rewritten set,
+     over the chosen Paperweight art (../../card.png, ../../details.png) under Apple's own overlay.
+     The overlay rules are the ones contact.html copied from the web App Store's stylesheet
+     (apps.apple.com/assets/index~Cuua8lPjmd.css, read 2026-11-21), recorded in
+     docs/research/in-app-event-art.md; the sets and their sources are in that file's "Event text" section.
+     The labels and counts are for choosing; none of them is in the art or the event.
+       bun render.mjs src/text-sheet.html text-sheet.png 2180 900 page 2   (run in options/; the height is the document's own) -->
+<style>
+  :root { --font: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif; }
+  html, body { margin: 0; background: #f2f2f4; font-family: var(--font); color: #1d1d1f; -webkit-font-smoothing: antialiased; }
+  body { width: 2180px; padding: 34px 44px 44px; box-sizing: border-box; }
+  h1 { font: 700 22px/1.2 var(--font); margin: 0 0 4px; }
+  .sub { font: 400 13px/1.45 var(--font); color: #6e6e73; margin: 0 0 26px; max-width: 1180px; }
+  .row { display: grid; grid-template-columns: repeat(5, 385px); justify-content: space-between; }
+  .opt h2 { font: 700 17px/1.2 var(--font); margin: 0 0 3px; }
+  .opt h2 em { font: 700 10px/1 var(--font); font-style: normal; letter-spacing: .05em; text-transform: uppercase; color: #fff; background: #0071e3; border-radius: 4px; padding: 3px 6px; margin-left: 8px; vertical-align: 2px; }
+  .opt .what { font: 400 12.5px/1.4 var(--font); color: #6e6e73; margin: 0 0 14px; min-height: 53px; }
+  .opt .det { margin: 0 auto; }
+  .lab { font: 600 10px/1 var(--font); letter-spacing: .06em; text-transform: uppercase; color: #8e8e93; margin: 18px 0 8px; }
+  .now { font: 700 11px/16px var(--font); color: #0071e3; text-transform: uppercase; letter-spacing: .02em; margin-bottom: 4px; }
+  .counts { margin: 16px 0 0; padding: 0; list-style: none; font: 400 12px/1.45 var(--font); color: #1d1d1f; }
+  .counts li { display: grid; grid-template-columns: 44px 1fr 46px; gap: 8px; padding: 5px 0; border-top: 1px solid #d2d2d7; }
+  .counts li:last-child { border-bottom: 1px solid #d2d2d7; }
+  .counts span { color: #8e8e93; font-weight: 600; font-size: 10px; letter-spacing: .05em; text-transform: uppercase; padding-top: 2px; }
+  .counts b { font-weight: 400; color: #6e6e73; text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* Apple's event card: 16:9, text over the artwork */
+  .card { position: relative; width: 385px; height: 216.5px; border-radius: 17px; overflow: hidden; display: grid; grid-template-areas: "content"; box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 8px 24px rgb(0 0 0 / 10%); }
+  .card > img, .det > img { grid-area: content; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .gradient-container { grid-area: content; position: relative; z-index: 1; }
+  .gradient-overlay { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    background: linear-gradient(#0000, var(--color) var(--height, 100%)); bottom: 0; filter: saturate(1.5) brightness(var(--brightness));
+    height: var(--height, 60%); -webkit-mask-image: linear-gradient(180deg, #0000 6%, #000001 85%); mask-image: linear-gradient(180deg, #0000 6%, #000001 85%);
+    position: absolute; width: 100%; z-index: 1; }
+  .card .gradient-overlay { --color: rgb(83 83 83 / 48%); --height: 80%; --brightness: .85; border-radius: 17px; }
+  .card .text-container { color: #ffffffeb; display: flex; flex-direction: column; grid-area: content; justify-content: flex-end; padding: 12px 16px; z-index: 2; }
+  .card .kind { font: 600 12px/1.25 var(--font); text-transform: uppercase; opacity: .92; }
+  .card h3 { font: 400 17px/1.41 var(--font); margin: 0; }
+  .card p { font: 600 12px/1.25 var(--font); margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* Apple's event details page: 9:16 */
+  .det { position: relative; width: 340px; height: 604.4px; border-radius: 16px; overflow: hidden; display: grid; grid-template-areas: "time" "text"; grid-template-rows: 1fr auto; box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 8px 24px rgb(0 0 0 / 10%); }
+  .det > img { grid-column: 1; grid-row: 1 / 3; position: absolute; inset: 0; }
+  .det .gradient-overlay { --height: 70%; --brightness: .85; border-radius: 16px; }
+  .det .time { grid-area: time; margin: 16px 0 0 16px; z-index: 3; }
+  .det .time span { background: #ffffffa3; border-radius: 12px; color: #000000d9; font: 600 12px/1.25 var(--font); padding: 3px 10px; }
+  .det .text-container { color: #ffffffeb; display: flex; flex-direction: column; gap: 16px; grid-area: text; justify-content: space-between; padding: 16px; z-index: 2; }
+  .det .event-details-container { display: flex; flex-direction: column; gap: 6px; }
+  .det .kind { font: 600 12px/1.25 var(--font); text-transform: uppercase; }
+  .det .title { font: 700 26px/1.23 var(--font); margin: 0; }
+  .det .subtitle { font: 400 15px/1.33 var(--font); margin: 0; }
+  .det .lockup { border-top: 1px solid #ffffff4d; padding-top: 16px; display: flex; align-items: center; gap: 10px; }
+  .det .lockup img { width: 40px; height: 40px; border-radius: 9px; flex: none; }
+  .det .lockup > span:not(.view) { min-width: 0; }
+  .det .lockup b { font: 600 13px/1.2 var(--font); display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .det .lockup i { font: 400 11px/1.3 var(--font); font-style: normal; opacity: .75; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .det .lockup .view { margin-left: auto; font: 700 13px/1 var(--font); background: #ffffff38; border-radius: 14px; padding: 7px 16px; flex: none; }
+</style></head><body>
+<h1>Undirect 1.0.5 In-App Event: the text, before and four rewrites</h1>
+<p class="sub">Each set over the Paperweight art as the web App Store draws it: the card (16:9, badge, name and short description) and the event details page (9:16, badge, name and long description). Apple's limits are 30, 50 and 120 characters. The iPhone App Store sets the same lines larger, so the App Store Connect preview is still the last check.</p>
+<div class="row" id="row"></div>
+<script>
+const KIND = "Major Update";
+const BG = "#ce0420";   // the Paperweight details image's own lower third, as in contact.html
+const SETS = [
+  { tag: "Before", what: "The text in event.json today. The name repeats the badge's word, and the short description describes the mechanism from the page's side.",
+    name: "The Stay-Put Update", short: "Pages can no longer send you away with no tap",
+    long: "Undirect now keeps you on the page when a site redirects as it loads or while you scroll, and Back takes you back." },
+  { tag: "A. The complaint, answered", pick: true, what: "The short description is the buyer's own sentence turned into a question. The long one gives when it fires, where it applies, and Back.",
+    name: "The Page Stays Put", short: "Redirected without tapping anything? Not anymore.",
+    long: "On sites where Undirect is on, a page can't send you elsewhere as it loads or while you scroll. And Back works again." },
+  { tag: "B. The reader's moment", what: "The name is the rule in plain words and holds “redirect”. The card promises the calm; the details page tells the moment it ends.",
+    name: "No Redirect Without a Tap", short: "Read to the end. The page can't send you away.",
+    long: "You're reading, you touch nothing, and you land on a scam page. Undirect now stops that, and Back works again." },
+  { tag: "C. The Back button", what: "Leads with the Back trap. Shown on Mac Safari only so far; this card is seen on iPhone and iPad.",
+    name: "Back Means Back", short: "Pages can no longer trap you with the Back button",
+    long: "Press Back five times and still on the same page? That's over, and so are redirects that fire without a tap." },
+  { tag: "D. The name kept", what: "Keeps “The Stay-Put Update” and tells an owner what they will see: they stay, and the address is in the list. No room for Back.",
+    name: "The Stay-Put Update", short: "Now stops pages that redirect on their own",
+    long: "If a page tries to send you off as it loads or while you scroll, you stay put and the address shows in your list." },
+];
+const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
+const card = (e) => `<div class="card"><img src="../../card.png"><div class="gradient-container"><div class="gradient-overlay"></div></div>
+  <div class="text-container"><span class="kind">${KIND}</span><h3>${esc(e.name)}</h3><p>${esc(e.short)}</p></div></div>`;
+const det = (e) => `<div class="det"><img src="../../details.png"><div class="gradient-overlay" style="--color:${BG}"></div>
+  <div class="time"><span>Happening Now</span></div>
+  <div class="text-container"><div class="event-details-container"><span class="kind">${KIND}</span><h2 class="title">${esc(e.name)}</h2><p class="subtitle">${esc(e.long)}</p></div>
+  <div class="lockup"><img src="../../../../../../web/undirect-app-icon.png"><span><b>Undirect - Tab &amp; Popup Blocker</b><i>Stop Safari redirects, ad tabs</i></span><span class="view">View</span></div></div></div>`;
+document.getElementById("row").innerHTML = SETS.map((e) => `<div class="opt"><h2>${esc(e.tag)}${e.pick ? "<em>Pick</em>" : ""}</h2><p class="what">${e.what}</p>
+  <div class="now">Happening now</div>${card(e)}
+  <div class="lab">Event details page</div>${det(e)}
+  <ul class="counts"><li><span>Name</span>${esc(e.name)}<b>${e.name.length}/30</b></li><li><span>Short</span>${esc(e.short)}<b>${e.short.length}/50</b></li><li><span>Long</span>${esc(e.long)}<b>${e.long.length}/120</b></li></ul></div>`).join("");
+const over = SETS.filter((e) => e.name.length > 30 || e.short.length > 50 || e.long.length > 120).map((e) => e.tag);
+const clipped = [...document.querySelectorAll(".card p")].filter((p) => p.scrollWidth > p.clientWidth).length;
+if (over.length) window.__error = "ERR over Apple's limit: " + over.join(", ");
+Promise.all([...document.images].map((i) => i.decode().catch(() => {}))).then(() => { window.__note = `text sheet, ${SETS.length} sets, ${clipped} short descriptions clipped`; window.__done = true; });
+</script>
+</body></html>

@@ -10,8 +10,8 @@
   "localizations": {
     "en-US": {
       "name": "The Stay-Put Update",
-      "shortDescription": "Pages can no longer send you away with no tap",
-      "longDescription": "Undirect now keeps you on the page when a site redirects as it loads or while you scroll, and Back takes you back."
+      "shortDescription": "No surprise redirects. No broken Back button.",
+      "longDescription": "However a site invents ways to throw you to scam pages, Undirect closes them. You just stay put."
     }
   },
   "media": {
