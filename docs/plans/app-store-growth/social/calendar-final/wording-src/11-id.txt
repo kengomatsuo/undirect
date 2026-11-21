@@ -1,0 +1,471 @@
+=== id
+@P10
+B: Salin kode pintu, lalu nomor resi, lalu link rapat. iPhone cuma menyimpan yang terakhir.
+
+Baru pindah dari Android dan kangen klip yang bisa disematkan? Cutling menyematkan teks yang kamu tempel seharian di keyboard. Cutling tidak merekam apa yang kamu salin, karena iOS memang tidak mengizinkan aplikasi mana pun melakukannya.
+Q: Sejak meninggalkan Android, fitur apa yang paling kamu kangenin?
+T: Pindah dari Android? Sematkan klip di keyboard iPhone
+@P11
+B: Klik Play di Safari Mac, yang terbuka tab kasino: "bonus sambutan 200%".
+
+Klik tombol Undirect sekali dan ia aktif untuk situs itu. Setelah itu Play tidak membuka tab baru lagi.
+Q: Di Mac kamu begini juga, atau cuma di iPhone?
+T: Safari di Mac membuka tab kasino waktu Play diklik
+@P12
+B: Penggantian Teks di iPhone cuma menyimpan teks polos dan baru muncul kalau kamu mengetik pintasannya. Ada juga yang mendapati seluruh daftarnya hilang dari satu perangkat setelah update.
+
+Di Cutling, satu simpanan bisa berisi satu paragraf utuh atau gambar, dan sinkron lewat iCloud milikmu sendiri.
+Q: Kamu masih pakai Penggantian Teks, atau sudah menyerah?
+@P13
+B: Situs streaming gratis, dan tiap kali Play ditekan yang terbuka iklan, filmnya tidak jalan.
+
+Nyalakan Undirect sekali untuk situs itu, dan Play langsung memutar filmnya.
+Q: Situs streaming mana yang paling parah soal ini?
+T: Situs streaming gratis: tekan Play, yang terbuka iklan
+@P14
+B: Pintasan Penggantian Teks jalan di iPhone, tapi di iPad "almt" tetap saja "almt".
+
+Simpan teksnya sekali di Cutling, dan teks itu juga ada di keyboard iPad, sinkron lewat iCloud milikmu sendiri.
+Q: Penggantian Teks kamu pernah hilang di salah satu perangkat?
+T: Penggantian Teks tidak sinkron ke iPad
+X: Pintasan Penggantian Teks jalan di iPhone, tapi di iPad "almt" tetap saja "almt".
+
+Simpan teksnya sekali di Cutling, dan teks itu juga ada di keyboard iPad, sinkron lewat iCloud milikmu sendiri.
+@P15
+TK: Pemblokir iklanmu berhasil menahan pengalihan ini? Jawab di polling.
+PQ: Pemblokir iklanmu bisa menahan tab yang terbuka saat kamu mengetuk?
+PO: Bisa / Sebagian masih lolos / Tidak ngaruh / Tidak pakai pemblokir
+FC: Pemblokir iklan kerjanya menyembunyikan iklan. Tab yang terbuka saat kamu menekan Play itu ulah halaman yang mengambil ketukanmu, jadi tidak ada yang bisa disembunyikan. Bagian itu yang ditahan Undirect, jadi pakai dua-duanya.
+ST: Quiz: "Pemblokir iklanmu nyala. Mana yang bisa disembunyikannya?" · Iklan banner / Tab yang dibuka Play · correct: Iklan banner
+TQ: Pemblokirmu berhasil menahan pengalihan?
+TO: Berhasil / Sebagian / Tidak / Tidak pakai
+@P16
+B: "Ini clipboard, bukan papan iklan." Begitu tulis seorang pengulas tentang keyboard tempel yang disisipi iklan.
+
+Cutling tidak punya iklan dan tidak butuh akun.
+Q: Kamu tahan pakai keyboard yang ada iklannya?
+@P17
+B: Black Friday, 27 sampai 30 November di App Store:
+Cutling Rp 59.000 (biasanya Rp 99.000)
+Undirect Rp 19.000 (biasanya Rp 39.000)
+Sekali beli, berlaku untuk iPhone, iPad, dan Mac.
+B2: Black Friday di App Store, 27 sampai 30 November. Undirect Rp 19.000 dari Rp 39.000, Cutling Rp 59.000 dari Rp 99.000. Sekali beli sudah termasuk iPhone, iPad, dan Mac.
+Q: Mana yang kamu incar akhir pekan ini?
+@P18
+B: Sudah bayar langganan setahun penuh, tab pengalihan tetap saja lolos.
+
+Undirect cukup dibeli sekali. Kamu tidak perlu membuat akun, dan tidak ada data penjelajahanmu yang dikirim ke mana pun.
+Q: Berapa paling mahal kamu pernah bayar untuk pemblokir yang tetap meloloskan pengalihan?
+@P19
+TK: Kamu mau bayar tiap bulan untuk aplikasi clipboard? Pilih di polling.
+PQ: Mau bayar langganan untuk aplikasi clipboard?
+PO: Tidak masalah / Tidak akan pernah / Bayar, tapi kesal / Clipboard itu apa?
+FC: Cutling cukup dibeli sekali, tanpa langganan, untuk iPhone, iPad, dan aplikasi Mac-nya.
+ST: Emoji slider: "Seberapa kesal kamu dengan langganan untuk clipboard?" · 😤
+TQ: Mau bayar bulanan untuk clipboard?
+TO: Tidak akan / Mungkin / Mau
+@P20
+B: iPhone kamu tidak kena virus.
+
+Halaman "iPhone dalam bahaya" itu datang dari situs yang sedang kamu buka. Tutup tabnya, jangan pasang atau bayar apa pun yang dimintanya. Kirim ini ke anggota keluarga yang suka panik melihat halaman seperti itu.
+Q: Siapa di keluargamu yang menelepon kamu gara-gara halaman begini?
+@P21
+B: Di Windows, Win+V menampilkan semua yang pernah kamu salin. Di Mac tidak ada yang cara pakainya segampang itu dari awal.
+
+Aplikasi bilah menu Cutling menyimpan riwayat itu di Mac, dan apa pun yang ditandai rahasia oleh pengelola kata sandimu tidak ikut masuk.
+Q: Apa yang paling kamu kangenin dari Windows sejak pakai Mac?
+@P22
+B: Lagi baca manhwa atau novel web, lalu tiap ganti halaman malah terbuka situs lain? Nyalakan Undirect sekali untuk situs itu, dan ketukan ke halaman berikutnya tetap di chapter yang kamu baca.
+Q: Situs baca mana yang paling sering melemparmu ke tempat lain?
+@P23
+B: Aplikasi pesan-antar. Kolom alamat. Nama jalan, nomor rumah, dan kode pos pakai jempol, lagi.
+
+Lebih cepat kalau diketuk dari keyboard Cutling.
+Q: Di berapa aplikasi pesan-antar kamu mengetik alamat sendiri?
+@P24
+TK: Tombol Download pernah memberimu halaman download palsu? Pilih di stiker.
+PQ: Seberapa sering tombol Download melemparmu ke situs lain?
+PO: Tiap kali / Sering / Jarang / Tidak pernah
+FC: Tombolnya sendiri bisa jadi bagian dari iklan. Kalau Undirect nyala untuk situs itu, tab tetap di tempatnya dan alamat yang coba dibukanya masuk ke daftar.
+ST: Quiz: "Tombol Download mana yang asli?" · Yang hijau besar / Start Download / Link nama file · correct: Link nama file
+TQ: Tombol Download pernah kasih halaman download palsu?
+TO: Pernah / Belum
+@P25
+B: Clipboard iPhone cuma muat satu. Salin link baru, yang sebelumnya hilang.
+
+Taruh teks yang kamu tempel tiap hari di keyboard, tinggal satu ketukan.
+Q: Apa yang paling sering kamu salin lalu hilang?
+@P26
+B: Hari terakhir harga Black Friday. Undirect Rp 19.000 dan Cutling Rp 59.000 berlaku sampai besok, 1 Desember, pukul 15.00 WIB, lalu kembali ke Rp 39.000 dan Rp 99.000.
+Q: Sempat beli salah satunya dengan harga diskon?
+@P27
+B: Kamu ketuk tanda X di iklan, eh iklan lain yang terbuka.
+
+Di halaman ini ada tiga tombol X. Menurutmu berapa yang benar-benar menutup iklannya?
+Q: Dari tombol X ini, berapa yang bakal kamu ketuk?
+@P28
+TK: Tanya apa saja soal teks simpanan di iPhone: Penggantian Teks, sinkronisasi, keyboard. Tiap pertanyaan dijawab dengan videonya sendiri.
+PQ: Penggantian Teks kamu sinkron antara iPhone dan Mac?
+PO: Sinkron lancar / Berhenti sinkron / Tidak pernah jalan / Aku tidak pakai
+FC: Simpanan di Cutling sinkron lewat iCloud milikmu sendiri, dan yang terhapus bisa dikembalikan dari Baru Dihapus selama 30 hari.
+ST: Questions: "Apa yang kamu ketik berulang-ulang di HP?"
+@P29
+B: Penasaran tab tadi mau membawamu ke mana?
+
+Undirect mencatat setiap alamat yang coba dibuka sebuah halaman, jadi kamu bisa memblokir satu alamat di semua situs atau mengizinkannya di situs itu saja.
+Q: Kamu mau lihat tab-tab itu sebenarnya menuju ke mana?
+@P30
+B: Formulir pengiriman, formulir penerima, formulir tagihan: bulan ini kamu bakal mengetik alamat di semuanya.
+
+Simpan sekali di Cutling dan tiap formulir tinggal satu ketukan. Rp 99.000 sekali bayar, untuk iPhone dan iPad, aplikasi Mac-nya juga.
+Q: Bulan ini kira-kira berapa kali kamu mengetik alamat?
+T: Ketik alamat sekali untuk semua formulir pengiriman
+@P31
+B: Kamu tekan Download dan dapat halaman download palsu, lalu pop-up yang minta berlangganan kalender, lalu halaman aplikasi "Speedy Clean".
+
+Kalau Undirect nyala, kamu tetap di halaman semula, dan daftarnya menunjukkan alamat yang coba dibuka.
+Q: Pernah memasang aplikasi pemutar yang diminta halaman download?
+T: Halaman download palsu, spam kalender, aplikasi pembersih palsu
+@P32
+B: Salin, pindah aplikasi, tempel, balik lagi. Empat kali bolak-balik cuma untuk satu jadwal kapal dan satu kode pintu.
+
+Bagikan saja halamannya ke Cutling. Halaman itu tersimpan dengan nama, dan lain kali cukup satu ketukan.
+Q: Berapa kali kamu pindah aplikasi untuk menyalin satu hal?
+T: Salin, pindah, tempel, balik: ada cara yang lebih cepat
+@P33
+B: Streaming di iPad, dan tiap ketukan di Play meninggalkan satu tab baru.
+
+Undirect bekerja sama persis di Safari iPad, dari pembelian Rp 39.000 yang sama. Izinkan sekali untuk situs itu, dan Play berhenti membuka tab.
+Q: Kamu streaming di iPad atau di HP?
+T: Hentikan tab iklan Safari di iPad
+@P34
+B: Riwayat clipboard yang ikut menyimpan setiap kata sandi yang kamu salin itu berisiko di Mac.
+
+Riwayat Cutling menyimpan semua salinan dan melewati apa pun yang ditandai rahasia oleh pengelola kata sandimu.
+Q: Kata sandimu kamu salin sendiri, atau diisikan pengelola kata sandi?
+T: Riwayat clipboard Mac yang melewati kata sandimu
+@P35
+B: Safari di Mac, situs film, dan sekali klik Play langsung terbuka tab kasino.
+
+Undirect aktif untuk situs itu dengan satu klik, dan Play berikutnya tidak membuka tab.
+Q: Situs film terakhirmu membuka berapa tab?
+T: Safari Mac: sekali klik Play, terbuka tab kasino
+@P36
+TK: Pernah menimpa salinan yang ternyata masih kamu butuhkan? Jawab di stiker.
+PQ: Berapa lama Mac kamu menyimpan apa yang kamu salin?
+PO: 30 menit / 8 jam / 7 hari / Tidak tahu
+FC: Aplikasi Mac Cutling punya riwayat clipboard sendiri, dan yang kamu simpan di Cutling tetap ada sampai kamu hapus.
+ST: Emoji slider: "Seberapa sering kamu menimpa salinan yang masih dibutuhkan?" · 😩
+TQ: Pernah menimpa salinan yang masih kamu butuhkan?
+TO: Pernah / Belum
+@P37
+B: Malam ini kamu menutup berapa tab iklan demi satu episode? Ada yang menulis "ulangi 7 kali".
+
+Di video ini muncul peringatan VPN, lalu peringatan virus. Setelah itu ketukan yang sama dengan Undirect nyala.
+Q: Rekormu menutup tab iklan dalam satu episode berapa?
+T: Menutup tab iklan demi nonton satu episode
+@P38
+B: Wi-Fi gratis, diskon 10%, check-in, struk: tiap formulir minta alamat emailmu lagi.
+
+Sekali simpan di Cutling, dan di kolom email keyboard menawarkannya paling dulu.
+Q: Bulan ini kamu mengisi berapa formulir pendaftaran?
+T: Tiap formulir pendaftaran minta emailmu lagi
+@P39
+B: Ada yang menyarankan di forum supaya kamu menyalakan pengaturan tersembunyi Safari, "Verify window.open user gesture", untuk menahan tab pengalihan.
+
+Hasilnya setengah-setengah, dan letaknya di Lanjutan, Feature Flags. Undirect mengerjakannya dengan satu kali tekan per situs.
+Q: Kamu pernah menyalakan pengaturan itu? Ada hasilnya?
+@P40
+B: Sudah beli aplikasi clipboard untuk Mac, ternyata versi iPhone-nya harus dibeli lagi?
+
+Cutling cukup dibeli sekali, Rp 99.000, untuk iPhone, iPad, dan Mac.
+Q: Pernah beli aplikasi yang sama dua kali, sekali untuk Mac dan sekali untuk iPhone?
+X: Sudah beli aplikasi clipboard untuk Mac, ternyata versi iPhone-nya harus dibeli lagi?
+
+Cutling cukup dibeli sekali, Rp 99.000, untuk iPhone, iPad, dan Mac.
+@P41
+B: Lagi baca berita, cuma menggulir, tidak mengetuk apa-apa, lalu halamannya loncat ke layar Pengaturan palsu: "Platform Security… RUN A TEST".
+
+Itu ulah halamannya, dan perangkatmu baik-baik saja. Undirect 1.0.5 menjagamu tetap di beritanya.
+Q: Pernah dilempar ke peringatan palsu padahal kamu cuma menggulir?
+T: Safari dialihkan saat menggulir, tanpa ketukan
+@P42
+B: Gboard di Android menyimpan klip yang kamu sematkan. Cutling menyematkannya di keyboard iPhone: alamat rumah, email kantor, kata sandi Wi-Fi.
+Q: Dulu apa saja yang kamu sematkan di Gboard?
+T: Klip yang disematkan ala Gboard, di iPhone
+@P43
+B: Ketuk Download, dapat halaman download palsu. Ketuk lagi, muncul pop-up langganan kalender.
+
+Lalu tombol Download yang sama dengan Undirect nyala.
+Q: Berapa ketukan sampai kamu ketemu download yang asli?
+T: Ketuk Download, dapatnya download palsu
+@P44
+B: Buat yang rajin nongol di kolom balasan: alamat wallet dan nama akun X-mu tinggal satu ketukan dari keyboard. Tidak ada kode Penggantian Teks yang harus diingat.
+Q: Apa yang paling sering kamu tempel di balasan?
+@P45
+B: Tekan Kembali untuk keluar dari situs live streaming, eh malah mendarat di halaman kasino?
+
+Mulai 1.0.5, kalau Undirect nyala untuk situs itu, Kembali ya kembali.
+Q: Situs mana yang menjebak tombol Kembali kamu?
+T: Tombol Kembali malah membawamu ke iklan lagi
+@P46
+B: Pindah dari Windows dan kangen Win+V?
+
+Cutling untuk Mac menyimpan riwayat clipboard-mu, dan kata sandi yang ditandai rahasia oleh pengelola kata sandi tidak masuk ke situ.
+Q: Apa lagi yang kamu kangenin dari Windows?
+T: Win+V di Mac
+@P47
+B: Safari membuka tab sendiri dan kamu jadi waswas?
+
+Tab itu datang dari halaman yang sedang kamu buka, dan iPhone kamu aman. Tutup saja, dan jangan pasang apa pun yang disodorkannya.
+Q: Siapa kenalanmu yang bakal panik melihat tab seperti ini?
+@P48
+TK: Teks apa yang paling sering kamu ulang-ulang ketik? Alamat, email, kata sandi wifi untuk kelima kalinya? Kasih suaramu di polling.
+PQ: Apa yang paling sering kamu ketik ulang di HP?
+PO: Alamat / Alamat email / Balasan yang sama / Link
+FC: Cutling menaruh semuanya di keyboard. Simpan sekali, lalu ketuk.
+ST: Questions: "Apa yang paling sering kamu ketik ulang?"
+TQ: Apa yang paling sering kamu ketik ulang di HP?
+TO: Alamat / Email / Kata sandi wifi / Balasan sama / Lainnya
+@P49
+B: Masih mengirim pesan ke diri sendiri supaya kode pintu pindah dari iPhone ke iPad?
+
+Simpan di Cutling di iPhone, dan kodenya juga ada di keyboard iPad lewat iCloud-mu.
+Q: Gimana caramu memindahkan kode dari iPhone ke iPad?
+T: Pindahkan kode dari iPhone ke iPad tanpa kirim pesan ke diri sendiri
+@P50
+B: Hari ini Undirect tampil di @macpiphq. Kalau Safari di Mac-mu terus membuka tab yang tidak pernah kamu minta, ini yang menghentikannya.
+Q: Safari di Mac-mu suka membuka tab yang tidak kamu minta?
+@P51
+B: Di Mac, tekan Shift-Command-V dan riwayatmu langsung muncul: yang terakhir kamu salin, juga teks yang kamu simpan di Cutling.
+Q: Kamu pakai riwayat clipboard di Mac?
+@P52
+B: Halaman yang melemparmu ke situs lain saat menggulir, tanpa ketukan sama sekali, sekarang tertahan di Undirect 1.0.5, dan alamatnya muncul di daftar.
+Q: Pernah dialihkan padahal kamu cuma menggulir?
+T: Halaman mengalihkan saat digulir: hentikan di Safari
+@P53
+B: Mengelola tiga gedung berarti mengetik alamat di setiap surat perintah kerja, 14 detik sekali ketik.
+
+Simpan tiap alamat di Cutling, dan cukup satu ketukan.
+Q: Berapa alamat yang kamu ketik untuk urusan kerja?
+T: Mengetik alamat yang sama di setiap perintah kerja
+@P54
+TK: Undirect memblokir iklan? Tidak. Undirect menahan tab dan pengalihan, dan iklan tetap urusan pemblokirmu. Tanya kami kenapa Blokir Pop-up tidak sanggup menahannya.
+PQ: Blokir Pop-up nyala. Tab masih terbuka?
+PO: Ya, terus-terusan / Kadang-kadang / Tidak pernah / Tombol yang mana?
+FC: Tombol itu menahan jendela yang dibuka halaman dengan sendirinya. Tab yang terbuka karena ketukanmu sendiri lolos. Undirect memeriksa apa yang ada di bawah jarimu.
+ST: Emoji slider: "Seberapa merusak malam tab iklan yang tiba-tiba muncul?" · 😠
+@P55
+B: iPhone bisa menyimpan riwayat clipboard? Tidak ada aplikasi yang bisa, karena iOS tidak mengizinkan aplikasi membaca salinanmu di latar belakang.
+
+Di iPhone, Cutling menyimpan apa yang kamu pilih untuk disimpan. Riwayat lengkapnya ada di aplikasi Mac.
+Q: Tadinya kamu kira aplikasi iPhone bisa menyimpan riwayat clipboard?
+@P56
+B: Cari situs film gratis di iPad yang tidak ada pop-up-nya?
+
+Situsnya ya itu-itu juga, dan Undirect bekerja di Safari iPad. Nyalakan untuk situsnya, dan tab-tabnya berhenti.
+Q: Situs film gratis mana yang paling parah di iPad?
+T: Situs film gratis di iPad tanpa pop-up
+@P57
+B: iPhone dan iPad, satu Apple ID, dan teks simpananmu ada di keduanya.
+
+Sinkronnya lewat iCloud milikmu sendiri, jadi tidak ada akun Cutling yang harus dibuat.
+Q: Teks simpananmu kamu pakai di lebih dari satu perangkat?
+T: Teks simpanan di iPhone dan iPad, tersinkron
+@P58
+B: Ada tempat yang tidak bisa dijangkau Undirect: aplikasi web di layar utama dan browser di dalam aplikasi lain, karena ekstensi Safari tidak berjalan di sana.
+
+Buka link-nya di Safari, dan kamu terlindungi.
+Q: Kamu membuka link di Safari atau di dalam aplikasi lain?
+@P59
+B: Baru pindah dari Samsung? Ini yang biasanya dikangenin dari Android: menempel tanpa "Izinkan Tempel", clipboard Gboard, dan klip yang disematkan.
+
+Klip yang disematkan bisa kembali lewat Cutling: link booking-mu ada di keyboard iPhone, satu ketukan ke chat mana pun. Cutling tidak bisa merekam apa yang kamu salin.
+Q: Apa yang paling kamu kangenin dari Samsung?
+T: Yang kukangenin dari Android setelah pindah ke iPhone
+@P60
+B: POV: kamu iklan di situs film gratis. Mereka ketuk Play, kamu buka tab baru. Mereka ketuk lagi, kamu bilang iPhone mereka kena 12 virus.
+
+Lalu mereka menyalakan Undirect untuk situs itu, dan tak satu pun kirimanmu yang lolos.
+Q: Trik iklan mana yang paling sering menjebakmu?
+T: POV: kamu iklan di situs film gratis
+X: POV: kamu iklan di situs film gratis. Mereka ketuk Play, kamu buka tab baru. Ketuk lagi, kamu bilang iPhone mereka kena 12 virus.
+
+Lalu mereka menyalakan Undirect untuk situs itu, dan tak satu pun kirimanmu yang lolos.
+@P61
+TK: Aman tidak memberi Akses Penuh ke aplikasi keyboard? Tanya apa saja soal apa yang dibaca keyboard Cutling dan ke mana perginya. Jawaban singkatnya: kata sebelum kursor, dan tidak ke mana-mana.
+PQ: Kamu mau menitipkan teks simpanan ke aplikasi keyboard?
+PO: Mau, asal offline / Cuma dari merek besar / Tidak pakai keyboard lain / Akses Penuh itu apa
+FC: Keyboard Cutling sama sekali tidak punya kode jaringan, dan label di App Store tertulis Data Tidak Dikumpulkan.
+ST: Questions: "Apa yang perlu kamu lihat dulu sebelum percaya pada sebuah keyboard?"
+@P62
+B: Ada tiga tombol Download di situs file gratis, dan cuma satu yang asli. Dua lainnya membawamu ke permintaan langganan kalender spam dan aplikasi pembersih palsu.
+
+Kalau Undirect nyala untuk situs itu, yang palsu tidak membawamu ke mana-mana dan yang asli tetap mengunduh.
+Q: Tombol Download mana yang bakal kamu tekan?
+T: Cuma satu tombol Download yang asli
+@P63
+B: Salin nomor penerbangan, lalu kode OTP, lalu alamat. Tekan Command-V, yang tersisa cuma alamatnya.
+
+Tekan Shift-Command-V dengan Cutling untuk Mac: semua salinan ada di riwayat, dan kata sandi tidak ikut tersimpan.
+Q: Minggu ini apa yang hilang gara-gara clipboard?
+T: Command-V cuma menyimpan salinan terakhirmu
+@P64
+B: Klik Play di Safari Mac, lalu terbuka tab yang tidak pernah kamu klik.
+
+Klik tombol Undirect sekali untuk situs itu, dan Play berikutnya tidak membuka tab apa pun.
+Q: Safari di Mac-mu juga begini?
+T: Hentikan Safari di Mac membuka tab yang tidak kamu klik
+@P65
+B: Kamu jualan di Instagram. "Masih ada, kak?" "Kirim ke mana aja?" "Bayarnya gimana?" Empat puluh kali sehari.
+
+Simpan tiap jawaban sekali, lalu ketuk saja.
+Q: DM apa yang paling sering kamu jawab?
+@P66
+B: Chapter 41. Kamu tekan Next, yang terbuka kasino. Kamu tutup, tekan Next lagi, sekarang situs kripto.
+
+Nyalakan Undirect sekali untuk situs baca itu, dan tombol Next tetap di chapter-nya.
+Q: Situs baca mana yang pengalihannya paling parah?
+@P67
+B: Ada yang tanya kapan kamu kosong, lalu kamu sibuk mencari-cari link booking.
+
+Bagikan halamannya ke Cutling sekali. Halaman itu tersimpan dengan nama, dan lain kali cukup satu ketukan di keyboard.
+Q: Link booking-mu kamu simpan di mana?
+T: Link booking tinggal satu ketukan di iPhone
+@P68
+TK: Pemblokir Safari-mu harganya berapa? Kasih tahu di polling.
+PQ: Kamu bayar apa untuk pemblokir Safari-mu?
+PO: Bulanan atau tahunan / Sekali bayar / Yang gratis / Tidak pakai
+FC: Undirect Rp 39.000 sekali bayar, tanpa akun dan tanpa data yang dikirim ke mana pun.
+ST: Poll: "Paling mahal kamu bayar berapa untuk pemblokir Safari?" · Di bawah Rp 75 ribu / Rp 75-300 ribu / Di atas Rp 300 ribu / Gratis
+TQ: Pemblokirmu harganya berapa?
+TO: Gratis / Sekali bayar / Tahunan / Bulanan
+@P69
+B: Cutling tidak punya akun dan tidak punya server, jadi tidak ada yang bisa dimatikan tiba-tiba. Simpananmu ada di perangkatmu dan di iCloud milikmu sendiri, dan tetap bisa dipakai tanpa internet.
+Q: Pernah ditinggal tutup oleh aplikasi yang kamu andalkan?
+@P70
+B: Kamu tekan Kembali di situs streaming, dan malah dibawa ke iklan lagi.
+
+Dengan Undirect 1.0.5 nyala untuk situs itu, Kembali benar-benar kembali.
+Q: Butuh berapa kali Kembali untuk keluar dari situs streaming?
+T: Tombol Kembali terus membawamu ke iklan
+@P71
+B: Di menu Bagikan Safari ada tombol Cutling. Bagikan sebuah halaman ke sana, beri nama, dan saat ada formulir yang memintanya lagi, tinggal satu ketukan di keyboard.
+Q: Kamu pakai menu Bagikan untuk menyimpan sesuatu?
+T: Simpan halaman ke keyboard iPhone dari menu Bagikan
+@P72
+B: Ketuk sebuah link, lalu Safari melemparmu ke App Store.
+
+Kalau itu ulah trik halaman, Undirect menahannya. Kalau itu tombol yang memang bilang akan membuka App Store, seperti "buka aplikasi" milik Google, Undirect membiarkannya.
+Q: Pernah dilempar halaman ke App Store?
+@P73
+B: Ibu, kantor, Tante Rina: tiga alamat yang kamu ketik tiap Desember.
+
+Simpan masing-masing di Cutling, lalu ketuk alamat yang pas di formulir paketnya.
+Q: Desember ini kamu kirim paket ke berapa alamat?
+X: Ibu, kantor, Tante Rina: tiga alamat yang kamu ketik tiap Desember.
+
+Simpan masing-masing di Cutling, lalu ketuk alamat yang pas di formulir paketnya.
+@P74
+B: Bapak kirim chat: "iphone bapak katanya kena 12 virus??" Situs film gratis itu lagi, dan sekarang ada 9 tab terbuka.
+
+Aku pasang Undirect di iPhone Bapak dan menyalakannya untuk situs itu. Sekarang filmnya langsung jalan.
+Q: Siapa teknisi dadakan di keluargamu?
+T: Jadi teknisi buat Bapak, tiap minggu
+@P75
+B: Salin di iPhone, tempel di iPad, dan tidak ada yang muncul.
+
+Simpan saja di Cutling: kode pintu kantor yang kamu simpan di iPhone ada juga di keyboard iPad. Salinan sekali pakai tidak ikut terbawa.
+Q: Papan Klip Universal jalan di perangkatmu?
+T: Salin di iPhone, tempel di iPad tidak jalan?
+@P76
+B: iPad, situs film gratis, dan Play membuka tab bertuliskan "iPhone kamu telah diretas".
+
+Nyalakan Undirect untuk situs itu di Safari dan Play tidak membuka tab lagi. Harganya tetap Rp 39.000 yang sama dengan di iPhone dan Mac.
+Q: Kamu nonton di iPad?
+T: iPad: Play membuka tab "iPhone kamu telah diretas"
+@P77
+B: Langganan tahunan. Untuk clipboard.
+
+Cutling Rp 99.000, sekali bayar, untuk iPhone, iPad, dan Mac, tanpa akun.
+Q: Langganan termahal apa yang pernah kamu bayar untuk alat sekecil itu?
+@P78
+B: Undirect tidak menyembunyikan apa pun di halaman, jadi ia memang lain dari pemblokir iklan, dan pemblokirmu boleh tetap dipakai.
+
+Undirect menahan tab dan pengalihan yang lolos dari pemblokirmu, jadi jalankan keduanya berdampingan.
+Q: Pemblokir apa yang kamu pakai di Safari?
+@P79
+B: Tujuh formulir, tujuh ketukan. Di kolom email, keyboard Cutling menaruh alamat emailmu paling depan, jadi kamu tidak perlu mencarinya.
+Q: Minggu ini berapa kali kamu mengetik email?
+T: Emailmu satu ketukan di setiap kolom email
+@P80
+B: Tekan Play tiga kali, dapat tiga jebakan berbeda: peringatan VPN, hitung mundur virus, halaman hadiah.
+
+Tekanan yang sama dengan Undirect nyala memutar videonya.
+Q: Di situs gratis, butuh berapa kali tekan Play sampai videonya jalan?
+T: Tiga kali tekan Play, tiga jebakan berbeda
+@P81
+TK: Gimana caramu memindahkan sepotong teks dari iPhone ke Mac? Email ke diri sendiri, kirim pesan ke diri sendiri, AirDrop, atau ketik ulang? Tentukan pilihanmu di polling.
+PQ: Gimana caramu memindahkan teks dari iPhone ke Mac?
+PO: Email ke diri sendiri / Pesan ke diri sendiri / Pakai AirDrop / Ketik ulang
+FC: Simpan di Cutling di iPhone. Teksnya sinkron lewat iCloud dan muncul di pemilih Cutling di Mac.
+ST: Add Yours: "Caramu memindahkan teks dari iPhone ke Mac"
+TQ: Gimana kamu memindahkan teks dari iPhone ke Mac?
+TO: Email / Pesan / AirDrop / Ketik ulang / Lainnya
+@P82
+B: Kamu tidak mengetuk apa-apa, dan halamannya tetap melemparmu ke peringatan keamanan palsu.
+
+Undirect 1.0.5 menahanmu di tempat semula, dan alamat yang coba dibukanya muncul di daftar.
+Q: Pernah dilempar halaman ke mana tanpa mengetuk apa-apa?
+T: Dilempar ke peringatan keamanan palsu tanpa mengetuk
+@P83
+B: Kamu menyalin hal kedua, dan yang pertama hilang.
+
+Di Mac, riwayat Cutling masih menyimpannya.
+Q: Apa yang terakhir kali tidak sengaja kamu timpa?
+T: Salinan pentingmu tertimpa? Ada riwayat clipboard di Mac
+X: Kamu menyalin hal kedua, dan yang pertama hilang.
+
+Di Mac, riwayat Cutling masih menyimpannya.
+@P84
+TK: Tab iklan terakhir membawamu ke mana? Jawab lewat stiker.
+PQ: Tab iklan terakhir membawamu ke mana?
+PO: Kasino / Halaman virus palsu / App Store / Situs dewasa
+FC: Semuanya ulah halaman yang mengambil ketukanmu. Undirect mengirim ketukan itu ke yang kamu tekan dan mencatat alamatnya.
+ST: Questions: "Tab iklan terakhir membawamu ke mana?"
+TQ: Tab iklan terakhirmu nyasar ke mana?
+TO: Kasino / Halaman virus / App Store / Lainnya
+@P85
+B: "Mengetik info yang sama berkali-kali, tanpa habisnya." Begitu seorang pengulas menggambarkan gunanya keyboard tempel.
+
+Simpan sekali di Cutling, lalu ketuk.
+Q: Apa yang paling sering kamu ketik?
+T: Kamu sudah mengetik alamat itu 214 kali
+@P86
+B: Tombol Download, halaman palsu "download sedang berjalan". Tiap kali begitu.
+
+Nyalakan Undirect sekali untuk situs itu, dan tabnya tetap di halaman.
+Q: Pernah sampai mengunduh file palsunya?
+T: Tombol Download, halaman download palsu, tiap kali
+@P87
+B: Ada aplikasi snippet yang tidak mau menyimpan gambar. Di Cutling, gambar bisa disimpan seperti teks: simpan screenshot sekali, ketuk di keyboard, lalu tempel ke chat.
+Q: Gambar apa yang kamu kirim berulang-ulang?
+@XH
+H: Tiap ketuk Play di situs nonton gratis, yang terbuka malah tab iklan. Ini penyebabnya dan cara menghentikannya di Safari, urut dari yang paling ringan.
+
+Kenapa Blokir Pop-up tidak mempan
+Safari punya pengaturan Blokir Pop-up, dan di kebanyakan iPhone sudah nyala. Pengaturan itu menahan jendela yang dibuka halaman dengan sendirinya. Tab yang terbuka tepat setelah kamu mengetuk dianggap Safari sebagai permintaanmu, jadi diloloskan. Situs nonton gratis memanfaatkan celah itu: mereka menaruh lapisan tak terlihat di atas tombol Play, sehingga ketukan pertamamu mengenai iklan.
+
+1. Kenali halamannya
+Halaman "iPhone kamu kena virus" atau "kamu pengunjung beruntung" berasal dari situs yang sedang kamu buka. iPhone kamu tidak apa-apa. Tutup tabnya, jangan pasang aplikasi yang dimintanya, jangan isi data apa pun.
+
+2. Buka di Safari
+Ekstensi Safari tidak berjalan di browser yang ada di dalam aplikasi lain atau di aplikasi web yang ditaruh di layar utama. Kalau link-nya terbuka di dalam aplikasi chat atau media sosial, pindahkan dulu ke Safari.
+
+3. Pemblokir iklan tetap dipakai
+Pemblokir iklan menyembunyikan banner dan iklan video. Tab yang terbuka karena ketukanmu berada di luar jangkauannya, karena tidak ada yang bisa disembunyikan di sana. Dua masalah, dua alat.
+
+4. Tahan tab-nya dengan Undirect
+Undirect adalah ekstensi Safari yang memeriksa apa yang sebenarnya ada di bawah jarimu. Buka situsnya, tekan tombol Undirect sekali untuk menyalakannya di situs itu, lalu tekan Play seperti biasa. Tab iklan tidak terbuka, dan alamat yang coba dibuka halaman itu tercatat di daftar. Dari daftar itu kamu bisa memblokir satu alamat di semua situs atau mengizinkannya di situs itu saja.
+
+Undirect Rp 39.000 sekali bayar untuk iPhone, iPad, dan Mac, tanpa akun, dan tidak ada data penjelajahan yang dikirim ke mana pun.

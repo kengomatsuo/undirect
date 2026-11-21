@@ -1,0 +1,437 @@
+=== tr
+@P10
+B: Önce kapı şifresini kopyalıyorsun, sonra kargo takip numarasını, sonra toplantı bağlantısını. iPhone yalnızca sonuncuyu tutuyor.
+
+Android'den geçtin ve sabitlediğin kliplerini mi özlüyorsun? Cutling, gün boyu yapıştırdığın metinleri klavyene sabitliyor. Kopyaladıklarını kaydetmiyor, çünkü iOS buna hiçbir uygulamada izin vermiyor.
+Q: Android'i bıraktıktan sonra en çok neyi özledin?
+T: Android'den mi geçtin? Kliplerini iPhone klavyesine sabitle
+@P11
+B: Mac'te Safari'de Oynat'a tıklıyorsun, bir kumar sitesi sekmesi açılıyor: "%200 hoş geldin bonusu".
+
+Undirect'in düğmesine bir kez tıklayınca o site için açılıyor. Ondan sonra Oynat yeni sekme açmıyor.
+Q: Bu senin Mac'inde de oluyor mu, yoksa yalnızca iPhone'da mı?
+T: Mac'te Safari, Oynat'a tıklayınca kumar sekmesi açıyor
+@P12
+B: iPhone'daki Metin Değiştirme yalnızca düz metin tutuyor ve ancak kısaltmayı yazdığında devreye giriyor. Bir güncellemeden sonra bütün listenin tek bir cihazdan silindiğini görenler de oldu.
+
+Cutling'e koca bir paragraf ya da bir görsel kaydedebiliyorsun, hepsi de kendi iCloud'un üzerinden eşzamanlanıyor.
+Q: Metin Değiştirme'yi hâlâ kullanıyor musun, yoksa vazgeçtin mi?
+@P13
+B: Ücretsiz dizi sitesi, Oynat'a her basışta film yerine reklam açılıyor.
+
+Undirect'i o site için bir kez aç, Oynat yalnızca oynatsın.
+Q: Bu konuda en kötü dizi sitesi hangisi?
+T: Ücretsiz dizi sitesi: Oynat'a basınca film değil reklam açılıyor
+@P14
+B: Metin Değiştirme kısaltmaların iPhone'da çalışıyor, iPad'de ise "adr" yazınca "adr" olarak kalıyor.
+
+Metni Cutling'e bir kez kaydet, iPad klavyesinde de dursun. Eşzamanlama kendi iCloud'un üzerinden yapılıyor.
+Q: Metin Değiştirme kısaltmaların cihazlarından birinde hiç kayboldu mu?
+T: Metin Değiştirme iPad'e eşzamanlanmıyor
+@P15
+TK: Reklam engelleyicin bu yönlendirmeyi durdurabildi mi? Ankette yanıtla.
+PQ: Dokununca açılan sekmeleri reklam engelleyicin durduruyor mu?
+PO: Durduruyor / Bazıları geçiyor / Hiç etkilemiyor / Engelleyicim yok
+FC: Engelleyiciler reklamı gizler. Oynat'a bastığında açılan sekme ise sayfanın senin dokunuşunu almasıyla açılır; orada engelleyicinin gizleyeceği bir şey yok. O kısmı Undirect durduruyor, yani ikisini birlikte kullan.
+ST: Quiz: "Reklam engelleyicin açık. Bunlardan hangisini gizleyebilir?" · Banner reklamı / Oynat'ın açtığı sekmeyi · correct: Banner reklamı
+TQ: Engelleyicin yönlendirmeyi durdurdu mu?
+TO: Evet / Bir kısmını / Hayır / Engelleyicim yok
+@P16
+B: "Bu bir pano, reklam panosu değil." İçine reklam konmuş bir yapıştırma klavyesi için bir kullanıcı böyle yazmış.
+
+Cutling'de reklam yok, hesap da yok.
+Q: Klavyende reklam olsa katlanır mıydın?
+@P17
+B: Black Friday indirimi, 27-30 Kasım arası App Store'da:
+Cutling ₺149,99 (normalde ₺249,99)
+Undirect ₺49,99 (normalde ₺99,99)
+Bir kez alıyorsun; iPhone, iPad ve Mac'te geçerli.
+B2: App Store'da Black Friday indirimi, 27-30 Kasım. Undirect ₺99,99 yerine ₺49,99, Cutling ₺249,99 yerine ₺149,99. Tek satın alma iPhone, iPad ve Mac'i kapsıyor.
+Q: Bu hafta sonu listende hangisi var?
+@P18
+B: Bir yıllık abonelik parası verdin, yönlendirme sekmeleri yine de geçti.
+
+Undirect bir kez satın alınıyor. Hesap açmıyorsun, gezdiğin hiçbir şey de bir yere gönderilmiyor.
+Q: Yönlendirmeleri yine de geçiren bir engelleyiciye en çok ne kadar ödedin?
+@P19
+TK: Bir pano uygulamasına her ay para öder miydin? Ankette oyunu kullan.
+PQ: Bir pano uygulamasına abonelik öder miydin?
+PO: Benim için sorun değil / Asla / Ödüyorum ve sinirliyim / Pano uygulaması ne ki?
+FC: Cutling bir kez satın alınıyor, aboneliği yok; iPhone, iPad ve Mac uygulaması dahil.
+ST: Emoji slider: "Bir pano için abonelik seni ne kadar sinirlendiriyor?" · 😤
+TQ: Bir pano için her ay öder miydin?
+TO: Asla / Belki / Öderim
+@P20
+B: iPhone'unda virüs yok.
+
+O "iPhone'unuz risk altında" sayfası, girdiğin siteden geldi. Sekmeyi kapat; yüklemeni ya da ödemeni istediği hiçbir şeyi yapma. Bunu, ailende böyle sayfaları görünce paniğe kapılan kişiye gönder.
+Q: Ailende bu sayfalar yüzünden seni kim arıyor?
+@P21
+B: Windows'ta Win+V kopyaladığın her şeyi gösteriyordu. Mac'te ise kutudan çıktığı hâliyle bu kadar pratik çalışan bir şey yok.
+
+Cutling'in menü çubuğu uygulaması bu geçmişi Mac'te tutuyor; parola yöneticinin gizli olarak işaretlediği şeyler de geçmişe girmiyor.
+Q: Mac'te Windows'tan en çok neyi özlüyorsun?
+@P22
+B: Manga ya da web romanı okuyorsun ve her sayfa çevirişinde başka bir site mi açılıyor? Undirect'i o site için bir kez aç, sonraki sayfaya dokunduğunda bölümde kal.
+Q: Seni en çok hangi okuma sitesi başka yere atıyor?
+@P23
+B: Yemek sipariş uygulaması. Adres alanı. Mahalle, sokak, daire numarası ve posta kodu, yine başparmakla.
+
+Onun yerine Cutling klavyesinden dokunup gir.
+Q: Kaç sipariş uygulamasına adresini elle yazdın?
+@P24
+TK: İndir düğmesi sana hiç sahte bir indirme sayfası açtı mı? Çıkartmada işaretle.
+PQ: İndir düğmesi seni ne sıklıkla başka siteye gönderiyor?
+PO: Her seferinde / Sık sık / Nadiren / Hiç
+FC: Düğmenin kendisi reklamın parçası olabiliyor. Undirect o site için açıksa sekme olduğu yerde kalıyor, gitmeye çalıştığı adres de listeye yazılıyor.
+ST: Quiz: "Gerçek İndir düğmesi hangisi?" · Büyük yeşil düğme / Start Download / Dosya adı bağlantısı · correct: Dosya adı bağlantısı
+TQ: İndir düğmesi sana hiç sahte indirme sayfası açtı mı?
+TO: Evet / Hayır
+@P25
+B: iPhone'un panosu tek bir şey tutuyor. Yeni bir bağlantı kopyaladığında öncekisi gidiyor.
+
+Her gün yapıştırdığın metni klavyede tut, bir dokunuş uzağında olsun.
+Q: En çok neyi kopyalayıp sonra kaybediyorsun?
+@P26
+B: Black Friday fiyatlarının son günü. Undirect ₺49,99, Cutling ₺149,99; indirim yarın, 1 Aralık saat 11.00'de bitiyor ve fiyatlar normale dönüyor.
+Q: İkisinden birini indirimli fiyattan aldın mı?
+@P27
+B: Reklamdaki X'e basıyorsun, bir reklam daha açılıyor.
+
+Bu sayfada üç tane X düğmesi var. Sence kaçı reklamı gerçekten kapatıyor?
+Q: Bu X düğmelerinden kaçına basardın?
+@P28
+TK: iPhone'da kayıtlı metinle ilgili ne istersen sor: Metin Değiştirme, eşzamanlama, klavyeler. Her soruya ayrı bir videoyla yanıt veriyoruz.
+PQ: Metin Değiştirme iPhone'unla Mac'in arasında eşzamanlanıyor mu?
+PO: Sorunsuz eşzamanlanıyor / Eşzamanlama durdu / Hiç çalışmadı / Kullanmıyorum
+FC: Cutling'e kaydettiklerin kendi iCloud'un üzerinden eşzamanlanıyor; sildiğin bir kayıt da 30 gün boyunca Son Silinenler'den geri geliyor.
+ST: Questions: "Telefonunda tekrar tekrar ne yazıyorsun?"
+@P29
+B: O sekmenin seni nereye götürmeye çalıştığını merak ediyor musun?
+
+Undirect, bir sayfanın açmaya çalıştığı her adresi listeliyor; birini her yerde engelleyebilir ya da yalnızca o sitede izin verebilirsin.
+Q: O sekmelerin nereye gittiğini görmek ister miydin?
+@P30
+B: Kargo formu, teslimat formu, fatura formu: bu ay adresini hepsine yazacaksın.
+
+Cutling'e bir kez kaydet, her biri tek dokunuşla dolsun. Tek seferlik ödeme; iPhone ve iPad için, Mac uygulaması da dahil.
+Q: Bu ay adresini kaç kez yazacaksın?
+T: Adresini bir kez yaz, bütün kargo formlarında kullan
+@P31
+B: İndir'e basıyorsun; önce sahte bir indirme sayfası, sonra takvime abone olmanı isteyen bir pencere, ardından "Speedy Clean" adlı bir uygulamanın sayfası.
+
+Undirect açıkken bulunduğun sayfada kalıyorsun, liste de sayfanın denediği adresi gösteriyor.
+Q: Bir indirme sayfasının istediği oynatıcı uygulamasını hiç yükledin mi?
+T: Sahte indirme sayfası, takvim spam'i, sahte temizleyici uygulama
+@P32
+B: Kopyala, uygulama değiştir, yapıştır, geri dön. Bir vapur saati ve bir kapı şifresi için dört gidiş geliş.
+
+Bunun yerine sayfayı Cutling ile paylaş. Bir adla kaydediliyor, bir dahaki sefere tek dokunuşla giriyor.
+Q: Tek bir şeyi kopyalamak için kaç kez uygulama değiştiriyorsun?
+T: Kopyala, geç, yapıştır, geri dön: daha hızlı bir yolu var
+@P33
+B: iPad'de dizi izliyorsun ve Oynat'a her dokunuş arkasında yeni bir sekme bırakıyor.
+
+Undirect, iPad'deki Safari'de de aynı şekilde çalışıyor; ayrıca satın alman gerekmiyor. O site için bir kez izin ver, Oynat sekme açmayı bıraksın.
+Q: Dizileri iPad'de mi izliyorsun, telefonda mı?
+T: iPad'de Safari'nin reklam sekmelerini durdur
+@P34
+B: Kopyaladığın her parolayı saklayan bir pano geçmişi, Mac'te risk demek.
+
+Cutling'in geçmişi her kopyayı tutuyor, parola yöneticinin gizli olarak işaretlediklerini ise atlıyor.
+Q: Parolalarını kopyalıyor musun, yoksa parola yöneticin mi dolduruyor?
+T: Parolalarını atlayan Mac pano geçmişi
+@P35
+B: Mac'te Safari, bir film sitesi ve Oynat'a tek tıklamayla açılan bir kumar sekmesi.
+
+Undirect o site için tek tıklamayla açılıyor, bir sonraki Oynat hiçbir sekme açmıyor.
+Q: Son girdiğin film sitesi kaç sekme açtı?
+T: Mac'te Safari: Oynat'a bir tıklama, bir kumar sekmesi
+@P36
+TK: Hâlâ lazım olan bir şeyin üzerine hiç kopyaladın mı? Çıkartmada yanıtla.
+PQ: Mac'in kopyaladığın şeyi ne kadar süre tutuyor?
+PO: 30 dakika / 8 saat / 7 gün / Bilmiyorum
+FC: Cutling'in Mac uygulamasının kendi pano geçmişi var; Cutling'e kaydettiğin şey de sen silene kadar duruyor.
+ST: Emoji slider: "Lazım olan bir şeyin üzerine ne sıklıkla kopyalıyorsun?" · 😩
+TQ: Lazım olan bir şeyin üzerine hiç kopyaladın mı?
+TO: Evet / Hayır
+@P37
+B: Bu akşam bir bölüm izlemek için kaç reklam sekmesi kapattın? Biri "bunu 7 kez tekrarla" diye yazmış.
+
+Videoda önce bir VPN uyarısı, sonra bir virüs uyarısı çıkıyor. Ardından aynı dokunuş, bu kez Undirect açıkken.
+Q: Tek bölümde kapattığın reklam sekmesi rekorun kaç?
+T: Bir bölüm izlemek için reklam sekmesi kapatmak
+@P38
+B: Ücretsiz Wi-Fi, %10 indirim, check-in, fişler: her form e-posta adresini yeniden istiyor.
+
+Adresi Cutling'e kaydetmen yeterli; e-posta alanında klavye önce onu sunuyor.
+Q: Bu ay kaç üyelik formu doldurdun?
+T: Her üyelik formu e-postanı yeniden istiyor
+@P39
+B: Bir forumda biri sana, yönlendirme sekmelerini durdurmak için Safari'deki gizli bir ayarı, "Verify window.open user gesture" seçeneğini açmanı söyledi.
+
+Yarım yamalak işe yarıyor, üstelik İleri Düzey'in altındaki Feature Flags'te duruyor. Undirect aynı işi site başına tek basışla yapıyor.
+Q: O ayarı hiç açtın mı, işe yaradı mı?
+@P40
+B: Mac'in için bir pano uygulaması aldın, sonra iPhone sürümünün ayrı satıldığını mı gördün?
+
+Cutling tek satın alma: ₺299,99; iPhone, iPad ve Mac için.
+Q: Aynı uygulamayı bir Mac için, bir de iPhone için iki kez aldığın oldu mu?
+@P41
+B: Haber okuyorsun, yalnızca kaydırıyorsun, hiçbir yere dokunmadın; sayfa sahte bir Ayarlar ekranına atlıyor: "Platform Security… RUN A TEST".
+
+Bunu sayfa yaptı, cihazında bir sorun yok. Undirect 1.0.5 seni haberde tutuyor.
+Q: Yalnızca kaydırırken bir sayfanın seni sahte bir uyarıya attığı oldu mu?
+T: Safari'de kaydırırken, hiç dokunmadan yönlendirme
+@P42
+B: Android'deki Gboard sabitlediğin klipleri saklıyordu. Cutling onları iPhone klavyene sabitliyor: adresin, iş e-postan, Wi-Fi parolası.
+Q: Gboard'da neleri sabitlemiştin?
+T: Gboard'daki sabitlenmiş klipler iPhone'da
+@P43
+B: İndir'e dokun, sahte bir indirme sayfası gelsin. Bir daha dokun, takvim aboneliği penceresi çıksın.
+
+Sonra aynı İndir düğmesi, bu kez Undirect açıkken.
+Q: Gerçek indirmeyi bulana kadar kaç kez dokundun?
+T: İndir'e dokun, sahte indirme gelsin
+@P44
+B: Yanıtlardan çıkmayanlara: cüzdan adresin ve X kullanıcı adın klavyeden tek dokunuş uzağında. Ezberlenecek Metin Değiştirme kısaltması yok.
+Q: Yanıtlara en çok neyi yapıştırıyorsun?
+@P45
+B: Canlı yayın sitesinden çıkmak için Geri'ye bastın ve bir kumar sayfasına mı düştün?
+
+1.0.5'ten itibaren, Undirect o site için açıksa Geri gerçekten geri götürüyor.
+Q: Geri düğmeni hangi site kilitliyor?
+T: Geri düğmesi seni yine reklama götürüyor
+@P46
+B: Windows'tan geçtin ve Win+V'yi mi özlüyorsun?
+
+Mac için Cutling pano geçmişini tutuyor; parola yöneticinin gizli olarak işaretlediği parolalar da geçmişe girmiyor.
+Q: Windows'tan başka neyi özlüyorsun?
+T: Mac'te Win+V
+@P47
+B: Safari kendi kendine sekme açıyor ve için rahat değil mi?
+
+O sekmeler bulunduğun sayfadan geldi, iPhone'unda bir sorun yok. Kapat gitsin; önüne sürdükleri hiçbir şeyi de yükleme.
+Q: Tanıdıklarından kim bu sekmeleri görse paniğe kapılırdı?
+@P48
+TK: En çok hangi metni baştan yazıyorsun? Adres, e-posta, beşinci kez girdiğin Wi-Fi parolası? Ankette işaretle.
+PQ: Telefonunda en çok neyi yeniden yazıyorsun?
+PO: Bir adres / Bir e-posta adresi / Aynı yanıt / Bir bağlantı
+FC: Cutling bunların her birini klavyede tutuyor. Bir kez kaydet, sonra dokunup gir.
+ST: Questions: "En çok neyi yeniden yazıyorsun?"
+TQ: Telefonda en çok neyi yeniden yazıyorsun?
+TO: Adres / E-posta / Wi-Fi parolası / Aynı yanıt / Diğer
+@P49
+B: Bir kapı şifresini iPhone'undan iPad'ine geçirmek için kendine mesaj mı atıyorsun?
+
+iPhone'da Cutling'e kaydet; iCloud'un üzerinden iPad klavyesinde de olsun.
+Q: Bir şifreyi iPhone'undan iPad'ine nasıl geçiriyorsun?
+T: Kendine mesaj atmadan iPhone'dan iPad'e şifre geçir
+@P50
+B: Bugün Undirect'in @macpiphq'daki lansman günü. Mac'indeki Safari istemediğin sekmeleri açıp duruyorsa, onları durduran şey bu.
+Q: Mac'indeki Safari senin istemediğin sekmeler açıyor mu?
+@P51
+B: Mac'te Shift-Command-V'ye bas, geçmişin karşında: en son kopyaladığın şey ve Cutling'e kaydettiklerin.
+Q: Mac'inde pano geçmişi kullanıyor musun?
+@P52
+B: Sen hiç dokunmadan, yalnızca kaydırırken seni başka bir siteye gönderen sayfa, Undirect 1.0.5'te artık yerinde kalıyor; gitmeye çalıştığı adres de listede görünüyor.
+Q: Yalnızca kaydırırken yönlendirildiğin oldu mu?
+T: Kaydırırken yönlendiren sayfayı Safari'de durdur
+@P53
+B: Üç bina yönetmek, her iş emrine adres yazmak demek; her seferinde 14 saniye.
+
+Her birini Cutling'e kaydet, tek dokunuşa insin.
+Q: İş için kaç adres yazıyorsun?
+T: Her iş emrine aynı adresi yazmak
+@P54
+TK: Undirect reklam engelliyor mu? Hayır. O, sekmeleri ve yönlendirmeleri durduruyor; reklamlar yine engelleyicinin işi. Açılır Pencereleri Engelle bunları neden durduramıyor, bize sor.
+PQ: Açılır Pencereleri Engelle açık. Sekmeler yine açılıyor mu?
+PO: Evet, sürekli / Ara sıra / Hiç / O ayar hangisi?
+FC: O ayar, sayfanın kendi kendine açtığı pencereleri durduruyor. Senin dokunuşunla açılan sekme ondan geçiyor. Undirect ise parmağının altında ne olduğuna bakıyor.
+ST: Emoji slider: "Aniden açılan bir reklam sekmesi akşamını ne kadar bozuyor?" · 😠
+@P55
+B: iPhone pano geçmişi tutabilir mi? Hiçbir uygulama tutamaz, çünkü iOS uygulamaların kopyaladıklarını arka planda okumasına izin vermiyor.
+
+Cutling iPhone'da senin kaydetmeyi seçtiklerini tutuyor; geçmişin tamamı ise Mac uygulamasında.
+Q: iPhone uygulamalarının pano geçmişi tutabildiğini mi sanıyordun?
+@P56
+B: iPad'de açılır pencere çıkarmayan ücretsiz bir film sitesi mi arıyorsun?
+
+Siteler hep aynı siteler, Undirect de iPad'deki Safari'de çalışıyor. Site için aç, sekmeler dursun.
+Q: iPad'de en kötü ücretsiz film sitesi hangisi?
+T: iPad'de açılır pencere olmadan ücretsiz film siteleri
+@P57
+B: iPhone ve iPad, tek Apple kimliği; kaydettiğin metin ikisinde de var.
+
+Eşzamanlama kendi iCloud'un üzerinden yapıldığı için giriş yapılacak bir Cutling hesabı yok.
+Q: Kayıtlı metinlerini birden fazla cihazda kullanıyor musun?
+T: Kayıtlı metin iPhone ve iPad'de, eşzamanlı
+@P58
+B: Undirect'in yardım edemediği yerler var: ana ekrana eklenen web uygulamaları ve başka uygulamaların içindeki tarayıcı. Safari uzantıları oralarda çalışmıyor.
+
+Bağlantıyı Safari'de aç, korunursun.
+Q: Bağlantıları Safari'de mi açıyorsun, başka uygulamaların içinde mi?
+@P59
+B: Samsung'dan mı geçtin? Android'den özlediklerin: "Yapıştırmaya İzin Ver" sorusu olmadan yapıştırmak, Gboard'un panosu ve sabitlenmiş klipleri.
+
+Sabitlenmiş klipleri Cutling geri getiriyor: randevu bağlantın iPhone klavyesinde, her sohbete tek dokunuşla. Kopyaladıklarını ise kaydedemiyor.
+Q: Samsung'dan en çok neyi özlüyorsun?
+T: iPhone'da Android'den özlediklerim
+@P60
+B: POV: ücretsiz bir film sitesindeki reklamsın. Onlar Oynat'a dokunuyor, sen yeni sekme açıyorsun. Bir daha dokunuyorlar, iPhone'larında 12 virüs olduğunu söylüyorsun.
+
+Sonra o site için Undirect'i açtılar ve gönderdiğin hiçbir şey geçmedi.
+Q: En çok hangi reklam numarasına düştün?
+T: POV: ücretsiz film sitesindeki reklamsın
+@P61
+TK: Bir klavye uygulamasına Tam Erişim vermek güvenli mi? Cutling klavyesinin ne okuduğunu ve okuduğunun nereye gittiğini sor. Kısa yanıt: imleçten önceki kelimeyi okuyor, hiçbir yere gitmiyor.
+PQ: Kayıtlı metinlerini bir klavye uygulamasına emanet eder miydin?
+PO: Evet, çevrimdışıysa / Yalnızca büyük markalara / Başka klavye kullanmam / Tam Erişim ne?
+FC: Cutling klavyesinde ağ kodu hiç yok; App Store sayfasında da veri toplanmadığı yazıyor.
+ST: Questions: "Bir klavyeye güvenmeden önce ne görmek isterdin?"
+@P62
+B: Ücretsiz bir dosya sitesinde üç İndir düğmesi var ve yalnızca biri gerçek. Öbür ikisi seni spam bir takvim aboneliğine ve sahte bir temizleyici uygulamasına götürüyor.
+
+Undirect o site için açıkken sahteler hiçbir yere götürmüyor, gerçek olan indiriyor.
+Q: Sen hangi İndir düğmesine basardın?
+T: Gerçek İndir düğmesi yalnızca bir tane
+@P63
+B: Uçuş numarasını kopyala, sonra tek kullanımlık kodu, sonra bir adresi. Command-V'ye bas, elinde yalnızca adres var.
+
+Mac için Cutling ile Shift-Command-V'ye bas: her kopya geçmişte duruyor, parolalar ise girmiyor.
+Q: Bu hafta pano yüzünden neyi kaybettin?
+T: Command-V yalnızca son kopyaladığını tutuyor
+@P64
+B: Mac'te Safari'de Oynat'a tıklıyorsun, hiç tıklamadığın bir sekme açılıyor.
+
+O site için Undirect'in düğmesine bir kez tıkla, sonraki Oynat sekme açmasın.
+Q: Mac'indeki Safari bunu sana da yapıyor mu?
+T: Mac'te Safari'nin tıklamadığın sekmeleri açmasını durdur
+@P65
+B: Instagram'da satış yapıyorsun. "Stokta var mı?" "Kargo ne kadar?" "Ödeme nasıl?" Günde kırk kez.
+
+Her yanıtı bir kez kaydet, sonra dokunup gönder.
+Q: En çok hangi DM'yi yanıtlıyorsun?
+@P66
+B: 41. bölüm. Sonraki'ye basıyorsun, bir kumar sitesi açılıyor. Kapatıp yine basıyorsun, bu kez bir kripto sitesi.
+
+Undirect'i o okuma sitesi için bir kez aç, Sonraki'ye basınca bölümde kal.
+Q: Yönlendirme konusunda en kötü okuma sitesi hangisi?
+@P67
+B: Biri ne zaman müsait olduğunu soruyor, sen randevu bağlantını aramaya koyuluyorsun.
+
+Sayfayı bir kez Cutling ile paylaş. Bir adla kaydediliyor, bir dahaki sefere klavyende tek dokunuş.
+Q: Randevu bağlantını nerede tutuyorsun?
+T: Randevu bağlantın iPhone'da tek dokunuş uzağında
+@P68
+TK: Safari engelleyicin sana kaça mal oldu? Ankette söyle.
+PQ: Safari engelleyicin için nasıl ödeme yaptın?
+PO: Aylık ya da yıllık / Tek ödeme / Ücretsiz olanı / Kullanmıyorum
+FC: Undirect ₺119,99, tek seferlik; hesap yok, hiçbir yere bir şey gönderilmiyor.
+ST: Poll: "Bir Safari engelleyicisine en çok ne kadar ödedin?" · ₺150'den az / ₺150-600 / ₺600'den fazla / Hiç
+TQ: Engelleyicin kaça mal oldu?
+TO: Hiç / Tek ödeme / Yıllık / Aylık
+@P69
+B: Cutling'de hesap da yok, sunucu da; yani bir gün kapatılıp elinden alınacak bir şey yok. Kaydettiklerin kendi cihazlarında ve kendi iCloud'unda duruyor, internet olmadan da çalışıyor.
+Q: Güvendiğin bir uygulama seni hiç yarı yolda bırakıp kapandı mı?
+@P70
+B: Bir dizi sitesinde Geri'ye basıyorsun, seni yine reklama götürüyor.
+
+Undirect 1.0.5 o site için açıkken Geri yalnızca geri gidiyor.
+Q: Bir dizi sitesinden çıkmak için kaç kez Geri'ye basman gerekiyor?
+T: Geri düğmesi seni hep reklama götürüyor
+@P71
+B: Safari'nin Paylaş menüsünde bir Cutling düğmesi var. Bir sayfayı onunla paylaş, bir ad ver; bir form bir daha sorduğunda klavyende tek dokunuş.
+Q: Bir şeyleri kaydetmek için Paylaş menüsünü kullanıyor musun?
+T: Paylaş menüsünden bir sayfayı iPhone klavyene kaydet
+@P72
+B: Bir bağlantıya dokunuyorsun, Safari seni App Store'a fırlatıyor.
+
+Bunu sayfanın bir numarası yaptıysa Undirect durduruyor. App Store'u açacağını söyleyen bir düğmeyse, Google'ın "uygulamayı aç" düğmesi gibi, Undirect izin veriyor.
+Q: Bir sayfa seni hiç App Store'a fırlattı mı?
+@P73
+B: Annem, ofis, Ayşe teyzem: her aralıkta yılbaşı kargosu için yazdığın üç adres.
+
+Her birini Cutling'e kaydet, kargo formunda doğru olana dokun.
+Q: Aralıkta kaç adrese kargo gönderiyorsun?
+@P74
+B: Babam yazmış: "telefonda 12 virüs var diyor??" Yine o ücretsiz film sitesi, bu sefer 9 sekme açık.
+
+iPhone'una Undirect'i kurdum ve o site için açtım. Artık film doğrudan oynuyor.
+Q: Sizin ailede teknik destek kim?
+T: Babama teknik destek, her hafta
+@P75
+B: iPhone'da kopyala, iPad'de yapıştır; hiçbir şey gelmiyor.
+
+Onun yerine Cutling'e kaydet: iPhone'da kaydettiğin ofis kapı şifresi iPad klavyesinde de duruyor. Bir kerelik kopyaladığın şeyi ise taşımıyor.
+Q: Evrensel Pano sende çalışıyor mu?
+T: iPhone'da kopyala, iPad'de yapıştır çalışmıyor mu?
+@P76
+B: iPad, ücretsiz film sitesi ve Oynat'ın açtığı sekmede şu yazıyor: "iPhone'unuz hacklendi".
+
+Safari'de o site için Undirect'i aç, Oynat bir daha sekme açmasın. iPhone ve Mac'tekiyle aynı ₺119,99.
+Q: iPad'de izliyor musun?
+T: iPad: Oynat "iPhone'unuz hacklendi" sekmesi açıyor
+@P77
+B: Her yıl yenilenen bir abonelik. Bir pano için.
+
+Cutling ₺299,99; bir kez ödüyorsun, iPhone, iPad ve Mac için, hesap açmadan.
+Q: Küçük bir araç için ödediğin en pahalı abonelik hangisiydi?
+@P78
+B: Undirect sayfada hiçbir şeyi gizlemiyor; yani bir reklam engelleyici değil, seninkini kullanmaya devam edebilirsin.
+
+Engelleyicinin kaçırdığı sekmeleri ve yönlendirmeleri durduruyor, o yüzden ikisini yan yana çalıştır.
+Q: Safari'de hangi engelleyiciyi kullanıyorsun?
+@P79
+B: Yedi form, yedi dokunuş. E-posta alanında Cutling klavyesi e-posta adresini en başa koyuyor, aramana gerek kalmıyor.
+Q: Bu hafta e-postanı kaç kez yazdın?
+T: Her e-posta alanında e-postan tek dokunuşla
+@P80
+B: Oynat'a üç kez bas, üç ayrı tuzak: bir VPN uyarısı, bir virüs geri sayımı, bir ödül sayfası.
+
+Undirect açıkken aynı basış videoyu oynatıyor.
+Q: Ücretsiz bir sitede video başlayana kadar Oynat'a kaç kez basıyorsun?
+T: Oynat'a üç basış, üç ayrı tuzak
+@P81
+TK: Kısa bir metni iPhone'undan Mac'ine nasıl geçiriyorsun? Kendine e-posta, kendine mesaj, AirDrop, yoksa yeniden yazmak mı? Ankette seninkini seç.
+PQ: Bir metni iPhone'undan Mac'ine nasıl geçiriyorsun?
+PO: Kendime e-posta atarım / Kendime mesaj atarım / AirDrop ile / Yeniden yazarım
+FC: iPhone'da Cutling'e kaydet. iCloud üzerinden eşzamanlanıyor ve Mac'teki seçicide çıkıyor.
+ST: Add Yours: "iPhone'dan Mac'e metni nasıl geçiriyorsun"
+TQ: iPhone'dan Mac'e metni nasıl taşıyorsun?
+TO: E-posta / Mesaj / AirDrop / Yeniden yazarım / Diğer
+@P82
+B: Hiçbir şeye dokunmadın, sayfa yine de seni sahte bir güvenlik uyarısına gönderdi.
+
+Undirect 1.0.5 seni olduğun yerde tutuyor, sayfanın denediği adres de listede görünüyor.
+Q: Bir sayfa seni hiç dokunmadan nereye gönderdi?
+T: Hiç dokunmadan sahte güvenlik uyarısına gönderilmek
+@P83
+B: İkinci bir şey kopyaladın, ilki gitti.
+
+Mac'te, Cutling'in geçmişinde hâlâ duruyor.
+Q: En son neyin üzerine yanlışlıkla kopyaladın?
+T: Lazım olanın üzerine mi kopyaladın? Mac pano geçmişi
+@P84
+TK: Son reklam sekmesi seni nereye götürdü? Çıkartmadan seç.
+PQ: Son reklam sekmesi seni nereye götürdü?
+PO: Kumar sitesine / Sahte virüs sayfasına / App Store'a / Yetişkin sitesine
+FC: Bunların hepsi, dokunuşunu alan bir sayfanın işi. Undirect dokunuşu senin bastığın şeye iletiyor ve adresi listeliyor.
+ST: Questions: "Son reklam sekmesi seni nereye götürdü?"
+TQ: Son reklam sekmen nereye çıktı?
+TO: Kumar sitesi / Virüs sayfası / App Store / Diğer
+@P85
+B: "Aynı bilgiyi tekrar tekrar, tekrar yazmak." Bir kullanıcı, yapıştırma klavyesinin ne işe yaradığını böyle anlatmış.
+
+Cutling'e bir kez kaydet, sonra dokun yeter.
+Q: En sık ne yazıyorsun?
+T: O adresi 214 kez yazdığını gördüm
+@P86
+B: İndir düğmesi, sahte "indirme sürüyor" sayfası. Her seferinde.
+
+Undirect'i o site için bir kez aç, sekme sayfada kalsın.
+Q: Sahte dosyayı indirdiğin oldu mu?
+T: İndir düğmesi, sahte indirme sayfası, her seferinde
+@P87
+B: Görsel tutmayan bir hazır metin uygulaması. Cutling'de görsel de metin gibi kaydediliyor: ekran görüntüsünü bir kez kaydet, klavyede dokun ve sohbete yapıştır.
+Q: Hangi görseli tekrar tekrar gönderiyorsun?

@@ -1,0 +1,335 @@
+=== ja
+@P01
+B: 再生ボタンを押したら「視聴を続けるにはVPNアプリをインストール」。戻ってもう一度押すと「お使いのiPhoneは(12)個のウイルスに感染しています！」。3回目は「おめでとうございます！本日のラッキービジターに選ばれました」。
+
+再生ボタンの上には見えない広告のレイヤーが重ねてあって、タップは先にそっちへ吸われます。
+Q: 再生ボタンを押して飛ばされた先で、いちばんひどかったのはどこですか？
+T: 再生を押すたびに広告タブが開くSafari
+@P02
+B: お届け先、配送先住所、請求先住所。郵便番号から部屋番号まで、また親指で打って、また打ち間違える。フォームひとつに14秒かかります。
+
+Cutlingに一度保存しておけば、ワンタップで入ります。1秒ほどです。
+Q: 住所、週に何回くらい入力していますか？
+T: 住所は毎回打たなくていい。キーボードからワンタップ
+@P03
+TK: Safariで、押してもいないタブが勝手に開いたことはありますか？ステッカーで投票してください。
+PQ: 1話見るまでに、広告タブを何個閉じましたか？
+PO: 0個 / 1〜5個 / 6〜20個 / もう数えていない
+FC: あのタブが開くのは、ページがあなたのタップを広告のクリックにすり替えているからです。Undirectは、そのタップを押したはずのボタンに戻します。
+ST: Poll: 「1話見るまでに閉じた広告タブは？」· 0個 / 1〜5個 / 6〜20個 / 数えていない
+TQ: Safariで勝手にタブが開いたこと、ある？
+TO: ある / ない
+@P04
+B: カフェのWi-Fiログイン、「10%オフ」のポップアップ、チェックインのフォーム、レシートの送り先。メールアドレスを4回打って、合わせて21秒。
+
+Cutlingに一度保存すると、メール欄ではキーボードがそのアドレスを先頭に出します。あとはどのフォームもワンタップです。
+Q: メールアドレスをいちばん打たされるのは、どんなフォームですか？
+T: メールアドレスの入力は、どのフォームでもワンタップ
+@P05
+B: 「設定」→「Safari」→「ポップアップブロック」はオン。それでもタブは開き続けます。
+
+Safariは「ユーザーが自分で開いた」と判断したタブは通します。そしてページは、どんなタップでもそう見せかけられます。
+Q: ポップアップブロックはオンにしていますか？それでもタブは開きますか？
+@P06
+TK: いちばん何度も打ち直しているのは？住所、メールアドレス、いつも同じDMの返信、URL。投票で教えてください。
+PQ: 毎週打ち直している文章、どこに置いていますか？
+PO: メモアプリ / 写真にスクショ / ユーザ辞書 / 毎回打ち直す
+FC: Cutlingなら、その文章はキーボードの上に置いておけます。一度保存すれば、どのアプリでもタップで入力できます。
+ST: Add Yours: 「毎週打ち直している文章」
+TQ: いちばん打ち直しているのは？
+TO: 住所 / メール / 同じDM返信 / URL / その他
+@P07
+B: 映画サイトで「ダウンロード」を押すと、「ダウンロード中…」という偽のページが出て、再生アプリを入れろと言ってきます。
+
+そのサイトでUndirectをオンにしておけば、元のページから動きません。
+Q: 最近、偽のダウンロードボタンでどこに飛ばされましたか？
+T: ダウンロードを押したら偽のダウンロード画面が出た
+@P08
+B: キーボードアプリに、打った文字を読ませてもいいのか。もっともな疑問です。
+
+Cutlingのキーボードには通信するコードが入っていません。アカウントもなく、App Storeのプライバシー表示は「データの収集なし」です。読むのはカーソル直前の単語だけで、保存した文章を候補に出すために使い、どこにも送りません。
+Q: キーボードに入力を読ませる前に、何がわかっていれば安心できますか？
+@P09
+B: 今日、CutlingがProduct Huntに掲載されています。何度も打つ文章をしまっておけるキーボードで、iPhone、iPad、Macで使えます。
+Q: キーボードに最初に保存するとしたら、何にしますか？
+
+=== zh-Hant
+@P01
+B: 你按下播放，跳出「請安裝 VPN App 才能繼續觀看」。返回再按一次：「您的 iPhone 已被 (12) 個病毒嚴重損壞！」再按：「恭喜！您是今日的幸運訪客。」
+
+網頁在播放鍵上面蓋了一層看不見的廣告，你那一下其實先點到它。
+Q: 你按播放鍵被帶去過最扯的頁面是哪一個？
+T: Safari 每按一次播放就多開一個廣告分頁
+@P02
+B: 收件地址、配送地址、帳單地址。同一串地址又用拇指打一遍，還打錯字，每張表單 14 秒。
+
+在 Cutling 存一次，之後點一下就填好，大概一秒。
+Q: 你一個禮拜要打幾次地址？
+T: 結帳不用再重打地址，鍵盤點一下就填好
+@P03
+TK: Safari 有沒有自己開過你根本沒點的分頁？用貼紙投個票。
+PQ: 看完一集，你關了幾個廣告分頁？
+PO: 0 個 / 1–5 個 / 6–20 個 / 數不清了
+FC: 那些分頁會開，是因為網頁把你那一下當成點廣告。Undirect 會把這一下還給你原本要按的按鈕。
+ST: Poll: 「看一集要關幾個廣告分頁？」· 0 個 / 1–5 個 / 6–20 個 / 數不清
+TQ: Safari 有沒有開過你沒點的分頁？
+TO: 有 / 沒有
+@P04
+B: 連 Wi-Fi 要填 Email，「首購九折」的彈出視窗要填，報到表單要填，電子發票也要填。四次加起來打了 21 秒。
+
+在 Cutling 存一次。遇到 Email 欄位，鍵盤會把它排在第一個，每張表單點一下就好。
+Q: 哪一種表單最常逼你打 Email？
+T: Email 不用每張表單都重打
+@P05
+B: 設定、Safari、「阻擋彈出式視窗」：已開啟。分頁還是一個一個跳出來。
+
+Safari 只要認為那是你自己要開的，就會放行。而網頁有辦法讓任何一下點按看起來都像是你要的。
+Q: 你的「阻擋彈出式視窗」有開嗎？分頁還是照開嗎？
+@P06
+TK: 你最常重打的是什麼？地址、Email、同一句私訊回覆，還是某個連結？投票選一個。
+PQ: 每個禮拜都要重打的那段文字，你放在哪裡？
+PO: 備忘錄 / 截圖存在照片 / 替代文字 / 每次都重打
+FC: Cutling 把那段文字放在鍵盤上：存一次，在任何 App 裡點一下就輸入。
+ST: Add Yours: 「你每個禮拜都在重打的那段文字」
+TQ: 你最常重打什麼？
+TO: 地址 / Email / 同一句回覆 / 連結 / 其他
+@P07
+B: 在電影網站按「下載」，結果跳到一個假的「下載中」頁面，叫你先裝播放器 App。
+
+在那個網站開啟 Undirect，你就會留在原本的頁面。
+Q: 上一次假的下載鍵把你帶去哪裡？
+T: 按了下載，卻跳出假的下載頁面
+@P08
+B: 你敢讓鍵盤 App 讀你打的字嗎？會這樣問很合理。
+
+Cutling 的鍵盤裡沒有任何連網的程式碼，不用註冊帳號，App Store 的隱私標示寫的是「未收集資料」。它只讀游標前面那個字，用來推薦你存過的內容，什麼都不會傳出去。
+Q: 要知道哪些事，你才放心讓鍵盤讀你打的字？
+@P09
+B: Cutling 今天登上 Product Hunt：把你一打再打的文字收在鍵盤上，iPhone、iPad、Mac 都能用。
+Q: 你第一個想存進鍵盤的是什麼？
+
+=== zh-Hans
+@P01
+B: 点了播放，页面说“安装 VPN 应用才能继续观看”。返回再点：“你的 iPhone 已被 (12) 个病毒严重损坏！”第三次：“恭喜，你是今天的幸运访客。”
+
+网页在播放键上盖了一层看不见的广告，你那一下先点到的是它。
+Q: 点播放键被带去过的最离谱的页面，是哪一个？
+T: Safari 里每点一次播放，就弹出一个广告标签页
+@P02
+B: 收货地址、配送地址、账单地址。同一个地址又用拇指敲一遍，还带错别字，每张表单 14 秒。
+
+在 Cutling 里存一次，以后点一下就填好，大约一秒。
+Q: 你一周要输几次地址？
+T: 结账别再重输地址，键盘上点一下就填好
+@P03
+TK: Safari 有没有自己打开过你根本没点的标签页？在贴纸上投一票。
+PQ: 看完一集，你关掉了几个广告标签页？
+PO: 0 个 / 1–5 个 / 6–20 个 / 数不清了
+FC: 这些标签页会打开，是因为网页把你那一下当成了点广告。Undirect 把这一下还给你本来要按的按钮。
+ST: Poll: “看一集要关几个广告标签页？”· 0 个 / 1–5 个 / 6–20 个 / 数不清
+TQ: Safari 开过你没点的标签页吗？
+TO: 开过 / 没有
+@P04
+B: 连 Wi-Fi 要填邮箱，“首单九折”的弹窗要填，入住登记要填，电子收据还要填。四次下来敲了 21 秒。
+
+在 Cutling 里存一次。碰到邮箱输入框，键盘会把它放在第一个，每张表单点一下就行。
+Q: 哪种表单最爱让你输邮箱？
+T: 邮箱地址不用每张表单都重输
+@P05
+B: 设置、Safari、“阻止弹出式窗口”：已打开。标签页照样一个接一个地冒出来。
+
+只要 Safari 认为是你自己要打开的，它就放行。而网页能让任何一次点按看上去都像是你要的。
+Q: 你的“阻止弹出式窗口”开着吗？标签页还是照样弹吗？
+@P06
+TK: 你最常重复输入的是什么？地址、邮箱、同一句私信回复，还是某个链接？在投票里选一个。
+PQ: 每周都要重输的那段文字，你存在哪儿？
+PO: 备忘录 / 截图存在相册 / 文本替换 / 每次都重输
+FC: Cutling 把这段文字放在键盘上：存一次，在任何 App 里点一下就输入。
+ST: Add Yours: “你每周都在重输的那段文字”
+TQ: 你最常重输什么？
+TO: 地址 / 邮箱 / 同一句回复 / 链接 / 其他
+@P07
+B: 在电影网站点“下载”，跳出来的是一个假的“正在下载”页面，让你先装一个播放器 App。
+
+对这个网站打开 Undirect，你就留在原来的页面。
+Q: 上一次假的下载按钮把你带到了哪儿？
+T: 点了下载，出来的却是假的下载页面
+X: 在电影网站点“下载”，跳出来的是假的“正在下载”页面，让你先装播放器 App。
+
+对这个网站打开 Undirect，你就留在原来的页面。
+@P08
+B: 你会让一个键盘 App 读你输入的内容吗？问得有道理。
+
+Cutling 的键盘里没有任何联网代码，不用注册账号，App Store 的隐私标签写的是“未收集数据”。它只读光标前的那个词，用来推荐你存过的内容，什么都不往外发。
+Q: 要先弄清楚哪些事，你才放心让键盘读你的输入？
+@P09
+B: Cutling 今天上了 Product Hunt：把你一遍遍重输的文字放进键盘，iPhone、iPad、Mac 都能用。
+Q: 你最想先存进键盘的是什么？
+
+=== id
+@P01
+B: Kamu tekan Play, muncul halaman "pasang aplikasi VPN untuk lanjut nonton". Balik, tekan lagi: "iPhone kamu rusak parah karena (12) virus!" Sekali lagi: "Selamat, kamu pengunjung beruntung hari ini."
+
+Halaman itu menaruh lapisan tak terlihat di atas tombol Play, jadi ketukanmu kena iklan duluan.
+Q: Gara-gara tombol Play, kamu pernah dilempar ke halaman separah apa?
+T: Tiap tekan Play di Safari, yang muncul malah iklan
+X: Kamu tekan Play, muncul "pasang aplikasi VPN untuk lanjut nonton". Tekan lagi: "iPhone kamu kena (12) virus!"
+
+Halaman itu menaruh lapisan tak terlihat di atas tombol Play, jadi ketukanmu kena iklan duluan.
+@P02
+B: Alamat pengiriman. Alamat penerima. Alamat tagihan. Alamat yang sama diketik lagi pakai jempol, lengkap dengan salah ketiknya: 14 detik per formulir.
+
+Simpan sekali di Cutling, lalu tinggal satu ketukan, kira-kira sedetik.
+Q: Seminggu berapa kali kamu mengetik alamat?
+T: Berhenti mengetik alamat di setiap checkout
+@P03
+TK: Safari pernah membuka tab yang tidak kamu ketuk? Pilih jawabanmu di stiker.
+PQ: Berapa tab iklan yang kamu tutup demi nonton satu episode?
+PO: 0 / 1-5 / 6-20 / Sudah tak terhitung
+FC: Tab itu terbuka karena halamannya memakai ketukanmu untuk iklan. Undirect mengembalikan ketukan itu ke tombol yang kamu tekan.
+ST: Poll: "Berapa tab iklan yang kamu tutup demi satu episode?" · 0 / 1-5 / 6-20 / Tak terhitung
+TQ: Safari pernah buka tab yang tidak kamu ketuk?
+TO: Pernah / Belum
+@P04
+B: Login Wi-Fi kafe, pop-up "diskon 10%", formulir check-in, struk belanja: empat kali mengetik alamat email, 21 detik.
+
+Simpan sekali di Cutling. Di kolom email, keyboard menaruhnya paling depan, jadi tiap formulir cukup satu ketukan.
+Q: Formulir apa yang paling sering minta kamu mengetik email?
+T: Alamat email tak perlu diketik ulang di tiap formulir
+@P05
+B: Pengaturan, Safari, Blokir Pop-up: nyala. Tab baru tetap saja bermunculan.
+
+Safari meloloskan tab yang dikiranya memang kamu minta, dan sebuah halaman bisa membuat ketukan apa pun terlihat seperti permintaanmu.
+Q: Blokir Pop-up di iPhone-mu nyala? Tab masih terbuka sendiri?
+@P06
+TK: Apa yang paling sering kamu ketik ulang? Alamat, email, balasan DM yang itu-itu lagi, link? Pilih satu di polling.
+PQ: Teks yang kamu ketik ulang tiap minggu, disimpan di mana?
+PO: Aplikasi Catatan / Screenshot di Foto / Penggantian Teks / Ketik ulang terus
+FC: Cutling menaruh teks itu di keyboard: simpan sekali, lalu ketuk dari aplikasi mana pun.
+ST: Add Yours: "Teks yang kamu ketik ulang tiap minggu"
+TQ: Apa yang paling sering kamu ketik ulang?
+TO: Alamat / Email / Balasan DM / Link / Lainnya
+@P07
+B: Ketuk Download di situs film, yang muncul malah halaman palsu "Download sedang berjalan" yang menyuruhmu memasang aplikasi pemutar.
+
+Kalau Undirect nyala untuk situs itu, kamu tetap di halaman tadi.
+Q: Tombol Download palsu terakhir membawamu ke mana?
+T: Tekan Download, yang muncul halaman download palsu
+@P08
+B: Mau kasih izin aplikasi keyboard membaca apa yang kamu ketik? Wajar kalau ragu.
+
+Keyboard Cutling tidak punya kode jaringan, tidak pakai akun, dan label privasinya di App Store tertulis Data Tidak Dikumpulkan. Yang dibacanya hanya kata sebelum kursor, untuk menyarankan teks yang kamu simpan, dan tidak ada yang dikirim.
+Q: Apa yang perlu kamu tahu dulu sebelum mengizinkan keyboard membaca ketikanmu?
+@P09
+B: Hari ini Cutling tampil di Product Hunt: keyboard untuk teks yang kamu ketik berulang-ulang, di iPhone, iPad, dan Mac.
+Q: Apa yang pertama kamu simpan di keyboard?
+
+=== ar
+@P01
+B: تضغط زر التشغيل، فتظهر صفحة تقول: «ثبّت تطبيق VPN لمتابعة المشاهدة». ترجع وتضغط مرة ثانية: «جهازك الـiPhone متضرر بشدة بسبب (12) فيروسًا!». وفي الثالثة: «مبروك، أنت الزائر المحظوظ اليوم».
+
+الصفحة تضع طبقة غير مرئية فوق زر التشغيل، فتذهب ضغطتك إلى الإعلان أولًا.
+Q: ما أسوأ صفحة نقلك إليها زر تشغيل؟
+T: كل ضغطة على زر التشغيل تفتح إعلانًا جديدًا في Safari
+@P02
+B: عنوان التوصيل. عنوان الشحن. عنوان الفاتورة. العنوان نفسه تكتبه بإبهامك مرة أخرى، بأخطائه الإملائية: 14 ثانية لكل نموذج.
+
+احفظه مرة واحدة في Cutling، وبعدها يدخل بضغطة واحدة في نحو ثانية.
+Q: كم مرة تكتب عنوانك في الأسبوع؟
+T: لا تكتب عنوانك من جديد عند كل طلب
+@P03
+TK: هل فتح Safari يومًا تبويبًا لم تضغط عليه؟ صوّت في الملصق.
+PQ: كم تبويبًا إعلانيًا أغلقت لتشاهد حلقة واحدة؟
+PO: ولا واحد / من 1 إلى 5 / من 6 إلى 20 / توقفت عن العد
+FC: تلك التبويبات تنفتح لأن الصفحة تأخذ ضغطتك وتحسبها ضغطة على إعلان. Undirect يعيد الضغطة إلى الزر الذي قصدته.
+ST: Poll: «كم تبويبًا إعلانيًا أغلقت لتشاهد حلقة واحدة؟» · ولا واحد / 1-5 / 6-20 / توقفت عن العد
+TQ: هل فتح Safari تبويبًا لم تضغط عليه؟
+TO: نعم / لا
+@P04
+B: شبكة Wi-Fi في المقهى، نافذة «خصم 10%»، نموذج تسجيل الوصول، وإيصال الشراء: كتبت بريدك الإلكتروني أربع مرات في 21 ثانية.
+
+احفظه مرة واحدة في Cutling. في خانة البريد تضعه لوحة المفاتيح في المقدمة، فيكفي كل نموذج ضغطة واحدة.
+Q: أي نموذج يجعلك تكتب بريدك أكثر من غيره؟
+T: بريدك الإلكتروني بضغطة واحدة في كل نموذج
+@P05
+B: الإعدادات، ثم Safari، ثم «حظر الإطارات المنبثقة»: مفعّل. ومع ذلك تستمر التبويبات في الظهور.
+
+Safari يسمح بفتح التبويب إذا ظنّ أنك أنت من طلبه، والصفحة تستطيع أن تجعل أي ضغطة تبدو كأنها طلب منك.
+Q: هل «حظر الإطارات المنبثقة» مفعّل عندك؟ وهل ما زالت التبويبات تنفتح؟
+@P06
+TK: ما أكثر شيء تعيد كتابته؟ العنوان، البريد الإلكتروني، الرد نفسه في الرسائل الخاصة، أم رابط؟ اختر واحدًا في التصويت.
+PQ: أين تحتفظ بالنص الذي تعيد كتابته كل أسبوع؟
+PO: تطبيق الملاحظات / لقطة شاشة في الصور / استبدال النص / أعيد كتابته كل مرة
+FC: Cutling يبقي هذا النص على لوحة المفاتيح: احفظه مرة واحدة ثم أدخله بضغطة من أي تطبيق.
+ST: Add Yours: «النص الذي تعيد كتابته كل أسبوع»
+TQ: ما أكثر شيء تعيد كتابته؟
+TO: العنوان / البريد / الرد نفسه / رابط / غير ذلك
+@P07
+B: تضغط «تنزيل» في موقع أفلام، فتظهر لك صفحة مزيفة مكتوب فيها «جارٍ التنزيل» وتطلب منك تثبيت تطبيق مشغّل.
+
+إذا كان Undirect مفعّلًا لهذا الموقع، تبقى في صفحتك.
+Q: إلى أين نقلك آخر زر تنزيل مزيف؟
+T: ضغطت زر التنزيل فظهرت صفحة تنزيل مزيفة
+@P08
+B: هل تسمح لتطبيق لوحة مفاتيح بأن يقرأ ما تكتبه؟ سؤال في محلّه.
+
+لوحة مفاتيح Cutling لا تحتوي على أي كود للاتصال بالشبكة، ولا حساب فيها، وصفحتها في App Store تذكر أنها لا تجمع أي بيانات. تقرأ الكلمة التي تسبق المؤشر فقط لتقترح عليك نصًا محفوظًا، ولا ترسل شيئًا.
+Q: ما الذي تحتاج أن تعرفه قبل أن تسمح للوحة مفاتيح بقراءة ما تكتب؟
+@P09
+B: Cutling اليوم على Product Hunt: لوحة مفاتيح للنصوص التي تكتبها مرة بعد مرة، على iPhone و iPad و Mac.
+Q: ما أول شيء ستحفظه في لوحة المفاتيح؟
+
+=== tr
+@P01
+B: Oynat'a basıyorsun, karşına "izlemeye devam etmek için VPN uygulamasını yükle" diyen bir sayfa çıkıyor. Geri dönüp yine basıyorsun: "iPhone'unuz (12) virüs yüzünden ciddi hasar gördü!" Bir daha: "Bugünün şanslı ziyaretçisi sizsiniz."
+
+Sayfa, Oynat düğmesinin üstüne görünmez bir katman koyuyor; dokunuşun önce reklama gidiyor.
+Q: Oynat düğmesinin seni attığı en kötü sayfa hangisiydi?
+T: Safari'de Oynat'a her basışta yeni bir reklam açılıyor
+@P02
+B: Teslimat adresi. Gönderim adresi. Fatura adresi. Aynı adresi başparmağınla, yazım hatalarıyla birlikte yeniden yazıyorsun: form başına 14 saniye.
+
+Cutling'e bir kez kaydet, sonra tek dokunuşla, bir saniyede giriyor.
+Q: Adresini haftada kaç kez yazıyorsun?
+T: Her siparişte adresini baştan yazma
+@P03
+TK: Safari hiç dokunmadığın bir sekme açtı mı? Çıkartmadan oy ver.
+PQ: Bir bölüm izlemek için kaç reklam sekmesi kapattın?
+PO: 0 / 1-5 / 6-20 / Saymayı bıraktım
+FC: O sekmeler, sayfa senin dokunuşunu reklama tıklama saydığı için açılıyor. Undirect dokunuşu bastığın düğmeye geri veriyor.
+ST: Poll: "Bir bölüm için kaç reklam sekmesi kapattın?" · 0 / 1-5 / 6-20 / Saymadım
+TQ: Safari hiç dokunmadığın bir sekme açtı mı?
+TO: Evet / Hayır
+@P04
+B: Kafenin Wi-Fi girişi, "%10 indirim" penceresi, check-in formu, e-fiş: e-posta adresini dört kez yazdın, 21 saniye.
+
+Cutling'e bir kez kaydet. E-posta alanında klavye onu en başa koyuyor, her form tek dokunuşla bitiyor.
+Q: E-postanı en çok hangi form yazdırıyor?
+T: E-posta adresini her forma yeniden yazma
+@P05
+B: Ayarlar, Safari, "Açılır Pencereleri Engelle": açık. Sekmeler yine de açılmaya devam ediyor.
+
+Safari, senin istediğini düşündüğü sekmeye izin veriyor; bir sayfa da her dokunuşu sen istemişsin gibi gösterebiliyor.
+Q: Sende "Açılır Pencereleri Engelle" açık mı, sekmeler yine de açılıyor mu?
+@P06
+TK: En çok neyi yeniden yazıyorsun? Adres, e-posta, hep aynı DM yanıtı, bir bağlantı? Ankette birini seç.
+PQ: Her hafta yeniden yazdığın metni nerede tutuyorsun?
+PO: Notlar uygulamasında / Ekran görüntüsünde / Metin Değiştirme'de / Her seferinde yazıyorum
+FC: Cutling o metni klavyede tutuyor: bir kez kaydet, hangi uygulamada olursan ol dokunup gir.
+ST: Add Yours: "Her hafta yeniden yazdığın metin"
+TQ: En çok neyi yeniden yazıyorsun?
+TO: Adres / E-posta / Aynı DM yanıtı / Bağlantı / Diğer
+@P07
+B: Bir film sitesinde İndir'e dokunuyorsun, karşına sahte bir "İndirme sürüyor" sayfası çıkıyor ve oynatıcı uygulaması yüklemeni istiyor.
+
+Undirect o site için açıksa bulunduğun sayfada kalıyorsun.
+Q: Son sahte İndir düğmesi seni nereye götürdü?
+T: İndir'e bastım, sahte indirme sayfası çıktı
+@P08
+B: Bir klavye uygulamasının yazdıklarını okumasına izin verir misin? Yerinde bir soru.
+
+Cutling klavyesinde ağ kodu yok, hesap yok; App Store sayfasındaki gizlilik bölümünde de veri toplanmadığı yazıyor. Kayıtlı bir metni önermek için yalnızca imleçten önceki kelimeyi okuyor ve hiçbir şey göndermiyor.
+Q: Bir klavyenin yazdıklarını okumasına izin vermeden önce neyi bilmek isterdin?
+@P09
+B: Cutling bugün Product Hunt'ta: tekrar tekrar yazdığın metinler için bir klavye; iPhone, iPad ve Mac'te.
+Q: Klavyeye ilk neyi kaydederdin?

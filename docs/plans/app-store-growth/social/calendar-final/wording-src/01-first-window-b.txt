@@ -1,0 +1,338 @@
+=== ru
+@P01
+B: Нажимаете «Смотреть», а открывается страница: «Установите VPN-приложение, чтобы продолжить просмотр». Назад, ещё раз: «Ваш iPhone серьёзно повреждён (12) вирусами!» И снова: «Вы сегодняшний счастливый посетитель».
+
+Страница кладёт поверх кнопки невидимый слой, и ваше нажатие сначала достаётся рекламе.
+Q: На какую самую дикую страницу вас перекидывала кнопка «Смотреть»?
+T: В Safari каждое нажатие на Play открывает новую рекламу
+@P02
+B: Адрес доставки. Адрес получателя. Платёжный адрес. Один и тот же адрес снова большим пальцем, с опечатками: 14 секунд на каждую форму.
+
+Сохраните его в Cutling один раз, и дальше он вставляется одним касанием, примерно за секунду.
+Q: Сколько раз в неделю вы вводите свой адрес?
+T: Хватит вводить адрес заново в каждом заказе
+@P03
+TK: Safari хоть раз открывал вкладку, на которую вы не нажимали? Голосуйте в стикере.
+PQ: Сколько рекламных вкладок вы закрыли ради одной серии?
+PO: 0 / 1–5 / 6–20 / Сбился со счёта
+FC: Эти вкладки открываются, потому что страница выдаёт ваше нажатие за клик по рекламе. Undirect возвращает нажатие той кнопке, на которую вы нажали.
+ST: Poll: «Сколько рекламных вкладок закрыли ради одной серии?» · 0 / 1–5 / 6–20 / Сбился со счёта
+TQ: Safari открывал вкладку без вашего нажатия?
+TO: Да / Нет
+@P04
+B: Вход в Wi-Fi, окно «скидка 10%», форма регистрации в отеле, электронный чек: адрес почты набран четыре раза, 21 секунда.
+
+Сохраните его в Cutling один раз. В поле для почты клавиатура ставит его первым, и на каждую форму уходит одно касание.
+Q: Какая форма чаще всего заставляет вас вводить почту?
+T: Не вводите почту заново в каждой форме
+@P05
+B: Настройки, Safari, «Блокировка всплывающих окон»: включено. А вкладки всё равно открываются.
+
+Safari пропускает вкладку, если считает, что вы сами её открыли, а страница умеет выдать за это любое нажатие.
+Q: У вас блокировка всплывающих окон включена? Вкладки всё равно открываются?
+@P06
+TK: Что вы чаще всего набираете заново? Адрес, почту, один и тот же ответ в директе, ссылку? Выберите в опросе.
+PQ: Где вы храните текст, который набираете каждую неделю?
+PO: В «Заметках» / Скриншот в «Фото» / В «Замене текста» / Просто набираю заново
+FC: Cutling держит этот текст на клавиатуре: сохраните один раз и вставляйте касанием в любом приложении.
+ST: Add Yours: «Текст, который вы набираете каждую неделю»
+TQ: Что вы чаще всего набираете заново?
+TO: Адрес / Почту / Один и тот же ответ / Ссылку / Другое
+@P07
+B: Нажимаете «Скачать» на сайте с фильмами, а открывается поддельная страница «Идёт загрузка» с требованием установить плеер.
+
+Если Undirect включён для этого сайта, вы остаётесь на своей странице.
+Q: Куда вас в последний раз увела поддельная кнопка «Скачать»?
+T: Нажал «Скачать», а открылась поддельная страница загрузки
+@P08
+B: Разрешили бы вы клавиатуре читать то, что вы печатаете? Вопрос справедливый.
+
+В клавиатуре Cutling нет сетевого кода и нет учётной записи, а на странице в App Store указано, что приложение не собирает данные. Она читает только слово перед курсором, чтобы предложить сохранённый текст, и ничего не отправляет.
+Q: Что вам нужно знать, прежде чем разрешить клавиатуре читать ваш ввод?
+@P09
+B: Cutling сегодня на Product Hunt: клавиатура для текста, который вы набираете снова и снова, на iPhone, iPad и Mac.
+Q: Что вы сохранили бы на клавиатуре первым?
+
+=== fr
+@P01
+B: Vous appuyez sur Lecture. Une page s'ouvre : « installez l'app VPN pour continuer à regarder ». Retour, vous réessayez : « Votre iPhone est gravement endommagé par (12) virus ! » Encore une fois : « Vous êtes le visiteur chanceux du jour. »
+
+La page pose un calque invisible sur le bouton Lecture, et c'est une pub qui reçoit votre appui en premier.
+Q: Quelle est la pire page sur laquelle un bouton Lecture vous a envoyé ?
+T: Chaque appui sur Lecture ouvre une pub de plus dans Safari
+@P02
+B: Adresse de livraison. Adresse d'expédition. Adresse de facturation. Toujours la même adresse, retapée au pouce avec les fautes de frappe : 14 secondes par formulaire.
+
+Enregistrée une fois dans Cutling, elle se saisit d'un seul toucher, en une seconde environ.
+Q: Combien de fois par semaine tapez-vous votre adresse ?
+T: Arrêtez de retaper votre adresse à chaque commande
+X: Livraison, expédition, facturation : toujours la même adresse, retapée au pouce avec les fautes de frappe. 14 secondes par formulaire.
+
+Enregistrée une fois dans Cutling, elle se saisit d'un seul toucher, en une seconde environ.
+@P03
+TK: Safari a-t-il déjà ouvert un onglet que vous n'aviez pas touché ? Votez sur le sticker.
+PQ: Combien d'onglets de pub fermés pour regarder un épisode ?
+PO: 0 / 1 à 5 / 6 à 20 / J'ai arrêté de compter
+FC: Ces onglets s'ouvrent parce que la page fait passer votre appui pour un clic sur une pub. Undirect rend l'appui au bouton que vous visiez.
+ST: Poll: « Onglets de pub fermés pour un épisode ? » · 0 / 1 à 5 / 6 à 20 / Trop pour compter
+TQ: Safari a déjà ouvert un onglet sans vous ?
+TO: Oui / Non
+@P04
+B: Le Wi-Fi du café, la pop-up « -10 % », le formulaire d'enregistrement, le ticket de caisse par e-mail : votre adresse e-mail tapée quatre fois, 21 secondes.
+
+Enregistrez-la une fois dans Cutling. Dans un champ e-mail, le clavier la propose en premier, et chaque formulaire se règle d'un toucher.
+Q: Quel formulaire vous fait le plus souvent taper votre e-mail ?
+T: Ne retapez plus votre adresse e-mail à chaque formulaire
+@P05
+B: Réglages, Safari, « Bloquer les pop-up » : activé. Et les onglets continuent d'arriver.
+
+Safari laisse passer un onglet quand il pense que vous l'avez demandé, et une page sait faire passer n'importe quel appui pour une demande.
+Q: « Bloquer les pop-up » est activé chez vous, et des onglets s'ouvrent quand même ?
+@P06
+TK: Que retapez-vous le plus ? Votre adresse, votre e-mail, la même réponse en DM, un lien ? Choisissez dans le sondage.
+PQ: Où gardez-vous le texte que vous retapez chaque semaine ?
+PO: Dans Notes / Une capture dans Photos / Remplacement de texte / Je le retape
+FC: Cutling garde ce texte sur le clavier : vous l'enregistrez une fois, puis un toucher suffit dans n'importe quelle app.
+ST: Add Yours: « Le texte que vous retapez chaque semaine »
+TQ: Que retapez-vous le plus ?
+TO: Adresse / E-mail / Même réponse en DM / Un lien / Autre
+@P07
+B: Vous touchez Télécharger sur un site de films, et vous tombez sur une fausse page « Téléchargement en cours » qui vous demande d'installer un lecteur.
+
+Avec Undirect activé pour ce site, vous restez où vous étiez.
+Q: Où vous a mené le dernier faux bouton Télécharger ?
+T: Le bouton Télécharger m'a ouvert une fausse page de téléchargement
+@P08
+B: Laisseriez-vous une app de clavier lire ce que vous tapez ? La question se pose.
+
+Le clavier de Cutling ne contient aucun code réseau, il n'y a pas de compte, et sa fiche App Store indique qu'aucune donnée n'est collectée. Il lit le mot placé avant le curseur pour vous proposer un texte enregistré, et n'envoie rien.
+Q: Que voudriez-vous savoir avant de laisser un clavier lire ce que vous tapez ?
+@P09
+B: Cutling est sur Product Hunt aujourd'hui : un clavier pour les textes que vous tapez encore et encore, sur iPhone, iPad et Mac.
+Q: Qu'enregistreriez-vous en premier sur un clavier ?
+
+=== it
+@P01
+B: Premi Play. Si apre una pagina: "installa l'app VPN per continuare a guardare". Torni indietro, riprovi: "Il tuo iPhone è gravemente danneggiato da (12) virus!" Ancora: "Sei il visitatore fortunato di oggi."
+
+La pagina mette un livello invisibile sopra Play, così il tuo tocco finisce prima su una pubblicità.
+Q: Qual è la pagina peggiore su cui ti ha mandato un tasto Play?
+T: Ogni tocco su Play apre un'altra pubblicità in Safari
+@P02
+B: Indirizzo di consegna. Indirizzo di spedizione. Indirizzo di fatturazione. Sempre lo stesso indirizzo, scritto col pollice, refusi compresi: 14 secondi a modulo.
+
+Salvalo una volta in Cutling e poi lo inserisci con un tocco, in un secondo circa.
+Q: Quante volte a settimana scrivi il tuo indirizzo?
+T: Basta riscrivere l'indirizzo a ogni ordine
+@P03
+TK: Safari ti ha mai aperto una scheda che non avevi toccato? Vota nello sticker.
+PQ: Quante schede pubblicitarie hai chiuso per guardare un episodio?
+PO: 0 / 1-5 / 6-20 / Ho perso il conto
+FC: Quelle schede si aprono perché la pagina fa passare il tuo tocco per un clic su una pubblicità. Undirect restituisce il tocco al pulsante che avevi premuto.
+ST: Poll: "Schede pubblicitarie chiuse per un episodio?" · 0 / 1-5 / 6-20 / Ho perso il conto
+TQ: Safari ti ha mai aperto una scheda da solo?
+TO: Sì / No
+@P04
+B: Il Wi-Fi del bar, il pop-up "10% di sconto", il modulo del check-in, lo scontrino via email: il tuo indirizzo email scritto quattro volte, 21 secondi.
+
+Salvalo una volta in Cutling. In un campo email la tastiera lo propone per primo, e ogni modulo si chiude con un tocco.
+Q: Quale modulo ti fa scrivere l'email più spesso?
+T: Basta riscrivere l'email in ogni modulo
+X: Wi-Fi del bar, pop-up "10% di sconto", check-in, scontrino: la tua email scritta quattro volte, 21 secondi.
+
+Salvala una volta in Cutling: in un campo email la tastiera la propone per prima, e basta un tocco.
+@P05
+B: Impostazioni, Safari, "Blocca pop-up": attivo. E le schede continuano ad aprirsi.
+
+Safari lascia passare una scheda quando pensa che l'abbia chiesta tu, e una pagina riesce a far sembrare tuo qualsiasi tocco.
+Q: Hai "Blocca pop-up" attivo e le schede si aprono lo stesso?
+@P06
+TK: Cosa riscrivi più spesso? L'indirizzo, l'email, la solita risposta in DM, un link? Scegli nel sondaggio.
+PQ: Dove tieni il testo che riscrivi ogni settimana?
+PO: Nell'app Note / Uno screenshot in Foto / Sostituzione testo / Lo riscrivo e basta
+FC: Cutling tiene quel testo sulla tastiera: lo salvi una volta e lo inserisci con un tocco da qualsiasi app.
+ST: Add Yours: "Il testo che riscrivi ogni settimana"
+TQ: Cosa riscrivi più spesso?
+TO: Indirizzo / Email / Solita risposta in DM / Un link / Altro
+@P07
+B: Tocchi Scarica su un sito di film e ti ritrovi su una finta pagina "Download in corso" che ti dice di installare un'app per riprodurre il video.
+
+Con Undirect attivo su quel sito, resti dove sei.
+Q: Dove ti ha portato l'ultimo finto pulsante Scarica?
+T: Ho premuto Scarica ed è uscita una finta pagina di download
+@P08
+B: Lasceresti leggere a una tastiera quello che scrivi? Domanda legittima.
+
+La tastiera di Cutling non ha codice di rete, non c'è un account e la scheda sull'App Store dichiara che non viene raccolto nessun dato. Legge la parola prima del cursore per suggerirti un testo salvato, e non invia niente.
+Q: Cosa vorresti sapere prima di lasciare che una tastiera legga quello che scrivi?
+@P09
+B: Oggi Cutling è su Product Hunt: una tastiera per i testi che scrivi di continuo, su iPhone, iPad e Mac.
+Q: Qual è la prima cosa che salveresti su una tastiera?
+
+=== de
+@P01
+B: Du tippst auf Play. Eine Seite meldet: „Installiere die VPN-App, um weiterzuschauen“. Zurück, noch mal getippt: „Dein iPhone ist durch (12) Viren schwer beschädigt!“ Und wieder: „Du bist der glückliche Besucher des Tages.“
+
+Die Seite legt eine unsichtbare Ebene über den Play-Button, und dein Tipp landet zuerst bei einer Anzeige.
+Q: Was war die schlimmste Seite, auf die dich ein Play-Button je geschickt hat?
+T: Jeder Tipp auf Play öffnet in Safari die nächste Werbung
+@P02
+B: Lieferadresse. Versandadresse. Rechnungsadresse. Wieder dieselbe Adresse, mit dem Daumen getippt, Tippfehler inklusive: 14 Sekunden pro Formular.
+
+Einmal in Cutling gespeichert, ist sie mit einem Tipp drin, in etwa einer Sekunde.
+Q: Wie oft pro Woche tippst du deine Adresse?
+T: Tipp deine Adresse nicht bei jeder Bestellung neu
+@P03
+TK: Hat Safari bei dir schon mal einen Tab geöffnet, den du gar nicht angetippt hast? Stimm im Sticker ab.
+PQ: Wie viele Werbe-Tabs hast du für eine Folge geschlossen?
+PO: 0 / 1–5 / 6–20 / Nicht mehr mitgezählt
+FC: Diese Tabs gehen auf, weil die Seite deinen Tipp als Klick auf eine Anzeige ausgibt. Undirect gibt den Tipp dem Button zurück, den du gedrückt hast.
+ST: Poll: „Werbe-Tabs geschlossen für eine Folge?“ · 0 / 1–5 / 6–20 / Nicht mitgezählt
+TQ: Hat Safari schon mal einen Tab ohne dein Tippen geöffnet?
+TO: Ja / Nein
+@P04
+B: WLAN-Anmeldung im Café, das „10 % Rabatt“-Pop-up, das Check-in-Formular, der Kassenbon per Mail: viermal deine E-Mail-Adresse getippt, 21 Sekunden.
+
+Speichere sie einmal in Cutling. In einem E-Mail-Feld zeigt die Tastatur sie als Erstes an, und jedes Formular braucht nur einen Tipp.
+Q: Bei welchem Formular musst du deine E-Mail am häufigsten eintippen?
+T: Tipp deine E-Mail-Adresse nicht in jedes Formular neu
+@P05
+B: Einstellungen, Safari, „Pop-ups blockieren“: an. Und die Tabs kommen trotzdem.
+
+Safari lässt einen Tab durch, wenn es glaubt, du hättest ihn gewollt, und eine Seite kann jeden Tipp so aussehen lassen.
+Q: Ist „Pop-ups blockieren“ bei dir an, und gehen trotzdem Tabs auf?
+@P06
+TK: Was tippst du am häufigsten neu? Adresse, E-Mail, immer dieselbe DM-Antwort, einen Link? Wähl in der Umfrage.
+PQ: Wo liegt der Text, den du jede Woche neu tippst?
+PO: In der Notizen-App / Als Screenshot in Fotos / In der Textersetzung / Ich tippe ihn neu
+FC: Cutling legt diesen Text auf die Tastatur: einmal speichern, dann in jeder App per Tipp einfügen.
+ST: Add Yours: „Der Text, den du jede Woche neu tippst“
+TQ: Was tippst du am häufigsten neu?
+TO: Adresse / E-Mail / Dieselbe DM-Antwort / Einen Link / Etwas anderes
+@P07
+B: Du tippst auf einer Filmseite auf Download und landest auf einer gefälschten „Download läuft“-Seite, die dich eine Player-App installieren lassen will.
+
+Ist Undirect für diese Seite eingeschaltet, bleibst du, wo du bist.
+Q: Wohin hat dich der letzte falsche Download-Button geschickt?
+T: Auf Download getippt, gefälschte Download-Seite bekommen
+@P08
+B: Würdest du eine Tastatur-App mitlesen lassen, was du tippst? Die Frage ist berechtigt.
+
+Die Cutling-Tastatur enthält keinen Netzwerkcode, es gibt kein Konto, und im App Store steht beim Datenschutz „Keine Daten erfasst“. Sie liest das Wort vor dem Cursor, um einen gespeicherten Text vorzuschlagen, und sendet nichts.
+Q: Was müsstest du wissen, bevor eine Tastatur mitlesen darf, was du tippst?
+@P09
+B: Cutling ist heute auf Product Hunt: eine Tastatur für den Text, den du immer wieder tippst, auf iPhone, iPad und Mac.
+Q: Was würdest du als Erstes auf einer Tastatur speichern?
+
+=== es
+@P01
+B: Le das a Reproducir. Sale una página: «instala la app de VPN para seguir viendo». Atrás, le das otra vez: «¡Tu iPhone está gravemente dañado por (12) virus!». Y otra: «Eres el visitante afortunado de hoy».
+
+La página pone una capa invisible encima del botón, así que tu toque le llega primero a un anuncio.
+Q: ¿Cuál es la peor página a la que te ha mandado un botón de Reproducir?
+T: Cada toque en Reproducir abre otro anuncio en Safari
+@P02
+B: Dirección de entrega. Dirección de envío. Dirección de facturación. La misma dirección otra vez, con el pulgar y con sus erratas: 14 segundos por formulario.
+
+La guardas una vez en Cutling y entra con un toque, en un segundo más o menos.
+Q: ¿Cuántas veces a la semana escribes tu dirección?
+T: Deja de escribir tu dirección en cada pedido
+@P03
+TK: ¿Safari te ha abierto alguna vez una pestaña que no habías tocado? Vota en el sticker.
+PQ: ¿Cuántas pestañas de anuncios cerraste para ver un capítulo?
+PO: 0 / 1-5 / 6-20 / Perdí la cuenta
+FC: Esas pestañas se abren porque la página hace pasar tu toque por un clic en un anuncio. Undirect le devuelve el toque al botón que pulsaste.
+ST: Poll: «¿Pestañas de anuncios cerradas para ver un capítulo?» · 0 / 1-5 / 6-20 / Perdí la cuenta
+TQ: ¿Safari te ha abierto una pestaña sin tocar nada?
+TO: Sí / No
+@P04
+B: El wifi de la cafetería, el pop-up del «10 % de descuento», el formulario del check-in, el tique por correo: tu correo electrónico escrito cuatro veces, 21 segundos.
+
+Guárdalo una vez en Cutling. En un campo de correo el teclado lo pone el primero, y cada formulario se resuelve con un toque.
+Q: ¿Qué formulario te hace escribir más veces tu correo?
+T: Deja de escribir tu correo en cada formulario
+@P05
+B: Ajustes, Safari, «Bloquear ventanas emergentes»: activado. Y las pestañas siguen saliendo.
+
+Safari deja pasar una pestaña cuando cree que la has pedido tú, y una página puede hacer que cualquier toque lo parezca.
+Q: ¿Tienes activado «Bloquear ventanas emergentes» y aun así se te abren pestañas?
+@P06
+TK: ¿Qué es lo que más vuelves a escribir? ¿La dirección, el correo, la misma respuesta por DM, un enlace? Elige en la encuesta.
+PQ: ¿Dónde guardas el texto que vuelves a escribir cada semana?
+PO: En Notas / Una captura en Fotos / Sustitución de texto / Lo escribo otra vez
+FC: Cutling deja ese texto en el teclado: lo guardas una vez y lo metes con un toque desde cualquier app.
+ST: Add Yours: «El texto que vuelves a escribir cada semana»
+TQ: ¿Qué es lo que más vuelves a escribir?
+TO: Dirección / Correo / La misma respuesta / Un enlace / Otra cosa
+@P07
+B: Tocas Descargar en una web de películas y te sale una página falsa de «Descarga en curso» que te pide instalar una app de reproductor.
+
+Con Undirect activado para esa web, te quedas donde estabas.
+Q: ¿Adónde te llevó el último botón falso de Descargar?
+T: Le di a Descargar y me salió una página de descarga falsa
+@P08
+B: ¿Dejarías que una app de teclado leyera lo que escribes? La duda es razonable.
+
+El teclado de Cutling no lleva código de red, no hay cuenta y su ficha del App Store indica que no se recopilan datos. Lee la palabra anterior al cursor para sugerirte un texto guardado, y no envía nada.
+Q: ¿Qué necesitarías saber antes de dejar que un teclado lea lo que escribes?
+X: ¿Dejarías que un teclado leyera lo que escribes? La duda es razonable.
+
+El de Cutling no lleva código de red ni cuenta, y su ficha del App Store indica que no se recopilan datos. Lee la palabra anterior al cursor y no envía nada.
+@P09
+B: Cutling está hoy en Product Hunt: un teclado para el texto que escribes una y otra vez, en iPhone, iPad y Mac.
+Q: ¿Qué sería lo primero que guardarías en un teclado?
+
+=== pt-BR
+@P01
+B: Você toca em Play. Abre uma página: "instale o app de VPN para continuar assistindo". Volta, toca de novo: "Seu iPhone está gravemente danificado por (12) vírus!" Mais uma vez: "Você é o visitante sortudo de hoje."
+
+A página coloca uma camada invisível em cima do Play, e o seu toque cai primeiro num anúncio.
+Q: Qual foi a pior página para onde um botão de Play já te mandou?
+T: Cada toque no Play abre mais um anúncio no Safari
+@P02
+B: Endereço de entrega. Endereço de envio. Endereço de cobrança. O mesmo endereço e o mesmo CEP de novo, no polegar, com erro de digitação e tudo: 14 segundos por formulário.
+
+Salvo uma vez no Cutling, ele entra com um toque, em mais ou menos um segundo.
+Q: Quantas vezes por semana você digita o seu endereço?
+T: Pare de digitar seu endereço em toda compra
+@P03
+TK: O Safari já abriu uma aba que você não tocou? Vote na enquete.
+PQ: Quantas abas de anúncio você fechou para ver um episódio?
+PO: 0 / 1 a 5 / 6 a 20 / Perdi a conta
+FC: Essas abas abrem porque a página usa o seu toque como clique num anúncio. O Undirect devolve o toque para o botão que você apertou.
+ST: Poll: "Abas de anúncio fechadas para ver um episódio?" · 0 / 1 a 5 / 6 a 20 / Perdi a conta
+TQ: O Safari já abriu uma aba que você não tocou?
+TO: Sim / Não
+@P04
+B: O Wi-Fi da cafeteria, o pop-up de "10% off", o formulário do check-in, o comprovante por e-mail: seu e-mail digitado quatro vezes, 21 segundos.
+
+Salve uma vez no Cutling. Num campo de e-mail o teclado mostra ele primeiro, e cada formulário leva um toque.
+Q: Qual formulário mais faz você digitar o e-mail?
+T: Pare de digitar seu e-mail em todo formulário
+@P05
+B: Ajustes, Safari, "Bloquear Pop-ups": ativado. E as abas continuam abrindo.
+
+O Safari deixa uma aba passar quando acha que foi você quem pediu, e uma página consegue fazer qualquer toque parecer um pedido seu.
+Q: O "Bloquear Pop-ups" está ativado aí, e as abas abrem mesmo assim?
+@P06
+TK: O que você mais digita de novo? Endereço, e-mail, a mesma resposta no direct, um link? Escolha na enquete.
+PQ: Onde fica o texto que você digita de novo toda semana?
+PO: No app Notas / Num print no Fotos / Substituição de Texto / Digito tudo de novo
+FC: O Cutling deixa esse texto no teclado: salve uma vez e insira com um toque em qualquer app.
+ST: Add Yours: "O texto que você digita de novo toda semana"
+TQ: O que você mais digita de novo?
+TO: Endereço / E-mail / Mesma resposta / Um link / Outro
+@P07
+B: Você toca em Baixar num site de filmes e cai numa página falsa de "Download em andamento" mandando instalar um app de player.
+
+Com o Undirect ativado para esse site, você fica onde estava.
+Q: Para onde o último botão falso de Baixar te levou?
+T: Toquei em Baixar e veio uma página falsa de download
+@P08
+B: Você deixaria um app de teclado ler o que você digita? A dúvida faz sentido.
+
+O teclado do Cutling não tem código de rede, não existe conta, e o selo de privacidade na App Store diz "Dados Não Coletados". Ele lê a palavra antes do cursor para sugerir um texto salvo, e não envia nada.
+Q: O que você precisaria saber antes de deixar um teclado ler o que você digita?
+@P09
+B: O Cutling está no Product Hunt hoje: um teclado para o texto que você digita toda hora, no iPhone, no iPad e no Mac.
+Q: O que você salvaria primeiro num teclado?

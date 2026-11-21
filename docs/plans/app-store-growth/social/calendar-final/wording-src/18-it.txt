@@ -1,0 +1,437 @@
+=== it
+@P10
+B: Copi il codice del portone, poi un numero di tracking, poi il link di una riunione. L'iPhone tiene solo l'ultimo.
+
+Arrivi da Android e ti mancano le clip fissate? Cutling fissa sulla tastiera i testi che incolli tutto il giorno. Non registra quello che copi: iOS non lo permette a nessuna app.
+Q: Cosa ti è mancato di più dopo aver lasciato Android?
+T: Arrivi da Android? Fissa le tue clip sulla tastiera dell'iPhone
+@P11
+B: Fai clic su Play in Safari sul Mac e si apre una scheda di un casinò: "bonus di benvenuto del 200%".
+
+Un clic sul pulsante di Undirect lo attiva per quel sito. Da lì in poi Play non apre più nuove schede.
+Q: Ti succede anche sul Mac, o solo su iPhone?
+T: Safari su Mac apre una scheda di casinò quando fai clic su Play
+@P12
+B: La Sostituzione testo dell'iPhone conserva solo testo semplice e scatta solo se digiti l'abbreviazione. Dopo un aggiornamento, c'è chi ha trovato l'intero elenco sparito da uno dei dispositivi.
+
+In Cutling un elemento può contenere un paragrafo intero o un'immagine, e si sincronizza attraverso il tuo iCloud.
+Q: Usi ancora la Sostituzione testo, o ci hai rinunciato?
+@P13
+B: Sito di streaming gratuito, e ogni volta che premi Play si apre una pubblicità al posto del film.
+
+Attiva Undirect una volta per quel sito, e Play fa partire il film e basta.
+Q: Qual è il sito di streaming peggiore per questo?
+T: Sito di streaming gratuito: Play apre una pubblicità, non il film
+@P14
+B: Le abbreviazioni della Sostituzione testo funzionano sull'iPhone, e sull'iPad "indz" resta "indz".
+
+Salva il testo una volta in Cutling e lo trovi anche sulla tastiera dell'iPad, sincronizzato attraverso il tuo iCloud.
+Q: Le tue sostituzioni di testo sono mai sparite da uno dei dispositivi?
+T: La Sostituzione testo non si sincronizza con l'iPad
+@P15
+TK: Il tuo ad blocker ha fermato questo reindirizzamento? Rispondi nel sondaggio.
+PQ: Il tuo ad blocker ferma le schede che si aprono quando tocchi?
+PO: Le ferma / Qualcuna passa / Non le sfiora nemmeno / Non ho un ad blocker
+FC: Gli ad blocker nascondono le pubblicità. La scheda che si apre quando premi Play nasce dalla pagina che si prende il tuo tocco, e lì un blocker non ha niente da nascondere. Quella parte la ferma Undirect, quindi usali tutti e due.
+ST: Quiz: "Il tuo ad blocker è attivo. Quale di queste due cose può nascondere?" · Il banner pubblicitario / La scheda che apre Play · correct: Il banner pubblicitario
+TQ: Il tuo blocker ha fermato il reindirizzamento?
+TO: Sì / In parte / No / Non ho un blocker
+@P16
+B: "È una tastiera per gli appunti, non un cartellone pubblicitario." Così un utente ha recensito una tastiera per incollare piena di pubblicità.
+
+Cutling non ha pubblicità e non ha account.
+Q: Sopporteresti la pubblicità dentro una tastiera?
+@P17
+B: Black Friday, dal 27 al 30 novembre sull'App Store:
+Cutling 2,99 € (invece di 5,99 €)
+Undirect 0,99 € (invece di 1,99 €)
+Un solo acquisto vale per iPhone, iPad e Mac.
+B2: Black Friday sull'App Store, dal 27 al 30 novembre. Undirect a 0,99 € invece di 1,99 €, Cutling a 2,99 € invece di 5,99 €. Un solo acquisto per iPhone, iPad e Mac.
+Q: Quale dei due è nella tua lista per questo weekend?
+@P18
+B: Un anno di abbonamento pagato, e le schede di reindirizzamento passavano lo stesso.
+
+Undirect si compra una volta sola. Non crei nessun account, e niente di quello che navighi viene inviato da nessuna parte.
+Q: Quanto hai pagato, al massimo, per un blocker che lasciava passare i reindirizzamenti?
+@P19
+TK: Pagheresti ogni mese per un'app per gli appunti? Dillo nel sondaggio.
+PQ: Pagheresti un abbonamento per un'app per gli appunti?
+PO: Per me va bene / Mai / Lo pago e mi dà fastidio / Un'app per cosa?
+FC: Cutling si compra una volta, senza abbonamento, per iPhone, iPad e l'app per Mac.
+ST: Emoji slider: "Quanto ti dà fastidio un abbonamento per copiare e incollare?" · 😤
+TQ: Pagheresti ogni mese per copiare e incollare?
+TO: Mai / Forse / Sì
+@P20
+B: Il tuo iPhone non ha nessun virus.
+
+La pagina "iPhone a rischio" arriva dal sito che stavi visitando. Chiudi la scheda, e non installare né pagare niente di quello che chiede. Manda questo post a chi in famiglia va nel panico davanti a queste pagine.
+Q: Chi è che in famiglia ti chiama per queste pagine?
+@P21
+B: Su Windows, Win+V mostrava tutto quello che avevi copiato. Un Mac appena acceso non ha niente di altrettanto comodo.
+
+L'app di Cutling nella barra dei menu tiene quella cronologia sul Mac, e tutto ciò che il tuo gestore di password segna come nascosto ne resta fuori.
+Q: Cosa ti manca di più di Windows su un Mac?
+@P22
+B: Leggi un manga o una web novel e a ogni cambio pagina si apre un altro sito? Attiva Undirect una volta per quel sito e il tocco su "pagina successiva" resta nel capitolo.
+Q: Quale sito di lettura ti manda altrove più spesso?
+@P23
+B: App di consegne a domicilio. Campo indirizzo. Via, numero civico, interno e CAP col pollice, di nuovo.
+
+Inseriscilo con un tocco dalla tastiera di Cutling.
+Q: In quante app di consegne hai scritto l'indirizzo a mano?
+@P24
+TK: Un pulsante Scarica ti ha mai aperto una finta pagina di download? Segnalo nello sticker.
+PQ: Quanto spesso un pulsante Scarica ti manda su un altro sito?
+PO: Ogni volta / Spesso / Di rado / Mai
+FC: Il pulsante stesso può far parte della pubblicità. Con Undirect attivo su quel sito, la scheda resta dov'era e l'indirizzo che ha provato ad aprire finisce nell'elenco.
+ST: Quiz: "Qual è il vero pulsante Scarica?" · Quello verde e grande / Start Download / Il link col nome del file · correct: Il link col nome del file
+TQ: Un pulsante Scarica ti ha mai dato un finto download?
+TO: Sì / No
+@P25
+B: Gli appunti dell'iPhone tengono una cosa sola. Copi un nuovo link e quello di prima non c'è più.
+
+Tieni sulla tastiera il testo che incolli ogni giorno, a un tocco di distanza.
+Q: Cosa copi e poi perdi più spesso?
+@P26
+B: Ultimo giorno dei prezzi del Black Friday. Undirect a 0,99 € e Cutling a 2,99 € fino alle 9 di domani, 1º dicembre, poi tornano a 1,99 € e 5,99 €.
+Q: Ne hai preso uno al prezzo scontato?
+@P27
+B: Tocchi la X della pubblicità e se ne apre un'altra.
+
+In questa pagina ci sono tre X. Secondo te quante chiudono davvero la pubblicità?
+Q: Quante di queste X avresti toccato?
+@P28
+TK: Chiedici qualsiasi cosa sul testo salvato su iPhone: Sostituzione testo, sincronizzazione, tastiere. Ogni domanda avrà il suo video.
+PQ: La Sostituzione testo si sincronizza tra il tuo iPhone e il Mac?
+PO: Tutto regolare / Ha smesso di farlo / Non ha mai funzionato / Non la uso
+FC: Quello che salvi in Cutling si sincronizza attraverso il tuo iCloud, e un elemento eliminato si recupera da "Eliminati di recente" per 30 giorni.
+ST: Questions: "Cosa scrivi di continuo sul telefono?"
+@P29
+B: Vuoi sapere dove cercava di portarti quella scheda?
+
+Undirect elenca ogni indirizzo che una pagina ha provato ad aprire: puoi bloccarne uno ovunque o consentirlo su quel sito.
+Q: Ti piacerebbe vedere dove stavano andando quelle schede?
+@P30
+B: Modulo di spedizione, modulo di consegna, modulo di fatturazione: questo mese scriverai il tuo indirizzo in tutti.
+
+Salvalo una volta in Cutling e ognuno si compila con un tocco. 5,99 € una volta, per iPhone e iPad, app per Mac compresa.
+Q: Quante volte scriverai il tuo indirizzo questo mese?
+T: Scrivi l'indirizzo una volta, per tutti i moduli di spedizione
+@P31
+B: Premi Scarica e ti ritrovi una finta pagina di download, poi una finestra che vuole abbonarti a un calendario, poi la pagina di un'app chiamata "Speedy Clean".
+
+Con Undirect attivo resti sulla pagina dov'eri, e l'elenco mostra l'indirizzo che ha provato ad aprire.
+Q: Hai mai installato il player che una pagina di download ti chiedeva?
+T: Finta pagina di download, spam nel calendario, finta app di pulizia
+@P32
+B: Copia, cambia app, incolla, torna indietro. Quattro viaggi per l'orario di un traghetto e il codice di un portone.
+
+Condividi invece la pagina con Cutling. Viene salvata con un nome, e la volta dopo basta un tocco.
+Q: Quante volte cambi app per copiare una cosa sola?
+T: Copia, cambia app, incolla, torna indietro: c'è un modo più veloce
+@P33
+B: Streaming sull'iPad, e ogni tocco su Play lascia dietro di sé una nuova scheda.
+
+Undirect funziona allo stesso modo in Safari su iPad, con lo stesso acquisto da 1,99 €. Consentilo una volta per il sito, e Play smette di aprire schede.
+Q: Guardi sull'iPad o sul telefono?
+T: Ferma le schede pubblicitarie di Safari su iPad
+@P34
+B: Una cronologia degli appunti che salva ogni password che copi, su un Mac, è un rischio.
+
+La cronologia di Cutling conserva ogni copia e salta tutto quello che il tuo gestore di password segna come nascosto.
+Q: Le password le copi tu, o le compila il gestore?
+T: La cronologia degli appunti per Mac che salta le tue password
+@P35
+B: Safari su Mac, un sito di film, e un solo clic su Play apre una scheda di casinò.
+
+Undirect si attiva per quel sito con un clic, e il Play successivo non apre nessuna scheda.
+Q: Quante schede ha aperto l'ultimo sito di film che hai visitato?
+T: Safari su Mac: un clic su Play, una scheda di casinò
+@P36
+TK: Ti è mai capitato di copiare sopra qualcosa che ti serviva ancora? Rispondi nello sticker.
+PQ: Per quanto tempo il tuo Mac tiene quello che hai copiato?
+PO: 30 minuti / 8 ore / 7 giorni / Non ne ho idea
+FC: L'app per Mac di Cutling ha una sua cronologia degli appunti, e quello che salvi in Cutling resta finché non lo elimini tu.
+ST: Emoji slider: "Quanto spesso copi sopra qualcosa che ti serviva?" · 😩
+TQ: Hai mai copiato sopra qualcosa che ti serviva ancora?
+TO: Sì / No
+@P37
+B: Quante schede pubblicitarie hai chiuso stasera per guardare un episodio? Qualcuno ha scritto "ripetere 7 volte".
+
+Qui c'è prima un avviso VPN, poi un allarme virus. Poi lo stesso tocco con Undirect attivo.
+Q: Qual è il tuo record di schede pubblicitarie chiuse in un episodio?
+T: Chiudere schede pubblicitarie per guardare un episodio
+@P38
+B: Wi-Fi gratuito, 10% di sconto, check-in, scontrini: ogni modulo ti richiede l'indirizzo email.
+
+Ti basta salvarlo in Cutling: in un campo email la tastiera te lo propone per primo.
+Q: Quanti moduli di iscrizione hai compilato questo mese?
+T: Ogni modulo di iscrizione rivuole la tua email
+@P39
+B: Su un forum qualcuno ti ha detto di attivare un'impostazione nascosta di Safari, "Verify window.open user gesture", per fermare le schede di reindirizzamento.
+
+Funziona a metà, e sta sotto Avanzate, tra i Feature Flags. Undirect fa lo stesso lavoro con una pressione per sito.
+Q: Hai mai attivato quell'impostazione? Ti è servita?
+@P40
+B: Hai comprato un'app per gli appunti per il Mac, e poi hai scoperto che quella per iPhone si paga a parte?
+
+Cutling è un solo acquisto da 5,99 € per iPhone, iPad e Mac.
+Q: Hai mai comprato la stessa app due volte, una per Mac e una per iPhone?
+@P41
+B: Leggi una notizia, scorri, non tocchi niente, e la pagina salta su una finta schermata Impostazioni: "Platform Security… RUN A TEST".
+
+È stata la pagina, e il tuo dispositivo sta bene. Undirect 1.0.5 ti tiene sulla notizia.
+Q: Una pagina è mai saltata su un finto avviso mentre stavi solo scorrendo?
+T: Reindirizzamento in Safari mentre scorri, senza toccare niente
+@P42
+B: Gboard su Android ti teneva le clip fissate. Cutling le fissa sulla tastiera dell'iPhone: il tuo indirizzo, l'email di lavoro, la password del Wi-Fi.
+Q: Cosa tenevi fissato in Gboard?
+T: Le clip fissate di Gboard, su iPhone
+@P43
+B: Tocchi Scarica, ottieni una finta pagina di download. Tocchi di nuovo, compare una finestra di abbonamento a un calendario.
+
+Poi lo stesso Scarica con Undirect attivo.
+Q: Quanti tocchi prima di trovare il download vero?
+T: Tocchi Scarica, ottieni un finto download
+@P44
+B: Per chi vive nelle risposte: l'indirizzo del wallet e il tuo nome utente di X a un tocco dalla tastiera. Nessuna abbreviazione della Sostituzione testo da ricordare.
+Q: Cosa incolli più spesso nelle risposte?
+@P45
+B: Premi Indietro per uscire da un sito di dirette streaming e atterri su una pagina di casinò?
+
+Dalla 1.0.5, con Undirect attivo per il sito, Indietro torna davvero indietro.
+Q: Quale sito ti blocca il tasto Indietro?
+T: Il tasto Indietro ti riporta di nuovo alla pubblicità
+@P46
+B: Arrivi da Windows e ti manca Win+V?
+
+Cutling per Mac tiene la cronologia dei tuoi appunti, e le password che il tuo gestore segna come nascoste ne restano fuori.
+Q: Cos'altro ti manca di Windows?
+T: Win+V su un Mac
+@P47
+B: Safari apre schede da solo e ti sei spaventato?
+
+Quelle schede arrivano dalla pagina in cui eri, e il tuo iPhone sta bene. Chiudile, e non installare niente di quello che ti propongono.
+Q: Chi conosci che andrebbe nel panico davanti a queste schede?
+@P48
+TK: Qual è il testo che riscrivi più spesso? L'indirizzo, l'email, la password del Wi-Fi per la quinta volta? Vota nel sondaggio.
+PQ: Cosa riscrivi più spesso sul telefono?
+PO: Un indirizzo / Un indirizzo email / La solita risposta / Un link
+FC: Cutling tiene ognuno di questi testi sulla tastiera. Lo salvi una volta e poi lo tocchi.
+ST: Questions: "Cosa riscrivi più spesso?"
+TQ: Cosa riscrivi più spesso sul telefono?
+TO: Indirizzo / Email / Password del Wi-Fi / Solita risposta / Altro
+@P49
+B: Ti mandi un messaggio da solo per portare il codice di un portone dall'iPhone all'iPad?
+
+Salvalo in Cutling sull'iPhone, e lo trovi anche sulla tastiera dell'iPad, attraverso il tuo iCloud.
+Q: Come porti un codice dall'iPhone all'iPad?
+T: Porta un codice da iPhone a iPad senza mandarti un messaggio
+@P50
+B: Oggi è il giorno di lancio di Undirect su @macpiphq. Se Safari sul tuo Mac continua ad aprire schede che non hai chiesto, questo è ciò che le ferma.
+Q: Safari sul tuo Mac apre schede che non hai chiesto?
+@P51
+B: Su un Mac premi Maiuscole-Comando-V e la cronologia è lì: l'ultima cosa che hai copiato, e quello che hai salvato in Cutling.
+Q: Usi una cronologia degli appunti sul Mac?
+@P52
+B: Una pagina che ti manda su un altro sito mentre scorri, senza nessun tocco, con Undirect 1.0.5 ora resta ferma, e il suo indirizzo compare nell'elenco.
+Q: Sei mai stato reindirizzato mentre stavi solo scorrendo?
+T: La pagina reindirizza mentre scorri: fermala in Safari
+@P53
+B: Gestire tre palazzi vuol dire scrivere un indirizzo in ogni ordine di lavoro, 14 secondi alla volta.
+
+Salvali tutti in Cutling, e diventa un tocco.
+Q: Quanti indirizzi scrivi per lavoro?
+T: Scrivere lo stesso indirizzo in ogni ordine di lavoro
+@P54
+TK: Undirect blocca le pubblicità? No. Ferma le schede e i reindirizzamenti, e delle pubblicità continua a occuparsi il tuo blocker. Chiedici perché "Blocca pop-up" non riesce a fermarli.
+PQ: "Blocca pop-up" è attivo. Le schede si aprono ancora?
+PO: Sì, di continuo / Ogni tanto / Mai / Quale impostazione?
+FC: Quell'impostazione ferma le finestre che una pagina apre da sola. Una scheda aperta dal tuo stesso tocco la supera. Undirect controlla che cosa c'era sotto il dito.
+ST: Emoji slider: "Quanto ti rovina la serata una scheda pubblicitaria a sorpresa?" · 😠
+@P55
+B: Un iPhone può tenere una cronologia degli appunti? Non può farlo nessuna app: iOS non permette alle app di leggere in background quello che copi.
+
+Su iPhone Cutling tiene quello che scegli di salvare, e la sua app per Mac tiene la cronologia completa.
+Q: Pensavi che le app per iPhone potessero tenere una cronologia degli appunti?
+@P56
+B: Cerchi un sito di film gratis per iPad senza pop-up?
+
+I siti sono sempre quelli, e Undirect funziona in Safari su iPad. Attivalo per il sito, e le schede si fermano.
+Q: Qual è il sito di film gratis peggiore su iPad?
+T: Siti di film gratis su iPad senza pop-up
+@P57
+B: iPhone e iPad, un solo ID Apple, e il testo che hai salvato è su tutti e due.
+
+La sincronizzazione passa dal tuo iCloud, quindi non c'è nessun account Cutling a cui accedere.
+Q: Tieni il tuo testo salvato su più di un dispositivo?
+T: Testo salvato su iPhone e iPad, sincronizzato
+@P58
+B: Dove Undirect non può aiutare: le app web aggiunte alla schermata Home e il browser dentro altre app, perché lì le estensioni di Safari non funzionano.
+
+Apri il link in Safari e sei coperto.
+Q: Apri i link in Safari o dentro le altre app?
+@P59
+B: Arrivi da un Samsung? Le cose di Android che ti mancano: incollare senza l'avviso "Consenti Incolla", gli appunti di Gboard, le sue clip fissate.
+
+Le clip fissate te le riporta Cutling: il link per le prenotazioni sulla tastiera dell'iPhone, a un tocco in qualsiasi chat. Non può registrare quello che copi.
+Q: Cosa ti manca di più di Samsung?
+T: Le cose di Android che mi mancano su iPhone
+@P60
+B: POV: sei la pubblicità di un sito di film gratis. Loro toccano Play, tu apri una nuova scheda. Toccano ancora, tu gli dici che il loro iPhone ha 12 virus.
+
+Poi hanno attivato Undirect per il sito, e niente di quello che hai mandato è passato.
+Q: In quale trucco pubblicitario sei cascato più spesso?
+T: POV: sei la pubblicità di un sito di film gratis
+@P61
+TK: È sicuro dare l'accesso completo a una tastiera? Chiedici qualsiasi cosa su quello che la tastiera di Cutling legge e su dove va a finire. In breve: la parola prima del cursore, e da nessuna parte.
+PQ: Affideresti il tuo testo salvato a un'app tastiera?
+PO: Sì, se lavora offline / Solo ai grandi marchi / Niente tastiere esterne / Cos'è l'accesso completo?
+FC: La tastiera di Cutling non ha nessun codice di rete, e la scheda sull'App Store dichiara che non viene raccolto nessun dato.
+ST: Questions: "Cosa vorresti vedere prima di fidarti di una tastiera?"
+@P62
+B: Tre pulsanti Scarica su un sito di file gratuiti, e solo uno è quello vero. Gli altri due ti mandano a un abbonamento a un calendario di spam e a una finta app di pulizia.
+
+Con Undirect attivo per il sito, quelli finti non portano da nessuna parte e quello vero scarica.
+Q: Quale pulsante Scarica avresti premuto?
+T: Solo uno è il vero pulsante Scarica
+@P63
+B: Copi un numero di volo, poi un codice monouso, poi un indirizzo. Premi Comando-V e resta solo l'indirizzo.
+
+Con Cutling per Mac premi Maiuscole-Comando-V: ogni copia è nella cronologia, e le password ne restano fuori.
+Q: Cosa hai perso negli appunti questa settimana?
+T: Comando-V tiene solo l'ultima cosa che hai copiato
+@P64
+B: Fai clic su Play in Safari sul Mac e si apre una scheda su cui non hai mai fatto clic.
+
+Un clic sul pulsante di Undirect per quel sito, e il Play successivo non apre schede.
+Q: Safari sul tuo Mac lo fa anche a te?
+T: Impedisci a Safari su Mac di aprire schede su cui non hai fatto clic
+@P65
+B: Vendi su Instagram. "È ancora disponibile?" "Dove spedisci?" "Come si paga?" Quaranta volte al giorno.
+
+Salva ogni risposta una volta e poi toccala.
+Q: Qual è il DM a cui rispondi più spesso?
+@P66
+B: Capitolo 41. Premi Avanti e si apre un casinò. Lo chiudi, premi Avanti di nuovo, ed è un sito di criptovalute.
+
+Attiva Undirect una volta per quel sito di lettura e Avanti resta nel capitolo.
+Q: Qual è il sito di lettura peggiore per i reindirizzamenti?
+@P67
+B: Qualcuno ti chiede quando sei libero e tu vai a caccia del link per le prenotazioni.
+
+Condividi la pagina con Cutling una volta. Viene salvata con un nome, e la volta dopo è un tocco sulla tastiera.
+Q: Dove tieni il link per le prenotazioni?
+T: Il link per le prenotazioni a un tocco su iPhone
+@P68
+TK: Quanto ti è costato il tuo blocker per Safari? Raccontalo nel sondaggio.
+PQ: Come hai pagato il tuo blocker per Safari?
+PO: Al mese o all'anno / Un solo pagamento / Uno gratuito / Non ne uso
+FC: Undirect costa 1,99 € una volta, senza account e senza inviare niente da nessuna parte.
+ST: Poll: "Quanto hai pagato al massimo per un blocker per Safari?" · Meno di 5 € / Da 5 a 20 € / Più di 20 € / Niente
+TQ: Quanto ti è costato il blocker?
+TO: Niente / Un solo pagamento / All'anno / Al mese
+@P69
+B: Cutling non ha account e non ha server, quindi non c'è niente che qualcuno possa spegnerti. Quello che salvi vive sui tuoi dispositivi e nel tuo iCloud, e funziona anche offline.
+Q: Un'app su cui contavi ha mai chiuso i battenti?
+@P70
+B: Premi Indietro su un sito di streaming e ti riporta alla pubblicità.
+
+Con Undirect 1.0.5 attivo per il sito, Indietro torna indietro e basta.
+Q: Quanti Indietro ti servono per uscire da un sito di streaming?
+T: Il tasto Indietro continua a riportarti alla pubblicità
+@P71
+B: Nel menu Condividi di Safari c'è un pulsante Cutling. Condividi una pagina con lui, dalle un nome, e la prossima volta che un modulo te la chiede è un tocco sulla tastiera.
+Q: Usi il menu Condividi per salvare le cose?
+T: Salva una pagina sulla tastiera dell'iPhone dal menu Condividi
+@P72
+B: Tocchi un link e Safari ti butta nell'App Store.
+
+Se è stato un trucco della pagina, Undirect lo ferma. Se è un pulsante che dice di aprire l'App Store, come "apri l'app" di Google, Undirect lo lascia passare.
+Q: Una pagina ti ha mai buttato nell'App Store?
+@P73
+B: La mamma, l'ufficio, zia Rina: tre indirizzi che scrivi ogni dicembre.
+
+Salvali tutti e tre in Cutling e tocca quello giusto nel modulo del pacco.
+Q: A quanti indirizzi spedisci pacchi a dicembre?
+@P74
+B: Papà mi scrive: "il mio iphone dice che ha 12 virus??" È di nuovo il sito di film gratis, e stavolta ci sono 9 schede aperte.
+
+Gli ho messo Undirect sull'iPhone e l'ho attivato per quel sito. Adesso il film parte e basta.
+Q: Chi fa l'assistenza tecnica nella tua famiglia?
+T: Assistenza tecnica per papà, ogni santa settimana
+@P75
+B: Copi sull'iPhone, incolli sull'iPad, e non arriva niente.
+
+Salvalo invece in Cutling: il codice del portone dell'ufficio salvato sull'iPhone c'è anche sulla tastiera dell'iPad. Una copia fatta al volo non la trasporta.
+Q: A te gli Appunti condivisi funzionano?
+T: Copi su iPhone e non riesci a incollare su iPad?
+@P76
+B: iPad, sito di film gratis, e Play apre una scheda che dice "Il tuo iPhone è stato hackerato".
+
+Attiva Undirect per il sito in Safari e Play non apre più schede. Gli stessi 1,99 € di iPhone e Mac.
+Q: Guardi sull'iPad?
+T: iPad: Play apre una scheda "Il tuo iPhone è stato hackerato"
+@P77
+B: Un abbonamento che si rinnova ogni anno. Per copiare e incollare.
+
+Cutling costa 5,99 €, una volta, per iPhone, iPad e Mac, senza account.
+Q: Qual è l'abbonamento più caro che hai pagato per un piccolo strumento?
+@P78
+B: Undirect non nasconde niente nella pagina, quindi non è un ad blocker, e puoi tenerti il tuo.
+
+Ferma le schede e i reindirizzamenti che al tuo blocker sfuggono, quindi usali fianco a fianco.
+Q: Quale blocker usi in Safari?
+@P79
+B: Sette moduli, sette tocchi. In un campo email la tastiera di Cutling mette il tuo indirizzo email per primo, così non devi cercarlo.
+Q: Quante volte hai scritto la tua email questa settimana?
+T: La tua email con un tocco in ogni campo email
+@P80
+B: Premi Play tre volte e trovi tre trappole diverse: un avviso VPN, un conto alla rovescia per un virus, una pagina con un premio.
+
+La stessa pressione con Undirect attivo fa partire il video.
+Q: Quante volte devi premere Play su un sito gratuito?
+T: Tre pressioni su Play, tre trappole diverse
+@P81
+TK: Come porti un pezzo di testo dall'iPhone al Mac? Un'email a te stesso, un messaggio a te stesso, AirDrop, o lo riscrivi? Scegli il tuo metodo nel sondaggio.
+PQ: Come porti un testo dall'iPhone al Mac?
+PO: Mi mando un'email / Mi mando un messaggio / Con AirDrop / Lo riscrivo
+FC: Salvalo in Cutling sull'iPhone. Si sincronizza con iCloud e compare nel selettore sul Mac.
+ST: Add Yours: "Come porti un testo dall'iPhone al Mac"
+TQ: Come sposti un testo dall'iPhone al Mac?
+TO: Email / Messaggio / AirDrop / Lo riscrivo / Altro
+@P82
+B: Non hai toccato niente, e la pagina ti ha mandato lo stesso su un finto avviso di sicurezza.
+
+Undirect 1.0.5 ti tiene dov'eri, e l'indirizzo che ha provato ad aprire compare nell'elenco.
+Q: Dove ti ha mandato una pagina senza che toccassi niente?
+T: Mandato su un finto avviso di sicurezza senza toccare niente
+@P83
+B: Hai copiato una seconda cosa e la prima è sparita.
+
+Su un Mac, la cronologia di Cutling ce l'ha ancora.
+Q: Qual è l'ultima cosa su cui hai copiato sopra per sbaglio?
+T: Hai copiato sopra qualcosa di utile? Cronologia appunti su Mac
+@P84
+TK: Dove ti ha portato l'ultima scheda pubblicitaria? Rispondi con lo sticker.
+PQ: Dove ti ha portato l'ultima scheda pubblicitaria?
+PO: In un casinò / Su una finta pagina virus / Nell'App Store / Su un sito per adulti
+FC: Ognuno di questi casi è una pagina che si prende il tuo tocco. Undirect manda il tocco a quello che avevi premuto e mette l'indirizzo nell'elenco.
+ST: Questions: "Dove ti ha portato l'ultima scheda pubblicitaria?"
+TQ: Dove portava la tua ultima scheda pubblicitaria?
+TO: Casinò / Pagina virus / App Store / Altro
+@P85
+B: "Scrivere le stesse informazioni ancora, e ancora, e ancora." Così un utente, in una recensione, ha descritto a cosa serve una tastiera per incollare.
+
+Salvale una volta in Cutling, e poi basta un tocco.
+Q: Cosa scrivi più spesso?
+T: Hai scritto quell'indirizzo 214 volte
+@P86
+B: Pulsante Scarica, finta pagina "download in corso". Ogni volta.
+
+Attiva Undirect una volta per quel sito, e la scheda resta sulla pagina.
+Q: Hai mai scaricato il file finto?
+T: Pulsante Scarica, finta pagina di download, ogni volta
+@P87
+B: Un'app di frasi pronte che non tiene le immagini. In Cutling un'immagine si salva come un testo: salva uno screenshot una volta, toccalo sulla tastiera e incollalo nella chat.
+Q: Quale immagine mandi di continuo?

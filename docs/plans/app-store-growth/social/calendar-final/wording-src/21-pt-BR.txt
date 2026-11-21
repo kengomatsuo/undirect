@@ -1,0 +1,437 @@
+=== pt-BR
+@P10
+B: Você copia o código da portaria, depois um código de rastreio, depois o link da reunião. O iPhone só guarda o último.
+
+Veio do Android e sente falta dos clipes fixados? O Cutling fixa no teclado o texto que você cola o dia inteiro. Ele não registra o que você copia: o iOS não deixa nenhum app fazer isso.
+Q: Do que você mais sentiu falta depois de sair do Android?
+T: Veio do Android? Fixe seus clipes no teclado do iPhone
+@P11
+B: Você clica em Play no Safari do Mac e abre uma aba de cassino: "bônus de boas-vindas de 200%".
+
+Um clique no botão do Undirect ativa ele para aquele site. Depois disso, o Play não abre mais aba nova.
+Q: Isso acontece com você no Mac também, ou só no iPhone?
+T: Safari no Mac abre uma aba de cassino quando você clica em Play
+@P12
+B: A Substituição de Texto do iPhone só guarda texto simples e só dispara quando você digita o atalho. Depois de uma atualização, teve gente que encontrou a lista inteira apagada em um dos aparelhos.
+
+No Cutling um item pode ser um parágrafo inteiro ou uma imagem, e sincroniza pelo seu próprio iCloud.
+Q: Você ainda usa a Substituição de Texto, ou já desistiu?
+@P13
+B: Site de série grátis, e cada toque no Play abre um anúncio no lugar do episódio.
+
+Ative o Undirect uma vez para esse site, e o Play só dá play.
+Q: Qual site de série é o pior nisso?
+T: Site de série grátis: o Play abre anúncio, não o episódio
+@P14
+B: Seus atalhos da Substituição de Texto funcionam no iPhone, e no iPad "end" continua sendo só "end".
+
+Salve o texto uma vez no Cutling e ele aparece também no teclado do iPad, sincronizado pelo seu próprio iCloud.
+Q: Suas substituições de texto já sumiram de um dos seus aparelhos?
+T: Substituição de Texto não sincroniza com o iPad
+@P15
+TK: Seu bloqueador de anúncios segurou esse redirecionamento? Responda na enquete.
+PQ: Seu bloqueador segura as abas que abrem quando você toca?
+PO: Segura / Algumas passam / Nem encosta nelas / Não uso bloqueador
+FC: Bloqueador esconde anúncio. A aba que abre quando você aperta o Play aparece porque a página pegou o seu toque, e ali o bloqueador não tem o que esconder. Essa parte quem segura é o Undirect, então use os dois.
+ST: Quiz: "Seu bloqueador de anúncios está ligado. Qual destes ele consegue esconder?" · O banner de anúncio / A aba que o Play abre · correct: O banner de anúncio
+TQ: Seu bloqueador segurou o redirecionamento?
+TO: Sim / Em parte / Não / Não uso bloqueador
+@P16
+B: "É uma área de transferência, não um outdoor." Foi assim que um usuário avaliou um teclado de colar cheio de anúncio.
+
+O Cutling não tem anúncio nem conta.
+Q: Você aguentaria anúncio dentro de um teclado?
+@P17
+B: Black Friday, de 27 a 30 de novembro na App Store:
+Cutling por R$ 19,90 (de R$ 29,90)
+Undirect por R$ 6,90 (de R$ 12,90)
+Uma compra só vale para iPhone, iPad e Mac.
+B2: Black Friday na App Store, de 27 a 30 de novembro. Undirect de R$ 12,90 por R$ 6,90, Cutling de R$ 29,90 por R$ 19,90. Uma compra só para iPhone, iPad e Mac.
+Q: Qual dos dois está na sua lista para este fim de semana?
+@P18
+B: Um ano inteiro de assinatura pago, e as abas de redirecionamento continuaram passando.
+
+O Undirect você compra uma vez só. Não precisa criar conta, e nada do que você navega é enviado para lugar nenhum.
+Q: Quanto você já pagou, no máximo, por um bloqueador que deixava os redirecionamentos passarem?
+@P19
+TK: Você pagaria todo mês por um app de área de transferência? Conte na enquete.
+PQ: Você pagaria assinatura por um app de área de transferência?
+PO: Por mim tudo bem / Nunca / Pago e fico com raiva / Que app é esse?
+FC: O Cutling é uma compra só, sem assinatura, para iPhone, iPad e o app de Mac.
+ST: Emoji slider: "O quanto uma assinatura só para copiar e colar te irrita?" · 😤
+TQ: Você pagaria todo mês para copiar e colar?
+TO: Nunca / Talvez / Sim
+@P20
+B: Seu iPhone não está com vírus.
+
+A página de "iPhone em risco" veio do site em que você estava. Feche a aba, e não instale nem pague nada do que ela pedir. Mande isto para aquela pessoa da família que entra em pânico com essas páginas.
+Q: Quem da sua família te liga por causa dessas páginas?
+@P21
+B: No Windows, o Win+V mostrava tudo o que você tinha copiado. O Mac, do jeito que vem, não tem nada tão prático.
+
+O app do Cutling na barra de menus guarda esse histórico no Mac, e o que o seu gerenciador de senhas marca como oculto fica de fora.
+Q: Do que você mais sente falta do Windows no Mac?
+@P22
+B: Lendo um mangá ou uma web novel e cada virada de página abre outro site? Ative o Undirect uma vez para esse site, e o toque em "próxima página" continua no capítulo.
+Q: Qual site de leitura mais te joga para outro lugar?
+@P23
+B: App de delivery. Campo de endereço. Rua, número, apartamento e CEP no polegar, de novo.
+
+Melhor tocar nele no teclado do Cutling.
+Q: Em quantos apps de delivery você digitou o endereço na mão?
+@P24
+TK: Um botão de Baixar já te mostrou uma página falsa de download? Marque na figurinha.
+PQ: Com que frequência um botão de Baixar te manda para outro site?
+PO: Toda vez / Bastante / Raramente / Nunca
+FC: O próprio botão pode fazer parte do anúncio. Com o Undirect ativado para o site, a aba fica onde estava e o endereço que ela tentou abrir vai para a lista.
+ST: Quiz: "Qual é o botão de Baixar de verdade?" · O verde grandão / Start Download / O link do arquivo · correct: O link do arquivo
+TQ: Um botão de Baixar já te deu um download falso?
+TO: Sim / Não
+@P25
+B: A área de transferência do iPhone guarda uma coisa só. Copiou um link novo, o anterior foi embora.
+
+Deixe no teclado o texto que você cola todo dia, a um toque.
+Q: O que você mais copia e depois perde?
+@P26
+B: Último dia dos preços de Black Friday. O Undirect fica por R$ 6,90 e o Cutling por R$ 19,90 até as 5h da manhã de amanhã, 1º de dezembro, e depois voltam para R$ 12,90 e R$ 29,90.
+Q: Você pegou algum dos dois no preço da promoção?
+@P27
+B: Você toca no X do anúncio e abre outro anúncio.
+
+Tem três X nesta página. Quantos você acha que fecham o anúncio de verdade?
+Q: Em quantos desses X você teria tocado?
+@P28
+TK: Pergunte o que quiser sobre texto salvo no iPhone: Substituição de Texto, sincronização, teclados. Cada pergunta ganha um vídeo só dela.
+PQ: A Substituição de Texto sincroniza entre o seu iPhone e o seu Mac?
+PO: Sincroniza direitinho / Parou de sincronizar / Nunca funcionou / Não uso
+FC: O que você salva no Cutling sincroniza pelo seu próprio iCloud, e o que foi apagado volta de "Apagados Recentemente" por 30 dias.
+ST: Questions: "O que você digita toda hora no celular?"
+@P29
+B: Quer saber para onde aquela aba queria te levar?
+
+O Undirect lista cada endereço que uma página tentou abrir. Dá para bloquear um deles em todo lugar ou liberar só naquele site.
+Q: Você gostaria de ver para onde essas abas estavam indo?
+@P30
+B: Formulário de envio, formulário de entrega, formulário de cobrança: este mês você vai digitar o endereço em todos.
+
+Salve uma vez no Cutling e cada um leva um toque. R$ 29,90 uma vez só, para iPhone e iPad, com o app de Mac incluído.
+Q: Quantas vezes você vai digitar o endereço este mês?
+T: Digite o endereço uma vez para todos os formulários de envio
+@P31
+B: Você aperta Baixar e cai numa página falsa de download, depois num aviso querendo te inscrever num calendário, depois na página de um app chamado "Speedy Clean".
+
+Com o Undirect ativado, você continua na página em que estava, e a lista mostra o endereço que ela tentou abrir.
+Q: Você já instalou o player que uma página de download pediu?
+T: Página falsa de download, spam de calendário, app de limpeza falso
+@P32
+B: Copia, troca de app, cola, volta. Quatro viagens por causa do horário de uma balsa e do código de uma portaria.
+
+Em vez disso, compartilhe a página com o Cutling. Ela fica salva com um nome, e da próxima vez entra com um toque.
+Q: Quantas vezes você troca de app para copiar uma coisa só?
+T: Copia, troca, cola, volta: tem um jeito mais rápido
+@P33
+B: Assistindo no iPad, e cada toque no Play deixa uma aba nova para trás.
+
+O Undirect funciona igual no Safari do iPad, na mesma compra de R$ 12,90. Libere uma vez para o site, e o Play para de abrir abas.
+Q: Você assiste no iPad ou no celular?
+T: Pare as abas de anúncio do Safari no iPad
+@P34
+B: Um histórico da área de transferência que guarda toda senha que você copia é um risco no Mac.
+
+O histórico do Cutling guarda cada cópia e pula tudo o que o seu gerenciador de senhas marca como oculto.
+Q: Você copia as senhas, ou o gerenciador preenche para você?
+T: O histórico da área de transferência do Mac que pula as suas senhas
+@P35
+B: Safari no Mac, um site de filmes, e um clique no Play abre uma aba de cassino.
+
+O Undirect é ativado para esse site com um clique, e o próximo Play não abre aba nenhuma.
+Q: Quantas abas o seu último site de filmes abriu?
+T: Safari no Mac: um clique no Play, uma aba de cassino
+@P36
+TK: Você já copiou por cima de uma coisa de que ainda precisava? Responda na figurinha.
+PQ: Por quanto tempo o seu Mac guarda o que você copiou?
+PO: 30 minutos / 8 horas / 7 dias / Não faço ideia
+FC: O app de Mac do Cutling tem um histórico próprio da área de transferência, e o que você salva no Cutling fica até você apagar.
+ST: Emoji slider: "Com que frequência você copia por cima de algo de que precisava?" · 😩
+TQ: Já copiou por cima de algo de que ainda precisava?
+TO: Sim / Não
+@P37
+B: Quantas abas de anúncio você fechou hoje à noite para ver um episódio? Alguém escreveu "repita 7 vezes".
+
+Aqui aparece um alerta de VPN, depois um aviso de vírus. Depois, o mesmo toque com o Undirect ativado.
+Q: Qual é o seu recorde de abas de anúncio fechadas num episódio?
+T: Fechando abas de anúncio para ver um episódio
+@P38
+B: Wi-Fi grátis, 10% off, check-in, comprovantes: todo formulário pede o seu e-mail de novo.
+
+Basta salvar no Cutling: num campo de e-mail o teclado oferece ele primeiro.
+Q: Quantos formulários de cadastro você preencheu este mês?
+T: Todo formulário de cadastro quer o seu e-mail de novo
+@P39
+B: Num fórum, alguém te mandou ligar um ajuste escondido do Safari, o "Verify window.open user gesture", para parar as abas de redirecionamento.
+
+Ele funciona pela metade, e fica em Avançado, dentro de Feature Flags. O Undirect resolve com um toque por site.
+Q: Você chegou a ligar esse ajuste? Adiantou?
+@P40
+B: Comprou um app de área de transferência para o Mac e depois descobriu que o do iPhone é cobrado à parte?
+
+O Cutling é uma compra só, de R$ 29,90, para iPhone, iPad e Mac.
+Q: Você já comprou o mesmo app duas vezes, uma para o Mac e outra para o iPhone?
+@P41
+B: Lendo uma notícia, só rolando a tela, sem tocar em nada, e a página pula para uma tela falsa de Ajustes: "Platform Security… RUN A TEST".
+
+Quem fez isso foi a página, e o seu aparelho está bem. O Undirect 1.0.5 mantém você na notícia.
+Q: Uma página já pulou para um alerta falso enquanto você só rolava a tela?
+T: Redirecionamento no Safari enquanto você rola a tela, sem tocar em nada
+@P42
+B: O Gboard no Android guardava os seus clipes fixados. O Cutling fixa eles no teclado do iPhone: seu endereço, o e-mail do trabalho, a senha do Wi-Fi.
+Q: O que você deixava fixado no Gboard?
+T: Os clipes fixados do Gboard, no iPhone
+@P43
+B: Toca em Baixar, vem uma página falsa de download. Toca de novo, aparece um aviso de inscrição em calendário.
+
+Depois, o mesmo Baixar com o Undirect ativado.
+Q: Quantos toques até você achar o download de verdade?
+T: Toca em Baixar, vem um download falso
+@P44
+B: Para quem vive nas respostas: o endereço da sua carteira e o seu @ do X a um toque no teclado. Sem código de Substituição de Texto para decorar.
+Q: O que você mais cola nas respostas?
+@P45
+B: Aperta Voltar para sair de um site de transmissão ao vivo e cai numa página de cassino?
+
+A partir da 1.0.5, com o Undirect ativado para o site, o Voltar volta de verdade.
+Q: Qual site prende o seu botão Voltar?
+T: O botão Voltar te leva para o anúncio de novo
+@P46
+B: Veio do Windows e sente falta do Win+V?
+
+O Cutling para Mac guarda o histórico da sua área de transferência, e as senhas que o seu gerenciador marca como ocultas ficam de fora.
+Q: Do que mais você sente falta do Windows?
+T: Win+V no Mac
+@P47
+B: O Safari está abrindo abas sozinho e você ficou assustado?
+
+Essas abas vieram da página em que você estava, e o seu iPhone está bem. Feche todas, e não instale nada do que elas empurram.
+Q: Quem você conhece que entraria em pânico com essas abas?
+@P48
+TK: Qual texto você mais precisa digitar de novo? Endereço, e-mail, a senha do wifi pela quinta vez? Vote na enquete.
+PQ: O que você mais digita de novo no celular?
+PO: Um endereço / Um e-mail / A mesma resposta / Um link
+FC: O Cutling deixa cada um desses textos no teclado. Você salva uma vez e depois é só tocar.
+ST: Questions: "O que você mais digita de novo?"
+TQ: O que você mais digita de novo no celular?
+TO: Endereço / E-mail / Senha do wifi / Mesma resposta / Outro
+@P49
+B: Mandando mensagem para você mesmo para passar o código de uma portaria do iPhone para o iPad?
+
+Salve no Cutling no iPhone, e ele aparece também no teclado do iPad, pelo seu iCloud.
+Q: Como você passa um código do iPhone para o iPad?
+T: Passe um código do iPhone para o iPad sem se mandar mensagem
+@P50
+B: Hoje é o dia de lançamento do Undirect no @macpiphq. Se o Safari do seu Mac não para de abrir abas que você não pediu, é isto que segura elas.
+Q: O Safari do seu Mac abre abas que você não pediu?
+@P51
+B: No Mac, aperte Shift-Command-V e o histórico está ali: a última coisa que você copiou e o que você salvou no Cutling.
+Q: Você usa um histórico da área de transferência no Mac?
+@P52
+B: Uma página que te manda para outro site enquanto você rola a tela, sem toque nenhum, agora fica parada no Undirect 1.0.5, e o endereço dela aparece na lista.
+Q: Você já foi redirecionado enquanto só rolava a tela?
+T: A página redireciona enquanto você rola: pare isso no Safari
+@P53
+B: Cuidar de três prédios é digitar um endereço em toda ordem de serviço, a 14 segundos cada.
+
+Salve cada um no Cutling, e vira um toque.
+Q: Quantos endereços você digita por causa do trabalho?
+T: Digitando o mesmo endereço em toda ordem de serviço
+@P54
+TK: O Undirect bloqueia anúncio? Não. Ele segura as abas e os redirecionamentos, e os anúncios continuam por conta do seu bloqueador. Pergunte para a gente por que o "Bloquear Pop-ups" não segura isso.
+PQ: O "Bloquear Pop-ups" está ativado. As abas ainda abrem?
+PO: Sim, o tempo todo / De vez em quando / Nunca / Que ajuste é esse?
+FC: Esse ajuste segura as janelas que a página abre sozinha. A aba que abre com o seu próprio toque passa por ele. O Undirect confere o que estava embaixo do seu dedo.
+ST: Emoji slider: "O quanto uma aba de anúncio de surpresa estraga a sua noite?" · 😠
+@P55
+B: O iPhone consegue guardar um histórico da área de transferência? Nenhum app consegue: o iOS não deixa os apps lerem em segundo plano o que você copia.
+
+No iPhone, o Cutling guarda o que você escolhe salvar, e o app de Mac guarda o histórico completo.
+Q: Você achava que os apps do iPhone conseguiam guardar um histórico da área de transferência?
+@P56
+B: Procurando um site de filme grátis para o iPad que não tenha pop-up?
+
+Os sites são os mesmos, e o Undirect funciona no Safari do iPad. Ative para o site, e as abas param.
+Q: Qual site de filme grátis é o pior no iPad?
+T: Sites de filme grátis no iPad sem pop-up
+@P57
+B: iPhone e iPad, um ID Apple só, e o texto que você salvou está nos dois.
+
+A sincronização passa pelo seu próprio iCloud, então não existe conta do Cutling para entrar.
+Q: Você deixa o seu texto salvo em mais de um aparelho?
+T: Texto salvo no iPhone e no iPad, sincronizado
+@P58
+B: Onde o Undirect não consegue ajudar: nos apps web da tela de início e no navegador que fica dentro de outros apps, porque as extensões do Safari não rodam ali.
+
+Abra o link no Safari e você está coberto.
+Q: Você abre links no Safari ou dentro de outros apps?
+@P59
+B: Veio de um Samsung? As coisas do Android que fazem falta: colar sem o aviso "Permitir Colar", a área de transferência do Gboard, os clipes fixados dele.
+
+Os clipes fixados o Cutling traz de volta: seu link de agendamento no teclado do iPhone, a um toque em qualquer conversa. Registrar o que você copia ele não consegue.
+Q: Do que você mais sente falta do Samsung?
+T: Coisas do Android que me fazem falta no iPhone
+@P60
+B: POV: você é o anúncio de um site de filme grátis. Eles tocam em Play, você abre uma aba nova. Tocam de novo, você avisa que o iPhone deles está com 12 vírus.
+
+Aí eles ativaram o Undirect para o site, e nada do que você mandou passou.
+Q: Em qual truque de anúncio você mais caiu?
+T: POV: você é o anúncio de um site de filme grátis
+@P61
+TK: É seguro dar Acesso Total para um app de teclado? Pergunte o que quiser sobre o que o teclado do Cutling lê e para onde isso vai. Resposta curta: a palavra antes do cursor, e para lugar nenhum.
+PQ: Você deixaria um app de teclado guardar o seu texto salvo?
+PO: Sim, se for offline / Só de marca grande / Nada de teclado de fora / O que é Acesso Total?
+FC: O teclado do Cutling não tem código de rede nenhum, e o selo de privacidade na App Store diz "Dados Não Coletados".
+ST: Questions: "O que você precisaria ver antes de confiar num teclado?"
+@P62
+B: Três botões de Baixar num site de arquivos grátis, e só um é o de verdade. Os outros dois te mandam para uma inscrição em calendário de spam e para um app de limpeza falso.
+
+Com o Undirect ativado para o site, os falsos não levam a lugar nenhum e o de verdade baixa.
+Q: Em qual botão de Baixar você teria apertado?
+T: Só um é o botão de Baixar de verdade
+@P63
+B: Você copia um número de voo, depois um código de uso único, depois um endereço. Aperta Command-V e só sobrou o endereço.
+
+Com o Cutling para Mac, aperte Shift-Command-V: cada cópia está no histórico, e as senhas ficam de fora.
+Q: O que você perdeu na área de transferência esta semana?
+T: O Command-V só guarda a última coisa que você copiou
+@P64
+B: Você clica em Play no Safari do Mac e abre uma aba em que você nunca clicou.
+
+Um clique no botão do Undirect para esse site, e o próximo Play não abre aba.
+Q: O Safari do seu Mac faz isso com você?
+T: Faça o Safari do Mac parar de abrir abas em que você não clicou
+@P65
+B: Você vende pelo Instagram. "Ainda tem?" "Entrega onde?" "Aceita Pix?" Quarenta vezes por dia.
+
+Salve cada resposta uma vez e depois é só tocar.
+Q: Qual é a DM que você mais responde?
+@P66
+B: Capítulo 41. Você aperta Próximo e abre um cassino. Fecha, aperta de novo, e agora é um site de cripto.
+
+Ative o Undirect uma vez para esse site de leitura, e o Próximo continua no capítulo.
+Q: Qual site de leitura é o pior nos redirecionamentos?
+@P67
+B: Alguém pergunta quando você está livre e você sai caçando o seu link de agendamento.
+
+Compartilhe a página com o Cutling uma vez. Ela fica salva com um nome, e da próxima vez é um toque no teclado.
+Q: Onde você guarda o seu link de agendamento?
+T: Seu link de agendamento a um toque no iPhone
+@P68
+TK: Quanto o seu bloqueador do Safari te custou? Diga na enquete.
+PQ: Como você pagou pelo seu bloqueador do Safari?
+PO: Por mês ou por ano / Pagamento único / Um gratuito / Não uso nenhum
+FC: O Undirect custa R$ 12,90 uma vez só, sem conta e sem enviar nada para lugar nenhum.
+ST: Poll: "Quanto você já pagou, no máximo, por um bloqueador do Safari?" · Menos de R$ 25 / R$ 25 a R$ 100 / Mais de R$ 100 / Nada
+TQ: Quanto custou o seu bloqueador?
+TO: Nada / Pagamento único / Por ano / Por mês
+@P69
+B: O Cutling não tem conta nem servidor, então não tem nada que possam desligar de você. O que você salva fica nos seus aparelhos e no seu próprio iCloud, e funciona offline.
+Q: Um app de que você dependia já fechou as portas?
+@P70
+B: Você aperta Voltar num site de série e ele te leva para o anúncio de novo.
+
+Com o Undirect 1.0.5 ativado para o site, o Voltar só volta.
+Q: Quantos Voltar você precisa para sair de um site de série?
+T: O botão Voltar continua te levando para o anúncio
+@P71
+B: O menu Compartilhar do Safari tem um botão do Cutling. Compartilhe uma página com ele, dê um nome, e da próxima vez que um formulário pedir, é um toque no teclado.
+Q: Você usa o menu Compartilhar para salvar coisas?
+T: Salve uma página no teclado do iPhone pelo menu Compartilhar
+@P72
+B: Você toca num link e o Safari te joga na App Store.
+
+Se foi truque da página, o Undirect segura. Se for um botão que avisa que abre a App Store, como o "abrir o app" do Google, o Undirect deixa passar.
+Q: Uma página já te jogou na App Store?
+@P73
+B: A mãe, o escritório, a tia Rita: três endereços que você digita todo dezembro.
+
+Salve cada um no Cutling e toque no certo na hora de preencher a encomenda.
+Q: Para quantos endereços você manda encomenda em dezembro?
+@P74
+B: Meu pai manda mensagem: "meu iphone tá dizendo que tem 12 vírus??" É o site de filme grátis de novo, e agora são 9 abas abertas.
+
+Coloquei o Undirect no iPhone dele e ativei para esse site. Agora o filme simplesmente toca.
+Q: Quem é o suporte técnico da sua família?
+T: Suporte técnico para o meu pai, toda santa semana
+@P75
+B: Copia no iPhone, cola no iPad, e não chega nada.
+
+Em vez disso, salve no Cutling: o código da porta do escritório que você salvou no iPhone está também no teclado do iPad. Uma cópia avulsa ele não leva.
+Q: A Área de Transferência Universal funciona para você?
+T: Copiou no iPhone e não cola no iPad?
+@P76
+B: iPad, site de filme grátis, e o Play abre uma aba dizendo "Seu iPhone foi hackeado".
+
+Ative o Undirect para o site no Safari e o Play não abre mais abas. Os mesmos R$ 12,90 do iPhone e do Mac.
+Q: Você assiste no iPad?
+T: iPad: o Play abre uma aba de "Seu iPhone foi hackeado"
+@P77
+B: Uma assinatura que renova todo ano. Para copiar e colar.
+
+O Cutling custa R$ 29,90, uma vez, para iPhone, iPad e Mac, sem conta.
+Q: Qual foi a assinatura mais cara que você já pagou por uma ferramenta pequena?
+@P78
+B: O Undirect não esconde nada na página, então ele não é um bloqueador de anúncios, e você pode continuar com o seu.
+
+Ele segura as abas e os redirecionamentos que o seu bloqueador deixa escapar, então rode os dois lado a lado.
+Q: Qual bloqueador você usa no Safari?
+@P79
+B: Sete formulários, sete toques. Num campo de e-mail, o teclado do Cutling coloca o seu e-mail em primeiro, e você não precisa procurar.
+Q: Quantas vezes você digitou o seu e-mail esta semana?
+T: Seu e-mail com um toque em todo campo de e-mail
+@P80
+B: Aperta Play três vezes, cai em três armadilhas diferentes: um alerta de VPN, uma contagem regressiva de vírus, uma página de prêmio.
+
+O mesmo toque com o Undirect ativado toca o vídeo.
+Q: Quantas vezes você precisa apertar Play num site grátis?
+T: Três toques no Play, três armadilhas diferentes
+@P81
+TK: Como você passa um pedaço de texto do iPhone para o Mac? E-mail para você mesmo, mensagem para você mesmo, AirDrop, ou digita de novo? Escolha o seu jeito na enquete.
+PQ: Como você passa texto do iPhone para o Mac?
+PO: Mando e-mail para mim / Mando mensagem para mim / Pelo AirDrop / Digito de novo
+FC: Salve no Cutling no iPhone. Ele sincroniza pelo iCloud e aparece no seletor do Mac.
+ST: Add Yours: "Como você passa texto do iPhone para o Mac"
+TQ: Como você leva texto do iPhone para o Mac?
+TO: E-mail / Mensagem / AirDrop / Digito de novo / Outro
+@P82
+B: Você não tocou em nada, e a página te mandou mesmo assim para um alerta de segurança falso.
+
+O Undirect 1.0.5 mantém você onde estava, e o endereço que ela tentou abrir aparece na lista.
+Q: Para onde uma página já te mandou sem você tocar em nada?
+T: Mandado para um alerta de segurança falso sem tocar em nada
+@P83
+B: Você copiou uma segunda coisa e a primeira sumiu.
+
+No Mac, o histórico do Cutling ainda tem ela.
+Q: Qual foi a última coisa que você apagou copiando por cima sem querer?
+T: Copiou por cima do que precisava? Histórico da área de transferência no Mac
+@P84
+TK: Para onde a última aba de anúncio te levou? Responda pela figurinha.
+PQ: Para onde a última aba de anúncio te levou?
+PO: Para um cassino / Para uma página de vírus / Para a App Store / Para um site adulto
+FC: Cada um desses casos é uma página pegando o seu toque. O Undirect manda o toque para o que você apertou e anota o endereço na lista.
+ST: Questions: "Para onde a última aba de anúncio te levou?"
+TQ: Sua última aba de anúncio ia para onde?
+TO: Cassino / Página de vírus / App Store / Outro
+@P85
+B: "Digitar as mesmas informações de novo, e de novo, e de novo." Foi assim que um usuário descreveu, numa avaliação, para que serve um teclado de colar.
+
+Salve uma vez no Cutling, e depois basta um toque.
+Q: O que você mais digita?
+T: Você já digitou esse endereço 214 vezes
+@P86
+B: Botão de Baixar, página falsa de "download em andamento". Toda vez.
+
+Ative o Undirect uma vez para esse site, e a aba fica na página.
+Q: Você já chegou a baixar o arquivo falso?
+T: Botão de Baixar, página falsa de download, toda vez
+@P87
+B: Um app de textos prontos que não guarda imagem. No Cutling uma imagem é salva igual a um texto: salve um print uma vez, toque nele no teclado e cole na conversa.
+Q: Qual imagem você manda toda hora?
