@@ -178,3 +178,6 @@ Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip 
 - 2026-11-24 07:05 WIB (row 07:06; 5-minute step) | TikTok @monholt photo mode (tt-1.png, tt-end-Undirect.png) | P05-en-TikTok | scheduled in TikTok Studio, post id 7710596487150865684; Posts list reads "24 Nov, 7:05 am (GMT+7) Jakarta"
 - 2026-11-24 15:05 WIB (row 15:07; 5-minute step) | TikTok @monholt photo mode (card-tt.png, tt-end-Cutling.png) | P09-en-TikTok | scheduled in TikTok Studio, post id 7710596914789485844; Posts list reads "24 Nov, 3:05 pm (GMT+7) Jakarta"
 - TikTok P03 and P06 stay unscheduled: both need a poll sticker the web uploader does not offer
+
+| 2026-11-21 19:31 WIB | Threads @monholtco | Debut post (same text as X), in Tech Threads, pinned | live |
+| 2026-11-21 19:31 WIB | Facebook Page Monholt | Debut post (same text as X), Page only, no boost | live, id 122111892351530914 |
