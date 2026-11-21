@@ -141,3 +141,11 @@ Already posted: MacPip Cutling (Nov 18), MacBase Undirect (Nov 19). Dated: iPip 
 - 17:37 reply #7 (Arabic) to @APPS_RH (https://x.com/APPS_RH/status/2124063083106890041): https://x.com/monholtco/status/2124089788487852329
 
 | 2026-11-21 17:20 WIB | X @monholtco | Debut post, pinned: "Hey, I just started Monholt, a small studio making apps that do exactly what they say..." | https://x.com/monholtco/status/2124085365057389008 |
+
+### English calendar deliveries (deliveries-first.json), scheduled 2026-11-21
+
+- 2026-11-23 04:08 WIB | YouTube Short @matsuokengo | P01-en-YouTube | scheduled, https://youtube.com/shorts/dYNZzJYhKBk (private, publishAt 2026-11-22T21:08:00Z read back)
+- 2026-11-23 08:08 WIB | YouTube Short @matsuokengo | P02-en-YouTube | scheduled, https://youtube.com/shorts/NmFG_xc9oPE (private, publishAt 2026-11-23T01:08:00Z read back)
+- 2026-11-24 04:08 WIB | YouTube Short @matsuokengo | P04-en-YouTube | scheduled, https://youtube.com/shorts/-wgj1iPls8s (private, publishAt 2026-11-23T21:08:00Z read back)
+
+| 2026-11-21 18:38 WIB | X @monholtco | Deleted the Arabic reply to @APPS_RH (Evening Reader) at owner go: off-topic, undercut their post | https://x.com/monholtco/status/2124089788487852329 deleted |
