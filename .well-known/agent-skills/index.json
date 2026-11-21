@@ -6,7 +6,7 @@
    "type": "skill-md",
    "description": "Answers questions about Undirect, a paid Safari extension for iPhone, iPad and Mac that stops pages redirecting, opening pop-under tabs or catching a tap through an invisible layer. Use when someone asks how to stop Safari redirects, pop-ups or tabs that open by themselves, or how to set up, use or troubleshoot Undirect.",
    "url": "/.well-known/agent-skills/undirect/SKILL.md",
-   "digest": "sha256:3f85d2f8c5a539ae27a50f64eb7c94b2cf7dd3ec394c7b21131ef66db6465ce1"
+   "digest": "sha256:e5ec389f91b7c14da984284ff6c9f232629b0e6c416cc72046a53a4892129719"
   }
  ]
 }

@@ -13,7 +13,7 @@ Key facts:
 - How it blocks: an address blocked everywhere becomes a Safari content blocking rule, so the request never leaves the device.
 - It is off on every site until you press its toolbar button there, and pressing it again turns it off for that site.
 - Price: USD 1.99 in the US App Store when this file was built (2026-11-21), paid once. No subscription, no in-app purchases, no ads. One purchase covers iPhone, iPad and Mac.
-- Requirements: iOS and iPadOS 26.2 or later, macOS 15 or later. It works in Safari only.
+- Requirements: iOS and iPadOS 18 or later, macOS 15 or later. It works in Safari only.
 - Privacy: no account, no analytics, no server. The App Store privacy label says Data Not Collected. Nothing leaves the device unless you press Report, which opens a prefilled GitHub issue that you submit yourself.
 - The source code is public: https://github.com/kengomatsuo/undirect
 - The App Store listing and this site are in 50 languages. Pages other than English live under /<language code>/, for example https://undirect.matsuokengo.com/ja/ and https://undirect.matsuokengo.com/de-de/.
