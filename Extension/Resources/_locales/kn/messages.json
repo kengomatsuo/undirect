@@ -365,12 +365,12 @@
       }
     }
   },
-  "note_dont_show": {
-    "message": "ಮತ್ತೆ ತೋರಿಸಬೇಡಿ",
-    "description": "Link inside the note, shown only the first few times, that turns the note off."
+  "note_settings": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+    "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
-  "note_hidden": {
-    "message": "ಸೂಚನೆಗಳು ಆಫ್. Undirect ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಮತ್ತೆ ಆನ್ ಮಾಡಿ.",
-    "description": "Replaces the note's text right after the person chose not to see it again; says where to turn it back on."
+  "note_where": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗಾಗಿ ಟೂಲ್‌ಬಾರ್‌ನಲ್ಲಿ Undirect ಒತ್ತಿ.",
+    "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   }
 }

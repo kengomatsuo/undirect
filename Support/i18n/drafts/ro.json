@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld oprite"
     },
-    "ext.note.dont_show": {
-      "s": "Nu mai afișa"
+    "ext.note.settings": {
+      "s": "Setări"
     },
-    "ext.note.hidden": {
-      "s": "Notificări dezactivate. Le reactivezi din setările Undirect."
+    "ext.note.where": {
+      "s": "Apasă Undirect în bara de instrumente pentru setări."
     }
   }
 }

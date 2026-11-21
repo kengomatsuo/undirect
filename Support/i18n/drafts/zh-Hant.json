@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "已攔截 %lld 個"
     },
-    "ext.note.dont_show": {
-      "s": "不再顯示"
+    "ext.note.settings": {
+      "s": "設定"
     },
-    "ext.note.hidden": {
-      "s": "提示已關閉。可在 Undirect 設定中重新開啟。"
+    "ext.note.where": {
+      "s": "在工具列中點一下 Undirect 即可開啟設定。"
     }
   }
 }

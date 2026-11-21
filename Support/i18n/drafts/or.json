@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld ବନ୍ଦ କରାଗଲା"
     },
-    "ext.note.dont_show": {
-      "s": "ପୁଣି ଦେଖାନ୍ତୁ ନାହିଁ"
+    "ext.note.settings": {
+      "s": "ସେଟିଂସ"
     },
-    "ext.note.hidden": {
-      "s": "ନୋଟ୍ ବନ୍ଦ। Undirect ସେଟିଂସରେ ପୁଣି ଚାଲୁ କରନ୍ତୁ।"
+    "ext.note.where": {
+      "s": "ସେଟିଂସ ପାଇଁ ଟୁଲବାରରେ Undirect ଦବାନ୍ତୁ।"
     }
   }
 }

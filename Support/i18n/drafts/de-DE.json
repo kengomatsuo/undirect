@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "%lld gestoppt"
     },
-    "ext.note.dont_show": {
-      "s": "Nicht mehr anzeigen"
+    "ext.note.settings": {
+      "s": "Einstellungen"
     },
-    "ext.note.hidden": {
-      "s": "Hinweise aus. In den Undirect-Einstellungen wieder einschalten."
+    "ext.note.where": {
+      "s": "Für Einstellungen tippe in der Symbolleiste auf Undirect."
     }
   }
 }

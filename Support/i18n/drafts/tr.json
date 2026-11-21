@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "%lld durduruldu"
     },
-    "ext.note.dont_show": {
-      "s": "Bir daha gösterme"
+    "ext.note.settings": {
+      "s": "Ayarlar"
     },
-    "ext.note.hidden": {
-      "s": "Notlar kapalı. Undirect ayarlarından yeniden açabilirsiniz."
+    "ext.note.where": {
+      "s": "Ayarlar için araç çubuğunda Undirect'e dokunun."
     }
   }
 }

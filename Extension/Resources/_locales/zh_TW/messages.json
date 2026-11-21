@@ -365,12 +365,12 @@
       }
     }
   },
-  "note_dont_show": {
-    "message": "不再顯示",
-    "description": "Link inside the note, shown only the first few times, that turns the note off."
+  "note_settings": {
+    "message": "設定",
+    "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
-  "note_hidden": {
-    "message": "提示已關閉。可在 Undirect 設定中重新開啟。",
-    "description": "Replaces the note's text right after the person chose not to see it again; says where to turn it back on."
+  "note_where": {
+    "message": "在工具列中點一下 Undirect 即可開啟設定。",
+    "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   }
 }

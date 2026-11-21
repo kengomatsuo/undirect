@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "تم إيقاف %lld"
     },
-    "ext.note.dont_show": {
-      "s": "لا تُظهر هذا مرة أخرى"
+    "ext.note.settings": {
+      "s": "الإعدادات"
     },
-    "ext.note.hidden": {
-      "s": "تم إيقاف الملاحظات. أعد تشغيلها من إعدادات Undirect."
+    "ext.note.where": {
+      "s": "اضغط Undirect في شريط الأدوات للإعدادات."
     }
   }
 }

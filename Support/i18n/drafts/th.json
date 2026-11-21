@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "หยุดแล้ว %lld รายการ"
     },
-    "ext.note.dont_show": {
-      "s": "ไม่ต้องแสดงอีก"
+    "ext.note.settings": {
+      "s": "การตั้งค่า"
     },
-    "ext.note.hidden": {
-      "s": "ปิดการแจ้งแล้ว เปิดอีกครั้งได้ในการตั้งค่าของ Undirect"
+    "ext.note.where": {
+      "s": "แตะ Undirect ในแถบเครื่องมือเพื่อเปิดการตั้งค่า"
     }
   }
 }

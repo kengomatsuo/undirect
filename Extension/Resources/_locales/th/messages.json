@@ -365,12 +365,12 @@
       }
     }
   },
-  "note_dont_show": {
-    "message": "ไม่ต้องแสดงอีก",
-    "description": "Link inside the note, shown only the first few times, that turns the note off."
+  "note_settings": {
+    "message": "การตั้งค่า",
+    "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
-  "note_hidden": {
-    "message": "ปิดการแจ้งแล้ว เปิดอีกครั้งได้ในการตั้งค่าของ Undirect",
-    "description": "Replaces the note's text right after the person chose not to see it again; says where to turn it back on."
+  "note_where": {
+    "message": "แตะ Undirect ในแถบเครื่องมือเพื่อเปิดการตั้งค่า",
+    "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   }
 }

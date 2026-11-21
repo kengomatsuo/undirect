@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lldটি থামানো হয়েছে"
     },
-    "ext.note.dont_show": {
-      "s": "আর দেখাবেন না"
+    "ext.note.settings": {
+      "s": "সেটিংস"
     },
-    "ext.note.hidden": {
-      "s": "নোট বন্ধ। Undirect-এর সেটিংসে আবার চালু করুন।"
+    "ext.note.where": {
+      "s": "সেটিংসের জন্য টুলবারে Undirect চাপুন।"
     }
   }
 }

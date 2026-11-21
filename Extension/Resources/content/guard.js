@@ -115,36 +115,41 @@
   // the reader is looking at the page.
   // The note: a small card at the foot of the page each time something is
   // stopped, so a person sees Undirect working without being interrupted.
-  // It never takes focus, covers only itself, merges blocks that land while
-  // it is up ("3 stopped"), and fades on its own. On the first NOTE_OFFER
-  // notes it carries "Don't show again", which turns the setting off and says
-  // where to turn it back on; after that the switch lives in Settings only.
-  const NOTE_MS = 3200;
+  // The address the page reached for sits in a chip that cracks and falls
+  // apart, then stays behind struck through, so the note reads at a glance.
+  // It never takes focus, covers only itself, counts blocks that land while
+  // it is up ("3 stopped", each one breaking in turn), and fades on its own.
+  // On the first NOTE_OFFER notes it carries a Settings button that opens
+  // Undirect's popup, where the note can be switched off.
+  const NOTE_MS = 3600;
   const NOTE_OFFER = 3;
+  const SHARDS = [ // vertical slices of the chip, jagged where they meet
+    "0 0,26% 0,20% 52%,28% 100%,0 100%",
+    "26% 0,47% 0,41% 46%,50% 100%,28% 100%,20% 52%",
+    "47% 0,70% 0,64% 58%,73% 100%,50% 100%,41% 46%",
+    "70% 0,100% 0,100% 100%,73% 100%,64% 58%",
+  ];
   let notesShown = 0;
-  let note = null;    // { root, text, host, count, timer }
+  let note = null;
 
   function say(key, sub, fallback) {
     try { return api.i18n.getMessage(key, sub) || fallback; } catch (e) { return fallback; }
   }
 
-  function noteLine(kind, host) {
-    if (kind === "back-hijack") return [say("note_back_trap", undefined, "Back button trap stopped"), ""];
-    if (kind === "no-tap") return [say("note_kept_here", undefined, "Kept you here"), host];
-    return [say("note_stopped", undefined, "Stopped"), host];
+  function noteTitle(kind) {
+    if (kind === "back-hijack") return say("note_back_trap", undefined, "Back button trap stopped");
+    if (kind === "no-tap") return say("note_kept_here", undefined, "Kept you here");
+    return say("note_stopped", undefined, "Stopped");
   }
 
   function showNote(kind, host) {
     if (!settings.banner || window.top !== window || !document.body) return;
     if (note) {
-      if (note.host === host && note.count === 1) return refresh();
       note.count += 1;
-      note.host = null;
       note.title.textContent = say("note_count", [String(note.count)], note.count + " stopped");
-      note.text.textContent = "";
+      breakChip(host);
       return refresh();
     }
-    const [title, detail] = noteLine(kind, host);
     const offer = notesShown < NOTE_OFFER;
     notesShown += 1;
     try { api.storage.local.set({ notesShown }); } catch (e) {}
@@ -159,44 +164,86 @@
       ".n{pointer-events:auto;display:flex;align-items:center;gap:10px;padding:9px 12px 9px 10px;" +
       "border-radius:14px;background:rgba(22,24,28,.94);color:#f7f8fa;" +
       "font:13px/1.3 -apple-system,system-ui,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.3);" +
-      "max-width:min(360px,calc(100vw - 32px));animation:in .42s cubic-bezier(.34,1.56,.64,1) both}" +
+      "max-width:min(400px,calc(100vw - 32px));animation:in .42s cubic-bezier(.34,1.56,.64,1) both}" +
       ".n.out{animation:out .22s ease-in both}" +
-      ".i{flex:none;width:22px;height:22px;border-radius:50%;background:#d8352a;display:grid;place-items:center;" +
-      "animation:pop .5s .12s cubic-bezier(.34,1.8,.64,1) both}" +
+      ".i{flex:none;width:22px;height:22px;border-radius:50%;background:#d8352a;display:grid;place-items:center}" +
+      ".i.on{animation:pop .5s cubic-bezier(.34,1.8,.64,1) both}" +
       ".t{font-weight:600;white-space:nowrap}" +
-      ".h{font-family:ui-monospace,Menlo,monospace;opacity:.72;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}" +
+      ".c{position:relative;min-width:0;display:flex}" +
+      ".h,.s{font-family:ui-monospace,Menlo,monospace;font-size:12px;padding:2px 7px;border-radius:6px;" +
+      "background:#d8352a;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:180px}" +
+      ".h.gone{background:transparent;color:rgba(247,248,250,.6);text-decoration:line-through;" +
+      "transition:color .3s,background .3s}" +
+      ".s{position:absolute;left:0;top:0;pointer-events:none;" +
+      "animation:fall .7s cubic-bezier(.45,0,.75,.4) both}" +
       "button{all:unset;cursor:pointer;white-space:nowrap;color:#9db7ff;padding:2px 0 2px 6px;font-size:12px}" +
       "button:focus-visible{outline:2px solid #9db7ff;border-radius:4px}" +
       "@keyframes in{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}" +
       "@keyframes out{to{opacity:0;transform:translateY(8px)}}" +
-      "@keyframes pop{from{transform:scale(.4)}to{transform:scale(1)}}" +
-      "@media (prefers-reduced-motion:reduce){.n{animation:fade .2s both}.n.out{animation:fade .2s reverse both}.i{animation:none}" +
+      "@keyframes pop{from{transform:scale(.3)}to{transform:scale(1)}}" +
+      "@keyframes fall{0%{transform:none;opacity:1}" +
+      "18%{transform:translate(calc(var(--dx) * .15),-3px) rotate(calc(var(--r) * .2))}" +
+      "100%{transform:translate(var(--dx),34px) rotate(var(--r));opacity:0}}" +
+      "@media (prefers-reduced-motion:reduce){.n{animation:fade .2s both}.n.out{animation:fade .2s reverse both}" +
+      ".i,.i.on{animation:none;transform:none}.s{display:none}" +
       "@keyframes fade{from{opacity:0}to{opacity:1}}}" +
       "</style>" +
       '<div class="n" role="status" aria-live="polite">' +
       '<span class="i"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">' +
       '<path d="M2.5 6.2 5 8.6 9.6 3.6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' +
-      '<span class="t"></span><span class="h"></span></div>';
+      '<span class="t"></span><span class="c"><span class="h"></span></span></div>';
     const card = shadow.querySelector(".n");
-    note = { root, card, title: shadow.querySelector(".t"), text: shadow.querySelector(".h"), host, count: 1, timer: 0 };
-    note.title.textContent = title;
-    note.text.textContent = detail;
+    note = { root, card, icon: shadow.querySelector(".i"), title: shadow.querySelector(".t"),
+             chip: shadow.querySelector(".c"), host: shadow.querySelector(".h"), count: 1, timer: 0, breaking: 0 };
+    note.title.textContent = noteTitle(kind);
     if (offer) {
       const button = document.createElement("button");
-      button.textContent = say("note_dont_show", undefined, "Don't show again");
+      button.textContent = say("note_settings", undefined, "Settings");
       button.addEventListener("click", (e) => {
         e.stopPropagation();
-        settings.banner = false;
-        try { api.runtime.sendMessage({ type: "undirect:set", settings: { banner: false } }); } catch (err) {}
-        note.title.textContent = say("note_hidden", undefined, "Notes off. Turn them back on in Undirect's settings.");
-        note.text.textContent = "";
+        // The popup holds the note's own switch. Safari opens it only for a
+        // press it can still see, which a message to the background may lose;
+        // then the note says where the button is instead.
+        api.runtime.sendMessage({ type: "undirect:openPopup" }).then((reply) => {
+          if (reply?.opened) return hideNote();
+          note && (note.title.textContent = say("note_where", undefined, "Press Undirect in the toolbar for settings."));
+          note && refresh();
+        }, () => {});
         button.remove();
-        refresh();
       });
       card.appendChild(button);
     }
     document.documentElement.appendChild(root);
+    breakChip(host);
     refresh();
+  }
+
+  // Put the address in the chip whole, then crack it into falling shards and
+  // leave it struck through. Reduced motion skips the shards (CSS).
+  function breakChip(host) {
+    const n = note;
+    n.host.textContent = host;
+    n.host.classList.remove("gone");
+    n.icon.classList.remove("on");
+    clearTimeout(n.breaking);
+    n.breaking = setTimeout(() => {
+      if (note !== n) return;
+      SHARDS.forEach((poly, i) => {
+        const shard = document.createElement("span");
+        shard.className = "s";
+        shard.textContent = host;
+        shard.style.width = n.host.offsetWidth + "px";
+        shard.style.clipPath = "polygon(" + poly + ")";
+        shard.style.setProperty("--dx", (i - 1.5) * 9 + "px");
+        shard.style.setProperty("--r", (i % 2 ? 1 : -1) * (10 + i * 7) + "deg");
+        shard.style.animationDelay = i * 35 + "ms";
+        n.chip.appendChild(shard);
+        setTimeout(() => shard.remove(), 900);
+      });
+      n.host.classList.add("gone");
+      void n.icon.offsetWidth;
+      n.icon.classList.add("on");
+    }, 450);
   }
 
   function refresh() {
@@ -208,6 +255,7 @@
     if (!note) return;
     const gone = note;
     note = null;
+    clearTimeout(gone.timer);
     gone.card.classList.add("out");
     setTimeout(() => gone.root.remove(), 240);
   }

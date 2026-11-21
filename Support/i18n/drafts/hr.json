@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "Zaustavljeno: %lld"
     },
-    "ext.note.dont_show": {
-      "s": "Ne prikazuj više"
+    "ext.note.settings": {
+      "s": "Postavke"
     },
-    "ext.note.hidden": {
-      "s": "Obavijesti isključene. Ponovno ih uključite u postavkama Undirecta."
+    "ext.note.where": {
+      "s": "Za postavke dodirnite Undirect na alatnoj traci."
     }
   }
 }

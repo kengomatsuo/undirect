@@ -25,7 +25,7 @@ const ok = (name, pass, detail) => {
 // against, so the guard being off by default costs no existing check a line.
 function world({ slowStorage = false, matchedRules = null,
                  watched = { "site.com": true }, settings = {}, stored = {},
-                 privateTabs = [], fromApp = [], appSilent = false } = {}) {
+                 privateTabs = [], fromApp = [], appSilent = false, popupRefused = false } = {}) {
   const local = {
     settings: { enabled: true, policy: "block", mode: "watched", ...settings },
     watched,
@@ -94,6 +94,8 @@ function world({ slowStorage = false, matchedRules = null,
     action: {
       setBadgeText: (t) => calls.badge.push(t.text),
       setBadgeBackgroundColor: () => {},
+      // Safari refuses a popup it no longer counts a press for.
+      openPopup: async () => { if (popupRefused) throw new Error("no gesture"); },
     },
     tabs: {
       goBack: async (id) => calls.goBack.push(id),
@@ -666,6 +668,14 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   await Promise.all(w.send({ type: "undirect:set", settings: { banner: false } }, 7));
   await Promise.all(w.send({ type: "undirect:set", settings: { veto: true } }, 7));
   ok("and turning it off afterwards sticks", w.local.settings.banner === false, JSON.stringify(w.local.settings));
+}
+
+// The note's Settings button asks the background to open the popup.
+{
+  const yes = await world().send({ type: "undirect:openPopup" }, 7).find(Boolean);
+  const no = await world({ popupRefused: true }).send({ type: "undirect:openPopup" }, 7).find(Boolean);
+  ok("the note's Settings button opens the popup, and says so when Safari will not",
+     yes?.opened === true && no?.opened === false, JSON.stringify({ yes, no }));
 }
 
 const failed = results.filter((r) => !r.pass);

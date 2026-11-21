@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld megállítva"
     },
-    "ext.note.dont_show": {
-      "s": "Ne mutasd többé"
+    "ext.note.settings": {
+      "s": "Beállítások"
     },
-    "ext.note.hidden": {
-      "s": "Értesítések kikapcsolva. Az Undirect beállításaiban kapcsolhatod vissza."
+    "ext.note.where": {
+      "s": "A beállításokhoz koppints az Undirectre az eszközsoron."
     }
   }
 }

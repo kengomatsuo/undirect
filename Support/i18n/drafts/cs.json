@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "Zastaveno: %lld"
     },
-    "ext.note.dont_show": {
-      "s": "Už nezobrazovat"
+    "ext.note.settings": {
+      "s": "Nastavení"
     },
-    "ext.note.hidden": {
-      "s": "Poznámky vypnuty. Znovu je zapnete v nastavení Undirect."
+    "ext.note.where": {
+      "s": "Nastavení najdete po stisknutí Undirect na panelu nástrojů."
     }
   }
 }

@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "%lld रोके गए"
     },
-    "ext.note.dont_show": {
-      "s": "फिर से न दिखाएँ"
+    "ext.note.settings": {
+      "s": "सेटिंग"
     },
-    "ext.note.hidden": {
-      "s": "नोट बंद। Undirect की सेटिंग में फिर से चालू करें।"
+    "ext.note.where": {
+      "s": "सेटिंग के लिए टूलबार में Undirect दबाएँ।"
     }
   }
 }

@@ -450,6 +450,15 @@ api.runtime.onMessage.addListener((msg, sender) => {
     return applyRule(msg).then(() => ({ ok: true }));
   }
 
+  // The page note's Settings button. Safari opens the popup only while it
+  // still counts the press; when it will not, the note tells the person where
+  // the button is.
+  if (msg?.type === "undirect:openPopup") {
+    return Promise.resolve()
+      .then(() => api.action.openPopup())
+      .then(() => ({ opened: true }), () => ({ opened: false }));
+  }
+
   if (msg?.type === "undirect:set") {
     return applySettings(msg.settings).then((settings) => ({ settings }));
   }

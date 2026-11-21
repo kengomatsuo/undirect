@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld bloqueados"
     },
-    "ext.note.dont_show": {
-      "s": "No volver a mostrar"
+    "ext.note.settings": {
+      "s": "Configuración"
     },
-    "ext.note.hidden": {
-      "s": "Avisos desactivados. Vuelve a activarlos en la configuración de Undirect."
+    "ext.note.where": {
+      "s": "Toca Undirect en la barra de herramientas para ver la configuración."
     }
   }
 }

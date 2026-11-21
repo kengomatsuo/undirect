@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "%lld dihentikan"
     },
-    "ext.note.dont_show": {
-      "s": "Jangan tampilkan lagi"
+    "ext.note.settings": {
+      "s": "Pengaturan"
     },
-    "ext.note.hidden": {
-      "s": "Catatan dimatikan. Nyalakan lagi di pengaturan Undirect."
+    "ext.note.where": {
+      "s": "Ketuk Undirect di bar alat untuk pengaturan."
     }
   }
 }

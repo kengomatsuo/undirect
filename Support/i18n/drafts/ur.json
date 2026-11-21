@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld روکے گئے"
     },
-    "ext.note.dont_show": {
-      "s": "دوبارہ نہ دکھائیں"
+    "ext.note.settings": {
+      "s": "ترتیبات"
     },
-    "ext.note.hidden": {
-      "s": "نوٹس بند۔ Undirect کی ترتیبات میں دوبارہ آن کریں۔"
+    "ext.note.where": {
+      "s": "ترتیبات کے لیے ٹول بار میں Undirect دبائیں۔"
     }
   }
 }

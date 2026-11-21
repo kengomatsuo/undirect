@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "Zatrzymano: %lld"
     },
-    "ext.note.dont_show": {
-      "s": "Nie pokazuj ponownie"
+    "ext.note.settings": {
+      "s": "Ustawienia"
     },
-    "ext.note.hidden": {
-      "s": "Powiadomienia wyłączone. Włączysz je w ustawieniach Undirect."
+    "ext.note.where": {
+      "s": "Ustawienia otworzysz, naciskając Undirect na pasku narzędzi."
     }
   }
 }

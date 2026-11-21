@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld ತಡೆಯಲಾಗಿದೆ"
     },
-    "ext.note.dont_show": {
-      "s": "ಮತ್ತೆ ತೋರಿಸಬೇಡಿ"
+    "ext.note.settings": {
+      "s": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
     },
-    "ext.note.hidden": {
-      "s": "ಸೂಚನೆಗಳು ಆಫ್. Undirect ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಮತ್ತೆ ಆನ್ ಮಾಡಿ."
+    "ext.note.where": {
+      "s": "ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗಾಗಿ ಟೂಲ್‌ಬಾರ್‌ನಲ್ಲಿ Undirect ಒತ್ತಿ."
     }
   }
 }

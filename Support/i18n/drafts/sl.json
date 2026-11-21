@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "Ustavljeno: %lld"
     },
-    "ext.note.dont_show": {
-      "s": "Ne prikaži več"
+    "ext.note.settings": {
+      "s": "Nastavitve"
     },
-    "ext.note.hidden": {
-      "s": "Obvestila izklopljena. Znova jih vklopite v nastavitvah Undirect."
+    "ext.note.where": {
+      "s": "Za nastavitve pritisnite Undirect v orodni vrstici."
     }
   }
 }

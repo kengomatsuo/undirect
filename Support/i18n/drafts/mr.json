@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld थांबवले"
     },
-    "ext.note.dont_show": {
-      "s": "पुन्हा दाखवू नका"
+    "ext.note.settings": {
+      "s": "सेटिंग्ज"
     },
-    "ext.note.hidden": {
-      "s": "सूचना बंद. Undirect च्या सेटिंग्जमध्ये पुन्हा सुरू करा."
+    "ext.note.where": {
+      "s": "सेटिंग्जसाठी टूलबारमधील Undirect दाबा."
     }
   }
 }

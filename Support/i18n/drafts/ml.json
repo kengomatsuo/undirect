@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld എണ്ണം തടഞ്ഞു"
     },
-    "ext.note.dont_show": {
-      "s": "വീണ്ടും കാണിക്കരുത്"
+    "ext.note.settings": {
+      "s": "ക്രമീകരണങ്ങൾ"
     },
-    "ext.note.hidden": {
-      "s": "കുറിപ്പുകൾ ഓഫ്. Undirect ക്രമീകരണങ്ങളിൽ വീണ്ടും ഓണാക്കാം."
+    "ext.note.where": {
+      "s": "ക്രമീകരണങ്ങൾക്ക് ടൂൾബാറിലെ Undirect അമർത്തുക."
     }
   }
 }

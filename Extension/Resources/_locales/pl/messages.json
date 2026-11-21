@@ -365,12 +365,12 @@
       }
     }
   },
-  "note_dont_show": {
-    "message": "Nie pokazuj ponownie",
-    "description": "Link inside the note, shown only the first few times, that turns the note off."
+  "note_settings": {
+    "message": "Ustawienia",
+    "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
-  "note_hidden": {
-    "message": "Powiadomienia wyłączone. Włączysz je w ustawieniach Undirect.",
-    "description": "Replaces the note's text right after the person chose not to see it again; says where to turn it back on."
+  "note_where": {
+    "message": "Ustawienia otworzysz, naciskając Undirect na pasku narzędzi.",
+    "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   }
 }

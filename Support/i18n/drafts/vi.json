@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "Đã chặn %lld"
     },
-    "ext.note.dont_show": {
-      "s": "Không hiện lại"
+    "ext.note.settings": {
+      "s": "Cài đặt"
     },
-    "ext.note.hidden": {
-      "s": "Đã tắt ghi chú. Bật lại trong cài đặt của Undirect."
+    "ext.note.where": {
+      "s": "Chạm vào Undirect trên thanh công cụ để mở cài đặt."
     }
   }
 }

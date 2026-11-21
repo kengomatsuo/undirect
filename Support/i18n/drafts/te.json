@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld ఆపబడ్డాయి"
     },
-    "ext.note.dont_show": {
-      "s": "మళ్లీ చూపవద్దు"
+    "ext.note.settings": {
+      "s": "సెట్టింగ్‌లు"
     },
-    "ext.note.hidden": {
-      "s": "నోట్‌లు ఆఫ్. Undirect సెట్టింగ్‌లలో మళ్లీ ఆన్ చేయండి."
+    "ext.note.where": {
+      "s": "సెట్టింగ్‌ల కోసం టూల్‌బార్‌లో Undirect నొక్కండి."
     }
   }
 }

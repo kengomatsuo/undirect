@@ -1423,23 +1423,23 @@
       "budget": "one short line"
     },
     {
-      "id": "ext.note.dont_show",
+      "id": "ext.note.settings",
       "surface": "extension",
       "file": "Extension/Resources/content/guard.js",
       "role": "note",
       "screen": "Small dark note at the foot of a web page, shown for about three seconds when Undirect stops something",
-      "moment": "Link inside the note, shown only the first few times, that turns the note off.",
-      "says": "Link inside the note, shown only the first few times, that turns the note off.",
-      "budget": "one short line"
+      "moment": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are.",
+      "says": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are.",
+      "budget": "one word button"
     },
     {
-      "id": "ext.note.hidden",
+      "id": "ext.note.where",
       "surface": "extension",
       "file": "Extension/Resources/content/guard.js",
       "role": "note",
       "screen": "Small dark note at the foot of a web page, shown for about three seconds when Undirect stops something",
-      "moment": "Replaces the note's text right after the person chose not to see it again; says where to turn it back on.",
-      "says": "Replaces the note's text right after the person chose not to see it again; says where to turn it back on.",
+      "moment": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings.",
+      "says": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings.",
       "budget": "one short line"
     }
   ]

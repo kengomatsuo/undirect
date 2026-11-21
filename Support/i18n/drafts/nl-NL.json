@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "%lld gestopt"
     },
-    "ext.note.dont_show": {
-      "s": "Niet meer tonen"
+    "ext.note.settings": {
+      "s": "Instellingen"
     },
-    "ext.note.hidden": {
-      "s": "Meldingen uit. Zet ze weer aan in de instellingen van Undirect."
+    "ext.note.where": {
+      "s": "Tik op Undirect in de knoppenbalk voor instellingen."
     }
   }
 }

@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld stopped"
     },
-    "ext.note.dont_show": {
-      "s": "Don't show again"
+    "ext.note.settings": {
+      "s": "Settings"
     },
-    "ext.note.hidden": {
-      "s": "Notes off. Turn them back on in Undirect's settings."
+    "ext.note.where": {
+      "s": "Press Undirect in the toolbar for settings."
     }
   }
 }

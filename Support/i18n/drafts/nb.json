@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld stoppet"
     },
-    "ext.note.dont_show": {
-      "s": "Ikke vis igjen"
+    "ext.note.settings": {
+      "s": "Innstillinger"
     },
-    "ext.note.hidden": {
-      "s": "Merknader av. Slå dem på igjen i innstillingene til Undirect."
+    "ext.note.where": {
+      "s": "Trykk på Undirect i verktøylinjen for innstillinger."
     }
   }
 }

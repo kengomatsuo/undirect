@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld pysäytetty"
     },
-    "ext.note.dont_show": {
-      "s": "Älä näytä uudelleen"
+    "ext.note.settings": {
+      "s": "Asetukset"
     },
-    "ext.note.hidden": {
-      "s": "Ilmoitukset pois. Ota ne takaisin käyttöön Undirectin asetuksista."
+    "ext.note.where": {
+      "s": "Asetukset saat painamalla Undirectia työkalupalkissa."
     }
   }
 }

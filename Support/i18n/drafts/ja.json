@@ -612,11 +612,11 @@
     "ext.note.count": {
       "s": "%lld件をブロック"
     },
-    "ext.note.dont_show": {
-      "s": "今後表示しない"
+    "ext.note.settings": {
+      "s": "設定"
     },
-    "ext.note.hidden": {
-      "s": "通知をオフにしました。Undirectの設定でオンに戻せます。"
+    "ext.note.where": {
+      "s": "設定はツールバーのUndirectをタップしてください。"
     }
   }
 }

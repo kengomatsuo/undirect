@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld ਰੋਕੇ ਗਏ"
     },
-    "ext.note.dont_show": {
-      "s": "ਦੁਬਾਰਾ ਨਾ ਦਿਖਾਓ"
+    "ext.note.settings": {
+      "s": "ਸੈਟਿੰਗਾਂ"
     },
-    "ext.note.hidden": {
-      "s": "ਨੋਟ ਬੰਦ। Undirect ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਮੁੜ ਚਾਲੂ ਕਰੋ।"
+    "ext.note.where": {
+      "s": "ਸੈਟਿੰਗਾਂ ਲਈ ਟੂਲਬਾਰ ਵਿੱਚ Undirect ਦਬਾਓ।"
     }
   }
 }

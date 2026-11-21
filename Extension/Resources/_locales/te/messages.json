@@ -365,12 +365,12 @@
       }
     }
   },
-  "note_dont_show": {
-    "message": "మళ్లీ చూపవద్దు",
-    "description": "Link inside the note, shown only the first few times, that turns the note off."
+  "note_settings": {
+    "message": "సెట్టింగ్‌లు",
+    "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
-  "note_hidden": {
-    "message": "నోట్‌లు ఆఫ్. Undirect సెట్టింగ్‌లలో మళ్లీ ఆన్ చేయండి.",
-    "description": "Replaces the note's text right after the person chose not to see it again; says where to turn it back on."
+  "note_where": {
+    "message": "సెట్టింగ్‌ల కోసం టూల్‌బార్‌లో Undirect నొక్కండి.",
+    "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   }
 }

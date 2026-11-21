@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "%lld aturats"
     },
-    "ext.note.dont_show": {
-      "s": "No ho tornis a mostrar"
+    "ext.note.settings": {
+      "s": "Configuració"
     },
-    "ext.note.hidden": {
-      "s": "Notes desactivades. Torna-les a activar a la configuració d'Undirect."
+    "ext.note.where": {
+      "s": "Prem Undirect a la barra d'eines per a la configuració."
     }
   }
 }

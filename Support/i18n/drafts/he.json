@@ -493,11 +493,11 @@
     "ext.note.count": {
       "s": "נחסמו %lld"
     },
-    "ext.note.dont_show": {
-      "s": "לא להציג שוב"
+    "ext.note.settings": {
+      "s": "הגדרות"
     },
-    "ext.note.hidden": {
-      "s": "ההודעות כבויות. אפשר להפעיל אותן שוב בהגדרות של Undirect."
+    "ext.note.where": {
+      "s": "להגדרות, לוחצים על Undirect בסרגל הכלים."
     }
   }
 }
