@@ -348,6 +348,13 @@ export function sticker(st: { type: string; q?: string; options?: string[]; corr
 }
 
 export const T2: Record<string, (p: Props, size: Size) => { app: keyof typeof BRAND; html: string }> = {
+  // The owner's 1.0.5 event art (no text of its own) behind one line of ours.
+  eventart: (p, size) => ({
+    app: "Undirect",
+    html: `<div style="position:absolute;inset:0;background:url(event-details.png) center ${size === "ig" ? "62%" : "50%"}/cover"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,0,0,.55),rgba(40,0,0,0) 38%)"></div>
+      <div class="head" style="position:relative;font-size:${fs(size, 104, 112)}px">${hl(p.line).replace(/class="hl"/g, 'style="background:#111;color:#fff;padding:0 .14em;border-radius:.12em"')}</div>`,
+  }),
   ttend: (p) => ({
     app: p.app,
     html: `<div class="center" style="align-items:center;text-align:center">
