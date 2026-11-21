@@ -217,3 +217,9 @@ Both apps, iOS and macOS app purchases, units (downloads and sales), Aug 20 to N
 | Latin America | 17 | |
 
 Last 30 days (Oct 20 to Nov 19, 76 units): Europe 29, Asia Pacific 22, USA and Canada 14, Africa/ME/India 6, Latin America 5. After the free spike, Europe and Asia Pacific lead.
+
+### Paid units by country (Sales API, key V48TZG72KY, Sep 1 to Nov 19 2026)
+
+Free downloads came from the Oct 10 free day (US 130, Saudi Arabia 132). Paid units are what the calendar should chase:
+Undirect: US 4, Taiwan 2, Canada 2, UK 1, Indonesia 1, Japan 1, Thailand 1, India 1, Netherlands 1. Cutling: US 3.
+Paid buyers so far are English-speaking North America first, then Taiwan and single buyers across Asia and Europe.
