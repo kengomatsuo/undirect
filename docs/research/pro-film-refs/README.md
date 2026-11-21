@@ -131,12 +131,22 @@ shadow gradient from the top and bottom edges and stand-in buttons over every fr
 own In-Feed template (`product-video/references/overlays/tiktok-in-feed-template.png`), Shorts' are Google's overlay;
 Reels uses the strictest of those two since Meta publishes no numbers. The gradients and buttons are drawn, not captured.
 
-**Music.** `music/tracks.json` is the shortlist of eight (file URL, tempo, film beat, lift time, clip window);
+**Music.** `music/tracks-reel-1.json` is the first shortlist of eight (file URL, tempo, film beat, lift time, clip window);
 `music/measurements.json` the measured lift, build and bass share of each; `music/lifts-*.json` the best lifts of every
 track measured (Mixkit, Unminus, Scott Buckley). `music/tools/`: `mixkit-screen.py` scores Mixkit's published
 waveforms, `analyse.py` and `refine.py` find and time lifts on downbeats (need `uv run --with numpy`), `curve.py` and
-`onset.py` print level curves, `reel.py` rebuilds the clips and the reel. What each library's licence permits, with
+`onset.py` print level curves, `reel.py <tracks.json> <out-dir>` rebuilds a reel's clips and its numbered reel. What each library's licence permits, with
 quotes and sources, is in `product-video/research/audio-library.md`, section 2.
+
+**Reel 2 (ASG141, 2026-11-22).** The owner heard reel 1: 1 and 2 "maybe least bad", 7 kept for stya's reveal, the
+rest rejected. `music/tracks-reel-2.json` is tracks 9 to 16, every one meeting the floor that 1 and 2 set and the
+rejected tracks miss (slow pulse, a build 11 dB or more under the track, a lift of 14 dB or more that holds, bass in the
+lifted section); `tools/measure2.py` applies it and `reel-2-measured-*.json` holds every track measured (Mixkit,
+Unminus, HoliznaCC0 on Free Music Archive, OpenTracks). `tools/ot.py` and `tools/otget.py` list OpenTracks (DOVA-SYNDROME
+until 2026-09-15) and fetch its previews; none of 45 passed. Five passing Mixkit files (1355, 279, 377, 1297, 203) have
+no title in `mixkit-titles.json` (910 titles from its listing pages, which answer HTTP 429 when read faster than about
+one a second): a file that answers on Mixkit's server without being listed may not be on offer, so they are off the reel.
+The film stays on track 1 until the owner picks.
 
 `page/audio`, `page/film` and `page/qa` are what the artifact serves; they are ignored by git and rebuilt by `reel.py`
 and `stage-master.py` (sheets resized to 1980 px wide for the page).
