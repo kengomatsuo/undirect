@@ -1,0 +1,236 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=block">
+<style>
+@font-face{font-family:"Inter Tight";src:url(InterTight-var.woff2) format("woff2");font-weight:100 900}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000;width:1080px;height:1920px;overflow:hidden}
+.still{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden;display:none}
+.still.photo{height:1350px}
+.still.on{display:block}
+
+/* ---------- shared device ---------- */
+.phone{position:absolute;width:990px;height:2152px;border-radius:150px;background:#000;
+  box-shadow:0 0 0 5px #2b2b2e,0 0 0 16px #0b0b0c,0 0 0 19px #3d3d41,0 0 0 21px #131314}
+.phone img{position:absolute;inset:0;width:100%;height:100%;border-radius:150px;display:block}
+.phone::after{content:"";position:absolute;inset:0;border-radius:150px;background:linear-gradient(112deg,rgba(255,255,255,.13) 0,rgba(255,255,255,.03) 22%,transparent 40%);pointer-events:none}
+.A .phone{box-shadow:0 0 0 5px #3a3a3f,0 0 0 16px #0b0b0c,0 0 0 20px #6a6a70,0 0 0 22px #1a1a1c,0 0 160px 10px rgba(150,170,210,.16)}
+.ring{position:absolute;width:150px;height:150px;border-radius:50%;margin:-75px 0 0 -75px;
+  border:5px solid rgba(255,255,255,.9);background:rgba(255,255,255,.22);box-shadow:0 0 0 14px rgba(255,255,255,.10)}
+.badge{position:absolute;left:50%;transform:translateX(-50%);height:104px}
+
+/* ================= A — Black stage ================= */
+.A{background:#000;font-family:"Inter Tight",system-ui,sans-serif;color:#fff}
+.A .spot{position:absolute;inset:0;background:radial-gradient(60% 34% at 50% 6%,rgba(190,205,230,.20),transparent 70%)}
+.A .floor{position:absolute;left:0;right:0;bottom:0;height:520px;background:linear-gradient(#000 0,#060607 30%,#0d0d0f 100%)}
+.A .stage{position:absolute;inset:0;perspective:2600px;perspective-origin:50% 42%}
+.A .line{position:absolute;left:0;right:0;top:880px;text-align:center;font-weight:500;font-size:74px;letter-spacing:-.012em}
+.A .line i{font-style:normal;opacity:.34}
+.A .sub{position:absolute;left:0;right:0;text-align:center;font-weight:400;font-size:40px;color:rgba(255,255,255,.55);letter-spacing:.002em}
+.A .glow{position:absolute;border-radius:50%;filter:blur(90px)}
+
+/* ================= B — Daylight object ================= */
+.B{font-family:"Outfit",system-ui,sans-serif;color:#1c1a17;
+  background:linear-gradient(#e6dfd5 0,#ece6dd 58%,#d9d1c5 58.2%,#e7e0d6 100%)}
+.B.photo{background:linear-gradient(#e6dfd5 0,#ece6dd 66%,#d9d1c5 66.2%,#e7e0d6 100%)}
+.B .sun{position:absolute;inset:-200px;background:
+  linear-gradient(118deg,transparent 30%,rgba(255,250,240,.75) 34%,rgba(255,250,240,.75) 47%,transparent 51%),
+  linear-gradient(118deg,transparent 56%,rgba(255,250,240,.6) 59%,rgba(255,250,240,.6) 68%,transparent 71%);filter:blur(26px)}
+.B .stage{position:absolute;inset:0;perspective:3000px;perspective-origin:50% 40%}
+.B .cap{position:absolute;left:84px;top:150px;font-weight:500;font-size:76px;line-height:1.08;letter-spacing:-.015em}
+.B .cap small{display:block;font-size:76px;color:#8a8279}
+.B .shadow{position:absolute;background:#3a2f22;filter:blur(38px);opacity:.34;border-radius:50%}
+.B .cast{position:absolute;background:linear-gradient(90deg,rgba(58,47,34,.42),rgba(58,47,34,0));filter:blur(30px);transform-origin:0 100%}
+.B .card{position:absolute;border-radius:54px;overflow:hidden;box-shadow:0 60px 90px -30px rgba(58,47,34,.45),0 8px 20px rgba(58,47,34,.18)}
+.B .card img{position:absolute;display:block}
+
+/* ================= C — Macro screen ================= */
+.C{background:#000;font-family:"Inter Tight",system-ui,sans-serif;color:#fff}
+.C .stage{position:absolute;inset:0;perspective:1500px;perspective-origin:50% 50%}
+.C .plane{position:absolute;width:990px;height:2152px}
+.C .plane img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.C .grid{position:absolute;inset:0;background:
+  repeating-linear-gradient(0deg,rgba(0,0,0,.30) 0 1px,transparent 1px 3px),
+  repeating-linear-gradient(90deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px);mix-blend-mode:multiply}
+.C .soft{filter:blur(22px) brightness(1.08) saturate(1.15)}
+.C .sharp{filter:brightness(1.06) contrast(1.06) saturate(1.12)}
+.C .vig{position:absolute;inset:0;background:radial-gradient(75% 55% at 50% 50%,transparent 45%,rgba(0,0,0,.82) 100%)}
+.C .serif{position:absolute;left:0;right:0;text-align:center;font-family:"Instrument Serif",Georgia,serif;font-size:104px;line-height:1.04;letter-spacing:-.01em}
+.C .serif i{color:rgba(255,255,255,.5)}
+.C .tiny{position:absolute;left:0;right:0;text-align:center;font-weight:500;font-size:38px;letter-spacing:.01em;color:rgba(255,255,255,.6)}
+</style></head><body>
+
+<!-- A1 frame 0: the phone alone on stage, the tap about to land -->
+<section class="still A" data-id="a1">
+  <div class="spot"></div><div class="floor"></div>
+  <div class="stage">
+    <div class="phone" style="left:45px;top:-150px;transform:scale(.68) rotateY(-22deg) rotateX(7deg) rotateZ(2.5deg)">
+      <img src="reel.jpg"><div class="ring" style="left:491px;top:602px"></div>
+    </div>
+  </div>
+  <div style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.30) 0,transparent 30%)"></div>
+</section>
+
+<!-- A2 words alone: mid-way through the word sweep -->
+<section class="still A" data-id="a2">
+  <div class="line">Not what you <i>tapped.</i></div>
+</section>
+
+<!-- A3 the press: pushed in on Safari's page menu, the real control -->
+<section class="still A" data-id="a3">
+  <div class="stage">
+    <div class="phone" style="left:120px;top:-1060px;transform:scale(1.2) rotateY(-9deg) rotateX(4deg)">
+      <img src="menu.jpg"><div class="ring" style="left:640px;top:1911px;width:120px;height:120px;margin:-60px 0 0 -60px"></div>
+    </div>
+  </div>
+  <div style="position:absolute;inset:0;background:radial-gradient(75% 50% at 50% 55%,transparent 55%,rgba(0,0,0,.72) 100%)"></div>
+</section>
+
+<!-- A4 the result: same tap, the film page stays, the sheet shows what was stopped -->
+<section class="still A" data-id="a4">
+  <div class="spot"></div><div class="floor"></div>
+  <div class="glow" style="left:260px;top:1180px;width:560px;height:360px;background:rgba(232,52,44,.16)"></div>
+  <div class="stage">
+    <div class="phone" style="left:45px;top:-116px;transform:scale(.64) rotateY(14deg) rotateX(5deg) rotateZ(-1.5deg)">
+      <img src="popup-reel.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- A5 end card -->
+<section class="still A" data-id="a5">
+  <div class="glow" style="left:290px;top:820px;width:500px;height:220px;background:rgba(232,52,44,.30)"></div>
+  <img src="icon.png" style="position:absolute;left:350px;top:520px;width:380px;height:380px;border-radius:86px;box-shadow:0 0 0 2px rgba(255,255,255,.14),0 40px 80px rgba(0,0,0,.8)">
+  <div class="line" style="top:1000px;font-weight:600;font-size:88px">Undirect</div>
+  <div class="sub" style="top:1122px">$1.99 once</div>
+  <img class="badge" src="badge.svg" style="top:1500px">
+</section>
+
+<!-- A photo -->
+<section class="still photo A" data-id="pa">
+  <div class="glow" style="left:240px;top:560px;width:620px;height:300px;background:rgba(232,52,44,.22)"></div>
+  <div style="position:absolute;left:90px;top:330px;width:900px;height:520px;border-radius:64px;overflow:hidden;box-shadow:0 0 0 2px rgba(255,255,255,.10),0 60px 120px rgba(0,0,0,.9);transform:perspective(2200px) rotateX(10deg) rotateY(-8deg)">
+    <img src="popup.png" style="position:absolute;left:-64px;top:-1262px;width:1028px">
+  </div>
+  <div class="line" style="top:1010px;font-size:60px">4 stopped on this page.</div>
+  <img src="icon.png" style="position:absolute;left:478px;top:1150px;width:124px;height:124px;border-radius:28px;box-shadow:0 0 0 2px rgba(255,255,255,.14)">
+</section>
+
+<!-- B1 frame 0 -->
+<section class="still B" data-id="b1">
+  <div class="sun"></div>
+  <div class="cap">Tap play.</div>
+  <div class="shadow" style="left:330px;top:1560px;width:600px;height:90px"></div>
+  <div class="cast" style="left:720px;top:1150px;width:520px;height:450px;transform:skewY(-28deg)"></div>
+  <div class="stage">
+    <div class="phone" style="left:150px;top:-140px;transform:scale(.56) rotateY(16deg) rotateX(3deg)">
+      <img src="reel.jpg"><div class="ring" style="left:491px;top:602px;border-color:#fff"></div>
+    </div>
+  </div>
+</section>
+
+<!-- B2 the pages a tap drags in, fanned like junk mail -->
+<section class="still B" data-id="b2">
+  <div class="sun"></div>
+  <div class="cap">Get three sites<small>you never asked for.</small></div>
+  <div class="shadow" style="left:120px;top:1640px;width:860px;height:90px"></div>
+  <div class="card" style="left:40px;top:640px;width:460px;height:1000px;transform:rotate(-14deg)"><img src="hj1.jpg" style="width:460px;left:0;top:0"></div>
+  <div class="card" style="left:580px;top:640px;width:460px;height:1000px;transform:rotate(13deg)"><img src="hj2.jpg" style="width:460px;left:0;top:0"></div>
+  <div class="card" style="left:310px;top:560px;width:460px;height:1000px;transform:rotate(-1.5deg)"><img src="hj3.jpg" style="width:460px;left:0;top:0"></div>
+</section>
+
+<!-- B3 the press: the real Undirect row lifted out of Safari's menu -->
+<section class="still B" data-id="b3">
+  <div class="sun"></div>
+  <div class="cap">Turn on Undirect.</div>
+  <div class="shadow" style="left:330px;top:1600px;width:560px;height:80px;opacity:.22"></div>
+  <div class="stage">
+    <div class="phone" style="left:120px;top:-60px;transform:scale(.50) rotateY(-12deg) rotateX(3deg);filter:blur(5px) saturate(.9)"><img src="menu.jpg"></div>
+  </div>
+  <div class="card" style="left:120px;top:960px;width:840px;height:210px;border-radius:70px;background:#fff">
+    <img src="menu.jpg" style="width:1529px;left:-318px;top:-2845px">
+  </div>
+  <div class="ring" style="left:700px;top:1066px;border-color:#fff;background:rgba(232,52,44,.16);box-shadow:0 0 0 14px rgba(232,52,44,.10)"></div>
+</section>
+
+<!-- B4 end -->
+<section class="still B" data-id="b4">
+  <div class="sun"></div>
+  <div class="shadow" style="left:330px;top:960px;width:420px;height:70px"></div>
+  <img src="icon.png" style="position:absolute;left:350px;top:560px;width:380px;height:380px;border-radius:86px;box-shadow:0 50px 70px -24px rgba(58,47,34,.6)">
+  <div style="position:absolute;left:0;right:0;top:1040px;text-align:center;font-weight:600;font-size:92px;letter-spacing:-.02em">Undirect</div>
+  <div style="position:absolute;left:0;right:0;top:1166px;text-align:center;font-weight:400;font-size:44px;color:#6f675e">$1.99 once</div>
+  <img class="badge" src="badge.svg" style="top:1500px">
+</section>
+
+<!-- B photo -->
+<section class="still photo B" data-id="pb">
+  <div class="sun"></div>
+  <div class="cap" style="top:110px;font-size:84px">No tap.<small style="font-size:84px">No redirect.</small></div>
+  <div class="shadow" style="left:430px;top:1210px;width:560px;height:80px"></div>
+  <div class="cast" style="left:800px;top:820px;width:420px;height:420px;transform:skewY(-28deg)"></div>
+  <div class="stage" style="perspective-origin:50% 45%">
+    <div class="phone" style="left:200px;top:-330px;transform:scale(.47) rotateY(-18deg) rotateX(3deg)"><img src="popup-reel.jpg"></div>
+  </div>
+  <img src="icon.png" style="position:absolute;left:84px;top:1170px;width:96px;height:96px;border-radius:22px">
+</section>
+
+<!-- C1 frame 0: the thumb on Play, filmed close enough to see the pixels -->
+<section class="still C" data-id="c1">
+  <div class="stage">
+    <div class="plane soft" style="left:49px;top:358px;transform-origin:491px 602px;transform:rotateX(50deg) rotateZ(-24deg) scale(3.1)"><img src="reel.jpg"></div>
+    <div class="plane sharp" style="left:49px;top:358px;transform-origin:491px 602px;transform:rotateX(50deg) rotateZ(-24deg) scale(3.1);-webkit-mask-image:linear-gradient(180deg,transparent 21%,#000 25%,#000 31%,transparent 35.5%)">
+      <img src="reel.jpg"><div class="grid"></div><div class="ring" style="left:491px;top:602px;width:110px;height:110px;margin:-55px 0 0 -55px"></div>
+    </div>
+  </div>
+  <div class="vig"></div>
+</section>
+
+<!-- C2 the address bar after the tap: a site nobody asked for -->
+<section class="still C" data-id="c2">
+  <div class="stage">
+    <div class="plane soft" style="left:70px;top:-1060px;transform-origin:470px 2020px;transform:rotateX(46deg) rotateZ(18deg) scale(3.6)"><img src="hj1.jpg"></div>
+    <div class="plane sharp" style="left:70px;top:-1060px;transform-origin:470px 2020px;transform:rotateX(46deg) rotateZ(18deg) scale(3.6);-webkit-mask-image:linear-gradient(180deg,transparent 89%,#000 92%,#000 95.5%,transparent 98.5%)">
+      <img src="hj1.jpg"><div class="grid"></div>
+    </div>
+  </div>
+  <div class="vig"></div>
+</section>
+
+<!-- C3 the result: the toggle on, the chip that says what was stopped -->
+<section class="still C" data-id="c3">
+  <div class="stage">
+    <div class="plane soft" style="left:-140px;top:-470px;transform-origin:680px 1430px;transform:rotateX(48deg) rotateZ(-20deg) scale(3.0)"><img src="popup-reel.jpg"></div>
+    <div class="plane sharp" style="left:-140px;top:-470px;transform-origin:680px 1430px;transform:rotateX(48deg) rotateZ(-20deg) scale(3.0);-webkit-mask-image:linear-gradient(180deg,transparent 60%,#000 64%,#000 70%,transparent 75%)">
+      <img src="popup-reel.jpg"><div class="grid"></div>
+    </div>
+  </div>
+  <div class="vig"></div>
+</section>
+
+<!-- C4 end -->
+<section class="still C" data-id="c4">
+  <div class="serif" style="top:560px">Tap play.<br><i>The film plays.</i></div>
+  <img src="icon.png" style="position:absolute;left:446px;top:1010px;width:188px;height:188px;border-radius:42px;box-shadow:0 0 0 2px rgba(255,255,255,.14)">
+  <div class="tiny" style="top:1236px">Undirect &nbsp;·&nbsp; $1.99 once</div>
+  <img class="badge" src="badge.svg" style="top:1500px">
+</section>
+
+<!-- C photo -->
+<section class="still photo C" data-id="pc">
+  <div class="stage" style="perspective-origin:50% 40%">
+    <div class="plane soft" style="left:-120px;top:-1560px;width:1320px;height:2868px;transform-origin:660px 2090px;transform:rotateX(46deg) rotateZ(-16deg) scale(2.0)"><img src="popup.png"></div>
+    <div class="plane sharp" style="left:-120px;top:-1560px;width:1320px;height:2868px;transform-origin:660px 2090px;transform:rotateX(46deg) rotateZ(-16deg) scale(2.0);-webkit-mask-image:linear-gradient(180deg,transparent 66%,#000 70%,#000 76%,transparent 81%)">
+      <img src="popup.png"><div class="grid"></div>
+    </div>
+  </div>
+  <div class="vig"></div>
+  <div style="position:absolute;left:0;right:0;bottom:0;height:520px;background:linear-gradient(transparent,#000 70%)"></div>
+  <div class="serif" style="top:1070px;font-size:92px">Blocked, <i>four times.</i></div>
+</section>
+
+<script>
+const id=new URLSearchParams(location.search).get("s");
+document.querySelectorAll(".still").forEach(s=>{if(s.dataset.id===id)s.classList.add("on")});
+</script>
+</body></html>
