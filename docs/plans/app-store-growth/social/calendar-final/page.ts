@@ -1,6 +1,6 @@
-// Builds the review page from deliveries.json: one card per post with its approved English versions,
-// the 13 languages' local times per platform, what changed since the owner's "All approved", and an
-// unticked box; then the X routine. Writes ~/Downloads/social-calendar/artifact.html.
+// Builds the review page from deliveries.json (version 6, the language rotation): one card per post with
+// the language and local time it draws on each platform, each platform's version in that language, the
+// YouTube translations, and an unticked box; then the X routine. Writes ~/Downloads/social-calendar/artifact.html.
 // Run after deliveries.ts: bun page.ts
 
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
@@ -40,41 +40,39 @@ for (const r of rows) if (r.post) (byPost.get(r.post) ?? byPost.set(r.post, []).
 const PLATS = ["Instagram", "Facebook", "Threads", "TikTok", "YouTube", "X"] as const;
 
 function versionHtml(r: R) {
-  return `<div class="pv"><p class="pvh"><b class="plat">${r.platform}</b> <span class="fmt">${esc(r.format)}</span> <span class="who">${esc(r.account)}</span> <span class="loc">${esc(when(r.local))} ${esc(r.zone)}</span></p>
+  return `<div class="pv"><p class="pvh"><b class="plat">${r.platform}</b> <span class="lang">${esc(r.language)}</span> <span class="fmt">${esc(r.format)}</span> <span class="who">${esc(r.account)}</span> <span class="loc">${esc(when(r.local))} ${esc(r.zone)}</span>${r.already_scheduled ? ` <span class="okc">Already scheduled</span>` : ""}</p>
     ${r.title ? `<p class="yt-title">${esc(r.title)}</p>` : ""}
     ${r.poll ? pollHtml(r.poll) : ""}${r.sticker ? `<p class="meta strong">Sticker: ${esc(r.sticker)}</p>` : ""}
     ${r.caption ? `<p class="cap" dir="auto">${br(r.caption)}</p>` : ""}
     ${r.first_comment?.text ? `<div class="follow"><p class="fl">${esc(r.first_comment.label)}</p><p class="cap">${br(r.first_comment.text)}</p></div>` : ""}
     ${r.requires_x_premium ? `<p class="meta warnt">${r.x_length} characters: needs X Premium (over 280).</p>` : ""}
     ${r.changed_since_approval.length ? `<ul class="chgl">${r.changed_since_approval.map((c: string) => `<li>${esc(c)}</li>`).join("")}</ul>` : ""}
-    ${r.notes.length ? `<ul class="notes">${r.notes.map((n: string) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}</div>`;
+    ${r.notes.length ? `<ul class="notes">${r.notes.map((n: string) => `<li>${esc(n)}</li>`).join("")}</ul>` : ""}
+    ${r.translations ? `<details class="tests"><summary>12 translated titles and descriptions for YouTube Studio</summary>${r.translations.map((t: { language: string; title: string; description: string }) => `<div class="follow"><p class="fl">${esc(t.language)}</p><p class="yt-title" dir="auto">${esc(t.title)}</p><p class="cap" dir="auto">${br(t.description)}</p></div>`).join("")}</details>` : ""}</div>`;
 }
 
 function card(n: number) {
   const p = posts.find((p) => p.n === n)!;
   const id = `P${String(n).padStart(2, "0")}`;
   const rs = byPost.get(id)!;
-  const en = PLATS.map((pl) => rs.find((r) => r.lang === "en" && r.platform === pl)).filter(Boolean) as R[];
-  const media = en.find((r) => r.media.some((m: string) => m.endsWith(".mp4")))?.media ?? en.find((r) => r.media.length)?.media ?? [];
+  const del = PLATS.slice(0, 5).map((pl) => rs.find((r) => r.platform === pl)).filter(Boolean) as R[];
+  const media = del.find((r) => r.media.some((m: string) => m.endsWith(".mp4")))?.media ?? del.find((r) => r.media.length)?.media ?? [];
   const onX = rs.filter((r) => r.platform === "X");
-  const grid = `<div class="tw"><table class="mt"><thead><tr><th>Language</th>${PLATS.slice(0, 5).map((pl) => `<th>${pl}</th>`).join("")}<th>X</th></tr></thead><tbody>${MARKETS.map((m) => {
-    const cell = (pl: string) => { const r = rs.find((r) => r.lang === m.lang && r.platform === pl); return r ? `<td title="${esc(r.wib)} WIB"><span class="${r.needs_wording ? "nw" : "ok"}">${esc(hm(r.local))}</span></td>` : `<td class="dim">·</td>`; };
-    return `<tr><th>${m.name}<small>${m.zone}</small></th>${PLATS.slice(0, 5).map(cell).join("")}${cell("X")}</tr>`;
-  }).join("")}</tbody></table></div>`;
+  const langs = [...new Set(del.map((r) => r.lang))];
+  const grid = `<div class="tw"><table class="mt"><thead><tr><th>Platform</th><th>Language</th><th>Local time</th><th>WIB</th></tr></thead><tbody>${[...del, ...onX].map((r) => `<tr><th>${r.platform}</th><td>${esc(r.language)}</td><td>${esc(when(r.local))} ${esc(r.zone)}</td><td>${esc(when(r.wib))}${r.already_scheduled ? ` <span class="okc">scheduled</span>` : ""}</td></tr>`).join("")}</tbody></table></div>`;
   const chips = [
     p.gate ? `<span class="wait">Held for 1.0.5, not in your approved set</span>` : `<span class="okc">Approved post</span>`,
-    `<span class="chg">12 new languages</span>`,
-    `<span class="chg">Times per platform and country</span>`,
+    ...langs.map((l) => `<span class="chg">${esc(MARKETS.find((m) => m.lang === l)!.name)}</span>`),
     ...(onX.length ? [`<span class="chg">On X in English</span>`] : [`<span class="dimc">Not on X</span>`]),
   ];
-  return `<article class="del" id="${id}" data-gate="${p.gate ? 1 : 0}" data-x="${onX.length ? 1 : 0}" data-langs="${MARKETS.map((m) => m.lang).join(" ")}">
+  return `<article class="del" id="${id}" data-gate="${p.gate ? 1 : 0}" data-x="${onX.length ? 1 : 0}" data-langs="${langs.join(" ")}">
     <div class="ph"><label class="tick"><input type="checkbox" data-id="${id}" id="c-${id}"><b>${id}</b></label><span class="app a-${p.app}">${p.app}</span><span class="kind">${p.kind}</span><span class="loc">${esc(p.date)}, local day in each country</span></div>
     <p class="pain">${esc(p.pain)}</p>
     <div class="chips">${chips.join("")}</div>
     ${p.gate ? `<p class="gate">${esc(p.gate)}</p>` : ""}
     ${mediaHtml(media)}
-    <details class="tests" open><summary>When it goes out: local time in each country</summary>${grid}<p class="meta"><span class="ok">Black</span>: approved English text, ready. <span class="nw">Amber</span>: awaiting native wording. Hover or long-press for WIB.</p></details>
-    <details class="tests"><summary>The approved English versions (${en.length})</summary>${en.map(versionHtml).join("")}</details>
+    <details class="tests" open><summary>Where and when it goes out</summary>${grid}</details>
+    <details class="tests"><summary>Each platform's version (${del.length + onX.length})</summary>${[...del, ...onX].map(versionHtml).join("")}</details>
   </article>`;
 }
 
@@ -86,6 +84,7 @@ const xHtml = `<div class="tw"><table class="xt"><thead><tr><th></th><th>WIB</th
 // ---------- summary ----------
 const perLang = meta.deliveries_per_language as Record<string, number>;
 const perPlat = meta.deliveries_per_platform_per_language as Record<string, Record<string, number>>;
+const rot = meta.rotation;
 const ready = rows.filter((r: R) => !r.needs_wording && !r.already_scheduled && !r.id.startsWith("X-quote")).length;
 const weeks = [...new Set(posts.map((p) => p.date))].sort();
 const dayIds = new Map<string, number[]>();
@@ -130,7 +129,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 .tests{font-size:13px;margin:10px 0 0}.tests summary{cursor:pointer;font-weight:600}
 .mt{font-size:12.5px;font-variant-numeric:tabular-nums;margin-top:6px}.mt th small{display:block;font-weight:400;color:var(--mute)}.mt td{white-space:nowrap}
 .ok{color:var(--ink);font-weight:600}.nw{color:var(--wait)}.dim{color:var(--mute)}
-.pv{border-top:1px solid var(--line);padding-top:8px;margin-top:8px;min-width:0}.pvh{margin:0 0 4px;font-size:13px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}.plat{text-transform:uppercase;letter-spacing:.06em;font-size:12px}.fmt{background:var(--chip);border-radius:999px;padding:1px 8px;font-size:12px}.who{color:var(--mute);font-size:12px}
+.pv{border-top:1px solid var(--line);padding-top:8px;margin-top:8px;min-width:0}.pvh{margin:0 0 4px;font-size:13px;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:baseline}.plat{text-transform:uppercase;letter-spacing:.06em;font-size:12px}.lang{font-weight:600;font-size:13px}.fmt{background:var(--chip);border-radius:999px;padding:1px 8px;font-size:12px}.who{color:var(--mute);font-size:12px}
 .yt-title{font-weight:700;margin:4px 0}
 .cap{margin:6px 0;overflow-wrap:anywhere;font-size:14px}.meta{font-size:12px;color:var(--mute);margin:4px 0}.meta.strong{color:var(--ink);font-weight:600}.warnt{color:var(--wait);font-weight:600}
 .one,.slides{max-width:300px;margin-top:8px}.one img,.one video,.slides img,.slides video{display:block;width:100%;max-width:100%;border-radius:12px;background:#000;height:auto}video{aspect-ratio:9/16}
@@ -142,26 +141,27 @@ button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visi
 </style>
 <div class="wrap">
 <h1>Monholt social calendar</h1>
-<p class="lead">Sun Nov 22 to Sun Dec 20 2026, version 5. These are the 87 posts you approved (82, plus 5 still held for Undirect 1.0.5), now going out in 13 languages on Instagram, Facebook, Threads, TikTok and YouTube, at each country's own best hours: <b>${perLang.ar}</b> deliveries per language there. X posts in English only, <b>${perPlat.X.en}</b> posts, because X translates each post for its reader. ${rows.length - 3 - meta.x.quote_slots} deliveries in all. Nothing is ticked: what changed needs a new go.</p>
-<p class="warn">English captions are the ones you approved, unchanged. The other 12 languages are being written natively by Fable and show as amber until their text arrives. Films and images keep their English on-screen text, because no localized cuts exist.</p>
+<p class="lead">Sun Nov 22 to Sun Dec 20 2026, <b>version 6: rotation</b>. These are the 87 posts you approved (82, plus 5 still held for Undirect 1.0.5). Instagram, Facebook, Threads and TikTok each post about 3 a day from one account, and each post goes out once per platform in the language its slot draws, at that country's own best hour. YouTube uploads each post once, in English. X stays English only, <b>${perPlat.X.en}</b> posts. Nothing is ticked: the rotation needs a new go.</p>
+<p class="warn">English captions are the ones you approved. Every other caption is Fable's native wording, unchanged. Films and images keep their English on-screen text.</p>
 <div class="sum">
-<h3>Since your "All approved"</h3><ul>
-<li><b>12 new languages</b>: Arabic, Indonesian, Japanese, Traditional Chinese, Simplified Chinese, French, Italian, German, Spanish, Portuguese (Brazil), Turkish and Russian, each on every platform the post uses.</li>
-<li><b>Times</b>: each platform posts at its best hour in each country's own clock (Buffer, Sprout and Metricool's local-time studies; Japan and Indonesia from national surveys), instead of three fixed WIB times.</li>
-<li><b>New in version 5: X goes English only.</b> X has shown every post translated into the reader's language by default since April 2026 (<a href="https://techcrunch.com/2026/04/08/x-is-rolling-out-automatic-translation-and-photo-editing-powered-by-grok/">TechCrunch</a>), so the 96 posts the other 12 languages had on X are gone. One English post now reaches every market.</li>
-<li><b>X</b>: follows the routine you approved, 4 posts a day 6 hours apart, each hour a peak in a different region (US afternoon, Japan late morning, Europe morning, US morning). ${meta.x.approved_posts} of your approved posts go out in English, each near its approved time, with ${meta.x.heavy_pieces.length} heavy how-to pieces (3 to 4 a week) and ${meta.x.new_originals} new originals in the slots left. Fable writes those ${meta.x.heavy_pieces.length + meta.x.new_originals}, so they show as amber. ${meta.x.quote_slots} slots are quotes of trending posts, written and posted by hand on the day. The link closes the post because X's scheduler can't schedule replies.</li>
-<li><b>Already on X</b>: the debut is pinned. Tonight's two originals (21:30 and 01:00 WIB) and the Nov 27 Arabic quote stay as scheduled, and no calendar post repeats them.</li>
-<li><b>No face</b>: notes that asked for recorded answers now ask for text over the film. No film shows a face.</li>
-<li><b>Bank details</b>: the Cutling explainer cuts with a bank-account example are gone. Every language uses the pain films.</li>
-<li><b>Rewrites dropped</b>: after your go, version 3 rewrote 19 posts to remove their pitch. Those rewrites are undone, and every English caption is your approved text.</li></ul>
-<h3>Deliveries per language</h3><div>${MARKETS.map((m) => `<span class="fc">${m.name} <b>${perLang[m.lang]}</b></span>`).join("")}</div>
-<h3>Per platform, in each language</h3><div>${Object.entries(perPlat).map(([pl, c]) => `<span class="fc">${pl === "X" ? "X, English only" : pl} <b>${c.en}</b></span>`).join("")}</div>
-<h3>Wording</h3><div><span class="fc">Ready, approved English <b>${ready}</b></span><span class="fc">Awaiting native wording <b>${meta.needs_wording}</b></span></div>
+<h3>New in version 6</h3><ul>
+<li><b>One account per platform</b>, no per-language accounts.</li>
+<li><b>About 3 posts a day per platform</b>, ${MARKETS.length} languages in turn. Each approved post goes out once on each platform, so one post can reach four languages across Instagram, Facebook, Threads and TikTok.</li>
+<li><b>Shares follow App Store units</b> (Aug 20 to Nov 19): English about ${rot.share_percent.en}%, then Arabic, Japanese, Traditional Chinese and Indonesian about 10% each, and the other eight languages 3 to 4% each, which is 3 or 4 posts a month on each platform.</li>
+<li><b>Each slot at its language's local best hour</b>: the same platform studies as before, with Japan and Indonesia from national surveys.</li>
+<li><b>YouTube</b>: each film uploads once, in English, with 12 translated titles and descriptions to add in Studio. Community posts go out in English, since YouTube can't translate them.</li>
+<li><b>The sale</b>: P17 goes out in English, Arabic, Traditional Chinese and Japanese, and P26 in English, Indonesian, Arabic and Traditional Chinese. The Traditional Chinese P17 on Threads posts at 17:04 Taipei, after the sale opens at 16:00 Taipei (00:00 Pacific).</li>
+<li><b>Already scheduled</b>: the ${rot.already_scheduled} English deliveries in YouTube, Business Suite, Threads and TikTok Studio keep their minutes, and the rotation is built around them.</li>
+<li><b>X</b>: unchanged from version 5. 4 posts a day 6 hours apart, English only, because X translates each post for its reader.</li></ul>
+<h3>Posts per language on Instagram, Facebook, Threads and TikTok together</h3><div>${MARKETS.map((m) => `<span class="fc">${m.name} <b>${rot.deliveries_on_rotated_platforms[m.lang]}</b> · ${rot.share_percent[m.lang]}%</span>`).join("")}</div>
+<h3>Posts a day per platform, Nov 22 to Dec 20</h3><div>${Object.entries(rot.per_day as Record<string, { min: number; max: number; mean: number }>).map(([pl, d]) => `<span class="fc">${pl} <b>${d.mean}</b> (${d.min} to ${d.max})</span>`).join("")}<span class="fc">X <b>4</b></span></div>
+<h3>Wording</h3><div><span class="fc">Ready to schedule <b>${ready}</b></span><span class="fc">X pieces Fable still writes <b>${meta.needs_wording}</b></span></div>
 <h3>Before you go</h3><ul>
-<li>Instagram, Facebook, Threads and TikTok each carry 39 posts a day across the 13 languages, all from one account per platform.</li>
+<li>Sun Nov 22 has one post per platform, since the English posts already scheduled for the first days fall on Nov 23 and 24 WIB.</li>
+<li>Instagram Stories with poll, quiz, questions, slider or Add Yours stickers, and TikTok poll stickers, are posted from the phone app at their time: the web schedulers don't offer those stickers.</li>
 <li>Instagram, Facebook and X are blocked in Russia, and none of these platforms reaches mainland China without a VPN. Russian and Simplified Chinese posts reach readers outside those countries.</li>
 <li>Spanish is timed for Spain. Latin American Spanish speakers would need their own hours.</li>
-<li>The other five platforms show a caption in its original language with a See translation tap, so they keep their native-language posts. Films keep their English on-screen text everywhere: no platform translates words inside a video.</li></ul>
+<li>Films keep their English on-screen text everywhere: no platform translates words inside a video.</li></ul>
 </div>
 <div class="bar"><button type="button" class="go" id="copy">Copy my go</button><button type="button" id="none">Clear</button>
 <select id="fo" aria-label="Show"><option value="">All posts</option><option value="x">On X</option><option value="gate">Held for 1.0.5</option></select>
@@ -174,7 +174,7 @@ ${[...dayIds.keys()].sort().map((d) => `<h2 class="day" id="d-${d}">${esc(when(d
 ${xHtml}
 </div>
 <script>
-(function(){var K="monholt-cal-v6",s={};try{s=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
+(function(){var K="monholt-cal-v7",s={};try{s=JSON.parse(localStorage.getItem(K)||"{}")}catch(e){}
 var boxes=[].slice.call(document.querySelectorAll("input[data-id]"));
 function ids(){return boxes.filter(function(b){return b.checked}).map(function(b){return b.dataset.id})}
 function save(){try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}document.getElementById("n").textContent=ids().length+" of "+boxes.length+" ticked"}

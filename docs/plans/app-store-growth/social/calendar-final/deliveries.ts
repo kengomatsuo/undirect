@@ -1,17 +1,19 @@
-// Writes the schedulable export of the @monholtco calendar:
-//   deliveries.json        every delivery, Nov 22-Dec 20 2026: every language on Instagram, Facebook, Threads,
-//                          TikTok and YouTube; English only on X, which translates each post for its reader
+// Writes the schedulable export of the @monholtco calendar (version 6, the language rotation):
+//   deliveries.json        every delivery, Nov 22-Dec 20 2026: each post once on Instagram, Facebook, Threads
+//                          and TikTok in a rotating language, once on YouTube in English with 12 translated
+//                          titles and descriptions, and English only on X, which translates each post
 //   deliveries-first.json  Instagram, Facebook, Threads, TikTok and YouTube from now to Nov 24 23:59 WIB,
-//                          approved posts only, so scheduling can start before the rest is worded
+//                          approved posts only
+//   deliveries-next.json   the non-English rows from now to Nov 25 23:59 WIB, ready to schedule
 //   wording-needed.json    every caption still to be written, grouped by post and language
 // Run: bun deliveries.ts
 //
 // The English captions are the owner's approved ones ("All approved", 2026-11-21), read verbatim from
-// calendar-final.txt as committed in APPROVED. No caption is written here: every non-English caption and
-// every new X piece is null with a `needs_wording` brief, for the writer to fill.
+// calendar-final.txt as committed in APPROVED. No caption is written here: non-English captions come from
+// Fable's wording-done.json, and every new X piece is null with a `needs_wording` brief.
 
 import { $ } from "bun";
-import { existsSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import { homedir } from "node:os";
 import { join, isAbsolute } from "node:path";
 import { posts, type Post } from "./posts";
@@ -20,8 +22,9 @@ import { MARKETS, PART_OF_SLOT, deliveryTime, iso, DAY, HOUR, type Market, type 
 const APPROVED = "8ab6e232"; // the version the owner approved
 const HERE = import.meta.dir;
 const OUT = join(homedir(), "Downloads/social-calendar");
-const NOW = process.env.NOW ?? "2026-11-21 18:30"; // WIB; rows before this are past
+const NOW = process.env.NOW ?? new Date(Date.now() + 7 * 3600000).toISOString().slice(0, 16).replace("T", " "); // WIB; rows before this are past
 const FIRST_END = "2026-11-25 00:00";
+const NEXT_END = "2026-11-26 00:00";
 
 // ---------- the approved text ----------
 type Follow = { label: string; text: string };
@@ -98,8 +101,11 @@ type Row = {
   approved_post: boolean; in_approved_set: boolean; changed_since_approval: string[];
   x_length?: number; requires_x_premium?: boolean;
   already_scheduled?: boolean; notes: string[];
+  translations?: { lang: LangCode; language: string; title: string; description: string }[];
 };
 const rows: Row[] = [];
+const tOf = (wib: string) => new Date(wib.replace(" ", "T") + ":00Z").getTime();
+const EN = MARKETS.find((m) => m.lang === "en")!;
 const missingMedia = new Set<string>();
 
 const onScreen = (b: Block, lang: LangCode) => {
@@ -144,35 +150,168 @@ function rowFor(p: Post, b: Block, m: Market, when: { wib: string; local: string
   };
 }
 
-// ---------- Instagram, Facebook, Threads, TikTok, YouTube: every post, every language ----------
+// ---------- Instagram, Facebook, Threads, TikTok: one language per post, rotating ----------
+// Owner, 2026-11-21: one account per platform, about 3 posts a day each, languages rotating by weight
+// (markets.ts), each at its own local best hour. Every approved post still goes out once per platform,
+// in the language its slot draws. Captions are the approved English or Fable's wording-done.json,
+// nothing written here.
 // Posts tied to an outside date (Product Hunt day, the sale, MacPip day) keep their approved minute in
 // English and go out in the evening locally elsewhere, which stays inside that day in Pacific time.
 const KEPT_PART: Record<number, Part> = { 9: "pm", 17: "pm", 26: "pm", 50: "pm" };
-const NON_X: Plat[] = ["Instagram", "Facebook", "Threads", "TikTok", "YouTube"];
+const ROTATED: Plat[] = ["Instagram", "Facebook", "Threads", "TikTok"];
+const NON_X: Plat[] = [...ROTATED, "YouTube"];
 const approvedTime = (p: Post) => {
   const s = p.slot === "kept" ? p.keptTime!.wib : ({ 1: "02:20", 2: "05:50", 3: "21:20" } as Record<number, string>)[p.slot];
   return `${p.date} ${s}`;
 };
+// English deliveries already in each platform's scheduler (social-posts.md, "English calendar
+// deliveries", 2026-11-21), at the minute they were scheduled: kept, built around.
+const SCHEDULED: Record<string, string> = {
+  "P01-en-YouTube": "2026-11-23 04:08", "P02-en-YouTube": "2026-11-23 08:08", "P04-en-YouTube": "2026-11-24 04:08",
+  "P03-en-Facebook": "2026-11-22 21:02", "P01-en-Facebook": "2026-11-23 00:32", "P02-en-Facebook": "2026-11-23 08:02", "P06-en-Facebook": "2026-11-23 21:02",
+  "P04-en-Facebook": "2026-11-24 00:32", "P05-en-Facebook": "2026-11-24 08:02", "P09-en-Facebook": "2026-11-24 15:07",
+  "P01-en-Instagram": "2026-11-23 00:30", "P02-en-Instagram": "2026-11-23 08:00", "P04-en-Instagram": "2026-11-24 00:30", "P05-en-Instagram": "2026-11-24 08:00",
+  "P03-en-Threads": "2026-11-22 20:34", "P01-en-Threads": "2026-11-23 00:04", "P02-en-Threads": "2026-11-23 02:04", "P06-en-Threads": "2026-11-23 20:34",
+  "P04-en-Threads": "2026-11-24 00:04", "P05-en-Threads": "2026-11-24 02:04", "P09-en-Threads": "2026-11-24 15:07",
+  "P01-en-TikTok": "2026-11-23 01:05", "P02-en-TikTok": "2026-11-23 07:05", "P04-en-TikTok": "2026-11-24 01:05", "P05-en-TikTok": "2026-11-24 07:05", "P09-en-TikTok": "2026-11-24 15:05",
+};
+// The sale's prices start at 00:00 Pacific on Nov 27 (inbox-actions.md): 15:00 WIB, 16:00 Taipei.
+// A rotated sale post lands at least an hour after that; it ends 00:00 Pacific Dec 1.
+const SALE_START = "2026-11-27 15:00", SALE_END = "2026-12-01 15:00";
+const SALE_POSTS = new Set([17, 26]);
+// Pinned languages: the two sale posts go to English and the four top markets, since the sale is the one
+// price event of the month; the zh P17 goes on Threads, after 16:00 Taipei (owner, 2026-11-21).
+const PIN: Record<string, LangCode> = {
+  "P17-Instagram": "en", "P17-Facebook": "ar", "P17-Threads": "zh-Hant", "P17-TikTok": "ja",
+  "P26-Instagram": "id", "P26-Facebook": "en", "P26-Threads": "ar", "P26-TikTok": "zh-Hant",
+};
 
-for (const p of posts) {
-  const blocks = approved.get(p.n)!;
-  for (const m of MARKETS) {
-    for (const b of blocks.filter((b) => NON_X.includes(b.plat))) {
-      const part = p.slot === "kept" ? KEPT_PART[p.n] : PART_OF_SLOT[String(p.slot)];
-      let when: { wib: string; local: string; why: string };
-      if (p.slot === "kept" && m.lang === "en") {
-        const t = new Date(approvedTime(p).replace(" ", "T") + ":00Z").getTime();
-        when = { wib: iso(t), local: iso(t + m.off * HOUR), why: "the approved minute, tied to the launch or sale day" };
-      } else {
-        const d = deliveryTime(p.date, part, b.plat, m);
-        when = { wib: iso(d.t), local: d.local, why: d.why };
-      }
-      const r = rowFor(p, b, m, when);
-      if (m.lang === "en" && when.wib !== approvedTime(p)) r.changed_since_approval.push(`Time: approved ${approvedTime(p)} WIB for every platform; now ${when.wib} WIB, this platform's best hour in ${m.zone}`);
-      if (r.notes.some((n, i) => n !== b.notes.filter((n) => !YT_NOTE.test(n))[i])) r.changed_since_approval.push("Note changed: answers are text over film, no face on camera");
-      rows.push(r);
-    }
+// Fable's native wording, one entry per post, language and platform.
+type Worded = { id: string; caption: string | null; first_comment: string | null; title?: string; poll?: { q: string; options: string[] }; sticker?: string; note?: string };
+const wordedList: Worded[] = JSON.parse(readFileSync(join(HERE, "wording-done.json"), "utf8")).rows;
+const worded = new Map(wordedList.map((w) => [w.id, w]));
+
+function timeFor(p: Post, b: Block, m: Market): { wib: string; local: string; why: string } {
+  const sched = SCHEDULED[`${pid(p.n)}-${m.lang}-${b.plat}`];
+  if (sched) { const t = tOf(sched); return { wib: sched, local: iso(t + m.off * HOUR), why: "already scheduled at this minute (social-posts.md)" }; }
+  if (p.slot === "kept" && m.lang === "en") {
+    const t = tOf(approvedTime(p));
+    return { wib: iso(t), local: iso(t + m.off * HOUR), why: "the approved minute, tied to the launch or sale day" };
   }
+  const part = p.slot === "kept" ? KEPT_PART[p.n] : PART_OF_SLOT[String(p.slot)];
+  const d = deliveryTime(p.date, part, b.plat, m);
+  if (p.n === 17 && iso(d.t) < SALE_START) {
+    const t = tOf(SALE_START) + HOUR + (Number(d.local.slice(14)) % 60) * 60000;
+    return { wib: iso(t), local: iso(t + m.off * HOUR), why: `${d.why}, moved to the first hour after the sale opens (00:00 Pacific)` };
+  }
+  return { wib: iso(d.t), local: d.local, why: d.why };
+}
+
+// Fills a non-English row from wording-done.json; throws if Fable has no wording for it.
+function word(r: Row): Row {
+  if (r.lang === "en") return r;
+  const w = worded.get(r.id);
+  if (!w) throw new Error(`no wording for ${r.id}`);
+  r.caption = w.caption ?? null;
+  if ("title" in r) r.title = w.title ?? null;
+  if ("poll" in r) r.poll = w.poll ?? null;
+  if ("sticker" in r) r.sticker = w.sticker ?? null;
+  if (r.first_comment) r.first_comment = { label: r.first_comment.label, text: w.first_comment ?? null };
+  else if (w.first_comment) r.first_comment = { label: "First comment", text: w.first_comment };
+  if (w.note) r.notes.push(w.note);
+  r.needs_wording = null;
+  return r;
+}
+
+// What each scheduler can't take, from the 2026-11-21 scheduling run (social-posts.md).
+function toolNotes(r: Row) {
+  if (r.platform === "Instagram" && /^Story, (poll|quiz|questions|emoji slider|add yours) sticker$/.test(r.format)) r.notes.push("Business Suite's Instagram Story editor offers only Mention, Link and emoji stickers: post this from the Instagram app at the time.");
+  if (r.platform === "TikTok" && r.sticker) r.notes.push("TikTok Studio's web uploader has no poll sticker: post this from the TikTok app at the time.");
+  if (r.platform === "Facebook" && r.first_comment?.text) r.notes.push("Business Suite can't attach a first comment: post it by hand at this time.");
+}
+
+const SHARE = Object.fromEntries(MARKETS.map((m) => [m.lang, m.weight / MARKETS.reduce((a, m) => a + m.weight, 0)])) as Record<LangCode, number>;
+const MIN_GAP = 45 * 60000; // one account never posts twice within 45 minutes
+const MAX_PER_DAY = 4; // per platform per WIB day
+const DAY_LOAD = Number(process.env.DAY_LOAD ?? 1); // how much a busy day weighs against the language's turn
+const ordered = [...posts].sort((a, b) => approvedTime(a).localeCompare(approvedTime(b)) || a.n - b.n);
+const placed: Record<string, number[]> = Object.fromEntries(ROTATED.map((pl) => [pl, [] as number[]]));
+const given: Record<string, Record<string, number>> = Object.fromEntries(ROTATED.map((pl) => [pl, Object.fromEntries(MARKETS.map((m) => [m.lang, 0]))]));
+const slotsDone: Record<string, number> = Object.fromEntries(ROTATED.map((pl) => [pl, 0]));
+const lastPostLang = new Map<string, number>(); // `${plat}|${post}|${lang}` -> WIB time, for the 3-day rule
+// Scheduled and pinned rows hold their minutes before the rotation draws, so nothing lands on them.
+const fixedLang = (p: Post, pl: Plat): LangCode | undefined => (SCHEDULED[`${pid(p.n)}-en-${pl}`] ? "en" : PIN[`${pid(p.n)}-${pl}`]);
+for (const p of ordered) for (const pl of ROTATED) {
+  const b = approved.get(p.n)!.find((b) => b.plat === pl), l = fixedLang(p, pl);
+  if (b && l) placed[pl].push(tOf(timeFor(p, b, MARKETS.find((m) => m.lang === l)!).wib));
+}
+for (const p of ordered) {
+  const blocks = approved.get(p.n)!;
+  const usedHere = new Set<LangCode>();
+  // Rotate which platform draws first, so no platform always gets first pick.
+  const order = ROTATED.map((_, i) => ROTATED[(i + p.n) % ROTATED.length]);
+  for (const pl of order) {
+    const b = blocks.find((b) => b.plat === pl);
+    if (!b) continue;
+    const key = `${pid(p.n)}-${pl}`;
+    const fixed = fixedLang(p, pl);
+    // Strict first; if nothing fits, the day cap gives way, then the 45-minute gap shrinks to 15.
+    const pick = (cap: number, gap: number) => {
+      let best: { m: Market; when: ReturnType<typeof timeFor>; score: number } | null = null;
+      for (const m of MARKETS) {
+        if (fixed && m.lang !== fixed) continue;
+        if (m.lang !== "en" && !worded.has(`${pid(p.n)}-${m.lang}-${pl}`)) continue;
+        const when = timeFor(p, b, m);
+        const t = tOf(when.wib);
+        if (!fixed) {
+          if (placed[pl].some((x) => Math.abs(x - t) < gap)) continue;
+          if (placed[pl].filter((x) => iso(x).slice(0, 10) === when.wib.slice(0, 10)).length >= cap) continue;
+          if (SALE_POSTS.has(p.n) && m.lang !== "en" && (when.wib < SALE_START || when.wib >= SALE_END)) continue;
+        }
+        // Smooth weighted rotation: the language furthest behind its share wins; a language this post
+        // already went out in on another platform waits, so one post reaches several languages.
+        // A language whose hour lands on a WIB day that is already full on this platform also waits.
+        const dayLoad = placed[pl].filter((x) => iso(x).slice(0, 10) === when.wib.slice(0, 10)).length;
+        const score = SHARE[m.lang] * (slotsDone[pl] + 1) - given[pl][m.lang] - (usedHere.has(m.lang) ? 0.6 : 0) - DAY_LOAD * Math.max(0, dayLoad - 1);
+        if (!best || score > best.score) best = { m, when, score };
+      }
+      return best;
+    };
+    const best = pick(MAX_PER_DAY, MIN_GAP) ?? pick(MAX_PER_DAY + 1, MIN_GAP) ?? pick(99, 15 * 60000);
+    if (!best) throw new Error(`no language fits ${key}`);
+    const { m, when } = best;
+    const r = word(rowFor(p, b, m, when));
+    if (SCHEDULED[r.id]) r.already_scheduled = true;
+    if (m.lang === "en" && when.wib !== approvedTime(p)) r.changed_since_approval.push(`Time: approved ${approvedTime(p)} WIB for every platform; now ${when.wib} WIB, this platform's best hour in ${m.zone}`);
+    if (r.notes.some((n, i) => n !== b.notes.filter((n) => !YT_NOTE.test(n))[i])) r.changed_since_approval.push("Note changed: answers are text over film, no face on camera");
+    toolNotes(r);
+    rows.push(r);
+    if (!fixed) placed[pl].push(tOf(when.wib));
+    given[pl][m.lang]++;
+    slotsDone[pl]++;
+    usedHere.add(m.lang);
+    lastPostLang.set(`${pl}|${pid(p.n)}|${m.lang}`, tOf(when.wib));
+  }
+}
+
+// ---------- YouTube @matsuokengo: every post once, in English ----------
+// Owner, 2026-11-21: each film is uploaded once, in English; Studio carries the 12 translated titles
+// and descriptions (Subtitles > Title and description), from wording-done.json.
+for (const p of ordered) {
+  const b = approved.get(p.n)!.find((b) => b.plat === "YouTube");
+  if (!b) continue;
+  const r = rowFor(p, b, EN, timeFor(p, b, EN));
+  if (SCHEDULED[r.id]) r.already_scheduled = true;
+  if (r.wib !== approvedTime(p)) r.changed_since_approval.push(`Time: approved ${approvedTime(p)} WIB for every platform; now ${r.wib} WIB, this platform's best hour in ET`);
+  if (b.format === "Short") {
+    r.translations = MARKETS.filter((m) => m.lang !== "en").map((m) => {
+      const w = worded.get(`${pid(p.n)}-${m.lang}-YouTube`);
+      if (!w?.title || !w.caption) throw new Error(`no YouTube wording for ${pid(p.n)} ${m.lang}`);
+      return { lang: m.lang, language: m.name, title: w.title, description: w.caption };
+    });
+    r.notes.push("Add the 12 translations in YouTube Studio: Subtitles > the video > Title and description > Add language.");
+  } else r.notes.push("YouTube offers no translations for community posts, so this goes out in English only.");
+  rows.push(r);
 }
 
 // ---------- X: the routine (docs/research/x-account-health-and-practice.md) ----------
@@ -197,7 +336,6 @@ const X_TAKEN = [
 ];
 // Approved posts whose English X version would repeat tonight's originals.
 const X_DUP_EN = new Set([5, 54]);
-const EN = MARKETS.find((m) => m.lang === "en")!;
 
 type XSlot = { t: number; s: (typeof X_SLOTS)[number]; kind?: "post" | "heavy" | "quote" | "original"; post?: Post };
 const xs: XSlot[] = [];
@@ -210,7 +348,6 @@ for (let d = new Date("2026-11-22T00:00:00Z").getTime(); d <= new Date("2026-12-
   }
 }
 const xBlock = (n: number) => approved.get(n)!.find((b) => b.plat === "X")!;
-const tOf = (wib: string) => new Date(wib.replace(" ", "T") + ":00Z").getTime();
 
 // 1. Every approved post with a schedulable X version goes out once, in the free slot nearest its
 // approved minute; posts tied to an outside date (kept) go first and stay within 4 hours of it.
@@ -289,11 +426,52 @@ for (const x of X_TAKEN) {
 
 // ---------- checks ----------
 rows.sort((a, b) => a.wib.localeCompare(b.wib) || a.id.localeCompare(b.id));
-const cal = rows.filter((r) => !r.already_scheduled && !r.id.startsWith("X-quote"));
+// Every calendar delivery, the 26 English rows already scheduled included; not X's three earlier items or quotes.
+const cal = rows.filter((r) => !(r.platform === "X" && r.already_scheduled) && !r.id.startsWith("X-quote"));
 const count = (f: (r: Row) => boolean) => Object.fromEntries(MARKETS.map((m) => [m.lang, cal.filter((r) => r.lang === m.lang && f(r)).length]));
 const perLang = count(() => true);
 const perPlat = Object.fromEntries((["X", ...NON_X] as Plat[]).map((pl) => [pl, count((r) => r.platform === pl)]));
-for (const pl of NON_X) if (new Set(Object.values(perPlat[pl])).size !== 1) throw new Error(`unequal ${pl} counts ${JSON.stringify(perPlat[pl])}`);
+const rotBad: string[] = [];
+// Every post once per platform; YouTube English only.
+for (const pl of NON_X) {
+  const ids = cal.filter((r) => r.platform === pl).map((r) => r.post);
+  if (ids.length !== posts.length || new Set(ids).size !== posts.length) rotBad.push(`${pl}: ${ids.length} rows for ${posts.length} posts`);
+}
+if (cal.some((r) => r.platform === "YouTube" && r.lang !== "en")) rotBad.push("non-English YouTube row");
+// The scheduled rows sit at their scheduled minute.
+for (const [id, wib] of Object.entries(SCHEDULED)) { const r = rows.find((r) => r.id === id); if (!r || r.wib !== wib || !r.already_scheduled) rotBad.push(`scheduled ${id} moved or missing`); }
+if (Object.keys(SCHEDULED).length !== 26) rotBad.push(`${Object.keys(SCHEDULED).length} scheduled rows, expected 26`);
+// Every caption is approved English or Fable's.
+for (const r of cal.filter((r) => r.platform !== "X" && r.lang !== "en")) if (r.needs_wording || r.caption !== (worded.get(r.id)!.caption ?? null)) rotBad.push(`${r.id} caption not from wording-done.json`);
+// The same post in two languages on one platform is at least 3 days apart.
+for (const pl of ROTATED) {
+  const byPost = new Map<string, number[]>();
+  for (const r of cal.filter((r) => r.platform === pl)) (byPost.get(r.post!) ?? byPost.set(r.post!, []).get(r.post!)!).push(tOf(r.wib));
+  for (const [post, ts] of byPost) { ts.sort((a, b) => a - b); if (ts.some((t, i) => i && t - ts[i - 1] < 3 * DAY)) rotBad.push(`${pl} ${post} twice within 3 days`); }
+}
+// One account never posts twice within 15 minutes (45 is the aim; 15 only when nothing else fits).
+for (const pl of ROTATED) {
+  const ts = cal.filter((r) => r.platform === pl).map((r) => tOf(r.wib)).sort((a, b) => a - b);
+  ts.forEach((t, i) => i && t - ts[i - 1] < 15 * 60000 && rotBad.push(`${pl} two posts within 15 minutes at ${iso(t)}`));
+}
+// Sale posts in their window; the zh P17 after 16:00 Taipei.
+for (const r of cal.filter((r) => SALE_POSTS.has(Number(r.post?.slice(1))) && r.lang !== "en" && r.platform !== "X")) if (r.wib < SALE_START || r.wib >= SALE_END) rotBad.push(`${r.id} at ${r.wib} WIB, outside the sale`);
+for (const [k, l] of Object.entries(PIN)) if (!cal.some((r) => r.id === `${k.split("-")[0]}-${l}-${k.split("-")[1]}`)) rotBad.push(`pin ${k} ${l} not kept`);
+if (!cal.some((r) => r.post === "P17" && r.lang.startsWith("zh"))) rotBad.push("no zh P17");
+// About 3 a day: per platform per WIB day, Nov 22-Dec 20.
+const perDay: Record<string, { min: number; max: number; mean: number }> = {};
+for (const pl of NON_X) {
+  const days = new Map<string, number>();
+  for (let d = tOf("2026-11-22 00:00"); d <= tOf("2026-12-20 00:00"); d += DAY) days.set(iso(d).slice(0, 10), 0);
+  for (const r of cal.filter((r) => r.platform === pl)) if (days.has(r.wib.slice(0, 10))) days.set(r.wib.slice(0, 10), days.get(r.wib.slice(0, 10))! + 1);
+  const v = [...days.values()];
+  perDay[pl] = { min: Math.min(...v), max: Math.max(...v), mean: Math.round((v.reduce((a, b) => a + b, 0) / v.length) * 100) / 100 };
+  if (perDay[pl].max > MAX_PER_DAY + 1) rotBad.push(`${pl} ${perDay[pl].max} posts on one day`);
+}
+// Every language gets a share each month on the rotated platforms.
+const rotShare = Object.fromEntries(MARKETS.map((m) => [m.lang, cal.filter((r) => ROTATED.includes(r.platform) && r.lang === m.lang).length]));
+for (const m of MARKETS) if (ROTATED.some((pl) => perPlat[pl][m.lang] < 2)) rotBad.push(`${m.lang} under 2 posts on a platform`);
+if (rotBad.length) throw new Error(`rotation broken:\n${rotBad.join("\n")}`);
 // X is English only; the one other-language X row is the Arabic quote already scheduled.
 const xOther = rows.filter((r) => r.platform === "X" && r.lang !== "en" && !r.already_scheduled);
 if (xOther.length) throw new Error(`non-English X rows ${xOther.map((r) => r.id).join(", ")}`);
@@ -325,6 +503,13 @@ const meta = {
   built: new Date().toISOString(), approved_commit: APPROVED, window: "2026-11-22 to 2026-12-20, WIB",
   languages: MARKETS.map(({ lang, name, country, zone, off }) => ({ lang, name, country, zone, hours_from_wib: off })),
   deliveries_per_language: perLang, deliveries_per_platform_per_language: perPlat,
+  rotation: {
+    version: 6, platforms: ROTATED, rule: "one account per platform; every post once per platform, in the language its slot draws by weight; each at that language's local best hour; YouTube English with translated titles and descriptions; X English only",
+    weights: Object.fromEntries(MARKETS.map((m) => [m.lang, { weight: m.weight, share_target: Math.round(SHARE[m.lang] * 1000) / 10, units: m.units, paid: m.paid }])),
+    deliveries_on_rotated_platforms: rotShare,
+    share_percent: Object.fromEntries(MARKETS.map((m) => [m.lang, Math.round((rotShare[m.lang] / (posts.length * ROTATED.length)) * 1000) / 10])),
+    per_day: perDay, already_scheduled: Object.keys(SCHEDULED).length,
+  },
   x: { per_day_min: Math.min(...xPerDay), per_day_max: Math.max(...xPerDay), gap_hours_min: Math.min(...gaps), gap_hours_max: Math.max(...gaps), gaps_outside_4_to_8: badGap.length, english_only: true, heavy_per_7_days_min: Math.min(...heavyWeeks), heavy_per_7_days_max: Math.max(...heavyWeeks), heavy_pieces: heavy, new_originals: rows.filter((r) => r.id.startsWith("X-original")).length, approved_posts: rows.filter((r) => r.platform === "X" && r.post).length, quote_slots: rows.filter((r) => r.id.startsWith("X-quote")).length },
   needs_wording: words.length, missing_media: [...missingMedia],
 };
@@ -332,6 +517,12 @@ writeFileSync(join(HERE, "deliveries.json"), JSON.stringify({ meta, rows }, null
 const first = rows.filter((r) => r.platform !== "X" && r.approved_post && r.wib >= NOW && r.wib < FIRST_END);
 const firstCount = (k: "lang" | "platform") => first.reduce((o, r) => ((o[r[k]] = (o[r[k]] ?? 0) + 1), o), {} as Record<string, number>);
 writeFileSync(join(HERE, "deliveries-first.json"), JSON.stringify({ meta: { window: `${NOW} to 2026-11-24 23:59 WIB`, platforms: NON_X, approved_posts_only: true, rows: first.length, ready_to_schedule: first.filter((r) => !r.needs_wording).length, needs_wording: first.filter((r) => r.needs_wording).length, per_language: firstCount("lang"), per_platform: firstCount("platform"), note: "Western markets' Nov 24 evening falls on Nov 25 WIB, so their Nov 24 posts are in deliveries.json, not here." }, rows: first }, null, 1) + "\n");
+
+// The non-English rows from now to Nov 25 23:59 WIB, every one worded, for the scheduling run.
+const next = rows.filter((r) => r.platform !== "X" && r.lang !== "en" && r.wib >= NOW && r.wib < NEXT_END);
+if (next.some((r) => r.needs_wording)) throw new Error("deliveries-next has an unworded row");
+const nextCount = (k: "lang" | "platform") => next.reduce((o, r) => ((o[r[k]] = (o[r[k]] ?? 0) + 1), o), {} as Record<string, number>);
+writeFileSync(join(HERE, "deliveries-next.json"), JSON.stringify({ meta: { window: `${NOW} to 2026-11-25 23:59 WIB`, version: 6, what: "the non-English rotation rows in this window, captions from wording-done.json, ready to schedule; English rows here are already scheduled or in deliveries.json", rows: next.length, per_language: nextCount("lang"), per_platform: nextCount("platform"), held: next.filter((r) => !r.approved_post).length }, rows: next }, null, 1) + "\n");
 
 // Wording grouped by post and language, so one writer pass covers a post's platforms together.
 const groups = new Map<string, { post: string | null; lang: LangCode; language: string; app: string; rows: { id: string; platform: Plat; format: string; wib: string; needs_wording: string; first_comment_link?: string }[] }>();
@@ -343,4 +534,4 @@ for (const r of words) {
 const wn = [...groups.values()].sort((a, b) => a.rows[0].wib.localeCompare(b.rows[0].wib));
 writeFileSync(join(HERE, "wording-needed.json"), JSON.stringify({ meta: { rules: "Write natively in each language (human-prose language rules), never translated word for word from the English; keep each English row's meaning, numbers and app facts; prices from that country's App Store; one app per post; no country of ours named.", groups: wn.length, rows: words.length, first_window_rows: first.filter((r) => r.needs_wording).length }, groups: wn }, null, 1) + "\n");
 
-console.log(JSON.stringify({ ...meta, first: { rows: first.length, per_language: firstCount("lang"), per_platform: firstCount("platform") }, wording_groups: wn.length }, null, 1));
+console.log(JSON.stringify({ ...meta, next: { rows: next.length, per_language: nextCount("lang"), per_platform: nextCount("platform") }, first: { rows: first.length, per_language: firstCount("lang"), per_platform: firstCount("platform") }, wording_groups: wn.length }, null, 1));
