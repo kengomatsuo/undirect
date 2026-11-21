@@ -1,0 +1,140 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#0d0b11;overflow:hidden}canvas{display:block}</style>
+</head><body>
+<!-- "Catnap": a black cat asleep in a red armchair under the one lamp left on. Nothing is going to move it.
+     The icon's own two colours, black on red, in a dark room like the listing's dark screens.
+     No text, no logo, no border and no scrim; the chair and the cat sit above the band Apple's text covers.
+     Run in options/:
+       bun render.mjs src/catnap.html catnap/card.png 1920 1080
+       bun render.mjs src/catnap.html catnap/details.png 1080 1920 -->
+<script>
+const W = innerWidth, H = innerHeight, tall = H > W;
+const cv = document.createElement("canvas"); cv.width = W; cv.height = H; document.body.append(cv);
+const g = cv.getContext("2d");
+const s = tall ? W / 1080 : H / 1080;
+g.scale(s, s);
+const w = W / s, h = H / s;
+// cx: the chair's middle; fl: the floor line the legs stand on; k: the chair's size; lamp: the shade's place
+const F = tall ? { cx: 540, fl: 1150, k: 1.36, lx: 540, ly: 330, win: [-70, 150, 330, 520] }
+               : { cx: 960, fl: 664, k: 1, lx: 960, ly: 96, win: [150, 70, 300, 380] };
+let seed = 7;
+const rnd = () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+const lin = (x0, y0, x1, y1, stops) => { const q = g.createLinearGradient(x0, y0, x1, y1); stops.forEach(([o, c]) => q.addColorStop(o, c)); return q; };
+const rad = (x, y, r, stops, r0 = 0) => { const q = g.createRadialGradient(x, y, r0, x, y, r); stops.forEach(([o, c]) => q.addColorStop(o, c)); return q; };
+const fill = (style, fn) => { g.beginPath(); fn(); g.fillStyle = style; g.fill(); };
+const stroke = (style, lw, fn, cap = "round") => { g.beginPath(); fn(); g.strokeStyle = style; g.lineWidth = lw; g.lineCap = cap; g.lineJoin = "round"; g.stroke(); };
+const { cx, fl, k } = F;
+const X = (x) => cx + x * k, Y = (y) => fl - y * k;      // chair space: x from its middle, y up from the floor
+const rr = (x0, y0, x1, y1, r) => g.roundRect(X(x0), Y(y1), (x1 - x0) * k, (y1 - y0) * k, (Array.isArray(r) ? r : [r]).map((v) => v * k));
+
+// ---------- the room ----------
+g.fillStyle = lin(0, 0, 0, fl, [[0, "#15121c"], [1, "#1c1622"]]); g.fillRect(0, 0, w, fl);
+g.fillStyle = lin(0, fl, 0, h, [[0, "#130f17"], [.5, "#0e0b12"], [1, "#0b090e"]]); g.fillRect(0, fl - 26 * k, w, h);
+fill("#0e0b12", () => g.rect(0, fl - 40 * k, w, 14 * k));                                       // skirting shadow line
+// the lamp's light: a cone on the wall and a pool on the floor
+g.globalCompositeOperation = "lighter";
+const lx = F.lx, ly = F.ly;
+{ const spread = 620 * k, bot = fl + 10;
+  g.fillStyle = lin(0, ly, 0, bot, [[0, "rgba(255,190,120,.26)"], [.5, "rgba(255,170,100,.12)"], [1, "rgba(255,160,90,.06)"]]);
+  g.filter = `blur(${14 * k}px)`;
+  g.beginPath(); g.moveTo(lx - 60 * k, ly + 30 * k); g.lineTo(lx + 60 * k, ly + 30 * k); g.lineTo(lx + spread, bot); g.lineTo(lx - spread, bot); g.fill();
+  g.filter = "none";
+  g.fillStyle = rad(lx, ly + 40 * k, 560 * k, [[0, "rgba(255,196,130,.22)"], [1, "rgba(255,170,100,0)"]]); g.fillRect(0, 0, w, fl);
+  g.save(); g.translate(cx, fl + 30 * k); g.scale(1, .2);
+  g.fillStyle = rad(0, 0, 720 * k, [[0, "rgba(255,170,100,.36)"], [.6, "rgba(255,150,90,.14)"], [1, "rgba(255,140,80,0)"]]); g.fillRect(-w, -h * 3, 2 * w, h * 6);
+  g.restore(); }
+g.globalCompositeOperation = "source-over";
+// a window on the night
+{ const [x, y, ww, hh] = F.win;
+  fill("#0d0a12", () => g.rect(x - 16, y - 16, ww + 32, hh + 32));
+  g.fillStyle = lin(0, y, 0, y + hh, [[0, "#0f1838"], [.6, "#1b2a5c"], [1, "#31417c"]]); g.fillRect(x, y, ww, hh);
+  for (let i = 0; i < 26; i++) { g.globalAlpha = .3 + .6 * rnd(); fill("#e8ecff", () => g.arc(x + rnd() * ww, y + rnd() * hh * .8, .8 + rnd() * 1.4, 0, 7)); }
+  g.globalAlpha = 1;
+  const mx = x + ww * .68, my = y + hh * .26, mr = 30;
+  g.fillStyle = rad(mx, my, 120, [[0, "rgba(200,214,255,.28)"], [1, "rgba(200,214,255,0)"]]); g.fillRect(x, y, ww, hh);
+  g.save(); g.beginPath(); g.rect(x, y, ww, hh); g.clip();
+  fill("#f2f0e4", () => g.arc(mx, my, mr, 0, 7)); fill("#16224e", () => g.arc(mx + 15, my - 7, mr * .93, 0, 7));
+  g.restore();
+  fill("#0d0a12", () => { g.rect(x + ww / 2 - 5, y, 10, hh); g.rect(x, y + hh * .5 - 5, ww, 10); });
+  fill("#221a2a", () => g.rect(x - 30, y + hh + 16, ww + 60, 14)); }
+// a rug under the chair
+g.save(); g.translate(cx, fl + 34 * k); g.scale(1, .17);
+fill("#3a1220", () => g.arc(0, 0, 520 * k, 0, 7)); fill("#4a1626", () => g.arc(0, 0, 486 * k, 0, 7)); fill("#3a1220", () => g.arc(0, 0, 470 * k, 0, 7));
+g.filter = `blur(${22 * k}px)`; fill("rgba(4,3,8,.6)", () => g.arc(0, -40, 318 * k, 0, 7)); g.filter = "none";
+g.restore();
+// the lamp
+stroke("#0a080d", 4 * k, () => { g.moveTo(lx, 0); g.lineTo(lx, ly - 40 * k); }, "butt");
+fill("#fff3d0", () => g.ellipse(lx, ly + 24 * k, 30 * k, 16 * k, 0, 0, 7));
+g.fillStyle = rad(lx, ly + 30 * k, 150 * k, [[0, "rgba(255,226,160,.7)"], [.3, "rgba(255,200,130,.25)"], [1, "rgba(255,190,120,0)"]]); g.fillRect(lx - 160 * k, ly - 130 * k, 320 * k, 320 * k);
+fill(lin(lx - 90 * k, 0, lx + 90 * k, 0, [[0, "#2a2230"], [.5, "#3a3040"], [1, "#221b28"]]), () => { g.moveTo(lx - 22 * k, ly - 44 * k); g.quadraticCurveTo(lx - 84 * k, ly - 30 * k, lx - 92 * k, ly + 26 * k); g.lineTo(lx + 92 * k, ly + 26 * k); g.quadraticCurveTo(lx + 84 * k, ly - 30 * k, lx + 22 * k, ly - 44 * k); });
+fill("#ffd58a", () => g.rect(lx - 92 * k, ly + 22 * k, 184 * k, 5 * k));
+
+// a plant standing back in the dark
+{ const px = tall ? 1010 : 1480, pk = tall ? 1.25 : 1, py = fl - 26 * k;
+  const leaf = (x, y, a, l, c) => { g.save(); g.translate(px + x * pk, py - y * pk); g.rotate(a); fill(c, () => { g.moveTo(0, 0); g.bezierCurveTo(l * .28 * pk, -l * .36 * pk, l * .8 * pk, -l * .3 * pk, l * pk, 0); g.bezierCurveTo(l * .8 * pk, l * .3 * pk, l * .28 * pk, l * .36 * pk, 0, 0); }); stroke("rgba(10,16,16,.6)", 2 * pk, () => { g.moveTo(0, 0); g.lineTo(l * .9 * pk, 0); }); g.restore(); };
+  stroke("#15201e", 5 * pk, () => { g.moveTo(px, py - 120 * pk); g.quadraticCurveTo(px - 8 * pk, py - 250 * pk, px - 40 * pk, py - 330 * pk); g.moveTo(px, py - 120 * pk); g.quadraticCurveTo(px + 14 * pk, py - 240 * pk, px + 50 * pk, py - 300 * pk); g.moveTo(px, py - 120 * pk); g.quadraticCurveTo(px + 2 * pk, py - 300 * pk, px + 6 * pk, py - 400 * pk); });
+  [[-40, 330, -2.5, 120, "#1b302c"], [-30, 250, -3.0, 104, "#172824"], [50, 300, -.5, 124, "#162622"], [6, 400, -1.9, 128, "#1c342f"], [30, 220, -.2, 100, "#14211e"], [-14, 190, 3.3, 90, "#182c28"]].forEach((a) => leaf(...a));
+  fill(lin(px - 70 * pk, 0, px + 70 * pk, 0, [[0, "#5a2a22"], [.4, "#42201c"], [1, "#2a1516"]]), () => { g.moveTo(px - 62 * pk, py - 124 * pk); g.lineTo(px + 62 * pk, py - 124 * pk); g.lineTo(px + 46 * pk, py); g.lineTo(px - 46 * pk, py); });
+  fill("#6a332a", () => g.rect(px - 68 * pk, py - 136 * pk, 136 * pk, 16 * pk)); }
+
+// ---------- the armchair ----------
+const red = { top: "#f2473a", lit: "#e3262d", mid: "#c4162a", dim: "#93102a", deep: "#5e0a22" };
+fill("#241018", () => { [[-232, -1], [232, 1], [-170, -1], [170, 1]].forEach(([x, d]) => { g.moveTo(X(x - 13), Y(46)); g.lineTo(X(x + 13), Y(46)); g.lineTo(X(x + 7 + d * 5), Y(0)); g.lineTo(X(x - 7 + d * 5), Y(0)); }); });   // legs
+fill(lin(0, Y(470), 0, Y(140), [[0, red.lit], [.22, red.mid], [1, red.dim]]), () => rr(-236, 120, 236, 470, [130, 130, 20, 20]));             // back
+fill(lin(0, Y(440), 0, Y(180), [[0, red.mid], [.5, red.dim], [1, red.deep]]), () => rr(-196, 150, 196, 438, [104, 104, 10, 10]));             // its inner face
+fill(lin(0, Y(210), 0, Y(140), [[0, red.top], [.45, red.lit], [1, red.mid]]), () => rr(-200, 138, 200, 208, 30));                             // seat cushion
+fill(lin(0, Y(140), 0, Y(40), [[0, red.mid], [1, red.dim]]), () => rr(-200, 40, 200, 146, [0, 0, 14, 14]));                                  // front
+fill(lin(0, Y(140), 0, Y(112), [[0, "rgba(70,6,24,.7)"], [1, "rgba(70,6,24,0)"]]), () => rr(-200, 110, 200, 140, 0));                         // shadow under the cushion's lip
+fill(lin(0, Y(210), 0, Y(140), [[0, red.top], [.45, red.lit], [1, red.mid]]), () => rr(-200, 138, 200, 208, 30));                             // the cushion again, over that shadow
+stroke("rgba(255,150,120,.55)", 3 * k, () => { g.moveTo(X(-176), Y(207)); g.lineTo(X(176), Y(207)); });
+[-1, 1].forEach((d) => {                                                                                                                      // arms
+  g.save(); g.translate(X(0), 0); g.scale(d, 1); g.translate(-X(0), 0);
+  fill(lin(X(190), 0, X(310), 0, [[0, red.lit], [.6, red.mid], [1, red.dim]]), () => rr(190, 40, 310, 282, [56, 56, 16, 16]));
+  fill(lin(0, Y(284), 0, Y(232), [[0, red.top], [1, "rgba(242,71,58,0)"]]), () => rr(194, 228, 306, 282, [54, 54, 0, 0]));
+  fill("rgba(60,6,24,.5)", () => rr(184, 44, 196, 205, 6));
+  g.restore(); });
+
+// ---------- the cat ----------
+const fur = "#131118", rim = "#806358";
+g.save(); g.translate(X(6), Y(206)); g.scale(1.14, 1.14); g.translate(-X(6), -Y(206));
+const cat = () => {
+  g.moveTo(X(-150), Y(206));                                                 // along the cushion, tail side first
+  g.bezierCurveTo(X(-172), Y(250), X(-122), Y(320), X(-30), Y(324));          // rump and back
+  g.bezierCurveTo(X(50), Y(328), X(150), Y(300), X(160), Y(236));             // shoulders, down to the cushion
+  g.bezierCurveTo(X(164), Y(214), X(150), Y(206), X(130), Y(206));
+  g.closePath(); };
+fill("rgba(70,6,22,.55)", () => g.ellipse(X(4), Y(204), 180 * k, 12 * k, 0, 0, 7));          // its shadow on the cushion
+fill(fur, cat);
+g.save(); g.beginPath(); cat(); g.clip();                                    // lamp light along the back
+stroke(rim, 8 * k, () => { g.moveTo(X(-152), Y(262)); g.bezierCurveTo(X(-114), Y(324), X(-30), Y(328), X(40), Y(324)); });
+g.restore();
+// tail: round the front and over the cushion's edge
+stroke(fur, 30 * k, () => { g.moveTo(X(-136), Y(226)); g.bezierCurveTo(X(-178), Y(196), X(-120), Y(190), X(-60), Y(198)); g.bezierCurveTo(X(-10), Y(204), X(24), Y(196), X(40), Y(182)); });
+stroke("#4f3f3d", 3.5 * k, () => { g.moveTo(X(-150), Y(222)); g.bezierCurveTo(X(-150), Y(206), X(-110), Y(206), X(-60), Y(212)); g.bezierCurveTo(X(-20), Y(216), X(8), Y(210), X(24), Y(200)); });
+// head, chin on its paws, turned to us
+const hx = 84, hy = 250;
+fill(fur, () => g.ellipse(X(hx + 34), Y(205), 50 * k, 15 * k, 0, 0, 7));                                                            // paws
+const ear = (d) => { g.moveTo(X(hx + d * 66), Y(hy + 16)); g.quadraticCurveTo(X(hx + d * 72), Y(hy + 70), X(hx + d * 60), Y(hy + 98)); g.quadraticCurveTo(X(hx + d * 30), Y(hy + 78), X(hx + d * 12), Y(hy + 50)); g.closePath(); };
+fill(fur, () => { ear(-1); ear(1); });
+fill("#3b2229", () => [-1, 1].forEach((d) => { g.moveTo(X(hx + d * 58), Y(hy + 40)); g.quadraticCurveTo(X(hx + d * 62), Y(hy + 66), X(hx + d * 56), Y(hy + 82)); g.quadraticCurveTo(X(hx + d * 40), Y(hy + 68), X(hx + d * 30), Y(hy + 50)); g.closePath(); }));
+fill(fur, () => g.ellipse(X(hx), Y(hy), 73 * k, 58 * k, 0, 0, 7));
+// the lamp on the top of its head and the near edge of each ear
+stroke(rim, 4 * k, () => { g.moveTo(X(hx - 58), Y(hy + 95)); g.quadraticCurveTo(X(hx - 34), Y(hy + 78), X(hx - 15), Y(hy + 55)); g.quadraticCurveTo(X(hx), Y(hy + 60), X(hx + 14), Y(hy + 55));
+  g.moveTo(X(hx + 59), Y(hy + 96)); g.quadraticCurveTo(X(hx + 36), Y(hy + 80), X(hx + 16), Y(hy + 56)); });
+stroke("#94807c", 4 * k, () => { g.moveTo(X(hx - 46), Y(hy + 4)); g.quadraticCurveTo(X(hx - 29), Y(hy - 11), X(hx - 12), Y(hy + 4)); g.moveTo(X(hx + 12), Y(hy + 4)); g.quadraticCurveTo(X(hx + 29), Y(hy - 11), X(hx + 46), Y(hy + 4)); });   // closed eyes
+fill("#7a5158", () => { g.moveTo(X(hx - 7.5), Y(hy - 15)); g.lineTo(X(hx + 7.5), Y(hy - 15)); g.lineTo(X(hx), Y(hy - 24)); });             // nose
+stroke("#5e4c4e", 2.6 * k, () => { g.moveTo(X(hx), Y(hy - 24)); g.lineTo(X(hx), Y(hy - 30)); g.moveTo(X(hx - 12), Y(hy - 34)); g.quadraticCurveTo(X(hx - 4), Y(hy - 38), X(hx), Y(hy - 30)); g.quadraticCurveTo(X(hx + 4), Y(hy - 38), X(hx + 12), Y(hy - 34)); });
+g.globalAlpha = .5;
+stroke("#b0a0a2", 1.7 * k, () => { [[-1, 7], [-1, -3], [-1, -13], [1, 7], [1, -3], [1, -13]].forEach(([d, a]) => { g.moveTo(X(hx + d * 27), Y(hy - 25 + a * .25)); g.quadraticCurveTo(X(hx + d * 62), Y(hy - 24 + a * .9), X(hx + d * 100), Y(hy - 28 + a * 1.5)); }); });
+g.globalAlpha = 1;
+g.restore();
+
+// ---------- grain ----------
+g.resetTransform();
+const im = g.getImageData(0, 0, W, H), d = im.data;
+for (let i = 0; i < d.length; i += 4) { const n = (rnd() + rnd() - 1) * 7; d[i] += n; d[i + 1] += n; d[i + 2] += n; }
+g.putImageData(im, 0, 0);
+window.__note = `catnap ${W}x${H}`; window.__done = true;
+</script>
+</body></html>

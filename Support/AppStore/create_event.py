@@ -59,10 +59,14 @@ for code, text in spec["localizations"].items():
     else:
         loc_id = req("POST", "/v1/appEventLocalizations", {"data": {"type": "appEventLocalizations", "attributes": {"locale": code, **text},
             "relationships": {"appEvent": {"data": {"type": "appEvents", "id": event["id"]}}}}})["data"]["id"]
-    have = {s["attributes"]["appEventAssetType"] for s in req("GET", f"/v1/appEventLocalizations/{loc_id}/appEventScreenshots")["data"]}
+    # An image already up is kept only when its bytes match the local file; changed art replaces it.
+    have = {s["attributes"]["appEventAssetType"]: s for s in req("GET", f"/v1/appEventLocalizations/{loc_id}/appEventScreenshots")["data"]}
     for kind, name in spec["media"].items():
-        if kind in have: continue
         data = open(os.path.join(here, name), "rb").read()
+        if kind in have:
+            if have[kind]["attributes"].get("fileSize") == len(data): continue
+            req("DELETE", f"/v1/appEventScreenshots/{have[kind]['id']}")
+            print(code, kind, "old image deleted")
         shot = req("POST", "/v1/appEventScreenshots", {"data": {"type": "appEventScreenshots", "attributes": {
             "fileName": name, "fileSize": len(data), "appEventAssetType": kind},
             "relationships": {"appEventLocalization": {"data": {"type": "appEventLocalizations", "id": loc_id}}}}})["data"]

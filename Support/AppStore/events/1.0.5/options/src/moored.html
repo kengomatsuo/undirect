@@ -1,0 +1,216 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html,body{margin:0;background:#080b1c;overflow:hidden}canvas{display:block}</style>
+</head><body>
+<!-- "Moored": the harbour of the demo's own Northwind Daily story, cut through at the waterline at dusk.
+     A fishing boat rides a running tide and stays where it is, held by an anchor nobody on deck can see.
+     No text, no logo, no border and no scrim; the boat and the anchor sit above the band Apple's text covers.
+     Run in options/:
+       bun render.mjs src/moored.html moored/card.png 1920 1080
+       bun render.mjs src/moored.html moored/details.png 1080 1920 -->
+<script>
+const W = innerWidth, H = innerHeight, tall = H > W;
+const cv = document.createElement("canvas"); cv.width = W; cv.height = H; document.body.append(cv);
+const g = cv.getContext("2d");
+// Layout in pixels of a 1920x1080 card or a 1080x1920 details image; s scales either to a larger frame.
+const s = tall ? W / 1080 : H / 1080;
+g.scale(s, s);
+const w = W / s, h = H / s;
+const F = tall
+  ? { wl: 500, bx: 440, L: 600, ax: 748, ay: 1078, bed: 1112, sun: 800, sunR: 66, as: 1.12 }
+  : { wl: 424, bx: 716, L: 552, ax: 1322, ay: 630, bed: 664, sun: 1440, sunR: 60, as: 1.12 };
+
+let seed = 20261121;
+const rnd = () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+const R = (a, b) => a + (b - a) * rnd();
+const lin = (x0, y0, x1, y1, stops) => { const q = g.createLinearGradient(x0, y0, x1, y1); stops.forEach(([o, c]) => q.addColorStop(o, c)); return q; };
+const rad = (x, y, r, stops) => { const q = g.createRadialGradient(x, y, 0, x, y, r); stops.forEach(([o, c]) => q.addColorStop(o, c)); return q; };
+const fill = (style, fn) => { g.beginPath(); fn(); g.fillStyle = style; g.fill(); };
+const stroke = (style, lw, fn, cap = "round") => { g.beginPath(); fn(); g.strokeStyle = style; g.lineWidth = lw; g.lineCap = cap; g.lineJoin = "round"; g.stroke(); };
+const wave = (x) => F.wl + 3.2 * Math.sin(x / 96 + 1.1) + 1.6 * Math.sin(x / 41 + .4);
+const bedY = (x) => F.bed + 16 * Math.sin(x / 260 + 2.2) + 7 * Math.sin(x / 83 + .7);
+
+// ---------- sky ----------
+g.fillStyle = lin(0, 0, 0, F.wl, [[0, "#171032"], [.28, "#33164a"], [.52, "#7c1c50"], [.72, "#cf2f3a"], [.87, "#f56a36"], [1, "#ffb25a"]]);
+g.fillRect(0, 0, w, F.wl + 12);
+// stars, only where the sky is still dark
+for (let i = 0; i < 70; i++) { const x = R(0, w), y = R(0, F.wl * .42), r = R(.6, 1.7); g.globalAlpha = R(.25, .8) * (1 - y / (F.wl * .45)); fill("#ffe9d0", () => g.arc(x, y, r, 0, 7)); }
+g.globalAlpha = 1;
+// the sun, half under the horizon, and its glow
+g.fillStyle = rad(F.sun, F.wl, F.sunR * 7.5, [[0, "rgba(255,226,150,.95)"], [.16, "rgba(255,190,110,.6)"], [.45, "rgba(255,120,70,.22)"], [1, "rgba(255,90,60,0)"]]);
+g.fillRect(0, 0, w, F.wl + 12);
+g.save(); g.beginPath(); g.rect(0, 0, w, F.wl + 2); g.clip();
+fill(rad(F.sun, F.wl + 4, F.sunR, [[0, "#fff6d6"], [.7, "#ffe9b0"], [1, "#ffd68c"]]), () => g.arc(F.sun, F.wl + 4, F.sunR, 0, 7));
+g.restore();
+// clouds: long bars drawn out by the wind, the low ones lit from underneath
+function cloud(x, y, len, th, col, a = 1) {
+  g.globalAlpha = a; g.fillStyle = col;
+  const n = 3 + Math.floor(rnd() * 3);
+  for (let i = 0; i < n; i++) {
+    const l = len * R(.45, 1), t = th * R(.55, 1), ox = R(-.25, .25) * len, oy = (i - n / 2) * th * .55;
+    g.beginPath(); g.roundRect(x + ox - l / 2, y + oy - t / 2, l, t, t / 2); g.fill();
+  }
+  g.globalAlpha = 1;
+}
+const sk = F.wl;
+[[.16, .10, 760, 54], [.62, .06, 900, 46], [.95, .17, 620, 50], [.36, .24, 560, 40], [-.02, .30, 520, 44]].forEach(([x, y, l, t]) => cloud(x * w, y * sk, l, t, "#241238", .9));
+[[.52, .36, 620, 34], [.08, .45, 500, 30], [.86, .40, 560, 30], [.30, .52, 420, 24]].forEach(([x, y, l, t]) => cloud(x * w, y * sk, l, t, "#5a1848", .85));
+[[.70, .60, 520, 20], [.22, .66, 460, 18], [.96, .68, 380, 16], [.46, .72, 300, 14]].forEach(([x, y, l, t]) => cloud(x * w, y * sk, l, t, "#b3263f", .8));
+[[.60, .80, 420, 9], [.84, .86, 360, 8], [.30, .84, 300, 8], [.98, .78, 240, 7], [.10, .90, 260, 7], [.72, .92, 240, 6]].forEach(([x, y, l, t]) => cloud(x * w, y * sk, l, t, "#ffc98a", .85));
+// gulls riding the wind
+[[.47, .30, 1], [.52, .37, .7], [.14, .5, .8]].forEach(([x, y, k]) => stroke("#ffe2c2", 3.2 * k, () => {
+  const X = x * w, Y = y * sk; g.moveTo(X - 20 * k, Y - 3 * k); g.quadraticCurveTo(X - 9 * k, Y - 13 * k, X, Y); g.quadraticCurveTo(X + 9 * k, Y - 13 * k, X + 20 * k, Y - 3 * k); }));
+// the far shore, and the harbour light at its end
+const shore = (x0, x1, hgt, col, ph) => fill(col, () => { g.moveTo(x0, F.wl + 8); for (let x = x0; x <= x1; x += 8) { const t = (x - x0) / (x1 - x0); g.lineTo(x, F.wl - hgt * Math.sin(Math.PI * Math.min(1, t * 1.02)) ** .7 * (.72 + .28 * Math.sin(t * 9 + ph))); } g.lineTo(x1, F.wl + 8); });
+shore(-40, w * (tall ? .5 : .30), tall ? 60 : 54, "#4a1746", 1);
+shore(-80, w * (tall ? .36 : .2), tall ? 42 : 40, "#2a1036", 2.4);
+{ // lighthouse
+  const x = w * (tall ? .33 : .135), b = F.wl - (tall ? 14 : 16), k = tall ? 1.05 : 1;
+  g.fillStyle = rad(x, b - 86 * k, 90 * k, [[0, "rgba(255,236,170,.75)"], [.3, "rgba(255,210,130,.25)"], [1, "rgba(255,200,120,0)"]]); g.fillRect(x - 100 * k, b - 190 * k, 200 * k, 200 * k);
+  fill("#f1dcc6", () => { g.moveTo(x - 11 * k, b); g.lineTo(x - 7 * k, b - 74 * k); g.lineTo(x + 7 * k, b - 74 * k); g.lineTo(x + 11 * k, b); });
+  fill("#c2313b", () => { g.moveTo(x - 9.4 * k, b - 30 * k); g.lineTo(x - 8.1 * k, b - 52 * k); g.lineTo(x + 8.1 * k, b - 52 * k); g.lineTo(x + 9.4 * k, b - 30 * k); });
+  fill("#22102f", () => g.rect(x - 10 * k, b - 78 * k, 20 * k, 5 * k));
+  fill("#fff0b8", () => g.rect(x - 6 * k, b - 92 * k, 12 * k, 14 * k));
+  fill("#c2313b", () => { g.moveTo(x - 9 * k, b - 92 * k); g.lineTo(x, b - 104 * k); g.lineTo(x + 9 * k, b - 92 * k); });
+}
+
+// ---------- the boat (drawn bow to the right, the anchor's side), in hull lengths ----------
+const L = F.L, bx = F.bx, by = wave(bx) + 2;
+const P = (x, y) => [bx + x * L, by + y * L];
+const M = (x, y) => g.moveTo(...P(x, y)), Ln = (x, y) => g.lineTo(...P(x, y)), Q = (a, b, x, y) => g.quadraticCurveTo(...P(a, b), ...P(x, y)), C = (a, b, c, d, x, y) => g.bezierCurveTo(...P(a, b), ...P(c, d), ...P(x, y));
+const hull = () => { M(-.5, -.105); Q(-.1, -.062, .2, -.092); Q(.4, -.118, .52, -.185); C(.5, -.1, .46, .02, .36, .085); Q(.3, .112, .1, .116); Ln(-.36, .116); Q(-.455, .11, -.47, .02); Q(-.49, -.04, -.5, -.105); };
+// rigging behind everything
+stroke("#2a1036", 2.2, () => { M(.085, -.66); Ln(.5, -.19); M(.085, -.66); Ln(-.47, -.12); });
+// mast, boom, anchor light
+stroke("#2a1036", 7, () => { M(.085, -.1); Ln(.085, -.67); }, "butt");
+stroke("#2a1036", 4.5, () => { M(.085, -.34); Ln(-.33, -.27); });
+stroke("#2a1036", 1.8, () => { M(-.33, -.27); Ln(-.33, -.11); M(-.12, -.305); Ln(.085, -.5); });
+{ const [x, y] = P(.085, -.69); g.fillStyle = rad(x, y, 60, [[0, "rgba(255,244,214,.95)"], [.14, "rgba(255,236,190,.55)"], [1, "rgba(255,226,170,0)"]]); g.fillRect(x - 60, y - 60, 120, 120); fill("#fffbe8", () => g.arc(x, y, 5, 0, 7)); }
+// pennant, streaming downwind
+fill("#f0483a", () => { M(.085, -.635); C(.03, -.655, -.0, -.6, -.065, -.625); C(-.01, -.585, .03, -.6, .085, -.585); });
+// wheelhouse
+fill("#f3dfc4", () => { M(-.2, -.085); Ln(-.2, -.255); Ln(.04, -.265); Ln(.075, -.092); });
+fill("#d9bfa6", () => { M(-.2, -.085); Ln(-.2, -.255); Ln(-.165, -.256); Ln(-.165, -.083); });
+fill("#34143a", () => { M(-.225, -.252); Ln(-.215, -.283); Ln(.06, -.296); Ln(.068, -.262); });
+[[-.14, -.075], [-.045, -.075]].forEach(([x, wd]) => { const [X, Y] = P(x, -.225); g.fillStyle = rad(X + 20, Y + 16, 54, [[0, "rgba(255,214,120,.5)"], [1, "rgba(255,200,110,0)"]]); g.fillRect(X - 40, Y - 40, 130, 120); fill("#ffd778", () => g.roundRect(X, Y, -wd * L, .062 * L, 4)); });
+fill("#34143a", () => g.roundRect(...P(-.288, -.165), .07 * L, .075 * L, 3));           // fish boxes aft
+fill("#4a1b45", () => g.roundRect(...P(-.36, -.145), .06 * L, .052 * L, 3));
+stroke("#f3dfc4", 2.4, () => { M(.2, -.094); Ln(.2, -.15); M(.3, -.104); Ln(.3, -.162); M(.4, -.122); Ln(.4, -.182); M(.2, -.15); Q(.36, -.163, .5, -.215); Ln(.515, -.186); }); // bow rail
+// hull: red topsides, a pale sheer strake, and the weed-dark bottom that only shows below the waterline
+g.save(); g.beginPath(); hull(); g.clip();
+g.fillStyle = "#d92b2b"; g.fillRect(bx - L, by - L, 2 * L, 2 * L);
+g.fillStyle = lin(bx - L / 2, 0, bx + L / 2, 0, [[0, "rgba(120,10,40,.5)"], [.5, "rgba(120,10,40,0)"], [1, "rgba(255,140,70,.35)"]]); g.fillRect(bx - L, by - L, 2 * L, 2 * L);
+fill("#4a1f4e", () => { g.moveTo(bx - L, by + .012 * L); for (let x = -L; x <= L; x += 10) g.lineTo(bx + x, wave(bx + x) + .012 * L); g.lineTo(bx + L, by + L); g.lineTo(bx - L, by + L); });
+stroke("#f6e3c8", .012 * L, () => { M(-.5, -.074); Q(-.1, -.03, .2, -.06); Q(.4, -.086, .53, -.152); }, "butt");
+g.restore();
+stroke("#f6e3c8", 3, () => { M(-.5, -.105); Q(-.1, -.062, .2, -.092); Q(.4, -.118, .52, -.185); });
+fill("#2c1840", () => { M(-.42, .1); Ln(-.455, .18); Ln(-.41, .185); Ln(-.385, .112); });                    // rudder
+fill("#b98a5e", () => g.ellipse(...P(-.375, .086), .009 * L, .03 * L, 0, 0, 7));                           // propeller
+fill("#fff", () => g.arc(...P(.44, -.118), .011 * L, 0, 7)); fill("#d92b2b", () => g.arc(...P(.44, -.118), .0045 * L, 0, 7)); // hawse
+
+// ---------- the sea, cut through ----------
+const sea = () => { g.moveTo(-10, wave(-10)); for (let x = -10; x <= w + 10; x += 10) g.lineTo(x, wave(x)); g.lineTo(w + 10, h + 10); g.lineTo(-10, h + 10); };
+g.save(); g.beginPath(); sea(); g.clip();
+// the hull under water shows through a veil of sea, so paint the water over it part-clear first
+g.fillStyle = lin(0, F.wl, 0, h, [[0, "#3f2a63"], [.07, "#2b2a62"], [.3, "#161c45"], [.62, "#0b1028"], [1, "#070919"]]);
+g.globalAlpha = .58; g.fillRect(0, 0, w, h); g.globalAlpha = 1;
+g.globalCompositeOperation = "destination-over"; g.fillRect(0, 0, w, h); g.globalCompositeOperation = "source-over";
+// the sun's light coming down through the water
+g.globalCompositeOperation = "lighter";
+g.fillStyle = rad(F.sun, F.wl, tall ? 620 : 520, [[0, "rgba(255,150,90,.5)"], [.35, "rgba(200,80,90,.2)"], [1, "rgba(120,40,90,0)"]]); g.fillRect(0, 0, w, h);
+const depth = F.bed - F.wl;
+[[-.62, .05, .30], [-.47, .035, .22], [-.34, .06, .34], [-.2, .03, .2], [-.08, .045, .24], [.1, .035, .15], [-.78, .04, .14]].forEach(([dir, wd, a]) => {
+  const x0 = F.sun + dir * 260, len = depth * 1.25, dx = dir * len * .8 + (tall ? 0 : -40);
+  g.fillStyle = lin(x0, F.wl, x0 + dx, F.wl + len, [[0, `rgba(255,190,120,${a})`], [.5, `rgba(230,120,110,${a * .4})`], [1, "rgba(160,80,120,0)"]]);
+  g.beginPath(); g.moveTo(x0 - wd * 300, F.wl - 6); g.lineTo(x0 + wd * 300, F.wl - 6); g.lineTo(x0 + dx + wd * 900, F.wl + len); g.lineTo(x0 + dx - wd * 900, F.wl + len); g.fill();
+});
+g.globalCompositeOperation = "source-over";
+// far ground, pale with distance
+const ridge = (base, amp, col, ph) => fill(col, () => { g.moveTo(-10, h + 10); for (let x = -10; x <= w + 10; x += 12) g.lineTo(x, base - amp * (Math.sin(x / 210 + ph) * .6 + Math.sin(x / 77 + ph * 2) * .4)); g.lineTo(w + 10, h + 10); });
+ridge(F.bed - depth * .16, 16, "#1c2150", .6);
+ridge(F.bed - depth * .07, 12, "#161a42", 2.1);
+// things the tide carries past: specks, and a few fish holding their place against it
+for (let i = 0; i < 150; i++) { const x = R(0, w), y = R(F.wl + 30, F.bed - 20), l = R(6, 34); g.globalAlpha = R(.05, .22); stroke("#c9c2ff", R(1, 2.2), () => { g.moveTo(x, y); g.lineTo(x - l, y + R(-1, 1)); }); }
+g.globalAlpha = 1;
+const fish = (x, y, k, col) => { fill(col, () => { g.ellipse(x, y, 17 * k, 6.4 * k, 0, 0, 7); }); fill(col, () => { g.moveTo(x - 13 * k, y); g.lineTo(x - 27 * k, y - 8 * k); g.lineTo(x - 24 * k, y); g.lineTo(x - 27 * k, y + 8 * k); }); };
+const school = tall ? [[.2, .36, 1], [.27, .4, .8], [.14, .43, .9], [.24, .47, .7], [.33, .45, .6], [.7, .68, .8], [.78, .72, .6]] : [[.52, .5, 1], [.565, .58, .8], [.49, .64, .7], [.6, .44, .6], [.545, .72, .65], [.9, .5, .7], [.94, .6, .55]];
+school.forEach(([x, y, k]) => fish(x * w, F.wl + y * depth, k * 1.15, "#5b5aa6"));
+// the bed, lit where the last light lands
+const bedPath = (off) => { g.moveTo(-10, h + 10); for (let x = -10; x <= w + 10; x += 10) g.lineTo(x, bedY(x + off * 3) + off); g.lineTo(w + 10, h + 10); };
+fill(lin(0, F.bed - 30, 0, h, [[0, "#262a62"], [.1, "#151a40"], [.5, "#0a0d24"], [1, "#070919"]]), () => bedPath(0));
+g.globalCompositeOperation = "lighter";
+g.fillStyle = rad(F.ax - 10, F.ay + 30, 360, [[0, "rgba(255,150,110,.34)"], [.5, "rgba(180,90,130,.1)"], [1, "rgba(120,60,120,0)"]]);
+g.beginPath(); bedPath(0); g.fill();
+g.globalCompositeOperation = "source-over";
+// weed, leaning the way the tide runs
+const weed = (x, hgt, col, lean) => { const y = bedY(x) + 8; fill(col, () => { g.moveTo(x - 7, y); g.bezierCurveTo(x - 10, y - hgt * .5, x - lean * .5, y - hgt * .8, x - lean, y - hgt); g.bezierCurveTo(x - lean * .4 + 8, y - hgt * .7, x + 8, y - hgt * .4, x + 8, y); }); };
+(tall ? [[90, 150], [130, 100], [60, 90], [960, 130], [1000, 90], [520, 70], [560, 110]] : [[150, 120], [190, 80], [110, 70], [980, 90], [1020, 120], [1700, 110], [1745, 70], [640, 60]])
+  .forEach(([x, hh], i) => weed(x, hh, i % 2 ? "#22367a" : "#1b2a62", hh * .55));
+
+{ // a starfish, the one warm thing on the bed
+  const x = F.ax - (tall ? 250 : 300), y = bedY(x) + 12, r = 17;
+  g.save(); g.translate(x, y); g.rotate(.3); g.scale(1, .62);
+  fill("#c9483f", () => { for (let i = 0; i < 10; i++) { const a = i * Math.PI / 5 - Math.PI / 2, q = i % 2 ? r * .46 : r; g.lineTo(q * Math.cos(a), q * Math.sin(a)); } g.closePath(); });
+  g.restore(); }
+// ---------- the anchor, one fluke dug in ----------
+const hawse = P(.44, -.118);
+const TILT = -.86;
+g.save(); g.translate(F.ax, F.ay); g.rotate(TILT); g.scale(F.as, F.as);
+const an = (col, grow) => {
+  const lw = 15 + grow;
+  stroke(col, lw, () => { g.moveTo(0, -126); g.lineTo(0, 22); });                                      // shank
+  stroke(col, lw, () => { g.arc(0, -42, 64, .16, Math.PI - .16); });                                   // arms
+  stroke(col, lw * .78, () => { g.moveTo(-40, -106); g.lineTo(40, -106); });                           // stock
+  stroke(col, lw * .5, () => g.arc(0, -141, 13, 0, 7));                                               // ring
+  [1, -1].forEach((sx) => { const a = sx > 0 ? .16 : Math.PI - .16, x = 64 * Math.cos(a), y = -42 + 64 * Math.sin(a);          // flukes
+    g.beginPath(); g.moveTo(x + sx * 4, y - 40); g.lineTo(x + sx * 21, y + 8); g.lineTo(x - sx * 25, y + 12); g.closePath();
+    g.fillStyle = col; g.fill(); g.strokeStyle = col; g.lineWidth = 5 + grow; g.lineJoin = "round"; g.stroke(); });
+};
+an("rgba(8,10,30,.55)", 9);
+an(lin(70, -150, -70, 40, [[0, "#fff1dc"], [.45, "#ecd5c4"], [1, "#a48fae"]]), 0);
+g.restore();
+// the nearer bed, heaped over the buried fluke
+fill(lin(0, F.bed - 10, 0, h, [[0, "#1a1f4c"], [.08, "#10143a"], [.45, "#0a0d24"], [1, "#070919"]]), () => bedPath(26));
+g.globalCompositeOperation = "lighter";
+g.fillStyle = rad(F.ax + 10, F.ay + 60, 300, [[0, "rgba(255,150,110,.2)"], [.6, "rgba(160,80,130,.06)"], [1, "rgba(120,60,120,0)"]]);
+g.beginPath(); bedPath(26); g.fill();
+g.globalCompositeOperation = "source-over";
+(tall ? [[300, 26, 14], [880, 34, 16], [560, 18, 9]] : [[420, 26, 13], [1560, 36, 16], [1060, 16, 8]]).forEach(([x, rx, ry]) => fill("#0d1230", () => g.ellipse(x, bedY(x + 78) + 30, rx, ry, 0, Math.PI, 0)));
+(tall ? [[240, 80], [1010, 60]] : [[330, 70], [1820, 80], [860, 50]]).forEach(([x, hh]) => { const y = bedY(x + 78) + 34; fill("#131c4c", () => { g.moveTo(x - 7, y); g.bezierCurveTo(x - 10, y - hh * .5, x - hh * .3, y - hh * .8, x - hh * .55, y - hh); g.bezierCurveTo(x - hh * .2 + 8, y - hh * .7, x + 8, y - hh * .4, x + 8, y); }); });
+g.restore();   // end of the sea clip
+// chain: a slack-free curve from the hawse to the ring, links drawn as beads
+{
+  g.save(); g.translate(F.ax, F.ay); g.rotate(TILT); g.scale(F.as, F.as); const m = g.getTransform(); g.restore();
+  const inv = g.getTransform().inverse(), pt = new DOMPoint(0, -154).matrixTransform(m).matrixTransform(inv);
+  const [x0, y0] = hawse, x1 = pt.x, y1 = pt.y, cx = x0 + (x1 - x0) * .42, cy = y0 + (y1 - y0) * .7;
+  const B = (t) => [(1 - t) ** 2 * x0 + 2 * t * (1 - t) * cx + t * t * x1, (1 - t) ** 2 * y0 + 2 * t * (1 - t) * cy + t * t * y1];
+  let len = 0, prev = B(0); const pts = [[0, prev]];
+  for (let i = 1; i <= 400; i++) { const p = B(i / 400); len += Math.hypot(p[0] - prev[0], p[1] - prev[1]); pts.push([len, p]); prev = p; }
+  const step = 16; let k = 0;
+  for (let d = 0, i = 0; d <= len; d += step, i++) {
+    while (pts[k + 1] && pts[k + 1][0] < d) k++;
+    const [p, q] = [pts[k][1], (pts[k + 1] || pts[k])[1]], ang = Math.atan2(q[1] - p[1], q[0] - p[0]);
+    const under = p[1] > wave(p[0]), t = d / len;
+    g.save(); g.translate(p[0], p[1]); g.rotate(ang);
+    g.strokeStyle = under ? `rgb(${Math.round(190 + 44 * t)},${Math.round(170 + 47 * t)},${Math.round(190 + 8 * t)})` : "#fbe6c8";
+    g.globalAlpha = under ? .62 + .38 * t : 1;
+    g.lineWidth = 4; g.beginPath();
+    if (i % 2) g.ellipse(0, 0, 10, 5.6, 0, 0, 7); else { g.moveTo(-9.5, 0); g.lineTo(9.5, 0); }
+    g.stroke(); g.restore();
+  }
+}
+// the surface itself: a bright line where the last light skims it, parted by the hull
+stroke("rgba(255,214,160,.9)", 3, () => { g.moveTo(-10, wave(-10)); for (let x = -10; x <= w + 10; x += 10) g.lineTo(x, wave(x)); });
+stroke("#fff3d2", 4, () => { for (let x = F.sun - 200; x <= F.sun + 200; x += 10) g.lineTo(x, wave(x)); });
+// the tide piling against the bow and trailing off the stern
+stroke("rgba(255,236,206,.95)", 3.5, () => { const [x, y] = P(.43, .004); g.moveTo(x - 6, y + 2); g.quadraticCurveTo(x + 16, y - 12, x + 46, y - 1); g.moveTo(x + 52, y + 1); g.quadraticCurveTo(x + 66, y - 6, x + 86, y); });
+stroke("rgba(255,236,206,.8)", 3, () => { const [x, y] = P(-.485, .004); g.moveTo(x, y); g.quadraticCurveTo(x - 26, y - 9, x - 54, y); g.moveTo(x - 70, y + 1); g.quadraticCurveTo(x - 88, y - 5, x - 108, y + 1); g.moveTo(x - 132, y + 1); g.lineTo(x - 160, y + 1); });
+
+// ---------- grain, so flat colour reads as print and not as plastic ----------
+g.resetTransform();
+const im = g.getImageData(0, 0, W, H), d = im.data;
+for (let i = 0; i < d.length; i += 4) { const n = (rnd() + rnd() - 1) * 9; d[i] += n; d[i + 1] += n; d[i + 2] += n; }
+g.putImageData(im, 0, 0);
+window.__note = `moored ${W}x${H}`; window.__done = true;
+</script>
+</body></html>

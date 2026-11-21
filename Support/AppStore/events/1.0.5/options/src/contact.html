@@ -1,0 +1,87 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<!-- Contact sheet for the 1.0.5 event art: each option's card and details image under Apple's own overlay,
+     with this event's badge, name and descriptions. The overlay rules are copied from the web App Store's
+     stylesheet (apps.apple.com/assets/index~Cuua8lPjmd.css, read 2026-11-21: .gradient-overlay,
+     .text-container, .event-detail and the type tokens they name), as recorded in
+     docs/research/in-app-event-art.md. The labels are for choosing; none of them is in the art.
+       bun render.mjs src/contact.html contact-sheet.png 1340 900 page 2   (run in options/; the height is the document's own) -->
+<style>
+  :root { --font: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif; }
+  html, body { margin: 0; background: #f2f2f4; font-family: var(--font); color: #1d1d1f; -webkit-font-smoothing: antialiased; }
+  body { width: 1340px; padding: 34px 40px 40px; box-sizing: border-box; }
+  h1 { font: 700 22px/1.2 var(--font); margin: 0 0 4px; }
+  .sub { font: 400 13px/1.4 var(--font); color: #6e6e73; margin: 0 0 26px; }
+  .row { display: grid; grid-template-columns: repeat(3, 385px); justify-content: space-between; }
+  .opt h2 { font: 700 17px/1.2 var(--font); margin: 0 0 3px; }
+  .opt .what { font: 400 12.5px/1.4 var(--font); color: #6e6e73; margin: 0 0 14px; min-height: 53px; }
+  .opt .det { margin: 0 auto; }
+  .lab { font: 600 10px/1 var(--font); letter-spacing: .06em; text-transform: uppercase; color: #8e8e93; margin: 18px 0 8px; }
+  .now { font: 700 11px/16px var(--font); color: #0071e3; text-transform: uppercase; letter-spacing: .02em; margin-bottom: 4px; }
+
+  /* Apple's event card: 16:9, text over the artwork */
+  .card { position: relative; width: 385px; height: 216.5px; border-radius: 17px; overflow: hidden; display: grid; grid-template-areas: "content"; box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 8px 24px rgb(0 0 0 / 10%); }
+  .card > img, .det > img { grid-area: content; width: 100%; height: 100%; object-fit: cover; display: block; }
+  .gradient-container { grid-area: content; position: relative; z-index: 1; }
+  .gradient-overlay { -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    background: linear-gradient(#0000, var(--color) var(--height, 100%)); bottom: 0; filter: saturate(1.5) brightness(var(--brightness));
+    height: var(--height, 60%); -webkit-mask-image: linear-gradient(180deg, #0000 6%, #000001 85%); mask-image: linear-gradient(180deg, #0000 6%, #000001 85%);
+    position: absolute; width: 100%; z-index: 1; }
+  .card .gradient-overlay { --color: rgb(83 83 83 / 48%); --height: 80%; --brightness: .85; border-radius: 17px; }
+  .card .text-container { color: #ffffffeb; display: flex; flex-direction: column; grid-area: content; justify-content: flex-end; padding: 12px 16px; z-index: 2; }
+  .card .kind { font: 600 12px/1.25 var(--font); text-transform: uppercase; opacity: .92; }
+  .card h3 { font: 400 17px/1.41 var(--font); margin: 0; }
+  .card p { font: 600 12px/1.25 var(--font); margin: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* Apple's event details page: 9:16 */
+  .det { position: relative; width: 340px; height: 604.4px; border-radius: 16px; overflow: hidden; display: grid; grid-template-areas: "time" "text"; grid-template-rows: 1fr auto; box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 8px 24px rgb(0 0 0 / 10%); }
+  .det > img { grid-column: 1; grid-row: 1 / 3; position: absolute; inset: 0; }
+  .det .gradient-overlay { --height: 70%; --brightness: .85; border-radius: 16px; }
+  .det .time { grid-area: time; margin: 16px 0 0 16px; z-index: 3; }
+  .det .time span { background: #ffffffa3; border-radius: 12px; color: #000000d9; font: 600 12px/1.25 var(--font); padding: 3px 10px; }
+  .det .text-container { color: #ffffffeb; display: flex; flex-direction: column; gap: 16px; grid-area: text; justify-content: space-between; padding: 16px; z-index: 2; }
+  .det .event-details-container { display: flex; flex-direction: column; gap: 6px; }
+  .det .kind { font: 600 12px/1.25 var(--font); text-transform: uppercase; }
+  .det .title { font: 700 26px/1.23 var(--font); margin: 0; }
+  .det .subtitle { font: 400 15px/1.33 var(--font); margin: 0; }
+  .det .lockup { border-top: 1px solid #ffffff4d; padding-top: 16px; display: flex; align-items: center; gap: 10px; }
+  .det .lockup img { width: 40px; height: 40px; border-radius: 9px; }
+  .det .lockup b { font: 600 13px/1.2 var(--font); display: block; }
+  .det .lockup i { font: 400 11px/1.3 var(--font); font-style: normal; opacity: .75; }
+  .det .lockup .view { margin-left: auto; font: 700 13px/1 var(--font); background: #ffffff38; border-radius: 14px; padding: 7px 16px; }
+  .pair { display: flex; gap: 22px; align-items: flex-start; }
+  .raw img { width: 385px; border-radius: 6px; display: block; }
+  .before { margin-top: 34px; padding-top: 22px; border-top: 1px solid #d2d2d7; }
+  .before .cards { display: flex; gap: 34px; }
+  .before .card { width: 290px; height: 163px; border-radius: 13px; }
+  .before .cards > div { width: 290px; } .before .cap { font: 400 11.5px/1.4 var(--font); color: #6e6e73; margin: 8px 0 0; }
+  .before .card h3 { font-size: 13px; } .before .card p, .before .card .kind { font-size: 9px; }
+  .before .card .text-container { padding: 9px 12px; }
+</style></head><body>
+<h1>Undirect 1.0.5, "The Stay-Put Update": three directions for the In-App Event art</h1>
+<p class="sub">Each shown as the App Store draws it: the card (16:9) and the event details page (9:16) under Apple's blur, scrim and text. Files are 1920x1080 and 1080x1920 in <code>options/&lt;name&gt;/</code>.</p>
+<div class="row" id="row"></div>
+<div class="before"><div class="lab" style="margin-top:0">Before: the two rejected versions, under the same overlay</div><div class="cards" id="before"></div></div>
+<script>
+const EVENT = { kind: "Major Update", name: "The Stay-Put Update", short: "Pages can no longer send you away with no tap",
+  long: "Undirect now keeps you on the page when a site redirects as it loads or while you scroll, and Back takes you back." };
+const OPTS = [
+  { dir: "moored", name: "A. Moored", what: "The demo story's harbour at dusk, cut through at the waterline: the tide runs, the boat stays, held by an anchor nobody on deck can see.", bg: "#090c21" },
+  { dir: "paperweight", name: "B. Paperweight", what: "A studio photograph that was never taken: wind takes every loose sheet, and the pages under the stone stay where they are.", bg: "#ce0420" },
+  { dir: "catnap", name: "C. Catnap", what: "A black cat asleep in a red armchair, the icon's two colours. Nothing is going to move it.", bg: "#0e0b11" },
+];
+const card = (src) => `<div class="card"><img src="${src}"><div class="gradient-container"><div class="gradient-overlay"></div></div>
+  <div class="text-container"><span class="kind">${EVENT.kind}</span><h3>${EVENT.name}</h3><p>${EVENT.short}</p></div></div>`;
+const det = (src, bg) => `<div class="det"><img src="${src}"><div class="gradient-overlay" style="--color:${bg}"></div>
+  <div class="time"><span>Happening Now</span></div>
+  <div class="text-container"><div class="event-details-container"><span class="kind">${EVENT.kind}</span><h2 class="title">${EVENT.name}</h2><p class="subtitle">${EVENT.long}</p></div>
+  <div class="lockup"><img src="../../../../../../web/undirect-app-icon.png"><span><b>Undirect</b><i>Stop pages taking your click</i></span><span class="view">View</span></div></div></div>`;
+document.getElementById("row").innerHTML = OPTS.map((o) => `<div class="opt"><h2>${o.name}</h2><p class="what">${o.what}</p>
+  <div class="now">Happening now</div>${card(`../${o.dir}/card.png`)}
+  <div class="lab">Event details page</div>${det(`../${o.dir}/details.png`, o.bg)}
+  <div class="lab">The card with nothing over it</div><div class="raw"><img src="../${o.dir}/card.png"></div></div>`).join("");
+document.getElementById("before").innerHTML = [["../../card-v1.png", "First version: a wireframe page and a U-turn arrow."], ["../../card.png", "Second version: a page in a red current, arrows bending round it."]]
+  .map(([src, cap]) => `<div>${card(src)}<p class="cap">${cap}</p></div>`).join("");
+Promise.all([...document.images].map((i) => i.decode().catch(() => {}))).then(() => { window.__note = "contact"; window.__done = true; });
+</script>
+</body></html>

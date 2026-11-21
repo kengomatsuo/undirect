@@ -150,3 +150,89 @@ What the strongest of them share, and the first version lacked:
 - **One source for both.** The same file draws both images and picks the layout from the window's
   shape, so the two keep one style, as Apple asks. The render command is in the comment at the top of
   `Support/AppStore/events/1.0.5/art.html`; a 3840x2160 window gives the same picture at twice the size.
+
+## Third pass: three concrete options (2026-11-21)
+
+The owner called the second version ugly as well and questioned the abstract direction, so this pass
+drops the brief toward abstraction. The job, said without naming a page or an arrow: **someone
+scrolling the store sees one picture under two lines of white text and, in a second, feels "this keeps
+me where I am".** Three pictures that answer it, each a card and a details image, sit in
+`Support/AppStore/events/1.0.5/options/<name>/`, with `options/contact-sheet.png` showing all three
+under Apple's overlay. The two earlier versions stay where they were (`card-v1.png`, `card.png`).
+
+### Sources read for this pass
+
+- [App Store asset best practices](https://developer.apple.com/app-store/asset-best-practices/),
+  fetched again 2026-11-21, under "Focus on your core experience": **"While you may depict content
+  outside of your app or game in use, it must still relate to its general functionality."** Under
+  "Image": "Your photography, illustration, and graphic design should feel current ... Aim for strong
+  composition and a clear focal point for each asset." A metaphor is allowed; each option below names
+  how it relates to what the update does.
+- [In-App Events](https://developer.apple.com/app-store/in-app-events/), fetched again: the Do and
+  Don't lists repeat "Avoid using text or logos in your media" for the card and for the details page.
+  None of the three options carries a letter, a numeral or the U-turn mark.
+- The web App Store's stylesheet, `apps.apple.com/assets/index~Cuua8lPjmd.css`, still served on
+  2026-11-21. The overlay numbers above are reused; the rule text was copied into the contact sheet so
+  the blur is Apple's own: `.gradient-overlay { backdrop-filter: blur(10px); background:
+  linear-gradient(#0000, var(--color) var(--height)); filter: saturate(1.5) brightness(var(--brightness));
+  mask-image: linear-gradient(180deg, #0000 6%, #000001 85%) }`. Type tokens read from the same file:
+  card name `--title-2-tall` (400 17px/1.41), card description and both badges `--callout-emphasized`
+  (600 12px/1.25), details name `--large-title-emphasized` (700 26px/1.23), details description
+  `--title-3` (400 15px/1.33), the date pill's radius `--global-border-radius-medium` (12px).
+- The 23 live cards in the table above were not fetched again. What this pass takes from them is the
+  list under the table: one idea, large; the subject in the upper 60%; depth and a little craft.
+- Three web searches for current event-card or Today-tab art direction (2026-11-21) returned the
+  Apple pages above and ASO blogs already cited, and no gallery. Khoi Vinh's "Illustration in the App
+  Store" (<https://www.subtraction.com/2018/05/22/illustration-in-the-app-store/>) is the one essay
+  they point to on the store's illustration; the page refused the fetch (TLS handshake), so nothing is
+  taken from it.
+- The product's own material: `web/demo/scroll/harbour.svg` (the Northwind Daily story's picture, whose
+  boat, light and palette option A grows from; the event's deep link opens the demo this story is in),
+  `docs/screenshots/page-effects/` and the icon's two colours in `Support/icon/build.py`
+  (`#E5322B` on near-black).
+
+### The three options
+
+| | A. Moored | B. Paperweight | C. Catnap |
+|---|---|---|---|
+| The picture | A harbour at dusk cut through at the waterline: a red fishing boat rides a running tide and stays, held by an anchor on the bed | A river stone on a stack of pages on a red sweep; the wind takes every loose sheet up and away, and the pages under the stone stay | A black cat asleep in a red armchair under the one lamp left on |
+| Kind | Flat illustration with light and grain | A path-traced still life that reads as a studio photograph | Flat illustration, a character |
+| How it relates to the update | The thing that holds you is under the surface and unseen, which is how the extension works; the harbour is the demo story's own | Pages, a force that carries things off, and one weight that stops it | "Stay put" as a creature; the icon's black and red. The loosest tie of the three to what the app does |
+| Ground under Apple's text | Deep water, `#090c21` at the foot | The red sweep, `#ce0420` at the foot | A dark floor, `#0e0b11` at the foot |
+
+**Where the subject sits** (fractions of the height from the top; Apple's text starts at 69.5% on the
+card and 64.3% on the details page):
+
+| | Card, 1920x1080 | Details, 1080x1920 |
+|---|---|---|
+| A. Moored | mast light 4%, waterline 39%, anchor from 48%, its lower fluke under the bed from 61% | mast light 4.6%, waterline 26%, anchor from 50%, its lower fluke under the bed from 58% |
+| B. Paperweight | stone from 33%, stack down to 60%; the loose sheets run from there off the top right corner | loose sheets from 14%, stone from 45.5%, stack down to 58% |
+| C. Catnap | lamp 5% to 13%, chair and cat 18% to 61.5% | lamp 14% to 20%, chair and cat 27% to 60% |
+
+### How they are made
+
+- **`options/render.mjs`** drives headless Chrome over the DevTools protocol and saves a page's canvas
+  (or the whole page, for the contact sheet). `--enable-unsafe-swiftshader` is the flag that gave
+  headless Chrome a WebGL2 context on this Mac, and the context it gave is the real GPU
+  (`ANGLE Metal Renderer: Apple M3`); `--use-angle=metal` alone gave none. No Xcode, no local build.
+- **A and C** are canvas drawings (`options/src/moored.html`, `options/src/catnap.html`): one file each
+  draws both images and takes its layout from the window's shape, at any multiple of the minimum size.
+- **B** is a small path tracer in a fragment shader (`options/src/pt.html` with
+  `options/src/scene-paperweight.glsl.js`): signed distance fields for the stone, the stack and each
+  sheet, two soft boxes sampled directly, a thin lens for depth of field, an open shutter for the
+  sheets' motion, and light let through the thin sheets so a backlit page glows. At 1920x1080 and 900
+  samples a pixel one image takes about six minutes on the M3's GPU (350 s and 361 s measured).
+  Nothing is painted on afterwards but the tone curve (Khronos PBR Neutral, which keeps the red red)
+  and a little grain.
+- **No gradient, border or scrim** is added to any of the three, after Apple's rule. The dusk sky, the
+  lamp's cone and the fall-off of the studio light are the pictures' own light.
+- Render commands are in the comment at the top of each source file.
+- **The contact sheet** (`options/src/contact.html`) lays each card and details image under the overlay
+  rules above with this event's own badge, name and descriptions, at Apple's web sizes (385 px and
+  340 px wide), with the two rejected cards under the same overlay for comparison. The details page's
+  scrim colour is each image's own lower third, averaged. It is a replica of the web store: the App
+  Store Connect preview and a phone are still the last check before the art is submitted.
+- **Not done here:** nothing was uploaded, `event.json` still names the second version's `card.png`
+  and `details.png`, and the owner has not chosen. The chosen pair is copied over those two files (or
+  `event.json`'s `media` is pointed at it) before `create_event.py` runs.
+
