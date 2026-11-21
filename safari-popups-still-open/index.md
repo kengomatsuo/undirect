@@ -48,9 +48,9 @@ Apple warns that some pop-up ads draw a fake close button. If you are not sure, 
 
 ## What stops the rest
 
-A content blocker such as 1Blocker, AdGuard or Ghostery stops known ad and tracker addresses from loading. When the pop network's script is on its list, the script never runs and never gets your tap. 1Blocker's own App Store listing states the limit: "not all ads can be blocked", because some sites use techniques Safari content blockers cannot reach.
+Undirect watches the tap. On a site where you switch it on, it removes an invisible layer before your tap lands, puts back a link that changed while you pressed, and lets a new tab open only where your press pointed. If a redirect rides your tap, the tab is sent back and that address is blocked in Safari, so the next try never loads. The list in its popup shows every address the page tried, blocked or not. It costs $1.99 once, with no subscription, for iPhone, iPad and Mac.
 
-Undirect watches the tap. On a site where you switch it on, it removes an invisible layer before your tap lands, puts back a link that changed while you pressed, and lets a new tab open only where your press pointed. If a redirect rides your tap, the tab is sent back and that address is blocked in Safari, so the next try never loads. The list in its popup shows every address the page tried, blocked or not. It costs $1.99 once, with no subscription, and needs iOS 26.2 or macOS 15 or later. It does not block ads or trackers, so it sits beside a content blocker instead of replacing one.
+It pairs with a content blocker such as 1Blocker, AdGuard or Ghostery, which stops known ad and tracker addresses from loading. The two cover different things: 1Blocker's own listing says "not all ads can be blocked", and the ones that get through are the ones Undirect is built for.
 
 [Download on the App Store](https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=llms&mt=8)
 

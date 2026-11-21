@@ -30,14 +30,12 @@ If tabs open on their own with no tap, check the Extensions pane in Safari's set
 
 No setting above stops this one. Browsers allow a window opened in direct response to your tap ( [MDN, Window.open()](https://developer.mozilla.org/en-US/docs/Web/API/Window/open)), since a link that opens in a new tab works the same way. A page that waits for your tap can open its ad tab, and Block Pop-ups lets it through.
 
-It takes a Safari extension. Three are built around tabs:
+It takes a Safari extension that knows where your tap was aimed.
 
-- [Tab Blocker](https://apps.apple.com/us/app/tab-blocker/id6759275389) is free and does nothing until you switch it on for a site; from then on it stops that site opening new tabs. iOS 16 or later.
-- [TabGuard](https://apps.apple.com/us/app/tabguard/id6756740309) is free and has three modes: Block All, Smart Mode, which its listing says allows your clicks and blocks scripts, and Allow All. iOS 17 or later.
-- Undirect lets a new tab open only where your press pointed, so a tab aimed at an ad is stopped even when your own tap set it off. It also removes the invisible layers that catch taps, sends back a redirect that rides one, and lists every address the page tried. It costs $1.99 once and needs iOS 26.2 or macOS 15 or later.
+Undirect lets a new tab open only where your press pointed, so a tab aimed at an ad is stopped even when your own tap set it off, while the links you open in a new tab and sign-in windows still work. It also removes the invisible layers that catch taps, sends back a redirect that rides one, and lists every address the page tried. It costs $1.99 once for iPhone, iPad and Mac.
 
-Tab Blocker and TabGuard cost nothing and run on older iPhones, so if a couple of sites bother you, try one of them first. Undirect is for the tab that comes from a tap you meant for something else, on a site where you still want ordinary links and sign-in windows to work.
+Two free extensions handle tabs more bluntly: [Tab Blocker](https://apps.apple.com/us/app/tab-blocker/id6759275389) stops every new tab on a site you switch it on for, and [TabGuard](https://apps.apple.com/us/app/tabguard/id6756740309) blocks tabs a script opens on its own, while its Smart Mode lets through a tab opened by your click.
 
 [Download on the App Store](https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&ct=llms&mt=8)
 
-All seven options, with prices, are on [Safari pop-up and redirect blockers compared](https://undirect.matsuokengo.com/safari-popup-blockers/). You can also [try Undirect on the demo sites](https://undirect.matsuokengo.com/demo/) before you buy.
+Seven options, with prices, are on [Safari pop-up and redirect blockers compared](https://undirect.matsuokengo.com/safari-popup-blockers/). You can also [try Undirect on the demo sites](https://undirect.matsuokengo.com/demo/) before you buy.
