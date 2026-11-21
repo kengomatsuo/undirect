@@ -1,7 +1,8 @@
 // Builds the @monholtco approval package: every post in a finished version for X, Instagram,
 // TikTok, Threads, Facebook and YouTube, its media under ~/Downloads/social-calendar/P<nn>/,
 // review copies (720 px, ~1.5 Mbps) under ~/Downloads/social-calendar/review/, and one review page
-// written twice: index.html (local) and artifact.html (published as a claude.ai Artifact).
+// written as v3-language-tracks.html (the superseded version 3 page). The calendar the owner reviews is
+// built by deliveries.ts (deliveries.json) and page.ts (artifact.html); this file stays the media builder.
 // Run: bun install && bun build.ts   (needs ffmpeg on PATH)
 // Re-run after the films in ~/Downloads/pain-films-v4 are re-rendered: films are linked, not
 // copied, and the trimmed cuts and App Store captures are made again from the current files.
@@ -742,8 +743,7 @@ async function main() {
     }
   }
   const body = pageBody(dels, issues);
-  writeFileSync(join(OUT, "artifact.html"), body);
-  writeFileSync(join(OUT, "index.html"), `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body>${body}</body></html>`);
+  writeFileSync(join(OUT, "v3-language-tracks.html"), body);
   // text record, one block per delivery, and one prose line per English caption for the scanner
   const rec = dels.map((d) => [`${d.id} · ${d.lang.toUpperCase()} · ${d.plat} · ${fmtWhen(d.t)} · ${localOf(d)}${d.gate ? " · WAITING: " + d.gate : ""}${d.help ? " · helps, no pitch" : ""}`,
     ...d.status.map((s) => `Status: ${s}`), ...d.tests.map((t) => `Test: ${t}`),

@@ -10,13 +10,11 @@ export type LangUnit = { id: string; lang: Lang; app: "Undirect" | "Cutling"; he
 
 // Films that carry the language on screen; the rest are English-text pain films under a native caption.
 export const LOCAL_FILMS: Record<string, string> = {
-  "cut-ja-explainer": "Repositories/cutling-promo/out/explainer-ja-portrait.mp4",
-  "cut-id-explainer": "Repositories/cutling-promo/out/explainer-id-portrait.mp4",
   "und-id-preview": "Repositories/undirect-promo/out/locales/id/iphone.mp4",
 };
 
 export const JA: LangUnit[] = [
-  { id: "J01", lang: "ja", app: "Cutling", film: "cut-ja-explainer", text: "住所を聞かれるたび、メモアプリを開いてコピーして、トークに戻る。カットリングなら、保存した住所をキーボードからワンタップで入れられます。買い切りで、アカウント登録もいりません。", q: "住所を聞かれたとき、どこから探していますか？", yt: "住所をメモから探すのをやめる" },
+  { id: "J01", lang: "ja", app: "Cutling", film: "cutling-address", text: "住所を聞かれるたび、メモアプリを開いてコピーして、トークに戻る。カットリングなら、保存した住所をキーボードからワンタップで入れられます。買い切りで、アカウント登録もいりません。", q: "住所を聞かれたとき、どこから探していますか？", yt: "住所をメモから探すのをやめる" },
   { id: "J02", lang: "ja", app: "Cutling", film: "cutling-email", text: "Wi-Fiのログイン、クーポン、チェックイン。どれもメールアドレスを聞いてきます。カットリングに一度保存すれば、メール欄ではキーボードの先頭に出てきます。", q: "今月、メールアドレスを何回打ちましたか？", yt: "メールアドレスを毎回打たなくていいキーボード" },
   { id: "J03", lang: "ja", app: "Cutling", help: true, text: "iPhoneのユーザ辞書は「設定」→「一般」→「キーボード」→「ユーザ辞書」にあります。よく打つ住所やあいさつの「よみ」を短くしておくと、変換候補からすぐに出せます。", q: "ユーザ辞書に何を登録していますか？" },
   { id: "J04", lang: "ja", app: "Undirect", film: "u1", text: "動画の再生ボタンを押すたびに、広告のタブが開く。押した場所の上に、見えない層が重ねてあるからです。Undirectはその層を外して、再生ボタンだけが反応するようにします。", q: "再生ボタンで、どんなページに飛ばされましたか？", yt: "再生ボタンを押すたびに広告タブが開く" },
@@ -35,7 +33,7 @@ export const JA: LangUnit[] = [
   { id: "J17", lang: "ja", app: "Undirect", film: "Quiz", text: "ダウンロードボタンが3つ。本物はひとつだけです。Undirectをオンにすると、偽物を押しても何も起きず、本物だけがダウンロードされます。", q: "どれが本物だと思いましたか？", yt: "本物のダウンロードボタンはどれ？" },
   { id: "J18", lang: "ja", app: "Cutling", film: "cutling-email-short", text: "フォームが7つあれば、メールアドレスを7回打つことになります。カットリングならメール欄でワンタップなので、7つでも7タップで終わります。", q: "メールアドレス、何で入力していますか？", yt: "7つのフォームを7タップで" },
   { id: "J19", lang: "ja", app: "Undirect", film: "AdPov", text: "無料動画サイトの広告の目線で見ると、こうなります。再生が押されるたびに新しいタブ。Undirectがオンになったら、何も届かなくなりました。", q: "いちばんしつこかった広告はどれですか？", yt: "広告の目線で見た無料動画サイト" },
-  { id: "J20", lang: "ja", app: "Cutling", film: "cut-ja-explainer", text: "キーボードの追加は、設定で一回だけ。あとは地球儀キーでカットリングに切り替えて、保存した文章をタップするだけです。", q: "キーボードアプリ、いくつ入れていますか？", yt: "キーボードを追加するのは一回だけ" },
+  { id: "J20", lang: "ja", app: "Cutling", film: "cutling-address-short", text: "キーボードの追加は、設定で一回だけ。あとは地球儀キーでカットリングに切り替えて、保存した文章をタップするだけです。", q: "キーボードアプリ、いくつ入れていますか？", yt: "キーボードを追加するのは一回だけ" },
   { id: "J21", lang: "ja", app: "Undirect", help: true, text: "XやInstagramでリンクを開いたときのアプリ内ブラウザと、ホーム画面に追加したWebアプリでは、Safariの拡張機能は動きません。広告のタブが気になるサイトは、Safariで開いてください。", q: "リンクは、アプリ内とSafariのどちらで開いていますか？" },
   { id: "J22", lang: "ja", app: "Cutling", film: "cutling-mac-history-short", text: "Windowsから来て、Win+Vがなくて困っている人へ。カットリングのMacアプリなら、⇧⌘Vでコピー履歴を開けます。", q: "Windowsから来て、恋しい機能は何ですか？", yt: "MacでWin+Vの代わりに⇧⌘V" },
   { id: "J23", lang: "ja", app: "Undirect", film: "Dad", text: "「スマホにウイルスが12個あるって出た」と父からまた連絡。原因はいつもの無料動画サイトでした。父のiPhoneにUndirectを入れてそのサイトでオンにしたら、動画がそのまま再生されるようになりました。", q: "家族のスマホの面倒、誰が見ていますか？", yt: "父のiPhoneの「ウイルス」騒ぎ" },
@@ -52,7 +50,7 @@ export const JA: LangUnit[] = [
 ];
 
 export const ID: LangUnit[] = [
-  { id: "I01", lang: "id", app: "Cutling", film: "cut-id-explainer", text: "Tiap ada yang nanya alamat, kamu buka Notes, cari, salin, terus balik lagi ke chat. Simpan sekali di Cutling, nanti tinggal tap dari keyboard. Bayar sekali, nggak perlu bikin akun.", yt: "Berhenti bolak-balik ke Notes buat nyalin alamat" },
+  { id: "I01", lang: "id", app: "Cutling", film: "cutling-address", text: "Tiap ada yang nanya alamat, kamu buka Notes, cari, salin, terus balik lagi ke chat. Simpan sekali di Cutling, nanti tinggal tap dari keyboard. Bayar sekali, nggak perlu bikin akun.", yt: "Berhenti bolak-balik ke Notes buat nyalin alamat" },
   { id: "I02", lang: "id", app: "Undirect", film: "und-id-preview", text: "Mau pencet play, malah ke situs nggak jelas. Ada lapisan tersembunyi yang ngambil klikmu. Undirect buang lapisan itu, jadi yang kepencet tombol yang kamu mau.", yt: "Pencet play malah ke situs nggak jelas" },
   { id: "I03", lang: "id", app: "Cutling", film: "cutling-address", text: "Ngetik alamat lagi di tiap form checkout. Di video ini, ngetik makan 14 detik, pakai Cutling cuma sedetik.", yt: "14 detik ngetik alamat vs 1 tap" },
   { id: "I04", lang: "id", app: "Undirect", film: "u2", text: "Pencet Download, yang muncul malah halaman download palsu, terus pop-up langganan kalender. Nyalain Undirect buat situs itu, kamu tetap di halaman.", yt: "Tombol download yang ternyata palsu" },
@@ -66,7 +64,7 @@ export const ID: LangUnit[] = [
   { id: "I12", lang: "id", app: "Undirect", film: "Quiz", text: "Tiga tombol Download, cuma satu yang asli. Dengan Undirect nyala, yang palsu nggak ke mana-mana.", yt: "Mana tombol download yang asli?" },
   { id: "I13", lang: "id", app: "Cutling", film: "cutling-address-field", text: "Di video ini, alamat yang sama diketik 214 kali setahun. Simpan alamatmu sekali di Cutling, terus tinggal tap di form mana aja.", yt: "Alamat yang sama diketik 214 kali" },
   { id: "I14", lang: "id", app: "Undirect", film: "und-id-preview", text: "Link-nya diubah setelah kamu pencet? Undirect balikin ke yang benar, dan alamat yang dicoba tercatat di daftarnya.", yt: "Link diubah setelah dipencet" },
-  { id: "I15", lang: "id", app: "Cutling", film: "cut-id-explainer", text: "Keyboard-nya cukup ditambah sekali di Pengaturan. Habis itu pindah ke Cutling lewat tombol bola dunia, terus tap teks yang sudah kamu simpan.", yt: "Pasang keyboard Cutling sekali aja" },
+  { id: "I15", lang: "id", app: "Cutling", film: "cutling-address-short", text: "Keyboard-nya cukup ditambah sekali di Pengaturan. Habis itu pindah ke Cutling lewat tombol bola dunia, terus tap teks yang sudah kamu simpan.", yt: "Pasang keyboard Cutling sekali aja" },
   { id: "I16", lang: "id", app: "Undirect", film: "AdPov", text: "POV: kamu iklannya di situs film gratis. Tiap mereka pencet play, kamu buka tab baru. Begitu Undirect nyala, nggak ada yang nyampe.", yt: "POV: kamu iklan di situs film gratis" },
   { id: "I17", lang: "id", app: "Cutling", film: "cutling-mac-history", text: "Di Mac, salin hal kedua dan yang pertama hilang. Riwayat salinan Cutling untuk Mac masih nyimpen, dan password yang ditandai pengelola password nggak ikut tersimpan.", yt: "Salinan di Mac hilang? Ada riwayatnya" },
 ];
