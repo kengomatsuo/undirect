@@ -91,6 +91,9 @@
   .tides { margin-top: 36px; }
   .tides li { display: grid; grid-template-columns: 1fr 56px 52px; padding: 11px 0; border-bottom: 1px solid var(--rule); font: 500 14px/20px var(--sans); color: var(--soft); }
   .tides b { font-weight: 600; color: var(--ink); text-align: right; }
+  .opinion { margin-top: 36px; }
+  .opinion li { padding: 13px 0 14px; border-bottom: 1px solid var(--rule); font: italic 18px/23px var(--serif); }
+  .opinion small { display: block; font: 600 13px/18px var(--sans); color: var(--accent); margin-bottom: 3px; }
 
   /* More stories */
   .more { margin-top: 48px; padding-bottom: 56px; }
@@ -155,14 +158,14 @@
   @media (min-width: 1080px) {
     .cols { display: grid; grid-template-columns: minmax(0, 760px) 300px; justify-content: space-between; }
     .rail { display: block; margin-top: 8px; }
-    .weather, .tides { margin-top: 40px; }
+    .weather, .tides, .opinion { margin-top: 40px; }
   }
 </style>
 </head>
 <body>
 <header class="mast">
   <div class="wrap mast-row">
-    <div><div class="menu"></div><p class="edition">Morning edition</p></div>
+    <div><div class="menu" aria-hidden="true"></div><p class="edition">Morning edition</p></div>
     <div class="plate"><svg viewBox="0 0 24 48" aria-hidden="true"><path class="n" d="M12 0l12 24H0z"/><path class="s" d="M12 48L0 24h24z"/></svg>Northwind Daily</div>
     <div class="mast-end"><span class="signin">Sign in</span><span class="subscribe">Subscribe</span></div>
   </div>
@@ -261,6 +264,14 @@
             <li>High water<span>06:12</span><b>4.8 m</b></li>
             <li>Low water<span>12:31</span><b>0.9 m</b></li>
             <li>High water<span>18:40</span><b>4.6 m</b></li>
+          </ul>
+        </section>
+        <section class="opinion">
+          <h2>Opinion</h2>
+          <ul>
+            <li><small>Hester Vane</small>The wall held for ninety years. We should ask what changed</li>
+            <li><small>Joss Tiernan</small>A harbour is a workplace first and a postcard second</li>
+            <li><small>Editorial</small>Free parking is a small price for a hard winter on the front</li>
           </ul>
         </section>
         </div>

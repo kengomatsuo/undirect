@@ -37,7 +37,7 @@
   .signin { margin-left: auto; font: 600 14px/32px var(--sans); padding: 0 14px; border-radius: 16px; background: var(--ink); color: var(--surface); }
 
   /* Player */
-  .player { container-type: inline-size; position: relative; display: block; width: calc(100% + var(--gutter) * 2); margin: 0 calc(var(--gutter) * -1); aspect-ratio: 16 / 9; overflow: hidden; border: 0; padding: 0; background: #141a26; color: #fff; font: inherit; text-align: left; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .player { container-type: inline-size; position: relative; display: block; width: calc(100% + var(--gutter) * 2); margin: 0 calc(var(--gutter) * -1); aspect-ratio: 16 / 9; overflow: hidden; -webkit-appearance: none; appearance: none; border: 0; border-radius: 0; padding: 0; background: #141a26; color: #fff; font: inherit; text-align: left; cursor: pointer; -webkit-tap-highlight-color: transparent; }
   .player:focus-visible { outline: 3px solid var(--brand); outline-offset: 2px; }
   .player img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   .player .dim { position: absolute; inset: 0; background: rgba(8, 11, 16, .34); transition: opacity .2s; }
@@ -48,9 +48,9 @@
   .bug .s { background: #fff; color: #0d1119; min-width: 1.5em; text-align: center; padding: 0 .3em; }
   .bug .s + .s { box-shadow: inset 1px 0 #c9ced6; }
   .bug .clock { margin-left: .3em; background: #34d17c; color: #0d1119; min-width: 3.3em; text-align: center; font-variant-numeric: tabular-nums; }
-  .tag { display: inline-flex; align-items: center; gap: 6px; background: var(--live); color: #fff; font: 700 12px/20px var(--sans); letter-spacing: .06em; text-transform: uppercase; padding: 0 7px; border-radius: 3px; }
+  .tag { display: inline-flex; align-items: center; gap: 6px; background: #d91f2b; color: #fff; font: 700 12px/20px var(--sans); letter-spacing: .06em; text-transform: uppercase; padding: 0 7px; border-radius: 3px; }
   .tag::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: #fff; }
-  .player .tag { position: absolute; right: 3cqw; top: 3cqw; background: #e0252f; }
+  .player .tag { position: absolute; right: 3cqw; top: 3cqw; }
   .play { position: absolute; left: 50%; top: 50%; width: clamp(60px, 9cqw, 92px); aspect-ratio: 1; margin: calc(clamp(60px, 9cqw, 92px) / -2); border-radius: 50%; background: #fff; outline: 6px solid rgba(8, 11, 16, .35); display: grid; place-items: center; transition: transform .12s, opacity .2s; }
   .play svg { width: 40%; margin-left: 8%; fill: #0d1119; }
   .player:active .play { transform: scale(.96); }
@@ -78,7 +78,7 @@
   .team svg { width: 52px; height: 60px; margin: 0 auto 8px; }
   .team b { font: 600 16px/20px var(--sans); }
   .tally { font: 700 60px/52px var(--num); letter-spacing: .02em; padding-top: 8px; white-space: nowrap; }
-  .tally i { font-style: normal; color: var(--soft); padding: 0 .12em; }
+  .tally i { display: inline-block; width: .3em; height: .09em; margin: 0 .22em; vertical-align: .3em; background: var(--soft); }
   .min { grid-column: 1 / -1; margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--rule); font: 500 14px/20px var(--sans); color: var(--soft); }
   .min b { color: var(--live); font-weight: 700; margin-right: 6px; }
   .min b::before { content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--live); margin-right: 6px; vertical-align: 1px; }
@@ -101,6 +101,7 @@
   .next ul { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 12px; }
   .tile .pic { position: relative; aspect-ratio: 16 / 9; border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center; gap: 10%; background: linear-gradient(112deg, var(--a) 50%, var(--b) 0); }
   .tile .pic svg { width: 24%; }
+  .tile text { font: 700 28px var(--cond); text-anchor: middle; }
   .tile .pic .tag, .tile .pic .at { position: absolute; left: 8px; top: 8px; }
   .tile .at { background: rgba(8, 11, 16, .82); color: #fff; font: 600 12px/20px var(--sans); padding: 0 7px; border-radius: 3px; }
   .tile b { display: block; font: 600 15px/20px var(--sans); margin-top: 8px; }
@@ -124,7 +125,7 @@
     .logo span { font-size: 19px; line-height: 26px; }
     .bar ul { display: flex; gap: 28px; margin-left: 44px; font: 600 15px/64px var(--sans); color: var(--soft); }
     .bar .on { color: var(--ink); box-shadow: inset 0 -3px var(--brand); }
-    main { padding-top: 24px; }
+    main.wrap { padding-top: 24px; }
     .player { width: 100%; margin: 0; border-radius: 12px; }
     .info { padding: 20px 0 28px; }
     h1 { font-size: 38px; line-height: 42px; }
@@ -181,8 +182,8 @@
     <section class="card">
       <div class="score">
         <div class="team"><svg viewBox="0 0 52 60" aria-hidden="true"><use href="#shield" fill="#f2b632"/><path d="M12 22l14 8 14-8-14 22z" fill="#16233b"/><circle cx="26" cy="15" r="4" fill="#16233b"/></svg><b>Kestrels</b></div>
-        <p class="tally">1<i>:</i>0</p>
-        <div class="team"><svg viewBox="0 0 52 60" aria-hidden="true"><use href="#shield" fill="#1a2233"/><path d="M12 18h28v6h-8c0 6 2 9 6 11v5H14v-5c4-2 6-5 6-11h-8z" fill="#f3f7f2"/></svg><b>Ironworks</b></div>
+        <p class="tally" aria-label="1, 0">1<i></i>0</p>
+        <div class="team"><svg viewBox="0 0 52 60" aria-hidden="true"><use href="#shield" fill="#1a2233" stroke="#6f7f9c" stroke-width="2"/><path d="M12 18h28v6h-8c0 6 2 9 6 11v5H14v-5c4-2 6-5 6-11h-8z" fill="#f3f7f2"/></svg><b>Ironworks</b></div>
         <p class="min"><b id="minute">64′</b>Second half</p>
       </div>
     </section>
@@ -210,10 +211,10 @@
   <section class="next">
     <h2>Also live and up next</h2>
     <ul>
-      <li class="tile"><div class="pic" style="--a:#b7433a;--b:#f3f7f2"><svg viewBox="0 0 52 60"><use href="#shield" fill="#f3f7f2"/></svg><svg viewBox="0 0 52 60"><use href="#shield" fill="#16345c"/></svg><span class="tag">Live</span></div><b>Harriers v Foundry</b><small>First Division, 31′</small></li>
-      <li class="tile"><div class="pic" style="--a:#16345c;--b:#39c6b4"><svg viewBox="0 0 52 60"><use href="#shield" fill="#39c6b4"/></svg><svg viewBox="0 0 52 60"><use href="#shield" fill="#0d1119"/></svg><span class="at">21:00</span></div><b>Otters v Lanterns</b><small>First Division</small></li>
-      <li class="tile"><div class="pic" style="--a:#0d1119;--b:#f2b632"><svg viewBox="0 0 52 60"><use href="#shield" fill="#f3f7f2"/></svg><svg viewBox="0 0 52 60"><use href="#shield" fill="#0d1119"/></svg><span class="at">Sat 12:30</span></div><b>Magpies v Hornets</b><small>Cup, quarter-final</small></li>
-      <li class="tile"><div class="pic" style="--a:#5a2a82;--b:#e8e2d3"><svg viewBox="0 0 52 60"><use href="#shield" fill="#e8e2d3"/></svg><svg viewBox="0 0 52 60"><use href="#shield" fill="#b7433a"/></svg><span class="at">Sat 15:00</span></div><b>Wrens v Colliers</b><small>First Division</small></li>
+      <li class="tile"><div class="pic" style="--a:#b7433a;--b:#f3f7f2"><svg viewBox="0 0 52 60"><use href="#shield" fill="#f3f7f2"/><text x="26" y="39" fill="#b7433a">H</text></svg><svg viewBox="0 0 52 60"><use href="#shield" fill="#16345c"/><text x="26" y="39" fill="#f3f7f2">F</text></svg><span class="tag">Live</span></div><b>Harriers v Foundry</b><small>First Division, 31′</small></li>
+      <li class="tile"><div class="pic" style="--a:#16345c;--b:#39c6b4"><svg viewBox="0 0 52 60"><use href="#shield" fill="#39c6b4"/><text x="26" y="39" fill="#16345c">O</text></svg><svg viewBox="0 0 52 60"><use href="#shield" fill="#0d1119"/><text x="26" y="39" fill="#39c6b4">L</text></svg><span class="at">21:00</span></div><b>Otters v Lanterns</b><small>First Division</small></li>
+      <li class="tile"><div class="pic" style="--a:#0d1119;--b:#f2b632"><svg viewBox="0 0 52 60"><use href="#shield" fill="#f3f7f2"/><text x="26" y="39" fill="#0d1119">M</text></svg><svg viewBox="0 0 52 60"><use href="#shield" fill="#0d1119"/><text x="26" y="39" fill="#f2b632">H</text></svg><span class="at">Sat 12:30</span></div><b>Magpies v Hornets</b><small>Cup, quarter-final</small></li>
+      <li class="tile"><div class="pic" style="--a:#5a2a82;--b:#e8e2d3"><svg viewBox="0 0 52 60"><use href="#shield" fill="#e8e2d3"/><text x="26" y="39" fill="#5a2a82">W</text></svg><svg viewBox="0 0 52 60"><use href="#shield" fill="#b7433a"/><text x="26" y="39" fill="#f3f7f2">C</text></svg><span class="at">Sat 15:00</span></div><b>Wrens v Colliers</b><small>First Division</small></li>
     </ul>
   </section>
 </main>
