@@ -142,8 +142,8 @@ def popups_still_open(price, badge):
 <section><h2>How to close one safely</h2>
 <p>Apple warns that some pop-up ads draw a fake close button. If you are not sure, leave the ad alone and close the tab, or type a new address in the search field and go somewhere else. On iPhone, tap the top of the screen if the search field has gone.</p></section>
 <section><h2>What stops the rest</h2>
-<p>A content blocker such as 1Blocker, AdGuard or Ghostery stops known ad and tracker addresses from loading. When the pop network's script is on its list, the script never runs and never gets your tap. 1Blocker's own App Store listing states the limit: "not all ads can be blocked", because some sites use techniques Safari content blockers cannot reach.</p>
-<p>Undirect watches the tap. On a site where you switch it on, it removes an invisible layer before your tap lands, puts back a link that changed while you pressed, and lets a new tab open only where your press pointed. If a redirect rides your tap, the tab is sent back and that address is blocked in Safari, so the next try never loads. The list in its popup shows every address the page tried, blocked or not. It costs {cost(price)}, with no subscription, and needs iOS 26.2 or macOS 15 or later. It does not block ads or trackers, so it sits beside a content blocker instead of replacing one.</p>
+<p>Undirect watches the tap. On a site where you switch it on, it removes an invisible layer before your tap lands, puts back a link that changed while you pressed, and lets a new tab open only where your press pointed. If a redirect rides your tap, the tab is sent back and that address is blocked in Safari, so the next try never loads. The list in its popup shows every address the page tried, blocked or not. It costs {cost(price)}, with no subscription, for iPhone, iPad and Mac.</p>
+<p>It pairs with a content blocker such as 1Blocker, AdGuard or Ghostery, which stops known ad and tracker addresses from loading. The two cover different things: 1Blocker's own listing says "not all ads can be blocked", and the ones that get through are the ones Undirect is built for.</p>
 <div class="cta-row">{badge}</div>
 <p>Compare <a href="/safari-popup-blockers/">seven pop-up and redirect blockers with prices</a>, or <a href="/demo/">try Undirect on the demo sites</a>, made-up pages that misbehave on purpose.</p></section>""",
     }
@@ -171,124 +171,114 @@ def stop_new_tabs(price, badge):
 <p>If tabs open on their own with no tap, check the Extensions pane in Safari's settings and the Applications folder for anything you did not install, and update macOS, which removes known malware when it restarts. To open Safari without last session's tabs, quit it and hold Shift while you open it again. Sources: {ext(MAC_POPUPS, "Allow or block pop-ups")}, {ext(MAC_TABS, "Change Tabs settings")} and {ext(SAFARI_ARTICLE, "Block pop-up ads and windows in Safari")}, Apple, read {READ}.</p></section>
 <section><h2>Tabs a page opens when you tap</h2>
 <p>No setting above stops this one. Browsers allow a window opened in direct response to your tap ({ext(MDN_OPEN, "MDN, Window.open()")}), since a link that opens in a new tab works the same way. A page that waits for your tap can open its ad tab, and Block Pop-ups lets it through.</p>
-<p>It takes a Safari extension. Three are built around tabs:</p>
-<ul>
-<li>{ext(TAB_BLOCKER, "Tab Blocker")} is free and does nothing until you switch it on for a site; from then on it stops that site opening new tabs. iOS 16 or later.</li>
-<li>{ext(TABGUARD, "TabGuard")} is free and has three modes: Block All, Smart Mode, which its listing says allows your clicks and blocks scripts, and Allow All. iOS 17 or later.</li>
-<li>Undirect lets a new tab open only where your press pointed, so a tab aimed at an ad is stopped even when your own tap set it off. It also removes the invisible layers that catch taps, sends back a redirect that rides one, and lists every address the page tried. It costs {cost(price)} and needs iOS 26.2 or macOS 15 or later.</li>
-</ul>
-<p>Tab Blocker and TabGuard cost nothing and run on older iPhones, so if a couple of sites bother you, try one of them first. Undirect is for the tab that comes from a tap you meant for something else, on a site where you still want ordinary links and sign-in windows to work.</p>
+<p>It takes a Safari extension that knows where your tap was aimed.</p>
+<p>Undirect lets a new tab open only where your press pointed, so a tab aimed at an ad is stopped even when your own tap set it off, while the links you open in a new tab and sign-in windows still work. It also removes the invisible layers that catch taps, sends back a redirect that rides one, and lists every address the page tried. It costs {cost(price)} for iPhone, iPad and Mac.</p>
+<p>Two free extensions handle tabs more bluntly: {ext(TAB_BLOCKER, "Tab Blocker")} stops every new tab on a site you switch it on for, and {ext(TABGUARD, "TabGuard")} blocks tabs a script opens on its own, while its Smart Mode lets through a tab opened by your click.</p>
 <div class="cta-row">{badge}</div>
-<p>All seven options, with prices, are on <a href="/safari-popup-blockers/">Safari pop-up and redirect blockers compared</a>. You can also <a href="/demo/">try Undirect on the demo sites</a> before you buy.</p></section>""",
+<p>Seven options, with prices, are on <a href="/safari-popup-blockers/">Safari pop-up and redirect blockers compared</a>. You can also <a href="/demo/">try Undirect on the demo sites</a> before you buy.</p></section>""",
     }
 
 
 def blockers_compared(price, badge):
     undirect_price = cost(price).capitalize() if price else "Paid once"
-    overview = table(["Price", "What its listing says it blocks", "Runs on", "Ratings"], [
-        ('<a href="#safari">Safari\'s own settings</a>', "Free, built in",
-         "Pop-up windows a page opens without a tap; warns about fraudulent websites", "iPhone, iPad, Mac", "Part of Safari"),
-        ('<a href="#1blocker">1Blocker</a>', "Free for one category; Premium $2.99 a month, $14.99 a year or $39.99 once",
-         "Ads, trackers, annoyances such as cookie notices and chat pop-ups, adult sites", "iOS 16, macOS 13, visionOS", "13,137, average 4.5"),
-        ('<a href="#adguard">AdGuard</a>', "Free; Pro sold in the app, from $1.99",
-         "Banners, pop-ups, autoplay videos and ads, YouTube included; trackers; DNS filtering beyond Safari",
-         "iOS 15; Mac through AdGuard Mini, a separate app", "20,537, average 4.4"),
-        ('<a href="#ghostery">Ghostery</a>', "Free; optional contributions",
-         "Ads and pop-ups, YouTube and Facebook included; trackers; cookie consent pop-ups", "iOS 18.7, macOS 14.6", "214, average 4.3"),
-        ('<a href="#tabguard">TabGuard</a>', "Free",
-         "Pop-up windows, links that force a new tab, pop-unders, redirect tricks", "iOS 17", "2, average 3.0"),
-        ('<a href="#tab-blocker">Tab Blocker</a>', "Free",
-         "New tabs, on the sites you switch it on for", "iOS 16", "6, average 3.7"),
-        ('<a href="#undirect">Undirect</a> (ours)', undirect_price,
-         "Invisible layers that catch a tap, links rewritten mid-tap, tabs and windows you did not ask for, redirects that ride your tap",
-         "iOS 26.2, macOS 15", "None yet"),
+    overview = table(["Best for", "Price", "How it works", "Runs on"], [
+        ('<a href="#undirect">Undirect</a> (ours)', "Taps that land on ad pages, links that change under your finger, tabs you did not open",
+         f"{undirect_price}, one purchase for iPhone, iPad and Mac",
+         "Watches each tap and lets the page go only where you pressed", "iPhone, iPad, Mac"),
+        ('<a href="#1blocker">1Blocker</a>', "Ads, trackers and cookie notices",
+         "Free for one category; Premium $2.99 a month, $14.99 a year or $39.99 once",
+         "Filter lists of known ad and tracker addresses", "iPhone, iPad, Mac, Vision Pro"),
+        ('<a href="#adguard">AdGuard</a>', "Ads, including YouTube, and filtering beyond Safari",
+         "Free; Pro sold in the app", "Filter lists, plus DNS filtering for other apps", "iPhone, iPad; Mac through AdGuard Mini"),
+        ('<a href="#ghostery">Ghostery</a>', "Seeing who tracks you on each site",
+         "Free; optional contributions", "Filter lists and tracker reports", "iPhone, iPad, Mac"),
+        ('<a href="#tabguard">TabGuard</a>', "Tabs a script opens on its own", "Free", "Blocks new tabs and windows by mode", "iPhone, iPad"),
+        ('<a href="#tab-blocker">Tab Blocker</a>', "A site where you never want a new tab", "Free", "One switch per site that stops all new tabs", "iPhone, iPad"),
+        ('<a href="#safari">Safari\'s own settings</a>', "Windows a page opens with no tap at all", "Free, built in",
+         "Blocks a window that was not opened by your tap", "iPhone, iPad, Mac"),
     ], first_col="Option")
     return {
-        "title": "7 Safari pop-up and redirect blockers compared, with prices",
-        "description": f"Safari's own settings, 1Blocker, AdGuard, Ghostery, TabGuard, Tab Blocker and Undirect: price, what each blocks and where each is the better pick, from App Store listings read {READ}.",
+        "title": "Safari pop-up and redirect blockers compared, with prices",
+        "description": f"Undirect, 1Blocker, AdGuard, Ghostery, TabGuard, Tab Blocker and Safari's own settings: what each stops, what it costs and which fits the problem you have, from App Store listings read {READ}.",
         "h1": "Safari pop-up and redirect blockers compared",
-        "sub": f"Seven ways to stop pages opening ads, tabs and redirects in Safari on iPhone, iPad and Mac. We make Undirect, one of the seven, so every fact about the others comes from Apple's pages or the app's own App Store listing, read on {READ}, and each entry says where it beats Undirect.",
+        "sub": "Most ad pages that get past Safari today ride on a tap you made. Here are seven tools, what each one actually stops, and which to use for the problem you have.",
         "wide": True,
         "body": f"""{overview}
-<section><p>Prices and ratings are what each App Store listing showed in dollars on {READ}. They differ from one country's store to another and they change, so check the listing before you buy. We have not run the six others side by side on the same pages; this is what their makers say they do.</p></section>
 <section><h2>Which one fits</h2>
 <ul>
-<li>If ads, banners, trackers or cookie notices are the problem, use a content blocker: 1Blocker, AdGuard or Ghostery. All three are free to start.</li>
-<li>If sites keep opening new tabs, start with a free tab blocker, TabGuard or Tab Blocker, or use Undirect.</li>
-<li>If your taps land on ad pages through a layer you cannot see, or links change under your finger, use Undirect. Of the seven listings, it is the only one that says it removes an invisible layer before your tap lands and puts back a link rewritten mid-tap.</li>
-<li>If you want nothing installed, turn on Safari's own settings, which stop pop-up windows a page opens without a tap.</li>
+<li>Your tap lands on an ad page, a tab opens behind the one you are reading, or a link takes you somewhere it did not say: Undirect. Of the seven listings, it is the only one that says it removes an invisible layer before your tap lands and puts back a link rewritten mid-tap.</li>
+<li>Banners, video ads, trackers or cookie notices are what bother you: a content blocker, 1Blocker, AdGuard or Ghostery.</li>
+<li>One site opens tabs you never want, and you are happy to lose its new-tab links too: Tab Blocker.</li>
 </ul>
-<p>A content blocker and a tab or tap guard do different jobs, so you can run one of each.</p></section>
-<section id="safari"><h2>Safari's own settings</h2>
-<p>Block Pop-ups on iPhone and iPad (Settings, Apps, Safari) and Pop-up Windows on a Mac (Safari, Settings, Websites) stop windows a page opens without your tap. On a Mac you set it per website: Allow, Block, or Block and Notify. Fraudulent Website Warning warns you when you visit a fraudulent site. Apple's {ext(SAFARI_ARTICLE, "pop-up article")} also tells you to close a tab instead of tapping a close button that may be fake.</p>
-<h3>Where it beats Undirect</h3>
-<p>It costs nothing and is already installed. Block and Notify on a Mac lets you open a pop-up you wanted from the address bar.</p>
-<p>A window opened on your tap counts as one you asked for, so it gets through; <a href="/safari-popups-still-open/">why Safari still opens ads with Block Pop-ups on</a> explains how pages use that.</p></section>
-<section id="1blocker"><h2>1Blocker</h2>
-<p>1Blocker is a content blocker for iPhone, iPad, Mac and Apple Vision Pro, made since 2015. It gives Safari filter lists for ads, more than 50,000 trackers, annoyances such as cookie notices, marketing widgets and chat pop-ups, and adult sites, and Safari does the blocking; the listing says the app has no access to web pages. It is free with one category on at a time, such as Block Ads. Premium, which adds custom rules, costs $2.99 a month, $14.99 a year or $39.99 once, and one purchase covers every device ({ext(ONEBLOCKER, "App Store")}, {ext(ONEBLOCKER_SITE, "1blocker.com")}).</p>
-<h3>Where it beats Undirect</h3>
-<p>It blocks ads and trackers, which Undirect leaves alone, it is free to start, it runs on iOS 16, and it has 13,137 ratings averaging 4.5. Its listing is open about its limit: "not all ads can be blocked", because some sites use techniques Safari content blockers cannot reach. <a href="/compare/#1blocker">Undirect vs 1Blocker</a> goes further.</p></section>
-<section id="adguard"><h2>AdGuard</h2>
-<p>AdGuard Ad Blocker for Safari is a content blocker for iPhone and iPad with more than 50 filter lists to choose from, and its DNS filtering also blocks requests outside Safari. Its listing names banners, pop-ups, autoplay videos and ads, YouTube included, plus tracking scripts. Safari blocking is free with no account; Pro adds advanced YouTube blocking, DNS protection for apps, custom rules and security filters, with a 7-day trial, and the listing shows purchases from $1.99 to $65.99. On a Mac it is a separate app, {ext(ADGUARD_MINI, "AdGuard Mini")}, also free with a Pro upgrade ({ext(ADGUARD, "App Store")}, {ext(ADGUARD_SITE, "adguard.com")}).</p>
-<h3>Where it beats Undirect</h3>
-<p>Free ad and tracker blocking, filtering in other apps through DNS, support back to iOS 15, open source code, and 20,537 ratings averaging 4.4. <a href="/compare/#adguard">Undirect vs AdGuard</a> goes further.</p></section>
-<section id="ghostery"><h2>Ghostery</h2>
-<p>Ghostery's Safari app, Ghostery AdBlocker for Privacy, runs on iPhone, iPad and Mac. Its listing says it blocks ads and pop-ups on all websites, YouTube and Facebook included, stops trackers, removes cookie consent pop-ups by itself and shows which trackers each site runs. It is free and open source; the in-app purchases are optional contributions ({ext(GHOSTERY, "App Store")}).</p>
-<h3>Where it beats Undirect</h3>
-<p>It is free, it clears cookie consent pop-ups, which Undirect does not touch, and it shows you who is tracking you on each site. It needs iOS 18.7 or macOS 14.6 and has 214 ratings averaging 4.3.</p></section>
-<section id="tabguard"><h2>TabGuard</h2>
-<p>TabGuard is a Safari extension built for tabs. Its listing says it blocks pop-up windows opened with <code>window.open()</code>, links that force a new tab, pop-unders and "sneaky redirect tricks". It has three modes: Block All; Smart Mode, which allows your clicks and blocks tabs a script opens; and Allow All. You can allow or block single sites, and it shows a notice on the page and keeps a history of what it blocked. Everything runs on the device ({ext(TABGUARD, "App Store")}).</p>
-<h3>Where it beats Undirect</h3>
-<p>It is free and runs on iOS 17. Block All stops every new tab a site tries, which suits a site where you never want one. It is at version 1.0 from December 2025, in English only, with 2 ratings averaging 3.0.</p></section>
-<section id="tab-blocker"><h2>Tab Blocker</h2>
-<p>Tab Blocker stops websites opening new tabs in Safari on the sites you switch it on for, and does nothing elsewhere. You turn it on from its button in Safari and reload the page. No servers, accounts or analytics ({ext(TAB_BLOCKER, "App Store")}).</p>
-<h3>Where it beats Undirect</h3>
-<p>It is free, runs on iOS 16, and has one switch per site with nothing else to learn. It is at version 1.0 from March 2026, with 6 ratings averaging 3.7.</p></section>
+<p>A content blocker and Undirect do different jobs, so most people who are tired of ad pages run one of each. Safari's own settings are free and worth switching on whatever else you use.</p></section>
 <section id="undirect"><h2>Undirect</h2>
-<p>This is the one we make, a Safari extension for iPhone, iPad and Mac that stops a page taking your tap. On a site where you switch it on, it removes an invisible layer before your tap lands, puts back a link rewritten between the press and the release, and lets a new tab open only where your press pointed. A window opens when a site asks for one at a size and its address leads back to the page, the way a sign-in does. If a redirect rides your tap, the tab is sent back and the address is blocked in Safari's content blocking, so the next attempt never loads.</p>
-<p>The popup lists every address the page tried, blocked or not, and you can allow or block each one on that site or everywhere. It costs {cost(price)}, with no subscription or in-app purchase, and one purchase covers iPhone, iPad and Mac. It runs without an account, analytics or a server, and the {ext(SOURCE, "source code")} is public.</p>
+<p>We make Undirect, a Safari extension for iPhone, iPad and Mac built for the ad pages that come in through your own tap. On a site where you switch it on, it removes an invisible layer before your tap lands, puts back a link rewritten between the press and the release, and lets a new tab open only where your press pointed. Sign-in windows still open, because a window that asks for a size and leads back to the page is let through.</p>
+<p>If a redirect rides your tap, the tab is sent back and that address is blocked in Safari, so the next attempt never loads. The popup lists every address the page tried, blocked or not, and you can allow or block each one on that site or everywhere.</p>
+<p>It costs {cost(price)}: no subscription, no in-app purchase, and one purchase covers iPhone, iPad and Mac. It runs without an account, analytics or a server, and the {ext(SOURCE, "source code")} is public. It runs on iOS 26.2 and macOS 15 or later, and it works beside whatever content blocker you already use.</p>
 <div class="cta-row">{badge}</div>
-<h3>Where the others beat it</h3>
-<p>It does not block ads, trackers or cookie notices. It costs money where the others are free to start. It needs iOS 26.2 or macOS 15, newer than any other entry here, and it is too new to have ratings. It judges a trip off the site by the tap behind it, so a page that redirects as it loads, with no tap at all, is left alone unless you have blocked that address. You can <a href="/demo/">try it on the demo sites</a> before you decide.</p></section>
+<p>You can <a href="/demo/">try it on the demo sites</a>, made-up pages that misbehave on purpose.</p></section>
+<section><h2>Why pay when blockers are free</h2>
+<p>The free tools here are good at what they target. Content blockers stop addresses that are on a list, and Safari stops windows a page opens with no tap. The pop networks we studied wait for a real press and spend it on their own tab, which is the one case neither of those checks ({ext(MDN_OPEN, "MDN: a window opened in response to user input is allowed")}). Undirect is built for that case, it costs {cost(price)} for every device you own, and you never pay again.</p></section>
+<section id="1blocker"><h2>1Blocker</h2>
+<p>A well-made content blocker for iPhone, iPad, Mac and Vision Pro, around since 2015. It gives Safari filter lists for ads, more than 50,000 trackers, cookie notices and chat pop-ups, and Safari does the blocking. Free with one category on at a time; Premium is $2.99 a month, $14.99 a year or $39.99 once ({ext(ONEBLOCKER, "App Store")}, {ext(ONEBLOCKER_SITE, "1blocker.com")}).</p>
+<p>Good for: clearing ads and trackers off every site. Its listing says "not all ads can be blocked", since some pages use techniques Safari content blockers cannot reach. A pop script missing from its lists can still spend your tap on an ad tab, and that is where Undirect comes in. <a href="/compare/#1blocker">Undirect and 1Blocker side by side</a>.</p></section>
+<section id="adguard"><h2>AdGuard</h2>
+<p>A content blocker with more than 50 filter lists, and DNS filtering that reaches apps outside Safari. Its listing names banners, pop-ups, autoplay videos, YouTube ads and trackers. Safari blocking is free; Pro adds YouTube blocking, DNS protection and custom rules. On a Mac it is a separate app, {ext(ADGUARD_MINI, "AdGuard Mini")} ({ext(ADGUARD, "App Store")}, {ext(ADGUARD_SITE, "adguard.com")}).</p>
+<p>Good for: ads everywhere, inside Safari and out. Like every filter-list blocker, it acts on addresses it knows, before the page runs; it does not look at where your tap was aimed. <a href="/compare/#adguard">Undirect and AdGuard side by side</a>.</p></section>
+<section id="ghostery"><h2>Ghostery</h2>
+<p>A free, open-source blocker for Safari on iPhone, iPad and Mac. Its listing says it blocks ads and pop-ups, YouTube and Facebook included, removes cookie consent pop-ups and shows which trackers each site runs ({ext(GHOSTERY, "App Store")}).</p>
+<p>Good for: seeing and stopping trackers, at no cost. It needs iOS 18.7 or macOS 14.6, and like the other blockers here it works from filter lists rather than from where your tap was aimed.</p></section>
+<section id="tabguard"><h2>TabGuard</h2>
+<p>A free Safari extension for tabs, with three modes: Block All, Smart Mode, which its listing says allows your clicks and blocks tabs a script opens, and Allow All ({ext(TABGUARD, "App Store")}).</p>
+<p>Good for: scripts that open tabs on their own. Smart Mode lets a tab through when your click opened it, and a tab opened with your click is exactly what pop networks wait for. It reached version 1.0 in December 2025.</p></section>
+<section id="tab-blocker"><h2>Tab Blocker</h2>
+<p>A free extension that stops a site opening new tabs once you switch it on there, and does nothing elsewhere ({ext(TAB_BLOCKER, "App Store")}).</p>
+<p>Good for: a site where you never want a new tab. It stops every new tab on that site, the links you meant to open in one included.</p></section>
+<section id="safari"><h2>Safari's own settings</h2>
+<p>Block Pop-ups on iPhone and iPad (Settings, Apps, Safari) and Pop-up Windows on a Mac (Safari, Settings, Websites) stop windows a page opens without your tap, and Fraudulent Website Warning flags known fraudulent sites. Turn them on; they cost nothing. A window opened on your tap counts as one you asked for, which is how most ad pages get past them: <a href="/safari-popups-still-open/">why Safari still opens ads with Block Pop-ups on</a>.</p></section>
 <section><h2>A name you may see that is not a blocker</h2>
-<p>RedirectWeb comes up in searches for a Safari redirect blocker. Its listing describes a URL router: it sends a link to a different address by rules you write, for example Google Maps links to Apple Maps. It does not say it blocks pop-ups or redirects ({ext(REDIRECTWEB, "App Store")}).</p></section>""",
+<p>RedirectWeb comes up in searches for a Safari redirect blocker. Its listing describes a URL router that sends links where your rules say, for example Google Maps links to Apple Maps ({ext(REDIRECTWEB, "App Store")}).</p></section>
+<section><h2>Stop the ad pages that ride your taps</h2>
+<p>Undirect costs {cost(price)} for iPhone, iPad and Mac, and runs beside the blocker you already have.</p>
+<div class="cta-row">{badge}</div>
+<p>Sources: each app's own App Store listing and website, and Apple's support pages, read {READ}. Prices are US App Store prices, which differ by country and change.</p></section>""",
     }
 
 
 def compare(price, badge):
     undirect_price = f"{price}, paid once" if price else "Paid once"
     rows = [
-        ("What it is", "A switch inside iOS, and a per-site setting on Mac", "App with a Safari content blocker", "App with a Safari content blocker and DNS filtering", "App with a Safari extension"),
-        ("Price", "Free, part of Safari", "Free for one blocking category at a time. Premium: $2.99 a month, $14.99 a year or $39.99 once", "Free to use. Pro adds custom rules, advanced YouTube blocking and security filters, with a 7-day trial", undirect_price),
-        ("What it goes after", "Pop-up windows a page opens without a tap", "Ads, trackers and page elements, by filter list", "Banners, pop-ups, autoplay videos, ads and trackers, by filter list", "Invisible click layers, rewritten links, and tabs, windows or redirects a page sets off with your tap"),
-        ("Where you control it", "One switch on iPhone and iPad; per website on Mac: Allow, Block, or Block and Notify", "Allowlist a site from the Safari extension; rules and filters in the app", "Allowlists, blocklists and your own rules in the app", "Per destination, for one site or everywhere; the guard is off on a site until you switch it on"),
-        ("Shows what a page tried", "Block and Notify on Mac shows a blocked pop-up in the address bar", "Its site says the Mac app shows how many companies tried to track you", "Statistics of blocked ads and trackers", "Lists every address a page tried to open, blocked or not"),
-        ("Devices", "iPhone, iPad and Mac", "iPhone, iPad, Mac and Apple Vision Pro, synced by iCloud; iOS 16 or later", "iPhone and iPad, iOS 15 or later; Mac through AdGuard Mini", "iPhone, iPad and Mac; iOS 26.2 or macOS 15 or later"),
-        ("Privacy as the maker describes it", "Part of Safari", "Says it has no access to webpages and does not track you", "Says no account is needed; open source", "Runs without an account, analytics or a server; source code public"),
+        ("Stops ad tabs opened with your tap", "Yes: a new tab opens only where you pressed", "Its listing does not say so", "Its listing does not say so", "No: a window opened on your tap is allowed"),
+        ("Removes invisible layers that catch taps", "Yes, before your tap lands", "Not listed", "Not listed", "No"),
+        ("Puts back a link rewritten mid-tap", "Yes", "Not listed", "Not listed", "No"),
+        ("Blocks ads, banners and trackers", "Not its job: run it beside 1Blocker or AdGuard", "Yes, by filter list", "Yes, by filter list", "No"),
+        ("Shows what a page tried", "Every address a page tried to open, blocked or not", "Its site says the Mac app shows how many companies tried to track you", "Statistics of blocked ads and trackers", "Block and Notify on Mac shows a blocked pop-up"),
+        ("You decide per site", "Allow or block each address, on one site or everywhere", "Allowlist a site", "Allowlists, blocklists, your own rules", "Per website on Mac"),
+        ("Works on iPhone, iPad and Mac", "Yes", "Yes, plus Vision Pro", "iPhone and iPad; Mac through AdGuard Mini", "Yes"),
+        ("No account needed", "Yes; no analytics, no server, source public", "Yes", "Yes; open source", "Part of Safari"),
+        ("Price", undirect_price + ", every device", "Free for one category; Premium $2.99 a month, $14.99 a year or $39.99 once", "Free; Pro sold in the app", "Free"),
     ]
-    head = ["Safari Block Pop-ups", ext(ONEBLOCKER, "1Blocker"), ext(ADGUARD, "AdGuard"), "Undirect"]
+    head = ["Undirect", ext(ONEBLOCKER, "1Blocker"), ext(ADGUARD, "AdGuard"), "Safari Block Pop-ups"]
     return {
         "title": "Undirect vs 1Blocker vs AdGuard: what each stops in Safari",
-        "description": "Undirect, 1Blocker, AdGuard and Safari's Block Pop-ups side by side: price, what each blocks, and what each listing says about pop-ups and redirects on iPhone, iPad and Mac.",
+        "description": "1Blocker and AdGuard block ads by filter list. Undirect stops the ad pages that ride your tap. What each one stops in Safari on iPhone, iPad and Mac, and why many people run two.",
         "h1": "Undirect vs 1Blocker vs AdGuard",
-        "sub": f"Three different kinds of tool get called a pop-up blocker, and Undirect is not an ad blocker. Facts below come from Apple's support pages and each product's own App Store listing, read on {READ}.",
+        "sub": "1Blocker and AdGuard stop ads they know about. Undirect stops the page that takes your tap: the layer you cannot see, the link that changes under your finger, the tab you did not open.",
         "wide": True,
         "body": f"""{table(head, rows)}
-<section id="1blocker"><h2>Undirect vs 1Blocker</h2>
-<p>1Blocker is free with one blocking category on at a time, for example Block Ads. Premium turns on custom rules for blocking any address or hiding any page element, and costs $2.99 a month, $14.99 a year or $39.99 once.</p>
-<p>The two work at different moments. 1Blocker hands Safari its lists before a page loads, and its listing says it does not modify web pages in any way. Undirect runs in the page and acts when you tap: it removes the layer that would catch the tap and checks that a new tab goes where you pressed. 1Blocker's listing says nothing about redirects or tabs opened with your tap, and it says "not all ads can be blocked" with Safari's content blocking. Undirect blocks no ads at all, so the two cover different things and can run together.</p></section>
-<section id="adguard"><h2>Undirect vs AdGuard</h2>
-<p>AdGuard Ad Blocker for Safari is free for Safari ad blocking, with Pro sold in the app; the listing shows purchases from $1.99 to $65.99. Its listing names pop-ups among the things it blocks, along with banners, autoplay videos, YouTube ads and trackers, and its DNS filtering reaches other apps too, which Undirect never does. On a Mac it is a separate free app, {ext(ADGUARD_MINI, "AdGuard Mini")}.</p>
-<p>Undirect handles what a page does with your tap. It lists every address the page tried and lets you allow or block each one, on that site or everywhere. If you already run AdGuard and pages still open where you did not tap, that is the part Undirect covers.</p></section>
-<section><h2>Where the others do more</h2>
-<p>1Blocker and AdGuard block ads, trackers and page clutter, which Undirect does not touch. If banners, video ads or tracking are what bother you, use one of them. Safari's own switch costs nothing and covers pop-up windows, so there is no reason to leave it off.</p></section>
-<section><h2>What Undirect does not do</h2>
-<p>It does not hide ads, banners or cookie notices, and it does not block trackers. It works in Safari only, on the sites where you have switched it on, and it needs iOS 26.2 or later. It also costs money where the others have a free tier. You can run a content blocker beside it, though we have not tested every combination.</p></section>
-<section><h2>Where it fits</h2>
-<p>Undirect is for the page that takes your tap: the layer you cannot see, the link that changes under your finger, the tab you did not open. For that, read <a href="/stop-safari-redirects/">how to stop Safari redirects and pop-ups on iPhone</a>, see <a href="/safari-popup-blockers/">seven pop-up and redirect blockers compared</a>, including Ghostery, TabGuard and Tab Blocker, or <a href="/demo/">try the demo sites</a> before you buy.</p>
-<div class="cta-row">{badge}</div></section>
+<section><h2>Two different jobs</h2>
+<p>A content blocker hands Safari a list of ad and tracker addresses before a page loads, and Safari refuses them. That clears banners and trackers well, and it is why 1Blocker and AdGuard are worth having. It cannot see what a page does with your tap, and pop networks are built around that: the script we took apart in September 2026 did nothing until a real press landed, then spent the press on its own tab. 1Blocker's own listing says "not all ads can be blocked" with Safari's content blocking.</p>
+<p>Undirect runs in the page and acts at the moment you press. It removes the layer that would catch the tap, puts back a link that changed while you pressed, and lets a new tab open only where your press pointed. If a redirect rides your tap, the tab is sent back and the address is blocked in Safari, so the next try never loads.</p></section>
+<section id="1blocker"><h2>Undirect and 1Blocker</h2>
+<p>1Blocker is a polished content blocker for every Apple device, free with one category on at a time and $14.99 a year or $39.99 once for Premium. Keep it for ads and trackers. Add Undirect for the pages that still send you somewhere you did not choose: the two never touch the same thing, so they do not get in each other's way.</p></section>
+<section id="adguard"><h2>Undirect and AdGuard</h2>
+<p>AdGuard is free for Safari ad blocking, with Pro sold in the app, and its DNS filtering reaches apps outside Safari. If you already run it and pages still open where you did not tap, that is the part Undirect covers. Undirect's popup lists every address the page tried, so you can see exactly what it stopped and allow anything you want.</p></section>
+<section><h2>Paid once, for every device</h2>
+<p>Undirect costs {cost(price)}. No subscription and no in-app purchase, and one purchase covers iPhone, iPad and Mac. It runs without an account, analytics or a server, and its {ext(SOURCE, "source code")} is public. It is off on a site until you press its toolbar button there, so it only acts where you asked it to.</p>
+<div class="cta-row">{badge}</div>
+<p>See all seven tools on <a href="/safari-popup-blockers/">Safari pop-up and redirect blockers compared</a>, read <a href="/stop-safari-redirects/">how to stop Safari redirects on iPhone</a>, or <a href="/demo/">try Undirect on the demo sites</a>.</p></section>
 <section><h2>Sources</h2>
-<p>{ext(SAFARI_GUIDE, "Apple: Block pop-ups in Safari on iPhone")}; {ext(MAC_POPUPS, "Apple: Allow or block pop-ups in Safari on Mac")}; {ext(SAFARI_ARTICLE, "Apple: Block pop-up ads and windows in Safari")}; {ext(ONEBLOCKER, "1Blocker on the App Store")} and {ext(ONEBLOCKER_SITE, "1blocker.com")}; {ext(ADGUARD, "AdGuard Ad Blocker for Safari on the App Store")}; Undirect's own App Store page. First read {FIRST_READ}, read again {READ}. Prices are the App Store's dollar prices, which differ by country and change, so check the listings.</p></section>""",
+<p>{ext(SAFARI_GUIDE, "Apple: Block pop-ups in Safari on iPhone")}; {ext(MAC_POPUPS, "Apple: Allow or block pop-ups in Safari on Mac")}; {ext(MDN_OPEN, "MDN: Window.open()")}; {ext(ONEBLOCKER, "1Blocker on the App Store")} and {ext(ONEBLOCKER_SITE, "1blocker.com")}; {ext(ADGUARD, "AdGuard Ad Blocker for Safari on the App Store")}; Undirect's own App Store page. First read {FIRST_READ}, read again {READ}. Prices are US App Store prices, which differ by country and change.</p></section>""",
     }
 
 
@@ -303,11 +293,11 @@ PAGES = {
     "stop-safari-new-tabs/": dict(label="Stop new tabs", published="2026-11-20", modified="2026-11-20",
                                   note="how to stop Safari opening new tabs by itself on iPhone, iPad and Mac, by what is opening them",
                                   build=stop_new_tabs),
-    "safari-popup-blockers/": dict(label="Pop-up blockers compared", published="2026-11-20", modified="2026-11-20",
-                                   note="Safari's settings, 1Blocker, AdGuard, Ghostery, TabGuard, Tab Blocker and Undirect, with prices, what each blocks and where each beats Undirect",
+    "safari-popup-blockers/": dict(label="Pop-up blockers compared", published="2026-11-20", modified="2026-11-21",
+                                   note="Undirect, 1Blocker, AdGuard, Ghostery, TabGuard, Tab Blocker and Safari's settings, with prices, what each stops and which fits which problem",
                                    build=blockers_compared),
-    "compare/": dict(label="Undirect vs 1Blocker and AdGuard", published="2026-11-07", modified="2026-11-20",
-                     note="Undirect beside Safari's Block Pop-ups, 1Blocker and AdGuard, with what Undirect does not do",
+    "compare/": dict(label="Undirect vs 1Blocker and AdGuard", published="2026-11-07", modified="2026-11-21",
+                     note="Undirect beside 1Blocker, AdGuard and Safari's Block Pop-ups: content blockers stop known ads, Undirect stops the page that takes your tap",
                      build=compare),
 }
 SLUGS = list(PAGES)
