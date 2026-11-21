@@ -80,13 +80,13 @@ Media (undirect-pains, commit 988d426, iPad simulator): docs/screenshots/pains/i
 |---|---|---|---|
 | U105 | X, IG Reel, TikTok, only after 1.0.5 is live on the App Store | Safari sending you to a fake virus page while you scroll, no tap at all? That's the page, not your iPhone. Undirect 1.0.5 keeps you where you were, and Back goes back. undirect.matsuokengo.com | docs/screenshots/pains/mac-scroll-on.mp4, mac-back-off.mp4 then mac-back-on.mp4; ios-*.mp4 when ready |
 
-U105, P16 and P19 wait until `python3 Support/AppStore/asc_state.py 1.0.5` prints IOS READY_FOR_SALE (1.0.5 went into App Review on Nov 20; undirect-pains messages when it is live). If 1.0.5 is live by Nov 27, the Black Friday Undirect posts (drafts 10-12) also name its two fixes: a page that sends you away with no tap stays put, and Back goes back (undirect-105-launch.md items 2 and 6).
+U105 and the calendar rows marked AFTER 1.0.5 (P41, P45, P52, P70, P82) wait until `python3 Support/AppStore/asc_state.py 1.0.5` prints IOS READY_FOR_SALE (1.0.5 went into App Review on Nov 20; undirect-pains messages when it is live). If 1.0.5 is live by Nov 27, the Black Friday Undirect posts (drafts 10-12) also name its two fixes: a page that sends you away with no tap stays put, and Back goes back (undirect-105-launch.md items 2 and 6).
 
-P16 (Dec 6) and P19 (Dec 9) also describe 1.0.5 behaviour and go out only once 1.0.5 is live. As of Nov 20 it is prepared in App Store Connect and not submitted.
+P41 (Dec 5), P45 (Dec 6), P52 (Dec 9), P70 (Dec 15) and P82 (Dec 19) also describe 1.0.5 behaviour and go out only once 1.0.5 is live. As of Nov 20 it is prepared in App Store Connect and not submitted.
 
-### Pain posts P1-P30 (from pains-content, ASG73)
+### Pain posts P1-P87 (from pains-content, ASG73 and ASG98)
 
-The text, platform and file for each row are in [social/pains-calendar.md](social/pains-calendar.md). Each one posts at 20:07 WIB on its date, Nov 21 to Dec 20, and goes out only after the owner says go to its number. P1, P4 (Product Hunt part), P7, P10 and P18 are the KEPT rows: they are drafts 3-4, 7, 10-11, 12 and 14 here. Videos for P2, P3, P5 and P6 wait on the owner's yes to social/storyboard.md.
+The text, platform and media for each row are in [social/pains-calendar.md](social/pains-calendar.md). Three slots a day from Sun Nov 22 to Sun Dec 20, at 02:20, 05:50 and 21:20 WIB (14:20, 17:50 and 09:20 Eastern), and each goes out only after the owner says go to its number. P9 (Product Hunt, draft 7), P17 (Black Friday, drafts 10-11), P26 (draft 12) and P50 (MacPip, draft 14) are the KEPT rows and keep their own times. The films come from ~/Downloads/pain-films-v3/.
 
 ### More drafts (owner 2026-11-20 15:30: more replies, every listing now)
 
