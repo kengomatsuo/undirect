@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/application.schema.json",
+  "schemaVersion": 1,
+  "isFeatured": false,
+  "isEditorsPick": false,
+  "youtubeUrl": null,
+  "relatedAppSlugs": [],
+  "name": "Cutling",
+  "slug": "cutling",
+  "websiteUrl": "https://cutling.matsuokengo.com/",
+  "tagline": "Paste your saved text snippets from a menu bar picker on the Mac and a keyboard on iPhone and iPad.",
+  "description": "Cutling keeps the text you type again and again, such as your address, account numbers, an email signature or a reply you send every week, and pastes it with one tap. On the Mac it sits in the menu bar and Shift-Command-V opens a picker at your cursor; on iPhone and iPad it is a keyboard you switch to in any app.\n\nWhen you choose a snippet on the Mac, Cutling puts it on the pasteboard and pastes it into the app in front. On iPhone and iPad the keyboard inserts the snippet directly, and the field you are in decides which snippets come first: in an email field your email addresses come up before your signature.\n\n## Features\n\n- Save addresses, bank info, IDs, bios and more.\n- Open a picker at your cursor on the Mac with Shift-Command-V.\n- Paste from any app on iPhone and iPad via the keyboard extension.\n- Clipboard history on the Mac skips anything a password manager marks as concealed, so copied passwords never land in it.\n- Sync across all your devices with iCloud.\n- Set expiration dates to auto-remove temporary snippets.\n- Color-label and customize each snippet with an icon.\n\n## Where it fits\n\nCutling is for anyone who retypes the same details across apps and devices and wants them one keystroke or one tap away, with the same snippets on Mac, iPhone and iPad.\n\n## Privacy and requirements\n\nNo account required. No ads. No tracking. Cutling has no server and no analytics; nothing leaves your devices unless you turn iCloud sync on. Pasting into the front app on the Mac uses the Accessibility permission, and Cutling falls back to copy-only if you decline it.\n\n## Pricing\n\nOne purchase on the App Store includes Cutling for Mac, iPhone and iPad. The source code is public under GPL-3.0.",
+  "pricingType": "paid",
+  "billingType": "one_time",
+  "pricingDetails": "One-time purchase on the App Store ($4.99), including the Mac, iPhone and iPad apps.",
+  "sourceType": "open_source",
+  "categories": [
+    "clipboard-managers",
+    "text-utilities",
+    "productivity"
+  ],
+  "media": {
+    "icon": {
+      "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/63/e4/7a63e42c-5634-24d5-892e-f547d30a80f3/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+      "altText": "Cutling application icon"
+    },
+    "preview": {
+      "sourceUrl": "https://cutling.matsuokengo.com/og.png",
+      "altText": "Cutling snippets on Mac, iPhone and iPad"
+    },
+    "screenshots": [
+      {
+        "sourceUrl": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/19/e6/a2/19e6a2bc-802c-1c0c-a50a-0c76376f80d9/iPhone_14_Pro_Max-01_KeyboardInMessages.png/320x480bb.jpg",
+        "altText": "Cutling keyboard pasting a snippet in Messages"
+      }
+    ]
+  }
+}
