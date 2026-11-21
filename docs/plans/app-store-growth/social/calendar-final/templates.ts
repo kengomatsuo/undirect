@@ -332,3 +332,28 @@ export const T: Record<string, (p: Props, size: Size) => { app: keyof typeof BRA
       <div style="height:260px"></div></div>`,
   }),
 };
+
+// ---------- Story stickers, drawn where they go (a guide copy; the posted frame stays clean) ----------
+export function sticker(st: { type: string; q?: string; options?: string[]; correct?: number; emoji?: string; url?: string; label?: string }): string {
+  const box = (inner: string, top = 860) => `<div style="position:absolute;left:170px;right:170px;top:${top}px;background:#fff;color:#111;border-radius:40px;box-shadow:0 20px 60px rgba(0,0,0,.45);padding:40px 40px 44px;font-family:-apple-system,system-ui,sans-serif">${inner}</div>`;
+  const q = st.q ? `<div style="font:700 44px/1.2 -apple-system,system-ui,sans-serif;text-align:center;margin-bottom:28px">${st.q}</div>` : "";
+  const t = st.type.toLowerCase();
+  if (t.startsWith("link")) return `<div style="position:absolute;left:50%;transform:translateX(-50%);top:1290px;background:#fff;color:#1d63ff;border-radius:22px;padding:22px 34px;font:700 40px -apple-system,system-ui,sans-serif;box-shadow:0 14px 40px rgba(0,0,0,.4);white-space:nowrap">🔗 ${st.label ?? st.url}</div>`;
+  if (t.startsWith("poll")) return box(q + (st.options ?? []).map((o) => `<div style="border:3px solid #e6e6e6;border-radius:999px;padding:20px;margin-top:16px;text-align:center;font:600 38px -apple-system,system-ui,sans-serif">${o}</div>`).join(""));
+  if (t.startsWith("quiz")) return box(q + (st.options ?? []).map((o, i) => `<div style="display:flex;align-items:center;gap:20px;border:3px solid #e6e6e6;border-radius:999px;padding:18px 22px;margin-top:16px;font:600 36px -apple-system,system-ui,sans-serif"><span style="width:52px;height:52px;border-radius:26px;background:#f1f1f1;display:flex;align-items:center;justify-content:center;font-size:28px">${"ABCD"[i]}</span>${o}</div>`).join(""));
+  if (t.startsWith("emoji")) return box(q + `<div style="height:16px;border-radius:8px;background:linear-gradient(90deg,#c13584,#fd1d1d,#fcb045);margin:30px 10px 10px;position:relative"><span style="position:absolute;left:62%;top:-38px;font-size:76px">${st.emoji ?? "😤"}</span></div>`);
+  if (t.startsWith("questions")) return box(`<div style="margin:-40px -40px 26px;padding:34px 40px;border-radius:40px 40px 0 0;background:linear-gradient(135deg,#6a5cff,#c13584);color:#fff;font:700 42px/1.2 -apple-system,system-ui,sans-serif;text-align:center">${st.q}</div><div style="background:#f1f1f1;border-radius:22px;padding:26px;color:#999;font:500 34px -apple-system,system-ui,sans-serif;text-align:center">Type something…</div>`);
+  if (t.startsWith("add yours")) return box(`<div style="font:800 30px -apple-system,system-ui,sans-serif;letter-spacing:.08em;color:#c13584;text-align:center;margin-bottom:14px">ADD YOURS</div>${q}<div style="background:#111;color:#fff;border-radius:18px;padding:22px;text-align:center;font:700 36px -apple-system,system-ui,sans-serif">Add yours</div>`);
+  return box(q);
+}
+
+export const T2: Record<string, (p: Props, size: Size) => { app: keyof typeof BRAND; html: string }> = {
+  ttend: (p) => ({
+    app: p.app,
+    html: `<div class="center" style="align-items:center;text-align:center">
+      <img src="${BRAND[p.app as "Cutling"].icon}" style="width:240px;height:240px;border-radius:54px">
+      <div class="head" style="font-size:96px;margin-top:50px">Search <span class="hl">${p.app}</span></div>
+      <div class="head" style="font-size:96px">on the App Store</div>
+      <div class="dim" style="font-size:44px;margin-top:36px;font-weight:600">${p.app === "Undirect" ? "Safari on iPhone, iPad and Mac" : "iPhone, iPad and Mac"}</div></div>`,
+  }),
+};

@@ -623,7 +623,7 @@ Open the link in Safari and it's covered.`,
   {
     n: 59, date: "2026-12-11", slot: 2, app: C, kind: "film", tags: "c", film: "cutling-miss-android",
     pain: "Pinned clips on iPhone (\"Samsung switcher: the main thing I missed\")",
-    body: `Switched from a Samsung? The Android things you miss: pasting without "Allow Paste", clipboard history, Gboard's pinned clips.
+    body: `Switched from a Samsung? The Android things you miss: pasting without "Allow Paste", Gboard's clipboard, its pinned clips.
 
 Cutling brings back the pinned clips: your booking link on the iPhone keyboard, one tap into any chat. It can't record what you copy.`,
     reply: `Cutling: $4.99 once for iPhone and iPad, Mac app included.`,

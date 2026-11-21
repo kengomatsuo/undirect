@@ -1,166 +1,298 @@
 You press Play. A page says "install the VPN app to keep watching". Back, press again: "Your iPhone is severely damaged by (12) virus!" Again: "You are today's lucky visitor." The page lays an invisible layer over Play, so your tap goes to an ad first.
 Undirect takes that layer's tap away, so Play just plays. It's a Safari extension, $1.99 once.
+What's the worst page a Play button ever sent you to?
+Every tap on Play opens another ad in Safari
 Deliver to. Shipping address. Delivery details. Billing address. Your address again, by thumb, typos and all: 14 seconds a form. Saved once in Cutling, it goes in with one tap, in about a second.
 Cutling is the keyboard in that clip. $4.99 once for iPhone and iPad, and the Mac app comes with it.
+How many times a week do you type your address?
+Stop typing your address into every checkout
 Those tabs open because the page takes your tap for an ad. Undirect hands the tap back to the button you pressed.
 Has Safari ever opened a tab you didn't tap? Vote on the sticker.
+How many ad tabs did you close to watch one episode?
 Your email address into a Wi-Fi login, a 10%-off pop-up, a check-in form and a receipt: 21 seconds of typing. Save it in Cutling once. In an email field the keyboard puts it first, so each form takes one tap.
 Cutling: saved text on your iPhone and iPad keyboard, $4.99 once, no account.
+Which form makes you type your email most?
+Stop typing your email address into every form
 Settings, Safari, Block Pop-ups: on. And the tabs keep coming. Safari lets a tab through when it thinks you asked for it, and a page can make any tap look like you asked.
 Undirect checks what was really under your finger before a tab gets to open. $1.99 once.
+Is Block Pop-ups on for you, and do tabs still open?
 Cutling keeps that text on the keyboard: save it once, tap it in from any app.
 What do you retype most? Address, email, the same DM reply, a link? Pick one in the poll.
+Where do you keep the text you retype every week?
 Tap Download on a movie site and you get a fake "Download in progress" page telling you to install a player app. With Undirect on for that site, you stay put.
 One press on the site turns Undirect on there, and it stays on for that site. $1.99 once.
+Where did the last fake Download button take you?
+The Download button gave me a fake download page
 Would you let a keyboard app read what you type? Fair question. Cutling's keyboard has no network code, there's no account, and the App Store label says Data Not Collected. It reads the word before the cursor to suggest a saved item, and sends nothing.
 The privacy label is on the App Store page, under App Privacy. Cutling is $4.99 once.
+What would you need to know before a keyboard reads what you type?
 Copy a door code, then a tracking number, then a meeting link. Your iPhone keeps only the last one. Moved from Android and miss pinned clips? Cutling pins the text you paste all day to your keyboard. It doesn't record what you copy; iOS doesn't let any app do that.
 Cutling: pinned text on your iPhone keyboard, and the full clipboard history in its Mac app. $4.99 once.
+What did you miss most after leaving Android?
+Moved from Android? Pin your clips on iPhone
 Click Play in Safari on your Mac and a casino tab opens: "200% welcome bonus". One click on Undirect's button turns it on for that site. After that, Play opens no new tab.
 The same purchase covers Safari on your iPhone and iPad. $1.99.
+Does this happen to you on the Mac too, or only on iPhone?
+Safari on Mac opens a casino tab when you click Play
 iPhone Text Replacement keeps plain text and fires only when you type the shortcut. After an update, some people found the whole list gone from one device. A cutling can hold a whole paragraph or an image, and it syncs through your own iCloud.
 Cutling for iPhone and iPad, with a Mac app in the same $4.99 purchase.
+Do you still use Text Replacement, or did you give up on it?
 Free streaming site, and each press of Play opens an ad instead of the movie. Switch Undirect on for that site once, and Play just plays.
 Works the same on the iPhone and iPad versions of Safari. $1.99 once, no account.
+Which streaming site is the worst for this?
+Free streaming site: Play opens an ad, not the movie
 Your Text Replacement shortcuts work on your iPhone, and on your iPad "addr" just stays "addr". Save the text once in Cutling and it's on your iPad keyboard too, synced through your own iCloud.
 No Cutling account to make: it syncs through the iCloud you already use. $4.99 once.
+Have your Text Replacements ever gone missing on one device?
+Text Replacement not syncing to iPad
 Blockers hide ads. The tab that opens when you press Play is the page taking your tap, and a blocker has nothing to hide there. Undirect stops that part, so run both.
 Did your ad blocker stop this redirect? Answer in the poll.
+Does your ad blocker stop the tabs that open when you tap?
 "It's a clipboard, not a billboard." That's how one reviewer put it about a paste keyboard with ads in it. Cutling has no ads and no account.
 Cutling is paid once, and the Mac app comes in the same purchase.
+Would you put up with ads in a keyboard?
 $40 for the year, and the redirect tabs still got through. Undirect is a single purchase. You make no account, and nothing you browse is sent anywhere.
 Undirect stops the tabs and redirects a page sets off from your tap, in Safari on iPhone, iPad and Mac.
+What's the most you've paid for a blocker that still let redirects through?
 Cutling is one purchase, no subscription, for iPhone, iPad and the Mac app.
 Would you pay every month for a clipboard app? Vote in the poll.
+Would you pay a subscription for a clipboard app?
 Your iPhone doesn't have a virus. The "iPhone at risk" page came from the website you were on. Close the tab, and don't install or pay for anything it asks for. Send this to the person in your family who panics at these.
 When a tap set it off, Undirect stops the page opening. It's a Safari extension.
+Who in your family calls you about these pages?
+Your iPhone doesn't have a virus. The "iPhone at risk" page came from the website you were on.
+So close the tab. Don't install, call or pay for anything it shows.
+Send this to the person in your family who panics at these.
 On Windows, Win+V showed everything you'd copied. A Mac has nothing like it out of the box. Cutling's menu bar app keeps that history on a Mac, and anything your password manager marks as concealed stays out of it.
 Shift-Command-V opens it. Cutling for Mac comes with the iPhone and iPad keyboard.
+What do you miss most from Windows on a Mac?
 Reading a manga or a web novel and every page turn opens another site? Switch Undirect on for that site once and the next-page tap stays on the chapter.
 Undirect runs in Safari on iPhone and iPad, and on the Mac.
+Which reader site sends you away the most?
 Delivery app. Address field. Street, flat number and postcode by thumb, again. Tap it in from the Cutling keyboard instead.
 Cutling works in any app's text field, on iPhone and iPad.
+How many delivery apps have your address typed in by hand?
 The button can be part of the ad. With Undirect on for that site, the tab stays where it was and the address it tried goes in the list.
 Has a Download button ever given you a fake download page? Vote on the sticker.
+How often does a Download button send you to another site?
 Your iPhone clipboard holds one thing. Copy a new link and the last one is gone. Keep the text you paste every day on the keyboard, one tap away.
 That's Cutling's keyboard. It keeps what you save; iOS lets no app record what you copy.
+What do you copy and lose most often?
 You hit the X on the ad and another ad opens. Three X buttons on this page. How many of them close the ad?
 Answer on the last slides. Undirect is the Safari extension in slide 4.
+How many of these X buttons would you have tapped?
+You hit the X on the ad and another ad opens. Three X buttons on this page. How many of them close the ad?
+None. All three are part of the ad, so a tap on any of them is a tap on the ad.
+With Undirect on for the site, that tap opens nothing.
 Cutlings sync through your own iCloud, and a deleted one comes back from Recently Deleted for 30 days.
 Ask us anything about saved text on iPhone: Text Replacement, syncing, keyboards. Each question gets its own video.
+Does Text Replacement sync between your iPhone and Mac?
 Want to know where that tab was trying to take you? Undirect lists every address a page reached for, so you can block one everywhere or allow it on that site.
 Nothing in that list leaves your device.
+Would you want to see where those tabs were going?
 Shipping form, delivery form, billing form: this month you'll type your address into all of them. Save it once in Cutling and each one takes a tap. $4.99 once, for iPhone and iPad, and the Mac app too.
 Cutling on the App Store. The Mac app is in the same purchase.
+How many addresses will you type this month?
+Type your address once, for every shipping form
 You press Download and get a fake download page, then an "Add Calendar Subscription" pop-up, then a "Speedy Clean" app page. With Undirect on, you stay on the page you were on, and the list shows the address it tried.
 $1.99 once, and it covers Safari on your Mac too.
+Ever installed the player app a download page asked for?
+Fake download page, calendar spam, fake cleaner app
 Copy, switch apps, paste, go back. Four trips for one boat time and one door code. Share the page to Cutling instead. It's saved with a name, and next time it goes in with one tap.
 Cutling shows up in the iPhone share sheet once it's installed. $4.99 once.
+How many times do you switch apps to copy one thing?
+Copy, switch, paste, go back: the faster way
 Streaming on an iPad and every tap on Play leaves a new tab behind. Undirect works the same in Safari on iPad, from the same $1.99 purchase. Allow it once for the site, and Play stops opening tabs.
 Bought it on your iPhone? It's already yours on the iPad.
+Do you stream on the iPad or the phone?
+Stop Safari ad tabs on iPad
 A clipboard history that saves every password you copy is a risk on a Mac. Cutling's history keeps every copy and skips anything your password manager marks as concealed.
 Cutling for Mac, with the iPhone and iPad keyboard in the same $4.99 purchase.
+Do you copy passwords, or does your manager fill them in?
+Mac clipboard history that skips your passwords
 Mac Safari, a movie site, and one click on Play opens a casino tab. Undirect turns on for that site with one click, and the next Play opens no tab.
 Undirect for Safari on the Mac, $1.99 once, iPhone and iPad included.
+How many tabs did your last movie site open?
+Mac Safari: one click on Play opens a casino tab
 Cutling's Mac app keeps a clipboard history of its own, and what you save as a cutling stays until you delete it.
 Ever copied over something you still needed? Vote on the sticker.
+How long does your Mac keep what you copied?
 How many ad tabs did you close tonight to watch one episode? One person wrote "repeat 7 times". Here it's a VPN alert, then a virus warning. Then the same tap with Undirect on.
 Undirect is the Safari extension in the second half. $1.99 once.
+What's your record for ad tabs closed in one episode?
+Closing ad tabs to watch one episode
 Free Wi-Fi, 10% off, check-in, receipts: every form asks for your email address again. Save it in Cutling once. In an email field the keyboard offers it first.
 Cutling: $4.99 once, and the Mac app comes with it.
+How many sign-up forms did you fill in this month?
+Every sign-up form wants your email again
 Someone on Reddit told you to turn on a hidden Safari setting, "Verify window.open user gesture", to stop redirect tabs. It half works, and it sits under Advanced, Feature Flags. Undirect does the job with one press per site.
 Undirect works without any hidden setting. $1.99 once.
+Did you ever turn that flag on, and did it help?
 Bought a clipboard app for your Mac, then found the iPhone one is a second purchase? Cutling is one $4.99 purchase for iPhone, iPad and Mac.
 The App Store page lists all three devices under one price.
+Have you ever bought the same app twice, once for Mac and once for iPhone?
 Reading a news story, scrolling, no tap at all, and the page jumps to a fake Settings screen: "Platform Security… RUN A TEST". The page did that, and your device is fine. Undirect 1.0.5 keeps you on the story.
 Undirect 1.0.5 is out now. $1.99 once.
+Has a page ever jumped to a fake alert while you were only scrolling?
+Safari redirect while scrolling, with no tap
 Gboard on Android kept your pinned clips. Cutling pins them to your iPhone keyboard: your address, your work email, the Wi-Fi password.
 Cutling for iPhone and iPad, $4.99 once, with the Mac app included.
+What did you keep pinned in Gboard?
+Gboard pinned clips on iPhone
 Tap Download, get a fake download page. Tap again, an "Add Calendar Subscription" pop-up. Then the same Download with Undirect on.
 Undirect is $1.99 once, and one press per site turns it on.
+How many taps before you found the real download?
+Tap Download, get a fake download
 Reply guys: your wallet address and your X handle, one tap from the keyboard. No text-replacement codes to remember.
 Cutling: $4.99 once on iPhone and iPad, Mac app included.
+What do you paste in replies most?
 Press Back to leave a live-stream site and land on a casino page instead? From 1.0.5, with Undirect on for the site, Back just goes back.
 Back works again from Undirect 1.0.5. $1.99 once.
+Which site traps your Back button?
+Back button takes you to the ad again
 Moved from Windows and miss Win+V? Cutling for Mac keeps your clipboard history, and the passwords your manager marks as concealed stay out of it.
 Cutling: the Mac app and the iPhone keyboard in one $4.99 purchase.
+What else do you miss from Windows?
+Win+V on a Mac
 Safari opening tabs on its own and you're freaked out? The tabs came from the page you were on, and your iPhone is fine. Close them, and don't install anything they push.
 Undirect stops the ones a tap set off. $1.99 once.
+Who do you know who'd panic at these tabs?
 Cutling keeps each of them on the keyboard. Save it once and tap it in.
 What do you retype most? Address, email, the wifi password for the fifth time? Vote in the poll.
+What do you retype most on your phone?
 Texting yourself a door code to get it from your iPhone to your iPad? Save it in Cutling on the iPhone, and it's on the iPad keyboard too, through your iCloud.
 Cutling, $4.99 once, and the Mac app comes with it.
+How do you move a code from your iPhone to your iPad?
+Get a code from iPhone to iPad without texting yourself
 On a Mac, press Shift-Command-V and your history is right there: the last thing you copied, and the cutlings you saved.
 Cutling for Mac comes with the iPhone and iPad keyboard. $4.99 once.
+Do you use a clipboard history on your Mac?
 A page that sends you to another site while you scroll, with no tap at all, now stays put in Undirect 1.0.5, and the address shows in its list.
 Undirect 1.0.5 is on the App Store now. $1.99 once.
+Ever been redirected while you were only scrolling?
+Page redirects while you scroll: stop it in Safari
 Managing three buildings means typing an address into every work order, at 14 seconds a go. Save each one in Cutling, and it's one tap.
 Cutling, $4.99 once, iPhone and iPad with the Mac app.
+How many addresses do you type for work?
+Typing the same address into every work order
 That switch stops windows a page opens by itself. A tab opened by your own tap passes it. Undirect checks what was under your finger.
 Does Undirect block ads? No: it stops the tabs and redirects, and your blocker keeps the ads. Ask us why Block Pop-ups doesn't stop them.
+Block Pop-ups is on. Do tabs still open?
 Can an iPhone keep a clipboard history? No app can: iOS doesn't let apps read what you copy in the background. Cutling keeps what you choose to save on iPhone, and its Mac app keeps the full history.
 Cutling: $4.99 once for both.
+Did you think iPhone apps could keep a clipboard history?
 Looking for a free movie site on iPad with no popups? The sites are the same ones, and Undirect works in Safari on iPad. Switch it on for the site, and the tabs stop.
 Undirect, $1.99 once, and the iPhone and Mac come with it.
+Which free movie site is the worst on iPad?
+Free movie sites on iPad without pop-ups
 iPhone and iPad, one Apple ID, and the text you saved is on both. Cutlings sync through your own iCloud, so there's no Cutling account to sign in to.
 Cutling: one $4.99 purchase for all three.
+Do you keep your saved text on more than one device?
+Saved text on iPhone and iPad, synced
 Where Undirect can't help: home-screen web apps and the browser inside other apps, because Safari extensions don't run there. Open the link in Safari and it's covered.
 Undirect, for the Safari part. $1.99 once.
-Switched from a Samsung? The Android things you miss: pasting without "Allow Paste", clipboard history, Gboard's pinned clips. Cutling brings back the pinned clips: your booking link on the iPhone keyboard, one tap into any chat. It can't record what you copy.
+Do you open links in Safari or inside other apps?
+Switched from a Samsung? The Android things you miss: pasting without "Allow Paste", Gboard's clipboard, its pinned clips. Cutling brings back the pinned clips: your booking link on the iPhone keyboard, one tap into any chat. It can't record what you copy.
 Cutling: $4.99 once for iPhone and iPad, Mac app included.
+What do you miss most from Samsung?
+Things I miss from Android on iPhone
 POV: you're the ad on a free movie site. They tap Play, you open a new tab. They tap again, you tell them their iPhone has 12 viruses. Then they switched Undirect on for the site, and nothing you sent got through.
 That's Undirect switching on in the clip. $1.99 once.
+Which ad trick have you fallen for most?
+POV: you're the ad on a free movie site
 Cutling's keyboard has no network code at all, and the App Store label says Data Not Collected.
 Is a keyboard app safe to give Full Access? Ask us anything about what Cutling's keyboard reads and where it goes. Short answer: the word before the cursor, and nowhere.
+Would you let a keyboard app hold your saved text?
 Three Download buttons on a free file site, and only one of them is real. The other two send you to a calendar spam prompt and a fake cleaner app. With Undirect on for the site, the fakes go nowhere and the real one downloads.
 Undirect, $1.99 once.
+Which Download button would you have pressed?
+Only one is the real Download button
 Copy a flight number, then a one-time code, then an address. Press Command-V and only the address is left. Press Shift-Command-V with Cutling for Mac: every copy is in the history, and passwords stay out.
 Cutling for Mac, with the iPhone keyboard in the same $4.99 purchase.
+What did you lose to the clipboard this week?
+Command-V only keeps the last thing you copied
 Click Play in Safari on your Mac and a tab you never clicked opens. One click on Undirect's button for that site, and the next Play opens no tab.
 Undirect on the Mac App Store, $1.99 once with iPhone and iPad.
+Does Safari on your Mac do this to you?
+Stop Safari on Mac opening tabs you never clicked
 You sell on Instagram. "Is this still available?" "Where do you ship?" "How do I pay?" Forty times a day. Save each answer once and tap it in.
 Cutling puts those answers on your iPhone keyboard. $4.99 once.
+What's the DM you answer most?
 Chapter 41. You press Next and a casino opens. You close it, press Next again, and it's a crypto site. Switch Undirect on for that reader site once and the Next press stays on the chapter.
 Undirect works on any reader site you open in Safari. $1.99 once.
+Which reader site is the worst for redirects?
 Someone asks when you're free and you go hunting for your booking link. Share the page to Cutling once. It's saved with a name, and next time it's one tap on your keyboard.
 Cutling for iPhone and iPad, $4.99 once.
+Where do you keep your booking link?
+Your booking link one tap away on iPhone
 Undirect is $1.99 once, with no account and nothing sent anywhere.
 What did your Safari blocker cost you? Vote in the poll.
+What did you pay for your Safari blocker?
 Cutling has no account and no server, so there is nothing to switch off on you. Your cutlings live on your devices and in your own iCloud, and it works offline.
 Cutling is $4.99 once.
+Has an app you relied on ever shut down on you?
 You press Back on a streaming site and it takes you to the ad again. With Undirect 1.0.5 on for the site, Back just goes back.
 Undirect 1.0.5, $1.99 once.
+How many Backs does it take you to leave a streaming site?
+Back button keeps taking you to the ad
 Safari's share sheet has a Cutling button. Share a page to it, give it a name, and the next time a form asks, it's one tap on your keyboard.
 Cutling: $4.99 once, Mac app included.
+Do you use the share sheet to save things?
+Save a page to your iPhone keyboard from the share sheet
 Tap a link and Safari throws you into the App Store. If a page's trick did it, Undirect stops it. If it's a button that says it opens the App Store, like Google's "open the app", Undirect lets it through.
 Undirect is $1.99 once.
+Has a page ever thrown you into the App Store?
 Mum, the office, Aunt Rina: three addresses you type every December. Save each one in Cutling and tap the right one into the parcel form.
 Cutling: $4.99 once for iPhone and iPad, and the Mac app.
+How many addresses do you send to in December?
 Dad texts: "my iphone says it has 12 viruses??" It's the free movie site again, and now there are 9 tabs open. I put Undirect on his iPhone and switched it on for that site. The movie just plays now.
 Undirect, $1.99 once. Dad's iPhone needed one press on that site.
+Who's the tech support in your family?
+Tech support for Dad, every single week
 Copy on your iPhone, paste on your iPad, and nothing comes through. Save it in Cutling instead: the office door code you saved on the iPhone is on the iPad keyboard too. It won't carry a one-off copy.
 Cutling is $4.99 once, Mac app included.
+Does Universal Clipboard work for you?
+Copy on iPhone, paste on iPad not working?
 iPad, free movie site, and Play opens a tab saying "Your iPhone has been hacked". Switch Undirect on for the site in Safari and Play opens no more tabs. Same $1.99 as on iPhone and Mac.
 One purchase covers all three.
+Do you watch on your iPad?
+iPad: Play opens a Your iPhone has been hacked tab
 $29.99 a year. For a clipboard. Cutling is $4.99, once, for iPhone, iPad and Mac, with no account.
 Cutling on the App Store.
+What's the priciest subscription you've paid for a small tool?
 Undirect hides nothing on the page, so it isn't an ad blocker, and keeping yours is fine. It stops the tabs and redirects your blocker misses, so run the two side by side.
 Undirect is $1.99 once, and it runs next to whatever blocker you have.
+Which blocker do you run in Safari?
 Seven forms, seven taps. In an email field, the Cutling keyboard puts your email address first, so you don't go looking for it.
 Cutling: $4.99 once. It's the keyboard in the clip.
+How many times did you type your email this week?
+Your email in one tap in every email field
 Press Play three times, get three different traps: a VPN alert, a virus countdown, a prize page. The same press with Undirect on plays the video.
 That's Undirect in the second half. $1.99 once.
+How many presses of Play does it take you on a free site?
+Three presses of Play, three different traps
 Save it in Cutling on the iPhone. It syncs through iCloud and shows in the Mac picker.
 How do you get a bit of text from your iPhone to your Mac? Email yourself, message yourself, AirDrop, retype? Vote in the poll.
+How do you get text from your iPhone to your Mac?
 You didn't tap anything, and the page sent you to a fake security alert anyway. Undirect 1.0.5 keeps you where you were, and the address it tried shows in the list.
 Undirect 1.0.5 is $1.99 once, for Safari on iPhone, iPad and Mac.
+Where did a page send you without a tap?
+Sent to a fake security alert without tapping
 You copied a second thing and the first one is gone. On a Mac, Cutling's history still has it.
 Cutling for Mac, with the iPhone keyboard in the same $4.99.
+What's the last thing you copied over by mistake?
+Copied over something you needed? Mac clipboard history
 Each of those is a page taking your tap. Undirect sends the tap to what you pressed and lists the address.
 Where did the last ad tab take you? Vote on the sticker.
+Where did the last ad tab take you?
 "Type out the same info over and over and over." That's how one reviewer described a paste keyboard's job. Save it once in Cutling, and tap it in.
 Cutling, $4.99 once.
+What do you type most often?
+I've seen you type Main St 214 times
 Download button, fake "download in progress" page. Every time. Switch Undirect on for that site once, and the tab stays on the page.
 Undirect, $1.99 once, and the iPhone, iPad and Mac versions come together.
+Ever downloaded the fake file?
+Download button, fake download page, every time
 A snippet app that won't keep images. In Cutling an image is a cutling too: save a screenshot once, tap it on the keyboard and paste it into the chat.
 Cutling: $4.99 once. Image cutlings paste on the Mac too.
+What image do you send over and over?
