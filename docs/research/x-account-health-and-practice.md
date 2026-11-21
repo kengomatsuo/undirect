@@ -488,3 +488,20 @@ Verified Organizations ($200-1,000/month): no, nothing measured supports it at t
   is 0.0 (`param.rs`, `ProfileClickWeight`).
 - `social-lessons.md` "Links": the link-in-reply rule stays, but X's product head said in July 2026
   that links no longer need to go in replies; the rule now rests on Buffer's free-account data.
+
+## @ryangrowthh video, "14 X growth tips" (watched and transcribed 2026-11-21)
+
+Source: https://x.com/ryangrowthh/status/2123951780535161185 (12.7k followers, 10.5k views; his own claim: 10k followers in 35 days, self-reported, and he sells content help, so treat numbers as his).
+- Profile is the sales page: show a face; bio says what you do, who for, with proof; banner repeats the message; pinned post is a recent post you are proud of or a deep dive into the product.
+- Talk to one specific reader (niche), not everyone.
+- Quality cadence for founders: 3-5 posts a day, 4-8 hours apart, because a creator's own posts compete with each other.
+- Digestible: lists, graphics, white space; write so a 12-year-old can read it (short sentences, small words, active voice, no jargon).
+- Quote posts on posts already trending or with strong early engagement are among the most boosted formats.
+- Grow inside a group: engage with people in the niche; X is a web, not a silo.
+- Give free value (guides, PDFs, agent skills) and deliver what you promise.
+- 2-4 "heavy" pieces a week: threads, articles, long video; quick thoughts do not bring followers.
+- Hook = curiosity gap + promise + proof, end on a takeaway.
+- Study why posts go viral (topic, hook, angle, CTA); copying is detected as duplicate and does not convert.
+- Video: he says 40% of X impressions are video and long-form video gets 5x median reach (no source given); face on camera brought him 1,000-follower days.
+- Block time for creative work (his: 1 hour daily writing, a multi-hour session weekly).
+- Paid tool he recommends: Grok at $40/month as an X researcher (cost: owner's call).
