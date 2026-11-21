@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Rapportera ett problem",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Stoppad"
+    },
+    "ext.note.kept_here": {
+      "s": "Du stannade här"
+    },
+    "ext.note.back_trap": {
+      "s": "Bakåtknappsfälla stoppad"
+    },
+    "ext.note.count": {
+      "s": "%lld stoppade"
+    },
+    "ext.note.dont_show": {
+      "s": "Visa inte igen"
+    },
+    "ext.note.hidden": {
+      "s": "Notiser av. Slå på dem igen i Undirects inställningar."
     }
   }
 }

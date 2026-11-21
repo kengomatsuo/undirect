@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Signaler un problème",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Bloqué"
+    },
+    "ext.note.kept_here": {
+      "s": "Vous êtes resté ici"
+    },
+    "ext.note.back_trap": {
+      "s": "Piège du bouton Retour bloqué"
+    },
+    "ext.note.count": {
+      "s": "%lld bloqués"
+    },
+    "ext.note.dont_show": {
+      "s": "Ne plus afficher"
+    },
+    "ext.note.hidden": {
+      "s": "Avis désactivés. Réactivez-les dans les réglages d'Undirect."
     }
   }
 }

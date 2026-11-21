@@ -18,7 +18,7 @@
   // because a page reads its own settings once, at document_start, rather
   // than asking the background and waiting.
   const settings = {
-    enabled: true, sweep: true, veto: true, recipes: true, banner: false,
+    enabled: true, sweep: true, veto: true, recipes: true, banner: true,
     policy: "block", mode: "watched",
   };
   const site = location.hostname;
@@ -113,48 +113,103 @@
   // A note drawn in the page, off unless asked for. Safari gives extensions no
   // notifications API, so this is the only way to say something happened while
   // the reader is looking at the page.
-  let bannerHost = null;
-  let bannerTimer = 0;
-  let bannerText = null;
+  // The note: a small card at the foot of the page each time something is
+  // stopped, so a person sees Undirect working without being interrupted.
+  // It never takes focus, covers only itself, merges blocks that land while
+  // it is up ("3 stopped"), and fades on its own. On the first NOTE_OFFER
+  // notes it carries "Don't show again", which turns the setting off and says
+  // where to turn it back on; after that the switch lives in Settings only.
+  const NOTE_MS = 3200;
+  const NOTE_OFFER = 3;
+  let notesShown = 0;
+  let note = null;    // { root, text, host, count, timer }
 
-  function showBanner(host) {
-    if (!settings.banner || window.top !== window || !document.body) return;
-    if (host && host === bannerHost) return;
-    bannerHost = host;
-
-    let root = document.getElementById("undirect-note");
-    if (!root) {
-      root = document.createElement("div");
-      root.id = "undirect-note";
-      root.style.cssText =
-        "all:initial;position:fixed;z-index:2147483647;left:16px;bottom:16px";
-      const shadow = root.attachShadow({ mode: "closed" });
-      shadow.innerHTML =
-        "<style>" +
-        ".n{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;" +
-        "background:#16181c;color:#f7f8fa;font:13px/1.3 -apple-system,system-ui,sans-serif;" +
-        "box-shadow:0 6px 24px rgba(0,0,0,.28);max-width:320px}" +
-        ".h{font-family:ui-monospace,Menlo,monospace;opacity:.75;overflow:hidden;" +
-        "text-overflow:ellipsis;white-space:nowrap}" +
-        "button{all:unset;cursor:pointer;opacity:.6;padding:0 4px}" +
-        "button:hover{opacity:1}" +
-        "</style>" +
-        '<div class="n"><span>Stopped</span><span class="h"></span>' +
-        '<button aria-label="Dismiss">&times;</button></div>';
-      shadow.querySelector("button").addEventListener("click", hideBanner);
-      bannerText = shadow.querySelector(".h");
-      document.body.appendChild(root);
-    }
-    if (bannerText) bannerText.textContent = host || "a pop-up";
-    clearTimeout(bannerTimer);
-    bannerTimer = setTimeout(hideBanner, 4000);
+  function say(key, sub, fallback) {
+    try { return api.i18n.getMessage(key, sub) || fallback; } catch (e) { return fallback; }
   }
 
-  function hideBanner() {
-    clearTimeout(bannerTimer);
-    bannerHost = null;
-    bannerText = null;
-    document.getElementById("undirect-note")?.remove();
+  function noteLine(kind, host) {
+    if (kind === "back-hijack") return [say("note_back_trap", undefined, "Back button trap stopped"), ""];
+    if (kind === "no-tap") return [say("note_kept_here", undefined, "Kept you here"), host];
+    return [say("note_stopped", undefined, "Stopped"), host];
+  }
+
+  function showNote(kind, host) {
+    if (!settings.banner || window.top !== window || !document.body) return;
+    if (note) {
+      if (note.host === host && note.count === 1) return refresh();
+      note.count += 1;
+      note.host = null;
+      note.title.textContent = say("note_count", [String(note.count)], note.count + " stopped");
+      note.text.textContent = "";
+      return refresh();
+    }
+    const [title, detail] = noteLine(kind, host);
+    const offer = notesShown < NOTE_OFFER;
+    notesShown += 1;
+    try { api.storage.local.set({ notesShown }); } catch (e) {}
+
+    const root = document.createElement("div");
+    root.style.cssText =
+      "all:initial;position:fixed;z-index:2147483647;left:50%;transform:translateX(-50%);" +
+      "bottom:calc(16px + env(safe-area-inset-bottom, 0px));pointer-events:none";
+    const shadow = root.attachShadow({ mode: "closed" });
+    shadow.innerHTML =
+      "<style>" +
+      ".n{pointer-events:auto;display:flex;align-items:center;gap:10px;padding:9px 12px 9px 10px;" +
+      "border-radius:14px;background:rgba(22,24,28,.94);color:#f7f8fa;" +
+      "font:13px/1.3 -apple-system,system-ui,sans-serif;box-shadow:0 8px 28px rgba(0,0,0,.3);" +
+      "max-width:min(360px,calc(100vw - 32px));animation:in .42s cubic-bezier(.34,1.56,.64,1) both}" +
+      ".n.out{animation:out .22s ease-in both}" +
+      ".i{flex:none;width:22px;height:22px;border-radius:50%;background:#d8352a;display:grid;place-items:center;" +
+      "animation:pop .5s .12s cubic-bezier(.34,1.8,.64,1) both}" +
+      ".t{font-weight:600;white-space:nowrap}" +
+      ".h{font-family:ui-monospace,Menlo,monospace;opacity:.72;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}" +
+      "button{all:unset;cursor:pointer;white-space:nowrap;color:#9db7ff;padding:2px 0 2px 6px;font-size:12px}" +
+      "button:focus-visible{outline:2px solid #9db7ff;border-radius:4px}" +
+      "@keyframes in{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:none}}" +
+      "@keyframes out{to{opacity:0;transform:translateY(8px)}}" +
+      "@keyframes pop{from{transform:scale(.4)}to{transform:scale(1)}}" +
+      "@media (prefers-reduced-motion:reduce){.n{animation:fade .2s both}.n.out{animation:fade .2s reverse both}.i{animation:none}" +
+      "@keyframes fade{from{opacity:0}to{opacity:1}}}" +
+      "</style>" +
+      '<div class="n" role="status" aria-live="polite">' +
+      '<span class="i"><svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">' +
+      '<path d="M2.5 6.2 5 8.6 9.6 3.6" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>' +
+      '<span class="t"></span><span class="h"></span></div>';
+    const card = shadow.querySelector(".n");
+    note = { root, card, title: shadow.querySelector(".t"), text: shadow.querySelector(".h"), host, count: 1, timer: 0 };
+    note.title.textContent = title;
+    note.text.textContent = detail;
+    if (offer) {
+      const button = document.createElement("button");
+      button.textContent = say("note_dont_show", undefined, "Don't show again");
+      button.addEventListener("click", (e) => {
+        e.stopPropagation();
+        settings.banner = false;
+        try { api.runtime.sendMessage({ type: "undirect:set", settings: { banner: false } }); } catch (err) {}
+        note.title.textContent = say("note_hidden", undefined, "Notes off. Turn them back on in Undirect's settings.");
+        note.text.textContent = "";
+        button.remove();
+        refresh();
+      });
+      card.appendChild(button);
+    }
+    document.documentElement.appendChild(root);
+    refresh();
+  }
+
+  function refresh() {
+    clearTimeout(note.timer);
+    note.timer = setTimeout(hideNote, NOTE_MS);
+  }
+
+  function hideNote() {
+    if (!note) return;
+    const gone = note;
+    note = null;
+    gone.card.classList.add("out");
+    setTimeout(() => gone.root.remove(), 240);
   }
 
   // Every cross-site destination the page reached for, whether or not it was
@@ -167,7 +222,7 @@
     // A trap leading nowhere else is still a trap: listed under this site.
     const local = isOurs(host);
     if (local && !(blocked && TRAPS.has(kind))) return;
-    if (blocked && !local) showBanner(Site.baseDomain(host));
+    if (blocked && (!local || kind === "back-hijack")) showNote(kind, Site.baseDomain(host));
     try {
       api.runtime.sendMessage({
         type: "undirect:seen",
@@ -623,11 +678,14 @@
 
     let stored = {};
     try {
-      stored = await api.storage.local.get(["settings", "everywhere", "perSite", "watched"]);
+      stored = await api.storage.local.get(["settings", "everywhere", "perSite", "watched", "notesShown", "noteDefaultOn"]);
     } catch (e) {
       stored = {};
     }
     Object.assign(settings, stored.settings ?? {});
+    notesShown = stored.notesShown ?? 0;
+    // 1.0.6 turned the note on for everyone; an older stored `false` was the old default.
+    if (!stored.noteDefaultOn) settings.banner = true;
     table = {
       policy: settings.policy ?? "block",
       everywhere: stored.everywhere ?? {},

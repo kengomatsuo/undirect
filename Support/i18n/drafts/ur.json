@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "مسئلے کی اطلاع دیں",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "روک دیا گیا"
+    },
+    "ext.note.kept_here": {
+      "s": "آپ یہیں رہے"
+    },
+    "ext.note.back_trap": {
+      "s": "بیک بٹن کا جال روک دیا گیا"
+    },
+    "ext.note.count": {
+      "s": "%lld روکے گئے"
+    },
+    "ext.note.dont_show": {
+      "s": "دوبارہ نہ دکھائیں"
+    },
+    "ext.note.hidden": {
+      "s": "نوٹس بند۔ Undirect کی ترتیبات میں دوبارہ آن کریں۔"
     }
   }
 }

@@ -599,6 +599,24 @@
       "s": "回報問題",
       "back": "report problem",
       "why": "Names opening a pre-filled issue report; nothing is sent until the person submits it themselves."
+    },
+    "ext.note.stopped": {
+      "s": "已攔截"
+    },
+    "ext.note.kept_here": {
+      "s": "已讓你留在本頁"
+    },
+    "ext.note.back_trap": {
+      "s": "已攔截返回鍵陷阱"
+    },
+    "ext.note.count": {
+      "s": "已攔截 %lld 個"
+    },
+    "ext.note.dont_show": {
+      "s": "不再顯示"
+    },
+    "ext.note.hidden": {
+      "s": "提示已關閉。可在 Undirect 設定中重新開啟。"
     }
   }
 }

@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Laporkan masalah",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Disekat"
+    },
+    "ext.note.kept_here": {
+      "s": "Anda kekal di sini"
+    },
+    "ext.note.back_trap": {
+      "s": "Perangkap butang Kembali disekat"
+    },
+    "ext.note.count": {
+      "s": "%lld disekat"
+    },
+    "ext.note.dont_show": {
+      "s": "Jangan tunjuk lagi"
+    },
+    "ext.note.hidden": {
+      "s": "Nota dimatikan. Hidupkan semula dalam tetapan Undirect."
     }
   }
 }

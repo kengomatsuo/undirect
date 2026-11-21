@@ -599,6 +599,24 @@
       "s": "Сообщить об ошибке",
       "back": "Report an error",
       "why": "names opening a pre-filled report; nothing is sent automatically, matching the brief's note that the person still submits it themselves"
+    },
+    "ext.note.stopped": {
+      "s": "Остановлено"
+    },
+    "ext.note.kept_here": {
+      "s": "Вы остались здесь"
+    },
+    "ext.note.back_trap": {
+      "s": "Ловушка кнопки «Назад» остановлена"
+    },
+    "ext.note.count": {
+      "s": "Остановлено: %lld"
+    },
+    "ext.note.dont_show": {
+      "s": "Больше не показывать"
+    },
+    "ext.note.hidden": {
+      "s": "Уведомления выключены. Включить снова можно в настройках Undirect."
     }
   }
 }

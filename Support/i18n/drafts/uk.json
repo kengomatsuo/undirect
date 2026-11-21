@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Повідомити про проблему",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Зупинено"
+    },
+    "ext.note.kept_here": {
+      "s": "Ви залишилися тут"
+    },
+    "ext.note.back_trap": {
+      "s": "Пастку кнопки «Назад» зупинено"
+    },
+    "ext.note.count": {
+      "s": "Зупинено: %lld"
+    },
+    "ext.note.dont_show": {
+      "s": "Більше не показувати"
+    },
+    "ext.note.hidden": {
+      "s": "Сповіщення вимкнено. Увімкнути знову можна в налаштуваннях Undirect."
     }
   }
 }

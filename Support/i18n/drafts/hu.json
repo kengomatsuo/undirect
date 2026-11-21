@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Probléma jelentése",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Megállítva"
+    },
+    "ext.note.kept_here": {
+      "s": "Itt maradtál"
+    },
+    "ext.note.back_trap": {
+      "s": "Vissza gomb csapda megállítva"
+    },
+    "ext.note.count": {
+      "s": "%lld megállítva"
+    },
+    "ext.note.dont_show": {
+      "s": "Ne mutasd többé"
+    },
+    "ext.note.hidden": {
+      "s": "Értesítések kikapcsolva. Az Undirect beállításaiban kapcsolhatod vissza."
     }
   }
 }

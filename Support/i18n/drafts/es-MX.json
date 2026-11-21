@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Reportar un problema",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Bloqueado"
+    },
+    "ext.note.kept_here": {
+      "s": "Sigues aquí"
+    },
+    "ext.note.back_trap": {
+      "s": "Trampa del botón Atrás bloqueada"
+    },
+    "ext.note.count": {
+      "s": "%lld bloqueados"
+    },
+    "ext.note.dont_show": {
+      "s": "No volver a mostrar"
+    },
+    "ext.note.hidden": {
+      "s": "Avisos desactivados. Vuelve a activarlos en la configuración de Undirect."
     }
   }
 }

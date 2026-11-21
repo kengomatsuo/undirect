@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Sporoči težavo",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Ustavljeno"
+    },
+    "ext.note.kept_here": {
+      "s": "Ostali ste tukaj"
+    },
+    "ext.note.back_trap": {
+      "s": "Past gumba Nazaj ustavljena"
+    },
+    "ext.note.count": {
+      "s": "Ustavljeno: %lld"
+    },
+    "ext.note.dont_show": {
+      "s": "Ne prikaži več"
+    },
+    "ext.note.hidden": {
+      "s": "Obvestila izklopljena. Znova jih vklopite v nastavitvah Undirect."
     }
   }
 }

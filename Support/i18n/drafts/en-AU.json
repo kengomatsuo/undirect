@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Report a site",
       "back": "Report a site"
+    },
+    "ext.note.stopped": {
+      "s": "Stopped"
+    },
+    "ext.note.kept_here": {
+      "s": "Kept you here"
+    },
+    "ext.note.back_trap": {
+      "s": "Back button trap stopped"
+    },
+    "ext.note.count": {
+      "s": "%lld stopped"
+    },
+    "ext.note.dont_show": {
+      "s": "Don't show again"
+    },
+    "ext.note.hidden": {
+      "s": "Notes off. Turn them back on in Undirect's settings."
     }
   }
 }

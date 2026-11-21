@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "समस्या कळवा",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "थांबवले"
+    },
+    "ext.note.kept_here": {
+      "s": "तुम्ही इथेच राहिलात"
+    },
+    "ext.note.back_trap": {
+      "s": "बॅक बटणाचा सापळा थांबवला"
+    },
+    "ext.note.count": {
+      "s": "%lld थांबवले"
+    },
+    "ext.note.dont_show": {
+      "s": "पुन्हा दाखवू नका"
+    },
+    "ext.note.hidden": {
+      "s": "सूचना बंद. Undirect च्या सेटिंग्जमध्ये पुन्हा सुरू करा."
     }
   }
 }

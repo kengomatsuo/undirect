@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Raportează o problemă",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Oprit"
+    },
+    "ext.note.kept_here": {
+      "s": "Ai rămas aici"
+    },
+    "ext.note.back_trap": {
+      "s": "Capcana butonului Înapoi oprită"
+    },
+    "ext.note.count": {
+      "s": "%lld oprite"
+    },
+    "ext.note.dont_show": {
+      "s": "Nu mai afișa"
+    },
+    "ext.note.hidden": {
+      "s": "Notificări dezactivate. Le reactivezi din setările Undirect."
     }
   }
 }

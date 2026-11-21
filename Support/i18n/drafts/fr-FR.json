@@ -599,6 +599,24 @@
       "s": "Signaler un problème",
       "back": "Report a problem",
       "why": "Names the external issue-report action plainly."
+    },
+    "ext.note.stopped": {
+      "s": "Bloqué"
+    },
+    "ext.note.kept_here": {
+      "s": "Vous restez ici"
+    },
+    "ext.note.back_trap": {
+      "s": "Piège du bouton Retour bloqué"
+    },
+    "ext.note.count": {
+      "s": "%lld bloqués"
+    },
+    "ext.note.dont_show": {
+      "s": "Ne plus afficher"
+    },
+    "ext.note.hidden": {
+      "s": "Notes désactivées. Réactivez-les dans les réglages d'Undirect."
     }
   }
 }

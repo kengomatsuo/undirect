@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "ಸಮಸ್ಯೆಯನ್ನು ವರದಿ ಮಾಡಿ",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "ತಡೆಯಲಾಗಿದೆ"
+    },
+    "ext.note.kept_here": {
+      "s": "ನೀವು ಇಲ್ಲೇ ಉಳಿದಿದ್ದೀರಿ"
+    },
+    "ext.note.back_trap": {
+      "s": "ಬ್ಯಾಕ್ ಬಟನ್ ಬಲೆ ತಡೆಯಲಾಗಿದೆ"
+    },
+    "ext.note.count": {
+      "s": "%lld ತಡೆಯಲಾಗಿದೆ"
+    },
+    "ext.note.dont_show": {
+      "s": "ಮತ್ತೆ ತೋರಿಸಬೇಡಿ"
+    },
+    "ext.note.hidden": {
+      "s": "ಸೂಚನೆಗಳು ಆಫ್. Undirect ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಮತ್ತೆ ಆನ್ ಮಾಡಿ."
     }
   }
 }

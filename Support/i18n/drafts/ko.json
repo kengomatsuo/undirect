@@ -599,6 +599,24 @@
       "s": "문제 신고",
       "back": "problem report",
       "why": "Names opening a pre-filled report; the person still has to submit it themselves, so no promise of anything sent automatically."
+    },
+    "ext.note.stopped": {
+      "s": "차단됨"
+    },
+    "ext.note.kept_here": {
+      "s": "이 페이지에 머물렀어요"
+    },
+    "ext.note.back_trap": {
+      "s": "뒤로 버튼 함정 차단됨"
+    },
+    "ext.note.count": {
+      "s": "%lld개 차단됨"
+    },
+    "ext.note.dont_show": {
+      "s": "다시 보지 않기"
+    },
+    "ext.note.hidden": {
+      "s": "알림을 껐어요. Undirect 설정에서 다시 켤 수 있어요."
     }
   }
 }

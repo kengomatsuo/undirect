@@ -599,6 +599,24 @@
       "s": "Laporkan Masalah",
       "back": "Report a problem",
       "why": "Names the action of opening a pre-filled issue report; nothing is sent until the person submits it themselves."
+    },
+    "ext.note.stopped": {
+      "s": "Dihentikan"
+    },
+    "ext.note.kept_here": {
+      "s": "Anda tetap di sini"
+    },
+    "ext.note.back_trap": {
+      "s": "Jebakan tombol Kembali dihentikan"
+    },
+    "ext.note.count": {
+      "s": "%lld dihentikan"
+    },
+    "ext.note.dont_show": {
+      "s": "Jangan tampilkan lagi"
+    },
+    "ext.note.hidden": {
+      "s": "Catatan dimatikan. Nyalakan lagi di pengaturan Undirect."
     }
   }
 }

@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "সমস্যা জানান",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "থামানো হয়েছে"
+    },
+    "ext.note.kept_here": {
+      "s": "আপনাকে এখানেই রাখা হলো"
+    },
+    "ext.note.back_trap": {
+      "s": "ব্যাক বাটনের ফাঁদ থামানো হয়েছে"
+    },
+    "ext.note.count": {
+      "s": "%lldটি থামানো হয়েছে"
+    },
+    "ext.note.dont_show": {
+      "s": "আর দেখাবেন না"
+    },
+    "ext.note.hidden": {
+      "s": "নোট বন্ধ। Undirect-এর সেটিংসে আবার চালু করুন।"
     }
   }
 }

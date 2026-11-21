@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Αναφορά προβλήματος",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Σταμάτησε"
+    },
+    "ext.note.kept_here": {
+      "s": "Μείνατε εδώ"
+    },
+    "ext.note.back_trap": {
+      "s": "Η παγίδα του κουμπιού Πίσω σταμάτησε"
+    },
+    "ext.note.count": {
+      "s": "Σταμάτησαν %lld"
+    },
+    "ext.note.dont_show": {
+      "s": "Να μην εμφανιστεί ξανά"
+    },
+    "ext.note.hidden": {
+      "s": "Οι σημειώσεις απενεργοποιήθηκαν. Ενεργοποιήστε τες ξανά στις ρυθμίσεις του Undirect."
     }
   }
 }

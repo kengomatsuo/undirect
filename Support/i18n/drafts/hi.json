@@ -599,6 +599,24 @@
       "s": "समस्या बताएं",
       "back": "Problem tell",
       "why": "Names the action plainly: opens a pre-filled report the person still has to submit themselves."
+    },
+    "ext.note.stopped": {
+      "s": "रोका गया"
+    },
+    "ext.note.kept_here": {
+      "s": "आप यहीं रहे"
+    },
+    "ext.note.back_trap": {
+      "s": "बैक बटन का जाल रोका गया"
+    },
+    "ext.note.count": {
+      "s": "%lld रोके गए"
+    },
+    "ext.note.dont_show": {
+      "s": "फिर से न दिखाएँ"
+    },
+    "ext.note.hidden": {
+      "s": "नोट बंद। Undirect की सेटिंग में फिर से चालू करें।"
     }
   }
 }

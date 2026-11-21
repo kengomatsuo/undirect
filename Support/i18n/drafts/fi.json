@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Ilmoita ongelmasta",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Pysäytetty"
+    },
+    "ext.note.kept_here": {
+      "s": "Pysyit tällä sivulla"
+    },
+    "ext.note.back_trap": {
+      "s": "Takaisin-painikkeen ansa pysäytetty"
+    },
+    "ext.note.count": {
+      "s": "%lld pysäytetty"
+    },
+    "ext.note.dont_show": {
+      "s": "Älä näytä uudelleen"
+    },
+    "ext.note.hidden": {
+      "s": "Ilmoitukset pois. Ota ne takaisin käyttöön Undirectin asetuksista."
     }
   }
 }

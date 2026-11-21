@@ -599,6 +599,24 @@
       "s": "Probleem melden",
       "back": "Report problem",
       "why": "Names opening the pre-filled issue report, nothing sent automatically."
+    },
+    "ext.note.stopped": {
+      "s": "Gestopt"
+    },
+    "ext.note.kept_here": {
+      "s": "Je bent hier gebleven"
+    },
+    "ext.note.back_trap": {
+      "s": "Terugknop-val gestopt"
+    },
+    "ext.note.count": {
+      "s": "%lld gestopt"
+    },
+    "ext.note.dont_show": {
+      "s": "Niet meer tonen"
+    },
+    "ext.note.hidden": {
+      "s": "Meldingen uit. Zet ze weer aan in de instellingen van Undirect."
     }
   }
 }

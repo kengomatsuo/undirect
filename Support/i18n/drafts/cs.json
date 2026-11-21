@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Nahlásit problém",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Zastaveno"
+    },
+    "ext.note.kept_here": {
+      "s": "Zůstali jste tady"
+    },
+    "ext.note.back_trap": {
+      "s": "Past na tlačítko Zpět zastavena"
+    },
+    "ext.note.count": {
+      "s": "Zastaveno: %lld"
+    },
+    "ext.note.dont_show": {
+      "s": "Už nezobrazovat"
+    },
+    "ext.note.hidden": {
+      "s": "Poznámky vypnuty. Znovu je zapnete v nastavení Undirect."
     }
   }
 }

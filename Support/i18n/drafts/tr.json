@@ -599,6 +599,24 @@
       "s": "Sorun Bildir",
       "back": "Problem Report",
       "why": "Names the action of opening a pre-filled issue report, submission still left to the person."
+    },
+    "ext.note.stopped": {
+      "s": "Durduruldu"
+    },
+    "ext.note.kept_here": {
+      "s": "Burada kaldınız"
+    },
+    "ext.note.back_trap": {
+      "s": "Geri düğmesi tuzağı durduruldu"
+    },
+    "ext.note.count": {
+      "s": "%lld durduruldu"
+    },
+    "ext.note.dont_show": {
+      "s": "Bir daha gösterme"
+    },
+    "ext.note.hidden": {
+      "s": "Notlar kapalı. Undirect ayarlarından yeniden açabilirsiniz."
     }
   }
 }

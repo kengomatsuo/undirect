@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "ସମସ୍ୟା ଜଣାନ୍ତୁ",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "ବନ୍ଦ କରାଗଲା"
+    },
+    "ext.note.kept_here": {
+      "s": "ଆପଣ ଏଠାରେ ରହିଲେ"
+    },
+    "ext.note.back_trap": {
+      "s": "ବ୍ୟାକ୍ ବଟନ୍ ଫାନ୍ଦ ବନ୍ଦ କରାଗଲା"
+    },
+    "ext.note.count": {
+      "s": "%lld ବନ୍ଦ କରାଗଲା"
+    },
+    "ext.note.dont_show": {
+      "s": "ପୁଣି ଦେଖାନ୍ତୁ ନାହିଁ"
+    },
+    "ext.note.hidden": {
+      "s": "ନୋଟ୍ ବନ୍ଦ। Undirect ସେଟିଂସରେ ପୁଣି ଚାଲୁ କରନ୍ତୁ।"
     }
   }
 }

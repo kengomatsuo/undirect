@@ -655,6 +655,19 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
      JSON.stringify(answer));
 }
 
+// 1.0.6 turned the page note on. A stored false from before is the old
+// default and flips once; a false set after that (the note's own "Don't show
+// again") stays.
+{
+  const w = world({ settings: { banner: false } });
+  await Promise.all(w.send({ type: "undirect:set", settings: { veto: true } }, 7));
+  ok("an old install sees the note once 1.0.6 lands", w.local.settings.banner === true && w.local.noteDefaultOn === true,
+     JSON.stringify(w.local.settings));
+  await Promise.all(w.send({ type: "undirect:set", settings: { banner: false } }, 7));
+  await Promise.all(w.send({ type: "undirect:set", settings: { veto: true } }, 7));
+  ok("and turning it off afterwards sticks", w.local.settings.banner === false, JSON.stringify(w.local.settings));
+}
+
 const failed = results.filter((r) => !r.pass);
 console.log(`\n${results.length} checks, ${failed.length} failed`);
 process.exit(failed.length ? 1 : 0);

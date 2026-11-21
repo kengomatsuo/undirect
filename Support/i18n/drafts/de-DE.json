@@ -599,6 +599,24 @@
       "s": "Problem melden",
       "back": "Report problem",
       "why": "Concise two-word action label naming the external report action."
+    },
+    "ext.note.stopped": {
+      "s": "Gestoppt"
+    },
+    "ext.note.kept_here": {
+      "s": "Du bleibst hier"
+    },
+    "ext.note.back_trap": {
+      "s": "Zurück-Falle gestoppt"
+    },
+    "ext.note.count": {
+      "s": "%lld gestoppt"
+    },
+    "ext.note.dont_show": {
+      "s": "Nicht mehr anzeigen"
+    },
+    "ext.note.hidden": {
+      "s": "Hinweise aus. In den Undirect-Einstellungen wieder einschalten."
     }
   }
 }

@@ -342,5 +342,35 @@
   "popup_show_less": {
     "message": "Εμφάνιση λιγότερων",
     "description": "Collapses a row's address list back to three."
+  },
+  "note_stopped": {
+    "message": "Σταμάτησε",
+    "description": "Title of the small note at the foot of a web page when Undirect stopped the page opening or sending the tab to another site; the site's address follows it."
+  },
+  "note_kept_here": {
+    "message": "Μείνατε εδώ",
+    "description": "Title of the note when the page tried to send the tab to another site with no press from the person (as it loaded, on a timer, or while scrolling) and Undirect kept the tab on the page; the other site's address follows it."
+  },
+  "note_back_trap": {
+    "message": "Η παγίδα του κουμπιού Πίσω σταμάτησε",
+    "description": "The note's whole text when the page tried to keep the person from leaving with Back, or to answer Back with another site, and Undirect stopped it."
+  },
+  "note_count": {
+    "message": "Σταμάτησαν $COUNT$",
+    "description": "The note's text when several things were stopped in a row, with their number.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "3"
+      }
+    }
+  },
+  "note_dont_show": {
+    "message": "Να μην εμφανιστεί ξανά",
+    "description": "Link inside the note, shown only the first few times, that turns the note off."
+  },
+  "note_hidden": {
+    "message": "Οι σημειώσεις απενεργοποιήθηκαν. Ενεργοποιήστε τες ξανά στις ρυθμίσεις του Undirect.",
+    "description": "Replaces the note's text right after the person chose not to see it again; says where to turn it back on."
   }
 }

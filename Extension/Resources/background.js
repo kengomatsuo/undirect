@@ -25,7 +25,7 @@ const DEFAULT_SETTINGS = {
   sweep: true,
   veto: true,
   recipes: true,
-  banner: false, // a note in the page when something is stopped
+  banner: true, // a note in the page when something is stopped (on from 1.0.6)
   policy: "block", // what an unknown cross-site destination gets
   mode: "watched", // "watched": only sites turned on; "everywhere": every site
 };
@@ -102,7 +102,15 @@ async function readState() {
 async function loadState() {
   const stored = await api.storage.local.get([
     "settings", "everywhere", "perSite", "watched", "learned", "ruleIds", "nextRuleId", "lifetime",
+    "noteDefaultOn",
   ]);
+  // 1.0.6 turned the page note on for everyone. Before it the note was off by
+  // default and stored with every other setting, so a stored false is almost
+  // always the old default rather than a choice: flip it once.
+  if (!stored.noteDefaultOn) {
+    stored.settings = { ...(stored.settings ?? {}), banner: true };
+    await api.storage.local.set({ settings: stored.settings, noteDefaultOn: true });
+  }
   const session = await sessionGet(["privateWatched", "privatePerSite"]);
   cached = {
     settings: { ...DEFAULT_SETTINGS, ...(stored.settings ?? {}) },
@@ -944,7 +952,7 @@ async function pushSnapshot(now = false) {
     policy: state.settings.policy ?? "block",
     enabled: state.settings.enabled !== false,
     mode: state.settings.mode ?? "watched",
-    banner: state.settings.banner === true,
+    banner: state.settings.banner !== false,
     everywhere: state.everywhere,
     perSite: state.perSite,
     watched: state.watched,

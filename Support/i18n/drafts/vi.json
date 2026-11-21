@@ -599,6 +599,24 @@
       "s": "Báo lỗi",
       "back": "Report bug",
       "why": "Names opening a pre-filled report; nothing is sent until the person submits it."
+    },
+    "ext.note.stopped": {
+      "s": "Đã chặn"
+    },
+    "ext.note.kept_here": {
+      "s": "Bạn vẫn ở đây"
+    },
+    "ext.note.back_trap": {
+      "s": "Đã chặn bẫy nút Quay lại"
+    },
+    "ext.note.count": {
+      "s": "Đã chặn %lld"
+    },
+    "ext.note.dont_show": {
+      "s": "Không hiện lại"
+    },
+    "ext.note.hidden": {
+      "s": "Đã tắt ghi chú. Bật lại trong cài đặt của Undirect."
     }
   }
 }

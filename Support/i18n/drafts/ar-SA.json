@@ -599,6 +599,24 @@
       "s": "الإبلاغ عن مشكلة",
       "back": "Report a problem",
       "why": "Slightly over the two-word budget to keep the nav row unambiguous; a bare “إبلاغ” alone reads as incomplete in Arabic."
+    },
+    "ext.note.stopped": {
+      "s": "تم الإيقاف"
+    },
+    "ext.note.kept_here": {
+      "s": "بقيتَ هنا"
+    },
+    "ext.note.back_trap": {
+      "s": "تم إيقاف فخ زر الرجوع"
+    },
+    "ext.note.count": {
+      "s": "تم إيقاف %lld"
+    },
+    "ext.note.dont_show": {
+      "s": "لا تُظهر هذا مرة أخرى"
+    },
+    "ext.note.hidden": {
+      "s": "تم إيقاف الملاحظات. أعد تشغيلها من إعدادات Undirect."
     }
   }
 }

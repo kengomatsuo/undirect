@@ -599,6 +599,24 @@
       "s": "Segnala problema",
       "back": "Report problem",
       "why": "Names opening a pre-filled issue report; nothing is sent until the person submits it themselves."
+    },
+    "ext.note.stopped": {
+      "s": "Bloccato"
+    },
+    "ext.note.kept_here": {
+      "s": "Sei rimasto qui"
+    },
+    "ext.note.back_trap": {
+      "s": "Trappola del tasto Indietro bloccata"
+    },
+    "ext.note.count": {
+      "s": "%lld bloccati"
+    },
+    "ext.note.dont_show": {
+      "s": "Non mostrare più"
+    },
+    "ext.note.hidden": {
+      "s": "Avvisi disattivati. Riattivali nelle impostazioni di Undirect."
     }
   }
 }

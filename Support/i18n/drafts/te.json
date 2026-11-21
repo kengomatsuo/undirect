@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "సమస్యను నివేదించండి",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "ఆపబడింది"
+    },
+    "ext.note.kept_here": {
+      "s": "మీరు ఇక్కడే ఉన్నారు"
+    },
+    "ext.note.back_trap": {
+      "s": "బ్యాక్ బటన్ ఉచ్చు ఆపబడింది"
+    },
+    "ext.note.count": {
+      "s": "%lld ఆపబడ్డాయి"
+    },
+    "ext.note.dont_show": {
+      "s": "మళ్లీ చూపవద్దు"
+    },
+    "ext.note.hidden": {
+      "s": "నోట్‌లు ఆఫ్. Undirect సెట్టింగ్‌లలో మళ్లీ ఆన్ చేయండి."
     }
   }
 }

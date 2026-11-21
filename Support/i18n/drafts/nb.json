@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Rapportér et problem",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Stoppet"
+    },
+    "ext.note.kept_here": {
+      "s": "Du ble værende her"
+    },
+    "ext.note.back_trap": {
+      "s": "Tilbake-knappfelle stoppet"
+    },
+    "ext.note.count": {
+      "s": "%lld stoppet"
+    },
+    "ext.note.dont_show": {
+      "s": "Ikke vis igjen"
+    },
+    "ext.note.hidden": {
+      "s": "Merknader av. Slå dem på igjen i innstillingene til Undirect."
     }
   }
 }

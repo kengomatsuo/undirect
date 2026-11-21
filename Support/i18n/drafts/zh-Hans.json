@@ -599,6 +599,24 @@
       "s": "反馈问题",
       "back": "Report issue",
       "why": "Plain verb-plus-object naming the action of opening a pre-filled issue report."
+    },
+    "ext.note.stopped": {
+      "s": "已拦截"
+    },
+    "ext.note.kept_here": {
+      "s": "已让你留在本页"
+    },
+    "ext.note.back_trap": {
+      "s": "已拦截返回键陷阱"
+    },
+    "ext.note.count": {
+      "s": "已拦截 %lld 个"
+    },
+    "ext.note.dont_show": {
+      "s": "不再显示"
+    },
+    "ext.note.hidden": {
+      "s": "提示已关闭。可在 Undirect 设置中重新打开。"
     }
   }
 }

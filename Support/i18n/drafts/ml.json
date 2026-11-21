@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "പ്രശ്നം റിപ്പോർട്ട് ചെയ്യുക",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "തടഞ്ഞു"
+    },
+    "ext.note.kept_here": {
+      "s": "നിങ്ങൾ ഇവിടെത്തന്നെ തുടർന്നു"
+    },
+    "ext.note.back_trap": {
+      "s": "ബാക്ക് ബട്ടൺ കെണി തടഞ്ഞു"
+    },
+    "ext.note.count": {
+      "s": "%lld എണ്ണം തടഞ്ഞു"
+    },
+    "ext.note.dont_show": {
+      "s": "വീണ്ടും കാണിക്കരുത്"
+    },
+    "ext.note.hidden": {
+      "s": "കുറിപ്പുകൾ ഓഫ്. Undirect ക്രമീകരണങ്ങളിൽ വീണ്ടും ഓണാക്കാം."
     }
   }
 }

@@ -599,6 +599,24 @@
       "s": "แจ้งปัญหา",
       "back": "Report a problem",
       "why": "Names opening a pre-filled issue report; nothing sends until the person submits it themselves."
+    },
+    "ext.note.stopped": {
+      "s": "หยุดแล้ว"
+    },
+    "ext.note.kept_here": {
+      "s": "คุณยังอยู่ที่หน้านี้"
+    },
+    "ext.note.back_trap": {
+      "s": "หยุดกับดักปุ่มย้อนกลับแล้ว"
+    },
+    "ext.note.count": {
+      "s": "หยุดแล้ว %lld รายการ"
+    },
+    "ext.note.dont_show": {
+      "s": "ไม่ต้องแสดงอีก"
+    },
+    "ext.note.hidden": {
+      "s": "ปิดการแจ้งแล้ว เปิดอีกครั้งได้ในการตั้งค่าของ Undirect"
     }
   }
 }

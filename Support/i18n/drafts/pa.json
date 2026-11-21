@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "ਸਮੱਸਿਆ ਦੀ ਰਿਪੋਰਟ ਕਰੋ",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "ਰੋਕਿਆ ਗਿਆ"
+    },
+    "ext.note.kept_here": {
+      "s": "ਤੁਸੀਂ ਇੱਥੇ ਹੀ ਰਹੇ"
+    },
+    "ext.note.back_trap": {
+      "s": "ਬੈਕ ਬਟਨ ਦਾ ਜਾਲ ਰੋਕਿਆ ਗਿਆ"
+    },
+    "ext.note.count": {
+      "s": "%lld ਰੋਕੇ ਗਏ"
+    },
+    "ext.note.dont_show": {
+      "s": "ਦੁਬਾਰਾ ਨਾ ਦਿਖਾਓ"
+    },
+    "ext.note.hidden": {
+      "s": "ਨੋਟ ਬੰਦ। Undirect ਦੀਆਂ ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਮੁੜ ਚਾਲੂ ਕਰੋ।"
     }
   }
 }

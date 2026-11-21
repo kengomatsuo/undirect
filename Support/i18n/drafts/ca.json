@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Informa d'un problema",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Aturat"
+    },
+    "ext.note.kept_here": {
+      "s": "T'hem mantingut aquí"
+    },
+    "ext.note.back_trap": {
+      "s": "Trampa del botó Enrere aturada"
+    },
+    "ext.note.count": {
+      "s": "%lld aturats"
+    },
+    "ext.note.dont_show": {
+      "s": "No ho tornis a mostrar"
+    },
+    "ext.note.hidden": {
+      "s": "Notes desactivades. Torna-les a activar a la configuració d'Undirect."
     }
   }
 }

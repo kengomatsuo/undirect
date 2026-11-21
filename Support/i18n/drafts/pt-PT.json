@@ -480,6 +480,24 @@
     "ext.action.report": {
       "s": "Comunicar um problema",
       "back": "Report a problem"
+    },
+    "ext.note.stopped": {
+      "s": "Bloqueado"
+    },
+    "ext.note.kept_here": {
+      "s": "Ficou aqui"
+    },
+    "ext.note.back_trap": {
+      "s": "Armadilha do botão Retroceder bloqueada"
+    },
+    "ext.note.count": {
+      "s": "%lld bloqueados"
+    },
+    "ext.note.dont_show": {
+      "s": "Não mostrar novamente"
+    },
+    "ext.note.hidden": {
+      "s": "Avisos desativados. Volte a ativá-los nas definições do Undirect."
     }
   }
 }

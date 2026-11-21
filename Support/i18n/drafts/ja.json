@@ -599,6 +599,24 @@
       "s": "問題を報告",
       "back": "Report a problem",
       "why": "verb+object action label per house UI-copy convention"
+    },
+    "ext.note.stopped": {
+      "s": "ブロックしました"
+    },
+    "ext.note.kept_here": {
+      "s": "このページにとどまりました"
+    },
+    "ext.note.back_trap": {
+      "s": "戻るボタンの罠をブロック"
+    },
+    "ext.note.count": {
+      "s": "%lld件をブロック"
+    },
+    "ext.note.dont_show": {
+      "s": "今後表示しない"
+    },
+    "ext.note.hidden": {
+      "s": "通知をオフにしました。Undirectの設定でオンに戻せます。"
     }
   }
 }
