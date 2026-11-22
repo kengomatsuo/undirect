@@ -296,3 +296,28 @@ Grok-reviewed list (docs/research/grok-x-review.md). 28 text posts scheduled in 
 | 2026-12-05 19:45 | 35 | What's a Safari behaviour that still surprises you? | scheduled |
 | 2026-11-22 22:15 | 36 | What's in your Mac menu bar that you open more than once a day? | scheduled (moved to today) |
 | 2026-12-06 22:15 | 37 | The hard part of stopping tabs a page opens by itself is telling "the person tapped this"  | scheduled |
+
+### Approved films and carousels, every platform (2026-11-22 evening)
+
+Pieces: "What you tap is what you get" (Undirect) and "Type it once" (Cutling) films with sound, 9:16 and 16:9 cuts, plus the two 4-slide carousels, all from ~/Downloads/monholt-samples/. Before scheduling, each platform's own lists were read (Business Suite Scheduled, Published and Drafts; Threads Drafts; TikTok Studio Posts; YouTube uploads): the earlier run had left nothing of these pieces on any of them. TikTok Studio held an unsaved local upload of the old P01 film (u1.mp4), which was discarded. All four pieces go out before the Black Friday prices start on Nov 27, since their art shows $1.99 and $4.99. Meta (Instagram + Facebook Page) posts are one Business Suite post each, to both. Threads posts go to the Tech Threads community, with the site link as reply 2/2. TikTok posts are marked Disclose > Your brand, so the web editor will refuse edits or deletes on them; that is done from the TikTok app. Every row below was read back from that platform's own scheduled list after it was scheduled.
+
+| WIB | Platform | Piece | Caption opens | Status |
+|---|---|---|---|---|
+| 2026-11-23 07:35 | TikTok @monholt | Undirect film | You tapped Play. You got five tabs. | scheduled, https://www.tiktok.com/@monholt/video/7710986879750950162 (Posts list: "23 Nov, 7:35 am (GMT+7)") |
+| 2026-11-23 07:37 | Instagram Reel + Facebook Reel | Undirect film | You tapped Play. You got five tabs. | scheduled, Business Suite Scheduled reads "23 November 07:37" for Monholt and monholtco |
+| 2026-11-23 07:43 | Threads | Undirect film | You tapped Play. You got five tabs. | scheduled, Drafts reads "Posting tomorrow at 07:43 GMT+7", 1 reply |
+| 2026-11-23 07:51 | YouTube Short @matsuokengo | Undirect 9:16 | You tapped Play and got five tabs | scheduled, https://youtube.com/shorts/3fzHl5M9cHk (private, publishAt 2026-11-23T00:51:00Z) |
+| 2026-11-23 23:23 | YouTube @matsuokengo | Undirect 16:9 | Why tapping Play opens ad tabs in Safari, and how to stop it | scheduled, https://youtu.be/cZRiFnbDDl4 (private, publishAt 2026-11-23T16:23:00Z) |
+| 2026-11-24 23:35 | TikTok @monholt photo | Undirect carousel | You tapped Play. You got five tabs. (title) | scheduled, https://www.tiktok.com/@monholt/video/7710988252647410945 ("24 Nov, 11:35 pm") |
+| 2026-11-24 23:37 | Instagram carousel + Facebook photos | Undirect carousel | You tapped Play. You got five tabs. Swipe to see what was in the way. | scheduled, "24 November 23:37" x2, boost declined |
+| 2026-11-24 23:41 | Threads | Undirect carousel | You tapped Play. You got five tabs. Swipe to see what was in the way. | scheduled, "Posting on Tuesday at 23:41 GMT+7", 1 reply |
+| 2026-11-25 07:23 | Instagram Reel + Facebook Reel | Cutling film | How many times this week have you typed your own address? | scheduled, "25 November 07:23" x2 |
+| 2026-11-25 07:25 | TikTok @monholt | Cutling film | How many times this week have you typed your own address? | scheduled, https://www.tiktok.com/@monholt/video/7710987843329412404 ("25 Nov, 7:25 am") |
+| 2026-11-25 07:29 | Threads | Cutling film | How many times this week have you typed your own address? | scheduled, "Posting on Wednesday at 07:29 GMT+7", 1 reply |
+| 2026-11-25 07:47 | YouTube Short @matsuokengo | Cutling 9:16 | How many times have you typed your address? | scheduled, https://youtube.com/shorts/i9zHwserlpE (private, publishAt 2026-11-25T00:47:00Z) |
+| 2026-11-25 23:11 | YouTube @matsuokengo | Cutling 16:9 | Type your address once, then one tap in any app on iPhone and Mac | scheduled, https://youtu.be/rX-APrD40l4 (private, publishAt 2026-11-25T16:11:00Z) |
+| 2026-11-26 22:53 | Instagram carousel + Facebook photos | Cutling carousel | How many times have you typed your own address? I stopped counting. | scheduled, "26 November 22:53" x2, boost declined |
+| 2026-11-26 22:55 | TikTok @monholt photo | Cutling carousel | How many times have you typed your address? (title) | scheduled, https://www.tiktok.com/@monholt/video/7710989003025091846 ("26 Nov, 10:55 pm") |
+| 2026-11-26 22:57 | Threads | Cutling carousel | How many times have you typed your own address? I stopped counting. | scheduled, "Posting on Thursday at 22:57 GMT+7", 1 reply |
+
+YouTube descriptions carry campaign links ct=yt-tapget-short, yt-tapget-long, yt-typeonce-short, yt-typeonce-long and the music credits (Hangtime by WOWA via Unminus; Complicated by Arulo via Mixkit). Custom thumbnails were set from the "You got five tabs" and "How many times have you typed your address?" frames; TikTok covers use the same frames. TikTok URLs and the Shorts links answer only once each post is live.
