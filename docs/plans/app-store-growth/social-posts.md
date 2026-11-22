@@ -261,3 +261,38 @@ Owner: the X posts lacked pictures and ran too long. Read in Chrome 01:28-02:05 
 - Research for the new mix: docs/research/x-engagement-mix.md; drafts in social/x-engagement-drafts.md for the owner's review.
 - 11:55-12:20 WIB: after the limit cleared, the rest were deleted in rounds (X's list reloads a few each time). X > Drafts > Scheduled now reads one item: "Will send on Fri, Nov 27, 2026 at 8:15 PM", the Arabic @APPS_RH quote. No sales post went out.
 - 12:40 WIB: owner cancelled the Arabic @APPS_RH quote; deleted. X > Drafts > Scheduled reads "Hold that thought" (empty).
+
+### Engagement-first X posts scheduled (owner go 2026-11-22)
+
+Grok-reviewed list (docs/research/grok-x-review.md). 28 text posts scheduled in X; X's Scheduled list read back 28 items. X's picker only offers quarter hours, so times use :15 and :45, two a day on varied hours. By hand on the day: polls #6, #10, #19, #21, #29, #34; quotes #5 (@iPritamX), #11 (MacPip list); #17 needs its picture; reply "I'm on 9 right now." under #3.
+
+| WIB | # | Post | Status |
+|---|---|---|---|
+| 2026-11-23 09:15 | 3 | How many tabs are open in Safari on your phone right now? Go and look. I'll go first in th | scheduled |
+| 2026-11-23 19:45 | 13 | Without looking: what's the last thing you copied on your phone? | scheduled |
+| 2026-11-24 10:45 | 8 | What have you typed so many times that your thumbs do it without you? An address, an email | scheduled |
+| 2026-11-24 21:15 | 1 | "Accept all" is one tap. "Reject all" is a second screen, a column of switches and a Save  | scheduled |
+| 2026-11-25 08:45 | 4 | Mac people: what's the first app you install on a new Mac, before anything else? | scheduled |
+| 2026-11-25 22:15 | 12 | What's an app you paid for once, years ago, and still open every week? | scheduled |
+| 2026-11-26 08:45 | 7 | I pressed the Back button. That was the whole message. Some sites answer it with another p | scheduled |
+| 2026-11-26 19:15 | 2 | You can copy on an iPhone by pinching in with three fingers, and paste by pinching out. Do | scheduled |
+| 2026-11-27 21:45 | 14 | Black Friday, Nov 27 to 30 on the App Store: / Cutling $2.99 (was $4.99) / Undirect $0.99  | scheduled |
+| 2026-11-27 07:45 | 18 | If you moved from Android to iPhone: what's the one thing you still miss? | scheduled |
+| 2026-11-28 10:45 | 15 | Paste. "Allow Paste". Paste again. "Allow Paste". It's my phone and my clipboard. Who else | scheduled |
+| 2026-11-28 19:15 | 20 | iPhone people: are you on Apple's keyboard or another one? What made you switch, or stay? | scheduled |
+| 2026-11-29 07:45 | 9 | Korean writes "tap" and "tab" the same way: 탭. So my App Store headline about pop-ups that | scheduled |
+| 2026-11-29 20:15 | 16 | Apple rejected my app twice in one week for the same thing: my App Store preview videos sh | scheduled |
+| 2026-11-30 09:45 | 22 | Apple doesn't publish how much memory an iPhone gives a keyboard. It's in the firmware: 77 | scheduled |
+| 2026-11-30 21:45 | 23 | People who make apps alone: how many languages is yours in, and who checks the ones you ca | scheduled |
+| 2026-12-01 07:45 | 24 | In May I capped a snippet at 1,000 characters. I thought the keyboard's memory was why. My | scheduled |
+| 2026-12-01 20:45 | 25 | What's the oldest app still on your home screen, and why has it survived? | scheduled |
+| 2026-12-02 10:15 | 26 | My app is in 50 languages, and no native speaker has read any of them yet. If you read som | scheduled |
+| 2026-12-02 20:15 | 27 | Apple rejected my first iPhone submission, and they were right. My setup button said "Open | scheduled |
+| 2026-12-03 09:15 | 28 | Would you pay for an app whose code is public, when you could build it yourself for free? | scheduled |
+| 2026-12-03 19:15 | 30 | What do you keep in your Notes app only so you can copy it out again? | scheduled |
+| 2026-12-04 07:45 | 31 | Mac people: what's the first thing you delete when you set up a new Mac? | scheduled |
+| 2026-12-04 19:45 | 32 | I opened one article and got a newsletter box, a cookie banner and an "Open in app" bar be | scheduled |
+| 2026-12-05 09:45 | 33 | Solo makers: how do you decide a bug is bad enough to fix today, and not in the next relea | scheduled |
+| 2026-12-05 19:45 | 35 | What's a Safari behaviour that still surprises you? | scheduled |
+| 2026-12-06 09:45 | 36 | What's in your Mac menu bar that you open more than once a day? | scheduled |
+| 2026-12-06 22:15 | 37 | The hard part of stopping tabs a page opens by itself is telling "the person tapped this"  | scheduled |
