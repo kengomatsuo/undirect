@@ -19,11 +19,14 @@ jobs:
     env:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       ASC_KEY_ID: 8R8JCJZUNJ
-      ASC_PRIVATE_KEY_PATH: ${{ runner.temp }}/asc.p8
     steps:
       - uses: actions/checkout@v4
       - name: Key
-        run: printf '%s\n' "${{ secrets.ASC_PRIVATE_KEY }}" > "$ASC_PRIVATE_KEY_PATH" && chmod 600 "$ASC_PRIVATE_KEY_PATH"
+        env:
+          KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: |
+          printf '%s\n' "$KEY" > "$RUNNER_TEMP/asc.p8" && chmod 600 "$RUNNER_TEMP/asc.p8"
+          echo "ASC_PRIVATE_KEY_PATH=$RUNNER_TEMP/asc.p8" >> "$GITHUB_ENV"
       - name: Submit where the previous version is live
         run: |
           set +e
