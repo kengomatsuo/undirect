@@ -259,3 +259,4 @@ Owner: the X posts lacked pictures and ran too long. Read in Chrome 01:28-02:05 
 - 10:40 WIB: owner stopped it: the posts push the product in every main post, polls included, and no real account posts that way. Engagement first (questions, small polls, "reply below"); the product only now and then.
 - 10:45 WIB onward: unscheduling. 34 scheduled became 23 (the Arabic @APPS_RH quote, Nov 27 20:15, stays). X then answered every deleteScheduledTweetMutation with 429; the rest are retried after the limit clears.
 - Research for the new mix: docs/research/x-engagement-mix.md; drafts in social/x-engagement-drafts.md for the owner's review.
+- 11:55-12:20 WIB: after the limit cleared, the rest were deleted in rounds (X's list reloads a few each time). X > Drafts > Scheduled now reads one item: "Will send on Fri, Nov 27, 2026 at 8:15 PM", the Arabic @APPS_RH quote. No sales post went out.
