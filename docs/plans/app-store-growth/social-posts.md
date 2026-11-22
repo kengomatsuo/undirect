@@ -289,10 +289,10 @@ Grok-reviewed list (docs/research/grok-x-review.md). 28 text posts scheduled in 
 | 2026-12-02 10:15 | 26 | My app is in 50 languages, and no native speaker has read any of them yet. If you read som | scheduled |
 | 2026-12-02 20:15 | 27 | Apple rejected my first iPhone submission, and they were right. My setup button said "Open | scheduled |
 | 2026-12-03 09:15 | 28 | Would you pay for an app whose code is public, when you could build it yourself for free? | scheduled |
-| 2026-12-03 19:15 | 30 | What do you keep in your Notes app only so you can copy it out again? | scheduled |
+| 2026-11-22 19:45 | 30 | What do you keep in your Notes app only so you can copy it out again? | scheduled (moved to today, owner asked where today's were) |
 | 2026-12-04 07:45 | 31 | Mac people: what's the first thing you delete when you set up a new Mac? | scheduled |
 | 2026-12-04 19:45 | 32 | I opened one article and got a newsletter box, a cookie banner and an "Open in app" bar be | scheduled |
 | 2026-12-05 09:45 | 33 | Solo makers: how do you decide a bug is bad enough to fix today, and not in the next relea | scheduled |
 | 2026-12-05 19:45 | 35 | What's a Safari behaviour that still surprises you? | scheduled |
-| 2026-12-06 09:45 | 36 | What's in your Mac menu bar that you open more than once a day? | scheduled |
+| 2026-11-22 22:15 | 36 | What's in your Mac menu bar that you open more than once a day? | scheduled (moved to today) |
 | 2026-12-06 22:15 | 37 | The hard part of stopping tabs a page opens by itself is telling "the person tapped this"  | scheduled |
