@@ -1,0 +1,542 @@
+/* Grouped rows on a grouped background, the way System Settings and iOS
+   Settings draw them. Mac: a 13px popover, fixed width. iOS: a sheet that
+   fills the width at 17px. `pointer: coarse` is the branch.
+   References: .inspo/ (untracked). */
+:root {
+  color-scheme: light dark;
+
+  --ground: #f2f2f7;
+  --card: #ffffff;
+  --ink: #000000;
+  --ink-2: rgba(60, 60, 67, 0.6);
+  --ink-3: rgba(60, 60, 67, 0.3);
+  --separator: rgba(60, 60, 67, 0.29);
+  --accent: #d92b24;
+  --green: #34c759;
+  --red: #ff3b30;
+  --fill: rgba(120, 120, 128, 0.16);
+
+  --font: 13px;
+  --small: 11px;
+  --row-h: 36px;
+  --pad: 10px;
+  --inset: 12px;
+  --radius: 10px;
+  --gap: 14px;
+  --switch-w: 32px;
+  --switch-h: 18px;
+}
+
+@media all {
+  :root {
+    --font: 17px;
+    --small: 13px;
+    --row-h: 52px;
+    --pad: 16px;
+    --inset: 16px;
+    --radius: 26px;
+    --gap: 24px;
+    --switch-w: 51px;
+    --switch-h: 31px;
+  }
+}
+
+@media all {
+  :root {
+    --ground: #1c1c1e;
+    --card: #2c2c2e;
+    --ink: #ffffff;
+    --ink-2: rgba(235, 235, 245, 0.6);
+    --ink-3: rgba(235, 235, 245, 0.3);
+    --separator: rgba(84, 84, 88, 0.65);
+    --accent: #ff5c55;
+    --green: #30d158;
+    --red: #ff453a;
+    --fill: rgba(120, 120, 128, 0.32);
+  }
+}
+
+@media all and all {
+  :root {
+    --ground: #000000;
+    --card: #1c1c1e;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The Mac popup draws no background (WebKit sets _drawsBackground = NO), so
+   the popover's own material shows through an unpainted page */
+html,
+body {
+  margin: 0;
+  background: transparent;
+  color: var(--ink);
+  font: var(--font) / 1.3 -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+body {
+  width: 340px;
+  padding: var(--inset) var(--inset) calc(var(--inset) + 2px);
+}
+
+@media all {
+  body {
+    width: auto;
+    /* iPad sizes its popover to the content, so a floor is needed;
+       375pt is the narrowest supported iPhone. */
+    min-width: 375px;
+    padding: var(--inset) max(var(--inset), env(safe-area-inset-right)) calc(var(--inset) + env(safe-area-inset-bottom))
+      max(var(--inset), env(safe-area-inset-left));
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* ------------------------------------------------------------------ groups */
+
+.group {
+  list-style: none;
+  margin: 0 0 var(--gap);
+  padding: 0;
+  background: color-mix(in srgb, var(--card) 72%, transparent);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.group:last-child {
+  margin-bottom: 0;
+}
+
+.group:empty {
+  display: none;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--row-h);
+  padding: 6px var(--pad);
+}
+
+/* A hairline between rows, starting at the text, never at the card edge. */
+.row + .row::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  inset-inline: var(--pad) 0;
+  border-top: 0.5px solid var(--separator);
+}
+
+.text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+  gap: 1px;
+}
+
+.title {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site {
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--ink-2);
+  font-size: var(--small);
+}
+
+/* The addresses sit under the row, full width, so the row itself never moves. */
+.row:has(> .links) {
+  flex-wrap: wrap;
+}
+
+.links {
+  flex-basis: 100%;
+  min-width: 0;
+  margin-top: -2px;
+}
+
+.links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: block;
+  color: var(--ink-2);
+  font: var(--small) / 1.35 ui-monospace, Menlo, monospace;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.see-all {
+  margin: 2px 0 0;
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  font-size: var(--small);
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 var(--pad) 6px;
+  color: var(--ink-2);
+  font-size: var(--small);
+  font-weight: 600;
+}
+
+@media all {
+  .header {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.header-trailing {
+  font-weight: 400;
+  text-transform: none;
+}
+
+.footer {
+  margin: calc(var(--gap) * -1 + 6px) var(--pad) var(--gap);
+  color: var(--ink-2);
+  font-size: var(--small);
+}
+
+.note {
+  margin: 0 var(--pad) var(--gap);
+  color: var(--ink-2);
+  font-size: var(--small);
+}
+
+.empty {
+  color: var(--ink-2);
+}
+
+/* The site, under its power button: the popup's first thing */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  margin: 0 0 var(--gap);
+  text-align: center;
+}
+
+.hero .title {
+  flex: none;
+  margin-top: 10px;
+  white-space: normal;
+}
+
+.hint {
+  margin: 0 0 12px;
+  color: var(--ink-2);
+  font-size: var(--small);
+}
+
+.warning {
+  margin: 0 0 var(--gap);
+  padding: 8px var(--pad);
+  border-radius: var(--radius);
+  background: color-mix(in srgb, var(--red) 14%, var(--card));
+  color: var(--ink);
+  font-size: var(--small);
+}
+
+/* -------------------------------------------------------------- nav rows */
+
+.nav {
+  cursor: pointer;
+}
+
+.nav:active {
+  background: var(--fill);
+}
+
+.chevron {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin-inline-end: 3px;
+  border: solid var(--ink-3);
+  border-width: 1.5px 1.5px 0 0;
+  transform: rotate(45deg);
+}
+
+/* Right-to-left scripts point the arrow the other way. */
+:root[dir="rtl"] .chevron {
+  transform: rotate(-135deg);
+}
+
+@media all {
+  .chevron {
+    width: 9px;
+    height: 9px;
+    border-width: 2.5px 2.5px 0 0;
+  }
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  margin: -2px 0 var(--gap);
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: var(--font);
+  font-weight: 600;
+}
+
+.back {
+  position: absolute;
+  inset-inline-start: 0;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  padding-block: 0;
+  padding-inline: 4px 8px;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font: inherit;
+  cursor: pointer;
+}
+
+.back-chevron {
+  width: 9px;
+  height: 9px;
+  border: solid currentColor;
+  border-width: 0 0 2px 2px;
+  transform: rotate(45deg);
+}
+
+:root[dir="rtl"] .back-chevron {
+  transform: rotate(-135deg);
+}
+
+/* ------------------------------------------------------ destination rows */
+
+.dest {
+  align-items: center;
+}
+
+.verdict {
+  position: relative;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 7px 3px 9px;
+  border-radius: 6px;
+  background: var(--fill);
+  color: var(--ink);
+  font-size: var(--small);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.verdict::after {
+  content: "";
+  width: 7px;
+  height: 10px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 12'%3E%3Cpath d='M1 4.5L4 1.5L7 4.5M1 7.5L4 10.5L7 7.5' fill='none' stroke='%238e8e93' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    no-repeat center / contain;
+}
+
+.verdict[data-verdict="block"] {
+  color: var(--red);
+}
+
+.removed {
+  flex: none;
+  color: var(--ink-2);
+  font-size: var(--small);
+}
+
+/* The native menu, invisible, over the whole chip. */
+.verdict select {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.verdict:has(select:focus-visible) {
+  outline: auto; /* the system focus ring, in the user's colour */
+  outline-offset: 2px;
+}
+
+@media all {
+  .verdict {
+    padding: 6px 11px 6px 13px;
+    border-radius: 999px;
+    font-size: 15px;
+  }
+}
+
+/* ------------------------------------------------------------------ switch */
+
+.switch {
+  flex: none;
+  display: inline-flex;
+}
+
+/* WebKit's own switch control, tinted Undirect red */
+.switch input {
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.switch input:focus-visible,
+.back:focus-visible {
+  outline: auto;
+  outline-offset: 2px;
+}
+
+/* --------------------------------------------------------------- choices */
+
+.choice {
+  padding: 0;
+}
+
+.choice label {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 10px;
+  min-height: var(--row-h);
+  padding: 6px var(--pad);
+  cursor: pointer;
+}
+
+.choice input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.check {
+  flex: none;
+  width: 10px;
+  height: 5px;
+  margin-block: 0 4px;
+  margin-inline: 0 3px;
+  border: solid var(--accent);
+  border-width: 0 0 2px 2px;
+  transform: rotate(-45deg);
+  visibility: hidden;
+}
+
+.choice input:checked ~ .check {
+  visibility: visible;
+}
+
+.choice input:focus-visible ~ .title {
+  outline: auto;
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* ----------------------------------------------------------------- power */
+
+/* A round glass button; the glyph is red while the site is guarded */
+.power {
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  padding: 0;
+  border: 0.5px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--card) 45%, transparent);
+  -webkit-backdrop-filter: blur(20px) saturate(1.8);
+  backdrop-filter: blur(20px) saturate(1.8);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.7),
+    inset 0 -1px 2px rgba(0, 0, 0, 0.06),
+    0 6px 18px rgba(0, 0, 0, 0.12);
+  color: var(--accent);
+  cursor: pointer;
+  transition: transform 120ms ease-out;
+}
+
+.power svg {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+}
+
+.power:active {
+  transform: scale(0.94);
+}
+
+.power:focus-visible {
+  outline: auto;
+  outline-offset: 3px;
+}
+
+/* The Mac popup has system appearance on (WebKit WebExtensionActionCocoa.mm),
+   so cards and hairlines take the popover's own vibrancy */
+@supports (-apple-visual-effect: -apple-system-vibrancy-fill) {
+  /* A translucent fill keeps the popover's glass showing through the card; the
+     vibrancy effect dims every row inside it and paints nothing on an empty layer */
+  .group {
+    background: var(--fill);
+  }
+}
+
+/* iOS paints the popup's page opaque, so it gets the two-tone grouped look */
+@media all {
+  html,
+  body {
+    background: var(--ground);
+  }
+
+  .group {
+    background: var(--card);
+  }
+}

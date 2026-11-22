@@ -1,0 +1,42 @@
+/* Shared by the three strips (d1.html, d2.html, d3.html). Each page is one 3960x2868 picture cut into
+   frames 1-3 of 1320x2868 by build.sh. Lengths are canvas pixels unless a part says "pt" (iPhone points,
+   440x956 for the 6.9-inch screen), which a part scales up with --k. */
+@font-face{font-family:"Inter Tight";src:url(fonts/InterTight-var.woff2) format("woff2");font-weight:100 900;font-style:normal}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased}
+html,body{width:3960px;height:2868px;overflow:hidden;background:#000}
+body{position:relative;font-family:"Inter Tight",-apple-system,"SF Pro Display",system-ui,sans-serif;color:#fff}
+.abs{position:absolute}
+.h{position:absolute;font-weight:800;line-height:.94;letter-spacing:-.035em;white-space:pre}
+/* frame guides, only with #guides in the address */
+.guides i{position:absolute;top:0;bottom:0;width:0;border-left:4px dashed #0ff;z-index:99}
+body:not(.guides) .guides{display:none}
+
+/* A drawn iPhone: titanium rail, black bezel, the screen 440x956 pt scaled by --k. */
+.phone{position:absolute;--k:2;width:calc(464px*var(--k));height:calc(980px*var(--k));border-radius:calc(74px*var(--k));
+  background:linear-gradient(135deg,#5b5b60,#2a2a2d 30%,#48484c 60%,#1d1d20);
+  box-shadow:0 0 0 calc(1px*var(--k)) #0a0a0b,0 calc(40px*var(--k)) calc(70px*var(--k)) calc(-20px*var(--k)) rgba(0,0,0,.6),0 calc(14px*var(--k)) calc(30px*var(--k)) calc(-12px*var(--k)) rgba(0,0,0,.5)}
+.phone::before{content:"";position:absolute;inset:calc(3px*var(--k));border-radius:calc(71px*var(--k));background:#000}
+.phone .screen{position:absolute;left:calc(12px*var(--k));top:calc(12px*var(--k));width:calc(440px*var(--k));height:calc(956px*var(--k));border-radius:calc(62px*var(--k));overflow:hidden;background:#000}
+.phone .pt{position:absolute;left:0;top:0;width:440px;height:956px;transform:scale(var(--k));transform-origin:0 0}
+.phone .island{position:absolute;left:157px;top:14px;width:126px;height:37px;border-radius:19px;background:#000;z-index:9}
+.sb{position:absolute;left:0;top:0;width:440px;height:62px;z-index:8;color:#fff;font-family:-apple-system,"SF Pro Text",system-ui,sans-serif}
+.sb b{position:absolute;left:52px;top:20px;width:78px;text-align:center;font-weight:600;font-size:18px;letter-spacing:-.01em}
+.sb svg{position:absolute;right:38px;top:23px;height:15px}
+/* Safari's bar, as iOS 26 draws it at the foot of a page: back, the address, more */
+.safari{position:absolute;left:0;right:0;bottom:0;height:96px;z-index:8;font-family:-apple-system,"SF Pro Text",system-ui,sans-serif;
+  background:linear-gradient(0deg,rgba(13,15,20,.92),rgba(13,15,20,0))}
+.safari span{position:absolute;bottom:30px;height:48px;border-radius:24px;background:rgba(58,60,68,.78);box-shadow:inset 0 0 0 .5px rgba(255,255,255,.14);
+  display:grid;place-items:center;color:#fff;font-size:16px}
+.safari .back{left:22px;width:48px}.safari .more{right:22px;width:48px}.safari .url{left:82px;right:82px;font-weight:500;letter-spacing:-.01em}
+.safari .back svg{height:19px}.safari .more svg{width:22px}
+.home{position:absolute;left:150px;bottom:8px;width:140px;height:5px;border-radius:3px;background:rgba(255,255,255,.85);z-index:9}
+
+/* A pop-up window, drawn: the thing Undirect stops. */
+.pop{position:absolute;width:420px;height:310px;border-radius:26px;background:var(--c,#ffd60a);color:#111;overflow:hidden;
+  box-shadow:0 30px 60px -18px rgba(0,0,0,.55),0 0 0 3px rgba(0,0,0,.14);font-family:"Inter Tight",sans-serif}
+.pop::before{content:"";position:absolute;left:0;right:0;top:0;height:64px;background:rgba(0,0,0,.14)}
+.pop u{position:absolute;right:20px;top:14px;width:36px;height:36px;border-radius:50%;background:rgba(0,0,0,.28)}
+.pop u::before,.pop u::after{content:"";position:absolute;left:8px;top:16px;width:20px;height:4px;border-radius:2px;background:#fff;transform:rotate(45deg)}
+.pop u::after{transform:rotate(-45deg)}
+.pop em{position:absolute;left:22px;top:20px;width:150px;height:24px;border-radius:12px;background:rgba(0,0,0,.2)}
+.pop b{position:absolute;left:0;right:0;top:64px;bottom:0;display:grid;place-items:center;text-align:center;font-weight:900;font-size:88px;line-height:.9;letter-spacing:-.03em;white-space:pre}

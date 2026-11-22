@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Direction 4: one press</title>
+<link rel="stylesheet" href="common.css">
+<style>
+/* One phone across the strip, cut down the middle by the press that turns Undirect on: the same page with
+   what a tap sets off on the left, and with the film playing on the right. The button on the line is the
+   popup's own power button, rendered from its code at five times its size. */
+body{background:#0b0b0c}
+.h{font-size:174px;top:236px}
+.mess{position:absolute;left:0;top:0;width:1980px;height:2868px;overflow:hidden}
+.mess::before{content:"";position:absolute;inset:0;background:radial-gradient(1500px 1700px at 60% 70%,rgba(255,196,0,.20),transparent 70%)}
+.line{position:absolute;left:1968px;top:640px;bottom:0;width:24px;background:#f23d33;box-shadow:0 0 90px 10px rgba(242,61,51,.55)}
+.cut.press{border-radius:50%;box-shadow:0 0 0 14px #0b0b0c,0 0 0 26px #f23d33,0 40px 90px rgba(0,0,0,.7)}
+.cut.rows{border-radius:64px;box-shadow:0 60px 120px -30px rgba(0,0,0,.8),0 0 0 2px rgba(255,255,255,.12)}
+.cap{position:absolute;font-weight:700;font-size:74px;letter-spacing:-.02em;color:rgba(255,255,255,.66)}
+</style></head>
+<body>
+<script src="parts.js"></script>
+<script>
+const on = (h, to = document.body) => to.insertAdjacentHTML("beforeend", h);
+on(phone("", "--k:3.5;left:1168px;top:640px", streamScreen()));
+on(`<div class="mess" id="mess"></div>`);
+// the pile a tap sets off, placed by a fixed seed so the picture is the same every build
+let seed = 41; const rnd = () => (seed = (seed * 1103515245 + 12345) % 2147483648) / 2147483648;
+const WORDS = ["YOU\nWON!", "FREE\nPRIZE", "CLICK\nHERE", "SPIN\n& WIN", "CLAIM\nNOW", "HOT\nDEAL", "3 NEW\nVIRUSES", "OPEN\nAPP", "LAST\nCHANCE", "DOWN\nLOAD"];
+const COLORS = ["#ffd60a", "#3ee07a", "#ffffff", "#ff9f0a", "#64d2ff", "#ffd60a", "#ff6ad5", "#ffffff"];
+const spots = [];
+for (let i = 0; i < 30; i++) {
+  // thick over the phone's left half, thinning toward frame 1's edge and its headline
+  const x = 2000 - Math.pow(rnd(), 1.25) * 2050, y = 960 + rnd() * 1900 - (x > 1300 ? 220 * rnd() : 0);
+  spots.push([x, y, (rnd() - .5) * 46, .95 + rnd() * .75, i]);
+}
+spots.sort((a, b) => a[3] - b[3]);
+for (const [x, y, r, s, i] of spots) on(popWin(WORDS[i % WORDS.length], COLORS[(i * 3 + 1) % COLORS.length], `left:${x - 210}px;top:${y - 155}px;transform:rotate(${r}deg) scale(${s})`), mess);
+on(`<div class="line"></div>`);
+on(popupCut(180, 45, 80, 80, 5, "left:1780px;top:1930px").replace('class="cut"', 'class="cut press"'));
+on(`<div class="h" style="left:96px">Tap play.\nGet pop-ups.</div>`);
+on(`<div class="h" style="left:1416px;width:1128px;text-align:center;font-size:200px">One press.</div>`);
+on(`<div class="h" style="left:2736px">Tap play.\nGet the video.</div>`);
+on(popupCut(16, 196, 408, 328, 2.62, "left:2800px;top:1420px;background:#1c1c1e").replace('class="cut"', 'class="cut rows"'));
+</script>
+</body></html>

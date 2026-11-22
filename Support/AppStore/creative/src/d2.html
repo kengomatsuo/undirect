@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Direction 2: one sentence</title>
+<link rel="stylesheet" href="common.css">
+<style>
+/* One sentence across the three frames, the middle of it struck out, over one phone lying across all
+   three with the film playing. The struck line is what Undirect removes; the card on it is the popup's own row. */
+body{background:#f1ece2;color:#0c0c0d}
+.h{font-size:252px;top:236px}
+.h span{position:relative;display:inline-block}
+.gone{color:#a8a195}
+.gone span::after{content:"";position:absolute;left:-46px;right:-46px;top:54%;height:44px;border-radius:8px;background:#e5322b;transform:rotate(-2.2deg)}
+.land{position:absolute;left:69px;top:995px;width:3822px;height:1810px;border-radius:288px;transform:rotate(-4deg);
+  background:linear-gradient(135deg,#6a6a70,#2a2a2d 30%,#4b4b50 60%,#1d1d20);
+  box-shadow:0 0 0 4px #0a0a0b,0 110px 160px -60px rgba(40,25,10,.55),0 40px 70px -30px rgba(40,25,10,.45)}
+.land::before{content:"";position:absolute;inset:12px;border-radius:277px;background:#000}
+.land .screen{position:absolute;left:47px;top:47px;width:3728px;height:1716px;border-radius:242px;overflow:hidden;background:#05070c}
+.land .screen img{position:absolute;left:0;top:-190px;width:3728px}
+.land .island{position:absolute;left:55px;top:612px;width:144px;height:492px;border-radius:72px;background:#000}
+.land .shade{position:absolute;left:0;right:0;bottom:0;height:520px;background:linear-gradient(0deg,rgba(0,0,0,.6),transparent)}
+.land .bar{position:absolute;left:330px;right:330px;bottom:150px;height:18px;border-radius:9px;background:rgba(255,255,255,.3)}
+.land .bar i{position:absolute;left:0;top:0;bottom:0;width:9%;border-radius:9px;background:#fff}
+.land .bar i::after{content:"";position:absolute;right:-24px;top:-15px;width:48px;height:48px;border-radius:50%;background:#fff}
+.land .t{position:absolute;bottom:196px;font:600 62px/1 -apple-system,"SF Pro Text",sans-serif;color:rgba(255,255,255,.9);letter-spacing:-.01em}
+.cut{border-radius:56px;box-shadow:0 70px 110px -30px rgba(0,0,0,.6),0 24px 40px -18px rgba(0,0,0,.5),0 0 0 2px rgba(255,255,255,.14);transform:rotate(3deg)}
+</style></head>
+<body>
+<div class="h" style="left:100px"><span>You tap</span>
+<span>play.</span></div>
+<div class="h gone" style="left:1420px"><span>A pop-up</span>
+<span>opens.</span></div>
+<div class="h" style="left:2740px"><span>The video</span>
+<span>plays.</span></div>
+<div class="land"><div class="screen"><img src="img/night-harbor-3840.jpg"><div class="shade"></div>
+<div class="t" style="left:330px">0:09</div><div class="t" style="right:330px">1:48:00</div><div class="bar"><i></i></div><div class="island"></div></div></div>
+<script src="parts.js"></script>
+<script>
+document.body.insertAdjacentHTML("beforeend", popupCut(16, 223, 408, 78, 2.6, "left:1450px;top:905px;background:#2c2c2e"));
+</script>
+</body></html>

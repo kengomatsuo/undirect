@@ -1,0 +1,49 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Direction 1: the chain stops here</title>
+<link rel="stylesheet" href="common.css">
+<style>
+/* A path-traced still (scene-dominoes.glsl.js): a toppling line of tiles runs into one stone and stops, and
+   the phone at the end of the line never moves. The picture is the render (build.sh takes the last
+   speckle off it with a 3x3 median, and the grain here puts a film's grain back); the phone's screen, the popup
+   row and the words are laid over it. d1.html#dark uses the graphite set. */
+body{background:#200}
+.plate{position:absolute;left:0;top:0;width:3960px;height:2868px}
+.grain{position:absolute;inset:0;opacity:.11;mix-blend-mode:overlay}
+.h{font-size:216px;text-shadow:0 4px 60px rgba(0,0,0,.28)}
+.lock{position:absolute;left:100px;top:150px;display:flex;align-items:center;gap:36px;font-weight:700;font-size:92px;letter-spacing:-.03em;text-shadow:0 4px 40px rgba(0,0,0,.3)}
+.lock img{width:156px;height:156px;border-radius:36px;box-shadow:0 20px 40px -10px rgba(0,0,0,.5)}
+#glass{position:absolute;left:0;top:0;width:440px;height:956px;transform-origin:0 0;border-radius:62px;overflow:hidden;background:#000}
+#glass .pt{position:absolute;left:0;top:0;width:440px;height:956px}
+#shine{position:absolute;left:0;top:0;width:3960px;height:2868px;mix-blend-mode:screen;opacity:.8}
+.cut{border-radius:60px;box-shadow:0 80px 120px -30px rgba(0,0,0,.6),0 24px 44px -18px rgba(0,0,0,.5),0 0 0 2px rgba(255,255,255,.14)}
+</style></head>
+<body>
+<img class="plate" id="plate">
+<div id="glass"></div>
+<img id="shine">
+<svg class="grain" width="3960" height="2868"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 1.4 -.2"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+<script src="parts.js"></script>
+<script src="glass.js"></script>
+<script>
+const dark = location.hash.includes("dark");
+const src = new URLSearchParams(location.search).get("plate") || `../render/dominoes-${dark ? "dark" : "red"}-clean.png`;
+plate.src = src; shine.src = src;
+// The phone's lit glass: a 440x956pt screen mapped onto the four corners place_phone.mjs printed for 3960x2868.
+const Q = window.GLASS, W = 440, H = 956;
+// homography from the unit rectangle to the quad, as a CSS matrix3d
+const adj = (m) => [m[4]*m[8]-m[5]*m[7], m[2]*m[7]-m[1]*m[8], m[1]*m[5]-m[2]*m[4], m[5]*m[6]-m[3]*m[8], m[0]*m[8]-m[2]*m[6], m[2]*m[3]-m[0]*m[5], m[3]*m[7]-m[4]*m[6], m[1]*m[6]-m[0]*m[7], m[0]*m[4]-m[1]*m[3]];
+const mul = (a, b) => { const c = []; for (let i = 0; i < 3; i++) for (let j = 0; j < 3; j++) { let s = 0; for (let k = 0; k < 3; k++) s += a[3*i+k] * b[3*k+j]; c[3*i+j] = s; } return c; };
+const mulv = (m, v) => [m[0]*v[0]+m[1]*v[1]+m[2]*v[2], m[3]*v[0]+m[4]*v[1]+m[5]*v[2], m[6]*v[0]+m[7]*v[1]+m[8]*v[2]];
+const basis = (p) => { const m = [p[0][0], p[1][0], p[2][0], p[0][1], p[1][1], p[2][1], 1, 1, 1], v = mulv(adj(m), [p[3][0], p[3][1], 1]); return mul(m, [v[0],0,0, 0,v[1],0, 0,0,v[2]]); };
+const s = basis([[0,0],[W,0],[W,H],[0,H]]), d = basis(Q), t = mul(d, adj(s)).map((x, i, a) => x / a[8]);
+glass.style.transform = `matrix3d(${[t[0],t[3],0,t[6], t[1],t[4],0,t[7], 0,0,1,0, t[2],t[5],0,t[8]].join(",")})`;
+glass.innerHTML = streamScreen() + `<div style="position:absolute;left:157px;top:14px;width:126px;height:37px;border-radius:19px;background:#000;z-index:9"></div>`;
+shine.style.clipPath = `polygon(${Q.map((p) => `${p[0]}px ${p[1]}px`).join(",")})`;
+const on = (h) => document.body.insertAdjacentHTML("beforeend", h);
+on(`<div class="lock"><img src="img/icon-512.png">Undirect</div>`);
+on(`<div class="h" style="left:96px;top:420px">Pop-up\nafter\npop-up.</div>`);
+on(`<div class="h" style="left:1416px;top:420px">Stopped\nhere.</div>`);
+on(`<div class="h" style="left:2736px;top:420px">Your video\njust plays.</div>`);
+on(popupCut(16, 223, 408, 78, 2.5, "left:1466px;top:2210px;background:#2c2c2e;transform:rotate(-3deg)"));
+</script>
+</body></html>

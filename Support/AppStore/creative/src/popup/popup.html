@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Undirect</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <!-- This tab: the site, its Stop button, what it reached for. -->
+    <main class="view" id="page-view">
+      <section class="hero" id="watch-group">
+        <p class="hint" id="stop-hint" data-i18n="popup_stop_help"></p>
+        <button type="button" class="power" id="stop" data-i18n-aria="popup_stop">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3v8" />
+            <path d="M6.3 6.8a8 8 0 1 0 11.4 0" />
+          </svg>
+        </button>
+        <span class="title site" id="site"></span>
+        <span class="subtitle" id="watch-note"></span>
+      </section>
+
+      <p class="warning" id="bridge-warning" hidden data-i18n="popup_bridge_warning"></p>
+
+      <section id="page-section">
+        <h2 class="header">
+          <span data-i18n="popup_page_heading"></span>
+          <span class="header-trailing" id="page-count"></span>
+        </h2>
+        <ul class="group" id="rows"></ul>
+        <p class="note" id="page-quiet" hidden data-i18n="popup_page_quiet"></p>
+        <p class="footer" id="page-recipe" hidden></p>
+      </section>
+
+      <ul class="group">
+        <li class="row nav" data-go="rules-view">
+          <span class="title" data-i18n="popup_rules_link"></span>
+          <span class="chevron" aria-hidden="true"></span>
+        </li>
+        <li class="row nav" data-go="settings-view">
+          <span class="title" data-i18n="popup_settings_heading"></span>
+          <span class="chevron" aria-hidden="true"></span>
+        </li>
+        <li class="row nav" id="report">
+          <span class="title" data-i18n="action_report"></span>
+        </li>
+      </ul>
+    </main>
+
+    <main class="view" id="rules-view" hidden>
+      <header class="navbar">
+        <button type="button" class="back" data-go="page-view" data-i18n-label="popup_page_link">
+          <span class="back-chevron" aria-hidden="true"></span>
+        </button>
+        <h1 data-i18n="popup_rules_link"></h1>
+      </header>
+      <h2 class="header" data-i18n="rules_everywhere_heading"></h2>
+      <ul class="group" id="rules-everywhere"></ul>
+      <h2 class="header" data-i18n="rules_by_site_heading"></h2>
+      <ul class="group" id="rules-by-site"></ul>
+    </main>
+
+    <main class="view" id="settings-view" hidden>
+      <header class="navbar">
+        <button type="button" class="back" data-go="page-view" data-i18n-label="popup_page_link">
+          <span class="back-chevron" aria-hidden="true"></span>
+        </button>
+        <h1 data-i18n="popup_settings_heading"></h1>
+      </header>
+      <ul class="group">
+        <li class="row">
+          <span class="title" data-i18n="popup_guard_label"></span>
+          <label class="switch">
+            <input type="checkbox" id="guard" switch />
+            <span class="sr-only" data-i18n="popup_guard_label"></span>
+          </label>
+        </li>
+        <li class="row">
+          <span class="title" data-i18n="setting_banner"></span>
+          <label class="switch">
+            <input type="checkbox" id="banner" switch />
+            <span class="sr-only" data-i18n="setting_banner"></span>
+          </label>
+        </li>
+        <li class="row">
+          <span class="title" data-i18n="setting_effects"></span>
+          <label class="switch">
+            <input type="checkbox" id="effects" switch />
+            <span class="sr-only" data-i18n="setting_effects"></span>
+          </label>
+        </li>
+      </ul>
+
+      <h2 class="header" data-i18n="popup_mode_heading"></h2>
+      <ul class="group" role="radiogroup">
+        <li class="row choice">
+          <label>
+            <input type="radio" name="mode" value="watched" />
+            <span class="title" data-i18n="mode_watched"></span>
+            <span class="check" aria-hidden="true"></span>
+          </label>
+        </li>
+        <li class="row choice">
+          <label>
+            <input type="radio" name="mode" value="everywhere" />
+            <span class="title" data-i18n="mode_everywhere"></span>
+            <span class="check" aria-hidden="true"></span>
+          </label>
+        </li>
+      </ul>
+
+      <h2 class="header" data-i18n="popup_policy_heading"></h2>
+      <ul class="group" role="radiogroup">
+        <li class="row choice">
+          <label>
+            <input type="radio" name="policy" value="block" />
+            <span class="title" data-i18n="policy_block"></span>
+            <span class="check" aria-hidden="true"></span>
+          </label>
+        </li>
+        <li class="row choice">
+          <label>
+            <input type="radio" name="policy" value="allow" />
+            <span class="title" data-i18n="policy_allow"></span>
+            <span class="check" aria-hidden="true"></span>
+          </label>
+        </li>
+      </ul>
+    </main>
+
+    <script>
+const MESSAGES = {"extension_name": {"message": "Undirect", "description": "Name of the extension."}, "extension_description": {"message": "Stops pages from taking your click to open or redirect somewhere you did not ask for.", "description": "Description of the extension."}, "app_title": {"message": "Undirect", "description": "Title shown in the container app and the popup."}, "popup_guard_label": {"message": "Guard", "description": "Label of the master on/off switch."}, "popup_guard_on": {"message": "On", "description": "State of the master switch when the guard is running."}, "popup_guard_off": {"message": "Off", "description": "State of the master switch when the guard is paused."}, "popup_watch_label": {"message": "Guard this site", "description": "Label of the per-site switch, the popup's first row."}, "popup_no_site_title": {"message": "Undirect works on websites", "description": "Popup title on a tab with no website, such as the Start Page."}, "popup_no_site_body": {"message": "Open a website, then press here to guard it.", "description": "Popup line under popup_no_site_title; 'here' is the toolbar button."}, "popup_watch_unknown": {"message": "No page to guard here.", "description": "Shown when the current tab has no site to watch."}, "popup_watch_everywhere": {"message": "The guard runs on every site.", "description": "Shown when the mode setting already covers every site."}, "popup_watch_master_off": {"message": "The guard is switched off.", "description": "Shown when the master Guard switch in Settings is off."}, "popup_mode_heading": {"message": "Where the guard runs", "description": "Label above the mode choice."}, "mode_watched": {"message": "Sites you turn on", "description": "Mode: the guard runs only on sites switched on individually."}, "mode_everywhere": {"message": "Every site", "description": "Mode: the guard runs automatically on every site."}, "popup_page_off": {"message": "The guard is off on this site.", "description": "Shown in the tab section when the site is not being guarded."}, "popup_page_heading": {"message": "This page", "description": "Heading of the section about the current tab."}, "popup_page_quiet": {"message": "Nothing here has reached for another site.", "description": "Shown when no cross-site destination was recorded."}, "popup_page_empty": {"message": "Nothing to list yet.", "description": "Shown when the destination list is empty."}, "popup_stopped_one": {"message": "$COUNT$ stopped", "description": "How many attempts were blocked on this page, singular.", "placeholders": {"count": {"content": "$1", "example": "1"}}}, "popup_stopped_other": {"message": "$COUNT$ stopped", "description": "How many attempts were blocked on this page, plural.", "placeholders": {"count": {"content": "$1", "example": "3"}}}, "popup_seen_one": {"message": "$COUNT$ try in all.", "description": "How many cross-site attempts were recorded, singular.", "placeholders": {"count": {"content": "$1", "example": "1"}}}, "popup_seen_other": {"message": "$COUNT$ tries in all.", "description": "How many cross-site attempts were recorded, plural.", "placeholders": {"count": {"content": "$1", "example": "5"}}}, "popup_recipe_heading": {"message": "Site fix", "description": "Heading for a per-site fix that was applied."}, "state_blocked": {"message": "Blocked", "description": "A destination that is being stopped."}, "state_allowed": {"message": "Allowed", "description": "A destination that is being let through."}, "scope_here": {"message": "on this site", "description": "The rule was set for the current site only."}, "scope_everywhere": {"message": "everywhere", "description": "The rule was set for every site."}, "scope_default": {"message": "by default", "description": "No rule was set, so the default applies."}, "action_allow_here": {"message": "Allow here", "description": "Let this destination through on the current site."}, "action_allow_everywhere": {"message": "Allow everywhere", "description": "Let this destination through on every site."}, "action_block_here": {"message": "Block here", "description": "Stop this destination on the current site."}, "action_block_everywhere": {"message": "Block everywhere", "description": "Stop this destination on every site."}, "popup_policy_heading": {"message": "A destination with no rule", "description": "Label above the default policy choice."}, "policy_block": {"message": "Block it", "description": "Default policy: stop unknown cross-site destinations."}, "policy_allow": {"message": "Allow it", "description": "Default policy: let unknown cross-site destinations through."}, "popup_bridge_warning": {"message": "This page blocks extension scripts. Only part of the guard is running.", "description": "Shown when the page CSP stopped the page-world script."}, "kind_click_catcher": {"message": "Invisible click catcher", "description": "A transparent form or link laid over the page."}, "kind_overlay": {"message": "Transparent layer over the page", "description": "A see-through element covering the page."}, "kind_synthetic_click": {"message": "Click the page made up", "description": "A click the page dispatched itself."}, "kind_window_open": {"message": "Pop-up window", "description": "A window.open call."}, "kind_form_submit": {"message": "Hidden form sent", "description": "A form submitted to a new tab."}, "kind_href_swap": {"message": "Link changed as you clicked", "description": "An anchor rewritten between press and release."}, "kind_back_hijack": {"message": "Back button sent elsewhere", "description": "A navigation right after the back gesture."}, "kind_redirect": {"message": "Sent off this site as you pressed", "description": "A cross-site navigation that took the user's press."}, "kind_no_tap": {"message": "Sent off this site with no press", "description": "A cross-site navigation the page started on its own, with nobody pressing anything: on load, on a timer or while scrolling."}, "kind_pop_tab": {"message": "Tab opened behind your press", "description": "A new tab the page opened on somewhere else."}, "kind_network_rule": {"message": "Stopped at the request", "description": "A known pop network refused by a network rule."}, "popup_rules_link": {"message": "Rules", "description": "Opens the list of every rule the user has set."}, "popup_page_link": {"message": "Back", "description": "Goes back from the rules list to the current tab."}, "rules_everywhere_heading": {"message": "Set everywhere", "description": "Heading for rules that apply on every site."}, "rules_by_site_heading": {"message": "Set for one site", "description": "Heading for rules that apply to a single site."}, "rules_empty": {"message": "None set.", "description": "Shown when a rules list has no entries."}, "action_allow": {"message": "Allow", "description": "Change a rule to allow."}, "action_block": {"message": "Block", "description": "Change a rule to block."}, "action_clear": {"message": "Use default", "description": "Remove a rule so the default applies."}, "popup_settings_heading": {"message": "Settings", "description": "Heading of the settings section."}, "setting_banner": {"message": "Page note", "description": "Toggle for the note drawn in the page when something is stopped."}, "action_report": {"message": "Report a site", "description": "Opens a prefilled issue about a site the guard missed."}, "action_title_off": {"message": "Turn on Undirect for this site", "description": "Toolbar button tooltip while the guard is off on the site."}, "action_title_no_site": {"message": "Undirect works on websites", "description": "Toolbar button tooltip on a tab with no website, such as the Start Page."}, "action_title_on": {"message": "Undirect is on for this site", "description": "Toolbar button tooltip while the guard is on."}, "popup_watch_on": {"message": "Guarded", "description": "Under the site name while the guard runs there."}, "popup_watch_off": {"message": "Off. Turning it on reloads the page.", "description": "Under the site name while the guard is off there."}, "state_removed": {"message": "Removed", "description": "A trap on the page itself, taken off before it could catch a click."}, "popup_stop": {"message": "Stop", "description": "Button on the popup's site row: stops guarding this site and reloads the page."}, "popup_stop_help": {"message": "Stop guarding this site", "description": "Tooltip of popup_stop."}, "method_click_catcher": {"message": "Invisible link layer", "description": "Row subtitle: the method, two to four words, for kind_click_catcher."}, "method_overlay": {"message": "Full-screen overlay", "description": "Row subtitle: the method, two to four words, for kind_overlay."}, "method_synthetic_click": {"message": "Script-made click", "description": "Row subtitle: the method, two to four words, for kind_synthetic_click."}, "method_window_open": {"message": "Script pop-up", "description": "Row subtitle: the method, two to four words, for kind_window_open."}, "method_form_submit": {"message": "Hidden form", "description": "Row subtitle: the method, two to four words, for kind_form_submit."}, "method_href_swap": {"message": "Link swapped on press", "description": "Row subtitle: the method, two to four words, for kind_href_swap."}, "method_back_hijack": {"message": "Back button hijack", "description": "Row subtitle: the method, two to four words, for kind_back_hijack."}, "method_redirect": {"message": "Redirect on press", "description": "Row subtitle: the method, two to four words, for kind_redirect."}, "method_no_tap": {"message": "Redirect with no press", "description": "Row subtitle: the method, two to four words, for kind_no_tap."}, "method_pop_tab": {"message": "Tab opened behind", "description": "Row subtitle: the method, two to four words, for kind_pop_tab."}, "method_network_rule": {"message": "Stopped at the request", "description": "Row subtitle: the method, two to four words, for kind_network_rule."}, "popup_see_all": {"message": "See All", "description": "Under a row's first three addresses: shows the rest."}, "popup_show_less": {"message": "Show Less", "description": "Collapses a row's address list back to three."}, "note_stopped": {"message": "Stopped", "description": "Title of the small note at the foot of a web page when Undirect stopped the page opening or sending the tab to another site; the site's address follows it."}, "note_kept_here": {"message": "Kept you here", "description": "Title of the note when the page tried to send the tab to another site with no press from the person (as it loaded, on a timer, or while scrolling) and Undirect kept the tab on the page; the other site's address follows it."}, "note_back_trap": {"message": "Back button trap stopped", "description": "The note's whole text when the page tried to keep the person from leaving with Back, or to answer Back with another site, and Undirect stopped it."}, "note_count": {"message": "$COUNT$ stopped", "description": "The note's text when several things were stopped in a row, with their number.", "placeholders": {"count": {"content": "$1", "example": "3"}}}, "note_settings": {"message": "Settings", "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."}, "note_where": {"message": "Press Undirect in the toolbar for settings.", "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."}, "setting_effects": {"message": "Page effects", "description": "Toggle for the effects drawn on the page when something is stopped: the hidden layer breaking apart, a burst where a pop-up was refused."}};
+const STATE = {"settings": {"enabled": true, "policy": "block", "mode": "watched"}, "counts": {"page": 8, "seen": 8, "session": 12, "lifetime": 340}, "site": "matsuokengo.com", "guarding": true, "watched": {"matsuokengo.com": true}, "recipe": null, "rows": [{"base": "adserver.example", "kinds": ["window-open"], "count": 3, "blocked": 3, "url": "https://adserver.example/offer", "here": null, "everywhere": "block", "urls": ["https://adserver.example/offer"]}, {"base": "tabunder.example", "kinds": ["synthetic-click"], "count": 3, "blocked": 3, "url": "https://tabunder.example/", "here": null, "everywhere": "block", "urls": ["https://tabunder.example/"]}, {"base": "clicktrack.example", "kinds": ["click-catcher"], "count": 1, "blocked": 1, "url": "https://clicktrack.example/go", "here": null, "everywhere": "block", "urls": ["https://clicktrack.example/go"]}, {"base": "matsuokengo.com", "kinds": ["overlay"], "count": 1, "blocked": 1, "url": "", "here": null, "everywhere": null, "urls": [""], "local": true, "lastVerdict": "block"}], "everywhere": {"adserver.example": "block", "tabunder.example": "block", "clicktrack.example": "block"}, "perSite": {}};
+// Stands in for the extension APIs so the popup can be rendered on its own.
+window.__sent = [];
+window.browser = {
+  i18n: {
+    getMessage: (key, args = []) => {
+      const entry = MESSAGES[key];
+      if (!entry) return "";
+      // Named placeholders map to $1, $2... as the browser's own lookup does.
+      return entry.message.replace(/\$([A-Z_]+)\$/g, (_, name) => {
+        const slot = entry.placeholders?.[name.toLowerCase()]?.content ?? "$1";
+        return args[Number(slot.slice(1)) - 1] ?? name;
+      });
+    },
+  },
+  runtime: {
+    sendMessage: (msg) => {
+      window.__sent.push(msg);
+      if (msg.type === "undirect:popup") return Promise.resolve(STATE);
+      return Promise.resolve({ ok: true });
+    },
+  },
+  tabs: {
+    query: () => Promise.resolve([{ id: 1 }]),
+    sendMessage: () => Promise.resolve({ bridgeLoaded: true }),
+  },
+};
+</script>
+<script src="popup.js"></script>
+  </body>
+</html>
