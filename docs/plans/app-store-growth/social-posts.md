@@ -322,27 +322,27 @@ Pieces: "What you tap is what you get" (Undirect) and "Type it once" (Cutling) f
 
 YouTube descriptions carry campaign links ct=yt-tapget-short, yt-tapget-long, yt-typeonce-short, yt-typeonce-long and the music credits (Hangtime by WOWA via Unminus; Complicated by Arulo via Mixkit). Custom thumbnails were set from the "You got five tabs" and "How many times have you typed your address?" frames; TikTok covers use the same frames. TikTok URLs and the Shorts links answer only once each post is live.
 
-### Films, set 2 (ASG164, 2026-11-22): ready for the owner's go, not scheduled
+### Films, set 2 (ASG164, 2026-11-22): Undirect films scheduled on the owner's go; Cutling films wait for 2.0
 
 Four films, each one moment of using the app on a real page: Undirect "Next chapter" and "× means close" (what 1.0.4 does on iPhone today), Cutling "Five names" and "Five taps" (2.0 fill-ins; they go out only once Cutling 2.0 is on the App Store). Files in ~/Downloads/Claude/monholt-films-2/, source in undirect-promo/monholt-films-2, every post word for word in [social/films-2/posts.json](social/films-2/posts.json) with YouTube descriptions in social/films-2/youtube/. No film or caption names a price. The session that made them did not schedule them: a scheduled post goes out from the owner's accounts, and that needs his own yes, which a message from another session cannot give. Times are the planned slots, after the sample posts (last one Nov 26 22:57).
 
 | WIB | Platform | Film | Caption opens | Status |
 |---|---|---|---|---|
 | 2026-11-27 07:55 | TikTok | Next chapter | Tapped Next chapter. Got “your iPhone has 12 viruses.” 🙃 It's not your phone, it's the … | ready, waits for the owner's go |
-| 2026-11-27 08:03 | Instagram Reel + Facebook Reel (Business Suite, one post) | Next chapter | Tapped Next chapter, got “your iPhone has 12 viruses”? It's not your iPhone. It's the … | ready, waits for the owner's go |
-| 2026-11-27 08:11 | Threads | Next chapter | Tapped Next chapter at 12:47 AM and got “Your iPhone is severely damaged by (12) viruses!” | ready, waits for the owner's go |
-| 2026-11-27 08:19 | YouTube Short @matsuokengo | Next chapter | Next chapter opened a fake virus page #SafariTips #iPhoneTips | ready, waits for the owner's go |
-| 2026-11-28 22:37 | YouTube @matsuokengo | Next chapter (16:9) | Why Next chapter opens a fake virus page in Safari, and how to stop it | Undirect | ready, waits for the owner's go |
+| 2026-11-27 08:03 | Instagram Reel + Facebook Reel (Business Suite, one post) | Next chapter | Tapped Next chapter, got “your iPhone has 12 viruses”? It's not your iPhone. It's the … | scheduled (owner go 2026-11-22 "add to"; Business Suite: Reel scheduled 27 Nov on Facebook and Instagram, cover = frame 0) |
+| 2026-11-27 08:11 | Threads | Next chapter | Tapped Next chapter at 12:47 AM and got “Your iPhone is severely damaged by (12) viruses!” | scheduled (Threads: "Posting on Friday at 08:11 GMT+7", topic iPhone, reply 2/2 undirect.matsuokengo.com) |
+| 2026-11-27 08:19 | YouTube Short @matsuokengo | Next chapter | Next chapter opened a fake virus page #SafariTips #iPhoneTips | scheduled, https://youtu.be/1YU2j5aRkY0 (private, publishAt set at upload) |
+| 2026-11-28 22:37 | YouTube @matsuokengo | Next chapter (16:9) | Why Next chapter opens a fake virus page in Safari, and how to stop it | Undirect | scheduled, https://youtu.be/tYqPbokF5qs (private, publishAt set at upload) |
 | 2026-11-28 23:25 | TikTok | × means close | The × opened a casino 🎰 then another, then another. Four tabs, still no soup. Undirect … | ready, waits for the owner's go |
-| 2026-11-28 23:33 | Instagram Reel + Facebook Reel (Business Suite, one post) | × means close | Tapped × on a pop-up and got a casino tab? Then another. Four tabs, still no soup. | ready, waits for the owner's go |
-| 2026-11-28 23:39 | Threads | × means close | Tapped × on a newsletter pop-up. Got a casino in a new tab. Tapped again, another … | ready, waits for the owner's go |
-| 2026-11-28 23:47 | YouTube Short @matsuokengo | × means close | The × on this pop-up opened a casino tab #SafariTips #iPhoneTips | ready, waits for the owner's go |
-| 2026-12-02 07:40 | TikTok | Five names | 5 customers, same question, one saved reply ✅ Tap the reply, tap the name. New in … | ready, waits for the owner's go |
-| 2026-12-02 07:47 | Instagram Reel + Facebook Reel (Business Suite, one post) | Five names | Five customers asked the same thing overnight: has my order shipped? | ready, waits for the owner's go |
-| 2026-12-02 07:53 | Threads | Five names | Five customers asked “has my order shipped?” overnight. I answered all five with one … | ready, waits for the owner's go |
-| 2026-12-02 08:01 | YouTube Short @matsuokengo | Five names | One saved reply, a different name every time #iPhoneTips | ready, waits for the owner's go |
-| 2026-12-03 22:43 | YouTube @matsuokengo | Five names (16:9) | Answer every customer by name with one saved reply on iPhone | Cutling | ready, waits for the owner's go |
-| 2026-12-03 23:15 | TikTok | Five taps | This whole reply took 5 taps 👀 Name, guests, sign-off. Cutling 2.0 asks for what … | ready, waits for the owner's go |
-| 2026-12-03 23:21 | Instagram Reel + Facebook Reel (Business Suite, one post) | Five taps | This whole reply to a table booking took five taps. | ready, waits for the owner's go |
-| 2026-12-03 23:29 | Threads | Five taps | This reply to a table booking took five taps: the greeting asks her name, the booking … | ready, waits for the owner's go |
-| 2026-12-03 23:37 | YouTube Short @matsuokengo | Five taps | A long reply to a booking in five taps #iPhoneTips | ready, waits for the owner's go |
+| 2026-11-28 23:33 | Instagram Reel + Facebook Reel (Business Suite, one post) | × means close | Tapped × on a pop-up and got a casino tab? Then another. Four tabs, still no soup. | scheduled (Business Suite: Reel scheduled 28 Nov on Facebook and Instagram, cover = frame 0) |
+| 2026-11-28 23:39 | Threads | × means close | Tapped × on a newsletter pop-up. Got a casino in a new tab. Tapped again, another … | scheduled (Threads: "Posting on Saturday at 23:39 GMT+7", topic iPhone, reply 2/2) |
+| 2026-11-28 23:47 | YouTube Short @matsuokengo | × means close | The × on this pop-up opened a casino tab #SafariTips #iPhoneTips | scheduled, https://youtu.be/dZNRcI1Nstw (private, publishAt set at upload) |
+| 2026-12-02 07:40 | TikTok | Five names | 5 customers, same question, one saved reply ✅ Tap the reply, tap the name. New in … | waits until Cutling 2.0 is READY_FOR_SALE |
+| 2026-12-02 07:47 | Instagram Reel + Facebook Reel (Business Suite, one post) | Five names | Five customers asked the same thing overnight: has my order shipped? | waits until Cutling 2.0 is READY_FOR_SALE |
+| 2026-12-02 07:53 | Threads | Five names | Five customers asked “has my order shipped?” overnight. I answered all five with one … | waits until Cutling 2.0 is READY_FOR_SALE |
+| 2026-12-02 08:01 | YouTube Short @matsuokengo | Five names | One saved reply, a different name every time #iPhoneTips | waits until Cutling 2.0 is READY_FOR_SALE |
+| 2026-12-03 22:43 | YouTube @matsuokengo | Five names (16:9) | Answer every customer by name with one saved reply on iPhone | Cutling | waits until Cutling 2.0 is READY_FOR_SALE |
+| 2026-12-03 23:15 | TikTok | Five taps | This whole reply took 5 taps 👀 Name, guests, sign-off. Cutling 2.0 asks for what … | waits until Cutling 2.0 is READY_FOR_SALE |
+| 2026-12-03 23:21 | Instagram Reel + Facebook Reel (Business Suite, one post) | Five taps | This whole reply to a table booking took five taps. | waits until Cutling 2.0 is READY_FOR_SALE |
+| 2026-12-03 23:29 | Threads | Five taps | This reply to a table booking took five taps: the greeting asks her name, the booking … | waits until Cutling 2.0 is READY_FOR_SALE |
+| 2026-12-03 23:37 | YouTube Short @matsuokengo | Five taps | A long reply to a booking in five taps #iPhoneTips | waits until Cutling 2.0 is READY_FOR_SALE |
