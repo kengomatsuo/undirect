@@ -303,11 +303,11 @@ Pieces: "What you tap is what you get" (Undirect) and "Type it once" (Cutling) f
 
 | WIB | Platform | Piece | Caption opens | Status |
 |---|---|---|---|---|
-| 2026-11-23 07:35 | TikTok @monholt | Undirect film | You tapped Play. You got five tabs. | scheduled, https://www.tiktok.com/@monholt/video/7710986879750950162 (Posts list: "23 Nov, 7:35 am (GMT+7)") |
-| 2026-11-23 07:37 | Instagram Reel + Facebook Reel | Undirect film | You tapped Play. You got five tabs. | scheduled, Business Suite Scheduled reads "23 November 07:37" for Monholt and monholtco |
-| 2026-11-23 07:43 | Threads | Undirect film | You tapped Play. You got five tabs. | scheduled, Drafts reads "Posting tomorrow at 07:43 GMT+7", 1 reply |
-| 2026-11-23 07:51 | YouTube Short @matsuokengo | Undirect 9:16 | You tapped Play and got five tabs | scheduled, https://youtube.com/shorts/3fzHl5M9cHk (private, publishAt 2026-11-23T00:51:00Z) |
-| 2026-11-23 23:23 | YouTube @matsuokengo | Undirect 16:9 | Why tapping Play opens ad tabs in Safari, and how to stop it | scheduled, https://youtu.be/cZRiFnbDDl4 (private, publishAt 2026-11-23T16:23:00Z) |
+| 2026-11-23 07:35 | TikTok @monholt | Undirect film | You tapped Play. You got five tabs. | scheduled with the fixed film, https://www.tiktok.com/@monholt/video/7711042922161900852 (Posts list: "23 Nov, 7:35 am (GMT+7)"); the first post was deleted by the owner |
+| 2026-11-23 07:37 | Instagram Reel + Facebook Reel | Undirect film | You tapped Play. You got five tabs. | scheduled with the fixed film, Business Suite Scheduled reads "23 November 07:37" for Monholt (1166188249293878) and monholtco (1705490784278369); the first pair (2279378892852722, 1125798010245632) is in Drafts |
+| 2026-11-23 07:43 | Threads | Undirect film | You tapped Play. You got five tabs. | scheduled, the same thread with the fixed film swapped in; Drafts reads "Posting tomorrow at 07:43 GMT+7", 1 reply |
+| 2026-11-23 07:51 | YouTube Short @matsuokengo | Undirect 9:16 | You tapped Play and got five tabs | scheduled with the fixed film, https://youtube.com/shorts/IKYLF7fyVOE (private, publishAt 2026-11-23T00:51:00Z, Studio reads Nov 23 7:51 AM); the first upload 3fzHl5M9cHk is private with no publish time |
+| 2026-11-23 23:23 | YouTube @matsuokengo | Undirect 16:9 | Why tapping Play opens ad tabs in Safari, and how to stop it | scheduled with the fixed film, https://youtu.be/dry_W_RdzCI (private, publishAt 2026-11-23T16:23:00Z, Studio reads Nov 23 11:23 PM); the first upload cZRiFnbDDl4 is private with no publish time |
 | 2026-11-24 23:35 | TikTok @monholt photo | Undirect carousel | You tapped Play. You got five tabs. (title) | scheduled, https://www.tiktok.com/@monholt/video/7710988252647410945 ("24 Nov, 11:35 pm") |
 | 2026-11-24 23:37 | Instagram carousel + Facebook photos | Undirect carousel | You tapped Play. You got five tabs. Swipe to see what was in the way. | scheduled, "24 November 23:37" x2, boost declined |
 | 2026-11-24 23:41 | Threads | Undirect carousel | You tapped Play. You got five tabs. Swipe to see what was in the way. | scheduled, "Posting on Tuesday at 23:41 GMT+7", 1 reply |
@@ -321,6 +321,8 @@ Pieces: "What you tap is what you get" (Undirect) and "Type it once" (Cutling) f
 | 2026-11-26 22:57 | Threads | Cutling carousel | How many times have you typed your own address? I stopped counting. | scheduled, "Posting on Thursday at 22:57 GMT+7", 1 reply |
 
 YouTube descriptions carry campaign links ct=yt-tapget-short, yt-tapget-long, yt-typeonce-short, yt-typeonce-long and the music credits (Hangtime by WOWA via Unminus; Complicated by Arulo via Mixkit). Custom thumbnails were set from the "You got five tabs" and "How many times have you typed your address?" frames; TikTok covers use the same frames. TikTok URLs and the Shorts links answer only once each post is live.
+
+The Undirect film was fixed on the night of Nov 22: in both cuts its junk tabs passed through one another as they burst out of Play and went back (the owner's catch, at 3.57 s). The re-rendered 9:16 and 16:9 files replaced the Undirect files in ~/Downloads/monholt-samples/, and before 01:00 on Nov 23 every scheduled post of the film carried them, at its old caption and time: TikTok as a new post, Instagram and Facebook as a new Reel pair, Threads edited in place, YouTube as new uploads. The YouTube thumbnails and the TikTok cover are now the frame at 4.87 s, the five tabs at rest under "You got five tabs." Each post was read back from its platform's scheduled list, and the stored video was checked at 3.57 s on Threads, Facebook and Instagram. The carousels and the Cutling posts are unchanged, since no crossing shows in them.
 
 ### Films, set 2 (ASG164, 2026-11-22): Undirect films scheduled on the owner's go; Cutling films wait for 2.0
 
