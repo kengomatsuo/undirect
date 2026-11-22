@@ -1,0 +1,10 @@
+Tapped × to close a pop-up and got a casino in a new tab? Then another one? The × was a link the page put there, so every tap opened a new tab instead of closing the box.
+
+I made Undirect, a Safari extension for iPhone, iPad and Mac, so a tap only goes where you aimed it. × closes the box, and the recipe is still there.
+
+What's the worst pop-up you've fought on a recipe site? Tell me in the comments.
+
+Undirect on the App Store: https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&mt=8&ct=yt-close-short
+
+Music: Hangtime by WOWA (Unminus). Sound effects: Freesound CC0.
+#SafariTips #iPhoneTips

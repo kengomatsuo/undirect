@@ -1,0 +1,199 @@
+{
+ "about": "Monholt social films, set 2 (board ASG164). Films in ~/Downloads/Claude/monholt-films-2/, source in undirect-promo/monholt-films-2. Times WIB (UTC+7), each at its own odd minute. Undirect films claim only what is on sale now (iPhone 1.0.4: a tap that the page sends somewhere else is stopped; the switch is the Undirect row in Safari's page menu). Cutling films show 2.0's fill-ins and go out only once Cutling 2.0 is on the App Store (both 2.0.0 versions were PREPARE_FOR_SUBMISSION, release set for Dec 1 00:00 UTC, when this was written on 2026-11-22). No film or caption names a price, so none clashes with the Nov 27-30 sale.",
+ "links": {
+  "undirect_site": "undirect.matsuokengo.com",
+  "cutling_site": "cutling.matsuokengo.com",
+  "undirect_store": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&mt=8&ct=",
+  "cutling_store": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct="
+ },
+ "films": [
+  {
+   "key": "undirect-next-chapter",
+   "title": "Next chapter",
+   "app": "Undirect",
+   "files": {
+    "9x16": "undirect-next-chapter-9x16.mp4",
+    "16x9": "undirect-next-chapter-16x9.mp4",
+    "cover": "undirect-next-chapter-cover.jpg",
+    "cover16x9": "undirect-next-chapter-16x9-cover.jpg"
+   },
+   "length_s": {
+    "9x16": 21.0,
+    "16x9": 22.5
+   },
+   "what": "12:47 AM, one more chapter: every tap on Next chapter lands on a scam page (12 viruses, a prize, a fake scan). It's not your iPhone, it's the page: a link hidden on the button. One switch in Safari's page menu, and Next chapter opens chapter 12.",
+   "posts": [
+    {
+     "platform": "TikTok",
+     "when": "2026-11-27 07:55",
+     "note": "Disclose post content > Your brand; cover = frame 0",
+     "text": "Tapped Next chapter. Got “your iPhone has 12 viruses.” 🙃 It's not your phone, it's the page: there's a hidden link on the button. Undirect makes Next chapter open the next chapter. What were you reading? #iphonetips #safari #webnovel #manhwa #iphonehacks"
+    },
+    {
+     "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
+     "when": "2026-11-27 08:03",
+     "note": "cover = frame 0; Facebook first comment by hand: Undirect on the App Store: undirect.matsuokengo.com",
+     "text": "Tapped Next chapter, got “your iPhone has 12 viruses”? It's not your iPhone. It's the page.\n\nThe site hid a link on the button, so your tap went somewhere you never picked. I made Undirect, a Safari extension, so Next chapter opens the next chapter.\n\nWhat were you reading when it happened? 👇\n\nLink in bio.\n#safari #iphonetips #webnovel #manhwa #ios"
+    },
+    {
+     "platform": "Threads",
+     "when": "2026-11-27 08:11",
+     "note": "topic tag: iPhone; reply 2/2: undirect.matsuokengo.com",
+     "text": "Tapped Next chapter at 12:47 AM and got “Your iPhone is severely damaged by (12) viruses!”\n\nIt's not your phone. The page hid a link on the button, so the tap went where the page wanted. I made Undirect so a tap in Safari only goes where you aimed it.\n\nWhat site does this to you most?"
+    },
+    {
+     "platform": "YouTube Short @matsuokengo",
+     "when": "2026-11-27 08:19",
+     "file": "9x16",
+     "title": "Next chapter opened a fake virus page #SafariTips #iPhoneTips",
+     "description_file": "youtube/undirect-next-chapter-short.txt",
+     "tags": "Safari,Safari redirect,fake virus page,Undirect,iPhone"
+    },
+    {
+     "platform": "YouTube @matsuokengo",
+     "when": "2026-11-28 22:37",
+     "file": "16x9",
+     "title": "Why Next chapter opens a fake virus page in Safari, and how to stop it | Undirect",
+     "description_file": "youtube/undirect-next-chapter-long.txt",
+     "tags": "Safari,Safari redirect,fake virus page,Undirect,iPhone,Mac"
+    }
+   ]
+  },
+  {
+   "key": "undirect-close",
+   "title": "× means close",
+   "app": "Undirect",
+   "files": {
+    "9x16": "undirect-close-9x16.mp4",
+    "cover": "undirect-close-cover.jpg"
+   },
+   "length_s": {
+    "9x16": 20.6
+   },
+   "what": "6:40 PM, dinner on: a newsletter box covers the recipe, and each tap on its × opens a casino in a new tab, four tabs and still no soup. The page did that, not you. One switch, and × closes the box. The recipe is Undirect's own demo page (Saltpan Kitchen).",
+   "posts": [
+    {
+     "platform": "TikTok",
+     "when": "2026-11-28 23:25",
+     "note": "Disclose post content > Your brand; cover = frame 0",
+     "text": "The × opened a casino 🎰 then another, then another. Four tabs, still no soup. Undirect makes × close the box. Worst pop-up you've fought? #iphonetips #safari #recipes #cookingtiktok #iphonehacks"
+    },
+    {
+     "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
+     "when": "2026-11-28 23:33",
+     "note": "cover = frame 0; Facebook first comment by hand: Undirect on the App Store: undirect.matsuokengo.com",
+     "text": "Tapped × on a pop-up and got a casino tab? Then another. Four tabs, still no soup.\n\nThe × was a link the page put there, not something you did wrong. I made Undirect, a Safari extension, so × just closes the box.\n\nWorst pop-up you've fought on a recipe site? 👇\n\nLink in bio.\n#safari #iphonetips #recipes #homecooking #ios"
+    },
+    {
+     "platform": "Threads",
+     "when": "2026-11-28 23:39",
+     "note": "topic tag: iPhone; reply 2/2: undirect.matsuokengo.com",
+     "text": "Tapped × on a newsletter pop-up. Got a casino in a new tab. Tapped again, another casino. Four tabs, still no soup.\n\nThe × was a link. I made Undirect so a tap in Safari only goes where you aimed it.\n\nWhat's the worst pop-up you've fought on a recipe site?"
+    },
+    {
+     "platform": "YouTube Short @matsuokengo",
+     "when": "2026-11-28 23:47",
+     "file": "9x16",
+     "title": "The × on this pop-up opened a casino tab #SafariTips #iPhoneTips",
+     "description_file": "youtube/undirect-close-short.txt",
+     "tags": "Safari,pop up tabs,Safari redirect,Undirect,iPhone"
+    }
+   ]
+  },
+  {
+   "key": "cutling-five-names",
+   "title": "Five names",
+   "app": "Cutling",
+   "after": "Cutling 2.0 READY_FOR_SALE on iOS",
+   "files": {
+    "9x16": "cutling-five-names-9x16.mp4",
+    "16x9": "cutling-five-names-16x9.mp4",
+    "cover": "cutling-five-names-cover.jpg",
+    "cover16x9": "cutling-five-names-16x9-cover.jpg"
+   },
+   "length_s": {
+    "9x16": 18.6,
+    "16x9": 19.8
+   },
+   "what": "9 AM at a small shop: five customers asked if their order shipped. One saved reply with a blank for the name answers each: tap the reply, tap the name, send. Cutling 2.0's Ask Each Time fill-in.",
+   "posts": [
+    {
+     "platform": "TikTok",
+     "when": "2026-12-02 07:40",
+     "note": "Disclose post content > Your brand; cover = frame 0; TikTok schedules at most 10 days ahead",
+     "text": "5 customers, same question, one saved reply ✅ Tap the reply, tap the name. New in Cutling 2.0. What do you send every day? #smallbusiness #iphonetips #customerservice #shopowner #productivityhacks"
+    },
+    {
+     "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
+     "when": "2026-12-02 07:47",
+     "note": "cover = frame 0; Facebook first comment by hand: Cutling on the App Store: cutling.matsuokengo.com",
+     "text": "Five customers asked the same thing overnight: has my order shipped?\n\nOne saved reply with a blank for the name answered all five. Tap the reply, tap the name, send. That's new in Cutling 2.0.\n\nWhat do you type to customers most often? 👇\n\nLink in bio.\n#smallbusiness #iphonetips #customerservice #shopowner #productivity"
+    },
+    {
+     "platform": "Threads",
+     "when": "2026-12-02 07:53",
+     "note": "topic tag: iPhone; reply 2/2: cutling.matsuokengo.com",
+     "text": "Five customers asked “has my order shipped?” overnight. I answered all five with one saved reply that asks for the name: tap the reply, tap the name, send. That's the new fill-in blank in Cutling 2.0.\n\nWhat do you type to customers most?"
+    },
+    {
+     "platform": "YouTube Short @matsuokengo",
+     "when": "2026-12-02 08:01",
+     "file": "9x16",
+     "title": "One saved reply, a different name every time #iPhoneTips",
+     "description_file": "youtube/cutling-five-names-short.txt",
+     "tags": "Cutling,iPhone keyboard,saved replies,text snippets,small business"
+    },
+    {
+     "platform": "YouTube @matsuokengo",
+     "when": "2026-12-03 22:43",
+     "file": "16x9",
+     "title": "Answer every customer by name with one saved reply on iPhone | Cutling",
+     "description_file": "youtube/cutling-five-names-long.txt",
+     "tags": "Cutling,iPhone keyboard,saved replies,text snippets,small business,Mac"
+    }
+   ]
+  },
+  {
+   "key": "cutling-five-taps",
+   "title": "Five taps",
+   "app": "Cutling",
+   "after": "Cutling 2.0 READY_FOR_SALE on iOS",
+   "files": {
+    "9x16": "cutling-five-taps-9x16.mp4",
+    "cover": "cutling-five-taps-cover.jpg"
+   },
+   "length_s": {
+    "9x16": 18.6
+   },
+   "what": "Evening at a small restaurant: a guest asks for a table on Saturday. A long, warm reply is built in five taps: Hello asks the name, Booking asks how many (2, 4 or 6), Sign-off leaves the cursor for a line of your own. Cutling 2.0's Ask Each Time, Choice and Cursor Position.",
+   "posts": [
+    {
+     "platform": "TikTok",
+     "when": "2026-12-03 23:15",
+     "note": "Disclose post content > Your brand; cover = frame 0; inside TikTok's 10-day window only from Nov 24 on",
+     "text": "This whole reply took 5 taps 👀 Name, guests, sign-off. Cutling 2.0 asks for what changes. What would you save? #restaurantlife #smallbusiness #iphonetips #hospitality #productivityhacks"
+    },
+    {
+     "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
+     "when": "2026-12-03 23:21",
+     "note": "cover = frame 0; Facebook first comment by hand: Cutling on the App Store: cutling.matsuokengo.com",
+     "text": "This whole reply to a table booking took five taps.\n\nThe greeting asks the name, the booking asks how many guests, the sign-off leaves the cursor free for a line of your own. That's Cutling 2.0's fill-ins.\n\nWhat reply would you save? 👇\n\nLink in bio.\n#restaurant #smallbusiness #iphonetips #hospitality #productivity"
+    },
+    {
+     "platform": "Threads",
+     "when": "2026-12-03 23:29",
+     "note": "topic tag: iPhone; reply 2/2: cutling.matsuokengo.com",
+     "text": "This reply to a table booking took five taps: the greeting asks her name, the booking asks how many, the sign-off leaves my cursor free for one line of my own. Saved replies in Cutling 2.0 can ask for what changes.\n\nWhat would you save as a reply?"
+    },
+    {
+     "platform": "YouTube Short @matsuokengo",
+     "when": "2026-12-03 23:37",
+     "file": "9x16",
+     "title": "A long reply to a booking in five taps #iPhoneTips",
+     "description_file": "youtube/cutling-five-taps-short.txt",
+     "tags": "Cutling,iPhone keyboard,saved replies,text snippets,restaurant"
+    }
+   ]
+  }
+ ]
+}

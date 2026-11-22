@@ -1,0 +1,10 @@
+Tapped Next chapter and got a page saying your iPhone has 12 viruses? It's not your iPhone. The page put an invisible link on the button, so your tap went somewhere you never picked.
+
+I made Undirect, a Safari extension for iPhone, iPad and Mac, so a tap only goes where you aimed it. Next chapter opens the next chapter.
+
+What were you reading when it happened? Tell me in the comments.
+
+Undirect on the App Store: https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&mt=8&ct=yt-next-short
+
+Music: Hangtime by WOWA (Unminus). Sound effects: Freesound CC0.
+#SafariTips #iPhoneTips
