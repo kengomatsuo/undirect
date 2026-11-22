@@ -330,12 +330,12 @@ Four films, each one moment of using the app on a real page: Undirect "Next chap
 
 | WIB | Platform | Film | Caption opens | Status |
 |---|---|---|---|---|
-| 2026-11-27 07:55 | TikTok | Next chapter | Tapped Next chapter. Got “your iPhone has 12 viruses.” 🙃 It's not your phone, it's the … | ready, waits for the owner's go |
+| 2026-11-27 07:55 | TikTok | Next chapter | Tapped Next chapter. Got “your iPhone has 12 viruses.” 🙃 It's not your phone, it's the … | scheduled (TikTok Studio Posts list: "27 Nov, 7:55 am (GMT+7)", Your brand) |
 | 2026-11-27 08:03 | Instagram Reel + Facebook Reel (Business Suite, one post) | Next chapter | Tapped Next chapter, got “your iPhone has 12 viruses”? It's not your iPhone. It's the … | scheduled (owner go 2026-11-22 "add to"; Business Suite: Reel scheduled 27 Nov on Facebook and Instagram, cover = frame 0) |
 | 2026-11-27 08:11 | Threads | Next chapter | Tapped Next chapter at 12:47 AM and got “Your iPhone is severely damaged by (12) viruses!” | scheduled (Threads: "Posting on Friday at 08:11 GMT+7", topic iPhone, reply 2/2 undirect.matsuokengo.com) |
 | 2026-11-27 08:19 | YouTube Short @matsuokengo | Next chapter | Next chapter opened a fake virus page #SafariTips #iPhoneTips | scheduled, https://youtu.be/1YU2j5aRkY0 (private, publishAt set at upload) |
 | 2026-11-28 22:37 | YouTube @matsuokengo | Next chapter (16:9) | Why Next chapter opens a fake virus page in Safari, and how to stop it | Undirect | scheduled, https://youtu.be/tYqPbokF5qs (private, publishAt set at upload) |
-| 2026-11-28 23:25 | TikTok | × means close | The × opened a casino 🎰 then another, then another. Four tabs, still no soup. Undirect … | ready, waits for the owner's go |
+| 2026-11-28 23:25 | TikTok | × means close | The × opened a casino 🎰 then another, then another. Four tabs, still no soup. Undirect … | scheduled (TikTok Studio Posts list: "28 Nov, 11:25 pm (GMT+7)", Your brand) |
 | 2026-11-28 23:33 | Instagram Reel + Facebook Reel (Business Suite, one post) | × means close | Tapped × on a pop-up and got a casino tab? Then another. Four tabs, still no soup. | scheduled (Business Suite: Reel scheduled 28 Nov on Facebook and Instagram, cover = frame 0) |
 | 2026-11-28 23:39 | Threads | × means close | Tapped × on a newsletter pop-up. Got a casino in a new tab. Tapped again, another … | scheduled (Threads: "Posting on Saturday at 23:39 GMT+7", topic iPhone, reply 2/2) |
 | 2026-11-28 23:47 | YouTube Short @matsuokengo | × means close | The × on this pop-up opened a casino tab #SafariTips #iPhoneTips | scheduled, https://youtu.be/dZNRcI1Nstw (private, publishAt set at upload) |
