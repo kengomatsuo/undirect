@@ -39,3 +39,6 @@ dist/
 .shots/
 .shots-src/
 tests/fx.js
+
+# local secrets for the repo store
+.env

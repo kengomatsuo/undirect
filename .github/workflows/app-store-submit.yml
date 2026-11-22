@@ -1,0 +1,41 @@
+# Submits Undirect 1.1.0 on each platform the moment 1.0.5 is on the store there (owner's yes for this
+# submission), says each new submission or new error on the "App Store watch" issue, and turns itself
+# off once every platform is submitted. submit_version.py leaves a platform already submitted alone.
+name: App Store submit watch
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+  actions: write
+concurrency:
+  group: app-store-submit
+  cancel-in-progress: false
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ASC_KEY_ID: 8R8JCJZUNJ
+      ASC_PRIVATE_KEY_PATH: ${{ runner.temp }}/asc.p8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Key
+        run: printf '%s\n' "${{ secrets.ASC_PRIVATE_KEY }}" > "$ASC_PRIVATE_KEY_PATH" && chmod 600 "$ASC_PRIVATE_KEY_PATH"
+      - name: Submit where the previous version is live
+        run: |
+          set +e
+          out=$(python3 Support/AppStore/submit_version.py 1.1.0 20 1.0.5 2>&1); code=$?
+          echo "$out"
+          news=$(echo "$out" | grep -E "just now|ERROR")
+          if [ -n "$news" ]; then
+            issue=$(gh issue list --state open --search "App Store watch in:title" --json number --jq '.[0].number')
+            [ -n "$issue" ] || issue=$(gh issue create --title "App Store watch" --body "Submission and release news for Undirect, from the App Store watch workflows." | grep -oE '[0-9]+$')
+            last=$(gh issue view "$issue" --json comments --jq '.comments[-1].body // ""')
+            msg="Undirect 1.1.0 store submission: $(echo "$news" | tr '\n' ' ')"
+            [ "$msg" = "$last" ] || gh issue comment "$issue" --body "$msg"
+          fi
+          [ $code -eq 0 ] && gh workflow disable app-store-submit.yml
+          exit 0

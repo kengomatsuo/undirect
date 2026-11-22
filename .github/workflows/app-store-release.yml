@@ -1,0 +1,29 @@
+# Says once on the "App Store watch" issue when Undirect 1.0.5 reads READY_FOR_SALE on iOS, then turns itself off.
+name: App Store release watch
+on:
+  schedule:
+    - cron: '3,18,33,48 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+  actions: write
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ASC_KEY_ID: 8R8JCJZUNJ
+      ASC_PRIVATE_KEY_PATH: ${{ runner.temp }}/asc.p8
+    steps:
+      - uses: actions/checkout@v4
+      - name: Key
+        run: printf '%s\n' "${{ secrets.ASC_PRIVATE_KEY }}" > "$ASC_PRIVATE_KEY_PATH" && chmod 600 "$ASC_PRIVATE_KEY_PATH"
+      - name: Is 1.0.5 live on iOS
+        run: |
+          state=$(python3 Support/AppStore/asc_state.py 1.0.5 2>&1) || { echo "$state"; exit 0; }
+          echo "$state"
+          issue=$(gh issue list --state open --search "App Store watch in:title" --json number --jq '.[0].number')
+          [ -n "$issue" ] || issue=$(gh issue create --title "App Store watch" --body "Submission and release news for Undirect, from the App Store watch workflows." | grep -oE '[0-9]+$')
+          gh issue comment "$issue" --body "Undirect 1.0.5 is LIVE on iOS ($(echo "$state" | tr '\n' ' ')). Release-day list: docs/plans/app-store-growth/undirect-105-launch.md"
+          gh workflow disable app-store-release.yml
