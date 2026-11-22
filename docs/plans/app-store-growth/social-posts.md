@@ -250,3 +250,5 @@ Owner: the X posts lacked pictures and ran too long. Read in Chrome 01:28-02:05 
 | 2026-11-22 02:10 WIB | X @monholtco | Arabic @APPS_RH quote found missing from Scheduled; rescheduled same text for Nov 27 20:15 WIB, confirmed in Unsent > Scheduled | scheduled |
 
 | 2026-11-22 08:50 WIB | MacPip + iPip | Deal labels: MacPip Cutling "Pay once, 40% off Nov 27" (ends Nov 30); iPip Cutling "40% off Nov 27 to 30, pay once, no subscription", Undirect "50% off Nov 27 to 30, pay once, no subscription" (ends Nov 30); read back on both Deals pages | live |
+
+| 2026-11-22 08:52 WIB | MacPip + iPip | Deal labels changed to the word lifetime: MacPip Cutling "40% off lifetime, Nov 27"; iPip Cutling "40% off lifetime, Nov 27 to 30", Undirect "50% off lifetime, Nov 27 to 30"; read back on both Deals pages | live |
