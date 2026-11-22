@@ -30,3 +30,4 @@ Debug builds take `-UndirectForceState`, `-UndirectSeedSample` and `-UndirectPan
 - **The sandbox will not read a group-container file the app did not write.**
   `com.apple.provenance` survives `xattr -c`, so a shell-written sample fails
   with POSIX 1. The debug sample lives in memory. Same doc.
+- A phantom `No such module 'UIKit'` in Zed means a stale `buildServer.json`.
