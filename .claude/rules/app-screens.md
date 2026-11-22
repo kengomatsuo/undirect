@@ -4,9 +4,11 @@ paths:
 ---
 
 One `NavigationSplitView` for all three: sidebar on iPad and Mac, collapsing to
-a stack on iPhone that opens on the sidebar. Rows follow
-System Settings, the app this one sits beside. Setup is one sentence and a
-button, never a tutorial: the HIG says onboarding must not teach the system.
+a stack on iPhone that opens on the sidebar. As built today, rows follow
+System Settings, the app this one sits beside, and setup is short and never a
+tutorial, since the HIG says onboarding must not teach the system; a design
+pass on first run or the rules list decides its own shape and weighs that HIG
+point.
 Debug builds take `-UndirectForceState`, `-UndirectSeedSample` and `-UndirectPane`. Full account:
 [docs/rules-and-record.md](../../docs/rules-and-record.md).
 
