@@ -467,3 +467,66 @@ Each is the owner's call or waits on an outside event; none blocks writing the s
 | X link placement | Research: link in a reply | All listing posts had it in the post | Open (9.2) |
 | Render machine | House CLAUDE.md, pains-content brief: Mac only | Owner used win-pc for renders | Open (9.13) |
 | Trusting peers | Rule 3: verify claims | Rule 48: don't stall distrusting another session | Verify fast, then act |
+
+
+## Film notes kept here from the product-video skill
+
+These were this product's review notes; the published skill no longer carries them.
+
+## From SKILL.md, phase 3 (the pain films' review, 21 Nov)
+
+social-lessons.md:246 still gives the switch-on as "about 4-5 s"; the skill's last value was about 3 s.
+
+> The moment the product is turned on or used runs about 3 s with the camera moving through it (the owner found 4.5 s slow and 2 s too fast; rival shorts measure 1.0-2.7 s): the control shown, a quick push-in, the press made big, the pressed state, then the result. A short cut too short to hold it leaves the press out.
+
+> The press that turns the product on flows into its result by one continuous camera move (zoom out from the pressed control to the whole screen), never a cut or wipe between them. A montage of pages shows each as a new screen arriving (a push or card swap) with its own header and a readable title, held 0.6-0.8 s; pages swapped under a fixed crop read as glitches. No frame crops the title of the screen it shows.
+
+> At most two whoosh styles per film, one cue per repeated element, hits only on a touch, timed to the rendered frames.
+
+> Sound effects come from the product's approved film (its press and bubble sounds) [...] A phone or screen is shown whole or pushed in through the camera, never as a slice with a straight cut edge.
+
+> Each pain beat is a different real case at its true size inside the real app or browser, drawn from screenshots of real ones; a flat full-screen poster repeated per beat reads as one joke. The end screen is composed like rival shorts' (the mark 30-80 % of the width, the badge may sit under the bottom overlay), not shrunk into the safe box.
+
+> A real take is staged like the rest of the film: on its 3D device or full frame. The camera makes one move per shot, 1.2 s or longer, at most 2x, then holds; a magnifier over the held frame shows a control that is still small; the press changes something visible. Go back to 3 if a frame at delivered size does not show which control is pressed, or if the frame scales more than 2x inside 3 s.
+
+## From references/formats.md (the App Store preview's shot plan, 9 Nov)
+
+> Shot plan that fits 30 s, on the music's bars:
+>
+> | Share of the cut | Shots |
+> |---|---|
+> | First 45% | the problem, one shot per way it happens, 3 to 4 shots of 2 to 3 s |
+> | On the music's lift | the real control pressed, recorded on that platform, about 4 s |
+> | Next 30% | the same problems failing, in the same framing |
+> | Last 25% | the real result list or settings, then the end card |
+
+The skill also aimed every preview at "about 29.5 s, ending on a bar line of the music plus its ring-out"; it now gives Apple's 15 to 30 s.
+
+## From references/explainer.md (the approved explainer's arc and look, 9 Nov)
+
+> - Keep one device and one small story through the whole film. A cut changes the angle and never the object.
+
+> - Start from something the viewer wants, and let the film take it away on the press.
+> - Repeat the loss and let it grow: another try, another loss, a counter that climbs.
+> - Leave a silence before the turn. Put the music's lift, the spoken word and the press on the same frame.
+> - At the payoff, give the viewer what they wanted at the start in the opening framing, with the camera still for the first time.
+
+> - Play the take on the film's own 3D device, with the same camera language as the animated shots. A flat rectangle dropped into the frame reads as pasted.
+
+> - Use a dark ground with one light pool behind the subject. Fog, haze, glow walls, bloom and particle soup all fail.
+
+## From references/copy.md (the owner's rewrite of the explainer's voiceover)
+
+social-lessons.md:237 records that the owner rewrote the script; these are the rules the skill drew from that rewrite.
+
+> - Open on one moment from the viewer's day, in full sentences, and let the sentence run across the first cut into what goes wrong: "You're watching your favourite show episode nineteen. And as you're about to press play, / you're somewhere else."
+> - Each line names who does what to the viewer, with a plain verb for the harm: "The site draws an invisible sheet covering the entire page, which steals your clicks." A pronoun with nothing to point at fails: "Here is how a page takes it."
+> - Say what the viewer suffers and gets. Cut every beat that explains how the product decides: a rule, a threshold, a block list, a timing number. A buyer needs the threat and the rescue.
+> - Merge several mechanisms into one line when the film only needs their effect.
+> - End by returning to the opening moment, with its problem gone.
+
+> Indonesian takes "link", "pencet", "dicek", "nyuri", "gajelas", and fails on the dictionary forms "tautan", "menekannya", "memeriksa", "mencuri". Use the language's interjections and particles ("Lah,", "deh").
+
+Caption example row dropped from the skill's table because it names the product:
+
+> | Pulled right back | Undirect forces you straight back |
