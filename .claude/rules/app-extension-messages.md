@@ -9,12 +9,12 @@ paths:
 
 - **The app's `dispatchMessage` never wakes the background page**, so every app
   change is also queued in `from-app.json` and handed over in the native
-  handler's reply; `readState()` waits for that on waking (2026-10-01). Full
+  handler's reply; `readState()` waits for that on waking. Full
   account: [docs/safari-constraints.md](../../docs/safari-constraints.md).
 - **Anything set from a private tab stays in `storage.session` and out of the
   snapshot**, because Safari runs one extension copy across private and
   ordinary windows. Check `tab.incognito` before writing a site name anywhere
-  the app reads (2026-10-01). Same doc.
+  the app reads. Same doc.
 - **The Mac app lists and edits the rules; the iOS app shows the same list
   read-only**, because Apple gives no way for a containing iOS app to message
   its extension. They travel through an app group: the extension pushes a

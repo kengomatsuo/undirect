@@ -38,7 +38,7 @@ do not consult the rules. Full account:
 
 ## Shipping
 
-**Release binaries build on Xcode Cloud, never on the Mac (owner, 2026-11-21):** the
+**Release binaries build on Xcode Cloud, never on the Mac:** the
 Mac is shared by every session and a local archive starves them. `./deploy.sh build`
 and the binary half of `release` archive locally, so they are not used: push, then
 `python3 Support/AppStore/cloud_build.py` starts the "Release" workflow (archives

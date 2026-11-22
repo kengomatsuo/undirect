@@ -163,3 +163,9 @@ inside the metadata upload (`deliver/lib/deliver/upload_metadata.rb`), so the
 processing. Export compliance is answered `false`, matching
 `ITSAppUsesNonExemptEncryption` in `project.yml`. Re-check the store
 screenshots against the build before running it; the command cannot.
+
+## Where release binaries build
+
+Release binaries build on Xcode Cloud, never on the Mac. This is the owner's
+instruction of 2026-11-21: the Mac is shared by every session, and a local
+archive starves them.

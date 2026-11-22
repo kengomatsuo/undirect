@@ -14,10 +14,9 @@ paths:
 - **iOS requires `"persistent": false` on the background page**, so anything
   kept only in a variable is lost when Safari unloads it. Session state lives in
   `storage.session`. Full account: [docs/safari-constraints.md](../../docs/safari-constraints.md).
-- **Judging every site automatically cost a whole domain.** A misjudged Bing
-  result and a `teams.live.com` popup each wrote a permanent global network
-  block, and `microsoft.com` went unreachable everywhere (2026-09-16). The
-  guard now runs only on a site switched on from the toolbar button;
-  `settings.mode: "everywhere"` restores the old always-on behavior. An off
-  site gets an outlined icon, no badge and no popup, so one press turns it on
-  (2026-09-17). Full account: [docs/rules-and-record.md](../../docs/rules-and-record.md).
+- **The guard runs only on a site switched on from the toolbar button, because
+  one misjudged page under an always-on guard writes a permanent global network
+  block and takes a whole domain offline everywhere.**
+  `settings.mode: "everywhere"` restores the always-on behavior. An off
+  site gets an outlined icon, no badge and no popup, so one press turns it on.
+  Full account: [docs/rules-and-record.md](../../docs/rules-and-record.md).
