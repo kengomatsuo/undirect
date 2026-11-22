@@ -268,9 +268,9 @@ ten threads, two seconds between fetches, **threads under ten comments flagged
 low-signal**, always the loud-minority caveat (93-100).
 **Tested here 2026-11-21:** `curl -A "Mozilla/5.0 (compatible; research-client)"
 https://www.reddit.com/r/Safari/comments/1f5lvnw/.json` returned **403** (old.reddit.com
-302). The mechanic does not work from this Mac; it would need stya-prod or the browser.
+302). The mechanic does not work from this Mac; it would need a cloud session or the browser.
 **Verdict: copy** the seven-part extraction prompt and the under-ten-comments rule into how
-we fill `*-voice-of-customer.md`; the fetch route must be re-tested from stya-prod.
+we fill `*-voice-of-customer.md`; the fetch route must be re-tested from a cloud session.
 
 ### 3.3 Hawk SEO skills (`hawk-seo-skills`, eight skills)
 - `striking-distance-finder` (142): keep GSC rows at positions 4-15, drop impressions under
@@ -494,7 +494,7 @@ engagement rate, **`igReelsAvgWatchTime`**, total watch time); the "leader" is t
 variant on one chosen metric (`ExperimentsView.jsx` 99-101), with no significance check.
 **For us:** confirms the method (several cuts of one film as separate trial reels, same
 caption, same day) and that average watch time comes back per reel. **Skip** the app
-(Zernio is a paid middleman; Postiz on stya-prod or the Graph API does the same).
+(Zernio is a paid middleman; Postiz on a cloud service or the Graph API does the same).
 
 ### 6.4 `artemnovitckii/claude-editing-skills` `trial-reels` (beff6b8, 2026-10-30)
 **Licence:** MIT ("Copyright (c) 2026 Artem Novitckii"). 11 editing skills on HyperFrames
@@ -774,7 +774,7 @@ files refer to `claude-house-rules/skills/social-media/SKILL.md` (83 lines) and
    score each post on fit x2, intent x2, comment opportunity x2, reach and recency x1, drop
    anything over 24 hours old with 50+ comments, and draft at most ten replies at the tier the
    post earns. Reddit's `.json` refused this Mac with 403 on 2026-11-21: run it from
-   stya-prod." Sources: `coreyhaines31_marketingskills/skills/social/references/listening.md`
+   a cloud session." Sources: `coreyhaines31_marketingskills/skills/social/references/listening.md`
    31-40, 58-77, 137-158; `lhitches_reddit-extract/skills/reddit-extract/SKILL.md` 35-45.
 8. **Add to "The post":** "An Instagram carousel for an app follows the demo walkthrough:
    app and result, the pain, a slide listing the steps, one real cropped screenshot per step,

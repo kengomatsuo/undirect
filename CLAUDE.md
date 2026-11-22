@@ -18,7 +18,6 @@ JavaScript.
 
 ## Working rules
 
-- **Push in the same turn as every commit (owner, 2026-09-22), with the repo's check run and the pushed range reported; commit paths come from this session's own edits, diffed against `git status`.** Full account: [docs/working-record.md](docs/working-record.md).
 - **Per-language films are pending: say so in the first reply of each session.** Full account: [docs/app-store-submission.md](docs/app-store-submission.md).
 
 ## What the guard does

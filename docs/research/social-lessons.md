@@ -361,7 +361,7 @@ The `product-video` skill (~/.claude/skills/product-video/SKILL.md) holds the pi
 
 - CronCreate jobs live only as long as their tmux session; when asg-directories-3 ended, its calendar died silently and the Nov 20 post never went out. Prefer each platform's own scheduler (X, Business Suite, TikTok, YouTube Posts) so posting does not depend on the laptop. (77e302a2 brief; 7850f202 assistant 2026-11-21 01:44)
 - Never schedule what he hasn't said go to; he cleared every job once ("clear jobs"). (77e302a2 2026-11-20 03:35, 03:51)
-- Watchers that run on the Mac stop when it sleeps; house rules want them on stya-prod. (d543c67f report; ~/.claude/CLAUDE.md "Machines")
+- Watchers that run on the Mac stop when it sleeps, so an Undirect or Cutling watcher runs on a cloud service; stya-prod is for stya and POS only. (d543c67f report; ~/.claude/CLAUDE.md "Machines")
 
 ### Directories
 
