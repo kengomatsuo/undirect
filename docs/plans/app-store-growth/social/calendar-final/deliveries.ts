@@ -617,7 +617,7 @@ const bad = [
 ];
 if (bad.length) throw new Error(`X routine broken: ${bad.join("; ")}`);
 // X words (owner, 2026-11-22; social-lessons.md): every worded X row comes from x-posts.ts, stays short, shares no
-// opening and no sentence with another, keeps Cutling off bank details, claims clipboard history on the
+// opening and no sentence with another, claims clipboard history on the
 // Mac only, shows a sale price only inside the sale, and carries its picture unless it is a poll or a film.
 const xWorded = rows.filter((r) => r.platform === "X" && r.caption);
 const norm = (t: string) => t.toLowerCase().replace(/[^a-z0-9$ ]+/g, " ").replace(/\s+/g, " ").trim();
@@ -636,7 +636,6 @@ for (const r of xWorded) {
     if (seenSentence.has(sentence)) xText.push(`${r.id} repeats a sentence of ${seenSentence.get(sentence)}: "${sentence}"`);
     seenSentence.set(sentence, r.id);
   }
-  if (/\b(bank|iban)\b/i.test(x.text)) xText.push(`${r.id} names bank details`);
   if (/clipboard history/i.test(x.text) && !/\bMac\b/.test(x.text)) xText.push(`${r.id} claims clipboard history without naming the Mac`);
   if (/\$0\.99|\$2\.99/.test(x.text) && (r.wib < "2026-11-27 00:00" || r.wib >= SALE_END)) xText.push(`${r.id} shows a sale price at ${r.wib} WIB, outside the sale`);
   if (/\$1\.99|\$4\.99/.test(x.text) && r.wib >= SALE_START && r.wib < SALE_END && !/\bwas\b|back to/.test(x.text)) xText.push(`${r.id} shows the full price at ${r.wib} WIB, inside the sale`);

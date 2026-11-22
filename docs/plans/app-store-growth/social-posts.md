@@ -252,3 +252,10 @@ Owner: the X posts lacked pictures and ran too long. Read in Chrome 01:28-02:05 
 | 2026-11-22 08:50 WIB | MacPip + iPip | Deal labels: MacPip Cutling "Pay once, 40% off Nov 27" (ends Nov 30); iPip Cutling "40% off Nov 27 to 30, pay once, no subscription", Undirect "50% off Nov 27 to 30, pay once, no subscription" (ends Nov 30); read back on both Deals pages | live |
 
 | 2026-11-22 08:52 WIB | MacPip + iPip | Deal labels changed to the word lifetime: MacPip Cutling "40% off lifetime, Nov 27"; iPip Cutling "40% off lifetime, Nov 27 to 30", Undirect "50% off lifetime, Nov 27 to 30"; read back on both Deals pages | live |
+
+### Short X posts scheduled, then pulled back (2026-11-22)
+
+- 09:50-10:40 WIB: on the owner's yes, 38 of the short X posts from x-posts.ts were scheduled (P02 Nov 22 15:00 through Dec 3-4). Polls could not be scheduled: X's web composer offers no schedule button once a poll is added.
+- 10:40 WIB: owner stopped it: the posts push the product in every main post, polls included, and no real account posts that way. Engagement first (questions, small polls, "reply below"); the product only now and then.
+- 10:45 WIB onward: unscheduling. 34 scheduled became 23 (the Arabic @APPS_RH quote, Nov 27 20:15, stays). X then answered every deleteScheduledTweetMutation with 429; the rest are retried after the limit clears.
+- Research for the new mix: docs/research/x-engagement-mix.md; drafts in social/x-engagement-drafts.md for the owner's review.

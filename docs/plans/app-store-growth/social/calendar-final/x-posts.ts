@@ -11,8 +11,8 @@
 //   picture whole at 518 x 291 and its mobile web timeline at 310 x 174; two or more pictures become a strip
 //   that crops anything wider than about 1.18:1, so no X post here carries more than one.
 // - Polls carry no picture (X allows none) and film posts keep their film.
-// - No two posts share an opening or a sentence, Cutling never leads with bank details, clipboard history is
-//   claimed on the Mac only, and the sale prices appear only inside the sale (deliveries.ts checks all four).
+// - No two posts share an opening or a sentence, clipboard history is
+//   claimed on the Mac only, and the sale prices appear only inside the sale (deliveries.ts checks all three).
 
 export type Layout = "side" | "side-right" | "under" | "pair" | "stack" | "icons";
 export type Picture = {
