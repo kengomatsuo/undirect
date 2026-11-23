@@ -58,6 +58,8 @@ PAGES = ["", "support/", "privacy/"]
 # IndexNow keys are public by design: the file <key>.txt at the site root proves ownership.
 INDEXNOW_KEY = "7020d84fa34667c5e4724f4fee4cef45"  # replaced 2026-11-20: Bing kept answering 403 for the first key
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
+# Cloudflare Web Analytics for *.matsuokengo.com (one site, split by host); traffic.ts in claude-house-rules reads it.
+CF_BEACON = '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token": "ca9784aea0cc4bf699f79f2ac42e5e31"}\'></script>'
 THEME = {"light": "#f7f6f4", "dark": "#0b0b0d"}
 
 # store code -> App/Localizable.xcstrings code
@@ -250,6 +252,7 @@ def head(loc, locales, t, page, title, description, ld, extra="", en_only=False)
 <style>{INLINE_CSS}</style>
 {extra}<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False, separators=(',', ':'))}</script>
 <script src="/site.js" defer></script>
+{CF_BEACON}
 </head>"""
 
 
@@ -574,6 +577,7 @@ def not_found_page(locales, all_t):
 <style>{INLINE_CSS}</style>
 <script id="nf-data" type="application/json">{json.dumps(data, ensure_ascii=False, separators=(',', ':'))}</script>
 <script src="/site.js" defer data-404="1"></script>
+{CF_BEACON}
 </head>
 <body>
 <main id="main" class="notfound wrap">
