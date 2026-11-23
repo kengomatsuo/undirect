@@ -1,0 +1,346 @@
+SOURCE https://docs.dodopayments.com/llms.txt
+fetched 2026-11-23
+# Dodo Payments Documentation
+
+> Documentation for Dodo Payments — the all-in-one payments, billing, and merchant of record platform for SaaS, AI, and digital products.
+
+- [Docs (196 pages)](https://docs.dodopayments.com/_llms/en/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [API Reference (177 pages)](https://docs.dodopayments.com/_llms/en/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Invoices, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Customer Blocklist, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+
+## Guides
+
+### Integration Guides
+
+- [Integration Guide](https://docs.dodopayments.com/developer-resources/integration-guide.md): Create checkout sessions, payment links, and webhooks to accept payments with Dodo Payments. Start with an SDK or REST API.
+- [Subscription Integration Guide](https://docs.dodopayments.com/developer-resources/subscription-integration-guide.md): Dodo Payments subscriptions let you charge customers on a recurring schedule. Create subscriptions through checkout sessions, handle webhooks, change plans with proration, and recover failed renewals.
+- [Handle Payment Failures](https://docs.dodopayments.com/developer-resources/handle-payment-failures.md): Read failure reasons from the payment object, decide whether to retry, and recover payments safely without exposing sensitive information to customers.
+- [Usage-Based Billing Integration Guide](https://docs.dodopayments.com/developer-resources/usage-based-billing-guide.md): Learn how to set up meters and send usage events to enable accurate usage-based billing with Dodo Payments.
+- [Manual License Key Fulfillment Integration Guide](https://docs.dodopayments.com/developer-resources/manual-license-key-fulfillment.md): Sell a product whose license keys you supply yourself: create a manual-mode License Key entitlement, detect pending grants, and deliver each key to the customer.
+- [Checkout Sessions](https://docs.dodopayments.com/developer-resources/checkout-session.md): Create secure, hosted checkout experiences for one-time payments and subscriptions with full customization control.
+- [Dynamic Pricing Checkout with Pay What You Want](https://docs.dodopayments.com/developer-resources/dynamic-pricing-checkout.md): Create checkout sessions with variable pricing using Pay What You Want. Set a minimum price, pass dynamic amounts via API, or let customers choose their price.
+- [Subscription Upgrade & Downgrade Guide](https://docs.dodopayments.com/developer-resources/subscription-upgrade-downgrade.md): Learn how to change a customer's subscription plan, handle proration, and process webhooks reliably.
+
+### Billing Deconstructions
+
+- [Billing Deconstructions](https://docs.dodopayments.com/developer-resources/billing-deconstructions/introduction.md): Study how six AI companies charge their users, then rebuild each billing model with Dodo Payments credits, meters, and subscriptions.
+- [OpenAI Billing Model](https://docs.dodopayments.com/developer-resources/billing-deconstructions/openai.md): Deconstruct OpenAI's token-based billing with prepaid fiat credits, then rebuild it with Dodo Payments credit entitlements, usage meters, and rate tiers.
+- [Cursor Billing Model](https://docs.dodopayments.com/developer-resources/billing-deconstructions/cursor.md): Deconstruct Cursor's model-weighted credit system and build the same hybrid subscription-plus-credits model using Dodo Payments.
+- [ElevenLabs Billing Model](https://docs.dodopayments.com/developer-resources/billing-deconstructions/elevenlabs.md): Deconstruct ElevenLabs' character-based billing with rollover credits and tiered overage pricing, then build the same model using Dodo Payments.
+- [Midjourney Billing Model](https://docs.dodopayments.com/developer-resources/billing-deconstructions/midjourney.md): Deconstruct Midjourney's GPU-time subscription with Relax Mode fallback and build the same model using Dodo Payments.
+- [Replicate Billing Model](https://docs.dodopayments.com/developer-resources/billing-deconstructions/replicate.md): Deconstruct Replicate's per-second hardware-specific billing and build the same pure usage-based model using Dodo Payments.
+- [Lovable Billing Model](https://docs.dodopayments.com/developer-resources/billing-deconstructions/lovable.md): Deconstruct Lovable's message-credit subscription with daily bonus drip, team-wide sharing, and separate cloud metering, then build the same model using Dodo Payments.
+
+### Cookbooks
+
+- [Build an AI Image Generator with Usage-Based Billing](https://docs.dodopayments.com/developer-resources/usage-based-billing-build-ai-image-generator.md): Build PixelGen AI, a terminal-based AI image generator that sends a usage event for each image and bills customers per image with Dodo Payments.
+- [Seat-Based Pricing with Add-ons and Payment Links](https://docs.dodopayments.com/developer-resources/seat-based-pricing.md): Learn how to create add-ons for seat-based pricing and generate payment links with custom add-on quantities using Dodo Payments
+- [Build an AI Chat App with AI SDK & LLM Blueprint](https://docs.dodopayments.com/developer-resources/build-an-ai-chat-app-with-usage-based-billing.md): Build an AI chat app with the AI SDK and Google Gemini. The LLM Blueprint tracks token usage, and Dodo Payments bills customers for the tokens they use.
+- [Build an AI API Platform with Credit-Based Billing](https://docs.dodopayments.com/developer-resources/build-an-ai-api-platform-with-credit-based-billing.md): Build NeuralAPI, a tiered AI API with token credits. Subscription plans and top-up packs grant credits, and a meter deducts them as customers call your API.
+- [Build a Prepaid Email Service with Credit-Based Billing](https://docs.dodopayments.com/developer-resources/build-a-prepaid-email-service-with-credit-based-billing.md): Build MailKit, a prepaid transactional email service with Dodo Payments and Resend: a monthly credit plan, top-up packs, a debit per send, and low-balance alerts.
+
+## Apps & Connections
+
+### Overview
+
+- [Apps & Connections](https://docs.dodopayments.com/integrations/introduction.md): Connect Dodo Payments to the tools that you use. Install an official app from the Apps page, or send webhook events to a tool with a webhook connector.
+
+### App Marketplace
+
+- [App Marketplace Overview](https://docs.dodopayments.com/features/app-marketplace/overview.md): Find apps that connect Dodo Payments to the tools you use. Learn about official and third-party apps, test mode and live mode, and the permissions that an app can get.
+- [Find and Install an App](https://docs.dodopayments.com/features/app-marketplace/find-and-install.md): Search the Explore tab, read the app page, approve the permissions on the consent screen, and install an app in test mode or live mode.
+- [Connect and Configure an App](https://docs.dodopayments.com/features/app-marketplace/connect-and-configure.md): Connect your account in a tool with OAuth or API credentials, check the credential test result, and set the options of an installed app on its Configure tab.
+- [Manage and Uninstall Apps](https://docs.dodopayments.com/features/app-marketplace/manage-and-uninstall.md): Review the permissions of an installed app, approve new permissions, disconnect or uninstall an app, learn what happens to your data afterward, and fix common problems.
+
+### Official Apps
+
+- [Official Apps](https://docs.dodopayments.com/features/app-marketplace/official-apps.md): Official apps are built and run by Dodo Payments. Install an official app in one click, connect your account, and choose which events to send.
+
+#### Notifications
+
+- [Slack App](https://docs.dodopayments.com/features/app-marketplace/slack.md): Install the official Slack app to get a Slack message for payments, refunds, disputes, subscription problems, cancellations, and payouts. Connect with OAuth and choose the events.
+- [Discord App](https://docs.dodopayments.com/features/app-marketplace/discord.md): Install the official Discord app to post payment, refund, dispute, subscription, and payout alerts from Dodo Payments to a Discord channel.
+- [Microsoft Teams App](https://docs.dodopayments.com/features/app-marketplace/microsoft-teams.md): Install the official Microsoft Teams app to post payment, refund, dispute, subscription, and payout cards from Dodo Payments to a Teams channel.
+
+#### Analytics
+
+- [PostHog App](https://docs.dodopayments.com/features/app-marketplace/posthog.md): Install the official PostHog app to send payment, subscription, refund, and dispute events from Dodo Payments to PostHog. Connect with your API credentials and choose the events.
+- [Mixpanel App](https://docs.dodopayments.com/features/app-marketplace/mixpanel.md): Install the official Mixpanel app to send payment, subscription, refund, and dispute events from Dodo Payments to Mixpanel. Connect with a service account and choose the events.
+- [Amplitude App](https://docs.dodopayments.com/features/app-marketplace/amplitude.md): Install the official Amplitude app to send payment, subscription, refund, and dispute events from Dodo Payments to Amplitude. Connect with your API Key and choose the events.
+- [Segment App](https://docs.dodopayments.com/features/app-marketplace/segment.md): Install the official Segment app to send payment, subscription, refund, and dispute events from Dodo Payments to Segment. Connect with your Write Key and choose the events.
+
+#### Email and Marketing
+
+- [Resend App](https://docs.dodopayments.com/features/app-marketplace/resend.md): Install the official Resend app to add your Dodo Payments customers to Resend contacts and keep their subscription status. The app sends no email.
+- [Loops App](https://docs.dodopayments.com/features/app-marketplace/loops.md): Install the official Loops app to add Dodo Payments customers to Loops as contacts and send payment, refund, and subscription events. The app sends no email.
+- [MailerLite App](https://docs.dodopayments.com/features/app-marketplace/mailerlite.md): Install the official MailerLite app to add Dodo Payments customers to MailerLite as subscribers and keep their subscription status. The app sends no email.
+- [Customer.io App](https://docs.dodopayments.com/features/app-marketplace/customer-io.md): Install the official Customer.io app to add Dodo Payments customers to Customer.io as people and send payment, subscription, refund, and dispute events. The app sends no message.
+
+#### CRM
+
+- [HubSpot App](https://docs.dodopayments.com/features/app-marketplace/hubspot.md): Install the official HubSpot app to create or update HubSpot contacts for your Dodo Payments customers and add a note for each payment, refund, and dispute.
+- [Attio App](https://docs.dodopayments.com/features/app-marketplace/attio.md): Install the official Attio app to create or update Attio people for your Dodo Payments customers and add a note for each payment, refund, and dispute.
+- [Close App](https://docs.dodopayments.com/features/app-marketplace/close.md): Install the official Close app to find or create Close contacts for your Dodo Payments customers and add a note to the lead for each payment, refund, and dispute.
+- [Pipedrive App](https://docs.dodopayments.com/features/app-marketplace/pipedrive.md): Install the official Pipedrive app to create or update Pipedrive persons for your Dodo Payments customers and add a note for each payment, refund, and dispute.
+
+#### Support
+
+- [Intercom App](https://docs.dodopayments.com/features/app-marketplace/intercom.md): Install the official Intercom app to create or update Intercom users for your Dodo Payments customers and add a note for each payment, refund, and dispute.
+- [Zendesk App](https://docs.dodopayments.com/features/app-marketplace/zendesk.md): Install the official Zendesk app to create or update Zendesk end users for your Dodo Payments customers and add a ticket for each opened dispute.
+- [Freshdesk App](https://docs.dodopayments.com/features/app-marketplace/freshdesk.md): Install the official Freshdesk app to create or update Freshdesk contacts for your Dodo Payments customers and create a ticket for each opened dispute.
+
+### Webhook Connectors
+
+#### Messaging
+
+- [Slack](https://docs.dodopayments.com/integrations/slack.md): Post Dodo Payments events, such as payments, subscription changes, and disputes, to a Slack channel through a Slack incoming webhook.
+- [Discord](https://docs.dodopayments.com/integrations/discord.md): Post real-time Dodo Payments notifications, such as payments, subscriptions, and disputes, to your Discord channels through a Discord webhook.
+- [Microsoft Teams](https://docs.dodopayments.com/integrations/microsoft-teams.md): Post Dodo Payments events to a Microsoft Teams channel as Adaptive Cards, so your team sees payments, subscription changes, and disputes.
+
+#### Workflow Automation
+
+- [n8n](https://docs.dodopayments.com/integrations/n8n.md): Trigger n8n workflows from Dodo Payments webhook events and connect payments to the apps n8n integrates with, in self-hosted or cloud n8n.
+- [Zapier](https://docs.dodopayments.com/integrations/zapier.md): Start Zaps from Dodo Payments events through Webhooks by Zapier, to send payment, subscription, and dispute data to thousands of apps.
+- [Windmill](https://docs.dodopayments.com/integrations/windmill.md): Run Windmill scripts and flows when Dodo Payments events occur, to update databases, sync data, or automate business logic in code.
+- [Inngest](https://docs.dodopayments.com/integrations/inngest.md): Trigger Inngest serverless functions and background jobs from Dodo Payments payment, subscription, and dispute events.
+
+#### CRM
+
+- [Close CRM](https://docs.dodopayments.com/integrations/close-crm.md): Create Close CRM contacts and opportunities when customers pay or subscribe through Dodo Payments, so your sales team can track leads and revenue in Close.
+- [GoHighLevel](https://docs.dodopayments.com/integrations/gohighlevel.md): Integrate Dodo Payments with GoHighLevel (GHL) using no-code payment links, overlay checkout, or inline checkout, and automate fulfillment with webhooks.
+
+#### Customer Support
+
+- [Fernand](https://docs.dodopayments.com/integrations/fernand.md): See Dodo Payments customer, plan, and purchase details on support conversations in Fernand, and route conversations with rules based on whether a contact pays.
+
+#### Email
+
+- [Loops](https://docs.dodopayments.com/integrations/loops.md): Send Dodo Payments events to Loops to trigger payment confirmations, subscription welcome emails, and failed payment notices from your Loops workflows.
+- [Resend](https://docs.dodopayments.com/integrations/resend.md): Send transactional emails through Resend when Dodo Payments events occur, such as payment confirmations, subscription welcomes, and payment failure notices.
+- [SendGrid](https://docs.dodopayments.com/integrations/sendgrid.md): Send transactional emails through SendGrid's Mail Send API when Dodo Payments events occur, using your SendGrid dynamic templates.
+- [AutoSend](https://docs.dodopayments.com/integrations/autosend.md): Send transactional emails through AutoSend's email API when Dodo Payments events occur, such as successful payments, new subscriptions, and failed payments.
+- [MailerLite](https://docs.dodopayments.com/integrations/mailerlite.md): Add paying customers to MailerLite subscriber groups and trigger MailerLite automations when Dodo Payments events such as successful payments occur.
+- [Keplars](https://docs.dodopayments.com/integrations/keplars.md): Send transactional emails through Keplars when Dodo Payments payment and subscription events occur, with no middleware server.
+
+#### Analytics
+
+- [Segment](https://docs.dodopayments.com/integrations/segment.md): Send Dodo Payments events to Segment as Track and Identify calls, so payments and subscriptions reach your analytics and marketing tools.
+- [Customer.io](https://docs.dodopayments.com/integrations/customer-io.md): Send Dodo Payments events to Customer.io to trigger email campaigns and customer journeys, such as welcome emails and payment failure notices.
+- [DataFast](https://docs.dodopayments.com/integrations/datafast.md): Attribute Dodo Payments revenue to marketing channels with DataFast analytics, and see which traffic sources bring paying customers.
+- [Dub](https://docs.dodopayments.com/integrations/dub.md): Track sale conversion events in Dub when customers complete purchases through Dodo Payments, and attribute revenue to your short links and partners.
+- [Rekomi](https://docs.dodopayments.com/integrations/rekomi.md): Run an affiliate program on your Dodo Payments store with Rekomi. One pasted API key connects the two, and Rekomi tracks sales and pays your affiliates.
+
+#### Pricing
+
+- [ParityDeals](https://docs.dodopayments.com/integrations/paritydeals.md): Show location-based discount banners on your website and auto-generate matching discount codes in Dodo Payments with ParityDeals.
+- [Evendeals](https://docs.dodopayments.com/integrations/evendeals.md): Sync location-based purchasing power parity discount codes from Evendeals into your Dodo Payments account for one-time and subscription products.
+
+#### Platforms
+
+- [Appwrite](https://docs.dodopayments.com/integrations/appwrite.md): Accept one-time payments and subscriptions in your Appwrite project with two Appwrite Functions templates that store orders and grant subscriber access.
+- [PayGlue](https://docs.dodopayments.com/integrations/payglue.md): Sell Ghost memberships and one-time access with Dodo Payments. PayGlue turns each Dodo Payments purchase into a Ghost member and removes access when a subscription ends.
+
+## Changelog
+
+### Changelog
+
+- [Changelog](https://docs.dodopayments.com/changelog/introduction.md): Track all Dodo Payments releases, new features, improvements, and platform updates. Complete version history with detailed changelogs for each release.
+
+### November 2026
+
+- [v1.120.40 (November 3, 2026)](https://docs.dodopayments.com/changelog/v1.120.40.md): Single Page Checkout, Dodo AI in the dashboard, Connected Apps for MCP and the CLI, custom team roles, workload identity, ownership transfers, custom retry schedules, retention offers, and a rebuilt Customer Portal.
+
+### October 2026
+
+- [v1.118.3 (October 6, 2026)](https://docs.dodopayments.com/changelog/v1.118.3.md): Multi-subscription checkout, the Moderation API, GCash, AlipayHK, FPS and Touch 'n Go, Apple Pay in India, Ethoca alerts, a customer email log, test mode emails, right-to-left checkout, a redesigned dashboard, and Dodo Sync 1.0.
+
+### September 2026
+
+- [v1.113.28 (September 10, 2026)](https://docs.dodopayments.com/changelog/v1.113.28.md): A new Reports tab with balance, fee and reconciliation exports, subscription grace periods, a customer blocklist, manual payment retry, an activity log on every payment, a rebuilt discount form, split cancellation controls, card-optional subscriptions when nothing is due today, a mandatory Tax ID fl…
+
+### August 2026
+
+- [v1.113.6 (August 22, 2026)](https://docs.dodopayments.com/changelog/v1.113.6.md): Subscription pause and resume through the status field, replacing the removed pause field, plus native Purchasing Power Parity with per-country percentages, Charm Pricing, archive businesses and brands, a Milestones page, and a guided setup experience.
+- [v1.112.0 (August 5, 2026)](https://docs.dodopayments.com/changelog/v1.112.0.md): Discount codes gain Amount discounts, scheduling, customer eligibility rules, and per-currency options, alongside a rebuilt native webhooks experience with email alerting — plus Cash App Pay for subscriptions, SEPA Direct Debit for one-time EUR payments, customer-friendly payment failure messages, p…
+
+### July 2026
+
+- [v1.109.0 (July 21, 2026)](https://docs.dodopayments.com/changelog/v1.109.0.md): A completely rebuilt Analytics v3 dashboard with real-time revenue, one-click period comparisons, customizable layouts, and shareable chart cards — plus paid trials for subscriptions and checkout, trial-misuse prevention, Payout Accounts for managing multiple bank accounts, product and add-on pricin…
+- [v1.106.0 (July 7, 2026)](https://docs.dodopayments.com/changelog/v1.106.0.md): Localized Pricing with per-currency and per-country price rules, three new payment methods (Satispay, BLIK, and Klarna for subscriptions), feature flag entitlements, Apple Pay domain registration, and editable add-ons at checkout — plus subscription period extension and add-on image removal.
+
+### June 2026
+
+- [v1.105.0 (June 22, 2026)](https://docs.dodopayments.com/changelog/v1.105.0.md): Bring Your Own Processor (BYOP), the official Rust SDK release, Korean payment methods (Kakao Pay, Naver Pay, PAYCO) and Przelewy24, brand_id on every webhook payload, decimal-aware currency handling, higher entitlement limits, plus checkout, analytics, and dashboard improvements.
+- [v1.101.0 (June 2, 2026)](https://docs.dodopayments.com/changelog/v1.101.0.md): Automatic subscription payment retries to recover failed renewal revenue, business-level proration defaults with per-product-collection overrides, and business name collection for B2B invoices — plus bug fixes and improvements.
+
+### May 2026
+
+- [v1.99.0 (May 25, 2026)](https://docs.dodopayments.com/changelog/v1.99.0.md): Stacked discount codes (up to 20 per checkout, payment, or subscription), seven new customer notification emails for refunds and subscription lifecycle events, checkout payment page overhaul lifting success rates by 2–3%, product form rework with live preview and autosave, and Business Settings rede…
+- [v1.97.6 (May 7, 2026)](https://docs.dodopayments.com/changelog/v1.97.6.md): Entitlements launch with five new fulfilment integrations (Discord, GitHub, Telegram, Framer, Notion), subscription cancellation reasons in the customer portal, configurable INR e-mandate floor, adaptive currency fees inclusive setting, Dodo Payments Desktop app for macOS/Windows/Linux, stablecoin p…
+
+### April 2026
+
+- [v1.94.0 (April 8, 2026)](https://docs.dodopayments.com/changelog/v1.94.0.md): Abandoned Cart Recovery, Subscription Dunning, discount metadata, recovery webhooks, Pix payments for Brazil, and WeChat Pay for Chinese customers
+
+### March 2026
+
+- [v1.93.0 (March 28, 2026)](https://docs.dodopayments.com/changelog/v1.93.0.md): Checkout redesign with improved loading states, net revenue analytics, business-level payment method disabling, payout breakdown, Visa RDR configuration, DoNotBill proration mode, scheduled plan changes, and delete customer payment method API
+- [v1.87.0 (March 9, 2026)](https://docs.dodopayments.com/changelog/v1.87.0.md): Support for discounts in change plan and minor improvements across the platform
+- [v1.86.0 (March 2, 2026)](https://docs.dodopayments.com/changelog/v1.86.0.md): Credit-based billing with rollover, overage, and expiration controls, unified design and theme customization hub, refund and dispute status in list payments API, refunds table in customer portal, and copy to live mode for meters
+
+### February 2026
+
+- [v1.84.0 (February 20, 2026)](https://docs.dodopayments.com/changelog/v1.84.0.md): Product-level analytics, Verifi RDR dispute prevention, DodoPayments CLI, customer portal UI revamp, inline checkout payment method updates, Tax ID prefill, return URL query params, customer email update API, and Bun adapter
+- [v1.81.0 (February 6, 2026)](https://docs.dodopayments.com/changelog/v1.81.0.md): Third-party analytics, checkout theme customization, prevent plan change on payment failure, and balance ledger API
+- [v1.78.0 (February 2, 2026)](https://docs.dodopayments.com/changelog/v1.78.0.md): Communication preferences with push notifications, custom fields for checkout sessions, and expanded checkout language support
+
+### January 2026
+
+- [v1.75.0 (January 23, 2026)](https://docs.dodopayments.com/changelog/v1.75.0.md): Product collections, RevolutPay & Billie payment methods for GBP one-time payments, checkout session preview, metadata in change plan requests, invoice_url field, discount validation endpoint, and enhanced dashboard filtering
+
+### December 2025
+
+- [v1.70.0 (December 24, 2025)](https://docs.dodopayments.com/changelog/v1.70.0.md): Inline checkout support, use existing payment methods for instant checkouts, manage subscription plans from dashboard, generate short payment links, skip success pages with redirect_immediately, and enable on-demand subscriptions for all businesses
+- [v1.67.0 (December 17, 2025)](https://docs.dodopayments.com/changelog/v1.67.0.md): Mixed cart checkout for one-time and subscription products, Unified Customer Portal, invoice_id in Payment Response
+- [v1.66.0 (December 8, 2025)](https://docs.dodopayments.com/changelog/v1.66.0.md): Subscription.updated webhook, minimal address checkout, read-only API keys, UPI AutoPay & RuPay subscriptions for all businesses
+
+### November 2025
+
+- [v1.61.5 (November 17, 2025)](https://docs.dodopayments.com/changelog/v1.61.5.md): EUR & GBP pricing full rollout, payment method management, metadata in customers and refunds, checkout session feature flags, license key/file indicators, GitHub OAuth, and Featurebase integration
+
+### October 2025
+
+- [v1.56.0 (October 27, 2025)](https://docs.dodopayments.com/changelog/v1.56.0.md): Streamlined onboarding, C# SDK launch, webhook verification, Two-Factor Authentication, overlay checkout sessions, and usage-based subscription plan changes
+
+### September 2025
+
+- [v1.53.2 (September 13, 2025)](https://docs.dodopayments.com/changelog/v1.53.2.md): Customer wallet balances, enhanced refund details, higher meter limits, license activation context, and $0 downgrades
+- [v1.52.4 (September 3, 2025)](https://docs.dodopayments.com/changelog/v1.52.4.md): Usage-Based Billing, public Refund Receipt API, 100% subscription discounts, and checkout session ID in payments
+
+### August 2025
+
+- [v1.51.0 (August 23, 2025)](https://docs.dodopayments.com/changelog/v1.51.0.md): Powerful Checkout Sessions API, Metadata in Payments Export, and Subscription Next Billing Date Update
+- [v1.47.0 (August 11, 2025)](https://docs.dodopayments.com/changelog/v1.47.0.md): Dashboard UI overhaul, discount codes for subscriptions, expanded Adaptive Currency, webhook management API, and product metadata support.
+- [v1.44.0 (August 3, 2025)](https://docs.dodopayments.com/changelog/v1.44.0.md): Adaptive Currency, Turkish Language Support, and New Proration Mode
+
+### July 2025
+
+- [v1.43.0 (July 24, 2025)](https://docs.dodopayments.com/changelog/v1.43.0.md): Comprehensive Webhooks Upgrade: endpoint management, security, delivery logs, debugging, and monitoring—now fully self-serve in the dashboard.
+- [v1.38.0 (July 9, 2025)](https://docs.dodopayments.com/changelog/v1.38.0.md): Analytics Chart Sharing, Multiple Partial Refunds, Cumulative Revenue Analytics, Context7 Integration, Next.js Adapter
+- [v1.37.0 (July 2, 2025)](https://docs.dodopayments.com/changelog/v1.37.0.md): Enhanced Analytics Dashboard with comprehensive revenue and retention insights, Reports 2.0 with detailed business reporting capabilities, and improved subscription management features for better business intelligence and operational efficiency.
+
+### June 2025
+
+- [v1.34.4 (June 26, 2025)](https://docs.dodopayments.com/changelog/v1.34.4.md): Enhanced Dashboard Analytics with comprehensive new metrics across three key dashboard sections: Revenue Analytics, Customer Analytics, and Payment Success Rate Analytics.
+- [v1.34.0 (June 18, 2025)](https://docs.dodopayments.com/changelog/v1.34.0.md): Added Digital Product Delivery, React Native SDK beta release, new proration modes, adaptive currency for subscriptions, and enhanced verification form management.
+- [v1.32.0 (June 9, 2025)](https://docs.dodopayments.com/changelog/v1.32.0.md): Added support for Affiliates with Affonso, multiple webhook support, enhanced fraud prevention, subscription schedule cancellation, and static payment links.
+- [v1.30.0 (June 2, 2025)](https://docs.dodopayments.com/changelog/v1.30.0.md): Added support for $0 payments and 100% discount codes for one-time products, enabling free product offerings, payout threshold for USD wallet, and standardized API error codes and messages.
+
+### May 2025
+
+- [v1.27.0 (May 26, 2025)](https://docs.dodopayments.com/changelog/v1.27.0.md): Introduced Partial Refunds and Multi-Brand Support, enabling merchants to manage multiple brands and websites under a single verified business account.
+- [v1.25.0 (May 20, 2025)](https://docs.dodopayments.com/changelog/v1.25.0.md): Introduced Overlay Checkout Beta, a modern TypeScript library for embedded payments, and a new subscription.plan_changed webhook event for better subscription lifecycle management.
+- [v1.22.0 (May 9, 2025)](https://docs.dodopayments.com/changelog/v1.22.0.md): Added unified search to the dashboard, added support for upgrading and downgrading subscriptions with addons, and added comprehensive card information to payment responses.
+- [v1.21.0 (May 3, 2025)](https://docs.dodopayments.com/changelog/v1.21.0.md): Added support for addons to subscriptions, made dispute handling more robust, and added customer billing details to payment responses.
+
+### April 2025
+
+- [v1.18.3 (April 26, 2025)](https://docs.dodopayments.com/changelog/v1.18.3.md): Introduced Subscription Plan Change API, enhanced onboarding guidance, notification preferences center, and improved adaptive currency information.
+- [v1.16.1 (April 18, 2025)](https://docs.dodopayments.com/changelog/v1.16.1.md): Introduced modern verification forms, new Java and Kotlin SDKs, Afterpay/Clearpay integration, and Google Sign-In.
+- [v1.14.0 (April 12, 2025)](https://docs.dodopayments.com/changelog/v1.14.0.md): Introduced new European payment methods, subscription billing address updates, and various improvements.
+- [v1.13.0 (April 9, 2025)](https://docs.dodopayments.com/changelog/v1.13.0.md): New features including Adaptive Currency Support, MCP Server for AI integration, mobile apps, Custom GPT, and Dodo Dash game
+
+### March 2025
+
+- [v1.11.0 (March 28, 2025)](https://docs.dodopayments.com/changelog/v1.11.0.md): Introduced address autofill for checkout page, notifications center, payment link query builder, saved payment methods, and billing currency control.
+- [v1.10.1 (March 21, 2025)](https://docs.dodopayments.com/changelog/v1.10.1.md): Introduced Checkout 2.0, configurable payment methods, dynamic tax calculation, and on-demand subscriptions.
+- [v1.7.0 (March 14, 2025)](https://docs.dodopayments.com/changelog/v1.7.0.md): Introduced a dedicated subscriptions page, enhanced customer details, detailed payout information, an official Ruby SDK, enhanced API filters, and various minor improvements.
+- [v1.5.0 (March 7, 2025)](https://docs.dodopayments.com/changelog/v1.5.0.md): Introduced a custom date filter for analytics, a new tax category, and various improvements.
+- [v1.4.0 (March 6, 2025)](https://docs.dodopayments.com/changelog/v1.4.0.md): Introduced the Storefront Feature and Amazon Pay Integration.
+
+### February 2025
+
+- [v1.3.2 (February 28, 2025)](https://docs.dodopayments.com/changelog/v1.3.2.md): Introduced the Teams Feature, enhanced success/failure screens, and minor improvements.
+- [v1.0.0 (February 23, 2025)](https://docs.dodopayments.com/changelog/v1.0.0.md): Public release of Dodo Payments with Customer Portal and Customer Portal Session API.
+- [v0.24.0 (February 15, 2025)](https://docs.dodopayments.com/changelog/v0.24.0.md): Introduced discount coupons, support for over 25 local payment methods, customizable statement descriptors, and a complete UI makeover of the login page.
+- [v0.22.0 (February 6, 2025)](https://docs.dodopayments.com/changelog/v0.22.0.md): Introduced subscription's first payment, UPI QR payment method, tax ID on checkout, dashboard restructure, self-serve onboarding guides, multi-language support, invoice PDF makeover, and a centralized help widget.
+
+### January 2025
+
+- [v0.20.1 (January 31, 2025)](https://docs.dodopayments.com/changelog/v0.20.1.md): Introduced Pay What You Want (PWYW) pricing and expands global payment coverage.
+- [v0.19.0 (January 24, 2025)](https://docs.dodopayments.com/changelog/v0.19.0.md): Added support for UPI and Indian Rupay cards, released PHP SDK, and introduced product archiving.
+- [v0.18.0 (January 20, 2025)](https://docs.dodopayments.com/changelog/v0.18.0.md): Added AI chat support, enhanced APIs, inclusive tax pricing, automated country selection, and more.
+- [v0.16.1 (January 11, 2025)](https://docs.dodopayments.com/changelog/v0.16.1.md): Added Account Summary feature, enhanced API documentation, and improved postal code validation.
+- [v0.15.1 (January 4, 2025)](https://docs.dodopayments.com/changelog/v0.15.1.md): Introducing Invoice API, subscription webhooks, comprehensive guides, Dodo Wall of Love, and social sharing features. Plus, enhanced subscription trial periods and customer identification.
+
+### December 2024
+
+- [v0.14.0 (December 26, 2024)](https://docs.dodopayments.com/changelog/v0.14.0.md): Introduced the License Key Management feature, enhancing security and control for merchants distributing digital products and services.
+- [v0.13.2 (December 21, 2024)](https://docs.dodopayments.com/changelog/v0.13.2.md): Updated Atlas codebase, SDK updates, and minor improvements.
+- [v0.12.0 (December 17, 2024)](https://docs.dodopayments.com/changelog/v0.12.0.md): Added official SDKs, metadata field, and expanded customer APIs with minor improvements and bug fixes.
+- [v0.11.0 (December 13, 2024)](https://docs.dodopayments.com/changelog/v0.11.0.md): Introduced automated emails, webhook event logs, a license key generation guide, and various minor improvements and bug fixes.
+- [v0.10.0 (December 8, 2024)](https://docs.dodopayments.com/changelog/v0.10.0.md): Open-sourced Atlas demo, feature-request section, webhook request logs API, subscription list API, and various improvements and bug fixes.
+
+### November 2024
+
+- [v0.1.0 (November 25, 2024)](https://docs.dodopayments.com/changelog/v0.1.0.md): This is the initial release of the Dodo Payments documentation, marking the Beta launch of our product. Explore the features and improvements designed to enhance your payment processing experience.
+
+## Community Projects
+
+### Community Projects
+
+- [Community Projects](https://docs.dodopayments.com/community/overview.md): Find open-source SDKs, webhook handlers, plugins, and boilerplates that developers in the Dodo Payments community build and maintain.
+- [Projects Directory](https://docs.dodopayments.com/community/projects.md): Browse community-maintained Dodo Payments libraries, SDKs, plugins, and boilerplates, with the author, language, and repository link for each project.
+- [Submit Your Project](https://docs.dodopayments.com/community/submit.md): Add your open-source Dodo Payments SDK, plugin, integration, or template to the community Projects Directory with a pull request or an issue.
+
+## OpenAPI Specs
+
+- [openapi.documented](/openapi/openapi.documented.yml)
+
+> The links below point to documentation indexes. Follow each `/_llms/` index recursively until you reach documentation pages.
+
+## Indexes
+
+- [English / Docs (196 pages)](https://docs.dodopayments.com/_llms/en/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [English / API Reference (177 pages)](https://docs.dodopayments.com/_llms/en/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Invoices, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Customer Blocklist, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Spanish (415 pages)](https://docs.dodopayments.com/_llms/es.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Spanish / Docs (158 pages)](https://docs.dodopayments.com/_llms/es/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Spanish / API Reference (147 pages)](https://docs.dodopayments.com/_llms/es/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Arabic (415 pages)](https://docs.dodopayments.com/_llms/ar.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Arabic / Docs (158 pages)](https://docs.dodopayments.com/_llms/ar/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Arabic / API Reference (147 pages)](https://docs.dodopayments.com/_llms/ar/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [French (415 pages)](https://docs.dodopayments.com/_llms/fr.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [French / Docs (158 pages)](https://docs.dodopayments.com/_llms/fr/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [French / API Reference (147 pages)](https://docs.dodopayments.com/_llms/fr/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [German (415 pages)](https://docs.dodopayments.com/_llms/de.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [German / Docs (158 pages)](https://docs.dodopayments.com/_llms/de/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [German / API Reference (147 pages)](https://docs.dodopayments.com/_llms/de/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Indonesian (415 pages)](https://docs.dodopayments.com/_llms/id.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Indonesian / Docs (158 pages)](https://docs.dodopayments.com/_llms/id/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Indonesian / API Reference (147 pages)](https://docs.dodopayments.com/_llms/id/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Japanese (415 pages)](https://docs.dodopayments.com/_llms/ja.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Japanese / Docs (158 pages)](https://docs.dodopayments.com/_llms/ja/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Japanese / API Reference (147 pages)](https://docs.dodopayments.com/_llms/ja/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Korean (415 pages)](https://docs.dodopayments.com/_llms/ko.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Korean / Docs (158 pages)](https://docs.dodopayments.com/_llms/ko/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Korean / API Reference (147 pages)](https://docs.dodopayments.com/_llms/ko/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Brazilian Portuguese (415 pages)](https://docs.dodopayments.com/_llms/pt-br.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Brazilian Portuguese / Docs (158 pages)](https://docs.dodopayments.com/_llms/pt-br/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Brazilian Portuguese / API Reference (147 pages)](https://docs.dodopayments.com/_llms/pt-br/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Vietnamese (415 pages)](https://docs.dodopayments.com/_llms/vi.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Vietnamese / Docs (158 pages)](https://docs.dodopayments.com/_llms/vi/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Vietnamese / API Reference (147 pages)](https://docs.dodopayments.com/_llms/vi/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Chinese (415 pages)](https://docs.dodopayments.com/_llms/cn.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Chinese / Docs (158 pages)](https://docs.dodopayments.com/_llms/cn/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Hindi (415 pages)](https://docs.dodopayments.com/_llms/hi.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Hindi / Docs (158 pages)](https://docs.dodopayments.com/_llms/hi/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Hindi / API Reference (147 pages)](https://docs.dodopayments.com/_llms/hi/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Italian (415 pages)](https://docs.dodopayments.com/_llms/it.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Italian / Docs (158 pages)](https://docs.dodopayments.com/_llms/it/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Italian / API Reference (147 pages)](https://docs.dodopayments.com/_llms/it/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+- [Swedish (415 pages)](https://docs.dodopayments.com/_llms/sv.txt): Docs, Guides, API Reference, Apps & Connections, Changelog, Community Projects.
+- [Swedish / Docs (158 pages)](https://docs.dodopayments.com/_llms/sv/docs.txt): Getting Started, Features, Integrate, Merchant of Record, Miscellaneous.
+- [Swedish / API Reference (147 pages)](https://docs.dodopayments.com/_llms/sv/api-reference.txt): API Reference, Checkout Sessions, Payments, Subscriptions, Discounts, Licenses, Entitlements, Customers, Customer Wallets, Products, Localized Pricing, Addons, Credit Entitlements, Meters, Usage Events, Refunds, Disputes, Payouts, Balance Ledger, Moderation, Brands, Webhooks, Miscellaneous, Product Collections.
+
+
+This documentation is built and hosted on [Mintlify](https://mintlify.com), a developer documentation platform.
+HTTP 200

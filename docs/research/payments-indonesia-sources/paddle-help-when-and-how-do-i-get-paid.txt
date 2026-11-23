@@ -1,0 +1,26 @@
+SOURCE https://www.paddle.com/help/manage/get-paid/when-and-how-do-i-get-paid
+fetched 2026-11-23 (curl, page text extracted)
+When and how do I get paid?
+As you make sales through Paddle a balance of funds will grow in your account, this can be easily viewed from your Paddle dashboard. Sellers cannot withdraw their balance on demand since there is a monthly payout schedule.
+All you have to do to get paid by Paddle is to set up your
+Payout Settings
+. We then issue transfers once a month, following this process:
+1st of the month:
+As long as your account balance is over the payout threshold you set in your settings (min $100), your balance will convert to a payout and you will see it in the
+Payouts In-Progress queue
+.
+2nd-15th of the month:
+Paddle will send your payment by the 15th.
+When your payout is marked as "sent," the status reflects that the funds are in the final stages of processing.
+When Paddle has sent your payout, you will see it in the
+Payouts Sent queue
+and you will be emailed your invoice. It can then take up to 3 working days before it arrives in your account depending on how you have chosen to receive the payment.
+You can receive your payment either via wire transfer or Payoneer. For most countries, Paddle will not charge you any fees on your payout. However, for certain countries, a $15 SWIFT fee may be applicable. Charges may also be brought about by your bank.
+Some money transfer services like TransferWise and ePayments use online accounts. These services provide banking details such as BIC/SWIFT, IBAN, and account number, which can be used to send or receive money. If the money transfer service you’re using provides you with these details, you can receive payouts from Paddle by updating the transfer preferences page with these details. Any subsequent charges will be from your provider and are incurred by you directly.
+Setting up to receive your first payout
+You need to select your preferred payout method and enter your details in
+Transfer Preferences
+for us to pay you.
+Threshold for payouts
+After entering your transfer details you can adjust the threshold amount for payouts, the minimum being $100 adjustable all the way to $100,000 (if your account balance is in Pound Sterling or Euro, this translates to £100 and €100 respectively). This minimum threshold is in place to stop excessively small payouts being made, which would still incur the same fees from a seller’s bank, meaning only a very small amount would reach a seller’s bank account.
+If your balance falls below the minimum threshold amount, this will be carried over onto the following month, up until the minimum threshold is met.

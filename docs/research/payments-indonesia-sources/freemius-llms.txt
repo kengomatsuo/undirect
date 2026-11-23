@@ -1,0 +1,117 @@
+SOURCE https://freemius.com/llms.txt
+fetched 2026-11-23
+# Freemius
+
+> Freemius is a developer-first technology company that handles payments, tax, subscription management, localization, multi-currency purchases, marketing automation and more, allowing developers to focus on their area of genius — building amazing software products. Freemius acts as a Merchant of Record and provides payment tools for software companies of all kinds, including SaaS, Apps, and WordPress Products. With Freemius you can easily integrate Credit Card, PayPal and iDEAL payments with your software, supporting both subscriptions and one-off purchases, along with paid or unpaid trials. We have a rich API (with OpenAPI spec) and Webhooks for faster integration with SaaS, Applications and any other types of software products.
+
+## Payment Processing & Checkout
+
+Freemius provides a set of [checkout and payment tools](https://freemius.com/checkout/) that can be embedded or linked directly from your product or website. The checkout supports multiple payment methods, allows CSS customization, and handles proration for plan changes automatically.
+
+- [Checkout & Payment Links](https://freemius.com/help/documentation/selling-with-freemius/hosted-checkout/): Pre-built checkout pages optimized for conversion
+- [Embedded Checkout](https://freemius.com/help/documentation/selling-with-freemius/freemius-checkout-buy-button/): Overlay checkout from your website or app - useful for purchases without leaving current screen
+- Multiple Payment Methods Support: Credit cards, PayPal, and iDEAL
+- Optimized For Conversion: Mobile friendly, 2-column support, social proofing with reviews and refund policy, one-click upsells, optional billing cycle selector - All features developed for optimizing conversion
+- [Customization](https://freemius.com/help/documentation/selling-with-freemius/applying-css-customization/): Customize the look and feel of the Checkout with CSS to match your brand
+- [Proration](https://freemius.com/help/documentation/selling-with-freemius/proration/): Freemius supports automatic prorating discounts for upgrades and downgrades
+- [Refund Payments](https://freemius.com/help/documentation/selling-with-freemius/refund-payment/): Learn how to refund payments, including full, partial or just tax refund against valid tax exemption
+
+## Plans & Pricing
+
+Define and configure your product’s pricing model, including subscriptions, one-time purchases, trials, multi-currency support, coupons and refund policies. Freemius handles the logic behind billing cycles, trial flows, and currency localization.
+
+- [Subscriptions](https://freemius.com/subscriptions/) & One-off Purchases: Sell both monthly or annual subscriptions and one-off or lifetime purchases
+- [Trial Management](https://freemius.com/help/documentation/selling-with-freemius/free-trials/): Free trials, paid trials, and upgrade flows, with or without requiring payment methods
+- [Multi-Currency Pricing](https://freemius.com/help/documentation/selling-with-freemius/multi-currency/): Supports separate pricing in USD, EUR & GBP with optional automatic currency detection based on geo-location
+- [Refund Policy](https://freemius.com/help/documentation/selling-with-freemius/refund-policy/): Set your product's refund policy and we will show it in the Checkout as social proof
+- Coupon: Create coupons for all, or specific users, plans, billing cycles, tailored only for first payment or renewals, and more.
+- [Setup Plans, Pricing & Refunds](https://freemius.com/help/documentation/getting-started/setup-product-pricing-plans-refunds/): A walkthrough for configuring your product’s pricing plans, billing cycles, licenses, and refund policies in the Freemius Developer Dashboard
+
+## Developer Infrastructure
+
+Integration guides, SDKs, and APIs for connecting your SaaS, desktop apps, or WordPress products. Manage licensing, subscriptions, and user data via RESTful API, webhooks, or embeddable components like the Customer Portal.
+
+- [Integrating your product](https://freemius.com/help/documentation/getting-started/integrating-your-first-product/): A step-by-step guide for integrating your first product into Freemius (digital software of any kind), covering setup, configuration, and initial deployment
+- [SaaS Integration](https://freemius.com/help/documentation/selling-with-freemius/saas-integration/): Code examples and guides on integration, selling units, subscriptions, plans, upgrades and more for your SaaS product
+- [App Integration](https://freemius.com/help/documentation/selling-with-freemius/app-integration/): Code examples and guides on integration, license activation, upgrades and more for your App
+- [Developer Dashboard](https://freemius.com/help/documentation/getting-started/explore-the-developer-dashboard/): A feature-rich dashboard to manage your products, subscriptions, payments, licenses, activation, coupons, carts, reviews, and more
+- [Customer Portal](https://freemius.com/help/documentation/users-account-management/): A fully-featured members dashboard where customers can manage their profile, licenses, invoices, subscriptions, support and for WP products downloads and websites - available both as an external portal and embeddable on your website
+- [API Documentation](https://docs.freemius.com/llms.txt): OpenAPI compliant RESTful API
+- [Events & Webhooks](https://freemius.com/help/documentation/marketing-automation/events-webhooks/): Tighter integration between Freemius and your software leveraging Freemius webhooks
+- [WordPress Integration](https://freemius.com/help/documentation/wordpress-sdk/): Use our off-the-shelf SDK to [integrate Freemius with your WP products](https://freemius.com/help/documentation/getting-started/integration-with-sdk/) in under 5 minutes
+
+## Software Licensing
+
+Freemius provides a robust software licensing system that allows you to manage license keys, activation, and deactivation. It supports various licensing models, including single-unit, multi-unit, and unlimited site licenses.
+
+- [License Key Activation](https://freemius.com/help/documentation/selling-with-freemius/integrating-license-key-activation/): License keys, activation, deactivation and sync between Freemius and your products like desktop apps, Chrome extensions, mobile apps, etc.
+- [Custom License Unit Label](https://freemius.com/help/documentation/selling-with-freemius/customize-license-unit-label/): Sell the unit that fits your SaaS or App
+- [Automated & Manual License Renewal](https://freemius.com/help/documentation/selling-with-freemius/license-renewals-mechanism/): Manual license recovery emails from Freemius with added incentive coupons
+- [Software Licensing](https://freemius.com/software-licensing/): Lock in your software product’s success with smart software licensing. Protect your IP, streamline subscriptions, stop unauthorized access, and build in scalability
+
+## Tax Compliance
+
+Freemius manages global tax compliance on your behalf, including US Sales Tax and EU/UK VAT. It automatically calculates taxes based on the buyer’s location, supports reverse charge exemptions through valid VAT numbers, and generates compliant tax invoices. You can also issue tax refunds against verified exemption certificates without reducing your net revenue.
+
+- [US Sales Tax](https://freemius.com/us-sales-tax-and-economic-nexus/): Overview of how Freemius handles US Sales Tax and economic nexus rules
+- [EU & UK VAT](https://freemius.com/eu-vat-uk-vat-europe/): Details on Freemius's compliance with EU and UK VAT regulations and issuing compliant invoices with VAT numbers and local currencies
+- Tax Refunds: Issue compliant refunds for [US Sales Tax](https://freemius.com/blog/changelog/new-feature-us-sales-tax-refund-capability-against-exemption-certificate/) or [EU/UK VAT](https://freemius.com/blog/changelog/improvements-to-the-vat-refund-feature/) when customers provide valid tax exemption documentation
+
+## Marketing & Growth
+
+Freemius includes built-in tools to help retain customers and improve conversions—such as cart recovery, dunning for failed payments, targeted discounts, and automated review collection. It also offers an affiliate platform for managing partner-driven sales.
+
+- [Cart Abandonment Recovery](https://freemius.com/help/documentation/marketing-automation/cart-abandonment-recovery/): Automated system that tracks customers who start checkout but don't complete it, then sends up to 3 recovery emails at strategic intervals (1 hour, 1 day, and 4 days) with optional discount coupons to recover lost sales
+- [Dunning & Failed Payments](https://freemius.com/help/documentation/marketing-automation/dunning-failed-payments/): Automated mechanism that handles failed subscription renewals by retrying payments up to 3 times with increasing delays (1 day, 3 days, 5 days), and automatically cancels subscriptions after the 4th failed attempt while providing detailed reporting to developers
+- [Special Coupons & Discounts](https://freemius.com/help/documentation/marketing-automation/special-coupons-discounts/): Provide special discounts for exit intent, license recovery, cart abandonment, subscription cancellation, etc. to retain your customers
+- [Ratings & Reviews](https://freemius.com/help/documentation/marketing-automation/reviews/): Automatic email requests for reviews and use Freemius for collecting and showcasing real customer reviews
+- [Affiliate Platform](https://freemius.com/help/documentation/affiliate-platform/): Freemius includes a fully-featured Affiliate Platform that you can use for free, right out of the box when selling with Freemius, to run your own affiliate program
+
+## Important Documentation
+
+Covers essential operational topics such as email configuration, refunds, deliverability, support integrations, and migration from other platforms.
+
+- [Email Settings](https://freemius.com/help/documentation/selling-with-freemius/email-settings/) & [Email Customization](https://freemius.com/help/documentation/marketing-automation/email-style-customization/): Set up email addresses with DKIM verification to send transactional and marketing emails from Freemius and customize colors and styles to match your brand
+- [Email Deliverability](https://freemius.com/help/documentation/selling-with-freemius/email-deliverability/): Set up DKIM to ensure transactional emails reach properly
+- [Automated Emails](https://freemius.com/help/documentation/marketing-automation/transactional-emails/): List of all automated emails sent by Freemius
+- [HelpScout Integration](https://freemius.com/help/documentation/integrations/help-scout/): Integrate HelpScout with Freemius to see purchase history
+- [Migration](https://freemius.com/help/documentation/migration/): Freemius helps migrate from other platforms while syncing your existing subscriptions and licenses
+
+## Revenue Share & Getting Paid
+
+Understand Freemius’ transparent revenue share model and how your earnings are calculated and transferred. No hidden fees, with detailed documentation on payout processes.
+
+- [Freemius Pricing](https://freemius.com/help/documentation/getting-started/our-pricing/): Learn about Freemius' revenue share pricing model without any hidden fees
+- [Getting Paid](https://freemius.com/help/documentation/selling-with-freemius/your-earnings/): Learn how Freemius transfers the money you earned through sales
+
+## Open Source Resources
+
+Official open-source SDKs for integrating Freemius into your stack. Includes JavaScript, PHP, and Node.js libraries for easier API communication and checkout integration.
+
+- [Checkout JS SDK](https://github.com/Freemius/freemius-checkout-js/): Embed Freemius Checkout on your website using JavaScript or TypeScript-based SDK
+- [PHP API SDK](https://github.com/Freemius/freemius-php-sdk): PHP SDK to help communicate with the Freemius API
+- [Node API SDK](https://github.com/Freemius/freemius-node-sdk): NodeJS SDK to help communicate with the Freemius API
+- [WordPress SDK](https://github.com/Freemius/wordpress-sdk): Official WordPress SDK for integrating Freemius with your WordPress products, including themes and plugins
+
+## Features
+
+Support for analytics, flexible licensing, order history, and customer account management. The Developer Dashboard provides full access to manage products, subscriptions, payments, and team roles.
+
+- [Analytics & Insights](https://freemius.com/help/documentation/analytics-insights/insights-dashboard/): Understand your revenue per plan, pricing, billing cycle and currency
+- [Order History & Invoice](https://freemius.com/help/documentation/users-account-management/orders-history/): Provide order history and invoice information to your customers from the Freemius Customer Portal
+- [Team Member](https://freemius.com/help/documentation/security/team-member-role-management/): Add team members with role restrictions to your product for shared access
+
+## [API Documentation](https://docs.freemius.com/api)
+
+Freemius provides a RESTful API that’s fully compliant with the OpenAPI specification. You can use the [OpenAPI schema](https://freemius.com/help/documentation/api/openapi.yaml) to generate client SDKs and integrate with your app. Below are some key endpoints for managing users, licenses, subscriptions, and pricing.
+
+- [List users](https://docs.freemius.com/api/users/list): List and search users by email or Freemius user ID
+- [List licenses](https://docs.freemius.com/api/users/list-licenses): List all licenses associated with a user
+- [List payments](https://docs.freemius.com/api/users/list-payments): List all payments associated with a user
+- [List subscriptions](https://docs.freemius.com/api/users/list-subscriptions): Get all subscriptions associated with a user
+- [Activate a license](https://docs.freemius.com/api/licenses/activate): Public endpoint to activate a license for your app
+- [Deactivate a license](https://docs.freemius.com/api/licenses/deactivate): Deactivate a license from your app
+- [Generate upgrade link](https://docs.freemius.com/api/licenses/generate-upgrade-link): Create authorized Checkout links for license or subscription upgrades
+- [Retrieve the pricing table data](https://docs.freemius.com/api/products/retrieve-pricing-table-data): Retrieve structured data needed to render a pricing table in your app
+
+**For the full list of endpoints, refer to the [complete API documentation](https://docs.freemius.com/llms.txt).**

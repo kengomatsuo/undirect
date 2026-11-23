@@ -1,0 +1,51 @@
+SOURCE https://docs.2checkout.com/product-catalog/product-catalog/pricing-and-charge-scenarios/cross-border-payments-fee-charges
+fetched 2026-11-23 (curl, text extracted)
+Ask
+On this page
+Growth tools
+Product catalog
+Product catalog
+Pricing and charge scenarios
+Cross-border payments fee charges
+Overview
+A cross-border fee is a type of credit card processing fee that is applied when a merchant in one country accepts payment for a transaction from a customer whose card was issued in another country.
+For international payments outside the merchant's home country, a cross-border fee of 2% is charged on top of the transaction fees agreed upon in the contract.
+The cross-border fee applies only to the 2Sell and 2Subscribe accounts.
+Recommended resources
+Want to sell worldwide? Learn how 2Checkout can help with over 45 payment methods and 100 display and billing currencies.
+Learn more
+Countries exempted from cross-border fees
+Only merchants registered in the countries listed below are exempt from the cross-border fees:
+Austria
+Australia
+Belgium
+Canada
+Czech Republic
+Denmark
+Finland
+France
+Germany
+Greece
+Ireland
+Italy
+Luxembourg
+Netherlands
+Norway
+Poland
+Portugal
+Romania
+Spain
+Sweden
+Switzerland
+United Kingdom
+United States of America
+Cross-border fees for high-risk countries
+The cross-border fee may vary for countries considered high-risk (where the risk of fraud is high). For example, for Pakistan, the cross-border fee is 3%.
+Related resources
+Products and subscriptions listing query parameters
+Subscriber management and self-service
+Contracts
+PreviousDynamic pricing
+NextAdvanced pricing options
+Last updated 6 months ago
+Was this helpful?

@@ -1,0 +1,214 @@
+SOURCE https://support.google.com/googlepay/answer/12429287?hl=en
+fetched 2026-11-23 (curl, text extracted)
+Countries or regions where you can make payments with Google
+Some Google Pay and Google Wallet payments features are only available in certain countries or regions and on certain devices.
+Check feature availability
+Depending on where you live, you can pay the following ways with Google.
+Tip: Google Wallet lets you tap to pay in stores with your phone or smartwatch. Learn more about countries or regions where you can use Google Wallet.
+Pay online or in apps
+With participating websites and apps, you can use Google Pay in:
+Afghanistan
+Albania
+Algeria
+Andorra
+Angola
+Antigua and Barbuda
+Argentina
+Armenia
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Brazil
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Central African Republic
+Chad
+Chile
+Colombia
+Comoros
+Costa Rica
+Côte d'Ivoire
+Croatia
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Eswatini
+Ethiopia
+Fiji
+Finland
+France
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Greece
+Grenada
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Holy See
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Iraq
+Ireland
+Israel
+Italy
+Jamaica
+Japan
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+|
+Lithuania
+Luxembourg
+Macau
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Mauritania
+Mauritius
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+New Zealand
+Nicaragua
+Niger
+Nigeria
+North Macedonia
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Poland
+Portugal
+Qatar
+Republic of the Congo
+Romania
+Rwanda
+Saint Kitts and Nevis
+Saint Lucia
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Sweden
+Switzerland
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Timor-Leste
+Togo
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkmenistan
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom and outlying territories
+United States and outlying territories
+Uruguay
+Uzbekistan
+Vanuatu
+Venezuela
+Vietnam
+Yemen
+Zambia
+Zimbabwe
+|
+Paying in Chrome with info saved to Chrome
+When you’re logged into Chrome, you can use payment methods saved in Google Wallet in Chrome autofill
+Learn how to fill out forms automatically.
+If eligible, you can use virtual card numbers to pay online or in-app in the US. Learn how to use virtual cards.
+Buy Google products
+To pay for Google products, you can use Google Pay wherever Google Play is available.
+Send money to friends & family
+You can use Google Pay to send money in India and Singapore.
+Learn how to send money to family and friends in India.
+Learn how to send money to family and friends in Singapore.
+Earn offers & rewards
+You can earn offers and rewards in the Google Pay app in India and Singapore.
+Learn how to earn offers and rewards in India.
+Learn how to earn offers and rewards in Singapore.

@@ -177,3 +177,123 @@ The guide `~/.claude/skills/domain-guides/references/guide-indonesia-business/gu
 | G4 | https://support.stripe.com/questions/supported-payment-methods-currencies-and-businesses-for-stripe-accounts-in-indonesia | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/stripe-support-methods-indonesia.txt` | Stripe Indonesia: invite-only, VA and IDR only, no international |
 | G5 | https://polar.sh/docs/merchant-of-record/supported-countries | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/polar-supported-countries.md` | Indonesia in MoR payout lists (Polar, Gumroad, Creem, Dodo); Lemon Squeezy closed 2026-11-16 |
 | G6 | https://docs.xendit.co/docs/indonesia-withholding-tax | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/xendit-docs-indonesia-withholding-tax.md` | Merchant withholds PPh 23 on gateway fees and issues a Bukti Potong |
+
+## Follow-up (ASG186): buyer payment methods by provider, and a ranking
+
+Fetched 2026-11-23. Owner's question: "This none of them good? What about apple pay, google pay, and many of the many countries' payment methods?" Source numbers `N#` are rows 86 to 117 of `payments-indonesia-sources/notes.md`; files are in that folder. Pricing pages (Freemius, 2Checkout, FastSpring, PayPal, Gumroad API, Stripe) were read in Claude in Chrome; docs pages by curl. Payhip's pricing page sat behind a Cloudflare check I did not bypass, so Payhip is `gated` (row 111).
+
+### Short answer
+
+The premise that none of them has Apple Pay, Google Pay or other countries' methods is wrong for most of them. Five of the merchants of record take both wallets, and four take iDEAL. What is bad is different: the fixed 40c to 50c per sale and the USD 50 to 100 payout minimums, against sales this small (15 sales, USD 24.94 in HQ's 30-day view). And none of them (FastSpring excepted, below) takes QRIS or an Indonesian wallet, which is how his Indonesian buyers pay. Apple Pay does not exist in Indonesia at all (N115), so its absence costs nothing locally.
+
+### Buyer methods, per provider (countries and subscriptions where the source states them)
+
+| Provider | Apple Pay | Google Pay | PayPal | Local methods (country) | Indonesian methods | Prices shown in IDR | Subscriptions |
+|---|---|---|---|---|---|---|---|
+| **Paddle** (N98 to N100) | all countries except IN, TR | all except IN, TR | all countries; subscriptions yes | iDEAL NL (one-time only), Bancontact, BLIK, MB WAY, Pix BR, UPI IN, Alipay and WeChat CN, KakaoPay, Naver Pay, Payco, Samsung Pay KR, bank transfer EUR/GBP/USD | none | no: IDR absent from its 30+ currency list | yes |
+| **Dodo** (N91, N92) | global, incl. India | global except India | "temporarily unavailable for new transactions" | 40+ methods: iDEAL, Bancontact, EPS, Multibanco, BLIK, SEPA debit, Klarna, Afterpay, Pix, UPI, WeChat Pay, GCash PH, Touch n Go MY, Alipay HK, Korean wallets, stablecoins | none | yes (IDR in adaptive currency; 2% to 4% FX fee on the buyer by default) | yes, per method |
+| **Polar** (N86, N87) | Safari on Apple devices, automatic | Chrome, automatic | "We don't have a timeline" | iDEAL/Wero NL, Bancontact BE, EPS AT, UPI IN, WeChat Pay CN/HK/MO (USD or CNY, one-time), Amazon Pay US/DE, Cash App US, Kakao/Naver/Samsung Pay KR | none | yes (130+ currencies incl. IDR) | yes (cards, UPI, Kakao, Naver) |
+| **Creem** (N96) | global | global | not in its docs table; blogs conflict: UNSURE | Alipay (one-time), iDEAL NL (one-time), Alipay HK | none | not found: UNSURE | yes |
+| **FastSpring** (N108) | global (Apple's regions) | global except IN, TR | all countries except TR | iDEAL, Pix, UPI, PromptPay TH, Alipay, WeChat Pay, SEPA debit, Klarna, Venmo, Cash App, Mercado Pago, Kakao, Toss | **OVO (ID, IDR, "All sellers")** | not read: UNSURE | yes for real-time methods; wires and other manual methods are not for auto-renewal |
+| **Freemius** (N103) | not stated: UNSURE | not stated: UNSURE | yes | iDEAL; cards | none | USD, EUR, GBP only | yes |
+| **Gumroad** (N105, N106) | yes | yes | yes, if the seller connects PayPal Connect (Indonesia is not on its excluded list) | Venmo; UPI shown for India | none | one-time card buys in a local currency; IDR not in the list I read: UNSURE | memberships yes |
+| **PayPal** as the seller's own account (N113) | n/a | n/a | the method itself | funds from cards and bank through PayPal | none | IDR fixed-fee row absent | subscriptions API exists (not read) |
+| **2Checkout / Verifone** (N110) | not read | not read | payout only | not read | not read | not read | 2Subscribe plan |
+| **Midtrans** (S1, S4, S21) | not documented | cards only in Indonesia, documented | not documented | none abroad | QRIS, GoPay, ShopeePay, DANA, OVO, virtual accounts, Indomaret, Alfamart, Akulaku, Kredivo | IDR only | cards and GoPay token only |
+| **Xendit** (X2) | on the cards channel | on the cards channel | no | e-wallets, VA | yes (company only) | multi-currency cards | yes |
+
+Quotes that decide the table, briefly: Paddle PayPal, Countries "All"; Apple Pay "All except IN, TR" (N98). FastSpring "OVO | ID | IDR | All sellers" (N108). Polar "The list above is everything we support today" (N86). Dodo "PayPal is temporarily unavailable" (N91). Apple's own country list has no Indonesia entry; its Indonesian Apple Account methods are DANA, GoPay, ShopeePay and "Most credit and debit cards" (N115). Google's "Countries or regions where you can make payments with Google" list runs India then Iraq (N116), while Midtrans documents Google Pay by card for Indonesia (S21): the two disagree, so Google Pay for Indonesian buyers is UNSURE.
+
+### Cost with those methods
+
+Same volume as the cost section above: 15 sales, USD 24.94 (Apple's net; real buyer prices are higher: UNSURE by how much). Arithmetic: percent x 24.94 + 15 x fixed.
+
+| Option | Rate | Percent part | Fixed part | Total | Share of 24.94 |
+|---|---|---|---|---|---|
+| Paddle | 5% + 50c, all methods | 1.25 | 7.50 | 8.75 | 35% |
+| Polar | 5% + 50c, +1.5% international cards (R2) | 1.25 + 0.37 | 7.50 | 9.12 | 37% |
+| Dodo | 4% + 40c; payout fee USD 5 under USD 1,000 not counted | 1.00 | 6.00 | 7.00 | 28% |
+| Creem | 3.9% + 40c | 0.97 | 6.00 | 6.97 | 28% |
+| Freemius | 3.8% + 50c, plus gateway fees averaging 3.5% (N102) | 0.95 + 0.87 | 7.50 | 9.32 | 37% |
+| Gumroad | 10% + 50c (pricing page) | 2.49 | 7.50 | 9.99 | 40% |
+| Gumroad if its help page is right | 10% + 50c plus card 2.9% + 30c (N104); the two Gumroad pages disagree: UNSURE | 3.22 | 7.50 + 4.50 | 15.22 | 61% |
+| 2Sell | 3.5% + 35c, +2% cross-border (N110); a gateway plan, not a merchant of record; Indonesia unconfirmed | 1.37 | 5.25 | 6.62 | 27% |
+| PayPal direct, Indonesian seller | 4.40% + USD 0.30 international (N113); no tax handling, no merchant of record | 1.10 | 4.50 | 5.60 | 22% |
+| FastSpring | quote only (N109) | n/a | n/a | not priced | |
+
+Costs of the methods themselves: Paddle, Polar, Dodo, Creem and Freemius show one rate for every method, so Apple Pay, Google Pay and iDEAL add nothing; the exceptions are Polar's +1.5% for international cards and Dodo's 2% to 4% FX fee that falls on the buyer. PayPal's 4.40% + fixed already includes any card the buyer funds it with, and "Our Commercial Transaction Rates apply when you receive APM funded payments" (N113). Stripe's per-method fees were not captured (N117): UNSURE, and Stripe needs the Atlas company anyway.
+
+### Payout to an Indonesian individual
+
+| Provider | Bank in Indonesia | Wise or Payoneer | Fees and minimum | Source |
+|---|---|---|---|---|
+| Paddle | wire in USD, EUR, GBP and others; his bank converts | Payoneer yes; "banking details such as BIC/SWIFT, IBAN" from Wise-type services accepted | monthly, min USD 100; free when currency matches the bank's country, USD 15 SWIFT otherwise; up to 1.5% conversion if payout currency differs from balance | N101, R4 |
+| Polar | IDR account in his own name via Stripe Connect | Wise and Payoneer "do not satisfy Stripe's verification" | min USD 10; Stripe payout fees | R1, R2 |
+| Dodo | linked bank account; routes "vary by country", confirm with support | not stated: UNSURE | default USD 100 (lowest 50); USD 5 under USD 1,000; USD 25 SWIFT | N93, R9 |
+| Creem | bank | not stated: UNSURE | higher of USD/EUR 7 or 1%; 1st and 15th | R8 |
+| Freemius | Indonesia listed; wire (competitive conversion, foreign-currency wire fee waived) | **PayPal, Payoneer, Wise all supported** | min USD 100, paid on the 10th; no payout fees | N103 |
+| Gumroad | IDR bank deposit | "We do not support alternative payout modes like Payoneer, Wise" | standard USD 100 minimum; Indonesia row not marked higher in the part read | N106, R7 |
+| PayPal | IDR bank | n/a | free above IDR 1,500,000, IDR 16,000 below; 3.0% if converted | N113 |
+| FastSpring | Indonesia not confirmed: UNSURE | not stated | USD 100 minimum, 2.5% conversion, 14-day delay | R10 |
+| 2Checkout | not confirmed: UNSURE | PayPal and Payoneer card | wire USD 15; min USD 50 | N110 |
+
+At USD 24.94 a month, Paddle, Freemius, Gumroad, Dodo and FastSpring would hold the money for four or more months before the first payout; only Polar (USD 10) and PayPal (no minimum) pay out at this volume.
+
+### Read API HQ could poll with a read-only key
+
+| Provider | Read endpoint | Read-only key? | Source |
+|---|---|---|---|
+| Paddle | `GET /transactions` | yes, per-key permission `transaction.read` | R5 |
+| Polar | orders, subscriptions | organization token with selectable scopes; scope names not on the page read: UNSURE; payouts endpoint not found: UNSURE | N88, N89, R3 |
+| Dodo | `GET /payouts`, payments list | yes: per-resource "Read" access, plus an IP allowlist | N94 |
+| Gumroad | sales, payouts | yes: OAuth scopes `view_sales`, `view_payouts` | N107 |
+| PayPal | `GET /v1/reporting/transactions`, `/balances` | endpoints are read only; limiting the app's credentials to that feature not read: UNSURE | N114 |
+| Creem | not read | one `x-api-key`, no read-only scope documented: UNSURE | N97 |
+| Freemius, FastSpring, 2Checkout | not read | UNSURE | |
+| Midtrans, Xendit | see section above | | M11, X8 |
+
+### Ranked recommendation
+
+**Selling software or subscriptions to buyers worldwide.** Good means: pays an Indonesian, has Apple Pay and Google Pay, has the big local methods, and is cheap enough at his volume.
+
+1. **Paddle: good, if it accepts him.** Widest method list that is documented in full (Apple Pay, Google Pay, PayPal, iDEAL, Bancontact, Pix, UPI, Alipay, WeChat Pay), subscriptions, a read key, Payoneer payout. Costs: 5% + 50c, USD 100 monthly minimum, USD payout via wire. Not confirmed: whether it onboards an individual with no company (UNSURE; the steps were not read), and it prices in no IDR.
+2. **Dodo Payments: good on methods, weak on payout at small volume.** 40+ methods, Apple Pay and Google Pay, the lowest percent plus fixed fee of the full merchants of record that list Indonesia (4% + 40c), IDR display, per-resource read key. Against it: PayPal switched off for now, USD 100 default threshold with a USD 5 fee on small payouts, and no stated Wise or Payoneer path.
+3. **Polar: good for getting started, thinner on methods.** Apple Pay, Google Pay, cards, iDEAL, Bancontact, EPS, UPI, WeChat Pay, no PayPal; the only one with a USD 10 payout floor and IDR pricing, so it is the one that works at 15 sales a month. Needs an IDR bank account in his own name.
+4. **Creem: acceptable.** Cheapest percent (3.9% + 40c), Apple Pay, Google Pay, Alipay, iDEAL; PayPal and payout rails unconfirmed.
+5. **FastSpring: best coverage on paper (it is the only one with OVO), unusable until a sales conversation says yes.** No public price, a USD 100 minimum, Indonesia payout not confirmed.
+6. **Freemius: only for software, and only if payout flexibility matters.** Best payout options (Wise, Payoneer, PayPal), but 3.8% + 50c plus about 3.5% gateway fees, USD/EUR/GBP only, and apple/Google Pay unconfirmed.
+7. **PayPal direct: cheapest, not a merchant of record.** 4.40% + 30c and no minimum, but he would file and remit buyer taxes himself and buyers need PayPal. Only as a supplement.
+8. **Not recommended:** Gumroad (40% of USD 24.94 even on the better reading, USD 100 minimum, no Wise); Lemon Squeezy (closed); 2Checkout (a gateway plan, Indonesia unconfirmed); Payhip (gated); Stripe (Atlas needed).
+
+For Undirect and Cutling the honest result does not change: at USD 1 to 3 net per sale, a 40c to 50c fixed fee is a quarter to a half of the sale on any of these, so they stay on the App Store unless a direct product carries a higher price.
+
+**Indonesian buyers.**
+1. **Midtrans: the only good fit.** QRIS, GoPay, ShopeePay, DANA, OVO, virtual accounts and cards, in rupiah, for an individual. Apple Pay is not an option anywhere in Indonesia (N115), so nothing is lost there; Google Pay by card is documented by Midtrans but not by Google's own list (UNSURE).
+2. **A merchant of record for Indonesian buyers with international cards only**: Polar or Dodo, which show IDR prices (Dodo adds a 2% to 4% FX fee for the buyer by default). They take no QRIS or e-wallet, so they reach a small part of local buyers.
+3. **FastSpring** if a sales call confirms OVO and an Indonesian payout; **Xendit** only if a PT or CV exists.
+
+### New open question for the owner
+
+The design as drafted, a merchant of record for abroad plus Midtrans for Indonesia, still leaves a gap that the owner should rule on: the one merchant of record with an Indonesian wallet (FastSpring, OVO only) has no public price and no confirmed Indonesian payout, and none carries QRIS, the method most local buyers use (Q1). Should Indonesian buyers of any direct product always go through Midtrans, and should he accept that abroad buyers cost 28% to 37% of a USD 24.94 month and wait four months for a USD 100 payout?
+
+### UNSURE, follow-up
+
+- Whether Paddle, Dodo, Creem or FastSpring onboard an individual with no company in Indonesia (only Polar and Gumroad were read on this).
+- Apple Pay and Google Pay on Freemius; IDR pricing on Creem, FastSpring and Paddle's IDR (absent).
+- Google Pay for buyers in Indonesia (Google's list vs Midtrans's doc).
+- PayPal on Creem (docs omit it, blogs differ); Gumroad fee pages disagree.
+- Wise or Payoneer payout on Dodo and Creem; Indonesia payout on FastSpring and 2Checkout.
+- Read-only key scope names for Polar and PayPal, and any read API for Creem, Freemius, FastSpring, 2Checkout.
+- Stripe per-method fees (only the Atlas route could use them).
+
+### Rows for the domain guide (new, fetched 2026-11-23)
+
+| # | URL | saved file | what to take |
+|---|---|---|---|
+| G7 | https://support.apple.com/en-us/102775 | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/apple-support-apple-pay-countries.txt` | Indonesia is not on Apple's Apple Pay country list |
+| G8 | https://support.apple.com/en-us/111741 | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/apple-support-account-payment-methods.txt` | Indonesian Apple Account buyers pay with DANA, GoPay, ShopeePay and cards |
+| G9 | https://developer.fastspring.com/docs/payment-methods-accepted-by-fastspring | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/fastspring-docs-payment-methods-accepted.txt` | The only merchant of record found with OVO (ID, IDR) |
+| G10 | https://www.paypal.com/id/business/paypal-business-fees | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/paypal-id-seller-fees.txt` | Indonesian PayPal seller: 4.40% international, bank withdrawal free above IDR 1,500,000 |
+| G11 | https://developer.paddle.com/concepts/payment-methods.md | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/paddle-dev-payment-methods-index.md` | Paddle's 18 buyer methods; Apple Pay and Google Pay everywhere but IN, TR |
+| G12 | https://docs.dodopayments.com/features/payment-methods.md | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/dodo-docs-payment-methods.md` | Dodo's 40+ methods; PayPal paused |
+| G13 | https://freemius.com/help/documentation/selling-with-freemius/your-earnings/ | `/Users/hafang/Repositories/undirect/docs/research/payments-indonesia-sources/freemius-docs-getting-paid.txt` | Only provider found that pays Indonesia via Wise, Payoneer and PayPal; USD 100 minimum |

@@ -1,0 +1,125 @@
+SOURCE https://freemius.com/help/documentation/getting-started/our-pricing/
+fetched 2026-11-23 (curl, text extracted)
+Home
+Docs
+Getting Started
+Our Pricing
+Previous SectionNo Upfront Fees
+Transparent Pricing That Grows with You
+No Upfront Fees
+Transparent Pricing That Grows with YouNo Hidden Fees
+WordPress & Templates Solution
+Gateway Processing Fees
+High-Volume Rates
+Freemius vs. OthersFreemius Fees Breakdown
+Competing Merchant of Record Fees Breakdown
+Stripe Standard Fees Breakdown
+PayPal Standard Fees Breakdown
+Refunds
+Dispute and Chargeback Fees
+Our Pricing
+Copy page
+Before we get to making your first sale, it's important to know what it will cost to use Freemius. Even if you've already reviewed our Pricing page, we want to ensure everything is crystal clear.
+No Upfront Fees​
+You only start paying when you start earning. You won't pay a dime until you make your first sale.
+Transparent Pricing That Grows with You​
+Our SaaS and Software solution costs 3.8% + $0.50 per successful transaction, plus gateway fees.
+Already on a different Freemius pricing plan?
+Your current plan isn't changing. You can keep it or switch to the new pricing. Read our FAQs to learn more.
+If you're selling in currencies other than USD see this FAQ to learn the fixed fee.
+No Hidden Fees​
+Unlike some other payment solutions, Freemius is committed to complete transparency:
+We don't charge any setup or monthly fees.
+We don't add extra fees on subscription payments.
+We don't charge any fees on payouts.
+We don't charge extra fees on payments recovered through cart recovery.
+We don't charge extra fees on payments recovered with dunning (failed-renewal recovery).
+We don't charge extra fees on payments generated from affiliates.
+We don't charge extra fees on PayPal transactions.
+We don't charge fees for currency conversion. Instead, you can receive payouts in the native currency in which they were processed. If you sell in USD, EUR, and GBP, you can receive payouts in 3 separate currencies to 3 different bank accounts.
+WordPress & Templates Solution​
+If you're selling a WordPress plugin or theme, starter kits and templates, our dedicated WordPress & Templates solution eliminates the hassles of setup, maintenance, and server hosting, so you can jump straight to selling and focusing on growth.
+This service comes at an additional 2.3%. Explore our detailed WordPress & Templates Pricing to discover all the features and benefits and determine if it's the right fit for you.
+Gateway Processing Fees​
+Gateway fees may vary, but thanks to the high transaction volumes processed on Freemius, we're consistently negotiating the best possible rates with Stripe and PayPal. The current average effective rate is 3.5%. As we grow, we're committed to reducing these fees, and we want to be clear that Freemius does not take any portion of the processing fees.
+High-Volume Rates​
+Processing large volumes? Our pricing stays transparent as you scale, with no need for lengthy negotiations.
+Once monthly gross sales exceed $50,000, Growth Pricing kicks in automatically, reducing our revenue share as you grow - down to 0.5% on sales above $100,000/month.
+Monthly gross | Progressive rev-share |
+0-$50,000 | 3.8% |
+$50,000 - $60,000 | 3.7% |
+$60,000 - $70,000 | 3.5% |
+$70,000 - $80,000 | 3.0% |
+$80,000 - $90,000 | 2.0% |
+$90,000 - $100,000 | 1.0% |
+$100,000+ | 0.5% |
+Freemius vs. Others​
+Let's examine an example breakdown of a $100 PayPal subscription from a French consumer, including 20% VAT.
+Freemius Fees Breakdown​
+Description | Amount |
+Product price | $100 |
+VAT | $20 |
+Total transaction | $120 |
+Freemius fee (3.8% + 50¢) | $5.06 (3.8% of the $120 total: $4.56 + $0.50) |
+Gateway fee | $4.40 |
+Total fees | $9.46 |
+Effective rate | 9.46% |
+Competing Merchant of Record Fees Breakdown​
+Description | Amount |
+Product price | $100 |
+VAT | $20 |
+Total transaction | $120 |
+Transaction fee (5% + 50¢) | $6.5 |
+International card (+1.5%) | $1.8 |
+Subscription payment (+0.5%) | $0.6 |
+PayPal payment (+1.5%) | $1.8 |
+Payout currency conversion (2-4%) | $2.4 - $4.8 Applies if your country's currency doesn't match the payout currency. E.g., if you're from the UK selling in USD. |
+Payout fee (Up to 3%) | $0 - $3.6 Vary based on payout method and your country. |
+Total fees | $10.7 to $19.1 $8.9 to $17.3 for credit card subscription |
+Effective rate | 10.7%-19.1% 8.9%-17.3% for credit card subscription |
+Stripe Standard Fees Breakdown​
+Description | Amount |
+Product price | $100 |
+VAT | $20 |
+Total transaction | $120 |
+Transaction fee (2.9% + 30¢) | $3.78 |
+International card (+1.5%) | $1.8 |
+Subscription payment (+0.7%) | $0.84 |
+Invoice issuing (+0.4%) | $0.48 |
+Tax calculation and monitoring (+0.5%) | $0.6 |
+Fraud protection | $0.2 |
+Payout currency conversion (2-4%) | $0 - $4.8 Applies if your country's currency doesn't match the payout currency. E.g., if you're from the UK selling in USD. |
+Total fees | $7.7 to $12.5 |
+Effective rate | 7.7%-12.5% |
+PayPal Standard Fees Breakdown​
+While PayPal may appear more affordable, it is actually the most expensive solution. It lacks essential billing features, such as invoicing and sales tax calculation/monitoring, which means you'll need to invest in additional services to cover those gaps.
+Description | Amount |
+Product price | $100 |
+VAT | $20 |
+Total transaction | $120 |
+Transaction fee (3.49% + 49¢) | $4.678 |
+International card (+1.5%) | $1.8 |
+Payout currency conversion (2-4%) | $2.4 - $4.8 Applies if your country's currency doesn't match the payout currency. E.g., if you're from the UK selling in USD. |
+Total fees | $8.878 to $11.278 |
+Effective rate | 8.88%-11.28% |
+Refunds​
+You can issue full or partial refunds, and the 3.8% portion of our fee will be returned proportionally. The $0.50 per-transaction fee is non-refundable, and Stripe and PayPal also do not refund their processing fees.
+The fixed fee covers transaction-level costs that are incurred regardless of whether a purchase is later refunded, including invoicing, data storage and retention, support, and fraud, dispute, and chargeback handling.
+Dispute and Chargeback Fees​
+We handle disputes and chargebacks on your behalf, achieving astoundingly high winning rates: 29.6% for credit card disputes, and nearly all PayPal disputes resolved in our favor. Keep in mind that a dispute fee of $15 to $20 is deducted directly by payment processors from your balance, if the dispute is lost.
+Still stuck? How can we help?
+Are you AI Agent? Read markdown source or llms.txt
+Explore the Customer Portal
+WordPress & Templates Pricing
+On this page:
+No Upfront Fees
+Transparent Pricing That Grows with YouNo Hidden Fees
+WordPress & Templates Solution
+Gateway Processing Fees
+High-Volume Rates
+Freemius vs. OthersFreemius Fees Breakdown
+Competing Merchant of Record Fees Breakdown
+Stripe Standard Fees Breakdown
+PayPal Standard Fees Breakdown
+Refunds
+Dispute and Chargeback Fees

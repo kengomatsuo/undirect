@@ -1,0 +1,35 @@
+SOURCE https://www.paddle.com/help/manage/get-paid/is-there-a-fee-taken-for-payouts
+fetched 2026-11-23 (curl, page text extracted)
+Is there a fee taken for payouts?
+Paddle will not add any fees beyond the
+Paddle fee
+on payouts made to you. Any other fees that are made against these payouts will be from your bank or payment provider, depending on the method of payment. We fulfill payouts of your Current Balance with Paddle fees already deducted for all payment methods. Please refer to the below for more information on the different payment methods we offer for payouts.
+If you have Payoneer as the Payment Method
+You are subject to all
+Payoneer fees
+, depending on your Payoneer account type.
+If you have selected Wire Transfer as the Payment Method
+Paddle will make every effort to avoid fees on your payouts. When your payout currency matches the local currency of your bank's country, the transfer is typically free of charge because we can use local payment networks.
+This applies to payouts such as:
+USD
+paid to a bank in the US (via ACH)
+EUR
+paid to a bank in the Eurozone (via SEPA)
+GBP
+paid to a bank in the UK
+CAD
+paid to a bank in Canada
+AUD
+paid to a bank in Australia
+If the payout currency is different from your bank's country (for example, a
+CAD
+payout to a bank in the UK, or an
+AUD
+payout to a bank in the US), the transfer must be sent internationally via SWIFT. These transfers will incur a wire fee of $/€/£15. This amount is deducted before your invoice is created, so the invoice amount is the amount sent. Any subsequent fees will be from your bank and are incurred by you directly.
+Wire transfer can also be routed via a third-party bank, (an intermediary step along the way to facilitate swift movement of funds into your account). If you wish to use an intermediary bank you can specify which one in the Notes/Comments section of your
+payout settings
+. Payouts via this method incur a fee with each intermediary bank subject to their commissions and fees, therefore they are incurred by you directly.
+ACH payments are electronic payments sent within the US only, with payouts in USD. ACH payments are cheaper. No fees are added, so you receive the full value.
+SEPA Payments are made from one EUR account to another EUR account within the Eurozone. If your balance is in EUR, request payouts to be in EUR and your designated bank is in the Eurozone, you’ll incur no fees.
+If you selected to receive your payout in a currency different from your selected Balance Currency
+If you opt to receive a payout in a currency different from your selected Balance Currency, then we reserve the right to add a conversion margin of up to 1.5%, which will be taken into account at the point of payout.

@@ -1,0 +1,324 @@
+SOURCE https://developer.fastspring.com/docs/payment-methods-accepted-by-fastspring
+fetched 2026-11-23 (curl, text extracted)
+Getting Started
+Welcome to FastSpring
+Activate your store
+Choose a checkout experience
+Support and resources
+Find answers with Ask AI
+Payout PortalPayout Portal overview
+Set up your payout account
+Receive payouts
+Split partner accounts
+Transaction reports and statements
+MigrationsMigrate from Classic to Contextual Commerce
+Store and Account Settings
+Store SetupConfigure store settings
+Manage payment methods
+Request purchase limits
+Manage roles and permissions
+Set up seller notifications
+Reseller ManagementWhat is a reseller partner?
+Manage reseller partners
+Configure reseller partner store
+Reseller ordering and fulfillment
+Tax SettingsSet a product tax category
+Tax category selection helper
+Understand VAT and sales tax
+Tax information reporting: Form W-8 and W-9
+Tax information reporting: Form 1099-K
+US tax withholding for downloadable subscription software
+Payment ConfigurationCurrencies and conversions
+Default currencies and languages
+Gross and net pricing modes
+Payment hierarchy
+Declined and canceled payments
+Configure invoice-based purchases
+Configure gift purchases
+Payment MethodsPayment methods accepted by FastSpring
+ACH Direct Debit
+Alipay
+Amazon Pay
+Apple Pay
+Brazilian Card
+Cash App
+Google Pay
+Kakao Pay
+Klarna “Pay Now”
+Mercado Pago
+Mexican Local Acquiring
+OVO
+Pix
+Pix Automatico
+PromptPay
+Single Euro Payments Area (SEPA)
+Toss Pay
+Turkish Local Acquiring
+UPI
+UPI AutoPay
+Venmo
+WeChat Pay
+Security and ComplianceConfigure security settings
+Terms, conditions, and EULAs
+PSD2 and SCA compliance
+GDPR compliance
+Machine-learning fraud engine
+Checkouts
+Checkouts Overview
+Managing a CheckoutCheckout settings
+Access checkout URLs
+Currency and language settings
+Test orders
+Popup CheckoutsPopup checkout overview
+Create a popup checkout
+Configure checkout experience
+Style your checkout
+Checkout analytics and branding
+Add a shopping cart
+Add checkout to your site
+Redirect after checkout
+Embedded CheckoutsEmbedded checkout overview
+Create an embedded checkout
+Configure checkout experience
+Style your checkout
+Checkout analytics and branding
+Embed your checkout
+Enhance your checkout
+Web CheckoutsWeb checkout overview
+Create a web checkout
+Web checkout appearance
+Web checkout behavior
+Component Checkouts • BetaSet up Component Checkouts
+Products and Subscriptions
+Product SetupCreate or copy a product
+Customize a product
+Add product options
+Create product bundles
+Configure product offers
+Create a product variation
+Product ManagementManage your products
+Limit product availability by country
+Subscription SetupCreate a subscription
+Customize a subscription
+Set up a managed subscription
+Set up manual renewal
+Set up renewal invoicing
+Configure renewal settings
+Subscription ManagementManage active subscriptions
+Pause a subscription
+Auto-renew into a different subscription
+Add subscription add-ons
+Set up trial subscriptions
+Prevent trial hopping
+Configure cancellation survey
+Dynamic Subscription Repricing
+Fulfillment ConfigurationFulfillments Overview
+License Keys
+File Downloads
+Signed PDF
+Extended Download Service
+Customer Notifications
+Email Template Elements
+MIME 1.0 License Output Format
+List of Accepted Elements in Data Fields
+Coupons and DiscountsCreate and manage coupons
+Multi-Discount Coupons
+Product Discounts
+Effective Date Flag for Discounts
+Sales
+Checkout and OrdersCheckout and orders overview
+1ClickPay
+Search for orders
+Refund an order
+Chargebacks and disputes
+Manage custom orders
+Configure payment methods
+Customer AccountsCustomer accounts and security
+Account management portal
+Embedded payment management
+Pass customer information
+Digital InvoicingDigital invoicing overview
+Digital invoicing settings
+Create and send quotes
+Self-service quotes
+Manage quotes and invoices
+Integrations
+In-App ExtensionsDeveloper Tools
+Shipping Fee Calculator
+Extensions Overview
+Analytics & TrackingGoogle Analytics 4GA4 Setup
+Migrating from Universal Analytics to GA4
+GA4 (Classic Documentation)
+Google Measurement Protocol
+Google Tag Manager
+Marketing & FunnelsFunnelFox
+HubSpot
+Mailchimp
+AutomationZapier
+eCommerce PlatformsaMember
+Easy Digital Downloads (EDD) Plugin
+WordPress
+License ManagementQuick License Manager (QLM)
+LimeLM
+Nalpeiron
+10Duke
+SoftwareKey SOLO Server
+Cryptlex
+Mobile & GamingUnity/UGS and FastSpring checkout integration (iOS & Android) with Steer Safe™
+React Native FastSpring integration (iOS & Android) with Steer Safe™
+Nexus and FastSpring embedded checkout integration
+Google Play External Content Links reporting with FastSpring
+Discord bot and FastSpring embedded checkout integration
+Affiliate & PartnershipsFastSpring Affiliate Solution
+Reporting and Dashboards
+Home
+Revenue OverviewRevenue dashboard
+Recognition dashboard
+Chargeback dashboard
+Checkout dashboard
+Subscription OverviewSubscription dashboard
+Trials dashboard
+Retention dashboard
+Data exports
+Interactive Quotes
+Interactive Quotes OverviewCreate and Send an Interactive Quote
+Interactive Quote Discounts
+Tagging Interactive Quotes
+Pricing Components (IQ)
+Published and Unpublished Changes (IQ)
+Templates (IQ)
+Analytics and Tracking (IQ)
+Team and Account Management (IQ)Approval Workflow (IQ)
+Team Management (IQ)
+Account Management
+Notifications
+Search for Interactive Quotes
+Integrations (IQ)Drift Integration
+FastSpring Checkout Integration (IQ)
+Payment methods accepted by FastSpring
+See all payment methods FastSpring supports, including cards, bank transfers, digital wallets, checks, and local cards.
+FastSpring accepts credit and debit cards for all transactions. Other payment methods vary depending on your customer's location, the order currency, and the type of product being purchased.
+Automatic renewal subscriptions require real-time payment so that FastSpring can process rebills without customer interaction. Because of this, payment methods that require manual customer action, such as wire transfers, are not available for automatic subscriptions. However, you can configure a manual renewal subscription for most payment methods.
+Payment methods summary
+The tables below summarize FastSpring payment methods by type, including availability, supported regions and currencies, and whether each method supports auto-recurring and real-time processing.
+Legend
+Supported
+Not supported
+No minimum
+All sellers Available to all sellers
+On request Requires approval
+Cards
+Credit and debit cards, globally accepted
+Bank transfers
+ACH, SEPA, UPI, Pix, and more
+Digital wallets
+PayPal, Apple Pay, Google Pay, and more
+Local acquiring
+Region-specific card networks
+Check payment
+Paper checks (CA, US only)
+Transaction limits
+Min and max amounts by method
+Cards
+Payment Method | Region | Currency | Availability | Auto-recurring | Real-time |
+Credit Cards | Global | All | All sellers |  |  |
+See legend for availability and icon meanings · Transaction limits ↓
+Bank transfers
+Payment Method | Region | Currency | Availability | Auto-recurring | Real-time |
+ACH Direct Debit | US | USD | On request |  |  |
+iDEAL | NL | EUR | All sellers |  |  |
+Klarna Pay Now | AT, BE, DE, NL, SE | EUR, SEK | On request |  |  |
+OVO | ID | IDR | All sellers |  |  |
+Pix | BR | BRL | All sellers |  |  |
+Pix Automático | BR | BRL | All sellers |  |  |
+PromptPay | TH | THB | All sellers |  |  |
+SEPA Direct Debit | AT, BE, CY, DE, DK, EE, ES, FI, FR, GR, IE, IT, NL, PT, SE | EUR | On request |  |  |
+UPI | IN | INR | On request |  |  |
+UPI AutoPay | IN | INR | On request |  |  |
+Wire Transfers | Global | AUD, CAD, CHF, EUR, GBP, JPY, USD | On request |  |  |
+See legend for availability and icon meanings · Transaction limits ↓
+Digital wallets
+Payment Method | Region | Currency | Availability | Auto-recurring | Real-time |
+Alipay | CN | CNY, USD | All sellers |  |  |
+Amazon Pay | Global | USD | All sellers |  |  |
+Apple Pay | Global ¹ | Apple-supported locations | All sellers |  |  |
+Cash App | US | USD | On request |  |  |
+Google Pay | Global ² | Various | All sellers |  |  |
+Kakao Pay | KR | KRW, USD | On request |  |  |
+Mercado Pago | BR, CL, MX | BRL, CLP, MXN | All sellers |  |  |
+PayPal | Global ³ | Multi-currency | All sellers |  |  |
+Toss Pay | KR | KRW | All sellers |  |  |
+Venmo | US | USD | All sellers |  |  |
+WeChat Pay | CN | CNY, USD | On request |  |  |
+See legend for availability and icon meanings · Transaction limits ↓
+¹ Apple Pay supported regions are defined by Apple.
+² Google Pay is available globally except in India and Turkey.
+³ PayPal is available in all countries except Turkey.
+Local acquiring
+Payment Method | Region | Currency | Availability | Auto-recurring | Real-time |
+Brazilian Card | BR | BRL | All sellers |  |  |
+Mexican Local Acquiring | MX | MXN | On request |  |  |
+Turkish Local Acquiring | TR | TRY | On request |  |  |
+See legend for availability and icon meanings · Transaction limits ↓
+Check payment
+Payment Method | Region | Currency | Availability | Auto-recurring | Real-time |
+Check | CA, US | USD | On request |  |  |
+See legend for availability and icon meanings · Transaction limits ↓
+Check payments are not supported for any subscription products, including manual renewal subscriptions.
+Transaction limits
+The following table lists the minimum and maximum transaction amounts supported for each payment method.
+Payment Method | Type | Min | Max |
+ACH Direct Debit | Bank transfer | $10 | $750,000 |
+Alipay | Digital wallet | ¥1 / $1 | ¥3,000 / $400 |
+Amazon Pay | Digital wallet |  | $10,000 |
+Apple Pay | Digital wallet |  | $120,000 |
+Brazilian Card | Local card | R$1 | R$50,000 |
+Credit cards | Card |  | $120,000* |
+Google Pay | Digital wallet |  | $120,000 |
+iDEAL | Bank transfer |  | $120,000 |
+Kakao Pay | Digital wallet | ₩1,000 / $1 | ₩500,000 / $350 |
+Klarna Pay Now | Bank transfer |  | $120,000 |
+Mercado Pago | Digital wallet | R$1 / MX$1 | R$100,000 / MX$100,000 |
+PayPal | Digital wallet |  | $60,000 / €60,000 / £60,000 / CA$60,000 |
+Pix | Bank transfer | R$1 | R$100,000 |
+Pix Automático | Bank transfer | R$1 | R$100,000 |
+PromptPay | Bank transfer | ฿1 | ฿100,000 |
+SEPA Direct Debit | Bank transfer | €2 | €100,000 |
+Toss Pay | Digital wallet | ₩100 | ₩2,000,000 |
+Unified Payments Interface (UPI) | Bank transfer | ₹1 | ₹100,000 |
+Unified Payments Interface (UPI) AutoPay | Bank transfer | ₹1 | ₹100,000 |
+Venmo | Digital wallet |  | $60,000 |
+WeChat Pay | Digital wallet | ¥1 / $1 | ¥3,000 / $400 |
+Wire & Check (domestic) | Wire / Check | $750 | $250,000* |
+Wire & Check (international) | Wire / Check | $750 | $250,000 |
+See legend for icon meanings · * Some limits may vary depending on risk checks and processor requirements.
+More details
+Wire transfer availability
+Below are the supported currencies, regions, and details on how FastSpring generates bank wire instructions and payment reference numbers.
+USD, EUR, GBP, CAD, AUD, JPY, and CHF are available for all regions.
+FastSpring generates bank wire instructions based on the currency.
+Payment reference numbers are a six-digit alphanumeric code that FastSpring generates.
+Credit card availability
+The following credit card types are accepted by FastSpring for payment processing.
+Visa
+Mastercard
+American Express
+Discover
+JCB
+UnionPay
+Elo
+Hipercard
+Updated 3 days ago
+Configure gift purchases
+ACH Direct Debit
+Did this page help you?Yes
+No
+Copy Page
+Payment methods summary
+Cards
+Bank transfers
+Digital wallets
+Local acquiring
+Check payment
+Transaction limits
+More details

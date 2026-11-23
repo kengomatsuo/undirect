@@ -1,0 +1,74 @@
+SOURCE https://docs.creem.io/llms.txt
+fetched 2026-11-23
+# Creem
+
+> Creem is a Merchant of Record (MoR) for SaaS and digital businesses. We handle global tax compliance, payment processing, and billing so you can focus on building your product.
+
+A Merchant of Record is the legal entity that sells to the end customer. Creem takes on tax compliance, payment processing, chargebacks, and regulatory requirements in 190+ countries; you integrate over the API and receive payouts.
+
+Core capabilities: one-time payments and recurring subscriptions, automatic VAT/GST, license keys, revenue splits and affiliate programs, subscription lifecycle (trials, upgrades, pauses, cancellations), a hosted customer portal, and webhooks for every payment event.
+
+API base URLs are `https://api.creem.io` (production) and `https://test-api.creem.io` (sandbox). Authentication is an `x-api-key` header. Prices are integers in cents; currencies are uppercase ISO codes.
+
+Append `.md` to any documentation URL to fetch it as raw markdown.
+
+## Getting Started
+
+- [Introduction](https://docs.creem.io/index.md): what Creem is and how the MoR model changes your integration
+- [Quickstart](https://docs.creem.io/getting-started/quickstart.md): create a product and take a first payment
+- [Test mode](https://docs.creem.io/getting-started/test-mode.md): sandbox keys and test cards
+- [Migrate from Lemon Squeezy](https://docs.creem.io/getting-started/migrate/lemon-squeezy.md): move a Lemon Squeezy store before March 31, 2027 with a coding agent, the Creem CLI or Creem's team: why Creem, checks before you start, what moves
+- [Lemon Squeezy migration: technical guide](https://docs.creem.io/getting-started/migrate/lemon-squeezy/technical-guide.md): every step through the API, field and webhook mappings, moving subscribers, and a prompt for coding agents
+
+## SDKs
+
+- [TypeScript SDK](https://docs.creem.io/code/sdks/typescript.md): the core client for server-side JavaScript; the API key must stay on your backend
+- [Next.js adapter](https://docs.creem.io/code/sdks/nextjs.md): route handlers and server-side helpers for Next.js apps
+- [Better Auth plugin](https://docs.creem.io/code/sdks/better-auth.md): billing wired into Better Auth sessions and organizations
+- [Better Auth migration](https://docs.creem.io/code/sdks/better-auth/migration.md): upgrade from 1.x to 2.0, update cancellation callbacks, and reconcile existing entitlements
+- [Convex component](https://docs.creem.io/code/sdks/convex/integration.md): complete setup sequence with validation steps — webhook sync into the Convex database plus connected React and Svelte widgets
+- [Convex concepts](https://docs.creem.io/code/sdks/convex/concepts.md): the billing entity, the sources of billing state, and the connected API contract behind the Convex component
+- [CLI](https://docs.creem.io/code/cli.md): manage products, customers, and subscriptions from the terminal
+- [Webhooks](https://docs.creem.io/code/webhooks.md): event list, payload shapes, and signature verification
+
+## AI and agents
+
+- [Use Creem in Claude and ChatGPT](https://docs.creem.io/ai/for-humans/ai-assistants.md): connect the Claude or ChatGPT app to a Creem store by signing in, no code or API key; what you can ask, test and live mode, permissions, confirmations, disconnecting
+- [Hosted MCP](https://docs.creem.io/ai/for-agents/hosted-mcp.md): connect Claude, Claude Code, ChatGPT, Codex, Cursor or any remote MCP client to https://mcp.creem.io/mcp and sign in with a Creem account (OAuth, no API key); test and live mode, tools, confirmations
+- [Skill files](https://docs.creem.io/ai/for-agents/skill-files.md): reference material an agent reads to integrate Creem
+
+## API Reference
+
+- [API introduction](https://docs.creem.io/api-reference/introduction.md): authentication, scopes, and conventions
+- [Error codes](https://docs.creem.io/api-reference/error-codes.md): status codes and their meanings
+
+## Features
+
+- [One-time payments](https://docs.creem.io/features/one-time-payment.md): single-purchase products
+- [Trials](https://docs.creem.io/features/trials.md): free trials on recurring products
+- [Seat-based billing](https://docs.creem.io/features/seat-based-billing.md): per-unit and per-seat pricing
+- [Discounts](https://docs.creem.io/features/discounts.md): coupon codes, percentage and fixed amount
+- [Customer portal](https://docs.creem.io/features/customer-portal.md): hosted self-service billing
+- [Split payments](https://docs.creem.io/features/split-payments.md): programmable revenue splits
+- [Affiliate program](https://docs.creem.io/features/affiliate-program.md): built-in referral and affiliate infrastructure
+- [Storefronts](https://docs.creem.io/features/storefronts.md): hosted product pages
+- [Short links](https://docs.creem.io/features/short-links.md): branded l.creem.io links with click analytics and revenue attribution
+
+## Integrations
+
+- [Affonso](https://docs.creem.io/integrations/affonso.md): affiliate program management with Affonso, connected to Creem payments
+- [Rekomi](https://docs.creem.io/integrations/rekomi.md): affiliate program with payouts in 150+ countries, connected by one webhook
+- [Referly](https://docs.creem.io/integrations/referly.md): affiliate program with coupon-code attribution, connected by one webhook
+- [LinkJolt](https://docs.creem.io/integrations/linkjolt.md): affiliate program connected with one API key, with discount codes created in your store
+- [Refgrow](https://docs.creem.io/integrations/refgrow.md): affiliate program connected with one API key, with renewals credited and refunds reversed
+- [Evendeals](https://docs.creem.io/integrations/evendeals.md): purchase parity pricing to boost international conversions
+- [Strapi](https://docs.creem.io/integrations/strapi.md): manage Creem products and checkout from the Strapi 5 admin panel
+- [Framer](https://docs.creem.io/integrations/framer.md): no-code checkout buttons and pricing tables for Framer sites
+
+## Background
+
+- [Merchant of Record](https://docs.creem.io/merchant-of-record/what-is.md): what an MoR is and what Creem takes on for you
+- [Account reviews](https://docs.creem.io/merchant-of-record/account-reviews/account-reviews.md): what a store needs before accepting live payments, including a website on its own custom domain
+- [For customers](https://docs.creem.io/for-customers/why-creem-charged-me.md): end-customer billing questions, for support pages
+
+HTTP 200

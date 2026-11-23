@@ -1,0 +1,435 @@
+SOURCE https://developers.google.com/pay/api/web/support/faq
+fetched 2026-11-23 (curl, text extracted)
+Home
+Products
+Google Pay & Wallet
+Google Pay & Wallet
+Google Pay for Payments
+Web
+Support
+Frequently Asked Questions
+Stay organized with collections
+Save and categorize content based on your preferences.
+Page Summary
+outlined_flag
+Google Pay API enables quick and easy checkout experiences for apps and websites by allowing customers to use saved payment methods from their Google Accounts.
+Recurring billing, auto-reloads, chargebacks, and donation collection are all supported features, with specifics varying based on payment method and merchant setup.
+Merchants must adhere to the Google Pay API Terms of Service, Acceptable Use Policy, and specific policies for gambling, healthcare, and financial services.
+Comprehensive support resources are available, including troubleshooting guides and contact options for assistance with integration and debugging.
+Google Pay API supports various payment providers, and merchants can find a list of supported countries and regions for online and in-app payments.
+This page provides general information and FAQ about Google Pay API.
+About Google Pay API
+Google Pay enables effortless checkouts for your app and website. With the Google Pay API, your
+customers can use the cards saved to their Google Accounts for seamless checkout within your apps
+and sites.
+How to get support
+Register with the Google Pay & Wallet Console and
+select Contact support. We can help you troubleshoot your integrations. Additionally, reference
+our Android troubleshooting
+guide and
+Web troubleshooting
+guide to self-debug your integration.
+Supported features
+The Google Pay API has several supported features.
+Supported forms of payment
+The Google Pay API may return cards or network tokens.
+Note: To see which forms of payment are supported, merchants must check with their
+processor.
+Recurring billing and subscriptions
+Support for recurring billing is tied to the payment method returned in the Google Pay API
+response. Both tokenized cards and cards on file can be used for recurring billing. To process
+recurring billing, the merchant doesn't have to call our API at a cadence. Rather, the payment
+credential is stored on the merchant side for recurring payments. The merchant uses their payment
+gateway APIs to manage recurring billing.
+Google Pay supports recurring payments if the following statements are true:
+Merchants comply with network rules, such as merchant-initiated transactions.
+Terms of payment are disclosed and accepted by the user within the merchant's buyflow.
+We also support recurring billing with variable amounts. For example, monthly phone bills for
+mobile carriers are supported. To get more information, merchants must contact their payment
+gateway representative.
+Auto-reload or "top-up"
+To process an auto-reload charge for the same cost, the merchant doesn't have to call our API each
+time. The payment credential is stored on the merchant side and reused. To get more information,
+merchants must contact their payment gateway representative.
+Chargebacks
+Merchants can handle transaction reversals for cancellations, reimbursements, or disputes in the
+manner that they handle chargebacks for other forms of payment. To get more information,
+merchants must contact their processors representative.
+Donation collection
+Approved nonprofit organizations (NPOs) can integrate the Google Pay API to collect donations,
+if, and only if, they provide documentation to prove, certify, and validate their nonprofit
+status. For example, US NPOs must provide valid 501(c)3 status proof from the IRS in order to
+qualify.
+Terms and Policies
+Google Pay Terms of Service
+All merchants must agree to and adhere to the Google Pay
+Terms of Service.
+Google Pay API Acceptable Use Policy
+All merchants must agree to and adhere to the Google Pay API
+Acceptable Use Policy.
+Gambling Policy
+Our policy on gambling is defined in our Google Pay API
+Acceptable Use Policy.
+Our policy on gambling may change from time to time. All submissions are subject to review and
+approval.
+We accept gambling integrations from companies based in the following countries:
+Australia
+Austria
+Canada
+Czechia
+France
+Georgia
+Germany
+Greece
+Hungary
+Ireland
+Italy
+Japan
+Netherlands
+Poland
+Portugal
+Romania
+Spain
+Sweden
+United Kingdom
+At a later stage, we might choose to expand support beyond the current level.
+Gaining production access to the Google Pay API for gambling integrations requires completing a
+series of prerequisites:
+If you have an Android-only gambling integration based in one of the countries mentioned earlier, you must
+adhere to Google Play's
+gambling policy
+and onboard with Google Play's
+vetting process
+first. We can then evaluate your Android-only integration for production access to the Google
+Pay API.
+If you have a Web-only gambling integration based in one of the countries mentioned earlier, you must submit
+an authorized license to prove your eligibility to provide gambling services in-country during
+your onboarding process with the Google Pay API. We can then evaluate your Web-only integration
+for production access to the Google Pay API.
+If you have an Android and Web gambling integration in one of the countries mentioned earlier, you must
+adhere to Google Play's
+gambling policy
+and onboard with Google Play's
+vetting process
+first. We can then evaluate your Android and Web integrations for production access to the
+Google Pay API.
+Countries with specific conditions or restrictions
+Gambling integrations are allowed for the listed countries if they meet the following criteria:
+Country |
+Android integration eligibility |
+Web integration eligibility |
+Bulgaria |
+Yes, with restrictions:
+Apps that redirect to a website are eligible.
+Apps that don't redirect to a website are prohibited.
+|
+Yes |
+Cyprus |
+Yes, with restrictions:
+The state lottery is eligible.
+OPAP Cyprus Limited is eligible.
+Online casinos are prohibited.
+Slot machines are prohibited.
+Horse racing betting is prohibited.
+Dog racing betting is prohibited.
+Spread betting is prohibited.
+Betting exchanges are prohibited.
+|
+Yes, with restrictions:
+The state lottery is eligible.
+OPAP Cyprus Limited is eligible.
+Online casinos are prohibited.
+Slot machines are prohibited.
+Horse racing betting is prohibited.
+Dog racing betting is prohibited.
+Spread betting is prohibited.
+Betting exchanges are prohibited.
+|
+Finland |
+Yes, with restrictions:
+Veikkaus Oy is eligible.
+|
+Yes, with restrictions:
+Veikkaus Oy is eligible.
+|
+Kazakhstan |
+Yes, with restrictions:
+Lotteries are eligible.
+Sports betting is eligible.
+Totalizators are eligible.
+Online casinos are prohibited.
+Electronic casinos are prohibited.
+|
+Yes, with restrictions:
+Lotteries are eligible.
+Sports betting is eligible.
+Totalizators are eligible.
+Online casinos are prohibited.
+Electronic casinos are prohibited.
+|
+Poland
+|
+No |
+Yes, with restrictions:
+Licensed gambling providers are eligible.
+|
+South Africa |
+Yes, with restrictions:
+Online sports betting is eligible.
+|
+Yes, with restrictions:
+Online sports betting is eligible.
+|
+If you expand the Google Pay API into a country that you were not previously approved for,
+contact us to gain approval for the expansion.
+Please note that you will need to provide an authorized gambling license for each country in which
+you plan to offer gambling-related services. We do not allow the Google Pay API to be used for
+gambling services where they are aimed / addressed to individuals who are underage or are
+otherwise forbidden from gambling according to local laws.
+Healthcare Policy
+Our policy on Healthcare is defined in the Google Pay API
+Acceptable Use Policy.
+Be prepared to share a relevant license when onboarding to validate your Healthcare use case. All
+submissions are subject to review and approval.
+Financial Services Policy
+Our policy on Financial Services is defined in the Google Pay API
+Acceptable Use Policy.
+Be prepared to share a relevant license when onboarding to validate your Financial Services use
+case. All submissions are subject to review and approval.
+General FAQ
+Following FAQ applies to merchants:
+I use a major PSP to manage all risk and Strong Customer Authentication. What should I know about
+GPay?
+The Google Pay API returns payment methods in a signed and encrypted payload. The returned
+payment methods consist of either PAN or tokenized cards made of device PAN (DPAN) and
+cryptograms.
+Tokenized card payloads are processed without additional step-up or challenge.
+Card payloads that consist of PAN require 3D Secure through an in-house or a PSP-provided
+solution.
+If your PSP manages all the risk and SCA logic, make sure that your Google Pay API integration
+includes the following properties:
+merchantInfo.merchantName (Android, Web): The merchant
+name is rendered in the payment sheet.
+transactionInfo.countryCode (Android, Web): This
+indicates where the transaction processes. You must specify the acquirer bank country.
+transactionInfo.totalPrice (Android, Web): The total
+monetary value of the transaction with an optional decimal precision of two decimal places.
+How do I get a Google merchant ID?
+You can get a Google merchant ID after Google approves your website. To initiate the process, sign
+in to Google Pay & Wallet Console and
+create a Google Pay API integration. You need to provide a list of fully qualified domains along
+with subdomains, which help you to call the Google Pay API.
+Note: If you intend to submit more than 50 fully qualified domains along with subdomains,
+use this
+form
+to find alternative solutions.
+Can we use a single Merchant ID across multiple brands and channels (Web/App)?
+Yes, using a single Merchant ID across multiple brands and platforms (such as Web and Android)
+is supported and generally recommended to simplify reconciliation.
+How can merchants promote Google Pay acceptance in their apps and sites to their users?
+To highlight support for Google Pay, make sure to use the assets available in our
+Android and
+Web brand guidelines.
+If you have an Android integration, you can note in the Play Store description that you now
+support Google Pay. For web integrations, you can directly add a description to the merchant
+website.
+Can ecommerce platforms support Google Pay?
+Yes, Google Pay API supports onboarding ecommerce platforms. Payment processor, gateway, or
+ecommerce platform partners that host a checkout page on behalf of their merchants can use Google
+Pay's hosted checkout feature.
+Which payment providers support Google Pay?
+To find a list of processors that support Google Pay, see our
+Google Pay processors list.
+What countries and regions are supported for Google Pay?
+Take a look at our
+list of supported countries that use
+Google Pay for payments online or in apps.
+What countries and regions are supported for Google Pay tokens (CRYPTOGRAM_3DS)?
+See our
+Find supported payment methods for in-store and contactless purchases
+page for a list of countries and the banks in each that support Google Pay tokens
+(CRYPTOGRAM_3DS). Both supported and unsupported cards are listed.
+What's the difference between Google Play In-app Billing and the Google Pay API?
+Google Play developers that sell digital goods and services on Android apps must use Google Play
+In-app Billing, as specified in the
+Play Developer Policy Center. Examples of In-app Billing include virtual game products, app features or content, and
+cloud software products. See the
+Google Play Billing overview
+page to learn more about In-app Billing.
+When used in apps, the Google Pay API is only available for physical products and services.
+Does Google Pay charge any fees?
+Google Pay doesn't additionally charge users, merchants, and developers additional fees to use the
+Google Pay API for payments. Merchants, specifically, continue to pay processing fees to their
+payment processor.
+What does Google do to validate credentials and prevent fraud?
+All cards added to Google go through a verification authorization to validate card details, which
+include the card verification code (CVC). Google also runs a proprietary risk engine based on
+instrument data, Google Account profiles, purchase history, locations, and device information.
+Merchants, however, must continue to use their current fraud and risk assessment tools with Google
+Pay transactions.
+Is Google Pay supported in mobile app WebViews?
+Android WebViews fully support Google Pay and mimic the mobile web experience, provided you add
+the necessary WebKit dependency. However, on iOS WebViews, the isReadyToPay API will always return
+false due to iOS restrictions on third-party cookies. Both the Android App and the website domain
+within the WebView must be approved for production access. For specific implementation details, see
+the Using Android WebView or
+Using iOS WKWebview documentation.
+My processor isn't listed. Can I still integrate with Google Pay?
+Google Pay is continually building partnerships with ecommerce platforms and payment processors.
+If you can't find your processor at g.co/pay/processors,
+you can submit a request. You're notified when your processor becomes available.
+How do I enable Google Pay if I already have a payment processor or payments
+platform provider?
+Google Pay works with a variety of payment service providers
+and  e-commerce platform providers. Each
+offers specific, tailored documentation to help you get started along with our main tutorial for
+easy onboarding.
+How do I offer Google Pay at scale to my merchants, if I am a supported payment
+processor?
+Supported payment processors can implement our hosted checkout solution for web integrations.
+Hosted checkout lets your clients offer Google Pay to their customers and skip individual
+onboarding with Google Pay.
+To start, you must first onboard as a
+supported payment processor. To integrate the hosted checkout solution, contact your Google
+technical point of contact who helped you to onboard.
+How can Google Pay accommodate different shipping options and different prices to my
+users if I offer shipping in my checkout flow?
+For web integrations, you require a shipping address, and display different shipping options
+and pricing within the
+PaymentDataRequest
+object, PaymentOptions object,
+and the
+PaymentDataCallbacks
+object. For an example situation, refer to the
+Dynamic price update demo.
+For Android integrations, you require a shipping address within the
+PaymentDataRequest
+object.
+How do I receive the money from purchases made with Google Pay?
+The Google Pay API facilitates transactions by passing payment information from users to your
+payment service provider. It isn't in the money flow and is designed to sit on top of your
+existing payment infrastructure.
+What are the requirements for getting access to Production?
+Merchants must create a Business Profile in the Google Pay & Wallet Console and upload screenshots
+of their purchase flow for review. Each domain hosting the Google Pay API must be
+submitted for approval individually, as wildcard domains (e.g., *.merchant.com) are not accepted.
+See the Publish your Integration page for Android
+and/or Web for more information.
+How can I know the status of my integration submission and if I need to make any
+changes after your review process?
+After you submit your Google Pay API integration for review, you receive an email with the
+results. If your integration follows our Acceptable Use Policy and brand guidelines, it gets
+approved and shows status as Active in the Google Pay & Wallet Console. If it
+needs changes, the status shows Needs More Info, and the email provides the
+detail of what needs to be fixed before you resubmit. For any questions about your submission, you
+can contact support directly from  Google Pay & Wallet Console.
+How can I troubleshoot what's wrong with my Google Pay API integration if I see an
+error message?
+For common error codes and resolutions, check our troubleshooting guides for
+Android and
+web. If you have additional questions, contact
+support through the Google Pay & Wallet Console.
+How can I customize my Google Pay API integration to restrict cards?
+All customizations for cards are available in the CardParameters object for both
+Android and
+web. For example, you can
+choose which card networks you want to allow, and which card issuer countries you want to allow.
+What is the Google Pay API?
+The Google Pay API lets your customers pay with the press of a button with payment methods saved
+to their Google Account. The API provides simple checkout to millions of users with hundreds of
+millions of saved cards. It offers increased security, with customer payment data end-to-end
+encrypted from Google's servers to your payment processor. It's an easy integration process that works with
+your existing payments processing stack and can be implemented with a few lines of code.
+How are the Google Pay API and Google Wallet API related?
+The Google Pay API and Google Wallet API are two separate APIs. The Google Pay API lets your
+customers use Google Pay as a payment method on your website or Android app.
+The Google Wallet API lets developers create and manage digital passes for a variety of use
+cases. For example, loyalty cards, tickets, access passes, health records, and other customizable
+items. To learn more about the Google Wallet API, please visit the
+Google Wallet API developer documentation.
+What is the current Google Pay API version, and how are updates handled?
+The current version is listed in the Android and
+web documentation. Google has maintained this
+version for several years, only adding new features and optional fields. Any updates made to the
+API are backwards compatible to ensure current integrations are not disrupted.
+Which platforms support DPANs (CRYPTOGRAM_3DS) versus FPANs (PAN_ONLY)?
+DPANs are Android-specific and are only available when checking out on Android devices or Android
+mobile web/WebViews. Desktop web and iOS devices do not support DPANs and will default to returning
+PAN_ONLY.
+How do we differentiate between a DPAN and an FPAN, and how should they be handled?
+Rather than strictly identifying DPANs versus FPANs, the assuranceDetails object is designed to
+help merchants determine if a transaction needs to be stepped up through 3D Secure to meet
+Strong Customer Authentication (SCA) requirements. To receive these details, merchants must add
+assuranceDetailsRequired: true to the Card Parameter in their Google Pay API
+request.
+What is the difference between cardHolderAuthenticated and accountVerified?
+When assuranceDetailsRequired is set to true in the request, the
+response will include two properties:
+accountVerified: Indicates that the card used to pay is genuine and the account
+is in good standing. However, this verification alone does not provide authorization protection.
+cardHolderAuthenticated: Indicates that the user began the transaction with
+their Android-powered device and used a provisioned, device-based network token.
+How do we use these flags to trigger 3D Secure?
+Merchants should use these flags to build their 3D Secure triggering logic. If both
+cardHolderAuthenticated and accountVerified return as true,
+the credentials are considered highly secure and SCA Compliant, and you do not need to step up the
+transaction for further 3DS authentication.
+Will merchants receive ecommerce tokens if they set assuranceDetailsRequired: true?
+No, ecommerce tokens are controlled at the PSP level.
+Are Google Pay transactions eligible for liability shift?
+Liability shift availability depends on the card network.
+See Enable Visa Liability Shift
+for more details.
+How can we identify Buy Now Pay Later (BNPL) transactions?
+Currently, there is no specific identifier for BNPL transactions. They will appear in your system
+as regular FPAN credentials.
+Can Google provide test cards to test SCA scenarios?
+The Google Pay API cannot provide any SCA test cards directly. Your PSP should be able to utilize
+their Test cards suite within their sandbox environment for your testing needs.
+What is the expiration or Time-To-Live (TTL) for the encrypted payment credential?
+The encrypted Google Pay payload expires after exactly one week. Merchants handling delayed
+authorizations or asynchronous processing must ensure that the payment is authorized with their
+Payment Service Provider (PSP) within this timeframe before the payload expires.
+How are post-purchase operations, such as refunds and reauthorizations, handled?
+Google Pay is not in the money flow and acts strictly as a pass-through for the tokenized
+credential. Once the initial transaction occurs, your Payment Service Provider (PSP) maps the
+payment information in the encrypted payload to their own proprietary token (such as a "Merchant
+Token" or "Customer Profile ID"). All post-purchase interactions and money movements are managed
+entirely between you and your PSP.
+How does the Dynamic Pricing work with Merchant Initialized Transactions?
+Currently, Merchant Initialized Transactions (MITs) do not support dynamic pricing. This is a
+known limitation.
+What Content Security Policy (CSP) configuration is required for Google Pay in a WebView?
+If you are using a Content Security Policy (CSP), make sure to set the correct values for the connect-src directive to allow Google Pay to be used in your WebView. For example:
+Content-Security-Policy: connect-src pay.google.com google.com account.google.com www.google.com
+How do I use a Content Security Policy (CSP) nonce with the Google Pay web API?
+If your site enforces a strict CSP requiring nonces for script execution and dynamically injected styles:
+Include your CSP nonce attribute in the <script> tag that loads pay.js:
+<script
+async
+src="https://pay.google.com/gp/p/js/pay.js"
+nonce="your-nonce-value"
+onload="onGooglePayLoaded()">
+</script>
+Pass the nonce property in PaymentOptions when instantiating PaymentsClient:
+const paymentsClient = new google.payments.api.PaymentsClient({
+environment: 'TEST',
+nonce: 'your-nonce-value'
+});
+Google Pay applies this nonce attribute to all dynamically injected <style> and <script> elements, including button styles created by createButton().
+Does the Google Pay API use or require the NID cookie during checkout?
+No. The NID cookie is not used for, nor does it support, the Google Pay API checkout flow.
+The NID cookie is associated with a Google server-side service designed to store personalized
+data for users who are not signed into a Google account.
+Essential service functions—including security, fraud prevention, and service
+reliability—operate independently of the NID cookie. The Google Pay API is designed to maintain
+a secure and reliable experience for merchants and users regardless of the presence of this
+cookie.
+Google is committed to privacy and ensures that these cookies are handled in accordance with
+Google's Privacy Policy and
+Technologies & Cookies Policy.
+You may find these resources useful for your compliance documentation and to provide further
+transparency to your users.
+Except as otherwise noted, the content of this page is licensed under the Creative Commons Attribution 4.0 License, and code samples are licensed under the Apache 2.0 License. For details, see the Google Developers Site Policies. Java is a registered trademark of Oracle and/or its affiliates.
+Last updated 2026-11-17 UTC.
+[[["Easy to understand","easyToUnderstand","thumb-up"],["Solved my problem","solvedMyProblem","thumb-up"],["Other","otherUp","thumb-up"]],[["Missing the information I need","missingTheInformationINeed","thumb-down"],["Too complicated / too many steps","tooComplicatedTooManySteps","thumb-down"],["Out of date","outOfDate","thumb-down"],["Samples / code issue","samplesCodeIssue","thumb-down"],["Other","otherDown","thumb-down"]],["Last updated 2026-11-17 UTC."],[],["The Google Pay API allows customers to use saved cards for checkout in apps and websites. Merchants can manage recurring billing and auto-reloads by storing payment credentials and using payment gateway APIs. Nonprofits can collect donations with proper documentation. The API supports tokenized and PAN cards, with specific handling for 3D Secure. Gambling, healthcare, and financial service integrations require specific licenses and adherence to policies. Google does not charge additional fees but Merchants are still responsible for fraud, risk assessments and payment processor fees.\n"]]

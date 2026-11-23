@@ -1,0 +1,41 @@
+SOURCE https://gumroad.com/help/article/282-how-do-purchases-work-for-my-customers
+fetched 2026-11-23 (curl, text extracted)
+How Gumroad works for customers
+In this article:
+Buying on Gumroad without an account
+Receipts and Invoices
+VAT for your customers
+Credit and Debit card payments
+PayPal payments
+Making a test purchase
+Buying on Gumroad without an account
+Customers have the option to purchase on Gumroad with or without an account. If they create an account, they can access their purchases through their Gumroad Library anytime.
+We identify customers by the email address they enter at checkout. Those without an account can always access their content through the link in their receipt.
+Occasionally, we may require customers to re-enter their email for added security, making sure your product is only available to the one who bought it.
+Receipts and Invoices
+After purchasing, your customer is emailed a receipt with the download link to your product. The receipt will also hold a license key, if applicable.
+If they didn't get their receipt, please refer to this article.
+They can generate their own invoices through the Generate button at the bottom of their receipt:
+They can also do it without opening the receipt: on the product's download page, the Receipt section has a "Generate invoice" button alongside the other receipt actions. It only shows when there is something to invoice, so a free download or a membership free trial does not show it.
+For a membership, those buttons cover the member's most recent payment that was not fully refunded or charged back, rather than their original sign-up, so the receipt and invoice show that period's date, amount, and card. When the member has no such payment, or the newest one belongs to a different email address — a gifted membership, for example — the links fall back to their sign-up purchase.
+VAT for your customers
+If they have been charged VAT, they will see it listed on their invoice. If customers have a valid VAT ID, they can request a VAT refund by adding their VAT ID number when generating their invoice. If they are not from the EU, or we couldn't detect their country, they won’t see VAT on their invoice and can’t request a refund. Buyers of a physical product shipping to them in the EU also won't see VAT; if the parcel is an import, customs assesses the import VAT when it arrives.
+How do payments made via credit/debit cards work?
+Customers can pay with various credit cards on Gumroad, either by directly entering their card info or using Apple Pay, Google Pay, or Venmo. They can also save their card to their Gumroad account. For a list of accepted cards, go here
+How do payments made through PayPal work?
+To process PayPal payments, we use PayPal Connect.
+If you have not connected to PayPal Connect, your customers will not be able to pay via PayPal.
+Read our article on PayPal Connect for a more thorough rundown
+Why do purchases fail?
+There are instances where a purchase is attempted and fails. This can happen for multiple reasons, but:
+The most common are:
+Customers do not have enough funds on their cards.
+Their bank declines the payment. In this case, they need to ask their bank to "whitelist" Gumroad so a payment can be made.
+Their browser or IP address is throwing up red flags with our purchase system. They should try purchasing from a different browser, device, or network connection in such cases.
+How can I make a test purchase on one of my own products?
+To test how purchases work and how your files are delivered to customers, we have created a test purchase functionality. Please don't pay for your products, as it can be seen as fraud by our payment processors.
+You can also get some of our free demo products here to experience Gumroad through the eyes of your customers. These products will be added to your library and you can get a feel for the customer journey.
+Related Articles
+Adding PayPal to checkout
+Testing a purchase
+Why customer payments fail

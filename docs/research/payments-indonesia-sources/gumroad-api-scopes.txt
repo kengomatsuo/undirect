@@ -1,0 +1,7 @@
+SOURCE https://gumroad.com/api
+fetched 2026-11-23, Claude in Chrome (page renders in JavaScript; read with document.body.innerText, read only). Quoted scope lines:
+"view_sales: read access to the user's products' sales information, including sales counts. This scope is also required in order to subscribe to the user's sales."
+"view_payouts: read access to the user's payouts information."
+"view_profile: read-only access to the user's public information and products."
+"edit_products: read/write access to the user's products and their variants, offer codes, custom fields, and files."
+(Also listed: view_tax_data, edit_emails, edit_profile.) So an OAuth token limited to view_sales and view_payouts is read-only.
