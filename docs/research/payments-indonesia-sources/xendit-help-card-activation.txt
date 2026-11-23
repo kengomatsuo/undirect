@@ -1,5 +1,0 @@
-SOURCE https://help.xendit.co/hc/en-us/articles/4418964809881-What-is-the-requirement-to-activate-Credit-Card-on-my-payment-method (Claude in Chrome page text 2026-11-23, curl 403; "Updated: July 14, 2026")
-Xendit charges "local and international credit / debit cards that are on Visa, Mastercard, and JCB with our aggregator business model", bring own MID for BCA Cards and AMEX; "charged cards from over 100 countries".
-"Cards payment method is only available for enterprises and non-individuals only."
-Indonesia business requirements for Cards: Company phone; estimated sales revenue; ownership details; management details; Akta Pendirian; SK Menkeh Akta Pendirian; Akta Perubahan Terakhir; SK Menkeh Akta Perubahan Terakhir; AD/ART; Board of Directors KTP; Business License (NIB/SIUP/TDP); other license if applicable.
-"The expected processing time is 21 working days" (Indonesia cards).

@@ -1,3 +1,0 @@
-SOURCE https://polar.sh/resources/pricing (Claude in Chrome page text, 2026-11-23; matches docs polar.sh/docs/merchant-of-record/fees.md)
-Starter free 5% + 50c; Pro $20/mo 3.8% + 40c; Growth $100/mo 3.6% + 35c; Scale $400/mo 3.4% + 30c. Plans replace the MoR premium with a fixed fee. Breakeven vs Starter: Pro ~ $1,379/mo sales.
-(Docs add: +1.5% for international cards (non-US); disputes $15; Stripe payout fees $2/month active + 0.25% + $0.25 per payout + cross-border up to 1%.)

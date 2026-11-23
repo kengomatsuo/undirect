@@ -1,3 +1,0 @@
-SOURCE https://fastspring.com/pricing/
-fetched 2026-11-23, Claude in Chrome get_page_text, read only.
-"FastSpring's team will work with you to determine simple, flat-rate pricing based on transaction type and your volume of business". "Our pricing works on a revenue-sharing model". "we have no minimum transaction volume." "Can we use you as a payment processor only? No." Quote form asks for site, product type, monthly volume and geographic split. No public percentage.

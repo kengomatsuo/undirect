@@ -1,7 +1,0 @@
-SOURCE https://developer.paypal.com/docs/api/transaction-search/v1/
-fetched 2026-11-23 (curl, text extracted). Transaction Search v1 reference lists only GET endpoints:
-GET /v1/reporting/transactions "Lists transactions."
-GET /v1/reporting/balances "List all balances."
-GET /v1/reporting/get-balance-net-summary "List all balance and net activity summary for each currency within a given date range."
-GET /v1/reporting/get-daily-summary (daily summary).
-Page text: "Transaction Search API to get the history of transactions for a PayPal account." Whether a REST app's client id and secret can be limited to this one feature in the dashboard was not read: UNSURE.

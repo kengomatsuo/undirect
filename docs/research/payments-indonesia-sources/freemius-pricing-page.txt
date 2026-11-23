@@ -1,3 +1,0 @@
-SOURCE https://freemius.com/pricing/
-fetched 2026-11-23, Claude in Chrome (document.body.innerText + screenshot), read only.
-"Sell software globally. Pay less." "No setup fees. No monthly fees. Pay only when you sell." "Lower pricing: 3.8% + 50¢ + gateway fees". Includes "Merchant of Record", "Sales tax & VAT handled for you", "Fraud & chargebacks handled". A promo banner "Black Friday | Cyber Monday" was showing; the same 3.8% + $0.50 is stated in the docs page freemius-docs-our-pricing.txt, so it is not only a promo.

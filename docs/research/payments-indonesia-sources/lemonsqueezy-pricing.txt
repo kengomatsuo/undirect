@@ -1,4 +1,0 @@
-SOURCE https://www.lemonsqueezy.com/pricing (Claude in Chrome page text 2026-11-23)
-Ecommerce: "5% + 50¢ *" per transaction ("Some payments may be subject to additional fees"); no monthly charge. Merchant of record: collects and files global VAT/sales tax. "16 different payment methods, including PayPal". Currencies: "support for up 95 different currencies" (FAQ elsewhere says 130+). Subscriptions: weekly/monthly/yearly supported.
-Payouts (FAQ): "Lemon Squeezy supports bank wire and PayPal payouts, which are automatically processed into your preferred method twice a month. In total, more than 200 countries are supported."
-Sells digital products only (SaaS, downloads, subscriptions, memberships, courses); prohibited list in docs. API exists. Support response 24-48 hours.

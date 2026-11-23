@@ -1,4 +1,0 @@
-SOURCE https://www.creem.io/pricing (Claude in Chrome page text, 2026-11-23)
-"3.9% + 40¢ per successful transaction"; monthly fees $0; setup fees $0. Example: sell $100.00 -> fee 3.90 + 0.40 -> $95.70.
-Taxes, payouts and protection built in (merchant of record). "Payouts are processed on the 1st and 15th of every month to your bank account or crypto wallet." Cards, debit cards, Apple Pay, Google Pay accepted. Usage-based billing and credit wallets exist.
-Payout fee (from docs.creem.io supported-countries): bank payout "7 EUR/USD or 1% of the payout amount, whichever is higher"; minimum payout balance and Indonesia's "**" Wise-restriction status not confirmed: UNSURE.

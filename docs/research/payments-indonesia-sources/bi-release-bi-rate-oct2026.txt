@@ -1,2 +1,0 @@
-SOURCE https://www.bi.go.id/en/publikasi/ruang-media/news-release/Pages/sp_2825426.aspx
-HTTP 000 fetched 2026-11-23

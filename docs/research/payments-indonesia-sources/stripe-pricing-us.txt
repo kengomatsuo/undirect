@@ -1,3 +1,0 @@
-SOURCE https://stripe.com/pricing (Claude in Chrome page text, 2026-11-23; the US pricing page, since /en-id/pricing redirected to it)
-"2.9% + 30¢ per successful transaction for domestic cards". Billing (subscriptions) pay-as-you-go: "0.7% of Billing volume". Invoicing Starter: "0.4% per paid invoice". "No setup fees, monthly fees, or hidden fees". 195 countries accepted.
-Managed Payments (merchant of record) price: NOT captured from this page: UNSURE. Lemon Squeezy's migration page says migrators get a promotional 1.5% through 2027-12-01 plus standard Stripe processing fees.

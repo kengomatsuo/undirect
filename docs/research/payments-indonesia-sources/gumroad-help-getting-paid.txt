@@ -1,6 +1,0 @@
-SOURCE https://gumroad.com/help/article/13-getting-paid (Claude in Chrome page text 2026-11-23; static fetch empty). Excerpts:
-Payout list includes "Indonesia IDR" (bank deposit in local currency, no "(min X)" marker).
-"We support direct bank deposits in the local currency for most countries. For countries where bank deposits are not available, we offer PayPal transfers as the only payment option. We do not support alternative payout modes like Payoneer, Wise, check, money order, wire transfer, etc."
-"Countries showing '(min X)' have a higher minimum payout threshold than the standard $100 USD requirement. We can only pay out to a local bank account and in your local currency. We cannot pay you out in USD if it is not listed above as your country's payout currency. All currency conversions happen based on the exchange rates at the time of sale, not at the time of the payout."
-Schedule: "Every payout still includes sales made through the previous Friday (UTC)"; payout day differs by payout type (Tuesday/Friday table; Indonesia's exact day not read: UNSURE).
-Buyer side: cards, PayPal and local methods (e.g. UPI in India) at checkout depending on buyer location, separate from payout.
