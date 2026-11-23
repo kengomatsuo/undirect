@@ -46,3 +46,23 @@ starting point, not approved copy.
 - Music: Mixkit only (owner, 2026-11-18).
 - Files for the owner go under `~/Downloads/cutling-2-release-posts/`; the review page is a private
   Artifact.
+
+## From asg-social-2, the calendar's holder (2026-11-23)
+
+- Scheduled Dec 1-3, X only: Dec 1 07:45 WIB #24 "In May I capped a snippet at 1,000 characters..."
+  (a Cutling story that touches 2.0's 5,000), then engagement questions with no app pitch at Dec 1
+  20:45, Dec 2 10:15, Dec 2 20:15, Dec 3 09:15. Nothing scheduled on Instagram, Facebook, Threads,
+  TikTok or YouTube for Dec 1-3.
+- Planned, not scheduled, already about 2.0's fill-ins (`films-2/posts.json`, card ASG164): Cutling
+  "Five names" (Dec 2: TikTok 07:40, IG+FB Reel 07:47, Threads 07:53, YT Short 08:01; Dec 3 22:43 YT
+  16:9) and "Five taps" (Dec 3: TikTok 23:15, IG+FB 23:21, Threads 23:29, YT Short 23:37). Same
+  subject as these posts: fold them into this set or name which to drop, so 2.0 does not go out twice.
+- Free planned slots (WIB, `calendar-final/deliveries.json`): Dec 1 TikTok ja 05:50, IG id 12:15,
+  FB en 00:32 / ja 10:17 / id 19:32, Threads ja 05:49, YT Short 22:08. X: keep 3 h from 07:45 and
+  20:45 (Dec 1 12:30-16:30 is open). Odd minutes.
+- Hand-over shape: `films-2/posts.json` (films[] with key, app, files{9x16,16x9,cover}, posts[] of
+  {platform, when WIB, text, note}), plus per post `first_comment` (the Facebook link), for X a
+  separate `reply_text` carrying the link, and each text-only or picture post as an entry with
+  files{image}.
+- It schedules only on the owner's go given on the finished review page, and nothing before
+  Cutling 2.0 reads READY_FOR_SALE.
