@@ -22,7 +22,7 @@ Sample curl Request:
 
 ```
 curl https://api.xendit.co/transactions?types=PAYMENT&statuses=SUCCESS&channel_categories=EWALLET&channel_categories=RETAIL_OUTLET&limit=2 -X GET \
--u xnd_development_O46JfOtygef9kMNsK+ZPGT+ZZ9b3ooF4w3Dn+R1k+2fT/7GlCAN3jg==:
+-u xnd_development_<example key from Xendit docs, redacted>+ZPGT+ZZ9b3ooF4w3Dn+R1k+2fT/7GlCAN3jg==:
 ```
 
 SecurityHTTPType basic
