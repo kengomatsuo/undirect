@@ -44,7 +44,7 @@ function world({ slowStorage = false, matchedRules = null,
   const tabs = new Map([7, 8, 9, ...privateTabs].map((id) => [id, { id, url: privateTabs.includes(id) ? "https://secret.com/" : "https://www.site.com/", incognito: privateTabs.includes(id) }]));
   // The Mac app's queue, handed over once, the way the native handler does.
   let queued = [...fromApp];
-  const listeners = { message: [], before: [], committed: [], created: [], updated: [], gone: [] };
+  const listeners = { message: [], before: [], committed: [], failed: [], created: [], updated: [], gone: [] };
 
   const api = {
     runtime: {
@@ -112,6 +112,7 @@ function world({ slowStorage = false, matchedRules = null,
     webNavigation: {
       onBeforeNavigate: { addListener: (fn) => listeners.before.push(fn) },
       onCommitted: { addListener: (fn) => listeners.committed.push(fn) },
+      onErrorOccurred: { addListener: (fn) => listeners.failed.push(fn) },
     },
   };
 
@@ -151,7 +152,7 @@ function world({ slowStorage = false, matchedRules = null,
 
   const queue = (change) => queued.push(change);
 
-  return { api, calls, local, session, send, emit, settle, close, queue, releaseStorage };
+  return { api, calls, local, session, send, emit, settle, close, queue, releaseStorage, tabs };
 }
 
 const main = (tabId, url) => ({ frameId: 0, tabId, url });
@@ -187,6 +188,60 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   w.send({ type: "undirect:hello", site: "site.com" }, 7);
   await w.settle();
   ok("and not again on its next load", w.calls.told.length === 1, JSON.stringify(w.calls.told));
+}
+
+{
+  // A destination already blocked: the rule refuses the request, the
+  // navigation never commits, and Safari shows its error page in the tab with
+  // the site one Back away (oploverz.ch to invl.me, 2026-11-23).
+  const w = world();
+  await w.settle();
+  w.local.everywhere = { "pop.example": "block" };
+  w.send({ type: "undirect:hello", site: "site.com" }, 7);
+  await w.settle();
+  w.send({ type: "undirect:tap", site: "site.com", expect: "" }, 7);
+  w.emit("before", main(7, "https://pop.example/x"));
+  w.tabs.get(7).url = "https://pop.example/x";
+  w.emit("failed", main(7, "https://pop.example/x"));
+  await w.settle();
+  ok("a refused redirect is walked back", w.calls.goBack.includes(7), JSON.stringify(w.calls.goBack));
+  w.send({ type: "undirect:hello", site: "site.com" }, 7);
+  await w.settle();
+  ok("and the page it returns to draws the stop",
+     w.calls.told.length === 1 && w.calls.told[0].kind === "redirect" && w.calls.told[0].base === "pop.example",
+     JSON.stringify(w.calls.told));
+}
+
+{
+  // The same refusal with Safari keeping the tab on the page: nothing to walk
+  // back, so the page is told straight away.
+  const w = world();
+  await w.settle();
+  w.local.everywhere = { "pop.example": "block" };
+  w.send({ type: "undirect:hello", site: "site.com" }, 7);
+  await w.settle();
+  w.send({ type: "undirect:tap", site: "site.com", expect: "" }, 7);
+  w.emit("before", main(7, "https://pop.example/x"));
+  w.emit("failed", main(7, "https://pop.example/x"));
+  await w.settle();
+  ok("a refusal that left the page in place is not walked back", w.calls.goBack.length === 0,
+     JSON.stringify(w.calls.goBack));
+  ok("and the page is told at once",
+     w.calls.told.length === 1 && w.calls.told[0].kind === "redirect", JSON.stringify(w.calls.told));
+}
+
+{
+  // A failed load the guard let through is the network's business, not a stop.
+  const w = world();
+  await w.settle();
+  w.send({ type: "undirect:hello", site: "site.com" }, 7);
+  await w.settle();
+  w.send({ type: "undirect:tap", site: "site.com", expect: "elsewhere.example" }, 7);
+  w.emit("before", main(7, "https://elsewhere.example/x"));
+  w.emit("failed", main(7, "https://elsewhere.example/x"));
+  await w.settle();
+  ok("a failed load nobody stole stays quiet",
+     w.calls.goBack.length === 0 && w.calls.told.length === 0, JSON.stringify(w.calls));
 }
 
 {

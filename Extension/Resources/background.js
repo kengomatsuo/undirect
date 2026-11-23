@@ -734,18 +734,23 @@ async function arrived(details) {
     return;
   }
 
-  const target = base || pending.base;
+  await undo(details.tabId, entry, base || pending.base, details.url, pending.because);
+}
+
+// A taken press, recorded and walked back. The tab is on the page it was taken
+// to, or on Safari's error page for it when a block rule refused the request.
+async function undo(tabId, entry, target, url, because) {
   // Remembered so the page it was taking us to cannot relabel the tab when its
   // own content script announces itself. See hello().
   entry.stolen = { base: target, at: Date.now() };
-  await note(details.tabId, {
+  await note(tabId, {
     kind: "redirect",
     base: target,
     host: target,
-    url: details.url,
+    url,
     blocked: true,
     learn: true,
-    because: pending.because,
+    because,
     site: entry.site,
   });
 
@@ -758,11 +763,51 @@ async function arrived(details) {
   saveSession();
 
   try {
-    if (api.tabs?.goBack) await api.tabs.goBack(details.tabId);
-    else if (entry.url) await api.tabs.update(details.tabId, { url: entry.url });
+    if (api.tabs?.goBack) await api.tabs.goBack(tabId);
+    else if (entry.url) await api.tabs.update(tabId, { url: entry.url });
   } catch (e) {
     // nothing to go back to, so the record is all there is
   }
+}
+
+// A redirect the block rule refused never commits, so arrived() never hears of
+// it, and Safari leaves the tab on its "blocked by a content blocker" page with
+// the site the user was reading one Back away (oploverz.ch to invl.me,
+// 2026-11-23). The refusal is the same theft, so it is undone the same way.
+// If Safari kept the tab on the page instead, there is nothing to walk back and
+// the page is told at once.
+async function refused(details) {
+  if (!mainFrame(details)) return;
+  const pending = pendings.get(details.tabId);
+  if (!pending?.stolen || pending.url !== details.url) return;
+  pendings.delete(details.tabId);
+  unjudged.delete(details.tabId);
+
+  await restored;
+  const entry = tabEntry(details.tabId);
+  let shown = "";
+  try {
+    shown = (await api.tabs.get(details.tabId))?.url ?? "";
+  } catch (e) {
+    // the tab is gone
+    return;
+  }
+  const still = entry.site && Site.sameSite(Nav.destination(shown), entry.site);
+  if (still) {
+    await note(details.tabId, {
+      kind: "redirect",
+      base: pending.base,
+      host: pending.base,
+      url: details.url,
+      blocked: true,
+      learn: true,
+      because: pending.because,
+      site: entry.site,
+    });
+    tellWaiting(details.tabId);
+    return;
+  }
+  await undo(details.tabId, entry, pending.base, details.url, pending.because);
 }
 
 // A window the page opened. Safari does not offer
@@ -860,6 +905,7 @@ async function judgeOpened(tabId, url) {
 
 api.webNavigation?.onBeforeNavigate?.addListener?.(announced);
 api.webNavigation?.onCommitted?.addListener?.(arrived);
+api.webNavigation?.onErrorOccurred?.addListener?.(refused);
 api.tabs?.onCreated?.addListener?.((tab) => {
   noteTab(tab);
   opened(tab);
