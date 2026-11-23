@@ -1,6 +1,0 @@
-# With the keyboard up in a note, hold the globe key: the list of keyboards.
-appId: com.apple.mobilenotes
----
-- longPressOn:
-    point: "8%,93%"
-- waitForAnimationToEnd

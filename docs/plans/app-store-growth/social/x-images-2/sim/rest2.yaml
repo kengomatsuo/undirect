@@ -1,10 +1,10 @@
-# One Maestro run for the remaining iPhone captures, so the driver starts once. Screenshots land in the working folder.
-# Each part is an optional subflow, so a part the system refuses does not lose the captures after it.
-# Notes is not on the simulator (launching com.apple.mobilenotes fails with FBSOpenApplicationService code 4), so the
-# Paste menu and the keyboard list come from Safari's address field.
+# The iPhone screens for x03, x13, x07 and x32 (and the first tries at #8, #15 and #20): one Maestro run, few waits,
+# each part an optional subflow so a refused step does not lose the captures after it. Screenshots land in Maestro's output
+# folder and job-rest2.sh copies them to src/sim/
 appId: com.apple.mobilesafari
 ---
-# Safari with exactly nine real pages, then its tab overview (#3; the first reply says "I'm on 9 right now")
+# Safari's tab overview with nine real pages (#3; the first reply says "I'm on 9 right now"). The first run left nine
+# open when its time ran out; only when the overview shows another count are they closed and opened again.
 - runFlow:
     label: "nine tabs (#3)"
     optional: true
@@ -12,123 +12,123 @@ appId: com.apple.mobilesafari
       - pressKey: Home
       - launchApp:
           appId: com.apple.mobilesafari
-      - waitForAnimationToEnd
-      - longPressOn:
-          point: "86%,94%"
-      - waitForAnimationToEnd
-      - tapOn:
-          text: "Close All.*"
-          optional: true
-      - waitForAnimationToEnd
-      - tapOn:
-          text: "Close All.*"
-          optional: true
-      - waitForAnimationToEnd
-      - tapOn:
-          text: "Don.t Close Automatically"
-          optional: true
-      - waitForAnimationToEnd
-      - tapOn:
-          point: "50%,94%"
-      - waitForAnimationToEnd
-      - inputText: "https://www.nytimes.com/games/wordle/index.html"
-      - pressKey: Enter
-      - waitForAnimationToEnd:
-          timeout: 8000
-      - openLink: "https://en.m.wikipedia.org/wiki/Banana_bread"
-      - waitForAnimationToEnd:
-          timeout: 7000
-      - openLink: "https://weather.com/weather/today/l/40.75,-73.99"
-      - waitForAnimationToEnd:
-          timeout: 7000
-      - openLink: "https://www.nps.gov/yose/index.htm"
-      - waitForAnimationToEnd:
-          timeout: 7000
-      - openLink: "https://news.ycombinator.com"
-      - waitForAnimationToEnd:
-          timeout: 7000
-      - openLink: "https://en.m.wikipedia.org/wiki/Wheat_Field_with_Cypresses"
-      - waitForAnimationToEnd:
-          timeout: 7000
-      - openLink: "https://developer.mozilla.org/en-US/docs/Web/API/Window/open"
-      - waitForAnimationToEnd:
-          timeout: 7000
-      - openLink: "https://support.apple.com/guide/iphone/open-and-close-tabs-iph489b9313f/ios"
-      - waitForAnimationToEnd:
-          timeout: 7000
-      - openLink: "https://en.m.wiktionary.org/wiki/tab"
-      - waitForAnimationToEnd:
-          timeout: 9000
       - tapOn:
           point: "86%,94%"
       - waitForAnimationToEnd:
-          timeout: 5000
-      # a page that did not open leaves fewer than nine: open another and look again, twice at most
+          timeout: 4000
       - runFlow:
           when:
-            visible: "[1-8] Tabs"
+            notVisible: "9 Tabs"
           commands:
             - tapOn:
                 point: "86%,94%"
+            - longPressOn:
+                point: "86%,94%"
             - waitForAnimationToEnd
-            - openLink: "https://www.metmuseum.org/art/collection/search/436535"
+            - tapOn:
+                text: "Close All.*"
+                optional: true
+            - waitForAnimationToEnd
+            - tapOn:
+                text: "Close All.*"
+                optional: true
+            - waitForAnimationToEnd
+            - tapOn:
+                text: "Don.t Close Automatically"
+                optional: true
+            - waitForAnimationToEnd
+            - tapOn:
+                point: "50%,94%"
+            - waitForAnimationToEnd
+            - inputText: "https://www.nytimes.com/games/wordle/index.html"
+            - pressKey: Enter
+            - waitForAnimationToEnd:
+                timeout: 8000
+            - openLink: "https://en.wikipedia.org/wiki/Banana_bread"
+            - waitForAnimationToEnd:
+                timeout: 7000
+            - openLink: "https://weather.com/weather/today/l/40.75,-73.99"
+            - waitForAnimationToEnd:
+                timeout: 7000
+            - openLink: "https://www.nps.gov/yose/index.htm"
+            - waitForAnimationToEnd:
+                timeout: 7000
+            - openLink: "https://news.ycombinator.com"
+            - waitForAnimationToEnd:
+                timeout: 7000
+            - openLink: "https://en.wikipedia.org/wiki/Wheat_Field_with_Cypresses"
+            - waitForAnimationToEnd:
+                timeout: 7000
+            - openLink: "https://developer.mozilla.org/en-US/docs/Web/API/Window/open"
+            - waitForAnimationToEnd:
+                timeout: 7000
+            - openLink: "https://support.apple.com/guide/iphone/open-and-close-tabs-iph489b9313f/ios"
+            - waitForAnimationToEnd:
+                timeout: 7000
+            - openLink: "https://en.wikipedia.org/wiki/Tab_(interface)"
             - waitForAnimationToEnd:
                 timeout: 9000
             - tapOn:
                 point: "86%,94%"
             - waitForAnimationToEnd:
                 timeout: 5000
-      - runFlow:
-          when:
-            visible: "[1-8] Tabs"
-          commands:
-            - tapOn:
-                point: "86%,94%"
-            - waitForAnimationToEnd
-            - openLink: "https://en.m.wikipedia.org/wiki/Half_Dome"
-            - waitForAnimationToEnd:
-                timeout: 9000
-            - tapOn:
-                point: "86%,94%"
-            - waitForAnimationToEnd:
-                timeout: 5000
+            # a page that did not open leaves fewer than nine: open another and look again, twice at most
+            - runFlow:
+                when:
+                  visible: "[1-8] Tabs"
+                commands:
+                  - tapOn:
+                      point: "86%,94%"
+                  - waitForAnimationToEnd
+                  - openLink: "https://www.nps.gov/yose/planyourvisit/index.htm"
+                  - waitForAnimationToEnd:
+                      timeout: 9000
+                  - tapOn:
+                      point: "86%,94%"
+                  - waitForAnimationToEnd:
+                      timeout: 5000
+            - runFlow:
+                when:
+                  visible: "[1-8] Tabs"
+                commands:
+                  - tapOn:
+                      point: "86%,94%"
+                  - waitForAnimationToEnd
+                  - openLink: "https://en.wikipedia.org/wiki/Half_Dome"
+                  - waitForAnimationToEnd:
+                      timeout: 9000
+                  - tapOn:
+                      point: "86%,94%"
+                  - waitForAnimationToEnd:
+                      timeout: 5000
       - takeScreenshot: rest-0-tabs
-# The Paste menus: holding the address bar of an open page, then a new tab's empty address field (#13);
-# with the keyboard up, holding the globe key lists the keyboards (#20)
+# The Paste menu over a new tab's empty address field (#13); with the keyboard up, holding the globe key lists the keyboards (#20)
 - runFlow:
     label: "paste menu and keyboard list (#13, #20)"
     optional: true
     commands:
       - tapOn:
           point: "86%,94%"
-      - waitForAnimationToEnd
       - longPressOn:
           point: "50%,94%"
-      - waitForAnimationToEnd
       - takeScreenshot: rest-1-address-menu
       - tapOn:
           point: "50%,40%"
-      - waitForAnimationToEnd
       - tapOn:
           point: "86%,94%"
-      - waitForAnimationToEnd
       - tapOn:
           point: "14%,94%"
-      - waitForAnimationToEnd
       - takeScreenshot: rest-2-newtab
-      - runFlow:
-          when:
-            visible: "Address"
-          commands:
-            - tapOn: "Address"
+      - tapOn:
+          text: "Search or enter website|Address"
+          optional: true
       - runFlow:
           when:
             notVisible: "Paste.*"
           commands:
             - tapOn:
-                text: "Search or enter website"
+                text: "Search or enter website|Address"
                 optional: true
-      - waitForAnimationToEnd
       - takeScreenshot: rest-2-paste
       - longPressOn:
           text: "Next keyboard"
@@ -139,9 +139,8 @@ appId: com.apple.mobilesafari
           commands:
             - longPressOn:
                 point: "8%,96%"
-      - waitForAnimationToEnd
       - takeScreenshot: rest-3-globe
-# Settings > General > Keyboard: Text Replacement (#8), and the Keyboards list (#20, second choice)
+# Settings > General > Keyboard > Text Replacement (#8), then the Keyboards list (#20, second choice)
 - runFlow:
     label: "text replacement (#8)"
     optional: true
@@ -149,7 +148,6 @@ appId: com.apple.mobilesafari
       - launchApp:
           appId: com.apple.Preferences
           stopApp: true
-      - waitForAnimationToEnd
       - scrollUntilVisible:
           element:
             text: "General"
@@ -157,7 +155,6 @@ appId: com.apple.mobilesafari
           timeout: 8000
           optional: true
       - tapOn: "General"
-      - waitForAnimationToEnd
       - scrollUntilVisible:
           element:
             text: "Keyboard"
@@ -165,20 +162,19 @@ appId: com.apple.mobilesafari
           timeout: 8000
           optional: true
       - tapOn: "Keyboard"
-      - waitForAnimationToEnd
       - takeScreenshot: rest-4a-keyboard
       - tapOn: "Text Replacement"
-      - waitForAnimationToEnd
+      - waitForAnimationToEnd:
+          timeout: 3000
       - takeScreenshot: rest-4-text-replacement
-      # back to Keyboard with the edge swipe, then the Keyboards list
       - swipe:
           start: "1%,50%"
           end: "90%,50%"
-      - waitForAnimationToEnd
       - tapOn:
           text: "Keyboards.*"
           optional: true
-      - waitForAnimationToEnd
+      - waitForAnimationToEnd:
+          timeout: 3000
       - takeScreenshot: rest-4b-keyboards
 # The demo stream page stacks copies of itself when Play is tapped; holding Back lists them (#7)
 - runFlow:
@@ -187,14 +183,12 @@ appId: com.apple.mobilesafari
     commands:
       - openLink: "https://undirect.matsuokengo.com/demo/back/"
       - waitForAnimationToEnd:
-          timeout: 8000
+          timeout: 6000
       - takeScreenshot: rest-6-kickoff
       - tapOn:
           point: "50%,30%"
-      - waitForAnimationToEnd
       - tapOn:
           point: "50%,30%"
-      - waitForAnimationToEnd
       - longPressOn:
           text: "Back"
           optional: true
@@ -204,7 +198,6 @@ appId: com.apple.mobilesafari
           commands:
             - longPressOn:
                 point: "13%,94%"
-      - waitForAnimationToEnd
       - takeScreenshot: rest-7-back-list
 # Settings > Apps > Cutling > Paste from Other Apps: Ask, Deny or Allow (#15)
 - runFlow:
@@ -214,26 +207,24 @@ appId: com.apple.mobilesafari
       - launchApp:
           appId: com.apple.Preferences
           stopApp: true
-      - waitForAnimationToEnd
       - scrollUntilVisible:
           element:
             text: "Apps"
           direction: DOWN
           timeout: 10000
       - tapOn: "Apps"
-      - waitForAnimationToEnd
       - scrollUntilVisible:
           element:
             text: "Cutling"
           direction: DOWN
           timeout: 15000
       - tapOn: "Cutling"
-      - waitForAnimationToEnd
       - takeScreenshot: rest-9-cutling-settings
       - tapOn:
           text: "Paste from Other Apps"
           optional: true
-      - waitForAnimationToEnd
+      - waitForAnimationToEnd:
+          timeout: 3000
       - takeScreenshot: rest-10-paste-setting
 # News articles in Safari, as they first open (#32)
 - runFlow:
@@ -242,9 +233,9 @@ appId: com.apple.mobilesafari
     commands:
       - openLink: "https://www.theguardian.com/games/2026/nov/19/tips-for-playing-grand-theft-auto-vi"
       - waitForAnimationToEnd:
-          timeout: 12000
+          timeout: 10000
       - takeScreenshot: rest-5-guardian
       - openLink: "https://www.independent.co.uk/tech/siri-apple-iphone-personal-agent-meta-muse-b3088666.html"
       - waitForAnimationToEnd:
-          timeout: 12000
+          timeout: 10000
       - takeScreenshot: rest-5b-independent
