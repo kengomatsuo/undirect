@@ -84,3 +84,12 @@ The other 174 storefronts follow by equalization, for example Cutling Â¥800 to Â
 | NativeShelf | both | Waits on owner's sign-in | Sign-in is an emailed code; nativeshelf.com/login left open in Chrome. |
 | MacUpdate | both | Not listed | Search finds neither app (macupdate.com/find/mac/cutling, /undirect). |
 | Uptodown | both | Not listed | cutling.en.uptodown.com/mac and undirect... return 404. |
+
+## Inbox, 2026-11-23
+
+| Email | Status | What the site shows / why |
+|---|---|---|
+| MacPip Awards 2026 (Nov 23) | Read | Every MacPip app is nominated; one vote per award per person until Dec 10, top three out Dec 11 (laurel on the MacPip page and badge, a post on X). Cutling is in at macpip.com/awards/2026/utilities/cutling. Leaders hold 3 to 15 votes. Makers may ask users to vote; Pips, Friends badges and paid spots change nothing; at most 5 votes per network count. Undirect joins on its MacPip launch day, Dec 8. |
+| NativeShelf, Cutling unpublished (Nov 22) | Site fixed; re-review waits | Checker loaded cutling.matsuokengo.com/en-us/ (the root's canonical on Cutling; the en-US language redirect on Undirect), and the badge strip lived on the root home only. Both generators now put the strip on every language's home; live on /en-us/, /de-de/ and / for both sites (curl, Nov 23). Re-review needs the NativeShelf account under the Gmail address; Chrome is signed in as kenneth@matsuokengo.com, which holds no apps. |
+| ScrollLaunch, verify Cutling / Undirect (Nov 22) | Verified; scheduling waits | Both passed "Verify Badge" ("Product Verified"); dashboard no longer shows Unverified. Still Draft: Schedule Product (free, Cutling's first open week Mar 1-7, 2027) is a form submit. |
+| MacNative | No change | Profile: Cutling Live, Undirect Rejected Nov 20 for fit, not for a badge. |
