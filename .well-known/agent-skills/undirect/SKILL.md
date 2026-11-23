@@ -19,7 +19,7 @@ Key facts:
 - What it shows: every address a page tried to send you to, listed by site, whether it was stopped or not. Each can be allowed or blocked on that site alone or everywhere. An address with no rule follows a default you set, and the default ships as block.
 - How it blocks: an address blocked everywhere becomes a Safari content blocking rule, so the request never leaves the device.
 - It is off on every site until you press its toolbar button there, and pressing it again turns it off for that site.
-- Price: USD 1.99 in the US App Store when this file was built (2026-11-21), paid once. No subscription, no in-app purchases, no ads. One purchase covers iPhone, iPad and Mac.
+- Price: USD 1.99 in the US App Store when this file was built (2026-11-23), paid once. No subscription, no in-app purchases, no ads. One purchase covers iPhone, iPad and Mac.
 - Requirements: iOS and iPadOS 18 or later, macOS 15 or later. It works in Safari only.
 - Privacy: no account, no analytics, no server. The App Store privacy label says Data Not Collected. Nothing leaves the device unless you press Report, which opens a prefilled GitHub issue that you submit yourself.
 - The source code is public: https://github.com/kengomatsuo/undirect
