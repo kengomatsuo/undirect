@@ -47,6 +47,21 @@ What the film should show: the snap, then the tab opening the result's real
 address, never `bing.com/fd/ls/...`. The swap is click tracking, harmless, so
 this is a clean demonstration and not a scam.
 
+
+**Filming on a 440x956 iPhone (added 2026-11-24).** On `safari extension` the
+first organic title sits below an image carousel and an AI answer (top of the
+first result at about y 720 CSS px), so use a navigational query instead:
+`https://www.bing.com/search?q=kbbi`. Its first screen is plain results (no
+carousel, no AI block, checked by screenshot in WebKit with the `iPhone 16 Pro
+Max` profile: screen 440x956, page viewport 440x763). Tap the blue title
+"Arti kata - Kamus Besar Bahasa Indonesia (KBBI) Online": the text sits at
+about **x 40-400, y 170-200 CSS px from the top of the page**, inside an anchor
+that covers y 148-273. On screen add Safari's top inset (status bar) to that y.
+Two runs, both alike: `href` `https://www.kbbi.web.id/` at `pointerdown`,
+rewritten at `mousedown` to `/fd/ls/GLinkPing.aspx?...&redir=...`, still Bing's
+at `click`. The six links under it (`abjad/abjat` at y 359-387, `akte/akta` at
+y 412-440, ...) are ordinary result links too.
+
 ### A, second site: Cosmopolitan through Skimlinks (2026-11-23)
 
 **URL:** `https://www.cosmopolitan.com/style-beauty/beauty/a46539844/cosmopolitan-awards/`
@@ -138,6 +153,84 @@ page you typed it from. Reproduced twice that way from `https://pahe.ink/`
 Three Backs never reached pahe.ink. Each Back first commits a
 `budgetezy.org/4/10afaec35404ffd5edbad0131bb38ee6?ibid=...` entry, which pushes
 two more of itself and forwards, so the trap refills as you press.
+
+
+### B in one document: infox.ru (added 2026-11-24)
+
+This is the shape `guard.js` catches: a `popstate` and, in the same document,
+a navigation to another site right after it. The budgetezy chain above is not:
+each of its Backs is a cross-document load.
+
+**The page's own inline script**, in the `<head>` of `https://www.infox.ru/`
+and of its article pages (Russian news site, loads from Indonesia):
+
+```js
+window.history.pushState({}, "", location.href);
+window.onpopstate = function (e) {
+	e.preventDefault();
+	if(e.state != null)
+		location.replace("https://cis.infox.sg/topnews/?id=topnews.app");
+};
+```
+
+It fires only when Back lands on an entry whose state is `{}`, which is one of
+the page's own pushed entries in the same document. A fresh visit has
+`[previous page, infox (null), infox ({})]`, and the first Back lands on the
+null entry, so nothing happens on the very first visit. A reload makes it
+reliable: the reloaded document pushes again, giving
+`[..., infox (null), infox ({}), infox ({})]`, and Back then lands on a `{}`
+entry inside the same document.
+
+**Steps:**
+1. Open any page first (so Back has somewhere honest to go), then open
+   `https://www.infox.ru/`.
+2. Reload the page once.
+3. Tap once on a blank spot so the page has user activation, for example the
+   heading "ГЛАВНОЕ ЗА СЕГОДНЯ" at about (220, 100) CSS px. It is an `H1`,
+   not a link.
+4. Press Back once. The tab goes to `https://cis.infox.sg/topnews/?id=topnews.app`
+   instead of staying on infox.ru or returning to the page before it.
+
+**Evidence**, `popB.mjs`, three runs (two with no tap, one with the tap at
+(220, 100)), all alike. Times in ms after Back:
+
+| ms | event |
+| --- | --- |
+| 1-4 | `navigate` type `traverse` to `https://www.infox.ru/` |
+| 2-5 | `popstate`, `e.state` = `{}`, same document (no `pagehide`) |
+| 2-5 | `navigate` type `replace` to `https://cis.infox.sg/topnews/?id=topnews.app`, `userInitiated: false`, `cancelable: true` |
+| ~880-915 | commit of `cis.infox.sg/topnews/` |
+| ~1060-1085 | `cis.infox.sg` calls `pushState({}, "", location.href)` on itself |
+
+The replace starts 0 ms after the popstate, far inside the guard's 700 ms
+window, and it is cancelable, so `judgeUnasked()` gets to rule on it. `infox.ru`
+and `infox.sg` are different base domains. No ad network is involved: it is the
+publisher's own inline script, sending readers to its sister aggregator.
+
+**Without a reload:** open `https://www.infox.ru/`, tap a headline, then press
+Back three times. Back 1 lands on the article's null entry (nothing), Back 2
+returns to the homepage, Back 3 is hijacked as above (one run, popstate then
+the replace 1 ms later). This path depends on Back 2 *reloading* the homepage.
+Playwright's WebKit never uses the back-forward cache (even `wikipedia.org`
+came back `pageshow persisted=false`), but Safari may restore the homepage
+from it, and a restored page would make Back 3 land on the null entry. So
+film the reload path.
+
+**Other pages with a popstate redirect, checked and rejected:**
+
+- `walkjogrun.net`: `popstate` then `location.replace(home_url)`, but to its
+  own homepage, and only for visitors referred by Google (90% of them).
+- `1osb.com/afu.php`, `hai8g.com/4/<zone>`, `1osb.com/smart.php` (Monetag
+  OnClick pages): each pushes three `/partitial/5117867?var=<zone>` entries,
+  then sets `window.location.href` to the offer. No popstate handler, so it is
+  the same cross-document shape as budgetezy.
+- `skidkaonline.ru`, `alchetron.com`, `openthesaurus.de`, `tennispotting.it`,
+  `staikudrik.com`, `cholteth.com`, `www2.iris.gov.hk`: their popstate
+  handlers close a modal or reload the same page, never another host.
+- Found through PublicWWW: `"onpopstate" "location.replace" "pushState"`
+  (11 of about 440 visible to a guest), `"onpopstate" "infox.sg"` (infox.ru
+  and one hidden `a***.one`), `"popstate" "backRedirect"` (349, only
+  walkjogrun.net visible to a guest).
 
 ## Near misses, worth knowing
 
