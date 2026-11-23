@@ -5,7 +5,7 @@ Scope: check, post and reply on the six Monholt accounts (X, Instagram, Facebook
 ## What Monholt has today (read from disk)
 
 - `claude-house-rules/scripts/social.ts`: reads all six accounts through official APIs (followers, posts with views, likes, replies, new replies). `scripts/youtube.ts`: upload, schedule, stats.
-- Sites (`undirect.matsuokengo.com` and others) are GitHub Pages; DNS sits on Cloudflare (`damon`/`harleigh.ns.cloudflare.com`) but records are DNS-only, pointing at `185.199.x.153`. No analytics tag found in `undirect/web` or `monholt/site`: site traffic is not measured today.
+- Sites: monholt.com and connect.monholt.com are Cloudflare Workers (repo `~/Repositories/monholt`), and Cloudflare Web Analytics already measured them, along with stya.app, solute.id, tolk.id and zhixingmandarin.id. The GitHub Pages sites (undirect., cutling. and matsuokengo.com) were not measured until ASG174 added the beacon on 2026-11-23. `claude-house-rules/scripts/traffic.ts` reads every host.
 - stya's ops: `pos/infra/selfhost/ops` (Bun job service, ~14.5k lines of non-test TS) plus `ops-console` (React build) at ops.stya.app on stya's 4 GB 2-core server, behind Cloudflare Tunnel and Access. Jobs, incidents, alerts, backups, migrations, responders, telemetry, status page. Decision record: `pos/docs/maintenance/ops-console-is-our-own-page.md` (built our own after rejecting Grafana, Netdata, Komodo, Coolify).
 
 ## Social schedulers
@@ -34,7 +34,7 @@ No open-source system does Monholt's job end to end. The nearest is Postiz, with
 
 ## Site traffic
 
-- Cloudflare Web Analytics: free, a JS snippet before `</body>`, works on sites not proxied by Cloudflare (manual snippet), up to 10 non-proxied sites. Queryable through the GraphQL API (`rumPageloadEventsAdaptiveGroups`), so a script beside `social.ts` can read it. No server. (developers.cloudflare.com/web-analytics/get-started, /web-analytics/limits)
+- Cloudflare Web Analytics (adopted, ASG174): free, a JS snippet before `</body>`, works on sites not proxied by Cloudflare (manual snippet), up to 10 non-proxied sites. Queryable through the GraphQL API (`rumPageloadEventsAdaptiveGroups`), so a script beside `social.ts` can read it. No server. (developers.cloudflare.com/web-analytics/get-started, /web-analytics/limits)
 - Umami: MIT, 40k stars, Node + Postgres; light, but needs a host.
 - Plausible CE: AGPL-3.0, needs ClickHouse; heavier.
 
@@ -49,4 +49,4 @@ Keep building our own, and borrow from Postiz's provider code (read, not vendore
 
 ## Merge stya's ops into it?
 
-No. stya's console controls a production server (restarts, migrations, backups, kill switch) behind Cloudflare Access, sized for a 4 GB box, and the house rule keeps stya-prod for stya and POS. Gain from merging: one login and one page. Risk: social tokens and a marketing tool's outages and dependencies sit beside production controls. Reuse the console's UI parts (React/Tailwind components) if a Monholt page is ever built, not the service.
+No. stya's console controls a production server (restarts, migrations, backups, kill switch) behind Cloudflare Access, sized for a 4 GB box, and the house rule keeps stya-prod for stya and POS. Gain from merging: one login and one page. Risk: social tokens and a marketing tool's outages and dependencies sit beside production controls. monholt.com already exists as a public Worker; an owner's Monholt console, if wanted, reuses the stya console's UI parts (React/Tailwind components) on its own host, not the stya service.
