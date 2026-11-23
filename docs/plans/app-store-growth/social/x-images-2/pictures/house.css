@@ -1,0 +1,8 @@
+/* Shared by the layouts: they only place real captures from ../src, with a plain caption where one helps. */
+@font-face { font-family: "Inter Tight"; src: url("../fonts/InterTight-var.woff2") format("woff2"); font-weight: 100 900 }
+* { box-sizing: border-box; margin: 0; padding: 0 }
+html, body { overflow: hidden }
+body { position: relative; font-family: -apple-system, "SF Pro Text", system-ui, sans-serif; -webkit-font-smoothing: antialiased }
+img { display: block }
+.shot { box-shadow: 0 0 0 1px rgba(0,0,0,.10), 0 10px 30px rgba(0,0,0,.12) }
+.cap { font: 600 22px/1.2 -apple-system, system-ui, sans-serif; color: #6e6e73; letter-spacing: -.01em }

@@ -1,0 +1,28 @@
+# Settings > Apps > Safari > Close Tabs: Safari can close tabs by itself after a day, a week or a month.
+appId: com.apple.Preferences
+---
+- launchApp:
+    appId: com.apple.Preferences
+    stopApp: true
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      text: "Apps"
+    direction: DOWN
+    timeout: 10000
+- tapOn: "Apps"
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      text: "Safari"
+    direction: DOWN
+    timeout: 15000
+- tapOn: "Safari"
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      text: "Close Tabs"
+    direction: DOWN
+    timeout: 10000
+- tapOn: "Close Tabs"
+- waitForAnimationToEnd

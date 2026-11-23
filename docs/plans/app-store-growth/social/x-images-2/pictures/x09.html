@@ -1,0 +1,18 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="size" content="1200x675">
+<!-- #9 Korean writes "tap" and "tab" the same way: 탭.
+     Real: Undirect's first Korean App Store screenshot before commit 03202520 (탭을 가로채는) and after it (터치를 가로채는),
+     Support/AppStore/ko/iphone/01.png, top part. -->
+<link rel="stylesheet" href="house.css">
+<style>
+  body { width: 1200px; height: 675px; background: #000; display: flex; gap: 6px }
+  .half { position: relative; width: 597px; height: 675px; overflow: hidden }
+  .half img { width: 600px; height: 675px; object-fit: cover; object-position: top }
+  .cap { position: absolute; left: 0; right: 0; bottom: 22px; text-align: center; color: rgba(255,255,255,.9); font-size: 24px }
+  .cap b { background: rgba(255,255,255,.94); color: #1d1d1f; padding: 8px 18px; border-radius: 18px; font-weight: 600 }
+</style>
+<body>
+  <div class="half"><img src="../src/ko-before-top.png"><p class="cap"><b>before</b></p></div>
+  <div class="half"><img src="../src/ko-after-top.png"><p class="cap"><b>now</b></p></div>
+</body>

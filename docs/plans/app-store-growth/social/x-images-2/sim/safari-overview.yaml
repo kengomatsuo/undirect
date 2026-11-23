@@ -1,0 +1,7 @@
+# Safari's tab overview, from the tabs button at the bottom right.
+appId: com.apple.mobilesafari
+---
+- tapOn:
+    point: "86%,94%"
+- waitForAnimationToEnd:
+    timeout: 5000

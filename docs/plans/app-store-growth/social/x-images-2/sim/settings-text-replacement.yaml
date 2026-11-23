@@ -1,0 +1,25 @@
+# Settings > General > Keyboard > Text Replacement, where every iPhone keeps "omw" -> "On my way!".
+appId: com.apple.Preferences
+---
+- launchApp:
+    appId: com.apple.Preferences
+    stopApp: true
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      text: "General"
+    direction: DOWN
+    timeout: 8000
+    optional: true
+- tapOn: "General"
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      text: "Keyboard"
+    direction: DOWN
+    timeout: 8000
+    optional: true
+- tapOn: "Keyboard"
+- waitForAnimationToEnd
+- tapOn: "Text Replacement"
+- waitForAnimationToEnd

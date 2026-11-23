@@ -1,0 +1,12 @@
+# The demo stream page stacks copies of itself in the history when Play is tapped; holding Back lists them.
+appId: com.apple.mobilesafari
+---
+- tapOn:
+    point: "50%,30%"
+- waitForAnimationToEnd
+- tapOn:
+    point: "50%,30%"
+- waitForAnimationToEnd
+- longPressOn:
+    point: "7%,94%"
+- waitForAnimationToEnd
