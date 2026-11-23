@@ -104,3 +104,9 @@ no follower jump; Paul credits USD 10 with about 450 followers. MacPip's own roc
 Cutling's launch brought 4 visitors (row 14). Pips, Friends badges and paid spots do not count in
 the awards. Votes per award are tiny (leaders at 4 to 15), so the votes that count come from people
 who already know the app.
+
+Outcome (Nov 23): the Cutling site had 1 Google impression and 0 clicks in 28 days (Search
+Console, sc-domain:matsuokengo.com), so no vote link went on it. The Fable writer hit its limit
+(resets Nov 29), so the post was written on Opus. Draft A posted with the owner's go:
+https://x.com/monholtco/status/2124734619706896731, link in our own reply
+(macpip.com/awards/2026/utilities/cutling). No paid boost.
