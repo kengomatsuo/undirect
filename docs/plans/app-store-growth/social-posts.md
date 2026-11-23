@@ -348,3 +348,16 @@ Four films, each one moment of using the app on a real page: Undirect "Next chap
 | 2026-12-03 23:21 | Instagram Reel + Facebook Reel (Business Suite, one post) | Five taps | This whole reply to a table booking took five taps. | waits until Cutling 2.0 is READY_FOR_SALE |
 | 2026-12-03 23:29 | Threads | Five taps | This reply to a table booking took five taps: the greeting asks her name, the booking … | waits until Cutling 2.0 is READY_FOR_SALE |
 | 2026-12-03 23:37 | YouTube Short @matsuokengo | Five taps | A long reply to a booking in five taps #iPhoneTips | waits until Cutling 2.0 is READY_FOR_SALE |
+
+### X picture and film posts (owner ask 2026-11-23)
+
+Added to X's schedule beside the text posts; X's Scheduled list read back 32 items including these six.
+
+| WIB | Piece | Post opens | Status |
+|---|---|---|---|
+| 2026-11-23 16:15 | Undirect sample film 16:9 (clipping-fixed render, 1280 px for X) | You tapped Play. You got five tabs. | scheduled |
+| 2026-11-24 16:45 | Undirect carousel slide 1 | Play, Download or the X: which one has sent you somewhere you never meant to go? | scheduled |
+| 2026-11-25 15:45 | Cutling sample film 16:9 | How many times this week have you typed your own address? | scheduled |
+| 2026-11-26 15:15 | Cutling carousel slide 1 | What's the one thing you're tired of typing on your phone? | scheduled |
+| 2026-11-27 15:45 | Undirect "Next chapter" 9:16 | Tapped Next chapter and got "your iPhone has 12 viruses"? | scheduled |
+| 2026-11-28 15:15 | Undirect "× means close" 9:16 | Tapped × on a pop-up and got a casino tab. | scheduled |
