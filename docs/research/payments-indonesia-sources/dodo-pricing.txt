@@ -1,0 +1,6 @@
+SOURCE https://dodopayments.com/pricing (Claude in Chrome page text, 2026-11-23)
+Standard plan: "4% + 40¢ per transaction"; unified billing, payments, cross-border tax & compliance; no fixed costs.
+Refund processing $1 per refund; chargeback/dispute handling $30 per dispute; Visa RDR $18; Ethoca alerts and deflections extra ($15 per deflection).
+Payouts: "Free. Fee of $5 if payout <$1000, standard FX applicable on non-USD settlements." "USD SWIFT Payouts International wire transfer settlements for non-US businesses $25".
+Adaptive Currency: 80+ currencies, merchant pays 0%, 2-4% FX fee charged to customer.
+(Eligibility is by the government ID country: see dodo-docs-accepted-countries.txt, which lists Indonesia.)

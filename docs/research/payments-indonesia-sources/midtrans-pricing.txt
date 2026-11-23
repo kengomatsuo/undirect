@@ -1,0 +1,12 @@
+SOURCE https://midtrans.com/pricing  (page text read in Claude in Chrome, fetched 2026-11-23; JS-rendered table)
+Transparent pricing: setting up is free, charged only for successful transactions.
+All charges are exclusive of VAT (PPN), except for QRIS, GoPay, and ShopeePay.
+BANK TRANSFER (BCA, BNI, Mandiri, Permata, BRI, CIMB VA, Danamon VA, BSI VA, SeaBank, Bank Saqu): IDR 4,000 /transaction
+E-WALLETS: GoPay 2%; QRIS 0,7%; ShopeePay 2%; DANA 1.5%; OVO 1,5%  (each /transaction; "Gaming & digital product companies are subject to different rates.")
+CREDIT CARD: 2,9% + IDR 2,000 /transaction. No additional fees other than card transaction fees.
+OVER THE COUNTER: Indomaret IDR 5,000; Alfamart/Alfamidi/DAN+DAN IDR 5,000 /transaction
+CARDLESS CREDIT: Akulaku PayLater 1.7%; Kredivo 2%
+Tabs: Online Payments | Withdrawal | All payment methods
+Blog text on same page (Indonesian): no subscription fee, no integration fee, Core API free. Fees + VAT are deducted directly in the Midtrans account so withdrawals are net. All transaction data with fee detail is visible in the Midtrans Dashboard.
+Same blog text lists (older figures, differ from table): ShopeePay 1.5%. Payouts/disbursement: bank account Rp5.000 per transaction; GoPay Rp1.000 per transaction.
+Fee handling: seller may add fee to gross_amount to pass on to buyer.

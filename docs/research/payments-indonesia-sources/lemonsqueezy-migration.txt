@@ -1,0 +1,196 @@
+SOURCE https://docs.lemonsqueezy.com/migration
+HTTP 200 fetched 2026-11-23
+Lemon Squeezy is no longer accepting new sign-ups and will shut down on March 31, 2027
+Learn more
+Docs
+Help
+Sign in
+Start with Managed Payments
+Get started
+→
+Migration
+Migration
+Docs
+API Reference
+API
+Guides
+LEMSQZY* Charge
+What is Merchant of Record?
+Help Center
+Lemon Squeezy is winding down
+Managed Payments
+Comparison
+Digital Fulfillment
+Affiliates
+FAQs
+Docs
+→
+Migration
+→
+Lemon Squeezy is winding down
+Understand your migration options and how to prepare your store to move off Lemon Squeezy.
+What’s happening
+Lemon Squeezy is winding down and will stop processing transactions on March 31, 2027. All Lemon Squeezy stores need to move off the platform by then, and extensions will not be offered.
+We recommend moving to
+Managed Payments
+, Stripe’s merchant of record solution for digital goods businesses. It handles the complexity of selling internationally—including tax compliance, fraud, disputes, support, and more—so you can stay focused on your products and customers.
+If your business isn’t eligible, or you rely on features or payment methods that Managed Payments doesn’t support, you’ll need to
+move to another provider
+.
+Key dates
+Your store keeps working as usual until March 31, 2027, so you have time to prepare and migrate.
+Date
+What happens
+November 16, 2026
+Lemon Squeezy stops accepting new users and new store sign-ups
+December 2, 2026
+Migration tooling for Managed Payments launches at app.lemonsqueezy.com/migration for eligible stores
+Mid-January 2027
+Recommended latest date to start your migration
+March 31, 2027
+Lemon Squeezy stops processing transactions, including subscription renewals
+Migration planning guide: How to prepare today
+If you are eligible to migrate to Managed Payments, we recommend you start planning for the migration today. The full process, including notifying customers, updating your links and integrations, and cleaning up remaining subscriptions, can take up to 8 weeks. To finish in time, start your migration no later than mid-January 2027.
+Use the time before December 2 to work through this checklist:
+Confirm eligibility
+Managed Payments is available to businesses based in
+supported locations
+that sell eligible digital products, such as SaaS, software, e-books, digital downloads, and self-paced courses. The full eligibility requirements are available
+here
+.
+You don’t need to create a Stripe account before tooling launches. The migration flow will help you create or connect one. If you’d like to get started early, you can create a Stripe account
+now
+.
+Review what’s supported
+Some Lemon Squeezy features work differently on Managed Payments or aren’t available.
+Compare Lemon Squeezy and Managed Payments
+and note anything your business relies on, especially:
+PayPal:
+Not currently supported on Managed Payments.
+Storefronts:
+Not included. You’ll need a separate website or storefront tool.
+Digital fulfillment:
+Not included. Managed Payments doesn’t deliver files, license keys, or download links. You’ll need a separate solution, and you can learn about fulfillment options
+here
+.
+Affiliates:
+Not included. You’ll need a separate affiliate platform, and you can learn about affiliate options
+here
+.
+Checkout:
+Managed Payments works with Stripe Checkout and Payment Links. If you use Lemon Squeezy checkout overlays or a custom checkout, plan to update it.
+Take stock of your store
+Make a list of what you’ll be moving:
+Products and discounts:
+Which are active, and which you can archive. Keep any discounts attached to active subscriptions.
+Subscriptions:
+How many you have, and how your customers pay for them.
+Product delivery:
+Whether Lemon Squeezy delivers files, license keys, or download links for you.
+Links and integrations:
+Every place Lemon Squeezy appears, including your website, checkout links, email sequences, affiliate links, in-app purchase flows, APIs, and webhooks. None of these redirect automatically.
+Reduce subscriptions that can’t migrate
+Subscriptions paid with PayPal can’t migrate to Managed Payments. To avoid disruption later, consider removing PayPal from your Lemon Squeezy checkout now, so new subscribers use a supported payment method. You can do this in your dashboard settings on Lemon Squeezy.
+Clean up your store
+Archive products and discounts you no longer use. Resolve open disputes and past-due subscriptions where you can.
+Back up your data
+Export the Lemon Squeezy data
+you may need in the future, such as customers, orders, and subscriptions. Make sure the contact email in your Lemon Squeezy account is up to date so you receive migration and tax updates.
+Plan your customer communications
+Your customers will notice a few changes after you migrate to Managed Payments:
+They’ll receive at least 14 days’ notice before their subscriptions move.
+Charges will appear on statements as LINK.COM* followed by your statement descriptor.
+They’ll manage subscriptions and payment methods through Link, Stripe’s consumer platform, instead of the Lemon Squeezy Customer Portal.
+They’ll access downloads and license keys through the fulfillment solution you connect.
+Update your help pages and plan any messages you want to send your customers before the official notice goes out.
+Review your roadmap
+Consider whether planned launches or other Q1 work need to move to make room for your migration.
+Moving to Stripe Managed Payments
+On December 2, 2026, we’ll launch guided migration tooling in the Migration Hub at app.lemonsqueezy.com/migration. We’ll email you when it’s ready.
+What the migration tooling does
+The tooling is designed to move eligible stores to Managed Payments with as little customer disruption as possible. It will:
+Create a Stripe sandbox with copies of your products and payment links, so you can test before changing your live store
+Create your products in Stripe and migrate your customers, with a report mapping Lemon Squeezy customer IDs to Stripe customer IDs
+Help you review which subscriptions are eligible and match each Lemon Squeezy product to its Stripe product
+Notify your customers, giving them at least 14 days’ notice before eligible subscriptions move
+Migrate eligible subscriptions automatically
+Subscription migration
+Before you confirm your migration, the Migration Hub shows which subscriptions can move automatically and flags any customers who need to take action.
+Most card subscriptions migrate without customers re-entering their payment details. Some subscriptions need extra steps:
+PayPal: PayPal subscriptions can’t migrate. Customers will need to start a new subscription using a supported payment method before their subscription can migrate.
+India-issued cards: Customers need to reauthorize their payment method once their subscription moves to Stripe.
+Cash App Pay: These subscriptions can migrate to Managed Payments, but not to another provider.
+Promotional pricing
+Lemon Squeezy merchants who migrate get a promotional Managed Payments price of 1.5% through December 1, 2027. Promotional pricing starts when you install the migration toolkit, as early as December 2, 2026. Standard Stripe payment processing fees also apply.
+See Managed Payments pricing
+.
+Moving to another provider
+If Managed Payments isn’t available where your business is based, or it doesn’t support features you need, you’ll need to move to another provider before March 31, 2027.
+Before you choose a provider, confirm that it:
+Supports businesses based in your country
+Supports the countries where your customers are and the payment methods you want to offer
+Provides the tax compliance coverage you need, and is clear about which obligations remain yours
+Offers the features you rely on, such as digital fulfillment, affiliates, or email marketing
+If you move to a provider that doesn’t act as the merchant of record, your business becomes responsible for tax compliance in every applicable jurisdiction.
+Some businesses may choose to form a legal entity in a country Managed Payments supports instead.
+Stripe Atlas
+, which helps businesses incorporate in the US, may be an option, and it can be free when you open a
+Stripe Treasury
+account within 7 days of incorporating. If you go this route, start right away so you can complete your entity setup and migration to Managed Payments before March 31, 2027. Talk with your tax and legal advisors first.
+Get help with your move
+Contact your new provider to understand its migration requirements. If you need to move data or subscriptions to another provider,
+complete our intake form
+(under my account > settings > migration) so we can understand your needs and help make the transition as smooth as possible. Only subscriptions paid by card can be migrated to another provider.
+Data exports and tax documents
+Export any Lemon Squeezy data you may need before March 31, 2027.
+Learn how to export your order data
+.
+Tax documents for earnings processed through Lemon Squeezy are issued through the payout account you used to receive funds, such as Stripe Express, PayPal, or Wise. We’ll share more information on accessing tax documents after migration, including any actions needed in 2027 and 2028.
+We’re here to help
+We know that moving platforms takes time and work. We’ll keep sharing clear information and send reminders as the deadline approaches. As a reminder, you can review our
+FAQs
+or
+reach out to us with questions
+.
+On this page
+What’s happening
+Key dates
+Migration planning guide: How to prepare today
+→
+Confirm eligibility
+→
+Review what's supported
+→
+Take stock of your store
+→
+Reduce subscriptions that can't migrate
+→
+Clean up your store
+→
+Back up your data
+→
+Plan your customer communications
+→
+Review your roadmap
+Moving to Stripe Managed Payments
+→
+What the migration tooling does
+→
+Subscription migration
+→
+Promotional pricing
+Moving to another provider
+→
+Get help with your move
+Data exports and tax documents
+We're here to help
+©
+2026
+Sold through Link, LLC f/k/a Lemon Squeezy LLC
+•
+Privacy
+•
+Terms
+•
+DPA
+•

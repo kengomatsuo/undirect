@@ -1,0 +1,291 @@
+SOURCE https://www.paddle.com/help/start/intro-to-paddle/which-countries-are-supported-by-paddle
+HTTP 200 fetched 2026-11-23
+Launch
+Explore the Paddle AI Toolkit and go from prompt to global selling.
+Learn more
+Support
+Help center
+Payment support
+Billing FAQs
+Why has Paddle charged me?
+Cancel a subscription
+Request a refund
+Login
+Paddle Billing
+ProfitWell Metrics
+Product
+Billing
+The only complete Merchant of Record solution purpose-built for SaaS and apps
+Checkout
+High performance, localized checkout
+Subscriptions
+Flexible, multi-product subscriptions
+Payments
+All-in-one payment tools
+Reporting
+Real-time payment and revenue analytics
+Invoicing
+Recurring, automated B2B billing
+Fraud protection
+Reduce your risk with fraud prevention & protection
+Metrics
+Real-time subscription analytics, 100% free
+Retain customers
+Radically reduce churn, automatically
+Tax & compliance
+Eliminate sales tax headaches with full, automatic global tax compliance
+In-app purchase
+Take advantage of lower fees, more control, and faster growth
+Solutions
+By use case
+Paddle for SaaS
+Paddle for apps
+Paddle for app studios
+Paddle for digital products
+Paddle for software
+Paddle for games
+By stage
+Startups
+Enterprise
+Nexus Mods
+9x revenue uplift in China
+HubX
+$100,000+ recovered in 72 days
+All customer stories
+Partner with Paddle
+RevenueCat integration
+Pricing
+Customers
+Developers
+Dev docs
+Get started with Paddle Billing
+Changelog
+Stay updated on everything we ship
+Developer sandbox
+Start exploring
+API reference
+Setup and maintain your data
+Security portal
+Data privacy, transparency, and access
+Platform status
+See if everything is running as it should be
+Quick start guides
+Create your first product
+Issue an invoice
+Connect a checkout
+New
+Docs MCP
+Give your AI assistant up-to-date Paddle knowledge
+Billing quickstart guide
+Developer docs
+Billing sandbox
+Engineering blog
+Resources
+Blog
+The latest SaaS insights, opinions and news
+Webinars
+Live and on-demand
+Resource hub
+Access to guides, reports, and best practices
+Selling SaaS Globally Handbook
+A SaaS leader's practical guide to global expansion
+Mobile App Monetization Guide
+Use a web monetization strategy to unlock growth for your mobile app
+Careers at Paddle
+Get started
+Book a demo
+Product
+Billing
+Checkout
+Subscriptions
+Payments
+Tax & compliance
+Invoicing
+Fraud protection
+Metrics
+Retain customers
+In-app purchase
+Reporting
+By use case
+Paddle for SaaS
+Paddle for apps
+Paddle for app studios
+Paddle for digital products
+Paddle for software
+Paddle for games
+Sell SaaS globally
+Launch your SaaS
+By stage
+Startups
+Enterprise
+Pricing
+Customers
+Resources
+Careers
+Help center
+Payment support
+Billing FAQs
+Developer docs
+Why has Paddle charged me?
+Mobile App Monetization Strategies
+Get started
+Book a demo
+Login
+Paddle Billing
+ProfitWell Metrics
+Search Help Center
+Help
+/
+Start
+/
+Intro to Paddle
+/
+Which countries are supported by Paddle?
+Start
+Intro to Paddle
+Essentials to sign up/create a Paddle account
+Do I need an SSL certificate to use Paddle?
+Do you offer localised checkouts?
+Does Paddle integrate with WordPress?
+Does Paddle support 3rd party online stores?
+Does Paddle support subscription-based sales models?
+How do I change my vendor account name?
+How is Paddle affected by Brexit?
+How Paddle is able to take on your VAT and tax responsibilities
+Selling a Mac app with trials & licensing?
+The legal relationship between Paddle and you
+Understanding Paddle’s Acceptable Use Policy (AUP): What Am I Not Allowed To Sell?
+What currencies do you support?
+Which countries are supported by Paddle?
+Which payment methods do you support?
+Why do I need to select 'taxable categories' for my products?
+What are trial subscriptions?
+Are there any requirements for trial subscriptions?
+Are my trial subscriptions compliant?
+How do I contact Support?
+Paddle dashboard chat widget browser requirements
+Set up Paddle
+Account Verification
+Sell
+Set up subscriptions
+Invoicing Tool
+Tax
+Manage
+Your customers
+Reporting
+Get Paid
+PSD2
+Risk Prevention
+SDK
+Grow
+Upsell
+Localisation
+Legal
+Sanctions
+Which countries are supported by Paddle?
+Paddle works with software businesses anywhere in the world with the exception of the unsupported countries listed below.
+In accordance with international sanctions regulations, as well as the policies of our banking and payments partners, including various anti-money laundering regulations, Paddle is unable to support suppliers operating from the below countries. Paddle will also block purchases and downloads to buyers located within specific unsupported regions/countries.
+Unsupported Countries
+Afghanistan
+Antarctica
+Belarus
+*
+Burma (Myanmar)
+Central African Republic
+Cuba
+Crimea (Region of Ukraine)
+*
+Democratic Republic of Congo
+Donetsk (Region of Ukraine)
+*
+Haiti
+Iran
+Iraq
+Kherson (Region of Ukraine)
+*
+Libya
+Luhansk (Region of Ukraine)
+*
+Mali
+Netherlands Antilles
+Nicaragua
+North Korea
+Russia
+*
+Somalia
+South Sudan
+Sudan
+Syria
+Venezuela
+Yemen
+Zaporizhzhia (Region of Ukraine)
+*
+Zimbabwe
+This list is subject to change. Our team may from time to time request further information before processing an order or releasing a payment from any location or jurisdiction for risk and compliance purposes.
+*
+More information on the impact of sanctions on Russia and Belarus can be found
+here
+.
+Why has Paddle charged me?
+Merchant of record explained
+Platform status
+Products
+Recurring billing software
+Online checkout
+Subscription management software
+Sales tax compliance software
+Payment fraud detection
+SaaS payment solutions
+Payment analytics
+In-app purchase
+Subscription analytics
+Dunning management software
+Solutions
+SaaS billing
+Sell digital products
+Sell software
+Online gaming payments
+Sell outside the App Store
+App studios
+Billing infrastructure for startups
+Enterprise payment solutions
+Resources
+Resource hub
+Blog
+Engineering blog
+Webinars
+Customer stories
+Revenue impact calculator
+A-Z of SaaS metrics
+Support
+Help center
+Developer docs
+Developer sandbox
+SOC 2 compliance
+GDPR compliance
+Company
+About us
+Careers
+We're hiring
+Press
+Partnerships
+Procurement
+Compare
+Stripe
+Lemon Squeezy
+FastSpring
+Chargebee
+Adyen
+Zuora
+Recurly
+Solidgate
+Razorpay
+Cleverbridge
+Gumroad
+PayPal
+Compare all
+Paddle.com Market Ltd. © 2012—2026
+Cookie preferences
+Terms of use
+Privacy
+Security

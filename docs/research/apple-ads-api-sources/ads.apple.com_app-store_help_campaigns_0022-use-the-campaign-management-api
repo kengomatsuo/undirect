@@ -1,0 +1,3493 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+    
+
+
+
+
+
+    
+
+
+
+
+<title>Apple Ads Platform API - Help - Apple Ads</title>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<link rel="icon" href="/favicon.ico"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/180_touch.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="/180_touch.png"/>
+
+
+
+
+
+
+<meta name="globalnav-search-field[action]" content="https://ads.apple.com/us/search"/>
+<meta name="globalnav-search-field[placeholder]" content="Search ads.apple.com"/>
+<meta name="globalnav-search-field[placeholder-svp]" content="Search"/>
+<meta name="globalnav-search-field[src]" content="ads_global_nav"/>
+<meta name="globalnav-search-suggestions-enabled" content="false"/>
+<meta name="globalnav-submenus-enabled" content="false"/>
+<meta name="globalnav-bag-flyout-enabled" content="false"/>
+<meta name="globalnav-store-key" content="SFX9YPYY9PPXCU9KH"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9"/>
+
+
+
+
+    <meta name="robots" content="index,follow"/>
+
+
+
+    <link rel="canonical" href="https://ads.apple.com/app-store/help/campaigns/0022-use-the-apple-ads-platform-api"/>
+    
+         <link rel="alternate" href="https://ads.apple.com/it/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="it-IT"/>
+       
+         <link rel="alternate" href="https://ads.apple.com/ru/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="ru-RU"/>
+       
+         <link rel="alternate" href="https://ads.apple.com/de/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="de-DE"/>
+       
+         <link rel="alternate" href="https://ads.apple.com/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="en-US"/>
+       
+         <link rel="alternate" href="https://ads.apple.com/kr/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="ko-KR"/>
+       
+         <link rel="alternate" href="https://ads.apple.com/br/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="pt-BR"/>
+       
+         <link rel="alternate" href="https://ads.apple.com/es/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="es-ES"/>
+       
+         <link rel="alternate" href="https://ads.apple.com/fr/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="fr-FR"/>
+       
+         <link rel="alternate" href="https://ads.apple.com/jp/app-store/help/campaigns/0022-use-the-apple-ads-platform-api" hreflang="ja-JP"/>
+       
+      <meta property="og:site_name" content="Apple Ads"/>
+
+
+
+
+<meta name="Description" content="Get details on how the Apple Ads Platform API lets you programmatically manage campaigns and pull reports for ads on the App Store and Apple Maps."/>
+
+<meta property="og:title" content="Apple Ads Platform API - Help - Apple Ads"/>
+<meta property="og:description" content="Get details on how the Apple Ads Platform API lets you programmatically manage campaigns and pull reports for ads on the App Store and Apple Maps."/>
+
+
+    <meta property="og:url" content="https://ads.apple.com/app-store/help/campaigns/0022-use-the-apple-ads-platform-api"/>
+    <meta property="og:image" content="https://ads.apple.com/adsdam/app-store/us/en_us/images/apps_og.jpg"/>
+
+
+
+
+<meta property="og:locale" content="en_US"/>
+<meta property="og:type" content="website"/>
+<meta property="analytics-track" content="Apple Ads Platform API - Help - Apple Ads"/>
+<meta name="page-name" content="marketing:ads:app-store:0022:help:use-the-apple-ads-platform-api"/>
+<meta name="page-type" content=" "/>
+
+
+<meta name="twitter:title" content="Apple Ads Platform API - Help - Apple Ads"/>
+<meta name="twitter:description" content="Get details on how the Apple Ads Platform API lets you programmatically manage campaigns and pull reports for ads on the App Store and Apple Maps."/>
+
+
+    <meta name="twitter:site" content="Apple Ads"/>
+    <meta name="twitter:image" content="https://ads.apple.com/adsdam/app-store/us/en_us/images/apps_og.jpg"/>
+
+
+
+
+<meta name="twitter:image:height" content="80"/>
+<meta name="twitter:image:width" content="80"/>
+<meta name="twitter:card" content="summary"/>
+
+
+    
+   		
+
+
+
+
+<link rel="stylesheet" href="https://www.apple.com/api-www/global-elements/global-header/v1/assets/globalheader.css"/>
+
+
+
+<link rel="stylesheet" type="text/css" href="/globalel/global/footer/en_US/styles/ac-globalfooter.built.css"/>
+
+
+
+	
+    
+
+    
+
+
+
+
+
+
+   
+
+   
+      
+    
+<link rel="stylesheet" href="/etc.clientlibs/appleads/clientlibs/site.ACSHASHfbb1dd6c6606b164260e391d4ae5563e.css" type="text/css">
+
+
+
+   
+    
+
+   
+    
+<script src="/etc.clientlibs/appleads/clientlibs/preRender.ACSHASH4b22ec0bea7f2a11e78ad88682242c31.js"></script>
+
+
+
+   
+   
+
+
+
+<script type="text/javascript" src="/etc.clientlibs/appleads/clientlibs/analytics-script.ACSHASH8166d61304ebef42c2345e7562730b43.js"></script>
+
+
+
+
+    
+<script src="/etc.clientlibs/appleads/clientlibs/analytics-script-ru-by-block.ACSHASH4a294c31960f8e7922e9c40a4cdd63a6.js"></script>
+
+
+
+
+
+
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    
+<link rel="stylesheet" href="https://www.apple.com/wss/fonts?families=SF+Pro,v3|SF+Pro+Icons,v3"/>
+
+
+
+</head>
+    
+    <body id="page-91554e1986">
+        
+        
+        
+            
+
+
+
+
+            
+
+
+
+            
+
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+	
+	
+	<input type="checkbox" id="localnav-menustate" class="localnav-menustate" aria-hidden="true"/>
+	
+	
+		
+			
+
+    
+
+
+
+    
+    
+    
+
+
+
+    <nav aria-label="Global" data-sticky="sticky" id="rebrand-localnav" class="localnav localnav--custom-background css-sticky rebrand-localnav ">
+        <div class="localnav-wrapper">
+            <div class="localnav-background"></div>
+            <div class="localnav-content">
+                <div class="localnav-title">
+                    <a href="/"> Ads</a>
+                </div>
+                <div class="localnav-menu">
+                    <a href="#localnav-menustate" role="button" class="localnav-menucta-anchor localnav-menucta-anchor-open" id="localnav-menustate-open">
+                        <span class="localnav-menucta-anchor-label">Local Nav Open Menu</span>
+                    </a>
+                    <a href="#" role="button" class="localnav-menucta-anchor localnav-menucta-anchor-close" id="localnav-menustate-close">
+                        <span class="localnav-menucta-anchor-label">Local Nav Close Menu</span>
+                    </a>
+                    <div class="localnav-menu-tray">
+                        <input type="checkbox" class="localnav-menu-link-state" aria-hidden="true"/>
+                        <ul class="localnav-menu-items" aria-label="Primary navigation">
+                            <li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/app-store" class="localnav-menu-link" data-tracking-title="App Store " aria-label="App Store " target="_self">App Store </a>
+                                    
+                                
+                            </li>
+<li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/maps" class="localnav-menu-link" data-tracking-title="Apple Maps" aria-label="Apple Maps" target="_self">Apple Maps</a>
+                                    
+                                
+                            </li>
+<li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/apple-news" class="localnav-menu-link" data-tracking-title="Apple News " aria-label="Apple News " target="_self">Apple News </a>
+                                    
+                                
+                            </li>
+<li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/mls" class="localnav-menu-link" data-tracking-title="MLS" aria-label="MLS" target="_self">MLS</a>
+                                    
+                                
+                            </li>
+<li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/f1" class="localnav-menu-link" data-tracking-title="F1" aria-label="F1" target="_self">F1</a>
+                                    
+                                
+                            </li>
+
+                            
+                            <li class="localnav-menu-item localnav-menu-item-search">
+                                <button class="localnav-menu-item-search-icon" id="localnav-menu-search" data-tracking-title="Search ads.apple.com" aria-label="Search ads.apple.com">
+                                <span class="localnav-image-regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#6e6e73" height="44px" viewBox="0 0 15 44"><path fill="#6e6e73" d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path></svg>
+                                </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="localnav-actions">
+                        <div class="localnav-action localnav-menu-item-search">
+                            <button class="localnav-menu-item-search-icon" id="localnav-menu-search-mobile" data-tracking-title="Search ads.apple.com" aria-label="Search ads.apple.com">
+                                <span class="localnav-image-regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#6e6e73" height="44px" viewBox="0 0 15 44">
+                                    <path fill="#6e6e73" d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path></svg>
+                                </span>
+                            </button>
+
+                        </div>
+                        <div class="localnav-action localnav-action-menucta" aria-hidden="true">
+                            
+                            
+                                <label for="localnav-menustate" class="menu-container localnav-menucta">
+                                    <div class="line-container top">
+                                        <div class="line top"></div>
+                                    </div>
+                                    <div class="line-container bottom">
+                                        <div class="line bottom"></div>
+                                    </div>
+                                </label>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="search-block">
+        <div class="search-content">
+            <form name="searchform" id="localnav-searchfield" class="searchform" data-search-url="/us/search" data-locale="en_US" data-src="ads_global_nav" method="GET">
+                <div class="wrapper">
+                    <input data-component-mainnav-input class="input" type="text" data-tracking-title="Search ads.apple.com" aria-label="Search ads.apple.com" placeholder="Search ads.apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false"/>
+                    <input id="localnav-searchfield-src" type="hidden" name="src" value="ads_global_nav"/>
+                    <button class="localnav-searchfield-reset" data-tracking-title="Clear Search" aria-label="Clear Search" tabindex="-1" type="button">
+                <span class="localnav-image-regular">
+                    <svg height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m7 .0339a6.9661 6.9661 0 1 0 6.9661 6.9661 6.9661 6.9661 0 0 0 -6.9661-6.9661zm2.798 8.9867a.55.55 0 0 1 -.778.7774l-2.02-2.02-2.02 2.02a.55.55 0 0 1 -.7784-.7774l2.0206-2.0206-2.0204-2.02a.55.55 0 0 1 .7782-.7778l2.02 2.02 2.02-2.02a.55.55 0 0 1 .778.7778l-2.0203 2.02z"></path>
+                    </svg>
+                </span>
+                    </button>
+                    <button class="localnav-searchfield-submit" data-tracking-title="Submit search" aria-label="Submit search" tabindex="-1" type="submit">
+                <span class="localnav-image-regular">
+                    <svg height="32" viewBox="0 0 30 32" width="30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m23.3291 23.3066-4.35-4.35c-.0105-.0105-.0247-.0136-.0355-.0235a6.8714 6.8714 0 1 0 -1.5736 1.4969c.0214.0256.03.0575.0542.0815l4.35 4.35a1.1 1.1 0 1 0 1.5557-1.5547zm-15.4507-8.582a5.6031 5.6031 0 1 1 5.603 5.61 5.613 5.613 0 0 1 -5.603-5.61z"></path>
+                    </svg>
+                </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="localnav-menutrigger-container">
+            <button id="localnav-menutrigger-button" class="localnav-menutrigger-button" data-tracking-title="Close" aria-label="Close" data-topnav-menu-label-close="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18px" height="18px"><path d="M 39.486328 6.9785156 A 1.50015 1.50015 0 0 0 38.439453 7.4394531 L 24 21.878906 L 9.5605469 7.4394531 A 1.50015 1.50015 0 0 0 8.484375 6.984375 A 1.50015 1.50015 0 0 0 7.4394531 9.5605469 L 21.878906 24 L 7.4394531 38.439453 A 1.50015 1.50015 0 1 0 9.5605469 40.560547 L 24 26.121094 L 38.439453 40.560547 A 1.50015 1.50015 0 1 0 40.560547 38.439453 L 26.121094 24 L 40.560547 9.5605469 A 1.50015 1.50015 0 0 0 39.486328 6.9785156 z"/></svg>
+            </button>
+        </div>
+    </div>
+    <div class="mainnav-curtain" tabindex="-1"></div>
+
+
+
+
+    <nav aria-label="Local" data-sticky="sticky" id="localnav" class="localnav localnav--custom-background css-sticky  ">
+        <div class="localnav-wrapper">
+            <div class="localnav-background"></div>
+            <div class="localnav-content">
+                <div class="localnav-title">
+                    <a href="/app-store">Ads on the App Store</a>
+                </div>
+                <div class="localnav-menu">
+                    <a href="#localnav-menustate" role="button" class="localnav-menucta-anchor localnav-menucta-anchor-open" id="localnav-menustate-open">
+                        <span class="localnav-menucta-anchor-label">Local Nav Open Menu</span>
+                    </a>
+                    <a href="#" role="button" class="localnav-menucta-anchor localnav-menucta-anchor-close" id="localnav-menustate-close">
+                        <span class="localnav-menucta-anchor-label">Local Nav Close Menu</span>
+                    </a>
+                    <div class="localnav-menu-tray">
+                        <input type="checkbox" class="localnav-menu-link-state" aria-hidden="true"/>
+                        <ul class="localnav-menu-items" aria-label="Primary navigation">
+                            <li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/app-store" class="localnav-menu-link" data-tracking-title="Overview" aria-label="Overview" target="_self">Overview</a>
+                                    
+                                
+                            </li>
+<li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/app-store/certification" class="localnav-menu-link" data-tracking-title="Certification" aria-label="Certification" target="_self">Certification</a>
+                                    
+                                
+                            </li>
+<li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/app-store/success-stories" class="localnav-menu-link" data-tracking-title="Success Stories" aria-label="Success Stories" target="_self">Success Stories</a>
+                                    
+                                
+                            </li>
+<li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/app-store/resources" class="localnav-menu-link" data-tracking-title="Resources" aria-label="Resources" target="_self">Resources</a>
+                                    
+                                
+                            </li>
+<li class="localnav-menu-item ">
+                                
+                                
+                                    <a href="/app-store/help" class="localnav-menu-link" data-tracking-title="Help" aria-label="Help" target="_self">Help</a>
+                                    
+                                
+                            </li>
+
+                            <li class="localnav-menu-item signin-dropdown">
+                                <div class="localnav-menu-link" tabindex="0" role="button" aria-haspopup="menu" data-tracking-title="Sign In" aria-label="Sign In" aria-expanded="false">Sign In<span class="icon icon-after icon-chevrondown" role="none"></span></div>
+                                <ul class="dropdown-content" role="menu" tabindex="-1">
+                                    <li class="dropdown-item" role="none"><a href="https://ui.ads.apple.com/" class="localnav-menu-link" role="menuitem" target="_blank">Advanced <span class="a11y">(Opens in a new window)</span> </a></li>
+                                
+                                    <li class="dropdown-item" role="none"><a href="https://app-ads.apple.com/cm/basic/app" class="localnav-menu-link" role="menuitem" target="_self">Basic <span class="a11y">()</span> </a></li>
+                                </ul>
+                            </li>
+                            <li class="localnav-menu-item localnav-menu-item-search">
+                                <button class="localnav-menu-item-search-icon" id="localnav-menu-search" data-tracking-title="Search ads.apple.com" aria-label="Search ads.apple.com">
+                                <span class="localnav-image-regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#6e6e73" height="44px" viewBox="0 0 15 44"><path fill="#6e6e73" d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path></svg>
+                                </span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="localnav-actions">
+                        <div class="localnav-action localnav-menu-item-search">
+                            <button class="localnav-menu-item-search-icon" id="localnav-menu-search-mobile" data-tracking-title="Search ads.apple.com" aria-label="Search ads.apple.com">
+                                <span class="localnav-image-regular">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15px" fill="#6e6e73" height="44px" viewBox="0 0 15 44">
+                                    <path fill="#6e6e73" d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z"></path></svg>
+                                </span>
+                            </button>
+
+                        </div>
+                        <div class="localnav-action localnav-action-menucta" aria-hidden="true">
+                            
+                                <label for="localnav-menustate" class="localnav-menucta">
+                                    <span class="localnav-menucta-chevron"></span>
+                                </label>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="search-block">
+        <div class="search-content">
+            <form name="searchform" id="localnav-searchfield" class="searchform" data-search-url="/us/search" data-locale="en_US" data-src="ads_global_nav" method="GET">
+                <div class="wrapper">
+                    <input data-component-mainnav-input class="input" type="text" data-tracking-title="Search ads.apple.com" aria-label="Search ads.apple.com" placeholder="Search ads.apple.com" autocorrect="off" autocapitalize="off" autocomplete="off" spellcheck="false"/>
+                    <input id="localnav-searchfield-src" type="hidden" name="src" value="ads_global_nav"/>
+                    <button class="localnav-searchfield-reset" data-tracking-title="Clear Search" aria-label="Clear Search" tabindex="-1" type="button">
+                <span class="localnav-image-regular">
+                    <svg height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m7 .0339a6.9661 6.9661 0 1 0 6.9661 6.9661 6.9661 6.9661 0 0 0 -6.9661-6.9661zm2.798 8.9867a.55.55 0 0 1 -.778.7774l-2.02-2.02-2.02 2.02a.55.55 0 0 1 -.7784-.7774l2.0206-2.0206-2.0204-2.02a.55.55 0 0 1 .7782-.7778l2.02 2.02 2.02-2.02a.55.55 0 0 1 .778.7778l-2.0203 2.02z"></path>
+                    </svg>
+                </span>
+                    </button>
+                    <button class="localnav-searchfield-submit" data-tracking-title="Submit search" aria-label="Submit search" tabindex="-1" type="submit">
+                <span class="localnav-image-regular">
+                    <svg height="32" viewBox="0 0 30 32" width="30" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m23.3291 23.3066-4.35-4.35c-.0105-.0105-.0247-.0136-.0355-.0235a6.8714 6.8714 0 1 0 -1.5736 1.4969c.0214.0256.03.0575.0542.0815l4.35 4.35a1.1 1.1 0 1 0 1.5557-1.5547zm-15.4507-8.582a5.6031 5.6031 0 1 1 5.603 5.61 5.613 5.613 0 0 1 -5.603-5.61z"></path>
+                    </svg>
+                </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="localnav-menutrigger-container">
+            <button id="localnav-menutrigger-button" class="localnav-menutrigger-button" data-tracking-title="Close" aria-label="Close" data-topnav-menu-label-close="Close">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="18px" height="18px"><path d="M 39.486328 6.9785156 A 1.50015 1.50015 0 0 0 38.439453 7.4394531 L 24 21.878906 L 9.5605469 7.4394531 A 1.50015 1.50015 0 0 0 8.484375 6.984375 A 1.50015 1.50015 0 0 0 7.4394531 9.5605469 L 21.878906 24 L 7.4394531 38.439453 A 1.50015 1.50015 0 1 0 9.5605469 40.560547 L 24 26.121094 L 38.439453 40.560547 A 1.50015 1.50015 0 1 0 40.560547 38.439453 L 26.121094 24 L 40.560547 9.5605469 A 1.50015 1.50015 0 0 0 39.486328 6.9785156 z"/></svg>
+            </button>
+        </div>
+    </div>
+    <div class="mainnav-curtain" tabindex="-1"></div>
+
+    
+
+
+
+
+    
+
+
+		
+	
+	
+	
+	
+	
+	<label id="localnav-curtain" for="localnav-menustate"></label>
+	 <noscript>
+        <style type="text/css">
+            body.styles-loading {
+                opacity: 1 !important;
+            }
+            .page-content{
+                position: relative;
+            }
+            .noscript {
+                background: #fff;
+                margin: 0 auto;
+                height: 500px;
+            }
+            .noscript h1 {
+                font-size: 40px;
+                font-weight: 500;
+                color: #494949;
+                margin-bottom: 10px;
+                margin-top: 60px;
+            }
+            .noscript p {
+                font-weight: 400;
+                font-size: 21px;
+                color: #494949;
+                margin-block: 21px;
+            }
+            .page-content > *:not(noscript) {
+                display: none !important;
+            }
+            @media only screen and (max-width: 1068px) {
+                .noscript h1 {
+                    font-size: 32px;
+                }
+            }
+            @media only screen and (max-width: 734px) {
+                .noscript h1 {
+                    font-size: 28px;
+                }
+                .noscript p {
+                    font-size: 19px;
+                }
+            }
+        </style>
+        <div class="noscript section-content">
+            <h1>Enable JavaScript</h1>
+            <p>Please turn on JavaScript to view this page correctly.</p>
+        </div>
+    </noscript>
+<div class="column-container responsivegrid">
+
+
+    
+    <div class="ribbon-xf experiencefragment">
+<div id="ribbon-xf-135dff4ad4" class="cmp-experiencefragment cmp-experiencefragment--RibbonFragment">
+    
+
+
+
+    
+    
+    <section class="text-banner--wrapper row text-align--center nested-span ribbon-drop">
+    
+
+    
+
+        
+
+        
+            <section class="row">
+                
+    
+
+    
+
+    <div class="text-banner--layout column large-centered">
+        
+        
+    </div>
+    
+    
+
+            </section>
+        
+    
+
+    
+
+
+
+
+</section>
+
+    
+
+</div>
+
+    
+</div>
+
+    
+</div>
+<main class="page-content">
+
+
+
+    
+    
+    <section class="sec-2-col-AccordionArticle section-content margin-top--80 margin-bottom--80" data-component-endpoint="/app-store/help/campaigns/0022-use-the-apple-ads-platform-api.help-articles.json">
+    <div class="row">
+        <div class="column large-3 small-12" role="navigation" aria-label="Help">
+            <div class="search-field">
+                <div class="row justify-content-center">
+                    <form class="column row align-items-center" action="#" accept-charset="utf-8" method="POST" data-component-list="SearchComponent" data-locale="en_US" data-location="ads_appstore_help_leftnav" data-page="1" data-search-url="/us/search" data-src="ads_appstore_help_leftnav">
+                        <input id="quick-search" type="text" class="search-field--input link-farm-opener" required/>
+                        <label for="quick-search" class="search-field--label" data-placeholder-default="Search"><span class="visuallyhidden">Search</span>
+                        </label>
+                        <button class="search-field--right-icon-container link-farm-opener" aria-label="Clear Search">
+                        </button>
+                        <button type="submit" class="search-field--left-icon-container" aria-label="Submit Search"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="accordion-wrapper">
+
+            </div>
+        </div>
+        <div class="column large-8 large-offset-1 small-12">
+            
+
+
+
+    
+    
+    <section class="heading-block column-article margin-bottom--25-25-25">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="copy-block">
+    
+
+
+
+
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					<h1 class="heading-block--heading ">Use the Apple Ads Platform API</h1>
+                    
+        
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+	
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<div class="helparticlelist margin-bottom--25-25-25">
+ 
+
+ 
+
+
+
+    
+
+    
+
+    
+	    
+
+    <section class="article-list">
+
+        <h2 class="article-list--heading">Create campaigns, ad groups, keywords, and more with the Apple Ads Platform API</h2>
+        <p class="article-list--desc">The Apple Ads Platform API is designed to let developers, agencies, and third-party platforms manage campaigns and pull reports programmatically. It includes client libraries in multiple languages to help you integrate quickly. Use them to programmatically manage campaigns, ad groups, and keywords on the App Store, along with ads on Apple Maps.</p>
+
+		
+
+    </section>
+
+ 
+
+    
+    
+</div>
+<div class="helparticlelist margin-bottom--25-25-25">
+ 
+
+ 
+
+
+
+    
+
+    
+
+    
+	    
+
+    <section class="article-list">
+
+        
+        <p class="article-list--desc"><a href="https://developer.apple.com/documentation/apple-ads-platform-api" class="article-copy-block-link icon icon-after icon-external" aria-label="Access the API documentation and see complete details">Access the API documentation and see complete details</a>
+<br class="br-l br-m br-s no-space" /><br class="br-l br-m br-s no-space" />
+To implement the Apple Ads Platform API effectively, you’ll need to understand the technical requirements and plan ahead to ensure you have the resources needed to develop and maintain the application.
+</p>
+
+		
+
+    </section>
+
+ 
+
+    
+    
+</div>
+<div class="helparticlelist margin-bottom--25-25-25">
+ 
+
+ 
+
+
+
+    
+
+    
+
+    
+	    
+
+    <section class="article-list">
+
+        <h2 class="article-list--heading">Access the Apple Ads Platform API </h2>
+        <p class="article-list--desc">Apple Ads uses OAuth 2 to authenticate API requests. To access the Apple Ads Platform API within your own organization, you’ll need to create or designate an API user: 
+</p>
+
+		
+
+        <ol role="list" class="">
+             <li role="listitem">
+	Have an Account Admin sign in to your Apple Ads account. 
+   
+</li>
+        
+             <li role="listitem">
+	Go to the User Management tab within Account Settings. 
+   
+</li>
+        
+             <li role="listitem">
+	Edit or invite a new user and assign them one of the following roles: API Account Manager, API Account Read Only, Limited Access API Read &amp; Write, or API Read Only.   
+</li>
+        
+             <li role="listitem">
+	After your API user is set up, have them sign in to your Apple Ads account and go to the API tab within Account Settings. 
+   
+</li>
+        
+             <li role="listitem">
+	On the API page, they can create a client by following the steps outlined in the <a href="https://developer.apple.com/documentation/apple_ads/implementing-oauth-for-the-apple-search-ads-api">API documentation</a>. For additional details on making calls against the API, refer to the documentation.     
+</li>
+        </ol>
+
+                   
+
+		
+
+    </section>
+
+ 
+
+    
+    
+</div>
+<section class="article-copy-block margin-bottom--25-25-25">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    <p class="article-copy-block--description ">Note that if a user’s role changes from an API user to a non-API user, their API access will be revoked. In addition, API access for users associated with the deleted user will also be revoked.</p>
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+        
+      
+    
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<div class="helparticlelist margin-bottom--25-25-25">
+ 
+
+ 
+
+
+
+    
+
+    
+
+    
+	    
+
+    <section class="article-list">
+
+        <h2 class="article-list--heading">Grant Apple Ads Platform API access to a third-party service provider</h2>
+        <p class="article-list--desc">If you work with a campaign management partner or mobile measurement provider, your Apple Ads Account Admin or Campaign Group Manager can grant them access to your Apple Ads account through the use of a secure Apple sign in. Each Account Admin or Campaign Group Manager can grant access to only one third-party service provider per Apple Ads account at a time. <br class="br-l br-m br-s no-space" /><br class="br-l br-m br-s no-space" /> 
+Here’s how to get started: </p>
+
+		
+
+        <ol role="list" class="">
+             <li role="listitem">
+	If your service provider has secure Apple sign in set up, go to the Authorizations section within their platform and click the Sign in with Apple button.   
+</li>
+        
+             <li role="listitem">
+	Sign in to Apple Ads as an Apple Ads Account Admin or Campaign Group Manager.   
+</li>
+        
+             <li role="listitem">
+	Choose the Apple Ads account that you’d like the service provider to be able to access.   
+</li>
+        
+             <li role="listitem">
+	Select the type of access you’d like to provide. Note that Read and Write and Read Only roles will be shared across any new campaign groups created for accounts that have ads on both Maps and the App Store.
+<ul><li>Read and Write: Read reports and manage campaigns for all campaign groups.</li><li>Read Only: Read reports and view campaigns for all campaign groups.</li><li>Limited Access: Read reports and either manage or view campaigns only for specific campaign groups.</li></ul>   
+</li>
+        </ol>
+
+                   
+
+		
+
+    </section>
+
+ 
+
+    
+    
+</div>
+<section class="article-copy-block margin-bottom--25-25-25">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					<h2 class="article-copy-block--heading ">Review or revoke Apple Ads Platform API service <br class="no-br-l no-br-m no-br-s no-space" />provider access</h2>
+                    
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    <p class="article-copy-block--description ">To review third-party API access, go to the API tab within Account Settings. Third-party approvals may be revoked at any time by selecting from the list of authorized service providers and choosing Revoke Access from the Actions menu.
+</p>
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+
+ 	
+    
+
+	
+
+
+	
+
+
+        
+
+         
+
+        
+
+
+
+		
+
+        
+
+        
+
+     
+     
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+        
+      
+    
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+<section class="article-copy-block margin-bottom--25-25-25">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					<h2 class="article-copy-block--heading ">Request a third-party account</h2>
+                    
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    <p class="article-copy-block--description ">If you’re a third-party service provider developing marketing solutions on the Apple Ads Platform API for ads on the App Store or Apple Maps, please contact <a href="mailto:ads-registration&#64;group.apple.com" aria-label="ads-registration&#64;group.apple.com">ads-registration&#64;group.apple.com</a> for more information on registering a third-party OAuth 2 application.</p>
+        
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+
+ 	
+    
+
+	
+
+
+	
+
+
+        
+
+         
+
+        
+
+
+
+		
+
+        
+
+        
+
+     
+     
+
+    
+
+    
+
+    
+
+
+
+
+
+
+
+   
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+        
+      
+    
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+    
+
+            <div class="pagination justify-content-spacebetween margin-top--60">
+                <div class="Previous Make edits in bulk">
+                    <a href="/app-store/help/campaigns/0089-make-edits-in-bulk" class="pagination-link" data-tracking-title="learn-more" aria-label="learn-more">
+                        <span class="icon icon-before icon-chevronleft"></span>
+                        Previous
+                    </a>
+                    <p class="pagination-content">Make edits in bulk</p>
+                </div>
+                <div class="pagination--next">
+                    <a class="pagination-link" href="/app-store/help/ad-groups/0017-understand-and-create-ad-groups" aria-label="Next Understand and create ad groups">
+                        Next
+                        <span class="icon icon-after icon-chevronright"></span>
+                    </a>
+                    <p class="pagination-content">Understand and create ad groups</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+</main>
+
+
+
+
+
+
+
+
+ 
+<footer id="ac-globalfooter" class="js sa-footer" lang="en-US" data-analytics-region="global footer" role="contentinfo" aria-labelledby="ac-gf-label" data-component-endpoint="/app-store/help/campaigns/0022-use-the-apple-ads-platform-api.language-selector.json">
+    <div class="ac-gf-content sa-content">
+        <h2 class="ac-gf-label sa-label" id="ac-gf-label">Apple Footer</h2>
+        
+        
+        
+        
+        <div>
+        
+            
+            
+
+            
+            
+                
+                
+
+                
+
+
+
+    
+    
+    <div class="experiencefragment">
+
+    
+
+
+
+    
+    
+    <section class="section-custom-footer" id="sa-custom-footer">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+    <div class="row ">
+    
+        
+            
+            
+        <div class="column large-3 medium-6 small-12">
+        
+        <div class="copy-block">
+    
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+
+
+
+		
+		
+
+
+         
+
+    
+        
+        
+            
+            
+
+            
+                <img aria-hidden="true" src="/adsdam/app-store/us/en_us/images/footer-icons/footer_partners.svg" alt="" class="copy-block--icon"/>
+            
+        
+    
+
+    
+
+
+		
+
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					<h3 class="copy-block--heading ">Partners</h3>
+                    
+        
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    <p class="copy-block--body ">Find a partner to help you <br class="br-l br-m br-s no-space" />optimize performance. </p>
+        
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+        
+        <a href="/app-store/partners" class="more " data-tracking-title="Learn more about partners" aria-label="Learn more about partners">Learn more</a>
+    
+      
+    
+
+
+
+
+
+
+   
+
+        
+
+        
+
+    </div>
+
+
+    
+        </div>
+    
+
+        
+            
+            
+        <div class="column large-3 medium-6 small-12">
+        
+        <div class="copy-block">
+    
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+
+
+
+		
+		
+
+
+         
+
+    
+        
+        
+            
+            
+
+            
+                <img aria-hidden="true" src="/adsdam/app-store/us/en_us/images/footer-icons/footer_certification.svg" alt="" class="copy-block--icon"/>
+            
+        
+    
+
+    
+
+
+		
+
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					<h3 class="copy-block--heading ">Certification</h3>
+                    
+        
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    <p class="copy-block--body ">Fast-track your skills with our <br class="br-l br-m br-s no-space" />curated Apple Ads course.</p>
+        
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+        
+        <a href="/app-store/certification" class="more " data-tracking-title="Learn more about certifications" aria-label="Learn more about certifications">Learn more</a>
+    
+      
+    
+
+
+
+
+
+
+   
+
+        
+
+        
+
+    </div>
+
+
+    
+        </div>
+    
+
+        
+            
+            
+        <div class="column large-3 medium-6 small-12">
+        
+        <div class="copy-block">
+    
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+
+
+
+		
+		
+
+
+         
+
+    
+        
+        
+            
+            
+
+            
+                <img aria-hidden="true" src="/adsdam/app-store/us/en_us/images/footer-icons/footer_news.svg" alt="" class="copy-block--icon"/>
+            
+        
+    
+
+    
+
+
+		
+
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					<h3 class="copy-block--heading ">News and Updates</h3>
+                    
+        
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    <p class="copy-block--body ">Read the latest about <br class="br-l br-m br-s no-space" />Apple Ads.</p>
+        
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+        
+        <a href="/news" class="more " data-tracking-title="Learn more about news and updates" aria-label="Learn more about news and updates">Learn more</a>
+    
+      
+    
+
+
+
+
+
+
+   
+
+        
+
+        
+
+    </div>
+
+
+    
+        </div>
+    
+
+        
+            
+            
+        <div class="column large-3 medium-6 small-12">
+        
+        <div class="copy-block">
+    
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+
+
+
+		
+		
+
+
+         
+
+    
+        
+        
+            
+            
+
+            
+                <img aria-hidden="true" src="/adsdam/app-store/us/en_us/images/footer-icons/footer_countriesandregions.svg" alt="" class="copy-block--icon"/>
+            
+        
+    
+
+    
+
+
+		
+
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					<h3 class="copy-block--heading ">Countries and Regions</h3>
+                    
+        
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+		
+					
+                    <p class="copy-block--body ">See where ads on the App Store <br class="br-l br-m br-s no-space" />are available.</p>
+        
+
+
+
+
+
+
+   
+
+        
+            
+            
+  
+        
+        
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+        
+        <a href="/app-store/countries-and-regions" class="more " data-tracking-title="Learn more about countries and regions" aria-label="Learn more about countries and regions">Learn more</a>
+    
+      
+    
+
+
+
+
+
+
+   
+
+        
+
+        
+
+    </div>
+
+
+    
+        </div>
+    
+
+        
+
+        
+    </div>
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+    
+
+
+
+
+    
+
+</div>
+<section class="ac-gf-sosumi sa-sosumi">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+        
+        
+  
+        
+        
+
+
+
+
+
+
+
+    
+        
+
+        
+
+ 		
+		
+		
+
+
+        
+
+
+		
+
+
+		
+
+		
+
+
+        
+
+        
+
+        
+        	<div>Ads on Apple Maps are available in the United States and Canada. Only advertisers with businesses<b> </b>in those countries are eligible to run ads on Apple Maps. Additional eligibility limitations may apply.</div>
+
+        
+		
+
+
+
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+    
+
+                
+                
+            
+
+            
+            
+
+            
+            
+
+            
+            
+            
+            
+            <nav class="ac-gf-breadcrumbs sa-breadcrumbs" aria-label="Breadcrumbs" role="navigation">
+
+
+
+    <a href="https://www.apple.com/" class="home ac-gf-breadcrumbs-home sa-breadcrumbs-home" aria-label="Apple">
+        <span class="ac-gf-breadcrumbs-home-icon sa-breadcrumbs-home-icon" aria-hidden="true"></span>
+        <span class="ac-gf-breadcrumbs-home-label sa-breadcrumbs-home-label">Apple</span>
+        <span class="ac-gf-breadcrumbs-home-chevron sa-breadcrumbs-home-chevron"></span>
+        <span class="ac-gf-breadcrumbs-home-mask sa-breadcrumbs-home-mask"></span>
+    </a>
+    <div class="ac-gf-breadcrumbs-path sa-breadcrumbs-path">
+        
+        
+        <ol class="ac-gf-breadcrumbs-list sa-breadcrumbs-list" vocab="http://schema.org/" typeof="BreadcrumbList">
+            
+            
+                <li class="ac-gf-breadcrumbs-item sa-breadcrumbs-item footer-breadcrumbs-item" property="itemListElement" typeof="ListItem">
+                    
+                    <a href="/" class="ac-gf-breadcrumbs-link sa-breadcrumbs-link" property="item" typeof="WebPage">
+                        <span property="name">Apple Ads</span>
+                    </a>
+                    <meta property="position" content="1"/>
+                </li>
+            
+
+            
+                
+                
+            
+                
+                
+                    
+                    
+                        
+    
+        
+            <li class="ac-gf-breadcrumbs-item sa-breadcrumbs-item footer-breadcrumbs-item" property="itemListElement" typeof="ListItem">
+                
+                
+                <a href="/app-store" class="ac-gf-breadcrumbs-link sa-breadcrumbs-link" property="item" typeof="WebPage">
+                    <span property="name">Ads on the App Store</span>
+                </a>
+                
+                
+                    <meta property="position" content="2"/>
+                
+            </li>
+        
+
+                
+            
+                
+                
+                    
+                    
+                        
+    
+        
+            <li class="ac-gf-breadcrumbs-item sa-breadcrumbs-item footer-breadcrumbs-item" property="itemListElement" typeof="ListItem">
+                
+                
+                <a href="/app-store/help" class="ac-gf-breadcrumbs-link sa-breadcrumbs-link" property="item" typeof="WebPage">
+                    <span property="name">Help</span>
+                </a>
+                
+                
+                    <meta property="position" content="3"/>
+                
+            </li>
+        
+
+                
+            
+                
+                
+                    
+                    
+                        
+    
+        
+            <li class="ac-gf-breadcrumbs-item sa-breadcrumbs-item footer-breadcrumbs-item footer-breadcrumbs-item--active" property="itemListElement" typeof="ListItem">
+                
+                
+                
+                    <span property="name">Use the Apple Ads Platform API</span>
+                
+                
+                
+                    <meta property="position" content="4"/>
+                
+            </li>
+        
+
+                
+            
+        </ol>
+    </div>
+
+
+
+
+
+    
+</nav>
+
+            
+            
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+    
+
+
+
+    
+    
+    <div class="section-container-cmp with-5-columns sa-footer">
+    <div id="sa-directory">
+
+
+
+    
+        
+        
+        <div class="footer-column">
+            <div class="sa-directory-column">
+                <!--googleoff: all-->
+                
+                        <input class="sa-directory-column-section-state" type="checkbox" id="sa-directory-column-section-state-Advertising with Apple" aria-hidden="true"/>
+                        <div class="sa-directory-column-section">
+                            <label class="sa-directory-column-section-label" for="sa-directory-column-section-state-Advertising with Apple">
+                                <h3 class="sa-directory-column-section-title">Advertising with Apple</h3>
+                            </label>
+                            <a href="#sa-directory-column-section-state-Advertising%20with%20Apple" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-open">
+                                <span class="sa-directory-column-section-anchor-label">Open Menu</span>
+                            </a>
+                            <a href="#" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-close">
+                                <span class="sa-directory-column-section-anchor-label">Close Menu</span>
+                            </a>
+                            <ul class="sa-directory-column-section-list">
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/" target="_self" data-analytics-footer-link-id="f-apple-ads">Apple Ads </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/terms" target="_self" data-analytics-footer-link-id="f-terms-and-policies">Terms and Policies </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://www.apple.com/legal/privacy/data/en/apple-advertising/" target="_self" data-analytics-footer-link-id="f-apple-advertising-and-privacy">Apple Advertising and Privacy </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/our-approach" target="_self" data-analytics-footer-link-id="f-our-approach">Our Approach </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://ads.apple.com/about-us" target="_self" data-analytics-footer-link-id="f-about-us">About Us </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/news" target="_self" data-analytics-footer-link-id="f-news-and-updates">News and Updates </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/stay-in-touch" target="_self" data-analytics-footer-link-id="f-stay-in-touch">Stay in Touch </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/help" target="_self" data-analytics-footer-link-id="f-help">Help </a>
+                                </li>
+                            </ul>
+                        </div>
+                
+
+            </div>
+
+</div>
+<div class="footer-column">
+            <div class="sa-directory-column">
+                <!--googleoff: all-->
+                
+                        <input class="sa-directory-column-section-state" type="checkbox" id="sa-directory-column-section-state-App Store" aria-hidden="true"/>
+                        <div class="sa-directory-column-section">
+                            <label class="sa-directory-column-section-label" for="sa-directory-column-section-state-App Store">
+                                <h3 class="sa-directory-column-section-title">App Store</h3>
+                            </label>
+                            <a href="#sa-directory-column-section-state-App%20Store" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-open">
+                                <span class="sa-directory-column-section-anchor-label">Open Menu</span>
+                            </a>
+                            <a href="#" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-close">
+                                <span class="sa-directory-column-section-anchor-label">Close Menu</span>
+                            </a>
+                            <ul class="sa-directory-column-section-list">
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/app-store" target="_self" data-analytics-footer-link-id="f-ads-on-the-app-store">Ads on the App Store </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/app-store/certification" target="_self" data-analytics-footer-link-id="f-certification">Certification </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/app-store/success-stories" target="_self" data-analytics-footer-link-id="f-success-stories">Success Stories </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/app-store/resources" target="_self" data-analytics-footer-link-id="f-advertising-resources">Advertising Resources </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/app-store/partners" target="_self" data-analytics-footer-link-id="f-partner-services">Partner Services </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/app-store/privacy" target="_self" data-analytics-footer-link-id="f-app-store-privacy">Privacy and Ads on the App Store </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/app-store/help" target="_self" data-analytics-footer-link-id="f-help">Help </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://developer.apple.com/app-store/resources/" target="_self" data-analytics-footer-link-id="f-developer-resources">Developer Resources </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://ui.ads.apple.com/" target="_self" data-analytics-footer-link-id="f-advanced-sign-in">Advanced Sign In </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://app-ads.apple.com/cm/basic/app/" target="_self" data-analytics-footer-link-id="f-basic-sign-in">Basic Sign In </a>
+                                </li>
+                            </ul>
+                        </div>
+                
+
+            </div>
+
+</div>
+<div class="footer-column">
+            <div class="sa-directory-column">
+                <!--googleoff: all-->
+                
+                        <input class="sa-directory-column-section-state" type="checkbox" id="sa-directory-column-section-state-Apple Maps" aria-hidden="true"/>
+                        <div class="sa-directory-column-section">
+                            <label class="sa-directory-column-section-label" for="sa-directory-column-section-state-Apple Maps">
+                                <h3 class="sa-directory-column-section-title">Apple Maps</h3>
+                            </label>
+                            <a href="#sa-directory-column-section-state-Apple%20Maps" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-open">
+                                <span class="sa-directory-column-section-anchor-label">Open Menu</span>
+                            </a>
+                            <a href="#" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-close">
+                                <span class="sa-directory-column-section-anchor-label">Close Menu</span>
+                            </a>
+                            <ul class="sa-directory-column-section-list">
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/maps" target="_self" data-analytics-footer-link-id="f-ads-on-apple-maps">Ads on Apple Maps </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/maps/privacy" target="_self" data-analytics-footer-link-id="f-privacy-and-ads-on-apple-maps">Privacy and Ads on Apple Maps </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/maps/agencies" target="_self" data-analytics-footer-link-id="f-agency-resources">Agency Resources </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/maps/apple-ads/help" target="_self" data-analytics-footer-link-id="f-help-ads-on-apple-maps">Help </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://business.apple.com/login" target="_self" data-analytics-footer-link-id="f-apple-business-sign-in">Apple Business Sign In </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://ui.ads.apple.com/" target="_self" data-analytics-footer-link-id="f-apple-ads-sign-in">Apple Ads Sign In </a>
+                                </li>
+                            </ul>
+                        </div>
+                
+
+            </div>
+
+</div>
+<div class="footer-column">
+            <div class="sa-directory-column">
+                <!--googleoff: all-->
+                
+                        <input class="sa-directory-column-section-state" type="checkbox" id="sa-directory-column-section-state-Apple News" aria-hidden="true"/>
+                        <div class="sa-directory-column-section">
+                            <label class="sa-directory-column-section-label" for="sa-directory-column-section-state-Apple News">
+                                <h3 class="sa-directory-column-section-title">Apple News</h3>
+                            </label>
+                            <a href="#sa-directory-column-section-state-Apple%20News" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-open">
+                                <span class="sa-directory-column-section-anchor-label">Open Menu</span>
+                            </a>
+                            <a href="#" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-close">
+                                <span class="sa-directory-column-section-anchor-label">Close Menu</span>
+                            </a>
+                            <ul class="sa-directory-column-section-list">
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/apple-news" target="_self" data-analytics-footer-link-id="f-ads-on-apple-news">Ads on Apple News </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/apple-news/publishers/help" target="_self" data-analytics-footer-link-id="f-help-for-publishers">Help for Publishers </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/apple-news/advertisers/help" target="_self" data-analytics-footer-link-id="f-help-for-advertisers">Help for Advertisers </a>
+                                </li>
+                            </ul>
+                        </div>
+                
+
+            </div>
+
+</div>
+<div class="footer-column">
+            <div class="sa-directory-column">
+                <!--googleoff: all-->
+                
+                        <input class="sa-directory-column-section-state" type="checkbox" id="sa-directory-column-section-state-MLS" aria-hidden="true"/>
+                        <div class="sa-directory-column-section">
+                            <label class="sa-directory-column-section-label" for="sa-directory-column-section-state-MLS">
+                                <h3 class="sa-directory-column-section-title">MLS</h3>
+                            </label>
+                            <a href="#sa-directory-column-section-state-MLS" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-open">
+                                <span class="sa-directory-column-section-anchor-label">Open Menu</span>
+                            </a>
+                            <a href="#" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-close">
+                                <span class="sa-directory-column-section-anchor-label">Close Menu</span>
+                            </a>
+                            <ul class="sa-directory-column-section-list">
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/mls" target="_self" data-analytics-footer-link-id="f-ads-on-mls">Ads on MLS </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://tv.apple.com/us/channel/mls/tvs.sbd.7000" target="_self" data-analytics-footer-link-id="f-mls-on-apple-tv">MLS on Apple TV </a>
+                                </li>
+                            </ul>
+                        </div>
+                
+                        <input class="sa-directory-column-section-state" type="checkbox" id="sa-directory-column-section-state-F1" aria-hidden="true"/>
+                        <div class="sa-directory-column-section">
+                            <label class="sa-directory-column-section-label" for="sa-directory-column-section-state-F1">
+                                <h3 class="sa-directory-column-section-title">F1</h3>
+                            </label>
+                            <a href="#sa-directory-column-section-state-F1" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-open">
+                                <span class="sa-directory-column-section-anchor-label">Open Menu</span>
+                            </a>
+                            <a href="#" class="sa-directory-column-section-anchor sa-directory-column-section-anchor-close">
+                                <span class="sa-directory-column-section-anchor-label">Close Menu</span>
+                            </a>
+                            <ul class="sa-directory-column-section-list">
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="/f1" target="_self" data-analytics-footer-link-id="f-ads-on-f1">Ads on F1 </a>
+                                </li>
+                            
+                                <li class="sa-directory-column-section-item">
+                                    <a class="sa-directory-column-section-link " href="https://tv.apple.com/us/channel/formula-1/tvs.sbd.241000" target="_self" data-analytics-footer-link-id="f-f1-on-apple-tv">F1 on Apple TV </a>
+                                </li>
+                            </ul>
+                        </div>
+                
+
+            </div>
+
+</div>
+             
+        
+    
+
+
+
+
+    </div>
+
+</div>
+<div class="copyright">
+
+<div class="sa-footer-links" id="sa-footer" data-component-endpoint="/app-store/help/campaigns/0022-use-the-apple-ads-platform-api.language-selector.json">
+<div class="sa-footer-shop"></div>
+
+    <div class="footer-items-wrapper">
+    <div class="sa-footer-legal">
+                    <div class="sa-footer-legal-copyright"><p>Copyright © 2026 Apple Inc. All rights reserved.</p>
+</div>
+                    <div class="sa-footer-contact">
+                      
+                        
+                            <a class="sa-footer-legal-link" href="https://www.apple.com/legal/privacy/" data-analytics-footer-link-id="f-privacy-policy">Privacy Policy</a>
+
+                       
+                            <a class="sa-footer-legal-link" href="https://www.apple.com/legal/internet-services/terms/site.html" data-analytics-footer-link-id="f-terms-of-use">Terms of Use</a>
+
+                       
+                            <a class="sa-footer-legal-link" href="/terms" data-analytics-footer-link-id="f-terms-and-policies">Terms and Policies</a>
+
+                       
+                      
+                    </div>
+                </div>
+                <div class="sa-footer-locale">
+                    <a href="#null" class="sa-footer-locale-link" aria-label="Language English"></a>
+                </div>
+    </div>
+
+</div></div>
+
+    
+
+
+
+
+    
+
+
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+
+            
+            
+            
+        </div>
+    </div>
+</footer>
+
+
+    
+
+
+            
+    
+    
+
+
+
+    
+		
+		
+        
+    
+<script src="/etc.clientlibs/appleads/clientlibs/navigateButtonHandler.ACSHASH157f940aecf0cbfa02c0d5e10b9bd180.js"></script>
+
+
+
+        
+    
+<script src="/etc.clientlibs/appleads/clientlibs/site.ACSHASHbda7d81963ea6bc8a3d38ad8359a8ab2.js"></script>
+
+
+   
+    
+
+
+
+    
+
+    
+
+    
+    
+    
+
+            
+
+        
+    </body>
+</html>

@@ -1,0 +1,694 @@
+SOURCE https://www.irs.gov/instructions/i5472
+HTTP 200 fetched 2026-11-23
+Skip to main content
+An official website of the United States government
+Here's how you know
+Official websites use .gov
+A
+.gov
+website belongs to an official government organization in the United States.
+Secure .gov websites use HTTPS
+A
+lock
+(
+)
+or
+https://
+means you've safely connected to the .gov website. Share sensitive information only on official, secure websites.
+Search IRS tasks, forms, and answers
+Suggestions
+Information Menu
+Sign in
+Individual
+Business
+Tax Pro
+Access your tax information with an IRS account.
+Refunds
+Payments
+Tax records
+Create account
+Main navigation
+File
+Overview
+INFORMATION FOR…
+Individuals
+Business and self-employed
+Charities and nonprofits
+International filers
+Retirement
+Governments and tax-exempt bonds
+Indian Tribal Governments
+FILING FOR INDIVIDUALS
+How to file
+When to file
+Where to file
+Update your information
+POPULAR
+Tax record (transcript)
+Apply for an Employer ID Number (EIN)
+Amend return
+Identity Protection PIN (IP PIN)
+Pay
+Overview
+PAY BY
+Bank Account (Direct Pay)
+Payment Plan (Installment Agreement)
+Electronic Federal Tax Payment System (EFTPS)
+POPULAR
+Your Online Account
+Tax Withholding Estimator
+Estimated Taxes
+Penalties
+Refunds
+Overview
+About refunds
+Direct deposit
+Reduced refunds
+Where’s my amended return?
+Credits & Deductions
+Overview
+INFORMATION FOR...
+Individuals
+For you and your family
+Businesses & Self-Employed
+Standard mileage and other information
+POPULAR
+Earned Income Credit (EITC)
+Child Tax Credit
+Clean Energy and Vehicle Credits
+Standard Deduction
+Retirement Plans
+Forms
+Overview
+POPULAR FORMS & INSTRUCTIONS
+Form 1040
+Individual Income Tax Return
+Form 1040 Instructions
+Instructions for Form 1040
+Form W-9
+Request for Taxpayer Identification Number (TIN) and Certification
+Form 4506-T
+Request for Transcript of Tax Return
+Form W-4
+Employee's Withholding Certificate
+Form 941
+Employer's Quarterly Federal Tax Return
+Form W-2
+Wage and Tax Statement
+Form 9465
+Installment Agreement Request
+POPULAR FOR TAX PROS
+Form 1040-X
+Amended Individual Income Tax Return
+Form 2848
+Power of Attorney
+Form W-7
+Apply for an ITIN
+Circular 230
+Regulations Governing Practice before the IRS
+Report Fraud
+Overview
+Tax fraud and scams
+Identity theft
+Fake IRS email or message
+Tax return preparer misconduct
+Help for tax professionals
+Information Menu 2
+Help
+News
+Tax Pros
+English
+Español
+中文 (简体)
+中文 (繁體)
+한국어
+Русский
+Tiếng Việt
+Kreyòl ayisyen
+Help Menu Mobile
+Sign in
+Individual
+Business
+Tax Pro
+Access your tax information with an IRS account.
+Refunds
+Payments
+Tax records
+Create account
+File
+Overview
+INFORMATION FOR…
+Individuals
+Business and self-employed
+Charities and nonprofits
+International filers
+Retirement
+Governments and tax-exempt bonds
+Indian Tribal Governments
+FILING FOR INDIVIDUALS
+How to file
+When to file
+Where to file
+Update your information
+POPULAR
+Tax record (transcript)
+Apply for an Employer ID Number (EIN)
+Amend return
+Identity Protection PIN (IP PIN)
+Pay
+Overview
+PAY BY
+Bank Account (Direct Pay)
+Payment Plan (Installment Agreement)
+Electronic Federal Tax Payment System (EFTPS)
+POPULAR
+Your Online Account
+Tax Withholding Estimator
+Estimated Taxes
+Penalties
+Refunds
+Overview
+About refunds
+Direct deposit
+Reduced refunds
+Where’s my amended return?
+Credits & Deductions
+Overview
+INFORMATION FOR...
+Individuals
+Businesses & Self-Employed
+POPULAR
+Earned Income Credit (EITC)
+Child Tax Credit
+Clean Energy and Vehicle Credits
+Standard Deduction
+Retirement Plans
+Forms
+Overview
+POPULAR FORMS & INSTRUCTIONS
+Form 1040
+Form 1040 Instructions
+Form W-9
+Form 4506-T
+Form W-4
+Form 941
+Form W-2
+Form 9465
+POPULAR FOR TAX PROS
+Form 1040-X
+Form 2848
+Form W-7
+Circular 230
+Report Fraud
+Overview
+Tax fraud and scams
+Identity theft
+Fake IRS email or message
+Tax return preparer misconduct
+Help for tax professionals
+Main navigation
+File
+Pay
+Refunds
+Credits & Deductions
+Forms & Instructions
+Info Menu Mobile
+Charities & Nonprofits
+Help
+News
+Tax Pros
+Search
+Include Historical Content
+- Any -
+No
+Include Historical Content
+- Any -
+No
+Search
+Home
+Instructions
+Instructions for Form 5472 (12/2024)
+Instructions for Form 5472 - Introductory Material
+Future Developments
+What's New
+Definition of foreign person.
+General Instructions
+Purpose of Form
+Definitions
+Reporting corporation.
+25% foreign owned.
+25% foreign shareholder.
+Direct 25% foreign shareholder.
+Ultimate indirect 25% foreign shareholder.
+Related party.
+Reportable transaction.
+Foreign person.
+Disregarded entity (DE).
+Foreign-owned U.S. DE.
+Who Must File
+Exceptions from filing.
+Consolidated returns.
+When and Where To File
+Foreign-owned U.S. DEs.
+Dedicated mailing address.
+Extension of time to file.
+Electronic Filing of Form 5472
+Accrued Payments and Receipts
+Penalties
+Penalties for failure to file Form 5472.
+Record Maintenance Requirements
+Specific Instructions
+Part I—Reporting Corporation
+Line 1a. Address.
+Foreign address.
+Line 1c. Total assets.
+Lines 1d and 1e.
+Line 1f.
+Line 1g.
+Line 1h.
+Line 1j.
+Line 1k.
+Line 1o.
+Line 2.
+Line 3.
+Part II—25% Foreign Shareholder
+Part II, heading.
+Lines 4b(1), 5b(1), 6b(1), and 7b(1).
+Lines 4b(2), 5b(2), 6b(2), and 7b(2).
+Reference ID number.
+Requirements.
+Lines 4b(3), 5b(3), 6b(3), and 7b(3).
+Lines 6a–6e and lines 7a–7e.
+Part III—Related Party
+Line 8b(1).
+Line 8b(2).
+Part IV—Monetary Transactions Between Reporting Corporations and Foreign Related Party
+Reasonable estimates.
+Small amounts.
+Lines 11 and 25.
+Lines 12 and 26.
+Line 17. Amounts borrowed.
+Line 21. Other amounts received.
+Line 31. Amounts loaned.
+Line 32. Interest paid.
+Line 35. Other amounts paid.
+Part V—Reportable Transactions of a Reporting Corporation That Is a Foreign-Owned U.S. DE
+Part VI—Nonmonetary and Less-Than-Full Consideration Transactions Between the Reporting Corporation and the Foreign Related Party
+Part VII—Additional Information
+Lines 40a and 40b.
+Payments to which section 267A applies.
+Extent to which deduction is disallowed.
+Lines 41a–41d.
+Line 42a.
+Line 42b.
+Lines 43a and 43b
+Line 43a.
+Line 43b(1).
+Line 43b(2).
+Part VIII—Cost Sharing Arrangement (CSA)
+Line 44.
+Line 47.
+Lines 48b and 48c.
+Lines 49a and 49b.
+Part IX—Base Erosion Payments and Base Erosion Tax Benefits Under Section 59A
+Line 50.
+Line 51.
+Line 52.
+Instructions for Form 5472 - Notices
+Paperwork Reduction Act Notice.
+Instructions for Form 5472 (12/2024)
+Information Return of a 25% Foreign-Owned U.S. Corporation or a Foreign Corporation Engaged in a U.S. Trade or Business
+Section references are to the Internal Revenue Code unless otherwise noted.
+Revised: 12/2024
+Instructions for Form 5472 - Introductory Material
+Future Developments
+For the latest information about developments related to Form 5472 and its instructions, such as legislation enacted after they were published, go to
+IRS.gov/Form5472
+.
+What's New
+Definition of foreign person.
+In the last paragraph of the definition of foreign person, below, the exception for a foreign person filing a joint return now refers to specific Code sections 6013(g) and (h) in accordance with Regulations section 1.6038A-1(f)(1).
+General Instructions
+Purpose of Form
+Use Form 5472 to provide information required under sections 6038A and 6038C when reportable transactions occur during the tax year of a reporting corporation with a foreign or domestic related party.
+Definitions
+Reporting corporation.
+A reporting corporation is either:
+A 25% foreign-owned U.S. corporation (including a foreign-owned U.S. disregarded entity (DE)), or
+A foreign corporation engaged in a trade or business within the United States.
+25% foreign owned.
+A corporation is 25% foreign owned if it has at least one direct or indirect 25% foreign shareholder at any time during the tax year.
+25% foreign shareholder.
+Generally, a
+foreign person
+(defined later) is a 25% foreign shareholder if the person owns, directly or indirectly, at least 25% of either:
+The total voting power of all classes of stock entitled to vote, or
+The total value of all classes of stock of the corporation.
+The constructive ownership rules of section 318 apply with the following modifications to determine if a corporation is 25% foreign owned. Substitute “10%” for “50%” in section 318(a)(2)(C). Do not apply sections 318(a)(3)(A), (B), and (C), so as to consider a U.S. person as owning stock that is owned by a foreign person.
+Direct 25% foreign shareholder.
+A foreign person is a direct 25% foreign shareholder if it owns directly at least 25% of the stock of the reporting corporation by vote or value.
+Ultimate indirect 25% foreign shareholder.
+An ultimate indirect 25% foreign shareholder is a 25% foreign shareholder whose ownership of stock of the reporting corporation is not attributed (under the principles of sections 958(a)(1) and (2)) to any other 25% foreign shareholder. See Rev. Proc. 91-55, 1991-2 C.B. 784.
+Related party.
+A related party is:
+Any direct or indirect 25% foreign shareholder of the reporting corporation,
+Any person who is related (within the meaning of section 267(b) or 707(b)(1)) to the reporting corporation,
+Any person who is related (within the meaning of section 267(b) or 707(b)(1)) to a 25% foreign shareholder of the reporting corporation, or
+Any other person who is related to the reporting corporation within the meaning of section 482 and the related regulations.
+“Related party” does not include any corporation filing a consolidated federal income tax return with the reporting corporation.
+The rules in section 318 apply to the definition of related party with the modifications listed under the definition of
+25% foreign shareholder
+, earlier.
+Reportable transaction.
+A reportable transaction is:
+Any type of transaction listed in Part IV (for example, sales, rents, etc.) for which monetary consideration (including U.S. and foreign currency) was the sole consideration paid or received during the reporting corporation’s tax year;
+Any transaction listed in Part V; or
+Any transaction or group of transactions listed in Part VI.
+Transactions with a U.S. related party, however, are not required to be specifically identified in Parts IV, V, and VI.
+Foreign person.
+A foreign person is:
+An individual who is not a citizen or resident of the United States;
+An individual who is a citizen or resident of a U.S. possession who is not otherwise a citizen or resident of the United States;
+Any partnership, association, company, or corporation that is not created or organized in the United States;
+Any foreign estate or foreign trust described in section 7701(a)(31); or
+Any foreign government (or agency or instrumentality thereof) to the extent that the foreign government is engaged in the conduct of a commercial activity, as defined in section 892.
+However, the term “foreign person” does not include any individual for whom an election under section 6013(g) or (h) (relating to an election to file a joint return) is in effect.
+See Regulations section 1.6038A-1(f).
+Disregarded entity (DE).
+A DE is an entity that is disregarded as an entity separate from its owner for U.S. income tax purposes under Regulations sections 301.7701-2 and 301.7701-3. See the instructions for Form 8832.
+Foreign-owned U.S. DE.
+A foreign-owned U.S. DE is a domestic DE that is wholly owned by a foreign person. For tax years beginning on or after January 1, 2017, and ending on or after December 13, 2017, a foreign-owned U.S. DE is treated as an entity separate from its owner and classified as a corporation for the limited purposes of the requirements under section 6038A that apply to 25% foreign-owned domestic corporations. See the final regulations at
+IRS.gov/irb/2017-03_IRB#TD-9796
+.
+Who Must File
+Generally, a reporting corporation must file Form 5472 if it had a reportable transaction with a foreign or domestic related party.
+Exceptions from filing.
+A reporting corporation is not required to file Form 5472 if any of the following apply.
+It had no reportable transactions of the types listed in Parts IV and VI of the form and, in the case of a reporting corporation that is a foreign-owned U.S. DE, also had no reportable transactions of the type listed in Part V of the form.
+A U.S. person that controls the foreign related corporation files Form 5471, Information Return of U.S. Persons With Respect To Certain Foreign Corporations, for the tax year to report information under section 6038. To qualify for this exception, the U.S. person must complete Schedule M (Form 5471) showing all reportable transactions between the reporting corporation and the related party for the tax year. This exception does not apply to foreign-owned U.S. DEs.
+The related corporation qualifies as a foreign sales corporation for the tax year and files Form 1120-FSC, U.S. Income Tax Return of a Foreign Sales Corporation. This exception does not apply to foreign-owned U.S. DEs.
+It is a foreign corporation that does not have a permanent establishment in the United States under an applicable income tax treaty and timely files Form 8833, Treaty-Based Return Position Disclosure Under Section 6114 or 7701(b).
+It is a foreign corporation all of whose gross income is exempt from taxation under section 883 and it timely and fully complies with the reporting requirements of sections 883 and 887.
+Both the reporting corporation and the related party are not U.S. persons, as defined in section 7701(a)(30) and the transactions will not generate in any tax year:
+Gross income from sources within the United States or income effectively connected, or treated as effectively connected, with the conduct of a trade or business within the United States; or
+Any expense, loss, or other deduction that is allocable or apportionable to such income.
+Note.
+Exception 6 does not apply to foreign-owned U.S. DEs.
+Consolidated returns.
+If a reporting corporation is a member of an affiliated group filing a consolidated income tax return, Regulations section 1.6038A-2 may be satisfied by filing a U.S. consolidated Form 5472. The common parent must attach to Form 5472 a schedule stating which members of the U.S. affiliated group are reporting corporations under section 6038A, and which of those members are joining in the consolidated filing of Form 5472. The schedule must show the name, address, and employer identification number (EIN) of each member who is including transactions on the consolidated Form 5472.
+Note.
+A member is not required to join in filing a consolidated Form 5472 just because the other members of the group choose to file one or more Forms 5472 on a consolidated basis.
+When and Where To File
+File Form 5472 as an attachment to the reporting corporation's income tax return by the due date (including extensions) of that return.
+Foreign-owned U.S. DEs.
+While a foreign-owned U.S. DE has no income tax return filing requirement, as a result of final regulations under section 6038A, it will now be required to file a pro forma
+Form 1120, U.S. Corporation Income Tax Return
+, with Form 5472 attached by the due date (including extensions) of that Form 1120. The
+only
+information required to be completed on Form 1120 is the name and address of the foreign-owned U.S. DE and items B and E on the first page. The foreign-owned U.S. DE has the same tax year used by its owner for U.S. tax filing requirements or, if none, the calendar year.
+Dedicated mailing address.
+Foreign-owned U.S. DEs are required to use the following dedicated mailing address. These filers do not use the mailing address provided in the Instructions for Form 1120.
+Note.
+“Foreign-owned U.S. DE” should be written across the top of the Form 1120. File these forms by:
+Fax (300 DPI or higher) to 855-887-7737, or
+Mail to:
+Internal Revenue Service
+1973 Rulon White Blvd
+M/S 6112 Attn: PIN Unit
+Ogden, UT 84201
+Foreign-owned U.S. DEs are required to use the special mailing address, as mentioned earlier. These filers do not use the mailing addresses provided in the Instructions for Form 1120.
+Extension of time to file.
+A foreign-owned U.S. DE required to file Form 5472 can request an extension of time to file by filing
+Form 7004, Application for Automatic Extension of Time To File Certain Business Income Tax, Information, and Other Returns
+. The DE must file Form 7004 by the regular due date of the return. Because the Form 5472 of a DE must be attached to a pro forma Form 1120, the code for Form 1120 should be entered on Form 7004, Part I, line 1. “Foreign-owned U.S. DE” should be written across the top of Form 7004.
+The DE must fax or mail the Form 7004 to the fax number or mailing address identified earlier, by the due date (excluding extensions) of the return. For these entities, do not use the regular filing address listed in the Instructions for Form 7004.
+For further general information, see the Instructions for Form 7004.
+Electronic Filing of Form 5472
+If you file your income tax return electronically, see the instructions for your income tax return for general information about electronic filing.
+If you are a foreign-owned U.S. DE, you cannot file Form 5472 electronically. See
+Foreign-owned U.S. DEs
+under When and Where To File, earlier, for acceptable methods of filing.
+Accrued Payments and Receipts
+A reporting corporation that uses an accrual method of accounting must use accrued payments and accrued receipts for purposes of computing the total amount to enter on each line of Form 5472. See Regulations section 1.6038A-2(b)(10).
+Penalties
+Penalties for failure to file Form 5472.
+A penalty of $25,000 will be assessed on any reporting corporation that fails to file Form 5472 when due and in the manner prescribed. The penalty also applies for failure to maintain records as required by Regulations section 1.6038A-3.
+Note.
+Filing a substantially incomplete Form 5472 constitutes a failure to file Form 5472.
+Each member of a group of corporations filing a consolidated information return is a separate reporting corporation subject to a separate $25,000 penalty and each member is jointly and severally liable.
+If the failure continues for more than 90 days after notification by the IRS, an additional penalty of $25,000 will apply. This penalty applies with respect to each related party for which a failure occurs for each 30-day period (or part of a 30-day period) during which the failure continues after the 90-day period ends.
+Criminal penalties under sections 7203, 7206, and 7207 may also apply for failure to submit information or for filing false or fraudulent information.
+Record Maintenance Requirements
+A reporting corporation must keep the permanent books of account or records as required by section 6001. These books must be sufficient to establish the correctness of the reporting corporation’s federal income tax return, including information or records that might be relevant to determine the correct treatment of transactions with related parties. See Regulations section 1.6038A-3 for more detailed information. Also, see Regulations sections 1.6038A-1(h) and 1.6038A-1(i) for special rules that apply to small corporations and reporting corporations with related party transactions of de minimis value.
+Specific Instructions
+Part I—Reporting Corporation
+Line 1a. Address.
+Include the suite, room, or other unit number after the street address. If the post office does not deliver mail to the street address and the corporation has a P.O. box, show the box number instead.
+Foreign address.
+Enter the information in the following order: city, province or state, and country. Follow the country’s practice for entering the postal code, if any. Do not abbreviate the country name.
+Line 1c. Total assets.
+Domestic reporting corporations enter the total assets from Form 1120, page 1, item D. Foreign reporting corporations enter the amount from Form 1120-F, U.S. Income Tax Return of a Foreign Corporation, Schedule L, line 17, column (d).
+Lines 1d and 1e.
+Enter a description of the principal business activity and enter the principal business activity code. See the Instructions for Form 1120 or the Instructions for Form 1120-F for a list of principal business activities and their associated codes.
+Line 1f.
+Enter the total value in U.S. dollars of all foreign related party transactions reported in Parts IV and VI (and if the reporting corporation is a foreign-owned U.S. DE, Part V) of
+this
+Form 5472. This is the total of the amounts entered on lines 22 and 36 of Part IV plus the fair market value (FMV) of the nonmonetary and less than full consideration transactions reported in Part VI. Do
+not
+complete line 1f if the reportable transaction is with a U.S. related party.
+Line 1g.
+File a separate Form 5472 for each foreign or U.S. person who is a related party with which the reporting corporation had a reportable transaction. Enter the total number of Forms 5472 (including this one) being filed for the tax year.
+Line 1h.
+Enter the total value in U.S. dollars of all foreign related party transactions reported in Parts IV and VI (and if the reporting corporation is a foreign-owned U.S. DE, Part V) of
+all
+Forms 5472 filed for the tax year. This is the total of the amounts entered on line 1f of
+all
+Forms 5472 filed for the tax year (including this one).
+Line 1j.
+Check the box if this is the first year the U.S. reporting corporation has filed a Form 5472.
+Line 1k.
+Complete Part VIII for each cost sharing arrangement (CSA) and enter the total number of Parts VIII attached to Form 5472 on line 1k.
+Line 1o.
+Provide the principal country(ies) where business is conducted.
+Do not
+include any country(ies) in which business is conducted solely through a subsidiary.
+Do not
+enter “worldwide” instead of listing the country(ies). These rules also apply to lines 5c, 6c, and 7c of Part II, and line 8f of Part III.
+Line 2.
+For purposes of this line:
+Foreign person
+has the same meaning as provided earlier under
+Definitions
+; and
+50% direct or indirect ownership is determined by applying the constructive ownership rules of section 318 with the modifications listed under the definition of
+25% foreign shareholder
+, earlier.
+Line 3.
+Check this box if you are a
+foreign-owned U.S. DE
+.
+Part II—25% Foreign Shareholder
+Note.
+Only 25% foreign-owned U.S. corporations, including foreign-owned U.S. DEs, complete Part II. For a foreign-owned U.S. DE, report the information for the foreign owner on the lines provided for the 25% foreign shareholder.
+The form provides sufficient space to report information for two direct 25% foreign shareholders and two ultimate indirect 25% foreign shareholders. If more space is needed, show the information requested in Part II on an attached sheet.
+Report on lines 4a through 4e information about the direct 25% foreign shareholder who owns (by vote or value) the largest percentage of the stock of the U.S. reporting corporation.
+Report on lines 5a through 5e information about the direct 25% foreign shareholder who owns (by vote or value) the second largest percentage of the stock of the U.S. reporting corporation.
+Report on lines 6a through 6e information about the ultimate indirect 25% foreign shareholder who owns (by vote or value) the largest percentage of the stock of the U.S. reporting corporation.
+Report on lines 7a through 7e information about the ultimate indirect 25% foreign shareholder who owns (by vote or value) the second largest percentage of the stock of the U.S. reporting corporation.
+Part II, heading.
+Check the box if any direct or indirect 25% foreign shareholder identified in Part II is a surrogate foreign corporation, as defined in section 7874(a)(2)(B) resulting from an inversion in the current year or in the previous 10 years.
+Lines 4b(1), 5b(1), 6b(1), and 7b(1).
+For each 25% foreign shareholder listed in Part II, enter the shareholder's U.S. identifying number, if any. Individuals should enter a social security number (SSN), or an individual taxpayer identification number (ITIN) issued by the IRS. All other entities should enter an EIN.
+Lines 4b(2), 5b(2), 6b(2), and 7b(2).
+For each 25% foreign shareholder listed in Part II, enter the shareholder's reference ID number, if required. A reference ID number is required only in cases where no U.S. identifying number was entered for the shareholder on the preceding line (line 4b(1), 5b(1), 6b(1), or 7b(1), respectively). However, filers are permitted to enter both an EIN and a reference ID number. If applicable, enter the
+reference ID number
+(defined later) you have assigned to the 25% foreign shareholder.
+Reference ID number.
+A reference ID number is a number established by or on behalf of the reporting corporation identified in Part I that is assigned to 25% foreign shareholders and/or related foreign parties with respect to which Form 5472 reporting is required. These numbers are used to uniquely identify the 25% foreign shareholder or related foreign party in order to keep track of such foreign person from tax year to tax year. The reference ID number must meet the
+requirements
+set forth later.
+Note.
+Because reference ID numbers are established by or on behalf of the reporting corporation filing Form 5472, there is no need to apply to the IRS to request a reference ID number or for permission to use these numbers.
+Requirements.
+The reference ID number that is entered must be alphanumeric (defined later), and no special characters or spaces are permitted. The length of a given reference ID number is limited to 50 characters.
+For these purposes, the term “alphanumeric” means the entry can be alphabetical, numeric, or any combination of the two.
+The same reference ID number must be used consistently from tax year to tax year with respect to a given 25% foreign shareholder or related foreign party. If for any reason a reference ID number falls out of use (for example, the 25% foreign shareholder or related foreign party no longer exists due to disposition or liquidation), the reference ID number used for such foreign person cannot be used again for another 25% foreign shareholder or related foreign party for purposes of Form 5472 reporting.
+There are some situations that warrant correlation of a new reference ID number with a previous reference ID number when assigning a new reference ID number to a 25% foreign shareholder or related foreign party.
+For example, in the case of a merger or acquisition involving a 25% foreign shareholder or related foreign party, a Form 5472 filer must use a reference ID number that correlates the previous reference ID number with the new reference ID number assigned to the 25% foreign shareholder or related foreign party.
+In the case of an entity classification election that is made on behalf of a 25% foreign shareholder or related foreign party on Form 8832, Regulations section 301.6109-1(b)(2)(v) requires the 25% foreign shareholder or related foreign party to have an EIN for this election. For the first tax year that Form 5472 is filed after an entity classification election is made on behalf of the 25% foreign shareholder or related foreign party on Form 8832, the new EIN must be entered in the applicable entry space in Part II or Part III and the old reference ID number must be entered in the applicable entry space to the right. In subsequent years, the Form 5472 filer may continue to enter both the EIN and the reference ID number, but must enter at least the EIN.
+You must correlate the reference ID numbers as follows.
+New reference ID number [space] Old reference ID number.
+If there is more than one old reference ID number, you must enter a space between each such number.
+As indicated earlier, the length of a given reference ID number is limited to 50 characters and each number must be alphanumeric and no special characters are permitted.
+Note.
+This correlation requirement applies only to the first year the new reference ID number is used.
+Lines 4b(3), 5b(3), 6b(3), and 7b(3).
+A foreign-owned U.S. DE
+must
+enter a foreign taxpayer identification number (FTIN), if any, for each direct and ultimate foreign owner listed in Part II. If a foreign-owned U.S. DE has, as a direct owner, a foreign DE, report that foreign DE as the direct owner. The FTIN should be used consistently on an annual basis when filing Form 5472, as an EIN or reference ID number would be used. If you do not have an FTIN, enter “None” or “N/A” in the FTIN block. If you have a U.S. identifying number and/or reference ID number, you can enter it in the appropriate block, as discussed earlier.
+Filers of Form 5472, other than foreign-owned U.S. DEs, can enter an FTIN on these lines. However, they must also enter a U.S. identifying number or reference ID number on lines 4b(1)/7b(1) or 4b(2)/7b(2), respectively. If you are not a foreign-owned U.S. DE, and do not have an FTIN, leave the block blank.
+Lines 6a–6e and lines 7a–7e.
+Attach an explanation of the attribution of ownership. See Rev. Proc. 91-55, and Regulations section 1.6038A-1(e).
+Part III—Related Party
+All filers must complete Part III even if the related party has been identified in Part II as a 25% foreign shareholder. Report in Part III information about the related party (domestic or foreign) with which the reporting corporation had reportable transactions during the tax year.
+Line 8b(1).
+Enter the related party's U.S. identifying number, if any. For individuals, enter an SSN, or an ITIN issued by the IRS. For all other entities, enter an EIN.
+Line 8b(2).
+If the related party is a foreign person, enter the related party's reference ID number, if required. A reference ID number is required only in cases where no U.S. identifying number was entered for the foreign related party on line 8b(1). However, filers are permitted to enter both an EIN and a reference ID number. If applicable, enter the reference ID number you have assigned to the foreign related party. See
+Reference ID number
+, earlier, for more information.
+Part IV—Monetary Transactions Between Reporting Corporations and Foreign Related Party
+Note.
+Do
+not
+complete Part IV for transactions with a domestic related party.
+When completing Part IV or Part VI, the terms “paid” and “received” include accrued payments and accrued receipts.
+State all amounts in U.S. dollars and attach a schedule showing the exchange rates used.
+If the related party transactions occur between a related party and a partnership that is, in whole or in part, owned by a reporting corporation, the reporting corporation reports only the percentage of the value of the transaction(s) equal to the percentage of its partnership interest. This rule does not apply if the reporting corporation owns a less-than-25% interest in the partnership. The rules of attribution apply when determining the reporting corporation’s percentage of partnership interest.
+Reasonable estimates.
+When actual amounts are not determinable, enter reasonable estimates (discussed later) of the total dollar amount of each of the categories of transactions conducted between the reporting corporation and the related person in which monetary consideration (U.S. currency or foreign currency) was the sole consideration paid or received during the tax year of the reporting corporation.
+A reasonable estimate is any amount reported on Form 5472 that is at least 75% but not more than 125% of the actual amount required to be reported.
+Small amounts.
+If any actual amount in a transaction or a series of transactions between a foreign related party and the reporting corporation does not exceed a total of $50,000, the amount may be reported as “$50,000 or less.”
+Lines 11 and 25.
+Report on these lines platform contribution transaction payments received and paid by the reporting corporation (without giving effect to any netting of payments due and owed). See Regulations section 1.482-7(b)(1)(ii).
+Note.
+The term “platform contribution transaction” is not limited to transactions that occurred on or after January 5, 2009, or transactions that occur according to a CSA that was not in effect before January 5, 2009. See Regulations sections 1.482-7(m)(1) and (m)(2)(i).
+Lines 12 and 26.
+Report on these lines cost sharing transaction payments received and paid by the reporting corporation (without giving effect to any netting of payments). See Regulations section 1.482-7(b)(1)(i). The corporation is required to complete line 12 only if the corporation itself incurred intangible development costs (IDCs). If the corporation does not itself incur IDCs, then it should only report cost sharing transaction payments made on line 26.
+Note.
+The term “cost sharing transaction” is not limited to transactions that occurred on or after January 5, 2009, or transactions that occur according to a CSA that was not in effect before January 5, 2009. See Regulations sections 1.482-7(m)(1) and (m)(2)(i).
+Line 17. Amounts borrowed.
+Report amounts borrowed (including borrowings in place at the beginning of the tax year) using either the outstanding balance method or the monthly average method. If the outstanding balance method is used, enter the beginning and ending outstanding balances for the tax year on lines 17a and 17b. If the monthly average method is used, skip line 17a and enter the monthly average for the tax year on line 17b.
+Line 21. Other amounts received.
+Enter amounts received that are not specifically reported on lines 9 through 20. Include amounts on line 21 to the extent that these amounts are taken into account in determining the taxable income of the reporting corporation.
+Line 31. Amounts loaned.
+Report amounts loaned (including loans in place at the beginning of the tax year) using either the outstanding balance method or the monthly average method. If the outstanding balance method is used, enter the beginning and ending outstanding balances for the tax year on lines 31a and 31b. If the monthly average method is used, skip line 31a and enter the monthly average for the tax year on line 31b.
+Line 32. Interest paid.
+Report the amount of interest paid or accrued. If the amount of interest paid or accrued is subject to the limitation of section 163(j), report only the amount allowed as a deduction under that section. For more information, see the Instructions for Form 8990, Limitation on Business Interest Expense Under Section 163(j). Any amounts accrued or paid in excess of the amount allowed as a deduction under section 163(j) will be treated as interest paid or accrued in a subsequent year and are required to be reported on this line in the year the deferred amount is allowed as a deduction.
+Line 35. Other amounts paid.
+Enter amounts paid that are not specifically reported on lines 23 through 34. Include amounts on line 35 to the extent that these amounts are taken into account in determining the taxable income of the reporting corporation.
+Part V—Reportable Transactions of a Reporting Corporation That Is a Foreign-Owned U.S. DE
+You must check the box in Part V if you are a foreign-owned DE that had any other transaction, as defined by Regulations section 1.482-1(i)(7) not already entered in Part IV. These transactions include amounts paid or received in connection with the formation, dissolution, acquisition, and disposition of the entity, including contributions to, and distributions from, the entity. Describe these on an attached statement.
+Part VI—Nonmonetary and Less-Than-Full Consideration Transactions Between the Reporting Corporation and the Foreign Related Party
+Note.
+Do not complete Part VI for transactions with a domestic related party.
+If the related party is a foreign person, the reporting corporation must attach a schedule describing each reportable transaction or group of reportable transactions. The description must include sufficient information so that the nature and approximate monetary value of the transaction or group of transactions can be determined. The schedule should include:
+A description of all property (including monetary consideration), rights, or obligations transferred from the reporting corporation to the foreign related party and from the foreign related party to the reporting corporation;
+A description of all services performed by the reporting corporation for the foreign related party and by the foreign related party for the reporting corporation; and
+A reasonable estimate of the FMV of all properties and services exchanged, if possible, or some other reasonable indicator of value.
+See the instructions for
+Part IV
+, earlier, for information on reasonable estimates and small amounts.
+Part VII—Additional Information
+All reporting corporations must complete the additional information in Part VII.
+Lines 40a and 40b.
+Section 267A disallows a deduction for certain interest or royalty paid or accrued pursuant to a hybrid arrangement, to the extent that, under the foreign tax law, there is not a corresponding income inclusion (including long-term deferral). Report on line 40b the total amount of interest and royalty paid or accrued by the reporting corporation (including, in the case of a reporting corporation that is a partner of a partnership, the reporting corporation’s allocable share of interest or royalty paid or accrued by the partnership) for which a deduction is disallowed under section 267A.
+Payments to which section 267A applies.
+Interest or royalty paid or accrued by the reporting corporation (including through a partnership) is subject to section 267A. Section 267A generally applies to interest or royalty paid or accrued pursuant to a hybrid arrangement (such as, for example, a payment pursuant to a hybrid instrument, or a payment to a reverse hybrid), provided that the payment or accrual is to a related party (or pursuant to a structured arrangement). In addition, pursuant to an imported mismatch rule, section 267A generally applies to interest or royalty paid or accrued pursuant to a non-hybrid arrangement where the income attributable to that payment or accrual is directly or indirectly offset by certain deductions involving hybridity incurred by a related party or pursuant to a structured arrangement. However, section 267A does not apply if a de minimis exception is satisfied. See Regulations section 1.267A-1(c). For purposes of section 267A, interest and royalty are defined broadly. For additional information about arrangements subject to section 267A, see Regulations sections 1.267A-2 and 1.267A-4. Also see the anti-avoidance rule under Regulations section 1.267A-5(b)(6).
+Extent to which deduction is disallowed.
+When section 267A applies to interest or royalty paid or accrued pursuant to a hybrid arrangement, it generally disallows a deduction for the amount to the extent that, under the foreign tax law, there is not a corresponding income inclusion (including long-term deferral). However, the deduction is not disallowed to the extent the amount is directly or indirectly included in income in the United States, such as if the amount is taken into account with respect to a U.S. shareholder under section 951(a) or section 951A. For additional information, see Regulations sections 1.267A-2 through 1.267A-4. For examples illustrating the application of section 267A, see Regulations section 1.267A-7.
+Lines 41a–41d.
+Check the “Yes” box on line 41a if the filer of this Form 5472 is claiming a deduction under section 250 with respect to foreign-derived intangible income (FDII) derived from any transaction with the foreign related party and enter those amounts as requested on lines 41b through 41d. State all amounts in U.S. dollars and attach a schedule showing the exchange rates used. With respect to lines 41b and 41c, the term “sales” includes any lease, license, sublicense, exchange, or other disposition of property. See Regulations section 1.250(b)-3(b)(16).
+If the filer of this Form 5472 is not claiming a deduction under section 250 with respect to FDII derived from any transaction with the foreign related party, check the “No” box on line 41a and skip lines 41b through 41d.
+See Form 8993, Section 250 Deduction for Foreign-Derived Intangible Income (FDII) and Global Intangible Low-Taxed Income (GILTI), and its instructions for information on the section 250 deduction.
+Line 42a.
+Check the “Yes” box if, during the tax year, the reporting corporation had any loans to or from the related party to which the safe-haven rate rules of Regulations section 1.482-2(a)(2)(iii)(B) are applicable, and for which the reporting corporation used a rate of interest within the relevant safe-haven range (100% to 130% of the Applicable Federal Rate (AFR) for the relevant term).
+Line 42b.
+Check the "Yes" box if during the tax year the reporting corporation had any loans to or from the related party to which the safe-haven rate rules of Regulations section 1.482-2(a)(2)(iii)(B) are applicable, and for which the reporting corporation used a rate of interest outside the relevant safe-haven range (100% to 130% of the AFR for the relevant term).
+Lines 43a and 43b
+Note.
+Complete lines 43a, 43b(1), and 43b(2) only if the reporting corporation is a domestic corporation. (Do not complete these lines if the reporting corporation is a foreign-owned U.S. DE.) In completing these lines, do not account for debt instruments that were issued, or distributions or acquisitions that occurred, before April 5, 2016. See Regulations sections 1.385-3(g)(3) and (b)(3)(viii).
+Line 43a.
+Check the “Yes” box if the reporting corporation issued a covered debt instrument in any of the transactions described in Regulations section 1.385-3(b)(2) during the tax year with respect to a related party that is a corporation. Also check “Yes” if the reporting corporation issued or refinanced indebtedness owed to a related party that is a corporation during the 36 months before or after the date of a distribution or acquisition described in Regulations section 1.385-3(b)(3)(i) made by the reporting corporation, and either the issuance or refinance of indebtedness, or the distribution or acquisition, occurred during the tax year. Otherwise, check “No.” Apply Regulations section 1.385-3(b)(3)(iii)(E) to determine when a debt instrument is treated as issued for purposes of Regulations section 1.385-3(b)(3)(iii). Apply Regulations section 1.385-3(f) in the case of a controlled partnership within the meaning of Regulations section 1.385-1(c)(1).
+Debt that the reporting corporation treats as stock pursuant to Regulations section 1.385-3 still should be included when completing line 43a.
+Line 43b(1).
+Provide the total amount of the transactions described in Regulations section 1.385-3(b)(2) (as measured by the FMV of the distributions or, as the case may be, of the property exchanged for the debt instruments), and of the distributions and/or acquisitions described in Regulations section 1.385-3(b)(3)(i) (as measured by the FMV of the property distributed and/or acquired).
+Line 43b(2).
+Provide the total amount (as measured by issue price in the case of an instrument treated as stock upon issuance, or adjusted issue price in the case of an instrument deemed exchanged for stock) of the debt instrument issuances addressed by line 43a. See Regulations sections 1.385-1(d)(1) and 1.385-3(d). The adjusted issue price of a debt instrument is the issue price increased by the amount of original issue discount previously includible in gross income of any holder and decreased by payments other than payments of qualified stated interest. See section 1272(a)(4) and Regulations section 1.1275-1(b)(1).
+Part VIII—Cost Sharing Arrangement (CSA)
+Note.
+A separate Part VIII must be filed for each CSA, as defined in Regulations section 1.482-7(b) in which the reporting corporation was a controlled participant (as defined in Regulations section 1.482-7(j)) during the tax year.
+All amounts should be reported in U.S. dollars.
+Line 44.
+Provide a brief description of the CSA, including the industry and intangibles involved, and sufficient detail to distinguish the CSA from any other CSAs in which the reporting corporation is a controlled participant.
+Line 47.
+Enter the reporting corporation’s share of reasonably anticipated benefits (RAB) for the CSA during the tax year. See Regulations section 1.482-7(e) for rules on determining and updating a controlled participant’s RAB share. If the reporting corporation applied more than one RAB share during the tax year in determining its share of IDCs, enter the RAB share that was applied to IDCs incurred at the end of the year. See Regulations section 1.482-7(d) for more information on IDCs.
+Lines 48b and 48c.
+See Regulations section 1.482-7 for more information on determining whether stock-based compensation is directly identified with, or reasonably allocable to, the intangible development activity (IDA) under the CSA. See Regulations section 1.482-7(d)(3) and Notice 2005-99 for more information on determining the measurement and timing of stock-based compensation IDCs, including an election available with respect to options on publicly traded stock and certain other stock-based compensation. If the taxpayer made the election described in Regulations section 1.482-7(d)(3)(iii)(B) or Notice 2005-99, the taxpayer should attach a statement to Form 5472 explaining that the taxpayer made such election and include in such statement the total amount of stock-based compensation taken into account as an IDC for the tax year pursuant to such election. If the taxpayer attaches the statement described in the previous sentence, then in the entry space provided for line 48b the taxpayer should include the total amount of stock-based compensation taken into account as an IDC, including stock-based compensation pursuant to the election described above and any not subject to such election.
+Check the appropriate box on line 48c to indicate whether any stock-based compensation was granted during the term of the CSA to individuals who performed functions in business activities that generate cost shared intangibles that was not treated as directly identified with, or reasonably allocable to, the IDA, as defined in Regulations section 1.482-7(d)(1)(i). This would include stock-based compensation granted in earlier years (which could give rise to deductions in the current tax year) that were not treated as identified with, or reasonably allocable to, the IDA.
+Lines 49a and 49b.
+For the tax year, enter the total amount of IDCs for the CSA on line 49a. See Regulations section 1.482-7(d) for more information on IDCs. On line 49b, enter the amount of IDCs allocable to the reporting corporation for the tax year based on the reporting corporation’s RAB share.
+Part IX—Base Erosion Payments and Base Erosion Tax Benefits Under Section 59A
+Line 50.
+Enter the amount of base erosion payments made by the reporting corporation (if any). The term “base erosion payment” generally means any amount paid or accrued by the reporting corporation to a foreign person, which is a related party, and with respect to which a deduction is allowed under chapter 1 of the Code. See section 59A(d)(1) and Regulations section 1.59A-3(b)(1)(i).
+Base erosion payments also include amounts paid or accrued by the reporting corporation to a foreign related party in connection with the acquisition of depreciable or amortizable property (see section 59A(d)(2) and Regulations section 1.59A-3(b)(1)(ii)), certain reinsurance payments (see section 59A(d)(3) and Regulations section 1.59A-3(b)(1)(iii)), and certain payments relating to expatriated entities (see section 59A(d)(4) and Regulations section 1.59A-3(b)(1)(iv)).
+For additional information about base erosion payments, including rules for determining the amount paid or accrued, and certain exceptions, see Regulations section 1.59A-3.
+Line 51.
+Enter the amount of base erosion tax benefits of the reporting corporation (if any). The term “base erosion tax benefit” generally means any deduction that is allowed under chapter 1 for the tax year with respect to any base erosion payment. See sections 59A(c)(2)(A) and 59A(c)(2)(B) and Regulations section 1.59A-3(c) for further details.
+The term “base erosion tax benefit” also includes certain reductions in gross premiums with respect to certain reinsurance payments described in section 59A(d)(3) and Regulations section 1.59A-3(c)(1)(iii) and certain reductions in gross receipts with respect to certain expatriated entities described in section 59A(d)(4) and Regulations section 1.59A-3(c)(1)(iv).
+Line 52.
+Enter the amount of qualified derivative payments made by the reporting corporation. The term “qualified derivative payment” generally means any payment made by a taxpayer according to a derivative with respect to which the taxpayer:
+Recognizes gain or loss as if such derivative were sold for its FMV on the last business day of the tax year (and any additional times required by the taxpayer’s method of accounting);
+Treats any gain or loss so recognized as ordinary; and
+Treats the character of all items of income, deduction, gain, or loss with respect to a payment according to the derivative as ordinary.
+Determine the amount of the qualified derivative payments after combining all items of income, gain, loss, or deduction arising with respect to the position during the tax year. A qualified derivative payment is not a base erosion payment or a base erosion tax benefit and should not be included on Part IX, lines 50 and 51. See section 59A(h) and Regulations section 1.59A-6 for further details.
+Instructions for Form 5472 - Notices
+Paperwork Reduction Act Notice.
+We ask for the information on this form to carry out the Internal Revenue laws of the United States. You are required to give us the information. We need it to ensure that you are complying with these laws and to allow us to figure and collect the right amount of tax.
+You are not required to provide the information requested on a form that is subject to the Paperwork Reduction Act unless the form displays a valid OMB control number. Books or records relating to a form or its instructions must be retained as long as their contents may become material in the administration of any Internal Revenue law. Generally, tax returns and return information are confidential, as required by section 6103.
+The time needed to complete and file this form will vary depending on individual circumstances. The estimated burden for business taxpayers filing this form is approved under OMB control number 1545-0123. The estimated burden for all other taxpayers who file this form is:
+Recordkeeping
+17 hr., 42 min.
+Learning about the law or the form
+3 hr., 4 min.
+Preparing and sending the form to the IRS
+3 hr., 30 min.
+If you have comments concerning the accuracy of these time estimates or suggestions for making this form simpler, we would be happy to hear from you. See the instructions for the tax return with which this form is filed.
+Page Last Reviewed or Updated: 30-Apr-2026
+Share
+Facebook
+Twitter
+Linkedin
+Print
+Footer Navigation
+Our Agency
+About IRS
+Careers
+Financial and Budget Reports
+Tax Statistics
+Help
+Find a Local Office
+Know Your Rights
+Taxpayer Bill of Rights
+Taxpayer Advocate Service
+Independent Office of Appeals
+Civil Rights
+FOIA
+No FEAR Act Data
+Reliance on Guidance
+Resolve an Issue
+IRS Notices and Letters
+Identity Theft
+Tax scams
+Tax Fraud
+Criminal Investigation
+Whistleblower Office
+Languages
+Español
+中文 (简体)
+中文 (繁體)
+한국어
+Pусский
+Tiếng Việt
+Kreyòl ayisyen
+English
+Related Sites
+U.S. Treasury
+Treasury Inspector General for Tax Administration
+USA.gov
+USAspending.gov
+Vote.gov
+Subfooter
+Privacy Policy
+Accessibility

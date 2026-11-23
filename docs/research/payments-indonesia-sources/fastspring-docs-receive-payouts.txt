@@ -1,0 +1,418 @@
+SOURCE https://developer.fastspring.com/docs/receive-payouts
+HTTP 200 fetched 2026-11-23
+For AI agents: the docs index is at https://developer.fastspring.com/llms.txt. Append .md to any documentation page URL to get its markdown version.
+Jump to Content
+Home
+Guides
+Developer Hub
+Changelog
+API Reference
+Webhooks
+FastSpring JS
+FastSpring.com
+Sign In
+Guides
+Search
+Ask AI
+Sign In
+Home
+Guides
+Developer Hub
+Changelog
+API Reference
+Webhooks
+FastSpring JS
+FastSpring.com
+Receive payouts
+Getting Started
+Welcome to FastSpring
+Activate your store
+Choose a checkout experience
+Support and resources
+Find answers with Ask AI
+Payout Portal
+Payout Portal overview
+Set up your payout account
+Receive payouts
+Split partner accounts
+Transaction reports and statements
+Migrations
+Migrate from Classic to Contextual Commerce
+Store and Account Settings
+Store Setup
+Configure store settings
+Manage payment methods
+Request purchase limits
+Manage roles and permissions
+Set up seller notifications
+Reseller Management
+What is a reseller partner?
+Manage reseller partners
+Configure reseller partner store
+Reseller ordering and fulfillment
+Tax Settings
+Set a product tax category
+Tax category selection helper
+Understand VAT and sales tax
+Tax information reporting: Form W-8 and W-9
+Tax information reporting: Form 1099-K
+US tax withholding for downloadable subscription software
+Payment Configuration
+Currencies and conversions
+Default currencies and languages
+Gross and net pricing modes
+Payment hierarchy
+Declined and canceled payments
+Configure invoice-based purchases
+Configure gift purchases
+Payment Methods
+Payment methods accepted by FastSpring
+ACH Direct Debit
+Alipay
+Amazon Pay
+Apple Pay
+Brazilian Card
+Cash App
+Google Pay
+Kakao Pay
+Klarna “Pay Now”
+Mercado Pago
+Mexican Local Acquiring
+OVO
+Pix
+Pix Automatico
+PromptPay
+Single Euro Payments Area (SEPA)
+Toss Pay
+Turkish Local Acquiring
+UPI
+UPI AutoPay
+Venmo
+WeChat Pay
+Security and Compliance
+Configure security settings
+Terms, conditions, and EULAs
+PSD2 and SCA compliance
+GDPR compliance
+Machine-learning fraud engine
+Checkouts
+Checkouts Overview
+Managing a Checkout
+Checkout settings
+Access checkout URLs
+Currency and language settings
+Test orders
+Popup Checkouts
+Popup checkout overview
+Create a popup checkout
+Configure checkout experience
+Style your checkout
+Checkout analytics and branding
+Add a shopping cart
+Add checkout to your site
+Redirect after checkout
+Embedded Checkouts
+Embedded checkout overview
+Create an embedded checkout
+Configure checkout experience
+Style your checkout
+Checkout analytics and branding
+Embed your checkout
+Enhance your checkout
+Web Checkouts
+Web checkout overview
+Create a web checkout
+Web checkout appearance
+Web checkout behavior
+Component Checkouts • Beta
+Set up Component Checkouts
+Products and Subscriptions
+Product Setup
+Create or copy a product
+Customize a product
+Add product options
+Create product bundles
+Configure product offers
+Create a product variation
+Product Management
+Manage your products
+Limit product availability by country
+Subscription Setup
+Create a subscription
+Customize a subscription
+Set up a managed subscription
+Set up manual renewal
+Set up renewal invoicing
+Configure renewal settings
+Subscription Management
+Manage active subscriptions
+Pause a subscription
+Auto-renew into a different subscription
+Add subscription add-ons
+Set up trial subscriptions
+Prevent trial hopping
+Configure cancellation survey
+Dynamic Subscription Repricing
+Fulfillment Configuration
+Fulfillments Overview
+License Keys
+File Downloads
+Signed PDF
+Extended Download Service
+Customer Notifications
+Email Template Elements
+MIME 1.0 License Output Format
+List of Accepted Elements in Data Fields
+Coupons and Discounts
+Create and manage coupons
+Multi-Discount Coupons
+Product Discounts
+Effective Date Flag for Discounts
+Sales
+Checkout and Orders
+Checkout and orders overview
+1ClickPay
+Search for orders
+Refund an order
+Chargebacks and disputes
+Manage custom orders
+Configure payment methods
+Customer Accounts
+Customer accounts and security
+Account management portal
+Embedded payment management
+Pass customer information
+Digital Invoicing
+Digital invoicing overview
+Digital invoicing settings
+Create and send quotes
+Self-service quotes
+Manage quotes and invoices
+Integrations
+In-App Extensions
+Developer Tools
+Shipping Fee Calculator
+Extensions Overview
+Analytics & Tracking
+Google Analytics 4
+GA4 Setup
+Migrating from Universal Analytics to GA4
+GA4 (Classic Documentation)
+Google Measurement Protocol
+Google Tag Manager
+Marketing & Funnels
+FunnelFox
+HubSpot
+Mailchimp
+Automation
+Zapier
+eCommerce Platforms
+aMember
+Easy Digital Downloads (EDD) Plugin
+WordPress
+License Management
+Quick License Manager (QLM)
+LimeLM
+Nalpeiron
+10Duke
+SoftwareKey SOLO Server
+Cryptlex
+Mobile & Gaming
+Unity/UGS and FastSpring checkout integration (iOS & Android) with Steer Safe™
+React Native FastSpring integration (iOS & Android) with Steer Safe™
+Nexus and FastSpring embedded checkout integration
+Google Play External Content Links reporting with FastSpring
+Discord bot and FastSpring embedded checkout integration
+Affiliate & Partnerships
+FastSpring Affiliate Solution
+Reporting and Dashboards
+Home
+Revenue Overview
+Revenue dashboard
+Recognition dashboard
+Chargeback dashboard
+Checkout dashboard
+Subscription Overview
+Subscription dashboard
+Trials dashboard
+Retention dashboard
+Data exports
+Interactive Quotes
+Interactive Quotes Overview
+Create and Send an Interactive Quote
+Interactive Quote Discounts
+Tagging Interactive Quotes
+Pricing Components (IQ)
+Published and Unpublished Changes (IQ)
+Templates (IQ)
+Analytics and Tracking (IQ)
+Team and Account Management (IQ)
+Approval Workflow (IQ)
+Team Management (IQ)
+Account Management
+Notifications
+Search for Interactive Quotes
+Integrations (IQ)
+Drift Integration
+FastSpring Checkout Integration (IQ)
+Receive payouts
+Understand payout schedules, settlement delays, and how your net earnings are calculated.
+You receive funds when FastSpring makes payouts to your Payouts Portal. Payout availability depends on your store's configuration and the timing of your transaction settlements.
+Prerequisite:
+You must
+activate your Payouts Portal account
+separately from your FastSpring store account before funds can be transferred.
+When you start processing live payments, FastSpring places a
+45-day monitoring hold
+on your account. Your first payout is scheduled only after this period is complete to ensure account security. Subsequent payouts follow your account’s
+payout schedule
+.
+Payout schedule
+Your payout schedule determines when FastSpring sends money to your bank account. By default, stores are configured for the
+Twice per Month
+schedule.
+Payout schedule
+Description
+Twice per Month
+Payouts are issued on the
+15th
+and the
+End of the Month
+(30th or 31st).
+Monthly
+Payouts are issued once per month, on the
+15th
+.
+Weekly
+Payouts are issued once per week.
+Non-business days:
+If a scheduled payout falls on a weekend or U.S. bank holiday, the transfer initiates on the next business day.
+Settlement timing
+Choosing a payout schedule implies a specific
+accrual period
+. FastSpring applies a standard
+14-day settlement delay
+to all transactions to account for potential refunds and chargebacks. This means funds earned in the first half of the month are not available for immediate withdrawal; they are paid out at the end of the month.
+How to reconcile statements with bank deposits
+Because of the 14-day settlement delay, the total on your
+Monthly Statement
+(which covers a full calendar month of sales) will not match a single bank deposit. To verify your payout amounts against a Monthly Statement, use the following calculation logic based on your schedule:
+Payout Schedule
+How to calculate
+Monthly
+The payout issued on the
+15th
+covers the
+entirety
+of the previous month.
+Twice per Month
+Combine the payout from the
+End of the Month
+(e.g., Jan 31) with the payout from the
+15th of the following month
+(e.g., Feb 15).
+Weekly
+Combine the payments from weeks 2, 3, and 4 of the statement month with the
+first payment
+of the following month.
+Minimum payout amounts
+FastSpring enforces a minimum payout threshold to minimize bank transfer fees. The default minimum is
+$100 USD
+(or the equivalent in your payout currency).
+If your available account balance is less than the minimum payout amount, it remains in your FastSpring account and rolls over to the next cycle.
+Note:
+If you need to raise or lower this limit, please contact FastSpring Support.
+Supported currencies and fees
+You must match the currency of your Payouts Portal to the currency configured in your
+Payout Details
+. FastSpring supports funding in the following currencies:
+USD
+(U.S. Dollars)
+EUR
+(Euros)
+GBP
+(Pounds Sterling)
+AUD
+(Australian Dollars)
+CAD
+(Canadian Dollars)
+Currency conversion fees
+If your Store Currency (the currency you collect from customers) differs from your Payout Currency (the currency you receive in your bank), FastSpring applies a
+2.5% currency conversion fee
+.
+Store Currency
+Payout Currency
+Fee
+USD
+USD
+None
+USD
+EUR
+2.5%
+EUR
+EUR
+None
+How to change your payout currency
+To match your currencies and avoid conversion fees:
+In the FastSpring app, click
+[Store Name] (top-right)
+>
+Account Summary
+.
+Under the
+Payout Details
+section, click
+Edit
+.
+Select your preferred currency from the dropdown menu and click
+Save
+.
+Payout calculation
+Your payout reflects your
+Net Earnings
+for the settlement period. This is calculated as:
+Payout = (Gross Sales + Adjustments) - (Refunds + FastSpring Fees)
+Negative payouts
+In some cases, you might have a negative account balance. For example, if you receive $100 in new payments but process $200 in refunds from prior periods, your account balance would be -$100.
+In your
+Transaction Log
+, actual payouts to your bank appear as negative numbers (e.g.,
+-$2,500.00
+). This indicates that funds have been debited from your FastSpring holding balance and transferred to your financial institution.
+See fees for manual refunds (Checks & Wires)
+In rare cases where a refund cannot be processed automatically to the customer's original payment method (e.g., the card has expired or the original payment was a wire), FastSpring must issue a manual refund via check or wire. Administrative fees apply to these manual interventions:
+Refund Method
+Fee
+PayPal Manual Refund
+Free
+Physical Check (USD)
+$10.00
+(Deducted from the refund amount)
+Manual Wire Transfer
+$30.00
+(Deducted from the refund amount)
+Payout failures
+If your bank account cannot receive funds (e.g., due to incorrect routing numbers or a closed account), the transfer will bounce, and the funds will be returned to your FastSpring balance. You will receive an email alert immediately upon failure.
+To resolve the issue, log in to the
+Payouts Portal
+to update your banking information. Once corrected, FastSpring automatically includes the returned funds in your
+next scheduled payout
+.
+Note:
+We cannot trigger manual, on-demand retries for failed transfers; the system must wait for the next cycle.
+Updated
+9 months ago
+Set up your payout account
+Split partner accounts
+Did this page help you?
+Yes
+No
+Copy Page
+Payout schedule
+Settlement timing
+Minimum payout amounts
+Supported currencies and fees
+Currency conversion fees
+Payout calculation
+Negative payouts
+Payout failures

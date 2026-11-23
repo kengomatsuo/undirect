@@ -1,0 +1,3 @@
+SOURCE https://corp.delaware.gov/paytaxes/ (Claude in Chrome page text 2026-11-23; curl was rejected by the site firewall)
+Domestic corporations: annual report and franchise tax due on or before March 1; failure = "penalty of $200.00 plus 1.5% interest per month". Annual report filing fee: non-exempt domestic corporations $50.00. Franchise tax minimum "currently $175.00, using the Authorized Shares Method"; Assumed Par Value Capital Method minimum $400.00.
+LLC annual tax figure NOT on this page (the LLC page URL I tried 404'd): UNSURE.

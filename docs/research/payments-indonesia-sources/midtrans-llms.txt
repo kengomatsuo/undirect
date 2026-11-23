@@ -1,0 +1,654 @@
+# Midtrans Documentation Documentation
+
+> Midtrans is the leading payment gateway in Indonesia, providing businesses and developers an easy-to-integrate platform to accept and send payments. Our technical documentation offers step-by-step guidance for seamless integration. Simplify your payment process with Midtrans today.
+
+## Documentation: Introduction
+- [Account Overview](https://docs.midtrans.com/docs/midtrans-account.md)
+
+## Documentation: Payments
+- [Overview](https://docs.midtrans.com/docs/payment-overview.md): Midtrans Payments Overview
+- [Built-in Interface (SNAP)](https://docs.midtrans.com/docs/snap.md)
+  - [Getting Started](https://docs.midtrans.com/docs/snap-preparation.md): Preparation Before Integrating with Snap
+  - [Integration Guide](https://docs.midtrans.com/docs/snap-snap-integration-guide.md): The steps for technical integration of Snap are explained below.
+  - [Interactive Demo](https://docs.midtrans.com/docs/snap-interactive-demo.md): Interactive Demonstration of Snap Integration
+  - [Advanced Feature](https://docs.midtrans.com/docs/snap-advanced-feature.md): Snap has various optional parameters. These optional parameters can be utilized for more advanced use cases that can help your integration.
+- [Custom Interface (Core API)](https://docs.midtrans.com/docs/custom-interface-core-api.md)
+  - [Integration: Card Payment](https://docs.midtrans.com/docs/coreapi-card-payment-integration.md)
+  - [Integration: Bank Transfer](https://docs.midtrans.com/docs/coreapi-core-api-bank-transfer-integration.md)
+  - [Integration: E-Wallet](https://docs.midtrans.com/docs/coreapi-e-money-integration.md): Core API E-Wallet Integration
+  - [Integration: Over the Counter Payment](https://docs.midtrans.com/docs/coreapi-over-the-counter-payment-integration.md)
+  - [Integration: Cardless Credit Payment](https://docs.midtrans.com/docs/coreapi-cardless-credit-payment-integration.md)
+  - [Advanced Features](https://docs.midtrans.com/docs/coreapi-advanced-features.md): Core API has various optional parameters that can be utilized to integrate with more advanced use cases.
+- [(NEW!) GoPay Static QRIS](https://docs.midtrans.com/docs/gopay-static-qris.md)
+- [Payment Link](https://docs.midtrans.com/docs/payment-link-overview.md)
+  - [Payment Link via API](https://docs.midtrans.com/docs/payment-link-via-api.md)
+- [Install a CMS Plugins](https://docs.midtrans.com/docs/install-cms-plugins.md): Integrating Midtrans Snap to E-commerce Content Management System (CMS)
+- [Ecommerce Platform](https://docs.midtrans.com/docs/ecommerce-platform.md): Step by step guide to integrate Snap to supported platform: Shopify, Sirclo & Jejualan
+- [Promo Management](https://docs.midtrans.com/docs/promo-management.md)
+- [Invoicing (NEW!)](https://docs.midtrans.com/docs/invoicing.md): Streamline your invoice creation flow from start to finish with Midtrans Invoicing.
+- [Handle After Payment](https://docs.midtrans.com/docs/handle-after-payment.md)
+  - [Email Notification](https://docs.midtrans.com/docs/email-notification.md)
+  - [HTTP(S) Notification / Webhooks](https://docs.midtrans.com/docs/https-notification-webhooks.md)
+  - [GET Status API Requests](https://docs.midtrans.com/docs/get-status-api-requests.md)
+  - [Transaction Status Cycle](https://docs.midtrans.com/docs/transaction-status-cycle.md): Midtrans Transaction Status Cycle Description
+  - [Dashboard Usage & Action](https://docs.midtrans.com/docs/midtrans-dashboard-usage.md)
+  - [Receiving Your Fund as Payout](https://docs.midtrans.com/docs/receive-your-fund.md): Guide on how to withdraw your fund
+- [Technical Reference & Developer Tools](https://docs.midtrans.com/docs/technical-reference.md)
+  - [API Authorization & Headers](https://docs.midtrans.com/docs/api-authorization-headers.md): For backend based API request/call, Midtrans API requires HTTP(s) headers that will be explained below.
+  - [Testing Payment on Sandbox](https://docs.midtrans.com/docs/testing-payment-on-sandbox.md)
+  - [Library & Plugins](https://docs.midtrans.com/docs/midtrans-api-libraries-plugins.md)
+  - [Postman Collection](https://docs.midtrans.com/docs/midtrans-api-postman-collection.md)
+  - [IP Addresses & API Domain](https://docs.midtrans.com/docs/ip-address.md)
+  - [Error Code & Response Code](https://docs.midtrans.com/docs/error-code-and-response-code.md)
+  - [Switching to Production Mode](https://docs.midtrans.com/docs/switching-to-production-mode.md): This document is designed to assist you in switching from *Sandbox* environment to *Production* environment, in order to start accepting real world payment for your business. This is also known as…
+
+## Documentation: General Information
+- [Security Information](https://docs.midtrans.com/docs/payment-security.md)
+- [Technical FAQ](https://docs.midtrans.com/docs/technical-faq.md): This page contains list of Midtrans Product technical FAQs
+- [GoPay QRIS POS Integration](https://docs.midtrans.com/docs/gopay-qris-pos-integration.md): Integration process of GoPay / QRIS with custom software/hardware/POS/IoT will be explained below.
+
+## Documentation: FAQ (EN)
+- [Help Center](https://docs.midtrans.com/docs/help-center.md): How can we help you today?
+- [Getting Started](https://docs.midtrans.com/docs/getting-started-2.md): Everything you need to know to start using Midtrans
+  - [Product](https://docs.midtrans.com/docs/product.md)
+    - [Introduction to Static QRIS](https://docs.midtrans.com/docs/introduction-to-static-qris.md)
+    - [Introduction to Payment Link](https://docs.midtrans.com/docs/introduction-to-payment-link.md)
+  - [Registration](https://docs.midtrans.com/docs/registration.md)
+    - [Do I have to have a website to activate my Midtrans account?](https://docs.midtrans.com/docs/do-i-have-to-have-a-website-to-activate-my-midtrans-account.md)
+    - [What are the website or application criterias for registering a Midtrans account?](https://docs.midtrans.com/docs/what-are-the-website-or-application-criterias-for-registering-a-midtrans-account.md)
+    - [What are the legal documents required for Midtrans account registration?](https://docs.midtrans.com/docs/what-are-the-legal-documents-required-for-midtrans-account-registration.md)
+    - [How to register as Midtrans merchant?](https://docs.midtrans.com/docs/how-to-register-as-midtrans-merchant.md)
+    - [Can I register as a merchant with legal entity (PT / CV) but the bank account is in my personal name or vice versa?](https://docs.midtrans.com/docs/can-i-register-as-a-merchant-with-legal-entity-pt-cv-but-the-bank-account-is-in-my-personal-name-or-vice-versa.md)
+  - [Pricing](https://docs.midtrans.com/docs/pricing.md)
+    - [Can I charge service fees to my customers?](https://docs.midtrans.com/docs/can-i-charge-service-fees-to-my-customers.md)
+    - [What is the applicable transaction fee for QRIS?](https://docs.midtrans.com/docs/what-is-the-applicable-transaction-fee-for-qris.md)
+    - [How much does Midtrans charge for its payment service?](https://docs.midtrans.com/docs/how-much-does-midtrans-charge-for-its-payment-service.md)
+    - [Will I be charged for refunds for GoPay?](https://docs.midtrans.com/docs/will-i-be-charged-for-chargebacks-or-refunds.md)
+  - [Manage Account](https://docs.midtrans.com/docs/manage-account.md)
+    - [Difference between Merchant account and Partner account](https://docs.midtrans.com/docs/difference-between-merchant-account-and-partner-account.md)
+    - [Is it possible to login simultaneously using the same account?](https://docs.midtrans.com/docs/is-it-possible-to-login-simultaneously-using-the-same-account.md)
+    - [How can I add new email accounts to the Merchant Administration Portal?](https://docs.midtrans.com/docs/how-can-i-add-new-email-accounts-to-the-merchant-administration-portal.md)
+    - [How do I change the email address associated with my Midtrans account?](https://docs.midtrans.com/docs/how-do-i-change-the-email-address-associated-with-my-midtrans-account.md)
+    - [Can I use one Midtrans account to manage multiple websites or businesses?](https://docs.midtrans.com/docs/can-i-use-one-midtrans-account-to-manage-multiple-websites-or-businesses.md)
+    - [How do I migrate my account from Sandbox to Production?](https://docs.midtrans.com/docs/how-do-i-migrate-my-account-from-sandbox-to-production.md)
+  - [Basic Knowledge](https://docs.midtrans.com/docs/basic-knowledge.md)
+    - [How to check Merchant ID (MID) on Midtrans Administration Portal (MAP)](https://docs.midtrans.com/docs/how-to-check-merchant-id-mid-on-midtrans-administration-portal-map.md)
+    - [Midtrans' notification features](https://docs.midtrans.com/docs/midtrans-notification-features.md)
+    - [Is there any restriction format for email parameter that being sent to Midtrans?](https://docs.midtrans.com/docs/is-there-any-restriction-format-for-email-parameter-that-being-sent-to-midtrans.md)
+    - [What is the difference between Payment Notification URL, Finish Redirect URL, Unfinish Redirect URL, and Error URL?](https://docs.midtrans.com/docs/what-is-the-difference-between-payment-notification-url-finish-redirect-url-unfinish-redirect-url-and-error-url.md)
+    - [Do you provide logos for the all the payment types on Midtrans?](https://docs.midtrans.com/docs/do-you-provide-logos-for-the-all-the-payment-types-on-midtrans.md)
+    - [What’s the difference between Server Key and Client Key? How do I access them?](https://docs.midtrans.com/docs/whats-the-difference-between-server-key-and-client-key-how-do-i-access-them.md)
+    - [How does my payment page looks like?](https://docs.midtrans.com/docs/how-does-my-payment-page-looks-like.md)
+    - [Can we implement discount or voucher?](https://docs.midtrans.com/docs/can-we-implement-discount-or-voucher.md)
+- [Payment Method](https://docs.midtrans.com/docs/payment-method.md): Find convenience in various payment methods that suits your business
+  - [Payment Method Activation](https://docs.midtrans.com/docs/payment-method-activation.md)
+    - [Activation of payment methods that haven't been active yet](https://docs.midtrans.com/docs/activation-of-payment-methods-that-havent-been-active-yet.md)
+  - [Payment Method Type](https://docs.midtrans.com/docs/payment-method-type.md)
+    - [Which payment methods do Midtrans currently support?](https://docs.midtrans.com/docs/which-payment-methods-do-midtrans-currently-support.md)
+    - [Introduction to Card Payment processing](https://docs.midtrans.com/docs/introduction-to-card-payment-processing.md)
+    - [Introduction to Bank Transfer](https://docs.midtrans.com/docs/introduction-to-bank-transfer.md)
+    - [One Click, Two Clicks, and Recurring Transaction](https://docs.midtrans.com/docs/one-click-two-clicks-and-recurring-transaction.md)
+    - [Introduction QRIS Payment](https://docs.midtrans.com/docs/introduction-qris-payment.md)
+    - [Introducing GoPay PayLater](https://docs.midtrans.com/docs/introducing-gopay-paylater.md)
+    - [QRIS Payment Method in Midtrans](https://docs.midtrans.com/docs/qris-payment-method-in-midtrans.md)
+    - [Apps or partners that can be used for paying QRIS transaction in Midtrans](https://docs.midtrans.com/docs/apps-or-partners-that-can-be-used-for-paying-qris-transaction-in-midtrans.md)
+    - [Differences in available payment methods between Individuals and Business Entities](https://docs.midtrans.com/docs/differences-in-available-payment-methods-between-individuals-and-business-entities.md)
+  - [Pricing](https://docs.midtrans.com/docs/pricing-1.md)
+    - [How much does Midtrans charge for its payment service?](https://docs.midtrans.com/docs/how-much-does-midtrans-charge-for-its-payment-service-1.md)
+    - [What is the applicable transaction fee for QRIS?](https://docs.midtrans.com/docs/what-is-the-applicable-transaction-fee-for-qris-1.md)
+    - [Will I be charged for refunds for GoPay?](https://docs.midtrans.com/docs/will-i-be-charged-for-chargebacks-or-refunds-1.md)
+    - [Can I charge service fees to my customers?](https://docs.midtrans.com/docs/can-i-charge-service-fees-to-my-customers-1.md)
+- [Fund Withdrawal](https://docs.midtrans.com/docs/fund-withdrawal.md): All information regarding your fund withdrawal
+  - [Fund Withdrawal Information](https://docs.midtrans.com/docs/fund-withdrawal-information.md)
+    - [When can I withdraw my transaction funds from Midtrans?](https://docs.midtrans.com/docs/when-can-i-withdraw-my-transaction-funds-from-midtrans.md)
+    - [How can I receive money accumulated in my Midtrans merchant account (withdrawal)?](https://docs.midtrans.com/docs/how-can-i-have-my-money-in-my-account-payout.md)
+- [Integration](https://docs.midtrans.com/docs/integration.md): Find out how to integrate your system with Midtrans
+  - [SNAP](https://docs.midtrans.com/docs/snap-1.md)
+    - [Midtrans payment page display changes (SNAP)](https://docs.midtrans.com/docs/midtrans-payment-page-display-changes-snap.md)
+    - [Additional Requirements for Kredivo Integration](https://docs.midtrans.com/docs/additional-requirements-for-kredivo-integration.md)
+  - [Core API](https://docs.midtrans.com/docs/core-api.md)
+    - [What is Core API? How to integrate Core API into my system?](https://docs.midtrans.com/docs/what-is-core-api-how-to-integrate-core-api-into-my-system.md)
+    - [Additional Requirements for Kredivo Integration (COPY)](https://docs.midtrans.com/docs/additional-requirements-for-kredivo-integration-copy.md)
+  - [Payment Link](https://docs.midtrans.com/docs/payment-link.md)
+    - [Introduction to Payment Link](https://docs.midtrans.com/docs/introduction-to-payment-link-1.md)
+  - [Mobile](https://docs.midtrans.com/docs/mobile.md)
+    - [How can I modify my payment method lists view ?](https://docs.midtrans.com/docs/how-can-i-modify-my-payment-method-lists-view.md)
+    - [Can I integrate your SDK using Cordova ?](https://docs.midtrans.com/docs/can-i-integrate-your-sdk-using-cordova.md)
+    - [For Directly Call Page feature, is there any example for all payment method?](https://docs.midtrans.com/docs/for-directly-call-page-feature-is-there-any-example-for-all-payment-method.md)
+    - [How can I show just for one payment method?](https://docs.midtrans.com/docs/how-can-i-show-just-for-one-payment-method.md)
+    - [How to enable log from SDK using code ?](https://docs.midtrans.com/docs/how-to-enable-log-from-sdk-using-code.md)
+    - [Does Midtrans support Flutter, React Native, or other hybrid / non-native mobile framework?](https://docs.midtrans.com/docs/does-midtrans-support-flutter-react-native-or-other-hybrid-non-native-mobile-framework.md)
+  - [Plugin](https://docs.midtrans.com/docs/plugin.md)
+    - [Opencart](https://docs.midtrans.com/docs/opencart.md)
+    - [Woocommerce](https://docs.midtrans.com/docs/woocommerce.md)
+    - [Prestashop](https://docs.midtrans.com/docs/prestashop.md)
+    - [Magento](https://docs.midtrans.com/docs/magento.md)
+    - [WHMCS](https://docs.midtrans.com/docs/whmcs.md)
+    - [Drupal 8](https://docs.midtrans.com/docs/drupal-8.md)
+    - [Easy Digital Download](https://docs.midtrans.com/docs/easy-digital-download.md)
+  - [Invoice Financing (BETA)](https://docs.midtrans.com/docs/invoice-financing-beta.md)
+    - [Invoice Financing (BETA)](https://docs.midtrans.com/docs/invoice-financing-beta-1.md)
+- [Operational Activity](https://docs.midtrans.com/docs/operational-activity.md): From checking transactions to getting reports, learn how Midtrans provides it all for you
+  - [Transaction](https://docs.midtrans.com/docs/transaction.md)
+    - [How to receive payments through Midtrans?](https://docs.midtrans.com/docs/how-to-receive-payments-through-midtrans.md)
+    - [Can I receive payments using other currency than IDR?](https://docs.midtrans.com/docs/can-i-receive-payments-using-other-currency-than-idr.md)
+    - [Is there a minimum and maximum transaction value that I can charge with Midtrans?](https://docs.midtrans.com/docs/is-there-a-minimum-and-maximum-transaction-value-that-i-can-charge-with-midtrans.md)
+    - [Can all types of businesses accept payments through Midtrans?](https://docs.midtrans.com/docs/can-all-types-of-businesses-accept-payments-through-midtrans.md)
+    - [How do I view and manage my transactions on Midtrans?](https://docs.midtrans.com/docs/how-do-i-view-and-manage-my-transactions-on-midtrans.md)
+    - [Can Midtrans process transaction amount with decimals?](https://docs.midtrans.com/docs/can-midtrans-process-transaction-amount-with-decimals.md)
+    - [Can I cancel a transaction that has been settled?](https://docs.midtrans.com/docs/can-i-cancel-a-transaction-that-has-been-settled.md)
+    - [Is the funds transfer for Midtrans’ Bank Transfer payment method real time?](https://docs.midtrans.com/docs/is-the-funds-transfer-for-midtrans-bank-transfer-payment-method-real-time.md)
+    - [Bank Response Codes](https://docs.midtrans.com/docs/bank-response-codes.md)
+    - [Can I receive payments from a foreign issuing bank?](https://docs.midtrans.com/docs/can-i-receive-payments-from-a-foreign-issuing-bank.md)
+    - [Default Expiry Time for Each Payment Method](https://docs.midtrans.com/docs/default-expiry-time-for-each-payment-method.md)
+    - [Bank Transfer Instruction](https://docs.midtrans.com/docs/bank-transfer-instruction.md)
+    - [How can I cancel a transaction?](https://docs.midtrans.com/docs/how-can-i-cancel-a-transaction.md)
+  - [Dashboard (Midtrans Administration Portal)](https://docs.midtrans.com/docs/dashboard-midtrans-administation-portal.md)
+    - [Merchant Administration Portal - Partner / Multi-outlet](https://docs.midtrans.com/docs/merchant-administration-portal-partner-multi-outlet.md)
+  - [Refund](https://docs.midtrans.com/docs/refund.md)
+    - [How long will the transaction funds be credited to the cardholder after a refund?](https://docs.midtrans.com/docs/how-long-will-the-transaction-funds-be-credited-to-the-cardholder-after-a-refund.md)
+    - [Introduction to Refund](https://docs.midtrans.com/docs/introduction-to-refund.md)
+    - [How can I refund transaction?](https://docs.midtrans.com/docs/how-can-i-refund-transaction.md)
+    - [What payment method that have refund feature?](https://docs.midtrans.com/docs/what-payment-method-that-have-refund-feature.md)
+  - [Report](https://docs.midtrans.com/docs/report.md)
+    - [How to download Payout Report?](https://docs.midtrans.com/docs/how-to-download-payout-report.md)
+    - [How can I get Daily Report?](https://docs.midtrans.com/docs/how-can-i-get-daily-report.md)
+    - [How to download transaction reports from MAP?](https://docs.midtrans.com/docs/how-to-download-transaction-reports-from-map.md)
+    - [How to extract Midtrans' Payout Report (7zip format)](https://docs.midtrans.com/docs/how-to-extract-midtrans-payout-report-7zip-format.md)
+    - [Unified Report for Partner Merchant](https://docs.midtrans.com/docs/unified-report-for-partner-merchant.md)
+- [Risk management](https://docs.midtrans.com/docs/risk-management.md): Learn how Midtrans manages risk in the transaction process
+  - [Merchant Protection](https://docs.midtrans.com/docs/merchant-protection.md)
+    - [What is fraud?](https://docs.midtrans.com/docs/what-is-fraud.md)
+  - [Security System](https://docs.midtrans.com/docs/security-system.md)
+    - [How does Midtrans protect online businesses from fraud?](https://docs.midtrans.com/docs/how-does-midtrans-protect-online-businesses-from-fraud.md)
+    - [Are we completely protected from fraudulent transactions?](https://docs.midtrans.com/docs/are-we-completely-protected-from-fraudulent-transactions.md)
+    - [What is 3D-Secure?](https://docs.midtrans.com/docs/what-is-3d-secure.md)
+    - [How secure is my information (i.e. payments, customer details) in Midtrans’ system?](https://docs.midtrans.com/docs/how-secure-is-my-information-ie-payments-customer-details-in-midtrans-system.md)
+    - [What is ECI on 3DS protocol?](https://docs.midtrans.com/docs/what-is-eci-on-3ds-protocol.md)
+    - [How does Midtrans’ fraud detection system work?](https://docs.midtrans.com/docs/how-does-midtrans-fraud-detection-system-work.md)
+    - [Preventing Frauds with Fraud Detection System](https://docs.midtrans.com/docs/preventing-frauds-with-fraud-detection-system.md)
+    - [FDS dan 3DS](https://docs.midtrans.com/docs/fds-dan-3ds.md)
+    - [Why was my customer's transaction rejected?](https://docs.midtrans.com/docs/why-was-my-customers-transaction-rejected.md)
+    - [My customer's transaction was rejected due to `blacklisted` as the reason. What does blacklist mean?](https://docs.midtrans.com/docs/my-customers-transaction-was-rejected-due-to-blacklisted-as-the-reason-what-does-blacklist-mean.md)
+    - [My customer's card transaction was rejected by Fraud Detection System, how can I whitelist my customer's transaction?](https://docs.midtrans.com/docs/my-customers-card-transaction-was-rejected-by-fraud-detection-system-how-can-i-whitelist-my-customers-transaction.md)
+    - [What is Chargeback?](https://docs.midtrans.com/docs/what-is-chargeback.md)
+- [Troubleshooting](https://docs.midtrans.com/docs/troubleshooting.md): Learn how you can solve common problems on your own
+  - [Registration Issue](https://docs.midtrans.com/docs/registration-issue.md)
+    - [I got error "phone number or email address has been taken", what should I do?](https://docs.midtrans.com/docs/i-got-error-phone-number-or-email-address-has-been-taken-what-should-i-do.md)
+    - [Why was my activation request rejected?](https://docs.midtrans.com/docs/why-was-my-activation-request-rejected.md)
+    - [Things to consider to avoid problems during the account activation process](https://docs.midtrans.com/docs/things-to-consider-to-avoid-problems-during-the-account-activation-process.md)
+    - [What if I don't have an ID/KTP?](https://docs.midtrans.com/docs/what-if-i-dont-have-an-idktp.md)
+  - [Login Issue](https://docs.midtrans.com/docs/login-issue.md)
+    - [How can I unlock my account?](https://docs.midtrans.com/docs/how-can-i-unlock-my-account.md)
+    - [Login problem with the message "This IP address is not in whitelist", what should I do?](https://docs.midtrans.com/docs/login-problem-with-the-message-this-ip-address-is-not-in-whitelist-what-should-i-do.md)
+    - [Login issue due to 2FA code (Two-factor Authentication), what should I do?](https://docs.midtrans.com/docs/login-issue-due-to-2fa-code-two-factor-authentication-what-should-i-do.md)
+  - [Integration Issue](https://docs.midtrans.com/docs/integration-issue.md)
+    - [What does Do Not Honour (05) mean?](https://docs.midtrans.com/docs/what-does-do-not-honour-05-mean.md)
+    - [What does the error code 402 message “Merchant doesn’t have access for this payment type” mean?](https://docs.midtrans.com/docs/what-does-the-error-code-402-message-merchant-doesnt-have-access-for-this-payment-type-mean.md)
+    - [Why did I not receive any HTTP notification from Midtrans’ system?](https://docs.midtrans.com/docs/why-did-i-not-receive-any-http-notification-from-midtrans-system.md)
+    - [What does the error code 401 message “Access denied due to unauthorized transaction, please check client key or server key” mean?](https://docs.midtrans.com/docs/what-does-the-error-code-401-message-access-denied-due-to-unauthorized-transaction-please-check-client-key-or-server-key-mean.md)
+    - [What does error code 411 message “Token id is missing, invalid, or timed out” mean?](https://docs.midtrans.com/docs/what-does-error-code-411-message-token-id-is-missing-invalid-or-timed-out-mean.md)
+    - [I got an error "failed to register transaction", what should I do ?](https://docs.midtrans.com/docs/i-got-an-error-failed-to-register-transaction-what-should-i-do.md)
+    - [I just install the new version of ioS SDK, but it still show the old one. What happen ?](https://docs.midtrans.com/docs/i-just-install-the-new-version-of-ios-sdk-but-it-still-show-the-old-one-what-happen.md)
+    - [Why one-time-password (3D secure) page can't be open from my mobile application ?](https://docs.midtrans.com/docs/why-one-time-password-3d-secure-page-cant-be-open-from-my-mobile-application.md)
+    - [Why I encounter `javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure` when trying to connect to Midtrans API ?](https://docs.midtrans.com/docs/why-i-encounter-javaxnetsslsslhandshakeexception-received-fatal-alert-handshake_failure-when-trying-to-connect-to-midtrans-api.md)
+    - [My mobile application fail to be redirected to GOJEK application, what to do?](https://docs.midtrans.com/docs/my-mobile-application-fail-to-be-redirected-to-gojek-application-what-to-do.md)
+  - [Transaction Issue](https://docs.midtrans.com/docs/transaction-issue.md)
+    - [Can I know the reasons why a transaction is DENIED?](https://docs.midtrans.com/docs/can-i-know-the-reasons-why-a-transaction-is-denied.md)
+    - [Why transaction status is Pending/Failure, while the fund has been deducted?](https://docs.midtrans.com/docs/why-transaction-status-is-pendingfailure-while-the-fund-has-been-deducted.md)
+  - [Notification Issue](https://docs.midtrans.com/docs/notifications-issue.md)
+    - [Why I can’t receive email from Midtrans?](https://docs.midtrans.com/docs/why-i-cant-receive-email-from-midtrans.md)
+    - [Why did my customer not receive any email notification from Midtrans’ system?](https://docs.midtrans.com/docs/why-did-my-customer-not-receive-any-email-notification-from-midtrans-system.md)
+
+## Documentation: FAQ (ID)
+- [Pusat Bantuan](https://docs.midtrans.com/docs/pusat-bantuan.md)
+- [Mulai Menggunakan](https://docs.midtrans.com/docs/mulai-menggunakan.md)
+  - [Produk](https://docs.midtrans.com/docs/produk.md)
+    - [Pengenalan QRIS Statis](https://docs.midtrans.com/docs/pengenalan-qris-statis.md)
+    - [Pengenalan Payment Link](https://docs.midtrans.com/docs/pengenalan-payment-link.md)
+  - [Pendaftaran](https://docs.midtrans.com/docs/pendaftaran.md)
+    - [Apakah saya harus memiliki situs web untuk aktivasi akun Midtrans?](https://docs.midtrans.com/docs/apakah-saya-harus-memiliki-situs-web-untuk-aktivasi-akun-midtrans.md)
+    - [Apa saja kriteria situs web atau aplikasi untuk melakukan registrasi akun Midtrans?](https://docs.midtrans.com/docs/apa-saja-kriteria-situs-web-atau-aplikasi-untuk-melakukan-registrasi-akun-midtrans.md)
+    - [Apa saja dokumen legalitas yang diperlukan untuk registrasi akun Midtrans?](https://docs.midtrans.com/docs/apa-saja-dokumen-legalitas-yang-diperlukan-untuk-registrasi-akun-midtrans.md)
+    - [Bagaimana cara mendaftar menjadi merchant Midtrans?](https://docs.midtrans.com/docs/bagaimana-cara-mendaftar-menjadi-merchant-midtrans.md)
+    - [Dapatkah saya mendaftar sebagai merchant entitas berbadan hukum (PT/CV) namun akun bank atas nama pribadi atau sebaliknya?](https://docs.midtrans.com/docs/dapatkah-saya-mendaftar-sebagai-merchant-entitas-berbadan-hukum-ptcv-namun-akun-bank-atas-nama-pribadi-atau-sebaliknya.md)
+  - [Biaya](https://docs.midtrans.com/docs/biaya.md)
+    - [Apakah saya dapat membebankan biaya layanan ke konsumen saya?](https://docs.midtrans.com/docs/apakah-saya-dapat-membebankan-biaya-layanan-ke-konsumen-saya.md)
+    - [Berapa biaya transaksi untuk QRIS?](https://docs.midtrans.com/docs/berapa-biaya-transaksi-untuk-qris.md)
+    - [Berapa harga Midtrans payment service?](https://docs.midtrans.com/docs/berapa-harga-midtrans-payment-service.md)
+    - [Apakah terdapat biaya yang harus dibayar pada transaksi refund GoPay?](https://docs.midtrans.com/docs/apakah-terdapat-biaya-yang-harus-dibayar-pada-transaksi-refund-atau-chargeback.md)
+  - [Kelola Akun](https://docs.midtrans.com/docs/kelola-akun.md)
+    - [Perbedaan antara akun Merchant dan akun Partner](https://docs.midtrans.com/docs/perbedaan-antara-akun-merchant-dan-akun-partner.md)
+    - [Apakah login secara bersamaan menggunakan akun yang sama dimungkinkan?](https://docs.midtrans.com/docs/apakah-login-secara-bersamaan-menggunakan-akun-yang-sama-dimungkinkan.md)
+    - [Bagaimana cara menambahkan pengguna untuk login ke portal Midtrans Saya?](https://docs.midtrans.com/docs/bagaimana-cara-menambahkan-pengguna-untuk-login-ke-portal-midtrans-saya.md)
+    - [Bagaimana cara saya mengganti alamat email pada akun Midtrans Saya?](https://docs.midtrans.com/docs/bagaimana-cara-saya-mengganti-alamat-email-pada-akun-midtrans-saya.md)
+    - [Apa saya dapat menggunakan satu akun Midtrans untuk beberapa website/bisnis?](https://docs.midtrans.com/docs/apa-saya-dapat-menggunakan-satu-akun-midtrans-untuk-beberapa-websitebisnis.md)
+    - [Bagaimana cara memindahkan akun dari Sandbox ke Production?](https://docs.midtrans.com/docs/bagaimana-cara-memindahkan-akun-dari-sandbox-ke-production.md)
+  - [Pengetahuan Dasar](https://docs.midtrans.com/docs/pengetahuan-dasar.md)
+    - [Cara mengetahui Merchant ID (MID) pada Merchant Administration Portal (MAP)](https://docs.midtrans.com/docs/cara-mengetahui-merchant-id-mid-pada-merchant-administration-portal-map.md)
+    - [Fitur notifikasi yang dimiliki oleh Midtrans](https://docs.midtrans.com/docs/fitur-notifikasi-yang-dimiliki-oleh-midtrans.md)
+    - [Apakah ada batasan format untuk parameter email yang dikirim ke Midtrans?](https://docs.midtrans.com/docs/apakah-ada-batasan-format-untuk-parameter-email-yang-dikirim-ke-midtrans.md)
+    - [Apa perbedaan antara Payment Notifications, Finsih Redirect URL, Unfinish Redirect URL, dan Error Redirect URL?](https://docs.midtrans.com/docs/apa-perbedaan-dari-server-key-dan-client-key-bagaimana-cara-mendapatkannya.md)
+    - [Apa Midtrans menyediakan logo dari metode pembayaran yang tersedia di Midtrans?](https://docs.midtrans.com/docs/apa-midtrans-menyediakan-logo-dari-metode-pembayaran-yang-tersedia-di-midtrans.md)
+    - [Apa perbedaan dari Server Key dan Client Key? Bagaimana cara mendapatkannya?](https://docs.midtrans.com/docs/apa-perbedaan-dari-payment-notification-url-finish-redirect-url-unfinish-redirect-url-dan-error-url.md)
+    - [Bagaimana bentuk dari halaman pembayaran saya?](https://docs.midtrans.com/docs/bagaimana-bentuk-dari-halaman-pembayaran-saya.md)
+    - [Apakah saya dapat membuat sistem diskon atau voucher di eCommerce saya?](https://docs.midtrans.com/docs/apakah-saya-dapat-membuat-sistem-diskon-atau-voucher-di-ecommerce-saya.md)
+- [Metode Pembayaran](https://docs.midtrans.com/docs/metode-pembayaran.md)
+  - [Aktivasi Metode Pembayaran](https://docs.midtrans.com/docs/aktivasi-metode-pembayaran.md)
+    - [Aktivasi metode pembayaran yang belum aktif](https://docs.midtrans.com/docs/aktivasi-metode-pembayaran-yang-belum-aktif.md)
+  - [Jenis Metode Pembayaran](https://docs.midtrans.com/docs/jenis-metode-pembayaran.md)
+    - [Aplikasi atau mitra yang dapat digunakan untuk membayar transaksi QRIS di Midtrans](https://docs.midtrans.com/docs/aplikasi-atau-mitra-yang-dapat-digunakan-untuk-membayar-transaksi-qris-di-midtrans.md)
+    - [Metode Pembayaran QRIS di Midtrans](https://docs.midtrans.com/docs/metode-pembayaran-qris-di-midtrans.md)
+    - [Perbedaan metode pembayaran yang tersedia antara Perorangan dan Badan Usaha](https://docs.midtrans.com/docs/perbedaan-metode-pembayaran-yang-tersedia-antara-perorangan-dan-badan-usaha.md)
+    - [Apa itu GoPay PayLater?](https://docs.midtrans.com/docs/apa-itu-gopay-paylater.md)
+    - [Pengenalan metode Bank Transfer](https://docs.midtrans.com/docs/pengenalan-metode-bank-transfer.md)
+    - [Pengenalan alur pembayaran Kartu Kredit](https://docs.midtrans.com/docs/pengenalan-alur-pembayaran-kartu-kredit.md)
+    - [Perkenalan pembayaran QRIS](https://docs.midtrans.com/docs/perkenalan-pembayaran-qris.md)
+    - [Apa saja metode pembayaran yang disediakan oleh Midtrans?](https://docs.midtrans.com/docs/apa-saja-metode-pembayaran-yang-disediakan-oleh-midtrans.md)
+  - [Biaya](https://docs.midtrans.com/docs/biaya-1.md)
+    - [Apakah saya dapat membebankan biaya layanan ke konsumen saya?](https://docs.midtrans.com/docs/apakah-saya-dapat-membebankan-biaya-layanan-ke-konsumen-saya-1.md)
+    - [Apakah terdapat biaya yang harus dibayar pada transaksi refund GoPay?](https://docs.midtrans.com/docs/apakah-terdapat-biaya-yang-harus-dibayar-pada-transaksi-refund-atau-chargeback-1.md)
+    - [Berapa biaya transaksi untuk QRIS?](https://docs.midtrans.com/docs/berapa-biaya-transaksi-untuk-qris-1.md)
+    - [Berapa harga Midtrans payment service?](https://docs.midtrans.com/docs/berapa-harga-midtrans-payment-service-1.md)
+- [Pencairan Dana](https://docs.midtrans.com/docs/pencairan-dana.md)
+  - [Informasi Pencairan Dana](https://docs.midtrans.com/docs/informasi-pencairan-dana.md)
+    - [Kapan Saya menerima dana transaksi dari Midtrans?](https://docs.midtrans.com/docs/kapan-saya-menerima-dana-transaksi-dari-midtrans.md)
+    - [Bagaimana cara menarik dana (withdrawal) yang ada di akun merchant Midtrans saya?](https://docs.midtrans.com/docs/bagaimana-cara-mencairkan-dana-saya.md)
+- [Integrasi](https://docs.midtrans.com/docs/integrasi.md)
+  - [SNAP](https://docs.midtrans.com/docs/snap-2.md)
+    - [Informasi perubahan tampilan halaman pembayaran Midtrans (SNAP)](https://docs.midtrans.com/docs/informasi-perubahan-tampilan-halaman-pembayaran-midtrans-snap.md)
+    - [Persyaratan Tambahan untuk Integrasi Kredivo](https://docs.midtrans.com/docs/persyaratan-tambahan-untuk-integrasi-kredivo.md)
+  - [Core API](https://docs.midtrans.com/docs/core-api-1.md)
+    - [Persyaratan Tambahan untuk Integrasi Kredivo](https://docs.midtrans.com/docs/persyaratan-tambahan-untuk-integrasi-kredivo-1.md)
+    - [Apa itu Core API? Bagaimana cara mengintegrasikannya dengan tampilan bisnis saya?](https://docs.midtrans.com/docs/apa-itu-core-api-bagaimana-cara-mengintegrasikannya-dengan-tampilan-bisnis-saya.md)
+  - [Payment Link](https://docs.midtrans.com/docs/payment-link-1.md)
+    - [Pengenalan Payment Link](https://docs.midtrans.com/docs/pengenalan-payment-link-1.md)
+  - [Mobile](https://docs.midtrans.com/docs/mobile-1.md)
+    - [Bagaimana cara Saya melakukan modifikasi terhadap tampilan metode pembayaran di aplikasi Saya ?](https://docs.midtrans.com/docs/bagaimana-cara-saya-melakukan-modifikasi-terhadap-tampilan-metode-pembayaran-di-aplikasi-saya.md)
+    - [Apakah Midtrans mendukung penggunaan Flutter, React Native atau hybrid / non-native mobile framework lainnya?](https://docs.midtrans.com/docs/apakah-midtrans-mendukung-penggunaan-flutter-react-native-atau-hybrid-non-native-mobile-framework-lainnya.md)
+    - [Bagaimana cara untuk menampilkan log dari SDK dengan menggunakan code ?](https://docs.midtrans.com/docs/bagaimana-cara-untuk-menampilkan-log-dari-sdk-dengan-menggunakan-code.md)
+    - [Bagaimana cara untuk menampilkan satu metode pembayaran saja ?](https://docs.midtrans.com/docs/bagaimana-cara-untuk-menampilkan-satu-metode-pembayaran-saja.md)
+    - [Untuk fitur custom Directly Call Page, apakah ada contoh untuk semua metode pembayaran?](https://docs.midtrans.com/docs/for-directly-call-page-feature-is-there-any-example-for-all-payment-method-1.md)
+    - [Apakah proses integrasi SDK Midtrans bisa menggunakan Cordova ?](https://docs.midtrans.com/docs/apakah-proses-integrasi-sdk-midtrans-bisa-menggunakan-cordova.md)
+  - [Plugin](https://docs.midtrans.com/docs/plugin-1.md)
+    - [Easy Digital Download](https://docs.midtrans.com/docs/easy-digital-download-1.md)
+    - [Drupal 8](https://docs.midtrans.com/docs/drupal-8-1.md)
+    - [WHMCS](https://docs.midtrans.com/docs/whmcs-1.md)
+    - [Magento](https://docs.midtrans.com/docs/magento-1.md)
+    - [Prestashop](https://docs.midtrans.com/docs/prestashop-1.md)
+    - [Woocommerce](https://docs.midtrans.com/docs/woocommerce-1.md)
+    - [Opencart](https://docs.midtrans.com/docs/opencart-1.md)
+  - [Invoice Financing (BETA)](https://docs.midtrans.com/docs/invoice-financing-beta-2.md)
+    - [Invoice Financing (BETA)](https://docs.midtrans.com/docs/invoice-financing-beta-3.md)
+- [Kegiatan Operasional](https://docs.midtrans.com/docs/kegiatan-operasi.md)
+  - [Transaksi](https://docs.midtrans.com/docs/transaksi.md)
+    - [Instruksi Pembayaran Bank Transfer](https://docs.midtrans.com/docs/instruksi-pembayaran-bank-transfer.md)
+    - [Waktu Kedaluwarsa Default untuk Setiap Metode Pembayaran](https://docs.midtrans.com/docs/waktu-kedaluwarsa-default-untuk-setiap-metode-pembayaran.md)
+    - [Apakah saya dapat menerima pembayaran dari bank penerbit asing?](https://docs.midtrans.com/docs/apakah-saya-dapat-menerima-pembayaran-dari-bank-penerbit-asing.md)
+    - [Kode Respon Bank](https://docs.midtrans.com/docs/kode-respon-bank.md)
+    - [Apakah pengiriman uang via Bank Transfer Midtrans real-time?](https://docs.midtrans.com/docs/apakah-pengiriman-uang-via-bank-transfer-midtrans-real-time.md)
+    - [Bagaimana cara membatalkan transaksi?](https://docs.midtrans.com/docs/bagaimana-cara-membatalkan-transaksi.md)
+    - [Apakah saya dapat membatalkan transaksi yang sudah settled?](https://docs.midtrans.com/docs/apakah-saya-dapat-membatalkan-transaksi-yang-sudah-settled.md)
+    - [Apa Midtrans dapat memproses transaksi yang menggunakan desimal?](https://docs.midtrans.com/docs/pa-midtrans-dapat-memproses-transaksi-yang-menggunakan-desimal.md)
+    - [Bagaimana cara Saya memeriksa dan memonitor transaksi di Midtrans?](https://docs.midtrans.com/docs/bagaimana-cara-saya-memeriksa-dan-memonitor-transaksi-di-midtrans.md)
+    - [Berapa jumlah transaksi minimal dan maksimal yang dapat diterima oleh Midtrans?](https://docs.midtrans.com/docs/berapa-jumlah-transaksi-minimal-dan-maksimal-yang-dapat-diterima-oleh-midtrans.md)
+    - [Apakah semua tipe bisnis dapat menerima pembayaran melalui Midtrans?](https://docs.midtrans.com/docs/apakah-semua-tipe-bisnis-dapat-menerima-pembayaran-melalui-midtrans.md)
+    - [Apakah saya dapat menerima pembayaran dalam kurensi selain Rupiah (IDR)?](https://docs.midtrans.com/docs/apakah-saya-dapat-menerima-pembayaran-dalam-kurensi-selain-rupiah-idr.md)
+    - [Bagaimana cara saya mulai menggunakan Midtrans untuk menerima pembayaran?](https://docs.midtrans.com/docs/bagaimana-cara-saya-mulai-menggunakan-midtrans-untuk-menerima-pembayaran-bagaimana-cara-saya-mulai-menggunakan-midtrans-untuk-menerima-pembayaran.md)
+  - [Dashboard (Midtrans Administrasion Portal)](https://docs.midtrans.com/docs/dashboard-midtrans-administrasion-portal.md)
+    - [Merchant Administration Portal - Partner / Multi-outlet](https://docs.midtrans.com/docs/merchant-administration-portal-partner-multi-outlet-1.md)
+  - [Refund (Pengembalian Dana)](https://docs.midtrans.com/docs/refund-pengembalian-dana.md)
+    - [Pengenalan Refund](https://docs.midtrans.com/docs/pengenalan-refund.md)
+    - [Bagaimana cara melakukan refund transaksi?](https://docs.midtrans.com/docs/bagaimana-cara-melakukan-refund-transaksi.md)
+    - [Berapa lama uang akan kembali ke pelanggan setelah saya melakukan refund?](https://docs.midtrans.com/docs/berapa-lama-uang-akan-kembali-ke-pelanggan-setelah-saya-melakukan-refund.md)
+    - [Metode pembayaran apa yang memiliki fitur refund?](https://docs.midtrans.com/docs/metode-pembayaran-apa-yang-memiliki-fitur-refund.md)
+  - [Report](https://docs.midtrans.com/docs/report-1.md)
+    - [Cara download laporan transaksi (transaction reports) dari MAP?](https://docs.midtrans.com/docs/cara-download-laporan-transaksi-transaction-reports-dari-map.md)
+    - [Cara mengekstrak Laporan Pembayaran Midtrans (format 7zip)](https://docs.midtrans.com/docs/cara-mengekstrak-laporan-pembayaran-midtrans-format-7zip.md)
+    - [Bagaimana cara saya mendapatkan Daily Report?](https://docs.midtrans.com/docs/bagaimana-cara-saya-mendapatkan-daily-report.md)
+    - [Cara download Payout Report?](https://docs.midtrans.com/docs/cara-download-payout-report.md)
+    - [Report Gabungan untuk Partner Merchant](https://docs.midtrans.com/docs/report-gabungan-untuk-partner-merchant.md)
+    - [Cara Mengkonfigurasi Data dan Kolom yang Ingin Ditampilkan Laporan yang Diunduh](https://docs.midtrans.com/docs/apa-perbedaan-filter-dan-edit-table-for-export.md): Pada bagian atas dari setiap halaman laporan, baik laporan transaksi maupun laporan saldo, terdapat fungsi navigasi dan operasional, berupa pencarian (search), penyaringan (filter), dan pengunduhan…
+- [Manajemen Resiko](https://docs.midtrans.com/docs/manajemen-resiko.md)
+  - [Perlindungan Merchant](https://docs.midtrans.com/docs/perlindungan-merchant.md)
+    - [Apa itu fraud?](https://docs.midtrans.com/docs/apa-itu-fraud.md)
+  - [Sistem Keamanan](https://docs.midtrans.com/docs/sistem-keamanan.md)
+    - [Apa itu Chargeback?](https://docs.midtrans.com/docs/apa-itu-chargeback.md)
+    - [Transaksi kartu customer saya gagal karena ditolak oleh Fraud Detection System, bagaimana cara melakukan whitelist terhadap transaksi customer saya?](https://docs.midtrans.com/docs/transaksi-kartu-customer-saya-gagal-karena-ditolak-oleh-fraud-detection-system-bagaimana-cara-melakukan-whitelist-terhadap-transaksi-customer-saya.md)
+    - [Transaksi customer saya gagal dengan alasan blacklist. Apa yang dimaksud dengan blacklist?](https://docs.midtrans.com/docs/transaksi-customer-saya-gagal-dengan-alasan-blacklist-apa-yang-dimaksud-dengan-blacklist.md)
+    - [Mengapa transaksi kartu kredit pelanggan saya tidak berhasil?](https://docs.midtrans.com/docs/mengapa-transaksi-kartu-kredit-pelanggan-saya-tidak-berhasil.md)
+    - [Mencegah Fraud dengan Fraud Detection System](https://docs.midtrans.com/docs/mencegah-fraud-dengan-fraud-detection-system.md)
+    - [FDS and 3DS](https://docs.midtrans.com/docs/fds-and-3ds.md)
+    - [Bagaimana cara kerja sistem pendeteksi fraud Midtrans?](https://docs.midtrans.com/docs/bagaimana-cara-kerja-sistem-pendeteksi-fraud-midtrans.md)
+    - [Apa itu ECI pada protokol 3DS?](https://docs.midtrans.com/docs/apa-itu-eci-pada-protokol-3ds.md)
+    - [Apakah informasi saya atau bisnis online saya (informasi pembayaran, detil pelanggan, etc.) aman di sistem Midtrans?](https://docs.midtrans.com/docs/apakah-informasi-saya-atau-bisnis-online-saya-informasi-pembayaran-detil-pelanggan-etc-aman-di-sistem-midtrans.md)
+    - [Apa itu 3D-Secure?](https://docs.midtrans.com/docs/apa-itu-3d-secure.md)
+    - [Apa kami terlindungi dari transaksi fraud?](https://docs.midtrans.com/docs/apa-kami-terlindungi-dari-transaksi-fraud.md)
+    - [Bagaimana cara Midtrans melindungi bisnis online dari fraud?](https://docs.midtrans.com/docs/bagaimana-cara-midtrans-melindungi-bisnis-online-dari-fraud.md)
+- [Penyelesaian Masalah](https://docs.midtrans.com/docs/penyelesaian-masalah.md)
+  - [Kendala Pendaftaran](https://docs.midtrans.com/docs/kendala-pendaftaran.md)
+    - [Bagaimana jika saya tidak memiliki KTP?](https://docs.midtrans.com/docs/bagaimana-jika-saya-tidak-memiliki-ktp.md)
+    - [Hal yang perlu diperhatikan untuk menghindari kendala saat proses aktivasi akun](https://docs.midtrans.com/docs/hal-yang-perlu-diperhatikan-untuk-menghindari-kendala-saat-proses-aktivasi-akun.md)
+    - [Mengapa pengajuan aktivasi saya ditolak?](https://docs.midtrans.com/docs/mengapa-pengajuan-aktivasi-saya-ditolak.md)
+    - [Saya mendapatkan error "phone number or email address has been taken", apa yang harus saya lakukan?](https://docs.midtrans.com/docs/saya-mendapatkan-error-phone-number-or-email-address-has-been-taken-apa-yang-harus-saya-lakukan.md)
+  - [Kendala Login](https://docs.midtrans.com/docs/kendala-login.md)
+    - [Kendala login karena kode 2FA (Two-factor Authentication), apa yang harus saya lakukan?](https://docs.midtrans.com/docs/kendala-login-karena-kode-2fa-two-factor-authentication-apa-yang-harus-saya-lakukan.md)
+    - [Kendala login dengan pesan "This IP address is not in whitelist", apa yang harus saya lakukan?](https://docs.midtrans.com/docs/kendala-login-dengan-pesan-this-ip-address-is-not-in-whitelist-apa-yang-harus-saya-lakukan.md)
+    - [Bagaimana Saya bisa membuka akun yang terkunci?](https://docs.midtrans.com/docs/bagaimana-saya-bisa-membuka-akun-yang-terkunci.md)
+  - [Kendala Integrasi](https://docs.midtrans.com/docs/kendala-integrasi.md)
+    - [Aplikasi Saya tidak berhasil redirect customer ke aplikasi GOJEK, apa yang harus dilakukan?](https://docs.midtrans.com/docs/aplikasi-saya-tidak-berhasil-redirect-customer-ke-aplikasi-gojek-apa-yang-harus-dilakukan.md)
+    - [Mengapa Saya mendapatkan pesan `javax.net.ssl.SSLHandshakeException: Menerima peringatan fatal: handshake_failure` ketika mencoba untuk terhubung ke API Midtrans?](https://docs.midtrans.com/docs/mengapa-saya-mendapatkan-pesan-javaxnetsslsslhandshakeexception-menerima-peringatan-fatal-handshake_failure-ketika-mencoba-untuk-terhubung-ke-api-midtrans.md)
+    - [Mengapa halaman one time password (3D secure) tidak dapat dilanjutkan pada aplikasi Saya ?](https://docs.midtrans.com/docs/mengapa-halaman-one-time-password-3d-secure-tidak-dapat-dilanjutkan-pada-aplikasi-saya.md)
+    - [Saya sudah melakukan instalasi terhadap versi terbaru dari SDK ioS, namun masih menampilkan versi yang lama. Apa yang harus Saya lakukan ?](https://docs.midtrans.com/docs/saya-sudah-melakukan-instalasi-terhadap-versi-terbaru-dari-sdk-ios-namun-masih-menampilkan-versi-yang-lama-apa-yang-harus-saya-lakukan.md)
+    - [Saya mendapatkan pesan error "failed to register transaction", apa yang harus Saya lakukan ?](https://docs.midtrans.com/docs/saya-mendapatkan-pesan-error-failed-to-register-transaction-apa-yang-harus-saya-lakukan.md)
+    - [Apa arti dari error 411 dengan pesan “Token id is missing, invalid, or timed out”?](https://docs.midtrans.com/docs/apa-arti-dari-error-411-dengan-pesan-token-id-is-missing-invalid-or-timed-out.md)
+    - [Apa Arti Do Not Honour (05) ?](https://docs.midtrans.com/docs/apa-arti-do-not-honour-05.md)
+    - [Apa arti dari error 401 dengan pesan “Access denied due to unauthorized transaction, please check client key or server key”?](https://docs.midtrans.com/docs/apa-arti-dari-error-401-dengan-pesan-access-denied-due-to-unauthorized-transaction-please-check-client-key-or-server-key.md)
+    - [Mengapa saya tidak menerima notifikasi HTTP dari sistem Midtrans?](https://docs.midtrans.com/docs/mengapa-saya-tidak-menerima-notifikasi-http-dari-sistem-midtrans.md)
+    - [Apa arti dari error 402 dengan pesan “Merchant doesn’t have access for this payment type”?](https://docs.midtrans.com/docs/apa-arti-dari-error-402-dengan-pesan-merchant-doesnt-have-access-for-this-payment-type.md)
+  - [Kendala Transaksi](https://docs.midtrans.com/docs/kendala-transaksi.md)
+    - [Mengapa status transaksi customer Saya Pending/Failure sedangkan dana sudah berkurang?](https://docs.midtrans.com/docs/mengapa-status-transaksi-customer-saya-pendingfailure-sedangkan-dana-sudah-berkurang.md)
+    - [Apakah saya bisa mengetahui mengapa sebuah transaksi itu berstatus DENY?](https://docs.midtrans.com/docs/apakah-saya-bisa-mengetahui-mengapa-sebuah-transaksi-itu-berstatus-deny.md)
+  - [Kendala Notifikasi](https://docs.midtrans.com/docs/kendala-notifikasi.md)
+    - [Mengapa saya tidak bisa menerima email dari Midtrans?](https://docs.midtrans.com/docs/mengapa-saya-tidak-bisa-menerima-email-dari-midtrans.md)
+    - [Mengapa pelanggan Saya tidak menerima notifikasi email dari sistem Midtrans?](https://docs.midtrans.com/docs/mengapa-pelanggan-saya-tidak-menerima-notifikasi-email-dari-sistem-midtrans.md)
+
+## Documentation: Merchant Administration Portal
+- [Midtrans Merchant Dashboard Guide](https://docs.midtrans.com/docs/midtrans-merchant-dashboard-guide.md)
+- [Dashboard Basics](https://docs.midtrans.com/docs/dashboard-basics.md)
+- [Activating Payment Methods & Upgrades](https://docs.midtrans.com/docs/payment-methods.md): Activate additional payment methods, manage your static QRIS, and activate features.
+- [Transactions Page - Reporting & Operations](https://docs.midtrans.com/docs/transactions-page-reporting-operations.md)
+- [Balance Page - Manage & Withdraw Your Funds](https://docs.midtrans.com/docs/balance-page-manage-withdraw-your-funds.md)
+- [Accounts Page - Managing Users & Access](https://docs.midtrans.com/docs/accounts-page-managing-users-access.md)
+- Settings Overview
+  - [General Settings](https://docs.midtrans.com/docs/general-settings.md)
+  - [Access Keys](https://docs.midtrans.com/docs/access-keys.md)
+  - [Snap Preference (Snap Checkout Settings)](https://docs.midtrans.com/docs/snap-preference-snap-checkout-settings.md): Configure your Midtrans's Snap Checkout look and feel and system settings here.
+  - [Email Notifications](https://docs.midtrans.com/docs/email-notifications.md): Set up emails to be shown to customer, or receive various reports and notifications
+  - [Payment Settings](https://docs.midtrans.com/docs/payment-settings.md): Configure finish redirect URL, notifications URL and BI SNAP URL for payments transactions here.
+  - [Daily Report](https://docs.midtrans.com/docs/daily-report.md)
+
+## Documentation: DigitalIdentity
+- Integrating with ESIGN Products
+  - [Getting Authentication Token](https://docs.midtrans.com/docs/getting-an-authentication-token.md)
+  - [Understanding Esign APIs Headers](https://docs.midtrans.com/docs/understanding-esign-apis-headers.md)
+  - [Setting up Callback](https://docs.midtrans.com/docs/setting-up-callback.md)
+- [Certificate Registration](https://docs.midtrans.com/docs/certificate-registration.md)
+  - [Integration Guide - Certificate Registration](https://docs.midtrans.com/docs/integration-guide-1.md)
+  - [Handling Submission Results](https://docs.midtrans.com/docs/handling-submission-results.md)
+
+## Documentation: ENTERPRISE SDK
+- [Introduction](https://docs.midtrans.com/docs/introduction-2.md)
+- OneKYC SDK
+  - [Introduction - OneKYC SDK](https://docs.midtrans.com/docs/introduction-3.md)
+  - [Android SDK - OneKYC SDK](https://docs.midtrans.com/docs/kyc-sdk-1.md)
+    - [Migration Guide](https://docs.midtrans.com/docs/migration-guide.md): This is a guide for existing oneKYC SDK partners who needs to migrate to Enterprise SDK.
+  - [iOS SDK - OneKYC SDK](https://docs.midtrans.com/docs/kyc-sdk.md)
+    - [Migration Guide](https://docs.midtrans.com/docs/migration-guide-1.md): This is a guide for existing oneKYC SDK partners who needs to migrate to Enterprise SDK.
+- GoPay ID
+  - [Introduction - GoPay ID](https://docs.midtrans.com/docs/introduction.md): This document details what is and how to integrate the GoPay ID
+    - [Login with GoPay](https://docs.midtrans.com/docs/login-with-gopay-1.md): A flow where users authenticate using their GoPay account via phone number.
+    - [Verify with GoPay](https://docs.midtrans.com/docs/verify-with-gopay-1.md): A flow where users verify their identity using their existing GoPay account.
+  - Android SDK - GoPay ID
+    - [Initialization](https://docs.midtrans.com/docs/initialization.md)
+    - [Getting Started](https://docs.midtrans.com/docs/getting-started-1.md)
+    - [Feature Manager](https://docs.midtrans.com/docs/features.md)
+    - [Verify with GoPay](https://docs.midtrans.com/docs/verify-with-gopay.md)
+    - [Launch Feature](https://docs.midtrans.com/docs/launch-feature.md)
+    - [FAQ (EN)](https://docs.midtrans.com/docs/faq-en.md)
+  - iOS SDK - GoPay ID
+    - [Getting Started](https://docs.midtrans.com/docs/getting-started-4.md)
+    - [Initialization](https://docs.midtrans.com/docs/initialization-1.md)
+    - [Feature Manager](https://docs.midtrans.com/docs/feature-manager.md)
+    - [Verify with GoPay](https://docs.midtrans.com/docs/gopay-id-verify-with-gopay.md)
+    - [FAQ (EN)](https://docs.midtrans.com/docs/faq-en-1.md)
+    - [Launch Feature](https://docs.midtrans.com/docs/launch-feature-1.md)
+  - [KYC Data Pull](https://docs.midtrans.com/docs/backend-contracts.md)
+  - [KYC callback](https://docs.midtrans.com/docs/kyc-callback.md)
+  - Linking Token
+    - [Get Linking Token](https://docs.midtrans.com/docs/get-linking-token-1.md): A Linking token generated after Login with GoPay that links a user's accounts.
+    - [Get Temporary Access Token ](https://docs.midtrans.com/docs/gopay-id-exchange-linking-token-to-temporary-token.md): Temporary Token is a token that can be used to invoke Verify with GoPay without user auth.
+    - [Unlink Accounts](https://docs.midtrans.com/docs/unlink-accounts.md): How to perform or receive unlinking account events.
+- [Error Codes](https://docs.midtrans.com/docs/gopayenterprise-error-codes.md)
+
+## API References: Introduction
+- [Browse Midtrans's API References](https://docs.midtrans.com/reference/quick-start-1.md)
+
+## API References: Snap API
+- [Overview](https://docs.midtrans.com/reference/snap-api-overview.md)
+- [Getting Started](https://docs.midtrans.com/reference/getting-started-with-snap.md)
+  - [On Board with Snap](https://docs.midtrans.com/reference/on-board-with-snap.md)
+- [Backend Integration](https://docs.midtrans.com/reference/backend-integration.md)
+  - [Request Body (JSON Parameter)](https://docs.midtrans.com/reference/request-body-json-parameter.md)
+  - [JSON Objects](https://docs.midtrans.com/reference/json-objects.md)
+  - [Response](https://docs.midtrans.com/reference/sample-response.md)
+  - [Preference API](https://docs.midtrans.com/reference/snap-checkout-preference-api.md): Modify your Snap look and feel & active payment methods in Snap Checkout via API
+- Frontend Integration
+  - [Snap JS](https://docs.midtrans.com/reference/snap-js.md): Show Snap UI in your website/app by embedding Snap JS within a page or loading it as an overlay in your website/app.
+  - [JS Callback](https://docs.midtrans.com/reference/js-callback.md)
+  - [Webview](https://docs.midtrans.com/reference/webview.md)
+- [BCA Virtual Account](https://docs.midtrans.com/reference/bca-virtual-account.md)
+- [Permata Virtual Account](https://docs.midtrans.com/reference/permata-virtual-account.md)
+- [BNI Virtual Account](https://docs.midtrans.com/reference/bni-virtual-account.md)
+- [BRI Virtual Account](https://docs.midtrans.com/reference/bri-virtual-account.md)
+- [CIMB Virtual Account](https://docs.midtrans.com/reference/cimb-virtual-account.md)
+- [Danamon Virtual Account](https://docs.midtrans.com/reference/danamon-virtual-account.md)
+- [BSI Virtual Account](https://docs.midtrans.com/reference/bsi-virtual-account.md)
+- [SeaBank Virtual Account](https://docs.midtrans.com/reference/seabank-virtual-account.md)
+- [Saqu Virtual Account](https://docs.midtrans.com/reference/saqu-virtual-account.md)
+- [Other Banks](https://docs.midtrans.com/reference/other-banks.md)
+- [GoPay & QRIS](https://docs.midtrans.com/reference/gopay.md)
+- [Other QRIS](https://docs.midtrans.com/reference/other-qris.md)
+- [Kredivo](https://docs.midtrans.com/reference/kredivo.md)
+- [DANA](https://docs.midtrans.com/reference/dana.md)
+- [Google Pay™](https://docs.midtrans.com/reference/google-pay.md)
+- [OVO](https://docs.midtrans.com/reference/ovo.md)
+- Midtrans Status Code
+  - [Code 4xx](https://docs.midtrans.com/reference/status-code-4xx.md): List of Midtrans specific status codes starting with 4XX.
+- [Handle Notifications](https://docs.midtrans.com/reference/handle-notifications.md)
+- More Features
+  - [Card Payment - Subscription (Two Clicks)](https://docs.midtrans.com/reference/two-clicks.md)
+  - [Bank Transfer - Custom VA Number](https://docs.midtrans.com/reference/custom-virtual-account-number.md)
+  - [GoPay Linking / Tokenization](https://docs.midtrans.com/reference/gopay-tokenization-1.md)
+  - [Expire a Snap Session](https://docs.midtrans.com/reference/expire-a-snap-session.md): Set a custom expiry time for a Snap session with the following methods.
+  - [Cancel a Snap Session](https://docs.midtrans.com/reference/cancel-a-snap-session.md): Cancel a Snap page session via API
+
+## API References: coreAPI
+- [Overview](https://docs.midtrans.com/reference/core-api-overview.md)
+- JSON Object
+  - [Customer Details Object](https://docs.midtrans.com/reference/customer-details-object.md)
+  - [Item Details Object](https://docs.midtrans.com/reference/item-details-object.md)
+  - [Bank Transfer (Virtual Account) Object](https://docs.midtrans.com/reference/bank-transfer-object.md)
+  - [Create Subscription Schedule Object](https://docs.midtrans.com/reference/create-subscription-schedule-object.md)
+  - [Create Subscription Retry Schedule Object](https://docs.midtrans.com/reference/create-subscription-retry-schedule-object.md)
+  - [Subscription Schedule Object](https://docs.midtrans.com/reference/subscription-schedule-object.md)
+- [Handling Notifications](https://docs.midtrans.com/reference/notifications-handling.md)
+  - [Best Practices to Handle Notification](https://docs.midtrans.com/reference/best-practices-to-handle-notification.md)
+- Midtrans Status Code
+  - [Code 4xx](https://docs.midtrans.com/reference/code-4xx.md): List of Midtrans specific status codes starting with 4XX.
+- Payment API
+  - [API Headers & Idempotency](https://docs.midtrans.com/reference/api-headers.md)
+  - [Get Token](https://docs.midtrans.com/reference/get-token.md)
+  - [Charge Transactions](https://docs.midtrans.com/reference/charge-transactions-1.md)
+  - [Capture Transaction](https://docs.midtrans.com/reference/capture-transaction.md)
+  - [Cancel Transaction](https://docs.midtrans.com/reference/cancel-transaction.md)
+  - [Refund Transactions](https://docs.midtrans.com/reference/refund-transaction.md)
+  - [Direct Refund Transaction](https://docs.midtrans.com/reference/direct-refund-transaction.md)
+  - [Get Transaction Status](https://docs.midtrans.com/reference/get-transaction-status.md)
+  - [Register Card](https://docs.midtrans.com/reference/register-card.md): Register Card for Card Payment Method
+  - [Create Pay Account (GoPay)](https://docs.midtrans.com/reference/create-pay-account.md): Link customer account  - GoPay Tokenizations
+  - [Fetch Promotion (GoPay Tokenization)](https://docs.midtrans.com/reference/fetch-promotion-gopay-tokenization.md)
+  - [BIN API (Card Payment)](https://docs.midtrans.com/reference/bin-api.md): Obtain user's card properties information based on BIN (Bank Identification Number)
+- Subscription API
+  - [Create Subscription](https://docs.midtrans.com/reference/create-subscription.md)
+  - [Get Subscription](https://docs.midtrans.com/reference/get-subscription.md)
+  - [Disable Subscription](https://docs.midtrans.com/reference/disable-subscription.md)
+  - [Cancel Subscription](https://docs.midtrans.com/reference/cancel-subscription.md)
+  - [Update Subscription](https://docs.midtrans.com/reference/update-subscription.md)
+  - [HTTP Notification](https://docs.midtrans.com/reference/http-notification.md)
+- [Payment Method: Card](https://docs.midtrans.com/reference/payment-card.md)
+  - [Charge Transactions on Card](https://docs.midtrans.com/reference/charge-transactions-on-card.md)
+  - [Feature: 3D Secure (3DS)](https://docs.midtrans.com/reference/card-feature-3d-secure-3ds.md)
+  - [Capture Transaction on Card](https://docs.midtrans.com/reference/capture-transaction-card.md)
+  - [Cancel Transaction on Card](https://docs.midtrans.com/reference/cancel-transaction-card.md)
+  - [Refund Transactions on Card](https://docs.midtrans.com/reference/refund-transactions-card.md)
+  - [Get Transaction Status on Card](https://docs.midtrans.com/reference/get-transaction-status-card.md)
+  - [Feature: Installment](https://docs.midtrans.com/reference/card-feature-installment.md)
+  - [Feature: Pre-Authorization](https://docs.midtrans.com/reference/card-feature-pre-authorization.md)
+  - [Feature: One Click](https://docs.midtrans.com/reference/card-feature-one-click.md)
+  - [Feature: Full PAN](https://docs.midtrans.com/reference/card-feature-full-pan.md)
+- [Payment Method: Bank Transfer](https://docs.midtrans.com/reference/payment-bank-transfer.md)
+  - [BNI Virtual Account](https://docs.midtrans.com/reference/bni-virtual-account-1.md)
+- [QRIS](https://docs.midtrans.com/reference/qris.md)
+- [GoPay](https://docs.midtrans.com/reference/gopay-1.md)
+- [GoPay Tokenization](https://docs.midtrans.com/reference/gopay-tokenization.md)
+- [Testing GoPay Tokenization on Sandbox Environment](https://docs.midtrans.com/reference/testing-gopay-tokenization-on-sandbox-environment.md)
+- [FAQ: Redirection to Gojek / GoPay app](https://docs.midtrans.com/reference/faq-redirection-to-gojek-gopay-app.md)
+- [FAQ: Redirection to GoPay web page (GoPay Tokenization webview)](https://docs.midtrans.com/reference/faq-redirection-to-gopay-web-page.md)
+- [ShopeePay](https://docs.midtrans.com/reference/shopeepay-1.md)
+- [OVO](https://docs.midtrans.com/reference/ewallet-ovo.md)
+- [Payment Method: Google Pay™](https://docs.midtrans.com/reference/payment-method-google-pay.md)
+- [Indomaret](https://docs.midtrans.com/reference/indomaret-1.md)
+- [Alfamart](https://docs.midtrans.com/reference/alfamart-1.md)
+- [Akulaku PayLater](https://docs.midtrans.com/reference/akulaku-1.md)
+- [Kredivo](https://docs.midtrans.com/reference/kredivo-1.md)
+- [Card Channel Response Code](https://docs.midtrans.com/reference/channel-response-code.md)
+- [Transaction Status](https://docs.midtrans.com/reference/transaction-status.md)
+- Important Notices
+  - [Deployment Notice](https://docs.midtrans.com/reference/deployment.md)
+
+## API References: Payment Link API
+- [Overview](https://docs.midtrans.com/reference/overview-12.md)
+- API Reference
+  - [Create Payment Link](https://docs.midtrans.com/reference/create-payment-link.md)
+
+## API References: BALANCE API
+- API Reference
+  - [API Host URL](https://docs.midtrans.com/reference/api-host-url-2.md)
+  - [Merchant Balance Mutation API](https://docs.midtrans.com/reference/merchant-balance-mutation-api.md)
+
+## API References: INVOICING API
+- [Overview](https://docs.midtrans.com/reference/overview-2.md)
+- [Create Invoice](https://docs.midtrans.com/reference/create-invoice.md)
+- [Get Invoice](https://docs.midtrans.com/reference/get-invoice.md)
+- [Void Invoice](https://docs.midtrans.com/reference/void-invoice.md)
+- [Convert Invoice](https://docs.midtrans.com/reference/convert-invoice.md)
+- [Mark as Paid](https://docs.midtrans.com/reference/mark-as-paid.md)
+- [JSON Objects](https://docs.midtrans.com/reference/json-objects-1.md)
+- [Handling Notifications](https://docs.midtrans.com/reference/handling-notifications.md)
+
+## API References: CORE API - Standar Nasional Open API Pembayaran (BI-SNAP)
+- [Overview](https://docs.midtrans.com/reference/core-api-snap-open-api-overview.md)
+- [Getting Started](https://docs.midtrans.com/reference/getting-started-1.md)
+  - [Credential Exchange](https://docs.midtrans.com/reference/credential-exchange-copy.md): This section will explain how merchants prepare to do credential exchange with Midtrans
+  - [Setting up Notification URL](https://docs.midtrans.com/reference/setting-up-notification-url.md)
+  - [Register IP Address](https://docs.midtrans.com/reference/register-ip-address.md)
+  - [Next steps](https://docs.midtrans.com/reference/next-steps.md)
+- [Security Specification](https://docs.midtrans.com/reference/security-specification.md)
+  - [Signature Generation](https://docs.midtrans.com/reference/signature-generation.md)
+- [Moving to BI-SNAP based Core API](https://docs.midtrans.com/reference/moving-to-snap-based-core-api.md)
+  - [Merchants Migration & Backward Compatibality](https://docs.midtrans.com/reference/merchants-migration-backward-compatibality.md)
+- [Access Token API](https://docs.midtrans.com/reference/access-token-api.md)
+- [Payment Method : Bank Transfer](https://docs.midtrans.com/reference/virtual-account-api-bank-transfer.md)
+- [Payment Method: QRIS](https://docs.midtrans.com/reference/mpm-api-qris.md)
+- [Payment Method: GoPay/ShopeePay/Dana](https://docs.midtrans.com/reference/direct-debit-api-gopay.md)
+- [Account Linking API](https://docs.midtrans.com/reference/account-linking-api.md)
+  - [Get Auth Code API](https://docs.midtrans.com/reference/get-auth-code-api.md)
+  - [Bind Account API](https://docs.midtrans.com/reference/binding-api.md)
+  - [Unbind API](https://docs.midtrans.com/reference/unbind-api.md)
+  - [Account Binding Inquiry API](https://docs.midtrans.com/reference/binding-inquiry-api.md)
+  - [Account Linking and Unlinking Notification](https://docs.midtrans.com/reference/account-linking-unlinking-notification.md)
+- [Payment Method: GoPay Tokenization (non Pre-Auth)](https://docs.midtrans.com/reference/direct-debit-api-gopay-tokenization.md)
+- [Payment Method: GoPay Tokenization (Pre Auth)](https://docs.midtrans.com/reference/auth-payment-api-gopay-tokenization.md)
+- Additional API
+  - [Refund API](https://docs.midtrans.com/reference/refund-api.md)
+  - [Cancel API](https://docs.midtrans.com/reference/cancel-api.md)
+  - [Get Transaction Status API](https://docs.midtrans.com/reference/get-transaction-status-api.md)
+  - [Payment Notification API](https://docs.midtrans.com/reference/payment-notification-api.md)
+- [Testing Core API BI-SNAP on Sandbox Environment](https://docs.midtrans.com/reference/testing-bi-snap-on-sandbox-environment.md)
+  - [Testing GoPay Tokenization BI-SNAP on Sandbox](https://docs.midtrans.com/reference/testing-gopay-tokenization-bi-snap-on-sandbox.md)
+
+## API References: reporting - standar nasional open api pembayaran (Bi-snap)
+- [Transaction History List API](https://docs.midtrans.com/reference/transaction-history-list-api.md)
+- [Transaction History Detail API](https://docs.midtrans.com/reference/transaction-history-detail-api.md)
+- [Transaction History Values](https://docs.midtrans.com/reference/transaction-history-values.md)
+
+## API References: core-api-standar-nasional-open-api-pembayaran-bi-snap
+- [Security & Architecture](https://docs.midtrans.com/reference/bi-snap-security-architecture.md): BI-SNAP Core API architecture overview covering REST design, data formats, HTTP methods, URI standardization, and compliance mapping to ASPI technical standards.
+
+## API References: MINIAPP
+- [Overview](https://docs.midtrans.com/reference/overview-miniapp.md): This guide explains what a MiniApp is, its benefits, and how it integrates with the GoPay ecosystem, providing developers and merchants with a clear understanding of its features and advantages.
+  - [Best Practices for Building a MiniApp](https://docs.midtrans.com/reference/getting-started-miniapp.md): This guide outlines recommended practices for developing, integrating, testing, and launching a MiniApp within the GoPay ecosystem, helping developers and merchants deliver secure, scalable, and…
+  - [Introduction to GoPay Container](https://docs.midtrans.com/reference/introduction-to-gopay-container-v2.md): This guide introduces GoPay Container, the runtime environment for MiniApps inside the GoPay app. It explains the differences between Container V1 and V2, their features, deployment models, and how…
+  - [MiniApp UI/UX Guidelines](https://docs.midtrans.com/reference/miniapp-uiux-guidelines.md): This guide outlines the mandatory UI/UX standards for Mini Apps to ensure a seamless, secure, and consistent user experience within the GoPay App environment.
+  - [MiniApp Security Guidelines](https://docs.midtrans.com/reference/miniapp-security-guidelines.md): This guide explains security best practices for building GoPay MiniApps and highlights common mistakes developers should avoid to protect credentials, APIs, and user data. 🔒
+  - [MiniApp Performance Guidelines](https://docs.midtrans.com/reference/miniapp-performance-guide.md): This guide explains performance best practices for building GoPay MiniApps and highlights common practices developers should follow to ensure fast loading, responsive interactions, and a smooth user…
+  - [MiniApp Icon Guidelines](https://docs.midtrans.com/reference/icon-guidelines.md): This guide explains how to create icons for Mini Apps, including design requirements, sizing, formatting, and best practices to ensure a consistent appearance and optimal display across the platform.
+  - [Migration Guides](https://docs.midtrans.com/reference/migration-guides.md): This guide explains the step-by-step instructions for migrating miniapp to a JSAPI new version or container.
+  - [Version History](https://docs.midtrans.com/reference/version-history.md): This section provides a chronological overview of major updates, SDK releases, and API changes for GoPay MiniApps, helping developers track enhancements, migrations, and feature additions across…
+- [Getting Started](https://docs.midtrans.com/reference/miniapp-v2.md): This guide helps you get started with onboarding and integrating your MiniApp using GoPay Container V2.
+  - [Merchant Onboarding V2](https://docs.midtrans.com/reference/onboarding-v2.md): This guide walks you through how to onboard as a new or existing merchant with GoPay via Midtrans, including registration and obtaining your Merchant ID.
+- [Technical Specification](https://docs.midtrans.com/reference/miniapp-core.md): This guide explains the core components and requirements shared across all GoPay MiniApp Containers.
+  - [MiniKit CLI: Create Your First MiniApp](https://docs.midtrans.com/reference/miniapp-cli-tools.md)
+    - [Command Reference](https://docs.midtrans.com/reference/command-reference.md)
+    - [Feature Guide](https://docs.midtrans.com/reference/feature-guide.md)
+    - [Directory Structure](https://docs.midtrans.com/reference/directory-structure.md)
+    - [Troubleshooting](https://docs.midtrans.com/reference/troubleshooting.md)
+  - [Core Flows](https://docs.midtrans.com/reference/coreflow-v2.md): This guide explains end-to-end MiniApp flows, which may involve a combination of frontend SDKs and backend APIs.
+    - [Seamless Login](https://docs.midtrans.com/reference/seamless-login-v2.md): This method explains how to authenticate a GoPay user via the Mini App by first retrieving an auth code from the frontend and then exchanging it for an access token through the backend.
+    - [Seamless Payment (Bi-Snap)](https://docs.midtrans.com/reference/seamless-payment-v2.md): This method explains how merchants can receive payments on the Mini App using the BI-SNAP Core API Redirection Deeplink.
+    - [Seamless Payment (Snap-Checkout)](https://docs.midtrans.com/reference/miniapp-x-snap-checkout-payment.md): This guide explains how merchants with an existing Snap Checkout integration can enable payments within MiniApp.
+    - [Enable GoPayLater for MiniApp](https://docs.midtrans.com/reference/enable-gopaylater-for-miniapp.md): This section describes the additional metadata fields required to enable GoPay Later as a payment option in the Mini App.
+  - [Frontend SDKs V2](https://docs.midtrans.com/reference/frontend-v2.md): This guide explains the technical specifications of JSAPIs that is available to be called from your application's frontend.
+  - [Backend APIs (Shared)](https://docs.midtrans.com/reference/backend-v2.md): This guide explains the technical specifications of APIs that can be called from your application's backend.
+    - [Reward GoPay Coins/eMoney](https://docs.midtrans.com/reference/reward-coins-emoney-v2.md): This method explains how merchants can disburse GoPay Saldo or GoPay Coins to users using this API. The user who receives the disbursement will be identified from the Authorization token.
+    - [Reward Gems (Ruby)](https://docs.midtrans.com/reference/reward-gems-v2.md): This API is used to fetch the user's latest gems balance and to issue gems to the user. It returns a promise that resolves with the result or rejects if an error occurs.
+    - [Reminder System (GoPay Genie Card)](https://docs.midtrans.com/reference/reminder-v2.md): This method explains how merchants can display reminders on the GoPay app homepage for time-sensitive actions like bill payments or returns. This feature is limited to selected merchants. To request…
+    - [Push Notification](https://docs.midtrans.com/reference/push-notification-v2.md): This method explains how merchants can send push notifications to users in the GoPay app using this API. This API currently supports sending only one notification at a time. The user for push…
+    - [Get Profile](https://docs.midtrans.com/reference/get-profile-v2.md): This method retrieves the phone number of the user. It returns a promise that resolves with the phone number or rejects it if there is an error.
+  - [Testing MiniApp V2](https://docs.midtrans.com/reference/testing-miniapp-v2.md): This guide explains how to test your miniapp live using the MiniApp Deeplink provided in the integration guide.
+- [FAQ](https://docs.midtrans.com/reference/miniapp-faq.md): This guide provides answers to common questions about GoPay MiniApps.
+
+## API References: CoE Flow
+- [Generate User Token](https://docs.midtrans.com/reference/get_v2-coe-authentication.md): Generates a user token that must be passed to the IAB native SDK. Note: This API is only needed for Native SDK integration, not for H5/Web integration.
+- [Generate Partner Token](https://docs.midtrans.com/reference/get_v1-coe-partner-authentication.md): Retrieves a GTF partner-scoped JWT authentication token for use in subsequent API calls. Token validity is typically 1 hour. Partners are encouraged to cache tokens within their validity period to…
+- [Initiate Flow](https://docs.midtrans.com/reference/post_coe-partner-v1-initiate-flow.md): Generates a required token (for SDK) or a launch URL (for Web SDK) to start the Face Verification flow.
+- [Get presigned URLs for submission](https://docs.midtrans.com/reference/get_coe-partner-v1-submissions-url.md)
+- [Confirm upload for submission](https://docs.midtrans.com/reference/put_coe-partner-v1-submissions-url.md)
+- [Get submission status](https://docs.midtrans.com/reference/getsubmissionstatus.md)
+- [Get Submission Details](https://docs.midtrans.com/reference/get_coe-v1-submissions.md): Retrieves verification results for a given partner session. `x-onekyc-token` and `x-partner-session-id` are mandatory. `x-submission-id` is optional and can be sent to fetch a specific submission.
+
+## API References: Esign APIs
+- [Get Partner Token](https://docs.midtrans.com/reference/getpartnertoken.md): Fetch the partner token needed to call any IAB Backend APIs. The token is generated based on the Client ID and Pass Key provided during onboarding and will be valid for a limited time period.
+- [Get Presigned URLs](https://docs.midtrans.com/reference/getpresignedurls-5.md): Get presigned URLs for you to upload required documents based on the submissionType. After successful uploads, call the Confirm Upload API to start processing.
+- [Confirm Upload](https://docs.midtrans.com/reference/confirmupload-5.md): Confirm that all required documents have been uploaded and provide user details to start the certificate registration process. The additional details passed in this API will be stored and used during…
+- [Get Submission Details](https://docs.midtrans.com/reference/getsubmissiondetails.md): Get submission details and status.
+- [Initiate Flow](https://docs.midtrans.com/reference/initiateflow.md): Fetch the user token/launch URL needed to start the identity verification flow on frontend. Additional details passed in this API will be stored and used during submission processing.
+- [Generate Web View URL](https://docs.midtrans.com/reference/generatewebviewurl.md): This API is used to generate a web view URL for signing or account verification.
+- [Get Presigned URLs V2](https://docs.midtrans.com/reference/getpresignedurlsv2.md): Get presigned URLs for you to upload required documents based on the submissionType. After successful uploads, call the Confirm Upload API to start processing.
+- [Confirm Upload V2](https://docs.midtrans.com/reference/confirmuploadv2.md): Confirm that all required documents have been uploaded and provide user details to start the certificate registration process. The additional details passed in this API will be stored and used during…
+- [Get Submission Details V2](https://docs.midtrans.com/reference/getsubmissiondetailsv2.md): Get submission details and status.
+
+## API References: Standalone Identity Verification API
+- Authentication
+  - [Get Partner Token](https://docs.midtrans.com/reference/getpartnertoken-6.md): Fetch the partner token needed to call IAB Backend APIs. The partner token will be valid for 1 hour. After expiry, partners can create a new token.
+- Flow
+  - [Initiate Flow](https://docs.midtrans.com/reference/initiateflow-1.md): Fetch the user token/launch URL needed to start the identity verification flow on frontend. Additional details passed in this API will be stored and used during submission processing.
+- Submissions
+  - [On-Demand Data Fetch](https://docs.midtrans.com/reference/getsubmissions-1.md): Get all details and KYC status about current submission by the user.
+- Callback
+  - [Partner Callback](https://docs.midtrans.com/reference/partnercallback-6.md): This is API implemented in your system that we will call on completed submissions.
+
+## Recipes
+- [[Snap & Core API] How to get transaction's status](https://docs.midtrans.com/recipes/snap-core-api-how-to-get-transactions-status.md)
+- [[SNAP] How to create Snap token](https://docs.midtrans.com/recipes/snap-how-to-create-snap-token.md)
+- [[SNAP] How to embed Snap UI](https://docs.midtrans.com/recipes/snap-how-to-embed-snap-ui.md)
+- [[SNAP] How to open Snap through pop-up](https://docs.midtrans.com/recipes/snap-how-to-open-snap-through-pop-up.md)
+- [[SNAP] How to open Snap through redirection](https://docs.midtrans.com/recipes/snap-how-to-open-snap-through-redirection.md)
+- [[SNAP] How to utilize callback js for Snap Pop Up and Embedded mode](https://docs.midtrans.com/recipes/snap-how-to-utilize-callback-js-for-snap-pop-up-and-embedded-mode.md)
+- [[SNAP] How to utilize HTTP Notifications Midtrans](https://docs.midtrans.com/recipes/snap-how-to-utilize-http-notifications-midtrans.md)
+- [[SNAP] How to utilize query params in the finish url for Snap redirection](https://docs.midtrans.com/recipes/snap-how-to-utilize-query-params-in-the-finish-url-for-snap-redirection.md)
+
+## Pages
+- [404 Page Not Found.](https://docs.midtrans.com/page/404.md)
+- [404 Page Not Found](https://docs.midtrans.com/page/page-not-found.md)

@@ -1,0 +1,8 @@
+SOURCE https://support.stripe.com/questions/requirements-to-open-a-stripe-account-in-indonesia (Claude in Chrome page text 2026-11-23)
+"Stripe is available in Indonesia as an invite-only program. We welcome all users who want to accept payments in Indonesia. Please register your interest here: https://stripe.com/global and we will reach out to you once we are able to onboard more users."
+Types accepted: Private Limited / Corporation, Sole Proprietorship, Individual. No non-profits.
+Documents: Private Limited: NPWP, TDP/NIB, AKTA, SIUP, SK Kemenkuham, KTP. Sole Proprietorship and Individual: KTP; NPWP optional (needed to issue Faktur Pajak).
+Website: "No website yet? You can use your app store link or social media profile".
+Bank: IDR bank account only ("We don't support non-IDR bank account"); account owner can be business or person name.
+Statement descriptor appears when the user makes ID Bank Transfer VA payments.
+"We don't support cross-border or international transactions from Stripe account based in Indonesia. You could consider to create Stripe account in another country to accept payments globally" (link to the other-country requirements page).

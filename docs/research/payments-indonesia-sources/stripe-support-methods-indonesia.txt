@@ -1,0 +1,4 @@
+SOURCE https://support.stripe.com/questions/supported-payment-methods-currencies-and-businesses-for-stripe-accounts-in-indonesia (Claude in Chrome page text 2026-11-23)
+Payment methods: "Stripe accounts in Indonesia support Indonesia Bank transfer (virtual account) to make payments. You could also create transactions using a Dashboard from the Stripe Indonesia account (without API integration). Any other payment methods are not supported at this time."
+Currencies: "only accept payments in IDR and merchants will be paid in IDR." "We don't support cross-border or international transactions for Stripe accounts based in Indonesia."
+Business type: private limited, sole proprietorship and individual supported; no non-profits, NGOs or restricted businesses.

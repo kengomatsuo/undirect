@@ -1,0 +1,120 @@
+SOURCE https://midtrans.com/passport
+HTTP 200 fetched 2026-11-23
+EN
+ID
+EN
+Log In
+Daftar Sekarang
+Getting started is easy
+Start accepting payments within a few days after signing up
+Register via Website
+More Info
+NEW!
+Create promos on Midtrans, get GoPay up to IDR 2 million.
+Learn more   >
+-->
+How to register
+1
+Click on
+“Register now”
+at the bottom of this instruction.
+2
+We will send an email with the subject “
+Confirmation Instructions”
+to the email address you’ve registered. Click on
+"Verify and complete registration"
+to confirm registration.
+3
+Login
+to access your Midtrans dashboard.
+4
+To activate your account, go to your dashboard and click on the “
+here
+” button as illustrated below.
+5
+Prepare the following documents according to your business type:
+Starter Pack
+(Bank Transfer, GoPay, dan QRIS)
+Starter Pack
++ Card Payment
+Individual
+KTP/ID (for Indonesian citizens)
+Passport and KITAS (for foreign nationals)
+KTP/ID (for Indonesian citizens)
+Passport and KITAS (for foreign nationals)
+NPWP
+Business Entity
+Director’s ID/KTP (for Indonesian citizens)
+Passport and KITAS (for foreign nationals)
+Business Tax ID (NPWP)
+Deed of Establishment
+Deed of Amendment
+Decree of Ministry of Justice and Human Rights
+Director’s ID/KTP (for Indonesian citizens)
+Passport and KITAS (for foreign nationals)
+Business Tax ID (NPWP)
+Deed of Establishment
+Deed of Amendment
+Decree of Ministry of Justice and Human Rights
+6
+You will receive a Terms & Condition document which you’ve agreed upon through an email. This document can only be downloaded 24 hours after the email has been sent.
+7
+For card payment (credit/debit) activation, please wait for further updates within 10 working days after applying.
+8
+You’ll be automatically redirected to simulation (
+Sandbox
+) mode on your first login. You can only access the real function through
+Production
+mode once you’ve completed the account activation procedure.
+9
+Make sure your business does not fall under
+the prohibited business category
+.
+10
+Make sure your business website complies with the determined
+terms & conditions
+. If you don’t have any, you can submit
+your business’ social media URL or product catalogue
+.
+11
+Fill in your business information & upload the required documents accordingly. Confirm that you agree with the applicable terms & conditions and click “
+Ajukan
+” to submit the documents.
+Notes:
+Please make sure that the information & documents that you’ve submitted is correct and complies with our guidelines. Midtrans Team will contact you via email if further information/documents are required from your business.
+If you want to activate any payment methods other than Bank Transfer (PermataBank VA, BNI VA, BRI VA, Mandiri Bill, and BSI), Card Payment, QRIS, and GoPay - please login to your dashboard and select “
+Add Payment Methods
+”.
+In
+Sandbox
+mode, you can explore Midtrans’ dashboard features and simulate transactions.
+Register now
+See how to register Midtrans in the video below
+Registration tutorial for individual
+Registration tutorial for business entity
+Newsletter
+Subscribe to our Newsletter
+Use cases
+Startups & Early Businesses
+Growing businesses
+Enterprises
+Products
+Online Payments
+Pricing
+Resources
+Documentation
+Help Center
+Blog
+Contact Us
+Status
+Security
+Privacy Notice
+Cookie Settings
+Company
+Careers
+About us
+Newsroom
+Partners
+a
+company
+© 2026 Midtrans (PT Midtrans)

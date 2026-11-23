@@ -1,0 +1,13 @@
+SOURCE https://help.xendit.co/hc/en-us/articles/10891368765593-ID-What-are-the-legal-documents-required-to-register-to-Xendit-for-Indonesian-Merchants
+(page text read in Claude in Chrome 2026-11-23 because curl got HTTP 403; "Updated: November 17, 2026"; excerpt of the requirement lists, abridged)
+Article: documents differ by business type; additional licenses may be asked depending on industry.
+A. General Corporate Business (PT, CV, PMA): Owner/Director's ID Card; Owner/Director's Tax ID number; Corporate Tax ID Card; Business Identification Number (NIB) but can be replaced by TDP and SIUP; Deed of Latest Change / Akta Pengangkatan Direktur Terakhir; SK Menkeh (Ministry of Justice and Human Rights decree) of that deed; Other Business License according to Business Activity. Newly established company with only Akta Pendirian + SK Menkeh Pendirian may submit those.
+B. Foundation (Yayasan): same plus Foundation License (TDY).
+C. Cooperation (Koperasi): same plus PSE Certificate.
+D. Foreign entity operating in Indonesia: "Only Business Entity is allowed to be onboarded as Foreign Business in Indonesia".
+The headings listed are General Corporate (PT, CV, PMA), Foundation, Cooperation, Foreign Entity. NO heading for individual / sole proprietor / perorangan appears in this article.
+NIB: status must be 'Terbit'; first page with business details; issued date no longer than 5 years; KBLI must match the nature of business; QR codes accessible.
+Company Tax ID Card: full name must match business name; NPWP number should be 16 digit.
+Deed documents must be PDF with all pages; names must match.
+Cannot be verified: blurry, obscured, incomplete, expired, documents not belonging to the business.
+Contact: help@xendit.co

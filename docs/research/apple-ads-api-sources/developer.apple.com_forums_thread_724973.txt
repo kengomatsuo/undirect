@@ -1,0 +1,3 @@
+Fetched 2026-11-23 via Claude in Chrome get_page_text. Thread: "Apple Search Ads API support for 'basic' version" (Feb 2023), 2 replies.
+Q: can't work out if you can get data from Search Ads Basic or just Advanced.
+Replies (Danqin, Mar 2023): point to a report doc and a Basic-vs-Advanced table; no statement that Basic has an API.

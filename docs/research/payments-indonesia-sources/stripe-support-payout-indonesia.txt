@@ -1,0 +1,2 @@
+SOURCE https://support.stripe.com/questions/payout-schedule-for-stripe-accounts-in-indonesia (Claude in Chrome page text 2026-11-23; static fetch is empty)
+"The payout schedule for Indonesia-based accounts is four working days, meaning that Stripe will deposit funds into your bank account four working days after successful payment. We do not deposit funds at the weekend or on bank holidays." "Stripe accounts based in Indonesia support manual and automatic payouts".

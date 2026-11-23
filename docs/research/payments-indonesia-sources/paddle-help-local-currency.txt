@@ -1,0 +1,260 @@
+SOURCE https://www.paddle.com/help/manage/get-paid/can-i-be-paid-in-my-local-currency
+HTTP 200 fetched 2026-11-23
+Launch
+Explore the Paddle AI Toolkit and go from prompt to global selling.
+Learn more
+Support
+Help center
+Payment support
+Billing FAQs
+Why has Paddle charged me?
+Cancel a subscription
+Request a refund
+Login
+Paddle Billing
+ProfitWell Metrics
+Product
+Billing
+The only complete Merchant of Record solution purpose-built for SaaS and apps
+Checkout
+High performance, localized checkout
+Subscriptions
+Flexible, multi-product subscriptions
+Payments
+All-in-one payment tools
+Reporting
+Real-time payment and revenue analytics
+Invoicing
+Recurring, automated B2B billing
+Fraud protection
+Reduce your risk with fraud prevention & protection
+Metrics
+Real-time subscription analytics, 100% free
+Retain customers
+Radically reduce churn, automatically
+Tax & compliance
+Eliminate sales tax headaches with full, automatic global tax compliance
+In-app purchase
+Take advantage of lower fees, more control, and faster growth
+Solutions
+By use case
+Paddle for SaaS
+Paddle for apps
+Paddle for app studios
+Paddle for digital products
+Paddle for software
+Paddle for games
+By stage
+Startups
+Enterprise
+Nexus Mods
+9x revenue uplift in China
+HubX
+$100,000+ recovered in 72 days
+All customer stories
+Partner with Paddle
+RevenueCat integration
+Pricing
+Customers
+Developers
+Dev docs
+Get started with Paddle Billing
+Changelog
+Stay updated on everything we ship
+Developer sandbox
+Start exploring
+API reference
+Setup and maintain your data
+Security portal
+Data privacy, transparency, and access
+Platform status
+See if everything is running as it should be
+Quick start guides
+Create your first product
+Issue an invoice
+Connect a checkout
+New
+Docs MCP
+Give your AI assistant up-to-date Paddle knowledge
+Billing quickstart guide
+Developer docs
+Billing sandbox
+Engineering blog
+Resources
+Blog
+The latest SaaS insights, opinions and news
+Webinars
+Live and on-demand
+Resource hub
+Access to guides, reports, and best practices
+Selling SaaS Globally Handbook
+A SaaS leader's practical guide to global expansion
+Mobile App Monetization Guide
+Use a web monetization strategy to unlock growth for your mobile app
+Careers at Paddle
+Get started
+Book a demo
+Product
+Billing
+Checkout
+Subscriptions
+Payments
+Tax & compliance
+Invoicing
+Fraud protection
+Metrics
+Retain customers
+In-app purchase
+Reporting
+By use case
+Paddle for SaaS
+Paddle for apps
+Paddle for app studios
+Paddle for digital products
+Paddle for software
+Paddle for games
+Sell SaaS globally
+Launch your SaaS
+By stage
+Startups
+Enterprise
+Pricing
+Customers
+Resources
+Careers
+Help center
+Payment support
+Billing FAQs
+Developer docs
+Why has Paddle charged me?
+Mobile App Monetization Strategies
+Get started
+Book a demo
+Login
+Paddle Billing
+ProfitWell Metrics
+Search Help Center
+Help
+/
+Manage
+/
+Get Paid
+/
+Can I be paid in my local currency?
+Start
+Intro to Paddle
+Set up Paddle
+Account Verification
+Sell
+Set up subscriptions
+Invoicing Tool
+Tax
+Manage
+Your customers
+Reporting
+Get Paid
+Can I be paid in my local currency?
+Do I need to invoice Paddle for my payout?
+Is there a fee taken for payouts?
+Should I charge Paddle VAT/tax for payouts?
+When and how do I get paid?
+What statements will I receive?
+Can I change my payout method?
+How do I set up my payout settings?
+PSD2
+Risk Prevention
+SDK
+Grow
+Upsell
+Localisation
+Legal
+Sanctions
+Can I be paid in my local currency?
+We currently support payouts in the following currencies:
+Australian Dollar (AUD)
+British Pound Sterling (GBP)
+Canadian Dollar (CAD)
+Chinese Yuan (CNY)
+Czech Koruna (CZK)
+Danish Krone (DKK)
+Euro (EUR)
+Hungarian Forint (HUF)
+Polish Zloty (PLN)
+South African Rand (ZAR)
+Swedish Krona (SEK)
+Swiss Franc (CHF)
+US Dollar (USD)
+You can select the currency in which you would like to be paid out through your
+Transfer Preferences
+. Select ‘Bank/Wire Transfer’ as your ‘Payment Method’ and you will be prompted to select your ‘Transfer Currency’.
+If you opt to receive payment in a currency different from the Balance Currency, then we reserve the right to charge a conversion margin of up to 1.5%, for the avoidance of doubt this will not be reflected in the Paddle Margin which is presented in your Balance Currency. We will go to all reasonable efforts to ensure no additional fees are charged during withdrawal but are not responsible for any charges that do occur.
+If your bank imposes expensive fees for receiving funds in your Default Currency, Paddle will convert your balance at a competitive rate, offered to us via our payout partner, before sending your payout.
+If your local currency isn’t supported we can send the payout in the most competitive Default Currency and your bank will convert the payout to your local currency. Any
+subsequent charges
+will be from your bank and are incurred by you directly.
+If you have any questions about payouts or would like advice on the most cost-effective way to receive your earnings, please don’t hesitate to
+contact us
+.
+Why has Paddle charged me?
+Merchant of record explained
+Platform status
+Products
+Recurring billing software
+Online checkout
+Subscription management software
+Sales tax compliance software
+Payment fraud detection
+SaaS payment solutions
+Payment analytics
+In-app purchase
+Subscription analytics
+Dunning management software
+Solutions
+SaaS billing
+Sell digital products
+Sell software
+Online gaming payments
+Sell outside the App Store
+App studios
+Billing infrastructure for startups
+Enterprise payment solutions
+Resources
+Resource hub
+Blog
+Engineering blog
+Webinars
+Customer stories
+Revenue impact calculator
+A-Z of SaaS metrics
+Support
+Help center
+Developer docs
+Developer sandbox
+SOC 2 compliance
+GDPR compliance
+Company
+About us
+Careers
+We're hiring
+Press
+Partnerships
+Procurement
+Compare
+Stripe
+Lemon Squeezy
+FastSpring
+Chargebee
+Adyen
+Zuora
+Recurly
+Solidgate
+Razorpay
+Cleverbridge
+Gumroad
+PayPal
+Compare all
+Paddle.com Market Ltd. © 2012—2026
+Cookie preferences
+Terms of use
+Privacy
+Security

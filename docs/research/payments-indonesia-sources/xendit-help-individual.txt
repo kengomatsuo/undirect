@@ -1,0 +1,3 @@
+SOURCE https://help.xendit.co/hc/en-us/articles/360035083911-Can-Individual-businesses-use-Xendit-s-services (Claude in Chrome page text, 2026-11-23, curl 403; "Updated: November 17, 2026")
+"Xendit supports businesses registered as legal entities, including Partnerships, and Corporations."
+"At the moment, we not accomodate Individual business to create an account in Xendit." Individuals are encouraged to "register your business under a recognized legal entity in line with our onboarding requirements." Links: ahu.go.id (SK Menkeh), pajak.go.id (NPWP Perusahaan).
