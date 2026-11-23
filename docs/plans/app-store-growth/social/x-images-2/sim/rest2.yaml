@@ -226,7 +226,7 @@ appId: com.apple.mobilesafari
       - waitForAnimationToEnd:
           timeout: 3000
       - takeScreenshot: rest-10-paste-setting
-# News articles in Safari, as they first open (#32)
+# A news article in Safari, as it first opens (#32); crops.sh blurs the paper's name and address
 - runFlow:
     label: "articles (#32)"
     optional: true
@@ -234,8 +234,4 @@ appId: com.apple.mobilesafari
       - openLink: "https://www.theguardian.com/games/2026/nov/19/tips-for-playing-grand-theft-auto-vi"
       - waitForAnimationToEnd:
           timeout: 10000
-      - takeScreenshot: rest-5-guardian
-      - openLink: "https://www.independent.co.uk/tech/siri-apple-iphone-personal-agent-meta-muse-b3088666.html"
-      - waitForAnimationToEnd:
-          timeout: 10000
-      - takeScreenshot: rest-5b-independent
+      - takeScreenshot: rest-5-article

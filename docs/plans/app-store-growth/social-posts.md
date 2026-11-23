@@ -268,34 +268,47 @@ Grok-reviewed list (docs/research/grok-x-review.md). 28 text posts scheduled in 
 
 | WIB | # | Post | Status |
 |---|---|---|---|
-| 2026-11-23 09:15 | 3 | How many tabs are open in Safari on your phone right now? Go and look. I'll go first in th | scheduled |
-| 2026-11-23 19:45 | 13 | Without looking: what's the last thing you copied on your phone? | scheduled |
-| 2026-11-24 10:45 | 8 | What have you typed so many times that your thumbs do it without you? An address, an email | scheduled |
-| 2026-11-24 21:15 | 1 | "Accept all" is one tap. "Reject all" is a second screen, a column of switches and a Save  | scheduled |
-| 2026-11-25 08:45 | 4 | Mac people: what's the first app you install on a new Mac, before anything else? | scheduled |
-| 2026-11-25 22:15 | 12 | What's an app you paid for once, years ago, and still open every week? | scheduled |
-| 2026-11-26 08:45 | 7 | I pressed the Back button. That was the whole message. Some sites answer it with another p | scheduled |
-| 2026-11-26 19:15 | 2 | You can copy on an iPhone by pinching in with three fingers, and paste by pinching out. Do | scheduled |
-| 2026-11-27 21:45 | 14 | Black Friday, Nov 27 to 30 on the App Store: / Cutling $2.99 (was $4.99) / Undirect $0.99  | scheduled |
-| 2026-11-27 07:45 | 18 | If you moved from Android to iPhone: what's the one thing you still miss? | scheduled |
-| 2026-11-28 10:45 | 15 | Paste. "Allow Paste". Paste again. "Allow Paste". It's my phone and my clipboard. Who else | scheduled |
-| 2026-11-28 19:15 | 20 | iPhone people: are you on Apple's keyboard or another one? What made you switch, or stay? | scheduled |
-| 2026-11-29 07:45 | 9 | Korean writes "tap" and "tab" the same way: 탭. So my App Store headline about pop-ups that | scheduled |
-| 2026-11-29 20:15 | 16 | Apple rejected my app twice in one week for the same thing: my App Store preview videos sh | scheduled |
-| 2026-11-30 09:45 | 22 | Apple doesn't publish how much memory an iPhone gives a keyboard. It's in the firmware: 77 | scheduled |
-| 2026-11-30 21:45 | 23 | People who make apps alone: how many languages is yours in, and who checks the ones you ca | scheduled |
-| 2026-12-01 07:45 | 24 | In May I capped a snippet at 1,000 characters. I thought the keyboard's memory was why. My | scheduled |
-| 2026-12-01 20:45 | 25 | What's the oldest app still on your home screen, and why has it survived? | scheduled |
-| 2026-12-02 10:15 | 26 | My app is in 50 languages, and no native speaker has read any of them yet. If you read som | scheduled |
-| 2026-12-02 20:15 | 27 | Apple rejected my first iPhone submission, and they were right. My setup button said "Open | scheduled |
-| 2026-12-03 09:15 | 28 | Would you pay for an app whose code is public, when you could build it yourself for free? | scheduled |
+| 2026-11-23 22:45 | 3 | How many tabs are open in Safari on your phone right now? Go and look. I'll go first in th | scheduled with picture x03 (was 09:15: that slot passed while its real capture was made) |
+| 2026-11-23 19:45 | 13 | Without looking: what's the last thing you copied on your phone? | scheduled with picture x13 |
+| 2026-11-24 10:45 | 8 | What have you typed so many times that your thumbs do it without you? An address, an email | scheduled with picture x08 |
+| 2026-11-24 21:15 | 1 | "Accept all" is one tap. "Reject all" is a second screen, a column of switches and a Save  | scheduled with picture x01 |
+| 2026-11-25 08:45 | 4 | Mac people: what's the first app you install on a new Mac, before anything else? | scheduled with picture x04 |
+| 2026-11-25 22:15 | 12 | What's an app you paid for once, years ago, and still open every week? | scheduled with picture x12 |
+| 2026-11-26 08:45 | 7 | I pressed the Back button. That was the whole message. Some sites answer it with another p | scheduled with picture x07 |
+| 2026-11-26 19:15 | 2 | You can copy on an iPhone by pinching in with three fingers, and paste by pinching out. Do | scheduled with picture x02 |
+| 2026-11-27 21:45 | 14 | Black Friday, Nov 27 to 30 on the App Store: / Cutling $2.99 (was $4.99) / Undirect $0.99  | scheduled with picture x14 |
+| 2026-11-27 07:45 | 18 | If you moved from Android to iPhone: what's the one thing you still miss? | scheduled with picture x18 |
+| 2026-11-28 10:45 | 15 | Paste. "Allow Paste". Paste again. "Allow Paste". It's my phone and my clipboard. Who else | scheduled with picture x15 |
+| 2026-11-28 19:15 | 20 | iPhone people: are you on Apple's keyboard or another one? What made you switch, or stay? | scheduled with picture x20 |
+| 2026-11-29 07:45 | 9 | Korean writes "tap" and "tab" the same way: 탭. So my App Store headline about pop-ups that | scheduled with picture x09 |
+| 2026-11-29 20:15 | 16 | Apple rejected my app twice in one week for the same thing: my App Store preview videos sh | scheduled with picture x16 |
+| 2026-11-30 09:45 | 22 | Apple doesn't publish how much memory an iPhone gives a keyboard. It's in the firmware: 77 | scheduled with picture x22 |
+| 2026-11-30 21:45 | 23 | People who make apps alone: how many languages is yours in, and who checks the ones you ca | scheduled with picture x23 |
+| 2026-12-01 07:45 | 24 | In May I capped a snippet at 1,000 characters. I thought the keyboard's memory was why. My | scheduled with picture x24 |
+| 2026-12-01 20:45 | 25 | What's the oldest app still on your home screen, and why has it survived? | scheduled with picture x25 |
+| 2026-12-02 10:15 | 26 | My app is in 50 languages, and no native speaker has read any of them yet. If you read som | scheduled with picture x26 |
+| 2026-12-02 20:15 | 27 | Apple rejected my first iPhone submission, and they were right. My setup button said "Open | scheduled with picture x27 |
+| 2026-12-03 09:15 | 28 | Would you pay for an app whose code is public, when you could build it yourself for free? | scheduled with picture x28 |
 | 2026-11-22 19:45 | 30 | What do you keep in your Notes app only so you can copy it out again? | scheduled (moved to today, owner asked where today's were) |
-| 2026-12-04 07:45 | 31 | Mac people: what's the first thing you delete when you set up a new Mac? | scheduled |
-| 2026-12-04 19:45 | 32 | I opened one article and got a newsletter box, a cookie banner and an "Open in app" bar be | scheduled |
-| 2026-12-05 09:45 | 33 | Solo makers: how do you decide a bug is bad enough to fix today, and not in the next relea | scheduled |
-| 2026-12-05 19:45 | 35 | What's a Safari behaviour that still surprises you? | scheduled |
+| 2026-12-04 07:45 | 31 | Mac people: what's the first thing you delete when you set up a new Mac? | scheduled with picture x31 |
+| 2026-12-04 19:45 | 32 | I opened one article and got a newsletter box, a cookie banner and an "Open in app" bar be | scheduled with picture x32 |
+| 2026-12-05 09:45 | 33 | Solo makers: how do you decide a bug is bad enough to fix today, and not in the next relea | scheduled with picture x33 |
+| 2026-12-05 19:45 | 35 | What's a Safari behaviour that still surprises you? | scheduled with picture x35 |
 | 2026-11-22 22:15 | 36 | What's in your Mac menu bar that you open more than once a day? | scheduled (moved to today) |
-| 2026-12-06 22:15 | 37 | The hard part of stopping tabs a page opens by itself is telling "the person tapped this"  | scheduled |
+| 2026-12-06 22:15 | 37 | The hard part of stopping tabs a page opens by itself is telling "the person tapped this"  | scheduled with picture x37 |
+
+### Pictures for the engagement posts (ASG170, 2026-11-23)
+
+Owner: the X posts went out without pictures. Each of the 26 still-unsent posts in the table above now goes out at its time with a picture made for the question it asks, not for the app; the words are unchanged. X's web scheduler cannot swap media on a scheduled post, so each post was created again with its picture and an image description, and its text-only copy deleted.
+
+- Owner on the first set: the Safari tabs picture read as AI-made. Every drawn picture was deleted from X and from the folder; each picture is now real material: iPhone simulator screens (iOS 27.2), real pages captured at phone size, the App Store and GitHub, Apple's own guide pages and their screenshots, the apps' shipped screenshots, Wikimedia Commons photos with their credit on the picture, and icons exported from this Mac. #14 is the sale card made on Nov 20.
+- Owner, the same day: lower the risk of being sued. In the pictures that show someone else's site doing the thing a post complains about, and in the Safari tabs and menu shots, the company's logo, name and address are blurred, so a picture shows the pattern, not who did it: #1 (the retailer's logo on its laptop), #32 (the paper's name and address), #3 (every tab's page and title) and #13 (the site's address). Those four were deleted on X and created again at the same times with the same words. Apple's own pages, Homebrew, credited Commons photos and our own pages stay as they were.
+- #15's picture is Apple's developer page for UIPasteControl, where Apple writes that since iOS 16 an app reading the clipboard by itself raises an alert asking the person to allow it. The alert itself could not be captured: Notes is not on the simulator and no app there asks for it.
+- #7's picture is Safari's real Back list on Undirect's own demo page (undirect.matsuokengo.com/demo/back/), a made-up "Kickoff Live" stream that adds four copies of itself to the history the way Back-button traps do. It is not a real site, and its address shows under each entry.
+- #3 now goes out at 22:45 instead of 09:15: the morning slot passed while its nine-tab Safari capture was made. Its reply, "I'm on 9 right now.", still goes under it by hand.
+- What each picture is made from: the `from` line of each post in social/x-images-2/posts.json, also printed under each picture on social/x-images-2/contact-sheet.jpg, which shows every post with its words at X's web and mobile sizes.
+- Rebuild: `bun render.ts <id>` for the pictures laid out from captures (pictures/<id>.html), `bun capture.ts` and `bun capture-part.ts` for page captures, sim/job-rest2.sh and sim/job.sh through the device queue for the iPhone screens, crops.sh for the crops and blurs, `bun contact.ts` for the sheet.
+- Read back from X > Drafts > Scheduled at 14:44 WIB: 32 items, all 32 with a picture: the 26 posts above, each with its approved words exactly and no text-only copy left, and the six picture and film posts below, untouched.
 
 ### Approved films and carousels, every platform (2026-11-22 evening)
 
