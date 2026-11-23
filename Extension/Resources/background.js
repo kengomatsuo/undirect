@@ -323,6 +323,42 @@ api.action?.onClicked?.addListener?.(async (tab) => {
   await applyWatch({ site, on: true, tabId: tab.id });
 });
 
+// ------------------------------------------- stops the page did not witness
+
+// A pop-up tab closed here or a redirect undone here happens out of the page's
+// sight, so the page drew no note and no effect for it. On iOS that was nearly
+// every stop: a tap's pop-up arrives as a tab and is closed here, never vetoed
+// in the page. So the page is told, and draws the stop as it draws its own.
+// An undone redirect lands on a page that is only now coming back, so its word
+// waits for that page's hello.
+const STOPPED_HERE = new Set(["pop-tab", "redirect"]);
+const UNTOLD_MS = 8000;
+const untold = new Map(); // tabId -> { kind, base, at }
+
+function tell(tabId, kind, base) {
+  if (kind === "redirect") {
+    untold.set(tabId, { kind, base, at: Date.now() });
+    return;
+  }
+  send(tabId, { type: "undirect:stopped", kind, base });
+}
+
+function tellWaiting(tabId) {
+  const word = untold.get(tabId);
+  if (!word) return;
+  untold.delete(tabId);
+  if (Date.now() - word.at > UNTOLD_MS) return;
+  send(tabId, { type: "undirect:stopped", kind: word.kind, base: word.base });
+}
+
+function send(tabId, msg) {
+  try {
+    Promise.resolve(api.tabs.sendMessage(tabId, msg, { frameId: 0 })).catch(() => {});
+  } catch (e) {
+    // the page is gone, and with it anyone to show
+  }
+}
+
 async function note(tabId, msg) {
   if (tabId === undefined) return;
   const base = msg.base || msg.host || "";
@@ -369,6 +405,7 @@ async function note(tabId, msg) {
   }
 
   paintBadge(tabId);
+  if (msg.blocked && STOPPED_HERE.has(msg.kind)) tell(tabId, msg.kind, base);
 
   await api.storage.local.set({ lifetime: state.lifetime + (msg.blocked ? 1 : 0) });
   pushSnapshot();
@@ -561,6 +598,7 @@ async function hello(tabId, site) {
     Site.sameSite(entry.stolen.base, site);
   if (!thief && entry.site && site && !Site.sameSite(site, entry.site)) startOver(entry, site);
   else if (!thief) entry.site = site;
+  if (!thief) tellWaiting(tabId);
 
   presses.delete(tabId);
   paintBadge(tabId);

@@ -826,21 +826,46 @@
     }
   }
 
+  // A stop the background made out of this page's sight (a pop-up tab it
+  // closed, a redirect it undid back to here) is drawn like one of the page's
+  // own. Its word can land before start() knows whether this site is guarded.
+  let started;
+  const ready = new Promise((resolve) => { started = resolve; });
+
+  async function stoppedElsewhere({ kind, base }) {
+    await ready;
+    if (!active || window.top !== window) return;
+    showNote(kind, base);
+    if (kind === "pop-tab") fx("burst", lastPress);
+    else fx("field");
+  }
+
   api.runtime.onMessage?.addListener?.((msg) => {
     if (msg?.type === "undirect:status") {
       return Promise.resolve({ armed, bridgeLoaded, site, siteBase });
     }
+    if (msg?.type === "undirect:stopped") {
+      stoppedElsewhere(msg);
+      return undefined;
+    }
     return undefined;
   });
+
+  function hello() {
+    try {
+      api.runtime.sendMessage({ type: "undirect:hello", site: siteBase });
+    } catch (e) {
+      // nothing to report to
+    }
+  }
 
   async function start() {
     const isTop = window.top === window;
     if (isTop) {
-      try {
-        api.runtime.sendMessage({ type: "undirect:hello", site: siteBase });
-      } catch (e) {
-        // nothing to report to
-      }
+      hello();
+      // Back from an undone redirect, Safari may show this page from its cache
+      // without running this script again, so it says hello once more.
+      addEventListener("pageshow", (e) => { if (e.persisted) hello(); });
     }
 
     let stored = {};
@@ -890,6 +915,7 @@
     }
 
     settle();
+    started();
     if (!active) return;
     applyRecipes();
     injectBridge();

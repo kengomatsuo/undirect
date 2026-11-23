@@ -39,7 +39,7 @@ function world({ slowStorage = false, matchedRules = null,
       })
     : Promise.resolve();
 
-  const calls = { goBack: [], removed: [], rules: [], badge: [], reloaded: [], native: [] };
+  const calls = { goBack: [], removed: [], rules: [], badge: [], reloaded: [], native: [], told: [] };
   // Tabs that exist, by id; the private ones carry Safari's incognito flag.
   const tabs = new Map([7, 8, 9, ...privateTabs].map((id) => [id, { id, url: privateTabs.includes(id) ? "https://secret.com/" : "https://www.site.com/", incognito: privateTabs.includes(id) }]));
   // The Mac app's queue, handed over once, the way the native handler does.
@@ -100,6 +100,7 @@ function world({ slowStorage = false, matchedRules = null,
     tabs: {
       goBack: async (id) => calls.goBack.push(id),
       remove: async (id) => calls.removed.push(id),
+      sendMessage: async (id, msg, opts) => { calls.told.push({ id, ...msg, frameId: opts?.frameId }); },
       update: async () => {},
       reload: async (id) => calls.reloaded.push(id),
       get: async (id) => tabs.get(id),
@@ -173,6 +174,19 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
      w.local.everywhere?.["pop.example"] === "block", JSON.stringify(w.local.everywhere));
   ok("and a network rule carries it",
      w.calls.rules.some((c) => c.addRules?.some((r) => r.condition.urlFilter.includes("pop.example"))));
+  ok("the stolen page is not told of the stop", w.calls.told.length === 0, JSON.stringify(w.calls.told));
+  // The thief's page says hello first; only the page sent back to draws the stop.
+  w.send({ type: "undirect:hello", site: "pop.example" }, 7);
+  await w.settle();
+  ok("nor is the thief's page", w.calls.told.length === 0, JSON.stringify(w.calls.told));
+  w.send({ type: "undirect:hello", site: "site.com" }, 7);
+  await w.settle();
+  ok("the page it was sent back to is told, once",
+     w.calls.told.length === 1 && w.calls.told[0].type === "undirect:stopped" && w.calls.told[0].kind === "redirect" &&
+     w.calls.told[0].base === "pop.example" && w.calls.told[0].frameId === 0, JSON.stringify(w.calls.told));
+  w.send({ type: "undirect:hello", site: "site.com" }, 7);
+  await w.settle();
+  ok("and not again on its next load", w.calls.told.length === 1, JSON.stringify(w.calls.told));
 }
 
 {
@@ -244,6 +258,9 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   await new Promise((resolve) => setTimeout(resolve, 400));
   ok("a tab opened behind the press is closed", w.calls.removed.includes(9),
      JSON.stringify(w.calls.removed));
+  ok("and the page that was pressed is told, so it can draw the stop",
+     w.calls.told.some((m) => m.id === 7 && m.type === "undirect:stopped" && m.kind === "pop-tab" && m.base === "pop.example" && m.frameId === 0),
+     JSON.stringify(w.calls.told));
 }
 
 {
