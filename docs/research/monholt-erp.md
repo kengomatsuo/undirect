@@ -50,3 +50,7 @@ Keep building our own, and borrow from Postiz's provider code (read, not vendore
 ## Merge stya's ops into it?
 
 No. stya's console controls a production server (restarts, migrations, backups, kill switch) behind Cloudflare Access, sized for a 4 GB box, and the house rule keeps stya-prod for stya and POS. Gain from merging: one login and one page. Risk: social tokens and a marketing tool's outages and dependencies sit beside production controls. monholt.com already exists as a public Worker; an owner's Monholt console, if wanted, reuses the stya console's UI parts (React/Tailwind components) on its own host, not the stya service.
+
+## Monholt HQ: where it would run (ASG176)
+
+One Cloudflare Worker on a monholt.com subdomain, behind Cloudflare Access (the same login pattern as ops.stya.app), with one Cron Trigger fanning out the reads into D1. Free tier: 100,000 requests a day, 5 Cron Triggers per account, D1 500 MB a database and 5 GB an account, 50 queries per invocation (developers.cloudflare.com/workers/platform/limits, /d1/platform/limits). Platform tokens move from the Mac keychain to Worker secrets, so nothing lives only on the laptop. X posting and reads still spend the owner's pay-per-use credits; TikTok stays sandbox-only and gives no comment text.
