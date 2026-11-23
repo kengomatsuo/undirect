@@ -1,0 +1,204 @@
+{
+ "about": "Cutling 2.0 release posts (board ASG104), Dec 1 to 3, every platform. Files in ~/Downloads/cutling-2-release-posts/. Times WIB (UTC+7), odd minutes, each after 2.0's release at Dec 1 07:00 WIB. Nothing is scheduled before Cutling 2.0 reads READY_FOR_SALE and the owner's go on the review page. Day one is new (a film cut from real recordings of the 2.0 build, and a carousel in the store frames' look); days two and three are ASG164's Five names and Five taps with their films unchanged, their captions saying \"blank\" as the release notes do, and an X post added to each. No film or caption names a price. This file takes the place of the two Cutling films' rows in films-2/posts.json, so each goes out once. Review page: https://claude.ai/artifact/L2s3wTyLfVwEL8jTuQ4wVz (built by review.py from this file).",
+ "links": {
+  "cutling_site": "cutling.matsuokengo.com",
+  "cutling_store": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct="
+ },
+ "films": [
+  {
+   "key": "cutling-2-release",
+   "title": "What's new in 2.0",
+   "app": "Cutling",
+   "day": "Dec 1",
+   "after": "Cutling 2.0 READY_FOR_SALE on iOS",
+   "files": {
+    "9x16": "cutling-2-release-9x16.mp4",
+    "1x1": "cutling-2-release-1x1.mp4",
+    "cover": "cutling-2-release-cover.jpg",
+    "cover1x1": "cutling-2-release-1x1-cover.jpg",
+    "carousel": [
+     "carousel/cutling-2-whats-new-01.png",
+     "carousel/cutling-2-whats-new-02.png",
+     "carousel/cutling-2-whats-new-03.png",
+     "carousel/cutling-2-whats-new-04.png",
+     "carousel/cutling-2-whats-new-05.png",
+     "carousel/cutling-2-whats-new-06.png",
+     "carousel/cutling-2-whats-new-07.png"
+    ]
+   },
+   "what": "The five things 2.0 adds, each over a real recording of the 2.0 build: a reply that asks for the name (Messages), a date that fills itself in, a reply written like a note with a bold title, a list and a highlight, the grid holding 5,000, and a formatted key typed by one tap. The carousel says the same five in the look of the App Store frames.",
+   "posts": [
+    {
+     "platform": "X",
+     "when": "2026-12-01 23:52",
+     "file": "1x1",
+     "note": "3 h after #25 (20:45); 11:52 a.m. US Eastern. No hashtags. Link goes in our own reply, posted by hand right after.",
+     "text": "Cutling 2.0 is out.\n\nA saved reply can ask for the name before it types itself. Dates fill in on the day you send them. You can write one like a note, with bold and a list. And there's room for 5,000, up from 100.\n\nWhich would you use first?",
+     "reply_text": "It's a free update if you already have Cutling. On the App Store: https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct=x-release"
+    },
+    {
+     "platform": "Instagram carousel + Facebook post (Business Suite, one post)",
+     "when": "2026-12-01 21:07",
+     "file": "carousel",
+     "note": "7 slides, 1080 x 1350; 9:07 a.m. US Eastern. Facebook first comment by hand.",
+     "text": "Cutling 2.0 is out, and your saved replies can ask for the name now. Swipe for the five things that changed.\n\n1. A blank for the name. Tap the reply and the keyboard asks who it's for.\n2. Dates that fill themselves in.\n3. A reply written like a note, with bold and lists.\n4. Room for 5,000, up from 100.\n5. Every key types, formatted ones too.\n\nWhich one would you use first? 👇\n\nIt's a free update. Link in bio.\n#iphonetips #textreplacement #iosapps #productivityapps #macapps",
+     "first_comment": "Cutling 2.0 on the App Store: https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct=fb-release"
+    },
+    {
+     "platform": "Threads",
+     "when": "2026-12-01 21:16",
+     "file": "9x16",
+     "note": "topic tag: iPhone; reply 2/2 carries the link",
+     "text": "Cutling 2.0 is out today. Five things changed:\n\nA saved reply can ask for the name.\nDates fill themselves in.\nYou can write one like a note, bold and lists included.\nIt holds 5,000 now, up from 100.\nEvery key types, formatted ones too.\n\nWhich one would you use first?",
+     "reply_text": "It's a free update: cutling.matsuokengo.com"
+    },
+    {
+     "platform": "YouTube Short @matsuokengo",
+     "when": "2026-12-01 22:08",
+     "file": "9x16",
+     "title": "5 new things in Cutling 2.0: a reply that asks for the name #iPhoneTips",
+     "description_file": "youtube/cutling-2-release-short.txt",
+     "tags": "Cutling,iPhone keyboard,saved replies,text replacement,clipboard",
+     "note": "the calendar's free Short slot; 10:08 a.m. US Eastern",
+     "text": "Cutling 2.0 is out. Five things changed:\n\n1. A saved reply can ask for the name before it types itself.\n2. Dates fill in on the day you send them.\n3. You can write a reply like a note, with bold, highlight and lists.\n4. There's room for 5,000 texts and 500 images, up from 100 and 25.\n5. Every key types, formatted ones too.\n\nCutling is a keyboard for the text you type again and again, on iPhone, iPad and Mac. Which of the five would you use first? Tell me in the comments.\n\nCutling on the App Store: https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct=yt-release-short\n\nMusic: Complicated by Arulo (Mixkit).\n#iPhoneTips #iOSApps"
+    },
+    {
+     "platform": "TikTok",
+     "when": "2026-12-02 03:12",
+     "file": "9x16",
+     "note": "Disclose post content > Your brand; cover = frame 0; 3:12 p.m. US Eastern on Dec 1, 4.5 h before Five names",
+     "text": "5 new things in Cutling 2.0 👀 A saved reply can ask for the name now, and dates fill themselves in. Which would you use first? #iphonetips #textreplacement #iphonehacks #iosapps #techtok"
+    }
+   ],
+   "length_s": {
+    "9x16": 22.0,
+    "1x1": 22.0
+   }
+  },
+  {
+   "key": "cutling-five-names",
+   "title": "Five names",
+   "app": "Cutling",
+   "day": "Dec 2",
+   "after": "Cutling 2.0 READY_FOR_SALE on iOS",
+   "from": "films-2/posts.json (ASG164), folded into the release set",
+   "files": {
+    "9x16": "cutling-five-names-9x16.mp4",
+    "16x9": "cutling-five-names-16x9.mp4",
+    "cover": "cutling-five-names-cover.jpg",
+    "cover16x9": "cutling-five-names-16x9-cover.jpg"
+   },
+   "what": "9 AM at a small shop: five customers asked if their order shipped. One saved reply with a blank for the name answers each: tap the reply, tap the name, send.",
+   "posts": [
+    {
+     "platform": "TikTok",
+     "when": "2026-12-02 07:40",
+     "file": "9x16",
+     "note": "Disclose post content > Your brand; cover = frame 0",
+     "text": "5 customers, same question, one saved reply ✅ Tap the reply, tap the name. New in Cutling 2.0. What do you send every day? #smallbusiness #iphonetips #customerservice #shopowner #productivityhacks"
+    },
+    {
+     "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
+     "when": "2026-12-02 07:47",
+     "file": "9x16",
+     "note": "cover = frame 0; Facebook first comment by hand",
+     "text": "Five customers asked the same thing overnight: has my order shipped?\n\nOne saved reply with a blank for the name answered all five. Tap the reply, tap the name, send. That's new in Cutling 2.0.\n\nWhat do you type to customers most often? 👇\n\nLink in bio.\n#smallbusiness #iphonetips #customerservice #shopowner #productivity",
+     "first_comment": "Cutling on the App Store: https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct=fb-names"
+    },
+    {
+     "platform": "Threads",
+     "when": "2026-12-02 07:53",
+     "file": "9x16",
+     "note": "topic tag: iPhone; reply 2/2 carries the link",
+     "text": "Five customers asked “has my order shipped?” overnight. I answered all five with one saved reply that asks for the name: tap the reply, tap the name, send. That's the new blank in Cutling 2.0.\n\nWhat do you type to customers most?",
+     "reply_text": "cutling.matsuokengo.com"
+    },
+    {
+     "platform": "YouTube Short @matsuokengo",
+     "when": "2026-12-02 08:01",
+     "file": "9x16",
+     "title": "One saved reply, a different name every time #iPhoneTips",
+     "description_file": "../films-2/youtube/cutling-five-names-short.txt",
+     "tags": "Cutling,iPhone keyboard,saved replies,text snippets,small business"
+    },
+    {
+     "platform": "X",
+     "when": "2026-12-02 23:41",
+     "file": "16x9",
+     "note": "new: the set had no X post; 3 h after #27 (20:15). Link in our own reply by hand.",
+     "text": "Five customers asked the same thing this morning: has my order shipped?\n\nOne saved reply answered all five. Tap it, tap the name, send.\n\nWhat question do you answer every single day?",
+     "reply_text": "The reply that asks for the name is new in Cutling 2.0: https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct=x-names"
+    },
+    {
+     "platform": "YouTube @matsuokengo",
+     "when": "2026-12-03 22:43",
+     "file": "16x9",
+     "title": "Answer every customer by name with one saved reply on iPhone | Cutling",
+     "description_file": "../films-2/youtube/cutling-five-names-long.txt",
+     "tags": "Cutling,iPhone keyboard,saved replies,text snippets,small business,Mac"
+    }
+   ],
+   "length_s": {
+    "9x16": 18.6,
+    "16x9": 19.8
+   }
+  },
+  {
+   "key": "cutling-five-taps",
+   "title": "Five taps",
+   "app": "Cutling",
+   "day": "Dec 3",
+   "after": "Cutling 2.0 READY_FOR_SALE on iOS",
+   "from": "films-2/posts.json (ASG164), folded into the release set",
+   "files": {
+    "9x16": "cutling-five-taps-9x16.mp4",
+    "cover": "cutling-five-taps-cover.jpg"
+   },
+   "what": "Evening at a small restaurant: a guest asks for a table on Saturday. A long, warm reply in five taps: Hello asks the name, Booking asks how many (2, 4 or 6), Sign-off leaves the cursor for a line of your own.",
+   "posts": [
+    {
+     "platform": "TikTok",
+     "when": "2026-12-03 23:15",
+     "file": "9x16",
+     "note": "Disclose post content > Your brand; cover = frame 0",
+     "text": "This whole reply took 5 taps 👀 Name, guests, sign-off. Cutling 2.0 asks for what changes. What would you save? #restaurantlife #smallbusiness #iphonetips #hospitality #productivityhacks"
+    },
+    {
+     "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
+     "when": "2026-12-03 23:21",
+     "file": "9x16",
+     "note": "cover = frame 0; Facebook first comment by hand",
+     "text": "This whole reply to a table booking took five taps.\n\nThe greeting asks the name, the booking asks how many guests, the sign-off leaves the cursor free for a line of your own. That's new in Cutling 2.0.\n\nWhat reply would you save? 👇\n\nLink in bio.\n#restaurant #smallbusiness #iphonetips #hospitality #productivity",
+     "first_comment": "Cutling on the App Store: https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct=fb-taps"
+    },
+    {
+     "platform": "Threads",
+     "when": "2026-12-03 23:29",
+     "file": "9x16",
+     "note": "topic tag: iPhone; reply 2/2 carries the link",
+     "text": "This reply to a table booking took five taps: the greeting asks her name, the booking asks how many, the sign-off leaves my cursor free for one line of my own. Saved replies in Cutling 2.0 can ask for what changes.\n\nWhat would you save as a reply?",
+     "reply_text": "cutling.matsuokengo.com"
+    },
+    {
+     "platform": "YouTube Short @matsuokengo",
+     "when": "2026-12-03 23:37",
+     "file": "9x16",
+     "title": "A long reply to a booking in five taps #iPhoneTips",
+     "description_file": "../films-2/youtube/cutling-five-taps-short.txt",
+     "tags": "Cutling,iPhone keyboard,saved replies,text snippets,restaurant"
+    },
+    {
+     "platform": "X",
+     "when": "2026-12-03 23:44",
+     "file": "9x16",
+     "note": "new: the set had no X post. Link in our own reply by hand.",
+     "text": "A guest asks for a table on Saturday. My reply runs four sentences and took five taps: the greeting asks her name, the booking asks how many, and the sign-off leaves room for a line of my own.\n\nWhat long message do you keep retyping?",
+     "reply_text": "That's Cutling 2.0 on iPhone: https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct=x-taps"
+    }
+   ],
+   "length_s": {
+    "9x16": 18.6
+   }
+  }
+ ]
+}
