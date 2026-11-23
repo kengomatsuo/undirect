@@ -314,3 +314,16 @@ y2mate.com, savefrom.net, ssyoutube.com, dood.re, streamtape.com and more.
 - Bing may serve a different results page to a signed-in or non-Indonesian
   visitor; the swap held on two queries (`safari extension`,
   `resep nasi goreng`) and on every result tapped.
+
+## Filmed in the iPhone simulator (2026-11-24)
+
+With the guard on every site, all five effects drew on these real pages; the
+clips are the owner's `~/Downloads/Claude/undirect-effects/`.
+
+| Effect | Site | Note |
+| --- | --- | --- |
+| burst | lunarx.to, nimegami.id, pahe.ink | lunarx.to's pop arrives as a tab the background closes; the page is told and draws it |
+| field | oploverz.ch | a trip to sukseskan.com nobody pressed for |
+| shatter | oploverz.ch | the layer that caught the press |
+| snap | bing.com/search?q=kbbi | the first result, swapped to `/fd/ls/GLinkPing.aspx` at mousedown |
+| back | infox.ru | only after a press on the page: iOS Safari skips the trap's entries on a page nobody touched, so an untouched page has no trap to stop |
