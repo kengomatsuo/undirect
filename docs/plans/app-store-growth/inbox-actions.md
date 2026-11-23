@@ -90,6 +90,17 @@ The other 174 storefronts follow by equalization, for example Cutling Â¥800 to Â
 | Email | Status | What the site shows / why |
 |---|---|---|
 | MacPip Awards 2026 (Nov 23) | Read | Every MacPip app is nominated; one vote per award per person until Dec 10, top three out Dec 11 (laurel on the MacPip page and badge, a post on X). Cutling is in at macpip.com/awards/2026/utilities/cutling. Leaders hold 3 to 15 votes. Makers may ask users to vote; Pips, Friends badges and paid spots change nothing; at most 5 votes per network count. Undirect joins on its MacPip launch day, Dec 8. |
-| NativeShelf, Cutling unpublished (Nov 22) | Site fixed; re-review waits | Checker loaded cutling.matsuokengo.com/en-us/ (the root's canonical on Cutling; the en-US language redirect on Undirect), and the badge strip lived on the root home only. Both generators now put the strip on every language's home; live on /en-us/, /de-de/ and / for both sites (curl, Nov 23). Re-review needs the NativeShelf account under the Gmail address; Chrome is signed in as kenneth@matsuokengo.com, which holds no apps. |
-| ScrollLaunch, verify Cutling / Undirect (Nov 22) | Verified; scheduling waits | Both passed "Verify Badge" ("Product Verified"); dashboard no longer shows Unverified. Still Draft: Schedule Product (free, Cutling's first open week Mar 1-7, 2027) is a form submit. |
+| NativeShelf, Cutling unpublished (Nov 22) | **Re-review sent** | Checker loaded cutling.matsuokengo.com/en-us/ (the root's canonical on Cutling; the en-US language redirect on Undirect), and the badge strip lived on the root home only. Both generators now put the strip on every language's home; live on /en-us/, /de-de/ and / for both sites (curl, Nov 23). Signed in under the Gmail address (owner's yes, Nov 23), Verify badge read "Badge verified", new review sent: In review, #10 in queue, estimated live Nov 26. |
+| ScrollLaunch, verify Cutling / Undirect (Nov 22) | **Done** | Both passed "Verify Badge" ("Product Verified") and are scheduled free (owner's yes, Nov 23): Cutling Week 9, Mar 1-7, 2027; Undirect Week 10, Mar 8-14, 2027 (a week apart, since TinyLaunch refused two from one maker). Upvote prompt skipped. |
 | MacNative | No change | Profile: Cutling Live, Undirect Rejected Nov 20 for fit, not for a badge. |
+
+### MacPip Awards: paid X boost or other means (owner ask, Nov 23)
+
+No research existed before this ask beyond MacPip's rules page. Read on Nov 23: @monholtco has 3
+followers and @macpiphq 167, so neither account's post reaches voters by itself. A paid X boost
+shows a post to strangers, and each vote then costs a MacPip sign-up with an emailed code. The two
+measured boosts in x-growth-from-zero.md (4.7, 4.8): Caspar's EUR 10 bought 2,936 impressions and
+no follower jump; Paul credits USD 10 with about 450 followers. MacPip's own rocket boost for
+Cutling's launch brought 4 visitors (row 14). Pips, Friends badges and paid spots do not count in
+the awards. Votes per award are tiny (leaders at 4 to 15), so the votes that count come from people
+who already know the app.
