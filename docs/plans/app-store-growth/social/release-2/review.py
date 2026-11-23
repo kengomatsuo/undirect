@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Builds the owner's review page for the Cutling 2.0 release posts: every post inside a mock of the platform it goes
 to, with its film or carousel playing and its final words, its time in WIB and US Eastern, and what is done by hand.
-Reads posts.json beside this file and the finished media in ~/Downloads/cutling-2-release-posts/.
+Reads posts.json beside this file and the finished media in ~/Downloads/Claude/cutling-2-release-posts/.
 
     python3 review.py <out-dir>      -> <out-dir>/index.html plus media/ (published together as one Artifact)"""
 import base64, html, json, re, shutil, subprocess, sys
@@ -9,7 +9,7 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-MEDIA = Path.home() / "Downloads/cutling-2-release-posts"
+MEDIA = Path.home() / "Downloads/Claude/cutling-2-release-posts"
 AVATAR = Path.home() / "Repositories/monholt/assets/logos/brand-kit/avatar/monholt-avatar-1024-white-on-black.png"
 out = Path(sys.argv[1]); (out / "media").mkdir(parents=True, exist_ok=True)
 d = json.loads((HERE / "posts.json").read_text())

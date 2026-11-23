@@ -44,7 +44,7 @@ starting point, not approved copy.
   some recorded before the Variables rename. New takes run on the device queue
   (`~/Repositories/Cutling/scripts/ui-test.sh`, seeds `-FILLIN_TEST`, `-MEMORY_TEST`).
 - Music: Mixkit only (owner, 2026-11-18).
-- Files for the owner go under `~/Downloads/cutling-2-release-posts/`; the review page is a private
+- Files for the owner go under `~/Downloads/Claude/cutling-2-release-posts/`; the review page is a private
   Artifact.
 
 ## From asg-social-2, the calendar's holder (2026-11-23)
