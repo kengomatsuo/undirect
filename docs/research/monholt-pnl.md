@@ -37,7 +37,7 @@ The owner's words, 2026-11-23, on HQ's Sales screen:
 | Sound and voice tools | | ElevenLabs ruled out for SFX (no commercial licence on free plan); no paid tool found bought | research/sfx-for-claude.md | none |
 | Black Friday sale | per app, a lower price, not an expense | Nov 27-30: Undirect $0.99 (list $1.99), Cutling $2.99 (list $4.99) | memory black-friday-sale-2026.md | shows as lower income per unit, already in the sales report |
 
-Not found on disk as a Monholt cost, so the owner is asked rather than told: what he pays for Claude, any font or stock licence, the bank's fee on Apple's payment, and his Indonesian income tax. stya's company book (pos/docs/expenses-is-built.md) lists Anthropic, Supabase, the VPS, Google Workspace, Cloudflare, domains and the Apple developer programme as **Solute's** costs, kept in stya's own ops console with two co-owners; they are not Monholt HQ's to copy.
+Not found on disk as a Monholt cost, so the owner is asked rather than told: what he pays for Claude, any font or stock licence, the bank's fee on Apple's payment, and his Indonesian income tax. The company book in pos/docs/expenses-is-built.md is **Solute's**, a separate business with two co-owners that shares the pos codebase and database; it is not stya's. stya is wholly Monholt's (the owner, 2026-11-23: "monholt is me and I am monholt ... STYA IS NOT SOLUTE"), so stya's income and costs count in full in HQ, read from pos rows of the stya brand only.
 
 ### stya's expense book is the house prior art (pos/docs/expenses-is-built.md)
 
