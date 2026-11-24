@@ -16,8 +16,8 @@
 //
 //   shatter  the invisible layer that caught a press lights up from the press
 //            point, cracks in rings and spokes round it, hangs, and falls
-//   burst    a pop-up or a click the page faked: a small window pops up over
-//            the press, is struck out, and blows away as its own dust
+//   burst    a pop-up or a click the page faked: a block of red squares
+//            gathers over the press and blows away as dust
 //   snap     a link swapped under the finger: a band snaps back round it and
 //            Undirect's mark lands on its corner
 //   field    a trip nobody pressed for: the screen edge flares and pushes back
@@ -252,63 +252,51 @@
     done(root, last + 50);
   }
 
-  // A small window, as a pop-up is: title bar, three lights, a blank page.
-  // Struck, it is the same window under a wash of red.
-  const windowArt = (wash) =>
-    `background-image:${wash ? `linear-gradient(rgba(${RED},.84),rgba(${RED},.84)),` : ""}` +
-    "radial-gradient(circle at 13px 10px,#ff5f57 0 3.5px,rgba(255,95,87,0) 4.1px)," +
-    "radial-gradient(circle at 24px 10px,#febc2e 0 3.5px,rgba(254,188,46,0) 4.1px)," +
-    "radial-gradient(circle at 35px 10px,#28c840 0 3.5px,rgba(40,200,64,0) 4.1px)," +
-    "linear-gradient(#e6e6eb 0 20px,#fff 20px);background-size:88px 66px;background-repeat:no-repeat;";
-
+  // A pop-up or a faked click: a block of red squares gathers over the press
+  // and blows away as dust. No window is drawn; the red block is the pop-up
+  // being refused, and it is gone before the finger lifts far.
   function burst({ x, y }) {
     const root = layer();
     if (x == null) { x = innerWidth / 2; y = innerHeight / 2; }
-    const W = 88, H = 66, CELL = 11;
+    const COLS = 8, ROWS = 6, CELL = 11, GAP = 1;
+    const W = COLS * CELL, H = ROWS * CELL;
     // Above the press, so a finger does not hide it; kept on screen.
     const left = Math.max(8, Math.min(innerWidth - W - 8, x - W / 2));
     const top = Math.max(8, Math.min(innerHeight - H - 8, y - H - 28));
+    const cx = left + W / 2, cy = top + H / 2;
 
-    const win = piece(root,
-      `left:${left}px;top:${top}px;width:${W}px;height:${H}px;border-radius:${CELL}px;${windowArt(false)}` +
-      `box-shadow:0 0 0 .5px rgba(0,0,0,.3),0 2px 4px rgba(0,0,0,.2),0 12px 28px -6px rgba(0,0,0,.4);transform-origin:${x - left}px ${y - top}px`);
-    const slash = piece(root,
-      `left:${left - 8}px;top:${top + H / 2 - 4}px;width:${W + 16}px;height:8px;border-radius:4px;` +
-      `background:rgb(${RED});box-shadow:0 0 0 2.5px #fff,0 2px 6px rgba(0,0,0,.25);transform:rotate(-35deg)`);
+    const cells = [];
+    for (let row = 0; row < ROWS; row++) {
+      for (let col = 0; col < COLS; col++) {
+        const shade = (0.78 + Math.random() * 0.22).toFixed(2);
+        cells.push({ row, col, el: piece(root,
+          `left:${left + col * CELL}px;top:${top + row * CELL}px;width:${CELL - GAP}px;height:${CELL - GAP}px;` +
+          `border-radius:2px;background:rgba(${RED},${shade});box-shadow:0 1px 3px rgba(0,0,0,.25)`) });
+      }
+    }
     if (reduced()) return rest(root);
 
-    const STRUCK = 190; // the window is up; the line goes through it
-    const GONE = 330;   // and it starts to blow away
+    const GONE = 260; // the block has gathered; it starts to blow away
     ripple(root, x, y);
-    win.animate({ transform: ["scale(.1)", "none"], opacity: [0, 1] }, { ...S.bounce, fill: "both" });
-    win.animate({ opacity: [1, 0] }, { duration: 1, delay: GONE, fill: "forwards" });
-    slash.animate({ transform: ["rotate(-35deg) scaleX(0)", "rotate(-35deg) scaleX(1)"] }, { ...S.pressIn, delay: STRUCK, fill: "both" });
-    slash.animate({ opacity: [1, 0], transform: ["rotate(-35deg) scaleX(1)", "rotate(-35deg) scaleX(1.25)"] },
-      { ...S.small, delay: GONE, fill: "forwards" });
-
     const ring = piece(root,
-      `left:${left + W / 2 - 40}px;top:${top + H / 2 - 40}px;width:80px;height:80px;border-radius:50%;opacity:0;` +
+      `left:${cx - 40}px;top:${cy - 40}px;width:80px;height:80px;border-radius:50%;opacity:0;` +
       `border:3px solid rgb(${HOT})`);
     ring.animate({ transform: ["scale(.6)", "scale(2.2)"], opacity: [0.9, 0] }, { ...S.sheet, delay: GONE, fill: "forwards" });
 
-    // The window again, gone red and cut into squares that each carry their
-    // own piece of it, so what blows away is the window itself.
-    for (let row = 0; row < H / CELL; row++) {
-      for (let col = 0; col < W / CELL; col++) {
-        const corner = (row === 0 ? "t" : row === H / CELL - 1 ? "b" : "") + (col === 0 ? "l" : col === W / CELL - 1 ? "r" : "");
-        const round = { tl: "11px 0 0 0", tr: "0 11px 0 0", bl: "0 0 0 11px", br: "0 0 11px 0" }[corner] ?? "0";
-        const cell = piece(root,
-          `left:${left + col * CELL}px;top:${top + row * CELL}px;width:${CELL}px;height:${CELL}px;opacity:0;border-radius:${round};` +
-          `${windowArt(true)}background-position:${-col * CELL}px ${-row * CELL}px`);
-        const blow = GONE + col * 22 + Math.random() * 70; // the wind comes from the left
-        cell.animate({ opacity: [1, 1] }, { duration: 1, delay: GONE, fill: "forwards" });
-        cell.animate({
-          transform: ["none",
-            `translate(${(30 + Math.random() * 90).toFixed(1)}px,${(-20 - Math.random() * 70 + (row - 2.5) * 9).toFixed(1)}px) ` +
-            `rotate(${Math.round(Math.random() * 320 - 160)}deg) scale(.2)`],
-          opacity: [1, 0],
-        }, { duration: 480 + Math.random() * 280, delay: blow, easing: OUT, fill: "forwards" });
-      }
+    for (const { row, col, el } of cells) {
+      const dx = left + col * CELL + CELL / 2 - cx;
+      const dy = top + row * CELL + CELL / 2 - cy;
+      // Gathered from the press outward, the centre first.
+      const gather = Math.hypot(dx, dy) * 1.6;
+      el.animate({ transform: [`translate(${(x - cx - dx) * 0.6}px,${(y - cy - dy) * 0.6}px) scale(0)`, "none"], opacity: [0, 1] },
+        { ...S.bounce, delay: gather * 0.5, fill: "both" });
+      const blow = GONE + col * 22 + Math.random() * 70; // the wind comes from the left
+      el.animate({
+        transform: ["none",
+          `translate(${(30 + Math.random() * 90).toFixed(1)}px,${(-20 - Math.random() * 70 + (row - 2.5) * 9).toFixed(1)}px) ` +
+          `rotate(${Math.round(Math.random() * 320 - 160)}deg) scale(.2)`],
+        opacity: [1, 0],
+      }, { duration: 480 + Math.random() * 280, delay: blow, easing: OUT, fill: "forwards" });
     }
     done(root, 1250);
   }
