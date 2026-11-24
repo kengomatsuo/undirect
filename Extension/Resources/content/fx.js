@@ -16,8 +16,8 @@
 //
 //   shatter  the invisible layer that caught a press lights up from the press
 //            point, cracks in rings and spokes round it, hangs, and falls
-//   burst    a pop-up or a click the page faked: a block of red squares
-//            gathers over the press and blows away as dust
+//   burst    a pop-up or a click the page faked: the same glass breaks
+//            from the press and falls
 //   snap     a link swapped under the finger: a band snaps back round it and
 //            Undirect's mark lands on its corner
 //   field    a trip nobody pressed for: the screen edge flares and pushes back
@@ -252,53 +252,11 @@
     done(root, last + 50);
   }
 
-  // A pop-up or a faked click: a block of red squares gathers over the press
-  // and blows away as dust. No window is drawn; the red block is the pop-up
-  // being refused, and it is gone before the finger lifts far.
+  // A pop-up or a faked click: the same glass as a caught layer, breaking
+  // from the press. The pop-up was a pane meant to cover the page; it cracks
+  // where the finger landed and falls away.
   function burst({ x, y }) {
-    const root = layer();
-    if (x == null) { x = innerWidth / 2; y = innerHeight / 2; }
-    const COLS = 8, ROWS = 6, CELL = 11, GAP = 1;
-    const W = COLS * CELL, H = ROWS * CELL;
-    // Above the press, so a finger does not hide it; kept on screen.
-    const left = Math.max(8, Math.min(innerWidth - W - 8, x - W / 2));
-    const top = Math.max(8, Math.min(innerHeight - H - 8, y - H - 28));
-    const cx = left + W / 2, cy = top + H / 2;
-
-    const cells = [];
-    for (let row = 0; row < ROWS; row++) {
-      for (let col = 0; col < COLS; col++) {
-        const shade = (0.78 + Math.random() * 0.22).toFixed(2);
-        cells.push({ row, col, el: piece(root,
-          `left:${left + col * CELL}px;top:${top + row * CELL}px;width:${CELL - GAP}px;height:${CELL - GAP}px;` +
-          `border-radius:2px;background:rgba(${RED},${shade});box-shadow:0 1px 3px rgba(0,0,0,.25)`) });
-      }
-    }
-    if (reduced()) return rest(root);
-
-    const GONE = 260; // the block has gathered; it starts to blow away
-    ripple(root, x, y);
-    const ring = piece(root,
-      `left:${cx - 40}px;top:${cy - 40}px;width:80px;height:80px;border-radius:50%;opacity:0;` +
-      `border:3px solid rgb(${HOT})`);
-    ring.animate({ transform: ["scale(.6)", "scale(2.2)"], opacity: [0.9, 0] }, { ...S.sheet, delay: GONE, fill: "forwards" });
-
-    for (const { row, col, el } of cells) {
-      const dx = left + col * CELL + CELL / 2 - cx;
-      const dy = top + row * CELL + CELL / 2 - cy;
-      // Gathered from the press outward, the centre first.
-      const gather = Math.hypot(dx, dy) * 1.6;
-      el.animate({ transform: [`translate(${(x - cx - dx) * 0.6}px,${(y - cy - dy) * 0.6}px) scale(0)`, "none"], opacity: [0, 1] },
-        { ...S.bounce, delay: gather * 0.5, fill: "both" });
-      const blow = GONE + col * 22 + Math.random() * 70; // the wind comes from the left
-      el.animate({
-        transform: ["none",
-          `translate(${(30 + Math.random() * 90).toFixed(1)}px,${(-20 - Math.random() * 70 + (row - 2.5) * 9).toFixed(1)}px) ` +
-          `rotate(${Math.round(Math.random() * 320 - 160)}deg) scale(.2)`],
-        opacity: [1, 0],
-      }, { duration: 480 + Math.random() * 280, delay: blow, easing: OUT, fill: "forwards" });
-    }
-    done(root, 1250);
+    shatter({ rect: { left: 0, top: 0, right: innerWidth, bottom: innerHeight }, x, y });
   }
 
   function snap({ el }) {
