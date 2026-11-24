@@ -13,10 +13,6 @@
     // the defaults above are the safe reading
   }
 
-  const nativeOpen = window.open;
-  const nativeSubmit = HTMLFormElement.prototype.submit;
-  const nativeClick = HTMLElement.prototype.click;
-  const nativeDispatch = EventTarget.prototype.dispatchEvent;
 
   const hostOf = (url) => {
     try {
@@ -167,41 +163,117 @@
     return verdict === "block";
   }
 
-  window.open = function (url, ...rest) {
-    if (refuses("window-open", url, rest[1])) return null;
-    return nativeOpen.call(window, url, ...rest);
-  };
+  // Every window this page can script gets the same four vetoes. A fresh
+  // same-origin iframe is a window of its own, with its own open() and
+  // prototypes untouched, and pop networks take their window from one: on
+  // lunarx.to, tag.min.js reads a new iframe's contentWindow and calls its
+  // open("//ay267.com/…", "_blank") on the user's press (2026-11-24), so the
+  // top window's open() never saw it and Safari opened the tab.
+  const guarded = new WeakSet();
+  function guardWindow(w) {
+    try {
+      if (!w || guarded.has(w)) return;
+      guarded.add(w);
+      const open = w.open;
+      const submit = w.HTMLFormElement.prototype.submit;
+      const click = w.HTMLElement.prototype.click;
+      const dispatch = w.EventTarget.prototype.dispatchEvent;
 
-  HTMLFormElement.prototype.submit = function () {
-    if (blankTarget(this) && refuses("form-submit", this.action)) return undefined;
-    return nativeSubmit.call(this);
-  };
+      w.open = function (url, ...rest) {
+        if (refuses("window-open", url, rest[1])) return null;
+        return open.call(w, url, ...rest);
+      };
 
-  HTMLElement.prototype.click = function () {
-    if (
-      this.tagName === "A" &&
-      blankTarget(this) &&
-      !this.hasAttribute("download") &&
-      refuses("synthetic-click", this.href)
-    ) {
-      return undefined;
+      w.HTMLFormElement.prototype.submit = function () {
+        if (blankTarget(this) && refuses("form-submit", this.action)) return undefined;
+        return submit.call(this);
+      };
+
+      w.HTMLElement.prototype.click = function () {
+        if (
+          this.tagName === "A" &&
+          blankTarget(this) &&
+          !this.hasAttribute("download") &&
+          refuses("synthetic-click", this.href)
+        ) {
+          return undefined;
+        }
+        return click.call(this);
+      };
+
+      w.EventTarget.prototype.dispatchEvent = function (event) {
+        const el = this;
+        if (
+          event?.type === "click" &&
+          el?.tagName === "A" &&
+          blankTarget(el) &&
+          !el.hasAttribute?.("download") &&
+          refuses("synthetic-click", el.href)
+        ) {
+          return true;
+        }
+        return dispatch.call(this, event);
+      };
+    } catch (e) {
+      // another origin's window: not this page's to script, nor the pop's
     }
-    return nativeClick.call(this);
-  };
+  }
+  guardWindow(window);
 
-  EventTarget.prototype.dispatchEvent = function (event) {
-    const el = this;
-    if (
-      event?.type === "click" &&
-      el?.tagName === "A" &&
-      blankTarget(el) &&
-      !el.hasAttribute?.("download") &&
-      refuses("synthetic-click", el.href)
-    ) {
-      return true;
+  // A frame's window is reached through contentWindow, contentDocument, or
+  // window.frames once it is in the document, so it is guarded at each: the
+  // two getters, and the moment an iframe is put into the page.
+  for (const Frame of [HTMLIFrameElement, HTMLFrameElement]) {
+    const proto = Frame.prototype;
+    const win = Object.getOwnPropertyDescriptor(proto, "contentWindow");
+    const doc = Object.getOwnPropertyDescriptor(proto, "contentDocument");
+    if (win?.get) {
+      Object.defineProperty(proto, "contentWindow", {
+        ...win,
+        get() {
+          const w = win.get.call(this);
+          guardWindow(w);
+          return w;
+        },
+      });
     }
-    return nativeDispatch.call(this, event);
+    if (doc?.get) {
+      Object.defineProperty(proto, "contentDocument", {
+        ...doc,
+        get() {
+          const d = doc.get.call(this);
+          guardWindow(d?.defaultView);
+          return d;
+        },
+      });
+    }
+  }
+  const guardFrames = (node) => {
+    if (node?.nodeType !== 1) return;
+    const frames = node.tagName === "IFRAME" || node.tagName === "FRAME"
+      ? [node]
+      : node.querySelectorAll?.("iframe, frame") ?? [];
+    for (const frame of frames) guardWindow(frame.contentWindow);
   };
+  for (const name of ["appendChild", "insertBefore", "replaceChild"]) {
+    const native = Node.prototype[name];
+    Node.prototype[name] = function (node, ...rest) {
+      const out = native.call(this, node, ...rest);
+      guardFrames(node);
+      return out;
+    };
+  }
+  for (const name of ["append", "prepend", "after", "before", "replaceWith"]) {
+    for (const proto of [Element.prototype, Document.prototype, DocumentFragment.prototype]) {
+      const native = proto[name];
+      if (!Object.hasOwn(proto, name) || typeof native !== "function") continue;
+      proto[name] = function (...nodes) {
+        const out = native.apply(this, nodes);
+        for (const node of nodes) guardFrames(node);
+        return out;
+      };
+    }
+  }
 
   // The Back-button trap: a page stacks copies of the address already showing,
   // so Back stays put, and re-stacks one each time Back pops it. WebKit already

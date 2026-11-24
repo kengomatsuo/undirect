@@ -10,3 +10,14 @@ window.__thirdPartyOpenSized = (url) =>
     setTimeout(() => resolve(window.open(url, "_blank", "width=500,height=600")), 0)
   );
 window.__thirdPartyClickAnchor = (a) => a.click();
+// The window taken from a fresh iframe, as lunarx.to's tag.min.js does
+// (2026-11-24): its open() is not the top window's.
+window.__thirdPartyIframeOpen = (url) =>
+  new Promise((resolve) =>
+    setTimeout(() => {
+      const frame = document.createElement("iframe");
+      frame.style.display = "none";
+      document.body.appendChild(frame);
+      resolve(frame.contentWindow.open(url, "_blank"));
+    }, 0)
+  );

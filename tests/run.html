@@ -174,6 +174,14 @@ async function run() {
   ok("and it is reported as asked for at a size", sizedReport?.sized === true);
   ok("and why", sizedReport?.because === "asked for at a size", String(sizedReport?.because));
 
+  // The same call, made through a fresh iframe's own window.
+  const before3i = window.__caught.length;
+  ok("a third-party window.open taken from a fresh iframe is refused",
+     (await window.__thirdPartyIframeOpen("//pop.example/eight")) === null);
+  await new Promise((r) => setTimeout(r, 80));
+  const framed = window.__caught.slice(before3i).find((c) => c.kind === "window-open");
+  ok("and it is reported", framed?.blocked === true, JSON.stringify(framed));
+
   // The page's own code opening a window on a press aimed elsewhere: lunarx.to
   // serves its pop network from the site itself (2026-11-24). Refused in the
   // page, so Safari never opens the tab the background would have to close.
@@ -187,7 +195,7 @@ async function run() {
   plainText.textContent = "a heading nobody links";
   document.body.appendChild(plainText);
   pressOn(plainText);
-  window.open("https://pop.example/own-code");
+  window.open("https://own.example/own-code");
   await new Promise((r) => setTimeout(r, 80));
   const ownPop = window.__caught.slice(before5).find((c) => c.kind === "window-open");
   ok("the page's own window.open on a press aimed elsewhere is refused",
