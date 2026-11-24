@@ -100,6 +100,34 @@
     }
   };
 
+  // The press the user last made in this document, and where it pointed.
+  // Safari's background judges a new tab on the same two facts and closes it
+  // when the press was aimed elsewhere (navigation.js judge()); deciding it
+  // here instead stops the window before Safari opens a tab and switches to
+  // it, so the page draws the stop at the press rather than after the trip
+  // (lunarx.to, 2026-11-24). Same window as TAP_MS there.
+  const TAP_MS = 1500;
+  const press = { at: -Infinity, expected: new Set() };
+  function pressed(target) {
+    const now = performance.now();
+    if (now - press.at > TAP_MS) press.expected = new Set();
+    press.at = now;
+    const link = target?.closest?.("a[href], area[href]");
+    const form = target?.closest?.("form[action]");
+    const host = hostOf(link?.href || form?.action || "");
+    if (host) press.expected.add(Site.baseDomain(host));
+  }
+  addEventListener("pointerdown", (e) => {
+    if (!e.isTrusted) return;
+    pressed(e.target);
+  }, true);
+  addEventListener("keydown", (e) => {
+    if (!e.isTrusted) return;
+    if (e.key === "Enter" || e.key === " ") pressed(e.target);
+  }, true);
+  const takesThePress = (host) =>
+    performance.now() - press.at <= TAP_MS && !press.expected.has(Site.baseDomain(host));
+
   // A press invites nothing on its own: these networks pick a real click and
   // ride it. What decides is the destination, what the user said about it, and
   // whose code is asking - caller, size, or a way back all count as asking.
@@ -118,7 +146,10 @@
     if (carriesAWayBack(url)) {
       return { host, verdict: "allow", sized: deliberate, because: "carries a way back here" };
     }
-    if (callerBelongsToPage()) {
+    // The page's own code may open a window, but not on a press the user
+    // aimed somewhere else: on lunarx.to the pop network is served from the
+    // site itself, so the caller vouches for nothing there.
+    if (callerBelongsToPage() && !takesThePress(host)) {
       return { host, verdict: "allow", sized: deliberate, because: "the page's own code" };
     }
     return {

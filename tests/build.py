@@ -6,7 +6,12 @@ import pathlib
 here = pathlib.Path(__file__).parent
 src = here.parent / "Extension" / "Resources"
 
-for name in ("content/bridge.js", "content/fx.js", "sites/recipes.js", "lib/site.js", "lib/navigation.js"):
+# The bridge reads the press the same way the guard does.
+bridge = (src / "content" / "bridge.js").read_text()
+bridge = bridge.replace("if (!e.isTrusted) return;", "if (!(e.isTrusted || e.__fake)) return;")
+(here / "bridge.js").write_text(bridge)
+
+for name in ("content/fx.js", "sites/recipes.js", "lib/site.js", "lib/navigation.js"):
     (here / pathlib.Path(name).name).write_text((src / name).read_text())
 
 guard = (src / "content" / "guard.js").read_text()

@@ -174,6 +174,37 @@ async function run() {
   ok("and it is reported as asked for at a size", sizedReport?.sized === true);
   ok("and why", sizedReport?.because === "asked for at a size", String(sizedReport?.because));
 
+  // The page's own code opening a window on a press aimed elsewhere: lunarx.to
+  // serves its pop network from the site itself (2026-11-24). Refused in the
+  // page, so Safari never opens the tab the background would have to close.
+  const pressOn = (el) => {
+    const e = new PointerEvent("pointerdown", { clientX: 5, clientY: 5, bubbles: true });
+    Object.defineProperty(e, "__fake", { value: true });
+    nativeDispatch.call(el, e);
+  };
+  const before5 = window.__caught.length;
+  const plainText = document.createElement("p");
+  plainText.textContent = "a heading nobody links";
+  document.body.appendChild(plainText);
+  pressOn(plainText);
+  window.open("https://pop.example/own-code");
+  await new Promise((r) => setTimeout(r, 80));
+  const ownPop = window.__caught.slice(before5).find((c) => c.kind === "window-open");
+  ok("the page's own window.open on a press aimed elsewhere is refused",
+     ownPop?.blocked === true && ownPop?.because === "took the press", JSON.stringify(ownPop));
+
+  const before6 = window.__caught.length;
+  const partner = document.createElement("a");
+  partner.href = "https://partner.example/watch";
+  partner.addEventListener("click", (e) => e.preventDefault());
+  document.body.appendChild(partner);
+  pressOn(partner);
+  window.open("https://partner.example/watch?via=button");
+  await new Promise((r) => setTimeout(r, 80));
+  const ownOpen = window.__caught.slice(before6).find((c) => c.kind === "window-open");
+  ok("the page's own window.open where the press pointed is allowed",
+     ownOpen?.blocked === false, JSON.stringify(ownOpen));
+
   // The page's own destinations are left alone, even when third-party code
   // is the one clicking. Checked through a link so nothing navigates.
   const before4 = window.__caught.length;
