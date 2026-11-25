@@ -1,14 +1,13 @@
-One Threads sitting for @monholtco (card ASG217, started by launchd through tmux: Support/social/reply-sitting.sh threads).
+One Threads reply-picks sitting for @monholtco (card ASG219, started by launchd through tmux: Support/social/reply-sitting.sh threads).
 
-PAUSED: co.monholt.threads-replies is unloaded (plist renamed .disabled) until the owner says Threads replies may resume. Threads removed a reply for "actions at high volume" on 2026-11-25 after 8 replies, 7 follows and about 8 likes in 33 minutes.
+Goal: the owner writes @monholtco's Threads replies himself, in his own words, so no reply on Threads is AI-written. This sitting finds the posts worth replying to and gives him what he needs to write a good reply fast. It never posts, replies, likes or follows on Threads: Threads removed a reply for "actions at high volume" on 2026-11-25, and only the owner acts on the account now.
 
-Goal: @monholtco grows on Threads from zero by replying, as the maker, on other people's fresh posts in its space. Playbook and sources: docs/research/threads-brand-growth.md, sections 6.2 and 7.
-
-In Claude in Chrome, signed in to threads.com as @monholtco:
-- First read Settings > Account Status. If anything new is there, or a feed or feature limit shows, send nothing, PushNotification the owner what it says, and stop.
-- Open Activity. If someone replied to one of @monholtco's own original posts with something worth answering, draft an answer into the "Threads reply work" section of docs/plans/app-store-growth/social-posts.md for the owner's go; do not send it. A reply to one of our replies in someone else's thread gets no answer.
-- Read the log first. The account sends at most 5 replies a day, at most 2 in this sitting, at least 30 minutes apart, and at most 3 follows and 5 likes a day, counting everything already logged today.
-- Reply only where the poster asked for something a maker can answer (a question, a request for feedback or for apps to try), on English posts from the last few hours by Apple, Mac and iPhone app makers or people with the pains Undirect and Cutling fix. Read everything the post carries first. Answer what they asked, in "I", from making Apple apps, in one sentence no longer than the most-liked replies already under that post (about 8-20 words; never a paragraph); no tip or feature idea they did not ask for, no correction, no flattery, no repeat of another reply, no link, no app name unless asked.
-- No quote posts with links until the owner decides on them again.
-- Log each reply, like and follow as a row (WIB time, whose post and what it asked, our reply, its URL), then commit that file and push.
-- If Claude in Chrome lists no browser or Threads is signed out, PushNotification the owner and stop.
+In Claude in Chrome, signed in to threads.com as @monholtco, reading only:
+- First read Settings > Account Status. If anything new is there, or a feed or feature limit shows, say so in the PushNotification.
+- Find 2 English posts from the last few hours by Apple, Mac and iPhone app makers, or people with the pains Undirect and Cutling fix, where the poster asked for something a maker can answer (a question, a request for feedback or for apps to try). Playbook: docs/research/threads-brand-growth.md, sections 6.2 and 7. Skip posts with dozens of replies.
+- Read everything each post carries: its link, video, image, its 2/2 and the replies already under it, and note how long the most-liked replies are, since a reply longer than those gets nothing.
+- Run `bun ~/Repositories/monholt/hq/scripts/picks.ts list` first and leave out any post already listed there.
+- Hand the posts in to Monholt HQ, where the owner reads them on his phone with the Mac off: write a JSON list to a file in $TMPDIR and run `bun ~/Repositories/monholt/hq/scripts/picks.ts add <file>`. Each item: `account` ("th"), `url` (the post's own link), `author` (@handle), `who` (followers and what they make), `gist` (what the post says, one line), `text` (the post's words), `postedAt` (ISO time), `context` (what its link, video or image shows and what the replies already say), `angles` (2-3 notes he could take: a question only a maker would ask, a fact from his own apps he could add, what not to say because someone already said it; notes, never ready-to-paste text). If the script refuses an item, fix that item and run it again.
+- If a post idea of the owner's own kind came up (an announcement of what he made or shipped, in "I", with his own numbers; no forced question, no ad), hand in at most one with `picks.ts idea <file>`: `text`, `why` (one line), `accounts`.
+- Send the owner a PushNotification: "<n> Threads posts worth a reply on hq.monholt.com/picks", with the age of the freshest one.
+- If Claude in Chrome lists no browser or Threads is signed out, send the owner a PushNotification saying so and stop.
