@@ -125,3 +125,14 @@ The owner: the name step is the main part, and it is typed first, not chosen. Th
 - caption line 2 「定型文を選ぶとお客さまの名前を聞かれるので、打った名前がそのまま返信に入ります。」 and the date line after it (round 5; a reader caught that 日付も after it made the name sound automatic)
 
 The English film's head, "A reply that asks for the [name].", already says what either take shows and names no tap, so it is kept (copy-ja.json `2_release_2_0.en`).
+
+## The name step is typed first, then the reply tapped (owner, second correction)
+
+The owner: "TYPE NAME THEN TAP REPLY." The films will show the name typed first in Messages on the ordinary keyboard, the globe to Cutling, and a tap on the saved reply, whose first blank takes the typed name (Cutling's own ja release notes: 先に名前を入力してからカットリングをタップする使い方もできます). This replaces the lines of the section above. Written blind from that screen, read back cold, each reader also asked whether the order (type, then tap) comes through (yes for all):
+- post 2 headline 「先に[名前]を打って、 / タップで返信文が完成」, voice 「先に名前を打って、定型文をタップ。名前入りの返信が、できあがります。」, caption line 2 「お客さんの名前を打ってから定型文をタップするだけで、名前入りの返信ができあがります。」
+- the caption's date line went through four readers who each found the last wording unclear (日付を入れておけば, 日付の差し込み, 日付の枠); it now uses the app's own words: 「定型文に変数の「今日の日付」を入れておくと、使った日の日付が自動で入ります。」
+- English beat 1: "Type the [name]. Tap a reply. Done." (written blind by an English writer, read back by an English reader; replaces "A reply that asks for the [name].")
+- post 3: voice 「名前を打って、タップして、送信。次も、名前、タップ、送信。」 and the caption's middle 「名前を打って、定型文をタップして、送るだけ。コーヒーが冷める前に、5人とも返し終わりました。」
+- post 4: caption 「先にお客さんの名前を打って、あいさつ・予約の案内・締めの言葉をタップ。人数は選ぶだけ。…」
+
+The drawn films (c-names.js, c-five.js) still pick the name on Cutling's fill screen; each post's `film_dependency` in copy-ja.json says what they must draw instead. Five taps' count lines (5タップ) hold only if the new film still has five taps.
