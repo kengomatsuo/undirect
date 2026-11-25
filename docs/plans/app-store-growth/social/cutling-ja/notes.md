@@ -60,3 +60,45 @@ Sources: `Cutling/Cutling/SnapshotSeedData.swift` `seedForReleaseFilm` (six keys
 The Japanese world is the Every-app ja preview's (`SnapshotSeedData.swift` `EveryAppSeedCopy.japanese`, written blind on 2026-11-23 in `g-words.json`): a pottery class in Mitaka that also sells online. Four keys and the five names (中村, 小林, 松本, 岡田, 原田) are reused from it word for word, so beat 1's Messages take and the Try It takes show one phone. New: the date key (発送完了, three rounds), the welcome note (初回のご案内), the note's ※ date line, and nine of the 12 grid replies (three reuse the Every-app ja keys 返品について, 発送の目安, 教室の Wi-Fi).
 
 The date key's beat is "dates fill themselves in". Round 2's reader read 2026年12月1日 inside a shop message as a system log and "delivered" as odd from a seller, so the key now types 「ご注文の品を12月1日に発送いたしました。」 with the date variable in the written pattern `M月d日` (Placeholders.swift takes any pattern after the colon). It still fills itself in, on one line.
+
+## Hashtags (TikTok search in Chrome, signed in as @monholt, 2026-11-25)
+
+TikTok's web tag pages no longer print a post count, so a tag counts here when the top Japanese results for a Japanese iPhone user's search carry it, and its tag page opens on recent Japanese posts.
+
+| Search | Tags on the top Japanese results (account) |
+|---|---|
+| アイフォン 便利アプリ | #神アプリ #便利アプリ #時短 (得する雑学ちゃんねる, 16.6K and 60 likes shown), #iPhone活用術 #ライフハック #生産性向上 (田中さんは気になるものは全部買う), #おすすめアプリ紹介 #iphone |
+| iPhone 定型文 | #iPhone活用 #ユーザ辞書 #暮らしの時短 #スマホ便利機能 (リッタくん, 1 day old), #iPhone #ユーザ辞書 #時短 (トクミル). The top results are all "stop typing the same text again": Cutling's exact pain, answered today with the system ユーザ辞書 |
+| コピペ iPhone | #iphone便利機能 #iphone便利術 #iphone活用術 #iphone裏技 (りゅう今すぐ使えるiPhone便利術), #iphone便利機能 #iphone裏技 (小池モバイル), #コピペ #スマホ #保存用 (スマホとアプリの教科書) |
+| 個人開発 アプリ | #個人開発 #自作アプリ (ゆう｜家計簿アプリ作った情報系大学院生): Japanese solo makers post their own apps under these |
+| ネットショップ 返信 効率化 | #業務効率化 (えいと), #メルカリ #物販あるある (たろーパパ: "make templates for messages"); no shop-owner tag repeats across results |
+| 飲食店 予約 返信 | no recurring tag; results are skits, not owners' tools |
+
+Tag pages opened: #iphone活用術 (top: こあら博士, ぷろぷろ, みさみさ, あお: Japanese iPhone-tips accounts), #神アプリ, #便利アプリ (one of its top posts is a ranking whose 5th place is about text copied a moment ago, so clipboard apps are already shown there).
+
+Picked per post (3 to 5, per the social-media skill): #iPhone便利機能 and #iPhone活用術 on every post (the iPhone-tips audience), #時短, plus #コピペ (posts 1 and 3), #個人開発 (post 2, the maker's release), #業務効率化 (posts 3 and 4, a shop or restaurant owner's messages). #神アプリ and #便利アプリ are crowded with "free apps" rankings; they are kept off so the post is not judged against free-app lists.
+
+## Voice: where the ElevenLabs Japanese voice goes
+
+TikTok Studio's upload page, Photos tab (read today): "Select photos to upload… Upload up to 35 photos per post", JPG/PNG/WebP only, no audio input; a photo post's sound comes from TikTok's own library. So the carousel (post 1) cannot carry the ElevenLabs voice as a photo post; its voice_decision in copy-ja.json says so. Posts 2, 3 and 4 carry a voice.
+
+## Post 1 is the "Type it once" film (owner's correction)
+
+The owner meant the film posted in English on Nov 25 07:25 WIB (https://www.tiktok.com/@monholt/video/7710987843329412404, `undirect-promo/monholt-samples/out/cutling-9x16.mp4`, drawn in `src/cutling/world.ts` and `Film.tsx`), with its opening rows typed on a real Japanese keyboard: the reading in underlined hiragana turning into kanji as the person types. It is post `1_type_it_once` in copy-ja.json; the carousel is kept as `1b_carousel_address`, lower priority.
+
+### The Japanese typing, read from iOS
+
+Device-queue job `t1795592066732-ad61` on the pool iPad simulator (iPadOS 27.2), script in this session's scratchpad (`ime/job.sh`): keyboards set to `ja_JP-Romaji@sw=QWERTY-Japanese;hw=Automatic`, language ja, region ja_JP (all restored on exit); Safari on a local page whose textarea posts every `compositionupdate` and `compositionend` to a log; AXe (`axe type <romaji> --layout us`) typing one kana at a time as hardware key presses, 0.7 s apart. iOS's live conversion (ライブ変換, on by default) does the converting. The log is `~/Shared/device-queue/ios-sim/t1795592066732-ad61/out/ime.jsonl`.
+
+Four invented addresses were typed:
+
+| Address | What iOS committed |
+|---|---|
+| 東京都杉並区阿佐谷北2-14-7 | not read (Safari had not loaded the page yet) |
+| 東京都練馬区豊玉北4-21-6 | 東京都練馬区**富玉北**4−21−6 (wrong kanji; on the way it showed トヨタ, then fell back to とよたまき) |
+| 東京都杉並区高円寺南3-8-11 | 東京都杉並区高円寺南3−8−11, right with no help |
+| 東京都世田谷区経堂3-12-5 | 東京都世田谷区**共同**3−12−5 (wrong kanji) |
+
+So the film types 東京都杉並区高円寺南3−8−11. Its states on the way, kept in copy-ja.json as iOS showed them: 東京鳥栖 (a city in Saga) at す, 公 and 公園 before 高円寺, 高円寺味 before 高円寺南, a hyphen as ー until the next digit turns it into − (U+2212), and 東京都, 杉並区 and 高円寺南 committed by iOS on its own while the numbers are typed. On iPad with a hardware keyboard the marked text has a blue underline and the candidates sit in a popover; a run on the pool iPhone (`t1795592525374-4c97`, address F only, a screenshot per kana) is queued to confirm the iPhone's states and its underline.
+
+The film's other strings reuse Cutling's own Japanese promo seed (`SnapshotSeedData.swift` `PromoSeedCopy.japanese`): 住所, 署名, 振込先, Wi-Fiパスワード, the person 田中 太郎 and the bank 三菱UFJ銀行 渋谷支店, the same as the bank-number film that drew 27.7% Japanese viewers. Its seed address 桜新町9-12-3 is not used: 桜新町 has only blocks 1 and 2.

@@ -31,6 +31,604 @@
   "試してみる": "Try It"
  },
  "posts": {
+  "1_type_it_once": {
+   "title": "Type it once (the film already posted in English on Nov 25 07:25 WIB, https://www.tiktok.com/@monholt/video/7710987843329412404)",
+   "film": "~/Repositories/undirect-promo/monholt-samples/out/cutling-9x16.mp4, drawn in monholt-samples/src/cutling/world.ts and Film.tsx",
+   "person": {
+    "ja": "田中 太郎",
+    "gloss": "Taro Tanaka, the same invented person as the bank-number film that drew Japan (account name タナカ タロウ)"
+   },
+   "ime_typing": {
+    "address": {
+     "ja": "東京都杉並区高円寺南3−8−11",
+     "gloss": "3-8-11 Koenji-minami, Suginami, Tokyo (block 3, lot 8, building 11)",
+     "reading": "とうきょうと すぎなみく こうえんじみなみ 3-8-11",
+     "romaji_typed": "toukyouto suginamiku kouennjiminami 3-8-11",
+     "why": "Invented in a real, ordinary part of Tokyo (Koenji-minami has blocks 1 to 5). Chosen because iOS converts it right with no help: of four addresses typed, 練馬区豊玉北 came out 富玉北 and 世田谷区経堂 came out 共同, which a typist would have to fix.",
+     "dashes": "iOS commits the hyphens as U+2212 (−) inside the address, as typed; draw exactly that character.",
+     "fit": "about 13 full-width units: at the row's 150 px font it is wider than the 1878 px the row has, so the row font comes down to about 140 px (world.ts rowTexture measures it)."
+    },
+    "source": "Read from iOS 27.2 itself on 2026-11-25: the device queue's iPad simulator (iPad Air 13-inch M4) set to the Japanese Romaji keyboard, language ja, region ja_JP; Safari on a page that logs every compositionupdate and compositionend; AXe typing the romaji as hardware key presses, one kana at a time, 0.7 s apart (ticket t1795592066732-ad61, its log in ~/Shared/device-queue/ios-sim/t1795592066732-ad61/out/ime.jsonl). iOS's Japanese live conversion (ライブ変換, on by default) is what turns the reading into kanji while typing. An iPhone run of the same address is queued (t1795592525374-4c97) to confirm and to show the iPhone's underline.",
+    "how_to_draw": "Each state is committed text (plain ink) followed by marked text (still being typed: drawn with iOS's thin underline under it, the caret after it). A row plays the states in order over its typing time, then ends on the committed address. 'states_kana' is what a person typing kana by kana sees (the film's rows); 'states_keystrokes' adds the moments a romaji typist sees a half-typed letter (t, ky, n; at すg the whole line even falls back to hiragana) and is there for reference. Real artifacts to keep: 東京都 is briefly 東京鳥栖 (a city in Saga) at す, 公 and 公園 come before 高円寺, 高円寺味 comes before 高円寺南, a hyphen is ー (long vowel) until the next digit makes it −, and 東京都, 杉並区 and 高円寺南 are committed by iOS on its own while the numbers are typed.",
+    "states_kana": [
+     {
+      "committed": "",
+      "marked": "と"
+     },
+     {
+      "committed": "",
+      "marked": "とう"
+     },
+     {
+      "committed": "",
+      "marked": "とうきょ"
+     },
+     {
+      "committed": "",
+      "marked": "東京"
+     },
+     {
+      "committed": "",
+      "marked": "東京都"
+     },
+     {
+      "committed": "",
+      "marked": "東京鳥栖"
+     },
+     {
+      "committed": "",
+      "marked": "東京都すぎ"
+     },
+     {
+      "committed": "",
+      "marked": "東京都すぎな"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区こ"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区公"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区こうえ"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区公園"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺味"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺味な"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺南"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺南3"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺南3ー"
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺南3−8"
+     },
+     {
+      "committed": "東京都",
+      "marked": "杉並区高円寺南3−8ー"
+     },
+     {
+      "committed": "東京都杉並区",
+      "marked": "高円寺南3−8−1"
+     },
+     {
+      "committed": "東京都杉並区高円寺南",
+      "marked": "3−8−11"
+     },
+     {
+      "committed": "東京都杉並区高円寺南3−8−11",
+      "marked": ""
+     }
+    ],
+    "states_keystrokes": [
+     {
+      "committed": "",
+      "marked": "t",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "と",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "とう",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "とうk",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "とうky",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "とうきょ",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京t",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都s",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京鳥栖",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "とうきょうとすg",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都すぎ",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都すぎn",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都すぎな",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都すぎなm",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並k",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区k",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区こ",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区公",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区こうえ",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区こうえn",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区公園",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区こうえんj",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺m",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺味",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺味n",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺味な",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺味なm",
+      "romaji_pending": true
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺南",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺南3",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺南3ー",
+      "romaji_pending": false
+     },
+     {
+      "committed": "",
+      "marked": "東京都杉並区高円寺南3−8",
+      "romaji_pending": false
+     },
+     {
+      "committed": "東京都",
+      "marked": "杉並区高円寺南3−8ー",
+      "romaji_pending": false
+     },
+     {
+      "committed": "東京都杉並区",
+      "marked": "高円寺南3−8−1",
+      "romaji_pending": false
+     },
+     {
+      "committed": "東京都杉並区高円寺南",
+      "marked": "3−8−11",
+      "romaji_pending": false
+     }
+    ],
+    "gloss_of_artifacts": {
+     "東京鳥栖": "Tokyo Tosu (Tosu is a city in Saga; iOS's first guess for とうきょうとす)",
+     "公園": "park (iOS's guess for こうえん before じ)",
+     "高円寺味": "Koenji + 'taste' (iOS's guess for こうえんじみ before なみ)",
+     "ー": "the long-vowel mark a hyphen key makes in Japanese input until a digit follows"
+    }
+   },
+   "keys": [
+    {
+     "slot": 0,
+     "en": "Home Address",
+     "icon": "home",
+     "title": "住所",
+     "preview": "東京都杉並区高円寺南3−8…",
+     "paste": "東京都杉並区高円寺南3−8−11",
+     "gloss": "address; the address",
+     "source": "monholt-samples/src/cutling/world.ts KEYS[0] (title, preview, paste)",
+     "written": "fixed: Cutling's own Japanese promo seed (SnapshotSeedData.swift PromoSeedCopy.japanese: 住所, 署名, 振込先, Wi-Fiパスワード, the same person 田中 太郎 and bank as the bank-number film that reached Japan), with the address replaced by the one typed above"
+    },
+    {
+     "slot": 1,
+     "en": "Email Signature",
+     "icon": "mail",
+     "title": "署名",
+     "preview": "よろしくお願いいたしま…",
+     "paste": "よろしくお願いいたします。田中",
+     "gloss": "signature; Best regards (the formal sign-off), Tanaka",
+     "source": "monholt-samples/src/cutling/world.ts KEYS[1] (title, preview, paste)",
+     "written": "fixed: Cutling's own Japanese promo seed (SnapshotSeedData.swift PromoSeedCopy.japanese: 住所, 署名, 振込先, Wi-Fiパスワード, the same person 田中 太郎 and bank as the bank-number film that reached Japan), with the address replaced by the one typed above"
+    },
+    {
+     "slot": 2,
+     "en": "Bank Account",
+     "icon": "bank",
+     "title": "振込先",
+     "preview": "三菱UFJ銀行 渋谷支店…",
+     "paste": "三菱UFJ銀行 渋谷支店 普通 1234567",
+     "gloss": "where to transfer money; MUFG Bank, Shibuya branch, ordinary account 1234567",
+     "source": "monholt-samples/src/cutling/world.ts KEYS[2] (title, preview, paste)",
+     "written": "fixed: Cutling's own Japanese promo seed (SnapshotSeedData.swift PromoSeedCopy.japanese: 住所, 署名, 振込先, Wi-Fiパスワード, the same person 田中 太郎 and bank as the bank-number film that reached Japan), with the address replaced by the one typed above"
+    },
+    {
+     "slot": 3,
+     "en": "Wi-Fi Password",
+     "icon": "wifi",
+     "title": "Wi-Fiパスワード",
+     "preview": "k0ban-Cafe-2024!",
+     "paste": "k0ban-Cafe-2024!",
+     "gloss": "Wi-Fi password",
+     "source": "monholt-samples/src/cutling/world.ts KEYS[3] (title, preview, paste)",
+     "written": "fixed: Cutling's own Japanese promo seed (SnapshotSeedData.swift PromoSeedCopy.japanese: 住所, 署名, 振込先, Wi-Fiパスワード, the same person 田中 太郎 and bank as the bank-number film that reached Japan), with the address replaced by the one typed above"
+    }
+   ],
+   "field_placeholder": {
+    "ja": "メッセージ",
+    "gloss": "Message",
+    "source": "world.ts fieldTexture('Message', true)"
+   },
+   "mac": {
+    "panel_title": {
+     "ja": "最近のクリップボード",
+     "gloss": "Recent clipboard (Cutling's own Mac picker heading, Localizable 'Recent clipboard')",
+     "source": "world.ts panelTexture 'Clipboard'"
+    },
+    "shortcut_chip": "⇧ ⌘ V (unchanged)",
+    "key_labels": "shift and command stay in English: Japanese Mac keyboards print them so",
+    "history": [
+     {
+      "row": 0,
+      "ja": "東京都杉並区高円寺南3−8−11",
+      "kind": "text",
+      "gloss": "the address"
+     },
+     {
+      "row": 1,
+      "ja": "よろしくお願いいたします。田中",
+      "kind": "text",
+      "gloss": "the signature: Best regards, Tanaka"
+     },
+     {
+      "row": 2,
+      "ja": "スクリーンショット 2分前",
+      "kind": "image",
+      "gloss": "screenshot, 2 minutes ago",
+      "written": "r1 (carousel panel row), read back cold: natural"
+     },
+     {
+      "row": 3,
+      "ja": "三菱UFJ銀行 渋谷支店 普通 1234567",
+      "kind": "text",
+      "gloss": "the bank details"
+     },
+     {
+      "row": 4,
+      "ja": "k0ban-Cafe-2024!",
+      "kind": "text",
+      "gloss": "the Wi-Fi password"
+     },
+     {
+      "row": 5,
+      "ja": "ありがとう！じゃあ3時にね",
+      "kind": "text",
+      "gloss": "Thanks! See you at 3 then (to a friend)",
+      "written": "r1 (carousel panel row), read back cold: natural"
+     },
+     {
+      "row": 6,
+      "ja": "写真 昨日",
+      "kind": "image",
+      "gloss": "photo, yesterday",
+      "written": "r1 (carousel panel row), read back cold: natural"
+     }
+    ],
+    "history_source": "world.ts HISTORY"
+   },
+   "headlines": [
+    {
+     "ja": "自分の住所いままで何回打ちましたか？",
+     "gloss": "Your own address — how many times have you typed it until now?",
+     "written": "r1, read back cold: natural=yes (The missing 「、」 after 住所 is fine because the line break does its work. Green on 何回 is the right word.)",
+     "lines": [
+      "自分の住所",
+      "いままで[何回]",
+      "打ちましたか？"
+     ],
+     "source": "Film.tsx CAPS[0] (and Post.tsx slide 1)",
+     "when": "0.2 to 3.82 s"
+    },
+    {
+     "ja": "登録するのは一度だけです",
+     "gloss": "Registering is only once.",
+     "written": "r1, read back cold: natural=yes (Grammatical and natural when spoken, but slightly wordy for a huge headline. An ad writer might tighten it to 「登録は、最初の一回だけ。」 Keep the current line if you want the です/ます series to match the voice-over.)",
+     "lines": [
+      "登録するのは",
+      "一度だけです"
+     ],
+     "source": "CAPS[1]",
+     "when": "3.88 to 6.81 s"
+    },
+    {
+     "ja": "次からはワンタップです",
+     "gloss": "From next time on, it's one tap.",
+     "written": "r1, read back cold: natural=yes",
+     "lines": [
+      "次からは",
+      "ワンタップです"
+     ],
+     "source": "CAPS[2]",
+     "when": "7.15 to 9.85 s"
+    },
+    {
+     "ja": [
+      "署名",
+      "振込先",
+      "Wi-Fi"
+     ],
+     "gloss": "Signature / Payee bank details / Wi-Fi",
+     "written": "r1, read back cold: natural=yes (On its own, 署名 can suggest a handwritten signature, but the text appearing in the message box makes it clear. 振込先 lands well with freelancers and shop owners.)",
+     "source": "CAPS[3], one word per tap at T.t1, T.t2, T.t3",
+     "when": "9.9 to 11.2 s"
+    },
+    {
+     "ja": "コピーしたものぜんぶ残っています",
+     "gloss": "Things you copied — all of them remain.",
+     "written": "r1, read back cold: natural=yes (With the line breaks, no particle is needed. As one line it would want 「コピーしたもの、ぜんぶ残っています」 or 「コピーしたものが、ぜんぶ残っています」.)",
+     "lines": [
+      "コピーしたもの",
+      "ぜんぶ",
+      "残っています"
+     ],
+     "source": "CAPS[4]",
+     "when": "13.14 to 15.95 s"
+    }
+   ],
+   "end_card": {
+    "name": "Cutling",
+    "line": {
+     "ja": "一度打てば、ずっと。",
+     "gloss": "Type it once, and forever.",
+     "written": "r1, read back cold: natural=yes (The classic 〜すれば、ずっと。 copy form. It is slightly vague on its own but works under the app name after the film.)",
+     "source": "Film.tsx EndCard line"
+    },
+    "price": "none: the Japanese film shows no price (Film.tsx EndCard price is dropped)",
+    "where": {
+     "ja": "iPhone・iPad・Mac 対応",
+     "gloss": "Supports iPhone, iPad, Mac",
+     "written": "r1, read back cold: natural=yes (Standard. 「iPhone・iPad・Mac対応」 with no space is slightly more common, but both are seen.)",
+     "source": "Film.tsx EndCard where"
+    },
+    "badge": "Apple's Japanese App Store badge 「App Store からダウンロード」"
+   },
+   "voice": [
+    {
+     "ja": "自分の住所、いままで何回打ちましたか？",
+     "gloss": "Your own address, how many times have you typed it until now?",
+     "written": "r1, read back cold: natural=yes (About 22 morae fits 3.6 s comfortably.)",
+     "beat": "0.2 to 3.8 s, over the rows",
+     "say": "自分の住所、いままで何回打ちましたか？"
+    },
+    {
+     "ja": "登録するのは、一度だけです。",
+     "gloss": "Registering is only once.",
+     "written": "r1, read back cold: natural=yes",
+     "beat": "3.9 to 6.8 s, the keys drop",
+     "say": "登録するのは、一度だけです。"
+    },
+    {
+     "ja": "次からは、ワンタップです。",
+     "gloss": "From next time, it's one tap.",
+     "written": "r1, read back cold: natural=yes",
+     "beat": "7.1 to 9.8 s, the address goes in",
+     "say": "次からは、ワンタップです。"
+    },
+    {
+     "ja": "マックでは、シフト、コマンド、ブイで、コピーしたものがぜんぶ出てきます。",
+     "gloss": "On Mac, with Shift, Command, V, everything you copied comes up.",
+     "written": "r4, the earlier reader's own native line, read again cold: natural=yes (Optional: 「シフト、コマンド、ブイを押すと、」 sounds more spoken than 「〜で、」. The timing is fine: about 31 morae in 4.8 s.)",
+     "history": [
+      "r1 \"マックなら、シフト、コマンド、ブイ。コピーしたもの、ぜんぶ残っています。\": The phrasing is natural. The risk is the meaning: 「マックなら」 makes it sound like a built-in macOS shortcut, and many Japanese users know ⇧⌘V as 'paste and match style'. A clearer line ties it to the app: 「マックでは、シフト、コマンド、ブイで、コピーしたものがぜんぶ出てきます。」 Japanese users also often say 「コマンド、シフト、ブイ」, but either order is understood."
+     ],
+     "beat": "11.2 to 16.0 s, ⇧⌘V and the panel",
+     "say": "マックでは、シフト、コマンド、ブイで、コピーしたものがぜんぶ出てきます。"
+    },
+    {
+     "ja": "カットリング。アイフォン、アイパッド、マックで使えます。",
+     "gloss": "Cutling. Usable on iPhone, iPad, and Mac.",
+     "written": "r5, the earlier reader's own native line, read again cold: natural=yes",
+     "history": [
+      "r1 \"カットリング。アイフォン、アイパッド、マックのキーボードです。\": 「〜のキーボードです」 is read as hardware, and on Mac the product isn't a keyboard at all. A native would say 「カットリング。アイフォン、アイパッド、マックで使える入力アプリです。」 or 「〜対応のキーボードアプリです。」",
+      "r4 \"カットリング。アイフォン、アイパッド、マックで使える入力アプリです。\": 「入力アプリ」 is vague: it can sound like an IME, and no ad writer says it. Use 「キーボードアプリ」 or 「入力をラクにするアプリ」. It is also about 32 morae in 3.8 s, which comes out rushed. A shorter line that fits: 「カットリング。アイフォン、アイパッド、マックで使えます。」"
+     ],
+     "beat": "16.2 to 20.0 s, end card",
+     "say": "カットリング。アイフォン、アイパッド、マックで使えます。"
+    },
+    {
+     "beat": "9.9 to 11.2 s, the three taps",
+     "ja": "",
+     "gloss": "silence: the three taps land on the music",
+     "written": "r1"
+    }
+   ],
+   "voice_decision": "Voice on. This is the film the owner asked to put into Japanese, and its English cut had no voice; the one post that reached Japan had an ElevenLabs Japanese voice. The voice says each headline as the picture lands and stays out of the three quick taps.",
+   "caption": {
+    "ja": "住所、いままで何回打ちましたか？\n「Cutling」というアプリを作りました。住所や署名を一度登録しておけば、ほとんどのアプリでワンタップで入力できます。Macでは、コピーしたものもぜんぶ残ります。\n個人で作っています。",
+    "gloss": "How many times have you typed your address until now? I made an app called \"Cutling.\" If you register your address or signature once, you can enter it with one tap in almost any app. On Mac, everything you copied is kept too. I'm making it on my own.",
+    "written": "r5, the earlier reader's own native line, read again cold: natural=yes (This reads like a real indie dev post. There is one small polish point: 「ほとんどのアプリでワンタップで」 repeats で. 「ほとんどのアプリにワンタップで入力できます」 reads smoother. 「個人で作っています。」 is fine, and 「個人開発です。」 is an equally common alternative.)",
+    "history": [
+     "r1 \"住所、いままで何回打ちましたか？\\n一度登録しておけば、どのアプリでもワンタップで入力できる「Cutling」というアプリを作りました。Mac では、コピーしたものもぜんぶ残ります。\\n個人で開発しています。\": The tone fits a solo maker. Three small fixes: (1) The object of 登録 is missing; 「住所や署名を一度登録しておけば」 reads better. (2) 「どのアプリでも」 overclaims, since third-party keyboards are blocked in password fields and some banking apps; 「ほとんどのアプリで」 is safer. (3) 「Mac では」 is more usual without the space, as 「Macでは」. 「個人で開発しています。」 is fine; 「個人で作っています。」 is a touch warmer.",
+     "r4 \"住所、いままで何回打ちましたか？\\n住所や署名を一度登録しておけば、ほとんどのアプリでワンタップで入力できる「Cutling」というアプリを作りました。Mac では、コピーしたものもぜんぶ残ります。\\n個人で作っています。\": The 40-plus-character clause in front of 「「Cutling」というアプリ」 is heavy for a TikTok caption and reads slightly like English word order. Split it the way p1c does: 「「Cutling」というアプリを作りました。住所や署名を一度登録しておけば、ほとんどのアプリでワンタップで入力できます。」 Also close the space: 「Macでは」."
+    ],
+    "typography": "caption: no space between Latin and Japanese (TikTok usage, per the readers)"
+   },
+   "hashtags": [
+    {
+     "tag": "#iPhone便利機能",
+     "gloss": "iPhone handy features",
+     "seen": "on the top results for コピペ iPhone (りゅう今すぐ使えるiPhone便利術, 小池モバイル@iPhone研究所, スマホとアプリの教科書)"
+    },
+    {
+     "tag": "#iPhone活用術",
+     "gloss": "getting more out of iPhone",
+     "seen": "on the top results for アイフォン 便利アプリ (田中さんは気になるものは全部買う) and コピペ iPhone; its tag page opens on Japanese iPhone-tips accounts (こあら博士, ぷろぷろ, みさみさ, あお)"
+    },
+    {
+     "tag": "#コピペ",
+     "gloss": "copy-paste",
+     "seen": "on the top results for コピペ iPhone (スマホとアプリの教科書, KUKULOG)"
+    },
+    {
+     "tag": "#時短",
+     "gloss": "time-saving",
+     "seen": "on the top results for アイフォン 便利アプリ (得する雑学ちゃんねる) and iPhone 定型文 (トクミル), whose results are all about not typing the same text again"
+    }
+   ],
+   "cover": {
+    "ja": "住所は、もう打たなくていい",
+    "gloss": "Your address — you don't have to type it anymore.",
+    "written": "r1, read back cold: natural=yes"
+   }
+  },
   "2_release_2_0": {
    "title": "Cutling 2.0 release film, 'What's new in 2.0'",
    "posts": "Dec 1",
