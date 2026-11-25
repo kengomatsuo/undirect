@@ -46,3 +46,17 @@ Japan is UTC+9, two hours ahead of WIB. No Japan-specific data was found; Buffer
 | Five taps | Wed Dec 3 22:11 | 20:11 |
 
 The Dec 1-3 posts, like their English rows, go out only once Cutling 2.0 reads READY_FOR_SALE.
+
+## How the Japanese was written (copy-ja.json)
+
+Blind-translation method, as Cutling's own `docs/fill-ins-strings-check.md` and `docs/aso/previews-2.0/g-words.json` ran it: each writer and each reader is a separate `claude -p` process with no tools (`--tools "" --strict-mcp-config`), so none can open a repo or see an English line. Writers get only a brief (screen, moment, what the line does, length budget, register, Cutling's own Japanese words); a separate cold reader, told only where each string sits, writes a literal English reading, what a Japanese viewer understands, and whether a Japanese person in that role would write it. Flagged lines go back to a fresh writer with the reader's point, or take the reader's own native line, and are read again. Fable was at its usage limit (resets Nov 29 9am WIB), so writers and readers ran on Opus at high effort.
+
+Cutling's own Japanese words were read from `Cutling/Cutling/ja.lproj/Localizable.strings`, `Cutling/CutlingKeyboard/ja.lproj/Localizable.strings` and `Cutling/fastlane/metadata/ja` (name "Cutling - コピペ・定型文キーボード"; a saved text is a カットリング; the blank's default label is 名前; 変数, ボールド, 箇条書き, ハイライト, いつものキーボードで入力, ペースト).
+
+## Post 2 seed (the Japanese 2.0 takes)
+
+Sources: `Cutling/Cutling/SnapshotSeedData.swift` `seedForReleaseFilm` (six keys, the 12 `-PROMO_ROOM` replies, the Name blank's recent values), `Cutling/CutlingUITests/PromoReleaseUITests.swift` (`test1Note` typed on camera, `test2Keyboard` the Try It presses, `test3Room`), the film's cut `cutling-promo/src/release/plan.ts` and storyboard `release-2.0.md`, and frames of `out/release/cutling-2-release-9x16.mp4` (beat 1 is the Every-app preview's Messages take, with the keys Home address, Order update, Account number, Studio address, Thank you).
+
+The Japanese world is the Every-app ja preview's (`SnapshotSeedData.swift` `EveryAppSeedCopy.japanese`, written blind on 2026-11-23 in `g-words.json`): a pottery class in Mitaka that also sells online. Four keys and the five names (中村, 小林, 松本, 岡田, 原田) are reused from it word for word, so beat 1's Messages take and the Try It takes show one phone. New: the date key (発送完了, three rounds), the welcome note (初回のご案内), the note's ※ date line, and nine of the 12 grid replies (three reuse the Every-app ja keys 返品について, 発送の目安, 教室の Wi-Fi).
+
+The date key's beat is "dates fill themselves in". Round 2's reader read 2026年12月1日 inside a shop message as a system log and "delivered" as odd from a seller, so the key now types 「ご注文の品を12月1日に発送いたしました。」 with the date variable in the written pattern `M月d日` (Placeholders.swift takes any pattern after the colon). It still fills itself in, on one line.

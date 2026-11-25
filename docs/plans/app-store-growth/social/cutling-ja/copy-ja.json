@@ -1,0 +1,362 @@
+{
+ "what": "Every Japanese word a viewer reads or hears in Cutling's four Japanese TikTok posts (card ASG221): on-screen strings keyed to where they sit in each source, ElevenLabs voice lines with their beat, caption, hashtags, cover line, each with an English gloss. Builders render from this file.",
+ "written": "2026-11-25",
+ "rule": "No locale is the source the others are translated from. Each Japanese line was written blind by a separate writer (a claude -p process with no tools, model opus at high effort: Fable was at its usage limit until Nov 29) given only a brief of the screen, the moment, what the line must do, its length budget, the register and Cutling's own Japanese words, never an English line. A separate cold reader (another tool-less process, told only where each string sits) read every line back into English and judged it natural or not; flagged lines went back to a fresh writer with the reader's point, or took the reader's native line, and were read again. 'written' on each line says which round it shipped from.",
+ "voice": {
+  "provider": "ElevenLabs",
+  "voice_id": "T7yYq3WpB94yAuOXraRi",
+  "model_id": "eleven_v4",
+  "language_code": "ja",
+  "tool": "~/Repositories/cutling-promo/tools/vo.py (its ja reading fixes: Wi-Fi as ワイファイ, iPhone as アイフォン, Mac as マック, iCloud as アイクラウド)"
+ },
+ "typography": "、 and 。 only; no ― or dash connectors. Full-width ！ and ？. A half-width space between a Latin word and Japanese (Wi-Fi は, Cutling で); none between a digit and its counter. 〜 is the range mark (火曜〜土曜). Break Japanese only where 'lines' breaks; never let a renderer wrap it on its own.",
+ "app_words": {
+  "source": "Cutling/Cutling/ja.lproj/Localizable.strings, CutlingKeyboard/ja.lproj/Localizable.strings, fastlane/metadata/ja",
+  "カットリング": "a saved text (Cutlings)",
+  "Cutling キーボード": "the keyboard (store text and 2.0 release notes)",
+  "名前": "Name, the Ask Each Time blank's default label",
+  "変数": "Variables",
+  "ボールド": "Bold",
+  "箇条書き": "Bulleted",
+  "ハイライト": "Highlight",
+  "いつものキーボードで入力": "Type with Your Keyboard",
+  "ペースト": "Paste",
+  "クリップボードから追加": "Add from Clipboard",
+  "挿入済み": "Inserted",
+  "挿入後のカーソル位置": "Cursor Position",
+  "選択肢": "Choice",
+  "毎回尋ねる": "Ask Each Time",
+  "%lld 個のカットリング": "%lld Cutlings (the grid's count)",
+  "最近のクリップボード": "Recent clipboard (Mac picker)",
+  "試してみる": "Try It"
+ },
+ "posts": {
+  "2_release_2_0": {
+   "title": "Cutling 2.0 release film, 'What's new in 2.0'",
+   "posts": "Dec 1",
+   "film": "~/Repositories/cutling-promo/out/release/cutling-2-release-9x16.mp4",
+   "storyboard": "cutling-promo/storyboard/release-2.0.md",
+   "seed": {
+    "source": "Cutling/Cutling/SnapshotSeedData.swift seedForReleaseFilm (keys and -PROMO_ROOM replies) and the FillInMemory names; Cutling/CutlingUITests/PromoReleaseUITests.swift test1Note (typed on camera) and test2Keyboard (Try It presses)",
+    "world": "One Japanese owner, the same one as the Every-app ja preview: a small pottery class (陶芸教室) in Mitaka, Tokyo, that also sells pottery and T-shirts online. Shop です・ます with shop keigo.",
+    "keys": [
+     {
+      "slot": 0,
+      "en_slot": "Order update",
+      "icon": "shippingbox.fill",
+      "color": "teal",
+      "name": "発送連絡",
+      "value": "{⁠名前}様、ご注文の品は{⁠day +1d}に発送いたします。\n",
+      "gloss": {
+       "name": "shipping notice",
+       "value": "[Name]-sama, your order ships on [tomorrow's weekday]. (line break)"
+      },
+      "written": "fixed: the Every-app ja seed (Cutling SnapshotSeedData.swift EveryAppSeedCopy.japanese, from g-words.json), so the Messages take and the Try It takes show one product",
+      "typed_example": "中村様、ご注文の品は水曜日に発送いたします。"
+     },
+     {
+      "slot": 1,
+      "en_slot": "Delivery note",
+      "icon": "calendar",
+      "color": "orange",
+      "name": "発送完了",
+      "value": "ご注文の品を{⁠date:M月d日}に発送いたしました。",
+      "gloss": {
+       "name": "shipping done",
+       "value": "We shipped your order (humble) on [today's date as 12月1日]."
+      },
+      "written": "r3. r1 \"[DATE]にお届け済みです。\" read as a courier's tracking status; r2 \"ご注文の品は[DATE]にお届けいたしました。\" read as odd (a seller tells a buyer it shipped, not that it arrived) and the long date with the year as a system log. r3 is the r2 reader's native line with the date as M月d日 (a written date pattern, which Cutling's date variable takes), so the date still fills itself in, which is the beat.",
+      "typed_example": "ご注文の品を12月1日に発送いたしました。",
+      "fit": "19 characters typed: one line in the Try It field, as the en beat"
+     },
+     {
+      "slot": 2,
+      "en_slot": "Welcome note",
+      "icon": "textformat",
+      "color": "purple",
+      "format": "rich",
+      "name": "初回のご案内",
+      "value": "**陶芸教室へようこそ！**\nお越しの際は、以下をご確認ください。\n• 入口の暗証番号は ^[4815](highlight: true)\n• Wi-Fi は tougei-guest\n• 駐車場は隣のパン屋さんの裏",
+      "gloss": {
+       "name": "first-visit information",
+       "value": "**Welcome to the pottery class!** / When you come, please check the following. / • The entrance code is 4815 (highlighted) / • The Wi-Fi is tougei-guest / • Parking is behind the bakery next door"
+      },
+      "written": "name, title, code, Wi-Fi r1; parking r2 (r1 パン屋 made warmer as パン屋さん to match 花屋さん); intro r3 (r1 ご来室時のご案内です read stiff and repeated ご案内; r2 お越しの際にご確認ください read abrupt with no object; r3 is the r2 reader's line)"
+     },
+     {
+      "slot": 3,
+      "en_slot": "Home address",
+      "icon": "house.fill",
+      "color": "blue",
+      "name": "自宅の住所",
+      "value": "東京都練馬区豊玉北4-21-6 203",
+      "gloss": {
+       "name": "home address",
+       "value": "Nerima, Tokyo, Toyotama-kita 4-21-6, room 203"
+      },
+      "written": "fixed: Every-app ja seed"
+     },
+     {
+      "slot": 4,
+      "en_slot": "Account number",
+      "icon": "banknote.fill",
+      "color": "green",
+      "name": "口座番号",
+      "value": "3058162",
+      "gloss": {
+       "name": "account number",
+       "value": "3058162 (a Japanese account number is 7 digits)"
+      },
+      "written": "fixed: Every-app ja seed"
+     },
+     {
+      "slot": 5,
+      "en_slot": "Thank you",
+      "icon": "sparkles",
+      "color": "pink",
+      "name": "お礼",
+      "value": "お買い上げありがとうございました。",
+      "gloss": {
+       "name": "thanks",
+       "value": "Thank you for your purchase."
+      },
+      "written": "fixed: Every-app ja seed"
+     }
+    ],
+    "fill_in": {
+     "blank_label": "名前",
+     "blank_label_gloss": "name (the app's own ja default for an Ask Each Time blank)",
+     "memory_key": "Placeholders.Field.key(\"名前\")",
+     "recent_names": [
+      "中村",
+      "小林",
+      "松本",
+      "岡田",
+      "原田"
+     ],
+     "recent_names_gloss": "Nakamura, Kobayashi, Matsumoto, Okada, Harada (family names; 様 lives in the reply, as Japanese shop templates write it)",
+     "written": "fixed: Every-app ja seed"
+    },
+    "room_replies": [
+     {
+      "index": 0,
+      "en_slot": "Opening hours",
+      "icon": "clock.fill",
+      "color": "indigo",
+      "name": "営業時間",
+      "value": "営業は火曜〜土曜、10時〜18時です。",
+      "gloss": {
+       "name": "opening hours",
+       "value": "We are open Tuesday to Saturday, 10:00 to 18:00."
+      },
+      "written": "r1"
+     },
+     {
+      "index": 1,
+      "en_slot": "Returns",
+      "icon": "arrow.uturn.backward",
+      "color": "red",
+      "name": "返品について",
+      "value": "商品到着後30日以内であれば、返品を承ります。",
+      "gloss": {
+       "name": "about returns",
+       "value": "Within 30 days of the item arriving, we accept returns."
+      },
+      "written": "fixed: Every-app ja seed"
+     },
+     {
+      "index": 2,
+      "en_slot": "Shipping times",
+      "icon": "shippingbox.fill",
+      "color": "teal",
+      "name": "発送の目安",
+      "value": "ご注文から2営業日以内に発送いたします。",
+      "gloss": {
+       "name": "shipping estimate",
+       "value": "We ship within 2 business days of your order."
+      },
+      "written": "fixed: Every-app ja seed"
+     },
+     {
+      "index": 3,
+      "en_slot": "Gift wrap",
+      "icon": "gift.fill",
+      "color": "pink",
+      "name": "ギフトラッピング",
+      "value": "ギフトラッピングは無料で承ります。ご注文時にお申し付けください。",
+      "gloss": {
+       "name": "gift wrapping",
+       "value": "We gift-wrap free of charge. Please tell us when you order."
+      },
+      "written": "r2 (r1 贈り物の包装 read as a literal rendering)"
+     },
+     {
+      "index": 4,
+      "en_slot": "Size guide",
+      "icon": "ruler.fill",
+      "color": "brown",
+      "name": "サイズについて",
+      "value": "普段のサイズでお選びください。迷われた場合はワンサイズ上がおすすめです。",
+      "gloss": {
+       "name": "about sizes",
+       "value": "Please choose your usual size. If you are unsure, we suggest one size up."
+      },
+      "written": "r3 (r1 迷ったら too casual; r2 2サイズでお悩みの際 read as a translation; r3 is the r2 reader's line)"
+     },
+     {
+      "index": 5,
+      "en_slot": "Out of stock",
+      "icon": "tray.fill",
+      "color": "orange",
+      "name": "品切れ",
+      "value": "あいにく品切れ中です。2週間ほどで再入荷の予定です。",
+      "gloss": {
+       "name": "sold out",
+       "value": "Unfortunately it is sold out. It should be back in about two weeks."
+      },
+      "written": "r1"
+     },
+     {
+      "index": 6,
+      "en_slot": "Directions",
+      "icon": "map.fill",
+      "color": "green",
+      "name": "教室への道順",
+      "value": "角の花屋さんの上、2階です。緑の扉が目印です。",
+      "gloss": {
+       "name": "the way to the class",
+       "value": "Above the flower shop on the corner, 2nd floor. Look for the green door."
+      },
+      "written": "r1"
+     },
+     {
+      "index": 7,
+      "en_slot": "Booking",
+      "icon": "calendar",
+      "color": "orange",
+      "name": "ご予約確定",
+      "value": "ご予約を承りました。当日を楽しみにお待ちしております。",
+      "gloss": {
+       "name": "booking confirmed",
+       "value": "We have your booking. We look forward to seeing you on the day."
+      },
+      "written": "r1"
+     },
+     {
+      "index": 8,
+      "en_slot": "Invoice",
+      "icon": "doc.text.fill",
+      "color": "blue",
+      "name": "請求書の送付",
+      "value": "請求書を添付いたしましたので、ご確認ください。お支払いは発行日より14日以内にお願いいたします。",
+      "gloss": {
+       "name": "sending the invoice",
+       "value": "I have attached the invoice, so please check it. Please pay within 14 days of the issue date."
+      },
+      "written": "r3 (r1 mixed registers; r2 put ご on the owner's own label and asked for payment with no request to check; r3 is the r2 reader's line)"
+     },
+     {
+      "index": 9,
+      "en_slot": "Follow-up",
+      "icon": "bubble.left.fill",
+      "color": "purple",
+      "name": "到着の確認",
+      "value": "商品は無事にお手元に届きましたでしょうか。",
+      "gloss": {
+       "name": "checking arrival",
+       "value": "Did the item reach you safely?"
+      },
+      "written": "r1"
+     },
+     {
+      "index": 10,
+      "en_slot": "Wi-Fi",
+      "icon": "wifi",
+      "color": "cyan",
+      "name": "教室の Wi-Fi",
+      "value": "tougei-guest / kama2580",
+      "gloss": {
+       "name": "the class Wi-Fi",
+       "value": "network tougei-guest, password kama2580"
+      },
+      "written": "fixed: Every-app ja seed"
+     },
+     {
+      "index": 11,
+      "en_slot": "Sign-off",
+      "icon": "hand.wave.fill",
+      "color": "yellow",
+      "name": "結びのあいさつ",
+      "value": "末永くお使いいただけますように。またのご利用をお待ちしております。",
+      "gloss": {
+       "name": "closing greeting",
+       "value": "May you use it for many years. We look forward to serving you again."
+      },
+      "written": "r2 (r1 良い一週間をお過ごしください read as a translated 'have a great week')"
+     }
+    ],
+    "room_note": "The 12 replies fill slots 6..PROMO_ROOM in this order, as the en list does; same icons and colours.",
+    "test1Note_typed": [
+     {
+      "mark": "note title",
+      "action": "Bold on, type, Bold off",
+      "type": "陶芸教室へようこそ！",
+      "gloss": "Welcome to the pottery class!"
+     },
+     {
+      "mark": "note line",
+      "type": "\nお越しの際は、以下をご確認ください。\n",
+      "gloss": "When you come, please check the following."
+     },
+     {
+      "mark": "note item 1",
+      "action": "Bulleted, then type",
+      "type": "入口の暗証番号は ",
+      "gloss": "The entrance code is (space before the highlighted code)"
+     },
+     {
+      "mark": "note highlight on",
+      "action": "Highlight on, type, Highlight off",
+      "type": "4815",
+      "gloss": "the code, highlighted"
+     },
+     {
+      "mark": "note items",
+      "type": "\nWi-Fi は tougei-guest\n駐車場は隣のパン屋さんの裏",
+      "gloss": "The Wi-Fi is tougei-guest / Parking is behind the bakery next door"
+     },
+     {
+      "mark": "note variables",
+      "action": "type the two returns that end the list, then insert today's date from 変数 FIRST, then type the words after it (Japanese puts the date first; en typed 'Sent ' before the date)",
+      "type": "\n\n※",
+      "after_date": "時点の情報です。",
+      "line_when_used": "※2026/12/01時点の情報です。",
+      "gloss": "* Information as of [today's date]. (the ※ note mark Japanese notices use; the date is the Variables date in its standard style, which a Japanese iPhone types as 2026/12/01)",
+      "written": "r3 (r1 〜時点のご案内です repeated ご案内; r2 〜時点の内容です read as a document disclaimer; r3 is the r2 reader's ※ line)"
+     }
+    ],
+    "test2Keyboard_labels": {
+     "Delivery note": "発送完了",
+     "Order update": "発送連絡",
+     "Welcome note": "初回のご案内",
+     "Maya": "中村",
+     "typed": {
+      "date": "ご注文の品を12月1日に発送いたしました。",
+      "ask": "中村様、ご注文の品は水曜日に発送いたします。",
+      "formatted": "陶芸教室へようこそ！ / お越しの際は、以下をご確認ください。 / ・入口の暗証番号は 4815 / ・Wi-Fi は tougei-guest / ・駐車場は隣のパン屋さんの裏"
+     },
+     "typed_gloss": {
+      "date": "We shipped your order on 1 December.",
+      "ask": "Nakamura-sama, your order ships on Wednesday.",
+      "formatted": "the Welcome note's five lines, as above"
+     }
+    },
+    "take_conditions": [
+     "Run the ja takes with the simulator's language ja and region JP (-AppleLanguages (ja) -AppleLocale ja_JP), so date:M月d日 types 12月1日, the note's date types 2026/12/01, day +1d types 水曜日 and the grid counts 5,000 個のカットリング in the app's own words.",
+     "Beat 1's Messages take is the Every-app preview's iPhone ja take (seedForEveryApp, -PROMO_LANG ja, contacts from g-words.json: 中村 由美 first). g-build-status.md lists no finished iPhone ja take, so it is re-shot too.",
+     "Typing Japanese on camera: test1Note's typeText strings above are kanji and kana; the system keyboard in the take should be the Japanese one a Japanese owner has (日本語かな), and typeText must land the exact string with no conversion candidates left open. If typeText cannot, paste the line from the pasteboard in the same stretches the en take types."
+    ]
+   }
+  }
+ }
+}
