@@ -1,0 +1,19 @@
+Captured 2026-11-25. Page opened in Claude in Chrome (screenshot page.jpg); text below from the same page's metadata via yt-dlp.
+URL: https://www.youtube.com/watch?v=BY2i_mnpQi4
+Title: Paper Flutter Physics in Blender (Wind + Soft Body)
+Channel: Jamie Sundance (https://www.youtube.com/channel/UCDWBa1juR8JWPwDIufYXJ5Q)
+Uploaded: 20251212
+Views: 14442
+Duration: 460 s
+Source resolution: 3840x2160 at 25 fps
+
+Description:
+These posters are just planes, soft body physics, and a few force fields - no overly complex simulation.
+
+How I made pinned paper flutter naturally using wind, turbulence, and vertex groups in Blender, including how to stop it looking floaty and how to fix the back of the paper.
+
+This shot comes from a fully 3D project I’m working on. More scene breakdowns and short tutorials coming.
+
+Free Complete File: https://625834535408.gumroad.com/l/paperflutter 
+
+#blender #blender3d #vfx #cgartist #3danimation #cinematic

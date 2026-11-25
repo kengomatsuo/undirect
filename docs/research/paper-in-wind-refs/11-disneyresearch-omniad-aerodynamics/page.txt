@@ -1,0 +1,13 @@
+Captured 2026-11-25. Page opened in Claude in Chrome (screenshot page.jpg); text below from the same page's metadata via yt-dlp.
+URL: https://www.youtube.com/watch?v=OUxsZCNs3Kg
+Title: OmniAD: Data-driven Omni-directional Aerodynamics
+Channel: DisneyResearchHub (https://www.youtube.com/channel/UCM42XWqRoruK6bNkgbgoJMw)
+Uploaded: 20150729
+Views: 4230
+Duration: 256 s
+Source resolution: 1280x720 at 30 fps
+
+Description:
+This paper introduces “OmniAD,” a novel data-driven pipeline to model and acquire the aerodynamics of three-dimensional rigid objects. Traditionally, aerodynamics are examined through elaborate 
+wind tunnel experiments or expensive fluid dynamics computations,  and are only measured for a small number of discrete wind directions. OmniAD allows the evaluation of aerodynamic forces, such as drag and lift, for any incoming wind direction using a novel representation based on spherical harmonics. Our data driven technique acquires the aerodynamic properties of an object simply by capturing its falling motion using a single camera. Once model parameters are estimated, OmniAD enables realistic realtime simulation of rigid bodies, such as the tumbling and gliding of leaves, without simulating the surrounding air. In addition, we propose an intuitive user interface based on OmniAD to interactively design three-dimensional kites that actually fly. Various nontraditional kites were designed to demonstrate the physical validity of our model.
+Link to publication: https://studios.disneyresearch.com/2015/07/27/omniad-data-driven-omni-directional-aerodynamics/

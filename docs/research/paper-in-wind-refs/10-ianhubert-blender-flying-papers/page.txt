@@ -1,0 +1,17 @@
+Captured 2026-11-25. Page opened in Claude in Chrome (screenshot page.jpg); text below from the same page's metadata via yt-dlp.
+URL: https://www.youtube.com/watch?v=F8j1K-_OlH4
+Title: Animating flying papers/bags in Blender - Lazy Tutorials
+Channel: IanHubert (https://www.youtube.com/channel/UCbmxZRQk-X0p-TOxd6PEYJA)
+Uploaded: 20190824
+Views: 832852
+Duration: 57 s
+Source resolution: 1300x1080 at 24 fps
+
+Description:
+https://www.patreon.com/IanHubert
+Lazy Tutorials #9. For lazy people, by lazy people. 
+
+For more info on making papers, check out Lazy Tutorial #1:
+https://youtu.be/U1f6NDCttUY
+
+Blender is available for download at Blender.org!

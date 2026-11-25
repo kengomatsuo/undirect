@@ -1,0 +1,35 @@
+Captured 2026-11-25. Page opened in Claude in Chrome (screenshot page.jpg); text below from the same page's metadata via yt-dlp.
+URL: https://www.youtube.com/watch?v=ad6eTB3hsaU
+Title: How the Custom Wind-Blown Paper Stack Works in Blender – Full Tutorial
+Channel: CMotionDesign (https://www.youtube.com/channel/UCTKrWHrNp5TGwC7lLoE50QQ)
+Uploaded: 20250401
+Views: 292
+Duration: 497 s
+Source resolution: 3338x2160 at 60 fps
+
+Description:
+In this tutorial, I’ll walk you through exactly how the Custom Wind-Blown Paper Stack works inside Blender using Geometry Nodes — no node editing required.
+
+You’ll learn how to:
+✅ Control the timing of the animation
+✅ Change wind direction and speed
+✅ Swap paper designs with your own textures
+✅ Use the modifier panel for everything (no need to open Geo Nodes)
+
+Perfect for motion design, cinematic transitions, UI mockups, or stylized storytelling.
+
+⸻
+
+📥 Download the setup here:
+https://cammotion.gumroad.com/l/yxmar
+
+⸻
+
+🎁 Includes:
+ • Pre-animated .blend file
+ • Modifier panel controls (no node editing needed)
+ • Easy texture customization
+ • Clean, render-ready project
+
+
+If you like this content and want more, let me know in the comments!

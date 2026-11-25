@@ -1,0 +1,11 @@
+Captured 2026-11-25. Page opened in Claude in Chrome (screenshot page.jpg); text below from the same page's metadata via yt-dlp.
+URL: https://www.youtube.com/watch?v=84rl-T2yIls
+Title: WDAS Technology Projects: Computer Assisted Animation of Line and Paint in Disney's Paperman
+Channel: Walt Disney Animation Studios (https://www.youtube.com/channel/UC_976xMxPgzIa290Hqtk-9g)
+Uploaded: 20160314
+Views: 169179
+Duration: 294 s
+Source resolution: 854x480 at 30 fps
+
+Description:
+Computer-Assisted Animation of Line and Paint in Disney's Paperman: We present a system which allows animators to combine CG animation's strengths -- temporal coherence, spatial stability, and precise control -- with traditional animation's expressive and pleasing line-based aesthetic. Our process begins as an ordinary 3D CG animation, but later steps occur in a light-weight and responsive 2D environment, where an artist can draw lines which the system can then automatically move through time using vector fields derived from the 3D animation, thereby maximizing the benefits of both environments. Unlike with an automated "toon-shader", the final look was directly in the hands of the artists in a familiar workflow, allowing their artistry and creative power to be fully utilized. This process was developed during production of the short film Paperman at Walt Disney Animation Studios, but its application is extensible to other styles of animation as well.

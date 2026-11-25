@@ -1,0 +1,11 @@
+Captured 2026-11-25. Page opened in Claude in Chrome (screenshot page.jpg); text below from the same page's metadata via yt-dlp.
+URL: https://www.youtube.com/watch?v=MmFeS8FJ3-A
+Title: wind blowing paper sheets in cinema 4D
+Channel: Luiz Gustavo Assuena (https://www.youtube.com/channel/UCvFSXsv4LE0w62pIIhjUVUw)
+Uploaded: 20110114
+Views: 108732
+Duration: 4 s
+Source resolution: 640x480 at 30 fps
+
+Description:
+a teste render using the soft body tag in cinema 4D
