@@ -2,7 +2,7 @@
 """Submit the next Undirect version for review on each platform as soon as the version before it
 is on the store. Safe to run again and again: a platform already submitted is left alone.
 
-    python3 Support/AppStore/submit_version.py 1.1.0 19 1.0.5 [--dry]
+    python3 Support/AppStore/submit_version.py 1.1.0 19 1.0.5 [--dry] [--only IOS|MAC_OS]
 
 Per platform: wait until <previous> reads READY_FOR_SALE (Apple takes one version at a time), create
 <version> with build <build> attached, release on approval, put Support/AppStore/releases/<version>/
@@ -48,6 +48,9 @@ def one(platform, kind):
     if cur:
         vid = cur[0]["id"]
         call("PATCH", f"/v1/appStoreVersions/{vid}/relationships/build", {"data": {"type": "builds", "id": build}})
+        # a version made earlier by hand (to carry new screenshots) releases on approval like the ones made here
+        call("PATCH", f"/v1/appStoreVersions/{vid}", {"data": {"type": "appStoreVersions", "id": vid,
+            "attributes": {"releaseType": "AFTER_APPROVAL"}}})
     else:
         vid = call("POST", "/v1/appStoreVersions", {"data": {"type": "appStoreVersions",
             "attributes": {"platform": platform, "versionString": version, "releaseType": "AFTER_APPROVAL"},
@@ -84,7 +87,11 @@ def one(platform, kind):
 
 
 lines = []
+# --only: a release that changes one platform's app (1.1.2 changed only the iPhone and iPad sidebar) goes to review there alone.
+only = sys.argv[sys.argv.index("--only") + 1] if "--only" in sys.argv else None
 for platform, kind in (("IOS", "iOS"), ("MAC_OS", "Mac")):
+    if only and platform != only:
+        continue
     try:
         lines.append(one(platform, kind))
     except RuntimeError as e:
