@@ -1515,11 +1515,11 @@
    },
    "overlay": {
     "open": {
-     "ja": "お客さま5人から同じ質問。",
-     "gloss": "The same question from 5 customers.",
+     "ja": "お客さま4人から同じ質問。",
+     "gloss": "The same question from 4 customers.",
      "written": "r1, read back cold: natural=yes",
      "lines": [
-      "お客さま5人から",
+      "お客さま4人から",
       "同じ質問。"
      ],
      "source": "c-names.js captions [0, G.push[0]]"
@@ -1551,11 +1551,11 @@
    },
    "voice": [
     {
-     "ja": "五人から、同じ質問です。",
+     "ja": "四人から、同じ質問です。",
      "gloss": "From five people, the same question.",
      "written": "r1, read back cold: natural=yes (Make sure TTS reads 五人 as ごにん.)",
      "beat": "0.0 to 2.5 s, over the inbox of five unread",
-     "say": "ごにんから、同じ質問です。"
+     "say": "よにんから、同じ質問です。"
     },
     {
      "ja": "タップして、名前を選んで、送信。一度入れた名前は、次から選ぶだけ。",
@@ -1592,7 +1592,7 @@
    ],
    "voice_decision": "Voice on, four short lines at the captions' moments; the taps between stay on the music. The film has few words on screen, and the one post that reached Japan carried a Japanese voice.",
    "caption": {
-    "ja": "朝起きたら、お客さん5人から同じ質問。\nよく使う返信をタップして、名前を選んで送るだけ。5人分すぐ返せます。\n一度入れた名前は、次から選べます。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
+    "ja": "朝起きたら、お客さん4人から同じ質問。\nよく使う返信をタップして、名前を選んで送るだけ。4人分すぐ返せます。\n一度入れた名前は、次から選べます。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
     "gloss": "When I woke up, the same question from 5 customers. Just tap a reply you use often, pick the name and send. You can answer all 5 right away. Names you've entered once can be picked next time. This is 'Cutling', an iPhone keyboard app I'm making on my own.",
     "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
     "history": [
@@ -1624,7 +1624,7 @@
     }
    ],
    "cover": {
-    "ja": "5人から同じ質問、すぐ返信",
+    "ja": "4人から同じ質問、すぐ返信",
     "gloss": "Same question from 5 people, reply right away",
     "written": "r2, read back cold: natural=yes (This is natural telegraphic cover text. If you want more punch: 「5人から同じ質問→すぐ返信」 or 「同じ質問が5人から。返信は一瞬」.)",
     "history": [
