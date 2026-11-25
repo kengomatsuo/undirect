@@ -458,3 +458,14 @@ Business Suite's composer has no collaborator field (checked for a carousel to I
 - 16:xx-17:xx WIB: the live YouTube Stay-Put post now carries the Undirect event link (ct=yt-stayput). The three sale Stories were re-made with links: each frame has a Facebook swipe-up link and an Instagram link sticker ("Get Undirect" / "Get Cutling", ct=story-bf), scheduled Nov 25 20:51, Nov 26 20:21 and Nov 27 21:51 on Instagram and Facebook; the old unlinked ones (20:49, 20:19, 21:49) were deleted. Business Suite's Scheduled stories list reads 4 frames each at 20:51, 20:21 and 21:51 and nothing else.
 - ASG225 (owner: no prices in videos): six YouTube descriptions changed "$X once, no subscription." to "Paid once, no subscription." (dry_W_RdzCI, IKYLF7fyVOE, rX-APrD40l4, i9zHwserlpE, cZRiFnbDDl4, 3fzHl5M9cHk) and read back clean. Prices drawn inside videos: the Undirect and Cutling sample films' end cards ("$1.99 once", "$4.99 once") and the carousel feet (Post.tsx). The Cutling 16:9 YouTube video (rX-APrD40l4, due tonight 23:11) was unscheduled and stays private until a price-free render replaces it; the X Cutling film (Nov 26 11:13) and the Nov 26 Cutling carousel (IG/FB 22:53, TikTok 22:55, Threads 22:57) get swapped for price-free renders a builder is making in the cloud. Films set 2 (Next chapter, × means close) and the new Stay-Put/intro films show no price.
 - Owner, same day: "leave the live ones and the scheduled ones. we're ab testing also." The six YouTube descriptions got their prices back, the Cutling 16:9 is back on schedule for 23:11 WIB (publishAt 2026-11-25T16:11:00Z read back), and every live and scheduled film and carousel keeps its price as the A side. Only future renders drop the price: undirect-promo sources changed (sample films' end cards, carousel feet, pain and stage films); monholt-films-2, monholt-films-3 and the Japanese Cutling cut already showed none.
+
+## Price-free twins (ASG229, 2026-11-25 18:05 WIB)
+
+B side of the price A/B test. Live and scheduled posts keep their prices; nothing was replaced. All in `~/Downloads/Claude/stay-put-posts/no-price/`:
+- Carousels: cutling-carousel-1..4.jpg, undirect-carousel-1..4.jpg.
+- Sample films with sound: cutling-16x9-sfx, cutling-9x16-sfx (+ -small), undirect-16x9-sfx, undirect-9x16-sfx (+ -small); x-cutling-film.mp4 (1280x720, 1.7 MB). End card shows no line.
+- Stage films: undirect-stage-en/ja/id-v2, -en-chill-trap-v5, -en-electro-dreams-v5. End line "Paid once, no subscription" (ja/id translated, not checked by a native speaker).
+- Pain films: pain-films-v4/ (15). End line "Paid once. / No subscription."
+- End-card frames: endcards/ and endcards-sheet.jpg.
+- Sources: undirect-promo 9fa84f9, de329d0, 4dac9cb, f649b67.
+- Other stills in stay-put-posts/ were read by OCR: only the sale Stories and sale cards (bf-*, story-bf-*, x-bf-*, stayput-story-lastday) show a price, and sale posts keep theirs.
