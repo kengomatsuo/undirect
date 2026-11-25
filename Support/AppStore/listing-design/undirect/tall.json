@@ -37,6 +37,34 @@
       "w": 900,
       "y": 650
      }
+    ],
+    "duo-inner": [
+     {
+      "src": "../cap/duo-inner-popup.png",
+      "natural": 2853,
+      "crop": [
+       0,
+       0,
+       2460,
+       1400
+      ],
+      "w": 480,
+      "y": 600
+     }
+    ],
+    "duo-outer": [
+     {
+      "src": "../cap/duo-outer-popup.png",
+      "natural": 1398,
+      "crop": [
+       0,
+       845,
+       1398,
+       1600
+      ],
+      "w": 360,
+      "y": 420
+     }
     ]
    }
   },
@@ -71,6 +99,34 @@
       ],
       "w": 760,
       "y": 330
+     }
+    ],
+    "duo-inner": [
+     {
+      "src": "../cap/duo-inner-popup.png",
+      "natural": 2853,
+      "crop": [
+       380,
+       200,
+       1540,
+       1580
+      ],
+      "w": 480,
+      "y": 290
+     }
+    ],
+    "duo-outer": [
+     {
+      "src": "../cap/duo-outer-popup.png",
+      "natural": 1398,
+      "crop": [
+       0,
+       1040,
+       1398,
+       2000
+      ],
+      "w": 420,
+      "y": 230
      }
     ]
    }
@@ -134,6 +190,48 @@
       "y": 630,
       "z": 3
      }
+    ],
+    "duo-inner": [
+     {
+      "src": "../cap/duo-inner-popup.png",
+      "natural": 2853,
+      "crop": [
+       380,
+       1020,
+       1540,
+       1580
+      ],
+      "w": 500,
+      "y": 290
+     },
+     {
+      "src": "../cap/duo-inner-settings.png",
+      "natural": 2853,
+      "crop": [
+       0,
+       250,
+       960,
+       920
+      ],
+      "w": 440,
+      "y": 500,
+      "x": 60,
+      "z": 3
+     }
+    ],
+    "duo-outer": [
+     {
+      "src": "../cap/duo-outer-settings.png",
+      "natural": 1398,
+      "crop": [
+       0,
+       230,
+       1140,
+       1130
+      ],
+      "w": 420,
+      "y": 260
+     }
     ]
    }
   },
@@ -169,6 +267,34 @@
       "w": 900,
       "y": 340
      }
+    ],
+    "duo-inner": [
+     {
+      "src": "../cap/duo-inner-popup.png",
+      "natural": 2853,
+      "crop": [
+       380,
+       190,
+       2460,
+       1960
+      ],
+      "w": 600,
+      "y": 290
+     }
+    ],
+    "duo-outer": [
+     {
+      "src": "../cap/duo-outer-popup.png",
+      "natural": 1398,
+      "crop": [
+       0,
+       320,
+       1140,
+       830
+      ],
+      "w": 400,
+      "y": 260
+     }
     ]
    }
   },
@@ -203,6 +329,34 @@
       ],
       "w": 900,
       "y": 520
+     }
+    ],
+    "duo-inner": [
+     {
+      "src": "../cap/duo-inner-settings.png",
+      "natural": 2853,
+      "crop": [
+       680,
+       0,
+       2640,
+       1150
+      ],
+      "w": 620,
+      "y": 470
+     }
+    ],
+    "duo-outer": [
+     {
+      "src": "../cap/duo-outer-settings.png",
+      "natural": 1398,
+      "crop": [
+       0,
+       100,
+       1140,
+       1130
+      ],
+      "w": 420,
+      "y": 250
      }
     ]
    }

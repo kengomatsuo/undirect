@@ -19,6 +19,14 @@ DEVICES = {
                    headline=56, floor=34, icon=104, name=30, gap=26, radius=26),
     "ipad": dict(w=1032, h=1376, scale=2, top=120, bottom=96, gutter=96,
                  headline=84, floor=48, icon=150, name=44, gap=40, radius=24),
+    # iPhone Duo, outer screen 1398x2034 and inner screen 2007x2853 (App Store Connect APP_IPHONE_DUO).
+    # Safe zones are the iPhone's 10.5% top and 6.7% bottom of the canvas. The outer screen is
+    # 466x678 CSS, so its headline is smaller than the iPhone's 56 px; frame 1's card is kept short
+    # so the icon and a three-line Arabic or Urdu headline fit above it.
+    "duo-outer": dict(w=466, h=678, scale=3, top=72, bottom=44, gutter=24,
+                      headline=44, floor=26, icon=52, name=20, gap=20, radius=20),
+    "duo-inner": dict(w=669, h=951, scale=3, top=100, bottom=64, gutter=40,
+                      headline=68, floor=40, icon=88, name=28, gap=26, radius=26),
 }
 
 
