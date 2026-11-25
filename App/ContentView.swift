@@ -34,6 +34,13 @@ struct ContentView: View {
                 rules.reload()
                 await status.refresh()
             }
+            #if !os(macOS)
+            // The width changes while the app runs (an iPhone Duo unfolding, iPad Split View); a
+            // sidebar that appears with nothing selected would show Everywhere unmarked.
+            .onChange(of: sizeClass) { _, width in
+                if pane == nil, width != .compact { pane = .rules(.everywhere) }
+            }
+            #endif
             .task { await rules.watch() }
             .task { await status.watch() }
             .sheet(isPresented: $showWelcome) {
