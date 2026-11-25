@@ -5,20 +5,44 @@
  "elevenlabs": "The voice alone did not pull Japan: the English and Indonesian ElevenLabs films drew none. The one post that did spoke Japanese through ElevenLabs, so every film here keeps the same Japanese voice.",
  "go": "Each film goes on TikTok Studio at its time, marked Your brand like the English ones, and is logged in social-posts.md.",
  "posts": [
-  {"key": "1_type_it_once", "name": "Type it once", "film": "type-it-once-ja-9x16.mp4", "cover": "type-it-once-ja-cover.jpg",
-   "jst": "Thu Nov 26 21:17", "wib": "19:17",
-   "why": "The Japanese cut of the Cutling film posted on Nov 25. The address is typed as a Japanese iPhone does it: underlined hiragana, iOS's own guesses in the bar (東京鳥栖, 公園, 高円寺味), then one tap turns the row into kanji. The address and guesses come from a real run of iOS 27.2's Japanese keyboard."},
-  {"key": "2_release_2_0", "name": "What's new in 2.0", "film": "cutling-2-release-ja-9x16.mp4", "cover": "cutling-2-release-ja-cover.jpg",
-   "jst": "Mon Dec 1 21:07", "wib": "19:07",
-   "why": "The 2.0 release film, recorded again on the real 2.0 build in Japanese, with Japanese lines and voice.",
-   "gate": "Goes out only once Cutling 2.0 is on the App Store."},
-  {"key": "3_five_names", "name": "Five names", "film": "five-names-ja-9x16.mp4", "cover": "five-names-ja-cover.jpg",
-   "jst": "Tue Dec 2 21:43", "wib": "19:43",
+  {
+   "key": "1_type_it_once",
+   "name": "Type it once",
+   "film": "type-it-once-ja-9x16.mp4",
+   "cover": "type-it-once-ja-cover.jpg",
+   "jst": "Thu Nov 26 21:17",
+   "wib": "19:17",
+   "why": "The Japanese cut of the Cutling film posted on Nov 25. The address is typed as a Japanese iPhone does it: underlined hiragana, iOS's own guesses in the bar (東京鳥栖, 公園, 高円寺味), then one tap turns the row into kanji. The address and guesses come from a real run of iOS 27.2's Japanese keyboard."
+  },
+  {
+   "key": "2_release_2_0",
+   "name": "What's new in 2.0",
+   "film": "cutling-2-release-ja-9x16.mp4",
+   "cover": "cutling-2-release-ja-cover.jpg",
+   "jst": "Mon Dec 1 21:07",
+   "wib": "19:07",
+   "why": "The 2.0 release film, recorded again on the real 2.0 build in Japanese, with Japanese lines and voice. The date beat types 11月25日, the day it was recorded. The first beat comes from an earlier half-size recording, so it is a little softer than the rest.",
+   "gate": "Goes out only once Cutling 2.0 is on the App Store."
+  },
+  {
+   "key": "3_five_names",
+   "name": "Five names",
+   "film": "five-names-ja-9x16.mp4",
+   "cover": "five-names-ja-cover.jpg",
+   "jst": "Tue Dec 2 21:43",
+   "wib": "19:43",
    "why": "A Japanese pottery shop answers five customers with one saved reply, a different name each time.",
-   "gate": "Goes out only once Cutling 2.0 is on the App Store."},
-  {"key": "4_five_taps", "name": "Five taps", "film": "five-taps-ja-9x16.mp4", "cover": "five-taps-ja-cover.jpg",
-   "jst": "Wed Dec 3 22:11", "wib": "20:11",
+   "gate": "Goes out only once Cutling 2.0 is on the App Store."
+  },
+  {
+   "key": "4_five_taps",
+   "name": "Five taps",
+   "film": "five-taps-ja-9x16.mp4",
+   "cover": "five-taps-ja-cover.jpg",
+   "jst": "Wed Dec 3 22:11",
+   "wib": "20:11",
    "why": "小料理つむぎ answers a table booking with a long, warm reply in five taps.",
-   "gate": "Goes out only once Cutling 2.0 is on the App Store."}
+   "gate": "Goes out only once Cutling 2.0 is on the App Store."
+  }
  ]
 }
