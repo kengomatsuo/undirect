@@ -304,10 +304,11 @@
     if (reduced()) return rest(root);
 
     // Stretched round the words like a rubber band, and let go. It only grows
-    // and shrinks about its centre: the stopped link's real page starts loading
-    // straight away and Safari freezes this page mid-move until it is replaced,
-    // and a frozen frame must still sit square round the link.
-    band.animate({ transform: ["scale(1.16)", "none"], opacity: [0, 1] }, { ...S.bounce, fill: "both" });
+    // and shrinks about its centre, and is whole from its first frame: the
+    // stopped link's real page starts loading straight away and Safari freezes
+    // this page mid-move until it is replaced, often within a tenth of a
+    // second, and a frozen frame must still show the band square and plain.
+    band.animate({ transform: ["scale(1.16)", "none"] }, { ...S.bounce, fill: "both" });
     badge.animate({ scale: [0, 1] }, { ...S.bounce, delay: 120, fill: "both" });
     root.host.animate({ opacity: [1, 0] }, { ...S.small, delay: 760, fill: "forwards" });
     done(root, 1150);
