@@ -13,5 +13,6 @@
   .bio { position: absolute; left: 0; right: 0; top: 1458px; text-align: center; font: 600 38px/1 -apple-system, system-ui; opacity: .9 }
 </style>
 <body><img src="../../sale-undirect-ig.png"><div class="pill"></div><div class="bio">link in bio</div>
-<script>document.querySelector('.pill').textContent = 'BLACK FRIDAY · ' + (new URLSearchParams(location.search).get('label') || 'LAST DAY');</script>
+<script>const app=new URLSearchParams(location.search).get('app'); if(app==='cutling'){document.querySelector('img').src='../../sale-cutling-ig.png'; document.body.style.background='linear-gradient(#0d4f3f, #17876a 60%, #0f5a47)';}
+document.querySelector('.pill').textContent = 'BLACK FRIDAY · ' + (new URLSearchParams(location.search).get('label') || 'LAST DAY');</script>
 </body>

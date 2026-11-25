@@ -438,3 +438,16 @@ The owner wrote these himself after rejecting drafted versions as bloat; schedul
 | 2026-11-26 20:13 | Black Friday sale is tomorrow, Undirect: Redirect Pop-up blocker will be $0.99, and Cutling Clipboard Keyboard will be $2.99 for a limited time. | x-bf-in-1-day.png |
 
 The drafted 2-days and Nov 27 posts in social/stay-put/posts.json were not scheduled; the old Nov 27 21:45 sale post (#14) is still in X's schedule.
+
+### Stay-Put and Black Friday countdown on every platform (ASG213, owner 2026-11-25 "insta tiktok youtube threads????")
+
+Words: the owner's own two posts; the 2-days and sale-day lines are his "tomorrow" sentence with the day changed. Pictures in ~/Downloads/Claude/stay-put-posts/ (sale cards rendered from social/stay-put/sale/countdown.html and story.html; story.html now takes ?app=cutling). Each row read back from that platform's own scheduled list.
+
+| WIB | X | Facebook feed | IG + FB Stories | Threads | TikTok (photo, Your brand) | YouTube post | Instagram feed (instagram.com, collab @kenneth_j.fang) |
+|---|---|---|---|---|---|---|---|
+| Stay-Put, Nov 25 | 15:13 | 15:19 | 15:23 | 15:27 | 15:35 | 15:30 | 15:19, posted live from this session |
+| 2 days, Nov 25 | 20:43 | 20:47 | 20:49 | 20:53 | 20:55 | 20:45 | 20:47, live |
+| 1 day, Nov 26 | 20:13 | 20:17 | 20:19 | 20:23 | 20:25 | 20:15 | 20:17, live |
+| Sale day, Nov 27 | 21:43 (old 21:45 list post deleted) | 21:47 | 21:49 | 21:53 | 21:55 | 21:45 | 21:47, live |
+
+Business Suite's composer has no collaborator field (checked for a carousel to Instagram only), and instagram.com cannot schedule, so the Instagram feed posts go out live from session undirect-c5 at their times; if that session is gone, they need posting by hand. TikTok and YouTube use 5- and 15-minute steps. Threads also holds two unscheduled drafts of the 2-days text left by a dropped connection; they do not post.
