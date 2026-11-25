@@ -1,4 +1,4 @@
-One X reply sitting for @monholtco (card ASG212, started by launchd from Support/social/x-reply-sitting.sh).
+One X reply sitting for @monholtco (card ASG212, started by launchd from Support/social/reply-sitting.sh x).
 
 Goal: @monholtco stays in front of indie Apple, Mac and iOS makers by replying in their fresh threads, so its reach and followers grow.
 

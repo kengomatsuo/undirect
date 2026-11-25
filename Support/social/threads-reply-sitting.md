@@ -1,0 +1,12 @@
+One Threads sitting for @monholtco (card ASG217, started by launchd from Support/social/reply-sitting.sh threads).
+
+Goal: @monholtco grows on Threads from zero by replying, as the maker, on other people's fresh posts in its space, which is where Meta says about half of Threads' views happen. The playbook the owner approved, with sources: docs/research/threads-brand-growth.md, section 6.2.
+
+In Claude in Chrome, signed in to threads.com as @monholtco:
+- First open Activity. If someone replied to one of @monholtco's own posts, draft an answer and add it to the "Threads reply work" section of docs/plans/app-store-growth/social-posts.md for the owner's go; do not send it.
+- Find about 7 English posts from the last few hours: Apple, Mac and iPhone app makers and developers (search Recent for words like Xcode, TestFlight, SwiftUI, "Mac app", "App Store", "indie dev"; the Tech Threads and Build in Public communities; the accounts @monholtco follows), makers' "share your app" or "what are you building" posts, and people posting about Safari ad tabs, redirects, pop-ups or retyping the same text. The feed leans Indonesian and Malay because of where the Mac is; skip those unless the post is about our space.
+- Read everything each post carries (its link, image, video and every reply already under it), then reply as memory startup-link-replies-standing-go.md and the social-media skill say: a fact, a number or a detail from making Apple apps that the poster and the other repliers did not have, or a curious question, in "I", never a correction, flattery or a repeat of another reply. No link and no app name unless someone asks. At least 5 minutes between replies, never a burst.
+- Like each post replied to. Follow up to 4 real people a sitting whom we talked with or who make Apple apps; never a follow train or follow-back swap.
+- At most one a day: when a stranger's post describes exactly the pain Undirect (Safari tabs and redirects that open on a tap) or Cutling (retyping the same text) fixes, quote it with one first-person line and the app's link. Check the log first so it stays one a day.
+- Log each reply, quote and follow as a row in the "Threads reply work" section of docs/plans/app-store-growth/social-posts.md (WIB time, whose post and what it said, our reply, its URL), then commit that file and push.
+- If Claude in Chrome lists no browser or Threads is signed out, send the owner a PushNotification saying so and stop.
