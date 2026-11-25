@@ -136,3 +136,7 @@ The owner: "TYPE NAME THEN TAP REPLY." The films will show the name typed first 
 - post 4: caption 「先にお客さんの名前を打って、あいさつ・予約の案内・締めの言葉をタップ。人数は選ぶだけ。…」
 
 The drawn films (c-names.js, c-five.js) still pick the name on Cutling's fill screen; each post's `film_dependency` in copy-ja.json says what they must draw instead. Five taps' count lines (5タップ) hold only if the new film still has five taps.
+
+## Five names has four customers
+
+The owner asked for four customers in the Japanese Five names. Every post 3 count now says four: the opening headline 「お客さま4人から / 同じ質問。」, voice 「四人から、同じ質問です。」 (say: よにん), the caption 「…お客さん4人から同じ質問。…4人とも返し終わりました。」 and the cover 「4人から同じ質問、すぐ返信」. The fifth customer (原田 千夏) is dropped from the people and from the names offered. Only the count changed; the wording around it is the read-back line's own.

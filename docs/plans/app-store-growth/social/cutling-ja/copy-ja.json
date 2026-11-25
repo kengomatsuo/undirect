@@ -1346,10 +1346,10 @@
    }
   },
   "3_five_names": {
-   "title": "Five names",
+   "title": "Five names (four customers in the Japanese film)",
    "posts": "Dec 2",
    "film": "~/Repositories/undirect-promo/monholt-films-2/out/c-names-9x16.mp4",
-   "world": "The same owner as the 2.0 takes: a pottery class in Mitaka that also sells online; 9 AM, five customers asked overnight whether their order shipped.",
+   "world": "The same owner as the 2.0 takes: a pottery class in Mitaka that also sells online; 9 AM, four customers asked overnight whether their order shipped.",
    "people": [
     {
      "name": {
@@ -1433,26 +1433,6 @@
       "written": "r1, read back cold: natural=yes (Fine. 「お皿ってもう発送されてますか？🙂」 is a touch more everyday, but the original is something people write.)",
       "source": "monholt-films-2/src/films/c-names.js PEOPLE[3].ask"
      }
-    },
-    {
-     "name": {
-      "ja": "原田 千夏",
-      "source": "PEOPLE[4].name (the chat header and inbox row)",
-      "gloss": "contact, family name first as a Japanese iPhone shows it",
-      "written": "fixed: Every-app ja contacts (Cutling g-words.json seed.contacts)"
-     },
-     "time": {
-      "ja": "8:55",
-      "source": "PEOPLE[4].time",
-      "gloss": "24-hour time as a ja_JP iPhone shows it, no AM",
-      "written": "data"
-     },
-     "ask": {
-      "ja": "急かしてすみません、もう発送されましたか？",
-      "gloss": "Sorry to rush you, has it been shipped yet?",
-      "written": "r1, read back cold: natural=yes (Natural. 「急かすようですみません、」 is the more common softener, but either works.)",
-      "source": "monholt-films-2/src/films/c-names.js PEOPLE[4].ask"
-     }
     }
    ],
    "reply": {
@@ -1478,7 +1458,6 @@
      "小林",
      "松本",
      "岡田",
-     "原田",
      "ペースト"
     ],
     "type_with_keyboard": "いつものキーボードで入力",
@@ -1534,14 +1513,17 @@
    },
    "overlay": {
     "open": {
-     "ja": "お客さま5人から同じ質問。",
-     "gloss": "The same question from 5 customers.",
+     "ja": "お客さま4人から同じ質問。",
+     "gloss": "The same question from 4 customers.",
      "written": "r1, read back cold: natural=yes",
      "lines": [
-      "お客さま5人から",
+      "お客さま4人から",
       "同じ質問。"
      ],
-     "source": "c-names.js captions [0, G.push[0]]"
+     "source": "c-names.js captions [0, G.push[0]]",
+     "history": [
+      "Four customers, not five (owner's ask, 2026-11-25): the count changed from 5 to 4, the fifth customer (原田 千夏) dropped; the wording around it is the read-back line's own."
+     ]
     },
     "payoff": {
      "ja": "文面はひとつ。名前は、ひとりずつ。",
@@ -1570,11 +1552,15 @@
    },
    "voice": [
     {
-     "ja": "五人から、同じ質問です。",
+     "ja": "四人から、同じ質問です。",
      "gloss": "From five people, the same question.",
      "written": "r1, read back cold: natural=yes (Make sure TTS reads 五人 as ごにん.)",
-     "beat": "0.0 to 2.5 s, over the inbox of five unread",
-     "say": "ごにんから、同じ質問です。"
+     "beat": "0.0 to 2.5 s, over the inbox of four unread",
+     "say": "よにんから、同じ質問です。",
+     "history": [
+      "Four customers, not five (owner's ask, 2026-11-25): the count changed from 5 to 4, the fifth customer (原田 千夏) dropped; the wording around it is the read-back line's own."
+     ],
+     "reading": "四人 is read よにん; the say text spells it so the voice cannot say しにん or よんにん"
     },
     {
      "ja": "名前を打って、タップして、送信。次も、名前、タップ、送信。",
@@ -1611,12 +1597,13 @@
    ],
    "voice_decision": "Voice on, four short lines at the captions' moments; the taps between stay on the music. The film has few words on screen, and the one post that reached Japan carried a Japanese voice.",
    "caption": {
-    "ja": "朝起きたら、お客さん5人から同じ質問。\n名前を打って、定型文をタップして、送るだけ。コーヒーが冷める前に、5人とも返し終わりました。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
-    "gloss": "When I woke up, the same question from 5 customers. / Just type the name, tap a saved reply, send. Before my coffee got cold, I'd finished replying to all 5. / It's 'Cutling', an iPhone keyboard app I'm making alone.",
+    "ja": "朝起きたら、お客さん4人から同じ質問。\n名前を打って、定型文をタップして、送るだけ。コーヒーが冷める前に、4人とも返し終わりました。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
+    "gloss": "When I woke up, the same question from 4 customers. / Just type the name, tap a saved reply, send. Before my coffee got cold, I'd finished replying to all 4. / It's 'Cutling', an iPhone keyboard app I'm making alone.",
     "written": "r2 (定型文 for 返信, as the r1 reader asked), read again cold: natural=yes; order clear: Yes. 「名前を打って、定型文をタップして、送る」 reads as a sequence even without 「先に」.",
     "history": [
      "replaced (it said pick the name): 朝起きたら、お客さん5人から同じ質問。\nよく使う返信をタップして、名前を選んで送るだけ。5人分すぐ返せます。\n一度入れた名前は、次から選べます。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
-     "r1 朝起きたら、お客さん5人から同じ質問。\n名前を打って、返信をタップして、送るだけ。コーヒーが冷める前に、5人とも返し終わりました。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。: 返信をタップ has the same ambiguity as above, so 定型文をタップして is clearer. Optional: naming the question makes it more vivid, as in 「朝起きたら、お客さん5人から『もう発送されましたか？』」. コーヒーが冷める前に and the closing self-introduction sound like a real indie developer's post."
+     "r1 朝起きたら、お客さん5人から同じ質問。\n名前を打って、返信をタップして、送るだけ。コーヒーが冷める前に、5人とも返し終わりました。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。: 返信をタップ has the same ambiguity as above, so 定型文をタップして is clearer. Optional: naming the question makes it more vivid, as in 「朝起きたら、お客さん5人から『もう発送されましたか？』」. コーヒーが冷める前に and the closing self-introduction sound like a real indie developer's post.",
+     "Four customers, not five (owner's ask, 2026-11-25): the count changed from 5 to 4, the fifth customer (原田 千夏) dropped; the wording around it is the read-back line's own."
     ],
     "typography": "caption: no space between Latin and Japanese",
     "why": "Owner, word for word: \"TYPE NAME THEN TAP REPLY.\" The name is typed first in Messages on the ordinary Japanese keyboard, the globe switches to Cutling, the saved reply is tapped, and the typed name fills the reply's first blank (Cutling's own ja release notes: 先に名前を入力してからカットリングをタップする使い方もできます)."
@@ -1644,14 +1631,16 @@
     }
    ],
    "cover": {
-    "ja": "5人から同じ質問、すぐ返信",
-    "gloss": "Same question from 5 people, reply right away",
+    "ja": "4人から同じ質問、すぐ返信",
+    "gloss": "Same question from 4 people, reply right away",
     "written": "r2, read back cold: natural=yes (This is natural telegraphic cover text. If you want more punch: 「5人から同じ質問→すぐ返信」 or 「同じ質問が5人から。返信は一瞬」.)",
     "history": [
-     "r1 \"5人の同じ質問に、すぐ返信\": 「5人の同じ質問に」 is slightly clumsy, since natives say the question came from five people rather than belonged to them. Better: 「5人から同じ質問→すぐ返信」 or 「同じ質問5人分、一瞬で返信」."
+     "r1 \"5人の同じ質問に、すぐ返信\": 「5人の同じ質問に」 is slightly clumsy, since natives say the question came from five people rather than belonged to them. Better: 「5人から同じ質問→すぐ返信」 or 「同じ質問5人分、一瞬で返信」.",
+     "Four customers, not five (owner's ask, 2026-11-25): the count changed from 5 to 4, the fifth customer (原田 千夏) dropped; the wording around it is the read-back line's own."
     ]
    },
-   "film_dependency": "c-names.js draws each round as: chat opens, the name is picked on Cutling's fill screen. For these lines it must draw: the name typed on the Japanese keyboard in the message box, the globe to Cutling, the tap on 発送連絡, the reply filled, send. The open, payoff and end lines need no change."
+   "film_dependency": "c-names.js draws each round as: chat opens, the name is picked on Cutling's fill screen. For these lines it must draw: the name typed on the Japanese keyboard in the message box, the globe to Cutling, the tap on 発送連絡, the reply filled, send. The open, payoff and end lines need no change.",
+   "four_customers": "Four customers, not five (owner's ask, 2026-11-25): the count changed from 5 to 4, the fifth customer (原田 千夏) dropped; the wording around it is the read-back line's own."
   },
   "4_five_taps": {
    "title": "Five taps",
