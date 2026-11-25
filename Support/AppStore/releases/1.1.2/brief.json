@@ -1,0 +1,25 @@
+{
+  "key": "whatsNew 1.1.2",
+  "surface": "App Store product page, What's New for Undirect 1.1.2; the first two or three lines show before 'more'. Two lines separated by a newline, as in 1.1.1.",
+  "reader": "A Safari user with an iPhone Duo, or an Undirect owner who just got one. Same register as the locale's 1.1.1 whatsNew.",
+  "says": [
+    "Line 1: On iPhone Duo the app uses the whole screen closed and open; with the phone open, the sidebar sits beside the person's rules. Undirect's menu in Safari (the one from its button in Safari) opens on the large inner screen too, and stays open if the phone is folded while it is up.",
+    "Line 2 (the fix): after unfolding, the sidebar now marks the list the person is looking at (before, nothing was marked)."
+  ],
+  "facts_checked": "iPhone Duo simulator, iOS 27.2, 2026-11-25: ContentView.swift onChange(sizeClass) selects Everywhere on unfold; commit 1d3582a3.",
+  "fixed_words": [
+    "iPhone Duo",
+    "Undirect",
+    "Safari",
+    "the locale's 1.1.0 wording for Undirect's menu in Safari",
+    "the app's word for rules (App/Localizable.xcstrings 'No rules here')"
+  ],
+  "avoid": [
+    "naming any country",
+    "the word sheet or popover",
+    "the same word for menu and list where the language has one word for both",
+    "dashes as punctuation"
+  ],
+  "budget": "4,000 characters enforced; aim near 1.1.1's length (about 300 English characters).",
+  "rule": "No locale is the source the others are translated from. Each locale is written from these points, in its own word order and in the register of the copy already on that page."
+}
