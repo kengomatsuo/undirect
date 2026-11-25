@@ -469,3 +469,4 @@ B side of the price A/B test. Live and scheduled posts keep their prices; nothin
 - End-card frames: endcards/ and endcards-sheet.jpg.
 - Sources: undirect-promo 9fa84f9, de329d0, 4dac9cb, f649b67.
 - Other stills in stay-put-posts/ were read by OCR: only the sale Stories and sale cards (bf-*, story-bf-*, x-bf-*, stayput-story-lastday) show a price, and sale posts keep theirs.
+- ASG231 (owner, 18:10): "Paid once, no subscription" is still pricing, so it came off too. Pain and stage end cards now show icon, name, "Safari on iPhone, iPad and Mac" (id and ja lines not yet read by a native speaker) and the App Store badge, as rivals end (docs/research/promo-video-research.md). End tails re-rendered and spliced in no-price/; sound untouched. Source undirect-promo 1bf0e4d. Sample films and carousels already had no payment line.
