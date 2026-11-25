@@ -14,7 +14,8 @@
     site: (name) => (local ? origin(name) : `https://${name}.example`),
     // ?landed=here sends the redirect to this site's own stand-in page, so a recording can show the page it ends on.
     // ?landed=alert sends it to the fake virus alert stand-in, the page the films show a hijack ending on.
-    landed: () => (landedName === "alert" ? (local ? origin("prize-hub") : location.origin) + "/demo/landed/alert/" : local ? origin(landedName) + "/demo/landed/" : landedName === "here" ? `${location.origin}/demo/landed/` : `https://${landedName}.example/win`),
+    // &host=name serves the local alert stand-in from another host, one no earlier take has left a block rule for.
+    landed: () => (landedName === "alert" ? (local ? origin(new URLSearchParams(location.search).get("host") || "prize-hub") : location.origin) + "/demo/landed/alert/" : local ? origin(landedName) + "/demo/landed/" : landedName === "here" ? `${location.origin}/demo/landed/` : `https://${landedName}.example/win`),
     loadAd(name, dest) {
       const s = document.createElement("script");
       s.src = local
