@@ -13,7 +13,8 @@
     local,
     site: (name) => (local ? origin(name) : `https://${name}.example`),
     // ?landed=here sends the redirect to this site's own stand-in page, so a recording can show the page it ends on.
-    landed: () => (local ? origin(landedName) + "/demo/landed/" : landedName === "here" ? `${location.origin}/demo/landed/` : `https://${landedName}.example/win`),
+    // ?landed=alert sends it to the fake virus alert stand-in, the page the films show a hijack ending on.
+    landed: () => (landedName === "alert" ? (local ? origin("prize-hub") : location.origin) + "/demo/landed/alert/" : local ? origin(landedName) + "/demo/landed/" : landedName === "here" ? `${location.origin}/demo/landed/` : `https://${landedName}.example/win`),
     loadAd(name, dest) {
       const s = document.createElement("script");
       s.src = local

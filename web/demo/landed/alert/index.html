@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Device Security Center</title>
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; margin: 0; }
+  body { min-height: 100vh; position: relative; background: #fff; color: #1c1c1e; font: 15px/21px -apple-system, "SF Pro Text", system-ui, sans-serif; }
+  header { position: relative; height: 64px; background: #1c1c1e; color: #fff; }
+  .shield { position: absolute; left: 18px; top: 20px; width: 22px; height: 26px; }
+  header h2 { position: absolute; left: 50px; top: 22px; font-size: 17px; font-weight: 600; line-height: 22px; }
+  header time { position: absolute; right: 18px; top: 25px; font-size: 13px; line-height: 18px; color: #c7c7cc; }
+  main { padding: 113px 18px 0; }
+  h1 { font-size: 26px; line-height: 32px; font-weight: 700; color: #d70015; }
+  .blink { animation: blink 1s steps(1, end) infinite; }
+  @keyframes blink { 0% { opacity: 1; } 50% { opacity: .35; } }
+  p { margin-top: 14px; }
+  .count { margin-top: 14px; font-weight: 600; color: #d70015; }
+  .btn { display: block; width: 100%; height: 52px; margin-top: 22px; border: 0; border-radius: 12px; background: #007aff; color: #fff; font: 600 17px/52px -apple-system, "SF Pro Text", system-ui, sans-serif; }
+  footer { position: absolute; left: 18px; right: 18px; bottom: 24px; font-size: 11px; line-height: 11px; color: #8e8e93; }
+</style>
+</head>
+<body>
+<header>
+  <svg class="shield" viewBox="0 0 22 26" aria-hidden="true"><path d="M11 1.5 20.5 5v9c0 5-4 8.5-9.5 10.5C5.500 22.500 1.500 19 1.500 14V5z" fill="none" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+  <h2>Device Security Center</h2>
+  <time>Today</time>
+</header>
+<main>
+  <h1><span class="blink">WARNING!</span> Your iPhone is damaged by 13 viruses!</h1>
+  <p>We found 13 viruses on this iPhone while you were reading. Tap Remove Virus to clean it now.</p>
+  <p class="count" id="count">1 minute and 19 seconds</p>
+  <button class="btn" type="button">Remove Virus</button>
+</main>
+<footer>Stand-in made for the Undirect demo. Not a real alert.</footer>
+<script>
+  // Counts down once a second, as these pages do, and stops at zero.
+  let left = 79;
+  const count = document.getElementById("count");
+  const words = (n) => (n === 1 ? "1 second" : n + " seconds");
+  const show = () => {
+    const m = Math.floor(left / 60), s = left % 60;
+    count.textContent = m ? (m === 1 ? "1 minute and " : m + " minutes and ") + words(s) : words(s);
+  };
+  setInterval(() => { if (left > 0) { left--; show(); } }, 1000);
+</script>
+</body>
+</html>
