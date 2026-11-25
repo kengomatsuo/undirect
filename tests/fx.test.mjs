@@ -1,8 +1,8 @@
-// The two calculations in content/fx.js that no picture can check: the spring
+// The calculations in content/fx.js that no picture can check: the spring
 // easings every move rides on, and the way a pane is cut into shards.
 //   bun tests/fx.test.mjs
 await import("../Extension/Resources/content/fx.js");
-const { spring, fracture } = globalThis.UndirectFX;
+const { spring, fracture, around } = globalThis.UndirectFX;
 
 // The jitter is random, so each run names its seed and can be replayed with SEED=<n>.
 const seed = Number(process.env.SEED ?? Date.now() % 100000);
@@ -58,6 +58,16 @@ for (const [name, r, x, y] of [
   ok(`${name}: between 20 and 100 shards`, shards.length >= 20 && shards.length <= 100, String(shards.length));
   ok(`${name}: each shard knows how far it is from the press`, shards.every((s) => s.dist >= 0 && Number.isFinite(s.dist)));
 }
+
+// The snap band goes round a link's words, not its box: a card-wide link with
+// two short lines of text gets a band round those lines.
+const R = (left, top, right, bottom) => ({ left, top, right, bottom, width: right - left, height: bottom - top });
+const card = R(16, 400, 374, 520);
+const lines = around([R(32, 420, 150, 444), R(32, 450, 210, 470)], card);
+ok("a card link's band wraps its two lines", lines.left === 32 && lines.top === 420 && lines.right === 210 && lines.bottom === 470,
+   JSON.stringify(lines));
+ok("text spilling past the link is cut at the link", around([R(0, 410, 500, 430)], card).right === 374);
+ok("a link with no words keeps its own box", around([], card) === card && around([R(40, 420, 40, 440)], card) === card);
 
 console.log(`\n${passed} passed, ${failed} failed`);
 process.exit(failed ? 1 : 0);

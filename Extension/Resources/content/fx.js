@@ -259,9 +259,40 @@
     shatter({ rect: { left: 0, top: 0, right: innerWidth, bottom: innerHeight }, x, y });
   }
 
+  // The band goes round the link's words, not its box: a link that is a whole
+  // card is mostly padding, and a band round the card reads as the card. The
+  // line boxes of its visible text are joined and kept inside the link; a link
+  // with no words, an image, keeps its own box.
+  function words(el) {
+    const box = el.getBoundingClientRect();
+    const lines = [];
+    const walk = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const range = document.createRange();
+    for (let n = walk.nextNode(); n && lines.length < 200; n = walk.nextNode()) {
+      if (!n.data.trim()) continue;
+      range.selectNodeContents(n);
+      lines.push(...range.getClientRects());
+    }
+    return around(lines, box);
+  }
+
+  function around(lines, box) {
+    let left = Infinity, top = Infinity, right = -Infinity, bottom = -Infinity;
+    for (const r of lines) {
+      if (!r.width || !r.height) continue;
+      left = Math.min(left, Math.max(r.left, box.left));
+      top = Math.min(top, Math.max(r.top, box.top));
+      right = Math.max(right, Math.min(r.right, box.right));
+      bottom = Math.max(bottom, Math.min(r.bottom, box.bottom));
+    }
+    if (!(right > left && bottom > top)) return box;
+    return { left, top, right, bottom, width: right - left, height: bottom - top };
+  }
+
   function snap({ el }) {
-    const rect = el?.getBoundingClientRect?.();
-    if (!rect || !rect.width) return;
+    if (!el?.getBoundingClientRect) return;
+    const rect = words(el);
+    if (!rect.width) return;
     const root = layer();
     const band = piece(root,
       `left:${rect.left - 6}px;top:${rect.top - 4}px;width:${rect.width + 12}px;height:${rect.height + 8}px;border-radius:10px;` +
@@ -272,8 +303,11 @@
     mark(badge, 160);
     if (reduced()) return rest(root);
 
-    // Pulled off to one side like a rubber band, and let go.
-    band.animate({ transform: ["translate(18px,-12px) rotate(5deg) scale(1.14)", "none"], opacity: [0, 1] }, { ...S.bounce, fill: "both" });
+    // Stretched round the words like a rubber band, and let go. It only grows
+    // and shrinks about its centre: the stopped link's real page starts loading
+    // straight away and Safari freezes this page mid-move until it is replaced,
+    // and a frozen frame must still sit square round the link.
+    band.animate({ transform: ["scale(1.16)", "none"], opacity: [0, 1] }, { ...S.bounce, fill: "both" });
     badge.animate({ scale: [0, 1] }, { ...S.bounce, delay: 120, fill: "both" });
     root.host.animate({ opacity: [1, 0] }, { ...S.small, delay: 760, fill: "forwards" });
     done(root, 1150);
@@ -341,6 +375,6 @@
 
   // The note in guard.js is made of the same glass and moves on the same springs.
   globalThis.UndirectFX = {
-    play, names: Object.keys(EFFECTS), spring, springs: S, fracture, reduced, mark, pop, glass: GLASS, IN, OUT,
+    play, names: Object.keys(EFFECTS), spring, springs: S, fracture, around, reduced, mark, pop, glass: GLASS, IN, OUT,
   };
 })();
