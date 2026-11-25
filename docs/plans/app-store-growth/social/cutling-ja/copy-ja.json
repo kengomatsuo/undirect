@@ -40,320 +40,502 @@
    },
    "ime_typing": {
     "address": {
-     "ja": "東京都杉並区高円寺南3−8−11",
+     "ja": "東京都杉並区高円寺南3-8-11",
      "gloss": "3-8-11 Koenji-minami, Suginami, Tokyo (block 3, lot 8, building 11)",
      "reading": "とうきょうと すぎなみく こうえんじみなみ 3-8-11",
      "romaji_typed": "toukyouto suginamiku kouennjiminami 3-8-11",
      "why": "Invented in a real, ordinary part of Tokyo (Koenji-minami has blocks 1 to 5). Chosen because iOS converts it right with no help: of four addresses typed, 練馬区豊玉北 came out 富玉北 and 世田谷区経堂 came out 共同, which a typist would have to fix.",
-     "dashes": "iOS commits the hyphens as U+2212 (−) inside the address, as typed; draw exactly that character.",
-     "fit": "about 13 full-width units: at the row's 150 px font it is wider than the 1878 px the row has, so the row font comes down to about 140 px (world.ts rowTexture measures it)."
+     "fit": "about 13 full-width units: at the row's 150 px font it is wider than the 1878 px the row has, so the row font comes down to about 140 px (world.ts rowTexture measures it). The hiragana reading is longer (24 kana and 6 digits): while it is being typed the row needs about 105 px, or the reading scrolls."
     },
-    "source": "Read from iOS 27.2 itself on 2026-11-25: the device queue's iPad simulator (iPad Air 13-inch M4) set to the Japanese Romaji keyboard, language ja, region ja_JP; Safari on a page that logs every compositionupdate and compositionend; AXe typing the romaji as hardware key presses, one kana at a time, 0.7 s apart (ticket t1795592066732-ad61, its log in ~/Shared/device-queue/ios-sim/t1795592066732-ad61/out/ime.jsonl). iOS's Japanese live conversion (ライブ変換, on by default) is what turns the reading into kanji while typing. An iPhone run of the same address is queued (t1795592525374-4c97) to confirm and to show the iPhone's underline.",
-    "how_to_draw": "Each state is committed text (plain ink) followed by marked text (still being typed: drawn with iOS's thin underline under it, the caret after it). A row plays the states in order over its typing time, then ends on the committed address. 'states_kana' is what a person typing kana by kana sees (the film's rows); 'states_keystrokes' adds the moments a romaji typist sees a half-typed letter (t, ky, n; at すg the whole line even falls back to hiragana) and is there for reference. Real artifacts to keep: 東京都 is briefly 東京鳥栖 (a city in Saga) at す, 公 and 公園 come before 高円寺, 高円寺味 comes before 高円寺南, a hyphen is ー (long vowel) until the next digit makes it −, and 東京都, 杉並区 and 高円寺南 are committed by iOS on its own while the numbers are typed.",
-    "states_kana": [
-     {
-      "committed": "",
-      "marked": "と"
+    "source": "Read from iOS 27.2 itself on 2026-11-25 through the device queue: Safari on a page that logs every compositionupdate and compositionend, the Japanese Romaji keyboard only, language ja, region ja_JP, AXe typing the romaji one kana at a time. iPhone: the pool iPhone 18 Pro Max, ticket t1795592525374-4c97 (a screenshot after every kana: ~/Shared/device-queue/ios-sim/t1795592525374-4c97/out/F-NN.png). iPad: the pool iPad Air 13-inch, ticket t1795592066732-ad61.",
+    "iphone": {
+     "what_it_does": "On the iPhone, with the Japanese keyboard on screen, the typed reading stays in hiragana, underlined in blue, growing kana by kana, while the candidate bar above the keys guesses the kanji; one tap on the bar's first candidate turns the whole underlined reading into the address. The rows of the film: hiragana first, then the kanji in one change.",
+     "states_kana": [
+      {
+       "committed": "",
+       "marked": "と",
+       "candidates": [
+        "と",
+        "都",
+        "と言うか",
+        "と言うと",
+        "ト",
+        "というと"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とう",
+       "candidates": [
+        "党",
+        "塔",
+        "とう",
+        "登",
+        "トウ",
+        "問う",
+        "父",
+        "糖"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょ",
+       "candidates": [
+        "東京から",
+        "東京",
+        "🗼",
+        "東京都",
+        "TOKYO"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょう",
+       "candidates": [
+        "東京",
+        "🗼",
+        "東京から",
+        "TOKYO",
+        "東京都"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうと",
+       "candidates": [
+        "東京都",
+        "東京と",
+        "東京都稲城市",
+        "東京都青梅市"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとす",
+       "candidates": [
+        "東京都墨田区",
+        "東京都杉並区",
+        "東京鳥栖"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎ",
+       "candidates": [
+        "東京都杉並区",
+        "東京都すぎ",
+        "東京都過ぎ"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎな",
+       "candidates": [
+        "東京都杉並区",
+        "東京都すぎな",
+        "東京都過ぎな"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみ",
+       "candidates": [
+        "東京都杉並区",
+        "東京都杉並",
+        "東京と杉並"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみく",
+       "candidates": [
+        "東京都杉並区",
+        "東京と杉並区",
+        "当京都杉並区"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこ",
+       "candidates": [
+        "東京都杉並区こ",
+        "東京都杉並区子"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこう",
+       "candidates": [
+        "東京都杉並区公",
+        "東京都杉並区校"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえ",
+       "candidates": [
+        "東京都杉並区公園",
+        "東京都杉並区公演"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえん",
+       "candidates": [
+        "東京都杉並区公園",
+        "東京都杉並区公演"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじ",
+       "candidates": [
+        "東京都杉並区高円寺",
+        "東京と杉並区高円寺"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみ",
+       "candidates": [
+        "東京都杉並区高円寺味"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみな",
+       "candidates": [
+        "東京都杉並区高円寺南"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみなみ",
+       "candidates": [
+        "東京都杉並区高円寺南",
+        "東京と杉並区高円寺南"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみなみ3",
+       "candidates": [
+        "東京都杉並区高円寺南3"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみなみ3-",
+       "candidates": [
+        "東京都杉並区高円寺南3-"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみなみ3-8",
+       "candidates": [
+        "東京都杉並区高円寺南3-8"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみなみ3-8-",
+       "candidates": [
+        "東京都杉並区高円寺南3-8-"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみなみ3-8-1",
+       "candidates": [
+        "東京都杉並区高円寺南3-8-1"
+       ]
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすぎなみくこうえんじみなみ3-8-11",
+       "candidates": [
+        "東京都杉並区高円寺南3-8-11"
+       ]
+      },
+      {
+       "committed": "東京都杉並区高円寺南3-8-11",
+       "marked": "",
+       "candidates": [],
+       "action": "the first candidate tapped: the whole row turns into kanji at once"
+      }
+     ],
+     "how_to_draw": "committed text plain ink; marked text with a thin blue underline (iOS's #0a84ff on light) and the caret after it; 'candidates' is the bar above the keys at that moment, if the film shows it (keep its real oddities: 🗼 for とうきょう, 東京都稲城市 and 東京都墨田区 before 杉並区, 東京鳥栖, 当京都杉並区, 公園 and 公演 before 高円寺, 高円寺味). The last state is the tap on the first candidate."
+    },
+    "ipad_live_conversion": {
+     "what_it_does": "The iPad, typing from a hardware keyboard, converts as it types (ライブ変換): kanji appear under the underline while typing, and iOS commits 東京都, 杉並区 and 高円寺南 on its own while the numbers are typed. An iPhone with ライブ変換 switched on in Settings behaves this way; the simulator's iPhone, as set, did not. Use these states if the rows should turn into kanji keystroke by keystroke instead of by one tap.",
+     "states_kana": [
+      {
+       "committed": "",
+       "marked": "と"
+      },
+      {
+       "committed": "",
+       "marked": "とう"
+      },
+      {
+       "committed": "",
+       "marked": "とうきょ"
+      },
+      {
+       "committed": "",
+       "marked": "東京"
+      },
+      {
+       "committed": "",
+       "marked": "東京都"
+      },
+      {
+       "committed": "",
+       "marked": "東京鳥栖"
+      },
+      {
+       "committed": "",
+       "marked": "東京都すぎ"
+      },
+      {
+       "committed": "",
+       "marked": "東京都すぎな"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区こ"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区公"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区こうえ"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区公園"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺味"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺味な"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺南"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺南3"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺南3ー"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺南3−8"
+      },
+      {
+       "committed": "東京都",
+       "marked": "杉並区高円寺南3−8ー"
+      },
+      {
+       "committed": "東京都杉並区",
+       "marked": "高円寺南3−8−1"
+      },
+      {
+       "committed": "東京都杉並区高円寺南",
+       "marked": "3−8−11"
+      },
+      {
+       "committed": "東京都杉並区高円寺南3−8−11",
+       "marked": ""
+      }
+     ],
+     "artifacts": {
+      "東京鳥栖": "Tokyo Tosu (a city in Saga), iOS's first guess at とうきょうとす",
+      "公園": "park, before じ",
+      "高円寺味": "Koenji + taste, before なみ",
+      "ー": "a hyphen key makes the long-vowel mark until the next digit turns it into −",
+      "−": "iOS commits the hyphens as U+2212 in this mode"
      },
-     {
-      "committed": "",
-      "marked": "とう"
-     },
-     {
-      "committed": "",
-      "marked": "とうきょ"
-     },
-     {
-      "committed": "",
-      "marked": "東京"
-     },
-     {
-      "committed": "",
-      "marked": "東京都"
-     },
-     {
-      "committed": "",
-      "marked": "東京鳥栖"
-     },
-     {
-      "committed": "",
-      "marked": "東京都すぎ"
-     },
-     {
-      "committed": "",
-      "marked": "東京都すぎな"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区こ"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区公"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区こうえ"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区公園"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺味"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺味な"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺南"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺南3"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺南3ー"
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺南3−8"
-     },
-     {
-      "committed": "東京都",
-      "marked": "杉並区高円寺南3−8ー"
-     },
-     {
-      "committed": "東京都杉並区",
-      "marked": "高円寺南3−8−1"
-     },
-     {
-      "committed": "東京都杉並区高円寺南",
-      "marked": "3−8−11"
-     },
-     {
-      "committed": "東京都杉並区高円寺南3−8−11",
-      "marked": ""
-     }
-    ],
-    "states_keystrokes": [
-     {
-      "committed": "",
-      "marked": "t",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "と",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "とう",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "とうk",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "とうky",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "とうきょ",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京t",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都s",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京鳥栖",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "とうきょうとすg",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都すぎ",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都すぎn",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都すぎな",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都すぎなm",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並k",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区k",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区こ",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区公",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区こうえ",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区こうえn",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区公園",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区こうえんj",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺m",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺味",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺味n",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺味な",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺味なm",
-      "romaji_pending": true
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺南",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺南3",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺南3ー",
-      "romaji_pending": false
-     },
-     {
-      "committed": "",
-      "marked": "東京都杉並区高円寺南3−8",
-      "romaji_pending": false
-     },
-     {
-      "committed": "東京都",
-      "marked": "杉並区高円寺南3−8ー",
-      "romaji_pending": false
-     },
-     {
-      "committed": "東京都杉並区",
-      "marked": "高円寺南3−8−1",
-      "romaji_pending": false
-     },
-     {
-      "committed": "東京都杉並区高円寺南",
-      "marked": "3−8−11",
-      "romaji_pending": false
-     }
-    ],
-    "gloss_of_artifacts": {
-     "東京鳥栖": "Tokyo Tosu (Tosu is a city in Saga; iOS's first guess for とうきょうとす)",
-     "公園": "park (iOS's guess for こうえん before じ)",
-     "高円寺味": "Koenji + 'taste' (iOS's guess for こうえんじみ before なみ)",
-     "ー": "the long-vowel mark a hyphen key makes in Japanese input until a digit follows"
+     "states_keystrokes": [
+      {
+       "committed": "",
+       "marked": "t"
+      },
+      {
+       "committed": "",
+       "marked": "と"
+      },
+      {
+       "committed": "",
+       "marked": "とう"
+      },
+      {
+       "committed": "",
+       "marked": "とうk"
+      },
+      {
+       "committed": "",
+       "marked": "とうky"
+      },
+      {
+       "committed": "",
+       "marked": "とうきょ"
+      },
+      {
+       "committed": "",
+       "marked": "東京"
+      },
+      {
+       "committed": "",
+       "marked": "東京t"
+      },
+      {
+       "committed": "",
+       "marked": "東京都"
+      },
+      {
+       "committed": "",
+       "marked": "東京都s"
+      },
+      {
+       "committed": "",
+       "marked": "東京鳥栖"
+      },
+      {
+       "committed": "",
+       "marked": "とうきょうとすg"
+      },
+      {
+       "committed": "",
+       "marked": "東京都すぎ"
+      },
+      {
+       "committed": "",
+       "marked": "東京都すぎn"
+      },
+      {
+       "committed": "",
+       "marked": "東京都すぎな"
+      },
+      {
+       "committed": "",
+       "marked": "東京都すぎなm"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並k"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区k"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区こ"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区公"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区こうえ"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区こうえn"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区公園"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区こうえんj"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺m"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺味"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺味n"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺味な"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺味なm"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺南"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺南3"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺南3ー"
+      },
+      {
+       "committed": "",
+       "marked": "東京都杉並区高円寺南3−8"
+      },
+      {
+       "committed": "東京都",
+       "marked": "杉並区高円寺南3−8ー"
+      },
+      {
+       "committed": "東京都杉並区",
+       "marked": "高円寺南3−8−1"
+      },
+      {
+       "committed": "東京都杉並区高円寺南",
+       "marked": "3−8−11"
+      }
+     ]
     }
    },
    "keys": [
@@ -362,8 +544,8 @@
      "en": "Home Address",
      "icon": "home",
      "title": "住所",
-     "preview": "東京都杉並区高円寺南3−8…",
-     "paste": "東京都杉並区高円寺南3−8−11",
+     "preview": "東京都杉並区高円寺南3-8…",
+     "paste": "東京都杉並区高円寺南3-8-11",
      "gloss": "address; the address",
      "source": "monholt-samples/src/cutling/world.ts KEYS[0] (title, preview, paste)",
      "written": "fixed: Cutling's own Japanese promo seed (SnapshotSeedData.swift PromoSeedCopy.japanese: 住所, 署名, 振込先, Wi-Fiパスワード, the same person 田中 太郎 and bank as the bank-number film that reached Japan), with the address replaced by the one typed above"
@@ -418,7 +600,7 @@
     "history": [
      {
       "row": 0,
-      "ja": "東京都杉並区高円寺南3−8−11",
+      "ja": "東京都杉並区高円寺南3-8-11",
       "kind": "text",
       "gloss": "the address"
      },
