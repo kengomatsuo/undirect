@@ -374,3 +374,30 @@ Added to X's schedule beside the text posts; X's Scheduled list read back 32 ite
 | 2026-11-26 15:15 | Cutling carousel slide 1 | What's the one thing you're tired of typing on your phone? | scheduled |
 | 2026-11-27 15:45 | Undirect "Next chapter" 9:16 | Tapped Next chapter and got "your iPhone has 12 viruses"? | scheduled |
 | 2026-11-28 15:15 | Undirect "× means close" 9:16 | Tapped × on a pop-up and got a casino tab. | scheduled |
+
+### X reply work restarted (ASG212, 2026-11-25)
+
+Baseline before the restart (HQ `posts_seen`, read 09:45 WIB Nov 25): 4 followers; originals Nov 23-25 drew 0-12 impressions each with 0 likes (Nov 25 08:45 "first app on a new Mac" 0, Nov 24 21:15 "Accept all" 2, Nov 24 16:45 carousel 1, Nov 24 10:45 5, Nov 23 19:45 9, Nov 23 16:15 film 12). Replies in others' threads: 22 on Nov 20-21, 1 from Nov 22 to 25. Recovery shows as impressions per original and follower count in HQ from Nov 26 on.
+
+Pace: link-free replies on niche posts under ~2 hours old, each post and its link read first, at least 10 minutes apart, 5-10 a day (standing routine of 2026-11-21); the post liked when read. Accounts flagged for AI-written replies end on @levelsio's blocklist, so replies stay short, specific and in my own voice.
+
+| WIB | Reply to | Reply | URL |
+|---|---|---|---|
+| 2026-11-25 09:58 | @macpiphq featured launch of Sordina by @bonelet (per-app volume, menu bar; macpip.com/apps/sordina read: uses macOS audio taps, no driver) | No audio driver, just macOS's own taps: that's the part I'd have expected to be hard. Does a muted app stay muted after it quits and opens again? | https://x.com/monholtco/status/2125423794080940275 |
+| 2026-11-25 10:08 | @dwr's Glazier, a TestFlight app for trying Liquid Glass layouts on a real phone (post, its thread and glazierui.com read) | Can you change what sits behind the glass, like a busy photo against a plain white page? A tint that reads well over one rarely holds up over the other. | https://x.com/monholtco/status/2125426424647729184 |
+| 2026-11-25 10:18 | @TheJordanRules_ day 24 of his iOS app, $32 MRR (dashboard read: 116 new customers in 28 days, 4 subscriptions; another reply already asked trial-to-paid) | Where are most of those 116 new people finding it, App Store search or posts like this one? | https://x.com/monholtco/status/2125429000017481969 |
+
+Answers drafted for people who replied to us and got no answer yet (owner's go needed; HQ marks all four "left"):
+
+| Who, on what | Their reply | Draft answer |
+|---|---|---|
+| @rashem48, on our reply about the $99 Apple fee (https://x.com/rashem48/status/2124086664972943675) | Exactly! And that's before you even count the time spent maintaining the app. | And every iOS update is another round of checking your own copy still works. Paying someone who does that for a living looks cheap after the first one. |
+| @sl1ma4, on our Undirect reply (https://x.com/sl1ma4/status/2123714850404565318) | those ad tabs are so annoying | The worst are the invisible layers over a video: you tap Play, the video never even gets the tap, and a new tab opens instead. |
+| @tiboadriana, on our "solo founders" reply (https://x.com/tiboadriana/status/2124137127189610942) | Wishing everyone great success! | Thanks, same to you. What are you building yourself? |
+| @Copypaster3000, on our Black Friday directories reply (https://x.com/Copypaster3000/status/2124230556623970418) | Thanks! | Good luck with the sale this weekend. |
+
+### Question posts taken off X's schedule (ASG213, owner "sure delete the ones NOT APPROPRIATE", 2026-11-25)
+
+Owner direction: posts are my own announcements of what I make, not forced questions. Deleted from X > Drafts > Scheduled at about 10:05 WIB (their words stay in the engagement table above): #12 Nov 25 22:15, #7 Nov 26 08:45, the Cutling carousel question Nov 26 15:15, #2 Nov 26 19:15, #18 Nov 27 07:45, #15 Nov 28 10:45, #20 Nov 28 19:15, #23 Nov 30 21:45, #25 Dec 1 20:45, #28 Dec 3 09:15, #31 Dec 4 07:45, #32 Dec 4 19:45, #33 Dec 5 09:45, #35 Dec 5 19:45. X needed three rounds; the list read back 11 items.
+
+Kept: Cutling film Nov 25 15:45; Undirect films Nov 27 15:45 and Nov 28 15:15; Black Friday Nov 27 21:45; and the maker stories #9 Nov 29 07:45, #16 Nov 29 20:15, #22 Nov 30 09:45, #24 Dec 1 07:45, #26 Dec 2 10:15, #27 Dec 2 20:15, #37 Dec 6 22:15. The Nov 26 Cutling carousel on Instagram/Facebook, TikTok and Threads stays: a product post, not a forced question. Stay-Put Update posts with the event art and announcement posts for the freed days are being drafted for the owner's go.
