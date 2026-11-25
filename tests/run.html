@@ -137,9 +137,6 @@ async function run() {
   ok("the swap is reported",
      window.__caught.some((c) => c.kind === "href-swap" && c.host === "pop.example"));
   ok("the user still goes where they meant", followed === "/wanted", String(followed));
-  ok("the note is handed to the next page while it is up",
-     window.__notes.some((n) => n.type === "undirect:noteUp" && n.base === "pop.example" && n.doc && n.count >= 1),
-     JSON.stringify(window.__notes.at(-1)));
 
   // window.open called by code that does not belong to this page.
   const before3 = window.__caught.length;

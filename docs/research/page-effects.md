@@ -117,10 +117,9 @@ press point before it breaks.
 count. It stays 4 s, or 6.5 s while it carries the gear; the timer stops while the
 pointer or keyboard focus is on it; a click on the note dismisses it. The gear is a
 32 px icon button with a 44 px hit area and the `note_settings` string as its name.
-A note still up when the page goes (the stopped link swap is followed at once by the
-navigation the person asked for) is drawn again on the next page in the tab, with its
-count and its gear, fading in rather than rising: the page reports `undirect:noteUp`
-and `undirect:noteGone`, and the background hands it on at the next page's hello, as
+A stop followed within 4 s by a new page in the tab (the stopped link swap is followed at
+once by the navigation the person asked for) is drawn again on that page, with its count:
+the background keeps the page's stop report and hands it on at the next page's hello, as
 it already did for an undone redirect.
 
 ### 6. What an icon may replace
