@@ -1,0 +1,435 @@
+{
+  "about": "Stay-Put posts for @monholtco (card ASG213), word for word, with their media and WIB times (UTC+7). Nothing here is posted or scheduled until the owner says go on the review page. Films and stills in ~/Downloads/Claude/stay-put-posts/, sources in undirect-promo/stay-put (films) and undirect Support/AppStore/events/1.0.5 (art). Every post is a maker announcing his own work in the first person, with no closing question (owner, 2026-11-25). Prices: $0.99 from Nov 27 00:00 Pacific to Dec 1 00:00 Pacific, then $1.99 (price_sale.py read). The event runs Nov 27 08:00 UTC to Dec 27. Posts with \"section\": \"cutling\" are the Cutling 2.0 set for Dec 1 and wait until Cutling 2.0 reads READY_FOR_SALE (both 2.0.0 versions were PREPARE_FOR_SUBMISSION with release scheduled Dec 1 00:00 UTC on 2026-11-25). Stories carry their words in the picture and no sticker, so Business Suite can schedule them. Every Instagram feed post and Reel goes out with @kenneth_j.fang as collaborator (owner, personal-account-collab): after he accepts, he shares it to his Story mentioning @monholtco and @monholtco reshares that Story.",
+  "links": {
+    "event": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&mt=8&eventid=6837368724&ct=",
+    "note": "append the post's ct tag; the link opens the Stay-Put Update's event page on Undirect's App Store listing",
+    "cutling": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct="
+  },
+  "media": {
+    "stay-put": {
+      "placeholder": "film from undirect-b2, 9:16 for TikTok, Reels, Shorts",
+      "cover": "stay-put-details-9x16.png",
+      "length_s": 26.9,
+      "what": "\"Blown away\" (undirect-b2, ASG215, undirect-promo/monholt-films-3): two sentences strangers wrote about Safari, printed on the event art's loose sheets, blow away in its wind (the moving art frames from this card's render); between them the real Undirect 1.1.1 answers each: a page that redirects while you scroll stays put, and Back goes back. Hangtime 141.10-167.98 s."
+    },
+    "not-a-photo": {
+      "file": "undirect-not-a-photo-9x16.mp4",
+      "cover": "undirect-not-a-photo-cover.jpg",
+      "length_s": 12.4,
+      "what": "The finished art with \"This isn't a photo.\", then real renders of the scene from 1 to 900 light paths per pixel with the count under the stack, then the finished art held with Undirect and \"The Stay-Put Update\". Music Hangtime (WOWA, Unminus)."
+    },
+    "card": {
+      "file": "stay-put-card-16x9.png",
+      "what": "The event card itself (Support/AppStore/events/1.0.5/card.png)"
+    },
+    "details": {
+      "file": "stay-put-details-9x16.png",
+      "what": "The event details page art (details.png)"
+    },
+    "end-4x5": {
+      "file": "stay-put-end-4x5.jpg",
+      "what": "The film's last frame cropped 4:5: Undirect lockup, the calm art, \"You just stay put.\", badge"
+    },
+    "end-9x16": {
+      "file": "stay-put-end-9x16.jpg",
+      "what": "The film's last frame"
+    },
+    "glass-4x5": {
+      "file": "stay-put-glass-4x5.jpg",
+      "what": "The film at 4.03 s, cropped 4:5: the pop-up's glass cracking from the fingertip on the demo page"
+    },
+    "glass-9x16": {
+      "file": "stay-put-glass-9x16.jpg",
+      "what": "The film at 4.03 s: the pop-up's glass cracking from the fingertip on the demo page"
+    },
+    "glass-4x5-th": {
+      "file": "stay-put-glass-4x5.jpg",
+      "what": "The film at 4.03 s, cropped 4:5"
+    },
+    "falling-4x5": {
+      "file": "stay-put-falling-4x5.jpg",
+      "what": "The film at 4.30 s, cropped 4:5: the shards falling away"
+    },
+    "note-4x5": {
+      "file": "stay-put-note-4x5.jpg",
+      "what": "The film at 5.60 s, cropped 4:5 round the note: Stopped, prize-hub.example struck through"
+    },
+    "page-4x5": {
+      "file": "stay-put-page-4x5.jpg",
+      "what": "The film at 3.60 s, cropped 4:5: Marlow TV, one of the made-up demo sites, in Safari"
+    },
+    "playing-4x5": {
+      "file": "stay-put-playing-4x5.jpg",
+      "what": "The film at 7.00 s, cropped 4:5: the film playing, the note with its gear"
+    },
+    "stone": {
+      "file": "stay-put-stone-4x5.jpg",
+      "what": "A close crop of the event card: the stone's vein and the hand-squared stack"
+    },
+    "split": {
+      "file": "stay-put-1-vs-900-4x5.jpg",
+      "what": "The art split down the middle: one light path per pixel on the left, 900 on the right"
+    },
+    "sp-carousel": {
+      "files": [
+        "stayput-carousel-1.jpg",
+        "stayput-carousel-2.jpg",
+        "stayput-carousel-3.jpg",
+        "stayput-carousel-4.jpg"
+      ],
+      "what": "4:5 carousel: the art with its name; Tap Play, the pop-up breaks before any tab opens; the note says where it tried to send you; Undirect, You just stay put, badge"
+    },
+    "sp-tt-photos": {
+      "files": [
+        "stayput-tiktok-1.jpg",
+        "stayput-tiktok-2.jpg",
+        "stayput-tiktok-3.jpg",
+        "stayput-tiktok-4.jpg"
+      ],
+      "what": "9:16 photo post, the same four in TikTok's shape"
+    },
+    "sp-story-new": {
+      "file": "stayput-story-new.jpg",
+      "what": "Story: the art, New: The Stay-Put Update, Undirect · link in bio (no sticker)"
+    },
+    "sp-story-lastday": {
+      "file": "stayput-story-lastday.jpg",
+      "what": "Story: the calm art, Undirect, Last day at $0.99 (no sticker)"
+    },
+    "c-card": {
+      "file": "cutling-event-card-16x9.png",
+      "what": "Cutling 2.0's event card (Cutling fastlane/events/2.0/card.png)"
+    },
+    "c-inbox": {
+      "file": "cutling-carousel-3.jpg",
+      "what": "Five Messages threads answered by one saved reply, from the approved Five names film"
+    },
+    "c-carousel": {
+      "files": [
+        "cutling-carousel-1.jpg",
+        "cutling-carousel-2.jpg",
+        "cutling-carousel-3.jpg",
+        "cutling-carousel-4.jpg"
+      ],
+      "what": "4:5 carousel: the event art with its name; Hi Maya; five names; That was five taps"
+    },
+    "c-tt-photos": {
+      "files": [
+        "cutling-tiktok-1.jpg",
+        "cutling-tiktok-2.jpg",
+        "cutling-tiktok-3.jpg",
+        "cutling-tiktok-4.jpg"
+      ],
+      "what": "9:16 photo post"
+    },
+    "c-story": {
+      "file": "cutling-story-new.jpg",
+      "what": "Story: the event art, New: The Write-It-Once Update, Cutling 2.0 · link in bio (no sticker)"
+    }
+  },
+  "posts": [
+    {
+      "id": "S1-x",
+      "day": "Thu Nov 26",
+      "when": "2026-11-26 20:15",
+      "platform": "X",
+      "media": "card",
+      "replaces": "X slot of cancelled question post #2 (Nov 26 19:15)",
+      "text": "My first App Store event goes live tomorrow: the Stay-Put Update for Undirect.\n\nI wanted the art to say it with no words, so it's a stone keeping a stack of paper where it is while every loose sheet blows away. It runs Nov 27 to Dec 27.",
+      "reply": "Undirect on the App Store: {event}x-stayput-teaser"
+    },
+    {
+      "id": "S1-threads",
+      "day": "Thu Nov 26",
+      "when": "2026-11-26 20:23",
+      "platform": "Threads",
+      "media": "details",
+      "topic": "Apps",
+      "replaces": "Threads still/question slot of Nov 26",
+      "text": "Tomorrow Undirect gets its first App Store event, the Stay-Put Update.\n\nThe art is a stone holding a stack of pages down while the loose sheets blow off. That's the update in one picture: however a site tries to throw you somewhere else, you stay on the page you opened.",
+      "reply": "It's on Undirect's App Store page from tomorrow: {event}threads-stayput-teaser"
+    },
+    {
+      "id": "S2-tiktok",
+      "day": "Fri Nov 27",
+      "when": "2026-11-27 21:37",
+      "platform": "TikTok",
+      "media": "stay-put",
+      "note": "Disclose post content > Your brand; cover chosen when undirect-b2's film is final",
+      "text": "I just shipped the Stay-Put Update for my Safari extension, Undirect 🪨 A page that sends you to a scam page while you scroll now leaves you where you were, and the Back button takes you back. Free update on iPhone, iPad and Mac, and $0.99 until Nov 30. #safari #iphonetips #scam #iphonehacks"
+    },
+    {
+      "id": "S2-meta",
+      "day": "Fri Nov 27",
+      "when": "2026-11-27 21:43",
+      "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
+      "media": "stay-put",
+      "note": "cover chosen when the film is final; Facebook first comment by hand: Undirect on the App Store: {event}fb-stayput",
+      "text": "I just shipped the Stay-Put Update for Undirect: when a page tries to throw you somewhere you didn't ask for, you stay put.\n\nA page that redirects you to a scam page while you scroll now leaves you on the article, and the Back button takes you back instead of to another site. The art is a stone holding a stack of paper while the loose sheets blow away, because that's the whole idea.\n\nUndirect is a Safari extension for iPhone, iPad and Mac, $0.99 until Nov 30. Link in bio.\n#safari #iphonetips #ios #scam #macapps",
+      "collab": "@kenneth_j.fang"
+    },
+    {
+      "id": "S2-threads",
+      "day": "Fri Nov 27",
+      "when": "2026-11-27 21:51",
+      "platform": "Threads",
+      "media": "stay-put",
+      "topic": "iPhone",
+      "text": "I shipped the Stay-Put Update for Undirect today, and it's my first App Store event.\n\nA page that sends you to a scam page while you scroll, with no tap at all, now leaves you on the page you were reading. And when a page answers the Back button with another site, Back takes you back.",
+      "reply": "Undirect is on the App Store for iPhone, iPad and Mac: {event}threads-stayput"
+    },
+    {
+      "id": "S2-yt",
+      "day": "Fri Nov 27",
+      "when": "2026-11-27 21:58",
+      "platform": "YouTube Short @matsuokengo",
+      "media": "stay-put",
+      "title": "This page redirects while you scroll. Not anymore. #SafariTips #iPhoneTips",
+      "text": "I make Undirect, a Safari extension for iPhone, iPad and Mac. In the Stay-Put Update, a page that sends you somewhere while you scroll leaves you where you were, and the Back button takes you back instead of to another site.\n\nUndirect on the App Store: {event}yt-stayput-short\n\nMusic: Hangtime by WOWA (Unminus)",
+      "tags": "Safari,Safari pop up,ad tabs,Undirect,iPhone,Stay-Put Update"
+    },
+    {
+      "id": "S2-x",
+      "day": "Sat Nov 28 (Fri Nov 27 in the US)",
+      "when": "2026-11-28 00:45",
+      "platform": "X",
+      "media": "stay-put",
+      "note": "3 h after the Black Friday sale post (Nov 27 21:45); X's picker offers only quarter hours",
+      "text": "I just shipped the Stay-Put Update for Undirect, my Safari extension. A page that throws you to a scam page while you scroll now leaves you where you were, and the Back button takes you back instead of to another site.",
+      "reply": "On the App Store for iPhone, iPad and Mac, $0.99 until Nov 30: {event}x-stayput"
+    },
+    {
+      "id": "S3-tiktok",
+      "day": "Sun Nov 29",
+      "when": "2026-11-29 21:13",
+      "platform": "TikTok",
+      "media": "not-a-photo",
+      "note": "Disclose post content > Your brand; cover = frame 0 (the finished art with \"This isn't a photo.\")",
+      "text": "This isn't a photo 🪨📄 It's the art for my first App Store event, rendered from code: a path tracer follows light through the scene, 1 path per pixel, then 900. #pathtracing #3dart #creativecoding #indiedev"
+    },
+    {
+      "id": "S3-meta",
+      "day": "Sun Nov 29",
+      "when": "2026-11-29 21:19",
+      "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
+      "media": "not-a-photo",
+      "note": "cover = frame 0; Facebook first comment by hand: The Stay-Put Update on the App Store: {event}fb-notaphoto",
+      "text": "This isn't a photo. It's the art I made for Undirect's first App Store event, the Stay-Put Update.\n\nNothing in it exists. The stone, the stack of paper and the soft red light are written as code, and a path tracer follows light through the scene until it looks like a studio shot. You're watching it go from 1 light path per pixel to 900.\n\nLink in bio.\n#pathtracing #creativecoding #3dart #indiedev #appstore",
+      "collab": "@kenneth_j.fang"
+    },
+    {
+      "id": "S3-threads",
+      "day": "Sun Nov 29",
+      "when": "2026-11-29 21:26",
+      "platform": "Threads",
+      "media": "not-a-photo",
+      "topic": "Creative Coding",
+      "text": "There's no camera in this red studio shot. It's the art for Undirect's Stay-Put Update, and everything in it is code: a path tracer follows light through the scene, 900 times per pixel, until it reads as a photo. This is it building up from a single path.",
+      "reply": "The update it's for: {event}threads-notaphoto"
+    },
+    {
+      "id": "S3-yt",
+      "day": "Sun Nov 29",
+      "when": "2026-11-29 21:34",
+      "platform": "YouTube Short @matsuokengo",
+      "media": "not-a-photo",
+      "title": "This isn't a photo: 1 to 900 light paths per pixel #pathtracing #creativecoding",
+      "text": "The art for Undirect's first App Store event, the Stay-Put Update, has no camera in it: the stone, the paper and the light are code, rendered by a path tracer. Every frame here is a real render at that many light paths per pixel.\n\nUndirect on the App Store: {event}yt-notaphoto-short\n\nMusic: Hangtime by WOWA (Unminus)",
+      "tags": "path tracing,creative coding,3D render,Undirect,App Store"
+    },
+    {
+      "id": "S3-x",
+      "day": "Sun Nov 29",
+      "when": "2026-11-29 22:15",
+      "platform": "X",
+      "media": "not-a-photo",
+      "text": "The art for Undirect's Stay-Put Update isn't a photo. Nothing in it was ever in front of a camera: it's code, and a path tracer follows light through the scene until it looks real. Here it is going from 1 light path per pixel to 900.",
+      "reply": "The event runs on the App Store until Dec 27: {event}x-notaphoto"
+    },
+    {
+      "id": "S4-x",
+      "day": "Mon Nov 30",
+      "when": "2026-11-30 20:45",
+      "platform": "X",
+      "media": "end-4x5",
+      "replaces": "draft 12 (both apps' last day) if it is still scheduled, and the X slot of cancelled question post #23",
+      "text": "Last day of my Black Friday price: Undirect is $0.99 until midnight Pacific, then back to $1.99. One purchase covers iPhone, iPad and Mac, and the Stay-Put Update comes with it.",
+      "reply": "{event}x-bf-lastday"
+    },
+    {
+      "id": "S5-x",
+      "day": "Wed Dec 2",
+      "when": "2026-12-02 21:15",
+      "platform": "X",
+      "media": "glass-4x5",
+      "replaces": "X slot of cancelled question post #27 (Dec 2 20:15)",
+      "text": "Why the Stay-Put Update exists: in 1.1.0 a few pop-ups still flashed open in a new tab for a moment before Undirect closed them. Closed or not, you'd seen the ad. 1.1.1 refuses them at the tap itself and shows the pop-up breaking like glass instead.",
+      "reply": "{event}x-stayput-why"
+    },
+    {
+      "id": "S5-threads",
+      "day": "Wed Dec 2",
+      "when": "2026-12-02 21:22",
+      "platform": "Threads",
+      "media": "falling-4x5",
+      "topic": "iPhone",
+      "text": "The bug that started the Stay-Put Update: in Undirect 1.1.0 a few pop-ups still opened in a new tab for a moment before Undirect shut them. You'd already seen the ad by then. So 1.1.1 refuses the pop-up at the tap, and the glass breaking is what you see in its place.",
+      "reply": "{event}threads-stayput-why"
+    },
+    {
+      "id": "T-nov28",
+      "day": "Sat Nov 28 (Fri Nov 27 in the US)",
+      "when": "2026-11-28 20:37",
+      "platform": "Threads",
+      "media": "glass-4x5-th",
+      "topic": "Motion Design",
+      "text": "When Undirect stops a pop-up, the glass breaks from the exact spot your finger landed: rings and spokes round the tap, small pieces near it and big ones further out. The pane shows whole for 170 ms, hangs cracked for 120 ms, then falls, nearest pieces first. I wanted you to see that the page tried something and that it didn't work."
+    },
+    {
+      "id": "T-nov30",
+      "day": "Mon Nov 30",
+      "when": "2026-11-30 20:52",
+      "platform": "Threads",
+      "media": "note-4x5",
+      "topic": "iPhone",
+      "text": "Safari gives extensions no way to send a notification, so when Undirect stops something it says so on the page itself: a small dark note at the bottom with the address the page tried to send you to. The address shows on red for half a second, then gets wiped off and stays struck through."
+    },
+    {
+      "id": "T-dec1",
+      "day": "Tue Dec 1",
+      "when": "2026-12-01 20:41",
+      "platform": "Threads",
+      "media": "page-4x5",
+      "topic": "Apps",
+      "text": "I built seven made-up websites that misbehave on purpose, so you can try Undirect without going near a sketchy page: a film site whose Play button fires a pop-up, a file host with an invisible layer over it, a news article that sends you away while you scroll, a sports stream that breaks the Back button. They can only reach a stand-in page that does nothing.",
+      "reply": "They're all here: undirect.matsuokengo.com/demo/"
+    },
+    {
+      "id": "T-dec3",
+      "day": "Thu Dec 3",
+      "when": "2026-12-03 21:07",
+      "platform": "Threads",
+      "media": "end-4x5",
+      "topic": "iOS",
+      "text": "One part of the Stay-Put Update that's easy to miss: Undirect now runs on iPhone and iPad with iOS 18 too, so an iPhone that never got the newest iOS can use it."
+    },
+    {
+      "id": "T-dec4",
+      "day": "Fri Dec 4",
+      "when": "2026-12-04 20:29",
+      "platform": "Threads",
+      "media": "playing-4x5",
+      "topic": "iPhone",
+      "text": "If you'd rather not see the glass or the note, both switch off in Undirect's menu in Safari or in the app, and the gear on the note opens that menu. Undirect keeps stopping pop-ups either way; it just does it without a word."
+    },
+    {
+      "id": "T-dec5",
+      "day": "Sat Dec 5",
+      "when": "2026-12-05 21:43",
+      "platform": "Threads",
+      "media": "stone",
+      "topic": "3D Art",
+      "text": "Close up, the stone in the Stay-Put art has a pale vein through it, and the stack under it is squared by hand: every half-millimetre sheet sits a hair off the one below. Perfect shapes are what make a render look fake, so I wrote the flaws in on purpose."
+    },
+    {
+      "id": "T-dec6",
+      "day": "Sun Dec 6",
+      "when": "2026-12-06 21:18",
+      "platform": "Threads",
+      "media": "split",
+      "topic": "Creative Coding",
+      "text": "The same picture twice. On the left, what the path tracer has after one light path per pixel; on the right, after 900, which is the finished art for the Stay-Put Update. Every grain on the left is one ray that found a light or didn't."
+    },
+    {
+      "id": "SS-story1",
+      "day": "Fri Nov 27",
+      "when": "2026-11-27 20:17",
+      "platform": "Instagram Story + Facebook Story (Business Suite)",
+      "media": "sp-story-new",
+      "note": "No sticker: the words are in the picture, so Business Suite schedules it to Instagram and Facebook Stories. The same evening, after the Reel at 21:43 goes out with @kenneth_j.fang as collaborator, he shares it to his Story mentioning @monholtco and @monholtco reshares that Story from the Instagram app; that reshare is the Story that carries undirect-b2's film.",
+      "text": ""
+    },
+    {
+      "id": "SS-story2",
+      "day": "Mon Nov 30",
+      "when": "2026-11-30 20:36",
+      "platform": "Instagram Story + Facebook Story (Business Suite)",
+      "media": "sp-story-lastday",
+      "note": "No sticker: the words are in the picture, so Business Suite schedules it to Instagram and Facebook Stories. If @kenneth_j.fang has shared the day's collab post to his Story mentioning @monholtco, the reshare from the Instagram app goes up as well.",
+      "text": ""
+    },
+    {
+      "id": "SS-carousel",
+      "day": "Mon Nov 30",
+      "when": "2026-11-30 20:44",
+      "platform": "Instagram carousel + Facebook photos (Business Suite, one post)",
+      "media": "sp-carousel",
+      "note": "Facebook first comment by hand: Undirect on the App Store: {event}fb-stayput-carousel",
+      "text": "Four pictures of the Stay-Put Update for Undirect. A page's pop-up is stopped at your tap and breaks like glass where your finger landed, and a small note tells you where the page tried to send you.\n\nUndirect is a Safari extension for iPhone, iPad and Mac, $0.99 until midnight Pacific tonight. Link in bio.\n#safari #iphonetips #ios #macapps #popups",
+      "collab": "@kenneth_j.fang"
+    },
+    {
+      "id": "SS-tiktok-photo",
+      "day": "Mon Nov 30",
+      "when": "2026-11-30 20:58",
+      "platform": "TikTok photo post",
+      "media": "sp-tt-photos",
+      "title": "The Stay-Put Update in four pictures",
+      "note": "Disclose post content > Your brand",
+      "text": "What the Stay-Put Update does, in four pictures 🪨 The pop-up breaks before any tab opens, and a note tells you where the page tried to send you. Undirect is my Safari extension for iPhone, iPad and Mac. #safari #iphonetips #popups #iphonehacks"
+    },
+    {
+      "id": "C-x",
+      "section": "cutling",
+      "day": "Tue Dec 1",
+      "when": "2026-12-01 21:15",
+      "platform": "X",
+      "media": "c-card",
+      "text": "Cutling 2.0 is out, with my second App Store event: the Write-It-Once Update. Save a reply once with a blank where the name goes, and Cutling asks who it's for every time you use it.",
+      "reply": "Cutling on the App Store: {cutling}x-cutling2"
+    },
+    {
+      "id": "C-threads",
+      "section": "cutling",
+      "day": "Tue Dec 1",
+      "when": "2026-12-01 21:22",
+      "platform": "Threads",
+      "media": "c-inbox",
+      "topic": "Apps",
+      "text": "Cutling 2.0 is out. I rebuilt its saved replies around one idea: write a reply once, leave a blank where the name goes, and the keyboard asks for the name each time you tap it. Five customers, five names, one reply.",
+      "reply": "Cutling on the App Store: {cutling}threads-cutling2"
+    },
+    {
+      "id": "C-meta",
+      "section": "cutling",
+      "day": "Tue Dec 1",
+      "when": "2026-12-01 21:31",
+      "platform": "Instagram carousel + Facebook photos (Business Suite, one post)",
+      "media": "c-carousel",
+      "note": "Facebook first comment by hand: Cutling on the App Store: {cutling}fb-cutling2",
+      "text": "Cutling 2.0 is out: write a reply once, and it asks for the name every time you use it.\n\nTap the reply, tap the name, send. A booking reply asks how many guests, and a sign-off leaves the cursor where you add a line of your own. Cutling is a keyboard for iPhone and iPad, and it's on the Mac too.\n\nLink in bio.\n#iphonetips #smallbusiness #customerservice #ios #productivity",
+      "collab": "@kenneth_j.fang"
+    },
+    {
+      "id": "C-story",
+      "section": "cutling",
+      "day": "Tue Dec 1",
+      "when": "2026-12-01 21:37",
+      "platform": "Instagram Story + Facebook Story (Business Suite)",
+      "media": "c-story",
+      "note": "No sticker: the words are in the picture, so Business Suite schedules it to Instagram and Facebook Stories. If @kenneth_j.fang has shared the day's collab post to his Story mentioning @monholtco, the reshare from the Instagram app goes up as well.",
+      "text": ""
+    },
+    {
+      "id": "C-tiktok-photo",
+      "section": "cutling",
+      "day": "Tue Dec 1",
+      "when": "2026-12-01 21:46",
+      "platform": "TikTok photo post",
+      "media": "c-tt-photos",
+      "title": "One saved reply, a different name every time",
+      "note": "Disclose post content > Your brand",
+      "text": "Cutling 2.0: one saved reply, a different name every time ✍️ Tap the reply, tap the name, send. Cutling is my keyboard for iPhone and iPad. #iphonetips #smallbusiness #customerservice #iphonehacks"
+    }
+  ]
+}
