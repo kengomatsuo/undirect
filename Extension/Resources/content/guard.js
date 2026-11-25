@@ -170,6 +170,9 @@
     ".h{color:rgba(235,235,245,.85)}}";
   let notesShown = 0;
   let note = null;
+  // This page, as against the next one in the tab. The background hands a
+  // note that is still up to the next page, and to no other (see tellUp).
+  const DOC = Math.random().toString(36).slice(2) + Date.now().toString(36);
 
   function say(key, sub, fallback) {
     try { return api.i18n.getMessage(key, sub) || fallback; } catch (e) { return fallback; }
@@ -181,9 +184,9 @@
     return say("note_stopped", undefined, "Stopped");
   }
 
-  // `count` comes with a note the previous page in this tab was showing
-  // when the person's own navigation took it away.
-  function showNote(kind, host, count = 1) {
+  // `carried` is a note the previous page in this tab was showing when it
+  // went: it comes back with its count and its gear, as it was.
+  function showNote(kind, host, carried) {
     if (!settings.banner || window.top !== window || !document.body) return;
     // A Back trap's title is the note's whole text: the trap is often the
     // page's own, and its address struck through would read as the page's.
@@ -193,11 +196,16 @@
       retitle(say("note_count", [String(note.count)], note.count + " stopped"), () => named && strike(host));
       if (!FX.reduced()) FX.pop(note.card, 0.05);
       FX.mark(note.badge);
+      note.kind = kind;
+      note.base = host;
+      tellUp();
       return refresh();
     }
-    const offer = notesShown < NOTE_OFFER;
-    notesShown += 1;
-    try { api.storage.local.set({ notesShown }); } catch (e) {}
+    const offer = carried ? !!carried.offer : notesShown < NOTE_OFFER;
+    if (!carried) {
+      notesShown += 1;
+      try { api.storage.local.set({ notesShown }); } catch (e) {}
+    }
 
     const root = document.createElement("div");
     root.style.cssText =
@@ -215,10 +223,11 @@
     const n = note = {
       root, card, badge: shadow.querySelector(".b"), title: shadow.querySelector(".t"),
       chip: shadow.querySelector(".c"), host: shadow.querySelector(".h"), dust: shadow.querySelector(".d"),
-      count, life: offer ? NOTE_OFFER_MS : NOTE_MS, timer: 0, striking: 0, resize: null,
+      count: Math.max(1, carried?.count ?? 1), life: offer ? NOTE_OFFER_MS : NOTE_MS, timer: 0, striking: 0, resize: null,
+      kind, base: host, offer,
     };
     card.dir = say("@@bidi_dir", undefined, "ltr");
-    n.title.textContent = count > 1 ? say("note_count", [String(count)], count + " stopped") : noteTitle(kind);
+    n.title.textContent = n.count > 1 ? say("note_count", [String(n.count)], n.count + " stopped") : noteTitle(kind);
     const parts = [n.badge, n.title, n.chip];
     if (offer) {
       const button = document.createElement("button");
@@ -254,7 +263,8 @@
     card.addEventListener("focusout", refresh);
     document.documentElement.appendChild(root);
 
-    if (FX.reduced()) {
+    if (FX.reduced() || carried) {
+      // Carried over, it was already seen rising; it is simply still there.
       card.animate({ opacity: [0, 1] }, { duration: 200 });
     } else {
       card.animate({ transform: ["translateY(calc(100% + 24px)) scale(.9)", "none"], opacity: [0, 1] }, FX.springs.bounce);
@@ -264,7 +274,22 @@
     FX.mark(n.badge, 160);
     if (named) strike(host);
     else n.chip.hidden = true;
+    tellUp();
     refresh();
+  }
+
+  // The background is told while the note is up and when it goes, so that if
+  // the person's own navigation takes this page away under it, the page they
+  // land on draws it again. Without this a stopped link swap's note lived only
+  // as long as the old page, about 0.3 s.
+  function tellUp() {
+    try {
+      api.runtime.sendMessage({
+        type: "undirect:noteUp", doc: DOC, kind: note.kind, base: note.base, count: note.count, offer: note.offer,
+      });
+    } catch (e) {
+      // nothing to hand it to
+    }
   }
 
   // The address arrives whole on a red chip. After a beat the chip is wiped
@@ -350,6 +375,7 @@
     if (!note) return;
     const gone = note;
     note = null;
+    try { api.runtime.sendMessage({ type: "undirect:noteGone", doc: DOC }); } catch (e) {}
     clearTimeout(gone.timer);
     clearTimeout(gone.striking);
     gone.card.style.pointerEvents = "none";
@@ -834,14 +860,15 @@
   let started;
   const ready = new Promise((resolve) => { started = resolve; });
 
-  // A carried note shows even where the guard is off: the stop was on the
-  // page before, and the person's own link brought them here.
-  async function stoppedElsewhere({ kind, base, carried, count }) {
+  // A carried note is drawn even on a site the guard is not on, since the
+  // stop happened on the page before and the person's own link brought them here.
+  async function stoppedElsewhere({ kind, base, carried, count, offer }) {
     await ready;
-    if (window.top !== window || (!active && !carried)) return;
+    if (window.top !== window || settings.enabled === false) return;
+    if (!active && !carried) return;
     if (!document.body) await new Promise((done) => document.addEventListener("DOMContentLoaded", done, { once: true }));
-    showNote(kind, base, count);
-    if (carried) return;
+    if (carried) return showNote(kind, base, { count, offer });
+    showNote(kind, base);
     if (kind === "pop-tab") fx("burst", lastPress);
     else fx("field");
   }
@@ -859,7 +886,7 @@
 
   function hello() {
     try {
-      api.runtime.sendMessage({ type: "undirect:hello", site: siteBase });
+      api.runtime.sendMessage({ type: "undirect:hello", site: siteBase, doc: DOC });
     } catch (e) {
       // nothing to report to
     }
