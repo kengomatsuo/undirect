@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- Black Friday countdown pictures for X (1200 x 750, shot at 2x): the approved #14 picture (the two sale cards of
+     2026-11-20 side by side) with each card's BLACK FRIDAY pill replaced by the countdown's own words.
+     countdown.html?label=IN%202%20DAYS   -> "BLACK FRIDAY · IN 2 DAYS" on both cards. Sale only: no Stay-Put words. -->
+<style>
+  html, body { margin: 0 }
+  body { width: 1200px; height: 750px; background: #000; display: flex; position: relative; overflow: hidden }
+  img { width: 600px; height: 750px; display: block }
+  .pill { position: absolute; top: 140px; height: 44px; padding: 0 18px; box-sizing: border-box; border-radius: 9px; background: #fff; color: #000;
+    display: flex; align-items: center; font: 800 20px/1 -apple-system, "SF Pro Display", system-ui; letter-spacing: .12em; white-space: nowrap }
+</style>
+<body>
+<img src="../../sale-cutling-ig.png"><img src="../../sale-undirect-ig.png">
+<div class="pill" style="left:42px;--ring:#0f6b52"></div><div class="pill" style="left:642px;--ring:#8d1717"></div>
+<script>
+  const label = new URLSearchParams(location.search).get('label') || 'IN 2 DAYS';
+  for (const p of document.querySelectorAll('.pill')) p.textContent = 'BLACK FRIDAY · ' + label;
+</script>
+</body>

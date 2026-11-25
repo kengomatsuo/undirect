@@ -1,9 +1,10 @@
 {
-  "about": "Stay-Put posts for @monholtco (card ASG213), word for word, with their media and WIB times (UTC+7). Nothing here is posted or scheduled until the owner says go on the review page. Films and stills in ~/Downloads/Claude/stay-put-posts/, sources in undirect-promo/stay-put (films) and undirect Support/AppStore/events/1.0.5 (art). Every post is a maker announcing his own work in the first person, with no closing question (owner, 2026-11-25). Prices: $0.99 from Nov 27 00:00 Pacific to Dec 1 00:00 Pacific, then $1.99 (price_sale.py read). The event runs Nov 27 08:00 UTC to Dec 27. Posts with \"section\": \"cutling\" are the Cutling 2.0 set for Dec 1 and wait until Cutling 2.0 reads READY_FOR_SALE (both 2.0.0 versions were PREPARE_FOR_SUBMISSION with release scheduled Dec 1 00:00 UTC on 2026-11-25). Stories carry their words in the picture and no sticker, so Business Suite can schedule them. Every Instagram feed post and Reel goes out with @kenneth_j.fang as collaborator (owner, personal-account-collab): after he accepts, he shares it to his Story mentioning @monholtco and @monholtco reshares that Story.",
+  "about": "Stay-Put posts for @monholtco (card ASG213), word for word, with their media and WIB times (UTC+7). Nothing here is posted or scheduled until the owner says go on the review page. Films and stills in ~/Downloads/Claude/stay-put-posts/, sources in undirect-promo/stay-put (films) and undirect Support/AppStore/events/1.0.5 (art). Every post is a maker announcing his own work in the first person, with no closing question (owner, 2026-11-25). Prices: $0.99 from Nov 27 00:00 Pacific to Dec 1 00:00 Pacific, then $1.99 (price_sale.py read). The event runs Nov 27 08:00 UTC to Dec 27. Posts with \"section\": \"cutling\" are the Cutling 2.0 set for Dec 1 and wait until Cutling 2.0 reads READY_FOR_SALE (both 2.0.0 versions were PREPARE_FOR_SUBMISSION with release scheduled Dec 1 00:00 UTC on 2026-11-25). Stories carry their words in the picture and no sticker, so Business Suite can schedule them. Every Instagram feed post and Reel goes out with @kenneth_j.fang as collaborator (owner, personal-account-collab): after he accepts, he shares it to his Story mentioning @monholtco and @monholtco reshares that Story. Owner, 2026-11-25 13:30: the Stay-Put Update (Undirect 1.1.1) is already out, so it is announced today; the Black Friday sale is a separate run of X posts with its own pictures (2 days, 1 day, today, last day). No Stay-Put post carries a price and no sale post carries Stay-Put words.",
   "links": {
     "event": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&mt=8&eventid=6837368724&ct=",
     "note": "append the post's ct tag; the link opens the Stay-Put Update's event page on Undirect's App Store listing",
-    "cutling": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct="
+    "cutling": "https://apps.apple.com/app/apple-store/id6759476314?pt=127609326&mt=8&ct=",
+    "undirect": "https://apps.apple.com/app/apple-store/id6810513194?pt=127609326&mt=8&ct="
   },
   "media": {
     "stay-put": {
@@ -125,19 +126,33 @@
     "c-story": {
       "file": "cutling-story-new.jpg",
       "what": "Story: the event art, New: The Write-It-Once Update, Cutling 2.0 · link in bio (no sticker)"
+    },
+    "x-stayput-out": {
+      "file": "x-stayput-out.png",
+      "what": "The Stay-Put Update's event card, the path-traced stone on its stack while the loose sheets blow away"
+    },
+    "bf-2": {
+      "file": "x-bf-in-2-days.png",
+      "what": "The approved #14 sale picture, both cards' pills reading BLACK FRIDAY · IN 2 DAYS"
+    },
+    "bf-1": {
+      "file": "x-bf-in-1-day.png",
+      "what": "The same, BLACK FRIDAY · IN 1 DAY"
+    },
+    "bf-0": {
+      "file": "x-bf-today.png",
+      "what": "The same, BLACK FRIDAY · STARTS TODAY"
+    },
+    "bf-last": {
+      "file": "x-bf-last-day.png",
+      "what": "The same, BLACK FRIDAY · LAST DAY"
+    },
+    "bf-story-last": {
+      "file": "story-bf-last-day.png",
+      "what": "Story: the Undirect sale card, BLACK FRIDAY · LAST DAY, link in bio (no sticker)"
     }
   },
   "posts": [
-    {
-      "id": "S1-x",
-      "day": "Thu Nov 26",
-      "when": "2026-11-26 20:15",
-      "platform": "X",
-      "media": "card",
-      "replaces": "X slot of cancelled question post #2 (Nov 26 19:15)",
-      "text": "My first App Store event goes live tomorrow: the Stay-Put Update for Undirect.\n\nI wanted the art to say it with no words, so it's a stone keeping a stack of paper where it is while every loose sheet blows away. It runs Nov 27 to Dec 27.",
-      "reply": "Undirect on the App Store: {event}x-stayput-teaser"
-    },
     {
       "id": "S1-threads",
       "day": "Thu Nov 26",
@@ -146,8 +161,8 @@
       "media": "details",
       "topic": "Apps",
       "replaces": "Threads still/question slot of Nov 26",
-      "text": "Tomorrow Undirect gets its first App Store event, the Stay-Put Update.\n\nThe art is a stone holding a stack of pages down while the loose sheets blow off. That's the update in one picture: however a site tries to throw you somewhere else, you stay on the page you opened.",
-      "reply": "It's on Undirect's App Store page from tomorrow: {event}threads-stayput-teaser"
+      "text": "The art for the Stay-Put Update is a stone holding a stack of pages down while the loose sheets blow off. That's the update in one picture: however a site tries to throw you somewhere else, you stay on the page you opened. From tomorrow it's on the App Store as my first In-App Event, until Dec 27.",
+      "reply": "{event}threads-stayput-event"
     },
     {
       "id": "S2-tiktok",
@@ -156,7 +171,7 @@
       "platform": "TikTok",
       "media": "stay-put",
       "note": "Disclose post content > Your brand; cover chosen when undirect-b2's film is final",
-      "text": "I just shipped the Stay-Put Update for my Safari extension, Undirect 🪨 A page that sends you to a scam page while you scroll now leaves you where you were, and the Back button takes you back. Free update on iPhone, iPad and Mac, and $0.99 until Nov 30. #safari #iphonetips #scam #iphonehacks"
+      "text": "The Stay-Put Update for my Safari extension, Undirect, in one short film 🪨 A page that sends you to a scam page while you scroll now leaves you where you were, and the Back button takes you back. Free update on iPhone, iPad and Mac. #safari #iphonetips #scam #iphonehacks"
     },
     {
       "id": "S2-meta",
@@ -165,7 +180,7 @@
       "platform": "Instagram Reel + Facebook Reel (Business Suite, one post)",
       "media": "stay-put",
       "note": "cover chosen when the film is final; Facebook first comment by hand: Undirect on the App Store: {event}fb-stayput",
-      "text": "I just shipped the Stay-Put Update for Undirect: when a page tries to throw you somewhere you didn't ask for, you stay put.\n\nA page that redirects you to a scam page while you scroll now leaves you on the article, and the Back button takes you back instead of to another site. The art is a stone holding a stack of paper while the loose sheets blow away, because that's the whole idea.\n\nUndirect is a Safari extension for iPhone, iPad and Mac, $0.99 until Nov 30. Link in bio.\n#safari #iphonetips #ios #scam #macapps",
+      "text": "The Stay-Put Update for Undirect, in one short film: when a page tries to throw you somewhere you didn't ask for, you stay put.\n\nA page that redirects you to a scam page while you scroll now leaves you on the article, and the Back button takes you back instead of to another site. The art is a stone holding a stack of paper while the loose sheets blow away, because that's the whole idea.\n\nUndirect is a Safari extension for iPhone, iPad and Mac. Link in bio.\n#safari #iphonetips #ios #scam #macapps",
       "collab": "@kenneth_j.fang"
     },
     {
@@ -175,7 +190,7 @@
       "platform": "Threads",
       "media": "stay-put",
       "topic": "iPhone",
-      "text": "I shipped the Stay-Put Update for Undirect today, and it's my first App Store event.\n\nA page that sends you to a scam page while you scroll, with no tap at all, now leaves you on the page you were reading. And when a page answers the Back button with another site, Back takes you back.",
+      "text": "The Stay-Put Update is my first App Store event, live from today until Dec 27. This short film is two things people wrote about Safari, and what Undirect does about each of them now.",
       "reply": "Undirect is on the App Store for iPhone, iPad and Mac: {event}threads-stayput"
     },
     {
@@ -194,9 +209,9 @@
       "when": "2026-11-28 00:45",
       "platform": "X",
       "media": "stay-put",
-      "note": "3 h after the Black Friday sale post (Nov 27 21:45); X's picker offers only quarter hours",
-      "text": "I just shipped the Stay-Put Update for Undirect, my Safari extension. A page that throws you to a scam page while you scroll now leaves you where you were, and the Back button takes you back instead of to another site.",
-      "reply": "On the App Store for iPhone, iPad and Mac, $0.99 until Nov 30: {event}x-stayput"
+      "note": "3 h after the Black Friday post (Nov 27 21:45); X's picker offers only quarter hours",
+      "text": "The Stay-Put Update in one short film: two things people wrote about Safari redirects, and what Undirect does about each of them now.",
+      "reply": "Undirect on the App Store: {event}x-stayput-film"
     },
     {
       "id": "S3-tiktok",
@@ -251,10 +266,11 @@
       "day": "Mon Nov 30",
       "when": "2026-11-30 20:45",
       "platform": "X",
-      "media": "end-4x5",
+      "media": "bf-last",
       "replaces": "draft 12 (both apps' last day) if it is still scheduled, and the X slot of cancelled question post #23",
-      "text": "Last day of my Black Friday price: Undirect is $0.99 until midnight Pacific, then back to $1.99. One purchase covers iPhone, iPad and Mac, and the Stay-Put Update comes with it.",
-      "reply": "{event}x-bf-lastday"
+      "text": "Last day of Black Friday: Undirect is $0.99 and Cutling $2.99 until midnight Pacific tonight, then back to $1.99 and $4.99.",
+      "reply": "Cutling: {cutling}x-bf\nUndirect: {undirect}x-bf",
+      "sale": true
     },
     {
       "id": "S5-x",
@@ -342,36 +358,27 @@
     },
     {
       "id": "SS-story1",
-      "day": "Fri Nov 27",
-      "when": "2026-11-27 20:17",
+      "day": "Wed Nov 25 (today)",
+      "when": "2026-11-25 15:31",
       "platform": "Instagram Story + Facebook Story (Business Suite)",
       "media": "sp-story-new",
       "note": "No sticker: the words are in the picture, so Business Suite schedules it to Instagram and Facebook Stories. The same evening, after the Reel at 21:43 goes out with @kenneth_j.fang as collaborator, he shares it to his Story mentioning @monholtco and @monholtco reshares that Story from the Instagram app; that reshare is the Story that carries undirect-b2's film.",
       "text": ""
     },
     {
-      "id": "SS-story2",
-      "day": "Mon Nov 30",
-      "when": "2026-11-30 20:36",
-      "platform": "Instagram Story + Facebook Story (Business Suite)",
-      "media": "sp-story-lastday",
-      "note": "No sticker: the words are in the picture, so Business Suite schedules it to Instagram and Facebook Stories. If @kenneth_j.fang has shared the day's collab post to his Story mentioning @monholtco, the reshare from the Instagram app goes up as well.",
-      "text": ""
-    },
-    {
       "id": "SS-carousel",
-      "day": "Mon Nov 30",
-      "when": "2026-11-30 20:44",
+      "day": "Thu Nov 26",
+      "when": "2026-11-26 20:37",
       "platform": "Instagram carousel + Facebook photos (Business Suite, one post)",
       "media": "sp-carousel",
       "note": "Facebook first comment by hand: Undirect on the App Store: {event}fb-stayput-carousel",
-      "text": "Four pictures of the Stay-Put Update for Undirect. A page's pop-up is stopped at your tap and breaks like glass where your finger landed, and a small note tells you where the page tried to send you.\n\nUndirect is a Safari extension for iPhone, iPad and Mac, $0.99 until midnight Pacific tonight. Link in bio.\n#safari #iphonetips #ios #macapps #popups",
+      "text": "Four pictures of the Stay-Put Update for Undirect, out now. A page's pop-up is stopped at your tap and breaks like glass where your finger landed, and a small note tells you where the page tried to send you.\n\nUndirect is a Safari extension for iPhone, iPad and Mac. Link in bio.\n#safari #iphonetips #ios #macapps #popups",
       "collab": "@kenneth_j.fang"
     },
     {
       "id": "SS-tiktok-photo",
-      "day": "Mon Nov 30",
-      "when": "2026-11-30 20:58",
+      "day": "Thu Nov 26",
+      "when": "2026-11-26 20:53",
       "platform": "TikTok photo post",
       "media": "sp-tt-photos",
       "title": "The Stay-Put Update in four pictures",
@@ -430,6 +437,68 @@
       "title": "One saved reply, a different name every time",
       "note": "Disclose post content > Your brand",
       "text": "Cutling 2.0: one saved reply, a different name every time ✍️ Tap the reply, tap the name, send. Cutling is my keyboard for iPhone and iPad. #iphonetips #smallbusiness #customerservice #iphonehacks"
+    },
+    {
+      "id": "N1-x",
+      "day": "Wed Nov 25 (today)",
+      "when": "2026-11-25 15:15",
+      "platform": "X",
+      "media": "x-stayput-out",
+      "text": "I just shipped the Stay-Put Update for Undirect, my Safari extension. A page that throws you to a scam page while you scroll now leaves you where you were, and the Back button takes you back instead of to another site.",
+      "reply": "Undirect on the App Store: {event}x-stayput",
+      "note": "X's scheduler offers quarter hours only, so 15:15 rather than an odd minute."
+    },
+    {
+      "id": "N1-threads",
+      "day": "Wed Nov 25 (today)",
+      "when": "2026-11-25 15:23",
+      "platform": "Threads",
+      "media": "details",
+      "topic": "iPhone",
+      "text": "I shipped the Stay-Put Update for Undirect today. A page that sends you to a scam page while you scroll, with no tap at all, now leaves you on the page you were reading. And when a page answers the Back button with another site, Back takes you back.",
+      "reply": "Undirect on the App Store: {event}threads-stayput-out"
+    },
+    {
+      "id": "BF2-x",
+      "day": "Wed Nov 25 (today)",
+      "when": "2026-11-25 20:45",
+      "platform": "X",
+      "media": "bf-2",
+      "sale": true,
+      "text": "Black Friday starts in 2 days. From Nov 27 to 30, Cutling is $2.99 instead of $4.99 and Undirect is $0.99 instead of $1.99, one purchase for iPhone, iPad and Mac.",
+      "reply": "Cutling: {cutling}x-bf\nUndirect: {undirect}x-bf",
+      "note": "X's scheduler offers quarter hours only, so 20:45 rather than an odd minute."
+    },
+    {
+      "id": "BF1-x",
+      "day": "Thu Nov 26",
+      "when": "2026-11-26 20:15",
+      "platform": "X",
+      "media": "bf-1",
+      "sale": true,
+      "text": "One day to go. Tomorrow until Nov 30, Undirect drops to $0.99 and Cutling to $2.99 on the App Store.",
+      "reply": "Cutling: {cutling}x-bf\nUndirect: {undirect}x-bf"
+    },
+    {
+      "id": "BF0-x",
+      "day": "Fri Nov 27",
+      "when": "2026-11-27 21:45",
+      "platform": "X",
+      "media": "bf-0",
+      "sale": true,
+      "replaces": "#14 at the same time (its text and picture revised: it now says the sale starts today)",
+      "text": "Black Friday starts today on the App Store, through Nov 30:\nUndirect $0.99 (was $1.99)\nCutling $2.99 (was $4.99)\nOne purchase covers iPhone, iPad and Mac.",
+      "reply": "Cutling: {cutling}x-bf\nUndirect: {undirect}x-bf"
+    },
+    {
+      "id": "BFS-story",
+      "day": "Mon Nov 30",
+      "when": "2026-11-30 20:36",
+      "platform": "Instagram Story + Facebook Story (Business Suite)",
+      "media": "bf-story-last",
+      "sale": true,
+      "note": "No sticker: the words are in the picture, so Business Suite schedules it.",
+      "text": ""
     }
   ]
 }

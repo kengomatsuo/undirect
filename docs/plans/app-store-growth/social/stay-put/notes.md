@@ -97,3 +97,20 @@ doing?" Nothing goes out or is scheduled until his go on the review page.
   word inside the clear box after moving the lower lines to x 120-780; every still opened at full size on contact sheets.
 - Open: the Stay-Put film itself is undirect-b2's; its slots on the page show a placeholder until b2's file is final.
   The kept Threads film posts of Nov 27 and Nov 28 end on questions.
+
+## Owner, 2026-11-25 ~13:30 WIB: the update is out now, and the sale is separate
+
+"why 27 not 25? isn't the apple event over then? That's the black friday one, no? Also this is the stay put update no
+the black friday post, those are separate aren't they??? Post with image for X for the stay-put update, and to count
+down 2 day, 1 day, and on day for the black friday where?"
+- Undirect 1.1.1 (the Stay-Put Update) is READY_FOR_SALE, so it is announced today: X 15:15 with the event card, Threads
+  15:23, Stories 15:31; the Instagram carousel and the TikTok photo post move from Nov 30 to Nov 26. The In-App Event
+  itself shows as upcoming from today 15:00 WIB and runs Nov 27 to Dec 27; b2's film goes out when the event is live
+  (Nov 27), since it is not finished yet. The Nov 26 X teaser is dropped (today's post replaces it); Threads Nov 26 now
+  says the event starts tomorrow.
+- Black Friday is its own run of X posts with the approved #14 sale picture, the pill reading the day: in 2 days
+  (today 20:45), in 1 day (Nov 26 20:15), starts today (Nov 27 21:45, #14 revised), last day (Nov 30 20:45, plus a
+  sale Story). Pictures: sale/countdown.html and sale/story.html, shot to ~/Downloads/Claude/stay-put-posts/x-bf-*.png
+  and story-bf-last-day.png.
+- No Stay-Put post carries a price now (checked over posts.json), and no sale post names the Stay-Put Update.
+- X's scheduler offers quarter hours only, so the X times are :15 and :45, not odd minutes.

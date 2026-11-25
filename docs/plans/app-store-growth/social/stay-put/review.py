@@ -19,7 +19,7 @@ e = html.escape
 
 # Already scheduled and kept (social-posts.md, read 2026-11-25): shown in grey under their day.
 KEPT = {
-    "Fri Nov 27": [("07:55-08:19", "“Next chapter” film on TikTok, Instagram + Facebook, Threads, YouTube Short"), ("15:45", "X: “Next chapter” film"), ("21:45", "X: Black Friday sale, both apps")],
+    "Fri Nov 27": [("07:55-08:19", "“Next chapter” film on TikTok, Instagram + Facebook, Threads, YouTube Short"), ("15:45", "X: “Next chapter” film")],
     "Sat Nov 28 (Fri Nov 27 in the US)": [("15:15", "X: “× means close” film"), ("22:37", "YouTube: “Next chapter” long cut"), ("23:25-23:47", "“× means close” film on TikTok, Instagram + Facebook, Threads, YouTube Short")],
 }
 
@@ -60,7 +60,7 @@ def when(s):
 
 
 def link(text, tag_hint=""):
-    return text.replace("{event}", EVENT).replace("{cutling}", d["links"]["cutling"])
+    return text.replace("{event}", EVENT).replace("{cutling}", d["links"]["cutling"]).replace("{undirect}", d["links"]["undirect"])
 
 
 def rich(text, link_cls="lk"):
@@ -203,6 +203,8 @@ def card(p, label, cls, body):
     note = "".join(f'<p class="note">Replaces {e(n)}.</p>' for n in notes)
     if p.get("collab") and label.startswith("Instagram"):
         note = f'<p class="collab">collab: {e(p["collab"])}</p>' + note
+    if p.get("sale"):
+        note = '<p class="collab">Black Friday post, kept apart from the Stay-Put Update</p>' + note
     if p.get("note") and "first comment" not in p["note"]:
         note += f'<p class="note">{e(p["note"])}</p>'
     hand = []
@@ -218,11 +220,12 @@ def card(p, label, cls, body):
 
 
 DAYTEXT = {
-    "Thu Nov 26": ("Tomorrow", "A short note the day before: my first App Store event, and why the art looks the way it does. The picture is the event card itself."),
-    "Fri Nov 27": ("The Stay-Put Update film", "The event and the $0.99 price start at 15:00 WIB; the film goes out on the next US morning. The one Stay-Put film is undirect-b2's “Blown away” (ASG215): two sentences strangers wrote about Safari, printed on the art's loose sheets, blow away in its wind, and the real Undirect 1.1.1 answers each. Its moving art comes from this calendar's render. The Story goes up first, at 20:17."),
+    "Wed Nov 25 (today)": ("Out today, and Black Friday in 2 days", "Undirect 1.1.1, the Stay-Put Update, is already on the App Store, so it is announced today on X, Threads and Stories with the event art. The Black Friday countdown is a separate run of X posts with the sale pictures; no Stay-Put post names a price."),
+    "Thu Nov 26": ("The art, and one day to Black Friday", "The Stay-Put pictures on Instagram, Facebook and TikTok, the art's idea on Threads, and the sale's one-day countdown on X."),
+    "Fri Nov 27": ("The event goes live, and the sale starts", "The In-App Event and the sale both start at 15:00 WIB, and they stay apart: the sale post at 21:45 is #14 with its picture and words revised, and the Stay-Put film goes out on its own. The film can't move earlier than this, because it is still being made. The one Stay-Put film is undirect-b2's “Blown away” (ASG215): two sentences strangers wrote about Safari, printed on the art's loose sheets, blow away in its wind, and the real Undirect 1.1.1 answers each. Its moving art comes from this calendar's render. The Story goes up first, at 20:17."),
     "Sat Nov 28 (Fri Nov 27 in the US)": ("The film on X, the glass on Threads", "X gets the film three hours after the sale post, at lunchtime in the US. Threads gets how the glass breaks, with the real timings from the effect's code."),
     "Sun Nov 29": ("“This isn't a photo”", "How the art was made: real renders of the scene from 1 to 900 light paths per pixel, then the gust from the first film."),
-    "Mon Nov 30": ("Last day of $0.99, and the note", "On X, the Black Friday price ends at midnight Pacific. Threads carries no prices: it gets the note Undirect shows on the page."),
+    "Mon Nov 30": ("Black Friday's last day, and the note", "The sale's last day on X and in Stories, with the sale pictures. Threads carries no prices: it gets the note Undirect shows on the page."),
     "Tue Dec 1": ("The made-up sites", "The demo pages the event links to: seven fictional sites that misbehave on purpose."),
     "Thu Dec 3": ("iOS 18", "The part of the update people miss: it runs on iOS 18 too."),
     "Fri Dec 4": ("Quiet if you want it", "The glass and the note can be switched off; the stopping goes on."),

@@ -1,0 +1,17 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- Black Friday Story (1080 x 1920): the approved Undirect sale card of 2026-11-20 with its pill set to the day's
+     words, on the card's own red, "link in bio" set in the picture so no sticker is needed (Business Suite cannot place
+     stickers). story.html?label=LAST%20DAY. Sale only: no Stay-Put words. -->
+<style>
+  html, body { margin: 0 }
+  body { width: 1080px; height: 1920px; background: linear-gradient(#7c0f12, #c0221f 60%, #8d1717); position: relative; overflow: hidden;
+    font-family: -apple-system, "SF Pro Display", system-ui; color: #fff }
+  img { position: absolute; left: 90px; top: 290px; width: 900px; height: 1125px; display: block; border-radius: 28px; box-shadow: 0 30px 80px rgba(60,0,0,.45) }
+  .pill { position: absolute; left: 150px; top: 502px; height: 62px; padding: 0 24px; box-sizing: border-box; border-radius: 12px; background: #fff; color: #000;
+    display: flex; align-items: center; font: 800 29px/1 -apple-system, "SF Pro Display", system-ui; letter-spacing: .12em; white-space: nowrap }
+  .bio { position: absolute; left: 0; right: 0; top: 1458px; text-align: center; font: 600 38px/1 -apple-system, system-ui; opacity: .9 }
+</style>
+<body><img src="../../sale-undirect-ig.png"><div class="pill"></div><div class="bio">link in bio</div>
+<script>document.querySelector('.pill').textContent = 'BLACK FRIDAY · ' + (new URLSearchParams(location.search).get('label') || 'LAST DAY');</script>
+</body>
