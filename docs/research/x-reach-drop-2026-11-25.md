@@ -34,3 +34,7 @@ Source: X API v2 (`/users/:id/tweets` with `non_public_metrics`, `/users/me`, `/
 ## Graduated access lifted (2026-11-25 10:08 WIB)
 
 Right after the account's reply to @dwr, X opened https://x.com/i/graduated-access?graduatedAccessScribeSrc=compose with "You've unlocked more on X": "Your content will be more discoverable. And you'll appear in search results and trends", and DMs to non-followers go through unfiltered. So until this moment the account was in X's new-account graduated access, which kept it out of search results and trends; that also held down the Nov 22-25 originals. Read impressions from Nov 26 against the baseline in social-posts.md with this in mind: part of any rise is this unlock, part is the replies.
+
+## Correction (later on 2026-11-25)
+
+At 10:08 WIB X showed @monholtco "You've unlocked more on X" (seen by the undirect-c5 session in the app), and the account now appears in search and trends. So X held the new account under limits until then, on top of the two causes above. The API search check above did not see those limits: API search is not the app's search. No public X page found describing the new-account limits (search 2026-11-25).
