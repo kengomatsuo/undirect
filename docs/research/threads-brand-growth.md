@@ -324,3 +324,7 @@ a month; DK reached 1,800 in 45 days from 3 posts and 20 replies a day.
   reply is not shown to hurt (Blanc: links do not affect distribution) and stays.
 - The X routine's "no link-thread replies" holds on Threads for follow trains, but "share your Mac
   app" posts that ask for apps are on-topic answers, not trains.
+
+## 7. What happened when the routine started (2026-11-25)
+
+On day one @monholtco sent 8 replies, 7 follows and about 8 likes in 33 minutes (10:36-11:09 WIB), replies 1-6 minutes apart. Threads removed the eighth under its spam rule ("We don't allow people to take actions at high volume that might bother others"); Account Status showed no feed or feature limit afterwards. The removed reply was also a feature tip the poster had not asked for. Section 6.2's "20 replies a day" comes from personal accounts with history (DK, vendor) and says nothing about rate; a zero-follower brand account doing it in one burst reads to Meta as automation. Changed pace (Support/social/threads-reply-sitting.md): at most 5 replies a day, 2 a sitting, 30 minutes apart, 3 follows and 5 likes a day, only on posts that ask for something, and Account Status read before each sitting. Raised only after two clean weeks and the owner's go.
