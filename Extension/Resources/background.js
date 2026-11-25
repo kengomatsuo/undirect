@@ -331,24 +331,44 @@ api.action?.onClicked?.addListener?.(async (tab) => {
 // in the page. So the page is told, and draws the stop as it draws its own.
 // An undone redirect lands on a page that is only now coming back, so its word
 // waits for that page's hello.
+//
+// A note the page drew itself waits the same way while it is up. A stopped
+// link swap is followed at once by the navigation the person did ask for, and
+// the note went with the old page about 0.3 s after it rose, before anyone
+// could read it. The page reports its note while it is up and when it goes;
+// the next page in the tab draws it again. `doc` names the page that drew it,
+// so that page coming back from the cache does not draw it twice.
 const STOPPED_HERE = new Set(["pop-tab", "redirect"]);
 const UNTOLD_MS = 8000;
-const untold = new Map(); // tabId -> { kind, base, at }
+const untold = new Map(); // tabId -> { kind, base, count, offer, doc, at }
 
 function tell(tabId, kind, base) {
   if (kind === "redirect") {
-    untold.set(tabId, { kind, base, at: Date.now() });
+    untold.set(tabId, { kind, base, doc: "", at: Date.now() });
     return;
   }
   send(tabId, { type: "undirect:stopped", kind, base });
 }
 
-function tellWaiting(tabId) {
+function noteUp(tabId, msg) {
+  if (tabId === undefined || !msg.doc || !msg.base) return;
+  untold.set(tabId, {
+    kind: msg.kind ?? "", base: msg.base, count: msg.count ?? 1, offer: !!msg.offer, doc: msg.doc, at: Date.now(),
+  });
+}
+
+function noteGone(tabId, doc) {
+  if (untold.get(tabId)?.doc === doc) untold.delete(tabId);
+}
+
+function tellWaiting(tabId, doc) {
   const word = untold.get(tabId);
-  if (!word) return;
+  if (!word || (word.doc && word.doc === doc)) return;
   untold.delete(tabId);
   if (Date.now() - word.at > UNTOLD_MS) return;
-  send(tabId, { type: "undirect:stopped", kind: word.kind, base: word.base });
+  const msg = { type: "undirect:stopped", kind: word.kind, base: word.base };
+  if (word.doc) Object.assign(msg, { carried: true, count: word.count, offer: word.offer });
+  send(tabId, msg);
 }
 
 function send(tabId, msg) {
@@ -427,7 +447,17 @@ api.runtime.onMessage.addListener((msg, sender) => {
   if (sender?.tab) noteTab(sender.tab);
 
   if (msg?.type === "undirect:hello") {
-    hello(tabId, msg.site ?? "");
+    hello(tabId, msg.site ?? "", msg.doc ?? "");
+    return undefined;
+  }
+
+  if (msg?.type === "undirect:noteUp") {
+    noteUp(tabId, msg);
+    return undefined;
+  }
+
+  if (msg?.type === "undirect:noteGone") {
+    noteGone(tabId, msg.doc);
     return undefined;
   }
 
@@ -583,7 +613,7 @@ async function noteNetworkBlocks(tabId) {
 // page: wiping it on each load is what made the popup say nothing had happened
 // on a tab that had just been taken somewhere. The page a pop lands on runs
 // this too, and it was announcing itself over the record of its own theft.
-async function hello(tabId, site) {
+async function hello(tabId, site, doc = "") {
   if (tabId === undefined) return;
   collectOnLoad();
   await restored;
@@ -598,7 +628,7 @@ async function hello(tabId, site) {
     Site.sameSite(entry.stolen.base, site);
   if (!thief && entry.site && site && !Site.sameSite(site, entry.site)) startOver(entry, site);
   else if (!thief) entry.site = site;
-  if (!thief) tellWaiting(tabId);
+  if (!thief) tellWaiting(tabId, doc);
 
   presses.delete(tabId);
   paintBadge(tabId);

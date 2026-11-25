@@ -742,6 +742,34 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   ok("and turning it off afterwards sticks", w.local.settings.banner === false, JSON.stringify(w.local.settings));
 }
 
+// A note still up when the person's own navigation takes its page away is
+// drawn again by the next page in the tab, with its count and its gear.
+{
+  const w = world();
+  await w.settle();
+  w.send({ type: "undirect:hello", site: "site.com", doc: "a" }, 7);
+  await w.settle();
+  w.send({ type: "undirect:noteUp", doc: "a", kind: "href-swap", base: "prize-hub.example", count: 2, offer: true }, 7);
+  w.send({ type: "undirect:hello", site: "site.com", doc: "a" }, 7);
+  await w.settle();
+  ok("the page that drew the note is not told it again", w.calls.told.length === 0, JSON.stringify(w.calls.told));
+  w.send({ type: "undirect:hello", site: "site.com", doc: "b" }, 7);
+  await w.settle();
+  const m = w.calls.told[0];
+  ok("the page the person landed on draws it, with its count and gear",
+     w.calls.told.length === 1 && m.type === "undirect:stopped" && m.carried === true && m.kind === "href-swap" &&
+     m.base === "prize-hub.example" && m.count === 2 && m.offer === true && m.frameId === 0, JSON.stringify(w.calls.told));
+  w.send({ type: "undirect:hello", site: "site.com", doc: "c" }, 7);
+  await w.settle();
+  ok("and only that page", w.calls.told.length === 1, JSON.stringify(w.calls.told));
+
+  w.send({ type: "undirect:noteUp", doc: "c", kind: "href-swap", base: "prize-hub.example", count: 1, offer: false }, 7);
+  w.send({ type: "undirect:noteGone", doc: "c" }, 7);
+  w.send({ type: "undirect:hello", site: "other.example", doc: "d" }, 7);
+  await w.settle();
+  ok("a note that already went is not drawn again", w.calls.told.length === 1, JSON.stringify(w.calls.told));
+}
+
 // The note's Settings button asks the background to open the popup.
 {
   const yes = await world().send({ type: "undirect:openPopup" }, 7).find(Boolean);

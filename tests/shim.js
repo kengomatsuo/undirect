@@ -1,13 +1,15 @@
 // Stands in for the extension APIs, and for a viewport, so guard.js can be
 // exercised in a pane that reports zero size.
 window.__caught = [];
+window.__notes = []; // the note's own hand-over to the background, kept apart from what the page reported
 window.chrome = {
   runtime: {
     getURL: (p) => new URL(p.split("/").pop(), location.href).href,
     // ?hang=1: the background never answers whether the site is guarded, as
     // Safari's can while it wakes the page.
     sendMessage: (msg) => {
-      window.__caught.push(msg);
+      if (msg?.type === "undirect:noteUp" || msg?.type === "undirect:noteGone") window.__notes.push(msg);
+      else window.__caught.push(msg);
       if (msg?.type === "undirect:active" && new URLSearchParams(location.search).get("hang")) return new Promise(() => {});
       return Promise.resolve();
     },
