@@ -102,3 +102,13 @@ Four invented addresses were typed:
 So the film types 東京都杉並区高円寺南3−8−11. Its states on the way, kept in copy-ja.json as iOS showed them: 東京鳥栖 (a city in Saga) at す, 公 and 公園 before 高円寺, 高円寺味 before 高円寺南, a hyphen as ー until the next digit turns it into − (U+2212), and 東京都, 杉並区 and 高円寺南 committed by iOS on its own while the numbers are typed. On iPad with a hardware keyboard the marked text has a blue underline and the candidates sit in a popover; a run on the pool iPhone (`t1795592525374-4c97`, address F only, a screenshot per kana) is queued to confirm the iPhone's states and its underline.
 
 The film's other strings reuse Cutling's own Japanese promo seed (`SnapshotSeedData.swift` `PromoSeedCopy.japanese`): 住所, 署名, 振込先, Wi-Fiパスワード, the person 田中 太郎 and the bank 三菱UFJ銀行 渋谷支店, the same as the bank-number film that drew 27.7% Japanese viewers. Its seed address 桜新町9-12-3 is not used: 桜新町 has only blocks 1 and 2.
+
+## Rounds, and what the readers found
+
+Every line in copy-ja.json says in `written` which round shipped and what its cold reader said; `history` keeps the earlier rounds and why each was turned down. Writers: one per post (post 1 film, carousel, post 2 seed, post 2 film, post 3, post 4). Readers: a fresh one per round. Rounds 3 to 6 took a reader's own native line and read it again cold. Every shipped line was read back as natural.
+
+Findings for the app and later posts, from readers who never saw an English line:
+- **ボールド:** two readers independently called it techy or translated: Japanese iPhone users and Apple's own Japanese UI say 太字. Cutling's ja strings use ボールド (`"Bold" = "ボールド"`). The spoken lines say 太字; the on-screen lines name no style. The app's string is worth a native look.
+- **カットリング:** a viewer who doesn't have the app reads it as a strange word ("one cut ring"), not as "saved text". Copy for strangers says 定型文 (the store name's own word) or 返信. カットリング stays where the viewer sees the app's own screens.
+- **Captions:** three readers said Japanese TikTok posts write no space between Latin and Japanese (Cutlingキーボード, iPhoneの). Captions follow that; on-screen text keeps the half-width space of Cutling's 2.0 store words.
+- **Templates:** "どのアプリでも" overclaims (third-party keyboards are blocked in password fields), so the caption says ほとんどのアプリで.

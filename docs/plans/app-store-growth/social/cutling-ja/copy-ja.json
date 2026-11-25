@@ -954,6 +954,877 @@
      "Beat 1's Messages take is the Every-app preview's iPhone ja take (seedForEveryApp, -PROMO_LANG ja, contacts from g-words.json: 中村 由美 first). g-build-status.md lists no finished iPhone ja take, so it is re-shot too.",
      "Typing Japanese on camera: test1Note's typeText strings above are kanji and kana; the system keyboard in the take should be the Japanese one a Japanese owner has (日本語かな), and typeText must land the exact string with no conversion candidates left open. If typeText cannot, paste the line from the pasteboard in the same stretches the en take types."
     ]
+   },
+   "overlay": {
+    "kick": {
+     "ja": "Cutling 2.0 の新機能",
+     "gloss": "New features of Cutling 2.0 — {n}/5",
+     "written": "r1, read back cold: natural=yes",
+     "counter": "{n}/5",
+     "source": "plan.ts PLAN.beats[i].kick, with the counter in kickRest; {n} is 1 to 5"
+    },
+    "heads": [
+     {
+      "ja": "いつもの返信、[名前]はタップで入る",
+      "gloss": "Your usual reply: the [name] goes in with a tap",
+      "written": "r2, read back cold: natural=yes (Fine as a headline. The contrastive は correctly implies 'the rest is already written, only the name is tapped'. If you want it a touch warmer: 「いつもの返信、[名前]はタップするだけ」.)",
+      "history": [
+       "r1 \"よく使う返信が[名前]を聞いてくれる\": A reply that 聞いてくれる (asks) is an odd personification. 聞く can also mean 'hear', so the line is ambiguous at a glance. A shop owner calls these 定型文 or いつもの返信. A native would write 「[名前]を選ぶだけで、いつもの返信が完成」 or 「いつもの返信に[名前]をワンタップで」."
+      ],
+      "lines": [
+       "いつもの返信、",
+       "[名前]はタップで入る"
+      ],
+      "source": "cutling-promo/src/release/plan.ts PLAN.beats[0].head ([ ] is the green chip)"
+     },
+     {
+      "ja": "[日付]はもう打たなくていい",
+      "gloss": "You no longer have to type the [date]",
+      "written": "r1, read back cold: natural=yes",
+      "lines": [
+       "[日付]は",
+       "もう打たなくていい"
+      ],
+      "source": "cutling-promo/src/release/plan.ts PLAN.beats[1].head ([ ] is the green chip)"
+     },
+     {
+      "ja": "[メモ]と同じように書ける",
+      "gloss": "You can write the same way as in [Notes]",
+      "written": "r1, read back cold: natural=yes (Minor: メモ alone can read as 'a memo' rather than the app. The chip and the recording carry it. 「[メモ]アプリみたいに書ける」 is a little more ad-like and unambiguous.)",
+      "lines": [
+       "[メモ]と同じように",
+       "書ける"
+      ],
+      "source": "cutling-promo/src/release/plan.ts PLAN.beats[2].head ([ ] is the green chip)"
+     },
+     {
+      "ja": "[5,000]個まで入る",
+      "gloss": "Fits up to [5,000]",
+      "written": "r1, read back cold: natural=yes (Casual 入る works, like '1,000曲入る'. If you want it unambiguous, use 「[5,000]個まで保存できる」.)",
+      "lines": [
+       "[5,000]個まで入る"
+      ],
+      "source": "cutling-promo/src/release/plan.ts PLAN.beats[3].head ([ ] is the green chip)"
+     },
+     {
+      "ja": "[書式]ごとワンタップで入る",
+      "gloss": "Goes in with one tap, [formatting] and all",
+      "written": "r2, read back cold: natural=yes",
+      "history": [
+       "r1 \"どれも[そのまま]打てる\": そのまま is vaguer than the point being shown, which is that formatting is kept. 「どれも[書式ごと]打てる」 says it and matches the voice line."
+      ],
+      "source": "cutling-promo/src/release/plan.ts PLAN.beats[4].head ([ ] is the green chip)"
+     }
+    ],
+    "end_name": {
+     "ja": "Cutling [2.0]",
+     "gloss": "Cutling [2.0] (the version in the green chip)",
+     "written": "r1, kept as the en end card draws it (Release.tsx <Rich text>)",
+     "source": "Release.tsx end card"
+    },
+    "end_lines": [
+     {
+      "ja": "App Store で配信中です",
+      "gloss": "Now available on the App Store",
+      "written": "r1, read back cold: natural=yes (Optional: badge-adjacent copy usually drops です, as in 「App Store で配信中」. Keeping です is fine for consistency with line 2.)",
+      "source": "plan.ts PLAN.endLines[0]"
+     },
+     {
+      "ja": "ご利用中の方は、アップデートしてください。",
+      "gloss": "Those who are using it, please update.",
+      "written": "r5, the earlier reader's own native line, read again cold: natural=yes (Correct and common in app notices, but a little dry for an end card. A softer option: 「すでにお使いの方は、アップデートしてご利用ください。」 or 「ご利用中の方は、アップデートをお願いします。」)",
+      "history": [
+       "r1 \"お持ちの方はアップデートで届きます\": お持ちの方 fits cards and coupons, not an installed app. An update 'arriving' (届きます) is also slightly off, and the subject is loose. A native would write 「ご利用中の方は、アップデートでお使いいただけます」 or, more casually, 「お使いの方は、アップデートするだけ」.",
+       "r2 \"お使いの方は、アップデートでどうぞ\": 「アップデートでどうぞ」 is translationese: どうぞ needs something to offer, and 'by updating' is not one. A native would write 「お使いの方は、アップデートしてお使いください」 or, more casually, 「お使いの方は、アップデートするだけで使えます」.",
+       "r3 \"お使いの方は、アップデートするだけで使えます\": 使う appears twice (お使い…使えます), and the honorific お使いの方 clashes with the plain 使えます. Under 配信中です a native writes 「すでにお使いの方は、アップデートするだけ。」 or 「ご利用中の方は、アップデートですぐに使えます」.",
+       "r4 \"すでにお使いの方は、アップデートするだけ。\": The line above ends politely in 「です」, then this one drops to a bare 「するだけ。」. The pair reads like two sources stitched together. 「〜するだけ。」 also leaves out what the update gets you, which works under a feature shot but not under a release notice. A native would write 「すでにお使いの方は、アップデートでご利用いただけます。」 or, shorter, 「ご利用中の方は、アップデートしてください。」"
+      ],
+      "source": "plan.ts PLAN.endLines[1]"
+     }
+    ],
+    "badge": "Apple's Japanese badge, 「App Store からダウンロード」, from Apple's marketing resources, in place of app-store-badge.svg",
+    "fonts": "Hiragino Mincho for the headline's kana and kanji beside New York, Hiragino Sans elsewhere (Release.tsx already says so)"
+   },
+   "voice": [
+    {
+     "ja": "いつもの返信に、お客様の名前。タップするだけで入ります。",
+     "gloss": "Into your usual reply, the customer's name. It goes in with just a tap.",
+     "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
+     "history": [
+      "r1 \"返信が、名前を聞いてくれます。使った名前は、ワンタップ。\": Heard without the visual, 返信が名前を聞いてくれます is the oddest line in the film. A native VO, which fits 5 s, would be 「いつもの返信に、名前を入れられます。一度使った名前は、ワンタップで。」 or 「返信に、名前を差し込めます。使った名前は、ワンタップ。」",
+      "r2 \"いつもの返信に、名前を入れます。次からは、タップだけです。\": 「名前を入れます」 sounds like a manual-typing instruction, and 「次からは」 adds a first-time step the viewer never sees. Say what the screen shows: 「いつもの返信に、お客様の名前。タップするだけで入ります。」 (fits 5 s)."
+     ],
+     "beat": "beat 1, 0.0 to 4.97 s",
+     "say": "いつもの返信に、お客様の名前。タップするだけで入ります。"
+    },
+    {
+     "ja": "日付は、自動で入ります。",
+     "gloss": "The date goes in automatically.",
+     "written": "r1, read back cold: natural=yes",
+     "beat": "beat 2, 4.97 to 7.23 s",
+     "say": "日付は、自動で入ります。"
+    },
+    {
+     "ja": "メモアプリと同じように、太字や箇条書き、ハイライトも使えます。",
+     "gloss": "Just like the Notes app, you can also use bold, bullet points and highlights.",
+     "written": "r3, the earlier reader's own native line, read again cold: natural=yes (Optional: 「メモアプリみたいに」 sounds more spoken than 「同じように」.)",
+     "history": [
+      "r1 \"メモと同じように書けます。ボールドも、箇条書きも、ハイライトも。\": ボールド sounds techie or translated. Japanese users, and Apple's own Japanese UI, say 太字. When heard, メモ alone is less clear than メモアプリ. A native would say 「メモアプリみたいに書けます。太字も、箇条書きも、ハイライトも。」",
+      "r2 \"メモアプリと同じように、ボールド、箇条書き、ハイライトで書けます。\": On a Japanese iPhone and in everyday speech it is 太字, not ボールド. 「〜で書けます」 after a list of formats is also slightly off. A native would say 「メモアプリと同じように、太字や箇条書き、ハイライトも使えます。」"
+     ],
+     "beat": "beat 3, 7.23 to 12.90 s",
+     "say": "メモアプリと同じように、太字や箇条書き、ハイライトも使えます。"
+    },
+    {
+     "ja": "五千個まで、保存できます。",
+     "gloss": "Up to five thousand can be saved.",
+     "written": "r2, read back cold: natural=yes (Natural spoken. It relies on the picture to say what is counted; 「定型文は五千個まで保存できます」 would be clearer if the 2.3 s allows.)",
+     "history": [
+      "r1 \"5,000個まで、入ります。\": Minor: when heard with no subject, 「5,000個まで保存できます。」 lands faster. It fits 2.3 s."
+     ],
+     "beat": "beat 4, 12.90 to 15.17 s",
+     "say": "ごせんこまで、保存できます。"
+    },
+    {
+     "ja": "どれも、書式ごと打てます。",
+     "gloss": "Every one can be typed, formatting and all.",
+     "written": "r1, read back cold: natural=yes",
+     "beat": "beat 5, 15.17 to 17.43 s",
+     "say": "どれも、書式ごと打てます。"
+    },
+    {
+     "ja": "カットリング にーてんぜろ、出ました。アップデートしてみてください。",
+     "gloss": "Cutling two-point-zero, it's out. Please try updating.",
+     "written": "r3, the earlier reader's own native line, read again cold: natural=yes (「アップデートしてみてください」 is a little soft for an update, which is not something you try out. 「ぜひアップデートしてみてください」 is the usual creator phrasing; 「ぜひ使ってみてください」 also works. The reading にーてんぜろ is fine.)",
+     "history": [
+      "r1 \"Cutling 2.0、出ました。お持ちなら、更新を。\": 「お持ちなら、更新を。」 reads like a translation of 'Have it? Update.' A native would say 「Cutling 2.0、出ました。ぜひアップデートを。」 or 「Cutling 2.0、配信開始です。アップデートしてみてください。」 Also set the reading of 2.0 (にーてんぜろ or ツーポイントゼロ) so the TTS doesn't improvise.",
+      "r2 \"カットリング にーてんぜろ、出ました。アップデートで、どうぞ。\": 「出ました」 is a fine solo-maker tone. 「アップデートで、どうぞ」 has the same missing-object problem as the end card, and the pause after で makes it worse when spoken. Say 「カットリング にーてんぜろ、出ました。アップデートしてみてください。」 The kana にーてんぜろ is fine for the speech engine."
+     ],
+     "beat": "end card, 17.43 to 22.0 s",
+     "say": "カットリングにーてんぜろ、出ました。アップデートしてみてください。"
+    }
+   ],
+   "voice_decision": "Voice on. It is the post most like the one that reached Japan (a recording of the app with an ElevenLabs Japanese voice, 27.7% Japanese viewers), and each beat's voice line says what its headline says, so a viewer who hears it without reading still gets the five changes.",
+   "caption": {
+    "ja": "Cutling 2.0、今日から配信です。\nお客さんの名前を選ぶだけで、いつもの返信に名前が入るようにしました。日付も自動で入ります。\n太字や箇条書きを使った定型文も、Cutlingキーボードから書式ごと入力できます。\nひとりで開発しています。",
+    "gloss": "Cutling 2.0 is out from today. I made it so that just by choosing the customer's name, the name goes into your usual reply. Dates go in automatically too. Saved texts with bold and bullet points can also be typed, formatting and all, from the Cutling keyboard. I'm developing it alone.",
+    "written": "r4, the earlier reader's own native line, read again cold: natural=yes (Minor: Japanese posts usually put no space between Latin and kana. Write 「Cutlingキーボード」, not 「Cutling キーボード」.)",
+    "history": [
+     "r1 \"お客さんの名前を選ぶだけで、いつもの返信が打ち終わるようにしました。\\n今日から Cutling 2.0 です。\\n日付はその日のものが自動で入り、メモのように書いたものも Cutling キーボードから打てます。\\nひとりで作っています。\": 打ち終わる is unnatural; use 完成する or 一発で打てる. メモのように書いたもの is vague; spell out the formatting. Suggested caption: 「お客さんの名前を選ぶだけで、いつもの返信が完成するようにしました。\n今日から Cutling 2.0 です。\n日付はその日のものが自動で入り、太字や箇条書きで書いたものも、そのまま Cutling キーボードから打てます。\nひとりで作っています。」",
+     "r2 \"お客様の名前を選ぶだけで、いつもの返信ができあがるようにしました。\\nCutling 2.0、今日から配信です。\\n日付は自動で入ります。ボールドや箇条書きのカットリングも、Cutling キーボードから書式ごと打てます。\\nひとりで作っています。\": (1) 「ボールドや箇条書きのカットリング」 uses the app name as a common noun for a saved snippet. A Japanese viewer will not know that, and mixing katakana カットリング with Latin Cutling in one sentence is confusing; use 定型文. (2) 「日付は自動で入ります」 appears out of nowhere; 「日付も」 links it to the feature before. (3) ボールド → 太字. (4) Japanese usually has no space in 'Cutling キーボード'. (5) The release line reads better first. A native version: 「Cutling 2.0、今日から配信です。\nお客様の名前を選ぶだけで、いつもの返信ができあがるようにしました。日付も自動で入ります。\n太字や箇条書きを使った定型文も、Cutlingキーボードから書式ごと入力できます。\nひとりで作っています。」 The closing 「ひとりで作っています。」 is natural and good.",
+     "r3 \"Cutling 2.0、今日から配信です。\\nお客様の名前を選ぶだけで、いつもの返信ができあがるようにしました。日付も自動で入ります。\\n太字や箇条書きを使った定型文も、Cutling キーボードから書式ごと入力できます。\\nひとりで作っています。\": 「いつもの返信ができあがる」 reads slightly off, because the reply already exists and only the name is added. Better: 「お客様の名前を選ぶだけで、いつもの返信に入るようにしました」. The other captions use お客さん, so pick one form. The closing 「ひとりで作っています。」 is abrupt alone; 「ひとりで開発しています。」 is fine."
+    ],
+    "typography": "caption: no space between Latin and Japanese (TikTok usage, per the readers); on-screen text keeps the store's half-width space"
+   },
+   "hashtags": [
+    {
+     "tag": "#iPhone便利機能",
+     "gloss": "iPhone handy features",
+     "seen": "on the top results for コピペ iPhone (りゅう今すぐ使えるiPhone便利術, 小池モバイル@iPhone研究所, スマホとアプリの教科書)"
+    },
+    {
+     "tag": "#iPhone活用術",
+     "gloss": "getting more out of iPhone",
+     "seen": "on the top results for アイフォン 便利アプリ (田中さんは気になるものは全部買う) and コピペ iPhone; its tag page opens on Japanese iPhone-tips accounts (こあら博士, ぷろぷろ, みさみさ, あお)"
+    },
+    {
+     "tag": "#個人開発",
+     "gloss": "indie development",
+     "seen": "on the top results for 個人開発 アプリ (ゆう｜家計簿アプリ作った情報系大学院生): Japanese solo makers post their own apps under it"
+    },
+    {
+     "tag": "#時短",
+     "gloss": "time-saving",
+     "seen": "on the top results for アイフォン 便利アプリ (得する雑学ちゃんねる) and iPhone 定型文 (トクミル), whose results are all about not typing the same text again"
+    }
+   ],
+   "cover": {
+    "ja": "Cutling 2.0、5つの新機能",
+    "gloss": "Cutling 2.0, 5 new features",
+    "written": "r1, read back cold: natural=yes"
+   }
+  },
+  "3_five_names": {
+   "title": "Five names",
+   "posts": "Dec 2",
+   "film": "~/Repositories/undirect-promo/monholt-films-2/out/c-names-9x16.mp4",
+   "world": "The same owner as the 2.0 takes: a pottery class in Mitaka that also sells online; 9 AM, five customers asked overnight whether their order shipped.",
+   "people": [
+    {
+     "name": {
+      "ja": "中村 由美",
+      "source": "PEOPLE[0].name (the chat header and inbox row)",
+      "gloss": "contact, family name first as a Japanese iPhone shows it",
+      "written": "fixed: Every-app ja contacts (Cutling g-words.json seed.contacts)"
+     },
+     "time": {
+      "ja": "9:02",
+      "source": "PEOPLE[0].time",
+      "gloss": "24-hour time as a ja_JP iPhone shows it, no AM",
+      "written": "data"
+     },
+     "ask": {
+      "ja": "先日注文した品は、もう発送済みでしょうか？",
+      "gloss": "Has the item I ordered the other day already been shipped?",
+      "written": "r1, read back cold: natural=yes",
+      "source": "monholt-films-2/src/films/c-names.js PEOPLE[0].ask"
+     }
+    },
+    {
+     "name": {
+      "ja": "小林 智也",
+      "source": "PEOPLE[1].name (the chat header and inbox row)",
+      "gloss": "contact, family name first as a Japanese iPhone shows it",
+      "written": "fixed: Every-app ja contacts (Cutling g-words.json seed.contacts)"
+     },
+     "time": {
+      "ja": "9:01",
+      "source": "PEOPLE[1].time",
+      "gloss": "24-hour time as a ja_JP iPhone shows it, no AM",
+      "written": "data"
+     },
+     "ask": {
+      "ja": "頼んだ器、もう送ってもらえましたか？",
+      "gloss": "Have you already been able to send the dishes I ordered?",
+      "written": "r2, read back cold: natural=yes",
+      "history": [
+       "r1 \"注文品、発送済みですか？\": 「注文品」 and 「発送済みですか」 read like an order-system label or a shop's internal wording, not a customer's message. A short, plain customer would write 「注文したもの、もう発送されましたか？」 or 「注文した商品、もう届きますか？」."
+      ],
+      "source": "monholt-films-2/src/films/c-names.js PEOPLE[1].ask"
+     }
+    },
+    {
+     "name": {
+      "ja": "松本 彩花",
+      "source": "PEOPLE[2].name (the chat header and inbox row)",
+      "gloss": "contact, family name first as a Japanese iPhone shows it",
+      "written": "fixed: Every-app ja contacts (Cutling g-words.json seed.contacts)"
+     },
+     "time": {
+      "ja": "8:58",
+      "source": "PEOPLE[2].time",
+      "gloss": "24-hour time as a ja_JP iPhone shows it, no AM",
+      "written": "data"
+     },
+     "ask": {
+      "ja": "マグカップ楽しみです！もう発送されてますか？",
+      "gloss": "I'm looking forward to the mug! Has it been shipped yet?",
+      "written": "r1, read back cold: natural=yes",
+      "source": "monholt-films-2/src/films/c-names.js PEOPLE[2].ask"
+     }
+    },
+    {
+     "name": {
+      "ja": "岡田 恵",
+      "source": "PEOPLE[3].name (the chat header and inbox row)",
+      "gloss": "contact, family name first as a Japanese iPhone shows it",
+      "written": "fixed: Every-app ja contacts (Cutling g-words.json seed.contacts)"
+     },
+     "time": {
+      "ja": "8:57",
+      "source": "PEOPLE[3].time",
+      "gloss": "24-hour time as a ja_JP iPhone shows it, no AM",
+      "written": "data"
+     },
+     "ask": {
+      "ja": "お皿の発送ってもう済んでますか？🙂",
+      "gloss": "Is the shipping of the plates already done? 🙂",
+      "written": "r1, read back cold: natural=yes (Fine. 「お皿ってもう発送されてますか？🙂」 is a touch more everyday, but the original is something people write.)",
+      "source": "monholt-films-2/src/films/c-names.js PEOPLE[3].ask"
+     }
+    },
+    {
+     "name": {
+      "ja": "原田 千夏",
+      "source": "PEOPLE[4].name (the chat header and inbox row)",
+      "gloss": "contact, family name first as a Japanese iPhone shows it",
+      "written": "fixed: Every-app ja contacts (Cutling g-words.json seed.contacts)"
+     },
+     "time": {
+      "ja": "8:55",
+      "source": "PEOPLE[4].time",
+      "gloss": "24-hour time as a ja_JP iPhone shows it, no AM",
+      "written": "data"
+     },
+     "ask": {
+      "ja": "急かしてすみません、もう発送されましたか？",
+      "gloss": "Sorry to rush you, has it been shipped yet?",
+      "written": "r1, read back cold: natural=yes (Natural. 「急かすようですみません、」 is the more common softener, but either works.)",
+      "source": "monholt-films-2/src/films/c-names.js PEOPLE[4].ask"
+     }
+    }
+   ],
+   "reply": {
+    "ja": "{名前}様、ご注文の品は金曜日に発送いたします。",
+    "source": "c-names.js SENT(n), the fill sentence and bigSentence",
+    "typed_example": "中村様、ご注文の品は金曜日に発送いたします。",
+    "gloss": "[Name]-sama, your order ships on Friday.",
+    "written": "fixed: the Every-app ja 発送連絡 key (its weekday variable, shown as Friday as the en film fixes it)",
+    "big_sentence": {
+     "lines": [
+      "[名前]様、",
+      "ご注文の品は",
+      "金曜日に発送いたします。"
+     ],
+     "blank_label": "名前",
+     "note": "the blank's small caps label NAME becomes 名前 (the app's own label); the name lands in the blank before 様"
+    }
+   },
+   "fill_screen": {
+    "sentence": "[名前]様、ご注文の品は金曜日に発送いたします。",
+    "values": [
+     "中村",
+     "小林",
+     "松本",
+     "岡田",
+     "原田",
+     "ペースト"
+    ],
+    "type_with_keyboard": "いつものキーボードで入力",
+    "source": "kit.js K.cutlingKeyboard fill mode; strings from CutlingKeyboard/ja.lproj"
+   },
+   "keyboard_cards": {
+    "source": "monholt-films-2/src/stage.js S.seed.shop, as the Every-app and 2.0 ja seeds name them",
+    "cards": [
+     {
+      "en": "Order update",
+      "name": "発送連絡",
+      "preview": "[名前]様、ご注文の品は[金曜日]に発送…"
+     },
+     {
+      "en": "Home address",
+      "name": "自宅の住所",
+      "preview": "東京都練馬区豊玉北4-21-6 203"
+     },
+     {
+      "en": "Bank details",
+      "name": "口座番号",
+      "preview": "3058162"
+     },
+     {
+      "en": "Booking",
+      "name": "ご予約確定",
+      "preview": "ご予約を承りました。当日を…"
+     },
+     {
+      "en": "Wi-Fi",
+      "name": "教室の Wi-Fi",
+      "preview": "tougei-guest / kama2580"
+     },
+     {
+      "en": "Thank you",
+      "name": "お礼",
+      "preview": "お買い上げありがとうございました。"
+     }
+    ],
+    "gloss": "shipping notice, home address, account number, booking confirmed, the class Wi-Fi, thanks",
+    "add_from_clipboard": "クリップボードから追加"
+   },
+   "system_ui": {
+    "inbox_title": "メッセージ",
+    "search": "検索",
+    "field_placeholder": "iMessage",
+    "globe_menu": [
+     "キーボード設定...",
+     "日本語 - ローマ字",
+     "Cutling"
+    ],
+    "note": "iOS's own Japanese words for Messages and the globe list; the drawn system keyboard is QWERTY, which a Japanese iPhone calls 日本語 - ローマ字, with its space key 空白 and return 改行. Check them against the ja simulator's screens before rendering."
+   },
+   "overlay": {
+    "open": {
+     "ja": "お客さま5人から同じ質問。",
+     "gloss": "The same question from 5 customers.",
+     "written": "r1, read back cold: natural=yes",
+     "lines": [
+      "お客さま5人から",
+      "同じ質問。"
+     ],
+     "source": "c-names.js captions [0, G.push[0]]"
+    },
+    "payoff": {
+     "ja": "文面はひとつ。名前は、ひとりずつ。",
+     "gloss": "The message text: one. The names: one person at a time.",
+     "written": "r6, the earlier reader's own native line, read again cold: natural=yes (Reads as real Japanese ad copy. The parallel ひとつ／ひとりずつ works, and the comma after 名前は is a normal copywriting pause. One possible refinement, not required: 「名前は、ひとりひとり。」 adds a warmer sense of individual care. ひとりずつ leans toward 'one by one', which also fits here. The line breaks are good.)",
+     "history": [
+      "r1 \"カットリング1つで名前だけ毎回ちがう。\": Counting the app name with 「1つ」 is confusing: viewers don't know a カットリング is a saved reply, and it can read as 'one cut ring'. 「名前だけ毎回ちがう」 also sounds like a plain observation or mild complaint, not a payoff. The katakana カットリング also clashes with the Latin 'Cutling' on the end card. A native ad writer would put the reply first, for example 「返信は1つ。名前だけ、ひとりずつ。」 or 「同じ返信を、名前だけ変えて5人に。」.",
+      "r2 \"返信はひとつ。名前だけ変えて、5人とも自分宛て。\": 「自分宛て」 is ambiguous here because the sentence's implied subject is the owner, so it can read as 'addressed to me'. The two clauses also switch viewpoint, from the owner changing names to the customer feeling addressed. A native ad writer would keep one viewpoint and say it directly: 「返信はひとつ。宛名だけ、5人それぞれ。」 or 「返信はひとつ。名前を変えるだけで、5人それぞれに。」",
+      "r3 {\"text\": \"返信はひとつ。宛名だけ、5人それぞれ。\", \"line_breaks\": [\"返信はひとつ。\", \"宛名だけ、\", \"5人それぞれ。\"]}: This reads like a translation of 'One reply. Five names.' 宛名 belongs to envelopes and email headers, and 「5人それぞれ」 hangs without a predicate. A copywriter would write 「返信はひとつ。名前だけ、ひとりずつ。」 or 「同じ返信。名前だけ、5人分。」.",
+      "r4 {\"text\": \"返信はひとつ。名前だけ、ひとりずつ。\", \"line_breaks\": [\"返信はひとつ。\", \"名前だけ、\", \"ひとりずつ。\"]}: 「名前だけ」 can be read as 'only names were sent'. 「ひとりずつ」 means 'one at a time, in order', which suggests effort, the opposite of the point. Copy that contrasts with 「は」 and stresses each person reads cleaner: 「返信はひとつ。名前は、ひとりひとり。」 Line breaks: 「返信はひとつ。」/「名前は、」/「ひとりひとり。」",
+      "r5 {\"text\": \"返信はひとつ。名前は、ひとりひとり。\", \"line_breaks\": [\"返信はひとつ。\", \"名前は、\", \"ひとりひとり。\"]}: The copy rhythm is right, but there are two snags. First, 「返信はひとつ」 over an inbox can be misread as \"one reply arrived.\" 「文面はひとつ」 makes it clear the text is shared. Second, 「ひとりひとり」 as a bare predicate feels slightly unfinished. 「ひとりずつ」 works better as a distributive predicate and keeps the ひとつ/ひとり contrast. Suggested: 「文面はひとつ。名前は、ひとりずつ。」 with breaks 「文面はひとつ。」「名前は、」「ひとりずつ。」"
+     ],
+     "lines": [
+      "文面はひとつ。",
+      "名前は、",
+      "ひとりずつ。"
+     ],
+     "source": "c-names.js captions [T.done, T.end]"
+    },
+    "endline": {
+     "ja": "書くのは一度だけ。",
+     "gloss": "You write it only once.",
+     "written": "r1, read back cold: natural=yes",
+     "source": "M.endCard line (also post 4's end card)"
+    }
+   },
+   "voice": [
+    {
+     "ja": "五人から、同じ質問です。",
+     "gloss": "From five people, the same question.",
+     "written": "r1, read back cold: natural=yes (Make sure TTS reads 五人 as ごにん.)",
+     "beat": "0.0 to 2.5 s, over the inbox of five unread",
+     "say": "ごにんから、同じ質問です。"
+    },
+    {
+     "ja": "タップして、名前を選んで、送信。一度入れた名前は、次から選ぶだけ。",
+     "gloss": "Tap, pick the name, send. A name you've entered once, from next time you just pick it.",
+     "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
+     "history": [
+      "r1 \"タップして、名前を選んで、送信。入れた名前は、次から選べます。\": On a first hearing 「入れた名前は」 is a little abrupt. 「一度入れた名前は、次から選べます。」 is clearer spoken and matches the caption.",
+      "r2 \"タップ、名前を選んで、送信。名前は一度入れたら、次も選べます。\": The list mixes a bare noun (タップ), a te-form (選んで) and a noun (送信), so it sounds uneven when spoken. 「次も選べます」 also sounds translated ('can choose next time too'). A native would say: 「タップして、名前を選んで、送信。一度入れた名前は、次から選ぶだけ。」"
+     ],
+     "beat": "4.4 to 10.4 s, while the owner answers them one by one",
+     "say": "タップして、名前を選んで、送信。一度入れた名前は、次から選ぶだけ。"
+    },
+    {
+     "ja": "文面はひとつ。名前は、ひとりずつ。",
+     "gloss": "The message text: one. The names: one person at a time.",
+     "written": "r6, the earlier reader's own native line, read again cold: natural=yes (It works as narration, and the pause after 名前は lands well aloud. 文面 (ぶんめん) is a slightly written word but is recognized instantly when heard. At about 18 morae it fits 3 s only at a brisk pace. If it runs long, 「文面はひとつ。名前は、それぞれ。」 is about the same length, so the real fix is to tighten the pauses.)",
+     "history": [
+      "r1 \"カットリングひとつで、名前だけ変わります。\": Same problem as the headline, and worse by ear, because an unexplained katakana word counted with ひとつ is hard to parse in speech. Say 「返信はひとつ。名前だけ変えて、全員に。」 or 「同じ返信を、名前だけ変えて送れます。」.",
+      "r2 \"返信はひとつ。名前だけ、5人それぞれ。\": This works as elliptical ad narration. 「宛名だけ、5人それぞれ。」 would be a little sharper when heard, because 宛名 makes 'the name it is addressed to' explicit.",
+      "r3 \"返信はひとつ。宛名だけ、5人それぞれ。\": Spoken aloud, the stiffness is stronger, and 宛名 is a written-only word. A native says 「同じ返信でも、名前はひとりずつ。」 or 「返信はひとつ。名前だけ、5人分。」.",
+      "r4 \"返信はひとつ。名前だけ、ひとりずつ。\": Same problem as the headline, and worse when heard, because 「なまえだけ」 lands as 'just the name'. Say 「返信はひとつ。名前は、ひとりひとり。」 It is about 19 morae, which fits 3 s with a pause at the full stop.",
+      "r5 \"返信はひとつ。名前は、ひとりひとり。\": Heard aloud, the comma pause works and 「ひとりひとり」 sounds fine. The 「返信はひとつ」 ambiguity remains, though. Match the headline: 「文面はひとつ。名前は、ひとりずつ。」 It fits comfortably in 3 s."
+     ],
+     "beat": "11.2 to 14.2 s, over the answered inbox",
+     "say": "文面はひとつ。名前は、ひとりずつ。"
+    },
+    {
+     "ja": "iPhone のコピペキーボード、Cutling です。",
+     "gloss": "The copy-paste keyboard for iPhone, Cutling.",
+     "written": "r1, read back cold: natural=yes (Natural. Check that TTS says アイフォーン/アイフォン and カットリング, not a spelled-out reading.)",
+     "beat": "14.4 to 18.0 s, end card",
+     "say": "アイフォンのコピペキーボード、カットリングです。"
+    }
+   ],
+   "voice_decision": "Voice on, four short lines at the captions' moments; the taps between stay on the music. The film has few words on screen, and the one post that reached Japan carried a Japanese voice.",
+   "caption": {
+    "ja": "朝起きたら、お客さん5人から同じ質問。\nよく使う返信をタップして、名前を選んで送るだけ。5人分すぐ返せます。\n一度入れた名前は、次から選べます。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
+    "gloss": "When I woke up, the same question from 5 customers. Just tap a reply you use often, pick the name and send. You can answer all 5 right away. Names you've entered once can be picked next time. This is 'Cutling', an iPhone keyboard app I'm making on my own.",
+    "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
+    "history": [
+     "r1 \"朝起きたら、5人から同じ質問。\\nよく使う返信をタップして、名前を選んで送るだけで、5人分すぐ返せます。\\n一度入れた名前は、次から選べます。\\nひとりで作っている iPhone のキーボード、Cutling です。\": Reads well. The first line sounds like the maker's own morning, though the film shows a pottery shop. If that's intended, fine; otherwise 「朝起きたら、お客さま5人から同じ質問。」 ties it to the film. For the last line, indie devs more often write 「個人で開発しているiPhoneキーボード「Cutling」です。」, but the original is natural.",
+     "r2 \"朝起きたら、お客さん5人から同じ質問。\\nよく使う返信をタップして、名前を選んで送るだけで、5人分すぐ返せます。\\n一度入れた名前は、次から選べます。\\nひとりで作っている iPhone のキーボードアプリ、Cutling です。\": This reads like a real indie dev's post. Line 2 is slightly long and 「だけで…すぐ」 doubles up the 'easy/fast' idea. Optional tightening: 「よく使う返信をタップして、名前を選んで送るだけ。5人分すぐ返せます。」 Writing 「iPhoneの」 without the spaces is also common in Japanese posts, though the spaced version is acceptable."
+    ],
+    "typography": "caption: no space between Latin and Japanese (TikTok usage, per the readers); on-screen text keeps the store's half-width space"
+   },
+   "hashtags": [
+    {
+     "tag": "#iPhone便利機能",
+     "gloss": "iPhone handy features",
+     "seen": "on the top results for コピペ iPhone (りゅう今すぐ使えるiPhone便利術, 小池モバイル@iPhone研究所, スマホとアプリの教科書)"
+    },
+    {
+     "tag": "#iPhone活用術",
+     "gloss": "getting more out of iPhone",
+     "seen": "on the top results for アイフォン 便利アプリ (田中さんは気になるものは全部買う) and コピペ iPhone; its tag page opens on Japanese iPhone-tips accounts (こあら博士, ぷろぷろ, みさみさ, あお)"
+    },
+    {
+     "tag": "#コピペ",
+     "gloss": "copy-paste",
+     "seen": "on the top results for コピペ iPhone (スマホとアプリの教科書, KUKULOG)"
+    },
+    {
+     "tag": "#業務効率化",
+     "gloss": "work efficiency",
+     "seen": "on the top results for ネットショップ 返信 効率化 (えいと)"
+    }
+   ],
+   "cover": {
+    "ja": "5人から同じ質問、すぐ返信",
+    "gloss": "Same question from 5 people, reply right away",
+    "written": "r2, read back cold: natural=yes (This is natural telegraphic cover text. If you want more punch: 「5人から同じ質問→すぐ返信」 or 「同じ質問が5人から。返信は一瞬」.)",
+    "history": [
+     "r1 \"5人の同じ質問に、すぐ返信\": 「5人の同じ質問に」 is slightly clumsy, since natives say the question came from five people rather than belonged to them. Better: 「5人から同じ質問→すぐ返信」 or 「同じ質問5人分、一瞬で返信」."
+    ]
+   }
+  },
+  "4_five_taps": {
+   "title": "Five taps",
+   "posts": "Dec 3",
+   "film": "~/Repositories/undirect-promo/monholt-films-2/out/c-five-9x16.mp4",
+   "world": "18:12 at a small Japanese restaurant, 小料理つむぎ, run by 森田; dark mode.",
+   "guest": {
+    "ja": "高橋 美咲",
+    "gloss": "Takahashi Misaki",
+    "written": "r1, read back cold: natural=yes",
+    "source": "c-five.js C.chat name"
+   },
+   "names": {
+    "ja": [
+     "高橋",
+     "佐藤",
+     "山本",
+     "中村",
+     "小林"
+    ],
+    "gloss": "Takahashi / Sato / Yamamoto / Nakamura / Kobayashi",
+    "written": "r1, read back cold: natural=yes",
+    "source": "S.seed.names on the fill screen (the first is this guest)"
+   },
+   "ask": {
+    "ja": "土曜の19:30から4人で予約できますか？😊",
+    "gloss": "Can I book for 4 people from 19:30 on Saturday? 😊",
+    "written": "r2, read back cold: natural=yes",
+    "history": [
+     "r1 \"土曜日、4人なんですが席空いてますか？🙂\": The wording is natural, but the guest gives no time and the reply then confirms 19:30 as if she had asked for it. Add the time: 「土曜日の19時半から4人なんですが、席空いてますか？」. 😊 is more typical than 🙂 for a friendly Japanese message, though 🙂 is acceptable."
+    ],
+    "source": "c-five.js ASK"
+   },
+   "keys": {
+    "hello": {
+     "name": {
+      "ja": "あいさつ",
+      "gloss": "Greeting",
+      "written": "r1, read back cold: natural=yes"
+     },
+     "text": {
+      "ja": "[名前]様、こんばんは。ご連絡ありがとうございます。",
+      "gloss": "Ms. [Name], good evening. Thank you for contacting us.",
+      "written": "r1, read back cold: natural=yes (Minor: a saved greeting that says こんばんは only fits evening replies. It works at 18:12. A reusable version would be 「[名前]様、お問い合わせありがとうございます。」.)"
+     },
+     "source": "cards()[0] and parts.hello; [名前] is the Ask Each Time blank",
+     "typed_example": "高橋様、こんばんは。ご連絡ありがとうございます。"
+    },
+    "booking": {
+     "name": {
+      "ja": "予約OK",
+      "gloss": "Booking OK",
+      "written": "r2, read back cold: natural=yes",
+      "history": [
+       "r1 \"ご予約\": Minor: ご予約 reads like customer-facing signage. An owner's private label would more often be 「予約確認」 or 「予約OK」."
+      ]
+     },
+     "blank": {
+      "ja": "人数",
+      "gloss": "Number of people",
+      "written": "r1, read back cold: natural=yes"
+     },
+     "text": {
+      "ja": "土曜日19:30より、[人数]のお席をご用意いたしました。お店は角のお花屋さんの2階です。緑のドアのインターホンを押していただければ、下までお迎えにまいります。",
+      "gloss": "From 19:30 on Saturday, we have prepared seats for 4 guests. Our restaurant is on the 2nd floor above the flower shop on the corner. If you press the intercom at the green door, we will come down to greet you.",
+      "written": "r4, the earlier reader's own native line, read again cold: natural=yes (Minor: next to 「ご用意いたしました」 and 「まいります」, 「お店は」 is a little casual for the owner's own shop. 「当店は」 matches the register, though many small owners do write 「お店は」. 「19:30」 is fine in a message.)",
+      "history": [
+       "r1 \"土曜日19時半、[人数]でご予約を承りました。お店は角の花屋さんの2階です。緑の扉の呼び鈴を鳴らしていただければ、開けにまいります。\": 「開けにまいります」 is grammatical but a little bare. A host would more often write 「お迎えにあがります」 or 「中からお開けします」. 呼び鈴 is slightly old-fashioned (インターホン is more common), though it suits a small restaurant. Also, the day and time are fixed in a reusable template, so it only works for Saturday 19:30. A real shop would make these blanks, and the guest never stated 19:30 (see p4.ask). A smoother joint is 「土曜日19時半より、[人数]でご予約承りました。」.",
+       "r2 \"土曜日19:30、[人数]でお席をご用意しました。角のお花屋さんの2階です。緑のドアのインターホンを押していただければ、下までお迎えにまいります。\": [人数] must render as 「4名様」, not 「4人」: a shop writing to a guest says 名様, and 「4人でお席を」 reads like the guest's own words. A shop owner would almost always open with thanks and write the time with より, for example 「ご予約ありがとうございます。土曜日19:30より、4名様でお席をご用意いたしました。」 「ご用意しました」 is acceptable; 「ご用意いたしました」 matches the humble まいります later in the message.",
+       "r3 \"土曜日19:30より、[人数]でお席をご用意いたしました。角のお花屋さんの2階です。緑のドアのインターホンを押していただければ、下までお迎えにまいります。\": 「4名様でお席を」 is passable, but 「4名様のお席をご用意いたしました」 reads cleaner. The location sentence lacks a subject after the booking line; 「お店は角のお花屋さんの2階です。」 or 「当店は…」 fixes the jump. The rest is good hospitality Japanese."
+      ]
+     },
+     "choices": [
+      "2名様",
+      "4名様",
+      "6名様"
+     ],
+     "choices_gloss": "2, 4 or 6 guests (the counter 名様 lives in the choice values, so the sentence reads 4名様で)",
+     "source": "cards()[1] and parts.booking; the fill screen's values ['2','4','6'] become the choices",
+     "typed_example": "土曜日19:30より、4名様でお席をご用意いたしました。角のお花屋さんの2階です。緑のドアのインターホンを押していただければ、下までお迎えにまいります。"
+    },
+    "signoff": {
+     "name": {
+      "ja": "しめの挨拶",
+      "gloss": "Closing greeting",
+      "written": "r2, read back cold: natural=yes (締めの挨拶 also evokes a closing speech at a party. That is fine for a personal label, but 「結び」 or 「署名」 would be the more literal choice.)",
+      "history": [
+       "r1 \"結び\": 結び is a letter-writing textbook term and sounds literary for a shop owner's own label. Use 「締め」 or 「しめのあいさつ」."
+      ]
+     },
+     "text": {
+      "ja": "それでは、当日お待ちしております。\n小料理つむぎ　森田",
+      "gloss": "Well then, we will be waiting for you on the day. Koryori Tsumugi, Morita",
+      "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
+      "history": [
+       "r1 \"それでは、当日お会いできるのを楽しみにしております。\\n森田\": Minor: restaurants more often write 「当日お待ちしております。」, though 「お会いできるのを楽しみに」 fits a small, personal place. A shop usually signs with the shop name and the person, e.g. 「〇〇 森田」. A bare 森田 reads as a private person.",
+       "r2 \"それでは、当日お待ちしております。\\n小料理 つむぎ　森田\": The spacing is inconsistent: there is a half-width space after 小料理 and a full-width space before 森田. Use the same width for both (「小料理 つむぎ 森田」 or 「小料理つむぎ　森田」)."
+      ]
+     },
+     "source": "cards()[2] and parts.signoff; the Cursor Position fill-in (挿入後のカーソル位置) sits before it, so the owner's own line comes above the sign-off"
+    },
+    "others": [
+     {
+      "name": {
+       "ja": "道案内",
+       "gloss": "Directions",
+       "written": "r1, read back cold: natural=yes (「アクセス」 is equally common in shop usage.)"
+      },
+      "preview": {
+       "ja": "駅の東口から歩いて3分、",
+       "gloss": "3 minutes' walk from the station's east exit,",
+       "written": "r1, read back cold: natural=yes (Shops typically write 「東口から徒歩3分、」, but this wording is fine.)"
+      },
+      "source": "cards()[3]"
+     },
+     {
+      "name": {
+       "ja": "今夜の献立",
+       "gloss": "Tonight's menu",
+       "written": "r1, read back cold: natural=yes (献立 fits a kappō or washoku place. For a casual shop, 「本日のおすすめ」 is more usual.)"
+      },
+      "preview": {
+       "ja": "今夜は、旬の鰆の西京焼きと",
+       "gloss": "Tonight, seasonal Spanish mackerel grilled with Saikyo miso, and",
+       "written": "r1, read back cold: natural=yes"
+      },
+      "source": "cards()[4]"
+     },
+     {
+      "name": {
+       "ja": "アレルギー",
+       "gloss": "Allergies",
+       "written": "r1, read back cold: natural=yes"
+      },
+      "preview": {
+       "ja": "苦手な食材やアレルギーは",
+       "gloss": "Any foods you dislike or allergies",
+       "written": "r1, read back cold: natural=yes"
+      },
+      "source": "cards()[5]"
+     }
+    ]
+   },
+   "system_ui": {
+    "time": "18:12",
+    "field_placeholder": "iMessage",
+    "globe_menu": [
+     "キーボード設定...",
+     "日本語 - ローマ字",
+     "Cutling"
+    ],
+    "fill_screen": {
+     "type_with_keyboard": "いつものキーボードで入力",
+     "paste": "ペースト"
+    }
+   },
+   "overlay": {
+    "open": {
+     "ja": "長い返信も、5タップで。",
+     "gloss": "Even a long reply, in 5 taps.",
+     "written": "r1, read back cold: natural=yes",
+     "lines": [
+      "長い返信も",
+      "5タップで。"
+     ],
+     "source": "c-five.js captions [0, T.hello]"
+    },
+    "payoff": {
+     "ja": "この長さで、5タップ。",
+     "gloss": "This length, in 5 taps.",
+     "written": "r2, read back cold: natural=yes",
+     "history": [
+      "r1 \"かかったのは、5タップだけ。\": 「かかったのは〜だけ」 is a recognisable translation of 'all it took was…'. かかる sits better with time or money. Use 「これで、たった5タップ。」 or 「タップしたのは、5回だけ。」."
+     ],
+     "lines": [
+      "この長さで、",
+      "5タップ。"
+     ],
+     "source": "c-five.js captions [T.sent, T.end]"
+    },
+    "endline": "same as post 3's endline"
+   },
+   "voice": [
+    {
+     "ja": "こんな長い返信も、5タップ。",
+     "gloss": "Even a reply this long, 5 taps.",
+     "written": "r2, read back cold: natural=yes (This is natural spoken copy. Check that the speech engine says ご for 5 and does not say いつつ; if it is unsure, spell it 「ごタップ」 in the speech text.)",
+     "history": [
+      "r1 \"長い返信も、5タップです。\": Acceptable ad-VO pattern, but flat when heard. 「長い返信も、5タップで書けます。」 sounds more natural spoken."
+     ],
+     "beat": "0.0 to 2.1 s, over the empty chat",
+     "say": "こんな長い返信も、ごタップ。"
+    },
+    {
+     "ja": "名前も人数も入って、自分の言葉もひとこと足せます。",
+     "gloss": "The name and the party size go in, and you can add a word of your own too.",
+     "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
+     "history": [
+      "r1 \"名前も、人数も、自分のひとことも。\": There is no predicate, so a listener doesn't know what is true of these three things. Give it one: 「名前も、人数も、自分のひとことも、ちゃんと入る。」. Logic: if the personal line is typed after the 結び signature (cursor below the text), that order is unnatural, since it should come before 「それでは…森田」. Typing it also isn't part of the 5 taps.",
+      "r2 \"名前と人数が入って、自分のひとことも足せます。\": 「自分のひとこと」 is slightly loose. 「名前も人数も入って、自分の言葉もひとこと足せます。」 is smoother. Viewers will assume 名前 means the guest's name, but the only name in the reply is the owner's (森田). Make sure the name the glow lands on is one a viewer will connect to this line."
+     ],
+     "beat": "6.4 to 9.9 s, the read-back glowing on name, number, cursor",
+     "say": "名前も人数も入って、自分の言葉もひとこと足せます。"
+    },
+    {
+     "ja": "ここまで、5タップです。",
+     "gloss": "Up to here, 5 taps.",
+     "written": "r1, read back cold: natural=yes",
+     "beat": "11.7 to 14.4 s, after it is sent",
+     "say": "ここまで、ごタップです。"
+    },
+    {
+     "ja": "一度書いておけば、あとはタップだけ。カットリング キーボード。",
+     "gloss": "Once you've written it, after that it's just taps. Cutling Keyboard.",
+     "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
+     "history": [
+      "r1 \"書くのは一度。iPhone キーボード、Cutling。\": 「書くのは一度。」 sounds clipped and translated from 'Write it once.' Use 「書くのは一度だけ。」 or 「一度書けば、あとはタップだけ。」. 「iPhone キーボード」 without の sounds like a category label. Spoken, it should be 「iPhoneのキーボードアプリ、Cutling。」.",
+      "r2 \"一度書けば、タップだけ。カットリングキーボードです。\": 「一度書けば、タップだけ」 drops the あと that spoken Japanese needs here, and 書けば does not convey writing ahead of time. A native would say 「一度書いておけば、あとはタップだけ。」 Ending with 「〇〇です」 is fine, though 「カットリング キーボード。」 is punchier on an end card. カットリング is a reasonable reading of Cutling."
+     ],
+     "beat": "14.6 to 18.0 s, end card",
+     "say": "一度書いておけば、あとはタップだけ。カットリングキーボード。"
+    }
+   ],
+   "voice_decision": "Voice on at the open, the read-back, the payoff and the end; the five taps stay on the music so they can be counted.",
+   "caption": {
+    "ja": "この長い返信、5タップとひとことで書きました。\n名前と人数はその場で選んで、最後に自分の言葉を少しだけ。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
+    "gloss": "I wrote this long reply in 5 taps and a few words. The name and party size I picked on the spot, and at the end, just a little in my own words. It's 'Cutling', an iPhone keyboard app I'm making by myself.",
+    "written": "r4, the earlier reader's own native line, read again cold: natural=yes (Minor: no space between Latin and kana, so 「iPhoneのキーボードアプリ」.)",
+    "history": [
+     "r1 \"この長い返信、5タップで書きました。\\n名前と人数はその場で選んで、最後のひとことだけ自分で。\\nひとりで作っている iPhone のキーボード、Cutling です。\": The voice is natural and warm. Two issues: 「5タップで書きました」 conflicts with 「最後のひとことだけ自分で」, so say 「ほぼ5タップで」 or keep the personal line out of the count. キーボード alone can mean a physical keyboard, so 「iPhoneのキーボードアプリ」 is clearer.",
+     "r2 \"この長い返信、5タップとひとことだけで書きました。\\n名前と人数はその場で選んで、自分の言葉をひとこと足しました。\\nひとりで作っている iPhone のキーボードアプリ、「Cutling」です。\": ひとこと appears in both line 1 and line 2, which a native writer would trim. Line 2 also says the name was chosen on the spot, but in the film only the party size is chosen; the name sits in the fixed sign-off. It also conflicts with the voiceover, which says they 入って (fill in by themselves). Suggested rewrite: 「この長い返信、5タップとひとことで書きました。\n人数はその場で選んで、最後に自分の言葉をひとこと。\nひとりで作っているiPhoneのキーボードアプリ「Cutling」です。」",
+     "r3 \"この長い返信、5タップとひとことで書きました。\\n名前と人数はその場で選んで、最後に自分の言葉をひとこと。\\nひとりで作っている iPhone のキーボードアプリ「Cutling」です。\": ひとこと appears twice in two lines; the second could be 「最後に自分の言葉を少しだけ」. p3 writes 「キーボードアプリ、「Cutling」」 with a comma and this caption has none, so match them."
+    ],
+    "typography": "caption: no space between Latin and Japanese (TikTok usage, per the readers); on-screen text keeps the store's half-width space"
+   },
+   "hashtags": [
+    {
+     "tag": "#iPhone便利機能",
+     "gloss": "iPhone handy features",
+     "seen": "on the top results for コピペ iPhone (りゅう今すぐ使えるiPhone便利術, 小池モバイル@iPhone研究所, スマホとアプリの教科書)"
+    },
+    {
+     "tag": "#iPhone活用術",
+     "gloss": "getting more out of iPhone",
+     "seen": "on the top results for アイフォン 便利アプリ (田中さんは気になるものは全部買う) and コピペ iPhone; its tag page opens on Japanese iPhone-tips accounts (こあら博士, ぷろぷろ, みさみさ, あお)"
+    },
+    {
+     "tag": "#時短",
+     "gloss": "time-saving",
+     "seen": "on the top results for アイフォン 便利アプリ (得する雑学ちゃんねる) and iPhone 定型文 (トクミル), whose results are all about not typing the same text again"
+    },
+    {
+     "tag": "#業務効率化",
+     "gloss": "work efficiency",
+     "seen": "on the top results for ネットショップ 返信 効率化 (えいと)"
+    }
+   ],
+   "cover": {
+    "ja": "長い返信も5タップ",
+    "gloss": "Long replies too, 5 taps",
+    "written": "r1, read back cold: natural=yes"
+   }
+  },
+  "1b_carousel_address": {
+   "title": "Carousel 'How many times have you typed your address?' (lower priority)",
+   "posts": "TikTok photo post",
+   "slides": "~/Repositories/undirect-promo/monholt-samples/out/CutlingPost/element-0..3.png, Post.tsx SETS.cutling",
+   "heads": [
+    {
+     "ja": "自分の住所、いままで[何回]打ちましたか？",
+     "gloss": "Your own address — how many times have you typed it until now?",
+     "written": "r1, read back cold: natural=yes",
+     "lines": [
+      "自分の住所",
+      "いままで[何回]",
+      "打ちましたか？"
+     ],
+     "source": "Post.tsx SETS.cutling.slides[0].lines"
+    },
+    {
+     "ja": "一度登録すれば\nずっと使える",
+     "gloss": "Register it once\nand you can use it forever",
+     "written": "r2, read back cold: natural=yes",
+     "history": [
+      "r1 \"一回書けば、ずっと使えます\": 書けば sounds like handwriting or composing text, not saving a snippet in a keyboard app. A native ad writer would write 一度登録すれば、ずっと使えます or 一回入れておけば、あとはずっと使えます. 一度 also reads cleaner than 一回 in a headline."
+     ],
+     "lines": [
+      "一度登録すれば",
+      "ずっと使える"
+     ],
+     "source": "Post.tsx SETS.cutling.slides[1].lines"
+    },
+    {
+     "ja": "次からは、ワンタップです",
+     "gloss": "From next time on, it's one tap.",
+     "written": "r1, read back cold: natural=yes",
+     "lines": [
+      "次からは",
+      "ワンタップです"
+     ],
+     "source": "Post.tsx SETS.cutling.slides[2].lines"
+    },
+    {
+     "ja": "コピーしたもの、ぜんぶ残っています",
+     "gloss": "The things you copied are all still there.",
+     "written": "r1, read back cold: natural=yes (Natural. Nothing in the headline says this is a Mac-only feature, so a viewer may expect it on iPhone too. If that matters, write Macなら、コピーしたものがぜんぶ残る.)",
+     "lines": [
+      "コピーしたもの",
+      "ぜんぶ",
+      "残っています"
+     ],
+     "source": "Post.tsx SETS.cutling.slides[3].lines"
+    }
+   ],
+   "foot": {
+    "ja": "iPhone・iPad・Mac 対応",
+    "gloss": "Supports iPhone, iPad, Mac",
+    "written": "r1, read back cold: natural=yes",
+    "source": "Post.tsx SETS.cutling.foot (the price is dropped)"
+   },
+   "panel": {
+    "message": {
+     "ja": "ありがとう！じゃあ3時にね",
+     "gloss": "Thanks! See you at 3, then.",
+     "written": "r1, read back cold: natural=yes"
+    },
+    "screenshot": {
+     "ja": "スクリーンショット 2分前",
+     "gloss": "Screenshot  2 minutes ago",
+     "written": "r1, read back cold: natural=yes"
+    },
+    "photo": {
+     "ja": "写真 昨日",
+     "gloss": "Photo  Yesterday",
+     "written": "r1, read back cold: natural=yes"
+    }
+   },
+   "world": "the same world strings as post 1_type_it_once (one world.ts renders both)",
+   "voice_decision": "No voice. TikTok Studio's Photos upload takes only JPG, PNG and WebP (read 2026-11-25) and a photo post's sound comes from TikTok's library, so an ElevenLabs track cannot ride on it; the voiced Japanese version of this piece is the film, post 1_type_it_once.",
+   "caption": {
+    "ja": "住所、毎回手で打ってませんか？\n「Cutling」というアプリを作りました。一度登録しておけば、ほとんどのアプリでワンタップで入力できます。\n個人で開発しています。",
+    "gloss": "Your address: aren't you typing it by hand every time? I made an app called 'Cutling'. Register it once and you can enter it with one tap in almost any app. I'm developing it as an individual.",
+    "written": "r4, the earlier reader's own native line, read again cold: natural=yes",
+    "history": [
+     "r1 \"住所を打つのは、今日で最後にしませんか？\\n一回保存しておけば、どのアプリでもワンタップで入力できます。Mac なら、コピーしたものもぜんぶ残っています。ひとりで作っているアプリ、Cutling です。\": The first two sentences are fine but read like polished ad copy, not a solo maker speaking. The last sentence, ひとりで作っているアプリ、Cutling です, sounds translated from 'Cutling, an app I make alone.' A solo developer would write 個人で開発している「Cutling」というアプリです or ひとりで作ってるアプリです。. For a personal voice, soften the hook to 住所を打つの、今日で最後にしませんか？ or 住所って何回も打つの面倒じゃないですか？. A space before Cutling is not needed: write「Cutling」.",
+     "r2 \"住所、毎回手で打ってませんか？\\n「Cutling」というアプリを作りました。一度登録しておけば、どのアプリでもワンタップで入力できます。Mac では、コピーしたものもちゃんと残ります。\\n個人で開発しています。\": This reads like a native solo developer. One sentence is unclear: in 「コピーしたものもちゃんと残ります」 the viewer has to guess what stays and where. Name it as a history, e.g. 「Macでは、コピーした内容も履歴としてちゃんと残ります。」 or 「Macなら、コピー履歴もちゃんと残ります。」. On TikTok, 「Macでは」 is usually written without the space. The opening could also be the slightly more common 「住所、毎回手入力してませんか？」, but the current wording is fine.",
+     "r3 \"住所、毎回手で打ってませんか？\\n「Cutling」というアプリを作りました。一度登録しておけば、どのアプリでもワンタップで入力できます。Mac なら、コピー履歴もちゃんと残ります。\\n個人で開発しています。\": The first two sentences are natural. 「Mac なら、コピー履歴もちゃんと残ります」 is a non sequitur in an address post, and ちゃんと implies something normally gets lost. A native writes 「Mac 版にはコピー履歴の機能もあります。」 or drops the line. 個人で開発しています is fine."
+    ],
+    "typography": "caption: no space between Latin and Japanese (TikTok usage, per the readers); on-screen text keeps the store's half-width space"
+   },
+   "hashtags": [
+    {
+     "tag": "#iPhone便利機能",
+     "gloss": "iPhone handy features",
+     "seen": "on the top results for コピペ iPhone (りゅう今すぐ使えるiPhone便利術, 小池モバイル@iPhone研究所, スマホとアプリの教科書)"
+    },
+    {
+     "tag": "#iPhone活用術",
+     "gloss": "getting more out of iPhone",
+     "seen": "on the top results for アイフォン 便利アプリ (田中さんは気になるものは全部買う) and コピペ iPhone; its tag page opens on Japanese iPhone-tips accounts (こあら博士, ぷろぷろ, みさみさ, あお)"
+    },
+    {
+     "tag": "#コピペ",
+     "gloss": "copy-paste",
+     "seen": "on the top results for コピペ iPhone (スマホとアプリの教科書, KUKULOG)"
+    },
+    {
+     "tag": "#時短",
+     "gloss": "time-saving",
+     "seen": "on the top results for アイフォン 便利アプリ (得する雑学ちゃんねる) and iPhone 定型文 (トクミル), whose results are all about not typing the same text again"
+    }
+   ],
+   "cover": {
+    "ja": "住所入力は、ワンタップで",
+    "gloss": "Address entry, in one tap",
+    "written": "r1, read back cold: natural=yes"
    }
   }
  }
