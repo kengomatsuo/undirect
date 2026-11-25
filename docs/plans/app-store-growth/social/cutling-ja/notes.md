@@ -116,3 +116,12 @@ Findings for the app and later posts, from readers who never saw an English line
 ### The iPhone run, and which typing the film uses
 
 Ticket `t1795592525374-4c97` typed the same address on the pool iPhone 18 Pro Max (Japanese Romaji keyboard on screen, a screenshot after every kana in its `out/`). The iPhone did not convert as it typed: the reading stayed in hiragana, underlined in blue, growing kana by kana (とうきょうとすぎなみくこうえんじみなみ3-8-11), while the candidate bar above the keys guessed the kanji. Its first candidate went 東京から, 東京 and 🗼 (Tokyo Tower), 東京都, then 東京都墨田区 before 東京都杉並区, through 東京都杉並区公園 and 高円寺味, and ended on 東京都杉並区高円寺南3-8-11 (plain hyphens). Return committed the hiragana as typed, so a person taps that candidate. That is the film's typing in copy-ja.json (`ime_typing.iphone`): hiragana first, then the whole row turns into kanji with one tap. The iPad's live conversion, kanji appearing keystroke by keystroke, is kept beside it (`ime_typing.ipad_live_conversion`), for an iPhone with ライブ変換 switched on.
+
+## Post 2 beat 1: the name is typed (owner's correction)
+
+The owner: the name step is the main part, and it is typed first, not chosen. The Japanese take now shows the reply asking for the name, なかむら typed on the kana keyboard and converted to 中村, ✓, and the reply landing with 中村様. The old headline (いつもの返信、[名前]はタップで入る), voice line 1 (…タップするだけで入ります) and caption line 2 sold a tap, so all three were written again blind from that screen and read back cold, each reader also asked whether a viewer understands the name is typed (all three: yes):
+- headline 「[名前]を打つだけで、 / 返信が完成。」 (round 2, the round-1 reader's own line; round 1's 「返信が、[名前]を聞く。」 read as translated)
+- voice 「定型文を選ぶと、お客さまの名前を聞いてきます。いつものキーボードで打てば、そのまま返信に入ります。」 (round 3), its last words on the check mark at 8.61 s
+- caption line 2 「定型文を選ぶとお客さまの名前を聞かれるので、打った名前がそのまま返信に入ります。」 and the date line after it (round 5; a reader caught that 日付も after it made the name sound automatic)
+
+The English film's head, "A reply that asks for the [name].", already says what either take shows and names no tap, so it is kept (copy-ja.json `2_release_2_0.en`).

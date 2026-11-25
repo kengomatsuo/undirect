@@ -1147,17 +1147,19 @@
     },
     "heads": [
      {
-      "ja": "いつもの返信、[名前]はタップで入る",
-      "gloss": "Your usual reply: the [name] goes in with a tap",
-      "written": "r2, read back cold: natural=yes (Fine as a headline. The contrastive は correctly implies 'the rest is already written, only the name is tapped'. If you want it a touch warmer: 「いつもの返信、[名前]はタップするだけ」.)",
-      "history": [
-       "r1 \"よく使う返信が[名前]を聞いてくれる\": A reply that 聞いてくれる (asks) is an odd personification. 聞く can also mean 'hear', so the line is ambiguous at a glance. A shop owner calls these 定型文 or いつもの返信. A native would write 「[名前]を選ぶだけで、いつもの返信が完成」 or 「いつもの返信に[名前]をワンタップで」."
-      ],
+      "ja": "[名前]を打つだけで、返信が完成。",
       "lines": [
-       "いつもの返信、",
-       "[名前]はタップで入る"
+       "[名前]を打つだけで、",
+       "返信が完成。"
       ],
-      "source": "cutling-promo/src/release/plan.ts PLAN.beats[0].head ([ ] is the green chip)"
+      "gloss": "Just type [name], and the reply is done.",
+      "written": "r2, the r1 reader's own native line, read again cold: natural=yes; the reader understood the name is typed, not picked",
+      "history": [
+       "shipped before the typed-name take: いつもの返信、[名前]はタップで入る (it sold a tap; the screen now shows the name typed)",
+       "r1 返信が、[名前]を聞く。打てば、そこに入る。: 「返信が、[名前]を聞く。」 makes a text reply the subject of 聞く, which reads as translated from 'the reply asks for the name'. No Japanese ad writer would put a reply in that role, and the comma after 返信が makes the line stiffer. 「打てば、そこに入る。」 is grammatical, but そこ is vague and 打てば has no object. A native would write 「[名前]を打つだけで、返信が完成。」 or 「お客さまの名前を打てば、そのまま返信に。」"
+      ],
+      "source": "cutling-promo/src/release/plan.ts PLAN.beats[0].head, ja via src/release/ja.ts HEADS[0] ([ ] is the green chip)",
+      "why": "The beat's take now shows the reply asking for the name, なかむら typed on the kana keyboard and converted to 中村, ✓, and the reply landing with 中村様 (cutling-promo src/release/ja.ts OWN[0])."
      },
      {
       "ja": "[日付]はもう打たなくていい",
@@ -1229,15 +1231,17 @@
    },
    "voice": [
     {
-     "ja": "いつもの返信に、お客様の名前。タップするだけで入ります。",
-     "gloss": "Into your usual reply, the customer's name. It goes in with just a tap.",
-     "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
+     "ja": "定型文を選ぶと、お客さまの名前を聞いてきます。いつものキーボードで打てば、そのまま返信に入ります。",
+     "say": "定型文を選ぶと、お客さまの名前を聞いてきます。いつものキーボードで打てば、そのまま返信に入ります。",
+     "gloss": "When you choose a saved reply, it asks you for the customer's name. If you type it on your usual keyboard, it goes straight into the reply.",
+     "beat": "beat 1, about 0.3 to 9 s of the 10.9 s beat: 定型文を選ぶと on the tap on 発送連絡 (0.5 s), 名前を聞いてきます as the fill-in asks, いつものキーボードで打てば over なかむら being typed, そのまま返信に入ります ending as the check mark (8.61 s, ja.ts X) types the reply. About 51 morae, 7.5 s; ja.ts VOICE_AT[0] (X - 3.3) was set for the old line's タップ and moves to put 返信に入ります on X.",
+     "written": "r3, read back cold: natural=yes; the listener understands the name is typed (打てば, いつものキーボードで)",
      "history": [
-      "r1 \"返信が、名前を聞いてくれます。使った名前は、ワンタップ。\": Heard without the visual, 返信が名前を聞いてくれます is the oddest line in the film. A native VO, which fits 5 s, would be 「いつもの返信に、名前を入れられます。一度使った名前は、ワンタップで。」 or 「返信に、名前を差し込めます。使った名前は、ワンタップ。」",
-      "r2 \"いつもの返信に、名前を入れます。次からは、タップだけです。\": 「名前を入れます」 sounds like a manual-typing instruction, and 「次からは」 adds a first-time step the viewer never sees. Say what the screen shows: 「いつもの返信に、お客様の名前。タップするだけで入ります。」 (fits 5 s)."
+      "shipped before the typed-name take: いつもの返信に、お客様の名前。タップするだけで入ります。 (it said a tap puts the name in)",
+      "r1 返信が、お名前を聞いてきます。いつものキーボードで打てば、ぴたりと文に収まります。: お名前 spoken to the viewer means 'your name', so it sounds like the app is asking the shop owner's name. It needs お客さまの名前. 「返信が聞いてきます」: アプリが聞いてくる is natural speech, but a reply doing the asking is not. 「ぴたりと文に収まります」 is written and literary for a calm VO; ぴったり, or simply そのまま文に入ります, is what people say. Also, いつものキーボード in a film about a keyboard app may blur which keyboard is meant. A native would say 「返信を選ぶと、お客さまの名前を聞いてきます。いつものキーボードで打てば、そのまま文に入ります。」",
+      "r2 返信を選ぶと、お客さまの名前を聞いてきます。いつものキーボードで打てば、そのまま文に入ります。: 「そのまま文に入ります」 is the stiff part. 文 on its own sounds abstract and translated ('into the sentence'). A native speaker would say 「そのまま返信に入ります」 or 「そのまま文中に入ります」. The most natural spoken version is 「名前入りの返信ができあがります」. 「聞いてきます」 with the app as the subject is natural, casual spoken Japanese. 「返信を選ぶと」 works with the picture, but 「定型文を選ぶと」 would match the caption's wording. Suggested: 「定型文を選ぶと、お客さまの名前を聞いてきます。いつものキーボードで打てば、そのまま返信に入ります。」"
      ],
-     "beat": "beat 1, 0.0 to 4.97 s",
-     "say": "いつもの返信に、お客様の名前。タップするだけで入ります。"
+     "why": "The beat's take now shows the reply asking for the name, なかむら typed on the kana keyboard and converted to 中村, ✓, and the reply landing with 中村様 (cutling-promo src/release/ja.ts OWN[0])."
     },
     {
      "ja": "日付は、自動で入ります。",
@@ -1288,15 +1292,17 @@
    ],
    "voice_decision": "Voice on. It is the post most like the one that reached Japan (a recording of the app with an ElevenLabs Japanese voice, 27.7% Japanese viewers), and each beat's voice line says what its headline says, so a viewer who hears it without reading still gets the five changes.",
    "caption": {
-    "ja": "Cutling 2.0、今日から配信です。\nお客さんの名前を選ぶだけで、いつもの返信に名前が入るようにしました。日付も自動で入ります。\n太字や箇条書きを使った定型文も、Cutlingキーボードから書式ごと入力できます。\nひとりで開発しています。",
-    "gloss": "Cutling 2.0 is out from today. I made it so that just by choosing the customer's name, the name goes into your usual reply. Dates go in automatically too. Saved texts with bold and bullet points can also be typed, formatting and all, from the Cutling keyboard. I'm developing it alone.",
-    "written": "r4, the earlier reader's own native line, read again cold: natural=yes (Minor: Japanese posts usually put no space between Latin and kana. Write 「Cutlingキーボード」, not 「Cutling キーボード」.)",
+    "ja": "Cutling 2.0、今日から配信です。\n定型文を選ぶとお客さまの名前を聞かれるので、打った名前がそのまま返信に入ります。\n定型文に「日付」を入れておくと、今日の日付に自動で変わります。\n太字や箇条書きを使った定型文も、Cutlingキーボードから書式ごと入力できます。\nひとりで開発しています。",
+    "gloss": "Cutling 2.0, available starting today.\nWhen you pick a canned reply, you get asked for the customer's name, so the name you typed goes straight into the reply.\nIf you put \"date\" into a canned reply, it automatically changes to today's date.\nCanned replies that use bold or bullet points can also be entered from the Cutling keyboard, formatting and all.\nI'm developing this by myself.",
+    "written": "r5, the r4 reader's own native caption, read again cold: natural=yes (This reads like a real indie developer's post, and its register suits a solo maker. Line 3 is the one real problem: 「定型文に「日付」を入れておくと」 can be read as typing the literal word 日付, so a viewer cannot tell it is a placeholder. A native would write 「定型文に{日付}を入れておくと、送るときに今日の日付に自動で変わります。」 or 「「日付」タグを入れておくと〜」. Line 2 has a minor issue: the passive 「お客さまの名前を聞かれるので」 is fine but slightly vague about who is asking. 「定型文を選ぶとお客さまの名前の入力欄が出るので、打った名前がそのまま返信に入ります。」 is a little clearer and still keeps the word 打った. Optional changes: 「今日から配信です」 is natural, and 「本日から配信開始しました」 would also work. 「個人で開発しています」 is an equally natural alternative to 「ひとりで開発しています」. Punctuation is fine.)",
     "history": [
-     "r1 \"お客さんの名前を選ぶだけで、いつもの返信が打ち終わるようにしました。\\n今日から Cutling 2.0 です。\\n日付はその日のものが自動で入り、メモのように書いたものも Cutling キーボードから打てます。\\nひとりで作っています。\": 打ち終わる is unnatural; use 完成する or 一発で打てる. メモのように書いたもの is vague; spell out the formatting. Suggested caption: 「お客さんの名前を選ぶだけで、いつもの返信が完成するようにしました。\n今日から Cutling 2.0 です。\n日付はその日のものが自動で入り、太字や箇条書きで書いたものも、そのまま Cutling キーボードから打てます。\nひとりで作っています。」",
-     "r2 \"お客様の名前を選ぶだけで、いつもの返信ができあがるようにしました。\\nCutling 2.0、今日から配信です。\\n日付は自動で入ります。ボールドや箇条書きのカットリングも、Cutling キーボードから書式ごと打てます。\\nひとりで作っています。\": (1) 「ボールドや箇条書きのカットリング」 uses the app name as a common noun for a saved snippet. A Japanese viewer will not know that, and mixing katakana カットリング with Latin Cutling in one sentence is confusing; use 定型文. (2) 「日付は自動で入ります」 appears out of nowhere; 「日付も」 links it to the feature before. (3) ボールド → 太字. (4) Japanese usually has no space in 'Cutling キーボード'. (5) The release line reads better first. A native version: 「Cutling 2.0、今日から配信です。\nお客様の名前を選ぶだけで、いつもの返信ができあがるようにしました。日付も自動で入ります。\n太字や箇条書きを使った定型文も、Cutlingキーボードから書式ごと入力できます。\nひとりで作っています。」 The closing 「ひとりで作っています。」 is natural and good.",
-     "r3 \"Cutling 2.0、今日から配信です。\\nお客様の名前を選ぶだけで、いつもの返信ができあがるようにしました。日付も自動で入ります。\\n太字や箇条書きを使った定型文も、Cutling キーボードから書式ごと入力できます。\\nひとりで作っています。\": 「いつもの返信ができあがる」 reads slightly off, because the reply already exists and only the name is added. Better: 「お客様の名前を選ぶだけで、いつもの返信に入るようにしました」. The other captions use お客さん, so pick one form. The closing 「ひとりで作っています。」 is abrupt alone; 「ひとりで開発しています。」 is fine."
+     "shipped before the typed-name take: Cutling 2.0、今日から配信です。\nお客さんの名前を選ぶだけで、いつもの返信に名前が入るようにしました。日付も自動で入ります。\n太字や箇条書きを使った定型文も、Cutlingキーボードから書式ごと入力できます。\nひとりで開発しています。 (its second line said picking the name puts it in)",
+     "r1 sentence 返信を選ぶとお客さまの名前を聞いてきて、打った名前がそのまま文に入るようにしました。: It reads like a real solo developer's post, and ようにしました is the right voice. Minor polish: the sentence switches subject three times (you pick, the app asks, I made it). A comma after 聞いてきて helps, and 文 reads better as 文面 or 返信. The line after it is a real problem: 「日付も自動で入ります。」 uses も自動で, which implies the name was also automatic and undercuts 'typed'. Change it to 「日付は自動で入ります。」",
+     "r2/r3 sentences: 「〜ようにしました」 is exactly how a solo Japanese app maker announces a feature, and the casual 「聞いてきて」 suits TikTok. Three weak points. (1) 返信 appears twice in one sentence, and 「返信を選ぶ」 is vague in text. The next sentence says 定型文, so use 定型文 here too. (2) The sentence is a long run-on. Splitting it with ので reads better. (3) 「日付は自動で入ります。」 is abrupt, because the film never shows a date being inserted, so 'which date?' hangs. Name the date, e.g. 「今日の日付は自動で入ります。」 or 「発送日などの日付は自動で入ります。」. Suggested: 「定型文を選ぶとお客さまの名前を聞いてくるので、打った名前がそのまま文中に入るようにしました。日付は自動で入ります。」 / The first sentence is fine for a solo maker: 「〜ようにしました」 is exactly how indie devs write, and 「聞いてきて」 is acceptably casual. The second sentence is the problem. 「日付は、その日のものが自動で入ります」 reads stiff: the comma after 「は」 is fussy, and 「その日のもの」 is vague (the day of what?). It also contrasts with 「は」 when the date is an additional feature, so 「も」 fits better. Viewers also don't know yet that templates can hold a date, and the film shows 「水曜日」, not a date, so they may wonder where the date goes. A native would write: 「定型文を選ぶとお客さまの名前を聞いてくるので、打った名前がそのまま返信に入ります。今日の日付も自動で入れられるようにしました。」 Or keep the first sentence as is and use 「日付を入れておけば、今日の日付が自動で入ります。」",
+     "r4 (whole caption, 日付を入れておけば、今日の日付が自動で入ります): Lines 1, 3 and 4 are natural and sound like a real indie developer. Two problems, both in line 2. (1) 「日付を入れておけば、今日の日付が自動で入ります」 reads as circular: 'if you put the date in, today's date goes in.' A reader can't tell that you insert a date placeholder into the saved text. 入る/入れる also appears three times in two sentences. Native: 「定型文に「日付」を入れておくと、今日の日付に自動で変わります。」 (2) 「お客さまの名前を聞いてきて」 personifies the app, which is fine in casual dev talk, but for a moment it can read as the app asking the customer. Clearer: 「お客さまの名前を入力する画面が出て」 or 「お客さまの名前を聞かれるので」. Suggested full caption: 「Cutling 2.0、今日から配信です。\n定型文を選ぶとお客さまの名前を聞かれるので、打った名前がそのまま返信に入ります。\n定型文に「日付」を入れておくと、今日の日付に自動で変わります。\n太字や箇条書きを使った定型文も、Cutlingキーボードから書式ごと入力できます。\nひとりで開発しています。」"
     ],
-    "typography": "caption: no space between Latin and Japanese (TikTok usage, per the readers); on-screen text keeps the store's half-width space"
+    "typography": "caption: no space between Latin and Japanese (TikTok usage, per the readers)",
+    "why": "The beat's take now shows the reply asking for the name, なかむら typed on the kana keyboard and converted to 中村, ✓, and the reply landing with 中村様 (cutling-promo src/release/ja.ts OWN[0])."
    },
    "hashtags": [
     {
@@ -1324,6 +1330,14 @@
     "ja": "Cutling 2.0、5つの新機能",
     "gloss": "Cutling 2.0, 5 new features",
     "written": "r1, read back cold: natural=yes"
+   },
+   "en": {
+    "beat1_head": {
+     "en": "A reply that asks for the [name].",
+     "source": "cutling-promo/src/release/plan.ts PLAN.beats[0].head",
+     "decision": "Kept. It already says what the screen shows: the reply asks for the name. It names no tap and no pick, so it holds for the English take that picks Maya and for a take where the name is typed. The English film has no voice and its caption is outside this file.",
+     "gloss": "same (English is a peer locale here, written for the English screen)"
+    }
    }
   },
   "3_five_names": {
@@ -1515,11 +1529,11 @@
    },
    "overlay": {
     "open": {
-     "ja": "お客さま4人から同じ質問。",
-     "gloss": "The same question from 4 customers.",
+     "ja": "お客さま5人から同じ質問。",
+     "gloss": "The same question from 5 customers.",
      "written": "r1, read back cold: natural=yes",
      "lines": [
-      "お客さま4人から",
+      "お客さま5人から",
       "同じ質問。"
      ],
      "source": "c-names.js captions [0, G.push[0]]"
@@ -1551,11 +1565,11 @@
    },
    "voice": [
     {
-     "ja": "四人から、同じ質問です。",
+     "ja": "五人から、同じ質問です。",
      "gloss": "From five people, the same question.",
      "written": "r1, read back cold: natural=yes (Make sure TTS reads 五人 as ごにん.)",
      "beat": "0.0 to 2.5 s, over the inbox of five unread",
-     "say": "よにんから、同じ質問です。"
+     "say": "ごにんから、同じ質問です。"
     },
     {
      "ja": "タップして、名前を選んで、送信。一度入れた名前は、次から選ぶだけ。",
@@ -1592,7 +1606,7 @@
    ],
    "voice_decision": "Voice on, four short lines at the captions' moments; the taps between stay on the music. The film has few words on screen, and the one post that reached Japan carried a Japanese voice.",
    "caption": {
-    "ja": "朝起きたら、お客さん4人から同じ質問。\nよく使う返信をタップして、名前を選んで送るだけ。4人分すぐ返せます。\n一度入れた名前は、次から選べます。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
+    "ja": "朝起きたら、お客さん5人から同じ質問。\nよく使う返信をタップして、名前を選んで送るだけ。5人分すぐ返せます。\n一度入れた名前は、次から選べます。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
     "gloss": "When I woke up, the same question from 5 customers. Just tap a reply you use often, pick the name and send. You can answer all 5 right away. Names you've entered once can be picked next time. This is 'Cutling', an iPhone keyboard app I'm making on my own.",
     "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
     "history": [
@@ -1624,7 +1638,7 @@
     }
    ],
    "cover": {
-    "ja": "4人から同じ質問、すぐ返信",
+    "ja": "5人から同じ質問、すぐ返信",
     "gloss": "Same question from 5 people, reply right away",
     "written": "r2, read back cold: natural=yes (This is natural telegraphic cover text. If you want more punch: 「5人から同じ質問→すぐ返信」 or 「同じ質問が5人から。返信は一瞬」.)",
     "history": [
