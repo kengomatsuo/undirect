@@ -212,25 +212,68 @@ function blockRule(id, base) {
 
 // The network layer can only express "block this everywhere", so that is the
 // only verdict it carries. A block for one site is held in JavaScript.
+//
+// `ruleIds` is the record of which destinations the network layer should
+// refuse; reconcileRules() is the only writer of Safari's dynamic rules.
 async function syncRule(base, verdict) {
   const state = await loadState();
   const existing = state.ruleIds[base];
 
   if (verdict === "block" && existing === undefined) {
     const id = state.nextRuleId;
-    await api.declarativeNetRequest.updateDynamicRules({ addRules: [blockRule(id, base)] });
     await api.storage.local.set({
       ruleIds: { ...state.ruleIds, [base]: id },
       nextRuleId: id + 1,
     });
-    return;
-  }
-
-  if (verdict !== "block" && existing !== undefined) {
-    await api.declarativeNetRequest.updateDynamicRules({ removeRuleIds: [existing] });
+  } else if (verdict !== "block" && existing !== undefined) {
     const ruleIds = { ...state.ruleIds };
     delete ruleIds[base];
     await api.storage.local.set({ ruleIds });
+  } else {
+    return;
+  }
+  await reconcileRules();
+}
+
+// Safari keeps dynamic rules across launches and applies them whatever the
+// popup says, so Guard off has to take them out of the network layer or a
+// destination stopped once still fails with Safari's content-blocker page.
+// The rules Safari holds are made to equal `ruleIds` while the guard is on and
+// nothing while it is off; `ruleIds` itself is kept, so Guard on restores them.
+let reconciling = Promise.resolve();
+
+function reconcileRules() {
+  reconciling = reconciling.then(reconcileNow, reconcileNow);
+  return reconciling;
+}
+
+async function reconcileNow() {
+  const dnr = api.declarativeNetRequest;
+  if (!dnr?.updateDynamicRules) return;
+  const state = await loadState();
+  const want = state.settings.enabled === false ? {} : state.ruleIds;
+  const wantIds = new Map(Object.entries(want).map(([base, id]) => [id, base]));
+
+  let held;
+  try {
+    held = dnr.getDynamicRules ? (await dnr.getDynamicRules()).map((r) => r.id) : null;
+  } catch (e) {
+    held = null;
+  }
+  // Without a list of what Safari holds, every id we have ever named goes out
+  // and the wanted ones go back in.
+  const removeRuleIds = held
+    ? held.filter((id) => !wantIds.has(id))
+    : Object.values(state.ruleIds);
+  const heldSet = new Set(held ?? []);
+  const addRules = [...wantIds]
+    .filter(([id]) => !heldSet.has(id))
+    .map(([id, base]) => blockRule(id, base));
+  if (!removeRuleIds.length && !addRules.length) return;
+  try {
+    await dnr.updateDynamicRules({ removeRuleIds, addRules });
+  } catch (e) {
+    // a rule Safari refused leaves the rest as they were
   }
 }
 
@@ -989,6 +1032,7 @@ async function applySettings(patch) {
   const settings = { ...state.settings, ...patch };
   await api.storage.local.set({ settings });
   await loadState(); // refresh `cached` before the next navigation is judged
+  if ("enabled" in patch) await reconcileRules();
   pushSnapshot(true);
   paintAllTabs();
   return settings;
@@ -1171,6 +1215,17 @@ function listenToApp() {
 
 listenToApp();
 fromAppApplied = collectFromApp();
+
+// What Safari holds can disagree with storage after an update, or after the
+// app switched the Guard while this page was unloaded: line them up on wake.
+(async () => {
+  try {
+    await readState();
+    await reconcileRules();
+  } catch (e) {
+    // no storage yet; the next write reconciles
+  }
+})();
 pushSnapshot(true);
 paintAllTabs();
 

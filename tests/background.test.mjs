@@ -23,7 +23,7 @@ const ok = (name, pass, detail) => {
 // message-driven write before the navigation it needs to stage is announced.
 // It defaults to watching site.com, which is what every check below judges
 // against, so the guard being off by default costs no existing check a line.
-function world({ slowStorage = false, matchedRules = null,
+function world({ slowStorage = false, matchedRules = null, heldRules = [],
                  watched = { "site.com": true }, settings = {}, stored = {},
                  privateTabs = [], fromApp = [], appSilent = false, popupRefused = false } = {}) {
   const local = {
@@ -32,6 +32,7 @@ function world({ slowStorage = false, matchedRules = null,
     ...stored,
   };
   const session = {};
+  const dynamicRules = new Map(heldRules.map((r) => [r.id, r]));
   let releaseStorage = null;
   const gate = slowStorage
     ? new Promise((resolve) => {
@@ -86,7 +87,13 @@ function world({ slowStorage = false, matchedRules = null,
       },
     },
     declarativeNetRequest: {
-      updateDynamicRules: async (change) => calls.rules.push(change),
+      // Safari's dynamic rules, kept across calls the way Safari keeps them.
+      updateDynamicRules: async (change) => {
+        calls.rules.push(change);
+        for (const id of change.removeRuleIds ?? []) dynamicRules.delete(id);
+        for (const r of change.addRules ?? []) dynamicRules.set(r.id, r);
+      },
+      getDynamicRules: async () => [...dynamicRules.values()],
       ...(matchedRules
         ? { getMatchedRules: async () => ({ rulesMatchedInfo: matchedRules }) }
         : {}),
@@ -152,7 +159,7 @@ function world({ slowStorage = false, matchedRules = null,
 
   const queue = (change) => queued.push(change);
 
-  return { api, calls, local, session, send, emit, settle, close, queue, releaseStorage, tabs };
+  return { api, calls, local, session, send, emit, settle, close, queue, releaseStorage, tabs, dynamicRules };
 }
 
 const main = (tabId, url) => ({ frameId: 0, tabId, url });
@@ -776,6 +783,41 @@ const main = (tabId, url) => ({ frameId: 0, tabId, url });
   const no = await world({ popupRefused: true }).send({ type: "undirect:openPopup" }, 7).find(Boolean);
   ok("the note's Settings button opens the popup, and says so when Safari will not",
      yes?.opened === true && no?.opened === false, JSON.stringify({ yes, no }));
+}
+
+// Guard off takes every block rule out of Safari, Guard on puts them back,
+// and the record of what was blocked stays through both.
+{
+  const w = world({ stored: { everywhere: { "prize-hub.localhost": "block" } } });
+  await w.settle();
+  await w.send({ type: "undirect:rule", scope: "everywhere", base: "prize-hub.localhost", verdict: "block" }, 7)[0];
+  await w.settle();
+  const id = w.local.ruleIds?.["prize-hub.localhost"];
+  ok("a block everywhere is a rule Safari holds", id !== undefined && w.dynamicRules.has(id),
+     JSON.stringify([w.local.ruleIds, [...w.dynamicRules.keys()]]));
+  await w.send({ type: "undirect:set", settings: { enabled: false } }, 7)[0];
+  await w.settle();
+  ok("Guard off leaves Safari holding no rule", w.dynamicRules.size === 0, JSON.stringify([...w.dynamicRules.keys()]));
+  ok("and keeps the record", w.local.everywhere["prize-hub.localhost"] === "block" &&
+     w.local.ruleIds["prize-hub.localhost"] === id, JSON.stringify([w.local.everywhere, w.local.ruleIds]));
+  await w.send({ type: "undirect:set", settings: { enabled: true } }, 7)[0];
+  await w.settle();
+  ok("Guard on puts the same rule back",
+     w.dynamicRules.get(id)?.condition.urlFilter === "||prize-hub.localhost", JSON.stringify([...w.dynamicRules.values()]));
+}
+
+{
+  // Rules left in Safari while the Guard was off are cleared when the page
+  // wakes; with the Guard on, a rule missing from Safari is restored.
+  const stale = { id: 1000, priority: 1, action: { type: "block" }, condition: { urlFilter: "||prize-hub.localhost" } };
+  const off = world({ settings: { enabled: false }, heldRules: [stale], stored: { ruleIds: { "prize-hub.localhost": 1000 } } });
+  await off.settle();
+  ok("waking with the Guard off clears a rule Safari kept", off.dynamicRules.size === 0, JSON.stringify([...off.dynamicRules.keys()]));
+  const on = world({ stored: { ruleIds: { "prize-hub.localhost": 1000, "other.example": 1001 } }, heldRules: [stale] });
+  await on.settle();
+  ok("waking with the Guard on restores a missing one",
+     on.dynamicRules.has(1000) && on.dynamicRules.get(1001)?.condition.urlFilter === "||other.example",
+     JSON.stringify([...on.dynamicRules.keys()]));
 }
 
 const failed = results.filter((r) => !r.pass);

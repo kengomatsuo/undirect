@@ -27,7 +27,12 @@ this expensive, so the guard no longer judges a page until asked to.
 exactly like `perSite`. Absence is off; turning a site off deletes its key
 rather than storing `false`. `settings.mode` is `"watched"` (this) or
 `"everywhere"` (today's always-on, still offered in Settings). `settings.enabled`
-stays the master switch above both. The whole of it, in `background.js`:
+stays the master switch above both, and it is the one switch that reaches the
+network layer: Safari keeps dynamic rules and applies them whatever the popup
+says, so `reconcileRules()` makes the rules Safari holds equal `ruleIds` while
+the Guard is on and empty while it is off, keeping `ruleIds` so Guard on puts
+them back. It runs on every rule change, on the switch, and on every wake. The
+whole of it, in `background.js`:
 
 ```js
 function guarding(state, site) {
