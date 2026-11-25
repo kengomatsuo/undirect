@@ -31,9 +31,9 @@ Source: X API v2 (`/users/:id/tweets` with `non_public_metrics`, `/users/me`, `/
 - TikTok: steady, 57-207 views a video; the Nov 25 one is hours old.
 - YouTube Shorts: 2-954; the Nov 25 Short has 172 views within hours.
 
-## Graduated access lifted (2026-11-25 10:08 WIB)
+## "You've unlocked more on X" seen again (2026-11-25 10:08 WIB)
 
-Right after the account's reply to @dwr, X opened https://x.com/i/graduated-access?graduatedAccessScribeSrc=compose with "You've unlocked more on X": "Your content will be more discoverable. And you'll appear in search results and trends", and DMs to non-followers go through unfiltered. So until this moment the account was in X's new-account graduated access, which kept it out of search results and trends; that also held down the Nov 22-25 originals. Read impressions from Nov 26 against the baseline in social-posts.md with this in mind: part of any rise is this unlock, part is the replies.
+Right after the account's reply to @dwr, X opened https://x.com/i/graduated-access?graduatedAccessScribeSrc=compose with "You've unlocked more on X" (more discoverable, in search results and trends, DMs to non-followers unfiltered). The owner saw the same screen the week before, so it says nothing about a limit starting or ending; see the next section.
 
 ## "You've unlocked more on X" is not a lifted limit (2026-11-25)
 
