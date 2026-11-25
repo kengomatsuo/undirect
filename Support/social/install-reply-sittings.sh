@@ -3,6 +3,9 @@
 # Usage: install-reply-sittings.sh <platform> HH:MM [HH:MM ...]
 #   X:       install-reply-sittings.sh x 19:13 21:47
 #   Threads: install-reply-sittings.sh threads 07:41 16:53 23:09
+# launchd's own processes may not read ~/Repositories (macOS answers "Operation not permitted"), so the agent only asks
+# the running tmux server, which started from the terminal and may, to open a detached session that runs the sitting.
+# A sitting still running keeps its session name, so the next start fails instead of overlapping it.
 # Remove: launchctl bootout gui/$(id -u)/co.monholt.<platform>-replies; rm ~/Library/LaunchAgents/co.monholt.<platform>-replies.plist
 set -eu
 NAME="$1"; shift
@@ -18,7 +21,7 @@ cat > "$P" <<PL
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0"><dict>
   <key>Label</key><string>$LABEL</string>
-  <key>ProgramArguments</key><array><string>$HOME/Repositories/undirect/Support/social/reply-sitting.sh</string><string>$NAME</string></array>
+  <key>ProgramArguments</key><array><string>/opt/homebrew/bin/tmux</string><string>new-session</string><string>-d</string><string>-s</string><string>$NAME-sitting</string><string>$HOME/Repositories/undirect/Support/social/reply-sitting.sh $NAME</string></array>
   <key>StartCalendarInterval</key><array>
 $TIMES  </array>
   <key>StandardErrorPath</key><string>$HOME/Library/Logs/monholt-$NAME-replies.err</string>
