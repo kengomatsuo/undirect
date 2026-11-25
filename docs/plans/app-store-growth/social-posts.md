@@ -427,3 +427,14 @@ Owner, 11-25: the replies were too long. Compared against the thread they sat in
 
 X reply sittings paused 2026-11-25 (owner flagged @Denche2005's post about blockedforaireply.com, levelsio's public list of accounts reported for AI-written replies, with block-all, an API and a Chrome extension): co.monholt.x-replies unloaded and its plist renamed .disabled, so the 19:13 and 21:47 WIB sittings do not run. @monholtco is not on the list (api/ids.txt checked). No reply goes out that the owner hasn't written or rewritten until he decides what replaces them. Re-enable: rename the plist back and run Support/social/install-reply-sittings.sh.
 Owner, same day: "You find and ideate, I write." The X sittings (19:13 and 21:47 WIB) are back on, now read-only: each writes ~/Downloads/Claude/x-replies/x-reply-picks.md with 3 fresh maker posts, what each carries and 2-3 angles (notes, never finished text), then notifies him. He writes every reply. Nothing is posted, liked or followed by the sitting.
+
+### Owner's own posts scheduled on X (ASG213, 2026-11-25 ~13:45 WIB)
+
+The owner wrote these himself after rejecting drafted versions as bloat; scheduled word for word ("Black friday" capitalised) and read back from X > Drafts > Scheduled:
+
+| WIB | Post | Pictures |
+|---|---|---|
+| 2026-11-25 15:13 | Just shipped a huge update for my redirect-blocker app Undirect. More advanced detection of malicious click-hijacking tricks, and visual effects so you see when it works! | Stay-Put event card (x-stayput-out.png) and the glass still (x-stayput-glass.png, drawn with the app's own fx.js fracture on its Marlow TV demo page) |
+| 2026-11-26 20:13 | Black Friday sale is tomorrow, Undirect: Redirect Pop-up blocker will be $0.99, and Cutling Clipboard Keyboard will be $2.99 for a limited time. | x-bf-in-1-day.png |
+
+The drafted 2-days and Nov 27 posts in social/stay-put/posts.json were not scheduled; the old Nov 27 21:45 sale post (#14) is still in X's schedule.
