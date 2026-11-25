@@ -1563,15 +1563,17 @@
      "reading": "四人 is read よにん; the say text spells it so the voice cannot say しにん or よんにん"
     },
     {
-     "ja": "名前を打って、タップして、送信。次も、名前、タップ、送信。",
-     "gloss": "Type the name, tap, send. The next one too: name, tap, send.",
-     "written": "r1 (type-first), read back cold: natural=yes; order clear: yes. The spoken sequence 名前→タップ→送信, said twice, makes the order obvious, and the picture shows what gets tapped.",
+     "ja": "名前を打つのは、最初の一人だけ。あとは選ぶだけで、返信が完成。",
+     "gloss": "Typing the name is only for the first person. After that, just by choosing, the reply is complete.",
+     "written": "r3, the r2 reader's own line, read again cold: natural=yes; claims nothing the take lacks (Reads as normal ad narration: the 〜だけで〜が完成 pattern and the noun ending 返信が完成 are standard voice-over style, and both sentences are easy to follow by ear. Optional, if you want it a little softer and more spoken: 「名前を打つのは、最初の一人だけ。あとは選ぶだけで、返信ができあがり。」)",
      "history": [
-      "replaced (it said the name is picked): タップして、名前を選んで、送信。一度入れた名前は、次から選ぶだけ。"
+      "replaced (said 送信, and type, tap, send for every customer): 名前を打って、タップして、送信。次も、名前、タップ、送信。",
+      "r1 名前を打つのは、最初だけ。あとは選ぶたび、返信が整います。: 「返信が整います」 is vague, polished ad wording. 整う fits 準備 or 身だしなみ, and nobody says it of a message being completed. It also never says the name goes in by itself, which is the point of the shot. 「選ぶたび」 without に is fine in copy. A native would say: 「名前を打つのは、最初だけ。あとは選ぶだけで、名前入りの返信ができあがります。」",
+      "r2 名前を打つのは、最初だけ。あとは選ぶだけで、返信ができあがります。: Works as spoken ad copy, and the doubled だけ has a good rhythm. Two soft points. First, 返信ができあがります is a little unusual: できあがる sits more naturally with food or a finished piece of work. Ad copy would more often say 「返信が完成。」 or 「返信がすぐ書けます。」. Second, 最初だけ can be heard as 'only the first time you ever use a name', but the film shows four different people. A viewer may wonder how the keyboard knows the other three. A clearer version: 「名前を打つのは、最初の一人だけ。あとは選ぶだけで、返信が完成します。」"
      ],
-     "beat": "4.4 to 10.4 s, while the owner answers them one by one",
-     "say": "名前を打って、タップして、送信。次も、名前、タップ、送信。",
-     "why": "Owner, word for word: \"TYPE NAME THEN TAP REPLY.\" The name is typed first in Messages on the ordinary Japanese keyboard, the globe switches to Cutling, the saved reply is tapped, and the typed name fills the reply's first blank (Cutling's own ja release notes: 先に名前を入力してからカットリングをタップする使い方もできます)."
+     "beat": "over the four rounds, after the opening line; about 35 morae, 5 s",
+     "say": "名前を打つのは、最初の一人だけ。あとは選ぶだけで、返信が完成。",
+     "why": "Real recording (2026-11-25): the first customer's name is typed, the next three are picked from names the fill-in remembers, and every reply stays in the message field (the simulator's Messages cannot send)."
     },
     {
      "ja": "文面はひとつ。名前は、ひとりずつ。",
@@ -1597,16 +1599,15 @@
    ],
    "voice_decision": "Voice on, four short lines at the captions' moments; the taps between stay on the music. The film has few words on screen, and the one post that reached Japan carried a Japanese voice.",
    "caption": {
-    "ja": "朝起きたら、お客さん4人から同じ質問。\n名前を打って、定型文をタップして、送るだけ。コーヒーが冷める前に、4人とも返し終わりました。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
-    "gloss": "When I woke up, the same question from 4 customers. / Just type the name, tap a saved reply, send. Before my coffee got cold, I'd finished replying to all 4. / It's 'Cutling', an iPhone keyboard app I'm making alone.",
-    "written": "r2 (定型文 for 返信, as the r1 reader asked), read again cold: natural=yes; order clear: Yes. 「名前を打って、定型文をタップして、送る」 reads as a sequence even without 「先に」.",
+    "ja": "たとえば陶器のお店。朝起きたら、お客さん4人から同じ質問。\n最初の人だけ名前を打って、「発送連絡」をタップ。残りの3人は、キーボードに名前がもう出ていて、選ぶだけ。4人分の返信が、すぐにそろいました。\nひとりで作っているiPhoneのキーボードアプリ「Cutling」です。",
+    "gloss": "For example, a pottery shop. When you wake up in the morning, the same question from 4 customers.\nType the name for only the first person, and tap 'Shipping notice'. For the remaining 3, the name is already showing on the keyboard, so you just choose. Replies for 4 people were ready right away.\nIt's 'Cutling', an iPhone keyboard app I'm making on my own.",
+    "written": "r2 (the r1 reader's framing たとえば陶器のお店 and キーボードに), read again cold: natural=yes (Reads like a real indie developer's TikTok caption; the telegraphic first line is normal for the genre. 残りの3人は、キーボードに名前がもう出ていて is loose (the topic is the people, the subject is the name) but fine as casual writing. 4人分の返信が、すぐにそろいました is natural. Optional: 個人開発しているiPhoneのキーボードアプリ is the more common indie-dev phrase on Japanese TikTok and X, though ひとりで作っている is warmer and fine. 「Cutling」 in brackets is acceptable; a bare Cutling is also common.); the comma before 「Cutling」 dropped as two readers asked",
     "history": [
-     "replaced (it said pick the name): 朝起きたら、お客さん5人から同じ質問。\nよく使う返信をタップして、名前を選んで送るだけ。5人分すぐ返せます。\n一度入れた名前は、次から選べます。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
-     "r1 朝起きたら、お客さん5人から同じ質問。\n名前を打って、返信をタップして、送るだけ。コーヒーが冷める前に、5人とも返し終わりました。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。: 返信をタップ has the same ambiguity as above, so 定型文をタップして is clearer. Optional: naming the question makes it more vivid, as in 「朝起きたら、お客さん5人から『もう発送されましたか？』」. コーヒーが冷める前に and the closing self-introduction sound like a real indie developer's post.",
-     "Four customers, not five (owner's ask, 2026-11-25): the count changed from 5 to 4, the fifth customer (原田 千夏) dropped; the wording around it is the read-back line's own."
+     "replaced (said 送るだけ and 返し終わりました; nothing is sent): 朝起きたら、お客さん4人から同じ質問。\n名前を打って、定型文をタップして、送るだけ。コーヒーが冷める前に、4人とも返し終わりました。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
+     "r1 middle 最初の人だけ名前を打って、「発送連絡」をタップ。残りの3人は名前がもう出ていて、選ぶだけ。4人分の返信が、すぐにそろいました。: Each sentence is natural casual TikTok Japanese, but the first-person opening says the maker woke up to messages from their own customers. The film shows a pottery shop owner, so it reads as the maker claiming to run the shop. Frame it as a scene instead: 「たとえば陶器のお店。朝起きたら、お客さん4人から同じ質問。」 Also add where the name appears: 「残りの3人は、キーボードに名前がもう出ていて、選ぶだけ。」 This caption uses お客さん and p4 uses お客さま; pick one across the series. The rest is fine as written: 「4人分の返信が、すぐにそろいました。」 and 「ひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。」"
     ],
     "typography": "caption: no space between Latin and Japanese",
-    "why": "Owner, word for word: \"TYPE NAME THEN TAP REPLY.\" The name is typed first in Messages on the ordinary Japanese keyboard, the globe switches to Cutling, the saved reply is tapped, and the typed name fills the reply's first blank (Cutling's own ja release notes: 先に名前を入力してからカットリングをタップする使い方もできます)."
+    "why": "Real recording (2026-11-25): the first customer's name is typed, the next three are picked from names the fill-in remembers, and every reply stays in the message field (the simulator's Messages cannot send)."
    },
    "hashtags": [
     {
@@ -1639,7 +1640,7 @@
      "Four customers, not five (owner's ask, 2026-11-25): the count changed from 5 to 4, the fifth customer (原田 千夏) dropped; the wording around it is the read-back line's own."
     ]
    },
-   "film_dependency": "c-names.js draws each round as: chat opens, the name is picked on Cutling's fill screen. For these lines it must draw: the name typed on the Japanese keyboard in the message box, the globe to Cutling, the tap on 発送連絡, the reply filled, send. The open, payoff and end lines need no change.",
+   "film_dependency": "Met: the Japanese Five names is a real recording (~/Downloads/Claude/cutling-ja/five-names-ja-9x16.mp4). 朝起きたら holds if its clock or message times read as morning.",
    "four_customers": "Four customers, not five (owner's ask, 2026-11-25): the count changed from 5 to 4, the fifth customer (原田 千夏) dropped; the wording around it is the read-back line's own."
   },
   "4_five_taps": {
@@ -1740,7 +1741,7 @@
        "r2 \"それでは、当日お待ちしております。\\n小料理 つむぎ　森田\": The spacing is inconsistent: there is a half-width space after 小料理 and a full-width space before 森田. Use the same width for both (「小料理 つむぎ 森田」 or 「小料理つむぎ　森田」)."
       ]
      },
-     "source": "cards()[2] and parts.signoff; the Cursor Position fill-in (挿入後のカーソル位置) sits before it, so the owner's own line comes above the sign-off"
+     "source": "cards()[2] and parts.signoff; in the recording it is the fifth tap and no line of the owner's own is typed"
     },
     "others": [
      {
@@ -1835,15 +1836,15 @@
      "say": "こんな長い返信も、ごタップ。"
     },
     {
-     "ja": "名前も人数も入って、自分の言葉もひとこと足せます。",
-     "gloss": "The name and the party size go in, and you can add a word of your own too.",
-     "written": "r3, the earlier reader's own native line, read again cold: natural=yes",
+     "ja": "打ったのは、名前だけ。人数も、タップで選びました。",
+     "gloss": "What (I) typed was only the name. Even the number of people, (I) picked with a tap.",
+     "written": "r1, read back cold: natural=yes; claims nothing the take lacks",
      "history": [
-      "r1 \"名前も、人数も、自分のひとことも。\": There is no predicate, so a listener doesn't know what is true of these three things. Give it one: 「名前も、人数も、自分のひとことも、ちゃんと入る。」. Logic: if the personal line is typed after the 結び signature (cursor below the text), that order is unnatural, since it should come before 「それでは…森田」. Typing it also isn't part of the 5 taps.",
-      "r2 \"名前と人数が入って、自分のひとことも足せます。\": 「自分のひとこと」 is slightly loose. 「名前も人数も入って、自分の言葉もひとこと足せます。」 is smoother. Viewers will assume 名前 means the guest's name, but the only name in the reply is the owner's (森田). Make sure the name the glow lands on is one a viewer will connect to this line."
+      "replaced (said a line of one's own is added; none is typed): 名前も人数も入って、自分の言葉もひとこと足せます。"
      ],
-     "beat": "6.4 to 9.9 s, the read-back glowing on name, number, cursor",
-     "say": "名前も人数も入って、自分の言葉もひとこと足せます。"
+     "beat": "over the finished long reply shown close up; 25 morae, about 3.5 s; 人数 is read にんずう",
+     "say": "打ったのは、名前だけ。人数も、タップで選びました。",
+     "why": "Real recording (2026-11-25): 高橋 typed, then exactly five taps on Cutling (あいさつ, ✓, 予約OK, 4名様, しめの挨拶); no line of the owner's own is typed."
     },
     {
      "ja": "ここまで、5タップです。",
@@ -1866,16 +1867,17 @@
    ],
    "voice_decision": "Voice on at the open, the read-back, the payoff and the end; the five taps stay on the music so they can be counted.",
    "caption": {
-    "ja": "この長い返信、ほんの数タップで書きました。\n先にお客さんの名前を打って、あいさつ・予約の案内・締めの言葉をタップ。人数は選ぶだけ。最後に自分のひとことを足して完成です。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
-    "gloss": "This long reply, I wrote it in just a few taps.\nFirst type the customer's name, then tap greeting, booking info, closing words. The number of people, you just pick. Finally add a word of your own and it's done.\nIt's 'Cutling', an iPhone keyboard app I'm making alone.",
-    "written": "r3, the r2 reader's own line, read again cold: natural=yes, with its one point taken (締めの言葉 for the second あいさつ); order clear: yes: 「先にお客さんの名前を打って」 followed by 「…をタップ」 and 「最後に」 gives a clear sequence.",
+    "ja": "名前を打って、キーボードをCutlingに切り替えたら、あとは5タップでこの長い返信が完成します。\n「あいさつ」→✓→「予約OK」→「4名様」→「しめの挨拶」、ぜんぶタップだけ。\nひとりで作っているiPhoneのキーボードアプリ「Cutling」です。",
+    "gloss": "Type the name, switch to Cutling, and then with 5 taps you can write this long reply.\n'Greeting' → ✓ → 'Booking OK', '4 guests', 'Closing greeting' all go in by tapping.\nThis is 'Cutling', an iPhone keyboard app I'm making on my own.",
+    "written": "r4, the r4 reader's own native caption (natural=yes), keeping ひとりで作っている as the series says it; all five taps named, so a viewer who counts finds five",
     "history": [
-     "replaced (it said the name is picked on the spot): この長い返信、5タップとひとことで書きました。\n名前と人数はその場で選んで、最後に自分の言葉を少しだけ。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
-     "r1 この長い返信、ほんの数タップで書きました。先にお客さまの名前を打って、人数はタップで選び、最後に自分のひとことを足しただけです。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。: The middle sentence never mentions tapping the greeting, booking text or sign-off, so the core action of tapping saved replies is missing and only the headcount pick is named. 打って / 選び / 足した mixes te-form and ren'yōkei in one list, which is acceptable in writing but uneven. This caption uses お客さま while p2 and p3 use お客さん; お客さま fits a restaurant, but the maker's voice should be consistent across posts. Suggested: 「先にお客さまの名前を打って、あいさつ・予約の文・結びをタップ。人数は選ぶだけで、最後に自分のひとことを足しました。」",
-     "r2 この長い返信、ほんの数タップで書きました。先にお客さんの名前を打って、あいさつ・予約の文・結びをタップ。人数は選ぶだけで、最後に自分のひとことを足しました。: 「人数は選ぶだけで、最後に…足しました」 joins two unrelated actions with で, which reads as if picking the size caused the added line. Split it: 「人数は選ぶだけ。最後に自分のひとことを足して完成です。」 「予約の文」 is stiff; 「予約の案内」 is what an owner would say. 「結び」 alone is terse; 「締めのあいさつ」 or 「結びの文」 is better. Suggested: 「先にお客さんの名前を打って、あいさつ・予約の案内・締めのあいさつをタップ。人数は選ぶだけ。最後に自分のひとことを足して完成です。」"
+     "replaced (said 人数は選ぶだけ and a line of one's own; none is typed): この長い返信、ほんの数タップで書きました。\n先にお客さんの名前を打って、あいさつ・予約の案内・締めの言葉をタップ。人数は選ぶだけ。最後に自分のひとことを足して完成です。\nひとりで作っているiPhoneのキーボードアプリ、「Cutling」です。",
+     "r1 middle 自分で打ったのは、お客さまの名前だけ。「あいさつ」も、人数を選んだ「予約OK」も、「しめの挨拶」も、全部タップです。: 「人数を選んだ「予約OK」」 is slightly off. It reads as 'the 予約OK that chose the number', as if the reply did the choosing. A native would write 「人数を選ぶ「予約OK」」 or 「「予約OK」の人数も」. Mixing あいさつ and 挨拶 is fine because both match the on-screen titles. 「全部タップです」 is fine in a casual caption.",
+     "r2 …人数を選ぶ「予約OK」も…全部タップです。: 全部タップです is spoken-style and slightly off in writing; a native caption would say 「全部タップで入れました。」 or 「全部ワンタップ。」. The bigger problem is logic: 5タップで書きました followed by 自分で打ったのは名前だけ invites the comment 'typing the name takes taps too'. Suggested: 「この長い返信、名前以外は5タップで書きました。」. Separately, the on-screen titles mix あいさつ in hiragana with しめの挨拶 in kanji. The caption must match the screen, but the screen itself would look more deliberate with one form (あいさつ / しめのあいさつ, or 挨拶 / しめの挨拶).",
+     "r3 この長い返信、名前を打ったら、あとは5タップで書けました。…: 1) 書けました and 入れました say 'I did it', but the video shows a restaurant owner replying to a guest. Viewers will wonder whether the maker is the shop owner. Use the general form instead: 書けます and 入ります. 2) 人数を選ぶ「予約OK」 is confusing: in the video, 予約OK and 4名様 are two separate taps, but the caption makes 予約OK sound like a button that picks the number of guests. 3) The pattern 「〜」も、「〜」も、「〜」も、全部 piles up words and reads clunky. 4) あいさつ is written in hiragana and 挨拶 in kanji. Keep this only if those are the exact button labels. 5) The comma before 「Cutling」 is unusual; natives write キーボードアプリ「Cutling」です. 個人で開発している also sounds more natural from an app maker than ひとりで作っている, though both work. Suggested native version: 「名前を打ったら、あとは5タップでこの長い返信が書けます。\n「あいさつ」「予約OK」「人数」「しめの挨拶」、ぜんぶタップで入ります。\nひとりで開発しているiPhoneのキーボードアプリ「Cutling」です。」"
     ],
     "typography": "caption: no space between Latin and Japanese",
-    "why": "Owner, word for word: \"TYPE NAME THEN TAP REPLY.\" The name is typed first in Messages on the ordinary Japanese keyboard, the globe switches to Cutling, the saved reply is tapped, and the typed name fills the reply's first blank (Cutling's own ja release notes: 先に名前を入力してからカットリングをタップする使い方もできます)."
+    "why": "Real recording (2026-11-25): 高橋 typed, then exactly five taps on Cutling (あいさつ, ✓, 予約OK, 4名様, しめの挨拶); no line of the owner's own is typed."
    },
    "hashtags": [
     {
@@ -1904,7 +1906,7 @@
     "gloss": "Long replies too, 5 taps",
     "written": "r1, read back cold: natural=yes"
    },
-   "film_dependency": "c-five.js draws the name picked on the greeting's fill screen. For this caption it must draw 高橋 typed on the Japanese keyboard first, then the globe to Cutling and the tap on あいさつ. The film's count (five taps: 'この長さで、5タップ。', voice 'ごタップ') must be recounted on the new film: if the taps are no longer five, the open, payoff and voice lines change, and I write them again from the new count. The voice line 名前も人数も入って、自分の言葉もひとこと足せます。 does not say how the name gets in, so it stands."
+   "film_dependency": "Met: the Japanese Five taps is a real recording (~/Downloads/Claude/cutling-ja/five-taps-ja-9x16.mp4) with exactly five taps on Cutling after the name, so the 5タップ lines stand. A reader noted the switch to Cutling is itself a press; the caption counts from the switch, as the take does."
   },
   "1b_carousel_address": {
    "title": "Carousel 'How many times have you typed your address?' (lower priority)",

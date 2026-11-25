@@ -140,3 +140,9 @@ The drawn films (c-names.js, c-five.js) still pick the name on Cutling's fill sc
 ## Five names has four customers
 
 The owner asked for four customers in the Japanese Five names. Every post 3 count now says four: the opening headline 「お客さま4人から / 同じ質問。」, voice 「四人から、同じ質問です。」 (say: よにん), the caption 「…お客さん4人から同じ質問。…4人とも返し終わりました。」 and the cover 「4人から同じ質問、すぐ返信」. The fifth customer (原田 千夏) is dropped from the people and from the names offered. Only the count changed; the wording around it is the read-back line's own.
+
+## Five names and Five taps are real recordings
+
+The Japanese films are now screen recordings (`~/Downloads/Claude/cutling-ja/five-names-ja-9x16.mp4`, `five-taps-ja-9x16.mp4`). Two lines and two captions said what the takes do not show, and were written again blind from the takes and read back cold, each reader also asked whether a line claims more than the take shows:
+- Five names: the first customer's name is typed, the next three are picked from the names the fill-in remembers, and the replies stay in the field (the simulator cannot send). Voice 「名前を打つのは、最初の一人だけ。あとは選ぶだけで、返信が完成。」 (was …送信…). Caption middle 「最初の人だけ名前を打って、「発送連絡」をタップ。残りの3人は、キーボードに名前がもう出ていて、選ぶだけ。4人分の返信が、すぐにそろいました。」, opening on 「たとえば陶器のお店。」 so the maker does not claim to run the shop.
+- Five taps: 高橋 typed, then exactly five taps (あいさつ, ✓, 予約OK, 4名様, しめの挨拶), no line of one's own. Voice 「打ったのは、名前だけ。人数も、タップで選びました。」 Caption 「名前を打って、キーボードをCutlingに切り替えたら、あとは5タップでこの長い返信が完成します。 / 「あいさつ」→✓→「予約OK」→「4名様」→「しめの挨拶」、ぜんぶタップだけ。」 The 5タップ headline and voice lines stand.
