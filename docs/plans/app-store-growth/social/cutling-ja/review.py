@@ -17,6 +17,10 @@ e = html.escape
 
 def media(name):
     src = MEDIA / name
+    # the page plays the 720p phone copy where one exists: an artifact takes files up to 15 MB, a 1080p film is larger
+    phone = MEDIA / name.replace("-9x16.mp4", "-phone.mp4")
+    if name.endswith("-9x16.mp4") and phone.exists():
+        src = phone
     if not src.exists():
         return None
     dst = out / "media" / src.name
