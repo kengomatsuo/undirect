@@ -481,7 +481,7 @@ Film: the 3D "How many times have you typed your address" film's Japanese cut (u
 
 | WIB (JST) | Platform | What | Read back |
 |---|---|---|---|
-| 10:07 (12:07) | X @monholtco | 9:16 film + caption; App Store link (ct=x-ja-typeonce) as own reply once live | X Unsent > Scheduled "Fri, Nov 27, 2026 at 10:07 AM", 3D film thumbnail |
+| 10:07 (12:07) | X @monholtco | 9:16 film + caption; App Store link (ct=x-ja-typeonce) as own reply | live https://x.com/monholtco/status/2126150770361819525 , link reply posted 10:09 |
 | 10:13 (12:13) | Threads @monholtco | 9:16 film, topic 便利アプリ, reply 2/2 App Store link (ct=th-ja-typeonce) | Drafts "Posting today at 10:13", topic 便利アプリ, 1 reply |
 | 10:17 (12:17) | Instagram Reel + Facebook Reel (Business Suite) | IG: caption + 「App Storeへはプロフィールのリンクから。」 + 4 tags; FB: caption + link ct=fb-ja-typeonce + 4 tags | Business Suite "Reel scheduled … 27 Nov on Facebook and 27 Nov on Instagram" |
 | 19:37 (21:37) | YouTube Short @matsuokengo | https://youtu.be/pUI5XKBN3kY, ja, cover = headline frame, link ct=yt-ja-typeonce-short | API: private, publishAt 2026-11-27T12:37:00Z |
