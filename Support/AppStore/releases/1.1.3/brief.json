@@ -1,0 +1,32 @@
+{
+  "key": "whatsNew 1.1.3",
+  "surface": "App Store product page, What's New for Undirect 1.1.3 on iPhone, iPad and Mac; the first two or three lines show before 'more'. Three lines separated by newlines, as in 1.1.1 and 1.1.2.",
+  "reader": "Someone who already has Undirect and just updated, reading in their own language. Same register as the locale's 1.1.2 whatsNew. In the 18 locales whose name changed, they will see a new name under the icon before they read anything, so that comes first for them.",
+  "says": [
+    "Locales whose ext.meta.name is not Latin 'Undirect' (ar-SA, bn-BD, gu-IN, he, hi, ja, kn-IN, ko, ml-IN, mr-IN, or-IN, pa-IN, ru, ta-IN, te-IN, th, uk, ur-PK), first line: the app's name is now written in the language's own script, as ext.meta.name spells it, under the icon, in Safari's list of extensions and in the app. In the same line: the app and the note on the page now say to press the app in Safari instead of a toolbar button; on iPhone and iPad that is the app's row in Safari's page menu. Latin-name locales say nothing about the name, since nothing changed for them, and give the press-in-Safari point as their last line.",
+    "The Guard: switching it off now really lets everything through. Before, even with it off, Safari kept refusing destinations Undirect had stopped earlier and said they were blocked. Switching it back on stops them again.",
+    "The band round a swapped link as it snaps back now wraps the link's words and stays square while the page the person meant to open loads. Before, it could freeze tilted, faint or wider than the link."
+  ],
+  "facts_checked": [
+    "1c5ef0ec: ext.meta.name per locale in Support/i18n/drafts/<code>.json (record Support/i18n/app-name/names.json); every locale's ext.note.where said 'toolbar' before and says 'in Safari' now; app.setup.detail_ios names the page menu route.",
+    "caa20313 (Extension/Resources/background.js reconcileRules): Guard off empties Safari's dynamic block rules, Guard on restores them from ruleIds; before, a destination blocked once kept failing with Safari's content-blocker page whatever the popup said.",
+    "3bea4a98 and c8b02848 (Extension/Resources/content/fx.js snap): the band is drawn on a swapped link (guard.js href-swap), now round the link's text lines and scaled about its centre, whole from its first frame, since Safari freezes the page while the real page loads; before it could freeze rotated, card-wide, or as a faint fade-in outline."
+  ],
+  "fixed_words": [
+    "the locale's ext.meta.name, never Latin 'Undirect' where that differs",
+    "the locale's Guard label (app.settings.guard_toggle)",
+    "the locale's 1.1.0 phrase for a swapped link snapping back",
+    "the locale's 1.1.0 word for the page note",
+    "Safari, iPhone, iPad",
+    "the page menu as app.setup.detail_ios names it"
+  ],
+  "avoid": [
+    "naming the old Latin name in a renamed locale",
+    "quoting Safari's content-blocker message, whose wording per language is not checked; describe it as Safari saying the destination was blocked",
+    "the word toolbar except as what the lines no longer point to",
+    "gendered address where the locale's 1.1.2 avoids it (Polish, Czech, Slovak, Hebrew)",
+    "dashes as punctuation"
+  ],
+  "budget": "4,000 characters enforced; aim near 550 English characters (en-US 583; shortest zh-Hant 254, longest ta-IN 835).",
+  "rule": "No locale is the source the others are translated from. Each locale is written from these points, in its own word order and in the register of the copy already on that page."
+}
