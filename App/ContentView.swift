@@ -53,7 +53,7 @@ struct ContentView: View {
                 #if os(macOS)
                 .presentationSizing(.fitted)
                 #else
-                .presentationSizing(.form)
+                .modifier(FormSizing())
                 #endif
                 .interactiveDismissDisabled()
             }
@@ -142,3 +142,17 @@ struct ContentView: View {
 #Preview {
     ContentView(rules: RulesModel())
 }
+
+#if !os(macOS)
+// presentationSizing arrived in iOS 18; on iOS 17 the sheet keeps the system's
+// default size, which is the same full-height sheet on iPhone.
+private struct FormSizing: ViewModifier {
+    func body(content: Content) -> some View {
+        if #available(iOS 18.0, *) {
+            content.presentationSizing(.form)
+        } else {
+            content
+        }
+    }
+}
+#endif
