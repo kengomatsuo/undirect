@@ -33,7 +33,7 @@ HOT = "#FF453A"
 DEV = {
     "iphone": dict(w=1320, h=2868, n=8, kind="phone", pts=(440, 956), shot=(1320, 2868)),
     "ipad": dict(w=2064, h=2752, n=8, kind="pad", pts=(774, 1032), shot=(2064, 2752)),
-    "duo-outer": dict(w=1398, h=2034, n=8, kind="phone", pts=(466, 678), shot=(1398, 2034)),
+    "duo-outer": dict(w=1398, h=2034, n=2, kind="phone", pts=(466, 678), shot=(1398, 2034)),
     "duo-inner": dict(w=2007, h=2853, n=8, kind="pad", pts=(540, 768), shot=(2007, 2853)),
     "mac": dict(w=2880, h=1800, n=5, kind="mac", pts=(960, 600), shot=(2880, 1800)),
 }
@@ -260,8 +260,8 @@ def portrait(P, W, name, scr):
     top = h * (.105 if phone_top else .06)
     size = min(w * .40, h * (.105 if not pad else .12))
     T = {k: W[k] for k in map(str, range(1, 9))}
-    for i in range(8):
-        P.add(head(P, i, T[str(i + 1)], name, size=size, top=top, maxh=h * .33, sub=size * (.28 if pad else .23),
+    for i in range(P.n):
+        P.add(head(P, i, T[str(i + 1)], name, size=size, top=top, maxh=h * (.27 if i == 1 else .33), sub=size * (.28 if pad else .23),
                    fine=T["8"].get("f") if i == 7 else None))
     # where each frame's device sits: below the headline, running off the frame's foot
     dy = h * (.42 if not pad else .37)
@@ -282,6 +282,8 @@ def portrait(P, W, name, scr):
     # 2: the page menu open in Safari
     d2, _ = device(P, f"{scr}/{mn}", dx(1), dy + h * .06, dw)
     P.add(d2)
+    if P.n < 3:   # the Duo's outer screen shows the opening pair only (Apple takes ten frames for both screens)
+        return
     # 2 | 3: the note Undirect shows on the page
     P.add(note_piece(P, w * 1.52, h * .90, 3.4 * u * (1.25 if pad else 1), "stopped", rot=-3))
     # 3: the video plays

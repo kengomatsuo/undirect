@@ -1,49 +1,41 @@
 #!/usr/bin/env python3
-"""Uploads the poster frames to an editable App Store version, then reads every set back and removes duplicates by id.
+"""Puts the poster frames on an App Store version through the App Store Connect API, then reads every set back.
 
-    python3 upload.py ios|mac [--version-id ID] [--locales a,b] [--only iphone,ipad,duo] [--readback-only]
+    python3 upload.py <version> [--after <previous>] [--only IOS|MAC_OS] [--locales a,b] [--readback-only]
 
-Frames come from the published folders (Support/AppStore/<locale>/<device>/, English locales from the default sets
-Support/AppStore/<device>/), the same ones fastlane's lanes read. Each device's set in each language is replaced whole
-(asc screenshots upload --replace). The readback compares each set's screenshots with the files on disk by MD5
-(App Store Connect's sourceFileChecksum): a set holding a checksum twice has a duplicate from a retried upload, which
-is deleted by its id, never by file name, since both copies share one. Exits 1 when any set does not match disk.
+Per platform: when <version> is editable it is used; when it does not exist and <previous> reads READY_FOR_SALE it is
+created (no build, nothing submitted; App Store Connect copies text from the live version); otherwise the platform
+waits. Each display type in each language is compared with disk by MD5 (sourceFileChecksum) in order, and a set that
+differs is emptied and uploaded again from Support/AppStore/<locale>/<device>/ (English locales: the default sets
+Support/AppStore/<device>/). The readback after it fails the run when any set differs from disk; a checksum held twice
+is a duplicate from a retried upload and is deleted by its id. Runs on the Mac or in the App Store shots workflow.
+Prints one line per platform; exits 0 once every platform's sets match disk.
 """
-import hashlib, json, os, shutil, subprocess, sys, tempfile, time
+import hashlib, json, os, sys, urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
 APPSTORE = HERE.parent
+sys.path.insert(0, str(APPSTORE))
+import asc_api  # noqa: E402
+
 APP = "6810513194"
 STORE = [l["code"] for l in json.loads((APPSTORE / "locales.json").read_text())["locales"]]
-# device -> (folder, file prefix, asc device type, API display type)
-DEVICES = {
-    "iphone": ("iphone", "", "IPHONE_69", "APP_IPHONE_67"),
-    "ipad": ("ipad", "", "IPAD_PRO_3GEN_129", "APP_IPAD_PRO_3GEN_129"),
-    "duo": ("duo", "", "IPHONE_DUO", "APP_IPHONE_DUO"),
-    "mac": ("mac", "", "DESKTOP", "APP_DESKTOP"),
+EDITABLE = {"PREPARE_FOR_SUBMISSION", "DEVELOPER_REJECTED", "REJECTED", "METADATA_REJECTED"}
+# display type -> (folder, file filter)
+SETS = {
+    "IOS": {"APP_IPHONE_67": ("iphone", ""), "APP_IPAD_PRO_3GEN_129": ("ipad", ""),
+            "APP_IPHONE_DUO": ("duo", "")},
+    "MAC_OS": {"APP_DESKTOP": ("mac", "")},
 }
-PLATFORM = {"ios": ["iphone", "ipad", "duo"], "mac": ["mac"]}
 
 
-def asc(*args, retries=3):
-    last = ""
-    for i in range(retries):
-        p = subprocess.run(["asc", *args], capture_output=True, text=True)
-        if p.returncode == 0:
-            return json.loads(p.stdout) if p.stdout.strip() else {}
-        last = (p.stderr or p.stdout).strip()
-        time.sleep(3 * (i + 1))
-    raise RuntimeError(last[-1500:])
-
-
-def files(loc, dev):
-    folder = DEVICES[dev][0]
+def files(loc, folder):
     d = APPSTORE / loc / folder
     if not d.is_dir():
         d = APPSTORE / folder
     fs = sorted(d.glob("*.png"))
-    if dev == "duo":   # outer screen first, then inner, as the store shows the outer screen when the phone is closed
+    if folder == "duo":   # the outer screen's frames first, then the inner's
         fs = sorted(fs, key=lambda f: (not f.name.startswith("outer"), f.name))
     return fs
 
@@ -52,68 +44,98 @@ def md5(p):
     return hashlib.md5(p.read_bytes()).hexdigest()
 
 
-def stage(dev, locs):
-    root = Path(tempfile.mkdtemp(prefix=f"und-{dev}-"))
-    for loc in locs:
-        d = root / loc
-        d.mkdir()
-        for k, f in enumerate(files(loc, dev)):
-            shutil.copy(f, d / f"{k + 1:02d}_{f.name}")
-    return root
+def version(platform, vs, after):
+    rows = asc_api.pages(f"/v1/apps/{APP}/appStoreVersions?filter[platform]={platform}&limit=50")
+    by = {r["attributes"]["versionString"]: r for r in rows}
+    if vs in by:
+        st = by[vs]["attributes"]["appStoreState"]
+        return (by[vs]["id"], st) if st in EDITABLE else (None, f"{vs} is {st}, not editable")
+    prev = by.get(after, {}).get("attributes", {}).get("appStoreState") if after else None
+    if after and prev != "READY_FOR_SALE":
+        return None, f"waiting: {after} is {prev}"
+    r = asc_api.call("POST", "/v1/appStoreVersions", {"data": {"type": "appStoreVersions", "attributes": {
+        "platform": platform, "versionString": vs, "releaseType": "AFTER_APPROVAL"},
+        "relationships": {"app": {"data": {"type": "apps", "id": APP}}}}})
+    return r["data"]["id"], "created"
 
 
-def readback(version_id, devs, locs):
+def sets_of(lid):
+    out = {}
+    for s in asc_api.pages(f"/v1/appStoreVersionLocalizations/{lid}/appScreenshotSets?limit=50"):
+        shots = asc_api.pages(f"/v1/appScreenshotSets/{s['id']}/appScreenshots?limit=50")
+        out[s["attributes"]["screenshotDisplayType"]] = (s["id"], shots)
+    return out
+
+
+def upload(set_id, f):
+    data = f.read_bytes()
+    r = asc_api.call("POST", "/v1/appScreenshots", {"data": {"type": "appScreenshots",
+        "attributes": {"fileName": f.name, "fileSize": len(data)},
+        "relationships": {"appScreenshotSet": {"data": {"type": "appScreenshotSets", "id": set_id}}}}})
+    sid = r["data"]["id"]
+    for op in r["data"]["attributes"]["uploadOperations"]:
+        chunk = data[op["offset"]:op["offset"] + op["length"]]
+        req = urllib.request.Request(op["url"], data=chunk, method=op["method"],
+                                     headers={h["name"]: h["value"] for h in op["requestHeaders"]})
+        urllib.request.urlopen(req, timeout=300).read()
+    asc_api.call("PATCH", f"/v1/appScreenshots/{sid}", {"data": {"type": "appScreenshots", "id": sid,
+        "attributes": {"uploaded": True, "sourceFileChecksum": hashlib.md5(data).hexdigest()}}})
+    return sid
+
+
+def sync(platform, vid, locs, write=True):
+    """Returns how many sets differ from disk after this run."""
     bad = 0
-    r = asc("screenshots", "list", "--version", version_id, "--output", "json")
-    by_loc = {x["locale"]: x for x in r.get("localizations", [])}
+    locz = {l["attributes"]["locale"]: l["id"] for l in asc_api.pages(f"/v1/appStoreVersions/{vid}/appStoreVersionLocalizations?limit=200")}
     for loc in locs:
-        sets = {s["set"]["attributes"]["screenshotDisplayType"]: s for s in by_loc.get(loc, {}).get("sets", [])}
-        for dev in devs:
-            want = [md5(f) for f in files(loc, dev)]
-            s = sets.get(DEVICES[dev][3])
-            shots = (s or {}).get("screenshots", [])
-            have = [(x["id"], (x.get("attributes") or {}).get("sourceFileChecksum")) for x in shots]
+        lid = locz.get(loc)
+        if not lid:
+            print(f"{loc}: no localization on this version"); bad += 1; continue
+        have = sets_of(lid)
+        for dtype, (folder, _) in SETS[platform].items():
+            fs = files(loc, folder)
+            want = [md5(f) for f in fs]
+            set_id, shots = have.get(dtype, (None, []))
+            sums = [(s.get("attributes") or {}).get("sourceFileChecksum") for s in shots]
             seen = set()
-            for sid, sum_ in have:
-                if sum_ in seen:
-                    asc("screenshots", "delete", "--id", sid, "--confirm")
-                    print(f"{loc} {dev}: removed duplicate {sid}")
-                seen.add(sum_)
-            sums = [x for _, x in have]
-            ok = sorted(set(sums)) == sorted(set(want)) and len(set(sums)) == len(want)
-            if not ok:
-                bad += 1
-                print(f"{loc} {dev}: MISMATCH {len(set(sums))} on ASC, {len(want)} on disk")
-    print(f"readback: {len(locs) * len(devs) - bad}/{len(locs) * len(devs)} sets match disk")
+            for s, c in zip(shots, sums):   # a checksum twice: a retried upload landed twice
+                if c in seen:
+                    asc_api.call("DELETE", f"/v1/appScreenshots/{s['id']}"); print(f"{loc} {dtype}: removed duplicate {s['id']}")
+                seen.add(c)
+            if [c for c in dict.fromkeys(sums)] == want:
+                continue
+            if not write:
+                print(f"{loc} {dtype}: differs from disk ({len(sums)} there, {len(want)} here)"); bad += 1; continue
+            if not set_id:
+                set_id = asc_api.call("POST", "/v1/appScreenshotSets", {"data": {"type": "appScreenshotSets",
+                    "attributes": {"screenshotDisplayType": dtype},
+                    "relationships": {"appStoreVersionLocalization": {"data": {"type": "appStoreVersionLocalizations", "id": lid}}}}})["data"]["id"]
+            for s in shots:
+                asc_api.call("DELETE", f"/v1/appScreenshots/{s['id']}")
+            ids = [upload(set_id, f) for f in fs]
+            asc_api.call("PATCH", f"/v1/appScreenshotSets/{set_id}/relationships/appScreenshots",
+                         {"data": [{"type": "appScreenshots", "id": i} for i in ids]})
+            print(f"{loc} {dtype}: uploaded {len(ids)}")
     return bad
 
 
 def main():
     a = sys.argv[1:]
-    plat = a[0]
+    vs = a[0]
     opt = lambda k: a[a.index(k) + 1] if k in a else None
-    devs = opt("--only").split(",") if opt("--only") else PLATFORM[plat]
+    plats = [opt("--only")] if opt("--only") else ["IOS", "MAC_OS"]
     locs = opt("--locales").split(",") if opt("--locales") else STORE
-    vid = opt("--version-id")
-    if not vid:
-        r = asc("versions", "list", "--app", APP, "--platform", "IOS" if plat == "ios" else "MAC_OS", "--output", "json")
-        ed = [v for v in r["data"] if v["attributes"]["appStoreState"] in ("PREPARE_FOR_SUBMISSION", "DEVELOPER_REJECTED", "REJECTED", "METADATA_REJECTED")]
-        if len(ed) != 1:
-            sys.exit(f"{plat}: expected one editable version, found {len(ed)}")
-        vid = ed[0]["id"]
-        print(plat, ed[0]["attributes"]["versionString"], vid)
-    if "--readback-only" not in a:
-        for dev in devs:
-            root = stage(dev, locs)
-            for loc in locs:   # one language at a time, so a failure names its language and the rest still land
-                try:
-                    asc("screenshots", "upload", "--app", APP, "--version-id", vid, "--locale", loc, "--path", str(root / loc),
-                        "--device-type", DEVICES[dev][2], "--replace", "--confirm", "--output", "json")
-                    print(f"{loc} {dev}: uploaded {len(list((root / loc).glob('*.png')))}")
-                except RuntimeError as e:
-                    print(f"{loc} {dev}: FAILED {e}")
-            shutil.rmtree(root)
-    sys.exit(1 if readback(vid, devs, locs) else 0)
+    done = 0
+    for p in plats:
+        vid, st = version(p, vs, opt("--after"))
+        if not vid:
+            print(f"{p}: {st}"); continue
+        if "--readback-only" not in a:
+            sync(p, vid, locs)
+        bad = sync(p, vid, locs, write=False)
+        print(f"{p} {vs} ({st}): {'every set matches disk' if not bad else f'{bad} sets differ from disk'}")
+        done += not bad
+    sys.exit(0 if done == len(plats) else 1)
 
 
 if __name__ == "__main__":

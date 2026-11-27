@@ -1,0 +1,52 @@
+name: App Store shots 1.1.4
+# Once 1.1.3 is on sale on a platform, creates 1.1.4 there (no build, nothing submitted), puts the poster frames from
+# Support/AppStore/<locale>/ on it, reads every set back against the files, and places each language's banner
+# (Support/AppStore/banners/<locale>.png) in the product page header and search spots. Disables itself when both
+# platforms match disk. Support/AppStore/poster/README.md.
+on:
+  schedule:
+    - cron: '11,41 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+  actions: write
+concurrency:
+  group: app-store-shots
+  cancel-in-progress: false
+jobs:
+  shots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      ASC_KEY_ID: 8R8JCJZUNJ
+    steps:
+      - uses: actions/checkout@v4
+      - name: Key
+        env:
+          KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: |
+          printf '%s\n' "$KEY" > "$RUNNER_TEMP/asc.p8" && chmod 600 "$RUNNER_TEMP/asc.p8"
+          echo "ASC_PRIVATE_KEY_PATH=$RUNNER_TEMP/asc.p8" >> "$GITHUB_ENV"
+      - name: Frames and banners onto 1.1.4
+        run: |
+          set +e
+          out=$(python3 Support/AppStore/poster/upload.py 1.1.4 --after 1.1.3 2>&1); code=$?
+          echo "$out"
+          for p in IOS MAC_OS; do
+            vid=$(python3 -c "import sys;sys.path.insert(0,'Support/AppStore');import asc_api;r=[v for v in asc_api.pages('/v1/apps/6810513194/appStoreVersions?filter[platform]=$p&filter[versionString]=1.1.4')];print(r[0]['id'] if r else '')")
+            [ -n "$vid" ] || continue
+            python3 Support/AppStore/banner.py upload 6810513194 undirect-poster 'Support/AppStore/banners/{locale}.png' && \
+              python3 Support/AppStore/banner.py place 6810513194 undirect-poster version "$vid" || code=1
+          done
+          news=$(echo "$out" | grep -E "created|every set matches|differ")
+          if [ -n "$news" ]; then
+            issue=$(gh issue list --state open --search "App Store watch in:title" --json number --jq '.[0].number')
+            [ -n "$issue" ] || issue=$(gh issue create --title "App Store watch" --body "Submission and release news for Undirect, from the App Store watch workflows." | grep -oE '[0-9]+$')
+            last=$(gh issue view "$issue" --json comments --jq '.comments[-1].body // ""')
+            msg="Undirect 1.1.4 store frames: $(echo "$news" | tr '\n' ' ')"
+            [ "$msg" = "$last" ] || gh issue comment "$issue" --body "$msg"
+          fi
+          [ $code -eq 0 ] && gh workflow disable app-store-shots.yml
+          exit 0

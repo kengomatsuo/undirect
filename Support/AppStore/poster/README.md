@@ -9,7 +9,7 @@ row, the Back puck, the Back trap note, a row's rule choices, the icon). No devi
 |---|---|---|
 | iPhone | 8 | 1320 x 2868 |
 | iPad | 8 | 2064 x 2752 |
-| iPhone Duo outer / inner | 8 + 8 | 1398 x 2034 / 2007 x 2853 |
+| iPhone Duo outer / inner | 2 + 8 (Apple's ten for the set) | 1398 x 2034 / 2007 x 2853 |
 | Mac | 5 | 2880 x 1800 |
 | Banner (header and search) | 1 | 5244 x 2950, PNG24 |
 
