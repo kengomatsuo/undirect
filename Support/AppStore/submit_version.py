@@ -17,6 +17,11 @@ APP = "6810513194"
 DONE = {"WAITING_FOR_REVIEW", "IN_REVIEW", "PENDING_DEVELOPER_RELEASE", "PROCESSING_FOR_DISTRIBUTION",
         "READY_FOR_DISTRIBUTION", "READY_FOR_SALE"}
 TEXT = ("description", "keywords", "promotionalText", "marketingUrl", "supportUrl")
+# Apple asks every update for the age-rating answers it added in 2026 (does the app share a person's location with
+# others, is it about dating); Undirect does neither. The live App Information cannot be edited, so they go on the
+# record the new version ships with. Every answer and its source: five-apps research/age-rating-answers.md.
+AGE = {"sharedLocation": False, "datingAndRelationships": False}
+EDITABLE = {"PREPARE_FOR_SUBMISSION", "DEVELOPER_REJECTED", "REJECTED", "METADATA_REJECTED"}
 
 version, build_no, previous = sys.argv[1:4]
 dry = "--dry" in sys.argv
@@ -74,6 +79,12 @@ def one(platform, kind):
             if not call("GET", f"/v1/appStoreVersionLocalizations/{l['id']}/appScreenshotSets")["data"]]
     if bare:
         return f"ERROR {platform}: {version} created but has no screenshots in {', '.join(sorted(bare))}; not submitted"
+
+    for info in call("GET", f"/v1/apps/{APP}/appInfos")["data"]:
+        if (info["attributes"].get("state") or info["attributes"].get("appStoreState")) in EDITABLE:
+            decl = call("GET", f"/v1/appInfos/{info['id']}/ageRatingDeclaration")["data"]
+            call("PATCH", f"/v1/ageRatingDeclarations/{decl['id']}", {"data": {"type": "ageRatingDeclarations",
+                "id": decl["id"], "attributes": AGE}})
 
     drafts = call("GET", f"/v1/reviewSubmissions?filter[app]={APP}&filter[platform]={platform}&filter[state]=READY_FOR_REVIEW")["data"]
     sub = drafts[0] if drafts else call("POST", "/v1/reviewSubmissions", {"data": {"type": "reviewSubmissions",
