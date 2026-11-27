@@ -26,6 +26,7 @@ EDITABLE = {"PREPARE_FOR_SUBMISSION", "DEVELOPER_REJECTED", "REJECTED", "METADAT
 version, build_no, previous = sys.argv[1:4]
 dry = "--dry" in sys.argv
 notes = json.load(open(os.path.join(os.path.dirname(__file__), "releases", version, "whatsnew.json")))
+listing = {e["code"]: e["copy"] for e in json.load(open(os.path.join(os.path.dirname(__file__), "locales.json")))["locales"] if "copy" in e}
 call = asc_api.call
 
 
@@ -85,6 +86,17 @@ def one(platform, kind):
             decl = call("GET", f"/v1/appInfos/{info['id']}/ageRatingDeclaration")["data"]
             call("PATCH", f"/v1/ageRatingDeclarations/{decl['id']}", {"data": {"type": "ageRatingDeclarations",
                 "id": decl["id"], "attributes": AGE}})
+            # The store name and subtitle live on App Information, which only a new version can change, so each
+            # release writes them from Support/i18n/store (via locales.json): the name starts with the one the
+            # app shows under its icon in that language.
+            for l in asc_api.pages(f"/v1/appInfos/{info['id']}/appInfoLocalizations?limit=200"):
+                want = listing.get(l["attributes"]["locale"])
+                if not want:
+                    continue
+                attrs = {k: want[k] for k in ("name", "subtitle") if want.get(k) and want[k] != l["attributes"].get(k)}
+                if attrs:
+                    call("PATCH", f"/v1/appInfoLocalizations/{l['id']}", {"data": {"type": "appInfoLocalizations",
+                        "id": l["id"], "attributes": attrs}})
 
     drafts = call("GET", f"/v1/reviewSubmissions?filter[app]={APP}&filter[platform]={platform}&filter[state]=READY_FOR_REVIEW")["data"]
     sub = drafts[0] if drafts else call("POST", "/v1/reviewSubmissions", {"data": {"type": "reviewSubmissions",
