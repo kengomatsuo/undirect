@@ -491,3 +491,8 @@ Film: the 3D "How many times have you typed your address" film's Japanese cut (u
 Threads topic, read on threads.com 2026-11-27: the "iPhone" topic's recent feed is phone resellers in other languages with no Japanese; 便利アプリ had about nine Japanese posts in three hours; 個人開発 was as busy but is makers; iphone便利術, iPhone 便利機能 and iPhone活用術 carry a few posts a day from Japanese iPhone-tips accounts (ryu.iphone, misamisa_iphone, hiroko_iphone).
 
 Thumbnails (owner: the channel's designed A/B thumbnails, not film frames): `undirect-promo/tools/thumbs/build.ts cut-jaaddr` draws the three house kinds from this film's own frames, files `cutling-promo/docs/youtube/thumbs/cut-jaaddr-{1,2,3}-{16x9,9x16}.jpg` (words reused from the read-back sets: もう打ち直さない, 手入力 / ワンタップ, 住所 key). Short pUI5XKBN3kY carries kind 1 (9:16; Shorts cannot be tested). 16:9 dLpZR0UnsZ4: Test & compare, Thumbnail only, kinds 1/2/3, saved; Studio reads "Ineligible: your video is not public" until it publishes at 20:13 WIB. Instagram and Facebook Reels went out at 10:17; Instagram's Reels grid shows the headline frame (自分の住所いままで何回打ちましたか？), matching the English "How many times have you typed your address?" Reel beside it. Facebook offers no cover edit on a live Reel (its menu has none).
+
+## Nov 26-27 sale posts (ASG213/226/227)
+
+- The Nov 26 20:15 Instagram "sale is tomorrow" job and the 20:27 X/Threads buy-link job only fired at 2026-11-27 21:45 WIB, a day late. The "tomorrow" Instagram post was dropped, since the sale had started.
+- 2026-11-27 21:45 WIB: Chrome ("Browser 1", macOS) is signed out of instagram.com, Meta Business Suite and x.com. The sale-day Instagram post (21:47) and the buy-link replies wait on the owner signing @monholtco back in.
