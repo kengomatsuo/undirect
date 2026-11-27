@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Sur un site, appuyez sur le bouton Undirect de la barre d'outils de Safari pour l'activer.",
-      "back": "On a site, press the Undirect button in Safari's toolbar to switch it on"
+      "s": "Sur un site, appuyez sur le bouton Undirect de Safari pour le protéger.",
+      "back": "On a site, press Safari's Undirect button to protect it."
     },
     "app.nav.guarded_sites": {
       "s": "Sites protégés",
@@ -134,8 +134,8 @@
       "back": "No protected site"
     },
     "app.watched.empty.detail": {
-      "s": "Sur un site qui vous redirige, appuyez sur le bouton Undirect de la barre d'outils de Safari.",
-      "back": "On a site that redirects you, press the Undirect button in Safari's toolbar"
+      "s": "Sur un site qui vous redirige, appuyez sur le bouton Undirect de Safari.",
+      "back": "On a site that redirects you, press Safari's Undirect button."
     },
     "app.watched.footer": {
       "s": "Les sites s'ajoutent depuis le bouton Undirect de Safari; ici, vous pouvez seulement en retirer.",
@@ -242,8 +242,8 @@
       "back": "Off in the settings"
     },
     "ext.popup.watch_on": {
-      "s": "Active. La désactiver recharge la page.",
-      "back": "On; turning it off reloads the page"
+      "s": "Protégé",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Désactivée. L'activer recharge la page.",
@@ -497,10 +497,15 @@
       "s": "Réglages"
     },
     "ext.note.where": {
-      "s": "Touchez Undirect dans la barre d'outils pour les réglages."
+      "s": "Touchez Undirect dans Safari pour les réglages.",
+      "back": "Tap Undirect in Safari for the settings."
     },
     "ext.setting.effects": {
       "s": "Effets sur la page"
+    },
+    "app.setup.detail_ios": {
+      "s": "Dans Safari, ouvrez le menu de la page, choisissez Gérer les extensions et activez Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

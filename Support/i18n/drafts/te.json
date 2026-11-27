@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Undirect కు స్వాగతం",
+      "s": "అన్‌డైరెక్ట్‌కు స్వాగతం",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "సైట్‌లో Safari టూల్‌బార్‌లోని Undirect బటన్‌ను నొక్కితే అక్కడ రక్షణ ఆన్ అవుతుంది.",
-      "back": "On a site pressing Undirect's button in Safari's toolbar turns protection on there"
+      "s": "సైట్‌లో Safari లోని అన్‌డైరెక్ట్ బటన్‌ను నొక్కితే అక్కడ రక్షణ ఆన్ అవుతుంది.",
+      "back": "On a site pressing the Undirect button in Safari turns protection on there"
     },
     "app.nav.guarded_sites": {
       "s": "రక్షిత సైట్‌లు",
@@ -74,7 +74,7 @@
       "back": "Settings"
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "అన్‌డైరెక్ట్",
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
@@ -134,12 +134,12 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "మిమ్మల్ని వేరే చోటుకు పంపే సైట్‌లో Safari టూల్‌బార్‌లోని Undirect బటన్‌ను నొక్కండి.",
-      "back": "On a site that sends you elsewhere press Undirect's button in Safari's toolbar"
+      "s": "మిమ్మల్ని వేరే చోటుకు పంపే సైట్‌లో Safari లోని అన్‌డైరెక్ట్ బటన్‌ను నొక్కండి.",
+      "back": "On a site that sends you elsewhere press the Undirect button in Safari"
     },
     "app.watched.footer": {
-      "s": "సైట్‌లు Safari లోని Undirect బటన్ ద్వారా చేరతాయి. ఇక్కడ తొలగించడం మాత్రమే సాధ్యం.",
-      "back": "Sites are added through Safari's button; here only removal"
+      "s": "సైట్‌లు Safari లోని అన్‌డైరెక్ట్ బటన్ ద్వారా చేరతాయి. ఇక్కడ తొలగించడం మాత్రమే సాధ్యం.",
+      "back": "Sites are added through the Undirect button in Safari. Here only removal is possible"
     },
     "app.watched.row.guarded_badge": {
       "s": "రక్షితం",
@@ -194,7 +194,7 @@
       "back": "Allow"
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "అన్‌డైరెక్ట్",
       "back": "Undirect"
     },
     "ext.meta.description": {
@@ -202,7 +202,7 @@
       "back": "Stops pages from using your click to open or redirect to a place you do not want."
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "అన్‌డైరెక్ట్",
       "back": "Undirect"
     },
     "ext.toolbar.tooltip_on": {
@@ -218,7 +218,7 @@
       "back": "Nothing to protect here"
     },
     "ext.popup.no_site_title": {
-      "s": "Undirect వెబ్‌సైట్‌లలో పనిచేస్తుంది",
+      "s": "అన్‌డైరెక్ట్ వెబ్‌సైట్‌లలో పనిచేస్తుంది",
       "back": "Undirect works on websites"
     },
     "ext.popup.no_site_body": {
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "ఆన్‌లో ఉంది. ఆఫ్ చేస్తే పేజీ మళ్లీ లోడ్ అవుతుంది.",
-      "back": "On; turning off reloads the page"
+      "s": "రక్షితం",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "ఆఫ్‌లో ఉంది. ఆన్ చేస్తే పేజీ మళ్లీ లోడ్ అవుతుంది.",
@@ -497,10 +497,15 @@
       "s": "సెట్టింగ్‌లు"
     },
     "ext.note.where": {
-      "s": "సెట్టింగ్‌ల కోసం టూల్‌బార్‌లో Undirect నొక్కండి."
+      "s": "సెట్టింగ్‌ల కోసం Safari లో అన్‌డైరెక్ట్‌ను నొక్కండి.",
+      "back": "For settings, press Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "పేజీ ఎఫెక్ట్‌లు"
+    },
+    "app.setup.detail_ios": {
+      "s": "Safariలో పేజీ మెనూ తెరిచి, Manage Extensions ఎంచుకుని అన్‌డైరెక్ట్‌ను ఆన్ చేయండి.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

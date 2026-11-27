@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Na spletnem mestu pritisnite gumb Undirect v orodni vrstici Safarija, da zaščitite to mesto.",
-      "back": "On a site, press the Undirect button in Safari's toolbar to protect that site."
+      "s": "Na spletnem mestu pritisnite gumb Undirect v Safariju, da zaščitite to mesto.",
+      "back": "On a site, press the Undirect button in Safari to protect that site."
     },
     "app.nav.guarded_sites": {
       "s": "Zaščitena mesta",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Na spletnem mestu, ki vas preusmerja, pritisnite gumb Undirect v orodni vrstici Safarija.",
-      "back": "On a site that redirects you press Undirect's button in Safari's toolbar"
+      "s": "Na spletnem mestu, ki vas preusmerja, pritisnite gumb Undirect v Safariju.",
+      "back": "On a site that redirects you, press the Undirect button in Safari."
     },
     "app.watched.footer": {
       "s": "Mesta dodate z gumbom Undirect v Safariju; tukaj jih lahko samo odstranite.",
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "Vklopljeno. Ob izklopu se stran znova naloži.",
-      "back": "On; turning off reloads the page"
+      "s": "Zaščiteno",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Izklopljeno. Ob vklopu se stran znova naloži.",
@@ -497,10 +497,15 @@
       "s": "Nastavitve"
     },
     "ext.note.where": {
-      "s": "Za nastavitve pritisnite Undirect v orodni vrstici."
+      "s": "Za nastavitve pritisnite Undirect v Safariju.",
+      "back": "For settings, press Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "Učinki na strani"
+    },
+    "app.setup.detail_ios": {
+      "s": "V Safariju odprite meni strani, izberite Upravljanje razširitev in vklopite Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

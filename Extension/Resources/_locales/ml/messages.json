@@ -1,6 +1,6 @@
 {
   "extension_name": {
-    "message": "Undirect",
+    "message": "അൺഡയറക്ട്",
     "description": "Name of the extension."
   },
   "extension_description": {
@@ -8,7 +8,7 @@
     "description": "Description of the extension."
   },
   "app_title": {
-    "message": "Undirect",
+    "message": "അൺഡയറക്ട്",
     "description": "Title shown in the container app and the popup."
   },
   "popup_guard_label": {
@@ -28,7 +28,7 @@
     "description": "Label of the per-site switch, the popup's first row."
   },
   "popup_no_site_title": {
-    "message": "Undirect വെബ്സൈറ്റുകളിൽ പ്രവർത്തിക്കുന്നു",
+    "message": "അൺഡയറക്ട് വെബ്സൈറ്റുകളിൽ പ്രവർത്തിക്കുന്നു",
     "description": "Popup title on a tab with no website, such as the Start Page."
   },
   "popup_no_site_body": {
@@ -370,7 +370,7 @@
     "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
   "note_where": {
-    "message": "ക്രമീകരണങ്ങൾക്ക് ടൂൾബാറിലെ Undirect അമർത്തുക.",
+    "message": "ക്രമീകരണങ്ങൾക്ക് Safari-യിലെ അൺഡയറക്ട് അമർത്തുക.",
     "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   },
   "setting_effects": {

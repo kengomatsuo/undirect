@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Undirect-ലേക്ക് സ്വാഗതം",
+      "s": "അൺഡയറക്ടിലേക്ക് സ്വാഗതം",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "സൈറ്റിൽ Safari ടൂൾബാറിലെ Undirect ബട്ടൺ അമർത്തിയാൽ അവിടെ സംരക്ഷണം ഓണാകും.",
-      "back": "On a site pressing the Undirect button in Safari's toolbar turns protection on there"
+      "s": "സൈറ്റിൽ Safari-യിലെ അൺഡയറക്ട് ബട്ടൺ അമർത്തിയാൽ അവിടെ സംരക്ഷണം ഓണാകും.",
+      "back": "On a site pressing the Undirect button in Safari turns protection on there"
     },
     "app.nav.guarded_sites": {
       "s": "സംരക്ഷിത സൈറ്റുകൾ",
@@ -74,7 +74,7 @@
       "back": "Settings"
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "അൺഡയറക്ട്",
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
@@ -134,12 +134,12 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "നിങ്ങളെ വഴിതിരിച്ചുവിടുന്ന സൈറ്റിൽ Safari ടൂൾബാറിലെ Undirect ബട്ടൺ അമർത്തുക.",
-      "back": "On a site that redirects you press Undirect's button in Safari's toolbar"
+      "s": "നിങ്ങളെ വഴിതിരിച്ചുവിടുന്ന സൈറ്റിൽ Safari-യിലെ അൺഡയറക്ട് ബട്ടൺ അമർത്തുക.",
+      "back": "On a site that redirects you press the Undirect button in Safari"
     },
     "app.watched.footer": {
-      "s": "സൈറ്റുകൾ ചേർക്കുന്നത് Safari-യിലെ Undirect ബട്ടൺ വഴിയാണ്. ഇവിടെ നീക്കം ചെയ്യാൻ മാത്രം കഴിയും.",
-      "back": "Sites are added via Safari's button; here you can only remove"
+      "s": "സൈറ്റുകൾ ചേർക്കുന്നത് Safari-യിലെ അൺഡയറക്ട് ബട്ടൺ വഴിയാണ്. ഇവിടെ നീക്കം ചെയ്യാൻ മാത്രം കഴിയും.",
+      "back": "Sites are added via the Undirect button in Safari. Here you can only remove them"
     },
     "app.watched.row.guarded_badge": {
       "s": "സംരക്ഷിതം",
@@ -194,7 +194,7 @@
       "back": "Allow"
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "അൺഡയറക്ട്",
       "back": "Undirect"
     },
     "ext.meta.description": {
@@ -202,7 +202,7 @@
       "back": "Stops pages using your click to open or take to somewhere you did not request"
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "അൺഡയറക്ട്",
       "back": "Undirect"
     },
     "ext.toolbar.tooltip_on": {
@@ -218,7 +218,7 @@
       "back": "Nothing to protect here"
     },
     "ext.popup.no_site_title": {
-      "s": "Undirect വെബ്സൈറ്റുകളിൽ പ്രവർത്തിക്കുന്നു",
+      "s": "അൺഡയറക്ട് വെബ്സൈറ്റുകളിൽ പ്രവർത്തിക്കുന്നു",
       "back": "Undirect works on websites"
     },
     "ext.popup.no_site_body": {
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "ഓൺ. ഓഫാക്കിയാൽ പേജ് വീണ്ടും ലോഡ് ആകും.",
-      "back": "On; turning off reloads the page"
+      "s": "സംരക്ഷിതം",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "ഓഫ്. ഓണാക്കിയാൽ പേജ് വീണ്ടും ലോഡ് ആകും.",
@@ -497,10 +497,15 @@
       "s": "ക്രമീകരണങ്ങൾ"
     },
     "ext.note.where": {
-      "s": "ക്രമീകരണങ്ങൾക്ക് ടൂൾബാറിലെ Undirect അമർത്തുക."
+      "s": "ക്രമീകരണങ്ങൾക്ക് Safari-യിലെ അൺഡയറക്ട് അമർത്തുക.",
+      "back": "For settings, press Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "പേജ് ഇഫക്റ്റുകൾ"
+    },
+    "app.setup.detail_ios": {
+      "s": "Safari-യിൽ പേജ് മെനു തുറന്ന് Manage Extensions തിരഞ്ഞെടുത്ത് അൺഡയറക്ട് ഓണാക്കുക.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

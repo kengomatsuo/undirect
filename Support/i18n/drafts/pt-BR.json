@@ -77,9 +77,9 @@
       "why": "Names the per-site activation model plainly, contrasting with automatic/everywhere mode elsewhere."
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Toque no botão do Undirect, na barra do Safari, para proteger o site atual.",
-      "back": "Tap the Undirect button, in the Safari toolbar, to protect the current site.",
-      "why": "Names the exact mechanism (the toolbar button) rather than a vague 'turn it on'."
+      "s": "Toque no botão do Undirect no Safari para proteger o site atual.",
+      "back": "Tap the Undirect button in Safari to protect the current site.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.nav.guarded_sites": {
       "s": "Sites protegidos",
@@ -167,8 +167,8 @@
       "why": "States plainly that the guarded-sites list is empty so far."
     },
     "app.watched.empty.detail": {
-      "s": "Toque no botão do Undirect, na barra do Safari, para proteger um site.",
-      "back": "Tap the Undirect button, in the Safari toolbar, to protect a site.",
+      "s": "Toque no botão do Undirect no Safari para proteger um site.",
+      "back": "Tap the Undirect button in Safari to protect a site.",
       "why": "Same mechanism wording as the welcome sheet's one_site_at_a_time row, for consistency."
     },
     "app.watched.footer": {
@@ -302,8 +302,8 @@
       "why": "Explains the master switch, not this particular site, is why the row is disabled."
     },
     "ext.popup.watch_on": {
-      "s": "Ativa. Desativar recarrega a página.",
-      "back": "Active. Turning it off reloads the page.",
+      "s": "Protegido",
+      "back": "Guarded",
       "why": "Confirms the state and warns about the reload in one short line, split as two sentences instead of a dash."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "Ajustes"
     },
     "ext.note.where": {
-      "s": "Toque em Undirect na barra de ferramentas para ver os ajustes."
+      "s": "Toque em Undirect no Safari para ver os ajustes.",
+      "back": "Tap Undirect in Safari to see the settings."
     },
     "ext.setting.effects": {
       "s": "Efeitos na página"
+    },
+    "app.setup.detail_ios": {
+      "s": "No Safari, abra o menu da página, escolha Gerenciar Extensões e ative o Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

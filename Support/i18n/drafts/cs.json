@@ -62,8 +62,8 @@
       "back": "Site by site"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Na webu stiskněte tlačítko Undirect na panelu nástrojů Safari a ochrana se zapne.",
-      "back": "On a site press the Undirect button on Safari's toolbar and protection turns on"
+      "s": "Na webu stiskněte v Safari tlačítko Undirect a ochrana se zapne.",
+      "back": "On a site press the Undirect button in Safari and protection turns on."
     },
     "app.nav.guarded_sites": {
       "s": "Chráněné weby",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Na webu, který vás přesměrovává, stiskněte tlačítko Undirect na panelu nástrojů Safari.",
-      "back": "On a site redirecting you press Undirect's button on Safari's toolbar"
+      "s": "Na webu, který vás přesměrovává, stiskněte v Safari tlačítko Undirect.",
+      "back": "On a site that redirects you, press the Undirect button in Safari."
     },
     "app.watched.footer": {
       "s": "Weby se přidávají tlačítkem Undirect v Safari; tady je lze jen odebrat.",
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "Zapnuto. Vypnutí stránku znovu načte.",
-      "back": "On; turning off reloads the page"
+      "s": "Chráněno",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Vypnuto. Zapnutí stránku znovu načte.",
@@ -497,10 +497,15 @@
       "s": "Nastavení"
     },
     "ext.note.where": {
-      "s": "Nastavení najdete po stisknutí Undirect na panelu nástrojů."
+      "s": "Nastavení najdete po stisknutí Undirect v Safari.",
+      "back": "You find the settings after pressing Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "Efekty na stránce"
+    },
+    "app.setup.detail_ios": {
+      "s": "V Safari otevřete nabídku stránky, zvolte Spravovat rozšíření a zapněte Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

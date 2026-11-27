@@ -6585,7 +6585,7 @@
         "es-ES": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pulsa el botón de Undirect en la barra de Safari para protegerlo."
+            "value": "En un sitio, pulsa el botón de Undirect en Safari para protegerlo."
           }
         },
         "fr-FR": {
@@ -6597,13 +6597,13 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "そのサイトを開いた状態でSafariのツールバーのUndirectボタンを押すと、そのサイトの保護がオンになります。"
+            "value": "そのサイトを開いた状態でSafariのアンダイレクトを押すと、そのサイトの保護がオンになります。"
           }
         },
         "zh-Hans": {
           "stringUnit": {
             "state": "translated",
-            "value": "在某个网站上点一下 Safari 工具栏里的 Undirect 图标，就能为这个网站开启防护。"
+            "value": "在某个网站上点一下 Safari 里的 Undirect，就能为这个网站开启防护。"
           }
         },
         "de-DE": {
@@ -6615,67 +6615,67 @@
         "id": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tekan tombol Undirect di bilah alat Safari untuk mengaktifkan pelindung di situs itu."
+            "value": "Tekan tombol Undirect di Safari untuk mengaktifkan pelindung di situs itu."
           }
         },
         "it": {
           "stringUnit": {
             "state": "translated",
-            "value": "Premi il pulsante Undirect nella barra di Safari su quel sito."
+            "value": "Premi il pulsante Undirect in Safari su quel sito."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari 도구 막대의 Undirect 버튼을 누르면 그 사이트의 가드가 켜집니다."
+            "value": "Safari에서 언다이렉트를 누르면 그 사이트의 가드가 켜집니다."
           }
         },
         "pt-BR": {
           "stringUnit": {
             "state": "translated",
-            "value": "Toque no botão do Undirect, na barra do Safari, para proteger o site atual."
+            "value": "Toque no botão do Undirect no Safari para proteger o site atual."
           }
         },
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Кнопка Undirect на панели Safari включает защиту для этого сайта."
+            "value": "Кнопка Андирект в Safari включает защиту для этого сайта."
           }
         },
         "zh-Hant": {
           "stringUnit": {
             "state": "translated",
-            "value": "在 Safari 工具列按下 Undirect 按鈕，就能為這個網站開啟防護。"
+            "value": "在 Safari 中按下 Undirect，就能為這個網站開啟防護。"
           }
         },
         "ar-SA": {
           "stringUnit": {
             "state": "translated",
-            "value": "اضغط زر Undirect في شريط أدوات Safari لتفعيل الحماية على ذلك الموقع فقط."
+            "value": "اضغط زر أندايركت في Safari لتفعيل الحماية على ذلك الموقع فقط."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari के टूलबार में Undirect बटन दबाकर उस साइट की सुरक्षा चालू करें।"
+            "value": "Safari में अनडायरेक्ट बटन दबाकर उस साइट की सुरक्षा चालू करें।"
           }
         },
         "vi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nhấn nút Undirect trên thanh công cụ Safari để bảo vệ trang đang mở."
+            "value": "Nhấn nút Undirect trong Safari để bảo vệ trang đang mở."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari araç çubuğundaki Undirect düğmesine basmak o siteyi korumaya alır."
+            "value": "Safari'deki Undirect düğmesine basmak o siteyi korumaya alır."
           }
         },
         "pl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Naciśnij przycisk Undirect na pasku narzędzi Safari, by chronić daną witrynę."
+            "value": "Naciśnij przycisk Undirect w Safari, by chronić daną witrynę."
           }
         },
         "nl-NL": {
@@ -6687,37 +6687,37 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "กดปุ่ม Undirect บนแถบเครื่องมือ Safari ขณะอยู่ในไซต์นั้น เพื่อเปิดการป้องกันให้ไซต์นั้น"
+            "value": "กด อันไดเรกต์ ใน Safari ขณะอยู่ในไซต์นั้น เพื่อเปิดการป้องกันให้ไซต์นั้น"
           }
         },
         "bn": {
           "stringUnit": {
             "state": "translated",
-            "value": "কোনো সাইটে Safari-র টুলবারের Undirect বোতামে চাপ দিলে সেই সাইটে সুরক্ষা চালু হয়।"
+            "value": "কোনো সাইটে Safari-র আনডিরেক্ট বোতামে চাপ দিলে সেই সাইটে সুরক্ষা চালু হয়।"
           }
         },
         "ca": {
           "stringUnit": {
             "state": "translated",
-            "value": "En un lloc, prem el botó de l'Undirect a la barra d'eines del Safari per activar-lo."
+            "value": "En un lloc, prem el botó de l'Undirect al Safari per protegir-lo."
           }
         },
         "cs": {
           "stringUnit": {
             "state": "translated",
-            "value": "Na webu stiskněte tlačítko Undirect na panelu nástrojů Safari a ochrana se zapne."
+            "value": "Na webu stiskněte v Safari tlačítko Undirect a ochrana se zapne."
           }
         },
         "da": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tryk på Undirect-knappen i Safaris værktøjslinje på et websted for at slå det til."
+            "value": "Tryk på Undirect-knappen i Safari på et websted for at slå beskyttelsen til der."
           }
         },
         "el": {
           "stringUnit": {
             "state": "translated",
-            "value": "Σε έναν ιστότοπο, πατήστε το κουμπί Undirect στη γραμμή εργαλείων του Safari για να τον προστατέψετε."
+            "value": "Σε έναν ιστότοπο, πατήστε το κουμπί Undirect στο Safari για να τον προστατέψετε."
           }
         },
         "en-AU": {
@@ -6741,139 +6741,139 @@
         "es-MX": {
           "stringUnit": {
             "state": "translated",
-            "value": "En un sitio, presiona el botón de Undirect en la barra de Safari para activarlo."
+            "value": "En un sitio, presiona el botón de Undirect en Safari para protegerlo."
           }
         },
         "fi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Paina sivustolla Undirect-painiketta Safarin työkalupalkissa, niin suojaus kytkeytyy päälle."
+            "value": "Paina sivustolla Safarin Undirect-painiketta, niin suojaus kytkeytyy päälle."
           }
         },
         "fr-CA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Sur un site, appuyez sur le bouton Undirect de la barre d'outils de Safari pour l'activer."
+            "value": "Sur un site, appuyez sur le bouton Undirect de Safari pour le protéger."
           }
         },
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "સાઇટ પર Safari ટૂલબારનું Undirect બટન દબાવો, એટલે ત્યાં સુરક્ષા ચાલુ થઈ જશે."
+            "value": "સાઇટ પર Safari નું અનડાયરેક્ટ બટન દબાવો, એટલે ત્યાં સુરક્ષા ચાલુ થઈ જશે."
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "כדי להגן על אתר, יש ללחוץ באתר על הלחצן של Undirect בסרגל הכלים של Safari."
+            "value": "כדי להגן על אתר, יש ללחוץ באתר על אנדיירקט ב-Safari."
           }
         },
         "hr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Na web-mjestu pritisnite gumb Undirect na alatnoj traci Safarija da zaštitite to mjesto."
+            "value": "Na web-mjestu pritisnite gumb Undirect u Safariju da zaštitite to mjesto."
           }
         },
         "hu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Nyomja meg az Undirect gombját a Safari eszköztárán az adott oldalon, és bekapcsol a védelem."
+            "value": "Nyomja meg a Safariban az Undirect gombját az adott oldalon, és bekapcsol a védelem."
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "ಸೈಟ್‌ನಲ್ಲಿ Safari ಟೂಲ್‌ಬಾರ್‌ನ Undirect ಬಟನ್ ಒತ್ತಿದರೆ ಅಲ್ಲಿ ರಕ್ಷಣೆ ಆನ್ ಆಗುತ್ತದೆ."
+            "value": "ಸೈಟ್‌ನಲ್ಲಿ Safari ಯ ಅನ್‌ಡೈರೆಕ್ಟ್ ಬಟನ್ ಒತ್ತಿದರೆ ಅಲ್ಲಿ ರಕ್ಷಣೆ ಆನ್ ಆಗುತ್ತದೆ."
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "സൈറ്റിൽ Safari ടൂൾബാറിലെ Undirect ബട്ടൺ അമർത്തിയാൽ അവിടെ സംരക്ഷണം ഓണാകും."
+            "value": "സൈറ്റിൽ Safari-യിലെ അൺഡയറക്ട് ബട്ടൺ അമർത്തിയാൽ അവിടെ സംരക്ഷണം ഓണാകും."
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "साइटवर Safari च्या टूलबारमधील Undirect बटण दाबा, म्हणजे तिथे संरक्षण सुरू होते."
+            "value": "साइटवर Safari मधील अनडायरेक्ट बटण दाबा, म्हणजे तिथे संरक्षण सुरू होते."
           }
         },
         "ms": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pada sesuatu tapak, tekan butang Undirect pada bar alat Safari untuk melindunginya."
+            "value": "Pada sesuatu tapak, tekan butang Undirect dalam Safari untuk melindunginya."
           }
         },
         "nb": {
           "stringUnit": {
             "state": "translated",
-            "value": "Trykk på Undirect-knappen i Safaris verktøylinje på et nettsted for å slå på beskyttelsen der."
+            "value": "Trykk på Undirect-knappen i Safari på et nettsted for å slå på beskyttelsen der."
           }
         },
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "ସାଇଟରେ Safari ଟୁଲବାରର Undirect ବଟନ ଦବାନ୍ତୁ, ସେଠାରେ ସୁରକ୍ଷା ଚାଲୁ ହେବ।"
+            "value": "ସାଇଟରେ Safari ର ଅନଡାଇରେକ୍ଟ ବଟନ ଦବାନ୍ତୁ, ସେଠାରେ ସୁରକ୍ଷା ଚାଲୁ ହେବ।"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "ਸਾਈਟ 'ਤੇ Safari ਟੂਲਬਾਰ ਦਾ Undirect ਬਟਨ ਦਬਾਓ, ਉੱਥੇ ਸੁਰੱਖਿਆ ਚਾਲੂ ਹੋ ਜਾਵੇਗੀ।"
+            "value": "ਸਾਈਟ 'ਤੇ Safari ਦਾ ਅਨਡਾਇਰੈਕਟ ਬਟਨ ਦਬਾਓ, ਉੱਥੇ ਸੁਰੱਖਿਆ ਚਾਲੂ ਹੋ ਜਾਵੇਗੀ।"
           }
         },
         "pt-PT": {
           "stringUnit": {
             "state": "translated",
-            "value": "Num site, prima o botão do Undirect na barra do Safari para o ativar."
+            "value": "Num site, prima o botão do Undirect no Safari para o proteger."
           }
         },
         "ro": {
           "stringUnit": {
             "state": "translated",
-            "value": "Pe un site, apasă butonul Undirect din bara de instrumente Safari ca să-l protejezi."
+            "value": "Pe un site, apasă butonul Undirect din Safari ca să-l protejezi."
           }
         },
         "sk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Na webe stlačte tlačidlo Undirect na paneli nástrojov Safari a ochrana sa zapne."
+            "value": "Na webe stlačte v Safari tlačidlo Undirect a ochrana sa zapne."
           }
         },
         "sl": {
           "stringUnit": {
             "state": "translated",
-            "value": "Na spletnem mestu pritisnite gumb Undirect v orodni vrstici Safarija, da zaščitite to mesto."
+            "value": "Na spletnem mestu pritisnite gumb Undirect v Safariju, da zaščitite to mesto."
           }
         },
         "sv": {
           "stringUnit": {
             "state": "translated",
-            "value": "Tryck på Undirect-knappen i Safaris verktygsfält på en webbplats för att slå på skyddet där."
+            "value": "Tryck på Undirect-knappen i Safari på en webbplats för att slå på skyddet där."
           }
         },
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "தளத்தில் Safari கருவிப்பட்டியின் Undirect பொத்தானை அழுத்தினால், அங்கு பாதுகாப்பு இயங்கும்."
+            "value": "தளத்தில் Safari-யின் அன்டைரக்ட் பொத்தானை அழுத்தினால், அங்கு பாதுகாப்பு இயங்கும்."
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "సైట్‌లో Safari టూల్‌బార్‌లోని Undirect బటన్‌ను నొక్కితే అక్కడ రక్షణ ఆన్ అవుతుంది."
+            "value": "సైట్‌లో Safari లోని అన్‌డైరెక్ట్ బటన్‌ను నొక్కితే అక్కడ రక్షణ ఆన్ అవుతుంది."
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "На сайті натисніть кнопку Undirect на панелі інструментів Safari, щоб його захистити."
+            "value": "На сайті натисніть кнопку Андирект у Safari, щоб його захистити."
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "سائٹ پر Safari کے ٹول بار میں Undirect کا بٹن دبائیں، وہاں تحفظ آن ہو جائے گا۔"
+            "value": "سائٹ پر Safari میں اَنڈائریکٹ کا بٹن دبائیں، وہاں تحفظ آن ہو جائے گا۔"
           }
         }
       }
@@ -9569,305 +9569,6 @@
         }
       }
     },
-    "Press the Undirect button in Safari on a site that keeps redirecting.": {
-      "extractionState": "manual",
-      "localizations": {
-        "es-ES": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pulsa el botón de Undirect en Safari cuando un sitio te redirija."
-          }
-        },
-        "fr-FR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Appuyez sur le bouton Undirect dans Safari pour protéger un site."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "困ったサイトを開いた状態で、Safariのツールバーにあるボタンを押すと保護が始まります。"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在爱乱跳转的网站上点一下 Safari 工具栏的 Undirect 图标，即可开启防护。"
-          }
-        },
-        "de-DE": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Klicken Sie auf das Undirect-Symbol in Safari, um die Website zu schützen."
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tekan tombol Undirect di bilah alat Safari pada situs yang bermasalah."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Premi il pulsante Undirect nella barra di Safari su un sito problematico."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "문제가 있는 사이트에서 Safari 도구 막대의 Undirect 버튼을 누르세요."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toque no botão do Undirect, na barra do Safari, para proteger um site."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Нажмите Undirect на панели Safari, когда сайт начинает мешать."
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "在 Safari 工具列按下 Undirect 按鈕，就能防護目前的網站。"
-          }
-        },
-        "ar-SA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "اضغط زر Undirect في شريط أدوات Safari عند زيارة موقع يسيء التصرف."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "जो साइट परेशान करे, वहां Safari के टूलबार में Undirect बटन दबाएं।"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nhấn nút Undirect trên thanh công cụ khi đang ở trang hay gây phiền."
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sorun çıkaran bir sitede Safari araç çubuğundaki Undirect düğmesine basın."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Na witrynie, która przekierowuje, naciśnij przycisk Undirect na pasku narzędzi Safari."
-          }
-        },
-        "nl-NL": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Druk op de Undirect-knop in Safari terwijl je op een lastige site bent."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "กดปุ่ม Undirect บนแถบเครื่องมือของ Safari ขณะอยู่ในไซต์ที่มีปัญหา เพื่อเริ่มป้องกัน"
-          }
-        },
-        "bn": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "যে সাইট আপনাকে অন্যত্র পাঠিয়ে দেয়, সেখানে Safari-র টুলবারের Undirect বোতামে চাপ দিন।"
-          }
-        },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "En un lloc que et redirigeix, prem el botó de l'Undirect a la barra d'eines del Safari."
-          }
-        },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Na webu, který vás přesměrovává, stiskněte tlačítko Undirect na panelu nástrojů Safari."
-          }
-        },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tryk på Undirect-knappen i Safaris værktøjslinje på et websted, der omdirigerer dig."
-          }
-        },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Σε έναν ιστότοπο που σας ανακατευθύνει, πατήστε το κουμπί Undirect στη γραμμή εργαλείων του Safari."
-          }
-        },
-        "en-AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Press the Undirect button in Safari on a site that keeps redirecting."
-          }
-        },
-        "en-CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Press the Undirect button in Safari on a site that keeps redirecting."
-          }
-        },
-        "en-GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Press the Undirect button in Safari on a site that keeps redirecting."
-          }
-        },
-        "es-MX": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "En un sitio que te redirija, presiona el botón de Undirect en la barra de Safari."
-          }
-        },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Paina sivustolla, joka ohjaa sinua muualle, Undirect-painiketta Safarin työkalupalkissa."
-          }
-        },
-        "fr-CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sur un site qui vous redirige, appuyez sur le bouton Undirect de la barre d'outils de Safari."
-          }
-        },
-        "gu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "જે સાઇટ તમને બીજે મોકલી દે ત્યાં Safari ટૂલબારનું Undirect બટન દબાવો."
-          }
-        },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "באתר שמפנה למקום אחר, יש ללחוץ על הלחצן של Undirect בסרגל הכלים של Safari."
-          }
-        },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Na web-mjestu koje vas preusmjerava pritisnite gumb Undirect na alatnoj traci Safarija."
-          }
-        },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Egy átirányító oldalon nyomja meg az Undirect gombját a Safari eszköztárán."
-          }
-        },
-        "kn": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ನಿಮ್ಮನ್ನು ಬೇರೆಡೆಗೆ ಕಳುಹಿಸುವ ಸೈಟ್‌ನಲ್ಲಿ Safari ಟೂಲ್‌ಬಾರ್‌ನ Undirect ಬಟನ್ ಒತ್ತಿ."
-          }
-        },
-        "ml": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "നിങ്ങളെ വഴിതിരിച്ചുവിടുന്ന സൈറ്റിൽ Safari ടൂൾബാറിലെ Undirect ബട്ടൺ അമർത്തുക."
-          }
-        },
-        "mr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "तुम्हाला दुसरीकडे पाठवणाऱ्या साइटवर Safari च्या टूलबारमधील Undirect बटण दाबा."
-          }
-        },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pada tapak yang mengubah hala anda, tekan butang Undirect pada bar alat Safari."
-          }
-        },
-        "nb": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Trykk på Undirect-knappen i Safaris verktøylinje på et nettsted som sender deg videre."
-          }
-        },
-        "or": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ଆପଣଙ୍କୁ ଅନ୍ୟତ୍ର ପଠାଉଥିବା ସାଇଟରେ Safari ଟୁଲବାରର Undirect ବଟନ ଦବାନ୍ତୁ।"
-          }
-        },
-        "pa": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ਜੋ ਸਾਈਟ ਤੁਹਾਨੂੰ ਕਿਤੇ ਹੋਰ ਭੇਜ ਦੇਵੇ, ਉੱਥੇ Safari ਟੂਲਬਾਰ ਦਾ Undirect ਬਟਨ ਦਬਾਓ।"
-          }
-        },
-        "pt-PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Num site que o redirecione, prima o botão do Undirect na barra do Safari."
-          }
-        },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Pe un site care te redirecționează, apasă butonul Undirect din bara de instrumente Safari."
-          }
-        },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Na webe, ktorý vás presmeruje, stlačte tlačidlo Undirect na paneli nástrojov Safari."
-          }
-        },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Na spletnem mestu, ki vas preusmerja, pritisnite gumb Undirect v orodni vrstici Safarija."
-          }
-        },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tryck på Undirect-knappen i Safaris verktygsfält på en webbplats som skickar dig vidare."
-          }
-        },
-        "ta": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "உங்களை வேறிடத்துக்கு அனுப்பும் தளத்தில் Safari கருவிப்பட்டியின் Undirect பொத்தானை அழுத்துங்கள்."
-          }
-        },
-        "te": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "మిమ్మల్ని వేరే చోటుకు పంపే సైట్‌లో Safari టూల్‌బార్‌లోని Undirect బటన్‌ను నొక్కండి."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "На сайті, що вас перенаправляє, натисніть кнопку Undirect на панелі інструментів Safari."
-          }
-        },
-        "ur": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "جو سائٹ آپ کو کہیں اور بھیج دے وہاں Safari کے ٹول بار میں Undirect کا بٹن دبائیں۔"
-          }
-        }
-      }
-    },
     "Safari did not answer. Switching it on there is picked up automatically.": {
       "extractionState": "manual",
       "localizations": {
@@ -10462,305 +10163,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "ترتیبات"
-          }
-        }
-      }
-    },
-    "Sites are added from the Undirect button in Safari.": {
-      "extractionState": "manual",
-      "localizations": {
-        "es-ES": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Para añadir un sitio, usa el botón de Undirect en Safari."
-          }
-        },
-        "fr-FR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cette liste s'allonge depuis le bouton Undirect de Safari."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "サイトを増やすには、Safariのツールバーのボタンを使います。"
-          }
-        },
-        "zh-Hans": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "网站只能通过 Safari 工具栏里的图标添加，这里无法新增。"
-          }
-        },
-        "de-DE": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Neue Websites fügen Sie über Safaris Symbolleiste hinzu."
-          }
-        },
-        "id": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Situs baru masuk daftar ini hanya lewat tombol Undirect di Safari."
-          }
-        },
-        "it": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Aggiungi altri siti dal pulsante Undirect in Safari."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "새 사이트는 Safari 도구 막대의 버튼으로만 추가됩니다."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sites só entram nesta lista pelo botão do Undirect, no Safari."
-          }
-        },
-        "ru": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Новые сайты добавляются только кнопкой в Safari."
-          }
-        },
-        "zh-Hant": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "只能透過 Safari 工具列的按鈕新增網站。"
-          }
-        },
-        "ar-SA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "تُضاف المواقع من زر Undirect في Safari فقط، لا من هنا."
-          }
-        },
-        "hi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "नई साइट जोड़ने का तरीका सिर्फ़ Safari का टूलबार बटन है।"
-          }
-        },
-        "vi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Muốn thêm trang, dùng nút Undirect trên thanh công cụ Safari."
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Yeni site yalnızca Safari'deki düğmeyle eklenir."
-          }
-        },
-        "pl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Witryny dodasz przyciskiem Undirect w Safari; tu możesz je tylko usunąć."
-          }
-        },
-        "nl-NL": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nieuwe sites voeg je toe via de knop in Safari's werkbalk."
-          }
-        },
-        "th": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "เพิ่มไซต์ใหม่ได้จากปุ่ม Undirect ใน Safari เท่านั้น หน้านี้ลบไซต์ได้อย่างเดียว"
-          }
-        },
-        "bn": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "সাইট যোগ হয় Safari-র Undirect বোতাম থেকে। এখানে শুধু সরানো যায়।"
-          }
-        },
-        "ca": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Els llocs s'afegeixen des del botó de l'Undirect al Safari; aquí només els pots treure."
-          }
-        },
-        "cs": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Weby se přidávají tlačítkem Undirect v Safari; tady je lze jen odebrat."
-          }
-        },
-        "da": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Websteder tilføjes fra Undirect-knappen i Safari. Her kan du kun fjerne dem."
-          }
-        },
-        "el": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Οι ιστότοποι προστίθενται από το κουμπί Undirect στο Safari. Εδώ μπορείτε μόνο να τους αφαιρέσετε."
-          }
-        },
-        "en-AU": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sites are added from the Undirect button in Safari."
-          }
-        },
-        "en-CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sites are added from the Undirect button in Safari."
-          }
-        },
-        "en-GB": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sites are added from the Undirect button in Safari."
-          }
-        },
-        "es-MX": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Los sitios se agregan desde el botón de Undirect en Safari; aquí solo puedes quitarlos."
-          }
-        },
-        "fi": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sivustot lisätään Safarin Undirect-painikkeesta. Täällä niitä voi vain poistaa."
-          }
-        },
-        "fr-CA": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Les sites s'ajoutent depuis le bouton Undirect de Safari; ici, vous pouvez seulement en retirer."
-          }
-        },
-        "gu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "સાઇટ Safari ના Undirect બટનથી ઉમેરાય છે. અહીં ફક્ત કાઢી શકાય છે."
-          }
-        },
-        "he": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "אתרים מתווספים מהלחצן של Undirect ב-Safari. כאן אפשר רק להסיר אותם."
-          }
-        },
-        "hr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mjesta se dodaju gumbom Undirect u Safariju; ovdje ih možete samo ukloniti."
-          }
-        },
-        "hu": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Az oldalak a Safari Undirect gombjával kerülnek ide. Itt csak eltávolítani lehet őket."
-          }
-        },
-        "kn": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ಸೈಟ್‌ಗಳು Safari ಯ Undirect ಬಟನ್‌ನಿಂದ ಸೇರುತ್ತವೆ. ಇಲ್ಲಿ ತೆಗೆದುಹಾಕಲು ಮಾತ್ರ ಸಾಧ್ಯ."
-          }
-        },
-        "ml": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "സൈറ്റുകൾ ചേർക്കുന്നത് Safari-യിലെ Undirect ബട്ടൺ വഴിയാണ്. ഇവിടെ നീക്കം ചെയ്യാൻ മാത്രം കഴിയും."
-          }
-        },
-        "mr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "साइट Safari मधील Undirect बटणाने जोडल्या जातात. इथे फक्त काढता येतात."
-          }
-        },
-        "ms": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tapak ditambah daripada butang Undirect dalam Safari. Di sini anda hanya boleh mengalih keluarnya."
-          }
-        },
-        "nb": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Nettsteder legges til fra Undirect-knappen i Safari. Her kan du bare fjerne dem."
-          }
-        },
-        "or": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ସାଇଟ Safari ର Undirect ବଟନରୁ ଯୋଡ଼ାଯାଏ। ଏଠାରେ କେବଳ ହଟାଇହେବ।"
-          }
-        },
-        "pa": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ਸਾਈਟਾਂ Safari ਦੇ Undirect ਬਟਨ ਤੋਂ ਜੁੜਦੀਆਂ ਹਨ। ਇੱਥੇ ਸਿਰਫ਼ ਹਟਾਈਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ।"
-          }
-        },
-        "pt-PT": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Os sites adicionam-se a partir do botão do Undirect no Safari; aqui só os pode remover."
-          }
-        },
-        "ro": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Site-urile se adaugă din butonul Undirect din Safari; aici le poți doar elimina."
-          }
-        },
-        "sk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Weby sa pridávajú tlačidlom Undirect v Safari; tu ich možno len odstrániť."
-          }
-        },
-        "sl": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mesta dodate z gumbom Undirect v Safariju; tukaj jih lahko samo odstranite."
-          }
-        },
-        "sv": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Webbplatser läggs till från Undirect-knappen i Safari. Här kan du bara ta bort dem."
-          }
-        },
-        "ta": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "தளங்கள் Safari-யின் Undirect பொத்தானால் சேர்க்கப்படும். இங்கே நீக்க மட்டுமே முடியும்."
-          }
-        },
-        "te": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "సైట్‌లు Safari లోని Undirect బటన్ ద్వారా చేరతాయి. ఇక్కడ తొలగించడం మాత్రమే సాధ్యం."
-          }
-        },
-        "uk": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Сайти додаються кнопкою Undirect у Safari; тут їх можна лише вилучити."
-          }
-        },
-        "ur": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "سائٹس Safari کے Undirect بٹن سے شامل ہوتی ہیں۔ یہاں صرف ہٹائی جا سکتی ہیں۔"
           }
         }
       }
@@ -12577,7 +11979,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "アンダイレクト"
           }
         },
         "zh-Hans": {
@@ -12607,7 +12009,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "언다이렉트"
           }
         },
         "pt-BR": {
@@ -12619,7 +12021,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "Андирект"
           }
         },
         "zh-Hant": {
@@ -12631,13 +12033,13 @@
         "ar-SA": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "أندايركت"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "अनडायरेक्ट"
           }
         },
         "vi": {
@@ -12667,13 +12069,13 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "อันไดเรกต์"
           }
         },
         "bn": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "আনডিরেক্ট"
           }
         },
         "ca": {
@@ -12739,13 +12141,13 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "અનડાયરેક્ટ"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "אנדיירקט"
           }
         },
         "hr": {
@@ -12763,19 +12165,19 @@
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "ಅನ್‌ಡೈರೆಕ್ಟ್"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "അൺഡയറക്ട്"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "अनडायरेक्ट"
           }
         },
         "ms": {
@@ -12793,13 +12195,13 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "ଅନଡାଇରେକ୍ଟ"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "ਅਨਡਾਇਰੈਕਟ"
           }
         },
         "pt-PT": {
@@ -12835,25 +12237,25 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "அன்டைரக்ட்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "అన్‌డైరెక్ట్"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "Андирект"
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect"
+            "value": "اَنڈائریکٹ"
           }
         }
       }
@@ -13773,7 +13175,7 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirectへようこそ"
+            "value": "アンダイレクトへようこそ"
           }
         },
         "zh-Hans": {
@@ -13803,7 +13205,7 @@
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect에 오신 것을 환영합니다!"
+            "value": "언다이렉트에 오신 것을 환영합니다!"
           }
         },
         "pt-BR": {
@@ -13815,7 +13217,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "Добро пожаловать в Undirect"
+            "value": "Добро пожаловать в Андирект"
           }
         },
         "zh-Hant": {
@@ -13827,13 +13229,13 @@
         "ar-SA": {
           "stringUnit": {
             "state": "translated",
-            "value": "مرحبًا بك في Undirect"
+            "value": "مرحبًا بك في أندايركت"
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect में स्वागत है"
+            "value": "अनडायरेक्ट में आपका स्वागत है"
           }
         },
         "vi": {
@@ -13863,13 +13265,13 @@
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ยินดีต้อนรับสู่ Undirect"
+            "value": "ยินดีต้อนรับสู่ อันไดเรกต์"
           }
         },
         "bn": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect-এ স্বাগতম"
+            "value": "আনডিরেক্টে স্বাগতম"
           }
         },
         "ca": {
@@ -13935,13 +13337,13 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect માં આપનું સ્વાગત છે"
+            "value": "અનડાયરેક્ટમાં આપનું સ્વાગત છે"
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "ברוכים הבאים ל-Undirect"
+            "value": "ברוכים הבאים לאנדיירקט"
           }
         },
         "hr": {
@@ -13959,19 +13361,19 @@
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect ಗೆ ಸ್ವಾಗತ"
+            "value": "ಅನ್‌ಡೈರೆಕ್ಟ್‌ಗೆ ಸ್ವಾಗತ"
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect-ലേക്ക് സ്വാഗതം"
+            "value": "അൺഡയറക്ടിലേക്ക് സ്വാഗതം"
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect मध्ये स्वागत"
+            "value": "अनडायरेक्टमध्ये आपले स्वागत"
           }
         },
         "ms": {
@@ -13989,13 +13391,13 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect କୁ ସ୍ୱାଗତ"
+            "value": "ଅନଡାଇରେକ୍ଟକୁ ସ୍ୱାଗତ"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect ਵਿੱਚ ਜੀ ਆਇਆਂ ਨੂੰ"
+            "value": "ਅਨਡਾਇਰੈਕਟ ਵਿੱਚ ਜੀ ਆਇਆਂ ਨੂੰ"
           }
         },
         "pt-PT": {
@@ -14031,25 +13433,25 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect-க்கு வரவேற்கிறோம்"
+            "value": "அன்டைரக்டுக்கு வரவேற்கிறோம்"
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect కు స్వాగతం"
+            "value": "అన్‌డైరెక్ట్‌కు స్వాగతం"
           }
         },
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "Вітаємо в Undirect"
+            "value": "Вітаємо в Андиректі"
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "Undirect میں خوش آمدید"
+            "value": "اَنڈائریکٹ میں خوش آمدید"
           }
         }
       }
@@ -14658,13 +14060,13 @@
         "ar-SA": {
           "stringUnit": {
             "state": "translated",
-            "value": "في Safari، افتح قائمة الصفحة واختر «إدارة الامتدادات» وشغّل Undirect."
+            "value": "في Safari، افتح قائمة الصفحة واختر «إدارة الامتدادات» وشغّل أندايركت."
           }
         },
         "bn": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari-তে পেজ মেনু খুলুন, Manage Extensions বেছে নিন এবং Undirect চালু করুন।"
+            "value": "Safari-তে পেজ মেনু খুলুন, Manage Extensions বেছে নিন এবং আনডিরেক্ট চালু করুন।"
           }
         },
         "ca": {
@@ -14748,19 +14150,19 @@
         "gu": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safariમાં પેજ મેનૂ ખોલો, Manage Extensions પસંદ કરો અને Undirect ચાલુ કરો."
+            "value": "Safariમાં પેજ મેનૂ ખોલો, Manage Extensions પસંદ કરો અને અનડાયરેક્ટ ચાલુ કરો."
           }
         },
         "he": {
           "stringUnit": {
             "state": "translated",
-            "value": "ב-Safari, פותחים את תפריט הדף, בוחרים ״ניהול הרחבות״ ומפעילים את Undirect."
+            "value": "ב-Safari, פותחים את תפריט הדף, בוחרים ״ניהול הרחבות״ ומפעילים את אנדיירקט."
           }
         },
         "hi": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari में पेज मेन्यू खोलें, Manage Extensions चुनें और Undirect चालू करें।"
+            "value": "Safari में पेज मेन्यू खोलें, Manage Extensions चुनें और अनडायरेक्ट चालू करें।"
           }
         },
         "hr": {
@@ -14790,31 +14192,31 @@
         "ja": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safariでページメニューを開き、「拡張機能を管理」を選んでUndirectをオンにしてください。"
+            "value": "Safariでページメニューを開き、「拡張機能を管理」を選んでアンダイレクトをオンにしてください。"
           }
         },
         "kn": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari ಯಲ್ಲಿ ಪುಟ ಮೆನು ತೆರೆಯಿರಿ, Manage Extensions ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು Undirect ಆನ್ ಮಾಡಿ."
+            "value": "Safari ಯಲ್ಲಿ ಪುಟ ಮೆನು ತೆರೆಯಿರಿ, Manage Extensions ಆಯ್ಕೆಮಾಡಿ ಮತ್ತು ಅನ್‌ಡೈರೆಕ್ಟ್ ಆನ್ ಮಾಡಿ."
           }
         },
         "ko": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari에서 페이지 메뉴를 열고 '확장 프로그램 관리'를 선택한 다음 Undirect를 켜세요."
+            "value": "Safari에서 페이지 메뉴를 열고 '확장 프로그램 관리'를 선택한 다음 언다이렉트를 켜세요."
           }
         },
         "ml": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari-യിൽ പേജ് മെനു തുറന്ന് Manage Extensions തിരഞ്ഞെടുത്ത് Undirect ഓണാക്കുക."
+            "value": "Safari-യിൽ പേജ് മെനു തുറന്ന് Manage Extensions തിരഞ്ഞെടുത്ത് അൺഡയറക്ട് ഓണാക്കുക."
           }
         },
         "mr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari मध्ये पेज मेनू उघडा, Manage Extensions निवडा आणि Undirect सुरू करा."
+            "value": "Safari मध्ये पेज मेनू उघडा, Manage Extensions निवडा आणि अनडायरेक्ट सुरू करा."
           }
         },
         "ms": {
@@ -14838,13 +14240,13 @@
         "or": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safariରେ ପେଜ୍ ମେନୁ ଖୋଲନ୍ତୁ, Manage Extensions ବାଛନ୍ତୁ ଏବଂ Undirect ଚାଲୁ କରନ୍ତୁ।"
+            "value": "Safariରେ ପେଜ୍ ମେନୁ ଖୋଲନ୍ତୁ, Manage Extensions ବାଛନ୍ତୁ ଏବଂ ଅନଡାଇରେକ୍ଟ ଚାଲୁ କରନ୍ତୁ।"
           }
         },
         "pa": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari ਵਿੱਚ ਪੇਜ ਮੀਨੂ ਖੋਲ੍ਹੋ, Manage Extensions ਚੁਣੋ ਅਤੇ Undirect ਚਾਲੂ ਕਰੋ।"
+            "value": "Safari ਵਿੱਚ ਪੇਜ ਮੀਨੂ ਖੋਲ੍ਹੋ, Manage Extensions ਚੁਣੋ ਅਤੇ ਅਨਡਾਇਰੈਕਟ ਚਾਲੂ ਕਰੋ।"
           }
         },
         "pl": {
@@ -14874,7 +14276,7 @@
         "ru": {
           "stringUnit": {
             "state": "translated",
-            "value": "В Safari откройте меню страницы, выберите «Управление расширениями» и включите Undirect."
+            "value": "В Safari откройте меню страницы, выберите «Управление расширениями» и включите Андирект."
           }
         },
         "sk": {
@@ -14898,19 +14300,19 @@
         "ta": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari-இல் பக்க மெனுவைத் திறந்து Manage Extensions-ஐத் தேர்ந்தெடுத்து Undirect-ஐ இயக்கவும்."
+            "value": "Safari-இல் பக்க மெனுவைத் திறந்து Manage Extensions-ஐத் தேர்ந்தெடுத்து அன்டைரக்டை இயக்கவும்."
           }
         },
         "te": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safariలో పేజీ మెనూ తెరిచి, Manage Extensions ఎంచుకుని Undirect ఆన్ చేయండి."
+            "value": "Safariలో పేజీ మెనూ తెరిచి, Manage Extensions ఎంచుకుని అన్‌డైరెక్ట్‌ను ఆన్ చేయండి."
           }
         },
         "th": {
           "stringUnit": {
             "state": "translated",
-            "value": "ใน Safari เปิดเมนูหน้าเว็บ เลือกจัดการส่วนขยาย แล้วเปิด Undirect"
+            "value": "ใน Safari เปิดเมนูหน้าเว็บ เลือกจัดการส่วนขยาย แล้วเปิด อันไดเรกต์"
           }
         },
         "tr": {
@@ -14922,13 +14324,13 @@
         "uk": {
           "stringUnit": {
             "state": "translated",
-            "value": "У Safari відкрийте меню сторінки, виберіть «Керувати розширеннями» й увімкніть Undirect."
+            "value": "У Safari відкрийте меню сторінки, виберіть «Керувати розширеннями» й увімкніть Андирект."
           }
         },
         "ur": {
           "stringUnit": {
             "state": "translated",
-            "value": "Safari میں صفحے کا مینو کھولیں، Manage Extensions منتخب کریں اور Undirect آن کریں۔"
+            "value": "Safari میں صفحے کا مینو کھولیں، Manage Extensions منتخب کریں اور اَنڈائریکٹ آن کریں۔"
           }
         },
         "vi": {
@@ -15246,6 +14648,604 @@
           "stringUnit": {
             "state": "translated",
             "value": "頁面上的效果"
+          }
+        }
+      }
+    },
+    "Press Undirect in Safari on a site that keeps redirecting.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es-ES": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pulsa el botón de Undirect en Safari cuando un sitio te redirija."
+          }
+        },
+        "fr-FR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Appuyez sur le bouton Undirect dans Safari pour protéger un site."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "困ったサイトを開いた状態で、Safariのアンダイレクトを押すと保護が始まります。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在爱乱跳转的网站上点一下 Safari 里的 Undirect，即可开启防护。"
+          }
+        },
+        "de-DE": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Klicken Sie auf das Undirect-Symbol in Safari, um die Website zu schützen."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekan tombol Undirect di Safari pada situs yang bermasalah."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premi il pulsante Undirect in Safari su un sito problematico."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "문제가 있는 사이트에서 Safari의 언다이렉트를 누르세요."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toque no botão do Undirect no Safari para proteger um site."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Нажмите Андирект в Safari, когда сайт начинает мешать."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "在 Safari 中按下 Undirect，就能防護目前的網站。"
+          }
+        },
+        "ar-SA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "اضغط زر أندايركت في Safari عند زيارة موقع يسيء التصرف."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "जो साइट परेशान करे, वहां Safari में अनडायरेक्ट बटन दबाएं।"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nhấn nút Undirect trong Safari khi đang ở trang hay gây phiền."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sorun çıkaran bir sitede Safari'deki Undirect düğmesine basın."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na witrynie, która przekierowuje, naciśnij przycisk Undirect w Safari."
+          }
+        },
+        "nl-NL": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Druk op de Undirect-knop in Safari terwijl je op een lastige site bent."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "กด อันไดเรกต์ ใน Safari ขณะอยู่ในไซต์ที่มีปัญหา เพื่อเริ่มป้องกัน"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "যে সাইট আপনাকে অন্যত্র পাঠিয়ে দেয়, সেখানে Safari-র আনডিরেক্ট বোতামে চাপ দিন।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En un lloc que et redirigeix, prem el botó de l'Undirect al Safari."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na webu, který vás přesměrovává, stiskněte v Safari tlačítko Undirect."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryk på Undirect-knappen i Safari på et websted, der omdirigerer dig."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Σε έναν ιστότοπο που σας ανακατευθύνει, πατήστε το κουμπί Undirect στο Safari."
+          }
+        },
+        "en-AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Undirect in Safari on a site that keeps redirecting."
+          }
+        },
+        "en-CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Undirect in Safari on a site that keeps redirecting."
+          }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Press Undirect in Safari on a site that keeps redirecting."
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En un sitio que te redirija, presiona el botón de Undirect en Safari."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Paina sivustolla, joka ohjaa sinua muualle, Safarin Undirect-painiketta."
+          }
+        },
+        "fr-CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sur un site qui vous redirige, appuyez sur le bouton Undirect de Safari."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "જે સાઇટ તમને બીજે મોકલી દે ત્યાં Safari નું અનડાયરેક્ટ બટન દબાવો."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "באתר שמפנה למקום אחר, יש ללחוץ על אנדיירקט ב-Safari."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na web-mjestu koje vas preusmjerava pritisnite gumb Undirect u Safariju."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Egy átirányító oldalon nyomja meg a Safariban az Undirect gombját."
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ನಿಮ್ಮನ್ನು ಬೇರೆಡೆಗೆ ಕಳುಹಿಸುವ ಸೈಟ್‌ನಲ್ಲಿ Safari ಯ ಅನ್‌ಡೈರೆಕ್ಟ್ ಬಟನ್ ಒತ್ತಿ."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "നിങ്ങളെ വഴിതിരിച്ചുവിടുന്ന സൈറ്റിൽ Safari-യിലെ അൺഡയറക്ട് ബട്ടൺ അമർത്തുക."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "तुम्हाला दुसरीकडे पाठवणाऱ्या साइटवर Safari मधील अनडायरेक्ट बटण दाबा."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pada tapak yang mengubah hala anda, tekan butang Undirect dalam Safari."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Trykk på Undirect-knappen i Safari på et nettsted som sender deg videre."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ଆପଣଙ୍କୁ ଅନ୍ୟତ୍ର ପଠାଉଥିବା ସାଇଟରେ Safari ର ଅନଡାଇରେକ୍ଟ ବଟନ ଦବାନ୍ତୁ।"
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ਜੋ ਸਾਈਟ ਤੁਹਾਨੂੰ ਕਿਤੇ ਹੋਰ ਭੇਜ ਦੇਵੇ, ਉੱਥੇ Safari ਦਾ ਅਨਡਾਇਰੈਕਟ ਬਟਨ ਦਬਾਓ।"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Num site que o redirecione, prima o botão do Undirect no Safari."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pe un site care te redirecționează, apasă butonul Undirect din Safari."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na webe, ktorý vás presmeruje, stlačte v Safari tlačidlo Undirect."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Na spletnem mestu, ki vas preusmerja, pritisnite gumb Undirect v Safariju."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tryck på Undirect-knappen i Safari på en webbplats som skickar dig vidare."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "உங்களை வேறிடத்துக்கு அனுப்பும் தளத்தில் Safari-யின் அன்டைரக்ட் பொத்தானை அழுத்துங்கள்."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "మిమ్మల్ని వేరే చోటుకు పంపే సైట్‌లో Safari లోని అన్‌డైరెక్ట్ బటన్‌ను నొక్కండి."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "На сайті, що вас перенаправляє, натисніть кнопку Андирект у Safari."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "جو سائٹ آپ کو کہیں اور بھیج دے وہاں Safari میں اَنڈائریکٹ کا بٹن دبائیں۔"
+          }
+        }
+      }
+    },
+    "Sites are added by pressing Undirect in Safari.": {
+      "extractionState": "manual",
+      "localizations": {
+        "es-ES": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Para añadir un sitio, usa el botón de Undirect en Safari."
+          }
+        },
+        "fr-FR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette liste s'allonge depuis le bouton Undirect de Safari."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "サイトを増やすには、Safariでアンダイレクトを押します。"
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "网站只能通过 Safari 里的 Undirect 添加，这里无法新增。"
+          }
+        },
+        "de-DE": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neue Websites fügen Sie über Undirect in Safari hinzu."
+          }
+        },
+        "id": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Situs baru masuk daftar ini hanya lewat tombol Undirect di Safari."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aggiungi altri siti dal pulsante Undirect in Safari."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 사이트는 Safari에서 언다이렉트를 눌러야만 추가됩니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sites só entram nesta lista pelo botão do Undirect, no Safari."
+          }
+        },
+        "ru": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Новые сайты добавляются только кнопкой Андирект в Safari."
+          }
+        },
+        "zh-Hant": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "只能透過 Safari 中的 Undirect 新增網站。"
+          }
+        },
+        "ar-SA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "تُضاف المواقع من زر أندايركت في Safari فقط، لا من هنا."
+          }
+        },
+        "hi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "नई साइट जोड़ने का तरीका सिर्फ़ Safari में अनडायरेक्ट बटन है।"
+          }
+        },
+        "vi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muốn thêm trang, dùng nút Undirect trong Safari."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni site yalnızca Safari'deki düğmeyle eklenir."
+          }
+        },
+        "pl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Witryny dodasz przyciskiem Undirect w Safari; tu możesz je tylko usunąć."
+          }
+        },
+        "nl-NL": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nieuwe sites voeg je toe via de Undirect-knop in Safari."
+          }
+        },
+        "th": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "เพิ่มไซต์ใหม่ได้จาก อันไดเรกต์ ใน Safari เท่านั้น หน้านี้ลบไซต์ได้อย่างเดียว"
+          }
+        },
+        "bn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "সাইট যোগ হয় Safari-র আনডিরেক্ট বোতাম থেকে। এখানে শুধু সরানো যায়।"
+          }
+        },
+        "ca": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Els llocs s'afegeixen des del botó de l'Undirect al Safari; aquí només els pots treure."
+          }
+        },
+        "cs": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weby se přidávají tlačítkem Undirect v Safari; tady je lze jen odebrat."
+          }
+        },
+        "da": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Websteder tilføjes fra Undirect-knappen i Safari. Her kan du kun fjerne dem."
+          }
+        },
+        "el": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Οι ιστότοποι προστίθενται από το κουμπί Undirect στο Safari. Εδώ μπορείτε μόνο να τους αφαιρέσετε."
+          }
+        },
+        "en-AU": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sites are added by pressing Undirect in Safari."
+          }
+        },
+        "en-CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sites are added by pressing Undirect in Safari."
+          }
+        },
+        "en-GB": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sites are added by pressing Undirect in Safari."
+          }
+        },
+        "es-MX": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los sitios se agregan desde el botón de Undirect en Safari; aquí solo puedes quitarlos."
+          }
+        },
+        "fi": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sivustot lisätään Safarin Undirect-painikkeesta. Täällä niitä voi vain poistaa."
+          }
+        },
+        "fr-CA": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les sites s'ajoutent depuis le bouton Undirect de Safari; ici, vous pouvez seulement en retirer."
+          }
+        },
+        "gu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "સાઇટ Safari ના અનડાયરેક્ટ બટનથી ઉમેરાય છે. અહીં ફક્ત કાઢી શકાય છે."
+          }
+        },
+        "he": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "אתרים מתווספים בלחיצה על אנדיירקט ב-Safari. כאן אפשר רק להסיר אותם."
+          }
+        },
+        "hr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mjesta se dodaju gumbom Undirect u Safariju; ovdje ih možete samo ukloniti."
+          }
+        },
+        "hu": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Az oldalak a Safari Undirect gombjával kerülnek ide. Itt csak eltávolítani lehet őket."
+          }
+        },
+        "kn": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ಸೈಟ್‌ಗಳು Safari ಯ ಅನ್‌ಡೈರೆಕ್ಟ್ ಬಟನ್‌ನಿಂದ ಸೇರುತ್ತವೆ. ಇಲ್ಲಿ ತೆಗೆದುಹಾಕಲು ಮಾತ್ರ ಸಾಧ್ಯ."
+          }
+        },
+        "ml": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "സൈറ്റുകൾ ചേർക്കുന്നത് Safari-യിലെ അൺഡയറക്ട് ബട്ടൺ വഴിയാണ്. ഇവിടെ നീക്കം ചെയ്യാൻ മാത്രം കഴിയും."
+          }
+        },
+        "mr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "साइट Safari मधील अनडायरेक्ट बटणाने जोडल्या जातात. इथे फक्त काढता येतात."
+          }
+        },
+        "ms": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tapak ditambah daripada butang Undirect dalam Safari. Di sini anda hanya boleh mengalih keluarnya."
+          }
+        },
+        "nb": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nettsteder legges til fra Undirect-knappen i Safari. Her kan du bare fjerne dem."
+          }
+        },
+        "or": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ସାଇଟ Safari ର ଅନଡାଇରେକ୍ଟ ବଟନରୁ ଯୋଡ଼ାଯାଏ। ଏଠାରେ କେବଳ ହଟାଇହେବ।"
+          }
+        },
+        "pa": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ਸਾਈਟਾਂ Safari ਦੇ ਅਨਡਾਇਰੈਕਟ ਬਟਨ ਤੋਂ ਜੁੜਦੀਆਂ ਹਨ। ਇੱਥੇ ਸਿਰਫ਼ ਹਟਾਈਆਂ ਜਾ ਸਕਦੀਆਂ ਹਨ।"
+          }
+        },
+        "pt-PT": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os sites adicionam-se a partir do botão do Undirect no Safari; aqui só os pode remover."
+          }
+        },
+        "ro": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Site-urile se adaugă din butonul Undirect din Safari; aici le poți doar elimina."
+          }
+        },
+        "sk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weby sa pridávajú tlačidlom Undirect v Safari; tu ich možno len odstrániť."
+          }
+        },
+        "sl": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mesta dodate z gumbom Undirect v Safariju; tukaj jih lahko samo odstranite."
+          }
+        },
+        "sv": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Webbplatser läggs till från Undirect-knappen i Safari. Här kan du bara ta bort dem."
+          }
+        },
+        "ta": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "தளங்கள் Safari-யின் அன்டைரக்ட் பொத்தானால் சேர்க்கப்படும். இங்கே நீக்க மட்டுமே முடியும்."
+          }
+        },
+        "te": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "సైట్‌లు Safari లోని అన్‌డైరెక్ట్ బటన్ ద్వారా చేరతాయి. ఇక్కడ తొలగించడం మాత్రమే సాధ్యం."
+          }
+        },
+        "uk": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Сайти додаються кнопкою Андирект у Safari; тут їх можна лише вилучити."
+          }
+        },
+        "ur": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "سائٹس Safari کے اَنڈائریکٹ بٹن سے شامل ہوتی ہیں۔ یہاں صرف ہٹائی جا سکتی ہیں۔"
           }
         }
       }

@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Pe un site, apasă butonul Undirect din bara de instrumente Safari ca să-l protejezi.",
-      "back": "On a site, press the Undirect button in Safari's toolbar to protect it"
+      "s": "Pe un site, apasă butonul Undirect din Safari ca să-l protejezi.",
+      "back": "On a site, press the Undirect button in Safari to protect it."
     },
     "app.nav.guarded_sites": {
       "s": "Site-uri protejate",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Pe un site care te redirecționează, apasă butonul Undirect din bara de instrumente Safari.",
-      "back": "On a site that redirects you, press the Undirect button in Safari's toolbar"
+      "s": "Pe un site care te redirecționează, apasă butonul Undirect din Safari.",
+      "back": "On a site that redirects you, press the Undirect button in Safari."
     },
     "app.watched.footer": {
       "s": "Site-urile se adaugă din butonul Undirect din Safari; aici le poți doar elimina.",
@@ -242,8 +242,8 @@
       "back": "Protection is switched off in Settings."
     },
     "ext.popup.watch_on": {
-      "s": "Activă. Dezactivarea reîncarcă pagina.",
-      "back": "On; turning off reloads the page"
+      "s": "Protejat",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Dezactivată. Activarea reîncarcă pagina.",
@@ -497,10 +497,15 @@
       "s": "Setări"
     },
     "ext.note.where": {
-      "s": "Apasă Undirect în bara de instrumente pentru setări."
+      "s": "Apasă Undirect în Safari pentru setări.",
+      "back": "Press Undirect in Safari for settings."
     },
     "ext.setting.effects": {
       "s": "Efecte pe pagină"
+    },
+    "app.setup.detail_ios": {
+      "s": "În Safari, deschide meniul paginii, alege Gestionează extensiile și activează Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

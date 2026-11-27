@@ -73,6 +73,19 @@
       "notes": "Paired below with app.setup.open_button, which is the actual call to action; this title should not duplicate that button's wording."
     },
     {
+      "id": "app.setup.detail_ios",
+      "surface": "app",
+      "en_key": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect.",
+      "file": "App/SetupView.swift",
+      "role": "detail",
+      "screen": "Setup screen (ContentUnavailableView) on iPhone and iPad, under the title, where the app cannot open Safari's extension settings itself",
+      "moment": "The extension is not on yet and there is no button that takes the person there, so this line is the whole route.",
+      "says": "The route to switch the extension on, in order: in Safari, open the page menu (the button left of the address bar), choose the item Safari names Manage Extensions in this language, and turn on the extension's row. Safari's own item label and the extension's name as its row shows it must be quoted exactly as they appear in this language.",
+      "budget": "ContentUnavailableView description, up to three lines",
+      "register": "The app's own voice describing its own state to the person who owns the device, in the same register macOS System Settings and iOS Settings use: plain, factual, second person implied rather than stated.",
+      "notes": "The extension's name here must match ext.meta.name in the same language, since that is what the row in Safari shows."
+    },
+    {
       "id": "app.setup.title_failed",
       "surface": "app",
       "en_key": "Undirect may not be on",
@@ -465,7 +478,7 @@
     {
       "id": "app.watched.empty.detail",
       "surface": "app",
-      "en_key": "Press the Undirect button in Safari on a site that keeps redirecting.",
+      "en_key": "Press Undirect in Safari on a site that keeps redirecting.",
       "file": "App/WatchedView.swift",
       "role": "empty state",
       "screen": "Guarded Sites screen, description under the empty-list title",
@@ -476,7 +489,7 @@
     {
       "id": "app.watched.footer",
       "surface": "app",
-      "en_key": "Sites are added from the Undirect button in Safari.",
+      "en_key": "Sites are added by pressing Undirect in Safari.",
       "file": "App/WatchedView.swift",
       "role": "footnote",
       "screen": "Guarded Sites screen, footer under a non-empty list of sites",

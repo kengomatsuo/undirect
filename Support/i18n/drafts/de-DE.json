@@ -172,8 +172,8 @@
       "why": "Concrete instruction naming the icon and Safari, trimmed to fit the character budget."
     },
     "app.watched.footer": {
-      "s": "Neue Websites fügen Sie über Safaris Symbolleiste hinzu.",
-      "back": "You add new sites via Safari's toolbar.",
+      "s": "Neue Websites fügen Sie über Undirect in Safari hinzu.",
+      "back": "You add new sites via Undirect in Safari.",
       "why": "States the only add-path plainly, within the sentence budget."
     },
     "app.watched.row.guarded_badge": {
@@ -302,8 +302,8 @@
       "why": "Attributes the disabled state to the master switch, not the site, within budget."
     },
     "ext.popup.watch_on": {
-      "s": "Schutz ist an. Ausschalten lädt die Seite neu.",
-      "back": "Protection is on. Turning it off reloads the page.",
+      "s": "Geschützt",
+      "back": "Guarded",
       "why": "State plus warning as two short clauses, no dash, within the 35-50 character budget."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "Einstellungen"
     },
     "ext.note.where": {
-      "s": "Für Einstellungen tippe in der Symbolleiste auf Undirect."
+      "s": "Für Einstellungen tippe in Safari auf Undirect.",
+      "back": "For settings, tap Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "Effekte auf der Seite"
+    },
+    "app.setup.detail_ios": {
+      "s": "Öffne in Safari das Seitenmenü, wähle „Erweiterungen verwalten“ und schalte Undirect ein.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

@@ -1,14 +1,14 @@
 {
   "extension_name": {
-    "message": "Undirect",
+    "message": "Андирект",
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Undirect не даёт страницам открывать или перенаправлять по клику не туда, куда вы хотели.",
+    "message": "Андирект не даёт страницам открывать или перенаправлять по клику не туда, куда вы хотели.",
     "description": "Description of the extension."
   },
   "app_title": {
-    "message": "Undirect",
+    "message": "Андирект",
     "description": "Title shown in the container app and the popup."
   },
   "popup_guard_label": {
@@ -168,7 +168,7 @@
     "description": "Default policy: let unknown cross-site destinations through."
   },
   "popup_bridge_warning": {
-    "message": "Настройки безопасности этой страницы блокируют часть защиты Undirect.",
+    "message": "Настройки безопасности этой страницы блокируют часть защиты Андиректа.",
     "description": "Shown when the page CSP stopped the page-world script."
   },
   "kind_click_catcher": {
@@ -370,7 +370,7 @@
     "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
   "note_where": {
-    "message": "Для настроек нажмите Undirect на панели инструментов.",
+    "message": "Для настроек нажмите Андирект в Safari.",
     "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   },
   "setting_effects": {

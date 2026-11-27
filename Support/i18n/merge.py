@@ -16,6 +16,11 @@ ROOT = pathlib.Path(__file__).resolve().parents[2]
 DRAFTS = ROOT / "Support/i18n/drafts"
 BRIEF = ROOT / "Support/i18n/brief.json"
 CATALOG = ROOT / "App/Localizable.xcstrings"
+# The name under the icon, in Safari's extension list and in its page menu row.
+# Each locale's comes from its draft's ext.meta.name, the same value the popup
+# and the setup sentences use, so every surface names the app one way.
+INFO_PLISTS = [ROOT / "App/InfoPlist.xcstrings", ROOT / "Extension/InfoPlist.xcstrings"]
+NAME_ID = "ext.meta.name"
 LOCALES = ROOT / "Extension/Resources/_locales"
 STORE = ROOT / "Support/i18n/store"
 
@@ -36,11 +41,14 @@ def main(only):
     catalog = json.loads(CATALOG.read_text())
     en_messages = json.loads((LOCALES / "en/messages.json").read_text())
 
+    names = {}
     for path in sorted(DRAFTS.glob("*.json")):
         code = path.stem
+        draft = json.loads(path.read_text())["entries"]
+        if NAME_ID in draft:
+            names[code] = draft[NAME_ID]["s"]
         if only and code not in only:
             continue
-        draft = json.loads(path.read_text())["entries"]
 
         missing = sorted(set(brief) - set(draft))
         if missing:
@@ -71,8 +79,10 @@ def main(only):
                     "stringUnit": {"state": "translated", "value": value}
                 }
                 app_count += 1
-            else:
-                out = messages.setdefault(spec["en_key"], {})
+            elif spec["en_key"] in en_messages:
+                # en is the extension's key set: a brief entry whose message en
+                # dropped (the popup's old prose rows) is not carried into a locale.
+                out = messages[spec["en_key"]]
                 # Drafts write a count as %lld; WebExtensions name it $COUNT$ and
                 # bind it to substitution $1 through the placeholders block.
                 out["message"] = value.replace("%lld", "$COUNT$")
@@ -87,7 +97,26 @@ def main(only):
 
     CATALOG.write_text(json.dumps(catalog, ensure_ascii=False, indent=2) + "\n")
     print(f"catalog: {len(catalog['strings'])} keys")
+    merge_names(names)
     merge_store()
+
+
+def merge_names(names):
+    """Write each locale's app name as CFBundleDisplayName and CFBundleName."""
+    unit = lambda v: {"stringUnit": {"state": "translated", "value": v}}
+    entry = {
+        "extractionState": "manual",
+        "localizations": {code: unit(names[code]) for code in sorted(names)},
+    }
+    info = {
+        "sourceLanguage": "en",
+        "strings": {"CFBundleDisplayName": entry, "CFBundleName": entry},
+        "version": "1.0",
+    }
+    for path in INFO_PLISTS:
+        path.write_text(json.dumps(info, ensure_ascii=False, indent=2) + "\n")
+    local = sorted(c for c, n in names.items() if n != "Undirect")
+    print(f"app name: {len(names)} locales, own script in {len(local)}: {' '.join(local)}")
 
 
 def merge_store():

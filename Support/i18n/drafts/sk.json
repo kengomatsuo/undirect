@@ -62,8 +62,8 @@
       "back": "Site by site"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Na webe stlačte tlačidlo Undirect na paneli nástrojov Safari a ochrana sa zapne.",
-      "back": "On a site press the Undirect button on Safari's toolbar and protection turns on"
+      "s": "Na webe stlačte v Safari tlačidlo Undirect a ochrana sa zapne.",
+      "back": "On a site press the Undirect button in Safari and protection turns on."
     },
     "app.nav.guarded_sites": {
       "s": "Chránené weby",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Na webe, ktorý vás presmeruje, stlačte tlačidlo Undirect na paneli nástrojov Safari.",
-      "back": "On a site that redirects you press Undirect's button on Safari's toolbar"
+      "s": "Na webe, ktorý vás presmeruje, stlačte v Safari tlačidlo Undirect.",
+      "back": "On a site that redirects you, press the Undirect button in Safari."
     },
     "app.watched.footer": {
       "s": "Weby sa pridávajú tlačidlom Undirect v Safari; tu ich možno len odstrániť.",
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "Zapnuté. Vypnutie stránku načíta znova.",
-      "back": "On; turning off reloads the page"
+      "s": "Chránené",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Vypnuté. Zapnutie stránku načíta znova.",
@@ -497,10 +497,15 @@
       "s": "Nastavenia"
     },
     "ext.note.where": {
-      "s": "Nastavenia nájdete po stlačení Undirect na paneli nástrojov."
+      "s": "Nastavenia nájdete po stlačení Undirect v Safari.",
+      "back": "You find the settings after pressing Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "Efekty na stránke"
+    },
+    "app.setup.detail_ios": {
+      "s": "V Safari otvorte ponuku stránky, vyberte Spravovať rozšírenia a zapnite Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

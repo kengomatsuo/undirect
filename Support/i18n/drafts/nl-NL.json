@@ -79,7 +79,7 @@
     "app.welcome.feature.one_site_at_a_time.detail": {
       "s": "Druk op de Undirect-knop in Safari om die site te beveiligen.",
       "back": "Press the Undirect button in Safari to protect that site.",
-      "why": "Concrete action, ties to the toolbar-button vocabulary term."
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.nav.guarded_sites": {
       "s": "Beveiligde sites",
@@ -169,12 +169,12 @@
     "app.watched.empty.detail": {
       "s": "Druk op de Undirect-knop in Safari terwijl je op een lastige site bent.",
       "back": "Press the Undirect button in Safari while you're on a troublesome site.",
-      "why": "Concrete instruction naming the toolbar-button mechanism."
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.watched.footer": {
-      "s": "Nieuwe sites voeg je toe via de knop in Safari's werkbalk.",
-      "back": "You add new sites via the button in Safari's toolbar.",
-      "why": "Reminds the list only grows from the toolbar, not this screen."
+      "s": "Nieuwe sites voeg je toe via de Undirect-knop in Safari.",
+      "back": "You add new sites via the Undirect button in Safari.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.watched.row.guarded_badge": {
       "s": "Beveiligd",
@@ -302,8 +302,8 @@
       "why": "Clarifies this is the master switch, not this one site."
     },
     "ext.popup.watch_on": {
-      "s": "Aan. Uitzetten laadt de pagina opnieuw.",
-      "back": "On. Turning it off reloads the page.",
+      "s": "Beveiligd",
+      "back": "Guarded",
       "why": "Confirms state, then warns of the reload, in two short clauses."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "Instellingen"
     },
     "ext.note.where": {
-      "s": "Tik op Undirect in de knoppenbalk voor instellingen."
+      "s": "Tik op Undirect in Safari voor instellingen.",
+      "back": "Tap Undirect in Safari for settings."
     },
     "ext.setting.effects": {
       "s": "Effecten op de pagina"
+    },
+    "app.setup.detail_ios": {
+      "s": "Open in Safari het paginamenu, kies 'Beheer extensies' en zet Undirect aan.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

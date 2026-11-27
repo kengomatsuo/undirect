@@ -59,6 +59,7 @@ targets:
     sources:
       - path: Extension/SafariWebExtensionHandler.swift
       - path: App/SharedStore.swift
+      - path: Extension/InfoPlist.xcstrings
       # Safari reads manifest.json from the bundle root, so the pieces are
       # listed one by one rather than as one folder called Resources.
       - path: Extension/Resources/manifest.json
@@ -138,6 +139,7 @@ targets:
     sources:
       - path: Extension/SafariWebExtensionHandler.swift
       - path: App/SharedStore.swift
+      - path: Extension/InfoPlist.xcstrings
       # Safari reads manifest.json from the bundle root, so the pieces are
       # listed one by one rather than as one folder called Resources.
       - path: Extension/Resources/manifest.json

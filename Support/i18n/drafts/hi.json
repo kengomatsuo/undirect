@@ -27,8 +27,8 @@
       "why": "One verb, works verbatim on both the setup screen and the welcome sheet."
     },
     "app.welcome.heading": {
-      "s": "Undirect में स्वागत है",
-      "back": "Undirect in welcome is",
+      "s": "अनडायरेक्ट में आपका स्वागत है",
+      "back": "Undirect in your welcome is",
       "why": "Warmer register, the one place allowed it — a first hello, not a status line."
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -77,9 +77,9 @@
       "why": "Catchy two-part phrase naming the per-site mechanism, matches the row's tone rather than a technical mode name."
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Safari के टूलबार में Undirect बटन दबाकर उस साइट की सुरक्षा चालू करें।",
-      "back": "Safari's toolbar in Undirect button pressing that site's protection turn-on.",
-      "why": "States the exact mechanism: the toolbar button, this site only."
+      "s": "Safari में अनडायरेक्ट बटन दबाकर उस साइट की सुरक्षा चालू करें।",
+      "back": "In Safari pressing the Undirect button, turn on that site's protection.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.nav.guarded_sites": {
       "s": "सुरक्षित साइटें",
@@ -92,9 +92,9 @@
       "why": "Apple's own Hindi term for this screen, not a synonym."
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "अनडायरेक्ट",
       "back": "Undirect",
-      "why": "Proper noun, left untranslated like any other app's own name."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "app.rules.grouping.everywhere": {
       "s": "हर जगह",
@@ -167,13 +167,13 @@
       "why": "States plainly that nothing has been switched on yet."
     },
     "app.watched.empty.detail": {
-      "s": "जो साइट परेशान करे, वहां Safari के टूलबार में Undirect बटन दबाएं।",
-      "back": "Which site bothers, there Safari's toolbar in Undirect button press.",
+      "s": "जो साइट परेशान करे, वहां Safari में अनडायरेक्ट बटन दबाएं।",
+      "back": "Which site bothers, there in Safari press the Undirect button.",
       "why": "Tells exactly how to guard the first site, tied to the actual trigger (a misbehaving site)."
     },
     "app.watched.footer": {
-      "s": "नई साइट जोड़ने का तरीका सिर्फ़ Safari का टूलबार बटन है।",
-      "back": "New site adding's way only Safari's toolbar button is.",
+      "s": "नई साइट जोड़ने का तरीका सिर्फ़ Safari में अनडायरेक्ट बटन है।",
+      "back": "The way to add a new site is only the Undirect button in Safari.",
       "why": "Reminds the person this screen itself cannot add a site."
     },
     "app.watched.row.guarded_badge": {
@@ -242,17 +242,17 @@
       "why": "Clear opposite of 'ब्लॉक करें'."
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "अनडायरेक्ट",
       "back": "Undirect",
-      "why": "Proper noun, listed as-is in Safari's Extensions settings and the App Store."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "ext.meta.description": {
-      "s": "Undirect उन पेजों को रोकता है जो आपका क्लिक इस्तेमाल कर आपको कहीं और भेज देते हैं।",
+      "s": "अनडायरेक्ट उन पेजों को रोकता है जो आपका क्लिक इस्तेमाल कर आपको कहीं और भेज देते हैं।",
       "back": "Undirect those pages stops which your click using you somewhere else send give.",
       "why": "One sentence for a first-time reader, plain and concrete, slightly more explanatory register."
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "अनडायरेक्ट",
       "back": "Undirect",
       "why": "Fallback display name, used only when no actual site name is available."
     },
@@ -302,8 +302,8 @@
       "why": "Explains the switch is disabled by the master switch, not by anything about this site."
     },
     "ext.popup.watch_on": {
-      "s": "सुरक्षा चालू है, बंद करने पर पेज रीलोड होगा।",
-      "back": "Protection on is, off doing on page reload will-happen.",
+      "s": "सुरक्षित",
+      "back": "Guarded",
       "why": "Confirms current state and warns of the reload, matching the off variant's shape."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "सेटिंग"
     },
     "ext.note.where": {
-      "s": "सेटिंग के लिए टूलबार में Undirect दबाएँ।"
+      "s": "सेटिंग के लिए Safari में अनडायरेक्ट दबाएँ।",
+      "back": "For settings, press Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "पेज इफ़ेक्ट"
+    },
+    "app.setup.detail_ios": {
+      "s": "Safari में पेज मेन्यू खोलें, Manage Extensions चुनें और अनडायरेक्ट चालू करें।",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

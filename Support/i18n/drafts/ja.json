@@ -27,7 +27,7 @@
       "why": "verb+object button, generic enough to sit on both the setup screen and the welcome sheet verbatim"
     },
     "app.welcome.heading": {
-      "s": "Undirectへようこそ",
+      "s": "アンダイレクトへようこそ",
       "back": "Welcome to Undirect",
       "why": "the one place in the product allowed a warmer register; standard first-hello greeting formula"
     },
@@ -77,9 +77,9 @@
       "why": "contrasts with automatic everywhere mode, concrete short phrase"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "そのサイトを開いた状態でSafariのツールバーのUndirectボタンを押すと、そのサイトの保護がオンになります。",
-      "back": "With that site open, pressing the Undirect button in Safari's toolbar turns protection on for that site.",
-      "why": "names the toolbar button mechanism concretely per the vocabulary entry for toolbar button"
+      "s": "そのサイトを開いた状態でSafariのアンダイレクトを押すと、そのサイトの保護がオンになります。",
+      "back": "With that site open, pressing Undirect in Safari turns protection on for that site.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.nav.guarded_sites": {
       "s": "保護中のサイト",
@@ -92,9 +92,9 @@
       "why": "Apple's own standard Japanese term for Settings, one word"
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "アンダイレクト",
       "back": "Undirect",
-      "why": "proper noun left untranslated, as the brief flags"
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "app.rules.grouping.everywhere": {
       "s": "全サイト",
@@ -167,13 +167,13 @@
       "why": "mirrors the 保護中のサイト term used as the section's own label"
     },
     "app.watched.empty.detail": {
-      "s": "困ったサイトを開いた状態で、Safariのツールバーにあるボタンを押すと保護が始まります。",
-      "back": "With the troublesome site open, pressing the button in Safari's toolbar starts protecting it.",
-      "why": "concrete instruction naming the toolbar button mechanism"
+      "s": "困ったサイトを開いた状態で、Safariのアンダイレクトを押すと保護が始まります。",
+      "back": "With a troublesome site open, pressing Undirect in Safari starts protection.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.watched.footer": {
-      "s": "サイトを増やすには、Safariのツールバーのボタンを使います。",
-      "back": "To add a site, use the button in Safari's toolbar.",
+      "s": "サイトを増やすには、Safariでアンダイレクトを押します。",
+      "back": "To add sites, you press Undirect in Safari.",
       "why": "brief factual reminder that this screen cannot add a site itself"
     },
     "app.watched.row.guarded_badge": {
@@ -242,9 +242,9 @@
       "why": "clear opposite of policy_block"
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "アンダイレクト",
       "back": "Undirect",
-      "why": "brand name left untranslated"
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "ext.meta.description": {
       "s": "ページが意図しないクリックを乗っ取り、別の場所へ開いたり移動させたりするのを防ぎます。",
@@ -252,9 +252,9 @@
       "why": "slightly more explanatory register for a store-listing first impression, still plain verbs"
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "アンダイレクト",
       "back": "Undirect",
-      "why": "brand fallback, same proper noun as elsewhere"
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "ext.toolbar.tooltip_on": {
       "s": "このサイトを保護中です",
@@ -302,8 +302,8 @@
       "why": "names the master-switch location, distinct from the per-site off wording"
     },
     "ext.popup.watch_on": {
-      "s": "このサイトを保護中です。オフにするとページが再読み込みされます。",
-      "back": "Protecting this site. Turning it off will reload the page.",
+      "s": "保護中",
+      "back": "Guarded",
       "why": "confirm-then-warn shape, mirrors watch_off as a before/after pair"
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "設定"
     },
     "ext.note.where": {
-      "s": "設定はツールバーのUndirectをタップしてください。"
+      "s": "設定を開くには、Safariでアンダイレクトをタップしてください。",
+      "back": "To open the settings, please tap Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "ページの演出"
+    },
+    "app.setup.detail_ios": {
+      "s": "Safariでページメニューを開き、「拡張機能を管理」を選んでアンダイレクトをオンにしてください。",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

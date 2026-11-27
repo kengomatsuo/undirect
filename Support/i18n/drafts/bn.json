@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Undirect-এ স্বাগতম",
+      "s": "আনডিরেক্টে স্বাগতম",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "কোনো সাইটে Safari-র টুলবারের Undirect বোতামে চাপ দিলে সেই সাইটে সুরক্ষা চালু হয়।",
-      "back": "On a site pressing the Undirect button in Safari's toolbar turns protection on there"
+      "s": "কোনো সাইটে Safari-র আনডিরেক্ট বোতামে চাপ দিলে সেই সাইটে সুরক্ষা চালু হয়।",
+      "back": "On a site, pressing Safari's Undirect button turns protection on for that site"
     },
     "app.nav.guarded_sites": {
       "s": "সুরক্ষিত সাইট",
@@ -74,7 +74,7 @@
       "back": "Settings"
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "আনডিরেক্ট",
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
@@ -134,12 +134,12 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "যে সাইট আপনাকে অন্যত্র পাঠিয়ে দেয়, সেখানে Safari-র টুলবারের Undirect বোতামে চাপ দিন।",
-      "back": "On a site that sends you elsewhere, press Undirect's button in Safari's toolbar"
+      "s": "যে সাইট আপনাকে অন্যত্র পাঠিয়ে দেয়, সেখানে Safari-র আনডিরেক্ট বোতামে চাপ দিন।",
+      "back": "On a site that sends you elsewhere, press Safari's Undirect button"
     },
     "app.watched.footer": {
-      "s": "সাইট যোগ হয় Safari-র Undirect বোতাম থেকে। এখানে শুধু সরানো যায়।",
-      "back": "Sites are added from Safari's button; here only removal"
+      "s": "সাইট যোগ হয় Safari-র আনডিরেক্ট বোতাম থেকে। এখানে শুধু সরানো যায়।",
+      "back": "Sites are added from Safari's Undirect button. Here they can only be removed"
     },
     "app.watched.row.guarded_badge": {
       "s": "সুরক্ষিত",
@@ -194,7 +194,7 @@
       "back": "Allow"
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "আনডিরেক্ট",
       "back": "Undirect"
     },
     "ext.meta.description": {
@@ -202,7 +202,7 @@
       "back": "Stops pages using your click to take or open somewhere you did not ask"
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "আনডিরেক্ট",
       "back": "Undirect"
     },
     "ext.toolbar.tooltip_on": {
@@ -218,7 +218,7 @@
       "back": "Nothing to protect here"
     },
     "ext.popup.no_site_title": {
-      "s": "Undirect ওয়েবসাইটে কাজ করে",
+      "s": "আনডিরেক্ট ওয়েবসাইটে কাজ করে",
       "back": "Undirect works on websites"
     },
     "ext.popup.no_site_body": {
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "চালু। বন্ধ করলে পাতা আবার লোড হবে।",
-      "back": "On; turning off reloads the page"
+      "s": "সুরক্ষিত",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "বন্ধ। চালু করলে পাতা আবার লোড হবে।",
@@ -497,10 +497,15 @@
       "s": "সেটিংস"
     },
     "ext.note.where": {
-      "s": "সেটিংসের জন্য টুলবারে Undirect চাপুন।"
+      "s": "সেটিংসের জন্য Safari-তে আনডিরেক্ট বোতামে চাপ দিন।",
+      "back": "For settings, press the Undirect button in Safari."
     },
     "ext.setting.effects": {
       "s": "পেজ ইফেক্ট"
+    },
+    "app.setup.detail_ios": {
+      "s": "Safari-তে পেজ মেনু খুলুন, Manage Extensions বেছে নিন এবং আনডিরেক্ট চালু করুন।",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

@@ -1,14 +1,14 @@
 {
   "extension_name": {
-    "message": "Undirect",
+    "message": "أندايركت",
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "يمنع Undirect المواقع من استغلال ضغطاتك لفتح صفحات أو إعادة توجيهك دون إذنك.",
+    "message": "يمنع أندايركت المواقع من استغلال ضغطاتك لفتح صفحات أو إعادة توجيهك دون إذنك.",
     "description": "Description of the extension."
   },
   "app_title": {
-    "message": "Undirect",
+    "message": "أندايركت",
     "description": "Title shown in the container app and the popup."
   },
   "popup_guard_label": {
@@ -370,7 +370,7 @@
     "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
   "note_where": {
-    "message": "اضغط Undirect في شريط الأدوات للإعدادات.",
+    "message": "اضغط أندايركت في Safari لفتح الإعدادات.",
     "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   },
   "setting_effects": {

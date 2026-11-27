@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Nyomja meg az Undirect gombját a Safari eszköztárán az adott oldalon, és bekapcsol a védelem.",
-      "back": "Press the Undirect button in Safari's toolbar on that site, and protection switches on."
+      "s": "Nyomja meg a Safariban az Undirect gombját az adott oldalon, és bekapcsol a védelem.",
+      "back": "Press Undirect's button in Safari on that site, and protection switches on."
     },
     "app.nav.guarded_sites": {
       "s": "Védett oldalak",
@@ -134,8 +134,8 @@
       "back": "No protected site yet"
     },
     "app.watched.empty.detail": {
-      "s": "Egy átirányító oldalon nyomja meg az Undirect gombját a Safari eszköztárán.",
-      "back": "On a redirecting site, press the Undirect button in Safari's toolbar."
+      "s": "Egy átirányító oldalon nyomja meg a Safariban az Undirect gombját.",
+      "back": "On a redirecting site, press Undirect's button in Safari."
     },
     "app.watched.footer": {
       "s": "Az oldalak a Safari Undirect gombjával kerülnek ide. Itt csak eltávolítani lehet őket.",
@@ -242,8 +242,8 @@
       "back": "Switched off in Settings"
     },
     "ext.popup.watch_on": {
-      "s": "Bekapcsolva. Kikapcsoláskor az oldal újratöltődik.",
-      "back": "On; turning off reloads the page"
+      "s": "Védett",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Kikapcsolva. Bekapcsoláskor az oldal újratöltődik.",
@@ -497,10 +497,15 @@
       "s": "Beállítások"
     },
     "ext.note.where": {
-      "s": "A beállításokhoz koppints az Undirectre az eszközsoron."
+      "s": "A beállításokhoz koppintson az Undirectre a Safariban.",
+      "back": "For the settings, tap Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "Effektek az oldalon"
+    },
+    "app.setup.detail_ios": {
+      "s": "A Safariban nyisd meg az oldal menüjét, válaszd a Bővítmények kezelése lehetőséget, és kapcsold be az Undirectet.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

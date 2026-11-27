@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Tryck på Undirect-knappen i Safaris verktygsfält på en webbplats för att slå på skyddet där.",
-      "back": "Press the Undirect button in Safari's toolbar on a site to turn protection on there"
+      "s": "Tryck på Undirect-knappen i Safari på en webbplats för att slå på skyddet där.",
+      "back": "Press the Undirect button in Safari on a site to turn protection on there."
     },
     "app.nav.guarded_sites": {
       "s": "Skyddade webbplatser",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Tryck på Undirect-knappen i Safaris verktygsfält på en webbplats som skickar dig vidare.",
-      "back": "Press Undirect's button in Safari's toolbar on a site that sends you on"
+      "s": "Tryck på Undirect-knappen i Safari på en webbplats som skickar dig vidare.",
+      "back": "Press the Undirect button in Safari on a site that sends you on."
     },
     "app.watched.footer": {
       "s": "Webbplatser läggs till från Undirect-knappen i Safari. Här kan du bara ta bort dem.",
@@ -242,8 +242,8 @@
       "back": "Switched off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "På. Stänger du av det laddas sidan om.",
-      "back": "On; turning off reloads the page"
+      "s": "Skyddad",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Av. Slår du på det laddas sidan om.",
@@ -497,10 +497,15 @@
       "s": "Inställningar"
     },
     "ext.note.where": {
-      "s": "Tryck på Undirect i verktygsfältet för inställningar."
+      "s": "Tryck på Undirect i Safari för inställningar.",
+      "back": "Press Undirect in Safari for settings."
     },
     "ext.setting.effects": {
       "s": "Effekter på sidan"
+    },
+    "app.setup.detail_ios": {
+      "s": "Öppna sidmenyn i Safari, välj Hantera tillägg och slå på Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

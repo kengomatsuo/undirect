@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Pada sesuatu tapak, tekan butang Undirect pada bar alat Safari untuk melindunginya.",
-      "back": "On a given site, press the Undirect button in Safari's toolbar to protect it."
+      "s": "Pada sesuatu tapak, tekan butang Undirect dalam Safari untuk melindunginya.",
+      "back": "On a given site, press the Undirect button in Safari to protect it."
     },
     "app.nav.guarded_sites": {
       "s": "Tapak dilindungi",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Pada tapak yang mengubah hala anda, tekan butang Undirect pada bar alat Safari.",
-      "back": "On a site that redirects you, press the Undirect button in Safari's toolbar."
+      "s": "Pada tapak yang mengubah hala anda, tekan butang Undirect dalam Safari.",
+      "back": "On a site that redirects you, press the Undirect button in Safari."
     },
     "app.watched.footer": {
       "s": "Tapak ditambah daripada butang Undirect dalam Safari. Di sini anda hanya boleh mengalih keluarnya.",
@@ -242,8 +242,8 @@
       "back": "Turned off in Settings."
     },
     "ext.popup.watch_on": {
-      "s": "Hidup. Mematikannya akan memuat semula halaman.",
-      "back": "On; turning off reloads the page"
+      "s": "Dilindungi",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Mati. Menghidupkannya akan memuat semula halaman.",
@@ -497,10 +497,15 @@
       "s": "Tetapan"
     },
     "ext.note.where": {
-      "s": "Tekan Undirect pada bar alat untuk tetapan."
+      "s": "Tekan Undirect dalam Safari untuk tetapan.",
+      "back": "Press Undirect in Safari for settings."
     },
     "ext.setting.effects": {
       "s": "Kesan halaman"
+    },
+    "app.setup.detail_ios": {
+      "s": "Dalam Safari, buka menu halaman, pilih Urus Sambungan dan hidupkan Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

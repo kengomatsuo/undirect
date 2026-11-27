@@ -1,6 +1,6 @@
 {
   "extension_name": {
-    "message": "Undirect",
+    "message": "اَنڈائریکٹ",
     "description": "Name of the extension."
   },
   "extension_description": {
@@ -8,7 +8,7 @@
     "description": "Description of the extension."
   },
   "app_title": {
-    "message": "Undirect",
+    "message": "اَنڈائریکٹ",
     "description": "Title shown in the container app and the popup."
   },
   "popup_guard_label": {
@@ -28,7 +28,7 @@
     "description": "Label of the per-site switch, the popup's first row."
   },
   "popup_no_site_title": {
-    "message": "Undirect ویب سائٹس پر کام کرتا ہے",
+    "message": "اَنڈائریکٹ ویب سائٹس پر کام کرتا ہے",
     "description": "Popup title on a tab with no website, such as the Start Page."
   },
   "popup_no_site_body": {
@@ -370,7 +370,7 @@
     "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
   "note_where": {
-    "message": "ترتیبات کے لیے ٹول بار میں Undirect دبائیں۔",
+    "message": "ترتیبات کے لیے Safari میں اَنڈائریکٹ دبائیں۔",
     "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   },
   "setting_effects": {

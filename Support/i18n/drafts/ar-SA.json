@@ -27,7 +27,7 @@
       "why": "Names the exact action generically enough to work verbatim on both the setup screen and the welcome sheet."
     },
     "app.welcome.heading": {
-      "s": "مرحبًا بك في Undirect",
+      "s": "مرحبًا بك في أندايركت",
       "back": "Welcome to Undirect",
       "why": "The standard Arabic welcome formula (مرحبًا بك في X); the one place in the product allowed a warmer register."
     },
@@ -77,9 +77,9 @@
       "why": "Mirrors the concept directly as a short noun phrase, parallel to the sibling titles."
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "اضغط زر Undirect في شريط أدوات Safari لتفعيل الحماية على ذلك الموقع فقط.",
-      "back": "Press the Undirect button in Safari's toolbar to enable protection on that site only.",
-      "why": "States the exact mechanism (the toolbar button) concretely, matching sibling detail register."
+      "s": "اضغط زر أندايركت في Safari لتفعيل الحماية على ذلك الموقع فقط.",
+      "back": "Press the Undirect button in Safari to enable protection on that site only.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.nav.guarded_sites": {
       "s": "المواقع المحمية",
@@ -92,9 +92,9 @@
       "why": "Apple's own Arabic term for Settings, which wins over any invented synonym."
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "أندايركت",
       "back": "Undirect",
-      "why": "Brand name, left untranslated per the product's own proper-noun convention."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "app.rules.grouping.everywhere": {
       "s": "الكل",
@@ -167,12 +167,12 @@
       "why": "Plain statement that no site has been switched on, matching the sibling empty-state title shape."
     },
     "app.watched.empty.detail": {
-      "s": "اضغط زر Undirect في شريط أدوات Safari عند زيارة موقع يسيء التصرف.",
-      "back": "Press the Undirect button in Safari's toolbar when visiting a site that misbehaves.",
+      "s": "اضغط زر أندايركت في Safari عند زيارة موقع يسيء التصرف.",
+      "back": "Press the Undirect button in Safari when visiting a site that misbehaves.",
       "why": "Concrete first-use instruction naming the exact button and the moment to use it."
     },
     "app.watched.footer": {
-      "s": "تُضاف المواقع من زر Undirect في Safari فقط، لا من هنا.",
+      "s": "تُضاف المواقع من زر أندايركت في Safari فقط، لا من هنا.",
       "back": "Sites are added only from the Undirect button in Safari, not from here.",
       "why": "States the one-way limitation plainly: this screen removes sites but cannot add them."
     },
@@ -242,19 +242,19 @@
       "why": "Clear opposite of policy_block, same two-word shape."
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "أندايركت",
       "back": "Undirect",
-      "why": "Brand name, left untranslated, matching app.nav.app_title."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "ext.meta.description": {
-      "s": "يمنع Undirect المواقع من استغلال ضغطاتك لفتح صفحات أو إعادة توجيهك دون إذنك.",
+      "s": "يمنع أندايركت المواقع من استغلال ضغطاتك لفتح صفحات أو إعادة توجيهك دون إذنك.",
       "back": "Undirect prevents sites from exploiting your taps to open pages or redirect you without your permission.",
       "why": "Slightly more explanatory than the in-app copy, since this is often the first thing a prospective user reads, per the brief's register note."
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "أندايركت",
       "back": "Undirect",
-      "why": "Fallback stand-in for the site name; since it is the product's own name, it stays the brand word."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "ext.toolbar.tooltip_on": {
       "s": "الحماية مفعّلة على هذا الموقع",
@@ -302,8 +302,8 @@
       "why": "Attributes the disabled switch to the master switch, not to anything about this particular site."
     },
     "ext.popup.watch_on": {
-      "s": "الحماية مفعّلة هنا، إيقافها يعيد تحميل الصفحة.",
-      "back": "Protection is enabled here, turning it off reloads the page.",
+      "s": "محمي",
+      "back": "Guarded",
       "why": "States the current state, then the reload warning as one clause, mirroring watch_off's shape."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "الإعدادات"
     },
     "ext.note.where": {
-      "s": "اضغط Undirect في شريط الأدوات للإعدادات."
+      "s": "اضغط أندايركت في Safari لفتح الإعدادات.",
+      "back": "Press Undirect in Safari to open the settings."
     },
     "ext.setting.effects": {
       "s": "تأثيرات الصفحة"
+    },
+    "app.setup.detail_ios": {
+      "s": "في Safari، افتح قائمة الصفحة واختر «إدارة الامتدادات» وشغّل أندايركت.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

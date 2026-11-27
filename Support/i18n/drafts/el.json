@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Σε έναν ιστότοπο, πατήστε το κουμπί Undirect στη γραμμή εργαλείων του Safari για να τον προστατέψετε.",
-      "back": "On a site, press the Undirect button in Safari's toolbar to protect it."
+      "s": "Σε έναν ιστότοπο, πατήστε το κουμπί Undirect στο Safari για να τον προστατέψετε.",
+      "back": "On a site, press the Undirect button in Safari to protect it."
     },
     "app.nav.guarded_sites": {
       "s": "Προστατευμένοι ιστότοποι",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Σε έναν ιστότοπο που σας ανακατευθύνει, πατήστε το κουμπί Undirect στη γραμμή εργαλείων του Safari.",
-      "back": "On a site that redirects you, press the Undirect button in Safari's toolbar."
+      "s": "Σε έναν ιστότοπο που σας ανακατευθύνει, πατήστε το κουμπί Undirect στο Safari.",
+      "back": "On a site that redirects you, press the Undirect button in Safari."
     },
     "app.watched.footer": {
       "s": "Οι ιστότοποι προστίθενται από το κουμπί Undirect στο Safari. Εδώ μπορείτε μόνο να τους αφαιρέσετε.",
@@ -242,8 +242,8 @@
       "back": "Off from Settings"
     },
     "ext.popup.watch_on": {
-      "s": "Ενεργή. Η απενεργοποίηση ανανεώνει τη σελίδα.",
-      "back": "On; turning off reloads the page"
+      "s": "Προστατεύεται",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Ανενεργή. Η ενεργοποίηση ανανεώνει τη σελίδα.",
@@ -497,10 +497,15 @@
       "s": "Ρυθμίσεις"
     },
     "ext.note.where": {
-      "s": "Πατήστε το Undirect στη γραμμή εργαλείων για ρυθμίσεις."
+      "s": "Πατήστε το Undirect στο Safari για ρυθμίσεις.",
+      "back": "Press Undirect in Safari for settings."
     },
     "ext.setting.effects": {
       "s": "Εφέ σελίδας"
+    },
+    "app.setup.detail_ios": {
+      "s": "Στο Safari, ανοίξτε το μενού σελίδας, επιλέξτε Διαχείριση επεκτάσεων και ενεργοποιήστε το Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

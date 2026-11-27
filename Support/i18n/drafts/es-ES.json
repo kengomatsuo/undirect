@@ -77,8 +77,8 @@
       "why": "Recoge 'one site at a time' de forma natural, sin calco."
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Pulsa el botón de Undirect en la barra de Safari para protegerlo.",
-      "back": "Press the Undirect button in Safari's bar to protect it.",
+      "s": "En un sitio, pulsa el botón de Undirect en Safari para protegerlo.",
+      "back": "On a site, press the Undirect button in Safari to protect it.",
       "why": "Imperativo tú sin pronombre; nombra el mecanismo exacto del brief."
     },
     "app.nav.guarded_sites": {
@@ -302,8 +302,8 @@
       "why": "Explica que el motivo es el interruptor maestro, no algo de este sitio."
     },
     "ext.popup.watch_on": {
-      "s": "Activada; al desactivarla, la página se recargará.",
-      "back": "Activated; when you deactivate it, the page will reload.",
+      "s": "Protegido",
+      "back": "Guarded",
       "why": "Confirma el estado y advierte del recargo; pareja de sentencia con watch_off."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "Ajustes"
     },
     "ext.note.where": {
-      "s": "Pulsa Undirect en la barra de herramientas para ver los ajustes."
+      "s": "Pulsa Undirect en Safari para ver los ajustes.",
+      "back": "Press Undirect in Safari to see the settings."
     },
     "ext.setting.effects": {
       "s": "Efectos en la página"
+    },
+    "app.setup.detail_ios": {
+      "s": "En Safari, abre el menú de la página, elige Gestionar extensiones y activa Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

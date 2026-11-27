@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "ברוכים הבאים ל-Undirect",
+      "s": "ברוכים הבאים לאנדיירקט",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -62,8 +62,8 @@
       "back": "Site by site"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "כדי להגן על אתר, יש ללחוץ באתר על הלחצן של Undirect בסרגל הכלים של Safari.",
-      "back": "To protect a site, press the Undirect button in Safari's toolbar while on it."
+      "s": "כדי להגן על אתר, יש ללחוץ באתר על אנדיירקט ב-Safari.",
+      "back": "To protect a site, press Undirect in Safari while on it."
     },
     "app.nav.guarded_sites": {
       "s": "אתרים מוגנים",
@@ -74,7 +74,7 @@
       "back": "Settings"
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "אנדיירקט",
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
@@ -134,12 +134,12 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "באתר שמפנה למקום אחר, יש ללחוץ על הלחצן של Undirect בסרגל הכלים של Safari.",
-      "back": "On a site that redirects elsewhere, press the Undirect button in Safari's toolbar."
+      "s": "באתר שמפנה למקום אחר, יש ללחוץ על אנדיירקט ב-Safari.",
+      "back": "On a site that redirects elsewhere, press Undirect in Safari."
     },
     "app.watched.footer": {
-      "s": "אתרים מתווספים מהלחצן של Undirect ב-Safari. כאן אפשר רק להסיר אותם.",
-      "back": "Sites are added from Safari's button; here you can only remove"
+      "s": "אתרים מתווספים בלחיצה על אנדיירקט ב-Safari. כאן אפשר רק להסיר אותם.",
+      "back": "Sites are added by pressing Undirect in Safari. Here you can only remove them."
     },
     "app.watched.row.guarded_badge": {
       "s": "מוגן",
@@ -194,7 +194,7 @@
       "back": "Allow"
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "אנדיירקט",
       "back": "Undirect"
     },
     "ext.meta.description": {
@@ -202,7 +202,7 @@
       "back": "Stops pages from using the click to open or redirect somewhere that was not requested."
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "אנדיירקט",
       "back": "Undirect"
     },
     "ext.toolbar.tooltip_on": {
@@ -218,7 +218,7 @@
       "back": "Nothing here to protect"
     },
     "ext.popup.no_site_title": {
-      "s": "Undirect פועל באתרי אינטרנט",
+      "s": "אנדיירקט פועל באתרי אינטרנט",
       "back": "Undirect works on websites"
     },
     "ext.popup.no_site_body": {
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "פעילה. כיבוי יטען את הדף מחדש.",
-      "back": "On; turning off reloads the page"
+      "s": "מוגן",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "כבויה. הפעלה תטען את הדף מחדש.",
@@ -497,10 +497,15 @@
       "s": "הגדרות"
     },
     "ext.note.where": {
-      "s": "להגדרות, לוחצים על Undirect בסרגל הכלים."
+      "s": "להגדרות, לוחצים על אנדיירקט ב-Safari.",
+      "back": "For settings, press Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "אפקטים בדף"
+    },
+    "app.setup.detail_ios": {
+      "s": "ב-Safari, פותחים את תפריט הדף, בוחרים ״ניהול הרחבות״ ומפעילים את אנדיירקט.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

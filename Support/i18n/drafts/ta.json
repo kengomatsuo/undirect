@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Undirect-க்கு வரவேற்கிறோம்",
+      "s": "அன்டைரக்டுக்கு வரவேற்கிறோம்",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "தளத்தில் Safari கருவிப்பட்டியின் Undirect பொத்தானை அழுத்தினால், அங்கு பாதுகாப்பு இயங்கும்.",
-      "back": "On a site pressing Undirect's button in Safari's toolbar turns protection on there"
+      "s": "தளத்தில் Safari-யின் அன்டைரக்ட் பொத்தானை அழுத்தினால், அங்கு பாதுகாப்பு இயங்கும்.",
+      "back": "On a site pressing Safari's Undirect button turns protection on there"
     },
     "app.nav.guarded_sites": {
       "s": "பாதுகாக்கப்பட்ட தளங்கள்",
@@ -74,7 +74,7 @@
       "back": "Settings"
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "அன்டைரக்ட்",
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
@@ -134,12 +134,12 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "உங்களை வேறிடத்துக்கு அனுப்பும் தளத்தில் Safari கருவிப்பட்டியின் Undirect பொத்தானை அழுத்துங்கள்.",
-      "back": "On a site that sends you elsewhere press Undirect's button in Safari's toolbar"
+      "s": "உங்களை வேறிடத்துக்கு அனுப்பும் தளத்தில் Safari-யின் அன்டைரக்ட் பொத்தானை அழுத்துங்கள்.",
+      "back": "On a site that sends you elsewhere press Safari's Undirect button"
     },
     "app.watched.footer": {
-      "s": "தளங்கள் Safari-யின் Undirect பொத்தானால் சேர்க்கப்படும். இங்கே நீக்க மட்டுமே முடியும்.",
-      "back": "Sites are added by Safari's button; here you can only remove"
+      "s": "தளங்கள் Safari-யின் அன்டைரக்ட் பொத்தானால் சேர்க்கப்படும். இங்கே நீக்க மட்டுமே முடியும்.",
+      "back": "Sites are added by Safari's Undirect button. Here you can only remove them"
     },
     "app.watched.row.guarded_badge": {
       "s": "பாதுகாக்கப்படுகிறது",
@@ -194,7 +194,7 @@
       "back": "Allow"
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "அன்டைரக்ட்",
       "back": "Undirect"
     },
     "ext.meta.description": {
@@ -202,7 +202,7 @@
       "back": "Stops pages from using your click to open, or send you to, a place you did not want."
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "அன்டைரக்ட்",
       "back": "Undirect"
     },
     "ext.toolbar.tooltip_on": {
@@ -218,7 +218,7 @@
       "back": "Nothing to protect here"
     },
     "ext.popup.no_site_title": {
-      "s": "Undirect இணையதளங்களில் செயல்படும்",
+      "s": "அன்டைரக்ட் இணையதளங்களில் செயல்படும்",
       "back": "Undirect works on websites"
     },
     "ext.popup.no_site_body": {
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "இயக்கத்தில். அணைத்தால் பக்கம் மீண்டும் ஏற்றப்படும்.",
-      "back": "On; turning off reloads the page"
+      "s": "பாதுகாக்கப்படுகிறது",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "அணைப்பில். இயக்கினால் பக்கம் மீண்டும் ஏற்றப்படும்.",
@@ -497,10 +497,15 @@
       "s": "அமைப்புகள்"
     },
     "ext.note.where": {
-      "s": "அமைப்புகளுக்குக் கருவிப்பட்டியில் Undirect-ஐ அழுத்தவும்."
+      "s": "அமைப்புகளுக்கு Safari-இல் அன்டைரக்டை அழுத்தவும்.",
+      "back": "For settings, press Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "பக்கத்தில் எஃபெக்ட்கள்"
+    },
+    "app.setup.detail_ios": {
+      "s": "Safari-இல் பக்க மெனுவைத் திறந்து Manage Extensions-ஐத் தேர்ந்தெடுத்து அன்டைரக்டை இயக்கவும்.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

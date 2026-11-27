@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Paina sivustolla Undirect-painiketta Safarin työkalupalkissa, niin suojaus kytkeytyy päälle.",
-      "back": "Press the Undirect button on a site in Safari's toolbar and protection switches on"
+      "s": "Paina sivustolla Safarin Undirect-painiketta, niin suojaus kytkeytyy päälle.",
+      "back": "Press Safari's Undirect button on a site and protection switches on."
     },
     "app.nav.guarded_sites": {
       "s": "Suojatut sivustot",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Paina sivustolla, joka ohjaa sinua muualle, Undirect-painiketta Safarin työkalupalkissa.",
-      "back": "On a site that redirects you press Undirect's button in Safari's toolbar"
+      "s": "Paina sivustolla, joka ohjaa sinua muualle, Safarin Undirect-painiketta.",
+      "back": "On a site that sends you elsewhere, press Safari's Undirect button."
     },
     "app.watched.footer": {
       "s": "Sivustot lisätään Safarin Undirect-painikkeesta. Täällä niitä voi vain poistaa.",
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "Päällä. Pois kytkeminen lataa sivun uudelleen.",
-      "back": "On; switching off reloads the page"
+      "s": "Suojattu",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Pois päältä. Päälle kytkeminen lataa sivun uudelleen.",
@@ -497,10 +497,15 @@
       "s": "Asetukset"
     },
     "ext.note.where": {
-      "s": "Asetukset saat painamalla Undirectia työkalupalkissa."
+      "s": "Asetukset saat painamalla Undirectia Safarissa.",
+      "back": "You get the settings by pressing Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "Sivun tehosteet"
+    },
+    "app.setup.detail_ios": {
+      "s": "Avaa Safarissa sivuvalikko, valitse Hallitse laajennuksia ja laita Undirect päälle.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

@@ -49,7 +49,7 @@ final class RulesModel {
 
     var isEmpty: Bool { everywhere.isEmpty && bySite.isEmpty }
 
-    // Sites switched on from the Undirect button in Safari. The app can only
+    // Sites switched on by pressing Undirect in Safari. The app can only
     // read and remove this list, never add to it: it has no way to know what
     // page is open in Safari right now.
     var watchedSites: [String] {

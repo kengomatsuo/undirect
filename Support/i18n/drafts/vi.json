@@ -77,8 +77,8 @@
       "why": "Names the per-site opt-in mechanism concisely."
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Nhấn nút Undirect trên thanh công cụ Safari để bảo vệ trang đang mở.",
-      "back": "Press the Undirect button on Safari's toolbar to guard the site currently open.",
+      "s": "Nhấn nút Undirect trong Safari để bảo vệ trang đang mở.",
+      "back": "Press the Undirect button in Safari to guard the site currently open.",
       "why": "States the exact mechanism, matches other detail sentences' concreteness."
     },
     "app.nav.guarded_sites": {
@@ -167,14 +167,14 @@
       "why": "Plainly states no site has been switched on."
     },
     "app.watched.empty.detail": {
-      "s": "Nhấn nút Undirect trên thanh công cụ khi đang ở trang hay gây phiền.",
-      "back": "Press the Undirect button on the toolbar while on a site that keeps causing trouble.",
+      "s": "Nhấn nút Undirect trong Safari khi đang ở trang hay gây phiền.",
+      "back": "Press the Undirect button in Safari while on a site that keeps causing trouble.",
       "why": "Tells exactly how to guard the first site, plain register."
     },
     "app.watched.footer": {
-      "s": "Muốn thêm trang, dùng nút Undirect trên thanh công cụ Safari.",
-      "back": "To add a site, use the Undirect button on Safari's toolbar.",
-      "why": "Reminds that the list only grows from the toolbar button."
+      "s": "Muốn thêm trang, dùng nút Undirect trong Safari.",
+      "back": "To add a site, use the Undirect button in Safari.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.watched.row.guarded_badge": {
       "s": "Đang bảo vệ",
@@ -302,8 +302,8 @@
       "why": "Explains the disabled switch is about the master toggle, not this site."
     },
     "ext.popup.watch_on": {
-      "s": "Đang bảo vệ trang này. Tắt sẽ tải lại trang.",
-      "back": "Guarding this site now. Turning off will reload the page.",
+      "s": "Đang bảo vệ",
+      "back": "Guarded",
       "why": "Confirms state and warns of the reload, matching watch_off's shape."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "Cài đặt"
     },
     "ext.note.where": {
-      "s": "Chạm vào Undirect trên thanh công cụ để mở cài đặt."
+      "s": "Chạm vào Undirect trong Safari để mở cài đặt.",
+      "back": "Tap Undirect in Safari to open settings."
     },
     "ext.setting.effects": {
       "s": "Hiệu ứng trên trang"
+    },
+    "app.setup.detail_ios": {
+      "s": "Trong Safari, mở menu trang, chọn Quản lý tiện ích mở rộng và bật Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

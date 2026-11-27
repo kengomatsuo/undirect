@@ -62,8 +62,8 @@
       "back": "Site by site"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Na web-mjestu pritisnite gumb Undirect na alatnoj traci Safarija da zaštitite to mjesto.",
-      "back": "On a site, press the Undirect button on Safari's toolbar to protect that site."
+      "s": "Na web-mjestu pritisnite gumb Undirect u Safariju da zaštitite to mjesto.",
+      "back": "On a site, press the Undirect button in Safari to protect that site."
     },
     "app.nav.guarded_sites": {
       "s": "Zaštićena mjesta",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Na web-mjestu koje vas preusmjerava pritisnite gumb Undirect na alatnoj traci Safarija.",
-      "back": "On a site that redirects you, press Undirect's button in Safari's toolbar"
+      "s": "Na web-mjestu koje vas preusmjerava pritisnite gumb Undirect u Safariju.",
+      "back": "On a site that redirects you, press the Undirect button in Safari."
     },
     "app.watched.footer": {
       "s": "Mjesta se dodaju gumbom Undirect u Safariju; ovdje ih možete samo ukloniti.",
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "Uključeno. Isključivanje ponovno učitava stranicu.",
-      "back": "On; turning off reloads the page"
+      "s": "Zaštićeno",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Isključeno. Uključivanje ponovno učitava stranicu.",
@@ -497,10 +497,15 @@
       "s": "Postavke"
     },
     "ext.note.where": {
-      "s": "Za postavke dodirnite Undirect na alatnoj traci."
+      "s": "Za postavke dodirnite Undirect u Safariju.",
+      "back": "For settings, tap Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "Efekti na stranici"
+    },
+    "app.setup.detail_ios": {
+      "s": "U Safariju otvorite izbornik stranice, odaberite Upravljanje proširenjima i uključite Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

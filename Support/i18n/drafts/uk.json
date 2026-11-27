@@ -22,8 +22,8 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Вітаємо в Undirect",
-      "back": "Welcome to Undirect"
+      "s": "Вітаємо в Андиректі",
+      "back": "Welcome to Undirect (locative)"
     },
     "app.welcome.feature.invisible_layers.title": {
       "s": "Невидимі шари",
@@ -62,8 +62,8 @@
       "back": "Site by site"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "На сайті натисніть кнопку Undirect на панелі інструментів Safari, щоб його захистити.",
-      "back": "On a site press the Undirect button on Safari's toolbar to protect it"
+      "s": "На сайті натисніть кнопку Андирект у Safari, щоб його захистити.",
+      "back": "On a site press the Undirect button in Safari to protect it"
     },
     "app.nav.guarded_sites": {
       "s": "Захищені сайти",
@@ -74,7 +74,7 @@
       "back": "Settings"
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "Андирект",
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
@@ -134,12 +134,12 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "На сайті, що вас перенаправляє, натисніть кнопку Undirect на панелі інструментів Safari.",
-      "back": "On a site that redirects you press Undirect's button on Safari's toolbar"
+      "s": "На сайті, що вас перенаправляє, натисніть кнопку Андирект у Safari.",
+      "back": "On a site that redirects you press the Undirect button in Safari"
     },
     "app.watched.footer": {
-      "s": "Сайти додаються кнопкою Undirect у Safari; тут їх можна лише вилучити.",
-      "back": "Sites are added by Safari's button; here you can only remove"
+      "s": "Сайти додаються кнопкою Андирект у Safari; тут їх можна лише вилучити.",
+      "back": "Sites are added by the Undirect button in Safari; here you can only remove them"
     },
     "app.watched.row.guarded_badge": {
       "s": "Захищено",
@@ -194,7 +194,7 @@
       "back": "Allow"
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "Андирект",
       "back": "Undirect"
     },
     "ext.meta.description": {
@@ -202,7 +202,7 @@
       "back": "Prevents pages from using your click to open or redirect where you did not ask"
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "Андирект",
       "back": "Undirect"
     },
     "ext.toolbar.tooltip_on": {
@@ -218,7 +218,7 @@
       "back": "Nothing to protect here"
     },
     "ext.popup.no_site_title": {
-      "s": "Undirect працює лише на сайтах",
+      "s": "Андирект працює лише на сайтах",
       "back": "Undirect works only on sites"
     },
     "ext.popup.no_site_body": {
@@ -242,8 +242,8 @@
       "back": "Protection is off in Settings."
     },
     "ext.popup.watch_on": {
-      "s": "Увімкнено. Після вимкнення сторінка перезавантажиться.",
-      "back": "On; after turning off the page reloads"
+      "s": "Захищено",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Вимкнено. Після ввімкнення сторінка перезавантажиться.",
@@ -497,10 +497,15 @@
       "s": "Налаштування"
     },
     "ext.note.where": {
-      "s": "Для налаштувань натисніть Undirect на панелі інструментів."
+      "s": "Для налаштувань натисніть Андирект у Safari.",
+      "back": "For settings, press Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "Ефекти на сторінці"
+    },
+    "app.setup.detail_ios": {
+      "s": "У Safari відкрийте меню сторінки, виберіть «Керувати розширеннями» й увімкніть Андирект.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

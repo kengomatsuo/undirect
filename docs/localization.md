@@ -11,6 +11,13 @@ and (for the first eighteen) a reason. English is a peer locale, not the master.
 - `python3 Support/i18n/merge.py` folds the drafts into `App/Localizable.xcstrings`,
   `Extension/Resources/_locales/<code>/messages.json` and, from
   `Support/i18n/store/<ASC code>.json`, into `Support/AppStore/locales.json`.
+- The app's name is each draft's `ext.meta.name`: Latin "Undirect" in Latin
+  scripts and Chinese, written in the language's own script elsewhere, as
+  Cutling shows カットリング. `merge.py` also writes it as the display name in
+  `App/InfoPlist.xcstrings` and `Extension/InfoPlist.xcstrings`, so the icon,
+  Safari's extension row and every sentence naming the app agree. The App Store
+  listing name stays Latin. Spellings and their sources:
+  `Support/i18n/app-name/names.json`.
 - `python3 Support/i18n/check.py` is the gate: every draft complete, every
   catalog key present in every locale with the same printf specifiers, every
   extension message with en's placeholders block and `$COUNT$`, store copy inside

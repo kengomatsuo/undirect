@@ -27,9 +27,9 @@
       "why": "Neutral action wording that fits both the setup screen and the welcome sheet."
     },
     "app.welcome.heading": {
-      "s": "ยินดีต้อนรับสู่ Undirect",
+      "s": "ยินดีต้อนรับสู่ อันไดเรกต์",
       "back": "Welcome to Undirect",
-      "why": "The one place allowed a warmer register; app name kept as a proper noun."
+      "why": "The one place allowed a warmer register; welcomes the person by the app's name in this language's script (Support/i18n/app-name/names.json)."
     },
     "app.welcome.feature.invisible_layers.title": {
       "s": "เลเยอร์ล่องหน",
@@ -77,9 +77,9 @@
       "why": "Names the per-site mechanism, contrasting with automatic everywhere mode."
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "กดปุ่ม Undirect บนแถบเครื่องมือ Safari ขณะอยู่ในไซต์นั้น เพื่อเปิดการป้องกันให้ไซต์นั้น",
-      "back": "Press the Undirect button on Safari's toolbar while on that site, to turn on protection for that site.",
-      "why": "States the concrete mechanism: toolbar button, one site at a time."
+      "s": "กด อันไดเรกต์ ใน Safari ขณะอยู่ในไซต์นั้น เพื่อเปิดการป้องกันให้ไซต์นั้น",
+      "back": "Press Undirect in Safari while on that site, to turn on protection for that site.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.nav.guarded_sites": {
       "s": "ไซต์ที่ป้องกัน",
@@ -92,9 +92,9 @@
       "why": "Apple's own Thai term for Settings, used verbatim rather than a synonym."
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "อันไดเรกต์",
       "back": "Undirect",
-      "why": "Proper noun, left untranslated like the product's own name in every locale."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "app.rules.grouping.everywhere": {
       "s": "ทุกไซต์",
@@ -167,13 +167,13 @@
       "why": "States plainly that no site has been switched on."
     },
     "app.watched.empty.detail": {
-      "s": "กดปุ่ม Undirect บนแถบเครื่องมือของ Safari ขณะอยู่ในไซต์ที่มีปัญหา เพื่อเริ่มป้องกัน",
-      "back": "Press the Undirect button on Safari's toolbar while on a site that has trouble, to start protecting it.",
+      "s": "กด อันไดเรกต์ ใน Safari ขณะอยู่ในไซต์ที่มีปัญหา เพื่อเริ่มป้องกัน",
+      "back": "Press Undirect in Safari while on a site that has trouble, to start protecting it.",
       "why": "Concrete instruction for the first entry, matching the welcome screen's same mechanism."
     },
     "app.watched.footer": {
-      "s": "เพิ่มไซต์ใหม่ได้จากปุ่ม Undirect ใน Safari เท่านั้น หน้านี้ลบไซต์ได้อย่างเดียว",
-      "back": "New sites can only be added from the Undirect button in Safari; this screen can only remove sites.",
+      "s": "เพิ่มไซต์ใหม่ได้จาก อันไดเรกต์ ใน Safari เท่านั้น หน้านี้ลบไซต์ได้อย่างเดียว",
+      "back": "New sites can only be added from Undirect in Safari; this screen can only remove sites.",
       "why": "Reminds where entries come from, since this screen itself has no add control."
     },
     "app.watched.row.guarded_badge": {
@@ -242,9 +242,9 @@
       "why": "Clear opposite of 'บล็อกไว้ก่อน'."
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "อันไดเรกต์",
       "back": "Undirect",
-      "why": "Proper noun, listed name in Safari's Extensions settings and the App Store."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "ext.meta.description": {
       "s": "หยุดหน้าเว็บที่แย่งคลิกของคุณไปเปิดหรือเปลี่ยนหน้าไปยังที่ที่คุณไม่ได้ตั้งใจจะไป",
@@ -252,7 +252,7 @@
       "why": "One sentence for someone who has never used the extension, slightly more explanatory register."
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "อันไดเรกต์",
       "back": "Undirect",
       "why": "Fallback display name for the product itself, used when no site name is available."
     },
@@ -302,8 +302,8 @@
       "why": "Attributes the disabled state to the master switch, not this site."
     },
     "ext.popup.watch_on": {
-      "s": "กำลังป้องกันไซต์นี้อยู่ ปิดแล้วหน้าจะโหลดใหม่",
-      "back": "Currently protecting this site, turning it off will reload the page",
+      "s": "ป้องกันอยู่",
+      "back": "Guarded",
       "why": "Confirms the state and warns of the reload, as a before/after pair with watch_off."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "การตั้งค่า"
     },
     "ext.note.where": {
-      "s": "แตะ Undirect ในแถบเครื่องมือเพื่อเปิดการตั้งค่า"
+      "s": "แตะ อันไดเรกต์ ใน Safari เพื่อเปิดการตั้งค่า",
+      "back": "Tap Undirect in Safari to open the settings."
     },
     "ext.setting.effects": {
       "s": "เอฟเฟกต์บนหน้า"
+    },
+    "app.setup.detail_ios": {
+      "s": "ใน Safari เปิดเมนูหน้าเว็บ เลือกจัดการส่วนขยาย แล้วเปิด อันไดเรกต์",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

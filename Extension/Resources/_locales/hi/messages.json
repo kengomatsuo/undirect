@@ -1,14 +1,14 @@
 {
   "extension_name": {
-    "message": "Undirect",
+    "message": "अनडायरेक्ट",
     "description": "Name of the extension."
   },
   "extension_description": {
-    "message": "Undirect उन पेजों को रोकता है जो आपका क्लिक इस्तेमाल कर आपको कहीं और भेज देते हैं।",
+    "message": "अनडायरेक्ट उन पेजों को रोकता है जो आपका क्लिक इस्तेमाल कर आपको कहीं और भेज देते हैं।",
     "description": "Description of the extension."
   },
   "app_title": {
-    "message": "Undirect",
+    "message": "अनडायरेक्ट",
     "description": "Title shown in the container app and the popup."
   },
   "popup_guard_label": {
@@ -370,7 +370,7 @@
     "description": "Button inside the page note that opens Undirect's toolbar popup, where its settings (including the note's own switch) are."
   },
   "note_where": {
-    "message": "सेटिंग के लिए टूलबार में Undirect दबाएँ।",
+    "message": "सेटिंग के लिए Safari में अनडायरेक्ट दबाएँ।",
     "description": "Replaces the note's text when the popup could not be opened for the person; says which button holds the settings."
   },
   "setting_effects": {

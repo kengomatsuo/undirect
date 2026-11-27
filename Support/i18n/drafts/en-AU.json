@@ -134,12 +134,12 @@
       "back": "No sites guarded yet"
     },
     "app.watched.empty.detail": {
-      "s": "Press the Undirect button in Safari on a site that keeps redirecting.",
-      "back": "Press the Undirect button in Safari on a site that keeps redirecting."
+      "s": "Press Undirect in Safari on a site that keeps redirecting.",
+      "back": "Press Undirect in Safari on a site that keeps redirecting."
     },
     "app.watched.footer": {
-      "s": "Sites are added from the Undirect button in Safari.",
-      "back": "Sites are added from the Undirect button in Safari."
+      "s": "Sites are added by pressing Undirect in Safari.",
+      "back": "Sites are added by pressing Undirect in Safari."
     },
     "app.watched.row.guarded_badge": {
       "s": "Guarded",
@@ -242,8 +242,8 @@
       "back": "The guard is switched off."
     },
     "ext.popup.watch_on": {
-      "s": "On. Turning it off reloads the page.",
-      "back": "On. Turning it off reloads the page."
+      "s": "Guarded",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Off. Turning it on reloads the page.",
@@ -497,10 +497,15 @@
       "s": "Settings"
     },
     "ext.note.where": {
-      "s": "Press Undirect in the toolbar for settings."
+      "s": "Press Undirect in Safari for settings.",
+      "back": "Press Undirect in Safari for settings."
     },
     "ext.setting.effects": {
       "s": "Page effects"
+    },
+    "app.setup.detail_ios": {
+      "s": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

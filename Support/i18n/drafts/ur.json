@@ -22,7 +22,7 @@
       "back": "Open Safari extensions"
     },
     "app.welcome.heading": {
-      "s": "Undirect میں خوش آمدید",
+      "s": "اَنڈائریکٹ میں خوش آمدید",
       "back": "Welcome to Undirect"
     },
     "app.welcome.feature.invisible_layers.title": {
@@ -62,8 +62,8 @@
       "back": "One site at a time"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "سائٹ پر Safari کے ٹول بار میں Undirect کا بٹن دبائیں، وہاں تحفظ آن ہو جائے گا۔",
-      "back": "On a site press Undirect's button in Safari's toolbar and protection turns on there"
+      "s": "سائٹ پر Safari میں اَنڈائریکٹ کا بٹن دبائیں، وہاں تحفظ آن ہو جائے گا۔",
+      "back": "On a site press Undirect's button in Safari and protection turns on there"
     },
     "app.nav.guarded_sites": {
       "s": "محفوظ سائٹس",
@@ -74,7 +74,7 @@
       "back": "Settings"
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "اَنڈائریکٹ",
       "back": "Undirect"
     },
     "app.rules.grouping.everywhere": {
@@ -134,12 +134,12 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "جو سائٹ آپ کو کہیں اور بھیج دے وہاں Safari کے ٹول بار میں Undirect کا بٹن دبائیں۔",
-      "back": "On a site that sends you elsewhere press Undirect's button in Safari's toolbar"
+      "s": "جو سائٹ آپ کو کہیں اور بھیج دے وہاں Safari میں اَنڈائریکٹ کا بٹن دبائیں۔",
+      "back": "On a site that sends you elsewhere press Undirect's button in Safari"
     },
     "app.watched.footer": {
-      "s": "سائٹس Safari کے Undirect بٹن سے شامل ہوتی ہیں۔ یہاں صرف ہٹائی جا سکتی ہیں۔",
-      "back": "Sites are added from Safari's button; here only removal"
+      "s": "سائٹس Safari کے اَنڈائریکٹ بٹن سے شامل ہوتی ہیں۔ یہاں صرف ہٹائی جا سکتی ہیں۔",
+      "back": "Sites are added from Safari's Undirect button. Here they can only be removed"
     },
     "app.watched.row.guarded_badge": {
       "s": "محفوظ",
@@ -194,7 +194,7 @@
       "back": "Allow"
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "اَنڈائریکٹ",
       "back": "Undirect"
     },
     "ext.meta.description": {
@@ -202,7 +202,7 @@
       "back": "Stops pages from using your click, without your wish, to open another place or send you there."
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "اَنڈائریکٹ",
       "back": "Undirect"
     },
     "ext.toolbar.tooltip_on": {
@@ -218,7 +218,7 @@
       "back": "Nothing to protect here"
     },
     "ext.popup.no_site_title": {
-      "s": "Undirect ویب سائٹس پر کام کرتا ہے",
+      "s": "اَنڈائریکٹ ویب سائٹس پر کام کرتا ہے",
       "back": "Undirect works on websites"
     },
     "ext.popup.no_site_body": {
@@ -242,8 +242,8 @@
       "back": "Off in settings"
     },
     "ext.popup.watch_on": {
-      "s": "آن ہے۔ آف کرنے پر صفحہ دوبارہ لوڈ ہوگا۔",
-      "back": "On; turning off reloads the page"
+      "s": "محفوظ",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "آف ہے۔ آن کرنے پر صفحہ دوبارہ لوڈ ہوگا۔",
@@ -497,10 +497,15 @@
       "s": "ترتیبات"
     },
     "ext.note.where": {
-      "s": "ترتیبات کے لیے ٹول بار میں Undirect دبائیں۔"
+      "s": "ترتیبات کے لیے Safari میں اَنڈائریکٹ دبائیں۔",
+      "back": "For settings, press Undirect in Safari."
     },
     "ext.setting.effects": {
       "s": "صفحے کے اثرات"
+    },
+    "app.setup.detail_ios": {
+      "s": "Safari میں صفحے کا مینو کھولیں، Manage Extensions منتخب کریں اور اَنڈائریکٹ آن کریں۔",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

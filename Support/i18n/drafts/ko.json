@@ -27,7 +27,7 @@
       "why": "Verb-plus-object button label; '확장 프로그램' is Apple's own term for Safari's Extensions pane, works verbatim on both screens."
     },
     "app.welcome.heading": {
-      "s": "Undirect에 오신 것을 환영합니다!",
+      "s": "언다이렉트에 오신 것을 환영합니다!",
       "back": "Undirect-to came-you welcome!",
       "why": "Warmth carried by the exclamation, not a register switch — kept in 합니다체 like every other string in the file."
     },
@@ -77,9 +77,9 @@
       "why": "Literal, concrete match for how guarding is switched on — per site, not automatically."
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Safari 도구 막대의 Undirect 버튼을 누르면 그 사이트의 가드가 켜집니다.",
-      "back": "Safari toolbar-of Undirect button press-if that site-of guard turns-on",
-      "why": "-면 conditional carries the mechanism; '도구 막대' is Apple's own Korean term for toolbar."
+      "s": "Safari에서 언다이렉트를 누르면 그 사이트의 가드가 켜집니다.",
+      "back": "Safari-in Undirect press-if that site-of guard turns-on",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.nav.guarded_sites": {
       "s": "가드 사이트",
@@ -92,9 +92,9 @@
       "why": "Apple's own term for this screen on both iOS and macOS."
     },
     "app.nav.app_title": {
-      "s": "Undirect",
+      "s": "언다이렉트",
       "back": "Undirect",
-      "why": "Proper noun, left untranslated as the brief expects."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "app.rules.grouping.everywhere": {
       "s": "모든 사이트",
@@ -167,14 +167,14 @@
       "why": "Uses the canonical 가드 사이트 term; states plainly that no site has been switched on."
     },
     "app.watched.empty.detail": {
-      "s": "문제가 있는 사이트에서 Safari 도구 막대의 Undirect 버튼을 누르세요.",
-      "back": "problem-having site-on Safari toolbar-of Undirect button press",
+      "s": "문제가 있는 사이트에서 Safari의 언다이렉트를 누르세요.",
+      "back": "problem-having site-on Safari-of Undirect press",
       "why": "Names the exact mechanism for guarding a first site, in one sentence."
     },
     "app.watched.footer": {
-      "s": "새 사이트는 Safari 도구 막대의 버튼으로만 추가됩니다.",
-      "back": "new site-topic Safari toolbar-of button-only-with gets-added",
-      "why": "Reminds the person this screen only removes, never adds — the toolbar button is the sole source."
+      "s": "새 사이트는 Safari에서 언다이렉트를 눌러야만 추가됩니다.",
+      "back": "new sites Safari-in Undirect only-by-pressing are-added",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.watched.row.guarded_badge": {
       "s": "가드 중",
@@ -242,9 +242,9 @@
       "why": "Picker option opposite of policy_block."
     },
     "ext.meta.name": {
-      "s": "Undirect",
+      "s": "언다이렉트",
       "back": "Undirect",
-      "why": "Proper noun shown in Safari's extension list; left as-is like any app's own name."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "ext.meta.description": {
       "s": "페이지가 클릭이나 탭을 가로채 엉뚱한 곳으로 이동시키지 못하게 막습니다.",
@@ -252,9 +252,9 @@
       "why": "One explanatory sentence for a first-time reader browsing the extension list, slightly more descriptive than in-app copy as the brief asks."
     },
     "ext.meta.app_title": {
-      "s": "Undirect",
+      "s": "언다이렉트",
       "back": "Undirect",
-      "why": "Fallback display name standing in for a missing site name; same brand word."
+      "why": "The app's own name written in this language's script, spelled as the language already writes 'direct'; source in Support/i18n/app-name/names.json."
     },
     "ext.toolbar.tooltip_on": {
       "s": "이 사이트에서 가드 켜짐",
@@ -302,8 +302,8 @@
       "why": "자체 (itself) makes clear the master switch is off, not this particular site."
     },
     "ext.popup.watch_on": {
-      "s": "가드가 켜져 있습니다. 끄면 페이지가 다시 로드됩니다.",
-      "back": "guard is-on. turn-off-if page again loads",
+      "s": "가드 중",
+      "back": "Guarded",
       "why": "Confirms state then warns of the reload with a -면 conditional, no dash."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "설정"
     },
     "ext.note.where": {
-      "s": "설정은 도구 막대에서 Undirect를 누르세요."
+      "s": "설정은 Safari에서 언다이렉트를 누르세요.",
+      "back": "settings-as-for Safari-in Undirect press"
     },
     "ext.setting.effects": {
       "s": "페이지 효과"
+    },
+    "app.setup.detail_ios": {
+      "s": "Safari에서 페이지 메뉴를 열고 '확장 프로그램 관리'를 선택한 다음 언다이렉트를 켜세요.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

@@ -62,8 +62,8 @@
       "back": "Site by site"
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Num site, prima o botão do Undirect na barra do Safari para o ativar.",
-      "back": "On a site, press Undirect's button in Safari's bar to activate it"
+      "s": "Num site, prima o botão do Undirect no Safari para o proteger.",
+      "back": "On a site, press the Undirect button in Safari to protect it."
     },
     "app.nav.guarded_sites": {
       "s": "Sites protegidos",
@@ -134,8 +134,8 @@
       "back": "No protected sites yet"
     },
     "app.watched.empty.detail": {
-      "s": "Num site que o redirecione, prima o botão do Undirect na barra do Safari.",
-      "back": "On a site that redirects you, press Undirect's button in Safari's bar"
+      "s": "Num site que o redirecione, prima o botão do Undirect no Safari.",
+      "back": "On a site that redirects you, press the Undirect button in Safari."
     },
     "app.watched.footer": {
       "s": "Os sites adicionam-se a partir do botão do Undirect no Safari; aqui só os pode remover.",
@@ -242,8 +242,8 @@
       "back": "Protection is switched off in Settings."
     },
     "ext.popup.watch_on": {
-      "s": "Ativada. Ao desativar, a página é recarregada.",
-      "back": "On. When you switch it off, the page reloads."
+      "s": "Protegido",
+      "back": "Guarded"
     },
     "ext.popup.watch_off": {
       "s": "Desativada. Ao ativar, a página é recarregada.",
@@ -497,10 +497,15 @@
       "s": "Definições"
     },
     "ext.note.where": {
-      "s": "Toque em Undirect na barra de ferramentas para ver as definições."
+      "s": "Toque em Undirect no Safari para ver as definições.",
+      "back": "Tap Undirect in Safari to see the settings."
     },
     "ext.setting.effects": {
       "s": "Efeitos na página"
+    },
+    "app.setup.detail_ios": {
+      "s": "No Safari, abra o menu da página, escolha Gerir extensões e ative o Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }

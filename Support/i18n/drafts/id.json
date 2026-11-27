@@ -77,9 +77,9 @@
       "why": "Names the on-mechanism: per site, not automatic."
     },
     "app.welcome.feature.one_site_at_a_time.detail": {
-      "s": "Tekan tombol Undirect di bilah alat Safari untuk mengaktifkan pelindung di situs itu.",
-      "back": "Press the Undirect button in Safari's toolbar to activate the guard on that site.",
-      "why": "bilah alat is Apple's own Indonesian for toolbar; Pelindung is the fixed term for the guard."
+      "s": "Tekan tombol Undirect di Safari untuk mengaktifkan pelindung di situs itu.",
+      "back": "Press the Undirect button in Safari to activate the guard on that site.",
+      "why": "Says 'in Safari' and names no toolbar: on iPhone and iPad Undirect is a row in Safari's page menu, on Mac a toolbar button."
     },
     "app.nav.guarded_sites": {
       "s": "Situs Dijaga",
@@ -167,8 +167,8 @@
       "why": "Plain statement that no site has been switched on."
     },
     "app.watched.empty.detail": {
-      "s": "Tekan tombol Undirect di bilah alat Safari pada situs yang bermasalah.",
-      "back": "Press the Undirect button in Safari's toolbar on a problem site.",
+      "s": "Tekan tombol Undirect di Safari pada situs yang bermasalah.",
+      "back": "Press the Undirect button in Safari on a problem site.",
       "why": "Concrete instruction for the very first guarded site."
     },
     "app.watched.footer": {
@@ -302,8 +302,8 @@
       "why": "Attributes the disabled switch to the master toggle, not this site."
     },
     "ext.popup.watch_on": {
-      "s": "Aktif di sini. Mematikannya memuat ulang halaman.",
-      "back": "Active here. Turning it off reloads the page.",
+      "s": "Dijaga",
+      "back": "Guarded",
       "why": "Confirms state and warns of the reload in one short pair of clauses."
     },
     "ext.popup.watch_off": {
@@ -616,10 +616,15 @@
       "s": "Pengaturan"
     },
     "ext.note.where": {
-      "s": "Ketuk Undirect di bar alat untuk pengaturan."
+      "s": "Ketuk Undirect di Safari untuk pengaturan.",
+      "back": "Tap Undirect in Safari for settings."
     },
     "ext.setting.effects": {
       "s": "Efek halaman"
+    },
+    "app.setup.detail_ios": {
+      "s": "Di Safari, buka menu halaman, pilih Kelola Ekstensi, lalu nyalakan Undirect.",
+      "back": "In Safari, open the page menu, choose Manage Extensions and turn on Undirect."
     }
   }
 }
