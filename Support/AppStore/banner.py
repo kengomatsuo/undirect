@@ -60,9 +60,12 @@ def spots(loc_path):
 
 def upload(app, prefix, pattern):
     have = library(app)
-    rx = re.compile("^" + re.escape(pattern).replace(re.escape("{locale}"), "(?P<locale>[^/]+)") + "$")
+    # a locale is App Store Connect's code (en-US, zh-Hans, ca), so previews and sheets beside the files are skipped
+    rx = re.compile("^" + re.escape(pattern).replace(re.escape("{locale}"), "(?P<locale>[a-z]{2,3}(-[A-Za-z]{2,4})?)") + "$")
     for f in sorted(glob.glob(pattern.replace("{locale}", "*"))):
-        loc = rx.match(f).group("locale")
+        if not (m := rx.match(f)):
+            continue
+        loc = m.group("locale")
         ref = f"{prefix}-{loc}"
         if ref in have:
             print(loc, "kept", have[ref]["attributes"]["state"], flush=True)
