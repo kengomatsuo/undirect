@@ -474,3 +474,18 @@ B side of the price A/B test. Live and scheduled posts keep their prices; nothin
 - 2026-11-25 20:50 WIB X buy-link reply (ct=x-bf, Undirect + Cutling) under the 20:43 sale post https://x.com/monholtco/status/2125586049145397541 : https://x.com/monholtco/status/2125587455395180623
 - 20:52 WIB owner: personal Instagram joins only the Nov 27 sale-day post and Story. Tonight's invite to kenneth_j.fang stays unaccepted; Nov 26 post goes out as @monholtco alone.
 - 2026-11-25 20:56 WIB Threads buy-link reply (ct=th-bf, Undirect + Cutling) under the 20:53 sale post https://www.threads.com/@monholtco/post/DgKruHpj1FN : https://www.threads.com/@monholtco/post/DgKr8NRmJ1Z
+
+## Japanese "123 Main Street" Cutling film on every platform (ASG254, 2026-11-27)
+
+Film: the 3D "How many times have you typed your address" film's Japanese cut (undirect-promo monholt-samples `CutlingJaTall`, out/cutling-ja-9x16.mp4, ElevenLabs Japanese voice; wide cut `CutlingJaWide`, out → ~/Downloads/Claude/cutling-ja/cutling-ja-16x9.mp4). Caption: copy-ja.json `1_type_it_once.caption` (written blind, read back cold). Times are Japan's measured peaks (docs/research/posting-times-countries.md: MIC 2024 lunch 12時台 for X, Threads and Instagram; 21-22時 daily peak for TikTok and YouTube). Owner: the remade cutling-promo `type-it-once-ja-9x16.mp4` is not fit to post anywhere; it was scheduled on X 10:07 and Threads 10:13 and both were deleted before going out.
+
+| WIB (JST) | Platform | What | Read back |
+|---|---|---|---|
+| 10:07 (12:07) | X @monholtco | 9:16 film + caption; App Store link (ct=x-ja-typeonce) as own reply once live | X Unsent > Scheduled "Fri, Nov 27, 2026 at 10:07 AM", 3D film thumbnail |
+| 10:13 (12:13) | Threads @monholtco | 9:16 film, topic 便利アプリ, reply 2/2 App Store link (ct=th-ja-typeonce) | Drafts "Posting today at 10:13", topic 便利アプリ, 1 reply |
+| 10:17 (12:17) | Instagram Reel + Facebook Reel (Business Suite) | IG: caption + 「App Storeへはプロフィールのリンクから。」 + 4 tags; FB: caption + link ct=fb-ja-typeonce + 4 tags | Business Suite "Reel scheduled … 27 Nov on Facebook and 27 Nov on Instagram" |
+| 19:37 (21:37) | YouTube Short @matsuokengo | https://youtu.be/pUI5XKBN3kY, ja, cover = headline frame, link ct=yt-ja-typeonce-short | API: private, publishAt 2026-11-27T12:37:00Z |
+| 20:05 (22:05) | TikTok @monholt | caption + #iPhone便利機能 #iPhone活用術 #コピペ #時短, cover = headline frame, Your brand | Studio Posts "27 Nov, 8:05 pm (GMT+7) Jakarta" |
+| 20:13 (22:13) | YouTube 16:9 @matsuokengo | https://youtu.be/dLpZR0UnsZ4, title 住所を一度登録すれば、iPhoneでもMacでもワンタップで入力 \| Cutling (not read by a native reader), link ct=yt-ja-typeonce-long | API: private, publishAt 2026-11-27T13:13:00Z |
+
+Threads topic, read on threads.com 2026-11-27: the "iPhone" topic's recent feed is phone resellers in other languages with no Japanese; 便利アプリ had about nine Japanese posts in three hours; 個人開発 was as busy but is makers; iphone便利術, iPhone 便利機能 and iPhone活用術 carry a few posts a day from Japanese iPhone-tips accounts (ryu.iphone, misamisa_iphone, hiroko_iphone).
