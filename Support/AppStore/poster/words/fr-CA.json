@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Un clic,|une pub.", "s": "Puis un nouvel onglet. Puis un autre."},
+ "2": {"h": "Un appui.|C’est réglé.", "s": "Activez {name} dans le menu de la page de Safari."},
+ "2m": {"s": "Activez {name} avec son bouton de la barre d’outils de Safari."},
+ "3": {"h": "Votre clic|reste à vous.", "s": "La vidéo démarre. Pas de nouvel onglet."},
+ "4": {"h": "Chaque piège,|noté.", "s": "Voyez ce que chaque page a essayé d’ouvrir."},
+ "5": {"h": "Retour,|c’est retour.", "s": "Le bouton Retour vous ramène où vous étiez."},
+ "6": {"h": "Vos règles,|site par site.", "s": "Bloquez sur un site, autorisez sur un autre."},
+ "7": {"h": "Tout reste|chez vous.", "s": "Aucun compte, aucun suivi, aucun serveur."},
+ "8": {"h": "iPhone, iPad|et Mac.", "s": "Un seul achat pour les trois.", "f": "Aucun compte, aucun abonnement."},
+ "ads": ["GAGNÉ!", "CLIQUEZ ICI", "TÉLÉCHARGER", "TOURS GRATUITS", "AUBAINE!", "RÉCLAMEZ-LE"],
+ "film": {"title": "Le Traversier de nuit", "meta": "2026 · 1 h 48 min · Suspense"},
+ "site_nav": ["Films", "Séries", "Nouveautés", "Ma liste"],
+ "_bt": {
+  "1": {"h": "One click,|one ad.", "s": "Then a new tab. Then another."},
+  "2": {"h": "One press.|It's handled.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."},
+  "3": {"h": "Your click|stays yours.", "s": "The video starts. No new tab."},
+  "4": {"h": "Every trap,|noted.", "s": "See what each page tried to open."},
+  "5": {"h": "Back|is back.", "s": "The Back button takes you back where you were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Everything stays|at your place.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "BARGAIN!", "CLAIM IT"],
+  "film": {"title": "The Night Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New releases", "My list"]
+ }
+}

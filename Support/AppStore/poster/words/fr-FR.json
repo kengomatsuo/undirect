@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Un clic,|un pop-up.", "s": "Puis un nouvel onglet. Puis un autre."},
+ "2": {"h": "Un appui.|C’est fini.", "s": "Activez {name} depuis le menu de la page dans Safari."},
+ "2m": {"s": "Activez {name} avec son bouton dans la barre d’outils de Safari."},
+ "3": {"h": "Votre clic|reste à vous.", "s": "La vidéo démarre. Aucun nouvel onglet."},
+ "4": {"h": "Chaque piège|répertorié.", "s": "Voyez ce que chaque page a tenté d’ouvrir."},
+ "5": {"h": "Retour,|c’est retour.", "s": "Le bouton Retour vous ramène là où vous étiez."},
+ "6": {"h": "Vos règles,|site par site.", "s": "Bloquez sur un site, autorisez sur un autre."},
+ "7": {"h": "Rien ne sort|de chez vous.", "s": "Ni compte, ni pistage, ni serveur."},
+ "8": {"h": "iPhone, iPad|et Mac.", "s": "Un seul achat pour les trois.", "f": "Sans compte, sans abonnement."},
+ "ads": ["GAGNÉ !", "CLIQUEZ ICI", "TÉLÉCHARGER", "TOURS GRATUITS", "PROMO CHOC", "J’EN PROFITE"],
+ "film": {"title": "Le Port de nuit", "meta": "2026 · 1 h 48 min · Thriller"},
+ "site_nav": ["Films", "Séries", "Nouveautés", "Ma liste"],
+ "_bt": {
+  "1": {"h": "One click,|one pop-up.", "s": "Then a new tab. Then another."},
+  "2": {"h": "One press.|It's over.", "s": "Turn on {name} from the page menu in Safari."},
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."},
+  "3": {"h": "Your click|stays yours.", "s": "The video starts. No new tab."},
+  "4": {"h": "Every trap|catalogued.", "s": "See what each page tried to open."},
+  "5": {"h": "Back|is back.", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Nothing leaves|your place.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SHOCK DEAL", "I'LL TAKE IT"],
+  "film": {"title": "The Night Harbour", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New releases", "My list"]
+ }
+}

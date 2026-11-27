@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "לוחצים פליי,|קופץ פופאפ.", "s": "ואז עוד לשונית. ועוד אחת."},
+ "2": {"h": "לחיצה אחת|וזהו.", "s": "מפעילים את {name} מתפריט הדף ב-Safari."},
+ "3": {"h": "הלחיצה|פוגעת בול.", "s": "הסרטון מתנגן. שום לשונית חדשה."},
+ "4": {"h": "כל תרגיל|ברשימה.", "s": "רואים מה כל דף ניסה לפתוח."},
+ "5": {"h": "אחורה|זה אחורה.", "s": "כפתור החזרה מחזיר אתכם בדיוק לאן שהייתם."},
+ "6": {"h": "החוקים שלכם,|אתר אחר אתר.", "s": "חוסמים באתר אחד, מתירים באחר."},
+ "7": {"h": "שום דבר|לא דולף.", "s": "בלי חשבון, בלי מעקב, בלי שרת."},
+ "8": {"h": "iPhone, iPad|ו-Mac.", "s": "רכישה אחת לשלושתם.", "f": "בלי חשבון, בלי מנוי."},
+ "ads": ["זכית!", "לחצו כאן", "הורדה", "ספינים חינם", "מבצע לוהט", "קבלו עכשיו"],
+ "film": {"title": "מעבורת הלילה", "meta": "2026 · 1 שע׳ 48 דק׳ · מותחן"},
+ "site_nav": ["סרטים", "סדרות", "חדש", "הרשימה שלי"],
+ "2m": {"s": "מפעילים את {name} מהכפתור שלו בסרגל הכלים של Safari."},
+ "_bt": {
+  "1": {"h": "You press play,|a pop-up jumps out.", "s": "Then another tab. And another one."},
+  "2": {"h": "One press|and that's it.", "s": "Turn on {name} from the page menu in Safari."},
+  "3": {"h": "The tap|hits bang on.", "s": "The video plays. Not one new tab."},
+  "4": {"h": "Every trick|on the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back|is back.", "s": "The Back button returns you exactly to where you were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Nothing|leaks.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "RED-HOT DEAL", "CLAIM NOW"],
+  "film": {"title": "The Night Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"],
+  "2m": {"s": "Turn on {name} from its button in Safari's toolbar."}
+ }
+}

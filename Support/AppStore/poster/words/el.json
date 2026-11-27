@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Πατάς play,|σκάει pop-up.", "s": "Μετά νέα καρτέλα. Και μετά άλλη μία."},
+ "2": {"h": "Ένα πάτημα|και τέλος.", "s": "Ενεργοποίησε το {name} από το μενού σελίδας του Safari."},
+ "3": {"h": "Πάει εκεί|που πατάς.", "s": "Το βίντεο παίζει. Καμία νέα καρτέλα."},
+ "4": {"h": "Κάθε κόλπο|στη λίστα.", "s": "Δες τι πήγε να ανοίξει κάθε σελίδα."},
+ "5": {"h": "Πίσω σημαίνει|πίσω.", "s": "Το κουμπί «Πίσω» σε γυρίζει εκεί που ήσουν."},
+ "6": {"h": "Εσύ ορίζεις,|site με site.", "s": "Μπλόκαρέ το σε ένα site, επίτρεψέ το σε άλλο."},
+ "7": {"h": "Τίποτα|δεν διαρρέει.", "s": "Χωρίς λογαριασμό, παρακολούθηση ή διακομιστή."},
+ "8": {"h": "iPhone, iPad|και Mac.", "s": "Μία αγορά, και για τα τρία.", "f": "Χωρίς λογαριασμό, χωρίς συνδρομή."},
+ "ads": ["ΚΕΡΔΙΣΑΤΕ!", "ΠΑΤΗΣΤΕ ΕΔΩ", "ΛΗΨΗ", "ΔΩΡΕΑΝ ΠΕΡΙΣΤΡΟΦΕΣ", "ΚΑΥΤΗ ΠΡΟΣΦΟΡΑ", "ΠΑΡΤΕ ΤΟ ΤΩΡΑ"],
+ "film": {"title": "Νυχτερινό λιμάνι", "meta": "2026 · 1 ώ 48 λ · Θρίλερ"},
+ "site_nav": ["Ταινίες", "Σειρές", "Νέα", "Η λίστα μου"],
+ "2m": {"s": "Ενεργοποίησε το {name} με το κουμπί του στη γραμμή εργαλείων του Safari."},
+ "_bt": {
+  "1": {"h": "You hit play,|a pop-up bursts out.", "s": "Then a new tab. And then one more."},
+  "2": {"h": "One press|and done.", "s": "Turn on {name} from Safari's page menu."},
+  "3": {"h": "It goes|where you tap.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick|on the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back means|back.", "s": "The \"Back\" button takes you back to where you were."},
+  "6": {"h": "You decide,|site by site.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing|leaks.", "s": "No account, tracking or server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase, for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "PRESS HERE", "DOWNLOAD", "FREE SPINS", "HOT OFFER", "GET IT NOW"],
+  "film": {"title": "Night Harbour", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"],
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."}
+ }
+}

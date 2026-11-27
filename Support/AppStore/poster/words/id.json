@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Mau nonton,|malah popup.", "s": "Lalu tab baru terbuka. Lagi, dan lagi."},
+ "2": {"h": "Sekali ketuk,|beres.", "s": "Aktifkan {name} dari menu halaman di Safari."},
+ "2m": {"s": "Aktifkan {name} lewat tombolnya di bilah alat Safari."},
+ "3": {"h": "Ketukanmu|milikmu.", "s": "Video diputar. Tak ada tab baru."},
+ "4": {"h": "Semua trik|tercatat.", "s": "Lihat apa yang coba dibuka tiap halaman."},
+ "5": {"h": "Kembali ya|kembali.", "s": "Tombol Kembali membawamu ke halaman tadi."},
+ "6": {"h": "Aturanmu,|per situs.", "s": "Blokir di satu situs, izinkan di situs lain."},
+ "7": {"h": "Tak ada|yang bocor.", "s": "Tanpa akun, tanpa pelacakan, tanpa server."},
+ "8": {"h": "iPhone, iPad,|dan Mac.", "s": "Sekali beli, untuk ketiganya.", "f": "Tanpa akun, tanpa langganan."},
+ "ads": ["ANDA MENANG!", "KLIK DI SINI", "UNDUH", "SPIN GRATIS", "DISKON GILA", "KLAIM SEKARANG"],
+ "film": {"title": "Pelabuhan Malam", "meta": "2026 · 1 jam 48 mnt · Thriller"},
+ "site_nav": ["Film", "Serial", "Baru", "Daftar Saya"],
+ "_bt": {
+  "1": {"h": "You want to watch,|you get a pop-up instead.", "s": "Then a new tab opens. Again, and again."},
+  "2": {"h": "One tap,|sorted.", "s": "Turn on {name} from the page menu in Safari."},
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."},
+  "3": {"h": "Your tap|is yours.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick|recorded.", "s": "See what each page tried to open."},
+  "5": {"h": "Back means|back.", "s": "The Back button takes you to the page you were just on."},
+  "6": {"h": "Your rules,|per site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Nothing|leaks.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad,|and Mac.", "s": "Buy once, for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "CRAZY DISCOUNT", "CLAIM NOW"],
+  "film": {"title": "Night Harbor", "meta": "2026 · 1 hr 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My List"]
+ }
+}

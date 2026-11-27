@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "一按播放，|廣告就彈出", "s": "接著又開新分頁，一個接一個。"},
+ "2": {"h": "輕點一下，|馬上停住", "s": "在 Safari 的頁面選單中開啟 {name}。"},
+ "2m": {"s": "點按 Safari 工具列上的 {name} 按鈕即可開啟。"},
+ "3": {"h": "點哪裡，|就去哪裡", "s": "影片照常播放，不會再開新分頁。"},
+ "4": {"h": "擋下的伎倆，|一一列出", "s": "每個網頁想開啟什麼，一看就知道。"},
+ "5": {"h": "按返回，|就真的返回", "s": "按返回按鈕，就回到剛才的頁面。"},
+ "6": {"h": "每個網站，|規則你定", "s": "這個網站封鎖，那個網站允許。"},
+ "7": {"h": "什麼都|不外流", "s": "沒有帳號，沒有追蹤，沒有伺服器。"},
+ "8": {"h": "iPhone、iPad|和 Mac", "s": "買一次，三種裝置都能用。", "f": "不需帳號，不用訂閱。"},
+ "ads": ["恭喜中獎！", "點這裡", "立即下載", "免費轉盤", "超殺優惠", "立即領取"],
+ "film": {"title": "末班渡輪", "meta": "2026 · 1 小時 48 分鐘 · 驚悚"},
+ "site_nav": ["電影", "影集", "最新", "我的片單"],
+ "_bt": {
+  "1": {"h": "Press play,|and an ad pops out", "s": "Then another new tab opens, one after another."},
+  "2": {"h": "One light tap,|it stops right away", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Click the {name} button on Safari's toolbar to turn it on."},
+  "3": {"h": "Wherever you tap,|that's where it goes", "s": "The video plays as normal; no more new tabs."},
+  "4": {"h": "The tricks it blocked,|listed one by one", "s": "See at a glance what each page tried to open."},
+  "5": {"h": "Press Back,|and you really go back", "s": "Press the Back button and you're back on the page you were just on."},
+  "6": {"h": "For every site,|you set the rules", "s": "Block on this site, allow on that one."},
+  "7": {"h": "Nothing|leaks out", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac", "s": "Buy once, works on all three devices.", "f": "No account needed, no subscription."},
+  "ads": ["Congratulations, you won!", "Tap here", "Download now", "Free prize wheel", "Killer deal", "Claim now"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "Latest", "My watchlist"]
+ }
+}

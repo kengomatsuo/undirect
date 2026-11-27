@@ -1,0 +1,302 @@
+{
+ "ar-SA": {
+  "translate": "ترجمة الموقع الإلكتروني…",
+  "hide": "إخفاء العناصر المشتتة للانتباه",
+  "bookmark_to": "إضافة إشارة مرجعية إلى…",
+  "extensions": "إدارة الملحقات"
+ },
+ "bn-BD": {
+  "translate": "ওয়েবসাইট অনুবাদ করুন…",
+  "hide": "মনোযোগ ভঙ্গকারী বিষয়সমূহ লুকান",
+  "bookmark_to": "বুকমার্কে যোগ করুন…",
+  "extensions": "এক্সটেনশন পরিচালনা করুন"
+ },
+ "ca": {
+  "translate": "Tradueix el lloc web…",
+  "hide": "Distraccions ocultes",
+  "bookmark_to": "Afegeix un marcador a…",
+  "extensions": "Gestiona les extensions"
+ },
+ "zh-Hans": {
+  "translate": "翻译网站…",
+  "hide": "隐藏干扰项目",
+  "bookmark_to": "将书签添加到…",
+  "extensions": "管理扩展"
+ },
+ "zh-Hant": {
+  "translate": "翻譯網站⋯",
+  "hide": "隱藏干擾項目",
+  "bookmark_to": "將書籤加入檔案夾⋯",
+  "extensions": "管理延伸功能"
+ },
+ "hr": {
+  "translate": "Prevedi web stranicu…",
+  "hide": "Sakrijte ometajuće stavke",
+  "bookmark_to": "Dodaj knjižnu oznaku u…",
+  "extensions": "Upravljaj ekstenzijama"
+ },
+ "cs": {
+  "translate": "Přeložit webovou stránku…",
+  "hide": "Skrýt rušivé prvky",
+  "bookmark_to": "Přidat záložku do…",
+  "extensions": "Spravovat rozšíření"
+ },
+ "da": {
+  "translate": "Oversæt websted…",
+  "hide": "Skjul forstyrrende emner",
+  "bookmark_to": "Føj bogmærke til…",
+  "extensions": "Administrer udvidelser"
+ },
+ "nl-NL": {
+  "translate": "Vertaal website…",
+  "hide": "Verberg afleidende onderdelen",
+  "bookmark_to": "Voeg bladwijzer toe aan…",
+  "extensions": "Beheer extensies"
+ },
+ "en-AU": {
+  "translate": "Translate Website…",
+  "hide": "Hide Distracting Items",
+  "bookmark_to": "Add Bookmark to…",
+  "extensions": "Manage Extensions"
+ },
+ "en-CA": {
+  "translate": "Translate Website…",
+  "hide": "Hide Distracting Items",
+  "bookmark_to": "Add Bookmark to…",
+  "extensions": "Manage Extensions"
+ },
+ "en-GB": {
+  "translate": "Translate Website…",
+  "hide": "Hide Distracting Items",
+  "bookmark_to": "Add Bookmark to…",
+  "extensions": "Manage Extensions"
+ },
+ "en-US": {
+  "translate": "Translate Website…",
+  "hide": "Hide Distracting Items",
+  "bookmark_to": "Add Bookmark to…",
+  "extensions": "Manage Extensions"
+ },
+ "fi": {
+  "translate": "Käännä sivusto…",
+  "hide": "Kätke häiritsevät elementit",
+  "bookmark_to": "Lisää kirjanmerkki…",
+  "extensions": "Hallitse laajennuksia"
+ },
+ "fr-FR": {
+  "translate": "Traduire le site web…",
+  "hide": "Masquer les éléments gênants",
+  "bookmark_to": "Ajouter un signet à…",
+  "extensions": "Gérer les extensions"
+ },
+ "fr-CA": {
+  "translate": "Traduire le site Web…",
+  "hide": "Masquer les éléments distrayants",
+  "bookmark_to": "Ajouter un signet à…",
+  "extensions": "Gérer les extensions"
+ },
+ "de-DE": {
+  "translate": "Website übersetzen …",
+  "hide": "Ablenkende Objekte ausblenden",
+  "bookmark_to": "Lesezeichen hinzufügen zu …",
+  "extensions": "Erweiterungen verwalten"
+ },
+ "el": {
+  "translate": "Μετάφραση ιστότοπου…",
+  "hide": "Απόκρυψη περισπασμών",
+  "bookmark_to": "Προσθήκη σελιδοδείκτη σε…",
+  "extensions": "Διαχείριση επεκτάσεων"
+ },
+ "gu-IN": {
+  "translate": "વેબસાઇટનો અનુવાદ કરો…",
+  "hide": "ખલેલ પહોંચાડતી આઇટમ છુપાવો",
+  "bookmark_to": "બુકમાર્ક ઉમેરો…",
+  "extensions": "એક્સટેંશન મૅનેજ કરો"
+ },
+ "he": {
+  "translate": "תרגום האתר…",
+  "hide": "הסתרת פריטים שמסיחים את הדעת",
+  "bookmark_to": "הוספת סימניה אל…",
+  "extensions": "ניהול הרחבות"
+ },
+ "hi": {
+  "translate": "वेबसाइट का अनुवाद करें…",
+  "hide": "ध्यान भटकाने वाले आइटम छिपाएँ",
+  "bookmark_to": "इसमें बुकमार्क जोड़ें…",
+  "extensions": "एक्सटेंशन प्रबंधित करें"
+ },
+ "hu": {
+  "translate": "Webhely fordítása…",
+  "hide": "Zavaró elemek elrejtése",
+  "bookmark_to": "Könyvjelző hozzáadása…",
+  "extensions": "Bővítmények kezelése"
+ },
+ "id": {
+  "translate": "Terjemahkan Situs Web…",
+  "hide": "Sembunyikan Item yang Mengganggu",
+  "bookmark_to": "Tambahkan Penanda ke…",
+  "extensions": "Kelola Ekstensi"
+ },
+ "it": {
+  "translate": "Traduci sito web…",
+  "hide": "Nascondi distrazioni",
+  "bookmark_to": "Aggiungi segnalibro a…",
+  "extensions": "Gestisci le estensioni"
+ },
+ "ja": {
+  "translate": "ウェブサイトを翻訳…",
+  "hide": "気をそらす項目を非表示",
+  "bookmark_to": "ブックマークの追加先…",
+  "extensions": "機能拡張を管理"
+ },
+ "kn-IN": {
+  "translate": "ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಅನುವಾದಿಸಿ…",
+  "hide": "ಗಮನವನ್ನು ಬೇರೆಡೆಗೆ ಸೆಳೆಯುವ ಐಟಮ್‌ಗಳನ್ನು ಮರೆಮಾಡಿ",
+  "bookmark_to": "ಇಲ್ಲಿಗೆ ಬುಕ್‌ಮಾರ್ಕ್ ಅನ್ನು ಸೇರಿಸಿ…",
+  "extensions": "ಎಕ್ಸ್‌ಟೆನ್ಶನ್‌ಗಳನ್ನು ನಿರ್ವಹಿಸಿ"
+ },
+ "ko": {
+  "translate": "웹사이트 번역…",
+  "hide": "방해 요소 가리기",
+  "bookmark_to": "북마크를 추가할 폴더…",
+  "extensions": "확장 프로그램 관리"
+ },
+ "ms": {
+  "translate": "Terjemah Tapak Web…",
+  "hide": "Sembunyikan Item Mengganggu Perhatian",
+  "bookmark_to": "Tambah Penanda Buku ke…",
+  "extensions": "Urus Sambungan"
+ },
+ "ml-IN": {
+  "translate": "വെബ്സൈറ്റ് വിവർത്തനം ചെയ്യൂ…",
+  "hide": "ഡിസ്ട്രാക്റ്റ് ചെയ്യുന്ന ഇനങ്ങൾ മറയ്ക്കൂ",
+  "bookmark_to": "ബുക്ക്മാർക്ക് ഇതിലേക്ക് ചേർക്കൂ…",
+  "extensions": "വിപുലീകരണങ്ങൾ മാനേജ് ചെയ്യൂ"
+ },
+ "mr-IN": {
+  "translate": "संकेतस्थळाचे भाषांतर करा…",
+  "hide": "विचलित करणारे आयटम लपवा",
+  "bookmark_to": "ह्यामध्ये बुकमार्क समाविष्ट करा…",
+  "extensions": "एक्सटेंशन मॅनेज करा"
+ },
+ "no": {
+  "translate": "Oversett nettsted…",
+  "hide": "Skjul forstyrrende elementer",
+  "bookmark_to": "Legg til bokmerke i…",
+  "extensions": "Administrer utvidelser"
+ },
+ "or-IN": {
+  "translate": "ୱେବ୍‌ସାଇଟ୍‌କୁ ଅନୁବାଦ କରନ୍ତୁ…",
+  "hide": "ବାଧା ଦେଉଥିବା ଆଇଟମ୍ ଲୁଚାନ୍ତୁ",
+  "bookmark_to": "ଏଥିରେ ବୁକ୍‌ମାର୍କ୍ ଯୋଡ଼ନ୍ତୁ…",
+  "extensions": "ଏକ୍ସ୍‌ଟେନ୍‌ଶନ୍ ପରିଚାଳନା କରନ୍ତୁ"
+ },
+ "pl": {
+  "translate": "Przetłumacz witrynę…",
+  "hide": "Ukryj rozpraszające rzeczy",
+  "bookmark_to": "Dodaj zakładkę do…",
+  "extensions": "Zarządzaj rozszerzeniami"
+ },
+ "pt-BR": {
+  "translate": "Traduzir Site…",
+  "hide": "Ocultar Itens que Distraem",
+  "bookmark_to": "Adicionar Favorito a…",
+  "extensions": "Gerenciar Extensões"
+ },
+ "pt-PT": {
+  "translate": "Traduzir site…",
+  "hide": "Ocultar distrações",
+  "bookmark_to": "Adicionar marcador a…",
+  "extensions": "Gerir extensões"
+ },
+ "pa-IN": {
+  "translate": "ਵੈੱਬਸਾਈਟ ਦਾ ਅਨੁਵਾਦ ਕਰੋ…",
+  "hide": "ਧਿਆਨ-ਭਟਕਾਉਣ ਵਾਲੀਆਂ ਆਈਟਮਾਂ ਲੁਕਾਓ",
+  "bookmark_to": "ਇਸ ਵਿੱਚ ਬੁੱਕਮਾਰਕ ਜੋੜੋ…",
+  "extensions": "ਐਕਸਟੈਂਸ਼ਨਾਂ ਨੂੰ ਪ੍ਰਬੰਧਿਤ ਕਰੋ"
+ },
+ "ro": {
+  "translate": "Traducere site web…",
+  "hide": "Ascundeți articolele care distrag atenția",
+  "bookmark_to": "Adăugați un marcaj în…",
+  "extensions": "Gestionați extensiile"
+ },
+ "ru": {
+  "translate": "Перевести веб-сайт…",
+  "hide": "Скрыть отвлекающие объекты",
+  "bookmark_to": "Добавить закладку в папку…",
+  "extensions": "Управлять расширениями"
+ },
+ "sk": {
+  "translate": "Preložiť webstránku…",
+  "hide": "Skryť rušivé prvky",
+  "bookmark_to": "Pridať záložku do…",
+  "extensions": "Spravovať rozšírenia"
+ },
+ "sl-SI": {
+  "translate": "Prevedi spletno mesto …",
+  "hide": "Skrivanje motečih elementov",
+  "bookmark_to": "Dodaj zaznamek v …",
+  "extensions": "Upravljaj razširitve"
+ },
+ "es-MX": {
+  "translate": "Traducir sitio…",
+  "hide": "Ocultar distracciones",
+  "bookmark_to": "Agregar marcador a…",
+  "extensions": "Administrar extensiones"
+ },
+ "es-ES": {
+  "translate": "Traducir sitio web…",
+  "hide": "Oculta las distracciones",
+  "bookmark_to": "Añadir marcador a…",
+  "extensions": "Gestionar extensiones"
+ },
+ "sv": {
+  "translate": "Översätt webbplats…",
+  "hide": "Göm distraherande objekt",
+  "bookmark_to": "Lägg till bokmärke i…",
+  "extensions": "Hantera tillägg"
+ },
+ "ta-IN": {
+  "translate": "இணையதளத்தை மொழிபெயர்…",
+  "hide": "கவனச்சிதறலை ஏற்படுத்துபவற்றை மறைத்தல்",
+  "bookmark_to": "புக்மார்க்கைச் சேர்…",
+  "extensions": "நீட்டிப்புகளை நிர்வகிக்கவும்"
+ },
+ "te-IN": {
+  "translate": "వెబ్‌సైట్‌ను అనువదించండి…",
+  "hide": "దృష్టి మళ్ళించే ఐటెమ్‌లను దాచండి",
+  "bookmark_to": "బుక్‌మార్క్‌ను దీనికి జోడించండి…",
+  "extensions": "ఎక్స్‌టెన్షన్‌లను నిర్వహించండి"
+ },
+ "th": {
+  "translate": "แปลภาษาเว็บไซต์…",
+  "hide": "ซ่อนรายการที่รบกวน",
+  "bookmark_to": "เพิ่มที่คั่นหน้าไปยัง…",
+  "extensions": "จัดการส่วนขยาย"
+ },
+ "tr": {
+  "translate": "Web Sitesini Çevir…",
+  "hide": "Dikkat Dağıtıcı Öğeleri Gizle",
+  "bookmark_to": "Yer İşaretini Şuraya Ekle…",
+  "extensions": "Genişletmeleri Yönet"
+ },
+ "uk": {
+  "translate": "Перекласти сайт…",
+  "hide": "Приховування елементів, що відволікають",
+  "bookmark_to": "Додати закладку до…",
+  "extensions": "Керувати розширеннями"
+ },
+ "ur-PK": {
+  "translate": "ویب سائٹ کا ترجمہ کریں…",
+  "hide": "توجہ ہٹانے والے آئٹم چھپائیں",
+  "bookmark_to": "اس میں بُک مارک شامل کریں…",
+  "extensions": "اکسٹنشن کا نظم کریں"
+ },
+ "vi": {
+  "translate": "Dịch trang web…",
+  "hide": "Ẩn các mục gây sao lãng",
+  "bookmark_to": "Thêm dấu trang vào…",
+  "extensions": "Quản lý phần mở rộng"
+ }
+}

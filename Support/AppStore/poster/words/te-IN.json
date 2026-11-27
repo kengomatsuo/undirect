@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "ప్లే నొక్కారు,|పాప్అప్ వచ్చింది.", "s": "తర్వాత కొత్త ట్యాబ్. మళ్లీ ఇంకోటి."},
+ "2": {"h": "ఒక్క ట్యాప్‌తో|అంతా బంద్.", "s": "Safari పేజీ మెనూ నుంచి {name} ఆన్ చేయండి."},
+ "2m": {"s": "Safari టూల్‌బార్‌లోని {name} బటన్‌తో ఆన్ చేయండి."},
+ "3": {"h": "మీ ట్యాప్,|మీ ఇష్టం.", "s": "వీడియో ప్లే అవుతుంది. కొత్త ట్యాబ్ రాదు."},
+ "4": {"h": "పట్టుబడ్డ ట్రిక్కులు|అన్నీ జాబితాలో.", "s": "ప్రతి పేజీ ఏం తెరవాలని చూసిందో చూడండి."},
+ "5": {"h": "బ్యాక్ అంటే|వెనక్కే.", "s": "బ్యాక్ బటన్ మిమ్మల్ని మీరు ఉన్న చోటికే తిరిగి తీసుకెళ్తుంది."},
+ "6": {"h": "మీ నియమాలు,|సైట్ వారీగా.", "s": "ఒక సైట్‌లో బ్లాక్ చేయండి, మరో సైట్‌లో అనుమతించండి."},
+ "7": {"h": "ఏదీ బయటికి|వెళ్లదు.", "s": "అకౌంట్ లేదు, ట్రాకింగ్ లేదు, సర్వర్ లేదు."},
+ "8": {"h": "iPhone, iPad|మరియు Mac.", "s": "ఒక్కసారి కొంటే మూడింట్లోనూ పనిచేస్తుంది.", "f": "అకౌంట్ లేదు, సబ్‌స్క్రిప్షన్ లేదు."},
+ "ads": ["మీరు గెలిచారు!", "ఇక్కడ క్లిక్ చేయండి", "డౌన్‌లోడ్", "ఫ్రీ స్పిన్స్", "బంపర్ ఆఫర్", "ఇప్పుడే పొందండి"],
+ "film": {"title": "రాత్రి పడవ", "meta": "2026 · 1 గం 48 ని · థ్రిల్లర్"},
+ "site_nav": ["సినిమాలు", "సిరీస్", "కొత్తవి", "నా లిస్ట్"],
+ "_bt": {
+  "1": {"h": "You pressed play,|a pop-up came.", "s": "Then a new tab. Then another one again."},
+  "2": {"h": "With one tap|it all shuts.", "s": "Turn on {name} from Safari's page menu."},
+  "2m": {"s": "Turn it on with the {name} button in Safari's toolbar."},
+  "3": {"h": "Your tap,|your choice.", "s": "The video plays. No new tab comes."},
+  "4": {"h": "Tricks caught,|all in a list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back means|backwards.", "s": "The Back button takes you back to the very place you were."},
+  "6": {"h": "Your rules,|site-wise.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing goes|out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once and it works on all three.", "f": "No account, no subscription."},
+  "ads": ["You won!", "Click here", "Download", "Free spins", "Bumper offer", "Get it now"],
+  "film": {"title": "Night Boat", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

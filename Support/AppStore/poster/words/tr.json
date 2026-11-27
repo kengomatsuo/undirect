@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Oynat dedin,|reklam çıktı.", "s": "Sonra yeni bir sekme. Sonra bir tane daha."},
+ "2": {"h": "Tek dokunuş,|dert biter.", "s": "{name}'i Safari'nin sayfa menüsünden aç."},
+ "3": {"h": "Bastığın yer|açılır.", "s": "Video oynar. Yeni sekme açılmaz."},
+ "4": {"h": "Her numara|listede.", "s": "Her sayfanın neyi açmaya çalıştığını gör."},
+ "5": {"h": "Geri dedin mi,|geri.", "s": "Geri düğmesi seni geldiğin sayfaya götürür."},
+ "6": {"h": "Her siteye|kendi kuralı.", "s": "Bir sitede engelle, ötekinde izin ver."},
+ "7": {"h": "Hiçbir şey|sızmaz.", "s": "Hesap yok, takip yok, sunucu yok."},
+ "8": {"h": "iPhone, iPad|ve Mac.", "s": "Bir kez al, üçünde de kullan.", "f": "Hesap yok, abonelik yok."},
+ "ads": ["KAZANDINIZ!", "BURAYA TIKLA", "İNDİR", "BEDAVA SPİN", "SÜPER FIRSAT", "ÖDÜLÜNÜ AL"],
+ "film": {"title": "Son Vapur", "meta": "2026 · 1 sa 48 dk · Gerilim"},
+ "site_nav": ["Filmler", "Diziler", "Yeni", "Listem"],
+ "2m": {"s": "{name}'i Safari araç çubuğundaki düğmesiyle aç."},
+ "_bt": {
+  "1": {"h": "You said play,|an ad came up.", "s": "Then a new tab. Then one more."},
+  "2": {"h": "One tap,|the trouble ends.", "s": "Turn on {name} from Safari's page menu."},
+  "3": {"h": "What you pressed|is what opens.", "s": "The video plays. No new tab opens."},
+  "4": {"h": "Every trick|on the list.", "s": "See what each page tried to open."},
+  "5": {"h": "You say back,|it's back.", "s": "The Back button takes you to the page you came from."},
+  "6": {"h": "Each site|its own rule.", "s": "Block it on one site, allow it on the other."},
+  "7": {"h": "Nothing|leaks.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once, use it on all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SUPER DEAL", "CLAIM YOUR PRIZE"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"],
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."}
+ }
+}

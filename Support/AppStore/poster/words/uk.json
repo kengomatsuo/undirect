@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Тиснеш «плей».|Лізе реклама.", "s": "Потім нова вкладка. І ще одна."},
+ "2": {"h": "Один дотик —|і все.", "s": "Увімкніть {name} у меню сторінки Safari."},
+ "3": {"h": "Ваш дотик —|лише ваш.", "s": "Відео грає. Нових вкладок немає."},
+ "4": {"h": "Усі хитрощі —|у списку.", "s": "Дивіться, що намагалася відкрити кожна сторінка."},
+ "5": {"h": "«Назад»|веде назад.", "s": "Кнопка «Назад» повертає туди, де ви були."},
+ "6": {"h": "Кожному сайту —|свої правила.", "s": "Заблокуйте на одному сайті, дозвольте на іншому."},
+ "7": {"h": "Нічого|не витікає.", "s": "Без акаунта, стеження й серверів."},
+ "8": {"h": "iPhone, iPad|і Mac.", "s": "Одна покупка — для всіх трьох.", "f": "Без акаунта й підписки."},
+ "ads": ["ВИ ВИГРАЛИ!", "ТИСНИ ТУТ", "ЗАВАНТАЖИТИ", "ФРІСПІНИ", "СУПЕРЦІНА", "ЗАБРАТИ ПРИЗ"],
+ "film": {"title": "Нічна переправа", "meta": "2026 · 1 год 48 хв · Трилер"},
+ "site_nav": ["Фільми", "Серіали", "Новинки", "Мій список"],
+ "2m": {"s": "Увімкніть {name} кнопкою на панелі інструментів Safari."},
+ "_bt": {
+  "1": {"h": "You hit \"play\".|An ad crawls out.", "s": "Then a new tab. And another one."},
+  "2": {"h": "One touch —|and that's it.", "s": "Turn on {name} in Safari's page menu."},
+  "3": {"h": "Your touch —|yours alone.", "s": "The video plays. No new tabs."},
+  "4": {"h": "All the tricks —|in a list.", "s": "See what each page tried to open."},
+  "5": {"h": "\"Back\"|takes you back.", "s": "The \"Back\" button returns you to where you were."},
+  "6": {"h": "Each site —|its own rules.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing|leaks out.", "s": "No account, no tracking, no servers."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase — for all three.", "f": "No account and no subscription."},
+  "ads": ["YOU WON!", "PRESS HERE", "DOWNLOAD", "FREE SPINS", "SUPER PRICE", "CLAIM THE PRIZE"],
+  "film": {"title": "Night Crossing", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New releases", "My list"],
+  "2m": {"s": "Turn on {name} with its button on Safari's toolbar."}
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Klik w play.|A tu popup.", "s": "Potem nowa karta. I kolejna."},
+ "2": {"h": "Jeden klik|i po sprawie.", "s": "Włącz {name} w menu strony w Safari."},
+ "2m": {"s": "Włącz {name} przyciskiem na pasku narzędzi Safari."},
+ "3": {"h": "Trafiasz tam,|gdzie chcesz.", "s": "Film leci. Żadnej nowej karty."},
+ "4": {"h": "Każdy trik|na liście.", "s": "Zobacz, co każda strona próbowała otworzyć."},
+ "5": {"h": "Wstecz to|wstecz.", "s": "Przycisk Wstecz wraca do poprzedniej strony."},
+ "6": {"h": "Każda strona,|twoje zasady.", "s": "Zablokuj na jednej stronie, zezwól na innej."},
+ "7": {"h": "Dane zostają|u ciebie.", "s": "Bez konta, bez śledzenia, bez serwera."},
+ "8": {"h": "iPhone, iPad|i Mac.", "s": "Jeden zakup na wszystkie trzy.", "f": "Bez konta, bez subskrypcji."},
+ "ads": ["WYGRAŁEŚ!", "KLIKNIJ TUTAJ", "POBIERZ", "DARMOWE SPINY", "SUPER OKAZJA", "ODBIERZ TERAZ"],
+ "film": {"title": "Ostatni prom", "meta": "2026 · 1 godz. 48 min · Thriller"},
+ "site_nav": ["Filmy", "Seriale", "Nowości", "Moja lista"],
+ "_bt": {
+  "1": {"h": "Click on play.|And here's a pop-up.", "s": "Then a new tab. And another one."},
+  "2": {"h": "One click|and it's over.", "s": "Turn on {name} in the page menu in Safari."},
+  "2m": {"s": "Turn on {name} with the button on Safari's toolbar."},
+  "3": {"h": "You land|where you want.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick|on the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back is|back.", "s": "The Back button returns to the previous page."},
+  "6": {"h": "Each site,|your rules.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Your data stays|with you.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SUPER BARGAIN", "CLAIM NOW"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 hr 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

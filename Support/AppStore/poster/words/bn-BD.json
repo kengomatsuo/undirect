@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "প্লে চাপলেন,|পপআপ এল।", "s": "তারপর নতুন ট্যাব। তারপর আরেকটা।"},
+ "2": {"h": "এক চাপে|সব বন্ধ।", "s": "Safari-র পেজ মেনু থেকে {name} চালু করুন।"},
+ "2m": {"s": "Safari-র টুলবারে {name}-এর বোতাম চেপে চালু করুন।"},
+ "3": {"h": "ট্যাপ আপনার,|ইচ্ছাও আপনার।", "s": "ভিডিও চলে। নতুন ট্যাব খোলে না।"},
+ "4": {"h": "ধরা পড়ল সব,|এক তালিকায়।", "s": "দেখুন কোন পাতা কী খুলতে চেয়েছিল।"},
+ "5": {"h": "ব্যাক মানে|পেছনে।", "s": "ব্যাক বাটন আপনাকে আগের জায়গাতেই ফিরিয়ে নেয়।"},
+ "6": {"h": "আপনার নিয়ম,|সাইট ধরে ধরে।", "s": "এক সাইটে ব্লক করুন, অন্য সাইটে অনুমতি দিন।"},
+ "7": {"h": "কিছুই বাইরে|যায় না।", "s": "অ্যাকাউন্ট নেই, ট্র্যাকিং নেই, সার্ভার নেই।"},
+ "8": {"h": "iPhone, iPad|আর Mac।", "s": "একবার কিনলেই তিনটিতেই চলে।", "f": "অ্যাকাউন্ট নেই, সাবস্ক্রিপশন নেই।"},
+ "ads": ["আপনি জিতেছেন!", "এখানে ক্লিক করুন", "ডাউনলোড", "ফ্রি স্পিন", "দারুণ অফার", "এখনই নিন"],
+ "film": {"title": "রাতের খেয়া", "meta": "২০২৬ · ১ ঘণ্টা ৪৮ মিনিট · থ্রিলার"},
+ "site_nav": ["সিনেমা", "সিরিজ", "নতুন", "আমার তালিকা"],
+ "_bt": {
+  "1": {"h": "You pressed play,|a pop-up came.", "s": "Then a new tab. Then another."},
+  "2": {"h": "One press,|all stopped.", "s": "Turn on {name} from Safari's page menu."},
+  "2m": {"s": "Turn it on by pressing {name}'s button in Safari's toolbar."},
+  "3": {"h": "The tap is yours,|so is the choice.", "s": "The video plays. No new tab opens."},
+  "4": {"h": "All caught,|in one list.", "s": "See what each page wanted to open."},
+  "5": {"h": "Back means|back.", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing goes|out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once and it runs on all three.", "f": "No account, no subscription."},
+  "ads": ["You won!", "Click here", "Download", "Free spin", "Great offer", "Take it now"],
+  "film": {"title": "The Night Ferry", "meta": "2026 · 1 hour 48 minutes · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

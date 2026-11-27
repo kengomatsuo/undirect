@@ -12,6 +12,10 @@ What is done, what needs an Apple account, and one judgement call.
   required-reason API the app touches: `UserDefaults` under `CA92.1`, which backs
   the flag remembering the welcome screen was shown.
 - App icon is a square, unmasked 1024 in the asset catalog, plus the macOS sizes.
+- Screenshots and banners (2026-11-27, UND-SHOTS): one picture across every frame, in the system of Cutling's main
+  store page, built by `Support/AppStore/poster/` (its README has every command): 8 iPhone, 8 iPad, 8 + 8 iPhone Duo
+  and 5 Mac frames plus a 5244 x 2950 banner, in all 50 languages, each language's popup, Safari menu and app name
+  in its own words; `poster/upload.py` uploads and reads every set back by checksum. What follows is the set it replaced.
 - Screenshots (2026-10-01, per `docs/aso/research.md`): five frames on iPhone 6.9"
   1320x2868, iPad 13" 2064x2752 and Mac 2880x1800, in all 50 locales. Frame 1 is the
   search words ("Popup blocker for Safari") over a smaller promise line; 2 the page menu

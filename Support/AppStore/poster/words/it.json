@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Premi play.|Popup.", "s": "Poi un’altra scheda. E un’altra ancora."},
+ "2": {"h": "Un tocco|e basta.", "s": "Attiva {name} dal menu della pagina di Safari."},
+ "2m": {"s": "Attiva {name} con il suo pulsante nella barra degli strumenti di Safari."},
+ "3": {"h": "Il tuo tocco|resta tuo.", "s": "Il video parte. Nessuna nuova scheda."},
+ "4": {"h": "Ogni trucco,|in lista.", "s": "Vedi cosa ha provato ad aprire ogni pagina."},
+ "5": {"h": "Indietro è|indietro.", "s": "Il tasto Indietro ti riporta dov’eri."},
+ "6": {"h": "Decidi tu,|sito per sito.", "s": "Blocca su un sito, consenti su un altro."},
+ "7": {"h": "Non esce|niente.", "s": "Niente account, niente tracciamento, niente server."},
+ "8": {"h": "iPhone, iPad|e Mac.", "s": "Un solo acquisto per tutti e tre.", "f": "Niente account, niente abbonamento."},
+ "ads": ["HAI VINTO!", "CLICCA QUI", "SCARICA", "GIRI GRATIS", "SUPER AFFARE", "RISCATTA ORA"],
+ "film": {"title": "L’ultimo traghetto", "meta": "2026 · 1 h 48 min · Thriller"},
+ "site_nav": ["Film", "Serie TV", "Novità", "La mia lista"],
+ "_bt": {
+  "1": {"h": "Press play.|Pop-up.", "s": "Then another tab. And yet another."},
+  "2": {"h": "One tap|and that's it.", "s": "Turn on {name} from Safari's page menu."},
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."},
+  "3": {"h": "Your tap|stays yours.", "s": "The video starts. No new tab."},
+  "4": {"h": "Every trick,|listed.", "s": "See what each page tried to open."},
+  "5": {"h": "Back is|back.", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "You decide,|site by site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Nothing|gets out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "A single purchase for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SUPER DEAL", "REDEEM NOW"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "TV Series", "New", "My list"]
+ }
+}

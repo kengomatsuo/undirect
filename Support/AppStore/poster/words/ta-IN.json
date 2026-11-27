@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "ப்ளே தட்டினால்|பாப்அப்!", "s": "பிறகு புதிய டேப். பிறகு இன்னொன்று."},
+ "2": {"h": "ஒரே தட்டல்,|தொல்லை தீர்ந்தது.", "s": "Safari-யின் பக்க மெனுவில் {name} இயக்குங்கள்."},
+ "2m": {"s": "Safari கருவிப்பட்டியில் {name} பொத்தானை அழுத்தி இயக்குங்கள்."},
+ "3": {"h": "உங்கள் தட்டல்,|உங்கள் விருப்பம்.", "s": "வீடியோ ஓடும். புதிய டேப் இல்லை."},
+ "4": {"h": "சிக்கிய தந்திரங்கள்|பட்டியலில்.", "s": "ஒவ்வொரு பக்கமும் எதைத் திறக்க முயன்றது எனப் பாருங்கள்."},
+ "5": {"h": "பேக் என்றால்|பின்னால்.", "s": "பேக் பட்டன் நீங்கள் இருந்த இடத்துக்கே திருப்பி அழைத்துச் செல்லும்."},
+ "6": {"h": "உங்கள் விதிகள்,|தளம் தளமாக.", "s": "ஒரு தளத்தில் தடுங்கள், இன்னொன்றில் அனுமதியுங்கள்."},
+ "7": {"h": "எதுவும் வெளியே|போகாது.", "s": "கணக்கு இல்லை, டிராக்கிங் இல்லை, சர்வர் இல்லை."},
+ "8": {"h": "iPhone, iPad|மற்றும் Mac.", "s": "ஒருமுறை வாங்கினால் மூன்றிலும் இயங்கும்.", "f": "கணக்கு இல்லை, சந்தா இல்லை."},
+ "ads": ["நீங்கள் வென்றீர்கள்!", "இங்கே கிளிக் செய்க", "பதிவிறக்கு", "இலவச ஸ்பின்", "அதிரடி ஆஃபர்", "இப்போதே பெறுங்கள்"],
+ "film": {"title": "இரவுப் படகு", "meta": "2026 · 1 ம 48 நி · த்ரில்லர்"},
+ "site_nav": ["திரைப்படங்கள்", "தொடர்கள்", "புதியவை", "என் பட்டியல்"],
+ "_bt": {
+  "1": {"h": "Tap play,|pop-up!", "s": "Then a new tab. Then another."},
+  "2": {"h": "One tap,|the nuisance is over.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Press the {name} button in Safari's toolbar to turn it on."},
+  "3": {"h": "Your tap,|your choice.", "s": "The video plays. No new tab."},
+  "4": {"h": "Tricks caught,|in a list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back means|backwards.", "s": "The Back button takes you back to the very place you were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing goes|out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once and it runs on all three.", "f": "No account, no subscription."},
+  "ads": ["You have won!", "Click here", "Download", "Free spin", "Blockbuster offer", "Get it right now"],
+  "film": {"title": "The Night Boat", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

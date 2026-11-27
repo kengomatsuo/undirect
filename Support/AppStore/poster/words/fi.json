@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Painat play.|Tulee popup.", "s": "Sitten uusi välilehti. Ja taas uusi."},
+ "2": {"h": "Napautus,|ja se loppuu.", "s": "Laita {name} päälle Safarin sivuvalikosta."},
+ "2m": {"s": "Laita {name} päälle sen painikkeesta Safarin työkalupalkissa."},
+ "3": {"h": "Napautus|osuu oikeaan.", "s": "Video pyörii. Ei uutta välilehteä."},
+ "4": {"h": "Kaikki kikat|listalla.", "s": "Näet, mitä kukin sivu yritti avata."},
+ "5": {"h": "Takaisin on|takaisin.", "s": "Takaisin-painike vie sinut sinne, missä olit."},
+ "6": {"h": "Omat säännöt|joka sivulle.", "s": "Estä yhdellä sivustolla, salli toisella."},
+ "7": {"h": "Kaikki pysyy|sinulla.", "s": "Ei tiliä, ei seurantaa, ei palvelinta."},
+ "8": {"h": "iPhone, iPad|ja Mac.", "s": "Yksi ostos kattaa kaikki kolme.", "f": "Ei tiliä, ei tilausta."},
+ "ads": ["VOITIT!", "KLIKKAA TÄSTÄ", "LATAA", "ILMAISKIERROKSIA", "SUPERTARJOUS", "LUNASTA NYT"],
+ "film": {"title": "Viimeinen lautta", "meta": "2026 · 1 t 48 min · Trilleri"},
+ "site_nav": ["Elokuvat", "Sarjat", "Uutta", "Oma lista"],
+ "_bt": {
+  "1": {"h": "You press play.|A pop-up comes.", "s": "Then a new tab. And another new one."},
+  "2": {"h": "One tap,|and it stops.", "s": "Turn {name} on from Safari's page menu."},
+  "2m": {"s": "Turn {name} on from its button in Safari's toolbar."},
+  "3": {"h": "Your tap|hits the right thing.", "s": "The video plays. No new tab."},
+  "4": {"h": "All the tricks|on the list.", "s": "You see what each page tried to open."},
+  "5": {"h": "Back is|back.", "s": "The Back button takes you to where you were."},
+  "6": {"h": "Your own rules|for every site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Everything stays|with you.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase covers all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SUPER DEAL", "CLAIM NOW"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

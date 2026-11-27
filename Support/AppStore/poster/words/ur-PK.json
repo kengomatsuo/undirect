@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "پلے دبایا،|پاپ اپ کھل گیا۔", "s": "پھر نیا ٹیب۔ پھر ایک اور۔"},
+ "2": {"h": "ایک ٹیپ،|اور بس!", "s": "Safari کے صفحے کے مینو سے {name} آن کریں۔"},
+ "3": {"h": "آپ کا ٹیپ،|آپ کی مرضی۔", "s": "ویڈیو چلتی ہے۔ کوئی نیا ٹیب نہیں کھلتا۔"},
+ "4": {"h": "ہر چال|فہرست میں۔", "s": "دیکھیں ہر صفحے نے کیا کھولنا چاہا۔"},
+ "5": {"h": "پیچھے کا مطلب|پیچھے۔", "s": "بیک بٹن آپ کو وہیں لے جاتا ہے جہاں آپ تھے۔"},
+ "6": {"h": "آپ کے اصول،|سائٹ بہ سائٹ۔", "s": "ایک سائٹ پر بلاک کریں، دوسری پر اجازت دیں۔"},
+ "7": {"h": "کچھ بھی|باہر نہیں جاتا۔", "s": "نہ اکاؤنٹ، نہ ٹریکنگ، نہ سرور۔"},
+ "8": {"h": "iPhone، iPad|اور Mac", "s": "ایک خریداری، تینوں پر۔", "f": "نہ اکاؤنٹ، نہ سبسکرپشن۔"},
+ "ads": ["آپ جیت گئے!", "یہاں کلک کریں", "ڈاؤن لوڈ", "مفت اسپن", "زبردست ڈیل", "ابھی حاصل کریں"],
+ "film": {"title": "رات کی کشتی", "meta": "2026 · 1 گھنٹہ 48 منٹ · تھرلر"},
+ "site_nav": ["فلمیں", "سیریز", "نیا", "میری فہرست"],
+ "2m": {"s": "Safari کے ٹول بار میں موجود بٹن سے {name} آن کریں۔"},
+ "_bt": {
+  "1": {"h": "Pressed play,|a pop-up opened.", "s": "Then a new tab. Then one more."},
+  "2": {"h": "One tap,|and that's it!", "s": "Turn on {name} from Safari's page menu."},
+  "3": {"h": "Your tap,|your call.", "s": "The video plays. No new tab opens."},
+  "4": {"h": "Every trick|in the list.", "s": "See what each page wanted to open."},
+  "5": {"h": "Back means|back.", "s": "The Back button takes you right where you were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Nothing|goes out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac", "s": "One purchase, on all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "AMAZING DEAL", "GET IT NOW"],
+  "film": {"title": "The Night Boat", "meta": "2026 · 1 hour 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"],
+  "2m": {"s": "Turn on {name} with the button in Safari's toolbar."}
+ }
+}

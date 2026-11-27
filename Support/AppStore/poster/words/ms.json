@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Nak tonton,|popup pula.", "s": "Kemudian tab baharu. Dan satu lagi. Dan lagi."},
+ "2": {"h": "Sekali tekan,|terus henti.", "s": "Hidupkan {name} dalam menu halaman Safari."},
+ "2m": {"s": "Hidupkan {name} dengan butangnya pada bar alat Safari."},
+ "3": {"h": "Tekan apa,|dapat itu.", "s": "Video dimainkan. Tiada tab baharu."},
+ "4": {"h": "Setiap helah|tersenarai.", "s": "Lihat apa yang cuba dibuka oleh setiap halaman."},
+ "5": {"h": "Kembali tetap|kembali.", "s": "Butang Kembali membawa anda ke tempat tadi."},
+ "6": {"h": "Aturan anda,|ikut laman.", "s": "Sekat di satu laman, benarkan di laman lain."},
+ "7": {"h": "Tiada apa|yang bocor.", "s": "Tiada akaun, tiada penjejakan, tiada pelayan."},
+ "8": {"h": "iPhone, iPad|dan Mac.", "s": "Sekali beli, untuk ketiga-tiganya.", "f": "Tiada akaun, tiada langganan."},
+ "ads": ["ANDA MENANG!", "KLIK SINI", "MUAT TURUN", "SPIN PERCUMA", "HARGA GILA", "TUNTUT SEKARANG"],
+ "film": {"title": "Feri Tengah Malam", "meta": "2026 · 1 jam 48 min · Saspens"},
+ "site_nav": ["Filem", "Siri", "Baharu", "Senarai Saya"],
+ "_bt": {
+  "1": {"h": "You want to watch,|a pop-up instead.", "s": "Then a new tab. And another. And more."},
+  "2": {"h": "One press,|it stops right away.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Turn on {name} with its button on Safari's toolbar."},
+  "3": {"h": "What you tap|is what you get.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick|listed.", "s": "See what each page tried to open."},
+  "5": {"h": "Back still means|back.", "s": "The Back button takes you to where you just were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Nothing|leaks.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once, for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "CRAZY PRICE", "CLAIM NOW"],
+  "film": {"title": "Midnight Ferry", "meta": "2026 · 1 hr 48 min · Suspense"},
+  "site_nav": ["Films", "Series", "New", "My List"]
+ }
+}

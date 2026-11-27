@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "تضغط تشغيل،|يقفز إعلان.", "s": "ثم علامة تبويب جديدة، ثم أخرى."},
+ "2": {"h": "ضغطة واحدة|وينتهي الأمر.", "s": "فعّل {name} من قائمة الصفحة في Safari."},
+ "3": {"h": "نقرتك|تصيب هدفها.", "s": "يعمل الفيديو، ولا تُفتح علامة تبويب جديدة."},
+ "4": {"h": "كل حيلة|في القائمة.", "s": "اعرف ما حاولت كل صفحة فتحه."},
+ "5": {"h": "رجوع|يعني رجوع.", "s": "زر الرجوع يعيدك إلى حيث كنت."},
+ "6": {"h": "قواعدك أنت|لكل موقع.", "s": "احجبه في موقع، واسمح به في آخر."},
+ "7": {"h": "لا شيء|يغادر جهازك.", "s": "بلا حساب، بلا تتبّع، بلا خادم."},
+ "8": {"h": "iPhone وiPad|وMac.", "s": "شراء واحد يكفي للأجهزة الثلاثة.", "f": "بلا حساب ولا اشتراك."},
+ "ads": ["مبروك ربحت!", "اضغط هنا", "تحميل", "لفّات مجانية", "عرض ناري", "استلم جائزتك"],
+ "film": {"title": "مرفأ الليل", "meta": "2026 · 1 س 48 د · إثارة"},
+ "site_nav": ["أفلام", "مسلسلات", "جديد", "قائمتي"],
+ "2m": {"s": "فعّل {name} من زرّه في شريط أدوات Safari."},
+ "_bt": {
+  "1": {"h": "You press play,|an ad jumps out.", "s": "Then a new tab, then another."},
+  "2": {"h": "One press|and it's over.", "s": "Turn on {name} from the page menu in Safari."},
+  "3": {"h": "Your tap|hits its target.", "s": "The video plays, and no new tab opens."},
+  "4": {"h": "Every trick|in the list.", "s": "Know what each page tried to open."},
+  "5": {"h": "Back|means back.", "s": "The Back button returns you to where you were."},
+  "6": {"h": "Your own rules|for each site.", "s": "Block it on one site and allow it on another."},
+  "7": {"h": "Nothing|leaves your device.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone and iPad|and Mac.", "s": "One purchase is enough for all three devices.", "f": "No account and no subscription."},
+  "ads": ["CONGRATS, YOU WON!", "PRESS HERE", "DOWNLOAD", "FREE SPINS", "FIERY OFFER", "COLLECT YOUR PRIZE"],
+  "film": {"title": "Harbour of the Night", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"],
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."}
+ }
+}

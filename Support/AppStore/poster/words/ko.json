@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "재생 눌렀더니|팝업이 떴다", "s": "새 탭이 또 열리고, 또 열리고."},
+ "2": {"h": "한 번 누르면|뚝 멈춘다", "s": "Safari 페이지 메뉴에서 {name}를 켜세요."},
+ "2m": {"s": "Safari 도구 막대에서 {name} 버튼을 누르세요."},
+ "3": {"h": "내 터치는|내 뜻대로", "s": "영상은 그대로 재생, 새 탭은 열리지 않아요."},
+ "4": {"h": "잡아낸 수법,|전부 목록에", "s": "페이지마다 무엇을 열려 했는지 확인하세요."},
+ "5": {"h": "뒤로 가기는|진짜 뒤로", "s": "뒤로 가기 버튼을 누르면 보던 곳으로 돌아가요."},
+ "6": {"h": "사이트마다|내 규칙대로", "s": "이 사이트에선 차단, 저 사이트에선 허용."},
+ "7": {"h": "아무것도|새지 않아요", "s": "계정 없음, 추적 없음, 서버 없음."},
+ "8": {"h": "iPhone, iPad|그리고 Mac", "s": "한 번 구매로 세 기기 모두에서.", "f": "계정도, 구독도 필요 없어요."},
+ "ads": ["당첨되셨습니다!", "여기를 클릭", "다운로드", "무료 스핀", "초특가", "지금 받기"],
+ "film": {"title": "밤의 항구", "meta": "2026 · 1시간 48분 · 스릴러"},
+ "site_nav": ["영화", "시리즈", "신작", "내 목록"],
+ "_bt": {
+  "1": {"h": "I pressed play|and a pop-up showed up", "s": "A new tab opens again, and again."},
+  "2": {"h": "Press once|and it stops dead", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Press the {name} button in Safari's toolbar."},
+  "3": {"h": "My touch|does what I mean", "s": "The video plays as is; no new tab opens."},
+  "4": {"h": "The tricks it caught,|all in a list", "s": "Check what each page tried to open."},
+  "5": {"h": "Back|really means back", "s": "Press the Back button and you return to where you were."},
+  "6": {"h": "Site by site,|by my rules", "s": "Block on this site, allow on that one."},
+  "7": {"h": "Nothing|leaks out", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac", "s": "One purchase, on all three devices.", "f": "No account, no subscription needed."},
+  "ads": ["You've won!", "Click here", "Download", "Free spins", "Super deal", "Get it now"],
+  "film": {"title": "Harbor at Night", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New releases", "My list"]
+ }
+}

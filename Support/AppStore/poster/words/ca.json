@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Prems play.|Pop-up.", "s": "I després una altra pestanya. I una altra."},
+ "2": {"h": "Un toc|i prou.", "s": "Activa {name} al menú de la pàgina del Safari."},
+ "2m": {"s": "Activa {name} amb el seu botó de la barra d’eines del Safari."},
+ "3": {"h": "El teu toc|és teu.", "s": "El vídeo comença. Cap pestanya nova."},
+ "4": {"h": "Cada trampa,|a la llista.", "s": "Mira què ha intentat obrir cada pàgina."},
+ "5": {"h": "Enrere vol|dir enrere.", "s": "El botó Enrere et torna allà on eres."},
+ "6": {"h": "Tu manes,|lloc a lloc.", "s": "Bloqueja-ho en un lloc i permet-ho en un altre."},
+ "7": {"h": "Res no surt|d’aquí.", "s": "Sense compte, sense rastreig, sense servidor."},
+ "8": {"h": "iPhone, iPad|i Mac.", "s": "Una sola compra per als tres.", "f": "Sense compte ni subscripció."},
+ "ads": ["HAS GUANYAT!", "CLICA AQUÍ", "DESCARREGA", "TIRADES GRATIS", "GANGA!", "RECLAMA-HO"],
+ "film": {"title": "Port de nit", "meta": "2026 · 1 h 48 min · Thriller"},
+ "site_nav": ["Pel·lícules", "Sèries", "Novetats", "La meva llista"],
+ "_bt": {
+  "1": {"h": "You press play.|Pop-up.", "s": "And then another tab. And another."},
+  "2": {"h": "One tap|and that's enough.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."},
+  "3": {"h": "Your tap|is yours.", "s": "The video starts. No new tab."},
+  "4": {"h": "Every trap,|on the list.", "s": "See what each page has tried to open."},
+  "5": {"h": "Back|means back.", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "You're the boss,|site by site.", "s": "Block it on one site and allow it on another."},
+  "7": {"h": "Nothing leaves|here.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "A single purchase for all three.", "f": "No account or subscription."},
+  "ads": ["YOU'VE WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "BARGAIN!", "CLAIM IT"],
+  "film": {"title": "Night Harbour", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New releases", "My list"]
+ }
+}

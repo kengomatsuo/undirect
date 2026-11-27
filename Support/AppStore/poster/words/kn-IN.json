@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "ಪ್ಲೇ ಒತ್ತಿದರೆ|ಪಾಪ್‌ಅಪ್!", "s": "ನಂತರ ಹೊಸ ಟ್ಯಾಬ್. ಮತ್ತೆ ಇನ್ನೊಂದು."},
+ "2": {"h": "ಒಂದೇ ಟ್ಯಾಪ್,|ಕಾಟ ಬಂದ್.", "s": "Safari ಯ ಪುಟ ಮೆನುವಿನಿಂದ {name} ಆನ್ ಮಾಡಿ."},
+ "2m": {"s": "Safari ಟೂಲ್‌ಬಾರ್‌ನಲ್ಲಿ {name} ಬಟನ್ ಒತ್ತಿ ಆನ್ ಮಾಡಿ."},
+ "3": {"h": "ನಿಮ್ಮ ಟ್ಯಾಪ್,|ನಿಮ್ಮ ಇಷ್ಟ.", "s": "ವೀಡಿಯೊ ಪ್ಲೇ ಆಗುತ್ತದೆ. ಹೊಸ ಟ್ಯಾಬ್ ಇಲ್ಲ."},
+ "4": {"h": "ಹಿಡಿದ ಕುತಂತ್ರ,|ಎಲ್ಲವೂ ಪಟ್ಟಿಯಲ್ಲಿ.", "s": "ಪ್ರತಿ ಪುಟ ಏನು ತೆರೆಯಲು ಯತ್ನಿಸಿತು, ನೋಡಿ."},
+ "5": {"h": "ಬ್ಯಾಕ್ ಅಂದರೆ|ಹಿಂದಕ್ಕೆ.", "s": "ಬ್ಯಾಕ್ ಬಟನ್ ನಿಮ್ಮನ್ನು ನೀವು ಇದ್ದಲ್ಲಿಗೇ ಮರಳಿಸುತ್ತದೆ."},
+ "6": {"h": "ನಿಮ್ಮ ನಿಯಮ,|ಸೈಟ್‌ಗೊಂದು.", "s": "ಒಂದು ಸೈಟ್‌ನಲ್ಲಿ ಬ್ಲಾಕ್ ಮಾಡಿ, ಇನ್ನೊಂದರಲ್ಲಿ ಅನುಮತಿಸಿ."},
+ "7": {"h": "ಏನೂ ಹೊರಗೆ|ಹೋಗುವುದಿಲ್ಲ.", "s": "ಖಾತೆ ಇಲ್ಲ, ಟ್ರ್ಯಾಕಿಂಗ್ ಇಲ್ಲ, ಸರ್ವರ್ ಇಲ್ಲ."},
+ "8": {"h": "iPhone, iPad|ಮತ್ತು Mac.", "s": "ಒಮ್ಮೆ ಖರೀದಿಸಿ, ಮೂರರಲ್ಲೂ ಬಳಸಿ.", "f": "ಖಾತೆ ಇಲ್ಲ, ಚಂದಾದಾರಿಕೆ ಇಲ್ಲ."},
+ "ads": ["ನೀವು ಗೆದ್ದಿದ್ದೀರಿ!", "ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ", "ಡೌನ್‌ಲೋಡ್", "ಫ್ರೀ ಸ್ಪಿನ್", "ಭರ್ಜರಿ ಆಫರ್", "ಈಗಲೇ ಪಡೆಯಿರಿ"],
+ "film": {"title": "ರಾತ್ರಿ ದೋಣಿ", "meta": "2026 · 1 ಗಂ 48 ನಿ · ಥ್ರಿಲ್ಲರ್"},
+ "site_nav": ["ಸಿನಿಮಾ", "ಸೀರೀಸ್", "ಹೊಸದು", "ನನ್ನ ಪಟ್ಟಿ"],
+ "_bt": {
+  "1": {"h": "Press play,|pop-up!", "s": "Then a new tab. Then another again."},
+  "2": {"h": "Just one tap,|the nuisance stops.", "s": "Turn on {name} from Safari's page menu."},
+  "2m": {"s": "Press the {name} button in Safari's toolbar and turn it on."},
+  "3": {"h": "Your tap,|your choice.", "s": "The video plays. No new tab."},
+  "4": {"h": "Tricks caught,|all in the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back means|backwards.", "s": "The Back button returns you right to where you were."},
+  "6": {"h": "Your rules,|one for each site.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing goes|out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once, use it on all three.", "f": "No account, no subscription."},
+  "ads": ["You have won!", "Click here", "Download", "Free spin", "Bumper offer", "Get it right now"],
+  "film": {"title": "Night Boat", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

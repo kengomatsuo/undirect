@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "กดเล่นปุ๊บ|ป๊อปอัปเด้งปั๊บ", "s": "แล้วแท็บใหม่ก็เปิดขึ้น เปิดแล้วเปิดอีก"},
+ "2": {"h": "กดทีเดียว|หยุดเลย", "s": "เปิด {name} จากเมนูหน้าเว็บใน Safari"},
+ "2m": {"s": "เปิด {name} ด้วยปุ่มบนแถบเครื่องมือของ Safari"},
+ "3": {"h": "แตะตรงไหน|ได้ตรงนั้น", "s": "วิดีโอเล่นต่อ ไม่มีแท็บใหม่โผล่"},
+ "4": {"h": "จับได้ทุกกล|ลงรายการครบ", "s": "ดูว่าแต่ละหน้าเว็บพยายามเปิดอะไร"},
+ "5": {"h": "กดย้อนกลับ|ก็กลับจริง", "s": "ปุ่มย้อนกลับพาคุณกลับไปที่เดิม"},
+ "6": {"h": "กฎของคุณ|แยกทีละเว็บ", "s": "บล็อกในเว็บหนึ่ง อนุญาตในอีกเว็บ"},
+ "7": {"h": "ไม่มีอะไร|หลุดออกไป", "s": "ไม่มีบัญชี ไม่มีการติดตาม ไม่มีเซิร์ฟเวอร์"},
+ "8": {"h": "iPhone, iPad|และ Mac", "s": "ซื้อครั้งเดียว ใช้ได้ทั้งสามเครื่อง", "f": "ไม่ต้องมีบัญชี ไม่ต้องสมัครสมาชิก"},
+ "ads": ["คุณถูกรางวัล!", "คลิกที่นี่", "ดาวน์โหลด", "หมุนฟรี", "ดีลเด็ด", "รับสิทธิ์เลย"],
+ "film": {"title": "ท่าเรือยามค่ำ", "meta": "2026 · 1 ชม. 48 นาที · ระทึกขวัญ"},
+ "site_nav": ["ภาพยนตร์", "ซีรีส์", "มาใหม่", "รายการของฉัน"],
+ "_bt": {
+  "1": {"h": "The second you press play,|a pop-up bounces out", "s": "Then a new tab opens, and opens, and opens again."},
+  "2": {"h": "One press,|it stops", "s": "Turn on {name} from Safari's page menu."},
+  "2m": {"s": "Turn on {name} with its button on Safari's toolbar."},
+  "3": {"h": "Wherever you tap,|that's what you get", "s": "The video keeps playing; no new tab pops up."},
+  "4": {"h": "Every trick caught,|all on the list", "s": "See what each web page tried to open."},
+  "5": {"h": "Press Back|and you really go back", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "Your rules,|site by site", "s": "Block on one site, allow on another."},
+  "7": {"h": "Nothing|slips out", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac", "s": "Buy once, use it on all three devices.", "f": "No account needed, no subscription needed."},
+  "ads": ["You won a prize!", "Click here", "Download", "Free spins", "Hot deal", "Claim your right now"],
+  "film": {"title": "Harbor at Nightfall", "meta": "2026 · 1 hr 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

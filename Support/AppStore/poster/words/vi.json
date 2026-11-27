@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Bấm phát,|dính popup.", "s": "Rồi tab mới. Rồi thêm tab nữa."},
+ "2": {"h": "Một chạm|là hết.", "s": "Bật {name} trong menu trang của Safari."},
+ "2m": {"s": "Bật {name} bằng nút của nó trên thanh công cụ Safari."},
+ "3": {"h": "Chạm đâu,|đúng đó.", "s": "Video vẫn phát. Không tab mới nào mở ra."},
+ "4": {"h": "Bắt được gì,|liệt kê hết.", "s": "Xem mỗi trang đã định mở những gì."},
+ "5": {"h": "Quay lại là|quay lại.", "s": "Nút Quay lại đưa bạn về đúng chỗ cũ."},
+ "6": {"h": "Luật riêng|từng trang.", "s": "Chặn ở trang này, cho phép ở trang khác."},
+ "7": {"h": "Không gì|rời máy.", "s": "Không tài khoản, không theo dõi, không máy chủ."},
+ "8": {"h": "iPhone, iPad|và Mac.", "s": "Mua một lần, dùng cả ba.", "f": "Không tài khoản, không thuê bao."},
+ "ads": ["BẠN ĐÃ TRÚNG!", "BẤM VÀO ĐÂY", "TẢI NGAY", "QUAY MIỄN PHÍ", "GIÁ SỐC", "NHẬN NGAY"],
+ "film": {"title": "Chuyến Phà Đêm", "meta": "2026 · 1 giờ 48 phút · Giật gân"},
+ "site_nav": ["Phim lẻ", "Phim bộ", "Mới", "Danh sách của tôi"],
+ "_bt": {
+  "1": {"h": "Hit play,|get stuck with a pop-up.", "s": "Then a new tab. Then another tab."},
+  "2": {"h": "One touch|and it's over.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Turn on {name} with its button on Safari's toolbar."},
+  "3": {"h": "Tap where,|right there.", "s": "The video still plays. No new tab opens."},
+  "4": {"h": "Whatever it caught,|all listed.", "s": "See what each page meant to open."},
+  "5": {"h": "Back is|back.", "s": "The Back button takes you right back to where you were."},
+  "6": {"h": "Your own rules|per site.", "s": "Block on this site, allow on another."},
+  "7": {"h": "Nothing|leaves the device.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once, use all three.", "f": "No account, no subscription."},
+  "ads": ["YOU'VE WON!", "CLICK HERE", "DOWNLOAD NOW", "FREE SPIN", "SHOCK PRICE", "CLAIM NOW"],
+  "film": {"title": "The Night Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

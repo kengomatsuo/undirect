@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "一点播放，|弹窗就来", "s": "接着又开一个新标签页，一个接一个。"},
+ "2": {"h": "轻点一下，|立刻消停", "s": "在 Safari 的页面菜单里打开 {name}。"},
+ "2m": {"s": "点按 Safari 工具栏里的 {name} 按钮即可开启。"},
+ "3": {"h": "你点哪里，|就去哪里", "s": "视频照常播放，不再弹出新标签页。"},
+ "4": {"h": "拦下的套路，|一一列出", "s": "每个网页想打开什么，一看便知。"},
+ "5": {"h": "按返回，|就真能返回", "s": "按返回按钮，回到你刚才的页面。"},
+ "6": {"h": "每个网站，|规矩你定", "s": "这个网站拦截，那个网站放行。"},
+ "7": {"h": "什么都|不外传", "s": "无账户，无追踪，无服务器。"},
+ "8": {"h": "iPhone、iPad|和 Mac", "s": "买一次，三台设备都能用。", "f": "无需账户，不用订阅。"},
+ "ads": ["恭喜中奖！", "点击这里", "立即下载", "免费转盘", "限时特惠", "立即领取"],
+ "film": {"title": "末班渡轮", "meta": "2026 · 1小时48分钟 · 惊悚"},
+ "site_nav": ["电影", "剧集", "最新", "我的片单"],
+ "_bt": {
+  "1": {"h": "The moment you hit play,|here comes the pop-up", "s": "Then another new tab opens, one after another."},
+  "2": {"h": "One light tap,|and it quiets down at once", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Click the {name} button in Safari's toolbar to turn it on."},
+  "3": {"h": "Wherever you tap,|that's where it goes", "s": "The video plays as normal; no more new tabs popping up."},
+  "4": {"h": "The tricks it stopped,|listed one by one", "s": "See at a glance what each page tried to open."},
+  "5": {"h": "Press Back,|and you really go back", "s": "Press the Back button to return to the page you were just on."},
+  "6": {"h": "For every site,|you set the rules", "s": "Block on this site, let it through on that one."},
+  "7": {"h": "Nothing|gets passed out", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac", "s": "Buy once, works on all three devices.", "f": "No account needed, no subscription."},
+  "ads": ["Congratulations, you won!", "Click here", "Download now", "Free prize wheel", "Limited-time deal", "Claim now"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "Latest", "My watchlist"]
+ }
+}

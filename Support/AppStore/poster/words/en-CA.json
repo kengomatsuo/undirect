@@ -1,0 +1,57 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {
+  "h": "Tap play.|Get a pop-up.",
+  "s": "Then a new tab. Then another."
+ },
+ "2": {
+  "h": "One press.|It stops.",
+  "s": "Turn on {name} in Safari’s page menu."
+ },
+ "3": {
+  "h": "Your tap|stays yours.",
+  "s": "The video plays. No new tab."
+ },
+ "4": {
+  "h": "Every catch,|listed.",
+  "s": "See what each page tried to open."
+ },
+ "5": {
+  "h": "Back means|back.",
+  "s": "The Back button takes you where you were."
+ },
+ "6": {
+  "h": "Your rules,|site by site.",
+  "s": "Block it on one site, allow it on another."
+ },
+ "7": {
+  "h": "Nothing|leaves.",
+  "s": "No account, no tracking, no server."
+ },
+ "8": {
+  "h": "iPhone, iPad|and Mac.",
+  "s": "One purchase covers all three.",
+  "f": "No account, no subscription."
+ },
+ "ads": [
+  "YOU WON!",
+  "CLICK HERE",
+  "DOWNLOAD",
+  "FREE SPINS",
+  "HOT DEAL",
+  "CLAIM NOW"
+ ],
+ "film": {
+  "title": "Night Harbor",
+  "meta": "2026 · 1 h 48 min · Thriller"
+ },
+ "site_nav": [
+  "Films",
+  "Series",
+  "New",
+  "My list"
+ ],
+ "2m": {
+  "s": "Turn on {name} with its button in Safari’s toolbar."
+ }
+}

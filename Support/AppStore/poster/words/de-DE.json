@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Play gedrückt.|Pop-up da.", "s": "Dann ein neuer Tab. Und noch einer."},
+ "2": {"h": "Ein Druck.|Schluss damit.", "s": "Schalte {name} im Seitenmenü von Safari ein."},
+ "2m": {"s": "Schalte {name} mit seiner Taste in der Symbolleiste von Safari ein."},
+ "3": {"h": "Dein Klick|gehört dir.", "s": "Das Video läuft. Kein neuer Tab."},
+ "4": {"h": "Jeder Trick,|aufgelistet.", "s": "Sieh, was jede Seite öffnen wollte."},
+ "5": {"h": "Zurück heißt|zurück.", "s": "Die Zurück-Taste bringt dich dahin, wo du warst."},
+ "6": {"h": "Deine Regeln,|pro Seite.", "s": "Auf einer Seite blockieren, auf der anderen erlauben."},
+ "7": {"h": "Nichts|geht raus.", "s": "Kein Konto, kein Tracking, kein Server."},
+ "8": {"h": "iPhone, iPad|und Mac.", "s": "Ein Kauf für alle drei.", "f": "Kein Konto, kein Abo."},
+ "ads": ["GEWONNEN!", "HIER KLICKEN", "DOWNLOAD", "FREISPIELE", "TOP-ANGEBOT", "JETZT SICHERN"],
+ "film": {"title": "Die letzte Fähre", "meta": "2026 · 1 Std. 48 Min. · Thriller"},
+ "site_nav": ["Filme", "Serien", "Neu", "Meine Liste"],
+ "_bt": {
+  "1": {"h": "Pressed play.|Pop-up's there.", "s": "Then a new tab. And another one."},
+  "2": {"h": "One press.|Done with that.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."},
+  "3": {"h": "Your click|belongs to you.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick,|listed.", "s": "See what each page wanted to open."},
+  "5": {"h": "Back means|back.", "s": "The Back button takes you to where you were."},
+  "6": {"h": "Your rules,|per site.", "s": "Block on one site, allow on the other."},
+  "7": {"h": "Nothing|goes out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "TOP DEAL", "GRAB IT NOW"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 hr 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My List"]
+ }
+}

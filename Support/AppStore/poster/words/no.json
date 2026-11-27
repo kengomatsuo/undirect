@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Trykk play.|Pang, pop-up.", "s": "Så en ny fane. Og en til."},
+ "2": {"h": "Ett trykk.|Det stopper.", "s": "Slå på {name} i sidemenyen i Safari."},
+ "2m": {"s": "Slå på {name} med knappen i verktøylinjen i Safari."},
+ "3": {"h": "Ditt trykk,|ditt valg.", "s": "Videoen spilles av. Ingen ny fane."},
+ "4": {"h": "Hvert triks|på listen.", "s": "Se hva hver side prøvde å åpne."},
+ "5": {"h": "Tilbake er|tilbake.", "s": "Tilbake-knappen tar deg tilbake dit du var."},
+ "6": {"h": "Dine regler,|per side.", "s": "Blokker på ett nettsted, tillat på et annet."},
+ "7": {"h": "Alt blir|hos deg.", "s": "Ingen konto, ingen sporing, ingen server."},
+ "8": {"h": "iPhone, iPad|og Mac.", "s": "Ett kjøp dekker alle tre.", "f": "Ingen konto, ikke noe abonnement."},
+ "ads": ["DU HAR VUNNET!", "KLIKK HER", "LAST NED", "FREE SPINS", "SUPERTILBUD", "HENT NÅ"],
+ "film": {"title": "Siste ferje", "meta": "2026 · 1 t 48 min · Thriller"},
+ "site_nav": ["Filmer", "Serier", "Nytt", "Min liste"],
+ "_bt": {
+  "1": {"h": "Press play.|Bang, pop-up.", "s": "Then a new tab. And another."},
+  "2": {"h": "One press.|It stops.", "s": "Turn on {name} in the page menu in Safari."},
+  "2m": {"s": "Turn on {name} with the button in the toolbar in Safari."},
+  "3": {"h": "Your tap,|your choice.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick|on the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back is|back.", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "Your rules,|per site.", "s": "Block on one website, allow on another."},
+  "7": {"h": "Everything stays|with you.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase covers all three.", "f": "No account, no subscription."},
+  "ads": ["YOU HAVE WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SUPER DEAL", "GET IT NOW"],
+  "film": {"title": "Last Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

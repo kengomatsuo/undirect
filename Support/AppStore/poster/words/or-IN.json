@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "ପ୍ଲେ ଦବାଇଲେ,|ପପଅପ ଆସିଲା।", "s": "ତା'ପରେ ନୂଆ ଟାବ। ପୁଣି ଆଉ ଗୋଟିଏ।"},
+ "2": {"h": "ଗୋଟିଏ ଟ୍ୟାପରେ|ସବୁ ବନ୍ଦ।", "s": "Safariର ପେଜ ମେନୁରୁ {name} ଚାଲୁ କରନ୍ତୁ।"},
+ "2m": {"s": "Safariର ଟୁଲବାରରେ {name} ବଟନ ଦବାଇ ଚାଲୁ କରନ୍ତୁ।"},
+ "3": {"h": "ଆପଣଙ୍କ ଟ୍ୟାପ,|ଆପଣଙ୍କ ଇଚ୍ଛା।", "s": "ଭିଡିଓ ଚାଲେ। ନୂଆ ଟାବ ଖୋଲେ ନାହିଁ।"},
+ "4": {"h": "ସବୁ ଚାଲ ଧରା,|ତାଲିକାରେ।", "s": "ପ୍ରତି ପୃଷ୍ଠା କ'ଣ ଖୋଲିବାକୁ ଚାହିଁଥିଲା, ଦେଖନ୍ତୁ।"},
+ "5": {"h": "ବ୍ୟାକ ମାନେ|ପଛକୁ।", "s": "ବ୍ୟାକ ବଟନ ଆପଣଙ୍କୁ ଯେଉଁଠି ଥିଲେ ସେଠିକୁ ହିଁ ଫେରାଇ ନିଏ।"},
+ "6": {"h": "ଆପଣଙ୍କ ନିୟମ,|ସାଇଟ ଅନୁସାରେ।", "s": "ଗୋଟିଏ ସାଇଟରେ ବ୍ଲକ କରନ୍ତୁ, ଅନ୍ୟଟିରେ ଅନୁମତି ଦିଅନ୍ତୁ।"},
+ "7": {"h": "କିଛି ବି ବାହାରକୁ|ଯାଏ ନାହିଁ।", "s": "ଆକାଉଣ୍ଟ ନାହିଁ, ଟ୍ରାକିଂ ନାହିଁ, ସର୍ଭର ନାହିଁ।"},
+ "8": {"h": "iPhone, iPad|ଓ Mac।", "s": "ଥରେ କିଣନ୍ତୁ, ତିନିଟିରେ ଚାଲିବ।", "f": "ଆକାଉଣ୍ଟ ନାହିଁ, ସବସ୍କ୍ରିପସନ ନାହିଁ।"},
+ "ads": ["ଆପଣ ଜିତିଲେ!", "ଏଠି କ୍ଲିକ କରନ୍ତୁ", "ଡାଉନଲୋଡ", "ଫ୍ରି ସ୍ପିନ", "ଧମାକା ଅଫର", "ଏବେ ନିଅନ୍ତୁ"],
+ "film": {"title": "ରାତିର ଡଙ୍ଗା", "meta": "2026 · 1 ଘ 48 ମି · ଥ୍ରିଲର"},
+ "site_nav": ["ସିନେମା", "ସିରିଜ", "ନୂଆ", "ମୋ ତାଲିକା"],
+ "_bt": {
+  "1": {"h": "Pressed play,|a pop-up came.", "s": "Then a new tab. Then one more again."},
+  "2": {"h": "In one tap|all stopped.", "s": "Turn on {name} from Safari's page menu."},
+  "2m": {"s": "Turn it on by pressing the {name} button in Safari's toolbar."},
+  "3": {"h": "Your tap,|your wish.", "s": "The video plays. No new tab opens."},
+  "4": {"h": "Every trick caught,|in the list.", "s": "See what each page wanted to open."},
+  "5": {"h": "Back means|backwards.", "s": "The Back button takes you back to right where you were."},
+  "6": {"h": "Your rules,|per site.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing at all|goes out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once, it runs on all three.", "f": "No account, no subscription."},
+  "ads": ["You won!", "Click here", "Download", "Free spin", "Blast offer", "Take it now"],
+  "film": {"title": "The Night Boat", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

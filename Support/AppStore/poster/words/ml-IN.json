@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "പ്ലേ അമർത്തി,|പോപ്പ്അപ്പ് വന്നു.", "s": "പിന്നെ പുതിയ ടാബ്. പിന്നെ വേറൊന്ന്."},
+ "2": {"h": "ഒറ്റ ടാപ്പ്,|ശല്യം തീർന്നു.", "s": "Safari-യിലെ പേജ് മെനുവിൽ നിന്ന് {name} ഓണാക്കൂ."},
+ "2m": {"s": "Safari ടൂൾബാറിലെ {name} ബട്ടൺ അമർത്തി ഓണാക്കൂ."},
+ "3": {"h": "നിങ്ങളുടെ ടാപ്പ്,|നിങ്ങളുടെ ഇഷ്ടം.", "s": "വീഡിയോ പ്ലേ ആകും. പുതിയ ടാബ് ഇല്ല."},
+ "4": {"h": "പിടിച്ച അടവുകൾ,|എല്ലാം പട്ടികയിൽ.", "s": "ഓരോ പേജും എന്ത് തുറക്കാൻ ശ്രമിച്ചെന്ന് കാണൂ."},
+ "5": {"h": "ബാക്ക് എന്നാൽ|പിന്നോട്ട്.", "s": "ബാക്ക് ബട്ടൺ നിങ്ങളെ നിന്നിടത്തേക്കുതന്നെ തിരികെ കൊണ്ടുപോകും."},
+ "6": {"h": "നിങ്ങളുടെ നിയമം,|ഓരോ സൈറ്റിനും.", "s": "ഒരു സൈറ്റിൽ ബ്ലോക്ക് ചെയ്യൂ, മറ്റൊന്നിൽ അനുവദിക്കൂ."},
+ "7": {"h": "ഒന്നും പുറത്ത്|പോകില്ല.", "s": "അക്കൗണ്ടില്ല, ട്രാക്കിങ്ങില്ല, സെർവറില്ല."},
+ "8": {"h": "iPhone, iPad|പിന്നെ Mac.", "s": "ഒരിക്കൽ വാങ്ങിയാൽ മൂന്നിലും ഉപയോഗിക്കാം.", "f": "അക്കൗണ്ടില്ല, സബ്സ്ക്രിപ്ഷനില്ല."},
+ "ads": ["നിങ്ങൾ ജയിച്ചു!", "ഇവിടെ ക്ലിക്ക് ചെയ്യൂ", "ഡൗൺലോഡ്", "ഫ്രീ സ്പിൻ", "കിടിലൻ ഓഫർ", "ഇപ്പോൾ നേടൂ"],
+ "film": {"title": "രാത്രിക്കടവ്", "meta": "2026 · 1 മ 48 മി · ത്രില്ലർ"},
+ "site_nav": ["സിനിമകൾ", "സീരീസ്", "പുതിയവ", "എന്റെ ലിസ്റ്റ്"],
+ "_bt": {
+  "1": {"h": "Pressed play,|a pop-up came.", "s": "Then a new tab. Then another one."},
+  "2": {"h": "One tap,|the nuisance is over.", "s": "Turn on {name} from Safari's page menu."},
+  "2m": {"s": "Press the {name} button in Safari's toolbar to turn it on."},
+  "3": {"h": "Your tap,|your choice.", "s": "The video plays. No new tab."},
+  "4": {"h": "Tricks caught,|all in the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back means|backwards.", "s": "The Back button takes you right back to where you stood."},
+  "6": {"h": "Your rule,|for each site.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing goes|out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once and use it on all three.", "f": "No account, no subscription."},
+  "ads": ["You won!", "Click here", "Download", "Free spin", "Killer offer", "Grab it now"],
+  "film": {"title": "Night Ferry Landing", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

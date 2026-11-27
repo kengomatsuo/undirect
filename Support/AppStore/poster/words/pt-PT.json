@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Um clique,|um pop-up.", "s": "Depois outro separador. E mais outro."},
+ "2": {"h": "Um toque|e acabou-se.", "s": "Ative o {name} no menu da página do Safari."},
+ "2m": {"s": "Ative o {name} no respetivo botão da barra de ferramentas do Safari."},
+ "3": {"h": "O seu toque|é só seu.", "s": "O vídeo arranca. Nenhum separador novo."},
+ "4": {"h": "Cada truque,|na lista.", "s": "Veja o que cada página tentou abrir."},
+ "5": {"h": "Retroceder é|retroceder.", "s": "O botão Retroceder leva-o de volta para onde estava."},
+ "6": {"h": "Cada site,|a sua regra.", "s": "Bloqueie num site, permita noutro."},
+ "7": {"h": "Nada sai|daqui.", "s": "Sem conta, sem rastreio, sem servidor."},
+ "8": {"h": "iPhone, iPad|e Mac.", "s": "Uma só compra para os três.", "f": "Sem conta, sem subscrição."},
+ "ads": ["GANHOU!", "CLIQUE AQUI", "TRANSFERIR", "RODADAS GRÁTIS", "PROMOÇÃO", "RECLAME JÁ"],
+ "film": {"title": "O Último Cacilheiro", "meta": "2026 · 1 h 48 min · Thriller"},
+ "site_nav": ["Filmes", "Séries", "Novidades", "A minha lista"],
+ "_bt": {
+  "1": {"h": "One click,|one pop-up.", "s": "Then another tab. And another."},
+  "2": {"h": "One tap|and that's that.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Turn on {name} with its own button in Safari's toolbar."},
+  "3": {"h": "Your tap|is yours alone.", "s": "The video starts. No new tab."},
+  "4": {"h": "Every trick,|on the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back is|back.", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "Each site,|its own rule.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Nothing leaves|here.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One single purchase for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SALE", "CLAIM NOW"],
+  "film": {"title": "The Last Tagus Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New releases", "My list"]
+ }
+}

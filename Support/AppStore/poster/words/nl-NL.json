@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Tik op play.|Pop-up.", "s": "Dan een nieuw tabblad. En nog een."},
+ "2": {"h": "Eén tik|en klaar.", "s": "Zet {name} aan in het paginamenu van Safari."},
+ "2m": {"s": "Zet {name} aan met de knop in de werkbalk van Safari."},
+ "3": {"h": "Je tik doet|wat jij wilt.", "s": "De video speelt. Geen nieuw tabblad."},
+ "4": {"h": "Elke truc,|op een rij.", "s": "Zie wat elke pagina probeerde te openen."},
+ "5": {"h": "Terug is|gewoon terug.", "s": "De Terug-knop brengt je terug naar waar je was."},
+ "6": {"h": "Jouw regels,|per site.", "s": "Blokkeer het op de ene site, sta het toe op de andere."},
+ "7": {"h": "Niks gaat|de deur uit.", "s": "Geen account, geen tracking, geen server."},
+ "8": {"h": "iPhone, iPad|en Mac.", "s": "Eén aankoop voor alle drie.", "f": "Geen account, geen abonnement."},
+ "ads": ["GEWONNEN!", "KLIK HIER", "DOWNLOAD", "GRATIS SPINS", "TOPDEAL", "CLAIM NU"],
+ "film": {"title": "De laatste veerboot", "meta": "2026 · 1 u 48 min · Thriller"},
+ "site_nav": ["Films", "Series", "Nieuw", "Mijn lijst"],
+ "_bt": {
+  "1": {"h": "Tap play.|Pop-up.", "s": "Then a new tab. And another."},
+  "2": {"h": "One tap|and done.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Turn on {name} with the button in Safari's toolbar."},
+  "3": {"h": "Your tap does|what you want.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick,|lined up.", "s": "See what each page tried to open."},
+  "5": {"h": "Back is|just back.", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "Your rules,|per site.", "s": "Block it on one site, allow it on the other."},
+  "7": {"h": "Nothing goes|out the door.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "TOP DEAL", "CLAIM NOW"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

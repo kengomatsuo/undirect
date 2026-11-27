@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "再生を押したら|ポップアップ", "s": "そして新しいタブ。また新しいタブ。"},
+ "2": {"h": "ワンタップで|ピタッと止まる", "s": "Safariのページメニューで{name}をオンに。"},
+ "2m": {"s": "Safariのツールバーにある{name}のボタンでオンに。"},
+ "3": {"h": "タップは、|思いどおりに", "s": "動画はそのまま再生。新しいタブは開きません。"},
+ "4": {"h": "止めた手口、|ぜんぶ一覧に", "s": "ページが開こうとした先が、ひと目でわかる。"},
+ "5": {"h": "「戻る」で、|ちゃんと戻れる", "s": "戻るボタンで、さっきのページに戻れます。"},
+ "6": {"h": "サイトごとに、|自分のルール", "s": "このサイトではブロック、あのサイトでは許可。"},
+ "7": {"h": "何ひとつ|外に出さない", "s": "アカウントなし。追跡なし。サーバーなし。"},
+ "8": {"h": "iPhone、iPad、|そしてMac", "s": "一度買えば、3つとも使える。", "f": "アカウント不要。サブスクもなし。"},
+ "ads": ["当選しました！", "ここをクリック", "ダウンロード", "無料スピン", "激安セール", "今すぐ受け取る"],
+ "film": {"title": "夜の波止場", "meta": "2026 · 1時間48分 · サスペンス"},
+ "site_nav": ["映画", "ドラマ", "新着", "マイリスト"],
+ "_bt": {
+  "1": {"h": "You press play|and: pop-up", "s": "And then a new tab. Another new tab."},
+  "2": {"h": "With one tap|it stops dead", "s": "Turn {name} on in Safari's page menu."},
+  "2m": {"s": "Turn it on with {name}'s button in Safari's toolbar."},
+  "3": {"h": "Your tap,|just as you meant", "s": "The video plays on. No new tab opens."},
+  "4": {"h": "The tricks it stopped,|all in a list", "s": "See at a glance where the page tried to open."},
+  "5": {"h": "With \"Back\",|you really get back", "s": "The Back button takes you back to the page you were on."},
+  "6": {"h": "Site by site,|your own rules", "s": "Block on this site, allow on that one."},
+  "7": {"h": "Not one thing|goes out", "s": "No account. No tracking. No server."},
+  "8": {"h": "iPhone, iPad,|and Mac", "s": "Buy once, use it on all three.", "f": "No account needed. No subscription either."},
+  "ads": ["You've won!", "Click here", "Download", "Free spins", "Rock-bottom sale", "Claim it now"],
+  "film": {"title": "The Night Wharf", "meta": "2026 · 1 h 48 min · Suspense"},
+  "site_nav": ["Films", "Dramas", "New arrivals", "My list"]
+ }
+}

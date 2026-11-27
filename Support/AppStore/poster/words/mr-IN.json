@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "प्ले दाबलं,|पॉपअप आलं.", "s": "मग नवा टॅब. मग आणखी एक."},
+ "2": {"h": "एक टॅप,|सगळं बंद.", "s": "Safari च्या पेज मेनूमधून {name} सुरू करा."},
+ "2m": {"s": "Safari च्या टूलबारमधील {name} बटणाने सुरू करा."},
+ "3": {"h": "तुमचा टॅप,|तुमचाच.", "s": "व्हिडिओ सुरू होतो. नवा टॅब नाही."},
+ "4": {"h": "पकडलेल्या चाली,|एका यादीत.", "s": "प्रत्येक पानाने काय उघडायचा प्रयत्न केला, ते पाहा."},
+ "5": {"h": "बॅक म्हणजे|मागेच.", "s": "बॅक बटण तुम्हाला जिथे होता तिथेच परत नेतं."},
+ "6": {"h": "तुमचे नियम,|साइटनुसार.", "s": "एका साइटवर ब्लॉक करा, दुसरीवर परवानगी द्या."},
+ "7": {"h": "काहीच बाहेर|जात नाही.", "s": "अकाउंट नाही, ट्रॅकिंग नाही, सर्व्हर नाही."},
+ "8": {"h": "iPhone, iPad|आणि Mac.", "s": "एकदाच खरेदी, तिन्हींवर चालतं.", "f": "अकाउंट नाही, सबस्क्रिप्शन नाही."},
+ "ads": ["तुम्ही जिंकलात!", "इथे क्लिक करा", "डाउनलोड करा", "फ्री स्पिन", "धमाका ऑफर", "आत्ताच मिळवा"],
+ "film": {"title": "रात्रीची होडी", "meta": "२०२६ · १ ता ४८ मि · थरारपट"},
+ "site_nav": ["चित्रपट", "मालिका", "नवीन", "माझी यादी"],
+ "_bt": {
+  "1": {"h": "Pressed play,|a pop-up came.", "s": "Then a new tab. Then one more."},
+  "2": {"h": "One tap,|all stopped.", "s": "Turn on {name} from Safari's page menu."},
+  "2m": {"s": "Turn it on with the {name} button in Safari's toolbar."},
+  "3": {"h": "Your tap,|yours alone.", "s": "The video starts. No new tab."},
+  "4": {"h": "Tricks caught,|in one list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back means|back, really.", "s": "The Back button takes you back right where you were."},
+  "6": {"h": "Your rules,|per site.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing goes|out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase, runs on all three.", "f": "No account, no subscription."},
+  "ads": ["You won!", "Click here", "Download", "Free spin", "Blast offer", "Get it now"],
+  "film": {"title": "The Night Boat", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Dai play,|sare reclama.", "s": "Apoi o filă nouă. Și încă una."},
+ "2": {"h": "O apăsare|și gata.", "s": "Pornește {name} din meniul paginii, în Safari."},
+ "3": {"h": "Ajungi unde|ai apăsat.", "s": "Videoclipul pornește. Nicio filă nouă."},
+ "4": {"h": "Orice truc,|pe listă.", "s": "Vezi ce a încercat să deschidă fiecare pagină."},
+ "5": {"h": "Înapoi e|chiar înapoi.", "s": "Butonul Înapoi te duce unde erai."},
+ "6": {"h": "Tu decizi,|site cu site.", "s": "Blochează pe un site, permite pe altul."},
+ "7": {"h": "Totul rămâne|la tine.", "s": "Fără cont, fără urmărire, fără server."},
+ "8": {"h": "iPhone, iPad|și Mac.", "s": "Cumperi o dată, merge pe toate trei.", "f": "Fără cont, fără abonament."},
+ "ads": ["AI CÂȘTIGAT!", "APASĂ AICI", "DESCARCĂ", "ROTIRI GRATUITE", "SUPER OFERTĂ", "IA-L ACUM"],
+ "film": {"title": "Bacul de noapte", "meta": "2026 · 1 h 48 min · Thriller"},
+ "site_nav": ["Filme", "Seriale", "Noutăți", "Lista mea"],
+ "2m": {"s": "Pornește {name} cu butonul lui din bara de instrumente Safari."},
+ "_bt": {
+  "1": {"h": "You hit play,|the ad jumps out.", "s": "Then a new tab. And one more."},
+  "2": {"h": "One press|and done.", "s": "Turn on {name} from the page menu, in Safari."},
+  "3": {"h": "You land where|you tapped.", "s": "The video starts. No new tab."},
+  "4": {"h": "Every trick,|on the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back is|really back.", "s": "The Back button takes you where you were."},
+  "6": {"h": "You decide,|site by site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Everything stays|with you.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once, it works on all three.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "PRESS HERE", "DOWNLOAD", "FREE SPINS", "SUPER OFFER", "TAKE IT NOW"],
+  "film": {"title": "The Night Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "What's new", "My list"],
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."}
+ }
+}

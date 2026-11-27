@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "प्ले दबाया,|पॉपअप आया।", "s": "फिर नया टैब। फिर एक और।"},
+ "2": {"h": "एक टैप में|सब बंद।", "s": "Safari के पेज मेन्यू में {name} चालू करें।"},
+ "2m": {"s": "Safari के टूलबार में {name} का बटन दबाकर चालू करें।"},
+ "3": {"h": "आपका टैप,|आपकी मर्ज़ी।", "s": "वीडियो चलता है। कोई नया टैब नहीं।"},
+ "4": {"h": "पकड़ी हर चाल,|सूची में।", "s": "देखें, हर पेज ने क्या खोलना चाहा।"},
+ "5": {"h": "बैक मतलब|वापस।", "s": "बैक बटन आपको वहीं ले जाता है जहाँ आप थे।"},
+ "6": {"h": "आपके नियम,|साइट दर साइट।", "s": "एक साइट पर ब्लॉक करें, दूसरी पर अनुमति दें।"},
+ "7": {"h": "कुछ भी बाहर|नहीं जाता।", "s": "न अकाउंट, न ट्रैकिंग, न सर्वर।"},
+ "8": {"h": "iPhone, iPad|और Mac।", "s": "एक बार ख़रीदें, तीनों पर चले।", "f": "न अकाउंट, न सब्सक्रिप्शन।"},
+ "ads": ["आप जीत गए!", "यहाँ क्लिक करें", "डाउनलोड करें", "फ्री स्पिन", "धमाका ऑफ़र", "अभी पाएँ"],
+ "film": {"title": "रात की नाव", "meta": "2026 · 1 घं 48 मि · थ्रिलर"},
+ "site_nav": ["फ़िल्में", "सीरीज़", "नया", "मेरी लिस्ट"],
+ "_bt": {
+  "1": {"h": "Pressed play,|a pop-up came.", "s": "Then a new tab. Then one more."},
+  "2": {"h": "In one tap|it all stops.", "s": "Turn on {name} in Safari's page menu."},
+  "2m": {"s": "Turn it on by pressing {name}'s button in Safari's toolbar."},
+  "3": {"h": "Your tap,|your call.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick caught,|in a list.", "s": "See what each page wanted to open."},
+  "5": {"h": "Back means|back.", "s": "The Back button takes you right where you were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block it on one site, allow it on another."},
+  "7": {"h": "Nothing goes|out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "Buy once, runs on all three.", "f": "No account, no subscription."},
+  "ads": ["You won!", "Click here", "Download", "Free spin", "Blast offer", "Get it now"],
+  "film": {"title": "The Night Boat", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

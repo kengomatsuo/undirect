@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Ťuk na play.|Bum, popup.", "s": "Potom nová karta. A ďalšia."},
+ "2": {"h": "Jeden klik.|A je pokoj.", "s": "Zapnite {name} v ponuke stránky v Safari."},
+ "2m": {"s": "Zapnite {name} tlačidlom na paneli nástrojov Safari."},
+ "3": {"h": "Klikáte vy,|nie reklama.", "s": "Video hrá. Žiadna nová karta."},
+ "4": {"h": "Každý trik|v zozname.", "s": "Pozrite sa, čo sa každá stránka pokúšala otvoriť."},
+ "5": {"h": "Späť znamená|späť.", "s": "Tlačidlo Späť vás vráti tam, kde ste boli."},
+ "6": {"h": "Vaše pravidlá|web po webe.", "s": "Na jednom webe blokujte, na inom povoľte."},
+ "7": {"h": "Dáta zostanú|u vás.", "s": "Žiadny účet, žiadne sledovanie, žiadny server."},
+ "8": {"h": "iPhone, iPad|a Mac.", "s": "Jeden nákup platí pre všetky tri.", "f": "Žiadny účet, žiadne predplatné."},
+ "ads": ["VYHRALI STE!", "KLIKNITE SEM", "STIAHNUŤ", "TOČENIA ZADARMO", "SUPER PONUKA", "ZÍSKAJTE HNEĎ"],
+ "film": {"title": "Posledný trajekt", "meta": "2026 · 1 h 48 min · Thriller"},
+ "site_nav": ["Filmy", "Seriály", "Novinky", "Môj zoznam"],
+ "_bt": {
+  "1": {"h": "Tap on play.|Boom, pop-up.", "s": "Then a new tab. And another."},
+  "2": {"h": "One click.|And there's peace.", "s": "Turn on {name} in the page menu in Safari."},
+  "2m": {"s": "Turn on {name} with the button on Safari's toolbar."},
+  "3": {"h": "You do the clicking,|not the ad.", "s": "The video plays. No new tab."},
+  "4": {"h": "Every trick|in the list.", "s": "See what each page tried to open."},
+  "5": {"h": "Back means|back.", "s": "The Back button takes you back to where you were."},
+  "6": {"h": "Your rules,|site by site.", "s": "Block on one site, allow on another."},
+  "7": {"h": "Your data stays|with you.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase counts for all three.", "f": "No account, no subscription."},
+  "ads": ["YOU HAVE WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SUPER OFFER", "GET IT NOW"],
+  "film": {"title": "The Last Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New", "My list"]
+ }
+}

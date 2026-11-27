@@ -1,0 +1,29 @@
+{
+ "_note": "Written from words/meanings.md. | is a line break in a headline; {name} is the app's name in this language.",
+ "1": {"h": "Play-t nyomsz,|jön a reklám.", "s": "Aztán egy új lap. Aztán még egy."},
+ "2": {"h": "Egy koppintás,|és vége.", "s": "Kapcsold be az {name}et a Safari oldalmenüjében."},
+ "3": {"h": "Oda megy,|ahová nyomsz.", "s": "A videó megy. Új lap nem nyílik."},
+ "4": {"h": "Minden trükk|egy listán.", "s": "Nézd meg, mit akart megnyitni egy-egy oldal."},
+ "5": {"h": "A vissza|az vissza.", "s": "A Vissza gomb oda visz, ahol voltál."},
+ "6": {"h": "Te szabod meg,|oldalanként.", "s": "Az egyik oldalon tiltsd, a másikon engedd."},
+ "7": {"h": "Semmi sem|szivárog ki.", "s": "Nincs fiók, nincs követés, nincs szerver."},
+ "8": {"h": "iPhone, iPad|és Mac.", "s": "Egy vásárlás mindhárom eszközre.", "f": "Nincs fiók, nincs előfizetés."},
+ "ads": ["NYERTÉL!", "KATTINTS IDE", "LETÖLTÉS", "INGYEN PÖRGETÉS", "SZUPER AJÁNLAT", "IGÉNYELD MOST"],
+ "film": {"title": "Éjszakai komp", "meta": "2026 · 1 ó 48 p · Thriller"},
+ "site_nav": ["Filmek", "Sorozatok", "Újdonságok", "Saját lista"],
+ "2m": {"s": "Kapcsold be az {name}et a gombjával a Safari eszközsorában."},
+ "_bt": {
+  "1": {"h": "You press play,|here comes the ad.", "s": "Then a new tab. Then one more."},
+  "2": {"h": "One tap,|and it's over.", "s": "Turn on {name} in Safari's page menu."},
+  "3": {"h": "It goes|where you press.", "s": "The video plays. No new tab opens."},
+  "4": {"h": "Every trick|on one list.", "s": "See what each page wanted to open."},
+  "5": {"h": "Back|is back.", "s": "The Back button takes you where you were."},
+  "6": {"h": "You set it,|site by site.", "s": "Block it on one site, allow it on the other."},
+  "7": {"h": "Nothing|leaks out.", "s": "No account, no tracking, no server."},
+  "8": {"h": "iPhone, iPad|and Mac.", "s": "One purchase for all three devices.", "f": "No account, no subscription."},
+  "ads": ["YOU WON!", "CLICK HERE", "DOWNLOAD", "FREE SPINS", "SUPER OFFER", "CLAIM NOW"],
+  "film": {"title": "Night Ferry", "meta": "2026 · 1 h 48 min · Thriller"},
+  "site_nav": ["Films", "Series", "New arrivals", "My list"],
+  "2m": {"s": "Turn on {name} with its button in Safari's toolbar."}
+ }
+}
