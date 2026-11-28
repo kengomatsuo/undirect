@@ -237,6 +237,13 @@ async function load() {
   if (!state) return;
   current = state;
 
+  // A popup on a site that is off means Safari ignored the cleared popup
+  // (iOS 17), so this open is the press: turn the site on, as onClicked does.
+  if (state.site && !state.guarding) {
+    const reply = await api.runtime.sendMessage({ type: "undirect:press", tabId, url: tabs[0]?.url });
+    if (reply?.on) return window.close();
+  }
+
   renderWatch(state);
 
   // The Start Page has no site to guard, so it opens on the settings.

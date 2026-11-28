@@ -352,18 +352,26 @@ async function paintAllTabs() {
   }
 }
 
-// Only fires while the popup is unset, which is exactly when a site is off.
-api.action?.onClicked?.addListener?.(async (tab) => {
+// A press of the toolbar button on a site that is off turns it on. Two doors
+// lead here: onClicked, which fires only while the popup is unset, and the
+// popup itself, for a Safari that keeps showing the manifest's popup after
+// setPopup cleared it (iOS 17). Returns whether the site was turned on.
+async function pressOn(tab) {
   const site = perTab.get(tab?.id)?.site || Nav.destination(tab?.url ?? "");
-  if (!site) return;
+  if (!site) return false;
   const state = await readState();
+  if (guarding(state, site, tab.id)) return false;
+  if (state.settings.enabled === false) await applySettings({ enabled: true });
+  await applyWatch({ site, on: true, tabId: tab.id });
+  return true;
+}
+
+api.action?.onClicked?.addListener?.(async (tab) => {
   // Already on, and only the paint was missed: show the popup instead.
-  if (guarding(state, site, tab.id)) {
+  if (!(await pressOn(tab)) && (perTab.get(tab?.id)?.site || Nav.destination(tab?.url ?? ""))) {
     await paintBadge(tab.id);
     return api.action.openPopup?.().catch(() => {});
   }
-  if (state.settings.enabled === false) await applySettings({ enabled: true });
-  await applyWatch({ site, on: true, tabId: tab.id });
 });
 
 // ------------------------------------------- stops the page did not witness
@@ -555,6 +563,10 @@ api.runtime.onMessage.addListener((msg, sender) => {
         watched: state.watched,
       };
     });
+  }
+
+  if (msg?.type === "undirect:press") {
+    return restored.then(() => pressOn({ id: msg.tabId, url: msg.url })).then((on) => ({ on }));
   }
 
   if (msg?.type === "undirect:rule") {
