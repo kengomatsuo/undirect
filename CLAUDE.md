@@ -46,6 +46,12 @@ both platforms, started only by hand, never by a push), and
 `ci_scripts/ci_post_clone.sh` generates the project there. Store text and
 screenshots still go up with `./deploy.sh metadata`.
 
+**The iOS `deploymentTarget` in `project.yml` is the lowest iOS a simulator walk
+passed on (app, extension on, page-menu press, a trap stopped), never what merely
+compiles:** builds 26 and 27 showed Safari 17 breaks behaviour that compiles
+fine. 17.0 passed for build 27; the Mac now holds only the 17.2 runtime, so a
+build that keeps 17.0 needs that runtime back, or the target rises to 17.2.
+
 Store copy, review notes and the App Privacy answers live in
 `Support/AppStore/metadata.md`, each counted against Apple's limit. What still
 needs the Account Holder is in [docs/app-store-submission.md](docs/app-store-submission.md).
